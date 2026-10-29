@@ -4,7 +4,7 @@
   "research_state": "NOT_RUN",
   "inventory_kind": "FINAL_LOGIC_REVIEW_SOURCE_REVISION_NOT_ORIGINAL_TASK_SEAL",
   "revision_date": "2026-10-29",
-  "updated_at_utc": "2026-10-29T04:10:03.254252+00:00",
+  "updated_at_utc": "2026-10-29T06:02:31.052466+00:00",
   "static_file_count": 3024,
   "files": [
     {
@@ -5094,8 +5094,8 @@
     },
     {
       "path": "docs/research_monograph.md",
-      "bytes": 217106,
-      "sha256": "3b55b3b562da0574e554061cc5a5113900d9845203acd7b34f25e29809a9922f"
+      "bytes": 217146,
+      "sha256": "46f4a1644a86c90d9280b100170405bd16901079c8b3d240f2737b4bb567eec3"
     },
     {
       "path": "docs/shared_contracts.md",
@@ -5184,8 +5184,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10271,
-      "sha256": "acc16f74913bb885abb75e204cfaa4042cf614a66931ee075b178463a06d814d"
+      "bytes": 10633,
+      "sha256": "9718fc7bd7a45f4add09940e83c46046c7a1a9f9fd96f5e2c0c9d66c7d2be880"
     },
     {
       "path": "release/authorization_updates/20261025T0234_TTS_APPROVAL.json",
@@ -8289,8 +8289,8 @@
     },
     {
       "path": "run_state/checks/D03/validate_documentation.py",
-      "bytes": 10457,
-      "sha256": "dcce980c0d4b2946c78209fd10090c84ad4d80ae9f0d21267f0f3617677f1e58"
+      "bytes": 10917,
+      "sha256": "76c6208539bab810304e8aa17c7e544481e0710476955d46942ad055fa0afb4b"
     },
     {
       "path": "run_state/checks/D03/validation.json",

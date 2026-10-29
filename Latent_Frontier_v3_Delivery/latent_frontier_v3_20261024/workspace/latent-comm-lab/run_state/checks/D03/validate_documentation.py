@@ -5,7 +5,16 @@ W=Path(__file__).resolve().parents[3];P=W.parent.parent
 checks=[]
 def check(name,ok,detail=None):
  checks.append({'name':name,'passed':bool(ok),'detail':detail})
-def read(p):return p.read_text()
+def read(p):
+ text=p.read_text(encoding='utf-8')
+ if p.suffix!='.md':return text
+ # Compare equivalent TeX delimiters and formatting; provenance hashes stay raw.
+ delimiters={'lVert':r'\|','rVert':r'\|','lbrace':r'\{','rbrace':r'\}'}
+ def math(match):
+  body=re.sub(r'\\(lVert|rVert|lbrace|rbrace)\b[ \t]*',lambda token:delimiters[token[1]],match[1])
+  return '$'+body+'$'
+ text=re.sub(r'(?<!\$)\$(?!\$)([^\n]*?)(?<!\$)\$(?!\$)',math,text)
+ return re.sub(r'([：，])[ \t]+(?=\$)',r'\1',text)
 def js(p):return json.loads(read(p))
 md=read(W/'docs/research_monograph.md');tex=read(W/'paper/main.tex').replace('\\_','_');rd=read(W/'README.md')
 snapshot=js(W/'run_state/checks/D03/source_snapshot.json')

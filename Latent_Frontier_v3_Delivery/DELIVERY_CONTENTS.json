@@ -2857,8 +2857,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md",
-      "sha256": "acc16f74913bb885abb75e204cfaa4042cf614a66931ee075b178463a06d814d",
-      "bytes": 10271
+      "sha256": "9718fc7bd7a45f4add09940e83c46046c7a1a9f9fd96f5e2c0c9d66c7d2be880",
+      "bytes": 10633
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/RELEASE_REPORT.md",
@@ -7342,7 +7342,7 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/checksums.sha256",
-      "sha256": "6bd132882c9e9a801cbd869c98c3ca488baf71821b293f42ebd38529b6c01bcb",
+      "sha256": "1b2484f1fb93b638d0e871aaaba5f56785082bd65ab9253bd6c0b136801c4c3a",
       "bytes": 346479
     },
     {
@@ -7957,8 +7957,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md",
-      "sha256": "3b55b3b562da0574e554061cc5a5113900d9845203acd7b34f25e29809a9922f",
-      "bytes": 217106
+      "sha256": "46f4a1644a86c90d9280b100170405bd16901079c8b3d240f2737b4bb567eec3",
+      "bytes": 217146
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/shared_contracts.md",
@@ -7972,7 +7972,7 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/manifest.json",
-      "sha256": "5fcc2e9aa6b0eec3e1e511e221867c9baae77063050af03b812952d69eb4f6a9",
+      "sha256": "7b610a83d4f1f6d6ed4cbba67eeb0b7e2481b0b551b16517ecb83588aa9890fc",
       "bytes": 566373
     },
     {
@@ -10857,8 +10857,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/run_state/checks/D03/validate_documentation.py",
-      "sha256": "dcce980c0d4b2946c78209fd10090c84ad4d80ae9f0d21267f0f3617677f1e58",
-      "bytes": 10457
+      "sha256": "76c6208539bab810304e8aa17c7e544481e0710476955d46942ad055fa0afb4b",
+      "bytes": 10917
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/run_state/checks/D03/validation.json",
