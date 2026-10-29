@@ -47,9 +47,9 @@ Les outils mathématiques ci-dessous fournissent la sémantique de ces obligatio
 
 Représentons la configuration cognitive du récepteur par :
 
-$$
+```math
 M=(Z,F,O,P,Q,V,K,W,U,E).
-$$
+```
 
 Les composantes sont l’état et les symboles exacts **Z**, les repères **F**, l’ontologie **O**, les programmes et définitions d’instructions **P**, les questions **Q**, les vues internes des objectifs **V**, les horloges et échelles **K**, les dynamiques du monde **W**, les règles d’apprentissage **U** et la généalogie des preuves **E**. Les versions de ces composantes sont enregistrées séparément. L’objectif externe de l’utilisateur reste la référence de la tâche de recherche.
 
@@ -66,34 +66,34 @@ Les principaux objets échangés sont :
 
 ### 2.2 Typage, effets et composition
 
-Soit un contrat sémantique de message $m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)$, où $o$ est l’objet cognitif, $R_m,W_m$ sont les ensembles de lecture et d’écriture, $\nu_m$ enregistre les versions sémantiques et $\pi_m$ la provenance. Dans un contexte de types et de versions $\Gamma$, les obligations opérationnelles proposées sont :
+Soit un contrat sémantique de message $`m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)`$, où $`o`$ est l’objet cognitif, $`R_m,W_m`$ sont les ensembles de lecture et d’écriture, $`\nu_m`$ enregistre les versions sémantiques et $`\pi_m`$ la provenance. Dans un contexte de types et de versions $`\Gamma`$, les obligations opérationnelles proposées sont :
 
-$$
+```math
 \begin{aligned}
 \Gamma&\vdash m:\tau_{\mathrm{in}}\rightarrow\tau_{\mathrm{out}},\\
-M'&=\mathcal T_m(M),\qquad M\in\operatorname{dom}(\mathcal T_m),\\
+M'&=\mathcal T_m(M),\qquad M\in\mathrm{dom}(\mathcal T_m),\\
 \{\mathsf{pre}_m\}\;&\mathcal T_m\;\{\mathsf{post}_m\},\qquad
-\operatorname{write}(\mathcal T_m)\subseteq W_m.
+\mathrm{write}(\mathcal T_m)\subseteq W_m.
 \end{aligned}
-$$
+```
 
 Le triplet de Hoare exprime la correction partielle sur le domaine déclaré. Une composition exige des types et versions d’objets compatibles, des domaines intermédiaires valides et une postcondition qui satisfait la précondition suivante :
 
-$$
+```math
 \frac{\{P_1\}\mathcal T_{m_1}\{Q_1\}\quad Q_1\Rightarrow P_2\quad
 \{P_2\}\mathcal T_{m_2}\{Q_2\}}
 {\{P_1\}\mathcal T_{m_2}\circ\mathcal T_{m_1}\{Q_2\}}.
-$$
+```
 
 Ce contrat fournit une unité précise pour la composition des mécanismes. Une transaction enregistre les versions d’objets obtenues et leurs dépendances. Ses conditions sémantiques décrivent ce que l’opération composée doit préserver.
 
 ### 2.3 Les changements de représentation transportent les opérations et les lectures
 
-Pour $z\in\mathbb R^n$, une opération linéaire $T\in\mathbb R^{n\times n}$, une lecture linéaire $r\in\mathbb R^{k\times n}$ et un changement de coordonnées inversible $G\in GL(n)$, les trois composantes sont transportées conjointement :
+Pour $`z\in\mathbb R^n`$, une opération linéaire $`T\in\mathbb R^{n\times n}`$, une lecture linéaire $`r\in\mathbb R^{k\times n}`$ et un changement de coordonnées inversible $`G\in GL(n)`$, les trois composantes sont transportées conjointement :
 
-$$
+```math
 z'=Gz,\qquad T'=GTG^{-1},\qquad r'=rG^{-1},\qquad r'T'z'=rTz.
-$$
+```
 
 L’identité découle de l’annulation des applications inverses adjacentes. Elle définit l’objectif de préservation des observables pour **H25**. Une interface intermodèle doit spécifier les applications d’état, d’opération et de lecture qu’elle peut réaliser. La relation entre transport de coordonnées et comportement du modèle devient ainsi explicite.
 
@@ -102,16 +102,16 @@ L’identité découle de l’annulation des applications inverses adjacentes. E
 
 ### 3.1 Critère de distinction pour l’extension conceptuelle
 
-Soit $D$ un domaine fini déclaré et $O=\{p_1,\ldots,p_n\}$ un langage de prédicats exécutables. Les valeurs des prédicats sont vrai, faux ou indéfini. Sa signature de réponse est :
+Soit $`D`$ un domaine fini déclaré et $`O=\{p_1,\ldots,p_n\}`$ un langage de prédicats exécutables. Les valeurs des prédicats sont vrai, faux ou indéfini. Sa signature de réponse est :
 
-$$
+```math
 \begin{aligned}
 \sigma_O(x)&=(p_1(x),\ldots,p_n(x))\in\{0,1,\bot\}^n,\\
 \sigma_{O'}(x)&=(\sigma_O(x),c(x)),\qquad O'=O\cup\{c\}.
 \end{aligned}
-$$
+```
 
-**Proposition conditionnelle 1 : un raffinement muni d’un témoin.** Supposons que $\sigma_O(x)=\sigma_O(y)$, que la tâche exige des actions différentes en $x$ et $y$, et qu’un candidat $c$ soit défini en ces deux points avec $c(x)\ne c(y)$. Les signatures étendues distinguent alors $x$ et $y$. Toute fonction de décision qui dépend uniquement de l’ancienne signature donne le même résultat aux deux points. L’ajout des valeurs différentes du prédicat démontre le raffinement.
+**Proposition conditionnelle 1 : un raffinement muni d’un témoin.** Supposons que $`\sigma_O(x)=\sigma_O(y)`$, que la tâche exige des actions différentes en $`x`$ et $`y`$, et qu’un candidat $`c`$ soit défini en ces deux points avec $`c(x)\ne c(y)`$. Les signatures étendues distinguent alors $`x`$ et $`y`$. Toute fonction de décision qui dépend uniquement de l’ancienne signature donne le même résultat aux deux points. L’ajout des valeurs différentes du prédicat démontre le raffinement.
 
 Il s’agit d’un critère opérationnel de formation de concepts : identifier une distinction pertinente pour la tâche, construire un prédicat qui la réalise, puis enregistrer le domaine et la version de ce prédicat. Les prédicats candidats lisent des champs observables déclarés. Un exemple est celui de deux clés de même forme dont les enregistrements accessibles indiquent des dates d’expiration différentes : le prédicat « valide à l’instant présent » sépare une paire qu’un langage fondé uniquement sur la forme identifie.
 
@@ -119,31 +119,31 @@ La procédure de recherche finie consiste à recueillir les obligations de disti
 
 ### 3.2 Questions comme relations et applications préservant les réponses
 
-Définissons une question $Q$ par un espace d’instances $X_Q$, un espace de réponses $Y_Q$ et une relation $C_Q$. Sa fibre de solutions est :
+Définissons une question $`Q`$ par un espace d’instances $`X_Q`$, un espace de réponses $`Y_Q`$ et une relation $`C_Q`$. Sa fibre de solutions est :
 
-$$
+```math
 C_Q\subseteq X_Q\times Y_Q,\qquad
 S_Q(x)=\{y\in Y_Q:(x,y)\in C_Q\}.
-$$
+```
 
-Une transformation vers $Q'$ fournit une application d’instances $\tau$ et une rétrotraduction $\rho_x$ définie sur les solutions cibles. Deux obligations distinctes en découlent :
+Une transformation vers $`Q'`$ fournit une application d’instances $`\tau`$ et une rétrotraduction $`\rho_x`$ définie sur les solutions cibles. Deux obligations distinctes en découlent :
 
-$$
+```math
 \begin{aligned}
 \text{soundness:}\quad &\rho_x\!\left(S_{Q'}(\tau(x))\right)\subseteq S_Q(x),\\
 \text{completeness:}\quad &S_Q(x)\subseteq\rho_x\!\left(S_{Q'}(\tau(x))\right).
 \end{aligned}
-$$
+```
 
 **Proposition conditionnelle 2 : transport compositionnel des solutions.** Si les domaines intermédiaires concernés correspondent, des applications successives correctes restent correctes après composition des rétrotraductions. Des applications successives complètes restent complètes en choisissant une préimage à chaque étape. Les deux inclusions donnent une équivalence après rétrotraduction, y compris pour des transformations qui introduisent des variables auxiliaires.
 
-Pour $x^2=4$, la représentation $x=2s$ avec $s\in\{-1,1\}$ conserve les deux solutions. La restriction au seul $x=2$ conserve la correction et perd la complétude. Ces obligations donnent à **H29** un critère explicite de comparaison des reformulations de questions.
+Pour $`x^2=4`$, la représentation $`x=2s`$ avec $`s\in\{-1,1\}`$ conserve les deux solutions. La restriction au seul $`x=2`$ conserve la correction et perd la complétude. Ces obligations donnent à **H29** un critère explicite de comparaison des reformulations de questions.
 
-Pour le transport interdomaines de programmes, **H30** exige en outre une application sur les objets $\phi$ et une application sur les opérations $\gamma$ satisfaisant :
+Pour le transport interdomaines de programmes, **H30** exige en outre une application sur les objets $`\phi`$ et une application sur les opérations $`\gamma`$ satisfaisant :
 
-$$
+```math
 \phi(a(x))=\gamma(a)(\phi(x)).
-$$
+```
 
 Lorsque cette relation vaut pour chaque état visité et que chaque état intermédiaire demeure dans son domaine valide, une récurrence étend la relation à une séquence d’opérations. C’est l’obligation de préservation qui relie analogie, programmes exécutables et transformations de questions.
 
@@ -152,63 +152,63 @@ Lorsque cette relation vaut pour chaque état visité et que chaque état interm
 
 ### 4.1 Interface comportementale commune
 
-Pour le modèle $i\in\{A,B\}$, soit $\theta_i\in\mathbb R^{p_i}$ l’ensemble des paramètres adaptables et soit $b_i$ une lecture différentiable vers un même ensemble ordonné de sondes comportementales autorisées, avec des unités cohérentes :
+Pour le modèle $`i\in\{A,B\}`$, soit $`\theta_i\in\mathbb R^{p_i}`$ l’ensemble des paramètres adaptables et soit $`b_i`$ une lecture différentiable vers un même ensemble ordonné de sondes comportementales autorisées, avec des unités cohérentes :
 
-$$
+```math
 b_i:\mathbb R^{p_i}\rightarrow\mathbb R^d,\qquad
 J_i=D b_i(\theta_i)\in\mathbb R^{d\times p_i},\qquad
 v=J_A\Delta_A.
-$$
+```
 
-La mise à jour source $\Delta_A$ spécifie ainsi une cible comportementale locale $v$. Le récepteur réalise cette cible par sa propre paramétrisation. Les jacobiennes décrivent des effets locaux aux points de linéarisation déclarés ; leurs repères et versions font donc partie de l’objet de transport.
+La mise à jour source $`\Delta_A`$ spécifie ainsi une cible comportementale locale $`v`$. Le récepteur réalise cette cible par sa propre paramétrisation. Les jacobiennes décrivent des effets locaux aux points de linéarisation déclarés ; leurs repères et versions font donc partie de l’objet de transport.
 
 ### 4.2 Réalisation par le récepteur, géométrie et résidus
 
-Soit $W_b\succeq0$ la pondération des erreurs comportementales, $\Lambda_B\succ0$ le coût des paramètres du récepteur et $\lambda>0$. Le problème généralisé de réalisation locale est :
+Soit $`W_b\succeq0`$ la pondération des erreurs comportementales, $`\Lambda_B\succ0`$ le coût des paramètres du récepteur et $`\lambda>0`$. Le problème généralisé de réalisation locale est :
 
-$$
+```math
 \Delta_B^\star=\arg\min_\Delta
 (J_B\Delta-v)^\top W_b(J_B\Delta-v)
 +\lambda\Delta^\top\Lambda_B\Delta.
-$$
+```
 
 **Proposition conditionnelle 3 : une réalisation régularisée unique.** L’objectif quadratique possède une hessienne définie positive et un unique minimiseur qui satisfait :
 
-$$
+```math
 (J_B^\top W_bJ_B+\lambda\Lambda_B)\Delta_B^\star=J_B^\top W_bv.
-$$
+```
 
-Pour tout $u$ non nul, la forme quadratique associée vaut $\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0$, ce qui démontre la définition positive. Le cas de référence fini euclidien prend $W_b=I$ et $\Lambda_B=I$. La spécification des deux pondérations rend visible le choix de géométrie.
+Pour tout $`u`$ non nul, la forme quadratique associée vaut $`\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0`$, ce qui démontre la définition positive. Le cas de référence fini euclidien prend $`W_b=I`$ et $`\Lambda_B=I`$. La spécification des deux pondérations rend visible le choix de géométrie.
 
-Dans ce cas euclidien, soit $\Pi_B=J_BJ_B^+$ le projecteur sur le sous-espace comportemental atteignable. Le résidu se décompose orthogonalement :
+Dans ce cas euclidien, soit $`\Pi_B=J_BJ_B^+`$ le projecteur sur le sous-espace comportemental atteignable. Le résidu se décompose orthogonalement :
 
-$$
+```math
 \|J_B\Delta_B^\star-v\|^2
 =\|(I-\Pi_B)v\|^2
 +\|\Pi_Bv-J_B\Delta_B^\star\|^2.
-$$
+```
 
 Le premier terme mesure une composante inatteignable. Le second mesure l’écart dans le sous-espace atteignable, notamment la contraction induite par la régularisation. Une mise à jour finie est évaluée par le changement effectif de la lecture, accompagné du résidu de son approximation locale. **H37** intègre ces distinctions au protocole de transport.
 
 ### 4.3 Transporter une manière d’effectuer des mises à jour
 
-**H38** représente l’adaptation par une règle $U_\psi$ à portée définie, dotée d’une mémoire locale $h_t$. Sur un ensemble de support $\mathcal D_s$ :
+**H38** représente l’adaptation par une règle $`U_\psi`$ à portée définie, dotée d’une mémoire locale $`h_t`$. Sur un ensemble de support $`\mathcal D_s`$ :
 
-$$
+```math
 \begin{aligned}
 g_t&=\nabla_\theta\ell_s(\theta_t;\mathcal D_s),\\
 \theta_{t+1}&=\theta_t+U_\psi(g_t,h_t,\theta_t),\\
 h_{t+1}&=V_\psi(g_t,h_t,\theta_t).
 \end{aligned}
-$$
+```
 
-La règle déclare les retours qu’elle peut lire et le sous-ensemble de paramètres qu’elle peut modifier. Pour une distribution déclarée $\mathcal P$ de tâches support/requête, l’objectif de recherche évalue l’état paramétrique obtenu :
+La règle déclare les retours qu’elle peut lire et le sous-ensemble de paramètres qu’elle peut modifier. Pour une distribution déclarée $`\mathcal P`$ de tâches support/requête, l’objectif de recherche évalue l’état paramétrique obtenu :
 
-$$
+```math
 \mathcal J(\psi)=
 \mathbb E_{(\mathcal D_s,\mathcal D_q)\sim\mathcal P}
 \left[\ell_q\!\left(\theta_T(\psi;\mathcal D_s);\mathcal D_q\right)\right].
-$$
+```
 
 Les données de support pilotent les mises à jour internes ; les données de requête évaluent l’état adapté. La différentiation complète suit les chemins des paramètres, de la mémoire et des gradients de support. Une variante du premier ordre modifie explicitement les chemins de gradient sélectionnés. Cette distinction fait partie de la définition de l’algorithme.
 
@@ -219,47 +219,47 @@ La question centrale est de savoir si un objet d’apprentissage versionné peut
 
 ### 5.1 Mécanismes structurels et interventions
 
-Pour un modèle causal structurel acyclique, soit $\xi\sim\mu$ la variable exogène jointe et soit $I_j$ la sélection des composantes utilisées par le mécanisme $j$ :
+Pour un modèle causal structurel acyclique, soit $`\xi\sim\mu`$ la variable exogène jointe et soit $`I_j`$ la sélection des composantes utilisées par le mécanisme $`j`$ :
 
-$$
-X_j=f_j(X_{\operatorname{pa}(j)},\xi_{I_j}),\qquad
-\operatorname{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
-$$
+```math
+X_j=f_j(X_{\mathrm{pa}(j)},\xi_{I_j}),\qquad
+\mathrm{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
+```
 
 **H31** étudie la transplantation de mécanismes avec des frontières parentales, unités et identités exogènes déclarées. Le remplacement d’un mécanisme spécifie un nouveau système structurel. La conservation d’une affectation exogène partagée permet de comparer les trajectoires contrefactuelles correspondantes entre les systèmes initial et modifié.
 
 ### 5.2 Composition par une distribution exogène jointe
 
-Supposons que chaque noyau local d’état suivant soit normalisé, que les composantes de l’état suivant soient conditionnellement indépendantes étant donnés l’état courant complet $s$, l’action $a$ et la valeur exogène $\xi$, et que chaque noyau ne dépende que de sa frontière déclarée. Pour des espaces d’états et de bruit finis, **H43** utilise :
+Supposons que chaque noyau local d’état suivant soit normalisé, que les composantes de l’état suivant soient conditionnellement indépendantes étant donnés l’état courant complet $`s`$, l’action $`a`$ et la valeur exogène $`\xi`$, et que chaque noyau ne dépende que de sa frontière déclarée. Pour des espaces d’états et de bruit finis, **H43** utilise :
 
-$$
+```math
 K(s'\mid s,a)=\sum_\xi\mu(\xi)
 \prod_i K_i(s_i'\mid s_i,a,\xi_{I_i}).
-$$
+```
 
 **Proposition conditionnelle 4 : composition normalisée d’un monde.** Sous ces hypothèses, la somme sur l’espace produit des états suivants donne :
 
-$$
+```math
 \sum_{s'}K(s'\mid s,a)
 =\sum_\xi\mu(\xi)\prod_i\sum_{s_i'}K_i(s_i'\mid s_i,a,\xi_{I_i})=1.
-$$
+```
 
-La distribution jointe $\mu$ conserve les dépendances entre facteurs exogènes. Un facteur partagé utilise la même valeur échantillonnée dans toutes les composantes qui le référencent. Deux variables d’état suivant égales à un même bit équitable coïncident avec une probabilité égale à un ; deux bits équitables échantillonnés indépendamment coïncident avec une probabilité égale à un demi. Cet exemple identifie une obligation sémantique concrète de la composition des mondes.
+La distribution jointe $`\mu`$ conserve les dépendances entre facteurs exogènes. Un facteur partagé utilise la même valeur échantillonnée dans toutes les composantes qui le référencent. Deux variables d’état suivant égales à un même bit équitable coïncident avec une probabilité égale à un ; deux bits équitables échantillonnés indépendamment coïncident avec une probabilité égale à un demi. Cet exemple identifie une obligation sémantique concrète de la composition des mondes.
 
 ### 5.3 Dépendance non résolue comme famille de mondes
 
-Soit $\Xi=\prod_j\Xi_j$ l’espace produit fini du bruit, avec une marginale de probabilité $\mu_j$ sur chaque espace de coordonnées. Définissons $K_\eta$ en remplaçant la loi jointe de bruit par étape $\mu$ dans le noyau précédent par $\eta$. Lorsque seules les marginales sont spécifiées, la famille des couplages admissibles est :
+Soit $`\Xi=\prod_j\Xi_j`$ l’espace produit fini du bruit, avec une marginale de probabilité $`\mu_j`$ sur chaque espace de coordonnées. Définissons $`K_\eta`$ en remplaçant la loi jointe de bruit par étape $`\mu`$ dans le noyau précédent par $`\eta`$. Lorsque seules les marginales sont spécifiées, la famille des couplages admissibles est :
 
-$$
+```math
 \begin{aligned}
 \mathcal C&=\{\eta\in\mathcal P(\Xi):
-(\operatorname{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
+(\mathrm{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
 \underline V&=\inf_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F],\qquad
 \overline V=\sup_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F].
 \end{aligned}
-$$
+```
 
-Ici, $\mathcal P(\Xi)$ désigne les distributions de probabilité, $\operatorname{pr}_j$ une projection de coordonnées et $F$ une fonctionnelle de trajectoire bornée spécifiée sur un horizon fini, avec une loi initiale et une politique déclarées. La condition d’image directe fixe chaque marginale. L’intervalle décrit la dépendance de la requête choisie à un couplage non résolu. Un bruit continu utilise la formulation intégrale correspondante.
+Ici, $`\mathcal P(\Xi)`$ désigne les distributions de probabilité, $`\mathrm{pr}_j`$ une projection de coordonnées et $`F`$ une fonctionnelle de trajectoire bornée spécifiée sur un horizon fini, avec une loi initiale et une politique déclarées. La condition d’image directe fixe chaque marginale. L’intervalle décrit la dépendance de la requête choisie à un couplage non résolu. Un bruit continu utilise la formulation intégrale correspondante.
 
 **H44** applique des modifications explicites de mécanismes pour créer des mondes de recherche synthétiques et conserve leurs hypothèses ainsi que la généalogie des trajectoires. **C16** relie ces mondes à la génération de questions : un environnement devient une source de contre-exemples, de variantes de tâches et d’hypothèses distinguables pour le cycle de recherche suivant.
 
@@ -308,54 +308,54 @@ Le code d’apprentissage fini linéaire H37→H38 implémente une composition e
 
 ### 7.1 Quotients sémantiques relatifs à la tâche
 
-Pour une famille $\mathcal R$ de requêtes déterministes définies sur $D$, posons :
+Pour une famille $`\mathcal R`$ de requêtes déterministes définies sur $`D`$, posons :
 
-$$
+```math
 x\sim_{\mathcal R}y\iff\forall q\in\mathcal R,\ q(x)=q(y),\qquad
 \mathcal R\subseteq\mathcal R'\Rightarrow[x]_{\mathcal R'}\subseteq[x]_{\mathcal R}.
-$$
+```
 
 **H47** organise la résolution sémantique relativement aux questions posées. L’ajout de requêtes raffine les classes d’équivalence. Une abstraction stockée a donc besoin d’une famille de requêtes déclarée et d’un mécanisme de raffinement lorsque des questions ultérieures exigent des distinctions supplémentaires.
 
-Pour une application d’état $f:D\to D$ et une application d’agrégation $C:D\to C(D)$, **H35** étudie la fermeture dynamique exacte :
+Pour une application d’état $`f:D\to D`$ et une application d’agrégation $`C:D\to C(D)`$, **H35** étudie la fermeture dynamique exacte :
 
-$$
+```math
 \exists g:C(D)\to C(D),\ C\circ f=g\circ C
 \iff
 \forall x,y\in D,\ C(x)=C(y)\Rightarrow C(f(x))=C(f(y)).
-$$
+```
 
-La condition de droite rend $g(C(x))=C(f(x))$ bien défini. Elle précise quand une représentation agrégée peut évoluer à partir de son propre état. Le raffinement des requêtes et la fermeture dynamique répondent à des exigences différentes d’un protocole multi-échelle.
+La condition de droite rend $`g(C(x))=C(f(x))`$ bien défini. Elle précise quand une représentation agrégée peut évoluer à partir de son propre état. Le raffinement des requêtes et la fermeture dynamique répondent à des exigences différentes d’un protocole multi-échelle.
 
 ### 7.2 Composition des preuves tenant compte de la provenance
 
-Considérons les atomes de source $e,f$ comme des événements d’un espace probabilisé commun déclaré. **H48** enregistre leurs relations afin que la composition respecte l’identité des événements et leurs dépendances :
+Considérons les atomes de source $`e,f`$ comme des événements d’un espace probabilisé commun déclaré. **H48** enregistre leurs relations afin que la composition respecte l’identité des événements et leurs dépendances :
 
-$$
+```math
 \begin{aligned}
 e\lor e&=e,\\
 \Pr(e\cup f)&=\Pr(e)+\Pr(f)-\Pr(e\cap f),\\
 \max\{\Pr(e),\Pr(f)\}&\le\Pr(e\cup f)
 \le\min\{1,\Pr(e)+\Pr(f)\}.
 \end{aligned}
-$$
+```
 
 L’intervalle découle des marginales disponibles. Le modèle de dépendance choisi détermine le terme d’intersection. La généalogie des sources devient ainsi une composante de la sémantique d’un dossier de recherche collectif, permettant d’interpréter de manière cohérente références répétées, observations partagées et révisions des sources.
 
 ### 7.3 Requêtes distinguant les hypothèses
 
-Pour une variable d’hypothèse finie $H$, un a priori déclaré $p(h)$ et une vraisemblance $p(y\mid h,q)$, **H45** évalue une requête autorisée par son gain d’information espéré :
+Pour une variable d’hypothèse finie $`H`$, un a priori déclaré $`p(h)`$ et une vraisemblance $`p(y\mid h,q)`$, **H45** évalue une requête autorisée par son gain d’information espéré :
 
-$$
+```math
 \begin{aligned}
 p(y\mid q)&=\sum_h p(h)p(y\mid h,q),\\
-\operatorname{IG}(q)&=\mathsf H(H)
+\mathrm{IG}(q)&=\mathsf H(H)
 -\sum_y p(y\mid q)\mathsf H(H\mid Y_q=y)
 =I(H;Y_q).
 \end{aligned}
-$$
+```
 
-Ici, $\mathsf H$ est l’entropie de Shannon et $Y_q$ prend ses valeurs dans un alphabet de réponses fini pour une requête fixée. Les termes d’entropie a posteriori sont évalués uniquement lorsque $p(y\mid q)>0$. Le critère relie la génération de questions aux concepts, mécanismes ou couplages de monde non résolus. Une proposition de recherche informative spécifie sa famille d’hypothèses et les différences de réponse qu’elle cherche à mettre en évidence.
+Ici, $`\mathsf H`$ est l’entropie de Shannon et $`Y_q`$ prend ses valeurs dans un alphabet de réponses fini pour une requête fixée. Les termes d’entropie a posteriori sont évalués uniquement lorsque $`p(y\mid q)>0`$. Le critère relie la génération de questions aux concepts, mécanismes ou couplages de monde non résolus. Une proposition de recherche informative spécifie sa famille d’hypothèses et les différences de réponse qu’elle cherche à mettre en évidence.
 
 <a id="research-program"></a>
 ## 8. Programme de recherche : objets à tester et mesures

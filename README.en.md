@@ -47,9 +47,9 @@ The mathematical tools below provide the semantics of these obligations. The pro
 
 Represent the receiver's cognitive configuration by:
 
-$$
+```math
 M=(Z,F,O,P,Q,V,K,W,U,E).
-$$
+```
 
 The components are state and exact symbols **Z**, reference frames **F**, ontology **O**, programs and instruction definitions **P**, questions **Q**, internal objective views **V**, clocks and scales **K**, world dynamics **W**, learning rules **U**, and evidence lineage **E**. Versions of these components are recorded separately. The external user goal remains the reference for the research task.
 
@@ -66,34 +66,34 @@ The principal exchanged objects are:
 
 ### 2.2 Typing, effects and composition
 
-Use a semantic message contract $m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)$, where $o$ is the cognitive object, $R_m,W_m$ are read/write footprints, $\nu_m$ records semantic versions, and $\pi_m$ records provenance. In a type-and-version context $\Gamma$, the proposed operational obligations are:
+Use a semantic message contract $`m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)`$, where $`o`$ is the cognitive object, $`R_m,W_m`$ are read/write footprints, $`\nu_m`$ records semantic versions, and $`\pi_m`$ records provenance. In a type-and-version context $`\Gamma`$, the proposed operational obligations are:
 
-$$
+```math
 \begin{aligned}
 \Gamma&\vdash m:\tau_{\mathrm{in}}\rightarrow\tau_{\mathrm{out}},\\
-M'&=\mathcal T_m(M),\qquad M\in\operatorname{dom}(\mathcal T_m),\\
+M'&=\mathcal T_m(M),\qquad M\in\mathrm{dom}(\mathcal T_m),\\
 \{\mathsf{pre}_m\}\;&\mathcal T_m\;\{\mathsf{post}_m\},\qquad
-\operatorname{write}(\mathcal T_m)\subseteq W_m.
+\mathrm{write}(\mathcal T_m)\subseteq W_m.
 \end{aligned}
-$$
+```
 
 The Hoare triple expresses partial correctness on the declared domain. A composition requires compatible object types and versions, valid intermediate domains and a postcondition that supplies the next precondition:
 
-$$
+```math
 \frac{\{P_1\}\mathcal T_{m_1}\{Q_1\}\quad Q_1\Rightarrow P_2\quad
 \{P_2\}\mathcal T_{m_2}\{Q_2\}}
 {\{P_1\}\mathcal T_{m_2}\circ\mathcal T_{m_1}\{Q_2\}}.
-$$
+```
 
 This contract provides a precise unit for mechanism composition. A transaction records the resulting object versions and their dependencies. Its semantic conditions describe what the composed operation must preserve.
 
 ### 2.3 Representation changes must transport operations and readouts
 
-For $z\in\mathbb R^n$, a linear operation $T\in\mathbb R^{n\times n}$, a linear readout $r\in\mathbb R^{k\times n}$ and an invertible coordinate change $G\in GL(n)$, transport the three maps together:
+For $`z\in\mathbb R^n`$, a linear operation $`T\in\mathbb R^{n\times n}`$, a linear readout $`r\in\mathbb R^{k\times n}`$ and an invertible coordinate change $`G\in GL(n)`$, transport the three maps together:
 
-$$
+```math
 z'=Gz,\qquad T'=GTG^{-1},\qquad r'=rG^{-1},\qquad r'T'z'=rTz.
-$$
+```
 
 The identity follows by cancellation of adjacent inverse maps. It defines the observable-preservation target for **H25**. An inter-model interface must specify which state, operation and readout maps it can realize. This makes the relationship between coordinate transport and model behavior explicit.
 
@@ -102,16 +102,16 @@ The identity follows by cancellation of adjacent inverse maps. It defines the ob
 
 ### 3.1 A distinguishing criterion for concept extension
 
-Let $D$ be a declared finite domain and $O=\{p_1,\ldots,p_n\}$ an executable predicate language. Predicate values are true, false or undefined. Its response signature is:
+Let $`D`$ be a declared finite domain and $`O=\{p_1,\ldots,p_n\}`$ an executable predicate language. Predicate values are true, false or undefined. Its response signature is:
 
-$$
+```math
 \begin{aligned}
 \sigma_O(x)&=(p_1(x),\ldots,p_n(x))\in\{0,1,\bot\}^n,\\
 \sigma_{O'}(x)&=(\sigma_O(x),c(x)),\qquad O'=O\cup\{c\}.
 \end{aligned}
-$$
+```
 
-**Conditional proposition 1: a witnessed refinement.** Suppose $\sigma_O(x)=\sigma_O(y)$, the task requires different actions at $x$ and $y$, and a candidate $c$ is defined at both points with $c(x)\ne c(y)$. Then the extended signatures distinguish $x$ and $y$. Any decision function that factors solely through the old signature gives the same result at both points. Appending the differing predicate values proves the refinement.
+**Conditional proposition 1: a witnessed refinement.** Suppose $`\sigma_O(x)=\sigma_O(y)`$, the task requires different actions at $`x`$ and $`y`$, and a candidate $`c`$ is defined at both points with $`c(x)\ne c(y)`$. Then the extended signatures distinguish $`x`$ and $`y`$. Any decision function that factors solely through the old signature gives the same result at both points. Appending the differing predicate values proves the refinement.
 
 This is an operational criterion for concept formation: identify a task-relevant distinction, construct a predicate that realizes it, and register the predicate's domain and version. Candidate predicates read declared observable fields. A useful example is two identically shaped keys whose permitted records contain different expiry times: the predicate “valid at the current time” separates a pair that a shape-only language identifies.
 
@@ -119,31 +119,31 @@ The finite research procedure is: collect distinguishing obligations; enumerate 
 
 ### 3.2 Questions as relations and answer-preserving maps
 
-Define a question $Q$ by an instance space $X_Q$, an answer space $Y_Q$ and a relation $C_Q$. Its solution fiber is:
+Define a question $`Q`$ by an instance space $`X_Q`$, an answer space $`Y_Q`$ and a relation $`C_Q`$. Its solution fiber is:
 
-$$
+```math
 C_Q\subseteq X_Q\times Y_Q,\qquad
 S_Q(x)=\{y\in Y_Q:(x,y)\in C_Q\}.
-$$
+```
 
-A transformation to $Q'$ supplies an instance map $\tau$ and a back-translation $\rho_x$ defined on the target solutions. Two separate obligations follow:
+A transformation to $`Q'`$ supplies an instance map $`\tau`$ and a back-translation $`\rho_x`$ defined on the target solutions. Two separate obligations follow:
 
-$$
+```math
 \begin{aligned}
 \text{soundness:}\quad &\rho_x\!\left(S_{Q'}(\tau(x))\right)\subseteq S_Q(x),\\
 \text{completeness:}\quad &S_Q(x)\subseteq\rho_x\!\left(S_{Q'}(\tau(x))\right).
 \end{aligned}
-$$
+```
 
 **Conditional proposition 2: compositional solution transport.** If the relevant intermediate domains match, successive sound maps remain sound under composed back-translation. Successive complete maps remain complete by choosing a preimage at each step. Both inclusions give equivalence after back-translation, including transformations that introduce auxiliary variables.
 
-For $x^2=4$, the representation $x=2s$ with $s\in\{-1,1\}$ retains both solutions. The singleton restriction $x=2$ retains soundness and loses completeness. These obligations give **H29** an explicit criterion for comparing question rewrites.
+For $`x^2=4`$, the representation $`x=2s`$ with $`s\in\{-1,1\}`$ retains both solutions. The singleton restriction $`x=2`$ retains soundness and loses completeness. These obligations give **H29** an explicit criterion for comparing question rewrites.
 
-For cross-domain program transport, **H30** additionally requires an object map $\phi$ and an operation map $\gamma$ satisfying:
+For cross-domain program transport, **H30** additionally requires an object map $`\phi`$ and an operation map $`\gamma`$ satisfying:
 
-$$
+```math
 \phi(a(x))=\gamma(a)(\phi(x)).
-$$
+```
 
 When this relation holds at every visited state and each intermediate state stays in its valid domain, induction extends the relation to an operation sequence. This is the preservation obligation linking analogy, executable programs and question transformations.
 
@@ -152,63 +152,63 @@ When this relation holds at every visited state and each intermediate state stay
 
 ### 4.1 A shared behavioral interface
 
-For model $i\in\{A,B\}$, let $\theta_i\in\mathbb R^{p_i}$ be the adaptable parameters and let $b_i$ be a differentiable readout into the same ordered, unit-consistent set of permitted behavioral probes:
+For model $`i\in\{A,B\}`$, let $`\theta_i\in\mathbb R^{p_i}`$ be the adaptable parameters and let $`b_i`$ be a differentiable readout into the same ordered, unit-consistent set of permitted behavioral probes:
 
-$$
+```math
 b_i:\mathbb R^{p_i}\rightarrow\mathbb R^d,\qquad
 J_i=D b_i(\theta_i)\in\mathbb R^{d\times p_i},\qquad
 v=J_A\Delta_A.
-$$
+```
 
-The source update $\Delta_A$ thus specifies a local behavioral target $v$. The receiver realizes that target through its own parameterization. The Jacobians describe local effects at declared linearization points, so their frames and versions are part of the transport object.
+The source update $`\Delta_A`$ thus specifies a local behavioral target $`v`$. The receiver realizes that target through its own parameterization. The Jacobians describe local effects at declared linearization points, so their frames and versions are part of the transport object.
 
 ### 4.2 Receiver realization, geometry and residuals
 
-Let $W_b\succeq0$ weight behavioral errors, let $\Lambda_B\succ0$ define the receiver's parameter cost, and let $\lambda>0$. The generalized local realization problem is:
+Let $`W_b\succeq0`$ weight behavioral errors, let $`\Lambda_B\succ0`$ define the receiver's parameter cost, and let $`\lambda>0`$. The generalized local realization problem is:
 
-$$
+```math
 \Delta_B^\star=\arg\min_\Delta
 (J_B\Delta-v)^\top W_b(J_B\Delta-v)
 +\lambda\Delta^\top\Lambda_B\Delta.
-$$
+```
 
 **Conditional proposition 3: a unique regularized realization.** The quadratic objective has a positive-definite Hessian and a unique minimizer satisfying:
 
-$$
+```math
 (J_B^\top W_bJ_B+\lambda\Lambda_B)\Delta_B^\star=J_B^\top W_bv.
-$$
+```
 
-For every nonzero $u$, the associated quadratic form is $\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0$, proving positive definiteness. The Euclidean finite reference case takes $W_b=I$ and $\Lambda_B=I$. Specifying both weights makes the choice of geometry visible.
+For every nonzero $`u`$, the associated quadratic form is $`\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0`$, proving positive definiteness. The Euclidean finite reference case takes $`W_b=I`$ and $`\Lambda_B=I`$. Specifying both weights makes the choice of geometry visible.
 
-In that Euclidean case, let $\Pi_B=J_BJ_B^+$ project onto the reachable behavioral subspace. The residual decomposes orthogonally:
+In that Euclidean case, let $`\Pi_B=J_BJ_B^+`$ project onto the reachable behavioral subspace. The residual decomposes orthogonally:
 
-$$
+```math
 \|J_B\Delta_B^\star-v\|^2
 =\|(I-\Pi_B)v\|^2
 +\|\Pi_Bv-J_B\Delta_B^\star\|^2.
-$$
+```
 
 The first term measures an unreachable component. The second measures mismatch within the reachable subspace, including regularization-induced shrinkage. A finite update is assessed through the actual readout change, together with its local approximation residual. **H37** makes these distinctions part of the transport protocol.
 
 ### 4.3 Transporting a way of updating
 
-**H38** represents adaptation by a scoped rule $U_\psi$ with local memory $h_t$. On a support set $\mathcal D_s$:
+**H38** represents adaptation by a scoped rule $`U_\psi`$ with local memory $`h_t`$. On a support set $`\mathcal D_s`$:
 
-$$
+```math
 \begin{aligned}
 g_t&=\nabla_\theta\ell_s(\theta_t;\mathcal D_s),\\
 \theta_{t+1}&=\theta_t+U_\psi(g_t,h_t,\theta_t),\\
 h_{t+1}&=V_\psi(g_t,h_t,\theta_t).
 \end{aligned}
-$$
+```
 
-The rule declares its readable feedback and the parameter subset it can update. For a declared distribution $\mathcal P$ of support/query tasks, the research objective evaluates the resulting parameter state:
+The rule declares its readable feedback and the parameter subset it can update. For a declared distribution $`\mathcal P`$ of support/query tasks, the research objective evaluates the resulting parameter state:
 
-$$
+```math
 \mathcal J(\psi)=
 \mathbb E_{(\mathcal D_s,\mathcal D_q)\sim\mathcal P}
 \left[\ell_q\!\left(\theta_T(\psi;\mathcal D_s);\mathcal D_q\right)\right].
-$$
+```
 
 Support data drive the inner updates; query data evaluate the adapted state. Full differentiation follows the parameter, memory and support-gradient paths. A first-order variant explicitly changes the selected gradient paths. This distinction is part of the algorithm definition.
 
@@ -219,47 +219,47 @@ The central research question is whether a versioned learning object can be used
 
 ### 5.1 Structural mechanisms and interventions
 
-For an acyclic structural causal model, let $\xi\sim\mu$ be the joint exogenous variable and let $I_j$ select the components used by mechanism $j$:
+For an acyclic structural causal model, let $`\xi\sim\mu`$ be the joint exogenous variable and let $`I_j`$ select the components used by mechanism $`j`$:
 
-$$
-X_j=f_j(X_{\operatorname{pa}(j)},\xi_{I_j}),\qquad
-\operatorname{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
-$$
+```math
+X_j=f_j(X_{\mathrm{pa}(j)},\xi_{I_j}),\qquad
+\mathrm{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
+```
 
 **H31** studies mechanism transplantation with declared parent boundaries, units and exogenous identities. Mechanism replacement specifies a new structural system. Preserving a shared exogenous assignment allows corresponding counterfactual trajectories to be compared across the original and modified systems.
 
 ### 5.2 Composition through a joint exogenous distribution
 
-Let each local next-state kernel be normalized. Assume the next-state components are conditionally independent given the complete current state $s$, action $a$ and exogenous value $\xi$, and that each kernel depends only on its declared boundary. For finite state and noise spaces, **H43** uses:
+Let each local next-state kernel be normalized. Assume the next-state components are conditionally independent given the complete current state $`s`$, action $`a`$ and exogenous value $`\xi`$, and that each kernel depends only on its declared boundary. For finite state and noise spaces, **H43** uses:
 
-$$
+```math
 K(s'\mid s,a)=\sum_\xi\mu(\xi)
 \prod_i K_i(s_i'\mid s_i,a,\xi_{I_i}).
-$$
+```
 
 **Conditional proposition 4: normalized world composition.** Under those assumptions, summing over the product next-state space gives:
 
-$$
+```math
 \sum_{s'}K(s'\mid s,a)
 =\sum_\xi\mu(\xi)\prod_i\sum_{s_i'}K_i(s_i'\mid s_i,a,\xi_{I_i})=1.
-$$
+```
 
-The joint distribution $\mu$ retains dependencies between exogenous factors. A shared factor uses the same sampled value in every component that references it. Two next-state variables equal to one shared fair bit agree with probability one; two independently sampled fair bits agree with probability one half. This example identifies a concrete semantic obligation of world composition.
+The joint distribution $`\mu`$ retains dependencies between exogenous factors. A shared factor uses the same sampled value in every component that references it. Two next-state variables equal to one shared fair bit agree with probability one; two independently sampled fair bits agree with probability one half. This example identifies a concrete semantic obligation of world composition.
 
 ### 5.3 Unresolved dependence as a family of worlds
 
-Let $\Xi=\prod_j\Xi_j$ be the finite product noise space, with probability marginal $\mu_j$ on each coordinate space. Define $K_\eta$ by replacing the per-step joint noise law $\mu$ in the preceding kernel with $\eta$. When only the marginals are specified, the admissible coupling family is:
+Let $`\Xi=\prod_j\Xi_j`$ be the finite product noise space, with probability marginal $`\mu_j`$ on each coordinate space. Define $`K_\eta`$ by replacing the per-step joint noise law $`\mu`$ in the preceding kernel with $`\eta`$. When only the marginals are specified, the admissible coupling family is:
 
-$$
+```math
 \begin{aligned}
 \mathcal C&=\{\eta\in\mathcal P(\Xi):
-(\operatorname{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
+(\mathrm{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
 \underline V&=\inf_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F],\qquad
 \overline V=\sup_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F].
 \end{aligned}
-$$
+```
 
-Here $\mathcal P(\Xi)$ denotes probability distributions, $\operatorname{pr}_j$ is a coordinate projection, and $F$ is a specified bounded trajectory functional over a finite horizon with a declared initial law and policy. The pushforward condition fixes each marginal. The interval describes how the chosen query depends on unresolved coupling. Continuous noise uses the corresponding integral formulation.
+Here $`\mathcal P(\Xi)`$ denotes probability distributions, $`\mathrm{pr}_j`$ is a coordinate projection, and $`F`$ is a specified bounded trajectory functional over a finite horizon with a declared initial law and policy. The pushforward condition fixes each marginal. The interval describes how the chosen query depends on unresolved coupling. Continuous noise uses the corresponding integral formulation.
 
 **H44** applies explicit mechanism edits to create synthetic research worlds and retains their assumptions and trajectory lineage. **C16** connects these worlds to question generation: an environment becomes a source of counterexamples, task variants and distinguishable hypotheses for the next research cycle.
 
@@ -308,54 +308,54 @@ The finite linear H37→H38 learning source implements a specific live compositi
 
 ### 7.1 Task-relative semantic quotients
 
-For a family $\mathcal R$ of deterministic queries defined on $D$, define:
+For a family $`\mathcal R`$ of deterministic queries defined on $`D`$, define:
 
-$$
+```math
 x\sim_{\mathcal R}y\iff\forall q\in\mathcal R,\ q(x)=q(y),\qquad
 \mathcal R\subseteq\mathcal R'\Rightarrow[x]_{\mathcal R'}\subseteq[x]_{\mathcal R}.
-$$
+```
 
 **H47** organizes semantic resolution relative to the questions being asked. Adding queries refines equivalence classes. A stored abstraction therefore needs a declared query family and a refinement mechanism when later questions require additional distinctions.
 
-For a state map $f:D\to D$ and a coarse map $C:D\to C(D)$, **H35** studies exact dynamic closure:
+For a state map $`f:D\to D`$ and a coarse map $`C:D\to C(D)`$, **H35** studies exact dynamic closure:
 
-$$
+```math
 \exists g:C(D)\to C(D),\ C\circ f=g\circ C
 \iff
 \forall x,y\in D,\ C(x)=C(y)\Rightarrow C(f(x))=C(f(y)).
-$$
+```
 
-The right-hand condition makes $g(C(x))=C(f(x))$ well-defined. It specifies when an aggregated representation can evolve through its own state. Query refinement and dynamic closure address different requirements of a multiscale protocol.
+The right-hand condition makes $`g(C(x))=C(f(x))`$ well-defined. It specifies when an aggregated representation can evolve through its own state. Query refinement and dynamic closure address different requirements of a multiscale protocol.
 
 ### 7.2 Provenance-aware evidence composition
 
-Treat source atoms $e,f$ as events in a declared common probability space. **H48** records their relationships so that composition respects event identity and dependence:
+Treat source atoms $`e,f`$ as events in a declared common probability space. **H48** records their relationships so that composition respects event identity and dependence:
 
-$$
+```math
 \begin{aligned}
 e\lor e&=e,\\
 \Pr(e\cup f)&=\Pr(e)+\Pr(f)-\Pr(e\cap f),\\
 \max\{\Pr(e),\Pr(f)\}&\le\Pr(e\cup f)
 \le\min\{1,\Pr(e)+\Pr(f)\}.
 \end{aligned}
-$$
+```
 
 The interval follows from the available marginals. A selected dependency model determines the intersection term. Source lineage thus becomes part of the semantics of a collective research record, allowing repeated references, shared observations and source revisions to be interpreted consistently.
 
 ### 7.3 Queries that distinguish hypotheses
 
-For a finite hypothesis variable $H$, a declared prior $p(h)$ and likelihood $p(y\mid h,q)$, **H45** evaluates a permitted query through expected information gain:
+For a finite hypothesis variable $`H`$, a declared prior $`p(h)`$ and likelihood $`p(y\mid h,q)`$, **H45** evaluates a permitted query through expected information gain:
 
-$$
+```math
 \begin{aligned}
 p(y\mid q)&=\sum_h p(h)p(y\mid h,q),\\
-\operatorname{IG}(q)&=\mathsf H(H)
+\mathrm{IG}(q)&=\mathsf H(H)
 -\sum_y p(y\mid q)\mathsf H(H\mid Y_q=y)
 =I(H;Y_q).
 \end{aligned}
-$$
+```
 
-Here $\mathsf H$ is Shannon entropy and $Y_q$ takes values in a finite response alphabet for a fixed query. Posterior-entropy terms are evaluated only where $p(y\mid q)>0$. The criterion connects question generation to unresolved concepts, mechanisms or world couplings. An informative research proposal specifies its hypothesis family and the response differences it expects to reveal.
+Here $`\mathsf H`$ is Shannon entropy and $`Y_q`$ takes values in a finite response alphabet for a fixed query. Posterior-entropy terms are evaluated only where $`p(y\mid q)>0`$. The criterion connects question generation to unresolved concepts, mechanisms or world couplings. An informative research proposal specifies its hypothesis family and the response differences it expects to reveal.
 
 <a id="research-program"></a>
 ## 8. Research program: what to test and what to measure

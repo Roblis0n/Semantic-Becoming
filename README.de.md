@@ -47,9 +47,9 @@ Die folgenden mathematischen Werkzeuge liefern die Semantik dieser Anforderungen
 
 Die kognitive Konfiguration des Empfängers wird dargestellt durch:
 
-$$
+```math
 M=(Z,F,O,P,Q,V,K,W,U,E).
-$$
+```
 
 Die Komponenten sind Zustand und exakte Symbole **Z**, Referenzrahmen **F**, Ontologie **O**, Programme und Instruktionsdefinitionen **P**, Fragen **Q**, interne Zielperspektiven **V**, Uhren und Skalen **K**, Weltdynamik **W**, Lernregeln **U** sowie Evidenz-Provenienz **E**. Die Versionen dieser Komponenten werden getrennt erfasst. Das externe Nutzerziel bleibt der Bezugspunkt für die Forschungsaufgabe.
 
@@ -66,34 +66,34 @@ Die wichtigsten ausgetauschten Objekte sind:
 
 ### 2.2 Typisierung, Wirkungen und Komposition
 
-Wir verwenden einen semantischen Nachrichtenvertrag $m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)$, wobei $o$ das kognitive Objekt ist, $R_m,W_m$ die Lese- und Schreibbereiche bezeichnen, $\nu_m$ semantische Versionen erfasst und $\pi_m$ die Provenienz dokumentiert. In einem Typ- und Versionskontext $\Gamma$ lauten die vorgeschlagenen operationalen Anforderungen:
+Wir verwenden einen semantischen Nachrichtenvertrag $`m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)`$, wobei $`o`$ das kognitive Objekt ist, $`R_m,W_m`$ die Lese- und Schreibbereiche bezeichnen, $`\nu_m`$ semantische Versionen erfasst und $`\pi_m`$ die Provenienz dokumentiert. In einem Typ- und Versionskontext $`\Gamma`$ lauten die vorgeschlagenen operationalen Anforderungen:
 
-$$
+```math
 \begin{aligned}
 \Gamma&\vdash m:\tau_{\mathrm{in}}\rightarrow\tau_{\mathrm{out}},\\
-M'&=\mathcal T_m(M),\qquad M\in\operatorname{dom}(\mathcal T_m),\\
+M'&=\mathcal T_m(M),\qquad M\in\mathrm{dom}(\mathcal T_m),\\
 \{\mathsf{pre}_m\}\;&\mathcal T_m\;\{\mathsf{post}_m\},\qquad
-\operatorname{write}(\mathcal T_m)\subseteq W_m.
+\mathrm{write}(\mathcal T_m)\subseteq W_m.
 \end{aligned}
-$$
+```
 
 Das Hoare-Tripel beschreibt partielle Korrektheit auf der deklarierten Domäne. Eine Komposition verlangt kompatible Objekttypen und Versionen, gültige Zwischendomänen und eine Nachbedingung, die die nächste Vorbedingung erfüllt:
 
-$$
+```math
 \frac{\{P_1\}\mathcal T_{m_1}\{Q_1\}\quad Q_1\Rightarrow P_2\quad
 \{P_2\}\mathcal T_{m_2}\{Q_2\}}
 {\{P_1\}\mathcal T_{m_2}\circ\mathcal T_{m_1}\{Q_2\}}.
-$$
+```
 
 Dieser Vertrag definiert eine präzise Einheit für die Komposition von Mechanismen. Eine Transaktion erfasst die resultierenden Objektversionen und ihre Abhängigkeiten. Ihre semantischen Bedingungen beschreiben, was die zusammengesetzte Operation erhalten muss.
 
 ### 2.3 Repräsentationswechsel transportieren Operationen und Readouts
 
-Für $z\in\mathbb R^n$, eine lineare Operation $T\in\mathbb R^{n\times n}$, einen linearen Readout $r\in\mathbb R^{k\times n}$ und einen invertierbaren Koordinatenwechsel $G\in GL(n)$ werden alle drei Abbildungen gemeinsam transportiert:
+Für $`z\in\mathbb R^n`$, eine lineare Operation $`T\in\mathbb R^{n\times n}`$, einen linearen Readout $`r\in\mathbb R^{k\times n}`$ und einen invertierbaren Koordinatenwechsel $`G\in GL(n)`$ werden alle drei Abbildungen gemeinsam transportiert:
 
-$$
+```math
 z'=Gz,\qquad T'=GTG^{-1},\qquad r'=rG^{-1},\qquad r'T'z'=rTz.
-$$
+```
 
 Die Identität folgt durch Kürzung benachbarter inverser Abbildungen. Sie definiert das Ziel der Erhaltung beobachtbarer Größen für **H25**. Eine Schnittstelle zwischen Modellen muss festlegen, welche Zustands-, Operations- und Readout-Abbildungen sie realisieren kann. Dadurch wird die Beziehung zwischen Koordinatentransport und Modellverhalten explizit.
 
@@ -102,16 +102,16 @@ Die Identität folgt durch Kürzung benachbarter inverser Abbildungen. Sie defin
 
 ### 3.1 Ein Unterscheidungskriterium für Konzepterweiterungen
 
-Sei $D$ eine deklarierte endliche Domäne und $O=\{p_1,\ldots,p_n\}$ eine ausführbare Prädikatensprache. Prädikatswerte können wahr, falsch oder undefiniert sein. Die Antwortsignatur lautet:
+Sei $`D`$ eine deklarierte endliche Domäne und $`O=\{p_1,\ldots,p_n\}`$ eine ausführbare Prädikatensprache. Prädikatswerte können wahr, falsch oder undefiniert sein. Die Antwortsignatur lautet:
 
-$$
+```math
 \begin{aligned}
 \sigma_O(x)&=(p_1(x),\ldots,p_n(x))\in\{0,1,\bot\}^n,\\
 \sigma_{O'}(x)&=(\sigma_O(x),c(x)),\qquad O'=O\cup\{c\}.
 \end{aligned}
-$$
+```
 
-**Bedingte Aussage 1: eine durch Zeugen belegte Verfeinerung.** Es gelte $\sigma_O(x)=\sigma_O(y)$, die Aufgabe verlange unterschiedliche Aktionen bei $x$ und $y$, und ein Kandidat $c$ sei an beiden Punkten definiert mit $c(x)\ne c(y)$. Dann unterscheiden die erweiterten Signaturen $x$ und $y$. Jede Entscheidungsfunktion, die ausschließlich von der alten Signatur abhängt, liefert an beiden Punkten dasselbe Ergebnis. Das Anhängen der unterschiedlichen Prädikatswerte beweist die Verfeinerung.
+**Bedingte Aussage 1: eine durch Zeugen belegte Verfeinerung.** Es gelte $`\sigma_O(x)=\sigma_O(y)`$, die Aufgabe verlange unterschiedliche Aktionen bei $`x`$ und $`y`$, und ein Kandidat $`c`$ sei an beiden Punkten definiert mit $`c(x)\ne c(y)`$. Dann unterscheiden die erweiterten Signaturen $`x`$ und $`y`$. Jede Entscheidungsfunktion, die ausschließlich von der alten Signatur abhängt, liefert an beiden Punkten dasselbe Ergebnis. Das Anhängen der unterschiedlichen Prädikatswerte beweist die Verfeinerung.
 
 Dies ist ein operationales Kriterium für Konzeptbildung: Eine aufgabenrelevante Unterscheidung wird identifiziert, ein Prädikat zu ihrer Realisierung konstruiert und dessen Domäne und Version werden registriert. Kandidatenprädikate lesen deklarierte beobachtbare Felder. Ein Beispiel sind zwei gleich geformte Schlüssel, deren zulässige Datensätze unterschiedliche Ablaufzeiten enthalten: Das Prädikat „zum aktuellen Zeitpunkt gültig“ unterscheidet ein Paar, das eine allein auf Form beruhende Sprache gleichsetzt.
 
@@ -119,31 +119,31 @@ Das endliche Forschungsverfahren sammelt Unterscheidungsanforderungen, enumerier
 
 ### 3.2 Fragen als Relationen und antworterhaltende Abbildungen
 
-Eine Frage $Q$ wird durch einen Instanzraum $X_Q$, einen Antwortraum $Y_Q$ und eine Relation $C_Q$ definiert. Ihre Lösungsfaser ist:
+Eine Frage $`Q`$ wird durch einen Instanzraum $`X_Q`$, einen Antwortraum $`Y_Q`$ und eine Relation $`C_Q`$ definiert. Ihre Lösungsfaser ist:
 
-$$
+```math
 C_Q\subseteq X_Q\times Y_Q,\qquad
 S_Q(x)=\{y\in Y_Q:(x,y)\in C_Q\}.
-$$
+```
 
-Eine Transformation nach $Q'$ stellt eine Instanzabbildung $\tau$ und eine auf den Ziellösungen definierte Rückübersetzung $\rho_x$ bereit. Daraus folgen zwei getrennte Anforderungen:
+Eine Transformation nach $`Q'`$ stellt eine Instanzabbildung $`\tau`$ und eine auf den Ziellösungen definierte Rückübersetzung $`\rho_x`$ bereit. Daraus folgen zwei getrennte Anforderungen:
 
-$$
+```math
 \begin{aligned}
 \text{soundness:}\quad &\rho_x\!\left(S_{Q'}(\tau(x))\right)\subseteq S_Q(x),\\
 \text{completeness:}\quad &S_Q(x)\subseteq\rho_x\!\left(S_{Q'}(\tau(x))\right).
 \end{aligned}
-$$
+```
 
 **Bedingte Aussage 2: kompositioneller Lösungstransport.** Stimmen die relevanten Zwischendomänen überein, bleiben aufeinanderfolgende korrekte Abbildungen unter zusammengesetzter Rückübersetzung korrekt. Aufeinanderfolgende vollständige Abbildungen bleiben vollständig, indem auf jeder Stufe ein Urbild gewählt wird. Beide Inklusionen ergeben Äquivalenz nach Rückübersetzung, auch bei Transformationen, die Hilfsvariablen einführen.
 
-Für $x^2=4$ erhält die Darstellung $x=2s$ mit $s\in\{-1,1\}$ beide Lösungen. Die Einschränkung auf den Einzelwert $x=2$ bleibt korrekt und verliert Vollständigkeit. Diese Anforderungen geben **H29** ein explizites Kriterium zum Vergleich von Frageumformulierungen.
+Für $`x^2=4`$ erhält die Darstellung $`x=2s`$ mit $`s\in\{-1,1\}`$ beide Lösungen. Die Einschränkung auf den Einzelwert $`x=2`$ bleibt korrekt und verliert Vollständigkeit. Diese Anforderungen geben **H29** ein explizites Kriterium zum Vergleich von Frageumformulierungen.
 
-Für domänenübergreifenden Programmtransport verlangt **H30** zusätzlich eine Objektabbildung $\phi$ und eine Operationsabbildung $\gamma$, die erfüllen:
+Für domänenübergreifenden Programmtransport verlangt **H30** zusätzlich eine Objektabbildung $`\phi`$ und eine Operationsabbildung $`\gamma`$, die erfüllen:
 
-$$
+```math
 \phi(a(x))=\gamma(a)(\phi(x)).
-$$
+```
 
 Gilt diese Relation in jedem besuchten Zustand und bleibt jeder Zwischenzustand in seiner gültigen Domäne, erweitert Induktion die Relation auf eine Operationsfolge. Dies ist die Erhaltungsanforderung, die Analogie, ausführbare Programme und Frageumformungen verbindet.
 
@@ -152,63 +152,63 @@ Gilt diese Relation in jedem besuchten Zustand und bleibt jeder Zwischenzustand 
 
 ### 4.1 Eine gemeinsame Verhaltensschnittstelle
 
-Für Modell $i\in\{A,B\}$ seien $\theta_i\in\mathbb R^{p_i}$ die adaptierbaren Parameter und $b_i$ ein differenzierbarer Readout auf dieselbe geordnete und in ihren Einheiten abgestimmte Menge zulässiger Verhaltensproben:
+Für Modell $`i\in\{A,B\}`$ seien $`\theta_i\in\mathbb R^{p_i}`$ die adaptierbaren Parameter und $`b_i`$ ein differenzierbarer Readout auf dieselbe geordnete und in ihren Einheiten abgestimmte Menge zulässiger Verhaltensproben:
 
-$$
+```math
 b_i:\mathbb R^{p_i}\rightarrow\mathbb R^d,\qquad
 J_i=D b_i(\theta_i)\in\mathbb R^{d\times p_i},\qquad
 v=J_A\Delta_A.
-$$
+```
 
-Die Quellaktualisierung $\Delta_A$ legt damit ein lokales Verhaltensziel $v$ fest. Der Empfänger realisiert dieses Ziel durch seine eigene Parametrisierung. Die Jacobi-Matrizen beschreiben lokale Wirkungen an deklarierten Linearisierungspunkten; ihre Rahmen und Versionen gehören daher zum Transportobjekt.
+Die Quellaktualisierung $`\Delta_A`$ legt damit ein lokales Verhaltensziel $`v`$ fest. Der Empfänger realisiert dieses Ziel durch seine eigene Parametrisierung. Die Jacobi-Matrizen beschreiben lokale Wirkungen an deklarierten Linearisierungspunkten; ihre Rahmen und Versionen gehören daher zum Transportobjekt.
 
 ### 4.2 Realisierung beim Empfänger, Geometrie und Residuen
 
-Sei $W_b\succeq0$ eine Gewichtung der Verhaltensfehler, $\Lambda_B\succ0$ die Parameterkostenmetrik des Empfängers und $\lambda>0$. Das verallgemeinerte lokale Realisierungsproblem lautet:
+Sei $`W_b\succeq0`$ eine Gewichtung der Verhaltensfehler, $`\Lambda_B\succ0`$ die Parameterkostenmetrik des Empfängers und $`\lambda>0`$. Das verallgemeinerte lokale Realisierungsproblem lautet:
 
-$$
+```math
 \Delta_B^\star=\arg\min_\Delta
 (J_B\Delta-v)^\top W_b(J_B\Delta-v)
 +\lambda\Delta^\top\Lambda_B\Delta.
-$$
+```
 
 **Bedingte Aussage 3: eine eindeutige regularisierte Realisierung.** Die quadratische Zielfunktion besitzt eine positiv definite Hesse-Matrix und einen eindeutigen Minimierer mit:
 
-$$
+```math
 (J_B^\top W_bJ_B+\lambda\Lambda_B)\Delta_B^\star=J_B^\top W_bv.
-$$
+```
 
-Für jedes von null verschiedene $u$ gilt für die zugehörige quadratische Form $\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0$; damit ist die positive Definitheit gezeigt. Der euklidische endliche Referenzfall setzt $W_b=I$ und $\Lambda_B=I$. Die Angabe beider Gewichtungen macht die Wahl der Geometrie sichtbar.
+Für jedes von null verschiedene $`u`$ gilt für die zugehörige quadratische Form $`\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0`$; damit ist die positive Definitheit gezeigt. Der euklidische endliche Referenzfall setzt $`W_b=I`$ und $`\Lambda_B=I`$. Die Angabe beider Gewichtungen macht die Wahl der Geometrie sichtbar.
 
-Sei im euklidischen Fall $\Pi_B=J_BJ_B^+$ die Projektion auf den erreichbaren Verhaltensunterraum. Das Residuum zerfällt orthogonal:
+Sei im euklidischen Fall $`\Pi_B=J_BJ_B^+`$ die Projektion auf den erreichbaren Verhaltensunterraum. Das Residuum zerfällt orthogonal:
 
-$$
+```math
 \|J_B\Delta_B^\star-v\|^2
 =\|(I-\Pi_B)v\|^2
 +\|\Pi_Bv-J_B\Delta_B^\star\|^2.
-$$
+```
 
 Der erste Term misst eine unerreichbare Komponente. Der zweite misst die Abweichung innerhalb des erreichbaren Unterraums, einschließlich der durch Regularisierung verursachten Schrumpfung. Eine endliche Aktualisierung wird anhand der tatsächlichen Readout-Änderung zusammen mit ihrem lokalen Approximationsresiduum beurteilt. **H37** macht diese Unterscheidungen zu einem Bestandteil des Transportprotokolls.
 
 ### 4.3 Eine Aktualisierungsweise transportieren
 
-**H38** repräsentiert Adaption durch eine Regel $U_\psi$ mit festgelegtem Geltungsbereich und lokalem Gedächtnis $h_t$. Auf einer Support-Menge $\mathcal D_s$ gilt:
+**H38** repräsentiert Adaption durch eine Regel $`U_\psi`$ mit festgelegtem Geltungsbereich und lokalem Gedächtnis $`h_t`$. Auf einer Support-Menge $`\mathcal D_s`$ gilt:
 
-$$
+```math
 \begin{aligned}
 g_t&=\nabla_\theta\ell_s(\theta_t;\mathcal D_s),\\
 \theta_{t+1}&=\theta_t+U_\psi(g_t,h_t,\theta_t),\\
 h_{t+1}&=V_\psi(g_t,h_t,\theta_t).
 \end{aligned}
-$$
+```
 
-Die Regel deklariert das lesbare Feedback und die Teilmenge der Parameter, die sie aktualisieren darf. Für eine deklarierte Verteilung $\mathcal P$ von Support-/Query-Aufgaben bewertet das Forschungsziel den resultierenden Parameterzustand:
+Die Regel deklariert das lesbare Feedback und die Teilmenge der Parameter, die sie aktualisieren darf. Für eine deklarierte Verteilung $`\mathcal P`$ von Support-/Query-Aufgaben bewertet das Forschungsziel den resultierenden Parameterzustand:
 
-$$
+```math
 \mathcal J(\psi)=
 \mathbb E_{(\mathcal D_s,\mathcal D_q)\sim\mathcal P}
 \left[\ell_q\!\left(\theta_T(\psi;\mathcal D_s);\mathcal D_q\right)\right].
-$$
+```
 
 Support-Daten steuern die inneren Aktualisierungen; Query-Daten bewerten den adaptierten Zustand. Vollständige Differentiation verfolgt die Pfade durch Parameter, Gedächtnis und Support-Gradienten. Eine Variante erster Ordnung verändert ausdrücklich die ausgewählten Gradientenpfade. Diese Unterscheidung ist Teil der Algorithmusdefinition.
 
@@ -219,47 +219,47 @@ Die zentrale Forschungsfrage lautet, ob ein versioniertes Lernobjekt über die z
 
 ### 5.1 Strukturelle Mechanismen und Interventionen
 
-Für ein azyklisches strukturelles Kausalmodell sei $\xi\sim\mu$ die gemeinsame exogene Variable; $I_j$ wähle die von Mechanismus $j$ verwendeten Komponenten aus:
+Für ein azyklisches strukturelles Kausalmodell sei $`\xi\sim\mu`$ die gemeinsame exogene Variable; $`I_j`$ wähle die von Mechanismus $`j`$ verwendeten Komponenten aus:
 
-$$
-X_j=f_j(X_{\operatorname{pa}(j)},\xi_{I_j}),\qquad
-\operatorname{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
-$$
+```math
+X_j=f_j(X_{\mathrm{pa}(j)},\xi_{I_j}),\qquad
+\mathrm{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
+```
 
 **H31** untersucht die Transplantation von Mechanismen mit deklarierten Elternknoten-Grenzen, Einheiten und exogenen Identitäten. Der Ersatz eines Mechanismus spezifiziert ein neues strukturelles System. Durch Erhalt einer gemeinsamen exogenen Belegung können entsprechende kontrafaktische Trajektorien des ursprünglichen und des veränderten Systems verglichen werden.
 
 ### 5.2 Komposition durch eine gemeinsame exogene Verteilung
 
-Jeder lokale Folgezustandskern sei normalisiert. Es werde angenommen, dass die Folgezustandskomponenten bedingt unabhängig sind, wenn der vollständige aktuelle Zustand $s$, die Aktion $a$ und der exogene Wert $\xi$ gegeben sind, und dass jeder Kern nur von seiner deklarierten Grenze abhängt. Für endliche Zustands- und Rauschräume verwendet **H43**:
+Jeder lokale Folgezustandskern sei normalisiert. Es werde angenommen, dass die Folgezustandskomponenten bedingt unabhängig sind, wenn der vollständige aktuelle Zustand $`s`$, die Aktion $`a`$ und der exogene Wert $`\xi`$ gegeben sind, und dass jeder Kern nur von seiner deklarierten Grenze abhängt. Für endliche Zustands- und Rauschräume verwendet **H43**:
 
-$$
+```math
 K(s'\mid s,a)=\sum_\xi\mu(\xi)
 \prod_i K_i(s_i'\mid s_i,a,\xi_{I_i}).
-$$
+```
 
 **Bedingte Aussage 4: normalisierte Weltkomposition.** Unter diesen Annahmen ergibt die Summation über den Produkt-Folgezustandsraum:
 
-$$
+```math
 \sum_{s'}K(s'\mid s,a)
 =\sum_\xi\mu(\xi)\prod_i\sum_{s_i'}K_i(s_i'\mid s_i,a,\xi_{I_i})=1.
-$$
+```
 
-Die gemeinsame Verteilung $\mu$ erhält Abhängigkeiten zwischen exogenen Faktoren. Ein gemeinsam genutzter Faktor verwendet in jeder Komponente, die auf ihn verweist, denselben gezogenen Wert. Zwei Folgezustandsvariablen, die einem gemeinsamen fairen Bit entsprechen, stimmen mit Wahrscheinlichkeit eins überein; zwei unabhängig gezogene faire Bits stimmen mit Wahrscheinlichkeit ein halb überein. Dieses Beispiel zeigt eine konkrete semantische Anforderung der Weltkomposition.
+Die gemeinsame Verteilung $`\mu`$ erhält Abhängigkeiten zwischen exogenen Faktoren. Ein gemeinsam genutzter Faktor verwendet in jeder Komponente, die auf ihn verweist, denselben gezogenen Wert. Zwei Folgezustandsvariablen, die einem gemeinsamen fairen Bit entsprechen, stimmen mit Wahrscheinlichkeit eins überein; zwei unabhängig gezogene faire Bits stimmen mit Wahrscheinlichkeit ein halb überein. Dieses Beispiel zeigt eine konkrete semantische Anforderung der Weltkomposition.
 
 ### 5.3 Ungeklärte Abhängigkeit als Familie von Welten
 
-Sei $\Xi=\prod_j\Xi_j$ der endliche Produktraum des Rauschens, mit einer Randverteilung $\mu_j$ auf jedem Koordinatenraum. Der Kern $K_\eta$ entsteht, indem die gemeinsame Rauschverteilung pro Schritt $\mu$ im vorherigen Kern durch $\eta$ ersetzt wird. Sind nur die Randverteilungen spezifiziert, lautet die zulässige Kopplungsfamilie:
+Sei $`\Xi=\prod_j\Xi_j`$ der endliche Produktraum des Rauschens, mit einer Randverteilung $`\mu_j`$ auf jedem Koordinatenraum. Der Kern $`K_\eta`$ entsteht, indem die gemeinsame Rauschverteilung pro Schritt $`\mu`$ im vorherigen Kern durch $`\eta`$ ersetzt wird. Sind nur die Randverteilungen spezifiziert, lautet die zulässige Kopplungsfamilie:
 
-$$
+```math
 \begin{aligned}
 \mathcal C&=\{\eta\in\mathcal P(\Xi):
-(\operatorname{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
+(\mathrm{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
 \underline V&=\inf_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F],\qquad
 \overline V=\sup_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F].
 \end{aligned}
-$$
+```
 
-Dabei bezeichnet $\mathcal P(\Xi)$ die Menge der Wahrscheinlichkeitsverteilungen, $\operatorname{pr}_j$ eine Koordinatenprojektion und $F$ ein spezifiziertes beschränktes Trajektorienfunktional über einen endlichen Horizont mit deklarierter Anfangsverteilung und Policy. Die Pushforward-Bedingung fixiert jede Randverteilung. Das Intervall beschreibt, wie die gewählte Abfrage von der ungeklärten Kopplung abhängt. Kontinuierliches Rauschen verwendet die entsprechende Integralformulierung.
+Dabei bezeichnet $`\mathcal P(\Xi)`$ die Menge der Wahrscheinlichkeitsverteilungen, $`\mathrm{pr}_j`$ eine Koordinatenprojektion und $`F`$ ein spezifiziertes beschränktes Trajektorienfunktional über einen endlichen Horizont mit deklarierter Anfangsverteilung und Policy. Die Pushforward-Bedingung fixiert jede Randverteilung. Das Intervall beschreibt, wie die gewählte Abfrage von der ungeklärten Kopplung abhängt. Kontinuierliches Rauschen verwendet die entsprechende Integralformulierung.
 
 **H44** wendet explizite Mechanismusänderungen an, um synthetische Forschungswelten zu erzeugen, und erhält ihre Annahmen und Trajektorien-Provenienz. **C16** verbindet diese Welten mit der Fragengenerierung: Eine Umgebung wird zur Quelle von Gegenbeispielen, Aufgabenvarianten und unterscheidbaren Hypothesen für den nächsten Forschungszyklus.
 
@@ -308,54 +308,54 @@ Der endliche lineare H37→H38-Lernquellcode implementiert eine konkrete Live-Ko
 
 ### 7.1 Aufgabenrelative semantische Quotienten
 
-Für eine Familie $\mathcal R$ deterministischer, auf $D$ definierter Abfragen gilt:
+Für eine Familie $`\mathcal R`$ deterministischer, auf $`D`$ definierter Abfragen gilt:
 
-$$
+```math
 x\sim_{\mathcal R}y\iff\forall q\in\mathcal R,\ q(x)=q(y),\qquad
 \mathcal R\subseteq\mathcal R'\Rightarrow[x]_{\mathcal R'}\subseteq[x]_{\mathcal R}.
-$$
+```
 
 **H47** organisiert semantische Auflösung relativ zu den gestellten Fragen. Das Hinzufügen von Abfragen verfeinert Äquivalenzklassen. Eine gespeicherte Abstraktion benötigt daher eine deklarierte Abfragefamilie und einen Verfeinerungsmechanismus, wenn spätere Fragen zusätzliche Unterscheidungen erfordern.
 
-Für eine Zustandsabbildung $f:D\to D$ und eine Vergröberungsabbildung $C:D\to C(D)$ untersucht **H35** den exakten dynamischen Abschluss:
+Für eine Zustandsabbildung $`f:D\to D`$ und eine Vergröberungsabbildung $`C:D\to C(D)`$ untersucht **H35** den exakten dynamischen Abschluss:
 
-$$
+```math
 \exists g:C(D)\to C(D),\ C\circ f=g\circ C
 \iff
 \forall x,y\in D,\ C(x)=C(y)\Rightarrow C(f(x))=C(f(y)).
-$$
+```
 
-Die rechte Bedingung macht $g(C(x))=C(f(x))$ wohldefiniert. Sie legt fest, wann sich eine aggregierte Repräsentation über ihren eigenen Zustand weiterentwickeln kann. Abfrageverfeinerung und dynamischer Abschluss betreffen unterschiedliche Anforderungen eines mehrskaligen Protokolls.
+Die rechte Bedingung macht $`g(C(x))=C(f(x))`$ wohldefiniert. Sie legt fest, wann sich eine aggregierte Repräsentation über ihren eigenen Zustand weiterentwickeln kann. Abfrageverfeinerung und dynamischer Abschluss betreffen unterschiedliche Anforderungen eines mehrskaligen Protokolls.
 
 ### 7.2 Provenienzbewusste Evidenzkomposition
 
-Quellenatome $e,f$ werden als Ereignisse in einem deklarierten gemeinsamen Wahrscheinlichkeitsraum behandelt. **H48** erfasst ihre Beziehungen so, dass die Komposition Ereignisidentität und Abhängigkeit berücksichtigt:
+Quellenatome $`e,f`$ werden als Ereignisse in einem deklarierten gemeinsamen Wahrscheinlichkeitsraum behandelt. **H48** erfasst ihre Beziehungen so, dass die Komposition Ereignisidentität und Abhängigkeit berücksichtigt:
 
-$$
+```math
 \begin{aligned}
 e\lor e&=e,\\
 \Pr(e\cup f)&=\Pr(e)+\Pr(f)-\Pr(e\cap f),\\
 \max\{\Pr(e),\Pr(f)\}&\le\Pr(e\cup f)
 \le\min\{1,\Pr(e)+\Pr(f)\}.
 \end{aligned}
-$$
+```
 
 Das Intervall folgt aus den verfügbaren Randwahrscheinlichkeiten. Ein gewähltes Abhängigkeitsmodell bestimmt den Schnittterm. Quellenprovenienz wird damit Teil der Semantik eines kollektiven Forschungsprotokolls, sodass wiederholte Referenzen, gemeinsame Beobachtungen und Quellenrevisionen konsistent interpretiert werden können.
 
 ### 7.3 Hypothesen unterscheidende Abfragen
 
-Für eine endliche Hypothesenvariable $H$, einen deklarierten Prior $p(h)$ und eine Likelihood $p(y\mid h,q)$ bewertet **H45** eine zulässige Abfrage anhand des erwarteten Informationsgewinns:
+Für eine endliche Hypothesenvariable $`H`$, einen deklarierten Prior $`p(h)`$ und eine Likelihood $`p(y\mid h,q)`$ bewertet **H45** eine zulässige Abfrage anhand des erwarteten Informationsgewinns:
 
-$$
+```math
 \begin{aligned}
 p(y\mid q)&=\sum_h p(h)p(y\mid h,q),\\
-\operatorname{IG}(q)&=\mathsf H(H)
+\mathrm{IG}(q)&=\mathsf H(H)
 -\sum_y p(y\mid q)\mathsf H(H\mid Y_q=y)
 =I(H;Y_q).
 \end{aligned}
-$$
+```
 
-Hier ist $\mathsf H$ die Shannon-Entropie und $Y_q$ nimmt für eine feste Abfrage Werte aus einem endlichen Antwortalphabet an. Posterior-Entropieterme werden nur dort berechnet, wo $p(y\mid q)>0$ gilt. Das Kriterium verbindet die Generierung von Fragen mit ungeklärten Konzepten, Mechanismen oder Weltkopplungen. Ein informativer Forschungsvorschlag spezifiziert seine Hypothesenfamilie und die erwarteten Unterschiede in den Antworten.
+Hier ist $`\mathsf H`$ die Shannon-Entropie und $`Y_q`$ nimmt für eine feste Abfrage Werte aus einem endlichen Antwortalphabet an. Posterior-Entropieterme werden nur dort berechnet, wo $`p(y\mid q)>0`$ gilt. Das Kriterium verbindet die Generierung von Fragen mit ungeklärten Konzepten, Mechanismen oder Weltkopplungen. Ein informativer Forschungsvorschlag spezifiziert seine Hypothesenfamilie und die erwarteten Unterschiede in den Antworten.
 
 <a id="research-program"></a>
 ## 8. Forschungsprogramm: Untersuchungsgegenstände und Messgrößen

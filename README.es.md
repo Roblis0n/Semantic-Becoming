@@ -47,9 +47,9 @@ Las herramientas matemáticas que siguen proporcionan la semántica de estas obl
 
 Representamos la configuración cognitiva del receptor mediante:
 
-$$
+```math
 M=(Z,F,O,P,Q,V,K,W,U,E).
-$$
+```
 
 Los componentes son: estado y símbolos exactos **Z**, marcos de referencia **F**, ontología **O**, programas y definiciones de instrucciones **P**, preguntas **Q**, perspectivas de objetivos internos **V**, relojes y escalas **K**, dinámica del mundo **W**, reglas de aprendizaje **U** y linaje de evidencia **E**. Las versiones de estos componentes se registran por separado. El objetivo externo del usuario permanece como referencia para la tarea de investigación.
 
@@ -66,34 +66,34 @@ Los principales objetos intercambiados son:
 
 ### 2.2 Tipado, efectos y composición
 
-Utilizamos un contrato semántico de mensaje $m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)$, donde $o$ es el objeto cognitivo, $R_m,W_m$ son las huellas de lectura y escritura, $\nu_m$ registra las versiones semánticas y $\pi_m$ registra la procedencia. En un contexto de tipos y versiones $\Gamma$, las obligaciones operacionales propuestas son:
+Utilizamos un contrato semántico de mensaje $`m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)`$, donde $`o`$ es el objeto cognitivo, $`R_m,W_m`$ son las huellas de lectura y escritura, $`\nu_m`$ registra las versiones semánticas y $`\pi_m`$ registra la procedencia. En un contexto de tipos y versiones $`\Gamma`$, las obligaciones operacionales propuestas son:
 
-$$
+```math
 \begin{aligned}
 \Gamma&\vdash m:\tau_{\mathrm{in}}\rightarrow\tau_{\mathrm{out}},\\
-M'&=\mathcal T_m(M),\qquad M\in\operatorname{dom}(\mathcal T_m),\\
+M'&=\mathcal T_m(M),\qquad M\in\mathrm{dom}(\mathcal T_m),\\
 \{\mathsf{pre}_m\}\;&\mathcal T_m\;\{\mathsf{post}_m\},\qquad
-\operatorname{write}(\mathcal T_m)\subseteq W_m.
+\mathrm{write}(\mathcal T_m)\subseteq W_m.
 \end{aligned}
-$$
+```
 
 La terna de Hoare expresa corrección parcial en el dominio declarado. Una composición requiere tipos y versiones de objetos compatibles, dominios intermedios válidos y una poscondición que proporcione la siguiente precondición:
 
-$$
+```math
 \frac{\{P_1\}\mathcal T_{m_1}\{Q_1\}\quad Q_1\Rightarrow P_2\quad
 \{P_2\}\mathcal T_{m_2}\{Q_2\}}
 {\{P_1\}\mathcal T_{m_2}\circ\mathcal T_{m_1}\{Q_2\}}.
-$$
+```
 
 Este contrato proporciona una unidad precisa para componer mecanismos. Una transacción registra las versiones de los objetos resultantes y sus dependencias. Sus condiciones semánticas describen lo que la operación compuesta debe preservar.
 
 ### 2.3 Los cambios de representación transportan operaciones y lecturas
 
-Para $z\in\mathbb R^n$, una operación lineal $T\in\mathbb R^{n\times n}$, una lectura lineal $r\in\mathbb R^{k\times n}$ y un cambio de coordenadas invertible $G\in GL(n)$, se transportan conjuntamente los tres mapas:
+Para $`z\in\mathbb R^n`$, una operación lineal $`T\in\mathbb R^{n\times n}`$, una lectura lineal $`r\in\mathbb R^{k\times n}`$ y un cambio de coordenadas invertible $`G\in GL(n)`$, se transportan conjuntamente los tres mapas:
 
-$$
+```math
 z'=Gz,\qquad T'=GTG^{-1},\qquad r'=rG^{-1},\qquad r'T'z'=rTz.
-$$
+```
 
 La identidad se obtiene al cancelar los mapas inversos adyacentes. Define el objetivo de preservación de observables para **H25**. Una interfaz entre modelos debe especificar qué mapas de estado, operación y lectura puede realizar. Así se hace explícita la relación entre el transporte de coordenadas y el comportamiento del modelo.
 
@@ -102,16 +102,16 @@ La identidad se obtiene al cancelar los mapas inversos adyacentes. Define el obj
 
 ### 3.1 Criterio de distinción para extender conceptos
 
-Sea $D$ un dominio finito declarado y $O=\{p_1,\ldots,p_n\}$ un lenguaje de predicados ejecutables. Los valores de los predicados son verdadero, falso o indefinido. Su firma de respuesta es:
+Sea $`D`$ un dominio finito declarado y $`O=\{p_1,\ldots,p_n\}`$ un lenguaje de predicados ejecutables. Los valores de los predicados son verdadero, falso o indefinido. Su firma de respuesta es:
 
-$$
+```math
 \begin{aligned}
 \sigma_O(x)&=(p_1(x),\ldots,p_n(x))\in\{0,1,\bot\}^n,\\
 \sigma_{O'}(x)&=(\sigma_O(x),c(x)),\qquad O'=O\cup\{c\}.
 \end{aligned}
-$$
+```
 
-**Proposición condicional 1: refinamiento con testigos.** Supongamos que $\sigma_O(x)=\sigma_O(y)$, que la tarea requiere acciones diferentes en $x$ e $y$, y que una candidata $c$ está definida en ambos puntos con $c(x)\ne c(y)$. Entonces las firmas extendidas distinguen $x$ de $y$. Toda función de decisión que dependa exclusivamente de la firma anterior produce el mismo resultado en ambos puntos. Al añadir los valores distintos del predicado queda demostrado el refinamiento.
+**Proposición condicional 1: refinamiento con testigos.** Supongamos que $`\sigma_O(x)=\sigma_O(y)`$, que la tarea requiere acciones diferentes en $`x`$ e $`y`$, y que una candidata $`c`$ está definida en ambos puntos con $`c(x)\ne c(y)`$. Entonces las firmas extendidas distinguen $`x`$ de $`y`$. Toda función de decisión que dependa exclusivamente de la firma anterior produce el mismo resultado en ambos puntos. Al añadir los valores distintos del predicado queda demostrado el refinamiento.
 
 Este es un criterio operacional para formar conceptos: identificar una distinción pertinente para la tarea, construir un predicado que la realice y registrar el dominio y la versión del predicado. Los predicados candidatos leen campos observables declarados. Un ejemplo son dos llaves de forma idéntica cuyos registros permitidos contienen fechas de caducidad distintas: el predicado «válida en el momento actual» separa un par que un lenguaje basado únicamente en la forma identifica como igual.
 
@@ -119,31 +119,31 @@ El procedimiento finito de investigación consiste en reunir obligaciones de dis
 
 ### 3.2 Preguntas como relaciones y mapas que preservan respuestas
 
-Definimos una pregunta $Q$ mediante un espacio de instancias $X_Q$, un espacio de respuestas $Y_Q$ y una relación $C_Q$. Su fibra de soluciones es:
+Definimos una pregunta $`Q`$ mediante un espacio de instancias $`X_Q`$, un espacio de respuestas $`Y_Q`$ y una relación $`C_Q`$. Su fibra de soluciones es:
 
-$$
+```math
 C_Q\subseteq X_Q\times Y_Q,\qquad
 S_Q(x)=\{y\in Y_Q:(x,y)\in C_Q\}.
-$$
+```
 
-Una transformación a $Q'$ proporciona una aplicación de instancias $\tau$ y una traducción inversa $\rho_x$ definida sobre las soluciones de destino. De ello se derivan dos obligaciones independientes:
+Una transformación a $`Q'`$ proporciona una aplicación de instancias $`\tau`$ y una traducción inversa $`\rho_x`$ definida sobre las soluciones de destino. De ello se derivan dos obligaciones independientes:
 
-$$
+```math
 \begin{aligned}
 \text{soundness:}\quad &\rho_x\!\left(S_{Q'}(\tau(x))\right)\subseteq S_Q(x),\\
 \text{completeness:}\quad &S_Q(x)\subseteq\rho_x\!\left(S_{Q'}(\tau(x))\right).
 \end{aligned}
-$$
+```
 
 **Proposición condicional 2: transporte composicional de soluciones.** Si los dominios intermedios pertinentes coinciden, las aplicaciones sucesivas correctas siguen siendo correctas bajo la traducción inversa compuesta. Las aplicaciones sucesivas completas siguen siendo completas al elegir una preimagen en cada paso. Ambas inclusiones proporcionan equivalencia después de la traducción inversa, también para transformaciones que introducen variables auxiliares.
 
-Para $x^2=4$, la representación $x=2s$ con $s\in\{-1,1\}$ conserva ambas soluciones. La restricción al único valor $x=2$ conserva la corrección y pierde completitud. Estas obligaciones proporcionan a **H29** un criterio explícito para comparar reformulaciones de preguntas.
+Para $`x^2=4`$, la representación $`x=2s`$ con $`s\in\{-1,1\}`$ conserva ambas soluciones. La restricción al único valor $`x=2`$ conserva la corrección y pierde completitud. Estas obligaciones proporcionan a **H29** un criterio explícito para comparar reformulaciones de preguntas.
 
-Para transportar programas entre dominios, **H30** exige además una aplicación de objetos $\phi$ y una aplicación de operaciones $\gamma$ que satisfagan:
+Para transportar programas entre dominios, **H30** exige además una aplicación de objetos $`\phi`$ y una aplicación de operaciones $`\gamma`$ que satisfagan:
 
-$$
+```math
 \phi(a(x))=\gamma(a)(\phi(x)).
-$$
+```
 
 Cuando esta relación se cumple en cada estado visitado y cada estado intermedio permanece en su dominio válido, la inducción extiende la relación a una secuencia de operaciones. Esta es la obligación de preservación que vincula analogías, programas ejecutables y transformaciones de preguntas.
 
@@ -152,63 +152,63 @@ Cuando esta relación se cumple en cada estado visitado y cada estado intermedio
 
 ### 4.1 Una interfaz conductual compartida
 
-Para un modelo $i\in\{A,B\}$, sean $\theta_i\in\mathbb R^{p_i}$ los parámetros adaptables y $b_i$ una lectura diferenciable hacia el mismo conjunto ordenado de pruebas conductuales permitidas y con unidades coherentes:
+Para un modelo $`i\in\{A,B\}`$, sean $`\theta_i\in\mathbb R^{p_i}`$ los parámetros adaptables y $`b_i`$ una lectura diferenciable hacia el mismo conjunto ordenado de pruebas conductuales permitidas y con unidades coherentes:
 
-$$
+```math
 b_i:\mathbb R^{p_i}\rightarrow\mathbb R^d,\qquad
 J_i=D b_i(\theta_i)\in\mathbb R^{d\times p_i},\qquad
 v=J_A\Delta_A.
-$$
+```
 
-La actualización de origen $\Delta_A$ especifica así un objetivo conductual local $v$. El receptor realiza ese objetivo mediante su propia parametrización. Los jacobianos describen efectos locales en puntos de linealización declarados, por lo que sus marcos y versiones forman parte del objeto de transporte.
+La actualización de origen $`\Delta_A`$ especifica así un objetivo conductual local $`v`$. El receptor realiza ese objetivo mediante su propia parametrización. Los jacobianos describen efectos locales en puntos de linealización declarados, por lo que sus marcos y versiones forman parte del objeto de transporte.
 
 ### 4.2 Realización por el receptor, geometría y residuos
 
-Sea $W_b\succeq0$ la matriz que pondera los errores conductuales, sea $\Lambda_B\succ0$ la que define el coste de parámetros del receptor y sea $\lambda>0$. El problema generalizado de realización local es:
+Sea $`W_b\succeq0`$ la matriz que pondera los errores conductuales, sea $`\Lambda_B\succ0`$ la que define el coste de parámetros del receptor y sea $`\lambda>0`$. El problema generalizado de realización local es:
 
-$$
+```math
 \Delta_B^\star=\arg\min_\Delta
 (J_B\Delta-v)^\top W_b(J_B\Delta-v)
 +\lambda\Delta^\top\Lambda_B\Delta.
-$$
+```
 
 **Proposición condicional 3: realización regularizada única.** La función objetivo cuadrática tiene una hessiana definida positiva y un minimizador único que satisface:
 
-$$
+```math
 (J_B^\top W_bJ_B+\lambda\Lambda_B)\Delta_B^\star=J_B^\top W_bv.
-$$
+```
 
-Para todo $u$ no nulo, la forma cuadrática correspondiente es $\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0$, lo que demuestra la definición positiva. El caso de referencia finito euclídeo toma $W_b=I$ y $\Lambda_B=I$. La especificación de ambas ponderaciones hace visible la elección de geometría.
+Para todo $`u`$ no nulo, la forma cuadrática correspondiente es $`\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0`$, lo que demuestra la definición positiva. El caso de referencia finito euclídeo toma $`W_b=I`$ y $`\Lambda_B=I`$. La especificación de ambas ponderaciones hace visible la elección de geometría.
 
-En ese caso euclídeo, sea $\Pi_B=J_BJ_B^+$ la proyección sobre el subespacio conductual alcanzable. El residuo se descompone ortogonalmente:
+En ese caso euclídeo, sea $`\Pi_B=J_BJ_B^+`$ la proyección sobre el subespacio conductual alcanzable. El residuo se descompone ortogonalmente:
 
-$$
+```math
 \|J_B\Delta_B^\star-v\|^2
 =\|(I-\Pi_B)v\|^2
 +\|\Pi_Bv-J_B\Delta_B^\star\|^2.
-$$
+```
 
 El primer término mide un componente inalcanzable. El segundo mide el desajuste dentro del subespacio alcanzable, incluida la contracción inducida por la regularización. Una actualización finita se evalúa mediante el cambio real de la lectura, junto con su residuo de aproximación local. **H37** incorpora estas distinciones al protocolo de transporte.
 
 ### 4.3 Transporte de una forma de actualizar
 
-**H38** representa la adaptación mediante una regla $U_\psi$ de alcance definido, con memoria local $h_t$. Sobre un conjunto de soporte $\mathcal D_s$:
+**H38** representa la adaptación mediante una regla $`U_\psi`$ de alcance definido, con memoria local $`h_t`$. Sobre un conjunto de soporte $`\mathcal D_s`$:
 
-$$
+```math
 \begin{aligned}
 g_t&=\nabla_\theta\ell_s(\theta_t;\mathcal D_s),\\
 \theta_{t+1}&=\theta_t+U_\psi(g_t,h_t,\theta_t),\\
 h_{t+1}&=V_\psi(g_t,h_t,\theta_t).
 \end{aligned}
-$$
+```
 
-La regla declara la retroalimentación que puede leer y el subconjunto de parámetros que puede actualizar. Para una distribución declarada $\mathcal P$ de tareas de soporte y consulta, el objetivo de investigación evalúa el estado resultante de los parámetros:
+La regla declara la retroalimentación que puede leer y el subconjunto de parámetros que puede actualizar. Para una distribución declarada $`\mathcal P`$ de tareas de soporte y consulta, el objetivo de investigación evalúa el estado resultante de los parámetros:
 
-$$
+```math
 \mathcal J(\psi)=
 \mathbb E_{(\mathcal D_s,\mathcal D_q)\sim\mathcal P}
 \left[\ell_q\!\left(\theta_T(\psi;\mathcal D_s);\mathcal D_q\right)\right].
-$$
+```
 
 Los datos de soporte impulsan las actualizaciones internas; los datos de consulta evalúan el estado adaptado. La diferenciación completa sigue las rutas de parámetros, memoria y gradiente de soporte. Una variante de primer orden modifica explícitamente las rutas de gradiente seleccionadas. Esta distinción forma parte de la definición del algoritmo.
 
@@ -219,47 +219,47 @@ La pregunta central de investigación es si un objeto de aprendizaje versionado 
 
 ### 5.1 Mecanismos estructurales e intervenciones
 
-Para un modelo causal estructural acíclico, sea $\xi\sim\mu$ la variable exógena conjunta y sea $I_j$ el selector de los componentes utilizados por el mecanismo $j$:
+Para un modelo causal estructural acíclico, sea $`\xi\sim\mu`$ la variable exógena conjunta y sea $`I_j`$ el selector de los componentes utilizados por el mecanismo $`j`$:
 
-$$
-X_j=f_j(X_{\operatorname{pa}(j)},\xi_{I_j}),\qquad
-\operatorname{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
-$$
+```math
+X_j=f_j(X_{\mathrm{pa}(j)},\xi_{I_j}),\qquad
+\mathrm{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
+```
 
 **H31** estudia el trasplante de mecanismos con fronteras de variables progenitoras, unidades e identidades exógenas declaradas. La sustitución de un mecanismo especifica un nuevo sistema estructural. Preservar una asignación exógena compartida permite comparar trayectorias contrafactuales correspondientes entre los sistemas original y modificado.
 
 ### 5.2 Composición mediante una distribución exógena conjunta
 
-Sea cada núcleo local del siguiente estado normalizado. Supongamos que los componentes del siguiente estado son condicionalmente independientes dados el estado actual completo $s$, la acción $a$ y el valor exógeno $\xi$, y que cada núcleo depende únicamente de su frontera declarada. Para espacios finitos de estados y ruido, **H43** utiliza:
+Sea cada núcleo local del siguiente estado normalizado. Supongamos que los componentes del siguiente estado son condicionalmente independientes dados el estado actual completo $`s`$, la acción $`a`$ y el valor exógeno $`\xi`$, y que cada núcleo depende únicamente de su frontera declarada. Para espacios finitos de estados y ruido, **H43** utiliza:
 
-$$
+```math
 K(s'\mid s,a)=\sum_\xi\mu(\xi)
 \prod_i K_i(s_i'\mid s_i,a,\xi_{I_i}).
-$$
+```
 
 **Proposición condicional 4: composición normalizada de mundos.** Bajo esos supuestos, sumar sobre el espacio producto del siguiente estado da:
 
-$$
+```math
 \sum_{s'}K(s'\mid s,a)
 =\sum_\xi\mu(\xi)\prod_i\sum_{s_i'}K_i(s_i'\mid s_i,a,\xi_{I_i})=1.
-$$
+```
 
-La distribución conjunta $\mu$ conserva las dependencias entre factores exógenos. Un factor compartido utiliza el mismo valor muestreado en todos los componentes que lo referencian. Dos variables del siguiente estado iguales a un bit equilibrado compartido coinciden con probabilidad uno; dos bits equilibrados muestreados independientemente coinciden con probabilidad un medio. Este ejemplo identifica una obligación semántica concreta de la composición de mundos.
+La distribución conjunta $`\mu`$ conserva las dependencias entre factores exógenos. Un factor compartido utiliza el mismo valor muestreado en todos los componentes que lo referencian. Dos variables del siguiente estado iguales a un bit equilibrado compartido coinciden con probabilidad uno; dos bits equilibrados muestreados independientemente coinciden con probabilidad un medio. Este ejemplo identifica una obligación semántica concreta de la composición de mundos.
 
 ### 5.3 La dependencia no resuelta como familia de mundos
 
-Sea $\Xi=\prod_j\Xi_j$ el espacio producto finito de ruido, con una marginal de probabilidad $\mu_j$ en cada espacio de coordenadas. Definimos $K_\eta$ sustituyendo por $\eta$ la ley conjunta de ruido por paso $\mu$ en el núcleo anterior. Cuando solo se especifican las marginales, la familia de acoplamientos admisibles es:
+Sea $`\Xi=\prod_j\Xi_j`$ el espacio producto finito de ruido, con una marginal de probabilidad $`\mu_j`$ en cada espacio de coordenadas. Definimos $`K_\eta`$ sustituyendo por $`\eta`$ la ley conjunta de ruido por paso $`\mu`$ en el núcleo anterior. Cuando solo se especifican las marginales, la familia de acoplamientos admisibles es:
 
-$$
+```math
 \begin{aligned}
 \mathcal C&=\{\eta\in\mathcal P(\Xi):
-(\operatorname{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
+(\mathrm{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
 \underline V&=\inf_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F],\qquad
 \overline V=\sup_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F].
 \end{aligned}
-$$
+```
 
-Aquí $\mathcal P(\Xi)$ denota distribuciones de probabilidad, $\operatorname{pr}_j$ es una proyección de coordenadas y $F$ es un funcional acotado especificado de trayectorias sobre un horizonte finito, con una ley inicial y una política declaradas. La condición de medida imagen fija cada marginal. El intervalo describe cómo depende la consulta elegida del acoplamiento no resuelto. El ruido continuo utiliza la formulación integral correspondiente.
+Aquí $`\mathcal P(\Xi)`$ denota distribuciones de probabilidad, $`\mathrm{pr}_j`$ es una proyección de coordenadas y $`F`$ es un funcional acotado especificado de trayectorias sobre un horizonte finito, con una ley inicial y una política declaradas. La condición de medida imagen fija cada marginal. El intervalo describe cómo depende la consulta elegida del acoplamiento no resuelto. El ruido continuo utiliza la formulación integral correspondiente.
 
 **H44** aplica ediciones explícitas de mecanismos para crear mundos sintéticos de investigación y conserva sus supuestos y el linaje de sus trayectorias. **C16** conecta estos mundos con la generación de preguntas: un entorno se convierte en fuente de contraejemplos, variantes de tareas e hipótesis distinguibles para el siguiente ciclo de investigación.
 
@@ -308,54 +308,54 @@ El código de aprendizaje lineal finito H37→H38 implementa una composición es
 
 ### 7.1 Cocientes semánticos relativos a la tarea
 
-Para una familia $\mathcal R$ de consultas deterministas definidas sobre $D$, definimos:
+Para una familia $`\mathcal R`$ de consultas deterministas definidas sobre $`D`$, definimos:
 
-$$
+```math
 x\sim_{\mathcal R}y\iff\forall q\in\mathcal R,\ q(x)=q(y),\qquad
 \mathcal R\subseteq\mathcal R'\Rightarrow[x]_{\mathcal R'}\subseteq[x]_{\mathcal R}.
-$$
+```
 
 **H47** organiza la resolución semántica en relación con las preguntas formuladas. Añadir consultas refina las clases de equivalencia. Una abstracción almacenada necesita, por tanto, una familia declarada de consultas y un mecanismo de refinamiento cuando las preguntas posteriores exigen distinciones adicionales.
 
-Para una aplicación de estados $f:D\to D$ y una aplicación de agregación $C:D\to C(D)$, **H35** estudia el cierre dinámico exacto:
+Para una aplicación de estados $`f:D\to D`$ y una aplicación de agregación $`C:D\to C(D)`$, **H35** estudia el cierre dinámico exacto:
 
-$$
+```math
 \exists g:C(D)\to C(D),\ C\circ f=g\circ C
 \iff
 \forall x,y\in D,\ C(x)=C(y)\Rightarrow C(f(x))=C(f(y)).
-$$
+```
 
-La condición de la derecha hace que $g(C(x))=C(f(x))$ esté bien definida. Especifica cuándo una representación agregada puede evolucionar a través de su propio estado. El refinamiento de consultas y el cierre dinámico abordan requisitos diferentes de un protocolo multiescala.
+La condición de la derecha hace que $`g(C(x))=C(f(x))`$ esté bien definida. Especifica cuándo una representación agregada puede evolucionar a través de su propio estado. El refinamiento de consultas y el cierre dinámico abordan requisitos diferentes de un protocolo multiescala.
 
 ### 7.2 Composición de evidencia sensible a la procedencia
 
-Consideramos los átomos de origen $e,f$ como eventos de un espacio de probabilidad común declarado. **H48** registra sus relaciones para que la composición respete la identidad y la dependencia de los eventos:
+Consideramos los átomos de origen $`e,f`$ como eventos de un espacio de probabilidad común declarado. **H48** registra sus relaciones para que la composición respete la identidad y la dependencia de los eventos:
 
-$$
+```math
 \begin{aligned}
 e\lor e&=e,\\
 \Pr(e\cup f)&=\Pr(e)+\Pr(f)-\Pr(e\cap f),\\
 \max\{\Pr(e),\Pr(f)\}&\le\Pr(e\cup f)
 \le\min\{1,\Pr(e)+\Pr(f)\}.
 \end{aligned}
-$$
+```
 
 El intervalo se deduce de las marginales disponibles. Un modelo de dependencia elegido determina el término de intersección. El linaje de las fuentes pasa así a formar parte de la semántica de un registro de investigación colectiva, lo que permite interpretar de forma coherente las referencias repetidas, las observaciones compartidas y las revisiones de fuentes.
 
 ### 7.3 Consultas que distinguen hipótesis
 
-Para una variable finita de hipótesis $H$, una distribución previa declarada $p(h)$ y una verosimilitud $p(y\mid h,q)$, **H45** evalúa una consulta permitida mediante la ganancia esperada de información:
+Para una variable finita de hipótesis $`H`$, una distribución previa declarada $`p(h)`$ y una verosimilitud $`p(y\mid h,q)`$, **H45** evalúa una consulta permitida mediante la ganancia esperada de información:
 
-$$
+```math
 \begin{aligned}
 p(y\mid q)&=\sum_h p(h)p(y\mid h,q),\\
-\operatorname{IG}(q)&=\mathsf H(H)
+\mathrm{IG}(q)&=\mathsf H(H)
 -\sum_y p(y\mid q)\mathsf H(H\mid Y_q=y)
 =I(H;Y_q).
 \end{aligned}
-$$
+```
 
-Aquí $\mathsf H$ es la entropía de Shannon y $Y_q$ toma valores en un alfabeto finito de respuestas para una consulta fija. Los términos de entropía posterior se evalúan solo donde $p(y\mid q)>0$. El criterio conecta la generación de preguntas con conceptos, mecanismos o acoplamientos de mundos no resueltos. Una propuesta de investigación informativa especifica su familia de hipótesis y las diferencias de respuesta que espera revelar.
+Aquí $`\mathsf H`$ es la entropía de Shannon y $`Y_q`$ toma valores en un alfabeto finito de respuestas para una consulta fija. Los términos de entropía posterior se evalúan solo donde $`p(y\mid q)>0`$. El criterio conecta la generación de preguntas con conceptos, mecanismos o acoplamientos de mundos no resueltos. Una propuesta de investigación informativa especifica su familia de hipótesis y las diferencias de respuesta que espera revelar.
 
 <a id="research-program"></a>
 ## 8. Programa de investigación: qué evaluar y qué medir
