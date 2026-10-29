@@ -41,3 +41,12 @@
 **/*.key
 **/.DS_Store
 **/Thumbs.db
+
+# Curated silent demonstration videos (no audio track)
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/animations/A01/A01.mp4
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/animations/A02/A02.mp4
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/animations/A03/A03.mp4
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/animations/A04/A04.mp4
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/animations/A05/A05.mp4
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/video/intro_90/intro_90_silent_draft.mp4
+!/Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/video/explainer_360/explainer_360_silent_draft.mp4

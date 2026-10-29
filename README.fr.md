@@ -16,7 +16,7 @@ Nous proposons une architecture de calcul intermodèle dans laquelle un message 
 
 Cadre d’implémentation : **`latent-comm-lab`**. Programme de recherche : **Latent Frontier**.
 
-[Problème de recherche](#problem) · [Modèle formel](#formalism) · [Concepts et questions](#language) · [Transfert d’apprentissage](#learning) · [Construction de mondes](#worlds) · [Voies de composition](#composition) · [Analyse structurelle](#analysis) · [Programme de recherche](#research-program) · [Correspondance avec le code](#implementation) · [Perspectives](#outlook) · [Démarrage rapide](#quickstart) · [Lectures](#reading)
+[Problème de recherche](#problem) · [Modèle formel](#formalism) · [Concepts et questions](#language) · [Transfert d’apprentissage](#learning) · [Construction de mondes](#worlds) · [Voies de composition](#composition) · [Analyse structurelle](#analysis) · [Programme de recherche](#research-program) · [Correspondance avec le code](#implementation) · [Perspectives](#outlook) · [Démarrage rapide](#quickstart) · [Lectures](#reading) · [Perspectives à long terme](#future-work)
 
 <a id="problem"></a>
 ## 1. Problème de recherche et contributions proposées
@@ -434,4 +434,31 @@ Commencer par **C10**, **C13** ou **C16** permet de suivre l’une des trois fam
 
 ---
 
-Périmètre du dépôt : code source de recherche, documents de conception et traces de développement. Les fichiers audio et vidéo générés demeurent dans la livraison locale distincte ; les manifestes complets décrivent cet ensemble d’artefacts. La licence du code source reste à choisir par le responsable. Les médias conservent leurs conditions documentées.
+Le dépôt comprend le code de recherche, les documents de conception, les traces de développement et une sélection de vidéos de démonstration sans piste audio. Les voix de synthèse TTS, les vidéos qui les contiennent et les fichiers de travail multimédias historiques restent dans la livraison locale distincte, selon leurs conditions respectives ; les manifestes de livraison complète décrivent cet ensemble. La licence du code reste à choisir par le responsable du projet.
+
+<a id="future-work"></a>
+## 13. Perspectives de recherche à long terme
+
+Le prochain objectif de Semantic Becoming est de relier ses obligations explicites de préservation au sein d’un processus de recherche cumulatif : une révision conceptuelle doit modifier les questions qui peuvent être posées ; une transformation de question doit déterminer ce qu’une exploration doit résoudre ; un monde construit doit fournir des trajectoires interprétables ; et une proposition d’adaptation doit transmettre un effet comportemental spécifié au cycle suivant. Cet objectif donne au projet une direction concrète au-delà de la bibliothèque actuelle de mécanismes finis.
+
+### Des témoins conceptuels finis aux langages computationnels évolutifs
+
+Le critère conceptuel actuel s’applique à un domaine et à une grammaire de prédicats déclarés. Un programme de recherche à plus long terme peut faire évoluer conjointement le domaine, la grammaire et l’ontologie. Chaque extension comporterait des témoins de distinction, des migrations partielles pour les lecteurs et les obligations héritées des versions antérieures. Les questions théoriques portent sur les conditions dans lesquelles ces extensions restent composables, ainsi que sur les rapports entre l’accroissement de l’expressivité, le coût des définitions, la préservation des réponses aux requêtes et les observations nécessaires à l’interprétation des enregistrements anciens. La formation des concepts deviendrait ainsi un objet d’étude durable à travers une succession de collaborations.
+
+### De l’ajustement local des directions aux réseaux de protocoles d’apprentissage
+
+Le transport comportemental fournit un problème de réalisation local. La prochaine étape consiste à étudier la composition de ces transports sur plusieurs mises à jour et entre plusieurs modèles, en explicitant le choix des sondes, les changements de métrique, les points de linéarisation et l’accumulation des erreurs. Les programmes de plasticité ajoutent à ce problème la mémoire et des mises à jour dépendant du retour d’information. Un réseau de recherche organisé autour de ces objets pourrait examiner quels effets d’adaptation se maintiennent entre architectures, lesquels exigent de réidentifier l’espace comportemental partagé et quels protocoles restent utiles lorsque la tâche du destinataire change. Les résultats visés sont des procédures d’adaptation transférables accompagnées de conditions d’application explicites.
+
+### Des composants de monde couplés au développement conjoint des questions et des environnements
+
+La construction de mondes peut être étendue à des environnements présentant une dépendance temporelle, une observation partielle et des frontières causales non résolues. Chaque extension exige un contrat correspondant sur l’état, la mémoire ou le bruit. Des requêtes d’identification pourraient alors sélectionner les interventions qui distinguent des mécanismes ou couplages concurrents, tandis que les trajectoires obtenues produiraient la famille de tâches suivante. La conception des environnements se trouve ainsi reliée à un objectif scientifique précis : créer les conditions permettant de réduire une incertitude pertinente et conserver les hypothèses qui rendent l’observation obtenue interprétable.
+
+### Des artefacts conservés à la continuité des obligations de recherche
+
+Un concept, une démonstration inachevée ou une hypothèse sur un monde peut continuer à exister au-delà du modèle qui l’a proposé. Préserver cette continuité suppose de conserver les définitions exécutables, les obligations de preuve ou d’identification encore ouvertes, les dépendances des sources et les transformations versionnées. L’horizon à plus long terme est un registre de recherche collectif dans lequel un autre participant peut reprendre une investigation partiellement achevée, examiner ce qu’une révision modifie et proposer une continuation compatible. Un tel registre ferait de la découverte cumulative une propriété du protocole et de ses objets, au fil des changements de participants.
+
+### D’un dépôt de mécanismes à une infrastructure de recherche interopérable
+
+La direction pratique consiste à relier les contrats d’objets, la représentation intermédiaire typée, les enregistrements de recherche et les interfaces de modèles au moyen d’implémentations inspectables indépendamment. Des questions de test et des tâches de domaine partagées peuvent établir des objectifs d’interopérabilité concrets. Cognitive Research Studio, Learning Exchange, Shared World Lab et Semantic Asset Library deviennent alors des environnements complémentaires pour travailler sur les mêmes objets de recherche. L’[épilogue sur les frontières de recherche](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) conserve les trente-huit autres branches dans lesquelles ces connexions peuvent être développées.
+
+**L’objectif à long terme est une infrastructure de recherche computationnelle dans laquelle la communication peut élargir les concepts utilisés par les participants, les procédures d’adaptation qu’ils échangent et les mondes qu’ils peuvent étudier ensemble.** Son développement peut être apprécié à travers une sémantique des objets de plus en plus précise, des relations préservées entre compositions et des processus de recherche que des équipes indépendantes peuvent reproduire et prolonger.

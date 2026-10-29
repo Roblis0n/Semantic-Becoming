@@ -16,7 +16,7 @@ Wir schlagen eine modellübergreifende Berechnungsarchitektur vor, in der eine N
 
 Implementierungsrahmen: **`latent-comm-lab`**. Forschungsreihe: **Latent Frontier**.
 
-[Forschungsproblem](#problem) · [Formales Modell](#formalism) · [Konzepte und Fragen](#language) · [Lerntransfer](#learning) · [Weltkonstruktion](#worlds) · [Kompositionsrouten](#composition) · [Strukturanalyse](#analysis) · [Forschungsprogramm](#research-program) · [Zuordnung zum Quellcode](#implementation) · [Ausblick](#outlook) · [Schnellstart](#quickstart) · [Weiterführende Lektüre](#reading)
+[Forschungsproblem](#problem) · [Formales Modell](#formalism) · [Konzepte und Fragen](#language) · [Lerntransfer](#learning) · [Weltkonstruktion](#worlds) · [Kompositionsrouten](#composition) · [Strukturanalyse](#analysis) · [Forschungsprogramm](#research-program) · [Zuordnung zum Quellcode](#implementation) · [Ausblick](#outlook) · [Schnellstart](#quickstart) · [Weiterführende Lektüre](#reading) · [Langfristige Perspektiven](#future-work)
 
 <a id="problem"></a>
 ## 1. Forschungsproblem und vorgeschlagene Beiträge
@@ -434,4 +434,31 @@ Mit **C10**, **C13** oder **C16** kann eine der drei Methodenfamilien durch eine
 
 ---
 
-Repository-Umfang: Forschungsquellcode, Entwurfsdokumente und Entwicklungsaufzeichnungen. Erzeugte Audio-/Videodaten verbleiben in der separaten lokalen Lieferung; die vollständigen Lieferungsmanifeste beschreiben diese Artefakte. Die Wahl der Quellcode-Lizenz steht beim Maintainer noch aus. Für Medien gelten die dokumentierten Bedingungen.
+Das Repository enthält Forschungsquellcode, Entwurfsdokumente, Entwicklungsaufzeichnungen und ausgewählte Demonstrationsvideos ohne Tonspur. TTS-Sprachausgaben, Videos mit diesen Tonspuren und historische Medienarbeitsdateien verbleiben in der separaten lokalen Lieferung unter ihren jeweiligen Bedingungen; die vollständigen Lieferverzeichnisse beziehen sich auf diesen Bestand. Die Quellcodelizenz wird noch vom Projektverantwortlichen festgelegt.
+
+<a id="future-work"></a>
+## 13. Langfristige Forschungsperspektive
+
+Das nächste Ziel von Semantic Becoming besteht darin, die expliziten Erhaltungspflichten zu einem kumulativen Forschungsprozess zu verbinden: Eine Begriffsrevision soll verändern, welche Fragen gestellt werden können; eine Fragentransformation soll festlegen, was eine Untersuchung klären muss; eine konstruierte Welt soll interpretierbare Trajektorien liefern; und ein Adaptionsvorschlag soll eine spezifizierte Verhaltenswirkung in den nächsten Zyklus übertragen. Dieses Ziel gibt dem Projekt eine konkrete Richtung über die gegenwärtige endliche Mechanismenbibliothek hinaus.
+
+### Von endlichen Begriffszeugen zu evolvierenden Rechensprachen
+
+Das gegenwärtige Begriffskriterium gilt für eine deklarierte Domäne und Prädikatgrammatik. In einem längerfristigen Forschungsprogramm können sich Domäne, Grammatik und Ontologie gemeinsam weiterentwickeln. Jede Erweiterung würde Unterscheidungszeugen, partielle Migrationen für bestehende Leser und aus früheren Versionen übernommene Verpflichtungen mitführen. Theoretisch stellt sich die Frage, unter welchen Bedingungen solche Erweiterungen komponierbar bleiben und wie sich der Zuwachs an Ausdruckskraft zu Definitionskosten, der Erhaltung bestehender Anfrageantworten und den für die Interpretation älterer Aufzeichnungen benötigten Beobachtungen verhält. Begriffsbildung würde so zu einem dauerhaften Forschungsgegenstand über mehrere Kooperationen hinweg.
+
+### Von lokaler Richtungsanpassung zu Netzwerken von Lernprotokollen
+
+Verhaltenstransport formuliert ein lokales Realisierungsproblem. Der nächste Schritt betrifft die Komposition solcher Transporte über mehrere Aktualisierungen und Modellgrenzen hinweg, wobei Sondenauswahl, Metrikänderungen, Linearisierungspunkte und Fehlerakkumulation explizit festzuhalten sind. Plastizitätsprogramme ergänzen dieses Problem um Gedächtnis und rückmeldungsabhängige Aktualisierungen. Ein um diese Objekte aufgebautes Forschungsnetzwerk könnte untersuchen, welche Anpassungswirkungen über Architekturgrenzen hinweg bestehen bleiben, wann der gemeinsame Verhaltensraum erneut identifiziert werden muss und welche Protokolle bei veränderten Empfängeraufgaben weiterhin nutzbar sind. Angestrebt werden übertragbare Anpassungsverfahren mit ausdrücklich formulierten Anwendungsbedingungen.
+
+### Von gekoppelten Weltkomponenten zur gemeinsamen Entwicklung von Fragen und Umgebungen
+
+Die Konstruktion von Welten lässt sich auf Umgebungen mit zeitlicher Abhängigkeit, partieller Beobachtung und ungeklärten kausalen Grenzen erweitern. Jede Erweiterung erfordert einen entsprechenden Zustands-, Gedächtnis- oder Rauschkontrakt. Identifizierende Abfragen könnten anschließend Interventionen auswählen, die konkurrierende Mechanismen oder Kopplungen unterscheiden, während die entstehenden Trajektorien die nächste Aufgabenfamilie hervorbringen. Dadurch wird die Gestaltung von Umgebungen mit einem konkreten wissenschaftlichen Ziel verbunden: Bedingungen zu erzeugen, unter denen sich eine relevante Unsicherheit verringern lässt, und die Annahmen zu bewahren, die die resultierende Beobachtung interpretierbar machen.
+
+### Von gespeicherten Artefakten zur Kontinuität von Forschungsaufgaben
+
+Ein Begriff, eine unvollendete Herleitung oder eine Welthypothese kann über das Modell hinaus bestehen, das ihn oder sie eingebracht hat. Diese Kontinuität erfordert ausführbare Definitionen, verbleibende Beweis- oder Identifikationspflichten, Quellenabhängigkeiten und versionierte Transformationen. Die längerfristige Perspektive ist ein kollektives Forschungsprotokoll, in dem ein anderer Teilnehmer eine teilweise abgeschlossene Untersuchung fortsetzen, die Auswirkungen einer Revision prüfen und eine kompatible Fortsetzung beitragen kann. Damit würde kumulative Entdeckung zu einer Eigenschaft des Protokolls und seiner Objekte über wechselnde Teilnehmer hinweg.
+
+### Vom Mechanismen-Repository zu interoperabler Forschungsinfrastruktur
+
+Praktisch sollen Objektkontrakte, typisierte Zwischendarstellung, Forschungsaufzeichnungen und Modellschnittstellen durch unabhängig überprüfbare Implementierungen verbunden werden. Gemeinsame Testfragen und domänenspezifische Aufgaben können konkrete Interoperabilitätsziele festlegen. Cognitive Research Studio, Learning Exchange, Shared World Lab und Semantic Asset Library werden damit zu ergänzenden Umgebungen für die Arbeit mit denselben Forschungsobjekten. Das [Nachwort zu den Forschungsgrenzen](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) hält die weiteren achtunddreißig Verzweigungen fest, in denen diese Verbindungen entwickelt werden können.
+
+**Das langfristige Ziel ist eine rechnergestützte Forschungsinfrastruktur, in der Kommunikation die von Teilnehmern verwendeten Begriffe, die ausgetauschten Anpassungsverfahren und die gemeinsam untersuchbaren Welten erweitern kann.** Ihre Entwicklung lässt sich an einer zunehmend präzisen Objektsemantik, an über Kompositionen hinweg erhaltenen Beziehungen und an Forschungsabläufen beurteilen, die unabhängige Teams reproduzieren und weiterentwickeln können.

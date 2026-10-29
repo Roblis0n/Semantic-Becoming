@@ -16,7 +16,7 @@ We propose a cross-model computational architecture in which a message can carry
 
 Implementation framework: **`latent-comm-lab`**. Research series: **Latent Frontier**.
 
-[Research problem](#problem) · [Formal model](#formalism) · [Concepts and questions](#language) · [Learning transfer](#learning) · [World construction](#worlds) · [Composition routes](#composition) · [Structural analysis](#analysis) · [Research program](#research-program) · [Source correspondence](#implementation) · [Outlook](#outlook) · [Quick start](#quickstart) · [Reading](#reading)
+[Research problem](#problem) · [Formal model](#formalism) · [Concepts and questions](#language) · [Learning transfer](#learning) · [World construction](#worlds) · [Composition routes](#composition) · [Structural analysis](#analysis) · [Research program](#research-program) · [Source correspondence](#implementation) · [Outlook](#outlook) · [Quick start](#quickstart) · [Reading](#reading) · [Long-term outlook](#future-work)
 
 <a id="problem"></a>
 ## 1. Research problem and proposed contributions
@@ -434,4 +434,31 @@ Start with **C10**, **C13** or **C16** to trace one of the three method families
 
 ---
 
-Repository scope: research source, design documents and development records. Generated audio/video remain in the separate local delivery; full-delivery manifests describe that artifact set. Source license awaits maintainer selection. Media retain their documented terms.
+Repository scope: research source, design documents, development records and selected silent demonstration videos. TTS speech, videos containing that speech and historical media working files remain in the separate local delivery under their respective terms; full-delivery manifests describe that artifact set. Source license awaits maintainer selection.
+
+<a id="future-work"></a>
+## 13. Long-term research outlook
+
+The next objective for Semantic Becoming is to connect its explicit preservation obligations into a cumulative research process: a concept revision should change which questions can be posed; a question transformation should determine what an exploration needs to resolve; a constructed world should supply interpretable trajectories; and an adaptation proposal should carry a specified behavioral effect into a subsequent cycle. This objective gives the project a concrete direction beyond the current finite mechanism library.
+
+### From finite concept witnesses to evolving computational languages
+
+The current concept criterion operates on a declared domain and predicate grammar. A longer-term research program can let the domain, grammar and ontology evolve together. Each extension would carry distinguishing witnesses, partial reader migrations and the obligations inherited from earlier versions. The theoretical questions concern when such extensions remain composable and how expressive growth relates to definition cost, retained query behavior and the observations needed to interpret older records. This would turn concept formation into a persistent object of study across a sequence of collaborations.
+
+### From local direction matching to networks of learning protocols
+
+Behavioral transport provides a local realization problem. The next bridge concerns how to compose such transports over multiple updates and model boundaries, with explicit probe selection, metric changes, linearization points and error accumulation. Plasticity programs add memory and feedback-dependent updates to that problem. A research network built around these objects could investigate which adaptation effects persist across architectures, which require re-identification of the shared behavior space, and which protocols remain useful when the receiving task changes. The relevant outcomes are transferable adaptation procedures with stated applicability conditions.
+
+### From coupled world components to question–environment co-development
+
+World construction can be extended toward environments with temporal dependence, partial observation and unresolved causal boundaries. Each extension requires a corresponding state, memory or noise contract. Identifying queries could then select interventions that separate competing mechanisms or couplings, while the resulting trajectories generate the next task family. This connects environment design to a specific scientific objective: construct conditions under which a meaningful uncertainty can be reduced, and retain the assumptions that make the resulting observation interpretable.
+
+### From stored artifacts to continuity of research obligations
+
+A concept, an unfinished derivation or a world hypothesis can outlive the model that introduced it. Preserving that continuity requires executable definitions, remaining proof or identification obligations, source dependencies and versioned transformations. The longer horizon is a collective research record in which another participant can resume a partially completed investigation, inspect what a revision changes and contribute a compatible continuation. Such a record would make cumulative discovery a property of the protocol and its objects across changing participants.
+
+### From a mechanism repository to interoperable research infrastructure
+
+The practical direction is to connect the object contracts, typed IR, study records and model interfaces through independently inspectable implementations. Shared test questions and domain tasks can establish concrete interoperability targets. Cognitive Research Studio, Learning Exchange, Shared World Lab and Semantic Asset Library then become complementary environments for working with the same research objects. The [frontier afterword](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) preserves the thirty-eight further branches in which these bridges can be developed.
+
+**The long-term aim is a computational research infrastructure in which communication can expand the concepts participants use, the adaptation procedures they exchange and the worlds they can investigate together.** Its development can be judged through increasingly precise object semantics, preserved relations across compositions and research workflows that independent teams can reproduce and extend.
