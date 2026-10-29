@@ -1,0 +1,28 @@
+test_learning_owner_and_support_query_plan (test_c20.C20Tests.test_learning_owner_and_support_query_plan) ... ok
+test_meta_partition_and_owner (test_c20.C20Tests.test_meta_partition_and_owner) ... ok
+test_singular_coordinate_map (test_c20.C20Tests.test_singular_coordinate_map) ... ok
+test_unknown_concept_does_not_become_true (test_c20.C20Tests.test_unknown_concept_does_not_become_true) ... ok
+test_wrong_numeric_edge_rejected (test_c20.C20Tests.test_wrong_numeric_edge_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.055s
+
+OK
+{
+  "selected": 5,
+  "excluded_research_entry_tests": [
+    {
+      "test": "test_c20.C20Tests.test_all_stages_have_actual_effect_and_locked_binding",
+      "guarded_calls": [
+        "conservative legacy gate-test exclusion"
+      ]
+    }
+  ],
+  "test_file": "tests/contracts/test_c20.py",
+  "research_state": "NOT_RUN",
+  "budget_scope": "per independent C/X fixture invocation",
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,113 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "noise_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "output": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "unit": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "parents": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "parent_units": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "coefficients": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "bias": {
+            "type": "number"
+          },
+          "noise_terms": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "identity": {
+                  "type": "string",
+                  "pattern": "^.+$"
+                },
+                "coefficient": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "identity",
+                "coefficient"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "allowed_interventions": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "output",
+          "unit",
+          "parents",
+          "parent_units",
+          "coefficients",
+          "bias",
+          "noise_terms",
+          "allowed_interventions"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    }
+  },
+  "required": [
+    "schema_version",
+    "version",
+    "noise_ids",
+    "modules"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H31:resolved-payload:3"
+}

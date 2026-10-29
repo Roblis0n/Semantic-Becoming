@@ -1,0 +1,12 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_gate (test_h31.H31Contracts.test_gate) ... ok
+test_graft_intervention_descendants_rollback (test_h31.H31Contracts.test_graft_intervention_descendants_rollback) ... ok
+test_neural_source_is_lazy_and_gated (test_h31.H31Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_recompute_only_affected (test_h31.H31Contracts.test_recompute_only_affected) ... ok
+test_shared_noise_identity (test_h31.H31Contracts.test_shared_noise_identity) ... ok
+test_units_and_cycles_rejected (test_h31.H31Contracts.test_units_and_cycles_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.005s
+
+OK

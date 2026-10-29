@@ -1,0 +1,9 @@
+test_branch_and_merge (test_h07.DSLTests.test_branch_and_merge) ... ok
+test_cycle_command_and_types (test_h07.DSLTests.test_cycle_command_and_types) ... ok
+test_scope_rejected (test_h07.DSLTests.test_scope_rejected) ... ok
+test_source_gate_and_schema (test_h07.DSLTests.test_source_gate_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.032s
+
+OK

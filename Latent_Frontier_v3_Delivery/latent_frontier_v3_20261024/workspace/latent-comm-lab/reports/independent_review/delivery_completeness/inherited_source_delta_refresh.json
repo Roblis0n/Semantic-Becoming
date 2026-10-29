@@ -1,0 +1,106 @@
+{
+  "reviewed_at_utc": "2026-10-24T18:13:51.478067+00:00",
+  "status": "NO_NEW_DEFECT_IN_THIS_BOUNDED_REFRESH",
+  "scope": "Seven inherited source files changed since the old independent 39-file snapshot, plus strict-JSON compiler source reuse qualification. Not full inherited mechanism acceptance, neural validation or final delivery acceptance.",
+  "files": {
+    "src/latent_comm/mechanisms/h17_legacy/losses.py": "766476217f54455fa7ad3dcf886bf863ff3786c0c1e7fd4308d87a95cbca4641",
+    "run_state/checks/M17_contracts.txt": "89306e1a242dcbb18d9cc0cd77c8ae6f92cd7a4f074bc5bca10bd1bb9dc88e5b",
+    "src/latent_comm/mechanisms/h19_legacy/losses.py": "eba42569bea31a794432f4bedbca86429cca5c56d384fce92f6d115525034325",
+    "run_state/checks/M19_contracts.txt": "d2c5bb4c41ebd4f7f45d1eba4a53678d8bfa4a1672ebcf7bd7f7885011e40676",
+    "src/latent_comm/mechanisms/h20_legacy/losses.py": "eaf10c61349aff3ed81a2e7ab4931f1f3dcea83772c337108bdfcea2a8ce9380",
+    "run_state/checks/M20_contracts.txt": "eb36ae013d6e805eeaff34ea94e475c33d94b99c4037885233b0ee830dd1d2b3",
+    "src/latent_comm/mechanisms/h22_legacy/losses.py": "f2e3d924556e41f95fb53b43b0095c8f62dfb2b7abf67415d25420f9f4fac436",
+    "run_state/checks/M22_contracts.txt": "2b5a509edaacfbada821821ffa53da8b18db61ecc10c0db6c9ede264a3495a15",
+    "src/latent_comm/mechanisms/h23_legacy/losses.py": "a424a2dd2e04072ced2f247d6ea8d7fcd0e964e2016440fca7896861a65a2b57",
+    "run_state/checks/M23_contracts.txt": "9783b4fe5c8832cf1e3862a37949b40dda7d7c4ac8934d1316a2cb855cbe02a4",
+    "src/latent_comm/mechanisms/h24_legacy/losses.py": "158f6cde4e3e4f2e7db093691e381ce27213d23f30e2683d8ab3b4c6a30768c9",
+    "run_state/checks/M24_contracts.txt": "9d1714cb5f3953a9e24654747ed8a213c45d11992e1329f72f3e30c3d317626a",
+    "src/latent_comm/mechanisms/h24_legacy/reference.py": "a7ad10ce160eab7afc92049aaf288bba710b81bb2e17fa5dcd2b6c9755fe4a4b",
+    "src/latent_comm/compiler/source.py": "c5fba28c62b7193ea062046adde08e3cc7ea1cceddc4f2596af9d3e1142b3807",
+    "run_state/checks/A03_finite_json_repair.txt": "53ac5b92b5fdf887e0675b3c59a846527145993b47e95038856332e04915a34e"
+  },
+  "loss_guard_and_mask_checks": [
+    {
+      "task": "M17",
+      "guard_precedes_tensor_imports_and_operations": true,
+      "masked_reductions": 3,
+      "explicit_zero_policies": [
+        "differentiable_zero",
+        "differentiable_zero",
+        "differentiable_zero"
+      ],
+      "owner_log": "run_state/checks/M17_contracts.txt",
+      "review_method": "AST/source-only, no function invocation or tensor execution"
+    },
+    {
+      "task": "M19",
+      "guard_precedes_tensor_imports_and_operations": true,
+      "masked_reductions": 2,
+      "explicit_zero_policies": [
+        "differentiable_zero",
+        "differentiable_zero"
+      ],
+      "owner_log": "run_state/checks/M19_contracts.txt",
+      "review_method": "AST/source-only, no function invocation or tensor execution"
+    },
+    {
+      "task": "M20",
+      "guard_precedes_tensor_imports_and_operations": true,
+      "masked_reductions": 2,
+      "explicit_zero_policies": [
+        "differentiable_zero",
+        "differentiable_zero"
+      ],
+      "owner_log": "run_state/checks/M20_contracts.txt",
+      "review_method": "AST/source-only, no function invocation or tensor execution"
+    },
+    {
+      "task": "M22",
+      "guard_precedes_tensor_imports_and_operations": true,
+      "masked_reductions": 2,
+      "explicit_zero_policies": [
+        "differentiable_zero",
+        "differentiable_zero"
+      ],
+      "owner_log": "run_state/checks/M22_contracts.txt",
+      "review_method": "AST/source-only, no function invocation or tensor execution"
+    },
+    {
+      "task": "M23",
+      "guard_precedes_tensor_imports_and_operations": true,
+      "masked_reductions": 3,
+      "explicit_zero_policies": [
+        "differentiable_zero",
+        "differentiable_zero",
+        "differentiable_zero"
+      ],
+      "owner_log": "run_state/checks/M23_contracts.txt",
+      "review_method": "AST/source-only, no function invocation or tensor execution"
+    },
+    {
+      "task": "M24",
+      "guard_precedes_tensor_imports_and_operations": true,
+      "masked_reductions": 2,
+      "explicit_zero_policies": [
+        "differentiable_zero",
+        "differentiable_zero"
+      ],
+      "owner_log": "run_state/checks/M24_contracts.txt",
+      "review_method": "AST/source-only, no function invocation or tensor execution"
+    }
+  ],
+  "named_prior_findings_preserved": [
+    "M17 covariance loss retains separate live aligned covariance and detached target with explicit mask/denominator contract. Adapter unchanged from prior review.",
+    "M19/M20 ledgers use actual EXACT/POLICY_GRADIENT enum members; every local masked reduction explicitly requests differentiable_zero. M20 task loss remains explicitly stage-normalized input.",
+    "M22/M23/M24 losses now refuse at policy gate before any tensor dependency or operations; prior detached advantages/targets and scoped coordinate masks remain in source.",
+    "M24 retains parent lineage in narrow, ancestor checking in resolve, transitive revoke propagation, canonical alias validation, and atomic local-state publication after validation.",
+    "Compiler strict-JSON parsing shares finite JSON loader; current owner log records nested exponent overflow rejection and all 48 mechanism plus 20 combination recipe compilation checks. No C algorithm change is inferred from this parser-only delta."
+  ],
+  "checks_not_rerun": [
+    "Prior inherited finite suites",
+    "C01-C20 suites",
+    "X01-X12 suites",
+    "Tensor or research-entry paths"
+  ],
+  "execution": "Only stdlib AST parsing, source inspection, JSON and SHA-256. No project imports, model-entry invocation, neural dependency, tensor work, external API or source/state edits."
+}

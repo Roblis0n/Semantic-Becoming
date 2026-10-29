@@ -1,0 +1,266 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:runtime:state:1",
+  "title": "Recovery metadata, not research authorization",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "format",
+        "revision",
+        "cells",
+        "key_versions",
+        "terminal_ids"
+      ],
+      "properties": {
+        "format": {
+          "const": 1
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cells": {
+          "type": "object",
+          "maxProperties": 64,
+          "additionalProperties": {
+            "$ref": "#/$defs/Cell"
+          }
+        },
+        "key_versions": {
+          "type": "object",
+          "maxProperties": 64,
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "terminal_ids": {
+          "type": "array",
+          "maxItems": 64,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "format",
+        "input_digest",
+        "store_digest",
+        "clock",
+        "queue",
+        "budget"
+      ],
+      "properties": {
+        "format": {
+          "const": 1
+        },
+        "input_digest": {
+          "type": "string",
+          "minLength": 1
+        },
+        "store_digest": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "clock": {
+          "$ref": "#/$defs/Clock"
+        },
+        "queue": {
+          "type": "array",
+          "maxItems": 64,
+          "items": {
+            "type": "object",
+            "required": [
+              "sequence",
+              "event"
+            ],
+            "properties": {
+              "sequence": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "event": {
+                "$ref": "#/$defs/Event"
+              }
+            }
+          }
+        },
+        "budget": {
+          "type": "object"
+        }
+      }
+    }
+  ],
+  "$comment": "Semantic validators in transactions.py, scheduler.py, journal.py, files.py and recovery.py enforce hashes, scope, monotonic versions, finite budgets, and exact recovery boundaries. JSON structure alone cannot authorize dispatch.",
+  "$defs": {
+    "VersionSet": {
+      "type": "object",
+      "required": [
+        "schema"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "type": "string",
+          "minLength": 1
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "Cell": {
+      "type": "object",
+      "required": [
+        "value",
+        "type_name",
+        "version",
+        "component",
+        "versions"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "value": {},
+        "type_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "component": {
+          "enum": [
+            "Z",
+            "F",
+            "O",
+            "P",
+            "Q",
+            "V",
+            "K",
+            "W",
+            "U",
+            "E"
+          ]
+        },
+        "versions": {
+          "$ref": "#/$defs/VersionSet"
+        }
+      }
+    },
+    "Clock": {
+      "type": "object",
+      "required": [
+        "scheduler_step",
+        "cognitive_phase",
+        "path_index",
+        "causal_time"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "scheduler_step": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 128
+        },
+        "cognitive_phase": {
+          "type": "string"
+        },
+        "path_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "causal_time": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "Event": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "handler",
+        "payload_json",
+        "due_time",
+        "causal_time",
+        "expected_versions",
+        "attempt"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "handler": {
+          "type": "string",
+          "minLength": 1
+        },
+        "payload_json": {
+          "type": "string"
+        },
+        "due_time": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "causal_time": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attempt": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "expected_versions": {
+          "type": "array",
+          "maxItems": 64
+        }
+      }
+    }
+  }
+}

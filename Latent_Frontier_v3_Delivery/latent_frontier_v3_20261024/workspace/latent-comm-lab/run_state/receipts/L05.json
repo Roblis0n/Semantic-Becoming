@@ -1,0 +1,63 @@
+{
+  "task_id": "L05",
+  "status": "done",
+  "input_digest": "9d56fe9dc826f43458c826fbfc930ea6da2865ccf3b98de951e625cf55330b0f",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/causal_analogy/README.md",
+      "sha256": "0dd7be0f4ce1119e4f73946c5fb0ba4756da23c42209e1eb38eccd2f9b87d361",
+      "bytes": 3758
+    },
+    {
+      "path": "src/latent_comm/learning/causal_analogy/__init__.py",
+      "sha256": "bc34afc36cf0bf19ab4ca706f8c57c063919c08fbb856a0ef35364a4d1f2abb1",
+      "bytes": 10546
+    },
+    {
+      "path": "src/latent_comm/learning/causal_analogy/train.py",
+      "sha256": "d75c3766bbf0c9c14fb1e174b5b89cf67dd23ee129683025f976356aec8f53ba",
+      "bytes": 2338
+    },
+    {
+      "path": "configs/learning/causal_analogy.json",
+      "sha256": "9019e56d92b02519b7d39378dcf2ff0cb603c4e26695029c96c0e7dcecb98fa9",
+      "bytes": 1342
+    },
+    {
+      "path": "tests/research_locked/test_learning_causal_analogy.py",
+      "sha256": "164a8a7b066f38dca393aaeed855d5a00dc4d5c92f051b2b9af21855396d6297",
+      "bytes": 4449
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L05_causal_analogy.txt",
+      "sha256": "410bef12ef6f8b0df2d81ae3e1a98f6101887a6561ef1c7d161246571805c581"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_causal_analogy.txt",
+      "sha256": "2ac0c1fbec7baeeb38782e4ee8f7c2e80c9bfcdf731c6f6d6fa58587bd0778d9"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated H30 morphism and H31 W05 SCM stages. Independent static review identified omitted operation_map behavior owner; corrected stage-local ledger and added phase-owner regression. Ten metadata/AST/bounded stdlib checks passed. No model/guard invocation. All research paths NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.632061+00:00"
+}

@@ -1,0 +1,398 @@
+{
+  "title": "H36：反例不是一句反对",
+  "description": "命题→候选反例→执行检查→修订，文字争论旁路标未证。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "H36：反例不是一句反对",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "分歧必须产生可操作见证",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "08 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64.0,
+      "y": 280,
+      "w": 264.0,
+      "h": 150,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79.0,
+      "y": 295,
+      "w": 234.0,
+      "h": 42.9,
+      "text": "命题",
+      "size": 30,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79.0,
+      "y": 340.5,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "明确域与前提",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          334.0,
+          355.0
+        ],
+        [
+          354.0,
+          355.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          342.0,
+          350.0
+        ],
+        [
+          354.0,
+          355.0
+        ],
+        [
+          342.0,
+          360.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 360.0,
+      "y": 280,
+      "w": 264.0,
+      "h": 150,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 375.0,
+      "y": 295,
+      "w": 234.0,
+      "h": 42.9,
+      "text": "候选反例",
+      "size": 30,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 375.0,
+      "y": 340.5,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "输入与失败后果",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          630.0,
+          355.0
+        ],
+        [
+          650.0,
+          355.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          638.0,
+          350.0
+        ],
+        [
+          650.0,
+          355.0
+        ],
+        [
+          638.0,
+          360.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 656.0,
+      "y": 280,
+      "w": 264.0,
+      "h": 150,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 671.0,
+      "y": 295,
+      "w": 234.0,
+      "h": 42.9,
+      "text": "执行检查",
+      "size": 30,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 671.0,
+      "y": 340.5,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "有限对象见证",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "points": [
+        [
+          926.0,
+          355.0
+        ],
+        [
+          946.0,
+          355.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e019"
+    },
+    {
+      "points": [
+        [
+          934.0,
+          350.0
+        ],
+        [
+          946.0,
+          355.0
+        ],
+        [
+          934.0,
+          360.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e020"
+    },
+    {
+      "x": 952.0,
+      "y": 280,
+      "w": 264.0,
+      "h": 150,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e021"
+    },
+    {
+      "x": 967.0,
+      "y": 295,
+      "w": 234.0,
+      "h": 42.9,
+      "text": "修订",
+      "size": 30,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "x": 967.0,
+      "y": 340.5,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "保留失败分支",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    },
+    {
+      "x": 90,
+      "y": 495,
+      "w": 1100,
+      "h": 42.9,
+      "text": "只有文字争论、没有可检查见证：未证",
+      "size": 30,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e024"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "下一步：为反例写出输入、操作与原命题失效的位置",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e025"
+    }
+  ],
+  "notes": "多一位批评者不自动增加真相。反例要说明在哪个域内、怎样使原命题失败。\n\n原稿画面要求：命题→候选反例→执行检查→修订，文字争论旁路标未证。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第08页\nhypotheses/H36_以分歧生产结构的认知博弈.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm\nhttps://arxiv.org/abs/2006.08381\nhttps://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_08"
+  ],
+  "research_state": "NOT_RUN"
+}

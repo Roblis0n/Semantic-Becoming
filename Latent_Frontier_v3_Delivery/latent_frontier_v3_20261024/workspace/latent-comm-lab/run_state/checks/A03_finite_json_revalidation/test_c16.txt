@@ -1,0 +1,17 @@
+test_actual_synthetic_question_and_macro_ecology (test_c16.C16Tests.test_actual_synthetic_question_and_macro_ecology) ... ok
+test_caller_budget_is_end_to_end (test_c16.C16Tests.test_caller_budget_is_end_to_end) ... ok
+test_nested_budget_returns_partial_before_policy_limit (test_c16.C16Tests.test_nested_budget_returns_partial_before_policy_limit) ... ok
+test_no_changed_world_no_fabricated_novelty (test_c16.C16Tests.test_no_changed_world_no_fabricated_novelty) ... ok
+test_no_real_fact_claim (test_c16.C16Tests.test_no_real_fact_claim) ... ok
+test_non_normalized_edit (test_c16.C16Tests.test_non_normalized_edit) ... ok
+test_scope_retains_static_status (test_c16.C16Tests.test_scope_retains_static_status) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.036s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

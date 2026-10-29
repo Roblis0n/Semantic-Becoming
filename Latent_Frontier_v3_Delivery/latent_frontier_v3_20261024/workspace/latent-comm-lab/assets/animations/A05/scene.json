@@ -1,0 +1,417 @@
+{
+  "id": "A05",
+  "duration": 30,
+  "fps": 12,
+  "scene": {
+    "title": "H43 / H44：共同构造可行动的世界",
+    "description": "核 A 和核 B 使用同一个公平比特 u。有限合成观测附 kernel 来源，不作为独立现实证据。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H43 / H44：共同构造可行动的世界",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "两个核、一个共享外生变量",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "解析示意 / 数学示意 · 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "A05",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 600,
+        "w": 1152,
+        "h": 47,
+        "fill": "#FFFCF5",
+        "stroke": "#CECDBF",
+        "sw": 0,
+        "r": 0,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 64,
+        "y": 235,
+        "w": 310,
+        "h": 150,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e007"
+      },
+      {
+        "x": 79,
+        "y": 250,
+        "w": 280,
+        "h": 48.62,
+        "text": "核 A",
+        "size": 34,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "x": 79,
+        "y": 300.5,
+        "w": 280,
+        "h": 65.78,
+        "text": "x′ = u\n动作 a：读取",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e009"
+      },
+      {
+        "x": 905,
+        "y": 235,
+        "w": 310,
+        "h": 150,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e010"
+      },
+      {
+        "x": 920,
+        "y": 250,
+        "w": 280,
+        "h": 48.62,
+        "text": "核 B",
+        "size": 34,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011"
+      },
+      {
+        "x": 920,
+        "y": 300.5,
+        "w": 280,
+        "h": 65.78,
+        "text": "y′ = u\n单位：bit",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 400,
+        "y": 220,
+        "w": 470,
+        "h": 41.47,
+        "text": "接口一致：a / bit",
+        "size": 29,
+        "color": "#606258",
+        "align": "center",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013",
+        "reveal_at": 6
+      },
+      {
+        "x": 593,
+        "y": 273,
+        "w": 94,
+        "h": 94,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "kind": "ellipse",
+        "id": "e014",
+        "reveal_at": 12
+      },
+      {
+        "x": 590,
+        "y": 292,
+        "w": 100,
+        "h": 61.489999999999995,
+        "text": "u",
+        "size": 43,
+        "color": "#9C5138",
+        "align": "center",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015",
+        "reveal_at": 12
+      },
+      {
+        "points": [
+          [
+            590,
+            320
+          ],
+          [
+            390,
+            320
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e016",
+        "reveal_at": 12
+      },
+      {
+        "points": [
+          [
+            402.0,
+            325.0
+          ],
+          [
+            390,
+            320
+          ],
+          [
+            402.0,
+            315.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e017",
+        "reveal_at": 12
+      },
+      {
+        "points": [
+          [
+            690,
+            320
+          ],
+          [
+            890,
+            320
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e018",
+        "reveal_at": 12
+      },
+      {
+        "points": [
+          [
+            878.0,
+            315.0
+          ],
+          [
+            890,
+            320
+          ],
+          [
+            878.0,
+            325.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e019",
+        "reveal_at": 12
+      },
+      {
+        "x": 64,
+        "y": 450,
+        "w": 1152,
+        "h": 42.9,
+        "text": "synthetic：u = 0 ⇒ (x′, y′) = (0, 0)",
+        "size": 30,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e020",
+        "dynamic": "world_observation",
+        "reveal_at": 18
+      },
+      {
+        "x": 64,
+        "y": 505,
+        "w": 1152,
+        "h": 34.32,
+        "text": "来源：shared_bit_kernel / deterministic_schedule",
+        "size": 24,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e021",
+        "reveal_at": 18
+      },
+      {
+        "x": 64,
+        "y": 550,
+        "w": 1152,
+        "h": 42.9,
+        "text": "新问题：为什么两侧观测总是一致？",
+        "size": 30,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022",
+        "reveal_at": 24
+      }
+    ],
+    "notes": "",
+    "sources": [],
+    "research_state": "NOT_RUN"
+  },
+  "steps": [
+    {
+      "t": 0,
+      "fact": "局部核暴露状态和动作接口",
+      "explanation": "相同维数不是充分契约",
+      "next": "核对单位与动作"
+    },
+    {
+      "t": 6,
+      "fact": "单位 bit，动作 a 已对齐",
+      "explanation": "接口语义一致",
+      "next": "保留同一个外生变量 u"
+    },
+    {
+      "t": 12,
+      "fact": "两核共同读取 u",
+      "explanation": "不能换成两个独立采样值",
+      "next": "展示两个有限状态"
+    },
+    {
+      "t": 18,
+      "fact": "synthetic：同一 u 产生相同输出",
+      "explanation": "观测带 kernel 来源",
+      "next": "由世界内经验提出问题"
+    },
+    {
+      "t": 24,
+      "fact": "新问题：一致性来自何种依赖？",
+      "explanation": "合成知识仍在 synthetic 域",
+      "next": "现实主张另行取证"
+    }
+  ],
+  "mechanisms": [
+    "H43",
+    "H44"
+  ],
+  "math_inputs": {
+    "external_variable": "u",
+    "domain": [
+      0,
+      1
+    ],
+    "A": "x_next=u",
+    "B": "y_next=u",
+    "states": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "P_equal": 1
+  },
+  "research_state": "NOT_RUN",
+  "export_audio": false,
+  "semantic_contract": "Each state is an exact finite mathematical illustration, not a research model output."
+}

@@ -1,0 +1,167 @@
+{
+  "schema_version": 3,
+  "id": "H21",
+  "kind": "mechanism",
+  "title": "\u53cd\u4e8b\u5b9e\u5206\u652f\u7ec4\u5408\u641c\u7d22",
+  "mechanisms": [
+    "H21"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H21_\u53cd\u4e8b\u5b9e\u5206\u652f\u7ec4\u5408\u641c\u7d22.md",
+  "target_base": "src/latent_comm/mechanisms/h21_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H21",
+    "name": "counterfactual_portfolio",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "belief",
+    "data_family": "ambiguous_worlds",
+    "training": {
+      "family": "R12",
+      "loss_terms": [
+        "branch_policy",
+        "counterfactual_task"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.portfolios.tree",
+      "latent_comm.mechanisms.portfolios.selector",
+      "latent_comm.mechanisms.portfolios.reuse"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I21_\u53cd\u4e8b\u5b9e\u5206\u652f\u7ec4\u5408\u641c\u7d22.md",
+  "canonical_module": "latent_comm.mechanisms.h21_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h21_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h21_legacy.adapter.portfolio_scores",
+    "forward_entries": [
+      "latent_comm.mechanisms.h21_legacy.adapter.portfolio_scores",
+      "latent_comm.mechanisms.h21_legacy.adapter.select_branch",
+      "latent_comm.mechanisms.h21_legacy.adapter.fork_prefix"
+    ],
+    "loss_input_bindings": {
+      "logprob": {
+        "producer": "select_branch(sample=True) return[1] after portfolio_scores",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "returns": {
+        "producer": "SupervisionBatch.returns; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "baseline": {
+        "producer": "SupervisionBatch.baseline; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "selected_valid": {
+        "producer": "select_branch return[2]",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "branch_task_losses": {
+        "producer": "stage executable branch task loss; future labels enter losses only",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "branch_valid": {
+        "producer": "stage explicit boolean branch_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "portfolio_scores.score_projection"
+      ],
+      "mechanism_reader": [
+        "stage.branch_task_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h21_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H29 checked question transforms",
+    "H36 executable counterexamples",
+    "H44 synthetic world branches",
+    "H45 active identification"
+  ]
+}

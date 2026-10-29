@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H08:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "nodes",
+    "edges",
+    "preserved_semantics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "ontology",
+        "schema",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "node_id",
+          "role",
+          "features",
+          "anchor"
+        ],
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "role": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "anchor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "target",
+          "relation",
+          "semantics"
+        ],
+        "properties": {
+          "source": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "target": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "relation": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "semantics": {
+            "enum": [
+              "operation",
+              "causal",
+              "correlation",
+              "spatial"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 128
+    },
+    "preserved_semantics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

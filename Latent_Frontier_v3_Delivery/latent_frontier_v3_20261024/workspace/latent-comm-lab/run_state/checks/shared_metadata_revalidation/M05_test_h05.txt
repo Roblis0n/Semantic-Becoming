@@ -1,0 +1,8 @@
+test_pause_resume_no_replay (test_h05.ContinuationTests.test_pause_resume_no_replay) ... ok
+test_source_gate_and_schema (test_h05.ContinuationTests.test_source_gate_and_schema) ... ok
+test_version_and_close (test_h05.ContinuationTests.test_version_and_close) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

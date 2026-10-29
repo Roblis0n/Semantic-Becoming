@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H28：结构改变，而不只是参数改变</title><desc id="desc">势能V=z⁴/4−αz²/2的三幅解析形状。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H28：结构改变，而不只是参数改变</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">一种表示可以分裂成几种有效结构</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">29 / 36</tspan>
+</text>
+<text id="e006" x="64" y="239.96" font-family="Noto Sans CJK SC" font-size="38" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">V(z) = z⁴/4 − αz²/2</tspan>
+</text>
+<polyline id="e007" points="92.000,480.000 412.000,480.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e008" points="252.000,300.000 252.000,535.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e009" points="92.000,305.837 97.333,322.341 102.667,337.608 108.000,351.708 113.333,364.708 118.667,376.674 124.000,387.668 129.333,397.751 134.667,406.980 140.000,415.411 145.333,423.097 150.667,430.089 156.000,436.433 161.333,442.177 166.667,447.362 172.000,452.029 177.333,456.217 182.667,459.961 188.000,463.294 193.333,466.248 198.667,468.850 204.000,471.126 209.333,473.100 214.667,474.793 220.000,476.222 225.333,477.405 230.667,478.354 236.000,479.080 241.333,479.593 246.667,479.899 252.000,480.000 257.333,479.899 262.667,479.593 268.000,479.080 273.333,478.354 278.667,477.405 284.000,476.222 289.333,474.793 294.667,473.100 300.000,471.126 305.333,468.850 310.667,466.248 316.000,463.294 321.333,459.961 326.667,456.217 332.000,452.029 337.333,447.362 342.667,442.177 348.000,436.433 353.333,430.089 358.667,423.098 364.000,415.411 369.333,406.980 374.667,397.751 380.000,387.668 385.333,376.674 390.667,364.708 396.000,351.708 401.333,337.608 406.667,322.341 412.000,305.837" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e010" x="252.0" y="566.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="252.0" dy="0">α = -1</tspan>
+</text>
+<text id="e011" x="395" y="506.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="395" dy="0">z</tspan>
+</text>
+<text id="e012" x="262" y="308.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="262" dy="0">V</tspan>
+</text>
+<polyline id="e013" points="484.000,480.000 804.000,480.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e014" points="644.000,300.000 644.000,535.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="484.000,396.962 489.333,407.493 494.667,416.988 500.000,425.519 505.333,433.153 510.667,439.955 516.000,445.988 521.333,451.312 526.667,455.985 532.000,460.063 537.333,463.597 542.667,466.640 548.000,469.238 553.333,471.438 558.667,473.282 564.000,474.810 569.333,476.062 574.667,477.072 580.000,477.874 585.333,478.499 590.667,478.975 596.000,479.327 601.333,479.580 606.667,479.754 612.000,479.867 617.333,479.936 622.667,479.974 628.000,479.992 633.333,479.998 638.667,480.000 644.000,480.000 649.333,480.000 654.667,479.998 660.000,479.992 665.333,479.974 670.667,479.936 676.000,479.867 681.333,479.754 686.667,479.580 692.000,479.327 697.333,478.975 702.667,478.499 708.000,477.874 713.333,477.072 718.667,476.062 724.000,474.810 729.333,473.282 734.667,471.438 740.000,469.238 745.333,466.640 750.667,463.598 756.000,460.063 761.333,455.985 766.667,451.312 772.000,445.988 777.333,439.955 782.667,433.153 788.000,425.519 793.333,416.988 798.667,407.493 804.000,396.962" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e016" x="644.0" y="566.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="644.0" dy="0">α = 0</tspan>
+</text>
+<text id="e017" x="787" y="506.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="787" dy="0">z</tspan>
+</text>
+<text id="e018" x="654" y="308.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="654" dy="0">V</tspan>
+</text>
+<polyline id="e019" points="876.000,480.000 1196.000,480.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e020" points="1036.000,300.000 1036.000,535.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e021" points="876.000,488.087 881.333,492.644 886.667,496.368 892.000,499.330 897.333,501.598 902.667,503.236 908.000,504.308 913.333,504.873 918.667,504.990 924.000,504.714 929.333,504.098 934.667,503.191 940.000,502.043 945.333,500.699 950.667,499.202 956.000,497.591 961.333,495.907 966.667,494.183 972.000,492.454 977.333,490.750 982.667,489.100 988.000,487.529 993.333,486.060 998.667,484.715 1004.000,483.512 1009.333,482.467 1014.667,481.594 1020.000,480.903 1025.333,480.403 1030.667,480.101 1036.000,480.000 1041.333,480.101 1046.667,480.403 1052.000,480.903 1057.333,481.594 1062.667,482.467 1068.000,483.512 1073.333,484.715 1078.667,486.060 1084.000,487.529 1089.333,489.100 1094.667,490.750 1100.000,492.454 1105.333,494.183 1110.667,495.907 1116.000,497.591 1121.333,499.202 1126.667,500.699 1132.000,502.043 1137.333,503.191 1142.667,504.097 1148.000,504.714 1153.333,504.990 1158.667,504.873 1164.000,504.308 1169.333,503.236 1174.667,501.598 1180.000,499.330 1185.333,496.368 1190.667,492.644 1196.000,488.087" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e022" x="1036.0" y="566.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="1036.0" dy="0">α = 1</tspan>
+</text>
+<text id="e023" x="1179" y="506.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="1179" dy="0">z</tspan>
+</text>
+<text id="e024" x="1046" y="308.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="1046" dy="0">V</tspan>
+</text>
+<text id="e025" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">解析势能结构分岔，仅用于说明路线；不是神经智能相变的实测</tspan>
+</text>
+</svg>

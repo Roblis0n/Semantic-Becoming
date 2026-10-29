@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H29：问题也能被计算</title><desc id="desc">x²=4展开为±2，错误只保留+2用虚线排除。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H29：问题也能被计算</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">改写问题必须保留解关系</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">26 / 36</tspan>
+</text>
+<rect id="e006" x="64" y="300" width="350" height="145" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e007" x="79" y="349.04" font-family="Noto Sans CJK SC" font-size="37" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="79" dy="0">问题：x² = 4</tspan>
+</text>
+<text id="e008" x="79" y="390.41" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">保留全部解的关系</tspan>
+</text>
+<polyline id="e009" points="430.000,370.000 600.000,265.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="587.163,267.052 600.000,265.000 592.418,275.560" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e011" points="430.000,380.000 600.000,490.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e012" points="592.641,479.283 600.000,490.000 587.209,487.679" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e013" x="650" y="264.16" font-family="Noto Sans CJK SC" font-size="48" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="650" dy="0">x = +2</tspan>
+</text>
+<text id="e014" x="650" y="494.16" font-family="Noto Sans CJK SC" font-size="48" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="650" dy="0">x = −2</tspan>
+</text>
+<text id="e015" x="650" y="364.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="650" dy="0">只保留 +2 会丢解</tspan>
+</text>
+<text id="e016" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">每条变换明确：保持全部解、保持部分解，或仅作启发</tspan>
+</text>
+</svg>

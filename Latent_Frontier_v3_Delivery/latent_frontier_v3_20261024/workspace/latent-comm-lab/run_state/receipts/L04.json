@@ -1,0 +1,63 @@
+{
+  "task_id": "L04",
+  "status": "done",
+  "input_digest": "5eb1decf104307041e23540c7dc60e34e680a074b31b91d3961ab5f50ca1974f",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/concept_questions/README.md",
+      "sha256": "75ea0b227a5105edd7c6505fdac79eabf45d371a4672ff6b23d100127e5dcb24",
+      "bytes": 1912
+    },
+    {
+      "path": "src/latent_comm/learning/concept_questions/__init__.py",
+      "sha256": "444414918b2e8554f88b76decd45a1ee427132e50b65f0da2a5b9a32e3ff0716",
+      "bytes": 11316
+    },
+    {
+      "path": "src/latent_comm/learning/concept_questions/train.py",
+      "sha256": "e90928e6035345f904caf80082a57cda70b5bbd70ed14866ac83790e374756e7",
+      "bytes": 2671
+    },
+    {
+      "path": "configs/learning/concept_questions.json",
+      "sha256": "e903277406cc5d3eba6fa07f1fa152122382ec0eb82413cca7e668aa3f5f5c13",
+      "bytes": 1792
+    },
+    {
+      "path": "tests/research_locked/test_learning_concept_questions.py",
+      "sha256": "947bf04d5e19873243c6de8dcd0a4ad303bc7e5745d12786b503e1b05f8b293b",
+      "bytes": 4336
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L04_concept_questions.txt",
+      "sha256": "16bade8c3e844e03d8acb266f4a5c89ee19b7e5737852d4f72a49c01bd9c2d29"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_concept_questions.txt",
+      "sha256": "a257fdaa9777e66cf7c8d85495fb98aee11e5c5149a8c245605d0e8a422f34c3"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Repaired per-variant semantic configuration to match actual W03/W04 role records; seven finite/AST checks pass with two prohibited model-entry tests explicitly excluded. All research NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.625147+00:00"
+}

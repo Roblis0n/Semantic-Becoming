@@ -1,0 +1,38 @@
+{
+  "task_id": "V07",
+  "status": "done",
+  "input_digest": "ba9359abc5da39bba7834d2b5111efe9606d0c2d143cf867ecbbde10999f9290",
+  "outputs": [
+    {
+      "path": "reports/media_qa.json",
+      "sha256": "c68f4dedb97ff6f1116b25c6c0de514f65fc6352b992ef920f0e3c6372c06319",
+      "bytes": 54867
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V07_validation.json",
+      "sha256": "6ff9346cd8194accfb07d5c99c379ccda4842715d20f2112b0b5b3bfc613b89d"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Current dependency hashes verified. All original graphical media plus actual 90/360-second narrated editions and exact cue-boundary subtitles exist. Generated speech/containing videos are personal/noncommercial only; independent sources/PPT/SVG do not automatically inherit that restriction. Actual audition USER_WAIVED_NOT_PERFORMED under20261027scope change. All research paths NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:11:24.002562+00:00",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "opened_checked": true,
+  "timing_verified": true,
+  "timing_scope": "Silent and voiced container durations plus exact synthesized PCM cue boundaries; no word-level alignment or listening",
+  "opened_scope": "Actual A/V full decodes and all measured cue-midpoint still frames for both narrated editions; no auditory review",
+  "audio_listened": false,
+  "media_status_source": "reports/media_qa.json",
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

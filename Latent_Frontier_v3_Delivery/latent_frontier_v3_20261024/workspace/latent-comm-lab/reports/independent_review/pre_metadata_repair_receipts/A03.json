@@ -1,0 +1,76 @@
+{
+  "task_id": "A03",
+  "status": "done",
+  "input_digest": "ce4345c3d3cce91a7996ce99e79d9c7342d0b38270ca79ba23c1bd5962d6fb1d",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compiler/README.md",
+      "sha256": "f8662d479818a01ceede2678dc5b5ff4fee34b6dcb2f4c4875234a545c7e7bfb",
+      "bytes": 2634
+    },
+    {
+      "path": "src/latent_comm/compiler/__init__.py",
+      "sha256": "39425e548a91cf078776bf8318e359da459083057c3e7d5c4ad24e7cec0ea0bf",
+      "bytes": 591
+    },
+    {
+      "path": "src/latent_comm/compiler/export.py",
+      "sha256": "b9ea165fb79275d8c75368e57e0ab940e379ad5325cde20373dc35aa3d914b65",
+      "bytes": 1488
+    },
+    {
+      "path": "src/latent_comm/compiler/mechanism_registry.json",
+      "sha256": "ea49e58b5874a48016b5b86d6d20db17b72ca21e7b19866b666187f419a9cf8b",
+      "bytes": 40434
+    },
+    {
+      "path": "src/latent_comm/compiler/pipeline.py",
+      "sha256": "643a1a46ce5076e48e2514b4e59041357f49bbb69d0ce796131c1a160814a68b",
+      "bytes": 26657
+    },
+    {
+      "path": "src/latent_comm/compiler/registry.py",
+      "sha256": "126aafb5adacee6e53888856268e183b1bef73e8eb5f9e48ceecb9d4120d73f3",
+      "bytes": 2357
+    },
+    {
+      "path": "src/latent_comm/compiler/source.py",
+      "sha256": "4a012e3363679a87013022796385499e0139291fbeb87791fa1e89cb20585bd2",
+      "bytes": 4025
+    },
+    {
+      "path": "src/latent_comm/compiler/types.py",
+      "sha256": "001c462f7067fb9e455190ab69d6bc2f92641105dbe2530bcc827abcd44d9ca8",
+      "bytes": 3376
+    },
+    {
+      "path": "src/latent_comm/cli/compile.py",
+      "sha256": "d0051aef83f412f32c2d35ad0706371519635df5ad83d2c31c7aad5eda32f236",
+      "bytes": 983
+    },
+    {
+      "path": "tests/compiler/test_compiler.py",
+      "sha256": "467b145f84db3279c81dd8cd9da063552096ad8deecfb68c1ae3ad92a4aeab62",
+      "bytes": 9083
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A03_compiler.txt",
+      "sha256": "b9010eed74c37bedb9db3eaecee161882453dcdfb2eb368ba50f02602e9a976e"
+    },
+    {
+      "path": "run_state/checks/A03_static.json",
+      "sha256": "0368c19d5ce52fc98b4e1b8fe9fb333b47ff08e7be5d57fc4df0f9d461c2cbe7"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "34 actual stdlib compiler tests passed after final A02 repairs. All 48 typed mechanism contracts and 68 supplied recipe declarations compile without model imports. Seven passes, source diagnostics, explicit migrations, transitive role and dependency-version checks, bounded loops and exact carried-state contracts. Unbound high-level combination wiring is explicitly warned, not invented. Future research budgets preserved; NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:07:28.573222+00:00"
+}

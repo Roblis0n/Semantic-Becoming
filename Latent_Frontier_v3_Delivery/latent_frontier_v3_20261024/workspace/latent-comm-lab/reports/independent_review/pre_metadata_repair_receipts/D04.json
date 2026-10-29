@@ -1,0 +1,62 @@
+{
+  "task_id": "D04",
+  "status": "done",
+  "input_digest": "34704c0770daca0a41479d6c4097b22000f5e1483031c78495a526593a0bb335",
+  "outputs": [
+    {
+      "path": "prompts/model_templates/README.md",
+      "sha256": "924abb36a7278af215413eff890ea7adf60643f5f47ddaabc5a7f2e0e61c55ce",
+      "bytes": 1750
+    },
+    {
+      "path": "prompts/model_templates/compiler.py",
+      "sha256": "e2b2fbbd4282c2da6d787ff889bc565212100eac9ad9e35e2a970cdacd3ec43c",
+      "bytes": 4174
+    },
+    {
+      "path": "prompts/model_templates/critic.jinja",
+      "sha256": "7e5d4da974b158b442b62ff860bf66e75d08ca80b23cf7fcc70d228b73c00e41",
+      "bytes": 743
+    },
+    {
+      "path": "prompts/model_templates/receiver.jinja",
+      "sha256": "ba877a9731c235f2cdcea8359d14f662084a909cef4e9c94719b34b48619a520",
+      "bytes": 684
+    },
+    {
+      "path": "prompts/model_templates/sender.jinja",
+      "sha256": "d15dde4af1d4f11262e166f50342c2cb983b5ceb4f8049b17d2a786254ce0bb9",
+      "bytes": 748
+    },
+    {
+      "path": "prompts/model_templates/test_contracts.py",
+      "sha256": "0c971e6036a75af141b6f37d38b5bb8842b7127338545fc8c8dcf98361e01d29",
+      "bytes": 3561
+    },
+    {
+      "path": "prompts/model_templates/world_proposer.jinja",
+      "sha256": "8d22b4e1686e79d27f2c934c617f7b54bf43855377dc8533f7167540fd55245d",
+      "bytes": 837
+    },
+    {
+      "path": "specs/role_view_contracts.json",
+      "sha256": "9a35625e7e8ea318a69c894df62f61d40308d9c571bb8ace519a128c3110c245",
+      "bytes": 5628
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/D04_templates.txt",
+      "sha256": "a110f00520a644d23fce6fa4fc59d572cff6347ff675a1ae2ecc7418e21f9ddb"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four typed role templates and 16 actual stdlib contracts; recursive metadata-field rejection and finite exponent parsing repair independently reported boundary gaps. No models called; auxiliary roles cannot widen source visibility.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:29:30.972235+00:00"
+}

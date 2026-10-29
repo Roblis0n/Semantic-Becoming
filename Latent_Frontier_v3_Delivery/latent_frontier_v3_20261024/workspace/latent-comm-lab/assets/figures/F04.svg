@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">世界核的共同梦境</title><desc id="desc">两个世界核共享外生变量和动作接口，产生带来源的合成观测与新问题。现实证据在独立命名空间，不接受合成观测作为独立现实证据回流。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">世界核的共同梦境</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">共享噪声是语义的一部分</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">F04</tspan>
+</text>
+<rect id="e006" x="64" y="250" width="260" height="150" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e007" x="79" y="292.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="79" dy="0">模块 A</tspan>
+</text>
+<text id="e008" x="79" y="331.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">x′ = f(x, a, u)</tspan>
+<tspan x="79" dy="31.05">单位与接口</tspan>
+</text>
+<rect id="e009" x="470" y="250" width="260" height="150" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e010" x="485" y="292.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="485" dy="0">模块 B</tspan>
+</text>
+<text id="e011" x="485" y="331.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="485" dy="0">y′ = g(y, a, u)</tspan>
+<tspan x="485" dy="31.05">动作接口 a</tspan>
+</text>
+<ellipse id="e012" cx="395.0" cy="220.0" rx="35.0" ry="35.0" fill="#F0DDD1" stroke="#9C5138" stroke-width="2"/>
+<text id="e013" x="395.0" y="229.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="395.0" dy="0">u</tspan>
+</text>
+<polyline id="e014" points="365.000,239.000 280.000,250.000" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="292.542,253.419 280.000,250.000 291.259,243.501" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e016" points="425.000,239.000 500.000,250.000" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e017" points="488.853,243.312 500.000,250.000 487.401,253.206" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e018" x="320" y="186.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="320" dy="0">同一个外生变量</tspan>
+</text>
+<polyline id="e019" points="194.000,400.000 194.000,430.000" fill="none" stroke="#725D7C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e020" points="194.000,430.000 800.000,430.000" fill="none" stroke="#725D7C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e021" points="800.000,430.000 800.000,330.000" fill="none" stroke="#725D7C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e022" points="735.000,330.000 850.000,330.000" fill="none" stroke="#725D7C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e023" points="838.000,325.000 850.000,330.000 838.000,335.000" fill="none" stroke="#725D7C" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e024" x="860" y="250" width="356" height="150" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e025" x="875" y="292.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="875" dy="0">synthetic 世界</tspan>
+</text>
+<text id="e026" x="875" y="331.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="875" dy="0">观测 O → 新问题 Q</tspan>
+<tspan x="875" dy="31.05">携带 kernel / seed 来源</tspan>
+</text>
+<rect id="e027" x="64" y="466" width="666" height="98" rx="0" fill="none" stroke="#606258" stroke-width="2" stroke-dasharray="8 6"/>
+<text id="e028" x="90" y="511.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="90" dy="0">现实证据：独立命名空间与来源</tspan>
+</text>
+<text id="e029" x="850" y="488.0" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="850" dy="0">无回流为独立现实证据</tspan>
+</text>
+<polyline id="e030" points="1035.000,420.000 1035.000,450.000" fill="none" stroke="#9C4540" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e031" points="1018.000,450.000 1052.000,450.000" fill="none" stroke="#9C4540" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e032" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">有限示意：x′ = u，y′ = u；共享公平比特使 P(x′ = y′) = 1</tspan>
+</text>
+</svg>

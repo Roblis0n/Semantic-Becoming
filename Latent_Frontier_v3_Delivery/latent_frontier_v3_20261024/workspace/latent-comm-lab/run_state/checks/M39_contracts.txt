@@ -1,0 +1,12 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_commit_conflict_and_compensation (test_h39.H39Contracts.test_commit_conflict_and_compensation) ... ok
+test_crash_after_publish_rolls_forward (test_h39.H39Contracts.test_crash_after_publish_rolls_forward) ... ok
+test_crash_before_publish_aborts (test_h39.H39Contracts.test_crash_before_publish_aborts) ... ok
+test_external_and_gate (test_h39.H39Contracts.test_external_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h39.H39Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_read_dependency_even_disjoint_write (test_h39.H39Contracts.test_read_dependency_even_disjoint_write) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK

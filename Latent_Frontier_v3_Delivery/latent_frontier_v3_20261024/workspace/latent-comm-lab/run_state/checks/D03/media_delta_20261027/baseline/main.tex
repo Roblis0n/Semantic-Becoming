@@ -1,0 +1,4485 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  10pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Noto Serif CJK SC}
+  \setsansfont[]{Noto Sans CJK SC}
+  \setmonofont[]{Noto Sans Mono CJK SC}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=22mm]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{xurl}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\setlength{\emergencystretch}{3em}
+\AtBeginDocument{\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Semantic Becoming}
+\fancyhead[R]{\small 前沿机制提案 / 无模型实测}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{16pt}
+\AtBeginDocument{\renewcommand{\contentsname}{目录}}
+
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Semantic Becoming 可改写认知的跨模型计算},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Semantic Becoming 可改写认知的跨模型计算}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{前沿机制提案 / 无模型实测}
+\author{}
+\date{2026年10月24日}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+研究总稿，2026年10月24日。研究状态：\nolinkurl{NOT_RUN}。
+
+\section{摘要}\label{ux6458ux8981}
+
+本项目研究一种比交换答案更强的通信对象：消息可以携带作用于状态的操作、可计算概念、问题之间的答案关系、学习方向、更新程序和环境动力学。核心问题不是这些对象能否统一编码为向量，而是接收者在什么条件下能够使用它们，并保留原问题的意义、证据的身份和操作的作用域。
+
+总稿围绕三条相互连接但不互相代替的主线展开。概念主线研究局部解释冲突如何形成可检查的区分见证，并推动本体、问题和指令语言的修订；学习主线研究如何在共同可观察行为上运输改进方向，以及如何传递受限的更新规则；世界主线研究可组合的因果模块与随机转移核如何形成新的假想环境，同时阻止合成数据自证现实。轨迹计算、不可全局拼合的知识、多尺度闭合、概念分岔作为独立分支保留，不被压成同一损失或同一性能排行榜。
+
+本文给出明确对象、条件推导、反例、源码和学习目标的对应关系。登记范围为48个机制、20条组合、68份机制或组合配方和12个终局的有限架构入口；另有38条未实现的未来分叉。源码完成与模型能力成立分别判断。当前没有模型初始化、权重加载、前向、训练、评估或基准实测；所有模型结果保持
+\nolinkurl{NOT_RUN}。既有来源仅按已记录的核验深度使用，标准代数、概率、程序语义和优化原理不作为项目的新数学。
+
+\section{1
+研究问题与主张层次}\label{ux7814ux7a76ux95eeux9898ux4e0eux4e3bux5f20ux5c42ux6b21}
+
+\subsection{1.1
+通信究竟改变什么}\label{ux901aux4fe1ux7a76ux7adfux6539ux53d8ux4ec0ux4e48}
+
+设一个计算系统拥有状态、操作、可观察结果、目标、更新规律和环境。固定这些结构时，通信通常只是把一项已经求得的信息送给接收者。若消息成为作用函数，它可以在发送者从未见过的接收状态上继续计算；若消息成为谓词定义，它可以改变哪些状态能够被区分；若消息成为问题变换，它可以改变搜索的变量和解空间；若消息成为更新规则或世界核，它还可以改变后续学习和探索所处的条件。
+
+这种扩张必须付出可识别的语义成本。传函数需要定义域、复合顺序和读写接口；传概念需要可执行含义、证据来源和旧读者迁移；传世界需要状态边界、随机变量身份与联合分布。一个能产生流畅解释的字符串并不自动具备这些结构。项目因此以``新增了什么对象和操作、保持了什么关系、在哪个反例上区别于普通协作''为机制的入选标准，不以短期模型分数决定保留与否。
+
+既有潜通信、模型替换接口、轨迹到状态编译与缓存通信提供直接背景
+{[}\nolinkurl{SBV3_S01,} \nolinkurl{SBV3_S02,} \nolinkurl{SBV3_S03,}
+\nolinkurl{SBV3_S04,}
+\nolinkurl{SBV3_S05}{]}。本文的候选研究空间是把交换单位进一步扩展为版本化、可组合、可迁移的认知对象。这里的``候选''具有实质含义：来源相近不等于已经存在相同协议，找到不同对象也不等于取得历史优先权。
+
+\subsection{1.2
+五种主张不能互换}\label{ux4e94ux79cdux4e3bux5f20ux4e0dux80fdux4e92ux6362}
+
+D 表示定义、恒等式和条件推导；A 表示推导或接口依赖的前提；H
+表示真实模型能否学习并利用这些对象的机制假设；V
+表示超出现有有限实现的系统愿景；E 表示经验研究结论。本轮 E
+为空。本文出现的有限数值只用于解释 D
+的特殊情形或构造反例，不是模型测量值。
+
+例如，同时运输状态、操作与读出的共轭恒等式属于
+D；真实固定模型具有可实现的相应读写接口属于
+A；这种接口能提高异构协作属于 H；不依赖固定模型个体的认知连续体属于
+V。前一层的成立并不消除后一层的研究工作。相同原则适用于概念可分性、元梯度链式法则和世界核归一性。
+
+\subsection{1.3
+完整覆盖与集中论证}\label{ux5b8cux6574ux8986ux76d6ux4e0eux96c6ux4e2dux8bbaux8bc1}
+
+48个机制构成对象库，20条组合构成有类型边的管线，68份配方等于48加20，不包括12个终局。终局是有限入口与假设链，不另算12项已验证算法。单篇后续论文宜集中一个可反驳主张；本总稿负责保存全谱系，避免集中叙事时悄悄删掉较远分支。
+
+正文先展开三条主线，再给不同数学路线和训练语义，最后提供完整实现索引。所有附录中的实现路径均相对目标仓库
+\nolinkurl{WORK_ROOT}；\nolinkurl{PLAN_ROOT}
+表示只读设计包根目录。原始配方位于
+\nolinkurl{PLAN_ROOT}/recipes，目标绑定配置位于 configs/mechanisms 或
+configs/compositions，二者不混用。
+
+\section{2 元状态
+对象身份与控制边界}\label{ux5143ux72b6ux6001-ux5bf9ux8c61ux8eabux4efdux4e0eux63a7ux5236ux8fb9ux754c}
+
+\subsection{2.1
+被研究修改的对象}\label{ux88abux7814ux7a76ux4feeux6539ux7684ux5bf9ux8c61}
+
+定义元状态 \(M=(Z,F,O,P,Q,V,K,W,U,E)\)。Z 是状态与符号值，F
+是坐标框架和局部图册，O 是本体，P 是指令与程序，Q 是问题图，V
+是内部目标视角，K 是时间和尺度结构，W 是世界动力学，U 是学习规则，E
+是证据谱系。一次变化附带读取集合、写入集合、前置条件、后置条件、作用域、来源和逆操作或迁移说明。
+
+这些分量不必放进每个消息。不可变引用指向已登记的对象；引用解析必须同时检查类型、版本、角色可见性和递归依赖。字符串形如
+frame:v1:source
+只是命名空间身份，不是任意文件或网络地址。缺失对象返回未绑定，未知数值返回未知，不用零向量补齐。
+
+控制面包含用户的外部目标、预算、隐私范围、运行禁令和发布权限。它不属于可随研究变化的
+M。H32 改变内部目标的表达，不改变目标；H38 更新获准
+adapter，不更新权限校验器；H40
+新增纯语言宏，不新增系统执行能力。类型正确与获得运行授权是两件事。
+
+\subsection{2.2
+版本是语义依赖}\label{ux7248ux672cux662fux8bedux4e49ux4f9dux8d56}
+
+state、schema、ontology、isa、frame、world、task、evidence
+分开记录。schema 版本说明字段如何读取，ontology
+版本说明概念如何解释，isa 版本说明操作如何执行，frame
+说明数值在哪个坐标系，world 和 evidence
+决定结论的生成条件。把它们压成一个递增整数无法判断缓存是否仍有意义。
+
+旧对象保留旧读者。概念分裂为两个子类时，旧记录若缺区分字段，只能迁移为集合或
+unknown，不能猜一个子类。压缩态丢失细节后，新查询需要原信息或新观测。所谓
+inverse 必须满足实际的反演关系；否则应称补偿、重算或有损迁移。
+
+源码中的 LiveTensor 保留计算图身份；StoredTensor
+是存储记录，恢复时要求重算。序列化、队列或磁盘文件不会保留自动微分链。缓存键和检查点必须包含真正影响结果的版本集合、输入摘要、配置与后端身份。
+
+\subsection{2.3 四类执行边}\label{ux56dbux7c7bux6267ux884cux8fb9}
+
+\nolinkurl{exact_symbolic}
+给出有限逻辑、程序或矩阵语义；\nolinkurl{differentiable}
+表示未来计算图中的实值路径；\nolinkurl{discrete_search}
+表示有上限的结构选择；hybrid
+必须声明连接点及估计器。相同机制可以同时有有限参考解释器和神经适配源码，但前者运行成功不构成后者的能力证据。
+
+源数据经过物理白名单投影形成
+\nolinkurl{sender_view}、\nolinkurl{receiver_view} 和
+\nolinkurl{supervision_view}。标签、隐藏解、生成种子、样本身份暗号与
+oracle trace 不进入前两者，递归 ObjectRef
+也受同样规则。监督可以评价候选，不能回流到候选的公开条件。世界编号和生态位编号可以用于索引与分组，不能作为替代推理的输入特征。
+
+\section{3 主线一
+交流如何产生可计算语言}\label{ux4e3bux7ebfux4e00-ux4ea4ux6d41ux5982ux4f55ux4ea7ux751fux53efux8ba1ux7b97ux8bedux8a00}
+
+\subsection{3.1
+从无法拼合开始而非从强制共识开始}\label{ux4eceux65e0ux6cd5ux62fcux5408ux5f00ux59cbux800cux975eux4eceux5f3aux5236ux5171ux8bc6ux5f00ux59cb}
+
+设局部解释持有不同变量域和限制映射。H26 把交叠一致性写成
+\(Mz=b\)，硬锚写成 \(Az=a\)。若锚可行，取 \(z=z_0+Nu\)，其中 N
+张成锚矩阵的零空间，问题化为最小化
+\(\|MNu-(b-Mz_0)\|^2\)。最小残差是右端到矩阵像空间的正交距离；零残差才表示所声明约束相容。非零残差是有用输出，不应被训练目标自动消灭。
+
+三条约束 \(x-y=0,y-z=0,z-x=1\)
+的残差和恒为负一，平方和至少为三分之一。最小二乘达到这个界仍不满足三条原约束。这一有限反例要求系统解释冲突，而非给折中值贴上共识标签。无锚的齐次系统总有零解，零解存在也不说明形成了有意义的知识。
+
+冲突有多种原因：错误观测、单位混用、限制映射错误、语境不同，或缺少区分变量。只有最后一种能够支持概念修订。因此
+H26 到 H27
+不是必然链：分域、扩变量、撤回来源、保留未决都是合法后继。图层与层扩散提供既有数学背景
+{[}\nolinkurl{SBV3_S07,}
+\nolinkurl{SBV3_S08}{]}；当前程序计算的是有限仿射残差和候选冲突集，不声称已经求得自然语言知识的高阶上同调。
+
+\subsection{3.2
+概念诞生的可区分标准}\label{ux6982ux5ff5ux8bdeux751fux7684ux53efux533aux5206ux6807ux51c6}
+
+旧谓词族 \(P_0\) 在有限域 D 上定义响应签名
+\(\sigma_0(x)\)，每个值可为真、假或未知。若
+\(\sigma_0(x)=\sigma_0(y)\)，任何只通过旧签名决策的函数都无法区分 x 与
+y。若任务要求不同动作，这就是旧语言不足的见证。新谓词 c 只有在有定义且
+\(c(x)\ne c(y)\) 时才打破这个等价类；给旧签名改名不满足条件。
+
+以两把形状相同的钥匙为例，旧谓词只检查形状，公开记录中的授权期限分别为1和3，当前时刻为2。谓词``当前时刻不晚于授权期限''可区分两者。表达能力增加依赖此前未被旧谓词使用、但已获准读取的期限字段。若期限缺失，答案是未知；不能从隐藏任务标签制造一个看似聪明的新概念。
+
+H27 在有界语法中枚举可执行
+AST，先满足区分义务，再比较编码长度与漂移代理。当前有限搜索的 unknown
+比例不是历史语义漂移；未来连续学习另有旧读者行为一致性损失。二者必须分别解释。有限域上外延相同的两个程序不等于全域同义：在域
+\{0,1\} 上``x非负''和 True 相同，加入负一即分离。
+
+\subsection{3.3 反例
+迁移与概念寿命}\label{ux53cdux4f8b-ux8fc1ux79fbux4e0eux6982ux5ff5ux5bffux547d}
+
+H36
+用可执行反例约束修订。两个参与者意见相反只形成待查分歧，意见相同也可能共同犯错。``偶数都能被4整除''由2反驳，互相重复该命题不能成为验证。反例驱动合成具有明确近邻
+{[}\nolinkurl{SBV3_N14}{]}；本项目研究的是把见证、修订后的定义与跨模型迁移整合为通信协议。
+
+若候选集合有限，每轮排除当前失败候选并累积所有反例，就有有限终止结论，但不保证存在正确候选。当前
+H36 的有限修订器与完整通用 CEGIS
+的能力范围并不相同。预算耗尽保留搜索前沿，不等于命题不可能或语言不能扩展。
+
+本体修订必须同时更新消费者和读者。出生、拆分、合并、退休是不同操作。退休保存历史定义和适用域，并不意味着模型参数已遗忘。H39
+可把本体、ISA 和消费者迁移原子地发布；H48
+保存支持与撤回依赖。事务正确并不证明新概念正确，来源可追踪也不等于来源可信。
+
+\subsection{3.4
+问题本身作为消息}\label{ux95eeux9898ux672cux8eabux4f5cux4e3aux6d88ux606f}
+
+H29 把问题定义为关系 \(C\subseteq X\times Y\)，实例 x 的解纤维为
+\(S_Q(x)\)。变换包含实例映射 \(\tau\) 和目标解回译
+\(\rho_x\)。可靠性要求
+\(\rho_x(S_{Q'}(\tau x))\subseteq S_Q(x)\)；完整性要求反向包含。二者同时成立才可称经回译等价，不要求目标解与源解一一对应。
+
+把 \(x^2=4\) 改成 \(x=2\) 是可靠但不完整，负根是丢失见证；改成
+\(x^2\le4\) 是完整但不可靠。引入符号变量并写 \(x=2s,s\in\{-1,1\}\)
+才能覆盖两根。辅助变量的定义域也属于证明：若新域排除了必要值，形式上增加一个变量仍会丢解。
+
+可靠变换的组合依次回译，故仍可靠；完整性通过逐层选择前像传递。中间实例和定义域必须匹配。一条
+heuristic 边不能因前后端看起来相似而升级为等价。当前 H29
+的有限多项式域与容差检查不解决一般程序等价。
+
+\subsection{3.5
+从类比到指令语言}\label{ux4eceux7c7bux6bd4ux5230ux6307ux4ee4ux8bedux8a00}
+
+H30 要求对象映射 f 与操作映射 g 在实际访问域满足
+\(f(a(x))=g(a)(f(x))\)，并验证每个中间态的合法域。由逐步归纳才可运输整个程序。源操作加一、目标操作加二、对象映射乘二可以交换；把目标操作改成加三，每一步都会产生确定误差。关系结构相似、少数锚点吻合与全路径作用保持是不同强度的主张
+{[}\nolinkurl{SBV3_N11,} \nolinkurl{SBV3_S12,} \nolinkurl{SBV3_S13}{]}。
+
+H40 将重复结构编译为无环、卫生的宏，落到不可变基底
+ISA。宏的正确性是展开前后语义相同；它减少描述或搜索成本，不自动增加可计算函数族。绑定变量必须避免捕获，定义成本和调用成本都要计算，不能每出现一个新名字就报告压缩。DreamCoder
+和程序合成是明确近邻 {[}\nolinkurl{SBV3_S09,} \nolinkurl{SBV3_N12,}
+\nolinkurl{SBV3_N14}{]}。
+
+这条主线的完整对象流是局部解释、拼合障碍、反例对、概念
+AST、问题关系、宏展开与版本提交。每一步都可能失败或分叉。未来更激进的对象包括四值支持协议、高阶语境复形、概念的部分双向透镜和可扩张的元语法；它们保留为
+V，不伪装成当前有限解释器已经实现的能力。
+
+\section{4 主线二
+交流如何传递学习能力}\label{ux4e3bux7ebfux4e8c-ux4ea4ux6d41ux5982ux4f55ux4f20ux9012ux5b66ux4e60ux80fdux529b}
+
+\subsection{4.1
+公共行为优先于参数坐标}\label{ux516cux5171ux884cux4e3aux4f18ux5148ux4e8eux53c2ux6570ux5750ux6807}
+
+不同模型的参数维度、层结构和 tokenizer
+不同，逐项参数复制或直接对不同词表做 KL 没有自动成立的语义。H37
+首先声明公共行为坐标：同一组许可探针、同一单位和同一读出顺序。设两端行为为
+\(b_A,b_B\)，其局部 Jacobian 为 \(J_A,J_B\)。源参数方向 \(\Delta_A\)
+被转换为行为方向 \(v=J_A\Delta_A\)，目标再寻找能够实现 v 的局部方向。
+
+这个选择把``不像源参数''与``没有实现源作用''分开。行为坐标本身仍需识别，探针过窄可能遗漏重要任务变化。固定有限公共探针上的吻合不证明所有未来行为等价，更不证明主体或意识连续。
+
+\subsection{4.2
+可达性与正则化的两种误差}\label{ux53efux8fbeux6027ux4e0eux6b63ux5219ux5316ux7684ux4e24ux79cdux8befux5dee}
+
+目标问题为 \(\min_\delta\|J_B\delta-v\|^2+\lambda\|\delta\|^2\)。当
+\(\lambda>0\)，正规矩阵正定，唯一解满足
+\((J_B^\top J_B+\lambda I)\delta=J_B^\top v\)。实现采用求解或矩阵自由
+JVP/VJP，不需要显式巨大
+Jacobian。零正则时行为投影唯一，但参数解可能不唯一，最小范数是附加选择，有限迭代也必须报告是否收敛。
+
+用紧 SVD 分解
+v，可把误差拆成行为像空间以外的不可达分量和像空间以内的正则收缩分量。标量
+\(J=4,v=1,\lambda=1\) 给 \(\delta=4/17\)，残差并非由于方向不可达；相反
+\(J=(1,0)^\top,v=(0,1)^\top\) 的残差不能靠减小正则消除。当前参考字段
+\nolinkurl{projection_residual} 实际是总效果残差，适配源码称
+\nolinkurl{effect_residual}，另有
+\nolinkurl{unreachable_residual}。文档保留这个命名差异，避免把两项混算。
+
+一阶匹配也不保证有限更新后的真实行为匹配。若 Jacobian 在更新线段上
+Lipschitz，Taylor
+余项给二阶误差界；总误差包括投影残差和两端非线性余项。信赖域、重线性化和保留残差因此是算法的一部分，不是成功后的附注。蒸馏和学习优化器为近邻
+{[}\nolinkurl{SBV3_N08,}
+\nolinkurl{SBV3_S16}{]}，当前标准最小二乘不主张原创。
+
+\subsection{4.3
+坐标变换与学习度量}\label{ux5750ux6807ux53d8ux6362ux4e0eux5b66ux4e60ux5ea6ux91cf}
+
+H25 对可逆坐标 G
+同时运输状态、操作和读出：\(z'=Gz,T'=GTG^{-1},r'=rG^{-1}\)，于是
+\(r'T'z'=rTz\)。非线性版用函数共轭而非矩阵乘法。异维映射 P 可合法写成
+\(G_jPG_i^{-1}\)，却不因此具有逆。只旋转状态而固定读出会改变输出，故真实模型能否实现成套读写变换是独立前提。
+
+普通 ridge 依赖参数坐标。若变换
+\(\theta'=G\theta\)，希望保持同一代价，参数度量必须变为
+\(M'=G^{-\top}MG^{-1}\)；行为侧度量 W 也应明确。广义目标给
+\((J^\top WJ+\lambda M)\delta=J^\top Wv\)。这说明未来运输协议可能必须携带度量与线性化版本，而非只携带一个方向。规范等变提供结构背景
+{[}\nolinkurl{SBV3_S06}{]}；自然梯度的专项全文比较尚未完成，不能据此排他地声称一种新几何优化理论。
+
+\subsection{4.4
+从一步方向到多步更新程序}\label{ux4eceux4e00ux6b65ux65b9ux5411ux5230ux591aux6b65ux66f4ux65b0ux7a0bux5e8f}
+
+H38 的消息是受限规则
+\(U_\psi\)，输入仅有获准梯度、局部状态和记忆，输出仅作用于白名单参数。设
+\(g_t=\nabla\ell_s(\theta_t)\)，\(\theta_{t+1}=\theta_t+U_\psi(g_t,h_t,\theta_t)\)，记忆按
+\(V_\psi\) 更新。完整元梯度对规则参数传播状态敏感度，包含
+\(U_g H_t S_t\) 与 \(V_g H_t S_t\)，其中 \(H_t\) 为支持损失 Hessian。
+
+\nolinkurl{first_order} 显式 detach 支持梯度，删去上述 Hessian
+路径，保留规则参数直接路径和其余状态依赖。它是不同的近似算法，不只是命名变化。标量两步
+\(\theta_0=2,U=-\psi g,\ell_s=\theta^2/2\)，query loss 为
+\(\theta_2^2/2\)，在 \(\psi=0.1\)
+时完整导数为负5.832，一阶代理为负6.156。这些数是链式法则解析例，未运行神经优化器。
+
+裁剪阈值处有不可微点；结构 AST
+的选择也不是普通路径导数。连续参数、有限枚举、策略梯度、直通估计分别记录，直通估计不能写成无偏或精确。支持与查询标签隔离，query
+只评价更新后的状态；仅使用两个不同 \nolinkurl{partition_id}
+还不能证明统计独立。
+
+\subsection{4.5
+联合源码究竟连接了什么}\label{ux8054ux5408ux6e90ux7801ux7a76ux7adfux8fdeux63a5ux4e86ux4ec0ux4e48}
+
+L13 有两种明确机制。stagewise 模式按命名空间组成 L01--L12
+阶段，对每阶段指定活动参数、冻结项、损失权重和重算边；它不把存储记录当活计算图。另一种是实际写出的
+H37 到 H38 live 子图：源方向经行为运输与信赖裁剪后，加到功能式初始
+adapter，再执行支持集规则展开，最后由独立 query
+目标评价。完整与一阶模式只在指定边上不同，不能同时把两种 query loss
+相加。
+
+当前这条 live
+源码使用显式有限线性行为家族，未声称已在不相关语言模型上运行。H19
+的训练轨迹来源与 H25
+的坐标有效性仍是语义前提，不由可微函数自动创建。可传递学习能力的研究命题在于这种带义务、度量、适用域和版本的更新对象是否能跨模型使用，而不在于一个通用训练循环能否执行。
+
+\section{5 主线三
+交流如何构造研究世界}\label{ux4e3bux7ebfux4e09-ux4ea4ux6d41ux5982ux4f55ux6784ux9020ux7814ux7a76ux4e16ux754c}
+
+\subsection{5.1
+因果模块与观察关系的区别}\label{ux56e0ux679cux6a21ux5757ux4e0eux89c2ux5bdfux5173ux7cfbux7684ux533aux522b}
+
+H31 的有限 SCM 由无环结构方程 \(X_k=f_k(X_{pa(k)},U_{I_k})\)
+构成。干预替换指定方程，再按拓扑序计算。移植则替换模块，并显式转换父边界、单位与噪声身份。在移植后仍为无环图、保留相同外生赋值与未受影响根变量并施加同一干预的条件下，移植节点的后代闭包以外保持不变。这里的后代闭包取原图与新图的后代并集，并包括移植节点自身；这个结论来自拓扑归纳，不证明新系统与现实具有相同干预分布。
+
+观察导数不是因果作用。H02 的局部响应必须声明 \nolinkurl{observational}
+或 structural，H09 的 do
+语义也不能被条件概率代替。源方程可执行、变量名字相同和单位换算正确，仍不足以证明真实模型内部模块已被识别。因果抽象的已有工作提供邻近问题
+{[}\nolinkurl{SBV3_S12,} \nolinkurl{SBV3_S13}{]}。
+
+\subsection{5.2
+同一噪声必须是同一个随机变量}\label{ux540cux4e00ux566aux58f0ux5fc5ux987bux662fux540cux4e00ux4e2aux968fux673aux53d8ux91cf}
+
+H43 合成局部转移核时，先定义联合外生变量 U
+的分布。若给定完整当前状态、动作和 U
+后局部下一状态条件独立，且各局部核只依赖声明的 \(s_i\) 边界，则联合核为
+\(K(s'|s,a)=\sum_u\mu(u)\prod_i K_i(s_i'|s_i,a,u_{I_i})\)。逐层求和可得归一性。当前实现使用每步给定固定联合噪声分布，不自动涵盖带时间记忆的任意噪声过程。
+
+若两个模块都令下一状态等于同一公平比特
+U，两者相等概率为1；用两个独立公平比特替代则为二分之一，尽管边缘分布完全相同。保留噪声名字而各自重新采样仍然错误。给定状态后的观测噪声独立是另一个假设，不能从转移条件独立推出来。
+
+当依赖未知，保留一族可行 coupling
+或区间比强行相乘更诚实，也更有研究价值。同样的两公平比特可以完全相同、完全相反或独立，这些世界会回答不同问题。下一步研究可以让合法查询缩小
+coupling 集，而不把模型数量当作识别保证。
+
+\subsection{5.3
+共同梦境的作用与证据资格}\label{ux5171ux540cux68a6ux5883ux7684ux4f5cux7528ux4e0eux8bc1ux636eux8d44ux683c}
+
+H44 在可组合核上施加显式机制编辑，形成 \nolinkurl{synthetic=true}
+的世界和轨迹谱系。修改门的单向性改变可达性，单纯改节点名字不改变规律。共同假想环境可以暴露已有机制的后果、产生训练题目和找到反例，但不会自动提供独立现实观测。
+
+若现实参数 \(\Theta\) 与合成数据满足 \(\Theta\to(K,\Delta)\to D_{syn}\)
+的条件关系，则
+\(P(\Theta|K,\Delta,D_{syn})=P(\Theta|K,\Delta)\)。生成数据可帮助有限计算者发现既有程序的隐含结论，却不能在已知完整生成器之后重复增加现实证据。若生成器吸收了新观察，信息应归于该观察来源。World
+Models、POET 与环境设计是直接近邻 {[}\nolinkurl{SBV3_N09,}
+\nolinkurl{SBV3_S18,} \nolinkurl{SBV3_S19}{]}。
+
+L10 的 dream 变体把离散世界选择的回报来自独立 holdout，并停止梯度再训练
+proposer；\nolinkurl{source_id}
+不重叠是必要的数据规则，不是独立性的充分统计证明。当前没有生成研究数据，也没有测得梦境促进学习的收益。
+
+\subsection{5.4
+世界与问题的共演化}\label{ux4e16ux754cux4e0eux95eeux9898ux7684ux5171ux6f14ux5316}
+
+H42
+用有限变异语法生成任务与协议候选，按结构签名归档多个生态位。可表达候选不等于实测
+competence，语法内有限档案增长也不等于开放式无界创新。若可达结构集合有限，去重增长次数有上界；真正开放的
+V 分支需要任务语法、本体语法或编译迁移一起扩展。
+
+现有 conditional 程序上的 inverse
+标签只反转偏移符号，不保证任意分段函数真逆。必须保存这个限制，而不是让有吸引力的英文名称覆盖数学关系。世界生态的更强方向是生成新的可区分机制、问题和语言，并保留旧任务关系作为持续义务，而非奖励新世界数量。
+
+\subsection{5.5
+证据不按转述次数增长}\label{ux8bc1ux636eux4e0dux6309ux8f6cux8ff0ux6b21ux6570ux589eux957f}
+
+H48 把证据原子理解为同一概率空间中的事件。重复事件满足
+\(e\lor e=e\)；同一可信度0.8来源经两人转述仍为0.8，不是0.96。只有两个独立事件各为0.8时，或事件才为0.96。只知道边缘而不知道依赖时，可给区间
+{[}0.8,1{]}，不能自行选择独立模型。
+
+来源撤回使依赖缓存失效，但不自动否定结论。对 \(e\lor f\) 撤回 e 后，f
+仍可能支持。布尔谱系、概率校准和真值维护因此是三个不同操作
+{[}\nolinkurl{SBV3_S21,} \nolinkurl{SBV3_N06}{]}。H41
+的联盟贡献还需要明确价值函数，未知子集价值不能填零，Shapley
+恒等式本身不解决真实贡献识别、激励或公平问题。
+
+\section{6
+保留不同理论路线}\label{ux4fddux7559ux4e0dux540cux7406ux8bbaux8defux7ebf}
+
+\subsection{6.1
+轨迹不必归于终点}\label{ux8f68ux8ff9ux4e0dux5fc5ux5f52ux4e8eux7ec8ux70b9}
+
+H33 考察 \(\dot z=-\nabla E(z)+Kz\)，K 反对称。反对称仅给
+\(z^\top Kz=0\)，不能对任意 E 推出 \(\nabla E^\top Kz=0\)。当 E
+为一般二次型时，其能量可能局部增加，而欧氏范数仍可下降。把两种量混称能量会产生错误定理。
+
+纯旋转的 Euler 离散步会人为增大范数；隐式中点在线性 skew
+情形保持范数。有限回返不证明吸引极限环。轨迹平均还可能将完整旋转平均为零，说明读出窗口和相位关系是独立对象。未来可保留相位概念、偏序事件轨迹和路径分布，而不将不收敛简单视为失败。
+
+H34
+在公开起点与终点条件之间求有限路径。前向可达集与后向可达集相交，当状态已包含足够历史时，刻画可通过某点的完整合法路径。若隐藏历史约束未进入状态，前后缀不能自由拼接。后向约束只使用公开目标，不是获得未来信息；多路径分布也不同于只返回第一条可行路径
+{[}\nolinkurl{SBV3_N13}{]}。
+
+\subsection{6.2
+三类分岔不能用同一术语遮盖}\label{ux4e09ux7c7bux5206ux5c94ux4e0dux80fdux7528ux540cux4e00ux672fux8bedux906eux76d6}
+
+H28 的有限载体是
+\(\dot z=\alpha z-z^3\)。正参数出现两个稳定非零支，零参数处线性导数为零，但高阶项仍吸引到原点。连续稳定不保证任意
+Euler
+步长稳定。结构迁移是另一个显式事件，当前程序没有证明真实模型会自发把动力分支转成概念种类。
+
+未来 Hopf 分支取径向方程 \(\dot r=\mu r-r^3\)
+与非零角速度，正参数的吸引半径与中性纯旋转不同。折叠分支
+\(\dot x=\mu+x-x^3\)
+在同一当前控制值可以有两个稳定解释，要求消息携带历史分支。准静态迟滞还需要变化速率、噪声和松弛条件。这些标准正规形保留了新的协议对象，但不把性能跳点称为热力学相变。
+
+\subsection{6.3
+任务商与动态闭合分别检查}\label{ux4efbux52a1ux5546ux4e0eux52a8ux6001ux95edux5408ux5206ux522bux68c0ux67e5}
+
+H47
+以查询响应完全相同定义精确等价类。新增查询只会细化旧分区，但旧消息若仅保存奇偶，就不能回答是否大于2。近似距离小于阈值不是等价关系：0、0.75倍阈值、1.5倍阈值相邻接近而首尾不接近。聚类可以使用这个关系，却必须声明新的聚类规则。
+
+H35 的粗化 C 与微观动力 F
+存在确定宏观闭合，当且仅当同一粗化纤维上的后继粗态一致。线性情形为
+\(CF=GC\)，不是低重建误差。保存 \(x-LCx\) 后能够精确重建，只说明完整
+detail 没被丢掉，不代表免费压缩逆。若
+\(CL=I\)，消去残差可导出历史记忆核；当前源码不强制该右逆条件，因此必须把更强推导与已实现特例分开。
+
+状态聚合、信息瓶颈与逐次细化是既有背景 {[}\nolinkurl{SBV3_N03,}
+\nolinkurl{SBV3_S14,} \nolinkurl{SBV3_N05}{]}。本项目的 H
+在于任务变化能否组织跨模型语义粒度，V
+在于可请求细化、带记忆和不确定纤维的跨尺度计算，而非把商空间数学重新命名。
+
+\subsection{6.4
+可识别性与负知识保留未知}\label{ux53efux8bc6ux522bux6027ux4e0eux8d1fux77e5ux8bc6ux4fddux7559ux672aux77e5}
+
+H45
+在已声明候选族、先验和响应似然内计算信息收益，等于假设与响应的互信息。若两个候选在所有许可查询上响应分布相同，且每轮响应仅由当前查询和假设
+H
+按同一已声明条件模型产生，则自适应重复查询仍不能区分。这里比较的是完整序列条件模型；相同的单次边缘分布不排除跨轮相关性不同。不同分布也不保证有限样本零误差识别；两个概率分别0.4和0.6的伯努利模型仍可能产生同一有限序列。缺少真机制时，族内高置信也可能错误
+{[}\nolinkurl{SBV3_S20}{]}。
+
+H46
+的硬排除必须在当前域和前提下证明被排区域不含可行解。有限检查``排除谓词与
+\nolinkurl{required_predicate} 不相交''还需要
+\nolinkurl{required_predicate}
+确为任务必要条件。超时、低分或学习置信不能取代这个前提。撤回证书时必须从原候选域恢复，再应用仍有效的排除，不能仅从已经删空的集合继续操作。
+
+这些分支与强制共识、单一固定点、全局可逆坐标并不等价。公共 API
+只描述可组合关系，不负责抹平理论差异。
+
+\section{7 学习目标
+梯度与数据语义}\label{ux5b66ux4e60ux76eeux6807-ux68afux5ea6ux4e0eux6570ux636eux8bedux4e49}
+
+\subsection{7.1
+损失账本不是一串名称}\label{ux635fux5931ux8d26ux672cux4e0dux662fux4e00ux4e32ux540dux79f0}
+
+每项目标明确数学定义、分子、分母、有效掩码、零有效策略、参数所有者、需要梯度的输入、停止边、估计器和归一单位。不同坐标数、图大小、序列长度或
+batch 数不会偶然变成权重。全局训练按 phase 指定权重，不能把全部 loss
+与其 total 再相加。
+
+概念学习的区别损失按已知区分对归一，行为交叉熵按有效动作归一，描述长度是离散编码字节，历史漂移以停止的旧读者响应为参考。问题学习分别预测
+soundness 与 completeness
+并学习答案映射，但分类器不授予证明身份。类比软匹配硬化后须重跑精确交换检查。世界转移目标按完整归一概率行计算，部分原子观测不能未经声明重新归一。
+
+信念目标先对整段序列求每支似然，再计算
+\(-\log\sum_k\pi_k\exp(\log p_k(y_{1:T}|x))\)。生成时由已生成前缀更新分支后验，不能每个
+token 都重新平均先验。不同 tokenizer
+必须回到共同可观察行为或各自协议，不直接做词表 KL。
+
+\subsection{7.2
+冻结与断图不同}\label{ux51bbux7ed3ux4e0eux65adux56feux4e0dux540c}
+
+冻结基础模型参数只禁止这些参数更新，不意味着 receiver 整体处于
+\nolinkurl{no_grad}。桥接输入若需训练，输入到输出图必须保留。teacher
+目标、旧读者、离散回报和外部来源可按账本
+\nolinkurl{stop_gradient}；每一条停止边都改变算法，应单独说明
+{[}\nolinkurl{SBV3_S23}{]}。
+
+共享 engine 负责 AdamW、有效 microbatch
+累积、裁剪和检查点，阶段只提供自己的计算图和归一目标。检查点在外优化器边界绑定参数名、optimizer
+moments、随机状态、source cursor、配置摘要、数据摘要和版本。L13
+对组件别名排序，避免 JSON
+键序变化在相同摘要下改变随机数消费顺序。该恢复机制经过源码与有限合同审阅，未进行神经训练的实证恢复试验。
+
+\subsection{7.3
+数据世界的职责}\label{ux6570ux636eux4e16ux754cux7684ux804cux8d23}
+
+W01--W12
+提供有限坐标、约束、概念、问题、因果、动力、尺度、可塑性、程序、联盟、核与识别世界；W13
+负责共用角色投影、数据分割与流隔离。研究数据工厂源码与数学 fixture
+分开。当前训练源拒绝把手算 fixture 当训练 shard，要求明确 train
+split、结构签名、不可变 manifest 和内容哈希。
+
+结构隔离比换随机种子更强。生成种子、样本编号和世界 ID 不能给 solver
+传递答案；支持与查询集合、合成与真实来源必须各自记录。有限世界上的解析标签可以定义一个未来训练目标，但不能冒充真实任务泛化或现实概率校准。
+
+\subsection{7.4
+后端绑定是待满足合同}\label{ux540eux7aefux7ed1ux5b9aux662fux5f85ux6ee1ux8db3ux5408ux540c}
+
+prefix 需要长度、mask、位置和 label 对齐；residual hook
+需要明示层、轴语义和异常后的 handle 清理；KV 需要确切布局、head
+grouping、历史长度和位置变换，不能靠 reshape 猜兼容
+{[}\nolinkurl{SBV3_S24}{]}。模型名称、相同 hidden size 或一个
+\nolinkurl{supports_latent} 布尔值都不够。
+
+当前 configs 中 model/data manifests 为
+UNBOUND，未来训练参数是未执行元数据。获准的标准库数学例受维数不超过64、步骤不超过128、案例不超过64约束，嵌套调用共用预算。未来科研配置中的更大上限不授予本轮执行权。禁止随机
+tiny model、权重下载、云端研究 API 和任何神经前向。
+
+\section{8
+从机制到组合的编译义务}\label{ux4eceux673aux5236ux5230ux7ec4ux5408ux7684ux7f16ux8bd1ux4e49ux52a1}
+
+组合不是把编号排在一起。每条边声明生产者和消费者、对象类型、所需版本、读写集合、作用域、可微性、失败状态和预算。编译器给出独立诊断的检查过程；类型通过还需关系验证，绑定成功还需运行授权。
+
+C10 的概念链必须允许冲突未解决；C11 的问题链必须保留丢解见证并回译；C12
+的因果链必须保噪声依赖；C13 输出未来训练计划，而非已经训练的模型；C14
+原子提交依赖所有读版本；C15 用公开边界读出轨迹；C16
+在合成命名空间保留谱系；C18 先规范来源再分配内部贡献；C19
+在原目标域复核；C20 是多阶段编译组织，不是所有目标的无差别总和。
+
+有限 \nolinkurl{VersionedStore}
+保证的范围是单进程内同一协调实例，所有读写通过该锁、检查读取与写入版本并依赖原子替换语义。它不提供多进程或分布式共识，也不能回滚已经产生的现实外部效果
+{[}\nolinkurl{SBV3_N01}{]}。补偿回滚产生新版本，不倒转时钟。这样既保留可迁移计算的组织能力，也避免用工程词汇掩盖未证明的强保证。
+
+下文的完整索引从当前配置和源码静态提取实际路径与节点，不以设计包中的
+\nolinkurl{assigned_to_dot}
+标签推断实现状态。每个条目指出对象、区分见证和未证明桥梁；合同检查记录只支持软件和有限数学层。
+
+\section{9
+研究议程与结果边界}\label{ux7814ux7a76ux8baeux7a0bux4e0eux7ed3ux679cux8fb9ux754c}
+
+\subsection{9.1
+能区分解释的未来研究}\label{ux80fdux533aux5206ux89e3ux91caux7684ux672aux6765ux7814ux7a76}
+
+概念主线应比较旧语言同签名但任务动作不同的对象对，排除新增隐私字段或隐藏标签泄漏，并追踪旧读者是否仍可解释历史对象。若改名不增加区分，或接收端仅靠公开原始字段绕过消息，不能据此支持概念通信假设。
+
+学习主线应分开测量行为可达残差、正则收缩、有限步非线性偏差和独立任务影响，并比较方向运输、规则运输及单纯蒸馏。若公共探针缩放改变结论，应检查度量；若一阶与完整元梯度被混用，应先重建路径账本。这些是未来设计要求，不是已获得的实验结论。
+
+世界主线应使用共享噪声反例、机制编辑而非重命名、独立现实 holdout
+与来源撤回。若世界只通过 ID 暗号被 solver
+识别，或合成输出被重复算作现实证据，就没有回答所研究问题。全部未来模型工作须另行授权，不因本文给出计划而自动执行。
+
+\subsection{9.2
+模型研究结果表}\label{ux6a21ux578bux7814ux7a76ux7ed3ux679cux8868}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+研究对象 & 当前结果 & 尚未建立的结论 \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+H01--H48 模型能力 & \nolinkurl{NOT_RUN} & 语义可实现性、有效性和泛化 \\
+C01--C20 模型组合 & \nolinkurl{NOT_RUN} & 端到端协同与收益归因 \\
+L01--L13 参数学习 & \nolinkurl{NOT_RUN} &
+收敛、训练稳定性和恢复一致性实测 \\
+X01--X12 终局 & \nolinkurl{NOT_RUN} & 开放系统能力与长期性质 \\
+38条未来分叉 & \nolinkurl{NOT_RUN} & 分叉算法实现及经验效果 \\
+后端与跨模型读写 & \nolinkurl{NOT_RUN} & 实际模型兼容、梯度和缓存效果 \\
+基准、速度、准确率、SOTA & \nolinkurl{NOT_RUN} & 任何性能比较 \\
+\end{longtable}
+
+有限证明示例、源码
+AST、配方完整性与媒体可播放性不填入这张表作为研究分数。D02
+已记录24项标准库有限检查与46项静态/来源检查；这些计数描述审查工作，不能当作支持48个
+H 的样本量。
+
+\subsection{9.3
+审计偏差的保留}\label{ux5ba1ux8ba1ux504fux5deeux7684ux4fddux7559}
+
+L13 的首次全学习审查因 legacy
+测试名过滤错误，调用了三次已锁定入口：concept
+\nolinkurl{build_stage}、\nolinkurl{select_concept_structure} 和
+\nolinkurl{search_question_structure}。三次均在首个政策闸门被拒绝，神经模块导入清单为空，没有模型、tensor、初始化、前向、训练、评估或研究数据生成。调用入口本身仍违反了更严格的``不为测试闸门而调用研究入口''要求，不能写成零入口尝试。
+
+原记录保留于
+\nolinkurl{run_state}/checks/\nolinkurl{L13_noncompliant_legacy_guard_attempt.txt}，并有
+src/\nolinkurl{latent_comm}/learning/joint/\nolinkurl{AUDIT_INCIDENT.md}
+与 \nolinkurl{audit_incident.json}。纠正后的审查在收集测试前用 AST
+排除已知入口调用，完成116项安全检查。未经许可的尝试不计入获准检查通过数，纠正记录不删除原偏差。
+
+\subsection{9.4
+来源与叙事的边界}\label{ux6765ux6e90ux4e0eux53d9ux4e8bux7684ux8fb9ux754c}
+
+D01
+保留57条来源记录，含别名与新增线索，最终46条去重可用书目。\nolinkurl{PRIMARY_CHECKED}
+表示已核对主要来源身份、元数据和可见摘要或目标内容，不表示全文精读或复现。元数据快照索引不是不可变全文档案。N07
+的直接全文访问受限，已排除于实质证据与书目。
+
+尚未完成全球专利、学位论文、非英语文献和引用闭包的穷尽检索。H28/H33
+的动力系统近邻、自然梯度，以及未来四值逻辑、双向透镜、并发迹等邻域仍需专项研究。本文使用``提出''``条件下''``待建立桥梁''，不给历史首创、性能倍数或实证优越性认证。S17
+讨论 Shapley 相关问题，不应被误标成原始 Shapley 定理出处。
+
+媒体表达沿用概念、学习、世界三条线，图中的有限数值必须标``解析示意''。媒体、音频和字幕是展示对象，不是研究证据。\textbf{媒体状态快照：2026-10-24
+18:46 UTC。} freeTTS.ai/MeloTTS
+中文短版的90.000秒有声MP4与完整WAV已经生成，14段字幕按实测音频片段边界对齐，并有解码、时长、响度、削波和画面检查；这些检查不是人工试听或逐词发音核验。6分钟静音草稿仍有效，完整长版有声导出尚未完成，不用静音填补缺失旁白来冒充完成。
+
+TTS续传因缺少明确的目的地与文本负载授权被拒绝；已请求用户确认向
+api.tts.ai
+提交剩余493字，回复待定。累计43个任务获受理、42个WAV已下载、受理1,261字、\nolinkurl{credits_used=0}；其中长版第29段16字已受理但远端结果未知，另有15段493字未提交。所有外部TTS提交、轮询和下载均已停止，没有仍运行的生产进程；恢复引用仅私下保留，不在本文披露。此前一般媒体许可不能替代这次拒绝后所需的明确授权，也不能盲目重发结果未明的任务。
+
+实际试听与中文发音审查仍是必需步骤，且因当前经核实的输入能力不支持听取音频而单独阻塞；不把波形检验等同试听。生成的TTS音频及包含它的视频受
+\href{https://tts.ai/terms/}{tts.ai服务条款}（2026年9月14日生效）的个人、非商业使用限制，不代表无限制商用；此限制不扩张为源码、PPT或SVG的许可，它们的来源权利另行记录。后续状态请结合
+reports/\nolinkurl{media_qa.json}
+的更新时间、assets/audio/\nolinkurl{tts_ai}/\nolinkurl{authorization_status.json}
+与
+\nolinkurl{run_state}/\nolinkurl{permission_events}/\nolinkurl{tts_destination_disclosure_denial.json}
+核对，旧媒体报告不能覆盖较新的权限事件。本文仅作本地文档交付，不对外公开。
+
+\section{10 条件依赖索引}\label{ux6761ux4ef6ux4f9dux8d56ux7d22ux5f15}
+
+以下23项前提来自当前形式依赖图。条件声明不代表条件已经被真实模型满足；完整消费者与失败语义见
+docs/\nolinkurl{formal_notes}/\nolinkurl{assumption_dependencies.json}。
+
+\begin{itemize}
+\tightlist
+\item
+  \nolinkurl{A_COMMON_BEHAVIOR}：A declared finite public behavior
+  coordinate system can compare \nolinkurl{participating} models.
+\item
+  \nolinkurl{A_INVERTIBLE_FRAME}：Gauge maps are square invertible on
+  the declared domain.
+\item
+  \nolinkurl{A_PREDICATE_GRAMMAR}：The finite predicate grammar contains
+  a useful distinction for the selected witnesses.
+\item
+  \nolinkurl{A_RELATION_WITNESSES}：Problem rewrites provide
+  \nolinkurl{independently} checked soundness and completeness evidence.
+\item
+  \nolinkurl{A_LOCAL_NOISE}：World composition supplies joint noise or
+  explicit conditional \nolinkurl{independence.}
+\item
+  \nolinkurl{A_SCOPED_UPDATES}：\nolinkurl{Differentiable} updates
+  target explicitly authorized adapter parameters only.
+\item
+  \nolinkurl{A_FINITE_EXECUTION}：Reference worlds, DSL programs and
+  searches have finite dimension, cases and steps.
+\item
+  \nolinkurl{A_EVIDENCE_DEPENDENCE}：Probability claims require a
+  complete relevant joint model or explicitly independent atoms.
+\item
+  \nolinkurl{A_PUBLIC_BOUNDARY}：Terminal conditions and behavior probes
+  are authorized public task conditions, not supervised answers.
+\item
+  \nolinkurl{A_MODEL_BRIDGE}：Future learned model adapters may realize
+  the reference object behavior.
+\item
+  \nolinkurl{A_IMPLEMENTABLE_READWRITE}：模型注入器和读出器能够实现所声明的协变变换；矩阵恒等式不能推出。
+\item
+  \nolinkurl{A_CONFLICT_CAUSE}：拼合冲突可能来自缺少语境变量，但也可能来自错误观测、单位、映射或过强约束。
+\item
+  \nolinkurl{A_TRAJECTORY_READOUT}：不同轨迹或结构分支的读出与所研究任务的有用区别相关。
+\item
+  \nolinkurl{A_CLOSURE_DOMAIN}：粗化纤维上的后继粗态相同，或显式保留记忆/残差；闭合仅在声明域。
+\item
+  \nolinkurl{A_REFINEMENT_INFORMATION}：细化可访问旧等价类成员的原始区别或新观测。
+\item
+  \nolinkurl{A_OBSERVATION_MODEL}：许可查询的似然/确定响应覆盖声明候选机制；条件响应模型支持所用序列推断。
+\item
+  \nolinkurl{A_REQUIRED_CONSTRAINT}：负知识证书中的
+  \nolinkurl{required_predicate} 确为当前任务在有效前提下的必要条件。
+\item
+  \nolinkurl{A_CONDITIONAL_OBSERVATION_INDEPENDENCE}：观测核乘积需给定状态后的观测噪声独立，与转移的条件独立分别承担。
+\item
+  \nolinkurl{A_SINGLE_COORDINATOR}：所有 \nolinkurl{VersionedStore}
+  读写经同一个协调实例；未决日志恢复后才接纳后续写入；底层原子替换/fsync
+  成立。
+\item
+  \nolinkurl{A_VALUE_FUNCTION}：联盟价值函数对所比较子集有明确语义；未知值不能视为零，来源支持和执行价值分开。
+\item
+  \nolinkurl{A_LANGUAGE_INFORMATION}：新谓词只能用获准可观察字段；纯旧签名函数不能创造新的区分信息。
+\item
+  \nolinkurl{A_LOCAL_SMOOTHNESS}：行为映射在更新线段邻域可微，定量
+  Taylor 界另需 Lipschitz Jacobian；裁剪阈值单独处理。
+\item
+  \nolinkurl{A_ECOLOGY_MEANING}：结构档案和语法扩张能够产生与目标相关的新操作，而非重复、作弊或无用任务。
+\end{itemize}
+
+这些前提不能任意互相推出。公共行为坐标不推出可实现读写；转移独立不推出观测独立；宏展开正确不推出新原语可执行；保存完整
+detail 的重建不推出无损压缩；同一事务实例的原子性不推出跨进程容错。D02
+的72条 D/A/H/V 相关主张节点及依赖另存为机器可检查图，经验结果节点为空。
+
+\section{11
+十三个学习阶段的实际责任}\label{ux5341ux4e09ux4e2aux5b66ux4e60ux9636ux6bb5ux7684ux5b9eux9645ux8d23ux4efb}
+
+下列是训练源码组织，不是十三次训练。每个阶段均有独立配置、角色合同和受锁入口，研究状态均为
+\nolinkurl{NOT_RUN}。公共 optimizer 代码复用不意味着对象计算相同。模型
+manifests 保持未绑定。
+
+\subsection{L01
+角色编码与双通道}\label{l01-ux89d2ux8272ux7f16ux7801ux4e0eux53ccux901aux9053}
+
+H01低秩操作生成与H16精确符号绑定分开。机制 writer/reader
+学连续作用；\nolinkurl{symbol_predictor}
+只作辅助分类，不能覆盖精确来源、金额、单位和引用。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/views}}；配置：{\small\nolinkurl{configs/learning/views.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_views.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L02 操作
+响应与信念}\label{l02-ux64cdux4f5c-ux54cdux5e94ux4e0eux4fe1ux5ff5}
+
+有序函数复合、局部响应适用半径、整序列混合是三种数据合同。响应越域触发刷新而非外推；信念
+unknown 支保留质量，不被强制匹配到已知类。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/objects}}；配置：{\small\nolinkurl{configs/learning/objects.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_objects.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L03
+坐标与限制映射}\label{l03-ux5750ux6807ux4e0eux9650ux5236ux6620ux5c04}
+
+GL校准、矩形跨图映射、硬锚三角拼合分别实现。矩形映射保留不可达读出残差，不声称规范等价；监督全局截面只进入loss。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/frames}}；配置：{\small\nolinkurl{configs/learning/frames.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_frames.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L04 概念与问题}\label{l04-ux6982ux5ff5ux4e0eux95eeux9898}
+
+连续阈值和读出训练与AST枚举分开；问题选择用停止优势的\nolinkurl{score-function}。soundness/completeness标签是学习目标，真正准入仍由有限关系验证决定。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/concept_questions}}；配置：{\small\nolinkurl{configs/learning/concept_questions.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_concept_questions.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L05
+类比与因果移植}\label{l05-ux7c7bux6bd4ux4e0eux56e0ux679cux79fbux690d}
+
+graft 使用明确线性SCM及联合噪声；analogy
+使用有类型软匹配和交换残差。硬化重新验证。图记录另需manifest，不假装是W05已有字段。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/causal_analogy}}；配置：{\small\nolinkurl{configs/learning/causal_analogy.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_causal_analogy.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L06 动力 轨迹
+边界与尺度}\label{l06-ux52a8ux529b-ux8f68ux8ff9-ux8fb9ux754cux4e0eux5c3aux5ea6}
+
+四种变体分别绑定轨迹读出、公开边界解、粗化闭合与残差、分岔事件。结构安装不可微；精确端点赋值不能被写成可优化的虚假梯度。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/dynamics_scales}}；配置：{\small\nolinkurl{configs/learning/dynamics_scales.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_dynamics_scales.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L07
+行为方向运输}\label{l07-ux884cux4e3aux65b9ux5411ux8fd0ux8f93}
+
+运输与行为编码分别拥有参数，公开Jacobian是数据。有限JVP/VJP求解保留非收敛与不可达状态，实际更新效果和局部预测分别归一。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/transport}}；配置：{\small\nolinkurl{configs/learning/transport.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_transport.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L08
+支持集规则与外层查询}\label{l08-ux652fux6301ux96c6ux89c4ux5219ux4e0eux5916ux5c42ux67e5ux8be2}
+
+只训练规则标量，内层theta为功能式临时状态。full保留Hessian路径，\nolinkurl{first_order}停止支持梯度；固定二次模板不代表统计留出泛化。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/meta_rules}}；配置：{\small\nolinkurl{configs/learning/meta_rules.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_meta_rules.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L09
+宏搜索与快速实现}\label{l09-ux5b8fux641cux7d22ux4e0eux5febux901fux5b9eux73b0}
+
+基底展开给停止目标，四项多项式快实现有独立系数。定义与调用字节由离散搜索计费。\nolinkurl{typed_binding}扩展须有单独数据，不从常量绑定伪造分类任务。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/isa_search}}；配置：{\small\nolinkurl{configs/learning/isa_search.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_isa_search.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L10 世界核
+课程与梦境}\label{l10-ux4e16ux754cux6838-ux8bfeux7a0bux4e0eux68a6ux5883}
+
+联合噪声只求和一次；核概率行使用真实目标质量加权。生态和梦境另有数据schema，proposer由停止回报训练，合成来源不能自证现实。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/worlds}}；配置：{\small\nolinkurl{configs/learning/worlds.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_worlds.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L11 识别
+排除与商空间}\label{l11-ux8bc6ux522b-ux6392ux9664ux4e0eux5546ux7a7aux95f4}
+
+无先验W12用minimax区分而不伪造Bayes收益。学习得分不授予硬排除；精确查询分区与软聚类分开，撤回前提恢复原候选。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/uncertainty}}；配置：{\small\nolinkurl{configs/learning/uncertainty.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_uncertainty.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L12 联盟与证据}\label{l12-ux8054ux76dfux4e0eux8bc1ux636e}
+
+已知子集价值和可行成员策略分别归一。重复、独立、显式联合三种证据语义不同；\nolinkurl{source_linking}只排序链接，不授权合并身份或乘概率。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/evidence}}；配置：{\small\nolinkurl{configs/learning/evidence.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_evidence.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\subsection{L13
+阶段联合与实际live子图}\label{l13-ux9636ux6bb5ux8054ux5408ux4e0eux5b9eux9645liveux5b50ux56fe}
+
+stagewise边界是序列化后重算；\nolinkurl{transport_meta_full}/\nolinkurl{first_order}确实写出H37到H38的活路径。相位权重、所有者别名、总unroll和恢复随机顺序明确。
+
+实现：{\small\nolinkurl{src/latent_comm/learning/joint}}；配置：{\small\nolinkurl{configs/learning/joint.json}}；专用检查定义：{\small\nolinkurl{tests/research_locked/test_learning_joint.py}}。模型运行结果：\nolinkurl{NOT_RUN}。
+
+\section{12
+四十八机制的对象与实现索引}\label{ux56dbux5341ux516bux673aux5236ux7684ux5bf9ux8c61ux4e0eux5b9eux73b0ux7d22ux5f15}
+
+每个条目把当前算法、区分见证、来源近邻与尚未证明的桥梁放在同一处。英文对象名和不变量沿用代码/台账的精确标识，中文解释说明其研究意义。loss条目由专用
+losses.py 的 LossSpec
+静态读取，不导入模块、不构造tensor。括号内所有者、输入梯度、停止边、单位和零有效策略均为源码声明，未通过模型运行验证。
+
+\subsection{H01
+可组合潜算子}\label{h01-ux53efux7ec4ux5408ux6f5cux7b97ux5b50}
+
+对象为 \nolinkurl{OperatorPacket}，核心操作为 ordered low-rank nonlinear
+state \nolinkurl{transformation}；保持关系为 composition is function
+order, not factor
+addition。候选区别是有寿命、作用域和有序复合律的状态函数，而非一个已求得的状态。
+
+区分见证：同一消息作用于两个发送时未见输入；先加一再乘二必须区别于先乘二再加一。
+该见证是机制规格，不等于模型已通过。未证明桥梁：低秩函数可能记答案；接收读写头可能承担全部计算。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h01_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h01.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H01.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H01.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  behavior：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||T(z)-teacher(z)||^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{state_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 predicted；停止边
+  target→\nolinkurl{target_or_return}；估计器 EXACT；单位 state
+  elements；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  composition：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||Tb(Ta(z))-program_ba(z)||^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{composition_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 composed；停止边
+  \nolinkurl{composition_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 state elements；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有隐藏状态传输、缓存融合和参数生成。 近邻
+{[}\nolinkurl{SBV3_S01,} \nolinkurl{SBV3_S05,}
+\nolinkurl{SBV3_R08}{]}。保留的激进延伸：让跨模型可运输操作形成可执行程序，而不固定单一潜语言。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H02
+反事实响应包}\label{h02-ux53cdux4e8bux5b9eux54cdux5e94ux5305}
+
+对象为 \nolinkurl{ResponseCapsule}，核心操作为 local low-rank response
+prediction and refresh；保持关系为 trust radius is enforced; derivative
+is not \nolinkurl{automatically}
+causal。传锚点、低秩响应和有效半径，允许接收端预测未发送扰动并要求刷新。
+
+区分见证：在锚点答案相同但导数相反的两个函数必须发送不同响应包；越界返回刷新。
+该见证是机制规格，不等于模型已通过。未证明桥梁：导数不是因果干预；离散语义不保证可线性化。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h02_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h02.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H02.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H02.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  response：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||z_hat-z_teacher||^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  predicted；停止边 target→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 response elements；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  locality：{\small\nolinkurl{BCE(refresh_logit,outside_or_error)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{refresh_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{refresh_logits}；停止边
+  \nolinkurl{refresh_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 queries；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有因果表示对齐与局部响应分析。 近邻 {[}\nolinkurl{SBV3_R11,}
+\nolinkurl{SBV3_S12}{]}。保留的激进延伸：用可切换的多锚点响应图册传递条件变化规律。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H03
+多假设信念包}\label{h03-ux591aux5047ux8bbeux4fe1ux5ff5ux5305}
+
+对象为 BeliefPacket，核心操作为 \nolinkurl{whole-sequence} mixture and
+prefix posterior update；保持关系为 branches remain separate; source
+dependence is
+explicit。保持独立分支、整序列混合及来源依赖，而非平均成一个结论向量。
+
+区分见证：两分支只允许 AA 或 BB；逐 token 平均会伪造
+AB，整序列混合不能这样做。
+该见证是机制规格，不等于模型已通过。未证明桥梁：兼容性分数没有似然模型时不能称后验概率。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h03_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h03.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H03.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H03.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{mixture_nll}：{\small\nolinkurl{-logsumexp_k(log}\hspace{0.333em}\nolinkurl{pi_k}\hspace{0.333em}\nolinkurl{+}\hspace{0.333em}\nolinkurl{sum_t}\hspace{0.333em}\nolinkurl{log}\hspace{0.333em}\nolinkurl{p_kt)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{sequence_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{sequence_logprob}；停止边 无声明停止边；估计器 EXACT；单位
+  sequences；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  calibration：{\small\nolinkurl{sum_k}\hspace{0.333em}\nolinkurl{(pi_k-target_k)^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{calibration_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入 weights；停止边
+  \nolinkurl{calibration_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 branches；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  coverage：{\small\nolinkurl{minimum}\hspace{0.333em}\nolinkurl{valid}\hspace{0.333em}\nolinkurl{set}\hspace{0.333em}\nolinkurl{assignment}\hspace{0.333em}\nolinkurl{cost}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{coverage_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{coverage_cost}；停止边 无声明停止边；估计器
+  \nolinkurl{FIRST_ORDER}；单位 matched branches (assignment fixed;
+  matched distances pathwise)；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有多种信念维护、图上概率消息和连续隐藏消息。 近邻
+{[}\nolinkurl{SBV3_N06,} \nolinkurl{SBV3_N13,}
+\nolinkurl{SBV3_R06}{]}。保留的激进延伸：让分歧随新干预保留、分裂或撤销，成为长期可复用计算状态。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H04
+多主体共享约束场}\label{h04-ux591aux4e3bux4f53ux5171ux4eabux7ea6ux675fux573a}
+
+对象为 \nolinkurl{ConstraintField}，核心操作为 bounded constrained
+residual minimization；保持关系为 retain anchored per-source conflict;
+do not zero all weights。把分源残差及冲突保留为可修改的联合约束对象。
+
+区分见证：一源要求 x=0、另一源要求 x=1；不能把权重全置零并报告成功。
+该见证是机制规格，不等于模型已通过。未证明桥梁：数值稳定与共同错误可以同时发生；有限迭代不证明收敛。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h04_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h04.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H04.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H04.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  local：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{residual_fit_error^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{local_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{residual_prediction}；停止边
+  \nolinkurl{residual_teacher}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 residual elements；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  stability：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{relu(E[t+1]-E[t])}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{step_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 energies；停止边
+  无声明停止边；估计器 EXACT；单位 steps；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  conflict：{\small\nolinkurl{BCE(conflict_logit,known_inconsistency)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{conflict_valid}。所有者
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{conflict_logits}；停止边
+  \nolinkurl{conflict_targets}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 fields；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有共享工作空间、固定点求解和局部因子消息。 近邻
+{[}\nolinkurl{SBV3_R09,} \nolinkurl{SBV3_S10,}
+\nolinkurl{SBV3_N13}{]}。保留的激进延伸：让无法满足的约束触发新增概念而非强迫共识。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H05
+推理续接胶囊}\label{h05-ux63a8ux7406ux7eedux63a5ux80f6ux56ca}
+
+对象为 \nolinkurl{ContinuationPacket}，核心操作为 capture and resume
+remaining computation；保持关系为 exact same-model and
+\nolinkurl{heterogeneous} \nolinkurl{approximation} are
+distinct。加入完成操作、待满足依赖、时钟和精确/异构近似分界。
+
+区分见证：迁移后保持已完成前缀而只执行剩余步骤；缓存位置偏一必须拒绝。
+该见证是机制规格，不等于模型已通过。未证明桥梁：映射后可继续生成并不证明保留了源计算进展。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h05_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h05.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H05.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H05.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  continuation：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{suffix_action_error}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{action_logits}；停止边
+  \nolinkurl{action_targets}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 future actions；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有一次构造续接记忆与 KV 状态传输。 近邻
+{[}\nolinkurl{SBV3_S03,} \nolinkurl{SBV3_S05,}
+\nolinkurl{SBV3_S24}{]}。保留的激进延伸：支持异构多切点续接及可迁移的未完成计算义务。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H06
+多图册语义对齐}\label{h06-ux591aux56feux518cux8bedux4e49ux5bf9ux9f50}
+
+对象为 AtlasPacket，核心操作为 route local chart and compose transition
+maps；保持关系为 \nolinkurl{heterodimensional} maps are not invertible
+changes of basis。局部图册、过渡映射、行为锚与覆盖域进入协议。
+
+区分见证：两个局部域需要不同映射；全局单映射失败，常数塌缩不能通过行为锚。
+该见证是机制规格，不等于模型已通过。未证明桥梁：循环一致不是语义充分条件；异维映射通常不可逆。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h06_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h06.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H06.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H06.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{reconstruction}：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{reconstruct(state)-state}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{encoded_valid}{[}:,None{]}\nolinkurl{.expand_as(state)}。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{reconstructed,} state；停止边 无声明停止边；估计器
+  EXACT；单位 state coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  effect：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{behavioral}\hspace{0.333em}\nolinkurl{anchor}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{error}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{effect_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 effect；停止边
+  target→\nolinkurl{target_or_return}；估计器 EXACT；单位 behavior
+  coordinates；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  cycle：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{declared}\hspace{0.333em}\nolinkurl{overlap}\hspace{0.333em}\nolinkurl{cycle}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{error}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{overlap_valid}。所有者
+  \nolinkurl{mechanism_reader}；需梯度输入 cycled, original；停止边
+  无声明停止边；估计器 EXACT；单位 chart elements；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  variance：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{relu(min_std-std(valid}\hspace{0.333em}\nolinkurl{chart}\hspace{0.333em}\nolinkurl{encodings))}}。分子
+  sum coordinate \nolinkurl{standard-deviation} hinge penalties；分母
+  chart dimension; active only with \textgreater{}=2 valid rows；mask
+  \nolinkurl{encoded_valid}; at least two rows。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入 encoded；停止边
+  无声明停止边；估计器 EXACT；单位 chart coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有桥接接口、分布式因果对齐和关系结构比较。 近邻
+{[}\nolinkurl{SBV3_S02,} \nolinkurl{SBV3_R11,}
+\nolinkurl{SBV3_R14}{]}。保留的激进延伸：允许模型保留不同内部几何，通过路径相关图册协作。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H07
+类型化潜程序}\label{h07-ux7c7bux578bux5316ux6f5cux7a0bux5e8f}
+
+对象为 TypedProgram，核心操作为 parse, typecheck and interpret bounded
+instructions；保持关系为 no arbitrary Python or shell
+evaluation。消息本身是受限有类型 IR，执行潜操作且携带效果与预算。
+
+区分见证：形状合法但越权写入的程序必须拒绝；调换非交换指令必须改变结果。
+该见证是机制规格，不等于模型已通过。未证明桥梁：类型安全不等于语义正确；潜参数学习与离散结构不同。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h07_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h07.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H07.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H07.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  structure：{\small\nolinkurl{CE(allowed_opcode_logits,supervised_opcode)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{node_valid} \& legal opcode。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{opcode_logits}；停止边
+  \nolinkurl{opcode_targets}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 nodes；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  parameters：{\small\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{through}\hspace{0.333em}\nolinkurl{fixed}\hspace{0.333em}\nolinkurl{typed}\hspace{0.333em}\nolinkurl{program}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位
+  tasks；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有程序库、谓词变换和合成/验证循环。 近邻
+{[}\nolinkurl{SBV3_S09,} \nolinkurl{SBV3_N12,}
+\nolinkurl{SBV3_N14}{]}。保留的激进延伸：让协议成为具有版本化操作语义的跨模型语言。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H08
+关系结构通信}\label{h08-ux5173ux7cfbux7ed3ux6784ux901aux4fe1}
+
+对象为 \nolinkurl{RelationPacket}，核心操作为 match and exchange typed
+relational graphs；保持关系为 preserve relation edges, not merely
+embedding
+proximity。传输带类型关系图、歧义集合及接收操作，而非相似分数。
+
+区分见证：置换节点标签应保持关系作用；同度数但不同边结构不能当同一图。
+该见证是机制规格，不等于模型已通过。未证明桥梁：同构关系也可能表达不同现实语义。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h08_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h08.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H08.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H08.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  relation：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||P}\hspace{0.333em}\nolinkurl{A_target}\hspace{0.333em}\nolinkurl{P^T-A_source||^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{edge_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{transported_relations}；停止边
+  \nolinkurl{source_relations}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 edges；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  matching：{\small\nolinkurl{-log}\hspace{0.333em}\nolinkurl{sum}\hspace{0.333em}\nolinkurl{probability}\hspace{0.333em}\nolinkurl{over}\hspace{0.333em}\nolinkurl{symmetry-valid}\hspace{0.333em}\nolinkurl{matches}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{node_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{matching_probability}；停止边
+  \nolinkurl{equivalent_targets}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 nodes；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有表示关系比较和关系映射式类比。 近邻
+{[}\nolinkurl{SBV3_R12,} \nolinkurl{SBV3_R14,}
+\nolinkurl{SBV3_N11}{]}。保留的激进延伸：把关系不变量而非坐标距离作为交换计算的基本单位。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H09
+干预代数通信}\label{h09-ux5e72ux9884ux4ee3ux6570ux901aux4fe1}
+
+对象为 \nolinkurl{InterventionPacket}，核心操作为 do-operator surgery
+and ordered \nolinkurl{interventions}；保持关系为
+\nolinkurl{observational} conditioning is not
+intervention。交换有顺序及域限制的干预算子并保存跨端干预对应。
+
+区分见证：观测分布相同但 do(X) 后分布不同的两世界不能互换。
+该见证是机制规格，不等于模型已通过。未证明桥梁：可执行 SCM
+的干预正确不等于自然模型因果机制已识别。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h09_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h09.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H09.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H09.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  intervention：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{predicted}\hspace{0.333em}\nolinkurl{do}\hspace{0.333em}\nolinkurl{effect}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{error}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  predicted；停止边 target→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 outcome elements；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  algebra：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||IaIb(z)-IbIa(z)||^2}\hspace{0.333em}\nolinkurl{for}\hspace{0.333em}\nolinkurl{independent}\hspace{0.333em}\nolinkurl{targets}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{commuting_mask}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入 \nolinkurl{left_then_right,}
+  \nolinkurl{right_then_left}；停止边 无声明停止边；估计器 EXACT；单位
+  legal commuting pairs；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有因果抽象、干预对齐和机制级组合条件。 近邻
+{[}\nolinkurl{SBV3_S12,} \nolinkurl{SBV3_S13,}
+\nolinkurl{SBV3_R11}{]}。保留的激进延伸：把因果操作的可移植部分组合成跨模型干预代数。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H10
+高阶协同超边}\label{h10-ux9ad8ux9636ux534fux540cux8d85ux8fb9}
+
+对象为 \nolinkurl{HyperedgePacket}，核心操作为 evaluate higher-order
+interaction terms；保持关系为 pairwise \nolinkurl{decomposition} is not
+presumed sufficient。显式超边表达多源联合能力并单独记高阶交互。
+
+区分见证：独立两比特的 XOR 单源无信息而联合有信息；不能只筛成对相关性。
+该见证是机制规格，不等于模型已通过。未证明桥梁：任务收益的交互系数不自动等于某种
+PID 协同；额外计算是混杂因素。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h10_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h10.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H10.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H10.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  joint：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{CE(joint}\hspace{0.333em}\nolinkurl{output,task)}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{joint_logits}；停止边
+  target→\nolinkurl{target_or_return}；估计器 EXACT；单位
+  tasks；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  dropout：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{error}\hspace{0.333em}\nolinkurl{under}\hspace{0.333em}\nolinkurl{declared}\hspace{0.333em}\nolinkurl{source}\hspace{0.333em}\nolinkurl{subsets}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{subset_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{subset_logits}；停止边
+  \nolinkurl{subset_targets}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 subsets；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有可微通信学习以及冗余/协同信息分解。 近邻
+{[}\nolinkurl{SBV3_R07,}
+\nolinkurl{SBV3_N02}{]}。保留的激进延伸：把不可分解的多模型互补结构作为可重组计算原语。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H11 渐进潜编码}\label{h11-ux6e10ux8fdbux6f5cux7f16ux7801}
+
+对象为 \nolinkurl{ProgressiveCode}，核心操作为 decode prefix layers with
+explicit quantization error；保持关系为 partial decode has explicit
+precision and pending
+layers。给潜计算前缀可执行语义，计请求、重传、量化和头部开销。
+
+区分见证：仅收到第 1 层时可有限解码，乱序第 3 层不能假装已有第 2 层。
+该见证是机制规格，不等于模型已通过。未证明桥梁：经典逐次可细化条件不保证学习语义的前缀效果单调。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h11_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h11.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H11.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H11.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  prefix：{\small\nolinkurl{weighted}\hspace{0.333em}\nolinkurl{mean}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{error}\hspace{0.333em}\nolinkurl{across}\hspace{0.333em}\nolinkurl{legal}\hspace{0.333em}\nolinkurl{truncations}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{prefix_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{prefix_errors}；停止边 无声明停止边；估计器
+  \nolinkurl{STRAIGHT_THROUGH}；单位 prefix tasks；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  rate：{\small\nolinkurl{-mean}\hspace{0.333em}\nolinkurl{log2}\hspace{0.333em}\nolinkurl{entropy_model(symbol)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{symbol_valid}。所有者 \nolinkurl{entropy_model}；需梯度输入
+  \nolinkurl{symbol_log_probs}；停止边 无声明停止边；估计器 EXACT；单位
+  bits per symbol；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  codebook：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||embedding-stop(residual)||^2}\hspace{0.333em}\nolinkurl{+}\hspace{0.333em}\nolinkurl{beta||residual-stop(embedding)||^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{coordinate_valid}。所有者 codebook,
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{commitment_errors,} \nolinkurl{codebook_errors}；停止边
+  无声明停止边；估计器 \nolinkurl{STRAIGHT_THROUGH}；单位 coordinate
+  elements；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有潜压缩与逐层细化的信息论问题。 近邻
+{[}\nolinkurl{SBV3_S01,}
+\nolinkurl{SBV3_N05}{]}。保留的激进延伸：按新问题逐步显露恰好必要的计算细节。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H12
+多查询持久胶囊}\label{h12-ux591aux67e5ux8be2ux6301ux4e45ux80f6ux56ca}
+
+对象为 \nolinkurl{PersistentCapsule}，核心操作为 versioned multi-query
+retrieval；保持关系为 cache keys contain all semantic versions and
+scope。胶囊与单个答案脱钩，版本化服务声明查询族并追踪失效。
+
+区分见证：同一资料回答两种查询；资料版本更新使受影响胶囊失效而非复用旧答案。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限查询充分性不扩展到任意未来问题。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h12_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h12.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H12.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H12.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\tightlist
+\item
+  目标
+  multiquery：{\small\nolinkurl{mean_document}\hspace{0.333em}\nolinkurl{weighted_mean_query}\hspace{0.333em}\nolinkurl{task_error}}。分子
+  sum valid document weighted query means；分母 count valid documents,
+  inner sum \nolinkurl{query_weights}\emph{\nolinkurl{query_valid}；mask
+  \nolinkurl{query_valid}; \nolinkurl{sum(query_weights} }
+  \nolinkurl{query_valid)}\textgreater{}0 per document。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{query_errors}；停止边 无声明停止边；估计器 EXACT；单位
+  documents then weighted queries；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有压缩状态、缓存和任务相关信息保留。 近邻
+{[}\nolinkurl{SBV3_S01,} \nolinkurl{SBV3_S05,}
+\nolinkurl{SBV3_S14}{]}。保留的激进延伸：长期可询问计算对象能按新查询请求源信息并局部扩容。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H13
+可分叉潜计算}\label{h13-ux53efux5206ux53c9ux6f5cux8ba1ux7b97}
+
+对象为 BranchState，核心操作为 \nolinkurl{copy-on-write} fork and
+\nolinkurl{conflict-aware} merge；保持关系为 incompatible branches
+cannot be averaged
+silently。复制未完成潜计算并按祖先、读写集合及语义条件合并。
+
+区分见证：两分支写同一变量不同值必须保留冲突，不能逐元素平均。
+该见证是机制规格，不等于模型已通过。未证明桥梁：复制更多搜索不自动构成计算复用收益。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h13_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h13.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H13.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H13.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{stage}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{dedicated}\hspace{0.333em}\nolinkurl{mechanism}}。分子
+  sum valid task losses；分母 valid task count；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  merge：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||merged-serial||^2}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{merge_valid}。所有者
+  \nolinkurl{mechanism_reader}；需梯度输入 merged；停止边
+  serial→\nolinkurl{target_or_return}；估计器 EXACT；单位 slot
+  elements；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  conflict：{\small\nolinkurl{BCE(conflict_prediction,scope_conflict)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{conflict_valid}。所有者
+  \nolinkurl{branch_router}；需梯度输入
+  \nolinkurl{conflict_logits}；停止边
+  \nolinkurl{conflict_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 branch pairs；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有续接、事务和依赖维护。 近邻 {[}\nolinkurl{SBV3_S03,}
+\nolinkurl{SBV3_N01,}
+\nolinkurl{SBV3_N06}{]}。保留的激进延伸：把结构演化路径当作可审查、可分叉的认知历史。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H14 潜技能语法}\label{h14-ux6f5cux6280ux80fdux8bedux6cd5}
+
+对象为 SkillGrammar，核心操作为 typed production binding and bounded
+expansion；保持关系为 variable binding survives
+expansion。有类型产生式绑定潜算子，分开结构学习与参数学习。
+
+区分见证：宏展开时同名局部变量不得捕获外部变量；展开预算必须终止递归。
+该见证是机制规格，不等于模型已通过。未证明桥梁：语法压缩不自动带来未见组合泛化。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h14_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h14.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H14.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H14.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  execution：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{expanded}\hspace{0.333em}\nolinkurl{behavior-target}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{behavior_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 behavior；停止边
+  target→\nolinkurl{target_or_return}；估计器 EXACT；单位 behavior
+  coordinates；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  production：{\small\nolinkurl{CE(typed_production_logits,label)}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{grammar_proposer}；需梯度输入
+  \nolinkurl{production_logits}；停止边
+  labels→\nolinkurl{target_or_return}；估计器 EXACT；单位
+  productions；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  rewrite：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{behavior}\hspace{0.333em}\nolinkurl{difference}\hspace{0.333em}\nolinkurl{for}\hspace{0.333em}\nolinkurl{conditional}\hspace{0.333em}\nolinkurl{equivalent}\hspace{0.333em}\nolinkurl{rewrites}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{rewrite_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 rewritten, original；停止边
+  无声明停止边；估计器 EXACT；单位 behavior elements；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有程序抽象库与生成参数的机制。 近邻 {[}\nolinkurl{SBV3_S09,}
+\nolinkurl{SBV3_R08,}
+\nolinkurl{SBV3_N12}{]}。保留的激进延伸：让可运输技能形成层级语法并为自举指令集提供底层。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H15
+接收者无关协议学习}\label{h15-ux63a5ux6536ux8005ux65e0ux5173ux534fux8baeux5b66ux4e60}
+
+对象为 \nolinkurl{ProtocolPopulation}，核心操作为 cross-pair adapter
+sampling and behavior alignment；保持关系为 model IDs are routing
+metadata, not training
+evidence。训练图上的群体协议、未见配对及操作保持契约合并研究。
+
+区分见证：都训练过接口但未配对的两模型，与完全未见模型必须分开计成本。
+该见证是机制规格，不等于模型已通过。未证明桥梁：接口复用不能推出零训练适配任意模型。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h15_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h15.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H15.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H15.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{cross_receiver}：{\small\nolinkurl{mean_receiver}\hspace{0.333em}\nolinkurl{mean_valid_task}\hspace{0.333em}\nolinkurl{loss}}。分子
+  sum valid receiver task means；分母 count valid receivers, inner valid
+  task count；mask \nolinkurl{receiver_valid}; at least one valid task
+  per receiver。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{receiver_errors}；停止边 无声明停止边；估计器 EXACT；单位
+  receivers then tasks；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  effect：{\small\nolinkurl{common}\hspace{0.333em}\nolinkurl{behavior}\hspace{0.333em}\nolinkurl{discrepancy}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{behavior_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 behaviors；停止边
+  \nolinkurl{behavior_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 shared behavior coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有共享桥、接口复用和可微通信学习。 近邻
+{[}\nolinkurl{SBV3_S02,}
+\nolinkurl{SBV3_R07}{]}。保留的激进延伸：协议种群持续吸收新模型而保留已持有计算对象。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H16
+精确符号与潜状态双通道}\label{h16-ux7cbeux786eux7b26ux53f7ux4e0eux6f5cux72b6ux6001ux53ccux901aux9053}
+
+对象为 \nolinkurl{DualChannelPacket}，核心操作为 bind exact symbols to
+latent slots；保持关系为 exact symbolic commitments cannot be silently
+overwritten。精确字段和潜槽绑定，并有不可静默覆盖的冲突策略。
+
+区分见证：符号字段金额 1.01 与潜读出 1.10 冲突时不得改写原字段。
+该见证是机制规格，不等于模型已通过。未证明桥梁：双通道成功可能完全来自符号通道；不可把引用当真值。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h16_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h16.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H16.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H16.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  conflict：{\small\nolinkurl{BCE(conflict_logits,verified}\hspace{0.333em}\nolinkurl{symbol-latent}\hspace{0.333em}\nolinkurl{contradiction)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{conflict_valid}。所有者
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{conflict_logits}；停止边
+  \nolinkurl{conflict_labels}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 symbol conflicts；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{symbol_structure}：{\small\nolinkurl{CE(predicted}\hspace{0.333em}\nolinkurl{exact-field}\hspace{0.333em}\nolinkurl{category,true}\hspace{0.333em}\nolinkurl{category)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{symbol_valid}。所有者
+  \nolinkurl{symbol_predictor}；需梯度输入
+  \nolinkurl{symbol_logits}；停止边
+  \nolinkurl{symbol_labels}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 fields；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{latent_behavior}：{\small\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{conditioned}\hspace{0.333em}\nolinkurl{on}\hspace{0.333em}\nolinkurl{verified}\hspace{0.333em}\nolinkurl{symbols}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{latent_task_loss}；停止边 无声明停止边；估计器 EXACT；单位
+  tasks；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有潜状态传输、符号程序与来源代数。 近邻
+{[}\nolinkurl{SBV3_S05,} \nolinkurl{SBV3_S09,}
+\nolinkurl{SBV3_S21}{]}。保留的激进延伸：让精确承诺与开放式计算共同演化但始终可追溯。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H17
+跨模态坐标接地}\label{h17-ux8de8ux6a21ux6001ux5750ux6807ux63a5ux5730}
+
+对象为 \nolinkurl{GroundingFrame}，核心操作为 transport coordinates and
+\nolinkurl{action-effect} anchors；保持关系为 same dimension does not
+establish semantic
+equivalence。加入坐标单位、对象身份、遮挡与动作后果的共同接口。
+
+区分见证：同一向量数值在米/厘米或左/右手系中应产生不同转换，不能按维度匹配。
+该见证是机制规格，不等于模型已通过。未证明桥梁：人工几何对应不证明视觉语言模型已接地。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h17_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h17.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H17.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H17.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  frame：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{aligned}\hspace{0.333em}\nolinkurl{position}\hspace{0.333em}\nolinkurl{error}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{visible_valid}。所有者 \nolinkurl{vision_reader,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{aligned_positions}；停止边
+  \nolinkurl{position_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 physical coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  action：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{predicted}\hspace{0.333em}\nolinkurl{action}\hspace{0.333em}\nolinkurl{consequence}\hspace{0.333em}\nolinkurl{error}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{action_valid}。所有者
+  \nolinkurl{action_adapter}；需梯度输入
+  \nolinkurl{predicted_next}；停止边
+  \nolinkurl{next_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 physical coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  covariance：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{aligned}\hspace{0.333em}\nolinkurl{covariance-target}\hspace{0.333em}\nolinkurl{error}}。分子
+  sum of valid squared covariance entries；分母 count of valid
+  covariance entries；mask \nolinkurl{covariance_valid}。所有者
+  \nolinkurl{vision_reader,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{aligned_covariances}；停止边
+  \nolinkurl{covariance_target}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 covariance matrix entries；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有跨模态关系比较与结构映射。 近邻 {[}\nolinkurl{SBV3_R12,}
+\nolinkurl{SBV3_R14,}
+\nolinkurl{SBV3_N11}{]}。保留的激进延伸：用可执行行动后果协调不同感知模型的局部世界。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H18
+通信诱导计算结构}\label{h18-ux901aux4fe1ux8bf1ux5bfcux8ba1ux7b97ux7ed3ux6784}
+
+对象为 \nolinkurl{TopologyProposal}，核心操作为 construct bounded
+\nolinkurl{capability-compatible} graph；保持关系为 structural search
+and parameter gradients are
+distinct。协议行为同时决定有类型拓扑与计算分工，并记录实际执行成本。
+
+区分见证：训练期全边执行、推理期选一边时不得只报告选中边成本。
+该见证是机制规格，不等于模型已通过。未证明桥梁：通信拓扑可能退化；非平凡结构不保证新增能力。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h18_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h18.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H18.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H18.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{structure_policy}：{\small\nolinkurl{-log}\hspace{0.333em}\nolinkurl{p(selected}\hspace{0.333em}\nolinkurl{graph)*(reward-baseline)}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{topology_controller}；需梯度输入
+  \nolinkurl{log_probability}；停止边
+  reward→\nolinkurl{target_or_return};
+  baseline→\nolinkurl{target_or_return}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 graphs；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{task_cost}：{\small\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{+}\hspace{0.333em}\nolinkurl{lambda}\hspace{0.333em}\nolinkurl{total}\hspace{0.333em}\nolinkurl{actually}\hspace{0.333em}\nolinkurl{executed}\hspace{0.333em}\nolinkurl{cost}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{stage-normalized} valid tasks; \nolinkurl{actual_cost} is
+  \nolinkurl{executed-cost} diagnostic。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位
+  tasks；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有通信学习和模块共享工作空间。 近邻 {[}\nolinkurl{SBV3_R07,}
+\nolinkurl{SBV3_R09}{]}。保留的激进延伸：任务临时形成新的计算层级而不固定
+Agent 分工。 这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H19
+消息到技能巩固}\label{h19-ux6d88ux606fux5230ux6280ux80fdux5de9ux56fa}
+
+对象为 \nolinkurl{ConsolidationSpec}，核心操作为 distill reusable
+message effects into scoped adapters；保持关系为 temporary messages and
+persistent parameter updates
+differ。把可复用消息操作固化为有来源、可撤销、限定参数组的适配能力。
+
+区分见证：删去当前消息后仍需在新输入保持操作；训练轨迹不能充当未见证据。
+该见证是机制规格，不等于模型已通过。未证明桥梁：输出记忆不等于技能；本项基础版就是蒸馏集成而非新学习原理。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h19_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h19.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H19.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H19.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  distillation：{\small\nolinkurl{mean_valid}\hspace{0.333em}\nolinkurl{||student_without_message}\hspace{0.333em}\nolinkurl{-}\hspace{0.333em}\nolinkurl{stopgrad(teacher_with_message)||^2}}。分子
+  sum of valid per-probe mean coordinate errors；分母 count of valid
+  probes；mask valid。所有者 \nolinkurl{mechanism_reader}；需梯度输入
+  student；停止边 teacher→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 probes, each averaged over coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{operation_behavior}：{\small\nolinkurl{mean_valid}\hspace{0.333em}\nolinkurl{||student(compose(a,b),x)-teacher(b,teacher(a,x))||^2}}。分子
+  sum of valid per-probe mean coordinate errors；分母 count of valid
+  probes；mask \nolinkurl{operation_valid}。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{operation_student}；停止边
+  \nolinkurl{operation_teacher}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 probes, each averaged over coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有知识蒸馏与参数生成。 近邻 {[}\nolinkurl{SBV3_N08,}
+\nolinkurl{SBV3_R08}{]}。保留的激进延伸：由操作组合产生可持续迁移的能力组件。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H20
+异步认知时钟}\label{h20-ux5f02ux6b65ux8ba4ux77e5ux65f6ux949f}
+
+对象为 \nolinkurl{CognitiveClock}，核心操作为 event-driven updates with
+stale-read policy；保持关系为 time version and causal order are
+explicit。认知事件、因果依赖、过期策略与跨阶段状态传输共同定义。
+
+区分见证：新版本先到、旧版本后到时不得回退；无事件也必须有预算终止。
+该见证是机制规格，不等于模型已通过。未证明桥梁：物理控制的稳定条件不能直接移植为语义正确性。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h20_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h20.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H20.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H20.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  task：{\small\nolinkurl{externally}\hspace{0.333em}\nolinkurl{normalized}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{causally}\hspace{0.333em}\nolinkurl{eligible}\hspace{0.333em}\nolinkurl{event}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{stage-normalized} valid tasks。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_loss}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{event_supervision}：{\small\nolinkurl{cross}\hspace{0.333em}\nolinkurl{entropy}\hspace{0.333em}\nolinkurl{over}\hspace{0.333em}\nolinkurl{eligible}\hspace{0.333em}\nolinkurl{event}\hspace{0.333em}\nolinkurl{candidates}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid \&
+  \nolinkurl{eligible.any(-1)}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入 logits；停止边
+  target→\nolinkurl{target_or_return}；估计器 EXACT；单位 event
+  decisions；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{event_policy}：{\small\nolinkurl{-stopgrad(advantage)*log}\hspace{0.333em}\nolinkurl{pi(selected}\hspace{0.333em}\nolinkurl{eligible}\hspace{0.333em}\nolinkurl{event)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{selected_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{selected_logprob}；停止边
+  advantage→\nolinkurl{target_or_return}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 event decisions；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有隐藏消息时机研究及事件触发控制。 近邻
+{[}\nolinkurl{SBV3_R06,}
+\nolinkurl{SBV3_N10}{]}。保留的激进延伸：不同模型不共享固定轮次却能协同未完成计算。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H21
+反事实分支组合搜索}\label{h21-ux53cdux4e8bux5b9eux5206ux652fux7ec4ux5408ux641cux7d22}
+
+对象为 \nolinkurl{CounterfactualPortfolio}，核心操作为 bounded branch
+selection with ancestry reuse；保持关系为 search timeout is not an
+\nolinkurl{impossibility}
+proof。带祖先共享的潜反事实组合树显式记录复用与失效。
+
+区分见证：两分支共享前缀，修改一支不能改变另一支；超时不能当不存在解。
+该见证是机制规格，不等于模型已通过。未证明桥梁：额外算力而非新协议可能解释收益。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h21_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h21.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H21.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H21.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{branch_policy}：{\small\nolinkurl{-stopgrad(return-baseline)*log}\hspace{0.333em}\nolinkurl{pi(branch)}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{selected_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入 logprob；停止边
+  returns→\nolinkurl{target_or_return};
+  baseline→\nolinkurl{target_or_return}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 branch decisions；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{counterfactual_task}：{\small\nolinkurl{mean_valid}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{from}\hspace{0.333em}\nolinkurl{executable}\hspace{0.333em}\nolinkurl{branch}\hspace{0.333em}\nolinkurl{task}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{branch_valid}。所有者
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{branch_task_losses}；停止边 无声明停止边；估计器
+  EXACT；单位 branch tasks；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有续接、依赖维护及在内部世界中探索。 近邻
+{[}\nolinkurl{SBV3_S03,} \nolinkurl{SBV3_N06,}
+\nolinkurl{SBV3_N09}{]}。保留的激进延伸：反事实探索产生可传递排除域和新问题而非只选答案。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H22
+动态模型边界}\label{h22-ux52a8ux6001ux6a21ux578bux8fb9ux754c}
+
+对象为 \nolinkurl{BoundaryPartition}，核心操作为 change computation
+ownership and continuation placement；保持关系为 external permissions
+cannot move with a research boundary。计算所有权、续接位置和 frame
+版本随分区一起迁移。
+
+区分见证：边界改变后旧 frame 消息必须失效；宿主权限不能随研究节点移动。
+该见证是机制规格，不等于模型已通过。未证明桥梁：动态分组不代表融合成单一智能或意识主体。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h22_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h22.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H22.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H22.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{partition_policy}：{\small\nolinkurl{-stopgrad(advantage)*log}\hspace{0.333em}\nolinkurl{probability}\hspace{0.333em}\nolinkurl{of}\hspace{0.333em}\nolinkurl{authorized}\hspace{0.333em}\nolinkurl{hard}\hspace{0.333em}\nolinkurl{partition}}。分子
+  sum of valid terms；分母 count of valid terms；mask valid。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入 logprob；停止边
+  advantage→\nolinkurl{target_or_return}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 partition transitions；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{handoff_behavior}：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{||behavior_after}\hspace{0.333em}\nolinkurl{-}\hspace{0.333em}\nolinkurl{stopgrad(behavior_before)||^2}}。分子
+  sum of valid per-probe mean coordinate errors；分母 count of valid
+  probes；mask \nolinkurl{probe_valid}。所有者
+  \nolinkurl{mechanism_reader}；需梯度输入 after；停止边
+  before→\nolinkurl{target_or_return}；估计器 EXACT；单位 probes, each
+  averaged over coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有模块协调、接口替换与一致性提交。 近邻
+{[}\nolinkurl{SBV3_S02,} \nolinkurl{SBV3_R09,}
+\nolinkurl{SBV3_N01}{]}。保留的激进延伸：群体可按任务重划计算边界，同时保持对象可追踪。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H23
+语义残差纠错}\label{h23-ux8bedux4e49ux6b8bux5deeux7ea0ux9519}
+
+对象为 \nolinkurl{SemanticResidual}，核心操作为 diagnose and transmit
+scoped correction；保持关系为 repair is based on explicit residual, not
+invented truth。接收者请求具体任务残差，发送者补充有作用域差量。
+
+区分见证：字节校验正确但缺一个判断条件时只请求该条件；不能改校验码掩盖损坏。
+该见证是机制规格，不等于模型已通过。未证明桥梁：双方一致错误不因更多反馈变真；反馈可能泄露信息。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h23_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h23.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H23.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H23.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{unnecessary_change}：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{correction}\hspace{0.333em}\nolinkurl{norm}\hspace{0.333em}\nolinkurl{on}\hspace{0.333em}\nolinkurl{clean}\hspace{0.333em}\nolinkurl{packets}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{normal_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入 delta；停止边
+  无声明停止边；估计器 EXACT；单位 clean packets；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{repair_behavior}：{\small\nolinkurl{mean_valid}\hspace{0.333em}\nolinkurl{||behavior_after-stopgrad(correct_behavior)||^2}}。分子
+  sum of valid per-probe mean coordinate errors；分母 count of valid
+  probes；mask \nolinkurl{probe_valid}。所有者
+  \nolinkurl{mechanism_writer,} \nolinkurl{mechanism_reader}；需梯度输入
+  after；停止边 target→\nolinkurl{target_or_return}；估计器 EXACT；单位
+  probes, each averaged over coordinates；零有效策略
+  \nolinkurl{differentiable_zero}。
+\item
+  目标
+  \nolinkurl{no_repair_gate}：{\small\nolinkurl{binary}\hspace{0.333em}\nolinkurl{cross}\hspace{0.333em}\nolinkurl{entropy}\hspace{0.333em}\nolinkurl{repair/no-repair}\hspace{0.333em}\nolinkurl{on}\hspace{0.333em}\nolinkurl{both}\hspace{0.333em}\nolinkurl{normal}\hspace{0.333em}\nolinkurl{and}\hspace{0.333em}\nolinkurl{corrupted}\hspace{0.333em}\nolinkurl{messages}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{gate_valid}。所有者
+  \nolinkurl{mechanism_writer}；需梯度输入
+  \nolinkurl{gate_logits}；停止边
+  \nolinkurl{needs_repair}→\nolinkurl{target_or_return}；估计器
+  EXACT；单位 messages；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有潜消息和渐进补充信息。 近邻 {[}\nolinkurl{SBV3_S01,}
+\nolinkurl{SBV3_R06,}
+\nolinkurl{SBV3_N05}{]}。保留的激进延伸：协议主动生成最小修正问题并选择最具区分力的回应。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H24
+有作用域的潜计算能力}\label{h24-ux6709ux4f5cux7528ux57dfux7684ux6f5cux8ba1ux7b97ux80fdux529b}
+
+对象为 \nolinkurl{ScopedCapability}，核心操作为 validate and apply
+declared research effects；保持关系为 a packet cannot grant host
+authority。能力限制作用到潜计算对象的读写、寿命与效果检查。
+
+区分见证：包内自称管理员或通过别名写禁区必须失败，不能授予宿主权限。
+该见证是机制规格，不等于模型已通过。未证明桥梁：程序隔离不提供统计隐私，潜向量也不是加密。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h24_legacy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h24.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H24.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H24.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{scoped_effect}：{\small\nolinkurl{mean_valid}\hspace{0.333em}\nolinkurl{squared}\hspace{0.333em}\nolinkurl{proposed}\hspace{0.333em}\nolinkurl{effects}\hspace{0.333em}\nolinkurl{in}\hspace{0.333em}\nolinkurl{forbidden}\hspace{0.333em}\nolinkurl{coordinates}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  (\textasciitilde{}\nolinkurl{write_mask).expand_as(proposed_delta)} \&
+  \nolinkurl{coordinate_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{proposed_delta}；停止边 无声明停止边；估计器 EXACT；单位
+  protected coordinates；零有效策略 \nolinkurl{differentiable_zero}。
+\item
+  目标
+  task：{\small\nolinkurl{mean_valid}\hspace{0.333em}\nolinkurl{task}\hspace{0.333em}\nolinkurl{loss}\hspace{0.333em}\nolinkurl{after}\hspace{0.333em}\nolinkurl{structurally}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{operation}}。分子
+  sum of valid terms；分母 count of valid terms；mask
+  \nolinkurl{task_valid}。所有者 \nolinkurl{mechanism_writer,}
+  \nolinkurl{mechanism_reader}；需梯度输入
+  \nolinkurl{task_losses}；停止边 无声明停止边；估计器 EXACT；单位 task
+  instances；零有效策略 \nolinkurl{differentiable_zero}。
+\end{itemize}
+
+已有原语：已有对象能力授权；产品权限说明只是实现背景。 近邻
+{[}\nolinkurl{SBV3_N04,}
+\nolinkurl{SBV3_S22}{]}。保留的激进延伸：探索只开放指定行为而不开放任意状态读取的计算交换。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H25
+规范协变的认知接口}\label{h25-ux89c4ux8303ux534fux53d8ux7684ux8ba4ux77e5ux63a5ux53e3}
+
+对象为 GaugePacket，核心操作为 conjugate state, operator and readout
+under invertible frame change；保持关系为 r G\^{}-1 G T G\^{}-1 G z = r
+T z only within declared
+group。状态、操作和读出一起协变，并将合法变换族/局部域显式化。
+
+区分见证：只变换 z 不变换 T/r 会改变读出；异维压缩不能进入逆矩阵分支。
+该见证是机制规格，不等于模型已通过。未证明桥梁：换基恒等式不证明任意模型隐藏状态有真实对称性。
+
+形式讨论对应 D02 F01，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h25_gauge}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h25.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H25.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H25.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  covariance：{\small\nolinkurl{sum(mask}\hspace{0.333em}\nolinkurl{*}\hspace{0.333em}\nolinkurl{(Pprime}\hspace{0.333em}\nolinkurl{Gi}\hspace{0.333em}\nolinkurl{z}\hspace{0.333em}\nolinkurl{-}\hspace{0.333em}\nolinkurl{Gj}\hspace{0.333em}\nolinkurl{P}\hspace{0.333em}\nolinkurl{z)^2)/sum(mask)}}。分子
+  squared transported coordinate residual；分母 valid state
+  elements；mask \nolinkurl{state_element_mask}。所有者
+  \nolinkurl{cross_map,} \nolinkurl{read_write_heads}；需梯度输入 state,
+  \nolinkurl{cross_map}；停止边 无声明停止边；估计器 EXACT；单位 state
+  elements；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  effect：{\small\nolinkurl{sum(mask}\hspace{0.333em}\nolinkurl{*}\hspace{0.333em}\nolinkurl{(rprime}\hspace{0.333em}\nolinkurl{Tprime}\hspace{0.333em}\nolinkurl{zprime-r}\hspace{0.333em}\nolinkurl{T}\hspace{0.333em}\nolinkurl{z)^2)/sum(mask)}}。分子
+  squared public behavior residual；分母 valid behavior elements；mask
+  \nolinkurl{behavior_mask}。所有者 \nolinkurl{cross_map,}
+  \nolinkurl{read_write_heads}；需梯度输入 state, operator,
+  readout；停止边 无声明停止边；估计器 EXACT；单位 public behavior
+  elements；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：规范变换原则与可复用接口都已有。 近邻 {[}\nolinkurl{SBV3_S06,}
+\nolinkurl{SBV3_S02}{]}。保留的激进延伸：研究路径相关传输与模型升级下的坐标外交，不先假定存在语义曲率。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H26
+不可全局拼合的语义层}\label{h26-ux4e0dux53efux5168ux5c40ux62fcux5408ux7684ux8bedux4e49ux5c42}
+
+对象为 SheafPacket，核心操作为 solve affine overlap constraints and
+expose obstruction；保持关系为 nonzero anchors prevent trivial
+zero-section
+consensus。在有语义锚的局部知识中保存拼合障碍，并据此提出补变量/问题。
+
+区分见证：相互不容的非零局部锚不能用全零截面伪装共识。
+该见证是机制规格，不等于模型已通过。未证明桥梁：代数不一致残差不自动是拓扑上同调障碍，更不自动是语义矛盾。
+
+形式讨论对应 D02 F02，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h26_sheaf}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h26.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H26.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H26.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  local：{\small\nolinkurl{sum(m*(prediction-evidence)^2)/sum(m)}}。分子
+  local evidence residual squared；分母 valid local elements；mask
+  \nolinkurl{local_mask}。所有者 \nolinkurl{anchor_encoder}；需梯度输入
+  \nolinkurl{local_state}；停止边 无声明停止边；估计器 EXACT；单位 local
+  evidence elements；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  overlap：{\small\nolinkurl{sum(m*(Ri}\hspace{0.333em}\nolinkurl{zi-Rj}\hspace{0.333em}\nolinkurl{zj-b)^2)/sum(m)}}。分子
+  declared overlap residual squared；分母 valid declared overlap
+  elements；mask \nolinkurl{overlap_mask}。所有者
+  \nolinkurl{restriction_maps}；需梯度输入 \nolinkurl{local_state,}
+  \nolinkurl{restriction_maps}；停止边 无声明停止边；估计器 EXACT；单位
+  overlap elements；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  obstruction：{\small\nolinkurl{sum(m*BCEWithLogits(logit,conflict))/sum(m)}}。分子
+  conflict \nolinkurl{classification} cross entropy；分母 valid graph
+  labels；mask \nolinkurl{conflict_mask}。所有者
+  \nolinkurl{conflict_head}；需梯度输入
+  \nolinkurl{overlap_residual}；停止边 无声明停止边；估计器 EXACT；单位
+  graphs；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有层限制映射、全局截面与扩散退化研究。 近邻
+{[}\nolinkurl{SBV3_S07,}
+\nolinkurl{SBV3_S08}{]}。保留的激进延伸：让不可统一的知识本身驱动概念和问题结构增生。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H27
+交互中诞生的新概念}\label{h27-ux4ea4ux4e92ux4e2dux8bdeux751fux7684ux65b0ux6982ux5ff5}
+
+对象为 \nolinkurl{ConceptProposal}，核心操作为 synthesize executable
+\nolinkurl{distinguishing} predicates and migrate readers；保持关系为
+unknown differs from false; no candidate preserves the
+conflict。新增概念须有可执行定义、区分见证和旧引用迁移。
+
+区分见证：只改名字或多加一维而不区分此前不可区别的例子不算新概念。
+该见证是机制规格，不等于模型已通过。未证明桥梁：相对当前语法的新表达不等于历史首创或一般智能的新概念。
+
+形式讨论对应 D02 F03，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h27_ontology}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h27.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H27.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H27.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  distinction：{\small\nolinkurl{sum(m*relu(margin-abs(ca-cb)))/sum(m)}}。分子
+  pair margin deficit；分母 known required pairs；mask
+  \nolinkurl{pair_known_mask}。所有者
+  \nolinkurl{concept_thresholds}；需梯度输入
+  \nolinkurl{concept_values}；停止边 无声明停止边；估计器 EXACT；单位
+  pairs；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  behavior：{\small\nolinkurl{sum(m*CE(action_logits,label))/sum(m)}}。分子
+  \nolinkurl{supervisor-only} action cross entropy；分母 valid
+  actions；mask \nolinkurl{action_mask}。所有者
+  \nolinkurl{concept_thresholds,}
+  \nolinkurl{behavior_readout}；需梯度输入
+  \nolinkurl{concept_values}；停止边 无声明停止边；估计器 EXACT；单位
+  actions；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标 description：{\small\nolinkurl{UTF8_prefix_AST_bytes}}。分子
+  actual \nolinkurl{prefix-encoded} AST byte length；分母 one
+  candidate；mask \nolinkurl{candidate_valid}。所有者
+  无可训练所有者；需梯度输入 无路径输入；停止边 无声明停止边；估计器
+  ENUMERATION；单位 bytes；零有效策略 error。
+\item
+  目标
+  drift：{\small\nolinkurl{sum(m*(new_old_domain-old)^2)/sum(m)}}。分子
+  \nolinkurl{historical-domain} response change；分母 valid historical
+  values；mask \nolinkurl{old_domain_mask}。所有者
+  \nolinkurl{concept_thresholds}；需梯度输入
+  \nolinkurl{new_response}；停止边
+  \nolinkurl{old_response}→drift；估计器 EXACT；单位 historical
+  examples；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有抽象库学习、信念修订和程序合成。 近邻
+{[}\nolinkurl{SBV3_S09,} \nolinkurl{SBV3_N06,}
+\nolinkurl{SBV3_N14}{]}。保留的激进延伸：让交流改变后续能够提出的问题和可计算概念空间。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H28
+语义结构的分岔与相变}\label{h28-ux8bedux4e49ux7ed3ux6784ux7684ux5206ux5c94ux4e0eux76f8ux53d8}
+
+对象为 PhaseState，核心操作为 follow control-path branches and
+structural transitions；保持关系为 analytic bifurcation is not evidence
+of neural phase
+transitions。连续控制路径与离散结构事件共同管理分支及迁移。
+
+区分见证：一个准确率跳点不是分岔；必须展示指定动力系统的稳定解结构变化。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限示例不能推出神经语义的热力学相变或普适类。
+
+形式讨论对应 D02 F06，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h28_bifurcation}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h28.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H28.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H28.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标 task：{\small\nolinkurl{sum(m*task_error)/sum(m)}}。分子
+  \nolinkurl{task-conditioned} error；分母 valid tasks；mask
+  \nolinkurl{task_mask}。所有者 \nolinkurl{potential_coefficients,}
+  readout；需梯度输入 trajectory；停止边 无声明停止边；估计器
+  EXACT；单位 tasks；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  migration：{\small\nolinkurl{sum(m*(after_readout-before_readout)^2)/sum(m)}}。分子
+  behavior change under structure migration；分母 valid public behavior
+  elements；mask \nolinkurl{behavior_mask}。所有者
+  \nolinkurl{structure_map}；需梯度输入 \nolinkurl{before_state,}
+  \nolinkurl{after_state}；停止边 无声明停止边；估计器 EXACT；单位
+  behavior elements；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  event：{\small\nolinkurl{sum(m*CE(trigger_logits,event))/sum(m)}}。分子
+  supervised structure event cross entropy；分母 valid events；mask
+  \nolinkurl{event_mask}。所有者 \nolinkurl{trigger_policy}；需梯度输入
+  \nolinkurl{stability_features}；停止边 无声明停止边；估计器
+  EXACT；单位 events；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有连续动力系统稳定性与固定点计算背景。 近邻
+{[}\nolinkurl{SBV3_S10,}
+\nolinkurl{SBV3_N10}{]}。保留的激进延伸：探索交流诱发的状态空间增维与多稳态语义结构。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H29
+问题生成的潜演算}\label{h29-ux95eeux9898ux751fux6210ux7684ux6f5cux6f14ux7b97}
+
+对象为 \nolinkurl{QuestionObject}，核心操作为 rewrite problems with
+solution \nolinkurl{back-translation}；保持关系为 soundness and
+completeness witnesses are
+separate。问题是带答案关系的对象，变换后保存解的回译及健全/完备见证。
+
+区分见证：把 x²=1 改成 x=1 丢掉负根；不能称等价，必须标有损加强。
+该见证是机制规格，不等于模型已通过。未证明桥梁：一般程序等价不可判定；有限关系证明不覆盖任意自然问题。
+
+形式讨论对应 D02 F04，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h29_questions}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h29.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H29.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H29.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  relation：{\small\nolinkurl{sum(m*CE(relation_logits,verified_relation))/sum(m)}}。分子
+  relation \nolinkurl{classification} CE；分母 verified rewrite
+  edges；mask \nolinkurl{edge_mask}。所有者
+  \nolinkurl{transform_selector}；需梯度输入
+  \nolinkurl{question_features}；停止边 无声明停止边；估计器 EXACT；单位
+  rewrite edges；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{backtranslation}：{\small\nolinkurl{sum(m*(translated-answer)^2)/sum(m)}}。分子
+  answer relation residual squared；分母 valid answer coordinates；mask
+  \nolinkurl{answer_mask}。所有者 \nolinkurl{answer_map}；需梯度输入
+  \nolinkurl{target_answer}；停止边 无声明停止边；估计器 EXACT；单位
+  answer coordinates；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{path_policy}：{\small\nolinkurl{-sum(m*log_pi(path)*advantage)/sum(m)}}。分子
+  negative path log probability times stopped advantage；分母 valid
+  paths；mask \nolinkurl{path_mask}。所有者
+  \nolinkurl{transform_selector}；需梯度输入
+  \nolinkurl{path_log_probability}；停止边
+  advantage→\nolinkurl{path_policy}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 paths；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：问题分解、程序抽象和最弱前置条件都已有。 近邻
+{[}\nolinkurl{SBV3_N12,} \nolinkurl{SBV3_S09,}
+\nolinkurl{SBV3_S11}{]}。保留的激进延伸：模型交换如何重写所问之物并共同创造新的问题族。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H30
+类比态射编译器}\label{h30-ux7c7bux6bd4ux6001ux5c04ux7f16ux8bd1ux5668}
+
+对象为 \nolinkurl{AnalogyMorphism}，核心操作为 compile partial
+\nolinkurl{operation-preserving} maps；保持关系为 unmatched domain and
+broken commuting squares stay
+visible。类型化部分态射被编译为目标操作，并显式保存不交换方块。
+
+区分见证：外观相似但操作不保持时必须拒绝；有效子域之外不得继续迁移。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限锚点通过不证明跨域普遍有效。
+
+形式讨论对应 D02 F04，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h30_analogy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h30.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H30.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H30.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  matching：{\small\nolinkurl{sum(mask*(-log}\hspace{0.333em}\nolinkurl{P(correct_object)))/sum(mask)}}。分子
+  sum of valid per-element errors；分母 valid elements；mask
+  \nolinkurl{known_match_mask}。所有者
+  \nolinkurl{matching_logits}；需梯度输入 \nolinkurl{source_features,}
+  \nolinkurl{target_features}；停止边 无声明停止边；估计器 EXACT；单位
+  matched objects；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  commutation：{\small\nolinkurl{sum(mask*(F}\hspace{0.333em}\nolinkurl{A-B}\hspace{0.333em}\nolinkurl{F)^2)/sum(mask)}}。分子
+  sum of valid per-element errors；分母 valid elements；mask
+  \nolinkurl{declared_square_mask}。所有者 \nolinkurl{object_map,}
+  \nolinkurl{operation_map}；需梯度输入 \nolinkurl{source_operation,}
+  \nolinkurl{target_operation}；停止边 无声明停止边；估计器 EXACT；单位
+  \nolinkurl{commuting-square} elements；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  behavior：{\small\nolinkurl{sum(mask*(target_effect-supervised_effect)^2)/sum(mask)}}。分子
+  sum of valid per-element errors；分母 valid elements；mask
+  \nolinkurl{target_behavior_mask}。所有者 \nolinkurl{object_map,}
+  \nolinkurl{target_readout}；需梯度输入
+  \nolinkurl{target_state}；停止边 无声明停止边；估计器 EXACT；单位
+  target behavior elements；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：结构映射式类比和因果/组合抽象有直接前驱。 近邻
+{[}\nolinkurl{SBV3_N11,} \nolinkurl{SBV3_S12,}
+\nolinkurl{SBV3_S13}{]}。保留的激进延伸：把部分可迁移思维方法组合成跨域操作网络。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H31
+因果机制移植}\label{h31-ux56e0ux679cux673aux5236ux79fbux690d}
+
+对象为 CausalModule，核心操作为 graft structural equations through
+explicit boundaries；保持关系为 preserve unaffected equations and shared
+exogenous
+identity。消息实际携带可接入局部方程，检查父边界、共享噪声与未受影响方程。
+
+区分见证：把共享外生噪声误作独立会改变干预分布，即使边际相同也应拒绝。
+该见证是机制规格，不等于模型已通过。未证明桥梁：神经网络中可识别、可移植机制是强假设。
+
+形式讨论对应 D02 F08，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h31_grafting}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h31.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H31.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H31.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  graft：{\small\nolinkurl{sum(m*(grafted_effect-intervention_target)^2)/sum(m)}}。分子
+  \nolinkurl{interventional} effect residual；分母 valid effect
+  coordinates；mask \nolinkurl{intervention_mask}。所有者
+  \nolinkurl{source_module_generator,}
+  \nolinkurl{boundary_reader}；需梯度输入
+  \nolinkurl{boundary_inputs}；停止边 无声明停止边；估计器 EXACT；单位
+  intervention effects；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  boundary：{\small\nolinkurl{sum(m*(unchanged_after-unchanged_before)^2)/sum(m)}}。分子
+  external invariant residual；分母 valid boundary invariants；mask
+  \nolinkurl{boundary_mask}。所有者
+  \nolinkurl{boundary_reader}；需梯度输入
+  \nolinkurl{grafted_state}；停止边
+  \nolinkurl{unchanged_before}→boundary；估计器 EXACT；单位 boundary
+  coordinates；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有因果抽象及组件级机制映射。 近邻 {[}\nolinkurl{SBV3_S12,}
+\nolinkurl{SBV3_S13}{]}。保留的激进延伸：不同模型共同重组带因果契约的世界生成机制。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H32
+视角与目标条件代数}\label{h32-ux89c6ux89d2ux4e0eux76eeux6807ux6761ux4ef6ux4ee3ux6570}
+
+对象为 \nolinkurl{ObjectiveFrame}，核心操作为 transform cost coordinates
+and preference covectors；保持关系为 immutable external goal and hard
+constraints are
+unchanged。目标坐标和偏好协向量共同转换，外部目标和硬约束只读。
+
+区分见证：只缩放成本不逆变换权重会改排序；禁止偷偷放松硬约束。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限线性目标框架不能代表一切偏好，更非价值对齐证明。
+
+形式讨论对应 D02 F01，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h32_perspective}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h32.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H32.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H32.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  value：{\small\nolinkurl{sum(m*(wprime}\hspace{0.333em}\nolinkurl{dot}\hspace{0.333em}\nolinkurl{cprime-w}\hspace{0.333em}\nolinkurl{dot}\hspace{0.333em}\nolinkurl{c)^2)/sum(m)}}。分子
+  \nolinkurl{objective-value} preservation residual；分母 valid
+  objective values；mask \nolinkurl{goal_mask}。所有者
+  \nolinkurl{view_map,} \nolinkurl{objective_readout}；需梯度输入 costs,
+  weights；停止边 无声明停止边；估计器 EXACT；单位 goals；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  constraint：{\small\nolinkurl{sum(m*relu(A_original}\hspace{0.333em}\nolinkurl{c_original-b)^2)/sum(m)}}。分子
+  original \nolinkurl{hard-constraint} violation；分母 valid original
+  constraints；mask \nolinkurl{constraint_mask}。所有者
+  \nolinkurl{objective_readout}；需梯度输入
+  \nolinkurl{original_costs}；停止边 无声明停止边；估计器 EXACT；单位
+  constraints；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有任务结构与满足条件的变换。 近邻 {[}\nolinkurl{SBV3_S11,}
+\nolinkurl{SBV3_N12}{]}。保留的激进延伸：允许多种内部视角并存而保持同一用户承诺。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H33
+非梯度的互构认知动力学}\label{h33-ux975eux68afux5ea6ux7684ux4e92ux6784ux8ba4ux77e5ux52a8ux529bux5b66}
+
+对象为 \nolinkurl{DynamicsPacket}，核心操作为 integrate gradient plus
+skew-coupled trajectories；保持关系为 cycles are valid outputs; finite
+integration does not claim
+convergence。把耦合向量场、读出窗口及有用瞬态作为传输对象，允许非梯度环流。
+
+区分见证：纯旋转场的轨迹可循环而不收敛；若只接受固定点就错误删除输出。
+该见证是机制规格，不等于模型已通过。未证明桥梁：振荡的存在不等于有用认知；尚需更广泛非平衡计算近邻审查。
+
+形式讨论对应 D02 F06，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h33_reciprocal}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h33.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H33.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H33.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  terminal：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{(readout-target)^2}}。分子
+  sum of masked residuals；分母 valid terms；mask
+  \nolinkurl{behavior_mask}。所有者 coupling,
+  \nolinkurl{trajectory_reader}；需梯度输入 trajectory；停止边
+  无声明停止边；估计器 EXACT；单位 behavior elements；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  trajectory：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{(predicted_relation-target_relation)^2}}。分子
+  sum of masked residuals；分母 valid terms；mask
+  \nolinkurl{trajectory_mask}。所有者 coupling；需梯度输入
+  trajectory；停止边 无声明停止边；估计器 EXACT；单位 trajectory
+  relations；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  stability：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{relu(norm2_next-norm2_current-budget)^2}}。分子
+  sum of masked residuals；分母 valid terms；mask
+  \nolinkurl{step_mask}。所有者 \nolinkurl{dissipation_factor,}
+  coupling；需梯度输入 trajectory；停止边 无声明停止边；估计器
+  EXACT；单位 logical steps；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：固定点网络和非平凡动力系统已有；DEQ 不是循环计算的唯一前驱。
+近邻 {[}\nolinkurl{SBV3_S10,}
+\nolinkurl{SBV3_N10}{]}。保留的激进延伸：多个模型改变彼此演化规律而不是轮流追加结论。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H34
+双边边界条件推理}\label{h34-ux53ccux8fb9ux8fb9ux754cux6761ux4ef6ux63a8ux7406}
+
+对象为 \nolinkurl{TrajectoryFactorGraph}，核心操作为 solve public
+two-boundary path constraints；保持关系为 terminal conditions cannot be
+hidden future
+observations。把起终端公开约束与可迁移中间未知状态组成有类型轨迹对象。
+
+区分见证：用测试答案偷偷构造终端条件属于泄漏；给定合法终端约束则可反传。
+该见证是机制规格，不等于模型已通过。未证明桥梁：双向消息本身不是新算法；候选贡献在跨模型状态/契约实现。
+
+形式讨论对应 D02 F06，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h34_boundary_value}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h34.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H34.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H34.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  transition：{\small\nolinkurl{sum(m*(z_next-F(z))^2)/sum(m)}}。分子
+  transition consistency residual；分母 valid transition
+  coordinates；mask \nolinkurl{transition_mask}。所有者
+  \nolinkurl{transition_messages}；需梯度输入 trajectory；停止边
+  无声明停止边；估计器 EXACT；单位 transition coordinates；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标 boundary：{\small\nolinkurl{sum(m*boundary_error)/sum(m)}}。分子
+  public start and terminal violation；分母 valid boundary
+  conditions；mask \nolinkurl{boundary_mask}。所有者
+  \nolinkurl{backward_constraint_encoder}；需梯度输入 trajectory；停止边
+  无声明停止边；估计器 EXACT；单位 public boundary
+  conditions；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标 task：{\small\nolinkurl{sum(m*task_error)/sum(m)}}。分子 task
+  readout error；分母 valid task outputs；mask
+  \nolinkurl{task_mask}。所有者
+  \nolinkurl{trajectory_reader}；需梯度输入 trajectory；停止边
+  无声明停止边；估计器 EXACT；单位 task outputs；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：双向概率消息、前后向算法和后条件推理早已有之。 近邻
+{[}\nolinkurl{SBV3_N13,} \nolinkurl{SBV3_N12,}
+\nolinkurl{SBV3_S11}{]}。保留的激进延伸：共同求解边界间尚未确定的计算路径，而非声称获得未来信息。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H35
+跨尺度语义重整化}\label{h35-ux8de8ux5c3aux5ea6ux8bedux4e49ux91cdux6574ux5316}
+
+对象为 ScalePacket，核心操作为 coarsen, lift and measure dynamic closure
+residual；保持关系为 a lifting map is not a lossless
+inverse。同时交换粗化、宏动态及闭合残差，并提供所需细化条件。
+
+区分见证：两个微状态同粗类但下一步粗状态不同，必须报告闭合失败或记忆项。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限
+\nolinkurl{coarse-graining} 不证明物理重整化群或无损提升。
+
+形式讨论对应 D02 F07，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h35_renormalization}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h35.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H35.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H35.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  commute：{\small\nolinkurl{sum(m*(C}\hspace{0.333em}\nolinkurl{Fmicro(z)-Fmacro(Cz))^2)/sum(m)}}。分子
+  coarse dynamic closure error；分母 valid macro-state elements；mask
+  \nolinkurl{macro_mask}。所有者 \nolinkurl{coarse_map,}
+  \nolinkurl{macro_dynamics}；需梯度输入 \nolinkurl{micro_state}；停止边
+  无声明停止边；估计器 EXACT；单位 macro elements；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  task：{\small\nolinkurl{sum(m*(macro_task-micro_task)^2)/sum(m)}}。分子
+  preserved \nolinkurl{task-response} residual；分母 valid task
+  responses；mask \nolinkurl{task_mask}。所有者 \nolinkurl{coarse_map,}
+  \nolinkurl{task_reader}；需梯度输入 \nolinkurl{macro_state}；停止边
+  无声明停止边；估计器 EXACT；单位 task responses；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  residual：{\small\nolinkurl{sum(m*(detail_prediction-detail)^2)/sum(m)}}。分子
+  retained detail prediction error；分母 valid micro residual
+  elements；mask \nolinkurl{detail_mask}。所有者 lift,
+  \nolinkurl{detail_memory}；需梯度输入 \nolinkurl{coarse_state}；停止边
+  无声明停止边；估计器 EXACT；单位 micro elements；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有状态聚合、任务相关压缩与逐次细化。 近邻
+{[}\nolinkurl{SBV3_N03,} \nolinkurl{SBV3_S14,}
+\nolinkurl{SBV3_N05}{]}。保留的激进延伸：让模型按任务在不同尺度之间协商计算而非固定表示粒度。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H36
+以分歧生产结构的认知博弈}\label{h36-ux4ee5ux5206ux6b67ux751fux4ea7ux7ed3ux6784ux7684ux8ba4ux77e5ux535aux5f08}
+
+对象为 \nolinkurl{DisagreementRound}，核心操作为 find checked
+\nolinkurl{counterexamples} and revise finite candidates；保持关系为
+votes are not ground truth; unavailable oracle stays
+unavailable。反例驱动的是概念/程序结构修改而非投票胜负，保留反例谱系。
+
+区分见证：多数同意一个错误程序不能胜过可执行反例；未找到反例不是全称证明。
+该见证是机制规格，不等于模型已通过。未证明桥梁：自然任务 oracle
+缺失时只能称候选反例；CEGIS 本身非新颖。
+
+形式讨论对应 D02 F03，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h36_disagreement}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h36.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H36.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H36.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{valid_challenge}：{\small\nolinkurl{-sum(m*log_pi(x)*verified_violation)/sum(m)}}。分子
+  policy score times \nolinkurl{interpreter-verified} reward；分母 valid
+  executable challenges；mask \nolinkurl{legal_challenge_mask}。所有者
+  \nolinkurl{critic_policy}；需梯度输入
+  \nolinkurl{challenge_log_probability}；停止边
+  \nolinkurl{verified_violation}→\nolinkurl{valid_challenge}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 challenges；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  revision：{\small\nolinkurl{sum(m*CE(revision_logits,verified_revision))/sum(m)}}。分子
+  program revision CE；分母 verified revision examples；mask
+  \nolinkurl{revision_mask}。所有者
+  \nolinkurl{revision_selector}；需梯度输入
+  \nolinkurl{counterexample_features}；停止边 无声明停止边；估计器
+  EXACT；单位 revisions；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  legality：{\small\nolinkurl{sum(m*BCE(validity_logits,executable))/sum(m)}}。分子
+  executable validity CE；分母 labeled challenge programs；mask
+  \nolinkurl{legality_mask}。所有者
+  \nolinkurl{critic_validity_head}；需梯度输入
+  \nolinkurl{program_features}；停止边 无声明停止边；估计器 EXACT；单位
+  challenge programs；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：反例引导合成、程序抽象和依赖修订都有强近邻。 近邻
+{[}\nolinkurl{SBV3_N14,} \nolinkurl{SBV3_S09,}
+\nolinkurl{SBV3_N06}{]}。保留的激进延伸：分歧成为新增变量和改写问题的生产机制。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H37
+跨模型学习方向运输}\label{h37-ux8de8ux6a21ux578bux5b66ux4e60ux65b9ux5411ux8fd0ux8f93}
+
+对象为 \nolinkurl{LearningEffectPacket}，核心操作为 transport behavioral
+tangent by JVP/VJP least squares；保持关系为 unreachable residual and
+\nolinkurl{regularization}/rank diagnostics are
+mandatory。交换行为切向量并用目标 Jacobian 的正则最小二乘投回参数空间。
+
+区分见证：源方向不在目标 Jacobian
+像中时必须保留不可达残差，不能宣称无损。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限探针与局部线性化不足以保证更新后全局行为；自然梯度近邻尚须全文复核。
+
+形式讨论对应 D02 F05，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h37_gradient_transport}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h37.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H37.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H37.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  effect：{\small\nolinkurl{sum(m*(behavior_after-behavior_before-v)^2)/sum(m)}}。分子
+  post-update public behavior error；分母 valid shared behavior
+  coordinates；mask \nolinkurl{behavior_mask}。所有者
+  \nolinkurl{transport_operator,}
+  \nolinkurl{behavior_encoder}；需梯度输入 \nolinkurl{source_direction,}
+  \nolinkurl{target_update}；停止边 无声明停止边；估计器 EXACT；单位
+  shared public behaviors；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  local：{\small\nolinkurl{sum(m*(actual_behavior_delta-Jtarget}\hspace{0.333em}\nolinkurl{delta)^2)/sum(m)}}。分子
+  local \nolinkurl{linearization} error；分母 valid public anchor
+  coordinates；mask \nolinkurl{anchor_mask}。所有者
+  \nolinkurl{transport_operator}；需梯度输入
+  \nolinkurl{target_update}；停止边 无声明停止边；估计器 EXACT；单位
+  anchor coordinates；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  ridge：{\small\nolinkurl{lambda}\hspace{0.333em}\nolinkurl{*}\hspace{0.333em}\nolinkurl{sum(delta^2)/count(delta)}}。分子
+  scoped parameter update squared norm；分母 updated parameter
+  elements；mask \nolinkurl{parameter_mask}。所有者
+  \nolinkurl{transport_operator}；需梯度输入
+  \nolinkurl{target_update}；停止边 无声明停止边；估计器 EXACT；单位
+  updated parameters；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有行为蒸馏、学习优化器和因果行为对应。 近邻
+{[}\nolinkurl{SBV3_N08,} \nolinkurl{SBV3_S16,}
+\nolinkurl{SBV3_S12}{]}。保留的激进延伸：不同结构模型交换学习方向而非权重维度，保持可识别的行为效应。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H38
+可传递的可塑性规则}\label{h38-ux53efux4f20ux9012ux7684ux53efux5851ux6027ux89c4ux5219}
+
+对象为 \nolinkurl{PlasticityProgram}，核心操作为 interpret scoped update
+DSL and unrolled \nolinkurl{meta-objective}；保持关系为 support/query
+isolation and estimator kind are explicit。学习规则作为受限可运输
+DSL，带可读统计、参数组与寿命。
+
+区分见证：规则试图更新禁写参数组必须被拒绝；支持集信息不得混入查询监督。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有界更新不保证有效或避免遗忘；跨模型规则迁移仍待研究。
+
+形式讨论对应 D02 F05，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h38_plasticity}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h38.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H38.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H38.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{outer_query_full}：{\small\nolinkurl{L_query(theta_T(psi),query)}}。分子
+  query-only loss after fixed support unroll；分母 valid held-out query
+  targets；mask \nolinkurl{query_valid_mask}。所有者
+  \nolinkurl{plasticity_rule_parameters}；需梯度输入
+  \nolinkurl{support_gradients,} \nolinkurl{inner_parameters,}
+  \nolinkurl{rule_parameters}；停止边 无声明停止边；估计器
+  \nolinkurl{SECOND_ORDER}；单位 query targets；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{outer_query_first_order}：{\small\nolinkurl{L_query(theta_T(psi,stopgrad(g_support)),query)}}。分子
+  query loss with \nolinkurl{support-gradient} Hessian terms
+  omitted；分母 valid held-out query targets；mask
+  \nolinkurl{query_valid_mask}。所有者
+  \nolinkurl{plasticity_rule_parameters}；需梯度输入
+  \nolinkurl{inner_parameters,} \nolinkurl{rule_parameters}；停止边
+  \nolinkurl{support_gradients}→\nolinkurl{inner_update}；估计器
+  \nolinkurl{FIRST_ORDER}；单位 query targets；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{update_budget}：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{relu(norm(delta)-max_norm)^2}}。分子
+  pre-clipping update norm exceedance；分母 valid scoped parameter
+  groups；mask \nolinkurl{group_mask}。所有者
+  \nolinkurl{plasticity_rule_parameters}；需梯度输入
+  \nolinkurl{raw_update}；停止边 无声明停止边；估计器 EXACT；单位
+  parameter groups；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：学习优化器和有作用域程序执行已有。 近邻
+{[}\nolinkurl{SBV3_S16,}
+\nolinkurl{SBV3_N04}{]}。保留的激进延伸：模型传授如何学习，形成可组合的可塑性生态。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H39
+可回滚的跨模型认知事务}\label{h39-ux53efux56deux6edaux7684ux8de8ux6a21ux578bux8ba4ux77e5ux4e8bux52a1}
+
+对象为 \nolinkurl{CognitiveTransaction}，核心操作为 optimistic versioned
+commit or rollback；保持关系为 only controlled state is reversible, not
+external world effects。将本体/ISA/证据迁移纳入单个受控认知状态事务。
+
+区分见证：读版本过期时提交失败且不留下半迁移；已发外部消息不可声称撤销。
+该见证是机制规格，不等于模型已通过。未证明桥梁：本项是支撑性集成而非新智能范式；本地原子性不等于分布式容错。
+
+形式讨论对应 D02 F09，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h39_transactions}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h39.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H39.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H39.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{conflict_prediction}：{\small\nolinkurl{sum(m*BCE(logit,conflict))/sum(m)}}。分子
+  conflict prediction CE；分母 valid completed transaction
+  outcomes；mask \nolinkurl{outcome_mask}。所有者
+  \nolinkurl{commit_policy}；需梯度输入
+  \nolinkurl{conflict_features}；停止边 无声明停止边；估计器 EXACT；单位
+  transactions；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{redo_cost}：{\small\nolinkurl{sum(m*(predicted_cost-actual_cost)^2)/sum(m)}}。分子
+  redo cost prediction residual；分母 valid retry outcomes；mask
+  \nolinkurl{retry_mask}。所有者 \nolinkurl{cost_predictor}；需梯度输入
+  \nolinkurl{cost_features}；停止边 无声明停止边；估计器 EXACT；单位
+  transactions；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：原子提交、版本冲突、回滚和依赖修订是成熟基础设施。 近邻
+{[}\nolinkurl{SBV3_N01,}
+\nolinkurl{SBV3_N06}{]}。保留的激进延伸：重大认知结构候选可分叉试构造后提交，不污染共有状态。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H40
+自举的潜指令集}\label{h40-ux81eaux4e3eux7684ux6f5cux6307ux4ee4ux96c6}
+
+对象为 \nolinkurl{InstructionProposal}，核心操作为 introduce hygienic
+macros with base-ISA lowering；保持关系为 base ISA is immutable; learned
+shortcuts are not
+definitions。通信指令集与读者版本共同自举，宏有卫生展开、迁移与基底
+lowering。
+
+区分见证：只添加新名字但展开仍同程序不能称增加可计算性；旧读者须有合法降级。
+该见证是机制规格，不等于模型已通过。未证明桥梁：可展开宏只改变描述/搜索复杂度，不突破基底表达能力。
+
+形式讨论对应 D02 F09，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h40_instruction_set}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h40.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H40.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H40.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  \nolinkurl{fast_behavior}：{\small\nolinkurl{sum(m*(fast_mu(x)-Exec_base(lower(mu),x))^2)/sum(m)}}。分子
+  fast \nolinkurl{implementation} anchor error；分母 valid declared
+  behavior anchors；mask \nolinkurl{anchor_mask}。所有者
+  \nolinkurl{fast_macro_coefficients}；需梯度输入
+  \nolinkurl{macro_inputs}；停止边
+  \nolinkurl{exact_base_target}→\nolinkurl{fast_behavior}；估计器
+  EXACT；单位 behavior anchors；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  description：{\small\nolinkurl{encoded_original_bytes-encoded_definition_bytes-encoded_calls_bytes}}。分子
+  actual byte savings；分母 one candidate library；mask
+  \nolinkurl{candidate_valid}。所有者 无可训练所有者；需梯度输入
+  无路径输入；停止边 无声明停止边；估计器 ENUMERATION；单位
+  bytes；零有效策略 error。
+\item
+  目标
+  binding：{\small\nolinkurl{sum(m*CE(binding_logits,binding))/sum(m)}}。分子
+  typed argument binding CE；分母 valid macro calls；mask
+  \nolinkurl{call_mask}。所有者 \nolinkurl{binding_selector}；需梯度输入
+  \nolinkurl{program_features}；停止边 无声明停止边；估计器 EXACT；单位
+  macro calls；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：程序库增长、宏展开和合成已有。 近邻 {[}\nolinkurl{SBV3_S09,}
+\nolinkurl{SBV3_N12,}
+\nolinkurl{SBV3_N14}{]}。保留的激进延伸：协议自身发展新操作层级，重新组织可高效表达的思维结构。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H41
+互补能力的联盟契约}\label{h41-ux4e92ux8865ux80fdux529bux7684ux8054ux76dfux5951ux7ea6}
+
+对象为 \nolinkurl{CoalitionContract}，核心操作为 compute bounded
+coalition value and internal contribution；保持关系为 unknown value is
+not zero; credit is not
+money。用有类型前置条件/联合产出契约形成互补联盟，未知子集值不记零。
+
+区分见证：两个单体价值零但联合作业有价值时，单体排名不可淘汰它们。
+该见证是机制规格，不等于模型已通过。未证明桥梁：Shapley
+分摊依赖价值定义，不能自动保证公平或因果贡献。
+
+形式讨论对应 D02 F09，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h41_coalitions}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h41.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H41.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H41.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  value：{\small\nolinkurl{sum(m*(estimated-v_table)^2)/sum(m)}}。分子
+  known coalition value residual；分母 known coalition values；mask
+  \nolinkurl{known_value_mask}。所有者
+  \nolinkurl{coalition_value_estimator}；需梯度输入
+  \nolinkurl{capability_features}；停止边 无声明停止边；估计器
+  EXACT；单位 coalitions；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  allocation：{\small\nolinkurl{-sum(m*log_pi(S)*task_utility)/sum(m)}}。分子
+  policy score times actual task utility；分母 valid feasible
+  allocations；mask \nolinkurl{feasible_mask}。所有者
+  \nolinkurl{coalition_proposer}；需梯度输入
+  \nolinkurl{allocation_log_probability}；停止边
+  \nolinkurl{task_utility}→allocation；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 allocations；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：联盟价值分配与协同信息结构已有。 近邻 {[}\nolinkurl{SBV3_S17,}
+\nolinkurl{SBV3_N02}{]}。保留的激进延伸：能力联盟而非固定模型成为临时计算主体，信用仅为内部资源记账。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H42
+模型与任务的共演化生态}\label{h42-ux6a21ux578bux4e0eux4efbux52a1ux7684ux5171ux6f14ux5316ux751fux6001}
+
+对象为 EcologyState，核心操作为 mutate and archive bounded program/world
+populations；保持关系为 lineage and semantic version migrations are
+preserved。将本体、潜协议、学习规则及世界版本共同纳入生态档案。
+
+区分见证：结构不同但暂时低分的生态位不能自动被单一排行榜清空。
+该见证是机制规格，不等于模型已通过。未证明桥梁：联合演化可能循环、作弊或漂移；不承诺无界有意义创新。
+
+形式讨论对应 D02 F09，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h42_ecology}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h42.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H42.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H42.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标 interface：{\small\nolinkurl{sum(m*task_error)/sum(m)}}。分子
+  \nolinkurl{task-conditioned} interface loss；分母 valid
+  \nolinkurl{role-isolated} tasks；mask \nolinkurl{task_mask}。所有者
+  \nolinkurl{protocol_interface}；需梯度输入
+  \nolinkurl{public_task_features}；停止边 无声明停止边；估计器
+  EXACT；单位 tasks；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  proposal：{\small\nolinkurl{-sum(m*log_pi(mutation)*reward)/sum(m)}}。分子
+  mutation policy score times separately recorded novelty/solvability
+  reward；分母 valid legal mutations；mask
+  \nolinkurl{mutation_mask}。所有者
+  \nolinkurl{environment_proposer}；需梯度输入
+  \nolinkurl{mutation_log_probability}；停止边 reward→proposal；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 mutations；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：环境/解法共演化与抽象库增长都有直接前驱。 近邻
+{[}\nolinkurl{SBV3_S18,} \nolinkurl{SBV3_S19,}
+\nolinkurl{SBV3_S09}{]}。保留的激进延伸：维护不断产生新问题、新语言和互补关系的计算生态。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H43
+可交换的世界动力学核}\label{h43-ux53efux4ea4ux6362ux7684ux4e16ux754cux52a8ux529bux5b66ux6838}
+
+对象为 WorldKernel，核心操作为 compose normalized finite dynamics with
+explicit noise coupling；保持关系为 independence requires a certificate;
+shared noise stays
+shared。可交换的是带动作、观测、噪声身份和边界契约的转移核。
+
+区分见证：两个核共享噪声时不能相乘成独立联合分布；每个有限核必须归一化。
+该见证是机制规格，不等于模型已通过。未证明桥梁：核可执行不等于现实正确；组合的多步误差可能累积。
+
+形式讨论对应 D02 F08，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h43_world_kernels}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h43.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H43.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H43.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  transition：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{-log}\hspace{0.333em}\nolinkurl{K(snext|s,a)}}。分子
+  sum of masked per-case losses；分母 valid terms；mask
+  \nolinkurl{transition_mask}。所有者 \nolinkurl{kernel_generator,}
+  \nolinkurl{state_interface}；需梯度输入
+  \nolinkurl{current_state}；停止边 无声明停止边；估计器 EXACT；单位
+  observed transitions；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  observation：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{-log}\hspace{0.333em}\nolinkurl{O(observation|s)}}。分子
+  sum of masked per-case losses；分母 valid terms；mask
+  \nolinkurl{observation_mask}。所有者
+  \nolinkurl{observation_generator}；需梯度输入
+  \nolinkurl{world_state}；停止边 无声明停止边；估计器 EXACT；单位
+  observations；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{shared_noise}：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{(predicted_joint-target_joint)^2}}。分子
+  sum of masked per-case losses；分母 valid terms；mask
+  \nolinkurl{joint_mask}。所有者 \nolinkurl{noise_coupling}；需梯度输入
+  \nolinkurl{conditional_kernels}；停止边 无声明停止边；估计器
+  EXACT；单位 joint outcome cells；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  multistep：{\small\nolinkurl{mean}\hspace{0.333em}\nolinkurl{masked}\hspace{0.333em}\nolinkurl{(predicted_behavior-target_behavior)^2}}。分子
+  sum of masked per-case losses；分母 valid terms；mask
+  \nolinkurl{horizon_mask}。所有者
+  \nolinkurl{kernel_generator}；需梯度输入
+  \nolinkurl{initial_state}；停止边 无声明停止边；估计器 EXACT；单位
+  horizon behavior elements；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有因果模块及可用于规划的生成世界模型。 近邻
+{[}\nolinkurl{SBV3_S12,} \nolinkurl{SBV3_S13,}
+\nolinkurl{SBV3_N09}{]}。保留的激进延伸：消息成为可行动的小世界并通过机制契约组成新环境。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H44
+共同构造的反事实梦境}\label{h44-ux5171ux540cux6784ux9020ux7684ux53cdux4e8bux5b9eux68a6ux5883}
+
+对象为 DreamWorld，核心操作为 construct executable
+\nolinkurl{counterfactual} worlds and derived questions；保持关系为
+synthetic evidence cannot support its own real-world
+truth。多个贡献者的局部核共同合成可追溯、可反事实编辑的世界。
+
+区分见证：自造环境产生的证据不得反过来证明该环境的现实假设。
+该见证是机制规格，不等于模型已通过。未证明桥梁：共同构造不是观测现实；不能把合成样本当实证研究结果。
+
+形式讨论对应 D02 F08，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h44_dreaming}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h44.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H44.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H44.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  legality：{\small\nolinkurl{sum(m*BCE(legal_logits,structural_valid))/sum(m)}}。分子
+  world \nolinkurl{structural-validity} CE；分母 checked world
+  proposals；mask \nolinkurl{world_mask}。所有者
+  \nolinkurl{world_proposer}；需梯度输入
+  \nolinkurl{kernel_features}；停止边 无声明停止边；估计器 EXACT；单位
+  proposals；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  curriculum：{\small\nolinkurl{sum(m*synthetic_task_loss)/sum(m)}}。分子
+  synthetic task loss with parent lineage；分母 valid synthetic
+  tasks；mask \nolinkurl{synthetic_mask}。所有者
+  \nolinkurl{protocol_interface}；需梯度输入
+  \nolinkurl{role_views}；停止边 无声明停止边；估计器 EXACT；单位
+  synthetic tasks；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{heldout_proposal}：{\small\nolinkurl{log_pi(world)*stopgrad(L_independent_holdout)}}。分子
+  world score times held-out loss；分母 valid proposals with independent
+  holdout；mask \nolinkurl{holdout_mask}。所有者
+  \nolinkurl{world_proposer}；需梯度输入
+  \nolinkurl{world_log_probability}；停止边
+  \nolinkurl{independent_holdout_loss}→\nolinkurl{heldout_proposal}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 independent held-out
+  tasks；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：在生成世界中学习及自动环境设计已存在。 近邻
+{[}\nolinkurl{SBV3_N09,} \nolinkurl{SBV3_S18,}
+\nolinkurl{SBV3_S19}{]}。保留的激进延伸：模型共同创造经验空间以反过来推动概念、协议和学习规则演化。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H45
+主动可识别性协议}\label{h45-ux4e3bux52a8ux53efux8bc6ux522bux6027ux534fux8bae}
+
+对象为 \nolinkurl{IdentificationState}，核心操作为 choose allowed
+queries by information gain or minimax partition；保持关系为 unknown
+likelihood is not a fabricated
+prior。对允许查询明确计算机制等价类如何分裂，保留未知响应。
+
+区分见证：当前观测相同但可由一项干预区分时选择该干预；禁用查询不能执行。
+该见证是机制规格，不等于模型已通过。未证明桥梁：候选族遗漏真机制会产生伪自信，信息增益不保证真实识别。
+
+形式讨论对应 D02 F10，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h45_identifiability}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h45.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H45.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H45.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  response：{\small\nolinkurl{sum(m*-log}\hspace{0.333em}\nolinkurl{p(observation|hypothesis,query))/sum(m)}}。分子
+  observed response NLL；分母 valid \nolinkurl{program-observation}
+  cases；mask \nolinkurl{observation_mask}。所有者
+  \nolinkurl{response_encoder}；需梯度输入
+  \nolinkurl{public_query_features}；停止边 无声明停止边；估计器
+  EXACT；单位 observations；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  \nolinkurl{query_policy}：{\small\nolinkurl{-sum(m*log_pi(query)*verified_information_gain)/sum(m)}}。分子
+  legal query policy score；分母 valid \nolinkurl{host-authorized} local
+  queries；mask \nolinkurl{query_mask}。所有者
+  \nolinkurl{query_proposer}；需梯度输入
+  \nolinkurl{query_log_probability}；停止边
+  \nolinkurl{verified_information_gain}→\nolinkurl{query_policy}；估计器
+  \nolinkurl{POLICY_GRADIENT}；单位 queries；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：已有信息收益查询及因果区分思想。 近邻 {[}\nolinkurl{SBV3_S20,}
+\nolinkurl{SBV3_S12}{]}。保留的激进延伸：通信主动发明最小可区分问题而非被动接受同类数据。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H46
+不可行域与负知识胶囊}\label{h46-ux4e0dux53efux884cux57dfux4e0eux8d1fux77e5ux8bc6ux80f6ux56ca}
+
+对象为 \nolinkurl{ExclusionPacket}，核心操作为 apply conditional hard
+exclusions or soft penalties and retract；保持关系为 timeout and
+heuristic scores do not become hard
+\nolinkurl{impossibility}。条件化排除集合携带证据等级与撤销规则，区分硬证书和软启发式。
+
+区分见证：搜索超时不能排除全部区域；撤销前提后相关排除必须失效。
+该见证是机制规格，不等于模型已通过。未证明桥梁：模型生成理由未验证时不能升级为不可行性证明。
+
+形式讨论对应 D02 F10，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h46_negative_knowledge}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h46.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H46.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H46.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  exclusion：{\small\nolinkurl{sum(mask*BCEWithLogits(predicate_logits,verified_exclusion))/sum(mask)}}。分子
+  \nolinkurl{certificate-labelled} predicate BCE；分母 valid scoped
+  finite predicate cases；mask \nolinkurl{predicate_mask}。所有者
+  \nolinkurl{exclusion_generator}；需梯度输入
+  \nolinkurl{predicate_logits}；停止边
+  \nolinkurl{verified_exclusion}→exclusion；估计器 EXACT；单位
+  \nolinkurl{candidate_predicates}；零有效策略
+  \nolinkurl{skip_with_reason}。
+\item
+  目标
+  scope：{\small\nolinkurl{sum(mask*BCEWithLogits(scope_logits,scope_applies))/sum(mask)}}。分子
+  scope \nolinkurl{applicability} BCE；分母 known assumption cases；mask
+  \nolinkurl{scope_mask}。所有者 \nolinkurl{scope_predictor}；需梯度输入
+  \nolinkurl{scope_logits}；停止边
+  \nolinkurl{scope_applies}→scope；估计器 EXACT；单位 scopes；零有效策略
+  \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：真值维护、反例剪枝与前置条件有直接近邻。 近邻
+{[}\nolinkurl{SBV3_N06,} \nolinkurl{SBV3_N14,}
+\nolinkurl{SBV3_N12}{]}。保留的激进延伸：错误探索成为可移植的负知识资产，压缩整簇无效分支。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H47
+任务相对的语义商空间}\label{h47-ux4efbux52a1ux76f8ux5bf9ux7684ux8bedux4e49ux5546ux7a7aux95f4}
+
+对象为 \nolinkurl{QuotientPacket}，核心操作为 partition by finite
+behavior signatures and refine with new queries；保持关系为 epsilon
+proximity is not \nolinkurl{automatically} an equivalence
+relation。协议对象是有限查询族的等价类及精化见证，而非固定潜向量。
+
+区分见证：新查询区分旧同类两状态时必须细分；epsilon
+相近不满足传递性时不能直接取商。
+该见证是机制规格，不等于模型已通过。未证明桥梁：有限查询相同不推出递归
+bisimulation 或所有未来任务等价。
+
+形式讨论对应 D02 F07，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h47_quotient}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h47.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H47.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H47.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  behavior：{\small\nolinkurl{sum(mask*||predicted_query_response-target_query_response||^2)/sum(mask)}}。分子
+  task behavior MSE, not input \nolinkurl{reconstruction}；分母 valid
+  finite query responses；mask \nolinkurl{behavior_mask}。所有者
+  \nolinkurl{state_encoder,} \nolinkurl{task_conditioner,}
+  prototypes；需梯度输入 \nolinkurl{reconstructed_behavior}；停止边
+  \nolinkurl{behavior_targets}→behavior；估计器 EXACT；单位
+  \nolinkurl{state_queries}；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  rate：{\small\nolinkurl{sum(mask*KL(assignment||mean_assignment))/sum(mask)}}。分子
+  soft information rate；分母 valid states；mask
+  \nolinkurl{state_mask}。所有者 \nolinkurl{state_encoder,}
+  \nolinkurl{task_conditioner,} prototypes；需梯度输入
+  assignments；停止边 无声明停止边；估计器 EXACT；单位
+  states；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：行为等价、bisimulation、状态聚合和任务压缩早已有之。 近邻
+{[}\nolinkurl{SBV3_N03,} \nolinkurl{SBV3_S14,}
+\nolinkurl{SBV3_N05}{]}。保留的激进延伸：共同发明问题同时创造新的语义区分和动态粒度。
+这些来源不提供本机制的优先权或效果认证。
+
+\subsection{H48
+相关证据的认知谱系代数}\label{h48-ux76f8ux5173ux8bc1ux636eux7684ux8ba4ux77e5ux8c31ux7cfbux4ee3ux6570}
+
+对象为 \nolinkurl{EvidenceExpression}，核心操作为 normalize idempotent
+support DAG and evaluate declared dependence；保持关系为 duplicate
+source .8 stays .8, not independent
+.96。将可撤销证据谱系接入潜对象/学习/联盟，并显式建模共享祖先。
+
+区分见证：同一可靠度 0.8 的来源被转述两次仍是一个原子，不能独立合成
+0.96。
+该见证是机制规格，不等于模型已通过。未证明桥梁：谱系不证明来源真实；预训练数据相关性只能局部标识。
+
+形式讨论对应 D02 F08，详见
+{\small\nolinkurl{docs/formal_notes/00_reading_guide.md}}。
+
+实现根：{\small\nolinkurl{src/latent_comm/mechanisms/h48_evidence_genealogy}}，其中
+types.py 定义对象，reference.py 给有限语义，adapter.py
+为锁定神经接入源码，专用迁移模块与 schema.json
+约束持久化与版本。专用合同：{\small\nolinkurl{tests/contracts/test_h48.py}}。原配方：{\small\nolinkurl{PLAN_ROOT/recipes/H48.json}}；绑定配置：{\small\nolinkurl{configs/mechanisms/H48.json}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\begin{itemize}
+\item
+  目标
+  link：{\small\nolinkurl{sum(mask*BCEWithLogits(source_link_logits,shared_source))/sum(mask)}}。分子
+  \nolinkurl{source-identity} link BCE；分母 labelled source pairs
+  including circular negative cases；mask \nolinkurl{link_mask}。所有者
+  \nolinkurl{source_linker}；需梯度输入
+  \nolinkurl{source_link_logits}；停止边
+  \nolinkurl{source_identity_labels}→link；估计器 EXACT；单位
+  \nolinkurl{source_pairs}；零有效策略 \nolinkurl{skip_with_reason}。
+\item
+  目标
+  calibration：{\small\nolinkurl{sum(mask*(predicted_support-observed_support)^2)/sum(mask)}}。分子
+  Brier calibration conditional on named dependence model；分母
+  independent heldout outcomes；mask
+  \nolinkurl{calibration_mask}。所有者
+  \nolinkurl{source_calibrator}；需梯度输入
+  \nolinkurl{atom_probabilities}；停止边
+  \nolinkurl{observed_support}→calibration;
+  \nolinkurl{declared_dependence}→calibration；估计器 EXACT；单位
+  claims；零有效策略 \nolinkurl{skip_with_reason}。
+\end{itemize}
+
+已有原语：来源半环、依赖维护及概率图已有。 近邻 {[}\nolinkurl{SBV3_S21,}
+\nolinkurl{SBV3_N06,}
+\nolinkurl{SBV3_N13}{]}。保留的激进延伸：让概念、世界和能力的支持结构一起可组合、可撤销，而非累计声音数量。
+这些来源不提供本机制的优先权或效果认证。
+
+\section{13
+二十条组合与六十八份配方的闭合映射}\label{ux4e8cux5341ux6761ux7ec4ux5408ux4e0eux516dux5341ux516bux4efdux914dux65b9ux7684ux95edux5408ux6620ux5c04}
+
+本节20条组合与上一节48个机制逐一绑定原配方，合计68份。每条组合的节点名称与输出类型直接来自当前
+configs/compositions 的
+\nolinkurl{compiled_ir}；它们是有限/符号对象流和未来路径元数据，不是20次神经管线运行。所有组合的研究结果均为
+\nolinkurl{NOT_RUN}。
+
+\subsection{C01 临时计算体}\label{c01-ux4e34ux65f6ux8ba1ux7b97ux4f53}
+
+参与机制：H01, H06, H07,
+H22。先解析带类型依赖图再绑定图册，按操作顺序派发，最后由目标读出。临时计算体的边界由能力和义务决定，不能把任意后端自动拉入。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{typed_graph} → \nolinkurl{TypedDependencyGraph}；读取
+  P，写入 P；声明 exact。
+\item
+  \nolinkurl{bind_charts} → ChartBinding；读取 F,P,Z，写入 F,P；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{dispatch_operator} → \nolinkurl{OperatorDispatch}；读取
+  P,Z，写入 P,Z；声明 exact。
+\item
+  \nolinkurl{target_decode} →
+  \nolinkurl{TemporaryComputationResult}；读取 F,P,Z，写入 F,P,Z；声明
+  \nolinkurl{differentiable}。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C01.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c01.py}}；合同：{\small\nolinkurl{tests/contracts/test_c01.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C01.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C02
+响应驱动共享场}\label{c02-ux54cdux5e94ux9a71ux52a8ux5171ux4eabux573a}
+
+参与机制：H02, H04,
+H23。局部响应先检查有效半径与观测条件，再更新公共场；残差刷新产生新的信息需求。场驻点不保证各源都正确，越域响应不得被静默使用。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{source_responses} → \nolinkurl{SourceResponses}；读取
+  Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{validity_check} → \nolinkurl{ValidatedResponses}；读取
+  Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{field_update} → UpdatedField；读取 F,Z，写入 Z；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{residual_refresh} → \nolinkurl{ResidualRefresh}；读取
+  Z，写入 Z；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C02.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c02.py}}；合同：{\small\nolinkurl{tests/contracts/test_c02.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C02.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C03
+分布式信念树}\label{c03-ux5206ux5e03ux5f0fux4fe1ux5ff5ux6811}
+
+参与机制：H03, H13,
+H21。多假设按独立分支保存，条件更新与兼容合并分开。共享证据只消费一次，不把不同语境的候选向量直接平均。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{belief_encode} → \nolinkurl{EncodedBeliefs}；读取
+  E,K,Q,Z，写入 K,Z；声明 exact。
+\item
+  fork → \nolinkurl{ForkedBeliefTree}；读取 K,O,P,Z，写入 Z；声明
+  exact。
+\item
+  \nolinkurl{condition_update} → \nolinkurl{ConditionedBranches}；读取
+  E,K,Q,Z，写入 K,Z；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{compatible_merge} → \nolinkurl{CompatibleMerge}；读取
+  K,O,P,Q,Z，写入 K,Z；声明 exact。
+\item
+  decode → \nolinkurl{BeliefTreeReadout}；读取 E,Z，写入 Z；声明
+  \nolinkurl{differentiable}。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C03.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c03.py}}；合同：{\small\nolinkurl{tests/contracts/test_c03.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C03.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C04
+异步跨模型续接}\label{c04-ux5f02ux6b65ux8de8ux6a21ux578bux7eedux63a5}
+
+参与机制：H05, H20,
+H22。切点保存程序计数器、未完成依赖与来源；目标端检查版本再续接，异步时钟仅调度成熟事件。摘要相同不等于精确续接。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  cutpoint → \nolinkurl{CapturedCutpoint}；读取 E,K,P,Z，写入 K；声明
+  exact。
+\item
+  capsule → \nolinkurl{HandedOffCapsule}；读取 E,K,P,Z，写入 K,P；声明
+  exact。
+\item
+  \nolinkurl{version_check} → \nolinkurl{CheckedContinuation}；读取
+  E,K,P,Z，写入 K,P；声明 exact。
+\item
+  resume → \nolinkurl{ResumedComputation}；读取 E,K,P,Z，写入 K,P；声明
+  exact。
+\item
+  \nolinkurl{schedule_readout} → \nolinkurl{AsyncResumeReadout}；读取
+  K,P，写入 P；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C04.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c04.py}}；合同：{\small\nolinkurl{tests/contracts/test_c04.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C04.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C05
+关系接地接口}\label{c05-ux5173ux7cfbux63a5ux5730ux63a5ux53e3}
+
+参与机制：H06, H08,
+H17。关系提取、锚点匹配与图册绑定之后才执行模态动作。物理坐标、潜坐标、可见对象与遮挡不混成一个hidden
+size。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{relation_extract} → \nolinkurl{ExtractedRelations}；读取
+  F,W,Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{anchor_match} → \nolinkurl{AnchoredMatch}；读取 F,W,Z，写入
+  Z；声明 discrete。
+\item
+  \nolinkurl{chart_bind} → \nolinkurl{GroundedChartAction}；读取
+  F,W,Z，写入 F,Z；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{modal_action} → \nolinkurl{ModalActionReadout}；读取
+  F,W，写入 Z；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C05.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c05.py}}；合同：{\small\nolinkurl{tests/contracts/test_c05.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C05.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C06
+连接结构中的技能}\label{c06-ux8fdeux63a5ux7ed3ux6784ux4e2dux7684ux6280ux80fd}
+
+参与机制：H01, H10, H14,
+H19。技能先解析与绑定，联合消息使用真正高阶超边，读出后可另有持久化训练计划。单体分数相加不是联合能力定义。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{skill_parse} → ParsedSkill；读取 P，写入 P；声明 exact。
+\item
+  bind → BoundSkills；读取 P,Z，写入 P,Z；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{hyperedge_apply} → JointMessage；读取 Z，写入 Z；声明
+  \nolinkurl{differentiable}。
+\item
+  decode → JointDecoded；读取 Z，写入 Z；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{optional_consolidate} → \nolinkurl{JointSkillReadout}；读取
+  K,P,Z，写入 K；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C06.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c06.py}}；合同：{\small\nolinkurl{tests/contracts/test_c06.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C06.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C07
+可迁移计算记忆}\label{c07-ux53efux8fc1ux79fbux8ba1ux7b97ux8bb0ux5fc6}
+
+参与机制：H12, H15, H23,
+H24。长期胶囊先通过作用域与版本校准，再查询残差、应用或撤回。查询超出预定族时需要来源，不从旧缓存编造答案。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{scope_check} → ScopedMemory；读取 P，写入 P；声明 exact。
+\item
+  \nolinkurl{version_calibrate} → \nolinkurl{CalibratedMemory}；读取
+  E,F,K,Q,Z，写入 K；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{query_residual} → MemoryRepair；读取 Z，写入 Z；声明
+  exact。
+\item
+  apply → \nolinkurl{AppliedMemory}；读取 P，写入 P；声明 exact。
+\item
+  revoke → \nolinkurl{ScopedMemoryReadout}；读取 E,K,P,Q,Z，写入
+  K,P；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C07.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c07.py}}；合同：{\small\nolinkurl{tests/contracts/test_c07.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C07.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C08
+协议作为计算语言}\label{c08-ux534fux8baeux4f5cux4e3aux8ba1ux7b97ux8bedux8a00}
+
+参与机制：H07, H14, H18,
+H22。类型语言编译后卫生展开宏，预算检查涵盖展开后的实际动作。宏不授予新权限，定义字节也计入通信成本。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  compile → \nolinkurl{CompiledLanguage}；读取 P，写入 P；声明 exact。
+\item
+  \nolinkurl{expand_macro} → \nolinkurl{ExpandedLanguage}；读取 P，写入
+  P；声明 exact。
+\item
+  \nolinkurl{budget_check} → \nolinkurl{BudgetedLanguage}；读取 P，写入
+  P；声明 exact。
+\item
+  execute → \nolinkurl{LanguageExecution}；读取 P，写入 P；声明
+  \nolinkurl{differentiable}。
+\item
+  decode → \nolinkurl{ProtocolLanguageReadout}；读取 P，写入 P；声明
+  \nolinkurl{differentiable}。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C08.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c08.py}}；合同：{\small\nolinkurl{tests/contracts/test_c08.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C08.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C09
+协变的多尺度计算语言}\label{c09-ux534fux53d8ux7684ux591aux5c3aux5ea6ux8ba1ux7b97ux8bedux8a00}
+
+参与机制：H01, H06, H25, H35,
+H40。frame、尺度和指令集分别绑定；操作运输后检查目标行为。异维粗化与可逆换基不同，闭合残差和丢失细节均需保留。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{register_frames} → FrameBinding；读取 F,Z，写入 F；声明
+  exact。
+\item
+  \nolinkurl{select_scale} → \nolinkurl{ScaleSelection}；读取
+  F,W,Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{lower_instruction} → \nolinkurl{LoweredOperation}；读取
+  K,P，写入 P；声明 discrete。
+\item
+  \nolinkurl{transport_operation} → \nolinkurl{TransportedAction}；读取
+  F,Z，写入 F,Z；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{apply_target} → EffectBundle；读取 F,Z，写入 F,Z；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{read_behavior} → \nolinkurl{BehaviorReadout}；读取
+  F,W,Z，写入 F,Z；声明 \nolinkurl{differentiable}。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C09.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c09.py}}；合同：{\small\nolinkurl{tests/contracts/test_c09.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C09.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C10
+分歧驱动的概念诞生}\label{c10-ux5206ux6b67ux9a71ux52a8ux7684ux6982ux5ff5ux8bdeux751f}
+
+参与机制：H03, H26, H27,
+H36。冲突定位后产生可执行反例，提出概念并准备迁移；无法证明全局一致时保留多域信念，不因有概念候选就强制提交。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{local_interpretations} →
+  \nolinkurl{LocalInterpretations}；读取 E,Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{find_obstruction} → Obstruction；读取 F,Z，写入 Z；声明
+  exact。
+\item
+  \nolinkurl{executable_counterexample} →
+  \nolinkurl{CounterexamplePair}；读取 E,O,Q,Z，写入 Q；声明 discrete。
+\item
+  \nolinkurl{propose_concept} → \nolinkurl{ConceptProposal}；读取
+  E,O,Q，写入 O；声明 discrete。
+\item
+  \nolinkurl{prepare_migration} → \nolinkurl{MigrationProposal}；读取
+  E,O,Q，写入 O；声明 exact。
+\item
+  \nolinkurl{retain_disagreement} → \nolinkurl{MultiDomainBelief}；读取
+  E,F,Z，写入 Z；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C10.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c10.py}}；合同：{\small\nolinkurl{tests/contracts/test_c10.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C10.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C11
+问题空间的跨域迁移}\label{c11-ux95eeux9898ux7a7aux95f4ux7684ux8de8ux57dfux8fc1ux79fb}
+
+参与机制：H07, H29, H30,
+H47。问题IR先检查解关系，再形成任务商和类比程序；目标执行后必须把答案沿合法关系回译到原问题。目标端好答案不必是源端合法答案。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{question_ir} → \nolinkurl{CheckedQuestion}；读取
+  O,P,Q，写入 Q；声明 exact。
+\item
+  \nolinkurl{task_quotient} → \nolinkurl{QuotientProblem}；读取
+  Q,Z，写入 Z；声明 discrete。
+\item
+  \nolinkurl{analogy_morphism} → \nolinkurl{AnalogicalProgram}；读取
+  O,P，写入 P；声明 discrete。
+\item
+  \nolinkurl{compile_target_program} →
+  \nolinkurl{ExecutableTargetProgram}；读取 O,P，写入 P；声明 exact。
+\item
+  \nolinkurl{execute_target} → TargetAnswer；读取 P，写入 P；声明
+  exact。
+\item
+  \nolinkurl{translate_answer} → \nolinkurl{MigratedAnswer}；读取
+  O,P,Q，写入 Q；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C11.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c11.py}}；合同：{\small\nolinkurl{tests/contracts/test_c11.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C11.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C12
+可移植的科学小世界}\label{c12-ux53efux79fbux690dux7684ux79d1ux5b66ux5c0fux4e16ux754c}
+
+参与机制：H09, H17, H31,
+H43。源方程经物理边界与单位转换后移植，联合核保共享噪声，输出是明确世界内的假想后果。不能把代码接枝成功写成现实因果识别。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{source_equations} → \nolinkurl{SourceEquations}；读取
+  W，写入 W；声明 exact。
+\item
+  \nolinkurl{convert_boundary} → \nolinkurl{PhysicalBoundary}；读取
+  F,W，写入 Z；声明 exact。
+\item
+  \nolinkurl{graft_module} → GraftedWorld；读取 W，写入 W；声明 exact。
+\item
+  \nolinkurl{compile_joint_kernel} → \nolinkurl{JointKernelPlan}；读取
+  W，写入 W；声明 discrete。
+\item
+  \nolinkurl{plan_intervention} →
+  \nolinkurl{HypotheticalConsequence}；读取 W，写入 W；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C12.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c12.py}}；合同：{\small\nolinkurl{tests/contracts/test_c12.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C12.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C13
+跨模型学习协议网络}\label{c13-ux8de8ux6a21ux578bux5b66ux4e60ux534fux8baeux7f51ux7edc}
+
+参与机制：H19, H25, H37,
+H38。公共锚绑定后取源学习效果，再投影到目标可达方向并编译更新规则；最终是锁定的未来trainer计划。live学习实现另由L13承担。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{bind_anchors} → BoundAnchors；读取 F,K,P,U,Z，写入
+  K,U；声明 exact。
+\item
+  \nolinkurl{source_learning_effect} → \nolinkurl{LearningEffect}；读取
+  F,U,Z，写入 F,U；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{project_target_effect} → \nolinkurl{ProjectedEffect}；读取
+  F,U,Z，写入 U；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{compile_update_rule} → \nolinkurl{CompiledUpdateRule}；读取
+  K,P,U,Z，写入 K,U；声明 exact。
+\item
+  \nolinkurl{prepare_future_trainer} →
+  \nolinkurl{FutureTrainerPlan}；读取 K,P,U，写入 U；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C13.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c13.py}}；合同：{\small\nolinkurl{tests/contracts/test_c13.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C13.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C14
+认知结构的事务性跃迁}\label{c14-ux8ba4ux77e5ux7ed3ux6784ux7684ux4e8bux52a1ux6027ux8dc3ux8fc1}
+
+参与机制：H13, H22, H27, H28,
+H39。读取快照、形成分岔候选、改写结构并准备迁移后，核对所有读版本再提交或恢复。版本冲突不是改写外部目标的理由。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{take_snapshot} → \nolinkurl{MetaStateSnapshot}；读取
+  \nolinkurl{E,F,K,O,P,Q,U,V,W,Z}，写入
+  \nolinkurl{E,F,K,O,P,Q,U,V,W,Z}；声明 exact。
+\item
+  \nolinkurl{form_bifurcation} → \nolinkurl{BifurcationCandidate}；读取
+  K,O,P,Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{rewrite_structure} → \nolinkurl{RewrittenStructure}；读取
+  E,O,P,Q，写入 O,P；声明 discrete。
+\item
+  \nolinkurl{prepare_migration} → \nolinkurl{PreparedMigration}；读取
+  E,O,P,Q，写入 O,P；声明 exact。
+\item
+  \nolinkurl{check_read_versions} → \nolinkurl{CheckedReadSet}；读取
+  \nolinkurl{E,F,K,O,P,Q,U,V,W,Z}，写入
+  \nolinkurl{E,F,K,O,P,Q,U,V,W,Z}；声明 exact。
+\item
+  \nolinkurl{commit_or_restore} →
+  \nolinkurl{AtomicTransitionResult}；读取
+  \nolinkurl{E,F,K,O,P,Q,U,V,W,Z}，写入
+  \nolinkurl{E,F,K,O,P,Q,U,V,W,Z}；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C14.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c14.py}}；合同：{\small\nolinkurl{tests/contracts/test_c14.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C14.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C15
+多节律的轨迹推理}\label{c15-ux591aux8282ux5f8bux7684ux8f68ux8ff9ux63a8ux7406}
+
+参与机制：H05, H20, H33,
+H34。公开边界与局部动力学形成双向约束，续接和异步调度最后返回轨迹读出。未来答案不能成为终端输入，第一条路径不能冒充唯一解。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{public_boundary} → \nolinkurl{PublicBoundary}；读取
+  P,W,Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{local_dynamics} → \nolinkurl{LocalDynamicsGraph}；读取
+  Z，写入 Z；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{bidirectional_messages} →
+  \nolinkurl{BidirectionalMessages}；读取 P,W,Z，写入 Z；声明 discrete。
+\item
+  \nolinkurl{asynchronous_continuation} →
+  \nolinkurl{AsyncContinuation}；读取 E,K,P,Z，写入 K,P；声明 exact。
+\item
+  \nolinkurl{trajectory_readout} → \nolinkurl{TrajectoryReadout}；读取
+  P,W,Z，写入 Z；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C15.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c15.py}}；合同：{\small\nolinkurl{tests/contracts/test_c15.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C15.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C16
+共同梦境与问题生态}\label{c16-ux5171ux540cux68a6ux5883ux4e0eux95eeux9898ux751fux6001}
+
+参与机制：H29, H40, H42, H43,
+H44。兼容核集合产生明确合成世界，生成新问题并变异/编译协议，最后归档谱系。世界ID不进入solver特征，档案新颖不等于实测能力。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{compatible_pool} → \nolinkurl{CompatibleKernelPool}；读取
+  W，写入 W；声明 exact。
+\item
+  \nolinkurl{synthetic_world} →
+  \nolinkurl{SyntheticCounterfactual}；读取 E,Q,W，写入 E,W；声明
+  exact。
+\item
+  \nolinkurl{generate_questions} → NewQuestions；读取 E,O,P,Q,W，写入
+  E,Q；声明 discrete。
+\item
+  \nolinkurl{mutate_and_compile} →
+  \nolinkurl{TypedProtocolPopulation}；读取 K,P,Q，写入 P,Q；声明
+  discrete。
+\item
+  \nolinkurl{archive_lineage} →
+  \nolinkurl{SyntheticLineageArchive}；读取 E,K,P,Q,W，写入 E,Q；声明
+  exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C16.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c16.py}}；合同：{\small\nolinkurl{tests/contracts/test_c16.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C16.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C17
+以未知边界驱动通信}\label{c17-ux4ee5ux672aux77e5ux8fb9ux754cux9a71ux52a8ux901aux4fe1}
+
+参与机制：H02, H03, H45,
+H46。候选族先应用有前提的排除，再对许可查询形成分区，获取局部有限响应并细化信念。没有合法区分查询时应保持未知。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{candidate_family} → \nolinkurl{CandidateFamily}；读取
+  E,Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{conditional_exclusions} →
+  \nolinkurl{ConditionalCandidates}；读取 E，写入 E；声明 discrete。
+\item
+  \nolinkurl{partition_allowed_queries} →
+  \nolinkurl{AllowedQueryPartition}；读取 E,Q,Z，写入 Q,Z；声明
+  discrete。
+\item
+  \nolinkurl{finite_local_response} → \nolinkurl{QueriedFamily}；读取
+  Z，写入 Z；声明 exact。
+\item
+  \nolinkurl{refine_belief} → \nolinkurl{RefinedIdentification}；读取
+  E,Q,Z，写入 Q,Z；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C17.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c17.py}}；合同：{\small\nolinkurl{tests/contracts/test_c17.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C17.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C18
+不重复计信的能力联盟}\label{c18-ux4e0dux91cdux590dux8ba1ux4fe1ux7684ux80fdux529bux8054ux76df}
+
+参与机制：H10, H16, H41,
+H48。先绑定证据DAG、规范重复来源，再形成联盟和显式价值表，最后分配内部信用。未知价值不是零，信用不是金钱。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{bind_evidence} → \nolinkurl{BoundEvidenceDAG}；读取
+  E,O,P,Z，写入 E,Z；声明 exact。
+\item
+  \nolinkurl{deduplicate_evidence} →
+  \nolinkurl{DeduplicatedSupport}；读取 E,Z，写入 E,Z；声明 discrete。
+\item
+  \nolinkurl{form_coalition} → \nolinkurl{CoalitionHyperedge}；读取
+  P,V,Z，写入 P,Z；声明 exact。
+\item
+  \nolinkurl{analytic_value_function} →
+  \nolinkurl{AnalyticCoalitionGame}；读取 P,V,Z，写入 P,Z；声明
+  discrete。
+\item
+  \nolinkurl{allocate_internal_credit} →
+  \nolinkurl{InternalCreditAllocation}；读取 P,V，写入 P；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C18.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c18.py}}；合同：{\small\nolinkurl{tests/contracts/test_c18.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C18.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C19
+任务相对的世界观切换}\label{c19-ux4efbux52a1ux76f8ux5bf9ux7684ux4e16ux754cux89c2ux5207ux6362}
+
+参与机制：H06, H12, H32, H35,
+H47。冻结外部目标后改变内部视角、构造任务商和宏观演化；细化依赖信息可用性，最后在原目标域复核。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{freeze_external_goal} →
+  \nolinkurl{FrozenExternalGoal}；读取 V，写入 V；声明 exact。
+\item
+  \nolinkurl{goal_preserving_view} →
+  \nolinkurl{GoalPreservingCoordinates}；读取 F,V,Z，写入 F,V；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{quotient_plan} → \nolinkurl{TaskQuotientPlan}；读取
+  Q,Z，写入 Z；声明 discrete。
+\item
+  \nolinkurl{macro_evolution} → \nolinkurl{MacroEvolution}；读取
+  F,W,Z，写入 Z；声明 \nolinkurl{differentiable}。
+\item
+  \nolinkurl{authorized_refinement} →
+  \nolinkurl{AuthorizedRefinement}；读取 E,F,K,Q,W,Z，写入 K,Z；声明
+  exact。
+\item
+  \nolinkurl{recheck_original_goal} →
+  \nolinkurl{OriginalGoalReadout}；读取 V，写入 V；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C19.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c19.py}}；合同：{\small\nolinkurl{tests/contracts/test_c19.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C19.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{C20
+自举的语义编译生态}\label{c20-ux81eaux4e3eux7684ux8bedux4e49ux7f16ux8bd1ux751fux6001}
+
+参与机制：H07, H25, H27, H29, H30, H38, H40,
+H42。问题与概念进入语义IR，类型操作和宏展开之后才跨域/跨坐标运输，分别规划参数所有者与后端能力。未绑定的研究后端保持锁定。
+
+实际节点与输出：
+
+\begin{itemize}
+\item
+  \nolinkurl{question_and_concept_ir} → SemanticIR；读取 E,O,P,Q，写入
+  O,Q；声明 exact。
+\item
+  \nolinkurl{typed_operations} → \nolinkurl{TypedOperations}；读取
+  K,P,Q，写入 P,Q；声明 discrete。
+\item
+  \nolinkurl{expand_macro} → LoweredMacro；读取 K,P，写入 P；声明
+  exact。
+\item
+  \nolinkurl{transport_domains_and_coordinates} →
+  \nolinkurl{TransportedSemantics}；读取 F,O,P,Z，写入 F,P；声明
+  \nolinkurl{differentiable}。
+\item
+  \nolinkurl{plan_owned_execution} →
+  \nolinkurl{OwnedExecutionPlan}；读取 K,P,U，写入 P,U；声明 exact。
+\item
+  \nolinkurl{bind_locked_backend} → \nolinkurl{LockedBackendPlan}；读取
+  P，写入 P；声明 exact。
+\end{itemize}
+
+配置：{\small\nolinkurl{configs/compositions/C20.json}}；算法：{\small\nolinkurl{src/latent_comm/compositions/c20.py}}；合同：{\small\nolinkurl{tests/contracts/test_c20.py}}；原配方：{\small\nolinkurl{PLAN_ROOT/recipes/C20.json}}。有限解释器的元数据可微标签不意味着该参考执行已构建tensor图；训练实际边界以L13和各学习阶段为准。研究结果：\nolinkurl{NOT_RUN}。
+
+\section{14
+十二终局与三十八条保留分叉}\label{ux5341ux4e8cux7ec8ux5c40ux4e0eux4e09ux5341ux516bux6761ux4fddux7559ux5206ux53c9}
+
+终局现有代码是有限架构入口，不是开放世界终态。以下分叉为新的V对象，\nolinkurl{implementation_status}均为\nolinkurl{future_proposal_not_implemented}；现有入口锚定其讨论，但没有实现这些新增算法。分叉的完整步骤、条件和反例见
+docs/\nolinkurl{frontier_afterword.md} 与
+specs/\nolinkurl{future_branches.json}。本节保存每一分叉的对象差异，避免用总数代替研究内容。
+
+\subsection{X01
+无固定模型个体的认知连续体}\label{x01-ux65e0ux56faux5b9aux6a21ux578bux4e2aux4f53ux7684ux8ba4ux77e5ux8fdeux7eedux4f53}
+
+有限范围：在一个固定有限任务图中允许状态跨模型转移、局部加入退出和事务提交，记录身份等价由哪些行为锚维持。
+依赖 H05, H22, H25, H39。入口
+{\small\nolinkurl{src/latent_comm/horizon/identity_continuum.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X01.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X01-B1
+由行为义务定义迁移身份}\label{x01-b1-ux7531ux884cux4e3aux4e49ux52a1ux5b9aux4e49ux8fc1ux79fbux8eabux4efd}
+
+释放假设：固定 checkpoint
+是唯一主体边界。对象：\nolinkurl{IdentityFiber=(state,}
+\nolinkurl{public_behavior_contract,} \nolinkurl{pending_obligations,}
+\nolinkurl{version_path)}，身份是声明查询族上的关系而非单一参数文件。
+
+区分见证：两个后端回答当前问题相同但一个遗失未完成约束；只按终点答案判身份会误合并。
+未证明桥梁：有限行为等价不足以证明一切未来行为连续，更不推出意识/人格延续。
+保持条件：外部目标、权限与原历史不可改写。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X01-B2
+可分裂合并的计算义务主体}\label{x01-b2-ux53efux5206ux88c2ux5408ux5e76ux7684ux8ba1ux7b97ux4e49ux52a1ux4e3bux4f53}
+
+释放假设：一个计算主体必须是一个状态持有者。对象：\nolinkurl{ObligationHypergraph}
+的顶点是版本化义务，超边是分工/合并证明；主体由当前义务闭包定义。
+
+区分见证：两个分区各自满足资源≤1，却共享同一单位资源；无跨边条件的合并会违反总预算。
+未证明桥梁：需要超出现有 \nolinkurl{VersionedStore}
+的分区语义与可组合完成证书。
+保持条件：合并不丢义务、不把重复证据计成多份。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X01-B3
+以干预接口定义临时主体边界}\label{x01-b3-ux4ee5ux5e72ux9884ux63a5ux53e3ux5b9aux4e49ux4e34ux65f6ux4e3bux4f53ux8fb9ux754c}
+
+释放假设：主体边界等同部署机器或模型名单。对象：\nolinkurl{BoundaryContract=(ports,}
+\nolinkurl{intervention_family,} \nolinkurl{internal_transition,}
+\nolinkurl{external_observables)}，主体是可替换动力学模块。
+
+区分见证：两组合边际输出相同但干预某输入后行为不同，不能视为同一临时主体。
+未证明桥梁：跨模块因果充分性强于有限输出吻合，真实模型是否可识别未定。
+保持条件：不把部署边界变化解释为权限扩张。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X02
+没有全局世界观的集体知识}\label{x02-ux6ca1ux6709ux5168ux5c40ux4e16ux754cux89c2ux7684ux96c6ux4f53ux77e5ux8bc6}
+
+有限范围：构造有限局部理论覆盖，输出拼合障碍；让系统提出区分新变量、分域或保留多理论的修订程序。
+依赖 H26, H27, H36, H48。入口
+{\small\nolinkurl{src/latent_comm/horizon/plural_worlds.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X02.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X02-B1
+带覆盖细化的语境知识网}\label{x02-b1-ux5e26ux8986ux76d6ux7ec6ux5316ux7684ux8bedux5883ux77e5ux8bc6ux7f51}
+
+释放假设：冲突只能靠选择一个赢家消除。对象：\nolinkurl{ContextCoverDelta=(old_cover,new_cover,restriction_maps,evidence_scopes)}，修订对象是知识适用域而非一个全局答案。
+
+区分见证：三节点矛盾环可按时间域拆开；若没有时间证据，拆域只是候选假说而非证明。
+未证明桥梁：如何在自然任务选出有用语境而非无限分裂仍为 H。
+保持条件：不同世界不被偷偷平均为单一真值。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X02-B2
+四值支持与反支持的可操作协议}\label{x02-b2-ux56dbux503cux652fux6301ux4e0eux53cdux652fux6301ux7684ux53efux64cdux4f5cux534fux8bae}
+
+释放假设：每个命题只能真或假且矛盾导致任意结论。对象：\nolinkurl{TruthPair(p)=(support,refutation)}∈\{0,1\}²，加上来源
+DAG；矛盾与未知分为 (1,1) 和 (0,0)。
+
+区分见证：同时有 p 和 not p 不能推出无关 q；经典爆炸与此协议可明确区分。
+未证明桥梁：需要独立核验次协调逻辑的完整近邻；此分支仅提出具体演算对象，不声称发明四值逻辑。
+保持条件：有矛盾不会授权任意动作或覆盖外部目标。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X02-B3
+可计算高阶拼合障碍}\label{x02-b3-ux53efux8ba1ux7b97ux9ad8ux9636ux62fcux5408ux969cux788d}
+
+释放假设：成对 overlap
+足够描述所有兼容条件。对象：\nolinkurl{CellularTheoryComplex=(C0,C1,C2,delta0,delta1,anchors)}，新增胞腔与边界算子，不再只存图残差。
+
+区分见证：同一图在不同内积下残差范数不同；若据此宣称拓扑障碍变化就混淆了对象。
+未证明桥梁：自然语言的限制映射与高阶关系未识别，不能把现有 glue
+输出改名为 H1。 保持条件：数值残差大小与上同调类保持分开。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X03
+问题先于答案的研究引擎}\label{x03-ux95eeux9898ux5148ux4e8eux7b54ux6848ux7684ux7814ux7a76ux5f15ux64ce}
+
+有限范围：把目标、变量、查询和答案回译编成问题图，提议能区分机制的新问题与程序化测量。
+依赖 H27, H29, H30, H45。入口
+{\small\nolinkurl{src/latent_comm/horizon/problem_invention.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X03.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X03-B1
+测量程序先于问题答案}\label{x03-b1-ux6d4bux91cfux7a0bux5e8fux5148ux4e8eux95eeux9898ux7b54ux6848}
+
+释放假设：可问问题的响应坐标必须预先固定。对象：\nolinkurl{MeasurementProgram=(observable_AST,}
+\nolinkurl{allowed_actions,} \nolinkurl{noise_model,}
+\nolinkurl{answer_relation)}，问题新增可操作观测而非同义改写。
+
+区分见证：y=x 与 y=−x 在 x=0 无法区分；允许 x=1
+后分开，而改写措辞不分开。
+未证明桥梁：现实测量可行性与响应正确性是新假设，有限 IG
+不证明发明了有效科学实验。 保持条件：未授权外部实验只生成方案，不执行。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X03-B2
+带可靠回译的对偶问题网络}\label{x03-b2-ux5e26ux53efux9760ux56deux8bd1ux7684ux5bf9ux5076ux95eeux9898ux7f51ux7edc}
+
+释放假设：任何好问题改写都必须是双射。对象：\nolinkurl{ProblemSpan=(Q,auxiliary_space,Qprime,forward_relation,answer_backtranslation)}，允许多值而非单一函数改写。
+
+区分见证：平方根正支可靠但丢负支；span 保留符号见证才能完整回译。
+未证明桥梁：哪些关系扩张能使自然任务更易解仍未知；不是宣称一般程序等价可判。
+保持条件：未证明的边不得自动升级为等价。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X03-B3
+反向生成可解性证据的问题族}\label{x03-b3-ux53cdux5411ux751fux6210ux53efux89e3ux6027ux8bc1ux636eux7684ux95eeux9898ux65cf}
+
+释放假设：问题只能由外部固定文本提供。对象：\nolinkurl{QuestionConstructor=(witness_program,}
+\nolinkurl{constraint_generator,}
+\nolinkurl{proof_of_inclusion)}，先构造有解见证再反推问题，但隐藏见证只留监督侧。
+
+区分见证：把 \nolinkurl{witness_id} 或生成种子喂给 receiver
+会让伪推理出现；必须物理隔离。
+未证明桥梁：可解性不保证研究价值，新的问题分布可能与真实需求脱离。
+保持条件：生成容易答案不等于现实科学发现。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X04
+可塑性互联网}\label{x04-ux53efux5851ux6027ux4e92ux8054ux7f51}
+
+有限范围：用有限维更新程序定义规则编译、运输和适用范围；未来神经训练脚本全部锁定。
+依赖 H31, H37, H38, H40。入口
+{\small\nolinkurl{src/latent_comm/horizon/plasticity_network.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X04.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X04-B1
+按可实现切空间路由学习方向}\label{x04-b1-ux6309ux53efux5b9eux73b0ux5207ux7a7aux95f4ux8defux7531ux5b66ux4e60ux65b9ux5411}
+
+释放假设：任一接收者都可复制同一参数方向。对象：\nolinkurl{TangentRouteGraph}
+的节点为行为像空间 im \nolinkurl{J_i}，边携带投影、残差及线性化版本。
+
+区分见证：J1=(1,0)\textsuperscript{T}、J2=(0,1)\textsuperscript{T}，各自无法实现
+(1,1)；联合可以仅在作用可加假设下完成。
+未证明桥梁：联合行为是否可加、组合后 Jacobian 是否仍适用都未证明。
+保持条件：不可达残差不伪装为成功迁移。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X04-B2
+带度量契约的更新运输}\label{x04-b2-ux5e26ux5ea6ux91cfux5951ux7ea6ux7684ux66f4ux65b0ux8fd0ux8f93}
+
+释放假设：所有参数坐标下的欧氏步长都是同一个学习规则。对象：\nolinkurl{MetricUpdate=(v,W,M,anchor_version)}，把行为度量与参数度量作为协议对象。
+
+区分见证：把参数放大 100 倍而仍用单位 ridge
+会改变更新；运输度量才能保该问题。
+未证明桥梁：与自然梯度及几何优化的全文优先权审查尚缺，标准加权解不主张原创。
+保持条件：同一代价和作用不因坐标缩放被偷偷改变。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X04-B3
+用操作模拟关系运输学习规则}\label{x04-b3-ux7528ux64cdux4f5cux6a21ux62dfux5173ux7cfbux8fd0ux8f93ux5b66ux4e60ux89c4ux5219}
+
+释放假设：相同规则 AST
+在异构参数组上必有相同意义。对象：\nolinkurl{PlasticitySimulation=(source_rule,target_rule,state_relation,step_witness)}，运输的是多步更新程序而非一次梯度。
+
+区分见证：同样 momentum 系数但一端 memory
+被重置，会破坏第二步作用；单步匹配看不出。
+未证明桥梁：局部规则模拟能否带来实际学习收益仍为
+H，不是免费跨模型元学习。 保持条件：规则不能读取 query
+标签或扩张写权限。 当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X05
+会进化语言的认知生态}\label{x05-ux4f1aux8fdbux5316ux8bedux8a00ux7684ux8ba4ux77e5ux751fux6001}
+
+有限范围：联合登记ontology/ISA/world/population四种版本，给出有限代的共演化scheduler和依赖迁移。
+依赖 H27, H40, H42, H44。入口
+{\small\nolinkurl{src/latent_comm/horizon/language_ecology.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X05.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X05-B1
+概念迁移成为双向部分透镜}\label{x05-b1-ux6982ux5ff5ux8fc1ux79fbux6210ux4e3aux53ccux5411ux90e8ux5206ux900fux955c}
+
+释放假设：旧新本体只能用 ID
+重命名衔接。对象：\nolinkurl{OntologyLens=(get,put,domain,unknown_policy,version_pair)}，明确何时可往返、何时损失。
+
+区分见证：旧``钥匙有效''没有期限信息，不能唯一映到``临时/永久''；部分透镜暴露缺失。
+未证明桥梁：双向变换已有完整文献需后续核查，候选贡献在认知协议生命周期结合。
+保持条件：不得从旧粗概念猜测新细类别。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X05-B2
+有语义承诺的新基底原语}\label{x05-b2-ux6709ux8bedux4e49ux627fux8bfaux7684ux65b0ux57faux5e95ux539fux8bed}
+
+释放假设：新指令只能是旧程序宏的简称。对象：\nolinkurl{PrimitiveProposal=(denotation,effect_type,authority,implementation_relation)}，区别可展开宏和真正新测量/计算能力。
+
+区分见证：把 shell 调用包装成新 opcode 不构成合法能力增长；纯
+add/multiply 宏也不增加可计算函数族。
+未证明桥梁：不可约新原语可能需要新传感器/后端，尚未实现；不是因宏命名而产生超计算。
+保持条件：语言演化永不自行升级控制面权限。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X05-B3
+问题语言共同扩张的元语法生态}\label{x05-b3-ux95eeux9898ux8bedux8a00ux5171ux540cux6269ux5f20ux7684ux5143ux8bedux6cd5ux751fux6001}
+
+释放假设：任务和语言的生成语法固定不变。对象：\nolinkurl{MetaGrammarPopulation=(task_grammars,ontology_grammars,compiler_migrations,archive)}，变异作用于生成规则而非只有参数。
+
+区分见证：只把 threshold 从 1 改 2
+不是新语法；新增量词/关系算子才改变可表达操作且需新语义。
+未证明桥梁：扩张能否持续产生有用而非作弊任务未证明，保留多分支而不承诺无界进步。
+保持条件：不以新概念数量或短期总分奖励无限造词。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X06
+跨尺度的思想物质}\label{x06-ux8de8ux5c3aux5ea6ux7684ux601dux60f3ux7269ux8d28}
+
+有限范围：以多尺度确定程序为参考，交付粗化、宏动态、细化与误差账本的完整组合算法。
+依赖 H02, H25, H35, H47。入口
+{\small\nolinkurl{src/latent_comm/horizon/multiscale_cognition.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X06.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X06-B1
+携带记忆核的非闭合宏语义}\label{x06-b1-ux643aux5e26ux8bb0ux5fc6ux6838ux7684ux975eux95edux5408ux5b8fux8bedux4e49}
+
+释放假设：粗状态必须是一阶 Markov
+且无需历史。对象：\nolinkurl{MemoryKernelState=(coarse_history,unresolved_initial,memory_operators)}，把丢失细节的延迟效应纳入宏对象。
+
+区分见证：同总和的 (1,0),(0,1)
+下一步粗态不同；历史/残差可修复但单一总和不行。
+未证明桥梁：真实语义中的低复杂度记忆核是否存在未定。
+保持条件：记忆项不能假称不存在或由零填充消除。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X06-B2
+以纤维分布而非代表元细化}\label{x06-b2-ux4ee5ux7ea4ux7ef4ux5206ux5e03ux800cux975eux4ee3ux8868ux5143ux7ec6ux5316}
+
+释放假设：一个粗态必须对应一个猜定微态。对象：\nolinkurl{FiberBelief(m)=distribution}
+over C\^{}-1(m)，压缩对象携带可识别的不确定性。
+
+区分见证：奇数粗态可由 1 或 3 产生；抽中 1 不证明原数就是 1。
+未证明桥梁：可计算的纤维分布可能过大，有限近似及误差需另定义，不以资源困难删除构想。
+保持条件：不把重新采样的微态称恢复原微态。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X06-B3
+随查询演化的尺度选择器}\label{x06-b3-ux968fux67e5ux8be2ux6f14ux5316ux7684ux5c3aux5ea6ux9009ux62e9ux5668}
+
+释放假设：所有任务共用永久不变的语义粒度。对象：\nolinkurl{ScalePolicy=(query_set,partition_refinement,closure_obligations)}，新问题触发新尺度而非固定层级。
+
+区分见证：奇偶后加入大于 2 得四类；若存储只有奇偶则必须请求来源。
+未证明桥梁：如何选择最有用查询和尺度是未证 H，不等同信息瓶颈方法已解决。
+保持条件：新增问题只细化既有精确分区，不静默合并。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X07
+轨迹即思想而非终点即思想}\label{x07-ux8f68ux8ff9ux5373ux601dux60f3ux800cux975eux7ec8ux70b9ux5373ux601dux60f3}
+
+有限范围：构建有界耦合动力系统、轨迹读出和边界约束，允许周期解而非强求全局固定点。
+依赖 H20, H33, H34, H05。入口
+{\small\nolinkurl{src/latent_comm/horizon/trajectory_semantics.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X07.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X07-B1
+偏序轨迹而非线性轮次}\label{x07-b1-ux504fux5e8fux8f68ux8ff9ux800cux975eux7ebfux6027ux8f6eux6b21}
+
+释放假设：所有计算都必须有唯一全局 token
+顺序。对象：\nolinkurl{EventTrace=(events,happens_before,read_write_effects,commutation_witnesses)}，只对独立操作交换次序。
+
+区分见证：加一和乘二不交换，两个不同变量的独立加一可交换；只按无写冲突仍可能漏读依赖。
+未证明桥梁：需要与并发迹理论完整比较；当前异步时钟并非已实现此语义商。
+保持条件：并发不绕过读版本或作用域检查。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X07-B2
+相位关系承载可恢复计算状态}\label{x07-b2-ux76f8ux4f4dux5173ux7cfbux627fux8f7dux53efux6062ux590dux8ba1ux7b97ux72b6ux6001}
+
+释放假设：有意义计算必须收敛到固定点。对象：\nolinkurl{PhaseRelationState=(torus_coordinates,relative_phase,window_readout,noise_contract)}，状态在循环相位关系而非终点。
+
+区分见证：两个循环终点同但相位延迟不同；终点读取丢信息，窗口读出可区别。
+未证明桥梁：相位编码是否能在真实模型间提供有用计算完全未验证。
+保持条件：不把振荡本身当智能或意识证据。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X07-B3
+公开终端条件下的路径分布推理}\label{x07-b3-ux516cux5f00ux7ec8ux7aefux6761ux4ef6ux4e0bux7684ux8defux5f84ux5206ux5e03ux63a8ux7406}
+
+释放假设：推理只能前向生成唯一答案轨迹。对象：\nolinkurl{PathMeasure=(transition_factors,public_boundary,normalizer,branch_weights)}，从单条最优路径扩成条件轨迹集合。
+
+区分见证：0 到 2
+三步允许停留，有多条可行轨迹；把第一条当唯一解会丢不确定性。
+未证明桥梁：双向消息已有，候选 H 在跨模型路径协议和读出，不是逆因果。
+保持条件：后向约束不获得未观测未来信息。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X08
+能够传递的未完成证明与发现}\label{x08-ux80fdux591fux4f20ux9012ux7684ux672aux5b8cux6210ux8bc1ux660eux4e0eux53d1ux73b0}
+
+有限范围：设计证明状态/搜索状态胶囊、剩余义务和排除前提；在有限逻辑解释器中接力。
+依赖 H05, H13, H29, H46。入口
+{\small\nolinkurl{src/latent_comm/horizon/discovery_continuations.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X08.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X08-B1
+剩余证明义务的可迁移切片}\label{x08-b1-ux5269ux4f59ux8bc1ux660eux4e49ux52a1ux7684ux53efux8fc1ux79fbux5207ux7247}
+
+释放假设：中途推理只能保存摘要或
+KV。对象：\nolinkurl{ProofContinuation=(proved_lemmas,open_goals,context,proof_kernel_version)}，不是最后一段解释文本。
+
+区分见证：摘要写``显然成立''却无引理依赖，不能算续接了证明。
+未证明桥梁：自然语言研究中的未完成发现如何形式化仍为
+H，不要求所有探索先形式化才允许存在。
+保持条件：猜测不升级为已证，目标不被替换。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X08-B2
+带前提的整簇排除证书}\label{x08-b2-ux5e26ux524dux63d0ux7684ux6574ux7c07ux6392ux9664ux8bc1ux4e66}
+
+释放假设：历史失败只能记为失败样本。对象：\nolinkurl{NoGoodRegion=(predicate,assumptions,certificate,domain_version)}，迁移整个失败区域而非单一坏答案。
+
+区分见证：排除所有奇数只在偶数约束有效；撤回约束必须恢复奇数。
+未证明桥梁：模型能否提出广泛但正确区域证书未验证。 保持条件：timeout
+或置信评分不成为硬排除。 当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X08-B3
+可并存的猜想修订谱系}\label{x08-b3-ux53efux5e76ux5b58ux7684ux731cux60f3ux4feeux8ba2ux8c31ux7cfb}
+
+释放假设：反例到来后只能抹掉旧猜想或选唯一新猜想。对象：\nolinkurl{ConjectureLineage=(claim_versions,refutations,repair_transformations,open_bridges)}，保留相互竞争的修订而不单线覆盖。
+
+区分见证：``偶数都被4整除''可弱化域、反转蕴含或增加变量，三者不是同一个修复。
+未证明桥梁：怎样选择有研究生产力的谱系未定，不能以多数票定理论真伪。
+保持条件：不把修订后的正确命题归功于原错误命题。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X09
+共同梦境产生新的经验空间}\label{x09-ux5171ux540cux68a6ux5883ux4ea7ux751fux65b0ux7684ux7ecfux9a8cux7a7aux95f4}
+
+有限范围：把多个来源的局部机制拼成有限世界，生成任务和谱系，在与真实观察隔离的命名空间保存。
+依赖 H31, H42, H43, H44。入口
+{\small\nolinkurl{src/latent_comm/horizon/shared_dreams.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X09.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X09-B1
+因果机制接枝形成新世界}\label{x09-b1-ux56e0ux679cux673aux5236ux63a5ux679dux5f62ux6210ux65b0ux4e16ux754c}
+
+释放假设：一个世界必须由单个完整生成器先存在。对象：\nolinkurl{GraftWorld=(local_SCMs,boundary_units,shared_noise,intervention_map)}，多个源各持部分方程。
+
+区分见证：独立抽两份天气噪声改变两个传感器联合行为，即使边缘不变。
+未证明桥梁：自然模型中识别模块是强假设，有限 SCM 接枝不证明已找到它。
+保持条件：合成世界不继承现实真实性标签。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X09-B2
+世界规律的对抗边界生成器}\label{x09-b2-ux4e16ux754cux89c4ux5f8bux7684ux5bf9ux6297ux8fb9ux754cux751fux6210ux5668}
+
+释放假设：想象只用于生成更多同分布样本。对象：\nolinkurl{CounterfactualBoundarySearch=(kernel_edit_grammar,distinguishing_queries,validity_constraints)}，搜索改变哪条机制才改变结论。
+
+区分见证：将门从单向改双向改变可达性；仅给节点重命名不产生新的规律。
+未证明桥梁：生成差异不等于科学重要性，价值判断仍是明确 H。
+保持条件：自造反例只反驳合成世界内主张，不直接推翻现实事实。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X09-B3
+联合噪声不确定性的世界集合}\label{x09-b3-ux8054ux5408ux566aux58f0ux4e0dux786eux5b9aux6027ux7684ux4e16ux754cux96c6ux5408}
+
+释放假设：给出局部核边缘即可唯一合成世界。对象：CouplingSet=\{joint laws
+with declared marginals and dependence
+constraints\}，消息携带一族世界而非猜定独立联合。
+
+区分见证：两公平比特可相同、相反或独立，P(相等) 可为1、0、.5。
+未证明桥梁：真实联合依赖能否被低复杂度表示未定；不是靠多模型数量保证识别。
+保持条件：依赖未知时不返回伪精确概率。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X10
+认知公共品与临时能力联盟}\label{x10-ux8ba4ux77e5ux516cux5171ux54c1ux4e0eux4e34ux65f6ux80fdux529bux8054ux76df}
+
+有限范围：定义互补性契约、共享来源校正和有限联盟价值表；实现动态加入退出的类型化计划。
+依赖 H10, H18, H41, H48。入口
+{\small\nolinkurl{src/latent_comm/horizon/cognitive_commons.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X10.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X10-B1
+能力超边而非单体排名}\label{x10-b1-ux80fdux529bux8d85ux8fb9ux800cux975eux5355ux4f53ux6392ux540d}
+
+释放假设：联合能力必能由单体分数相加得到。对象：\nolinkurl{CapabilityHypergraph=(input_types,provider_sets,output_types,composition_witness)}，能力属于有条件联盟。
+
+区分见证：两人各只有一个 XOR 比特，单源对 XOR
+无信息、联合有信息；不等于所有 PID 定义一致。
+未证明桥梁：联合能力是否能由不同模型实现尚未验证。
+保持条件：内部信用不是金钱，不能执行对外交易。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X10-B2
+来源商下的贡献分摊}\label{x10-b2-ux6765ux6e90ux5546ux4e0bux7684ux8d21ux732eux5206ux644a}
+
+释放假设：更多转述者就是更多独立贡献。对象：\nolinkurl{ProvenanceCoalitionGame}
+将玩家持有的支持 DAG 映到唯一来源/操作贡献，再定义 v(S)。
+
+区分见证：复制同一来源100次不应增加信息支持，但维护成本可以另计而不能混成真实性。
+未证明桥梁：预训练相关性不可完全追踪，来源商只能局部成立。
+保持条件：重复 .8 来源仍是一个事件，非 .96。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X10-B3
+带退出义务的临时计算联盟}\label{x10-b3-ux5e26ux9000ux51faux4e49ux52a1ux7684ux4e34ux65f6ux8ba1ux7b97ux8054ux76df}
+
+释放假设：成员退出仅删除名字不影响程序语义。对象：\nolinkurl{JoinLeaveContract=(required_state,obligation_transfer,tombstones,exit_conditions)}，联盟动态变化时保留计算责任。
+
+区分见证：持唯一中间变量的成员退出后其余仍报告完成，是义务丢失反例。
+未证明桥梁：动态联盟的活性与容错超出现有本地事务保证，需独立设计。
+保持条件：不能让成员退出抹掉来源与责任，不能强迫未授权后端加入。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X11
+可追溯的概念出生与死亡}\label{x11-ux53efux8ffdux6eafux7684ux6982ux5ff5ux51faux751fux4e0eux6b7bux4ea1}
+
+有限范围：建立概念生命周期图、版本读者、事务迁移与旧对象再解释流程。
+依赖 H27, H28, H39, H40。入口
+{\small\nolinkurl{src/latent_comm/horizon/concept_lifecycle.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X11.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X11-B1
+分岔触发而非手工命名的概念分裂}\label{x11-b1-ux5206ux5c94ux89e6ux53d1ux800cux975eux624bux5de5ux547dux540dux7684ux6982ux5ff5ux5206ux88c2}
+
+释放假设：概念数只能靠预先固定模板指定。对象：\nolinkurl{StructuralBifurcation=(control_parameter,order_observable,branch_atlas,migration)}，将结构变量与连续态分开。
+
+区分见证：alpha=0 的导数为0仍可渐近稳定；粗步长产生发散不代表概念诞生。
+未证明桥梁：数学分岔如何驱动真实认知类型变化尚未证明。
+保持条件：性能跳点不是热力学相变证据。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X11-B2
+可复活的概念墓志与适用域}\label{x11-b2-ux53efux590dux6d3bux7684ux6982ux5ff5ux5893ux5fd7ux4e0eux9002ux7528ux57df}
+
+释放假设：概念失效后只能彻底删除或永久保留为真。对象：\nolinkurl{RetiredConcept=(historical_reader,expiry_conditions,reactivation_conditions,evidence_lineage)}，退休不是删除定义。
+
+区分见证：旧授权期限缺失时不能用新概念重算出确定历史有效性。
+未证明桥梁：自然任务概念生命周期可能无法清晰离散，需部分/不确定版本。
+保持条件：退休不等于模型参数遗忘，也不隐藏旧错误。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X11-B3
+多本体分支的事务性合并}\label{x11-b3-ux591aux672cux4f53ux5206ux652fux7684ux4e8bux52a1ux6027ux5408ux5e76}
+
+释放假设：两个概念改动文件不冲突即语义可合并。对象：\nolinkurl{OntologyMerge=(base,left,right,semantic_conflicts,migration_proofs)}，三方合并对象包含定义关系而非文本
+diff。
+
+区分见证：一支把``有效''限为临时，另一支把它扩成永久；文本不同字段也可能影响同一消费者。
+未证明桥梁：全域语义合并一般不可判，有限证据之外须保留桥梁而非强行全局统一。
+保持条件：语法合并成功不冒充语义一致。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X11-B4 由 Hopf
+环上的相位关系定义动态概念}\label{x11-b4-ux7531-hopf-ux73afux4e0aux7684ux76f8ux4f4dux5173ux7cfbux5b9aux4e49ux52a8ux6001ux6982ux5ff5}
+
+释放假设：所有可保持的概念必须对应静止吸引点。对象：\nolinkurl{PhaseConceptAtlas=(amplitude,relative_phase,periodic_readout,phase_invariant_contract)}，概念驻留于稳定周期轨道及相位关系而非单个固定点。
+
+区分见证：mu\textgreater{}0 的 rdot=mu r-r³ 有吸引半径
+sqrt(mu)；删去径向耗散项的纯 skew
+旋转并没有吸引半径，二者不能混为周期记忆。 未证明桥梁：Hopf
+定理和振荡编码均有既有文献需专门核查；周期轨道能否成为跨模型概念接口仍是
+V。 保持条件：纯旋转、中性周期与吸引极限环分开，不把积分器振荡当概念。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X11-B5
+折叠分岔与迟滞的历史依赖概念}\label{x11-b5-ux6298ux53e0ux5206ux5c94ux4e0eux8fdfux6edeux7684ux5386ux53f2ux4f9dux8d56ux6982ux5ff5}
+
+释放假设：当前输入及一个固定词典足以唯一决定概念状态。对象：\nolinkurl{HystereticConcept=(control,stable_branch,history,fold_conditions)}，同一当前控制值可以因历史位于不同稳定解释分支。
+
+区分见证：mu=0 时 x=±1 均稳定而 x=0 不稳定；只传 mu
+不传分支无法唯一恢复状态。
+未证明桥梁：标准灾变/迟滞理论不主张原创，真实认知语义的状态变量和控制参量尚未识别。
+保持条件：历史依赖不是任意改目标，外部事实与权限不随分支改变。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsection{X12
+语义编译而非模型选型}\label{x12-ux8bedux4e49ux7f16ux8bd1ux800cux975eux6a21ux578bux9009ux578b}
+
+有限范围：定义语义IR、操作保持契约、后端绑定和优化pass，生成一份可读执行图与未来锁定运行图。
+依赖 H07, H25, H30, H35, H40。入口
+{\small\nolinkurl{src/latent_comm/horizon/semantic_compiler.py}}；独立说明
+{\small\nolinkurl{docs/horizons/X12.md}}。研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X12-B1 证明携带的语义
+lowering}\label{x12-b1-ux8bc1ux660eux643aux5e26ux7684ux8bedux4e49-lowering}
+
+释放假设：编译通过只意味着形状合法。对象：\nolinkurl{ProofCarryingIR=(typed_ops,domain,lowering_relation,error_budget)}，每个
+pass 输出作用关系证书。
+
+区分见证：add 后 multiply 被改成 multiply 后 add，形状一致但 x=0
+输出不同。 未证明桥梁：神经后端的操作关系需另建证据，静态 IR
+不能认证其能力。 保持条件：类型正确不自动语义正确，也不授予运行权限。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X12-B2
+带局部图册的多后端编译}\label{x12-b2-ux5e26ux5c40ux90e8ux56feux518cux7684ux591aux540eux7aefux7f16ux8bd1}
+
+释放假设：存在一套全局共享向量坐标即可编译所有任务。对象：\nolinkurl{BackendAtlas=(local_domains,frame_maps,operator_contracts,path_residuals)}，同一语义程序在不同域绑定不同后端。
+
+区分见证：两个局部映射分别好但跨出覆盖域，复合可能失效；不能只验单边锚。
+未证明桥梁：未知任务是否有合适图册未证明，路径相关性不自动是语义曲率。
+保持条件：异维压缩不进入可逆换基分支。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\subsubsection{X12-B3
+任务尺度共同决定的分层编译}\label{x12-b3-ux4efbux52a1ux5c3aux5ea6ux5171ux540cux51b3ux5b9aux7684ux5206ux5c42ux7f16ux8bd1}
+
+释放假设：固定层级网络就是所有问题的最佳执行尺度。对象：\nolinkurl{ScaleAwareProgram=(query_contract,macro_ops,memory_residuals,refinement_requests)}，按任务选择粗细操作及信息保留。
+
+区分见证：只有奇偶的缓存无法回答是否大于2，编译器必须请求细化而非选择一个代表元回答。
+未证明桥梁：如何自动发现高效尺度尚为 H；标准聚合与细化不声称新创。
+保持条件：宏程序不能生成被压缩丢失的事实。
+当前仅为V提案，研究结果：\nolinkurl{NOT_RUN}。
+
+\section{15
+文献身份与证据层级}\label{ux6587ux732eux8eabux4efdux4e0eux8bc1ux636eux5c42ux7ea7}
+
+以下为D01去重后允许引用的46项来源。作者、标题、链接与日期均沿用实际台账，不补写未经核验DOI。\nolinkurl{checked_on}是身份/可见内容核验日期。出版年、出版年月或出版日期只取
+\nolinkurl{first_publication_date} 并保留其精度；arXiv首次提交只取
+\nolinkurl{first_arxiv_submission}，不能代替出版日期或最早公开时间。出版字段为空时明确标为未知；未列出arXiv日期只表示台账未建立该字段，不断言从未提交。后续修订另见台账
+\nolinkurl{latest_revision}，不与前两者合并。这里引用既有原语和比较对象，不声称已完整阅读全部论文、复现其代码或建立全球优先权。完整BibTeX在
+paper/\nolinkurl{references.bib}。
+
+\begin{itemize}
+\item
+  {[}\nolinkurl{SBV3_S01}{]} Zhuoyun Du and Runze Wang and Huiyu Bai and
+  Zouying Cao and Xiaoyong Zhu and Yu Cheng and Bo Zheng and Wei Chen
+  and Haochao Ying。Enabling Agents to Communicate Entirely in Latent
+  Space。\href{https://arxiv.org/abs/2511.09149}{主要来源}。出版日期：未知；arXiv首次提交：2025-11-12；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：连续隐藏状态通信与学习压缩的已发表方案背景。
+\item
+  {[}\nolinkurl{SBV3_S02}{]} Jiajun Zhu and Haobo Li and Zixin Chen and
+  Huamin Qu and Wenshuo Zhang。LatBridge: Efficient and Stable Model
+  Replacement in \nolinkurl{Latent-Communication} Multi-Agent
+  Systems。\href{https://arxiv.org/abs/2610.27813}{主要来源}。出版日期：未知；arXiv首次提交：2026-10-20；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：共享桥与分离接口用于模型替换后的接口复用。
+\item
+  {[}\nolinkurl{SBV3_S03}{]} Zhenhan Guan and Xiaolong Liu and Hengwei
+  Ye and Zheng Tian。Thought Blocks: \nolinkurl{Non-Autoregressive}
+  Latent \nolinkurl{Communication} for Multi-Agent Systems via
+  \nolinkurl{Trajectory-to-State}
+  Compilation。\href{https://arxiv.org/abs/2610.23056}{主要来源}。出版日期：未知；arXiv首次提交：2026-10-16；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：将轨迹压缩为一次构造的
+  KV 续接记忆。
+\item
+  {[}\nolinkurl{SBV3_S04}{]} Jiaru Zou and Ruizhong Qiu and Gaotang Li
+  and Xiyuan Yang and Katherine Tieu and Pan Lu and Ke Shen and Hanghang
+  Tong and Yejin Choi and Jingrui He and James Zou and Mengdi Wang and
+  Ling Yang。Latent \nolinkurl{Collaboration} in Multi-Agent
+  Systems。\href{https://arxiv.org/abs/2511.20639}{主要来源}。出版日期：未知；arXiv首次提交：2025-11-25；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：在连续潜空间中协作的
+  LatentMAS 框架。
+\item
+  {[}\nolinkurl{SBV3_S05}{]} Tianyu Fu and Zihan Min and Hanling Zhang
+  and Jichao Yan and Guohao Dai and Wanli Ouyang and Yu
+  Wang。\nolinkurl{Cache-to-Cache}: Direct Semantic
+  \nolinkurl{Communication} Between Large Language
+  Models。\href{https://arxiv.org/abs/2510.03215}{主要来源}。出版日期：未知；arXiv首次提交：2025-10-03；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：直接交换和融合模型
+  KV 缓存。
+\item
+  {[}\nolinkurl{SBV3_S06}{]} Taco S. Cohen and Maurice Weiler and Berkay
+  Kicanaoglu and Max Welling。Gauge Equivariant
+  \nolinkurl{Convolutional} Networks and the Icosahedral
+  CNN。\href{https://arxiv.org/abs/1902.04615}{主要来源}。出版日期：未知；arXiv首次提交：2019-02-11；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：局部规范变换下的等变网络构造原则。
+\item
+  {[}\nolinkurl{SBV3_S07}{]} Cristian Bodnar and Francesco Di Giovanni
+  and Benjamin Paul Chamberlain and Pietro Liò and Michael M.
+  Bronstein。Neural Sheaf Diffusion: A Topological Perspective on
+  Heterophily and \nolinkurl{Oversmoothing} in
+  GNNs。\href{https://arxiv.org/abs/2202.04579}{主要来源}。出版日期：未知；arXiv首次提交：2022-02-09；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：图上向量空间、限制映射与层扩散。
+\item
+  {[}\nolinkurl{SBV3_S08}{]} Arif Dönmez and Axel Mosig and Ellen
+  Fritsche and Katharina Koch。\nolinkurl{Oversmoothing} as
+  \nolinkurl{Representation} Degeneracy in Neural Sheaf
+  Diffusion。\href{https://arxiv.org/abs/2605.11178}{主要来源}。出版日期：未知；arXiv首次提交：2026-05-11；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：以表示退化分析层扩散的过平滑现象。
+\item
+  {[}\nolinkurl{SBV3_S09}{]} Kevin Ellis and Catherine Wong and Maxwell
+  Nye and Mathias Sable-Meyer and Luc Cary and Lucas Morales and Luke
+  Hewitt and Armando Solar-Lezama and Joshua B. Tenenbaum。DreamCoder:
+  Growing \nolinkurl{generalizable,} \nolinkurl{interpretable} knowledge
+  with wake-sleep Bayesian program
+  learning。\href{https://arxiv.org/abs/2006.08381}{主要来源}。出版日期：未知；arXiv首次提交：2020-06-15；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：通过程序抽象库增长组织程序合成。
+\item
+  {[}\nolinkurl{SBV3_S10}{]} Shaojie Bai and J. Zico Kolter and Vladlen
+  Koltun。Deep Equilibrium
+  Models。\href{https://arxiv.org/abs/1909.01377}{主要来源}。出版日期：未知；arXiv首次提交：2019-09-03；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：通过根求解处理隐式平衡状态。
+\item
+  {[}\nolinkurl{SBV3_S11}{]} De-An Huang and Suraj Nair and Danfei Xu
+  and Yuke Zhu and Animesh Garg and Li Fei-Fei and Silvio Savarese and
+  Juan Carlos Niebles。Neural Task Graphs: Generalizing to Unseen Tasks
+  from a Single Video
+  \nolinkurl{Demonstration}。\href{https://arxiv.org/abs/1807.03480}{主要来源}。出版日期：未知；arXiv首次提交：2018-07-10；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：利用任务组成结构泛化单演示策略。
+\item
+  {[}\nolinkurl{SBV3_S12}{]} Atticus Geiger and Hanson Lu and Thomas
+  Icard and Christopher Potts。Causal Abstractions of Neural
+  Networks。\href{https://arxiv.org/abs/2106.02997}{主要来源}。出版日期：未知；arXiv首次提交：2021-06-06；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：以因果抽象解释高层变量与神经行为的对应。
+\item
+  {[}\nolinkurl{SBV3_S13}{]} Robin Lorenz and Sean Tull。Causal and
+  \nolinkurl{Compositional}
+  Abstraction。\href{https://arxiv.org/abs/2602.16612}{主要来源}。出版日期：未知；arXiv首次提交：2026-02-18；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：自然变换及组件层次的组合/因果抽象。
+\item
+  {[}\nolinkurl{SBV3_S14}{]} Naftali Tishby and Fernando C. Pereira and
+  William Bialek。The information bottleneck
+  method。\href{https://arxiv.org/abs/physics/0004057}{主要来源}。出版日期：未知；arXiv首次提交：2000-04-24；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：压缩输入同时保留与目标变量相关的信息。
+\item
+  {[}\nolinkurl{SBV3_S15}{]} Armando Solar-Lezama。Introduction to
+  Program Synthesis, Lecture 17: Introduction to Verified Functional
+  Synthesis。\href{https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture17.htm}{主要来源}。出版日期：未知；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：功能规格、前后条件及验证与合成的关系。
+\item
+  {[}\nolinkurl{SBV3_S16}{]} Marcin Andrychowicz and Misha Denil and
+  Sergio Gomez and Matthew W. Hoffman and David Pfau and Tom Schaul and
+  Brendan Shillingford and Nando de Freitas。Learning to learn by
+  gradient descent by gradient
+  descent。\href{https://arxiv.org/abs/1606.04474}{主要来源}。出版日期：未知；arXiv首次提交：2016-06-14；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：把优化器设计转为学习问题。
+\item
+  {[}\nolinkurl{SBV3_S17}{]} Christian Basteck and Frank
+  Huettner。Coalitional \nolinkurl{Manipulations} and Immunity of the
+  Shapley
+  Value。\href{https://arxiv.org/abs/2310.20415}{主要来源}。出版日期：未知；arXiv首次提交：2023-10-31；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：研究联盟操作下的分配规则性质。
+\item
+  {[}\nolinkurl{SBV3_S18}{]} Rui Wang and Joel Lehman and Jeff Clune and
+  Kenneth O. Stanley。Paired Open-Ended Trailblazer (POET): Endlessly
+  Generating Increasingly Complex and Diverse Learning Environments and
+  Their
+  Solutions。\href{https://arxiv.org/abs/1901.01753}{主要来源}。出版日期：未知；arXiv首次提交：2019-01-07；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：环境与求解者配对生成、演化和迁移。
+\item
+  {[}\nolinkurl{SBV3_S19}{]} Michael Dennis and Natasha Jaques and
+  Eugene Vinitsky and Alexandre Bayen and Stuart Russell and Andrew
+  Critch and Sergey Levine。Emergent Complexity and Zero-shot Transfer
+  via Unsupervised Environment
+  Design。\href{https://arxiv.org/abs/2012.02096}{主要来源}。出版日期：未知；arXiv首次提交：2020-12-03；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：自动环境设计及对抗性课程构造。
+\item
+  {[}\nolinkurl{SBV3_S20}{]} Neil Houlsby and Ferenc Huszár and Zoubin
+  Ghahramani and Máté Lengyel。Bayesian Active Learning for
+  \nolinkurl{Classification} and Preference
+  Learning。\href{https://arxiv.org/abs/1112.5745}{主要来源}。出版日期：未知；arXiv首次提交：2011-12-24；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：以信息准则进行分类和偏好主动学习。
+\item
+  {[}\nolinkurl{SBV3_S21}{]} Katrin M. Dannert and Erich Grädel and
+  Matthias Naaf and Val Tannen。Generalized Absorptive Polynomials and
+  Provenance Semantics for Fixed-Point
+  Logic。\href{https://arxiv.org/abs/1910.07910}{主要来源}。出版日期：未知；arXiv首次提交：2019-10-17；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：使用来源代数表示逻辑结果的证据组合。
+\item
+  {[}\nolinkurl{SBV3_S22}{]} \{OpenAI\}。Introducing
+  dots。\href{https://openai.com/index/introducing-dots/}{主要来源}。出版日期：2026-09-29；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：产品能力与权限的官方背景说明，不是研究机制来源。
+\item
+  {[}\nolinkurl{SBV3_S23}{]} \{PyTorch contributors\}。Autograd
+  mechanics --- PyTorch 2.14
+  \nolinkurl{documentation}。\href{https://docs.pytorch.org/docs/2.14/notes/autograd.html}{主要来源}。出版日期：未知；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：参数
+  \nolinkurl{requires_grad}、输入梯度与 no-grad 模式的区别。
+\item
+  {[}\nolinkurl{SBV3_S24}{]} \{Hugging Face contributors\}。Cache
+  strategies · Hugging
+  Face。\href{https://huggingface.co/docs/transformers/main/en/kv_cache}{主要来源}。出版日期：未知；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：不同
+  KV 缓存类及策略的官方接口说明。
+\item
+  {[}\nolinkurl{SBV3_S25}{]} \{Hugging Face contributors\}。Safetensors
+  · Hugging
+  Face。\href{https://huggingface.co/docs/safetensors/index}{主要来源}。出版日期：未知；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：张量存储格式与安全读取的官方文档背景。
+\item
+  {[}\nolinkurl{SBV3_R06}{]} Alan-Barsag Gazzaev and Alexey Gavrilov and
+  Sergey Muravyov and Ilya Makarov。Hidden Messages Between Diffusion
+  Language Model Agents: Causal Evidence for Latent
+  \nolinkurl{Communication}。\href{https://arxiv.org/abs/2610.28905}{主要来源}。出版日期：未知；arXiv首次提交：2026-10-20；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：扩散语言模型之间连续隐藏消息及传递时机的研究。
+\item
+  {[}\nolinkurl{SBV3_R07}{]} Jakob N. Foerster and Yannis M. Assael and
+  Nando de Freitas and Shimon Whiteson。Learning to Communicate with
+  Deep Multi-Agent \nolinkurl{Reinforcement}
+  Learning。\href{https://arxiv.org/abs/1605.06676}{主要来源}。出版日期：未知；arXiv首次提交：2016-05-21；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：多智能体强化学习中端到端学习通信协议。
+\item
+  {[}\nolinkurl{SBV3_R08}{]} David Ha and Andrew Dai and Quoc V.
+  Le。\nolinkurl{HyperNetworks}。\href{https://arxiv.org/abs/1609.09106}{主要来源}。出版日期：未知；arXiv首次提交：2016-09-27；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：一个网络生成另一网络参数。
+\item
+  {[}\nolinkurl{SBV3_R09}{]} Anirudh Goyal and Aniket Didolkar and Alex
+  Lamb and Kartikeya Badola and Nan Rosemary Ke and Nasim Rahaman and
+  Jonathan Binas and Charles Blundell and Michael Mozer and Yoshua
+  Bengio。Coordination Among Neural Modules Through a Shared Global
+  Workspace。\href{https://arxiv.org/abs/2103.01197}{主要来源}。出版日期：未知；arXiv首次提交：2021-03-01；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：以共享全局工作空间协调多个神经模块。
+\item
+  {[}\nolinkurl{SBV3_R11}{]} Atticus Geiger and Zhengxuan Wu and
+  Christopher Potts and Thomas Icard and Noah D. Goodman。Finding
+  Alignments Between \nolinkurl{Interpretable} Causal Variables and
+  Distributed Neural
+  \nolinkurl{Representations}。\href{https://arxiv.org/abs/2303.02536}{主要来源}。出版日期：未知；arXiv首次提交：2023-03-05；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：解释性因果变量与分布式神经表示的对齐。
+\item
+  {[}\nolinkurl{SBV3_R12}{]} Minyoung Huh and Brian Cheung and Tongzhou
+  Wang and Phillip Isola。The Platonic \nolinkurl{Representation}
+  Hypothesis。\href{https://arxiv.org/abs/2405.07987}{主要来源}。出版日期：未知；arXiv首次提交：2024-05-13；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：跨模型与模态表示趋同的假说和研究。
+\item
+  {[}\nolinkurl{SBV3_R13}{]} Fabian Gröger and Shuo Wen and Maria
+  Brbi{\fontspec{DejaVu Serif}ć}。Revisiting the Platonic
+  \nolinkurl{Representation} Hypothesis: An Aristotelian
+  View。\href{https://arxiv.org/abs/2602.14486}{主要来源}。出版日期：未知；arXiv首次提交：2026-02-16；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：对表示趋同的规模校准及局部关系再分析。
+\item
+  {[}\nolinkurl{SBV3_R14}{]} Junwon You and Mihyun Jang and Sangwoo Mo
+  and Jae-Hun Jung。What Converges in the Platonic
+  \nolinkurl{Representation} Hypothesis? Structure over
+  Geometry。\href{https://arxiv.org/abs/2609.27252}{主要来源}。出版日期：未知；arXiv首次提交：2026-09-23；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：区分关系结构与度量几何的趋同研究。
+\item
+  {[}\nolinkurl{SBV3_N01}{]} Jim Gray and Leslie Lamport。Consensus on
+  Transaction
+  Commit。\href{https://arxiv.org/abs/cs/0408036}{主要来源}。出版日期：未知；arXiv首次提交：2004-08-14；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：事务提交的一致性、两阶段提交与故障假设。
+\item
+  {[}\nolinkurl{SBV3_N02}{]} Paul L. Williams and Randall D.
+  Beer。Nonnegative \nolinkurl{Decomposition} of Multivariate
+  Information。\href{https://arxiv.org/abs/1004.2515}{主要来源}。出版日期：未知；arXiv首次提交：2010-04-14；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：冗余与协同信息的分解结构；不等于本项目任务收益交互项。
+\item
+  {[}\nolinkurl{SBV3_N03}{]} Norman Ferns and Prakash Panangaden and
+  Doina Precup。Metrics for Finite Markov Decision
+  Processes。\href{https://arxiv.org/abs/1207.4114}{主要来源}。出版年份：2004；arXiv首次提交：2012-07-11；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：基于
+  bisimulation 的有限 MDP 状态距离及聚合。
+\item
+  {[}\nolinkurl{SBV3_N04}{]} Mark S. Miller and Ka-Ping Yee and Jonathan
+  Shapiro。Capability Myths
+  Demolished。\href{https://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf}{主要来源}。出版年份：2003；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：对象能力的授权与隔离模型。
+\item
+  {[}\nolinkurl{SBV3_N05}{]} William H. R. Equitz and Thomas M.
+  Cover。Successive Refinement of
+  Information。\href{https://isl.stanford.edu/~cover/papers/paper94.pdf}{主要来源}。出版年月：1991-03；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：逐次细化的率失真条件与非普遍可细化性。
+\item
+  {[}\nolinkurl{SBV3_N06}{]} Jon Doyle。A Truth Maintenance
+  System。\href{https://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a}{主要来源}。出版日期：1979-06-01；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：记录信念理由、依赖回溯及前提变化后的修订。
+\item
+  {[}\nolinkurl{SBV3_N08}{]} Geoffrey Hinton and Oriol Vinyals and Jeff
+  Dean。Distilling the Knowledge in a Neural
+  Network。\href{https://arxiv.org/abs/1503.02531}{主要来源}。出版日期：未知；arXiv首次提交：2015-03-09；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：把复杂模型预测行为蒸馏进另一个模型。
+\item
+  {[}\nolinkurl{SBV3_N09}{]} David Ha and Jürgen Schmidhuber。World
+  Models。\href{https://arxiv.org/abs/1803.10122}{主要来源}。出版日期：未知；arXiv首次提交：2018-03-27；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：学习环境动态并在内部生成环境中组织策略学习。
+\item
+  {[}\nolinkurl{SBV3_N10}{]} Paulo Tabuada。\nolinkurl{Event-triggered}
+  real-time scheduling of stabilizing control
+  tasks。\href{https://www.ee.ucla.edu/~tabuada/Papers/EventTriggered.pdf}{主要来源}。出版年月：2007-09；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：根据状态事件而非固定时钟调度控制任务。
+\item
+  {[}\nolinkurl{SBV3_N11}{]} Dedre
+  Gentner。\nolinkurl{Structure-Mapping}: A Theoretical Framework for
+  Analogy。\href{https://groups.psych.northwestern.edu/gentner/papers/Gentner83.2b.pdf}{主要来源}。出版年月：1983-04；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：把域间关系结构而非外观属性作为类比对象。
+\item
+  {[}\nolinkurl{SBV3_N12}{]} Edsger W. Dijkstra。Guarded commands,
+  \nolinkurl{non-determinacy} and formal derivation of
+  programs。\href{https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html}{主要来源}。出版年月：1975-08；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：用谓词变换与最弱前置条件描述程序规格。
+\item
+  {[}\nolinkurl{SBV3_N13}{]} Frank R. Kschischang and Brendan J. Frey
+  and Hans-Andrea Loeliger。Factor Graphs and the Sum-Product
+  Algorithm。\href{https://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf}{主要来源}。出版年月：2001-02；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：因子图上的双向消息可表达前后向等既有算法。
+\item
+  {[}\nolinkurl{SBV3_N14}{]} Armando Solar-Lezama。Introduction to
+  Program Synthesis, Lecture 10: Introduction to Functional
+  Synthesis。\href{https://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm}{主要来源}。出版日期：未知；核验：2026-10-24，\nolinkurl{PRIMARY_CHECKED}。支持范围：作者教学资料明确说明
+  CEGIS 的候选、反例与累积约束循环及其失效例。
+\end{itemize}
+
+\section{16
+结语与可复核交付}\label{ux7ed3ux8bedux4e0eux53efux590dux6838ux4ea4ux4ed8}
+
+这里提出的强命题不是``更多模型讨论就更聪明''，而是让概念、问题、学习规律和世界成为有语义、有版本、有作用域的可交换对象。其成立需要逐项建立可实现读写、可识别行为、合理语言信息、正确联合依赖和可迁移义务。数学反例帮助选择条件或保留分支，不承担替代实验的功能。
+
+48机制、20组合、68配方、13学习阶段与12终局的源级映射完整，不意味着研究验证完成。38条更激进分叉继续保留，既不以近期资源删除，也不因文字宏大而提前算成功。未来应按独立主张组织研究：先补明确对象与近邻审查，再在另行获准的模型条件下检验区别性预测。
+
+本稿、README与LaTeX源由D03负责；文献库沿用D01，完整条件推导及分叉来自当前D02，学习合同来自L01--L13，组合索引来自当前编译配置。D03
+的静态覆盖、来源哈希、依赖复验和排版检查保存在
+\nolinkurl{run_state}/checks/D03，任务回执在
+\nolinkurl{run_state}/receipts/D03.json。回执证明某一输入快照下交付物的内容与检查，不证明模型结果。后续源码改变时必须重新核对相关段落，不能把旧哈希对应的文稿继续称为当前。
+
+\end{document}

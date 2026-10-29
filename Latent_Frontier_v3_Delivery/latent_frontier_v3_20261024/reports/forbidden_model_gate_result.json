@@ -1,0 +1,1 @@
+{"command":"python tools/frontierctl.py gate model_forward","exit_code":2,"expected_denial":true}

@@ -1,0 +1,13 @@
+# H48: 相关证据的认知谱系代数
+
+## Idempotent source algebra, not vote counting
+Stable atom/source identities and a finite support DAG preserve common ancestry. Validation rejects cycles, dangling source handles, duplicate original sources disguised as distinct atoms and malformed joint distributions. Normalization flattens AND/OR, deduplicates children and applies absorption. Probability evaluation enumerates assignments of unique atom variables, never occurrences in the expression.
+
+Repeated e with marginal .8 stays .8 under unknown dependence or a one-variable declaration. Distinct e and f only yield .96 for OR under an explicitly named independence assumption; an explicit perfectly correlated joint yields .8. Unknown dependence returns symbolic support plus conservative Frechet bounds (.8,1 in this example), not a fabricated posterior. Single-atom marginals are identifiable without any independence premise. Probabilities describe support under assumptions, not guaranteed source truth. Synthetic world lineage remains labelled and never becomes independent real evidence.
+
+Retraction invalidates all descendants of the affected source while preserving the original DAG. Node-reference migration is bijective and keeps original atom/source identities. Fixed truth-table compilation is bounded by StepBudget; recipe12 atoms/exactlimit16 remain future ResearchBudget metadata and are not executed in current fixtures.
+
+Gated tensor source evaluates fixed unique-atom truth tables differentiably using either explicit joint probabilities or declared independence. It rejects unknown dependence rather than factoring it. Source-link learning uses pairwise normalized projection scores and a separately owned BCE objective; predictions have no authority to establish independence. Conditional support calibration uses Brier loss and a separate calibrator ownership ledger. No pretrained-corpus source completeness is claimed.
+
+## Execution and evidence
+All neural/model integration is source implemented, integration unrun, research NOT_RUN. Only bounded non-neural fixtures and stdlib AST/contract checks run. No research score or general semantic capability is claimed. Tensor functions call the immutable policy gate before importing torch. Runtime data must be role-projected, not full supervisor records. Persistent JSON contains resolved values, not autograd identity; replay requires recomputation. Local schema migration preserves all semantic version axes and rejects unsupported versions. Finite errors carry structured ContractError failures. The source recipe retains future research bounds independently from StepBudget fixture limits.

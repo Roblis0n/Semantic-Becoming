@@ -1,0 +1,196 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "atoms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "atom_id": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "source_handle": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "source_kind": {
+            "enum": [
+              "observed",
+              "synthetic",
+              "unknown"
+            ]
+          },
+          "marginal": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "world_lineage": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "atom_id",
+          "source_handle",
+          "source_kind",
+          "marginal",
+          "world_lineage"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "op": {
+            "enum": [
+              "atom",
+              "and",
+              "or"
+            ]
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "atom_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^.+$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "node_id",
+          "op",
+          "inputs",
+          "atom_id"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "root": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "dependence": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "unknown",
+            "declared_independent",
+            "explicit_joint"
+          ]
+        },
+        "atom_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "joint": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "values": {
+                "type": "array",
+                "items": {
+                  "type": "boolean"
+                },
+                "minItems": 0,
+                "maxItems": 64
+              },
+              "probability": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 1
+              }
+            },
+            "required": [
+              "values",
+              "probability"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "declaration_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "mode",
+        "atom_ids",
+        "joint",
+        "declaration_id"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "atoms",
+    "nodes",
+    "root",
+    "version",
+    "dependence"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H48:resolved-payload:3"
+}

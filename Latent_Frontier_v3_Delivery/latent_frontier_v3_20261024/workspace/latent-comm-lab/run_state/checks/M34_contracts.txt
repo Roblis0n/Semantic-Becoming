@@ -1,0 +1,12 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_future_label_leak (test_h34.H34Contracts.test_future_label_leak) ... ok
+test_infeasible_and_multiple (test_h34.H34Contracts.test_infeasible_and_multiple) ... ok
+test_limit_retains_pending (test_h34.H34Contracts.test_limit_retains_pending) ... ok
+test_migration_and_gate (test_h34.H34Contracts.test_migration_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h34.H34Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_public_goal_prunes_waits (test_h34.H34Contracts.test_public_goal_prunes_waits) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

@@ -1,0 +1,112 @@
+{
+  "recorded_at_utc": "2026-10-26T15:16:30.851964+00:00",
+  "scope": "nine new cue WAVs only; previous verified media not rechecked",
+  "status": "new_pcm_and_receipt_hash_passed",
+  "new_wavs": [
+    {
+      "id": "explainer_360_029",
+      "sha256": "d69c81dfde80919ebc2c338bd8ba39798a47932c28c5a215d9defcfe65df2c64",
+      "duration_seconds": 2.9757142857142855,
+      "frames": 131229,
+      "sample_peak": 9025,
+      "rms": 1474.0827308251405,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_037",
+      "sha256": "d735f1a7e33f55a5a91184bee11a45028816fccc0da3b429b9ca6a8c5efdd25b",
+      "duration_seconds": 2.813174603174603,
+      "frames": 124061,
+      "sample_peak": 6825,
+      "rms": 1170.5597683461467,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_038",
+      "sha256": "c455b65f7086338f97602099c60952785e56b78c27da9609f332860ed31f6151",
+      "duration_seconds": 7.58843537414966,
+      "frames": 334650,
+      "sample_peak": 17961,
+      "rms": 2184.0841734509595,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_039",
+      "sha256": "40e00b26d32e095106fb132251514971c0a2bdcdca583f9a36977df2784e5620",
+      "duration_seconds": 6.3113378684807255,
+      "frames": 278330,
+      "sample_peak": 9963,
+      "rms": 1777.7830917734216,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_040",
+      "sha256": "1149177a0c77912f8167ecaf4577d585c71263507c6c15837b172afb764db266",
+      "duration_seconds": 6.961496598639456,
+      "frames": 307002,
+      "sample_peak": 14477,
+      "rms": 2227.569985986698,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_041",
+      "sha256": "4c622bb863266ec599a56e6f3b8e7f06fb802b213fb669d51a79d0add805ff86",
+      "duration_seconds": 7.17047619047619,
+      "frames": 316218,
+      "sample_peak": 11079,
+      "rms": 1904.7185107465627,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_042",
+      "sha256": "e87da1bc9f592091bd70fa6c78ca4d1fb128a910cf2e8402ffbf9022d7ded386",
+      "duration_seconds": 6.90344671201814,
+      "frames": 304442,
+      "sample_peak": 13334,
+      "rms": 2207.5994879942173,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_043",
+      "sha256": "c3f7f197aa9993bf8dfac293a200f712075e17a4b6316d995f1f5dc626d422d6",
+      "duration_seconds": 5.881768707482993,
+      "frames": 259386,
+      "sample_peak": 11607,
+      "rms": 2013.8902697624885,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_044",
+      "sha256": "ad01aff15d27d0afbde310700352bce6d889ef3269dc1bb503f12f42525c6afd",
+      "duration_seconds": 4.407301587301587,
+      "frames": 194362,
+      "sample_peak": 5495,
+      "rms": 1021.6170946867134,
+      "audio_listened": false
+    }
+  ],
+  "unique_source_cues": 58,
+  "unique_source_characters": 1754,
+  "cumulative_accepted_submissions": 59,
+  "cumulative_accepted_characters": 1770,
+  "cumulative_downloaded_unique_wavs": 57,
+  "credits_used": 0,
+  "original029_unknown_request_preserved": true,
+  "missing_audio_cues": [
+    {
+      "id": "explainer_360_036",
+      "characters": 41,
+      "scene_id": "S08",
+      "private_recovery_present": false,
+      "exact_local_reuse_available": false,
+      "resynthesis_authorized": false
+    }
+  ],
+  "unsubmitted_source_cues": 0,
+  "new_submissions_this_run": 9,
+  "new_submitted_characters": 273,
+  "research_state": "NOT_RUN",
+  "audio_listened": false,
+  "full_long_assembly_run": false,
+  "reason": "Missing036actualaudio; no silence substitution"
+}

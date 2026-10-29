@@ -1,0 +1,55 @@
+{
+  "task_id": "W05",
+  "status": "done",
+  "input_digest": "ca541081caac2c2c458b54bbd0749dfd787ddea6344c00b9666586d20d87ced6",
+  "outputs": [
+    {
+      "path": "src/latent_comm/worlds/causal_analogy/__init__.py",
+      "sha256": "ee9f9a1c9399b0c39feb6bcf0c8c96ee00ba0fb8e3ed371724004f10ecde6909",
+      "bytes": 225
+    },
+    {
+      "path": "src/latent_comm/worlds/causal_analogy/generator.py",
+      "sha256": "f4c2eb39417069feb4e15631f6b15fd564e7b000f00df44b1a148376a8853c4d",
+      "bytes": 2310
+    },
+    {
+      "path": "src/latent_comm/worlds/causal_analogy/pipeline.py",
+      "sha256": "2a7cbf79adddcce9fff0bda424d2ab6b838ed701aca587e2163c06b2154d9a0e",
+      "bytes": 1863
+    },
+    {
+      "path": "configs/worlds/causal_analogy.json",
+      "sha256": "ebc45d86d75a55a9a8e1760907d9ee8e06ff41b87855b80335a098e32af9f935",
+      "bytes": 581
+    },
+    {
+      "path": "tests/data/test_causal_analogy.py",
+      "sha256": "05e13d9ed4bb7c1cc029524ac648293c811ea90afb099da809bf872f822421aa",
+      "bytes": 777
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/W_causal_analogy.txt",
+      "sha256": "0c912180280b7e8dfbd3ece8f29d6aac3251525dfa3278b853cffe417f4b0b45"
+    },
+    {
+      "path": "run_state/checks/W_worlds_static.json",
+      "sha256": "10dd726945aa690ca5320a3d268b5ba4c928536a8ff6888f76b304ba62c7b9b6"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/W05_test_causal_analogy.txt",
+      "sha256": "3499c6ff5a69699a8c713d89867dfb3ea37299d88edc0170d4ccebf08bac65bf"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three dedicated finite-world contracts pass. Structural partition precedes sampling; role projection and resume sources present. Bulk data generation and all model research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:34.274837+00:00"
+}

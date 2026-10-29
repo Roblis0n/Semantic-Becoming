@@ -1,0 +1,37 @@
+{
+  "selected": 6,
+  "excluded_research_entry_tests": [
+    {
+      "test": "test_policy.PolicyTests.test_cli_describe_safe_execute_denied",
+      "guarded_calls": [
+        "conservative legacy gate-test exclusion",
+        "main"
+      ]
+    },
+    {
+      "test": "test_policy.PolicyTests.test_future_metadata_not_execution_authority",
+      "guarded_calls": [
+        "meter"
+      ]
+    },
+    {
+      "test": "test_policy.PolicyTests.test_gate_never_calls_callback",
+      "guarded_calls": [
+        "conservative legacy gate-test exclusion"
+      ]
+    },
+    {
+      "test": "test_policy.PolicyTests.test_loader_gate_precedes_imports",
+      "guarded_calls": [
+        "conservative legacy gate-test exclusion",
+        "initialize_from_config",
+        "invoke_research_api",
+        "load_hf_model",
+        "load_hf_tokenizer"
+      ]
+    }
+  ],
+  "test_file": "tests/policy/test_policy.py",
+  "research_state": "NOT_RUN",
+  "budget_scope": "per test aggregate"
+}

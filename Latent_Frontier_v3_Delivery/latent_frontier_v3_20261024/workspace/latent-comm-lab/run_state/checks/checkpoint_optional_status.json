@@ -1,0 +1,6 @@
+{
+  "checks_passed": 6,
+  "core_blocker_cannot_be_terminal": true,
+  "optional_export_blocker_remains_explicit": true,
+  "research_state": "NOT_RUN"
+}

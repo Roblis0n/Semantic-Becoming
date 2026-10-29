@@ -1,0 +1,89 @@
+{
+  "task_id": "D03",
+  "status": "done",
+  "input_digest": "1eb62b3618bf2de9bc626cce2c8877804aec3029f2cb406610ac0c526b74924f",
+  "outputs": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "0bb343590e75ea48864982f169c5db9fd9d37e56761ee94b54f4f6d6aeb84945",
+      "bytes": 215752
+    },
+    {
+      "path": "README.md",
+      "sha256": "2953e58fc870dafa369e56772ad4df92a0d7d11a5b3cc1895568b5f541c102b0",
+      "bytes": 7932
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "c6079c23a5c61e5458eb177e38f7c204b449ab8d57f31791582ebbee9f4881d0",
+      "bytes": 273666
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/D03/validation.json",
+      "sha256": "5795e61de03e6e4e1d6032aa1476f57c25b6714b6b326fb18a3103a7653db42b"
+    },
+    {
+      "path": "run_state/checks/D03/dependencies_final.json",
+      "sha256": "a6cf53237e067cc39dc7c071b70a0b4a2bc7a9f70d9d9ca8c6adedbc223801ae"
+    },
+    {
+      "path": "run_state/checks/D03/source_snapshot.json",
+      "sha256": "0a5c32662deb75b5de5ecb4dab8ac99a81199d1c2102a1075fecf02dc85785f6"
+    },
+    {
+      "path": "run_state/checks/D03/loss_snapshot.json",
+      "sha256": "b5f033df724f2aca4a5a91fa879a62a5bb9dc5855215d7cf2dcba8b275678bdd"
+    },
+    {
+      "path": "run_state/checks/D03/qa_report.json",
+      "sha256": "3f41612d114b3b58053f9910edbbdbeb6f8d127dc39b57de5eed9b8333bbb321"
+    },
+    {
+      "path": "run_state/checks/D03/latex_pass6.txt",
+      "sha256": "3ec80e0a786f68a33212bc4d9f5b5438d1240a37e0a0396e947f6c2dc67b1413"
+    },
+    {
+      "path": "run_state/checks/D03/render/main.pdf",
+      "sha256": "963676a0a77417c83bc26b0ec5eccde62f53ae3d2eb673dd66e5dfd446b91c28"
+    },
+    {
+      "path": "run_state/checks/D03/validate_documentation.py",
+      "sha256": "eb9ae27d0239f3064a97f372c9ad5f24441f21c6bfb3e5f09d455565038ede13"
+    },
+    {
+      "path": "run_state/checks/D03/build_appendices.py",
+      "sha256": "46134571a4bab235ca473ef6fd25b4cd950d8311b3fe7f18bf90bc1da105d33b"
+    },
+    {
+      "path": "run_state/checks/D03/render_paper.sh",
+      "sha256": "d3569e26c9848a36e01e0ebe3748ba29c11124e44a97ede95b3a9501a7bebbf1"
+    },
+    {
+      "path": "run_state/checks/D03/format_tex.lua",
+      "sha256": "d06d5710050fca8e036803077a35c9e78a4f6f76c9e61b619579f1f4c05fc8c1"
+    },
+    {
+      "path": "run_state/checks/D03/header.tex",
+      "sha256": "4dc009f426e2e478fb53f77ad624744efe73a08a04e00b4a6ec34326577065f7"
+    },
+    {
+      "path": "run_state/checks/D03/refresh_render_qa.py",
+      "sha256": "610b1c01ad34986a05d7e05f1fe828e069d85ad893fcfd4b90cde7c00f8da52e"
+    },
+    {
+      "path": "run_state/checks/D03/review_reconciliation.json",
+      "sha256": "855301b99c29a20b5bf8d3beb8a036a3adaece8e811e0ebf4c0303098eb0ddf8"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "D03 complete source/design monograph, README and full LaTeX. Three substantive concept/learning/world mainlines; 48 mechanisms, 20 actual typed compositions, all68 original recipe bindings, 13 learning stages, 23 assumptions, 127 full static LossSpec mappings, 12 horizons, 38 explicitly unimplemented V branches, 46 source-traceable bibliography records. 50 documentation/static checks pass, 734 source hashes and95 transitive dependency receipts verified current. Full LaTeX actually rendered to55 pages; final pass has zero missing glyph or overfull warnings, all-page contact sheets and selected detail pages visually inspected by assistant, no fabricated human review. First rendering failures and repaired local TeX setup are documented. Preserves L13 three policy-blocked legacy entry attempts with no neural import/model/tensor execution, separate corrected116 checks, and media active/noncommercial/unauditioned limitations. No D03 research entry call, neural import, model loading/initialization/forward/train/eval/benchmark/API, dataset generation, spend, publish, external message or attachment. All research result rows NOT_RUN; no global priority or empirical efficacy claim. paper/references.bib remains D01-owned unchanged. Independent review corrections: preserve publication versus arXiv submission dates for all46 sources; preserve SCM affected-set/context, local-kernel boundary and adaptive-sequence assumptions; render23 real assumption list items; preserve all127 source objective formula spaces. Regenerated and inspected55 pages, including revised detail pages6,7,10,25,31,32,54. No D01/formal source/algorithm edit. Final media status reconciliation remains pending separate owner.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:39:56.750126+00:00"
+}

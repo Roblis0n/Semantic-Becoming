@@ -1,0 +1,1394 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:v3:frontier-packet",
+  "title": "Frontier Packet V3 / no research runtime authorization",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "packet_id": {
+      "$ref": "#/$defs/Ref"
+    },
+    "mechanism": {
+      "enum": [
+        "H25",
+        "H26",
+        "H27",
+        "H28",
+        "H29",
+        "H30",
+        "H31",
+        "H32",
+        "H33",
+        "H34",
+        "H35",
+        "H36",
+        "H37",
+        "H38",
+        "H39",
+        "H40",
+        "H41",
+        "H42",
+        "H43",
+        "H44",
+        "H45",
+        "H46",
+        "H47",
+        "H48"
+      ]
+    },
+    "versions": {
+      "$ref": "#/$defs/VersionSet"
+    },
+    "scope_ref": {
+      "$ref": "#/$defs/Ref"
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Ref"
+      },
+      "uniqueItems": true
+    },
+    "execution_semantics": {
+      "enum": [
+        "exact_symbolic",
+        "differentiable",
+        "discrete_search",
+        "hybrid"
+      ]
+    },
+    "budget": {
+      "$ref": "#/$defs/Budget"
+    },
+    "payload": {
+      "type": "object"
+    },
+    "evidence_ref": {
+      "$ref": "#/$defs/Ref"
+    }
+  },
+  "required": [
+    "packet_id",
+    "mechanism",
+    "versions",
+    "scope_ref",
+    "parents",
+    "execution_semantics",
+    "budget",
+    "payload",
+    "evidence_ref"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H25"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H25Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H26"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H26Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H27"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H27Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H28"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H28Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H29"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H29Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H30"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H30Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H31"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H31Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H32"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H32Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H33"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H33Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H34"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H34Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H35"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H35Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H36"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H36Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H37"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H37Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H38"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H38Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H39"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H39Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H40"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H40Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H41"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H41Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H42"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H42Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H43"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H43Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H44"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H44Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H45"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H45Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H46"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H46Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H47"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H47Payload"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "mechanism": {
+            "const": "H48"
+          }
+        },
+        "required": [
+          "mechanism"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/H48Payload"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "Ref": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:/-]{0,255}$"
+    },
+    "VersionSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "frame",
+        "ontology",
+        "isa",
+        "world",
+        "task",
+        "evidence"
+      ]
+    },
+    "Budget": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "max_steps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 128
+        },
+        "max_branches": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "new_spend": {
+          "const": 0
+        }
+      },
+      "required": [
+        "max_steps",
+        "max_branches",
+        "new_spend"
+      ]
+    },
+    "H25Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "frame_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "G_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "operator_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "readout_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "transform_group": {
+          "$ref": "#/$defs/Ref"
+        },
+        "state_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "target_frame_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "frame_ref",
+        "G_ref",
+        "operator_ref",
+        "readout_ref",
+        "transform_group"
+      ]
+    },
+    "H26Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "cover_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "local_sections_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "restrictions_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "anchors_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "affine_bias_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "conflict_witness_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "cover_ref",
+        "local_sections_ref",
+        "restrictions_ref",
+        "anchors_ref",
+        "affine_bias_ref"
+      ]
+    },
+    "H27Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ontology_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "predicate_ast_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "distinction_witness_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "migration_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "change_kind": {
+          "enum": [
+            "birth",
+            "split",
+            "merge",
+            "retire"
+          ]
+        },
+        "retirement_condition_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "ontology_ref",
+        "predicate_ast_ref",
+        "distinction_witness_ref",
+        "migration_ref",
+        "change_kind"
+      ]
+    },
+    "H28Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "potential_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "control_path_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "structure_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "branch_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "integrator_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "jacobian_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "potential_ref",
+        "control_path_ref",
+        "structure_ref",
+        "branch_ref",
+        "integrator_ref"
+      ]
+    },
+    "H29Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "question_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "transform_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "answer_map_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "relation_kind": {
+          "enum": [
+            "equivalent",
+            "sufficient",
+            "necessary",
+            "partial",
+            "heuristic"
+          ]
+        },
+        "preconditions_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "inverse_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "question_ref",
+        "transform_ref",
+        "answer_map_ref",
+        "relation_kind",
+        "preconditions_ref"
+      ]
+    },
+    "H30Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_graph_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "target_graph_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "object_map_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "operation_map_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "valid_domain_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "unmapped_objects_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "source_graph_ref",
+        "target_graph_ref",
+        "object_map_ref",
+        "operation_map_ref",
+        "valid_domain_ref"
+      ]
+    },
+    "H31Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_module_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "target_world_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "boundary_map_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "units_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "noise_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "intervention_map_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "source_module_ref",
+        "target_world_ref",
+        "boundary_map_ref",
+        "units_ref",
+        "noise_contract_ref"
+      ]
+    },
+    "H32Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "goal_digest": {
+          "$ref": "#/$defs/Ref"
+        },
+        "view_map_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "weights_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "preserved_objective_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "pareto_front_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "goal_digest",
+        "view_map_ref",
+        "weights_ref",
+        "preserved_objective_ref"
+      ]
+    },
+    "H33Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dynamics_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "skew_coupling_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "integrator_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "trajectory_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "time_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "energy_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "dynamics_ref",
+        "skew_coupling_ref",
+        "integrator_ref",
+        "trajectory_ref",
+        "time_contract_ref"
+      ]
+    },
+    "H34Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "initial_constraint_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "public_terminal_constraint_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "dynamics_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "path_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "solver_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "multiple_paths_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "terminal_source": {
+          "enum": [
+            "public_goal",
+            "public_boundary"
+          ]
+        }
+      },
+      "required": [
+        "initial_constraint_ref",
+        "public_terminal_constraint_ref",
+        "dynamics_ref",
+        "path_ref",
+        "solver_ref",
+        "terminal_source"
+      ]
+    },
+    "H35Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "micro_state_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "coarse_map_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "macro_dynamics_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "scale_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "memory_closure_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "micro_state_ref",
+        "coarse_map_ref",
+        "macro_dynamics_ref",
+        "scale_contract_ref"
+      ]
+    },
+    "H36Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "claim_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "counterexample_program_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "observation_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "revision_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "unresolved_disputes_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "claim_ref",
+        "counterexample_program_ref",
+        "observation_contract_ref",
+        "revision_ref"
+      ]
+    },
+    "H37Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "behavior_anchors_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "source_direction_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "source_jvp_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "target_vjp_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "parameter_scope_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "projection_residual_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "regularization": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "behavior_anchors_ref",
+        "source_direction_ref",
+        "source_jvp_ref",
+        "target_vjp_ref",
+        "parameter_scope_ref",
+        "regularization"
+      ]
+    },
+    "H38Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "rule_ast_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "support_view_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "query_loss_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "parameter_scope_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "estimator_kind": {
+          "enum": [
+            "exact_unroll",
+            "first_order",
+            "policy_gradient",
+            "straight_through_biased",
+            "enumeration"
+          ]
+        },
+        "meta_state_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "inner_steps": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 128
+        }
+      },
+      "required": [
+        "rule_ast_ref",
+        "support_view_ref",
+        "query_loss_contract_ref",
+        "parameter_scope_ref",
+        "estimator_kind",
+        "inner_steps"
+      ]
+    },
+    "H39Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "snapshot_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "read_versions_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "write_set_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "migration_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "journal_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "rollback_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "snapshot_ref",
+        "read_versions_ref",
+        "write_set_ref",
+        "migration_ref",
+        "journal_ref"
+      ]
+    },
+    "H40Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "base_isa_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "macro_ast_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "lowering_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "reader_registry_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "compression_witness_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "base_isa_ref",
+        "macro_ast_ref",
+        "lowering_ref",
+        "reader_registry_ref"
+      ]
+    },
+    "H41Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "players_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "coalition_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "value_function_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "credit_policy_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "contribution_estimate_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "credit_is_money": {
+          "const": false
+        }
+      },
+      "required": [
+        "players_ref",
+        "coalition_contract_ref",
+        "value_function_ref",
+        "credit_policy_ref",
+        "credit_is_money"
+      ]
+    },
+    "H42Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "task_population_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "protocol_population_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "mutation_grammar_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "lineage_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "transfer_graph_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "task_population_ref",
+        "protocol_population_ref",
+        "mutation_grammar_ref",
+        "lineage_ref"
+      ]
+    },
+    "H43Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "transition_kernel_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "observation_kernel_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "action_contract_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "shared_noise_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "normalization_witness_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "transition_kernel_ref",
+        "observation_kernel_ref",
+        "action_contract_ref",
+        "shared_noise_ref"
+      ]
+    },
+    "H44Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "component_world_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Ref"
+          },
+          "minItems": 1,
+          "maxItems": 64,
+          "uniqueItems": true
+        },
+        "compatibility_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "synthetic_evidence_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "question_seeds_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "new_question_refs": {
+          "$ref": "#/$defs/Ref"
+        },
+        "synthetic": {
+          "const": true
+        }
+      },
+      "required": [
+        "component_world_refs",
+        "compatibility_ref",
+        "synthetic_evidence_ref",
+        "question_seeds_ref",
+        "synthetic"
+      ]
+    },
+    "H45Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hypotheses_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "allowed_queries_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "observation_model_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "cost_policy_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "prior_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "hypotheses_ref",
+        "allowed_queries_ref",
+        "observation_model_ref",
+        "cost_policy_ref"
+      ]
+    },
+    "H46Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "excluded_region_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "assumptions_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "witness_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "support_kind": {
+          "enum": [
+            "proof_scoped",
+            "search_failed_in_grammar",
+            "soft_empirical",
+            "conditional"
+          ]
+        },
+        "retraction_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "soft_weight_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "excluded_region_ref",
+        "assumptions_ref",
+        "witness_ref",
+        "support_kind",
+        "retraction_ref"
+      ]
+    },
+    "H47Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "domain_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "query_family_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "response_signature_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "partition_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "equivalence_kind": {
+          "enum": [
+            "exact_finite",
+            "approximate_clustering"
+          ]
+        },
+        "refinement_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "domain_ref",
+        "query_family_ref",
+        "response_signature_ref",
+        "partition_ref",
+        "equivalence_kind"
+      ]
+    },
+    "H48Payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "evidence_atoms_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "support_expression_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "dependence_kind": {
+          "enum": [
+            "explicit_joint",
+            "declared_independent",
+            "unknown"
+          ]
+        },
+        "retraction_ref": {
+          "$ref": "#/$defs/Ref"
+        },
+        "joint_distribution_ref": {
+          "$ref": "#/$defs/Ref"
+        }
+      },
+      "required": [
+        "evidence_atoms_ref",
+        "support_expression_ref",
+        "dependence_kind",
+        "retraction_ref"
+      ]
+    }
+  }
+}

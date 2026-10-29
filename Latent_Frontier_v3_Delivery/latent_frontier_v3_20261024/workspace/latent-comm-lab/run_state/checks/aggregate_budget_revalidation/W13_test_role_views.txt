@@ -1,0 +1,25 @@
+test_derivation_preserves_partition_and_structure (test_role_views.RoleDataTests.test_derivation_preserves_partition_and_structure) ... ok
+test_encoded_roles_preserve_live_identity_without_model_execution (test_role_views.RoleDataTests.test_encoded_roles_preserve_live_identity_without_model_execution) ... ok
+test_fixture_cannot_be_relabelled_as_training (test_role_views.RoleDataTests.test_fixture_cannot_be_relabelled_as_training) ... ok
+test_model_collator_rejects_full_record_and_mixed_roles (test_role_views.RoleDataTests.test_model_collator_rejects_full_record_and_mixed_roles) ... ok
+test_nested_leak_rejected_before_factory (test_role_views.RoleDataTests.test_nested_leak_rejected_before_factory) ... ok
+test_novel_composition_reserved (test_role_views.RoleDataTests.test_novel_composition_reserved) ... ok
+test_padded_mask_distinguishes_real_zero (test_role_views.RoleDataTests.test_padded_mask_distinguishes_real_zero) ... ok
+test_partition_before_sampling_and_no_duplicate_template (test_role_views.RoleDataTests.test_partition_before_sampling_and_no_duplicate_template) ... ok
+test_projection_reason_required (test_role_views.RoleDataTests.test_projection_reason_required) ... ok
+test_projection_unknown_fields_not_forwarded (test_role_views.RoleDataTests.test_projection_unknown_fields_not_forwarded) ... ok
+test_seed_not_part_of_structure_signature (test_role_views.RoleDataTests.test_seed_not_part_of_structure_signature) ... ok
+test_world_role_supervision_separation (test_role_views.RoleDataTests.test_world_role_supervision_separation) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.001s
+
+OK
+{
+  "selected": 12,
+  "excluded_model_entry_or_gate_tests": [
+    "test_role_views.RoleDataTests.test_bulk_generator_locked_before_callback",
+    "test_role_views.RoleDataTests.test_tensor_collation_is_locked"
+  ],
+  "neural_modules_loaded": []
+}

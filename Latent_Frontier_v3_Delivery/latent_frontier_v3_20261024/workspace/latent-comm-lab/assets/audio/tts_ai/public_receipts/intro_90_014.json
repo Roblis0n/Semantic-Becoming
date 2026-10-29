@@ -1,0 +1,39 @@
+{
+  "id": "intro_90_014",
+  "edition": "intro_90",
+  "scene_id": "S08",
+  "characters": 37,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "这里提出的是研究方向，不是虚构实验。核心问题是：交流能否创造新的认知可能？",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:17:41.178837+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 295226,
+    "duration_seconds": 6.694467120181406,
+    "sample_peak": 12590,
+    "sample_rms": 2094.5060812558895,
+    "sha256": "31932215f28ae2134abf7bec1499aacf9a0172b60e7638af9d7a6ef01d3330c3",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:18:14.880404+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

@@ -1,0 +1,15 @@
+M04: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_conflict_not_consensus (test_h04.FieldTests.test_conflict_not_consensus) ... ok
+test_field_sheaf_dynamics_and_public_trajectory (test_h04.FieldTests.test_field_sheaf_dynamics_and_public_trajectory) ... ok
+test_noncommon_domain (test_h04.FieldTests.test_noncommon_domain) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h04.FieldTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h04.FieldTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h04.FieldTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_trajectory_and_bad_step (test_h04.FieldTests.test_trajectory_and_bad_step) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h04.FieldTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.028s
+
+OK
+M04: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

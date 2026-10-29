@@ -1,0 +1,149 @@
+[
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S01_0_6.12.png",
+    "seconds": 6.125,
+    "kind": "communication",
+    "source": "communication_to_object"
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S01_1_18.38.png",
+    "seconds": 18.375,
+    "kind": "slide",
+    "source": 4
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S01_2_29.75.png",
+    "seconds": 29.75,
+    "kind": "slide",
+    "source": 1
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S02_0_50.05.png",
+    "seconds": 50.05,
+    "kind": "animation",
+    "source": "A03"
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S02_1_71.55.png",
+    "seconds": 71.55,
+    "kind": "slide",
+    "source": 11
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S03_0_92.35.png",
+    "seconds": 92.35,
+    "kind": "animation",
+    "source": "A02"
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S03_1_112.85.png",
+    "seconds": 112.85,
+    "kind": "slide",
+    "source": 7
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S04_0_127.36.png",
+    "seconds": 127.36,
+    "kind": "slide",
+    "source": 13
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S04_1_149.36.png",
+    "seconds": 149.36,
+    "kind": "animation",
+    "source": "A04"
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S05_0_173.25.png",
+    "seconds": 173.25,
+    "kind": "slide",
+    "source": 15
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S05_1_193.75.png",
+    "seconds": 193.75,
+    "kind": "slide",
+    "source": 17
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S06_0_210.90.png",
+    "seconds": 210.9,
+    "kind": "slide",
+    "source": 19
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S06_1_229.30.png",
+    "seconds": 229.3,
+    "kind": "animation",
+    "source": "A05"
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S06_2_245.40.png",
+    "seconds": 245.4,
+    "kind": "slide",
+    "source": 21
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S07_0_255.00.png",
+    "seconds": 255.0,
+    "kind": "animation",
+    "source": "A01"
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S07_1_265.00.png",
+    "seconds": 265.0,
+    "kind": "slide",
+    "source": 25
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S07_2_275.00.png",
+    "seconds": 275.0,
+    "kind": "slide",
+    "source": 28
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S07_3_285.00.png",
+    "seconds": 285.0,
+    "kind": "slide",
+    "source": 29
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S08_0_300.00.png",
+    "seconds": 300.0,
+    "kind": "slide",
+    "source": 33
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S08_1_320.00.png",
+    "seconds": 320.0,
+    "kind": "slide",
+    "source": 34
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/explainer_360_S09_0_345.00.png",
+    "seconds": 345.0,
+    "kind": "slide",
+    "source": 36
+  }
+]

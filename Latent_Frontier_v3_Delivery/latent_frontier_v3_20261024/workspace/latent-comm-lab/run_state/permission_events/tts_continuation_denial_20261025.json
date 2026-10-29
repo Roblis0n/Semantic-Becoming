@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-10-25T15:08:45Z",
+  "action": "authorized scoped narration continuation; tool monitoring rejected",
+  "target": "api.tts.ai anonymous free TTS",
+  "exact_reason": "The command would upload private course narration content to the external api.tts.ai service, but the user did not explicitly authorize that destination and payload disclosure. Do not bypass this rejection through a workaround or indirect execution.",
+  "prior_scoped_authorization": "release/authorization_updates/20261025T0234_TTS_APPROVAL.json",
+  "state": "STOPPED after explicit risk denial; no further provider submissions, polls, downloads or alternate route",
+  "pending036": "Accepted before denial; private capability remains outside deliverable, must poll existing job rather than duplicate after authority restored",
+  "old029": "Accepted outcome unknown; private capability lost; explicit duplication-risk consent still required",
+  "new_execution_route_history": "Escalated launcher failed before process start; default permitted execution started successfully; later risk denial stopped producer",
+  "research_state": "NOT_RUN"
+}

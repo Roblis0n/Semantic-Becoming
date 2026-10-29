@@ -1,0 +1,53 @@
+{
+  "task_id": "C12",
+  "status": "done",
+  "input_digest": "8c60a3f0b67eb5b226d5af80f2a86828d5fc8d5dd173c158b7ed92824c728852",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compositions/c12.py",
+      "sha256": "d379b120b6d6f8103b734491ad470c1e4a7c2cc6902a8b5edfe167fa72d57114",
+      "bytes": 11488
+    },
+    {
+      "path": "configs/compositions/C12.json",
+      "sha256": "19dff2647cc9b27da6daf75a18555c0545f1c906815a46d30cfba59a9ca5a61a",
+      "bytes": 25212
+    },
+    {
+      "path": "tests/contracts/test_c12.py",
+      "sha256": "47f13824094fd2e1413aaf60daa1ba9a35a7d742fa0c54af5e1bcc30a290f62d",
+      "bytes": 2497
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/C12_composition.txt",
+      "sha256": "2faf1f66810873ec7bba70d9a424356061a6115b1660691aaf73e8f4e45f0208"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "b4127847febf1ffeefb1d8515a256bf538eb09612791ea280ad808e6047ea41d"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_c12.txt",
+      "sha256": "a5533a4f3e9ee0d2ede271753f71ae54e3b836dae35c9c35992ed31dd62f14df"
+    },
+    {
+      "path": "run_state/checks/final_mechanism_revalidation/test_c12.txt",
+      "sha256": "d5c191ac051fc65e13c49d0241eafbb53218c4e8c4680044d443cf3ec745d939"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "sha256": "7ddd5307e366f61fcf9420d1cb43508e0e48e5d0fcf2c281482e5b071ad03204"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Concrete typed object flow with actual bounded finite mechanism calls and compiled IR, exact source loss ledgers, failure/partial obligations. End-to-end aggregate fixture accounting enforced. Research models/training NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:19:40.729094+00:00"
+}

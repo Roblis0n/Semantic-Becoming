@@ -1,0 +1,39 @@
+{
+  "id": "intro_90_013",
+  "edition": "intro_90",
+  "scene_id": "S07",
+  "characters": 14,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "并准备统一的程序与执行流程。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:17:08.542814+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 123549,
+    "duration_seconds": 2.80156462585034,
+    "sample_peak": 7369,
+    "sample_rms": 1357.9556451314409,
+    "sha256": "aeccd07799f3f97a2acf06867dda1e25377364346a3d730a257ebc8cd4801dc4",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:17:41.178430+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

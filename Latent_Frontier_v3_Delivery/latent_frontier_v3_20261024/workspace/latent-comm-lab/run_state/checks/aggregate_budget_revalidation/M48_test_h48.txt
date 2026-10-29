@@ -1,0 +1,18 @@
+test_duplicate_is_point8_not_point96 (test_h48.H48Contracts.test_duplicate_is_point8_not_point96) ... ok
+test_independent_vs_correlated_joint_and_unknown (test_h48.H48Contracts.test_independent_vs_correlated_joint_and_unknown) ... ok
+test_migration_truth_table_and_synthetic_lineage (test_h48.H48Contracts.test_migration_truth_table_and_synthetic_lineage) ... ok
+test_retraction_cycle_and_missing (test_h48.H48Contracts.test_retraction_cycle_and_missing) ... ok
+test_schema_rejects_uncovered_dependence (test_h48.H48Contracts.test_schema_rejects_uncovered_dependence) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h48.H48Contracts.test_neural_source_is_lazy_and_gated",
+    "test_h48.H48Contracts.test_schema_roundtrip_and_gate"
+  ],
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,72 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "claim_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "program": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "enum": [
+            "divisible",
+            "not",
+            "and",
+            "implies"
+          ]
+        },
+        "divisor": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "op",
+        "divisor",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "observation_rule": {
+      "enum": [
+        "universal_validity",
+        "disagreement_only"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "claim_id",
+    "program",
+    "domain",
+    "version",
+    "observation_rule"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H36:resolved-payload:3"
+}

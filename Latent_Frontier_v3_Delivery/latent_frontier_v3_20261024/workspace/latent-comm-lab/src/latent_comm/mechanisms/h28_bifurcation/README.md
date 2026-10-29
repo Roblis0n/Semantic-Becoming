@@ -1,0 +1,6 @@
+# H28: 语义结构的分岔与相变
+
+Quartic-potential stationary branches use analytic derivatives, distinguishing continuous stability from Euler multipliers. Alpha=0 is nonhyperbolic but higher-order attracting, not unstable by fiat. Explicit control trajectories retain branch identity and bounded unroll; structure events apply dimension-changing maps, advance versions, and name invalidated caches. This is a finite bifurcation carrier, not a claim that a model score jump is a physical phase transition. Future branch: coexistence and hysteretic structure selection near criticality rather than forced single-state switching.
+
+## Execution and evidence
+All neural/model integration is source implemented, integration unrun, research NOT_RUN. Only bounded non-neural fixtures and stdlib AST/contract checks run. No research score or general semantic capability is claimed. Tensor functions call the immutable policy gate before importing torch. Runtime data must be role-projected, not full supervisor records. Persistent JSON contains resolved values, not autograd identity; replay requires recomputation. Local schema migration preserves all semantic version axes and rejects unsupported versions. Finite errors carry structured ContractError failures. The source recipe retains future research bounds independently from StepBudget fixture limits.

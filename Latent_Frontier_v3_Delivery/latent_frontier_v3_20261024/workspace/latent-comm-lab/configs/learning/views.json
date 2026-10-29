@@ -1,0 +1,74 @@
+{
+  "stage": "L01",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "role_operator",
+  "run_id": "future-l01",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "frame": "f1",
+    "evidence": "e1"
+  },
+  "dimensions": {},
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "role_operator": [
+      {
+        "name": "role_operator_calibration",
+        "parameter_owners": [
+          "mechanism_writer",
+          "mechanism_reader"
+        ],
+        "loss_weights": {
+          "task": 1.0,
+          "behavior": 0.5,
+          "composition": 0.5
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "dual_channel": [
+      {
+        "name": "dual_channel_calibration",
+        "parameter_owners": [
+          "mechanism_writer",
+          "mechanism_reader",
+          "symbol_predictor"
+        ],
+        "loss_weights": {
+          "latent_behavior": 1.0,
+          "symbol_structure": 0.2,
+          "conflict": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  },
+  "variant_versions": {
+    "dual_channel": {
+      "schema": "3",
+      "state": "s1",
+      "world": "w1",
+      "task": "t1",
+      "frame": "f1",
+      "evidence": "e1",
+      "ontology": "o1",
+      "isa": "i1"
+    }
+  }
+}

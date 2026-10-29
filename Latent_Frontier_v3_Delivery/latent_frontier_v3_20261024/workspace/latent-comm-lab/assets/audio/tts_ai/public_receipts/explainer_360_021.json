@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_021",
+  "edition": "explainer_360",
+  "scene_id": "S05",
+  "characters": 42,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "比运输一次改进更远，是运输一个受限的学习程序。它可以读取授权范围内的梯度和局部统计，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:34:10.772214+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 330042,
+    "duration_seconds": 7.4839455782312925,
+    "sample_peak": 11225,
+    "sample_rms": 2236.307112848184,
+    "sha256": "55c9c2889b4ec8104924d8f6c2a8965097a70b29c0b14c58f0019537c41eeab0",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:34:45.211627+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

@@ -1,0 +1,19 @@
+test_actual_chain_and_compiler (test_c09.C09Tests.test_actual_chain_and_compiler) ... ok
+test_heterogeneous_partial_action (test_c09.C09Tests.test_heterogeneous_partial_action) ... ok
+test_invalidated_receiving_chart (test_c09.C09Tests.test_invalidated_receiving_chart) ... ok
+test_nonclosed_without_memory (test_c09.C09Tests.test_nonclosed_without_memory) ... ok
+test_receiving_chart_task_scope (test_c09.C09Tests.test_receiving_chart_task_scope) ... ok
+test_singular_frame (test_c09.C09Tests.test_singular_frame) ... ok
+test_stale_isa (test_c09.C09Tests.test_stale_isa) ... ok
+test_training_is_not_one_global_loss (test_c09.C09Tests.test_training_is_not_one_global_loss) ... ok
+test_wrong_scale_operation (test_c09.C09Tests.test_wrong_scale_operation) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.044s
+
+OK
+{
+  "selected": 9,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

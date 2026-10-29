@@ -1,0 +1,42 @@
+{
+  "task_id": "Z01",
+  "status": "done",
+  "input_digest": "234c87ee4cc21c04db01680a0373ccde38a82313917ea9c751ddbd721b890159",
+  "outputs": [
+    {
+      "path": "RELEASE_REPORT.md",
+      "sha256": "bd39741cd08f420ce641a99f59d7f014fa951f4ab2ee5f677a5d3b064364aa86",
+      "bytes": 4847
+    },
+    {
+      "path": "manifest.json",
+      "sha256": "67661b8ab706e6078833831d35a0000d5aef3ab7e72f1b7ef0b91260978b6291",
+      "bytes": 549363
+    },
+    {
+      "path": "checksums.sha256",
+      "sha256": "ac134ff0a23fa12eaf2b1b476d3914290f67e57a062a8ea401cca47d87d633f7",
+      "bytes": 342508
+    },
+    {
+      "path": "FILE_INDEX.md",
+      "sha256": "e2ea56ff7b7471be320b304273716127904693111df95c0c0d827e44873bf9cd",
+      "bytes": 150062
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/Z01_seal_validation.json",
+      "sha256": "348bd8820a705faefc52a7e8346e7de529122b5ec8fc426aa47a985ba617cfa3"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "All production/objectiveQA complete under explicit20261027user scope. Real auditionUSER_WAIVED_NOT_PERFORMED notPASS; priorP17 and blockers retained as history. ResearchNOT_RUN; personal/noncommercial TTS restriction unchanged; no remaining externalblockers.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:12:28.845073+00:00"
+}

@@ -1,0 +1,171 @@
+[
+  {
+    "id": "X01",
+    "title": "无固定模型个体的认知连续体",
+    "mechanisms": [
+      "H05",
+      "H22",
+      "H25",
+      "H39"
+    ],
+    "design_path": "horizons/X01_无固定模型个体的认知连续体.md",
+    "target_path": "src/latent_comm/horizon/identity_continuum.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "在一个固定有限任务图中允许状态跨模型转移、局部加入退出和事务提交，记录身份等价由哪些行为锚维持。"
+  },
+  {
+    "id": "X02",
+    "title": "没有全局世界观的集体知识",
+    "mechanisms": [
+      "H26",
+      "H27",
+      "H36",
+      "H48"
+    ],
+    "design_path": "horizons/X02_没有全局世界观的集体知识.md",
+    "target_path": "src/latent_comm/horizon/plural_worlds.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "构造有限局部理论覆盖，输出拼合障碍；让系统提出区分新变量、分域或保留多理论的修订程序。"
+  },
+  {
+    "id": "X03",
+    "title": "问题先于答案的研究引擎",
+    "mechanisms": [
+      "H27",
+      "H29",
+      "H30",
+      "H45"
+    ],
+    "design_path": "horizons/X03_问题先于答案的研究引擎.md",
+    "target_path": "src/latent_comm/horizon/problem_invention.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "把目标、变量、查询和答案回译编成问题图，提议能区分机制的新问题与程序化测量。"
+  },
+  {
+    "id": "X04",
+    "title": "可塑性互联网",
+    "mechanisms": [
+      "H31",
+      "H37",
+      "H38",
+      "H40"
+    ],
+    "design_path": "horizons/X04_可塑性互联网.md",
+    "target_path": "src/latent_comm/horizon/plasticity_network.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "用有限维更新程序定义规则编译、运输和适用范围；未来神经训练脚本全部锁定。"
+  },
+  {
+    "id": "X05",
+    "title": "会进化语言的认知生态",
+    "mechanisms": [
+      "H27",
+      "H40",
+      "H42",
+      "H44"
+    ],
+    "design_path": "horizons/X05_会进化语言的认知生态.md",
+    "target_path": "src/latent_comm/horizon/language_ecology.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "联合登记ontology/ISA/world/population四种版本，给出有限代的共演化scheduler和依赖迁移。"
+  },
+  {
+    "id": "X06",
+    "title": "跨尺度的思想物质",
+    "mechanisms": [
+      "H02",
+      "H25",
+      "H35",
+      "H47"
+    ],
+    "design_path": "horizons/X06_跨尺度的思想物质.md",
+    "target_path": "src/latent_comm/horizon/multiscale_cognition.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "以多尺度确定程序为参考，交付粗化、宏动态、细化与误差账本的完整组合算法。"
+  },
+  {
+    "id": "X07",
+    "title": "轨迹即思想而非终点即思想",
+    "mechanisms": [
+      "H20",
+      "H33",
+      "H34",
+      "H05"
+    ],
+    "design_path": "horizons/X07_轨迹即思想而非终点即思想.md",
+    "target_path": "src/latent_comm/horizon/trajectory_semantics.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "构建有界耦合动力系统、轨迹读出和边界约束，允许周期解而非强求全局固定点。"
+  },
+  {
+    "id": "X08",
+    "title": "能够传递的未完成证明与发现",
+    "mechanisms": [
+      "H05",
+      "H13",
+      "H29",
+      "H46"
+    ],
+    "design_path": "horizons/X08_能够传递的未完成证明与发现.md",
+    "target_path": "src/latent_comm/horizon/discovery_continuations.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "设计证明状态/搜索状态胶囊、剩余义务和排除前提；在有限逻辑解释器中接力。"
+  },
+  {
+    "id": "X09",
+    "title": "共同梦境产生新的经验空间",
+    "mechanisms": [
+      "H31",
+      "H42",
+      "H43",
+      "H44"
+    ],
+    "design_path": "horizons/X09_共同梦境产生新的经验空间.md",
+    "target_path": "src/latent_comm/horizon/shared_dreams.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "把多个来源的局部机制拼成有限世界，生成任务和谱系，在与真实观察隔离的命名空间保存。"
+  },
+  {
+    "id": "X10",
+    "title": "认知公共品与临时能力联盟",
+    "mechanisms": [
+      "H10",
+      "H18",
+      "H41",
+      "H48"
+    ],
+    "design_path": "horizons/X10_认知公共品与临时能力联盟.md",
+    "target_path": "src/latent_comm/horizon/cognitive_commons.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "定义互补性契约、共享来源校正和有限联盟价值表；实现动态加入退出的类型化计划。"
+  },
+  {
+    "id": "X11",
+    "title": "可追溯的概念出生与死亡",
+    "mechanisms": [
+      "H27",
+      "H28",
+      "H39",
+      "H40"
+    ],
+    "design_path": "horizons/X11_可追溯的概念出生与死亡.md",
+    "target_path": "src/latent_comm/horizon/concept_lifecycle.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "建立概念生命周期图、版本读者、事务迁移与旧对象再解释流程。"
+  },
+  {
+    "id": "X12",
+    "title": "语义编译而非模型选型",
+    "mechanisms": [
+      "H07",
+      "H25",
+      "H30",
+      "H35",
+      "H40"
+    ],
+    "design_path": "horizons/X12_语义编译而非模型选型.md",
+    "target_path": "src/latent_comm/horizon/semantic_compiler.py",
+    "status": "architectural_conjecture",
+    "finite_scope": "定义语义IR、操作保持契约、后端绑定和优化pass，生成一份可读执行图与未来锁定运行图。"
+  }
+]

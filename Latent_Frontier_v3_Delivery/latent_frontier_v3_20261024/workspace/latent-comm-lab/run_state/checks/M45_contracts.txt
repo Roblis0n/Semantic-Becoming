@@ -1,0 +1,12 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_gate (test_h45.H45Contracts.test_gate) ... ok
+test_identify_and_no_prior (test_h45.H45Contracts.test_identify_and_no_prior) ... ok
+test_migration_and_unknown (test_h45.H45Contracts.test_migration_and_unknown) ... ok
+test_neural_source_is_lazy_and_gated (test_h45.H45Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_no_allowed_information (test_h45.H45Contracts.test_no_allowed_information) ... ok
+test_noise_and_model_mismatch (test_h45.H45Contracts.test_noise_and_model_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.005s
+
+OK

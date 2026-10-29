@@ -1,0 +1,72 @@
+{
+  "source": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+  "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+  "samples": [
+    {
+      "second": 11,
+      "path": "assets/video/explainer_360/decoded_samples/011.png",
+      "sha256": "b2fc107fae6a6d5ea9ff3fd03773c11ba958e52fda9297805159d4f1026a8a34"
+    },
+    {
+      "second": 13,
+      "path": "assets/video/explainer_360/decoded_samples/013.png",
+      "sha256": "838a8a0cbac274a3471d99a07aa933610bb9b43a90453e0e99b968968d1869cd"
+    },
+    {
+      "second": 55,
+      "path": "assets/video/explainer_360/decoded_samples/055.png",
+      "sha256": "c667eae03c66b16bcabafc5bd8d5218299479a10940da169c43f76925849d169"
+    },
+    {
+      "second": 105,
+      "path": "assets/video/explainer_360/decoded_samples/105.png",
+      "sha256": "38d174259333e20fc3806d85d7dd59520dfcd85eb76188b9bf14ddbab4e43963"
+    },
+    {
+      "second": 145,
+      "path": "assets/video/explainer_360/decoded_samples/145.png",
+      "sha256": "5e2492afa6468a863cb6d635df9284214cd3e7888b0a5bfaf3d698ab861e52e3"
+    },
+    {
+      "second": 169,
+      "path": "assets/video/explainer_360/decoded_samples/169.png",
+      "sha256": "cb7db14b8c4a87a171fd6d285947b16b6ab79270a564a4b9dbaa9c9e464259d5"
+    },
+    {
+      "second": 200,
+      "path": "assets/video/explainer_360/decoded_samples/200.png",
+      "sha256": "efd86e0d306ba6414fc294e76147184fedc8d22df6f994ada7b55c67d29350cf"
+    },
+    {
+      "second": 230,
+      "path": "assets/video/explainer_360/decoded_samples/230.png",
+      "sha256": "0f6c25d41c735946e45ece8b7c9f8002046f1352aeb464d0f9e080048db38791"
+    },
+    {
+      "second": 240,
+      "path": "assets/video/explainer_360/decoded_samples/240.png",
+      "sha256": "2e61db707e19e3d2aad138b6a2dc9b7314fedabb5d5610a83a33a23084a567c7"
+    },
+    {
+      "second": 285,
+      "path": "assets/video/explainer_360/decoded_samples/285.png",
+      "sha256": "b0ad957539f7fcf57b50dada34b24b12babdebec26be3842020711de585d68c2"
+    },
+    {
+      "second": 320,
+      "path": "assets/video/explainer_360/decoded_samples/320.png",
+      "sha256": "ffedfd116a551533be0ba34cd8d22a43faea941cb5ceaa323b90524987395214"
+    },
+    {
+      "second": 345,
+      "path": "assets/video/explainer_360/decoded_samples/345.png",
+      "sha256": "0b33d2e7ec33560b24d8748787e648bd70416abc6011ffb0d2e5c20b9570b646"
+    },
+    {
+      "second": 357,
+      "path": "assets/video/explainer_360/decoded_samples/357.png",
+      "sha256": "1dc898f6ecaaefa85bcf23c29dc6036859c56092b4811cbd3e4cebfe1e34654c"
+    }
+  ],
+  "audio_listened": false
+}

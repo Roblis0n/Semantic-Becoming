@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_017",
+  "edition": "explainer_360",
+  "scene_id": "S04",
+  "characters": 40,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "所以不能直接搬运梯度。先选一组共同可观察的行为：源模型的一次更新会怎样改变它们？",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:31:34.688656+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:31:45 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:32:08.960941+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 316218,
+    "duration_seconds": 7.17047619047619,
+    "sample_peak": 13668,
+    "sample_rms": 2242.6155411258646,
+    "sha256": "629a4ffda0ae1dd6b3ed2623e72f136e74186f0b822570ff3b86ad7fc2355fd1",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:32:29.254069+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 3,
+  "id": "C04",
+  "kind": "combination",
+  "title": "异步跨模型续接",
+  "mechanisms": [
+    "H05",
+    "H20",
+    "H22"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "source_spec": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+  "legacy_recipe": {
+    "schema_version": 1,
+    "id": "C04",
+    "title": "异步跨模型续接",
+    "kind": "combination",
+    "hypotheses": [
+      "H05",
+      "H20",
+      "H22"
+    ],
+    "training_routes": [
+      "R06",
+      "R12"
+    ],
+    "pipeline_nodes": [
+      "cutpoint",
+      "capsule",
+      "version_check",
+      "resume",
+      "schedule"
+    ],
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+    "status": "planned_for_dot"
+  },
+  "new_requirement": "bind V3 types and integration cards for all members",
+  "research_outputs": "NOT_RUN"
+}

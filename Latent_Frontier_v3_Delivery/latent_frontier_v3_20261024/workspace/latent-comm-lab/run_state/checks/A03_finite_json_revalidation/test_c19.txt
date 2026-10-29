@@ -1,0 +1,17 @@
+test_chart_does_not_extrapolate (test_c19.C19Tests.test_chart_does_not_extrapolate) ... ok
+test_goal_cannot_change (test_c19.C19Tests.test_goal_cannot_change) ... ok
+test_missing_source_does_not_invent_inverse (test_c19.C19Tests.test_missing_source_does_not_invent_inverse) ... ok
+test_nonclosed_macro_recovers_real_detail (test_c19.C19Tests.test_nonclosed_macro_recovers_real_detail) ... ok
+test_original_hard_constraint_is_rechecked (test_c19.C19Tests.test_original_hard_constraint_is_rechecked) ... ok
+test_retracted_source_blocks_refinement (test_c19.C19Tests.test_retracted_source_blocks_refinement) ... ok
+test_source_cannot_replace_old_distinctions (test_c19.C19Tests.test_source_cannot_replace_old_distinctions) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.036s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

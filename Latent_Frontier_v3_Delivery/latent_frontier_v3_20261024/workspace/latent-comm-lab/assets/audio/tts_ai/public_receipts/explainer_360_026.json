@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_026",
+  "edition": "explainer_360",
+  "scene_id": "S06",
+  "characters": 33,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "第三条主线让消息成为一小块可行动的世界。一个模型提供局部因果关系，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:37:04.290144+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 275770,
+    "duration_seconds": 6.25328798185941,
+    "sample_peak": 15661,
+    "sample_rms": 1785.4986880907745,
+    "sha256": "aba25ece159b93f2d1744343cd600ee33555ecb397867c570c0855795b542aed",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:37:38.673787+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

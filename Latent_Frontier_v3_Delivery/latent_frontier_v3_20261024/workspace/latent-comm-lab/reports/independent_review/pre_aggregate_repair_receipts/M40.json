@@ -1,0 +1,76 @@
+{
+  "task_id": "M40",
+  "status": "done",
+  "input_digest": "413d23d6e49deba34d22a6d199b94c25379cbbf234014d5b58ba10295ba18086",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/README.md",
+      "sha256": "1ff01db9bb46016a217a3f6c4424ac9af9273d7e315c3984e59b3fcc154a09be",
+      "bytes": 1573
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/__init__.py",
+      "sha256": "c3bdcdda89739f35e18c1d8c59614317e95d40f552ddc88b3d64e3879e12f946",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/adapter.py",
+      "sha256": "53af74a653753240f596c31621f18c9b2e622cdd36fbf6d997610de401041ad6",
+      "bytes": 2053
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/losses.py",
+      "sha256": "45970de7f45baa3ec202f639b8dade8a501f1abe315b0eb730cf5ddc2a6f79c2",
+      "bytes": 1418
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/reference.py",
+      "sha256": "1eff10ccd6e07d62f94624375771a50a420689fdd852babe1e9860cc3c2175ff",
+      "bytes": 5258
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/schema.json",
+      "sha256": "c316b5c9ff4188f77984ffa54a94121bf33ce31ef4a830de3ab8e20f1a90976c",
+      "bytes": 2354
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/serialization.py",
+      "sha256": "f1e66707aaa52c291953cefe958ef8063d4d29fd9a5217c29afea92b95b62ace",
+      "bytes": 1622
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/types.py",
+      "sha256": "a3ff066710930af699d91c8cb1c7c7012da88d31397a74d54c08ea69c16de15a",
+      "bytes": 2108
+    },
+    {
+      "path": "tests/contracts/test_h40.py",
+      "sha256": "31a0bc70dcb74402a9515c9213e3740d6d4716c12cf70fdbb2053ec35ba4f8c7",
+      "bytes": 2919
+    },
+    {
+      "path": "configs/mechanisms/H40.json",
+      "sha256": "68502d51e43ec36263cc01499a3a9848b7ea4279e982a152de31a6c73335d402",
+      "bytes": 1223
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M40_contracts.txt",
+      "sha256": "00c8434017f8a527957381d40f76d2836ce3ff7370e9e328b9427ede93d451e8"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/M40_test_h40.txt",
+      "sha256": "9e20ea425ca329ef6a8297e83d65e04b08f79a4824c4e74abe2bee3f02a526e7"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated algorithm, semantic payload validation and migration, positive/boundary/counterexample tests. Tensor source AST checked only; research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:34.204106+00:00"
+}

@@ -1,0 +1,235 @@
+{
+  "task_id": "V05",
+  "status": "complete_with_external_blockers",
+  "input_digest": "20377cbaae84150a2daed6ddf8dd37220c35d6af040c85319b8c1f074eccf036",
+  "outputs": [
+    {
+      "path": "assets/video/explainer_360/README.md",
+      "sha256": "75fb2f8ae9bbc23c89c98d02d6f1009adae720f9806978c5d1dea9874804581b",
+      "bytes": 1136
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S01.mp4",
+      "sha256": "08f524178ff569d184e222c2cdc106d3613785c46777966dcda1545f6df9ac85",
+      "bytes": 322368
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S02.mp4",
+      "sha256": "6b462a957129629bd4116cc674a55ca48fc091befac2b1bfd898e5cca08c0151",
+      "bytes": 361265
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S03.mp4",
+      "sha256": "fb24f6c719126dca01069a7d46a10f54e412a39854e37a40c0eabf3f4f545c8f",
+      "bytes": 253859
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S04.mp4",
+      "sha256": "b7bc3173402947c72ef09638588fcca3694dcc9fdc69cb705935b697a5318fe9",
+      "bytes": 413594
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S05.mp4",
+      "sha256": "14561adab5bb7cf253b4f50522068892a1e6e927cd7aed2c66e52118e4627205",
+      "bytes": 345423
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S06.mp4",
+      "sha256": "0eea90c91d51465375f925372c30a40d067839f0f286632b6cc8170a2dae067d",
+      "bytes": 402728
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S07.mp4",
+      "sha256": "db8d4026fb5c8a27b9a1687225dd18e1bdcbf8b55eb4344aa805c2e3f5ac59b3",
+      "bytes": 318199
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S08.mp4",
+      "sha256": "e50fbce0c6460930ec0be12e34a4ed85cb158df1f272158e9d6edcf05035ab00",
+      "bytes": 339726
+    },
+    {
+      "path": "assets/video/explainer_360/clips/S09.mp4",
+      "sha256": "2d4533230d8cdf119a1f8016cb54e23e402458c16bcb053139125974e7acb942",
+      "bytes": 225524
+    },
+    {
+      "path": "assets/video/explainer_360/concat.txt",
+      "sha256": "b39dab963c1cc080057b3b16edc79d09758c562e33f6a1156f1e991085c6d04f",
+      "bytes": 188
+    },
+    {
+      "path": "assets/video/explainer_360/contact_sheet.jpg",
+      "sha256": "d113b93704328ef80605567926853d9f81fcc45c648d1cd9958d0f584529fbdc",
+      "bytes": 328054
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/011.png",
+      "sha256": "b2fc107fae6a6d5ea9ff3fd03773c11ba958e52fda9297805159d4f1026a8a34",
+      "bytes": 226556
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/013.png",
+      "sha256": "838a8a0cbac274a3471d99a07aa933610bb9b43a90453e0e99b968968d1869cd",
+      "bytes": 145397
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/055.png",
+      "sha256": "c667eae03c66b16bcabafc5bd8d5218299479a10940da169c43f76925849d169",
+      "bytes": 214070
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/105.png",
+      "sha256": "38d174259333e20fc3806d85d7dd59520dfcd85eb76188b9bf14ddbab4e43963",
+      "bytes": 191253
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/145.png",
+      "sha256": "5e2492afa6468a863cb6d635df9284214cd3e7888b0a5bfaf3d698ab861e52e3",
+      "bytes": 195690
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/169.png",
+      "sha256": "cb7db14b8c4a87a171fd6d285947b16b6ab79270a564a4b9dbaa9c9e464259d5",
+      "bytes": 199620
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/200.png",
+      "sha256": "efd86e0d306ba6414fc294e76147184fedc8d22df6f994ada7b55c67d29350cf",
+      "bytes": 226823
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/230.png",
+      "sha256": "0f6c25d41c735946e45ece8b7c9f8002046f1352aeb464d0f9e080048db38791",
+      "bytes": 180423
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/240.png",
+      "sha256": "2e61db707e19e3d2aad138b6a2dc9b7314fedabb5d5610a83a33a23084a567c7",
+      "bytes": 224848
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/285.png",
+      "sha256": "b0ad957539f7fcf57b50dada34b24b12babdebec26be3842020711de585d68c2",
+      "bytes": 202708
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/320.png",
+      "sha256": "ffedfd116a551533be0ba34cd8d22a43faea941cb5ceaa323b90524987395214",
+      "bytes": 260183
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/345.png",
+      "sha256": "0b33d2e7ec33560b24d8748787e648bd70416abc6011ffb0d2e5c20b9570b646",
+      "bytes": 230707
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/357.png",
+      "sha256": "1dc898f6ecaaefa85bcf23c29dc6036859c56092b4811cbd3e4cebfe1e34654c",
+      "bytes": 210732
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/contact_sheet.jpg",
+      "sha256": "5e089775a0e47a2d7901b500281229b9e1b23cc906bb745d5c22010c78582bf4",
+      "bytes": 557140
+    },
+    {
+      "path": "assets/video/explainer_360/decoded_samples/samples.json",
+      "sha256": "00aa669e099054fb0efaad3727298412b6ebf4b45749897ec1be75c8a41fbfba",
+      "bytes": 2603
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "bytes": 2977456
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft_opening.png",
+      "sha256": "a475f22d884cf575f5805fe6308c9ca90fc5992bea61280c8d4a1cc4c3c18ab2",
+      "bytes": 157888
+    },
+    {
+      "path": "assets/video/explainer_360/media_status.json",
+      "sha256": "437807168ee159f0cd4ee53f1be64d680ef327202631a9a92655d8bc4355515c",
+      "bytes": 1944
+    },
+    {
+      "path": "assets/video/explainer_360/media_status_silent_history.json",
+      "sha256": "037d85d3d9993141043e8ffcae0252ff255e00e4ee7eb74882feea46ba2dab65",
+      "bytes": 1335
+    },
+    {
+      "path": "assets/video/explainer_360/project.mlt",
+      "sha256": "baaee65c69531223dfbb977fe9df0ac7033fe61512ec9e7681c904f6860e62e3",
+      "bytes": 2959
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S01.png",
+      "sha256": "549cac0a109a7b7229072f544271c5207c2e8904c270f0a95fc2f1699fc9894b",
+      "bytes": 75988
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S02.png",
+      "sha256": "4dfa5346f96f35bfda81492e32d32efed68b6a7e3bf83ac8e16fb8d3d3e15e3b",
+      "bytes": 85331
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S03.png",
+      "sha256": "d24a84195be7df7600e793b7f6f70f7237d4c55b824aa19597d1fe842f9a65ff",
+      "bytes": 75675
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S04.png",
+      "sha256": "2f1c1f6a089ce2879fd940846eb81ff0872a8dbd6e0e4a722214e11be45a7d5e",
+      "bytes": 85219
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S05.png",
+      "sha256": "73ca4c8d253075da1509e983dd7b5f6e295217d5b858e44db33e46cc30c5fd9a",
+      "bytes": 93174
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S06.png",
+      "sha256": "f09df90b7fc8bf830977640dd7e324ed8152e1ed8d04f98874df1b5cd3373e7d",
+      "bytes": 76963
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S07.png",
+      "sha256": "69050e0080d37346597cdd7e7e1228b7feaa48a78b1381fc6fa847450f111c0a",
+      "bytes": 109156
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S08.png",
+      "sha256": "d0908a52fb62612125b3db22cf3f88e6c4ad664ec1bd23dc746053ae4a52a2e8",
+      "bytes": 100537
+    },
+    {
+      "path": "assets/video/explainer_360/renders/S09.png",
+      "sha256": "7b190f635018d8dcbde8ff6806c79ac676b4c9c211527bb56f0e7d54b1a118db",
+      "bytes": 95501
+    },
+    {
+      "path": "assets/video/explainer_360/timeline.json",
+      "sha256": "f711c1d96671c0f6de2d5a7ded9dd90b648bf21b1bac8be795026de4bad24d4a",
+      "bytes": 10087
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V05_validation.json",
+      "sha256": "437807168ee159f0cd4ee53f1be64d680ef327202631a9a92655d8bc4355515c"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [
+    "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+    "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+  ],
+  "notes": "Actual 360-second silent visual edition and complete editable sources preserved. Long voiced export and full narration WAV do not exist: 28/44 long cue WAVs downloaded, one 16-character cue already accepted but outcome unknown, 15 chunks/493 characters unsubmitted. External disclosure permission and actual audition remain blocked.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:56:48.254841+00:00"
+}

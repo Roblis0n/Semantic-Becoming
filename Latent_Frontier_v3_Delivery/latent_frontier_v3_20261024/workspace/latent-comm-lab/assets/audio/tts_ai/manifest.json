@@ -1,0 +1,552 @@
+{
+  "created_at_utc": "2026-10-24T18:09:15.043313+00:00",
+  "scope": "public/synthetic media narration only",
+  "provider": "TTS.ai",
+  "endpoint": "https://api.tts.ai/v1/tts/",
+  "documentation": "https://tts.ai/api/",
+  "terms": "https://tts.ai/terms/",
+  "terms_effective_date": "2026-09-14",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "authentication": "none",
+  "model": "melotts",
+  "voice": "ZH",
+  "language": "zh",
+  "format": "wav",
+  "speed": 1.0,
+  "budget": {
+    "characters": 1754,
+    "requests": 58,
+    "max_chars_per_request": 500,
+    "daily_character_limit": 5000,
+    "prior_probe_characters": 47,
+    "min_seconds_between_api_requests": 8,
+    "concurrent_jobs": 1
+  },
+  "chunks": [
+    {
+      "id": "intro_90_001",
+      "edition": "intro_90",
+      "scene_id": "S01",
+      "cue_id": 1,
+      "display_text": "今天，我们通常让模型交换答案。更远的问题是：\n交流能否改变它们能够思考什么？",
+      "text": "今天，我们通常让模型交换答案。更远的问题是：交流能否改变它们能够思考什么？",
+      "characters": 37
+    },
+    {
+      "id": "intro_90_002",
+      "edition": "intro_90",
+      "scene_id": "S02",
+      "cue_id": 2,
+      "display_text": "第一步，让分歧产生新概念。不是换一个名字，",
+      "text": "第一步，让分歧产生新概念。不是换一个名字，",
+      "characters": 21
+    },
+    {
+      "id": "intro_90_003",
+      "edition": "intro_90",
+      "scene_id": "S02",
+      "cue_id": 3,
+      "display_text": "而是创造一个能够计算、能够改变行动的新区分。",
+      "text": "而是创造一个能够计算、能够改变行动的新区分。",
+      "characters": 22
+    },
+    {
+      "id": "intro_90_004",
+      "edition": "intro_90",
+      "scene_id": "S03",
+      "cue_id": 4,
+      "display_text": "第二步，让问题本身成为对象。\n系统交换的不只是答案，还有新的提问方式，",
+      "text": "第二步，让问题本身成为对象。系统交换的不只是答案，还有新的提问方式，",
+      "characters": 34
+    },
+    {
+      "id": "intro_90_005",
+      "edition": "intro_90",
+      "scene_id": "S03",
+      "cue_id": 5,
+      "display_text": "以及答案之间的转换关系。",
+      "text": "以及答案之间的转换关系。",
+      "characters": 12
+    },
+    {
+      "id": "intro_90_006",
+      "edition": "intro_90",
+      "scene_id": "S04",
+      "cue_id": 6,
+      "display_text": "第三步，传递怎样学习。不同模型不必共享参数，",
+      "text": "第三步，传递怎样学习。不同模型不必共享参数，",
+      "characters": 22
+    },
+    {
+      "id": "intro_90_007",
+      "edition": "intro_90",
+      "scene_id": "S04",
+      "cue_id": 7,
+      "display_text": "也许可以交换行为改进的方向和受限的更新规则。",
+      "text": "也许可以交换行为改进的方向和受限的更新规则。",
+      "characters": 22
+    },
+    {
+      "id": "intro_90_008",
+      "edition": "intro_90",
+      "scene_id": "S05",
+      "cue_id": 8,
+      "display_text": "第四步，共同构造可行动的假想世界。\n模型各自贡献局部机制，",
+      "text": "第四步，共同构造可行动的假想世界。模型各自贡献局部机制，",
+      "characters": 28
+    },
+    {
+      "id": "intro_90_009",
+      "edition": "intro_90",
+      "scene_id": "S05",
+      "cue_id": 9,
+      "display_text": "在新世界中产生新的问题和经验。",
+      "text": "在新世界中产生新的问题和经验。",
+      "characters": 15
+    },
+    {
+      "id": "intro_90_010",
+      "edition": "intro_90",
+      "scene_id": "S06",
+      "cue_id": 10,
+      "display_text": "这不要求一套万能潜语言，\n也不要求所有分歧都消失。知识可以是多视角的，",
+      "text": "这不要求一套万能潜语言，也不要求所有分歧都消失。知识可以是多视角的，",
+      "characters": 34
+    },
+    {
+      "id": "intro_90_011",
+      "edition": "intro_90",
+      "scene_id": "S06",
+      "cue_id": 11,
+      "display_text": "推理也可以存在于轨迹里。",
+      "text": "推理也可以存在于轨迹里。",
+      "characters": 12
+    },
+    {
+      "id": "intro_90_012",
+      "edition": "intro_90",
+      "scene_id": "S07",
+      "cue_id": 12,
+      "display_text": "完整计划覆盖四十八个机制、\n二十条组合路线和十二个远期终局，",
+      "text": "完整计划覆盖四十八个机制、二十条组合路线和十二个远期终局，",
+      "characters": 29
+    },
+    {
+      "id": "intro_90_013",
+      "edition": "intro_90",
+      "scene_id": "S07",
+      "cue_id": 13,
+      "display_text": "并准备统一的程序与执行流程。",
+      "text": "并准备统一的程序与执行流程。",
+      "characters": 14
+    },
+    {
+      "id": "intro_90_014",
+      "edition": "intro_90",
+      "scene_id": "S08",
+      "cue_id": 14,
+      "display_text": "这里提出的是研究方向，不是虚构实验。\n核心问题是：交流能否创造新的认知可能？",
+      "text": "这里提出的是研究方向，不是虚构实验。核心问题是：交流能否创造新的认知可能？",
+      "characters": 37
+    },
+    {
+      "id": "explainer_360_001",
+      "edition": "explainer_360",
+      "scene_id": "S01",
+      "cue_id": 1,
+      "display_text": "多数协作系统的起点是：一个模型想出内容，\n再把内容传给另一个模型。",
+      "text": "多数协作系统的起点是：一个模型想出内容，再把内容传给另一个模型。",
+      "characters": 32
+    },
+    {
+      "id": "explainer_360_002",
+      "edition": "explainer_360",
+      "scene_id": "S01",
+      "cue_id": 2,
+      "display_text": "原方案已经把消息扩展成状态、算子、\n信念和程序。本轮继续向前：",
+      "text": "原方案已经把消息扩展成状态、算子、信念和程序。本轮继续向前：",
+      "characters": 30
+    },
+    {
+      "id": "explainer_360_003",
+      "edition": "explainer_360",
+      "scene_id": "S01",
+      "cue_id": 3,
+      "display_text": "如果交流能够改变概念、问题、学习规则，\n甚至改变共同探索的世界，",
+      "text": "如果交流能够改变概念、问题、学习规则，甚至改变共同探索的世界，",
+      "characters": 31
+    },
+    {
+      "id": "explainer_360_004",
+      "edition": "explainer_360",
+      "scene_id": "S01",
+      "cue_id": 4,
+      "display_text": "那么通信就不再只是一个传输通道，而可能成为构\n造认知组织的过程。这里提出的是研究命题，",
+      "text": "那么通信就不再只是一个传输通道，而可能成为构造认知组织的过程。这里提出的是研究命题，",
+      "characters": 42
+    },
+    {
+      "id": "explainer_360_005",
+      "edition": "explainer_360",
+      "scene_id": "S01",
+      "cue_id": 5,
+      "display_text": "没有进行模型实测。",
+      "text": "没有进行模型实测。",
+      "characters": 9
+    },
+    {
+      "id": "explainer_360_006",
+      "edition": "explainer_360",
+      "scene_id": "S02",
+      "cue_id": 6,
+      "display_text": "看一个很小的例子。两把钥匙形状相同，\n一把能开门，一把不能。",
+      "text": "看一个很小的例子。两把钥匙形状相同，一把能开门，一把不能。",
+      "characters": 29
+    },
+    {
+      "id": "explainer_360_007",
+      "edition": "explainer_360",
+      "scene_id": "S02",
+      "cue_id": 7,
+      "display_text": "双方的语言都只有钥匙这个类别，于是反复交换结\n论也无法解释差异。系统可以先保留冲突，",
+      "text": "双方的语言都只有钥匙这个类别，于是反复交换结论也无法解释差异。系统可以先保留冲突，",
+      "characters": 41
+    },
+    {
+      "id": "explainer_360_008",
+      "edition": "explainer_360",
+      "scene_id": "S02",
+      "cue_id": 8,
+      "display_text": "再找出可操作的反例，最后提出授权有效期这个新\n谓词。重要的不是发明一个词，",
+      "text": "再找出可操作的反例，最后提出授权有效期这个新谓词。重要的不是发明一个词，",
+      "characters": 36
+    },
+    {
+      "id": "explainer_360_009",
+      "edition": "explainer_360",
+      "scene_id": "S02",
+      "cue_id": 9,
+      "display_text": "而是新增了能计算的区分，\n并把旧程序迁移到新的概念版本。更远的设想，",
+      "text": "而是新增了能计算的区分，并把旧程序迁移到新的概念版本。更远的设想，",
+      "characters": 33
+    },
+    {
+      "id": "explainer_360_010",
+      "edition": "explainer_360",
+      "scene_id": "S02",
+      "cue_id": 10,
+      "display_text": "是交流产生任何单个模型原先都没有的中介语言。",
+      "text": "是交流产生任何单个模型原先都没有的中介语言。",
+      "characters": 22
+    },
+    {
+      "id": "explainer_360_011",
+      "edition": "explainer_360",
+      "scene_id": "S03",
+      "cue_id": 11,
+      "display_text": "并非所有分歧都来自缺少一个变量。\n三个局部约束分别要求两个量相等，",
+      "text": "并非所有分歧都来自缺少一个变量。三个局部约束分别要求两个量相等，",
+      "characters": 32
+    },
+    {
+      "id": "explainer_360_012",
+      "edition": "explainer_360",
+      "scene_id": "S03",
+      "cue_id": 12,
+      "display_text": "而最后一条又要求它们相差一。\n把这些约束加在一起，会得到零等于一。",
+      "text": "而最后一条又要求它们相差一。把这些约束加在一起，会得到零等于一。",
+      "characters": 32
+    },
+    {
+      "id": "explainer_360_013",
+      "edition": "explainer_360",
+      "scene_id": "S03",
+      "cue_id": 13,
+      "display_text": "系统不应把它们平均以后宣布获得真相。\n它可以保留局部解释，定位不能拼合的部分，",
+      "text": "系统不应把它们平均以后宣布获得真相。它可以保留局部解释，定位不能拼合的部分，",
+      "characters": 38
+    },
+    {
+      "id": "explainer_360_014",
+      "edition": "explainer_360",
+      "scene_id": "S03",
+      "cue_id": 14,
+      "display_text": "再决定是新增概念、细分语境，\n还是长期保留多个理论。",
+      "text": "再决定是新增概念、细分语境，还是长期保留多个理论。",
+      "characters": 25
+    },
+    {
+      "id": "explainer_360_015",
+      "edition": "explainer_360",
+      "scene_id": "S03",
+      "cue_id": 15,
+      "display_text": "这条路线允许群体知识不是一个单一、\n完整的世界模型。",
+      "text": "这条路线允许群体知识不是一个单一、完整的世界模型。",
+      "characters": 25
+    },
+    {
+      "id": "explainer_360_016",
+      "edition": "explainer_360",
+      "scene_id": "S04",
+      "cue_id": 16,
+      "display_text": "第二条主线把学习能力本身当作消息。\n不同模型的参数数量、坐标甚至结构都可能不同，",
+      "text": "第二条主线把学习能力本身当作消息。不同模型的参数数量、坐标甚至结构都可能不同，",
+      "characters": 39
+    },
+    {
+      "id": "explainer_360_017",
+      "edition": "explainer_360",
+      "scene_id": "S04",
+      "cue_id": 17,
+      "display_text": "所以不能直接搬运梯度。先选一组共同可观察的行\n为：源模型的一次更新会怎样改变它们？",
+      "text": "所以不能直接搬运梯度。先选一组共同可观察的行为：源模型的一次更新会怎样改变它们？",
+      "characters": 40
+    },
+    {
+      "id": "explainer_360_018",
+      "edition": "explainer_360",
+      "scene_id": "S04",
+      "cue_id": 18,
+      "display_text": "再寻找目标模型能够实现的近似变化。\n最小例子里，目标行为对参数的敏感度是四，",
+      "text": "再寻找目标模型能够实现的近似变化。最小例子里，目标行为对参数的敏感度是四，",
+      "characters": 37
+    },
+    {
+      "id": "explainer_360_019",
+      "edition": "explainer_360",
+      "scene_id": "S04",
+      "cue_id": 19,
+      "display_text": "要产生一个单位的变化，就需要四分之一个单位的\n参数改动。这个手算例说明对象和公式，",
+      "text": "要产生一个单位的变化，就需要四分之一个单位的参数改动。这个手算例说明对象和公式，",
+      "characters": 40
+    },
+    {
+      "id": "explainer_360_020",
+      "edition": "explainer_360",
+      "scene_id": "S04",
+      "cue_id": 20,
+      "display_text": "不说明真实模型已经实现了这种运输。",
+      "text": "不说明真实模型已经实现了这种运输。",
+      "characters": 17
+    },
+    {
+      "id": "explainer_360_021",
+      "edition": "explainer_360",
+      "scene_id": "S05",
+      "cue_id": 21,
+      "display_text": "比运输一次改进更远，是运输一个受限的学习程\n序。它可以读取授权范围内的梯度和局部统计，",
+      "text": "比运输一次改进更远，是运输一个受限的学习程序。它可以读取授权范围内的梯度和局部统计，",
+      "characters": 42
+    },
+    {
+      "id": "explainer_360_022",
+      "edition": "explainer_360",
+      "scene_id": "S05",
+      "cue_id": 22,
+      "display_text": "产生小型适配器的更新。规则拥有类型、适用条件\n和明确的参数作用域。研究可以进一步问：",
+      "text": "产生小型适配器的更新。规则拥有类型、适用条件和明确的参数作用域。研究可以进一步问：",
+      "characters": 41
+    },
+    {
+      "id": "explainer_360_023",
+      "edition": "explainer_360",
+      "scene_id": "S05",
+      "cue_id": 23,
+      "display_text": "一个模型在某类问题上学到的学习策略，\n能否成为另一个模型形成能力的方法？",
+      "text": "一个模型在某类问题上学到的学习策略，能否成为另一个模型形成能力的方法？",
+      "characters": 35
+    },
+    {
+      "id": "explainer_360_024",
+      "edition": "explainer_360",
+      "scene_id": "S05",
+      "cue_id": 24,
+      "display_text": "这需要完整的元学习程序，但本轮只写源码，\n不运行训练，",
+      "text": "这需要完整的元学习程序，但本轮只写源码，不运行训练，",
+      "characters": 26
+    },
+    {
+      "id": "explainer_360_025",
+      "edition": "explainer_360",
+      "scene_id": "S05",
+      "cue_id": 25,
+      "display_text": "也不把尚未证明的桥梁藏到一个万能接口中。",
+      "text": "也不把尚未证明的桥梁藏到一个万能接口中。",
+      "characters": 20
+    },
+    {
+      "id": "explainer_360_026",
+      "edition": "explainer_360",
+      "scene_id": "S06",
+      "cue_id": 26,
+      "display_text": "第三条主线让消息成为一小块可行动的世界。\n一个模型提供局部因果关系，",
+      "text": "第三条主线让消息成为一小块可行动的世界。一个模型提供局部因果关系，",
+      "characters": 33
+    },
+    {
+      "id": "explainer_360_027",
+      "edition": "explainer_360",
+      "scene_id": "S06",
+      "cue_id": 27,
+      "display_text": "另一个提供观测或转移规律。组合它们时，\n需要保存输入输出、单位、动作以及共享噪声，",
+      "text": "另一个提供观测或转移规律。组合它们时，需要保存输入输出、单位、动作以及共享噪声，",
+      "characters": 40
+    },
+    {
+      "id": "explainer_360_028",
+      "edition": "explainer_360",
+      "scene_id": "S06",
+      "cue_id": 28,
+      "display_text": "不能简单拼接。形成的世界可以产生任何单体没有\n原样保存过的场景，并提出新的问题。",
+      "text": "不能简单拼接。形成的世界可以产生任何单体没有原样保存过的场景，并提出新的问题。",
+      "characters": 39
+    },
+    {
+      "id": "explainer_360_029",
+      "edition": "explainer_360",
+      "scene_id": "S06",
+      "cue_id": 29,
+      "display_text": "但合成世界中的观察必须带着来源。",
+      "text": "但合成世界中的观察必须带着来源。",
+      "characters": 16
+    },
+    {
+      "id": "explainer_360_030",
+      "edition": "explainer_360",
+      "scene_id": "S06",
+      "cue_id": 30,
+      "display_text": "系统不能先生成一个结论，\n再把自己生成的观察当作现实证据。",
+      "text": "系统不能先生成一个结论，再把自己生成的观察当作现实证据。",
+      "characters": 28
+    },
+    {
+      "id": "explainer_360_031",
+      "edition": "explainer_360",
+      "scene_id": "S06",
+      "cue_id": 31,
+      "display_text": "这是一种新的研究空间，不是事实制造机。",
+      "text": "这是一种新的研究空间，不是事实制造机。",
+      "characters": 19
+    },
+    {
+      "id": "explainer_360_032",
+      "edition": "explainer_360",
+      "scene_id": "S07",
+      "cue_id": 32,
+      "display_text": "还有几条不必服从主流形态的方向。模型之间不一\n定要统一坐标，只要能保持操作的作用关系。",
+      "text": "还有几条不必服从主流形态的方向。模型之间不一定要统一坐标，只要能保持操作的作用关系。",
+      "characters": 42
+    },
+    {
+      "id": "explainer_360_033",
+      "edition": "explainer_360",
+      "scene_id": "S07",
+      "cue_id": 33,
+      "display_text": "一个概念的意义也可能取决于当前能问哪些问题，\n以及正在使用什么观察尺度。",
+      "text": "一个概念的意义也可能取决于当前能问哪些问题，以及正在使用什么观察尺度。",
+      "characters": 35
+    },
+    {
+      "id": "explainer_360_034",
+      "edition": "explainer_360",
+      "scene_id": "S07",
+      "cue_id": 34,
+      "display_text": "推理未必只存在于一个最终向量里，轨迹、\n相位和事件顺序也可以成为对象。",
+      "text": "推理未必只存在于一个最终向量里，轨迹、相位和事件顺序也可以成为对象。",
+      "characters": 34
+    },
+    {
+      "id": "explainer_360_035",
+      "edition": "explainer_360",
+      "scene_id": "S07",
+      "cue_id": 35,
+      "display_text": "这些方向允许研究系统改变表示结构，\n而不是只在固定结构里增加参数或延长输出。",
+      "text": "这些方向允许研究系统改变表示结构，而不是只在固定结构里增加参数或延长输出。",
+      "characters": 37
+    },
+    {
+      "id": "explainer_360_036",
+      "edition": "explainer_360",
+      "scene_id": "S08",
+      "cue_id": 36,
+      "display_text": "计划保留原来的二十四项机制，并新增二十四项，\n组织成二十条组合路线和十二个远期方向。",
+      "text": "计划保留原来的二十四项机制，并新增二十四项，组织成二十条组合路线和十二个远期方向。",
+      "characters": 41
+    },
+    {
+      "id": "explainer_360_037",
+      "edition": "explainer_360",
+      "scene_id": "S08",
+      "cue_id": 37,
+      "display_text": "Dot的任务是写完整个目标仓库，",
+      "text": "Dot的任务是写完整个目标仓库，",
+      "characters": 16
+    },
+    {
+      "id": "explainer_360_038",
+      "edition": "explainer_360",
+      "scene_id": "S08",
+      "cue_id": 38,
+      "display_text": "包括类型、编译器、世界工厂、训练源码、后端和\n恢复系统。不同机制必须有各自的计算对象，",
+      "text": "包括类型、编译器、世界工厂、训练源码、后端和恢复系统。不同机制必须有各自的计算对象，",
+      "characters": 42
+    },
+    {
+      "id": "explainer_360_039",
+      "edition": "explainer_360",
+      "scene_id": "S08",
+      "cue_id": 39,
+      "display_text": "不能全都退化成同一种向量桥接。\n自动执行也有边界：不运行研究模型，",
+      "text": "不能全都退化成同一种向量桥接。自动执行也有边界：不运行研究模型，",
+      "characters": 32
+    },
+    {
+      "id": "explainer_360_040",
+      "edition": "explainer_360",
+      "scene_id": "S08",
+      "cue_id": 40,
+      "display_text": "不擅自付费、发布或读取无关私密资料。\n遇到外部工具受限，要给真实的降级产物。",
+      "text": "不擅自付费、发布或读取无关私密资料。遇到外部工具受限，要给真实的降级产物。",
+      "characters": 37
+    },
+    {
+      "id": "explainer_360_041",
+      "edition": "explainer_360",
+      "scene_id": "S09",
+      "cue_id": 41,
+      "display_text": "这份计划不以现在能否跑出分数决定哪些想法值得\n保留。它要求的是更大的想象空间，",
+      "text": "这份计划不以现在能否跑出分数决定哪些想法值得保留。它要求的是更大的想象空间，",
+      "characters": 38
+    },
+    {
+      "id": "explainer_360_042",
+      "edition": "explainer_360",
+      "scene_id": "S09",
+      "cue_id": 42,
+      "display_text": "以及足够清楚的对象和条件。已知数学、\n条件假设、机制猜想和远期愿景各有位置。",
+      "text": "以及足够清楚的对象和条件。已知数学、条件假设、机制猜想和远期愿景各有位置。",
+      "characters": 37
+    },
+    {
+      "id": "explainer_360_043",
+      "edition": "explainer_360",
+      "scene_id": "S09",
+      "cue_id": 43,
+      "display_text": "最终要追问的不是：多个模型能否更快重复已有知\n识？而是：交流本身，",
+      "text": "最终要追问的不是：多个模型能否更快重复已有知识？而是：交流本身，",
+      "characters": 32
+    },
+    {
+      "id": "explainer_360_044",
+      "edition": "explainer_360",
+      "scene_id": "S09",
+      "cue_id": 44,
+      "display_text": "能否创造新的概念、新的问题，\n以及新的学习可能？",
+      "text": "能否创造新的概念、新的问题，以及新的学习可能？",
+      "characters": 23
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "audio_listened": false,
+  "asr_used": false
+}

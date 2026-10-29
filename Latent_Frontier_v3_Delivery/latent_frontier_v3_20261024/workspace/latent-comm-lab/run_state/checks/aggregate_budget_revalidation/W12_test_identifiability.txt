@@ -1,0 +1,13 @@
+test_nonzero_query_distinguishes (test_identifiability.IdentifiabilityTests.test_nonzero_query_distinguishes) ... ok
+test_restricted_domain_cannot_identify (test_identifiability.IdentifiabilityTests.test_restricted_domain_cannot_identify) ... ok
+test_retraction_and_soft_exclusion (test_identifiability.IdentifiabilityTests.test_retraction_and_soft_exclusion) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+{
+  "selected": 3,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

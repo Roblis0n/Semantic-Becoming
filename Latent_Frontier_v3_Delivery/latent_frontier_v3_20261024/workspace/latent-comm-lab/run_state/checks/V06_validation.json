@@ -1,0 +1,56 @@
+{
+  "task_id": "V06",
+  "status": "done",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "opened_checked": true,
+  "opened_scope": "All raw and final WAVs parsed; actual audio streams decoded and objectively measured, not listened",
+  "timing_verified": true,
+  "timing_scope": "Measured exact PCM cue and scene boundaries",
+  "narration_wav_created": true,
+  "audio_timed_subtitles_created": true,
+  "final_acceptance_pending_audition": false,
+  "audio_listened": false,
+  "pronunciation_assessed": false,
+  "word_level_alignment_verified": false,
+  "actual_narration_editions": 2,
+  "actual_scene_wavs": 17,
+  "source_chunk_wavs": 58,
+  "unique_source_jobs": 58,
+  "unique_source_characters": 1754,
+  "accepted_submission_count": 60,
+  "characters_transmitted": 1811,
+  "outcome_unknown_prior_submissions": 2,
+  "credits_used": 0,
+  "blockers": [],
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY for generated speech and speech-containing derivatives",
+  "evidence": [
+    {
+      "path": "assets/audio/tts_ai/generation_summary.json",
+      "sha256": "63d357aaa35ba6c86f651aa61cf60a954b3a479774f772545516e3d97a25a537",
+      "bytes": 938
+    },
+    {
+      "path": "assets/audio/tts_ai/sanitization.json",
+      "sha256": "6137253f336acade87e09f27efb2632be73515aedc18e594b06885a9e9b11261",
+      "bytes": 623
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.assembly.json",
+      "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+      "bytes": 19608
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.assembly.json",
+      "sha256": "3e55fc6fdedf59990b2105924b5cfeb4f79ee86af4913179402b99977e942ce2",
+      "bytes": 50585
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "prior_acceptance_blockers": [
+    "Mandatory actual audition, pronunciation and sound-quality assessment remain unperformed: no completed actual auditory review has been established for these editions. Waveform measurements, decoding and visual frames are not listening."
+  ],
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

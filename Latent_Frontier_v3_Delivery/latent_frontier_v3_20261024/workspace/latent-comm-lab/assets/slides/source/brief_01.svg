@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">Semantic Becoming</title><desc id="desc">前沿机制提案 / 无模型实测。可改写认知的跨模型计算。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="135.64" font-family="Noto Serif CJK SC" font-size="67" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">Semantic</tspan>
+<tspan x="64" dy="90.45">Becoming</tspan>
+</text>
+<text id="e002" x="64" y="331.0" font-family="Noto Serif CJK SC" font-size="50" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">可改写认知的</tspan>
+<tspan x="64" dy="67.5">跨模型计算</tspan>
+</text>
+<text id="e003" x="64" y="493.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<rect id="e004" x="835" y="85" width="380" height="112" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e005" x="850" y="129.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="850" dy="0">概念</tspan>
+</text>
+<text id="e006" x="850" y="169.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="850" dy="0">可计算区分</tspan>
+</text>
+<rect id="e007" x="835" y="217" width="380" height="112" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e008" x="850" y="261.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="850" dy="0">问题</tspan>
+</text>
+<text id="e009" x="850" y="301.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="850" dy="0">答案关系</tspan>
+</text>
+<rect id="e010" x="835" y="349" width="380" height="112" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e011" x="850" y="393.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="850" dy="0">学习</tspan>
+</text>
+<text id="e012" x="850" y="433.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="850" dy="0">更新规则</tspan>
+</text>
+<rect id="e013" x="835" y="481" width="380" height="112" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e014" x="850" y="525.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="850" dy="0">世界</tspan>
+</text>
+<text id="e015" x="850" y="565.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="850" dy="0">可执行动力学</tspan>
+</text>
+<polyline id="e016" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e017" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e018" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">01 / 12</tspan>
+</text>
+</svg>

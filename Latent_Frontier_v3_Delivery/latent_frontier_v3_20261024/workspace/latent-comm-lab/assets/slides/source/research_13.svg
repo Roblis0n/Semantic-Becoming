@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H37：在行为空间运更新</title><desc id="desc">v=J_AΔθ_A；目标解最小二乘，箭头区分可达与残差。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H37：在行为空间运更新</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">源方向→行为变化→目标可实现方向</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">13 / 36</tspan>
+</text>
+<rect id="e006" x="64" y="248" width="300" height="150" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e007" x="79" y="292.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="79" dy="0">源参数空间</tspan>
+</text>
+<text id="e008" x="79" y="332.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">Δθ_A ∈ Rᵖ</tspan>
+</text>
+<rect id="e009" x="490" y="248" width="300" height="150" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e010" x="505" y="291.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="505" dy="0">有限行为空间</tspan>
+</text>
+<text id="e011" x="505" y="330.91" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="505" dy="0">v = J_A Δθ_A ∈ Rᵐ</tspan>
+</text>
+<rect id="e012" x="916" y="248" width="300" height="150" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e013" x="931" y="288.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="931" dy="0">目标参数空间</tspan>
+</text>
+<text id="e014" x="931" y="327.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="931" dy="0">δ_B ∈ Rᑫ；p 可不同于 q</tspan>
+</text>
+<polyline id="e015" points="370.000,320.000 478.000,320.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e016" points="466.000,315.000 478.000,320.000 466.000,325.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e017" x="376" y="290.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="376" dy="0">源 JVP</tspan>
+</text>
+<polyline id="e018" points="802.000,320.000 904.000,320.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e019" points="892.000,315.000 904.000,320.000 892.000,325.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e020" x="794" y="290.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="794" dy="0">最小二乘</tspan>
+</text>
+<text id="e021" x="155" y="483.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="155" dy="0">δ* = argminδ ‖J_B δ − v‖² + λ‖δ‖²</tspan>
+</text>
+<text id="e022" x="155" y="537.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="155" dy="0">r = v − J_B δ*：不可达或正则化残差仍然保留</tspan>
+</text>
+<text id="e023" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">J_A 与 J_B 的行为坐标对应，必须作为条件假设单独陈述</tspan>
+</text>
+</svg>

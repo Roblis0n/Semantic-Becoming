@@ -1,0 +1,12 @@
+test_capture_avoidance (test_h40.H40Contracts.test_capture_avoidance) ... ok
+test_gate (test_h40.H40Contracts.test_gate) ... ok
+test_immutable_base_and_fixture_limit (test_h40.H40Contracts.test_immutable_base_and_fixture_limit) ... ok
+test_lowering_and_old_reader (test_h40.H40Contracts.test_lowering_and_old_reader) ... ok
+test_neural_source_is_lazy_and_gated (test_h40.H40Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_real_description_gain (test_h40.H40Contracts.test_real_description_gain) ... ok
+test_recursion_rejected (test_h40.H40Contracts.test_recursion_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK

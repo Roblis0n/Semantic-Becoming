@@ -1,0 +1,8 @@
+test_counterfactual_is_synthetic (test_world_kernels.WorldKernelsTests.test_counterfactual_is_synthetic) ... ok
+test_normalization_and_finite_path (test_world_kernels.WorldKernelsTests.test_normalization_and_finite_path) ... ok
+test_shared_noise_not_independent (test_world_kernels.WorldKernelsTests.test_shared_noise_not_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

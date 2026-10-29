@@ -1,0 +1,252 @@
+[
+  {
+    "id": "S01",
+    "title": "Interlat: Enabling Agents to Communicate Entirely in Latent Space",
+    "initial_or_document_date": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09149",
+    "relevance": "潜空间通信直接近邻；初始提交日期与后续修订分开，不由其结果推定本项目有效。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S02",
+    "title": "LatBridge: Efficient and Stable Model Replacement in Latent-Communication Multi-Agent Systems",
+    "initial_or_document_date": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.27813",
+    "relevance": "模型替换与接口适配近邻；支持问题背景，不证明任意坐标协变。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S03",
+    "title": "Thought Blocks: Non-Autoregressive Latent Communication through Trajectory-to-State Compilation",
+    "initial_or_document_date": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.23056",
+    "relevance": "轨迹到状态编译近邻；以原论文为准，不把标题相近视为同机制。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S04",
+    "title": "Latent Collaboration in Multi-Agent Systems",
+    "initial_or_document_date": "2025-11-25",
+    "url": "https://arxiv.org/abs/2511.20639",
+    "relevance": "多Agent潜协作背景；页面有后续版本，初始日期不代表当前版本日期。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S05",
+    "title": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+    "initial_or_document_date": "2025-10-03",
+    "url": "https://arxiv.org/abs/2510.03215",
+    "relevance": "缓存级语义通信直接近邻；不证明所有KV布局可互换。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S06",
+    "title": "Gauge Equivariant Convolutional Networks and the Icosahedral CNN",
+    "initial_or_document_date": "2019-02-11",
+    "url": "https://arxiv.org/abs/1902.04615",
+    "relevance": "规范等变原则；H25借用已有数学，不宣称任意隐藏状态有真实规范对称。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S07",
+    "title": "Neural Sheaf Diffusion: A Topological Perspective on Heterophily and Oversmoothing in GNNs",
+    "initial_or_document_date": "2022-02-09",
+    "url": "https://arxiv.org/abs/2202.04579",
+    "relevance": "图上的层结构与局部限制映射背景；H26的新主张是跨模型语义不可拼合的使用。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S08",
+    "title": "Oversmoothing as Representation Degeneracy in Neural Sheaf Diffusion",
+    "initial_or_document_date": "2026-05-11",
+    "url": "https://arxiv.org/abs/2605.11178",
+    "relevance": "层扩散中的退化问题近邻；不据此宣称H26已解决语义冲突。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S09",
+    "title": "DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning",
+    "initial_or_document_date": "2020-06-15",
+    "url": "https://arxiv.org/abs/2006.08381",
+    "relevance": "可解释程序抽象库学习近邻；H27/H40不能把宏学习本身声称首次提出。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S10",
+    "title": "Deep Equilibrium Models",
+    "initial_or_document_date": "2019-09-03",
+    "url": "https://arxiv.org/abs/1909.01377",
+    "relevance": "固定点计算的相邻背景，不作为分岔/非梯度动力学或边界值命题的证明。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S11",
+    "title": "Neural Task Graphs: Generalizing to Unseen Tasks from a Single Video Demonstration",
+    "initial_or_document_date": "2018-07-10",
+    "url": "https://arxiv.org/abs/1807.03480",
+    "relevance": "任务结构迁移相邻工作，不支持任意问题等价或目标变换。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S12",
+    "title": "Causal Abstractions of Neural Networks",
+    "initial_or_document_date": "2021-06",
+    "url": "https://arxiv.org/abs/2106.02997",
+    "relevance": "因果抽象与高低层对应背景；不证明任意机制可移植。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S13",
+    "title": "Causal and Compositional Abstraction",
+    "initial_or_document_date": "2026-02-18",
+    "url": "https://arxiv.org/abs/2602.16612",
+    "relevance": "组合性与因果抽象近邻；与本项目世界模块契约分开陈述。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S14",
+    "title": "The information bottleneck method",
+    "initial_or_document_date": "2000-04-24 (arXiv收录)",
+    "url": "https://arxiv.org/abs/physics/0004057",
+    "relevance": "信息压缩和任务相关保留背景；不把H47的有限任务等价关系与所有IB方法等同。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S15",
+    "title": "Program Synthesis Course: Counterexample-Guided Synthesis",
+    "initial_or_document_date": "网页未标统一发表日",
+    "url": "https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture17.htm",
+    "relevance": "作者教学资料中的CEGIS流程背景；用于H36可执行反例与修订。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S16",
+    "title": "Learning to learn by gradient descent by gradient descent",
+    "initial_or_document_date": "2016-06-14",
+    "url": "https://arxiv.org/abs/1606.04474",
+    "relevance": "学习优化器的直接邻域；H38差异在跨模型可运输、受限可塑性规则。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S17",
+    "title": "Coalitional Manipulations and Immunity of the Shapley Value",
+    "initial_or_document_date": "2023-10-31",
+    "url": "https://arxiv.org/abs/2310.20415",
+    "relevance": "合作博弈贡献分配及其限制背景；H41不是新发明Shapley值。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S18",
+    "title": "Paired Open-Ended Trailblazer (POET)",
+    "initial_or_document_date": "2019-01",
+    "url": "https://arxiv.org/abs/1901.01753",
+    "relevance": "环境与解法共演化直接近邻；H42新增本体/协议/世界版本的组合。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S19",
+    "title": "Emergent Complexity and Zero-shot Transfer via Unsupervised Environment Design",
+    "initial_or_document_date": "2020-12",
+    "url": "https://arxiv.org/abs/2012.02096",
+    "relevance": "PAIRED环境设计邻域；不要以本卡名称否认已有开放式学习研究。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S20",
+    "title": "Bayesian Active Learning for Classification and Preference Learning",
+    "initial_or_document_date": "2011-12-24",
+    "url": "https://arxiv.org/abs/1112.5745",
+    "relevance": "信息收益主动选择背景；H45需要额外明确可识别性与查询权限。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S21",
+    "title": "Generalized Absorptive Polynomials and Provenance Semantics for Fixed-Point Logic",
+    "initial_or_document_date": "2019-10-17",
+    "url": "https://arxiv.org/abs/1910.07910",
+    "relevance": "逻辑谱系的已有理论；概率计算仍需依赖模型，来源不等于真值。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S22",
+    "title": "Introducing Dots",
+    "initial_or_document_date": "2026-09-29",
+    "url": "https://openai.com/index/introducing-dots/",
+    "relevance": "官方说明云端计算机和4000+应用生态；并非当前用户全部应用已授权。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S23",
+    "title": "PyTorch Autograd mechanics",
+    "initial_or_document_date": "持续更新；本次访问2.14文档",
+    "url": "https://docs.pytorch.org/docs/2.14/notes/autograd.html",
+    "relevance": "冻结参数与输入梯度的实现依据；依赖版本在Dot环境发现后锁定。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S24",
+    "title": "Hugging Face Transformers: KV cache strategies",
+    "initial_or_document_date": "持续更新文档",
+    "url": "https://huggingface.co/docs/transformers/main/en/kv_cache",
+    "relevance": "缓存对象与策略的官方接口背景；main分支接口可能变化。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  },
+  {
+    "id": "S25",
+    "title": "Hugging Face Safetensors documentation",
+    "initial_or_document_date": "持续更新文档",
+    "url": "https://huggingface.co/docs/safetensors/index",
+    "relevance": "张量存储格式背景；格式安全性不等于整个系统安全。",
+    "checked_on": "2026-10-24",
+    "source_type": "primary_or_official",
+    "claim_scope": "background_or_implementation_reference_not_validation_of_new_hypotheses"
+  }
+]

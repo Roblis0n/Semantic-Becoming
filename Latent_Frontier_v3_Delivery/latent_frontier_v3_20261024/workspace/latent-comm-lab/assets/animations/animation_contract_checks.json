@@ -1,0 +1,204 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "id": "A01",
+      "time": 0,
+      "semantic_stage": true
+    },
+    {
+      "id": "A01",
+      "time": 4,
+      "semantic_stage": true
+    },
+    {
+      "id": "A01",
+      "time": 8,
+      "semantic_stage": true
+    },
+    {
+      "id": "A01",
+      "time": 12,
+      "semantic_stage": true
+    },
+    {
+      "id": "A01",
+      "time": 16,
+      "semantic_stage": true
+    },
+    {
+      "id": "A01",
+      "dom_contract_mock": true,
+      "reduced_motion": false,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A01",
+      "dom_contract_mock": true,
+      "reduced_motion": true,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A02",
+      "time": 0,
+      "semantic_stage": true
+    },
+    {
+      "id": "A02",
+      "time": 5,
+      "semantic_stage": true
+    },
+    {
+      "id": "A02",
+      "time": 10,
+      "semantic_stage": true
+    },
+    {
+      "id": "A02",
+      "time": 15,
+      "semantic_stage": true
+    },
+    {
+      "id": "A02",
+      "time": 20,
+      "semantic_stage": true
+    },
+    {
+      "id": "A02",
+      "dom_contract_mock": true,
+      "reduced_motion": false,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A02",
+      "dom_contract_mock": true,
+      "reduced_motion": true,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A03",
+      "time": 0,
+      "semantic_stage": true
+    },
+    {
+      "id": "A03",
+      "time": 6,
+      "semantic_stage": true
+    },
+    {
+      "id": "A03",
+      "time": 12,
+      "semantic_stage": true
+    },
+    {
+      "id": "A03",
+      "time": 18,
+      "semantic_stage": true
+    },
+    {
+      "id": "A03",
+      "time": 24,
+      "semantic_stage": true
+    },
+    {
+      "id": "A03",
+      "dom_contract_mock": true,
+      "reduced_motion": false,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A03",
+      "dom_contract_mock": true,
+      "reduced_motion": true,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A04",
+      "time": 0,
+      "semantic_stage": true
+    },
+    {
+      "id": "A04",
+      "time": 4,
+      "semantic_stage": true
+    },
+    {
+      "id": "A04",
+      "time": 9,
+      "semantic_stage": true
+    },
+    {
+      "id": "A04",
+      "time": 14,
+      "semantic_stage": true
+    },
+    {
+      "id": "A04",
+      "time": 20,
+      "semantic_stage": true
+    },
+    {
+      "id": "A04",
+      "dom_contract_mock": true,
+      "reduced_motion": false,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A04",
+      "dom_contract_mock": true,
+      "reduced_motion": true,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A05",
+      "time": 0,
+      "semantic_stage": true
+    },
+    {
+      "id": "A05",
+      "time": 6,
+      "semantic_stage": true
+    },
+    {
+      "id": "A05",
+      "time": 12,
+      "semantic_stage": true
+    },
+    {
+      "id": "A05",
+      "time": 18,
+      "semantic_stage": true
+    },
+    {
+      "id": "A05",
+      "time": 24,
+      "semantic_stage": true
+    },
+    {
+      "id": "A05",
+      "dom_contract_mock": true,
+      "reduced_motion": false,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    },
+    {
+      "id": "A05",
+      "dom_contract_mock": true,
+      "reduced_motion": true,
+      "play_pause_seek_restart": true,
+      "real_browser": false
+    }
+  ],
+  "exact_dynamic_values": true,
+  "real_browser_verified": false,
+  "claim_boundary": "VM tests exercise deterministic state and mocked control callbacks. They are not real browser interaction tests.",
+  "research_state": "NOT_RUN"
+}

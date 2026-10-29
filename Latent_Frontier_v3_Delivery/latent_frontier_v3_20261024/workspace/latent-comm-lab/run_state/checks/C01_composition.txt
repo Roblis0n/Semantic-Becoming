@@ -1,0 +1,11 @@
+test_chart_coverage (test_c01.C01Tests.test_chart_coverage) ... ok
+test_heterogeneous_typed_computation (test_c01.C01Tests.test_heterogeneous_typed_computation) ... ok
+test_no_access_expansion (test_c01.C01Tests.test_no_access_expansion) ... ok
+test_no_false_inverse (test_c01.C01Tests.test_no_false_inverse) ... ok
+test_target_ontology_cannot_change_with_frame (test_c01.C01Tests.test_target_ontology_cannot_change_with_frame) ... ok
+test_wrong_operator_frame (test_c01.C01Tests.test_wrong_operator_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.041s
+
+OK

@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_012",
+  "edition": "explainer_360",
+  "scene_id": "S03",
+  "characters": 32,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "而最后一条又要求它们相差一。把这些约束加在一起，会得到零等于一。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:27:45.968015+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:27:53 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:27:56.153159+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 255802,
+    "duration_seconds": 5.800498866213152,
+    "sample_peak": 11813,
+    "sample_rms": 1933.993334005975,
+    "sha256": "2380cefe1252d55271f1148b321e2a84e6e4a36700ff44aaf9dc5646cacf88a9",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:28:19.007324+00:00"
+}

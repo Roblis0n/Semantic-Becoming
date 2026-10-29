@@ -1,0 +1,21 @@
+test_cycle (test_planctl.PlanTests.test_cycle) ... ok
+test_dag (test_planctl.PlanTests.test_dag) ... ok
+test_design_allowed (test_planctl.PlanTests.test_design_allowed) ... ok
+test_duplicate (test_planctl.PlanTests.test_duplicate) ... ok
+test_full_bundle (test_planctl.PlanTests.test_full_bundle) ... ok
+test_future_software_not_claimed_done (test_planctl.PlanTests.test_future_software_not_claimed_done) ... ok
+test_math_allowed (test_planctl.PlanTests.test_math_allowed) ... ok
+test_media_allowed (test_planctl.PlanTests.test_media_allowed) ... ok
+test_missing (test_planctl.PlanTests.test_missing) ... ok
+test_no_empirical_gate (test_planctl.PlanTests.test_no_empirical_gate) ... ok
+test_no_models_in_bundle (test_planctl.PlanTests.test_no_models_in_bundle) ... ok
+test_per_hypothesis_recipe (test_planctl.PlanTests.test_per_hypothesis_recipe) ... ok
+test_research_actions_denied (test_planctl.PlanTests.test_research_actions_denied) ... ok
+test_sources_unique (test_planctl.PlanTests.test_sources_unique) ... ok
+test_task_covers_each_hypothesis (test_planctl.PlanTests.test_task_covers_each_hypothesis) ... ok
+test_unknown_action (test_planctl.PlanTests.test_unknown_action) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.014s
+
+OK

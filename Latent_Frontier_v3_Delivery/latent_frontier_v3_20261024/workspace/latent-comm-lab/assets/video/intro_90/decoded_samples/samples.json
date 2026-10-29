@@ -1,0 +1,47 @@
+{
+  "source": "assets/video/intro_90/intro_90_silent_draft.mp4",
+  "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+  "samples": [
+    {
+      "second": 6,
+      "path": "assets/video/intro_90/decoded_samples/006.png",
+      "sha256": "402528a2e23da761dfa8f511764421f08f31280c684bb7064960b989849d85d1"
+    },
+    {
+      "second": 15,
+      "path": "assets/video/intro_90/decoded_samples/015.png",
+      "sha256": "42eae98900a6c9b0378a687c69aab2ed525059239dcc2bfa225a8dbc71af442d"
+    },
+    {
+      "second": 26,
+      "path": "assets/video/intro_90/decoded_samples/026.png",
+      "sha256": "cd3917d5c61c1d8176ee1a172431dffaa3280584a7140fb327dad0b662e5aa79"
+    },
+    {
+      "second": 38,
+      "path": "assets/video/intro_90/decoded_samples/038.png",
+      "sha256": "30ed2915bf1ba421c65d22bdd4989c85ec1ad4d2c395aa8d45511371e8f0c442"
+    },
+    {
+      "second": 51,
+      "path": "assets/video/intro_90/decoded_samples/051.png",
+      "sha256": "fe1c4c63917abd96461d8b6e896693a218c16f30a296d0685bfab228a3f7bfae"
+    },
+    {
+      "second": 61,
+      "path": "assets/video/intro_90/decoded_samples/061.png",
+      "sha256": "29d6128d8bd36e0d917a62cc453dbf099b6bbe62e6fa0354939740262e7b1ceb"
+    },
+    {
+      "second": 71,
+      "path": "assets/video/intro_90/decoded_samples/071.png",
+      "sha256": "1e69b8ac8473c1f8dcbb7b4169165fd7d8a9d22ccf5882a9753f2d17e812f090"
+    },
+    {
+      "second": 85,
+      "path": "assets/video/intro_90/decoded_samples/085.png",
+      "sha256": "c0557a6a38ddc1daf154f13459c55accf792f3af3fba8bbdc8c99c7656901e5f"
+    }
+  ],
+  "audio_listened": false
+}

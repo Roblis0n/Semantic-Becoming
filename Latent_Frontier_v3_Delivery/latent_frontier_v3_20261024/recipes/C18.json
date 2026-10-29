@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "id": "C18",
+  "title": "不重复计信的能力联盟",
+  "kind": "combination",
+  "mechanisms": [
+    "H10",
+    "H16",
+    "H41",
+    "H48"
+  ],
+  "stages": [
+    "证据谱系",
+    "依赖归一化",
+    "联合能力契约",
+    "子集价值",
+    "内部贡献分配"
+  ],
+  "critical_invariant": "谱系未知时不得自动当独立；数值贡献必须注明价值函数来源。",
+  "source_spec": "combinations/C18_不重复计信的能力联盟.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c18.py",
+  "research_outputs": "NOT_RUN"
+}

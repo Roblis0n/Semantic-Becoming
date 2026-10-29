@@ -1,0 +1,19 @@
+test_boundary_is_public_not_supervision (test_learning_dynamics_scales.ContractChecks.test_boundary_is_public_not_supervision) ... ok
+test_engine_delegation_and_resume_command (test_learning_dynamics_scales.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_metadata (test_learning_dynamics_scales.ContractChecks.test_metadata) ... ok
+test_midpoint_rotation_and_boundary (test_learning_dynamics_scales.ContractChecks.test_midpoint_rotation_and_boundary) ... ok
+test_public_horizon (test_learning_dynamics_scales.ContractChecks.test_public_horizon) ... ok
+test_recipe_is_unbound (test_learning_dynamics_scales.ContractChecks.test_recipe_is_unbound) ... ok
+test_scale_retained_detail_identity (test_learning_dynamics_scales.ContractChecks.test_scale_retained_detail_identity) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_dynamics_scales.ContractChecks.test_stage_syntax_and_gates"
+  ],
+  "neural_modules_loaded": []
+}

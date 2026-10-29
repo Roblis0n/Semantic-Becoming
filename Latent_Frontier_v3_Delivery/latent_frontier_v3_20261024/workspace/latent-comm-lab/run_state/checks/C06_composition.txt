@@ -1,0 +1,10 @@
+test_joint_not_sum_and_affine_not_joint (test_c06.C06Tests.test_joint_not_sum_and_affine_not_joint) ... ok
+test_missing_member_not_zero (test_c06.C06Tests.test_missing_member_not_zero) ... ok
+test_nonlinear_not_affine (test_c06.C06Tests.test_nonlinear_not_affine) ... ok
+test_stale_grammar (test_c06.C06Tests.test_stale_grammar) ... ok
+test_trace_split_leakage (test_c06.C06Tests.test_trace_split_leakage) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.051s
+
+OK

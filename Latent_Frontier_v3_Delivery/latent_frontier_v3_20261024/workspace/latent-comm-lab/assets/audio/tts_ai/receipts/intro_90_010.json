@@ -1,0 +1,48 @@
+{
+  "id": "intro_90_010",
+  "edition": "intro_90",
+  "scene_id": "S06",
+  "characters": 34,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "这不要求一套万能潜语言，也不要求所有分歧都消失。知识可以是多视角的，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:15:27.016146+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:15:35 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:15:38.954480+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 279511,
+    "duration_seconds": 6.3381179138322,
+    "sample_peak": 6391,
+    "sample_rms": 983.5811915495715,
+    "sha256": "ef456884f6d72b064006a6a8ea69e19741f85ed3bcdce29c0d674e2977c39d97",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:16:00.386798+00:00"
+}

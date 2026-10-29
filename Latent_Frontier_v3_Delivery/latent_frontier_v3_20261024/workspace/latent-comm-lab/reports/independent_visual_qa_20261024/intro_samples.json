@@ -1,0 +1,86 @@
+[
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S01_0_5.00.png",
+    "seconds": 5.0,
+    "kind": "communication",
+    "source": "communication_to_object"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S02_0_16.00.png",
+    "seconds": 16.0,
+    "kind": "animation",
+    "source": "A03"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S03_0_28.00.png",
+    "seconds": 28.0,
+    "kind": "slide",
+    "source": 26
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S04_0_39.00.png",
+    "seconds": 39.004999999999995,
+    "kind": "animation",
+    "source": "A04"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S04_1_45.50.png",
+    "seconds": 45.504999999999995,
+    "kind": "slide",
+    "source": 15
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S05_0_53.50.png",
+    "seconds": 53.5,
+    "kind": "animation",
+    "source": "A05"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S06_0_61.98.png",
+    "seconds": 61.980000000000004,
+    "kind": "animation",
+    "source": "A01"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S06_1_66.00.png",
+    "seconds": 66.0,
+    "kind": "animation",
+    "source": "A02"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S06_2_70.02.png",
+    "seconds": 70.02000000000001,
+    "kind": "slide",
+    "source": 28
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S07_0_75.25.png",
+    "seconds": 75.25,
+    "kind": "figure",
+    "source": "F01"
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S07_1_80.25.png",
+    "seconds": 80.25,
+    "kind": "slide",
+    "source": 33
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "frame": "reports/independent_visual_qa_20261024/intro_90_S08_0_86.00.png",
+    "seconds": 86.0,
+    "kind": "slide",
+    "source": 36
+  }
+]

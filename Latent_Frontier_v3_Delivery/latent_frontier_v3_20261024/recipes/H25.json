@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H25",
+  "kind": "mechanism",
+  "title": "规范协变的认知接口",
+  "mechanisms": [
+    "H25"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H25_规范协变的认知接口.md",
+  "target_base": "src/latent_comm/mechanisms/h25_gauge",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "dimension": 8,
+    "group": "orthogonal",
+    "condition_limit": 10000,
+    "frame_policy": "explicit"
+  }
+}

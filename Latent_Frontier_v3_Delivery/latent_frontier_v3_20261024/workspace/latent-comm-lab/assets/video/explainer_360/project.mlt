@@ -1,0 +1,64 @@
+<mlt producer="tractor" version="7.0.0">
+  <profile description="HD 720p24" width="1280" height="720" frame_rate_num="24" frame_rate_den="1" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" colorspace="709" />
+  <producer id="S01">
+    <property name="resource">clips/S01.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">从通信到认知构造</property>
+  </producer>
+  <producer id="S02">
+    <property name="resource">clips/S02.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">概念如何在分歧中出生</property>
+  </producer>
+  <producer id="S03">
+    <property name="resource">clips/S03.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">为什么允许没有统一世界观</property>
+  </producer>
+  <producer id="S04">
+    <property name="resource">clips/S04.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">如何传递学习的方向</property>
+  </producer>
+  <producer id="S05">
+    <property name="resource">clips/S05.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">把更新规则变成协议</property>
+  </producer>
+  <producer id="S06">
+    <property name="resource">clips/S06.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">共同梦境不是共同编故事</property>
+  </producer>
+  <producer id="S07">
+    <property name="resource">clips/S07.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">更远的表示与时间</property>
+  </producer>
+  <producer id="S08">
+    <property name="resource">clips/S08.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">从想法到完整程序准备</property>
+  </producer>
+  <producer id="S09">
+    <property name="resource">clips/S09.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">最后的问题</property>
+  </producer>
+  <playlist id="timeline">
+    <property name="shotcut:name">V1 · silent draft</property>
+    <entry producer="S01" in="0" out="839" />
+    <entry producer="S02" in="0" out="1031" />
+    <entry producer="S03" in="0" out="983" />
+    <entry producer="S04" in="0" out="1055" />
+    <entry producer="S05" in="0" out="983" />
+    <entry producer="S06" in="0" out="1103" />
+    <entry producer="S07" in="0" out="959" />
+    <entry producer="S08" in="0" out="959" />
+    <entry producer="S09" in="0" out="719" />
+  </playlist>
+  <tractor id="tractor" shotcut="1" in="0" out="8639">
+    <property name="shotcut:name">explainer_360 · 无声视觉稿</property>
+    <track producer="timeline" />
+  </tractor>
+</mlt>

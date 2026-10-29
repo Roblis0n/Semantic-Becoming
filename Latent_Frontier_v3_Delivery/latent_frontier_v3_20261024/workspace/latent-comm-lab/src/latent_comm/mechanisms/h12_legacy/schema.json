@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H12:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "capsule_id",
+    "document_id",
+    "version",
+    "observations",
+    "allowed_query_family",
+    "evidence_handles",
+    "dependency_versions",
+    "expires_step",
+    "parent_version",
+    "capsule_dependencies"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "evidence",
+        "ontology",
+        "schema",
+        "task",
+        "world"
+      ],
+      "additionalProperties": false
+    },
+    "capsule_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "document_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null",
+            "array",
+            "object"
+          ]
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "allowed_query_family": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "evidence_handles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "dependency_versions": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "expires_step": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "parent_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "capsule_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

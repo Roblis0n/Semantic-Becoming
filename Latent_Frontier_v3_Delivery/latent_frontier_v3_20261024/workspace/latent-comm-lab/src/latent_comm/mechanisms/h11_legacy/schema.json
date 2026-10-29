@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H11:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "message_id",
+    "sequence",
+    "depends_on",
+    "slots",
+    "integers",
+    "scale",
+    "remaining_error_bound",
+    "task_family",
+    "semantic_scale"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "schema",
+        "state",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "message_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "depends_on": {
+      "type": "integer",
+      "minimum": -1
+    },
+    "slots": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 63
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "integers": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "scale": {
+      "type": "number",
+      "minimum": 0
+    },
+    "remaining_error_bound": {
+      "type": "number",
+      "minimum": 0
+    },
+    "task_family": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "semantic_scale": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false
+}

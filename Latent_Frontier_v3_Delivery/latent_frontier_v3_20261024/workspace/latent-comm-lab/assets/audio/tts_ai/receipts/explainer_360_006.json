@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_006",
+  "edition": "explainer_360",
+  "scene_id": "S02",
+  "characters": 29,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "看一个很小的例子。两把钥匙形状相同，一把能开门，一把不能。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:22:34.327010+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:22:42 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:22:43.826476+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 233274,
+    "duration_seconds": 5.2896598639455785,
+    "sample_peak": 12874,
+    "sample_rms": 1776.1244237393519,
+    "sha256": "da73cb6785d3f49ec27405eca04fe4564039dcbddef9fe8afd7f7d28eb8fc918",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:23:07.607108+00:00"
+}

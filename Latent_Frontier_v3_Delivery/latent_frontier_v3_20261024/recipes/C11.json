@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "id": "C11",
+  "title": "问题空间的跨域迁移",
+  "kind": "combination",
+  "mechanisms": [
+    "H07",
+    "H29",
+    "H30",
+    "H47"
+  ],
+  "stages": [
+    "问题IR",
+    "任务等价类",
+    "类比态射",
+    "程序编译",
+    "目标域执行",
+    "答案回译"
+  ],
+  "critical_invariant": "每条问题变换都带答案关系；启发式边不能混入等价证明链。",
+  "source_spec": "combinations/C11_问题空间的跨域迁移.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c11.py",
+  "research_outputs": "NOT_RUN"
+}

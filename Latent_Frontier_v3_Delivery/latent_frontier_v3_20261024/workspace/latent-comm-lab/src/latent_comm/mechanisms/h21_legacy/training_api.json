@@ -1,0 +1,139 @@
+{
+  "schema_version": 3,
+  "id": "H21",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "forward_entry": "latent_comm.mechanisms.h21_legacy.adapter.portfolio_scores",
+  "forward_entries": {
+    "portfolio_scores": {
+      "entry": "latent_comm.mechanisms.h21_legacy.adapter.portfolio_scores",
+      "signature": "branch_states, goal_features, score_projection, coverage, valid",
+      "arguments": [
+        "branch_states",
+        "goal_features",
+        "score_projection",
+        "coverage",
+        "valid"
+      ]
+    },
+    "select_branch": {
+      "entry": "latent_comm.mechanisms.h21_legacy.adapter.select_branch",
+      "signature": "scores, valid, *, sample",
+      "arguments": [
+        "scores",
+        "valid",
+        "sample"
+      ]
+    },
+    "fork_prefix": {
+      "entry": "latent_comm.mechanisms.h21_legacy.adapter.fork_prefix",
+      "signature": "prefix, branch_count",
+      "arguments": [
+        "prefix",
+        "branch_count"
+      ]
+    }
+  },
+  "loss_entry": "latent_comm.mechanisms.h21_legacy.losses.tensor_losses",
+  "loss_signature": "logprob, returns, baseline, selected_valid, branch_task_losses, branch_valid",
+  "loss_input_bindings": {
+    "logprob": {
+      "producer": "select_branch(sample=True) return[1] after portfolio_scores",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "returns": {
+      "producer": "SupervisionBatch.returns; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "baseline": {
+      "producer": "SupervisionBatch.baseline; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "selected_valid": {
+      "producer": "select_branch return[2]",
+      "requires_gradient": false,
+      "detached_supervision": false
+    },
+    "branch_task_losses": {
+      "producer": "stage executable branch task loss; future labels enter losses only",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "branch_valid": {
+      "producer": "stage explicit boolean branch_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    }
+  },
+  "loss_specs": [
+    {
+      "name": "branch_policy",
+      "mathematical_definition": "-stopgrad(return-baseline)*log pi(branch)",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "selected_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_writer"
+      ],
+      "requires_grad_inputs": [
+        "logprob"
+      ],
+      "stop_gradient_edges": [
+        [
+          "returns",
+          "target_or_return"
+        ],
+        [
+          "baseline",
+          "target_or_return"
+        ]
+      ],
+      "estimator": "POLICY_GRADIENT",
+      "normalization_units": "branch decisions"
+    },
+    {
+      "name": "counterfactual_task",
+      "mathematical_definition": "mean_valid loss from executable branch task",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "branch_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_reader"
+      ],
+      "requires_grad_inputs": [
+        "branch_task_losses"
+      ],
+      "stop_gradient_edges": [],
+      "estimator": "EXACT",
+      "normalization_units": "branch tasks"
+    }
+  ],
+  "parameter_bindings": {
+    "mechanism_writer": [
+      "portfolio_scores.score_projection"
+    ],
+    "mechanism_reader": [
+      "stage.branch_task_readout"
+    ]
+  },
+  "stage_parameter_rule": "Bindings beginning stage. are constructed by the L-stage, not implicit model parameters. Each actual Parameter must be uniquely assigned to exactly one owner, including shared aliases. Unlisted base parameters stay frozen.",
+  "shared_training_engine": "latent_comm.learning.engine.train",
+  "stage_api": [
+    "parameter_groups()",
+    "frozen_parameters()",
+    "forward_roles(sender, receiver, maximum_unroll=...)",
+    "losses(output, SupervisionBatch)",
+    "loss_specs",
+    "versions",
+    "device"
+  ],
+  "input_contract": "RoleBatch projections only. Finite floating tensors including padding; exact mask shapes, valid class indices, and explicit typed applicability are required. Supervision is passed only to losses.",
+  "loss_selection": "Select named LossSpec terms, never total plus its components. Non-LossSpec return fields are diagnostics. External task_loss inputs are already masked/normalized with differentiable empty zero by the L-stage.",
+  "gradient_contract": "Freeze base parameters with requires_grad=False, not no_grad around receiver computation. Teacher targets only may be detached. A discrete sampled decision uses its live selected log probability; deterministic argmax does not impersonate a policy gradient.",
+  "tokenizer_contract": "No cross-tokenizer direct logit KL. Shared token-mixture losses require identical declared vocabulary; heterogeneous receivers use named common behavior coordinates.",
+  "execution": "All adapters and losses gate before tensor backend import. No neural test, model import, initialization, optimization or efficacy claim in this task."
+}

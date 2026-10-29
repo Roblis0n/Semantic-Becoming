@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_009",
+  "edition": "explainer_360",
+  "scene_id": "S02",
+  "characters": 33,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "而是新增了能计算的区分，并把旧程序迁移到新的概念版本。更远的设想，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:25:59.720169+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 281559,
+    "duration_seconds": 6.384557823129252,
+    "sample_peak": 8729,
+    "sample_rms": 1307.2715384865392,
+    "sha256": "b97f1647c703c1cfb5115c2d2bce4f2ea45648c085722e9c98b4140054395b27",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:26:34.228959+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

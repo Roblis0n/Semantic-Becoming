@@ -1,0 +1,15 @@
+M09: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_budget (test_h09.CausalTests.test_budget) ... ok
+test_condition_not_do (test_h09.CausalTests.test_condition_not_do) ... ok
+test_graft_kernel_and_intervention_query_boundaries (test_h09.CausalTests.test_graft_kernel_and_intervention_query_boundaries) ... ok
+test_overwrite_and_scope (test_h09.CausalTests.test_overwrite_and_scope) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h09.CausalTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h09.CausalTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h09.CausalTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h09.CausalTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.016s
+
+OK
+M09: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

@@ -1,0 +1,20 @@
+test_action_preservation_and_counterexample (test_h25.H25Contracts.test_action_preservation_and_counterexample) ... ok
+test_budget_and_migration (test_h25.H25Contracts.test_budget_and_migration) ... ok
+test_cross_map_can_be_rectangular (test_h25.H25Contracts.test_cross_map_can_be_rectangular) ... ok
+test_dimension_rejection (test_h25.H25Contracts.test_dimension_rejection) ... ok
+test_serialization_and_unsupported_migration (test_h25.H25Contracts.test_serialization_and_unsupported_migration) ... ok
+test_singular_and_near_singular (test_h25.H25Contracts.test_singular_and_near_singular) ... ok
+test_three_stage_path (test_h25.H25Contracts.test_three_stage_path) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h25.H25Contracts.test_gate_precedes_any_tensor_access",
+    "test_h25.H25Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">执行与权限平面</title><desc id="desc">执行权限平面：只读计划进入任务图，文件所有者约束工作区写入，账本保存哈希和回执，动作代理拦截模型运行、付费和发布。这是应用级边界，不是已验证硬沙箱。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">执行与权限平面</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">自动推进保留明确边界与可核验状态</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">F06</tspan>
+</text>
+<rect id="e006" x="64" y="230" width="270" height="120" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e007" x="79" y="272.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="79" dy="0">PLAN_ROOT</tspan>
+</text>
+<text id="e008" x="79" y="311.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">只读设计与政策</tspan>
+</text>
+<rect id="e009" x="475" y="230" width="310" height="120" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e010" x="490" y="272.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="490" dy="0">任务 DAG / owner</tspan>
+</text>
+<text id="e011" x="490" y="311.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="490" dy="0">每文件只有一个写入者</tspan>
+</text>
+<rect id="e012" x="925" y="230" width="290" height="120" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e013" x="940" y="272.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="940" dy="0">WORK_ROOT</tspan>
+</text>
+<text id="e014" x="940" y="311.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="940" dy="0">授权范围内写入</tspan>
+</text>
+<polyline id="e015" points="340.000,290.000 463.000,290.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e016" points="451.000,285.000 463.000,290.000 451.000,295.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e017" x="64" y="425" width="380" height="126" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e018" x="79" y="466.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="79" dy="0">ledger / receipt</tspan>
+</text>
+<text id="e019" x="79" y="505.41" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">输入摘要、产物哈希、真实检查</tspan>
+</text>
+<rect id="e020" x="564" y="425" width="652" height="126" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e021" x="579" y="467.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="579" dy="0">action broker</tspan>
+</text>
+<text id="e022" x="579" y="506.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="579" dy="0">禁止：研究模型运行 / 新增付费 / 公开发布</tspan>
+</text>
+<polyline id="e023" points="630.000,360.000 630.000,410.000" fill="none" stroke="#536647" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e024" points="635.000,398.000 630.000,410.000 625.000,398.000" fill="none" stroke="#536647" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e025" points="1070.000,415.000 1070.000,362.000" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e026" points="1065.000,374.000 1070.000,362.000 1075.000,374.000" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e027" points="565.000,488.000 456.000,488.000" fill="none" stroke="#725D7C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e028" points="468.000,493.000 456.000,488.000 468.000,483.000" fill="none" stroke="#725D7C" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e029" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">这是应用级权限控制，不声称已经建立或验证硬沙箱</tspan>
+</text>
+</svg>

@@ -1,0 +1,332 @@
+{
+  "title": "C13：可塑性网络",
+  "description": "三模块图，外层模型研究入口显示锁定。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "C13：可塑性网络",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "行为锚＋方向运输＋更新规则",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "07 / 12",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64.0,
+      "y": 260,
+      "w": 362.6666666666667,
+      "h": 170,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79.0,
+      "y": 275,
+      "w": 332.6666666666667,
+      "h": 44.33,
+      "text": "共同有限行为锚",
+      "size": 31,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79.0,
+      "y": 321.75,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "规定可比较的变化",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          432.6666666666667,
+          345.0
+        ],
+        [
+          452.6666666666667,
+          345.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          440.6666666666667,
+          340.0
+        ],
+        [
+          452.6666666666667,
+          345.0
+        ],
+        [
+          440.6666666666667,
+          350.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 458.6666666666667,
+      "y": 260,
+      "w": 362.6666666666667,
+      "h": 170,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 473.6666666666667,
+      "y": 275,
+      "w": 332.6666666666667,
+      "h": 44.33,
+      "text": "方向运输 H37",
+      "size": 31,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 473.6666666666667,
+      "y": 321.75,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "可实现部分与残差",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          827.3333333333334,
+          345.0
+        ],
+        [
+          847.3333333333334,
+          345.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          835.3333333333334,
+          340.0
+        ],
+        [
+          847.3333333333334,
+          345.0
+        ],
+        [
+          835.3333333333334,
+          350.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 853.3333333333334,
+      "y": 260,
+      "w": 362.6666666666667,
+      "h": 170,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 868.3333333333334,
+      "y": 275,
+      "w": 332.6666666666667,
+      "h": 44.33,
+      "text": "规则协议 H38",
+      "size": 31,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 868.3333333333334,
+      "y": 321.75,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "生成受限局部更新",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 64,
+      "y": 485,
+      "w": 1152,
+      "h": 75,
+      "fill": "none",
+      "stroke": "#9C4540",
+      "sw": 2,
+      "r": 0,
+      "dash": true,
+      "kind": "rect",
+      "id": "e019"
+    },
+    {
+      "x": 90,
+      "y": 499,
+      "w": 1100,
+      "h": 40.04,
+      "text": "研究入口锁定：模型初始化、前向、训练、评测均 NOT_RUN",
+      "size": 28,
+      "color": "#9C4540",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e020"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "C13 的远期目标：交流形成能力的方法，而非直接叠加参数",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e021"
+    }
+  ],
+  "notes": "精简版第 7 页，对应研究版第 17 页。\n\n本轮把这些程序与接口写完整，但不运行训练。更远的目标是让系统交换形成能力的方法。\n\n原稿画面要求：三模块图，外层模型研究入口显示锁定。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第17页\nhypotheses/H37_跨模型学习方向运输.md\nhypotheses/H38_可传递的可塑性规则.md\nhypotheses/H39_可回滚的跨模型认知事务.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1503.02531\nhttps://arxiv.org/abs/1606.04474\nhttps://arxiv.org/abs/2106.02997\nhttps://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf\nhttps://arxiv.org/abs/cs/0408036\nhttps://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_17"
+  ],
+  "research_state": "NOT_RUN",
+  "source_research_slide": 17
+}

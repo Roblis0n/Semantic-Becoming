@@ -1,0 +1,67 @@
+{
+  "task_id": "L08",
+  "status": "done",
+  "input_digest": "14dc45fc78d12b480d229a7752aced5793d89d4393ee7433e01d6933d667df0e",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/meta_rules/README.md",
+      "sha256": "38e4187d8db63d25f4bf48638455c60d5f575fc1ed05754a22a02c503409b7e1",
+      "bytes": 4183
+    },
+    {
+      "path": "src/latent_comm/learning/meta_rules/__init__.py",
+      "sha256": "1e63d89403cc554c240cd656358bd5639b048af25979e7e0b01b83c35776254b",
+      "bytes": 10660
+    },
+    {
+      "path": "src/latent_comm/learning/meta_rules/train.py",
+      "sha256": "07b4047d78f369994471f9027e59ea4d763181b95556cceec26031f3ba71a0de",
+      "bytes": 2395
+    },
+    {
+      "path": "configs/learning/meta_rules.json",
+      "sha256": "d103b274ef40484d839952e331ed05cc6360e701d0f6b6caa1e664c4fdbbd5d8",
+      "bytes": 2130
+    },
+    {
+      "path": "tests/research_locked/test_learning_meta_rules.py",
+      "sha256": "f4d84f85fafa1141a9a7cde5a28b445f3d0ffea77cc5613fb1eb3fbdc2bbe9a4",
+      "bytes": 3934
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L08_meta_rules.txt",
+      "sha256": "798a6e34ada936ceb806e7094852d0bf88e496e24ae5a762a25bf34f389dd853"
+    },
+    {
+      "path": "run_state/checks/L08_meta_rules_initial_arithmetic_failure.txt",
+      "sha256": "e22a3aebb66bc51321dd0271173bccf1596ed7891434fabfd93c8679ccea0b3e"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_meta_rules.txt",
+      "sha256": "e40829ac394447419f75b78bd2913cdc7eb98be2d834febfc64cabe0f3450b0d"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated bounded H38 AST inner unroll; separate analytic W08 and projected episodic schemas; query isolation, exact/first-order distinction, raw norm budget, finite validation structure enumeration. Initial hand expected theta typo corrected from .799875 to analytically verified .797375; failure log retained. Seven final stdlib/AST checks passed, no model/guard invocation. NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.656908+00:00"
+}

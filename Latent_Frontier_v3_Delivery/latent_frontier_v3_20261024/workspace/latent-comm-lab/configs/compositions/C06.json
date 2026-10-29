@@ -1,0 +1,1125 @@
+{
+  "recipe_id": "C06",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C06",
+    "nodes": [
+      {
+        "node_id": "skill_parse",
+        "operation": "C06.skill_parse",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "skill_parse:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "JointSkillInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ParsedSkill",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H14"
+        ],
+        "implementation": "latent_comm.compositions.c06.skill_parse",
+        "location": {
+          "source": "C06.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "bind",
+        "operation": "C06.bind",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "skill_parse:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "bind:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ParsedSkill",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "BoundSkills",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "P",
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H01",
+          "H14"
+        ],
+        "implementation": "latent_comm.compositions.c06.bind",
+        "location": {
+          "source": "C06.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "hyperedge_apply",
+        "operation": "C06.hyperedge_apply",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "bind:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "hyperedge_apply:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "BoundSkills",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "JointMessage",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H10"
+        ],
+        "implementation": "latent_comm.compositions.c06.hyperedge_apply",
+        "location": {
+          "source": "C06.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "decode",
+        "operation": "C06.decode",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "hyperedge_apply:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "decode:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "JointMessage",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "JointDecoded",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H01",
+          "H10"
+        ],
+        "implementation": "latent_comm.compositions.c06.decode",
+        "location": {
+          "source": "C06.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "optional_consolidate",
+        "operation": "C06.optional_consolidate",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "decode:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "optional_consolidate:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "JointDecoded",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "JointSkillReadout",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "K"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H19"
+        ],
+        "implementation": "latent_comm.compositions.c06.optional_consolidate",
+        "location": {
+          "source": "C06.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "bind:out",
+        {
+          "name": "BoundSkills",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "decode:out",
+        {
+          "name": "JointDecoded",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "hyperedge_apply:out",
+        {
+          "name": "JointMessage",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "JointSkillInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "optional_consolidate:out",
+        {
+          "name": "JointSkillReadout",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "skill_parse:out",
+        {
+          "name": "ParsedSkill",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "bind",
+        "hyperedge_apply"
+      ],
+      [
+        "decode",
+        "optional_consolidate"
+      ],
+      [
+        "hyperedge_apply",
+        "decode"
+      ],
+      [
+        "skill_parse",
+        "bind"
+      ]
+    ],
+    "schedule": [
+      "skill_parse",
+      "bind",
+      "hyperedge_apply",
+      "decode",
+      "optional_consolidate"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "1d08eb3f5715900607af0c073805511e1b562ab399ccc5ba3b16c80d113a59ce",
+    "declared_parameters": {
+      "obligations": [
+        "Joint effects remain separate from individual affine skills.",
+        "Finite affine compilation is not distillation or unseen-instance transfer evidence."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C06",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "typed_local_skill",
+        "objectives": [
+          {
+            "name": "task",
+            "mathematical_definition": "stage normalized task loss after dedicated mechanism",
+            "numerator": "sum valid task losses",
+            "denominator": "valid task count",
+            "valid_mask": "stage-normalized valid tasks",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "task_loss"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task instances",
+            "id": "H01.task"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "mean ||T(z)-teacher(z)||^2",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "state_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "predicted"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state elements",
+            "id": "H01.behavior"
+          },
+          {
+            "name": "composition",
+            "mathematical_definition": "mean ||Tb(Ta(z))-program_ba(z)||^2",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "composition_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "composed"
+            ],
+            "stop_gradient_edges": [
+              [
+                "composition_target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state elements",
+            "id": "H01.composition"
+          },
+          {
+            "name": "execution",
+            "mathematical_definition": "mean squared expanded behavior-target",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "behavior_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "behavior"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior coordinates",
+            "id": "H14.execution"
+          },
+          {
+            "name": "production",
+            "mathematical_definition": "CE(typed_production_logits,label)",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "grammar_proposer"
+            ],
+            "requires_grad_inputs": [
+              "production_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "labels",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "productions",
+            "id": "H14.production"
+          },
+          {
+            "name": "rewrite",
+            "mathematical_definition": "mean behavior difference for conditional equivalent rewrites",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "rewrite_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "rewritten",
+              "original"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior elements",
+            "id": "H14.rewrite"
+          }
+        ],
+        "losses": [
+          "H01.task",
+          "H01.behavior",
+          "H01.composition",
+          "H14.execution",
+          "H14.production",
+          "H14.rewrite"
+        ],
+        "owners": [
+          "grammar_proposer",
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "joint_message",
+        "objectives": [
+          {
+            "name": "joint",
+            "mathematical_definition": "mean CE(joint output,task)",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "joint_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "tasks",
+            "id": "H10.joint"
+          },
+          {
+            "name": "dropout",
+            "mathematical_definition": "mean task error under declared source subsets",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "subset_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "subset_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "subset_targets",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "subsets",
+            "id": "H10.dropout"
+          }
+        ],
+        "losses": [
+          "H10.joint",
+          "H10.dropout"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "trace_distillation",
+        "objectives": [
+          {
+            "name": "distillation",
+            "mathematical_definition": "mean_valid ||student_without_message - stopgrad(teacher_with_message)||^2",
+            "numerator": "sum of valid per-probe mean coordinate errors",
+            "denominator": "count of valid probes",
+            "valid_mask": "valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "student"
+            ],
+            "stop_gradient_edges": [
+              [
+                "teacher",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "probes, each averaged over coordinates",
+            "id": "H19.distillation"
+          },
+          {
+            "name": "operation_behavior",
+            "mathematical_definition": "mean_valid ||student(compose(a,b),x)-teacher(b,teacher(a,x))||^2",
+            "numerator": "sum of valid per-probe mean coordinate errors",
+            "denominator": "count of valid probes",
+            "valid_mask": "operation_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "operation_student"
+            ],
+            "stop_gradient_edges": [
+              [
+                "operation_teacher",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "probes, each averaged over coordinates",
+            "id": "H19.operation_behavior"
+          }
+        ],
+        "losses": [
+          "H19.distillation",
+          "H19.operation_behavior"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "skill_parse": "stop",
+      "bind": "differentiable",
+      "hyperedge_apply": "differentiable",
+      "decode": "differentiable",
+      "optional_consolidate": "stop"
+    }
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

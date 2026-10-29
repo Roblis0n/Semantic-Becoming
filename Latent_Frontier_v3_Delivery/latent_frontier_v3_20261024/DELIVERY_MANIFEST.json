@@ -1,0 +1,2828 @@
+{
+  "version": "V3",
+  "date": "2026-10-24",
+  "root": "latent_frontier_v3_20261024",
+  "excluded_from_self_hash": [
+    "DELIVERY_MANIFEST.json",
+    "checksums.sha256"
+  ],
+  "files_hashed": 563,
+  "files_in_archive": 565,
+  "files": [
+    {
+      "path": "DELIVERY_REPORT.md",
+      "bytes": 4111,
+      "sha256": "d8c9536a9c642e6dece4e7d45671284d3a306acac34b9ba49af29807ab295030"
+    },
+    {
+      "path": "DELTA_FROM_V2.md",
+      "bytes": 1340,
+      "sha256": "9d3056df9dccccfef2da88b8da946f385537522c4f78314c3de586eb36fc6780"
+    },
+    {
+      "path": "FILE_INDEX.md",
+      "bytes": 67160,
+      "sha256": "ccece45aaa9a85e25f8e936297d66360ba8415a42642752af9589a7866603379"
+    },
+    {
+      "path": "INNOVATION_MAP.md",
+      "bytes": 14817,
+      "sha256": "11c18582ce89232b8b4a6fcaf052b2706b60a8fd2132bd9453153e1eddb8ba26"
+    },
+    {
+      "path": "MASTER_PLAN_V3.md",
+      "bytes": 844117,
+      "sha256": "02281020adaf428bd991c5ac40855c3b7497c17f2049453a4495f0e8a0d7f260"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 3401,
+      "sha256": "e5e4de0fbebcfd63ff5f00a389f66d4f4800e31fbf4cca4fd19fbc5ee063d367"
+    },
+    {
+      "path": "combinations/C09_协变的多尺度计算语言.md",
+      "bytes": 3801,
+      "sha256": "56b095e9ff6651a2ff6e7b786ba967a93ade9b292fcde872e2f83ab7aa073308"
+    },
+    {
+      "path": "combinations/C10_分歧驱动的概念诞生.md",
+      "bytes": 3698,
+      "sha256": "2582bb02ced53c9fe22526378bae767fc82450184526d7dddd312605dc3ff063"
+    },
+    {
+      "path": "combinations/C11_问题空间的跨域迁移.md",
+      "bytes": 3648,
+      "sha256": "dcb9689d2cf581990eed2861db15cb4d99834ab4cc70f65c7e743399d3207a17"
+    },
+    {
+      "path": "combinations/C12_可移植的科学小世界.md",
+      "bytes": 3386,
+      "sha256": "965431155591822e3f123fc9f1a1af1c0992304150c063803911b6b01971b38d"
+    },
+    {
+      "path": "combinations/C13_跨模型学习协议网络.md",
+      "bytes": 3560,
+      "sha256": "c42f778f84da9c91ce5a70cbb3b029e920fdb6ded6dfe79538d6b269ae5d9a97"
+    },
+    {
+      "path": "combinations/C14_认知结构的事务性跃迁.md",
+      "bytes": 3615,
+      "sha256": "87d98c2e51155e12b41a66670bcf0e661e9ca329f761044e9c7c92ff0b125b5d"
+    },
+    {
+      "path": "combinations/C15_多节律的轨迹推理.md",
+      "bytes": 3420,
+      "sha256": "cd8645a1be3d73ff6e081e116f44c9d47b126fa9c1275441311355b45d38afaf"
+    },
+    {
+      "path": "combinations/C16_共同梦境与问题生态.md",
+      "bytes": 3422,
+      "sha256": "10f6adc9a7388a4255934bd902d1c2556092dfb160f8db7468d989ed341da5e5"
+    },
+    {
+      "path": "combinations/C17_以未知边界驱动通信.md",
+      "bytes": 3405,
+      "sha256": "7313188db168b99eb9fc53939696c8d7bd8f82ddeeb433c91fcc12613ed7b4f0"
+    },
+    {
+      "path": "combinations/C18_不重复计信的能力联盟.md",
+      "bytes": 3473,
+      "sha256": "aad8f7c7eb31fa0b3914351fb3c08a5231916cef46e3175207e66f80dbf0c598"
+    },
+    {
+      "path": "combinations/C19_任务相对的世界观切换.md",
+      "bytes": 3553,
+      "sha256": "b1ff8052d7a8a88970a7fe06d917bd37afaa8c923f7293871ad2cb01ce7d9155"
+    },
+    {
+      "path": "combinations/C20_自举的语义编译生态.md",
+      "bytes": 3761,
+      "sha256": "6b70741e310a4ee4596b4b4cb9c8daafd25e7c2eb361ad5bc71184ac719b0b9e"
+    },
+    {
+      "path": "docs/00_研究宪章_本轮究竟追求什么.md",
+      "bytes": 3515,
+      "sha256": "af407f71e3d6bddf671d51f045359200df58b3f902a75182d12089cdfb561b7e"
+    },
+    {
+      "path": "docs/01_版本继承与唯一权威入口.md",
+      "bytes": 2270,
+      "sha256": "cc14aeb679eae5182655984ce3aadaa796abece66d8e8de910246426471d44b0"
+    },
+    {
+      "path": "docs/02_第一性原理与创新生成法.md",
+      "bytes": 3095,
+      "sha256": "ada25f46f16ff8b49f4cec9ef63177e0e5bca54152944627f27959b9ca53acbe"
+    },
+    {
+      "path": "docs/03_三层创新版图与研究主线.md",
+      "bytes": 2560,
+      "sha256": "0295176899b36a9a91dade28cec5963f72ae337f18e6d18dd60c6a0b193871b3"
+    },
+    {
+      "path": "docs/04_统一元状态与对象流.md",
+      "bytes": 2731,
+      "sha256": "61192f75dfef4d43ce9acb3327f3f72cb54c984fe6fc4a47319924b0d4a2a521"
+    },
+    {
+      "path": "docs/05_数据契约与协议定义.md",
+      "bytes": 2981,
+      "sha256": "78917001f424cc1669faca7ffe366bb9371b03a290ce825555951f1d7c649781"
+    },
+    {
+      "path": "docs/06_完整目标仓库与源码责任.md",
+      "bytes": 3176,
+      "sha256": "bcbbfe7331f935b8de54742babf9402d47ba7f3e9b459efbfec0ddb807f8a2d3"
+    },
+    {
+      "path": "docs/07_编译器与可执行流水线.md",
+      "bytes": 2437,
+      "sha256": "dc0235165f29e31b2be00c249bd85a4f7ed65967b3da82a749f14b924f3aee91"
+    },
+    {
+      "path": "docs/08_世界工厂与数据隔离.md",
+      "bytes": 3033,
+      "sha256": "3b721f0d54d453cac7b7cdd5d5b807796381eace9907ef14e01950a8ae281938"
+    },
+    {
+      "path": "docs/09_完整学习目标与梯度账本.md",
+      "bytes": 3702,
+      "sha256": "bb4854628b55e2ad34410525b10b0037a59dad3bfe02a01400920f93f6f2cc47"
+    },
+    {
+      "path": "docs/10_模型后端与运行禁区.md",
+      "bytes": 2449,
+      "sha256": "88afec10c4df474f237ac3872047aa82e3ab3229cf5686be51491049549d3251"
+    },
+    {
+      "path": "docs/11_运行时_事务_恢复与有界自主.md",
+      "bytes": 2450,
+      "sha256": "8f7a6045774ae3757ea9f0ee54d335f0477a8fe0a4fe3b3f5044b7c13fb6a6db"
+    },
+    {
+      "path": "docs/12_Dot工具编排与权限矩阵.md",
+      "bytes": 2580,
+      "sha256": "b010e8f73e21d5222e1aa9f0d817be0113dc583c5badc9b3ab9cc0010644198e"
+    },
+    {
+      "path": "docs/13_一次性执行阶段与交付边界.md",
+      "bytes": 2269,
+      "sha256": "e415a81e0cba0f8df42e49ceef1c9ba0a90f548d52cc28a4c4aa285e6b6bbe24"
+    },
+    {
+      "path": "docs/14_理论自洽与新颖性分层.md",
+      "bytes": 2329,
+      "sha256": "a63e2e08a0669c78ca356d871e4fabf3e96dcf09870d079c5be4fc367489d3cd"
+    },
+    {
+      "path": "docs/15_未来研究入口_本轮锁定.md",
+      "bytes": 1814,
+      "sha256": "9a192c17ac8209b4a1435e3ce65a742d6274a7b8e8245c3c16b2aa3806314176"
+    },
+    {
+      "path": "docs/16_媒体系统与展示叙事.md",
+      "bytes": 2357,
+      "sha256": "f4ab6c0fa327380e77cb1a84b9551f3dedd9be7cd865582bb8dda24aeb27c2d3"
+    },
+    {
+      "path": "docs/17_完成标准与证据账本.md",
+      "bytes": 1980,
+      "sha256": "80c6d24c731b534c6d960dfd82b604fe2339258e62f63989b40d3bf4751da4b7"
+    },
+    {
+      "path": "docs/18_原始来源与主张边界.md",
+      "bytes": 5805,
+      "sha256": "f012976b78d3eb240535495e7a835ed1ea343023c50a07ff9da164236c7101e1"
+    },
+    {
+      "path": "docs/19_任务阶段与提示词索引.md",
+      "bytes": 17342,
+      "sha256": "72993ef6ed66772641b45c52c45cb9f9eae22cc614f303a59ec3f82b7609e629"
+    },
+    {
+      "path": "docs/20_机器契约的语义补充.md",
+      "bytes": 1415,
+      "sha256": "df59e57993fb8d0e2b93f8ac42ead87faa556f5dfe09e70119258a3567222002"
+    },
+    {
+      "path": "formal/F01_协变接口的作用保持.md",
+      "bytes": 1361,
+      "sha256": "b5d16020ee2c9f52bab3eb51fb946e7c76d0ac2cd182d3051c010018180af24c"
+    },
+    {
+      "path": "formal/F02_不可拼合与新增变量.md",
+      "bytes": 1253,
+      "sha256": "af232a24b57b9fc306756023c7bcc9fbf90588789f335c4067e0e2e7215827ef"
+    },
+    {
+      "path": "formal/F03_概念创造与表达能力见证.md",
+      "bytes": 1399,
+      "sha256": "4dba57eacdeffe5ee35d1f99045b2d2f4a2c848f6cc41ed4c4b2ed8443261a2b"
+    },
+    {
+      "path": "formal/F04_问题演算与答案关系.md",
+      "bytes": 1195,
+      "sha256": "db16cf0c55e124b0f51eeff386a93ac6c6b66415218c2eb1c7aad5265d614be2"
+    },
+    {
+      "path": "formal/F05_行为切空间与可塑性.md",
+      "bytes": 1296,
+      "sha256": "a1f1b0240f0efa81f81e10b83251989039120296dbb3d322a5a8c8ef2c572c21"
+    },
+    {
+      "path": "formal/F06_轨迹语义与分岔.md",
+      "bytes": 1206,
+      "sha256": "496a1dc953b3ff96bac2954acadd201b967f2c2c6a3608c5048f1228c59d5646"
+    },
+    {
+      "path": "formal/F07_任务商空间与尺度闭合.md",
+      "bytes": 1294,
+      "sha256": "5a108c9f6b9f0055937bd298209bdee424d973f82ff6620bda634963da56bde2"
+    },
+    {
+      "path": "formal/F08_世界与证据的依赖语义.md",
+      "bytes": 1202,
+      "sha256": "4cc013e08bdb5457c1be5af67d1179411ed5289d0ce650b22e2757dd5b0bfdfb"
+    },
+    {
+      "path": "horizons/X01_无固定模型个体的认知连续体.md",
+      "bytes": 2826,
+      "sha256": "b2e5d9d931e3048373b0df0bbefbbfe95d3103bed28a2e99bb69c836cf1473d6"
+    },
+    {
+      "path": "horizons/X02_没有全局世界观的集体知识.md",
+      "bytes": 2804,
+      "sha256": "ead6cf961ec92c0b6c6c695bc674fd8fb562ee835d6717f44207b11639cb8beb"
+    },
+    {
+      "path": "horizons/X03_问题先于答案的研究引擎.md",
+      "bytes": 2733,
+      "sha256": "61a54ed41618c23a341104a2e54d8899f590fc64b47f422db3d2d202cb4cf528"
+    },
+    {
+      "path": "horizons/X04_可塑性互联网.md",
+      "bytes": 2737,
+      "sha256": "404eba1fd687da361904eb83aec113b25efdf0c3dcfacc050ca43cd69cab89d8"
+    },
+    {
+      "path": "horizons/X05_会进化语言的认知生态.md",
+      "bytes": 2697,
+      "sha256": "d7b1ced5210bbff5e2781890a5225e1fd25b2b5bb788ada3cf5ff5cf90d359bd"
+    },
+    {
+      "path": "horizons/X06_跨尺度的思想物质.md",
+      "bytes": 2751,
+      "sha256": "6c158d12264721a474b6572ed317119baec29f49d7ff5ab1d01d9a2794ebd7c9"
+    },
+    {
+      "path": "horizons/X07_轨迹即思想而非终点即思想.md",
+      "bytes": 2763,
+      "sha256": "9a7119fe276cdd94f2f645417580be8c34bdcb5e549349ef4fbd9e7b44f1b218"
+    },
+    {
+      "path": "horizons/X08_能够传递的未完成证明与发现.md",
+      "bytes": 2735,
+      "sha256": "d16e2ab233175abe5c44d166b27bd33c73095e8ca58067d5c765383bd41e371a"
+    },
+    {
+      "path": "horizons/X09_共同梦境产生新的经验空间.md",
+      "bytes": 2714,
+      "sha256": "15f1cc4e7cb4e2d814249af2f22116b81dabfe849e6ce90bf2dbddc18478b5e2"
+    },
+    {
+      "path": "horizons/X10_认知公共品与临时能力联盟.md",
+      "bytes": 2730,
+      "sha256": "8252b578f45f229a77c74fc463b7b839114cca5ef8b3c5f09903f3f231da04e7"
+    },
+    {
+      "path": "horizons/X11_可追溯的概念出生与死亡.md",
+      "bytes": 2751,
+      "sha256": "9e279d5fa58a748610d8be982efe0c3126102aee51951f7c05c3f819f8685f9a"
+    },
+    {
+      "path": "horizons/X12_语义编译而非模型选型.md",
+      "bytes": 2842,
+      "sha256": "c072fd7c1aa2b756edc7a6a735743a7e168c2d954681088f6c1f1fc753f460ef"
+    },
+    {
+      "path": "hypotheses/H25_规范协变的认知接口.md",
+      "bytes": 7466,
+      "sha256": "f43448eff2aaab168c6a9329e6322b155c76e0305d8810ab1048f884b98d828b"
+    },
+    {
+      "path": "hypotheses/H26_不可全局拼合的语义层.md",
+      "bytes": 7539,
+      "sha256": "27ea76657de842d694e1254fefcabeeeed540df60a148881aedf229068dea984"
+    },
+    {
+      "path": "hypotheses/H27_交互中诞生的新概念.md",
+      "bytes": 7587,
+      "sha256": "c43a4ca653f7a457f2ca55769b1d1fccf98afc1fa6a395aa5218021acd7724c1"
+    },
+    {
+      "path": "hypotheses/H28_语义结构的分岔与相变.md",
+      "bytes": 7411,
+      "sha256": "49b4b41b48984bf6231af04ccac1863cabf238fc4d3cd31379713710de413109"
+    },
+    {
+      "path": "hypotheses/H29_问题生成的潜演算.md",
+      "bytes": 7262,
+      "sha256": "4ee2e19a82abb5fb2b11d0bdbe77890529060b10ed831ecdad2ff587d015ccf2"
+    },
+    {
+      "path": "hypotheses/H30_类比态射编译器.md",
+      "bytes": 6996,
+      "sha256": "f011c333853bc7f24188c3be2aedc9fe0215f4e272455ad7c91ea90009128a2f"
+    },
+    {
+      "path": "hypotheses/H31_因果机制移植.md",
+      "bytes": 7088,
+      "sha256": "aece0fa90e19c6410afd48118cc039f6970c817f79a893f4dbf2423541e76a09"
+    },
+    {
+      "path": "hypotheses/H32_视角与目标条件代数.md",
+      "bytes": 7146,
+      "sha256": "19be0b1218742c9f450edd09c3f1f7ca3a441501d34f01eff034e856ef352df2"
+    },
+    {
+      "path": "hypotheses/H33_非梯度的互构认知动力学.md",
+      "bytes": 7156,
+      "sha256": "1df9cc5951176351bc81695738d6c7bf40db2b12625daaf3fd96c15357e4dd53"
+    },
+    {
+      "path": "hypotheses/H34_双边边界条件推理.md",
+      "bytes": 7327,
+      "sha256": "ece11336236f49b23cfea47fe2645c38b2839fd678fcb602580914ab29a58f61"
+    },
+    {
+      "path": "hypotheses/H35_跨尺度语义重整化.md",
+      "bytes": 7138,
+      "sha256": "c2ff3601efd3fa54d6090964126cf2ca66b54bdab409a7b424e5f83f7ce380e3"
+    },
+    {
+      "path": "hypotheses/H36_以分歧生产结构的认知博弈.md",
+      "bytes": 7143,
+      "sha256": "504339ec1fcca36734b7cc860a9fd83520765f45f33cb3d1910e8021899fee88"
+    },
+    {
+      "path": "hypotheses/H37_跨模型学习方向运输.md",
+      "bytes": 7363,
+      "sha256": "b5e7e41c50fdac72d0b13176c143e5e5b411b39b90dfcabc30d6976080dbfce3"
+    },
+    {
+      "path": "hypotheses/H38_可传递的可塑性规则.md",
+      "bytes": 7271,
+      "sha256": "99493baf4c6ceb253bd820650d1bda0036a295c4f948d9c5fff082f3f75f438b"
+    },
+    {
+      "path": "hypotheses/H39_可回滚的跨模型认知事务.md",
+      "bytes": 7212,
+      "sha256": "2af71da5d484031a337e82571c9b02ceaa9b0c8f0da93e11c40015d029403981"
+    },
+    {
+      "path": "hypotheses/H40_自举的潜指令集.md",
+      "bytes": 7198,
+      "sha256": "a18b997a72ebc7e582520144a3871e4698ddda50a1a1d4ffb80d14f91242b32a"
+    },
+    {
+      "path": "hypotheses/H41_互补能力的联盟契约.md",
+      "bytes": 7266,
+      "sha256": "e2a9088b513b4ec81f9bdb1c8375720169790cf33d1601860e89f752e55160e9"
+    },
+    {
+      "path": "hypotheses/H42_模型与任务的共演化生态.md",
+      "bytes": 7223,
+      "sha256": "c42cd7c238b1f5bf13bbe00a840b50cf7bc13e4b89f94838d8e945c04f23cba3"
+    },
+    {
+      "path": "hypotheses/H43_可交换的世界动力学核.md",
+      "bytes": 7023,
+      "sha256": "565cb1023da1f8ce699dba7021116f6b34a222581db7c041dff0c3434720242d"
+    },
+    {
+      "path": "hypotheses/H44_共同构造的反事实梦境.md",
+      "bytes": 7379,
+      "sha256": "7082e75936034483271d296d82bacbd19f5373af2b5e7de1fdc4124b833e6f27"
+    },
+    {
+      "path": "hypotheses/H45_主动可识别性协议.md",
+      "bytes": 6959,
+      "sha256": "7fcc85a0e5d91c5935ed49a57d2829b84725aeaba89a2d6303fb59bdbbeb7d5a"
+    },
+    {
+      "path": "hypotheses/H46_不可行域与负知识胶囊.md",
+      "bytes": 7192,
+      "sha256": "7f17900b8a681d115ebd1b301b95362a544b2aa0006cebbb4b29988f1ebd936c"
+    },
+    {
+      "path": "hypotheses/H47_任务相对的语义商空间.md",
+      "bytes": 7195,
+      "sha256": "f68817831496603e792307306c3cc74f6fa5626a91128e7a52924a76ff279e05"
+    },
+    {
+      "path": "hypotheses/H48_相关证据的认知谱系代数.md",
+      "bytes": 7372,
+      "sha256": "d4f43ef9274e6e27ff333fe48eb89ab103513ee44cfab9327df460ae11664f15"
+    },
+    {
+      "path": "inherited_v2/DELIVERY_MANIFEST.json",
+      "bytes": 33020,
+      "sha256": "450e9614314ca43a3b6dfbb4fc966bd2881141401b30060d84bd891e81690fa7"
+    },
+    {
+      "path": "inherited_v2/DELIVERY_NOTES.md",
+      "bytes": 871,
+      "sha256": "c9a2a03f2227304c1cc72e7db45967e04e66b1232a5f9073d2537ac84cd97a3d"
+    },
+    {
+      "path": "inherited_v2/FILE_INDEX.md",
+      "bytes": 8078,
+      "sha256": "327af2e7469813f67ff9d16f57478499b9937756cbf9f1df249f6faa850ca931"
+    },
+    {
+      "path": "inherited_v2/MASTER_PLAN.md",
+      "bytes": 223133,
+      "sha256": "4d3ebae4609ffc63ed29df0c3da4431a6cb414274b648fa3f15d56072c562ff0"
+    },
+    {
+      "path": "inherited_v2/START_HERE.md",
+      "bytes": 2537,
+      "sha256": "2f16c5e2b4e3c9413f085f5551c5a6648c4524faf2137164921eb934525a28e5"
+    },
+    {
+      "path": "inherited_v2/annex/01_研究与软件状态模板.md",
+      "bytes": 1467,
+      "sha256": "9c33157cd3fa13645821fc12889c5620f8d2c8e71ebaad42c3d9c1167aac35eb"
+    },
+    {
+      "path": "inherited_v2/annex/02_接口签名与错误约定.md",
+      "bytes": 2340,
+      "sha256": "57f943eaadc1de86e9a6a67bb645ebf3d3b4d9759e7ed8ca9109d820aaed64e0"
+    },
+    {
+      "path": "inherited_v2/docs/00_项目重定义与本轮交付.md",
+      "bytes": 3305,
+      "sha256": "1fd5bcd162a419e2e67bef1216c8f33176f9f1ec46080464843314a4db231245"
+    },
+    {
+      "path": "inherited_v2/docs/01_来源继承与逐项改写.md",
+      "bytes": 3155,
+      "sha256": "0d091326675dee45b79ab9a89901445e49b0d772de5bdc07ca574667643ab208"
+    },
+    {
+      "path": "inherited_v2/docs/02_第一性原则与跃迁空间.md",
+      "bytes": 3281,
+      "sha256": "5b9ee196b760f0c5b7fa7abbf4407624f677a127ed8e5c388b7e5fdcd78c01e1"
+    },
+    {
+      "path": "inherited_v2/docs/03_研究总图与创新资源分配.md",
+      "bytes": 2790,
+      "sha256": "850bbd2fa644a79a408fef30841230466d9ecd75cfc36da0f72319934e499984"
+    },
+    {
+      "path": "inherited_v2/docs/04_统一数学对象与语义分层.md",
+      "bytes": 2948,
+      "sha256": "869c30ec24cadffd6f7577148470f6120f3a7c60f382b364fea9f6d67e4b42ce"
+    },
+    {
+      "path": "inherited_v2/docs/05_前作地图与新意表达.md",
+      "bytes": 2528,
+      "sha256": "52ec852b4c9de0df164b29530a220dbee4d0a22c4c92352f642d09604315ff2d"
+    },
+    {
+      "path": "inherited_v2/docs/06_总体软件架构与实现范围.md",
+      "bytes": 3704,
+      "sha256": "98e97df0c57ac2e3e762df8da945d987b2e4b5929acf1232f6688aec50b37714"
+    },
+    {
+      "path": "inherited_v2/docs/07_数据世界与监督信号工厂.md",
+      "bytes": 3226,
+      "sha256": "2b692b5a68e27aca5fa64f485acae0d79591c4037f3dff100c0c6905b8106a4f"
+    },
+    {
+      "path": "inherited_v2/docs/08_全训练路线与优化目标.md",
+      "bytes": 3988,
+      "sha256": "a54ce70abe043022eeac929243673f4b652f8bd29bcfb40bcd24181f330741a0"
+    },
+    {
+      "path": "inherited_v2/docs/09_自动求导与训练循环细则.md",
+      "bytes": 3049,
+      "sha256": "35abf2c707633296830313f78d9b741ceec453e88a101324e9fe0895a1b7c52d"
+    },
+    {
+      "path": "inherited_v2/docs/10_模型接口与状态注入.md",
+      "bytes": 2798,
+      "sha256": "001cdb4dfbae2183c3521a7e66dd202a0ed46517a62bc14771b48fee19681075"
+    },
+    {
+      "path": "inherited_v2/docs/11_消息协议与可执行语义边界.md",
+      "bytes": 2340,
+      "sha256": "683aa97f604665d7939c599fb97801da12158966cd76015b0aa98f882561942d"
+    },
+    {
+      "path": "inherited_v2/docs/12_Pipeline与命令行全流程.md",
+      "bytes": 2618,
+      "sha256": "855e4bd18979b22a773fec02b6c36c84a6a49c40b4b3ba93f6d780b1cbe868b6"
+    },
+    {
+      "path": "inherited_v2/docs/13_Dot总控章程与授权边界.md",
+      "bytes": 3367,
+      "sha256": "7783b4145cb6a0a428194ea0b89fc60b6e09605f2301d37aa8d088aa36a873e7"
+    },
+    {
+      "path": "inherited_v2/docs/14_浏览器与软件能力使用计划.md",
+      "bytes": 2855,
+      "sha256": "5466c708fb3c49c32ce3a54dd9e4cb8754142cef527afdb7d6edc7936ac79ae5"
+    },
+    {
+      "path": "inherited_v2/docs/15_一次性工作流与任务协作.md",
+      "bytes": 2385,
+      "sha256": "47a64b3f5f7250075350e215df839b2a12ba235aea98bf15fd7b282738ab51d6"
+    },
+    {
+      "path": "inherited_v2/docs/16_代码检查不再等于研究立项.md",
+      "bytes": 2562,
+      "sha256": "fe90f555c65fe79bf1486ec0913a5f08ce35535b7c523ca069e362912651f8a6"
+    },
+    {
+      "path": "inherited_v2/docs/17_未来实验矩阵与开放问题.md",
+      "bytes": 2040,
+      "sha256": "f8d372768b62f7a23e7b690cf6d15ad4bdb5b823a2960cbeeea3436459f1610e"
+    },
+    {
+      "path": "inherited_v2/docs/18_论文与开源叙事.md",
+      "bytes": 2410,
+      "sha256": "14e65d7ea8894dbe4acaf58df634cf7462adbfd0c3e0d1491645fb9e412833a5"
+    },
+    {
+      "path": "inherited_v2/docs/19_资源依赖与已有环境保护.md",
+      "bytes": 1902,
+      "sha256": "c0a561b33ac9a7ec31272b0fa3143e569cb509aa5648c2f052e26f10dc0672b3"
+    },
+    {
+      "path": "inherited_v2/docs/20_失败恢复与不缩减创新的决策规则.md",
+      "bytes": 2016,
+      "sha256": "df89f64e0f51014f165bd1dd49deb8467763b1eed6305de633ecf9bdb2d1472e"
+    },
+    {
+      "path": "inherited_v2/docs/21_交付清单与用户接手方式.md",
+      "bytes": 1824,
+      "sha256": "af271bdde6eb4f6f41be07e018af6a2a733a1cd85a8cd39bb14145f36c25f2de"
+    },
+    {
+      "path": "inherited_v2/docs/22_来源索引与引用边界.md",
+      "bytes": 5086,
+      "sha256": "c0f1492f6535cac3fc233b106000942068a4987a62c4291bef380f347387ec14"
+    },
+    {
+      "path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+      "bytes": 8324,
+      "sha256": "551bf46d100a5f3371ab5ea490bda50272f72320aba06e6a8d775b135c3bd01c"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H01_可组合潜算子.md",
+      "bytes": 4163,
+      "sha256": "1014f300a8f64564ff63c3b56d2c81e0e563b6f1115322907e7e34df73a690f5"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H02_反事实响应包.md",
+      "bytes": 3807,
+      "sha256": "eb88d5f3649cdbf144c8dad00bd3c14bb658798f0d59f3d435e20f2075ec5c92"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H03_多假设信念包.md",
+      "bytes": 3569,
+      "sha256": "77092a5f60e2d55e02eecc8568910fba2b2e4a40d17912cf3c9b42d5c3ccd873"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H04_多主体共享约束场.md",
+      "bytes": 3568,
+      "sha256": "ec136c0161e7a01a2a74223f742c262562d80b28a313b226e3963001ebb05b15"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H05_推理续接胶囊.md",
+      "bytes": 3581,
+      "sha256": "0c9c4ed205c979cfc8445914860f6e32bd610d744bf77290a083a8664ee6fa7b"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H06_多图册语义对齐.md",
+      "bytes": 3469,
+      "sha256": "8747ca9dfb2c70a988754e2bce1b365141568e683e910bfcad4e555bcba5a15b"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H07_类型化潜程序.md",
+      "bytes": 2583,
+      "sha256": "c68a0ec1daff187f3d52e1f1b930e8827f0c9f9a49054bfeda3703ae8454ace9"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H08_关系结构通信.md",
+      "bytes": 2266,
+      "sha256": "ef12a70dd637a042f699261eaa40682024d0d4335cb16f1f1a01edacacb1ede4"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H09_干预代数通信.md",
+      "bytes": 2303,
+      "sha256": "60f0547714f57c49e443ae52c30b7a5407d219ecebad35692a2974de2e4f9e00"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H10_高阶协同超边.md",
+      "bytes": 2299,
+      "sha256": "8220e68cbc21db019cf4750d244563a4713463238b8bfb94c684a0b206d718c7"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H11_渐进潜编码.md",
+      "bytes": 2221,
+      "sha256": "71bd2bc395b7e72ba5517ec3eac400645e650392d2205bd7d50c4ebdf69d8c13"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H12_多查询持久胶囊.md",
+      "bytes": 2218,
+      "sha256": "b881907d6be017f8c4711a69efea9a5b3b2b16e221801b43590bb179e0fc78cb"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H13_可分叉潜计算.md",
+      "bytes": 2205,
+      "sha256": "1518f46d101117de804719911f869bd90f167e245eb0aa23a64187dfec38d09f"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H14_潜技能语法.md",
+      "bytes": 2167,
+      "sha256": "411813a2d24e5d0aa2ea1bc42b81ab8e390fda5a6897634d0602e4c546928616"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H15_接收者无关协议学习.md",
+      "bytes": 2233,
+      "sha256": "98fbe006c01455439c5096a1ec1be483ee2b1fb740d0557ce879c8466c47a64e"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md",
+      "bytes": 2282,
+      "sha256": "3ff58e8eb6e18a0b79e11fa5556aaa085c2c6e418ae8e4498dea89bbf090ba08"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H17_跨模态坐标接地.md",
+      "bytes": 2173,
+      "sha256": "ac97cc0acbcb2118f577a5ea3f93275c1f1d9267bc9a2477b0899fade0f68c22"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H18_通信诱导计算结构.md",
+      "bytes": 2221,
+      "sha256": "655b08ccc9c08f65227221a91a718a850ce55c7dcadf763f54c387119c150130"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H19_消息到技能巩固.md",
+      "bytes": 2170,
+      "sha256": "ef100adc989317abc5c5199521e7344306c30d04ad25a3251b82941586578cc9"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H20_异步认知时钟.md",
+      "bytes": 2178,
+      "sha256": "eedc52f3fad3a71f3d77f7aeadb8245263eda9158545fc517e7dd56a79fca4b4"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H21_反事实分支组合搜索.md",
+      "bytes": 2117,
+      "sha256": "db0c18392360f7406b482bf7dee1d20cbad1938b2e9a18ee73345ea530de2cbd"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H22_动态模型边界.md",
+      "bytes": 2153,
+      "sha256": "97b5d4be870c47c81dfff25eda44a2f5d2724fb69a8507beeb61aceee55ebc86"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H23_语义残差纠错.md",
+      "bytes": 2154,
+      "sha256": "72f70c82068b9074f81b050d270d9543407616282a7b6e5e44e69b8752f7684a"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H24_有作用域的潜计算能力.md",
+      "bytes": 2292,
+      "sha256": "da04696eb6138d3a9e5e56a1d32f47dc90790370a02bc760748605efcfcbd655"
+    },
+    {
+      "path": "inherited_v2/media/00_媒体总导演方案.md",
+      "bytes": 1914,
+      "sha256": "45f5cc59218ea110bf95a25ba58460cae1c3971dbfcd54214bfea834536d722f"
+    },
+    {
+      "path": "inherited_v2/media/01_研究PPT逐页稿.md",
+      "bytes": 8196,
+      "sha256": "5198621490faf89408f0ebf4572afe0c010953264975b0aa97d2bf71dc1f3c10"
+    },
+    {
+      "path": "inherited_v2/media/02_90秒机制动画分镜.md",
+      "bytes": 2648,
+      "sha256": "561823a5f0c8aa9782048c40827e92dc7ebfc1090a5cb53f0dd9e37f09d9ca08"
+    },
+    {
+      "path": "inherited_v2/media/03_完整旁白与长视频结构.md",
+      "bytes": 5244,
+      "sha256": "1e3b71125fc3e645e2a7ccf378120896f4a46f0d16bcd26fa60c2da9b980f2a5"
+    },
+    {
+      "path": "inherited_v2/media/04_机制图与海报源稿.md",
+      "bytes": 1466,
+      "sha256": "98a4eb4adbaf28eee767d9df5da5e8d01901c848d5bf16dff01a9569e1a51a71"
+    },
+    {
+      "path": "inherited_v2/prompts/P00_一次性总控执行提示词.md",
+      "bytes": 5239,
+      "sha256": "1aaec9a46c277dae97e6b1b95e9fa5f6ac76edb5e27031d306699caf78546382"
+    },
+    {
+      "path": "inherited_v2/prompts/P01_研究总设计师.md",
+      "bytes": 1242,
+      "sha256": "d2b4bb0732e7fc89e48d5d46301b17ec61d3ba71ddf58baa3638bcd1c5e32112"
+    },
+    {
+      "path": "inherited_v2/prompts/P02_机制形式化.md",
+      "bytes": 1291,
+      "sha256": "9dc803048429a90c34fd7d89d40a627a3f7af91665abd87a2bbffad44a8d1b99"
+    },
+    {
+      "path": "inherited_v2/prompts/P03_完整模块实现.md",
+      "bytes": 1285,
+      "sha256": "4a03a69fd5b737b1c2a8f460c927434f76a8039196fb0854f8e00cd4ce572a18"
+    },
+    {
+      "path": "inherited_v2/prompts/P04_模型后端源码.md",
+      "bytes": 1267,
+      "sha256": "19365fa030a8fccdd6f35c804358a2ede64ba26d04aacbb65013d0efa8ff02d9"
+    },
+    {
+      "path": "inherited_v2/prompts/P05_训练系统.md",
+      "bytes": 1293,
+      "sha256": "6c6de70360e139cc6affcb84b03b0924664b6d23c11a44683dff2a83332c0cce"
+    },
+    {
+      "path": "inherited_v2/prompts/P06_数据与反事实工厂.md",
+      "bytes": 1183,
+      "sha256": "9b58621020a2ba93d353afb14f3026b78e30c8da4ee4792b0466b9421173b38e"
+    },
+    {
+      "path": "inherited_v2/prompts/P07_Pipeline与运行时.md",
+      "bytes": 1221,
+      "sha256": "955224a6d3b7afe58d4064abcdba27f1fde7fca5b0268683f6e2ecec4a79a162"
+    },
+    {
+      "path": "inherited_v2/prompts/P08_创新与相邻机制审查.md",
+      "bytes": 1186,
+      "sha256": "be3cb17c0df798209eab680689159297cc1e9fc35855b9149680fa41295e4bd5"
+    },
+    {
+      "path": "inherited_v2/prompts/P09_数学与软件复核.md",
+      "bytes": 1181,
+      "sha256": "066e2c0ada594074b9daa8904e85183feac36a1eb9f7bc7b39a99e0d3b55cc9b"
+    },
+    {
+      "path": "inherited_v2/prompts/P10_权限与禁跑审查.md",
+      "bytes": 1153,
+      "sha256": "fed3be5eb4d498bb98922bf0300632a50273827b159b797c85429f878ab5e860"
+    },
+    {
+      "path": "inherited_v2/prompts/P11_论文与研究文档.md",
+      "bytes": 1154,
+      "sha256": "70e34f5786c3a55a26099ed3d5e9b04047c741b32ed8770ed4f3676916475d19"
+    },
+    {
+      "path": "inherited_v2/prompts/P12_PPT制作.md",
+      "bytes": 1207,
+      "sha256": "a59d185707ac62fd8576805e0ad89029394d4275567076a05f7bc34686be06be"
+    },
+    {
+      "path": "inherited_v2/prompts/P13_动画与视频制作.md",
+      "bytes": 1274,
+      "sha256": "ba2a2a29e3a53845f3111b307d7efc678e514c8b655a626256513ee1df901f24"
+    },
+    {
+      "path": "inherited_v2/prompts/P14_旁白音频与字幕.md",
+      "bytes": 1171,
+      "sha256": "80fd5d0ff5e5a809925331e0fc840dc2f4b59642f0cc9712bd5548c26ee05db9"
+    },
+    {
+      "path": "inherited_v2/prompts/P15_上下文恢复.md",
+      "bytes": 1115,
+      "sha256": "88d8b964311d771a418bd5297e6a273ce64fb441c2e112bd1fabc3003507375f"
+    },
+    {
+      "path": "inherited_v2/prompts/P16_最终整合与交付.md",
+      "bytes": 1235,
+      "sha256": "51e51eb980ed86168c3664f6df5c5d5011dbb5017eb15c7afaef7d93f9bd4ead"
+    },
+    {
+      "path": "inherited_v2/prompts/P17_模型侧提示模板.md",
+      "bytes": 1469,
+      "sha256": "65b88122a73ef095c86d978b73640191bb53a06ff822e2e37ede2a1abc914318"
+    },
+    {
+      "path": "inherited_v2/provenance/README.md",
+      "bytes": 238,
+      "sha256": "f179020aa4ea91734dd83de6c1febee7389fc74fbc4feca0f9ef9da68d8a3677"
+    },
+    {
+      "path": "inherited_v2/provenance/input_inventory.json",
+      "bytes": 714,
+      "sha256": "f63f05270919abd63c6de8b9f6c6e083bee74e7150404d6b38cb9b5d2b7a964f"
+    },
+    {
+      "path": "inherited_v2/provenance/latent_comm_dot_final_20261023.zip",
+      "bytes": 737816,
+      "sha256": "c61ed6950d8645d765bf9b9bcdeb2c381a81c884a11e865ecafac43e8a2ebc72"
+    },
+    {
+      "path": "inherited_v2/provenance/latent_comm_project_plan_20261023.zip",
+      "bytes": 189636,
+      "sha256": "f64f52ebfe56b86ac7ebb496718cea908124177e123ee8ee0c00feb158639c9a"
+    },
+    {
+      "path": "inherited_v2/provenance/latent_communication_research_pack_20261023.zip",
+      "bytes": 88325,
+      "sha256": "4e8f0dccab992bfc1a0ebad0ae23c9708fe1ee8ef16697c7b0c7875eaf415b73"
+    },
+    {
+      "path": "inherited_v2/recipes/C01_组合路线.json",
+      "bytes": 525,
+      "sha256": "1acf99c91032b86b5a3edbbe5e00b0612efe2cddf4418af83fdf93f25fbce859"
+    },
+    {
+      "path": "inherited_v2/recipes/C02_组合路线.json",
+      "bytes": 513,
+      "sha256": "e874729bff075ed8bc9533b603c6f6a6492be4b6a6d0fbee5855e6abc62fbcaa"
+    },
+    {
+      "path": "inherited_v2/recipes/C03_组合路线.json",
+      "bytes": 515,
+      "sha256": "806b7d1c94c045c1744dd39e1e86c730a8c14d4258ad2d88afe7a39f14a3ec4b"
+    },
+    {
+      "path": "inherited_v2/recipes/C04_组合路线.json",
+      "bytes": 494,
+      "sha256": "213171f4ce93738c8dde87410b7e845b178ac795e2a3c10871620ec8667f0d36"
+    },
+    {
+      "path": "inherited_v2/recipes/C05_组合路线.json",
+      "bytes": 491,
+      "sha256": "618ca071a50ea593ae86d4c1c12d2374a17e7b79c58f23053921a07dd7f8a3ec"
+    },
+    {
+      "path": "inherited_v2/recipes/C06_组合路线.json",
+      "bytes": 533,
+      "sha256": "47fc09089665545da214431f83388a0025b42a249d786dd334b2063a40702ca0"
+    },
+    {
+      "path": "inherited_v2/recipes/C07_组合路线.json",
+      "bytes": 516,
+      "sha256": "1efa804c76fcc7d0653d0d79264fe0c0e0b1fecb8fa1af9e70ad5db4b91e53c4"
+    },
+    {
+      "path": "inherited_v2/recipes/C08_组合路线.json",
+      "bytes": 521,
+      "sha256": "cfb2a4a5217eeaf39ef8faed33a2627e487d0c7acb94e39bfd9a63aaab191f11"
+    },
+    {
+      "path": "inherited_v2/recipes/H01_operator_composition.json",
+      "bytes": 1539,
+      "sha256": "c7262ba0d421ffc054f79374aa72703206e155a104a78b743745f1d90f26c85b"
+    },
+    {
+      "path": "inherited_v2/recipes/H02_counterfactual_response.json",
+      "bytes": 1542,
+      "sha256": "e82a3ca63b3012414dfb89836c72766e8b30d7689ac3c8991226b39ac08ce748"
+    },
+    {
+      "path": "inherited_v2/recipes/H03_belief_mixture.json",
+      "bytes": 1562,
+      "sha256": "f94eb03ffff39ec6785ce6ec031115d7c4d69c41e547820a755f09f37a160c2f"
+    },
+    {
+      "path": "inherited_v2/recipes/H04_constraint_field.json",
+      "bytes": 1570,
+      "sha256": "825c71836e252a12be94c0a7289e72bc0ac74ad1455af9a740922bacd9121683"
+    },
+    {
+      "path": "inherited_v2/recipes/H05_continuation_transfer.json",
+      "bytes": 1570,
+      "sha256": "2315cc130dfa5e556c8e333a21a2abc8006d9a30ed927cf026442c2b2c9eef7e"
+    },
+    {
+      "path": "inherited_v2/recipes/H06_semantic_atlas.json",
+      "bytes": 1564,
+      "sha256": "9e4eb23a43fec711bf661a6ed9833395657ad2331e1884eac3e2bff7bb099b39"
+    },
+    {
+      "path": "inherited_v2/recipes/H07_typed_program.json",
+      "bytes": 1501,
+      "sha256": "ea9f87498004f355b90fee8c460bea1eb1f548b862fd2b66dd3c059355ee581c"
+    },
+    {
+      "path": "inherited_v2/recipes/H08_relational_exchange.json",
+      "bytes": 1494,
+      "sha256": "bc7e7931429fe4b639ac6a3a32c52d6906e06a415bdfdfd85f0989f5c484d29d"
+    },
+    {
+      "path": "inherited_v2/recipes/H09_intervention_algebra.json",
+      "bytes": 1524,
+      "sha256": "6540c55c4de6af05706fea60f378477410057df43eada3b07f364cf7b371d46f"
+    },
+    {
+      "path": "inherited_v2/recipes/H10_higher_order_synergy.json",
+      "bytes": 1506,
+      "sha256": "6648cb5007b056737a50ebf9ea5a227962ecbee64a7bdebff890477d4a6492d5"
+    },
+    {
+      "path": "inherited_v2/recipes/H11_progressive_code.json",
+      "bytes": 1494,
+      "sha256": "2a672c9aa87fb591f136e6b22cd3981b6efa1262ced25bc263881ce5fa87d773"
+    },
+    {
+      "path": "inherited_v2/recipes/H12_multiquery_capsule.json",
+      "bytes": 1473,
+      "sha256": "8a749c38226cfc85e3fcaed669588eed386137dd4c80f4742efdf8042c6ced53"
+    },
+    {
+      "path": "inherited_v2/recipes/H13_fork_merge.json",
+      "bytes": 1495,
+      "sha256": "4357f03b40323ba14b0c5e2ebbc8c17a3a2eb0c3162c65b01e5a987c8df7ec37"
+    },
+    {
+      "path": "inherited_v2/recipes/H14_skill_grammar.json",
+      "bytes": 1499,
+      "sha256": "f1c934b60158a90a1817afb66a3dba2469120b5349f255b5fc2f0e3f40c37323"
+    },
+    {
+      "path": "inherited_v2/recipes/H15_population_protocol.json",
+      "bytes": 1527,
+      "sha256": "c6aea2f8a9221880e3a711b409e1db93bebb1f50f0f27ce59e6775c55a6d7f4c"
+    },
+    {
+      "path": "inherited_v2/recipes/H16_dual_channel.json",
+      "bytes": 1485,
+      "sha256": "226219e590cf863fba2ce794735a3132cefacc5e0b993c88b24ceb5fa1d9b470"
+    },
+    {
+      "path": "inherited_v2/recipes/H17_grounded_exchange.json",
+      "bytes": 1507,
+      "sha256": "c2b8857b6b0bcb78f0972a43f743c8d50dd001b0a51edca013f45fef59d40211"
+    },
+    {
+      "path": "inherited_v2/recipes/H18_communication_topology.json",
+      "bytes": 1502,
+      "sha256": "ea475db4ad5c129e6ad83b6e40c97ce64d6b0fdf5530c22ef08b86c459167e71"
+    },
+    {
+      "path": "inherited_v2/recipes/H19_message_consolidation.json",
+      "bytes": 1532,
+      "sha256": "a2def358296dc33861521b3d81899c8b8c5c6ba1e82a7c2f39ae38812109649e"
+    },
+    {
+      "path": "inherited_v2/recipes/H20_asynchronous_clocks.json",
+      "bytes": 1491,
+      "sha256": "f022c1701cc9fa3c610045ab7669fb78181bc43f6d3dfce7bac44fdd15d5ff09"
+    },
+    {
+      "path": "inherited_v2/recipes/H21_counterfactual_portfolio.json",
+      "bytes": 1508,
+      "sha256": "e07c2cfbe5cb98bf4f075368be064297035ac9dd05f1681a5d55755544b1d75c"
+    },
+    {
+      "path": "inherited_v2/recipes/H22_elastic_boundaries.json",
+      "bytes": 1509,
+      "sha256": "de3722cb63eb687881ecb505e61cb2f6c5e57ef8031fb4de1a0bed1a7fe29bf0"
+    },
+    {
+      "path": "inherited_v2/recipes/H23_semantic_repair.json",
+      "bytes": 1500,
+      "sha256": "b7216a9ea88f71cee159d55f7522ddf7eeb02696f74c73fcba746098cc6af1d7"
+    },
+    {
+      "path": "inherited_v2/recipes/H24_scoped_capabilities.json",
+      "bytes": 1499,
+      "sha256": "bcfe56e7fff5f2fac600060fff7b1f11a0608aee2e6091fa1dcdb249a8566e10"
+    },
+    {
+      "path": "inherited_v2/reports/document_review.json",
+      "bytes": 455,
+      "sha256": "a32b2496e41dc18a41a599169b360b92cf719e083da6788470cebe0ab949d456"
+    },
+    {
+      "path": "inherited_v2/reports/plan_structure_check.json",
+      "bytes": 848,
+      "sha256": "5b5cbda0a32cc1056efea83d3a7e3a57e6ed38c27148fe163dbbc370940b1a4f"
+    },
+    {
+      "path": "inherited_v2/reports/plan_tool_tests.txt",
+      "bytes": 1285,
+      "sha256": "d9cf7734f562d8054e8cade3de804efcb98937a442dd6e78673fc01573e6da32"
+    },
+    {
+      "path": "inherited_v2/specs/combinations.json",
+      "bytes": 1607,
+      "sha256": "f450b8efc6ff281fc6cddd655bbc942de9f7e97dadc11920bd84263775aa5d40"
+    },
+    {
+      "path": "inherited_v2/specs/document_index.json",
+      "bytes": 14527,
+      "sha256": "55231c887d615a04bf58f3e6d876e2bdf3300b6ba77fd9160c19ae026a4f2542"
+    },
+    {
+      "path": "inherited_v2/specs/execution_policy.json",
+      "bytes": 1536,
+      "sha256": "f7a6375934a7f19a53100381bb5bd1c7622631197a30639f72f6737a474f0589"
+    },
+    {
+      "path": "inherited_v2/specs/hypotheses.json",
+      "bytes": 11369,
+      "sha256": "a150a46a38758b4bbc0737270a52602f88bf4a44050cbc0faae07a0250b1d975"
+    },
+    {
+      "path": "inherited_v2/specs/packet_metadata.example.json",
+      "bytes": 466,
+      "sha256": "09bb092c30f08d981ba11d4ae614c6a9e45a8486ea144e770523c870a0fc6e17"
+    },
+    {
+      "path": "inherited_v2/specs/packet_metadata.schema.json",
+      "bytes": 2268,
+      "sha256": "c476e3c61814b003f8a7c5842587c4d7ffef67814a2d7bc70ae341136ed3dcfd"
+    },
+    {
+      "path": "inherited_v2/specs/requirements.json",
+      "bytes": 1709,
+      "sha256": "09207c0b11cf9bf6ca01b10c7a67701cd15245cd2c4dc880517016bd2bbb39be"
+    },
+    {
+      "path": "inherited_v2/specs/sources.json",
+      "bytes": 5971,
+      "sha256": "8aa4413dbe1c9649d7434ec182829e03f6d088d019968e19074f28c313074017"
+    },
+    {
+      "path": "inherited_v2/specs/task_graph.json",
+      "bytes": 40963,
+      "sha256": "0edbc38ce83ff8992f9b0d1e8e5b5da69e937f04c45398520102707183a9dd49"
+    },
+    {
+      "path": "inherited_v2/tasks/T00_接管与能力盘点.md",
+      "bytes": 1703,
+      "sha256": "282365a589a75255f400e2a1932003fc53047d5b8b26833bcc8d76c245a25d73"
+    },
+    {
+      "path": "inherited_v2/tasks/T01_来源与近邻研究.md",
+      "bytes": 1613,
+      "sha256": "a37d963518e84945449646984f59a30a1396ccf24fee16c5295073a8a03a52f2"
+    },
+    {
+      "path": "inherited_v2/tasks/T02_研究形式化与总图.md",
+      "bytes": 1746,
+      "sha256": "caa274344d10044886ffc14ca1313227e4b0faaa23c031a36187c96a26b2fbe1"
+    },
+    {
+      "path": "inherited_v2/tasks/T03_公共类型与配置契约.md",
+      "bytes": 1644,
+      "sha256": "a4e18665976d008c59f72943c12e63c75a63279e629b1fb762d632c6acd2ed57"
+    },
+    {
+      "path": "inherited_v2/tasks/T04_数据世界与角色视图.md",
+      "bytes": 1614,
+      "sha256": "0f6d61ef4148f5d8f06f9063f1a78a14b1c20e8bd673bafc2909284ab4102d84"
+    },
+    {
+      "path": "inherited_v2/tasks/T05_程序解释器与参考数学.md",
+      "bytes": 1610,
+      "sha256": "1d8439aa88dcc00742bd870631003415fde5b3dd893c7712c7672417e64ca1f0"
+    },
+    {
+      "path": "inherited_v2/tasks/T06_可组合潜算子参考实现.md",
+      "bytes": 1856,
+      "sha256": "41734b632cc6a9fc8e62fef55995016ddfc96852033d0492c5c276e191e56ea5"
+    },
+    {
+      "path": "inherited_v2/tasks/T07_反事实响应包参考实现.md",
+      "bytes": 1853,
+      "sha256": "5ad6636f096614b51a65be5af5a1dc76ff1d2253d9bf025cdc3cbc9722e96b15"
+    },
+    {
+      "path": "inherited_v2/tasks/T08_多假设信念包参考实现.md",
+      "bytes": 1885,
+      "sha256": "8742f34a01cc0380dc77d97ef1cbcf4a26ee11990a1c64f65885918f9884b938"
+    },
+    {
+      "path": "inherited_v2/tasks/T09_多主体共享约束场参考实现.md",
+      "bytes": 1901,
+      "sha256": "8255196eb4b310062317b2b065c187f194bcfa4652aa963caf215343e093babe"
+    },
+    {
+      "path": "inherited_v2/tasks/T10_推理续接胶囊参考实现.md",
+      "bytes": 1916,
+      "sha256": "752e1e5cb447de5524b853433cb4539accb983c80f39682d7834ebb7ac7bf268"
+    },
+    {
+      "path": "inherited_v2/tasks/T11_多图册语义对齐参考实现.md",
+      "bytes": 1893,
+      "sha256": "a2be23be95442011b7088a831f6d1fd7c5527a404b1418c9ca753473d35302bd"
+    },
+    {
+      "path": "inherited_v2/tasks/T12_类型化潜程序参考实现.md",
+      "bytes": 1870,
+      "sha256": "751fb4639da930d7c743747401309c9289b56c908ed899bf0da46df923ad6bdc"
+    },
+    {
+      "path": "inherited_v2/tasks/T13_关系结构通信参考实现.md",
+      "bytes": 1836,
+      "sha256": "c51656233726f98d4d3378e94af9d901b0a954e3428e08c4efd9a14f9be52282"
+    },
+    {
+      "path": "inherited_v2/tasks/T14_干预代数通信参考实现.md",
+      "bytes": 1845,
+      "sha256": "2335c399c12e73253910ca55a7990e7d750edf169dd3c3d4488c277b0eb32939"
+    },
+    {
+      "path": "inherited_v2/tasks/T15_高阶协同超边参考实现.md",
+      "bytes": 1826,
+      "sha256": "1a4455f49cfe16d370a06062b35bf6f3f7a7db5f9af4bb3f44404c21416b447c"
+    },
+    {
+      "path": "inherited_v2/tasks/T16_渐进潜编码参考实现.md",
+      "bytes": 1828,
+      "sha256": "37dca50bb051bb3009cb1a7979834647c7abacd1f2c6a497241f05e6dca585dc"
+    },
+    {
+      "path": "inherited_v2/tasks/T17_多查询持久胶囊参考实现.md",
+      "bytes": 1826,
+      "sha256": "5b2562d48785e2d7243b93ed472a8102f7918e7306bfb5219c68af3388c86a6d"
+    },
+    {
+      "path": "inherited_v2/tasks/T18_可分叉潜计算参考实现.md",
+      "bytes": 1826,
+      "sha256": "8549d8aff09581786a94f48c908965080828d1fec6915284599cc961fbaa6662"
+    },
+    {
+      "path": "inherited_v2/tasks/T19_潜技能语法参考实现.md",
+      "bytes": 1819,
+      "sha256": "644ccc55e335615529664dd4149db7160a31755a989a9b1e96c1b0ecbaa2f2e5"
+    },
+    {
+      "path": "inherited_v2/tasks/T20_接收者无关协议学习参考实现.md",
+      "bytes": 1859,
+      "sha256": "7cd6a4d44284253c1dc1c8d96c49df40f70631f9532d68cbebd7efdbdc487c2b"
+    },
+    {
+      "path": "inherited_v2/tasks/T21_精确符号与潜状态双通道参考实现.md",
+      "bytes": 1833,
+      "sha256": "b0db3c5ee099c0f7283ceaba39bfeef33c4ca473c3d754875d7b952cae4f5b31"
+    },
+    {
+      "path": "inherited_v2/tasks/T22_跨模态坐标接地参考实现.md",
+      "bytes": 1837,
+      "sha256": "8037933da834dc40cf90216094f1a392e8c89fe95cac82e3e2b7c8ddafe9884d"
+    },
+    {
+      "path": "inherited_v2/tasks/T23_通信诱导计算结构参考实现.md",
+      "bytes": 1828,
+      "sha256": "6a0a3db105f8ddb7e56c0e982a5047f2f13b0a106f7799ff6778aa662145e8b0"
+    },
+    {
+      "path": "inherited_v2/tasks/T24_消息到技能巩固参考实现.md",
+      "bytes": 1872,
+      "sha256": "4b8f0cd39a7ffdb317adedca08cdab550d34861dde78b5dba438086b86195f56"
+    },
+    {
+      "path": "inherited_v2/tasks/T25_异步认知时钟参考实现.md",
+      "bytes": 1827,
+      "sha256": "401e5ee7c41e146ab93e9e6769ff30101a6c30196caacfadc557461d3c6b0381"
+    },
+    {
+      "path": "inherited_v2/tasks/T26_反事实分支组合搜索参考实现.md",
+      "bytes": 1834,
+      "sha256": "ec507b8509e4c5d1eeb4dddef50ce5e113dbfd25d2aeff368d6294641e8a30fc"
+    },
+    {
+      "path": "inherited_v2/tasks/T27_动态模型边界参考实现.md",
+      "bytes": 1843,
+      "sha256": "b9c010fc708f84f2966e908530dd7d24ff66ad1e9bdb2e60daa210e701215b16"
+    },
+    {
+      "path": "inherited_v2/tasks/T28_语义残差纠错参考实现.md",
+      "bytes": 1847,
+      "sha256": "187010f6407223e385e4d5dd46867d9fde83e76f8259e846fc490d1e59343185"
+    },
+    {
+      "path": "inherited_v2/tasks/T29_有作用域的潜计算能力参考实现.md",
+      "bytes": 1866,
+      "sha256": "df3bae828a0e090df6cbd5033f6fa9d780c530c19fde4075ea3f6e889ea3cd9b"
+    },
+    {
+      "path": "inherited_v2/tasks/T30_HF 后端与加载源码.md",
+      "bytes": 1600,
+      "sha256": "a3ccef1490179e8f8c51441af2e0816f9f3f466eff6346f2c2a795ef2c6d6e68"
+    },
+    {
+      "path": "inherited_v2/tasks/T31_三种注入路径.md",
+      "bytes": 1612,
+      "sha256": "0d7518f8370e8bdf477b6e10a3d837d519e2ff6d26e14b7bea10a7a297ecbab6"
+    },
+    {
+      "path": "inherited_v2/tasks/T32_生成与续接后端.md",
+      "bytes": 1642,
+      "sha256": "e5506da9832322127c85954cc13b026a7905b04fc829180f1f9e8ddda3c5210b"
+    },
+    {
+      "path": "inherited_v2/tasks/T33_统一训练循环.md",
+      "bytes": 1627,
+      "sha256": "297a24a92e81601e1a54c7b0a33b5b31b582411ecc7dfd69c487a75f62973208"
+    },
+    {
+      "path": "inherited_v2/tasks/T34_全部机制目标函数.md",
+      "bytes": 1741,
+      "sha256": "5675c21ec5cc3e69fd0d08fa986f6a7679cb459cb024ca50f2fae7d47a2732c2"
+    },
+    {
+      "path": "inherited_v2/tasks/T35_32 配方与组合编译.md",
+      "bytes": 1631,
+      "sha256": "7026126911ce16c381466e0a3772a25107a12c69e7719e27e7d89068903bd5f9"
+    },
+    {
+      "path": "inherited_v2/tasks/T36_DAG 运行时与逻辑时钟.md",
+      "bytes": 1644,
+      "sha256": "15e9747961ca44d3753adc9a2e2e577c192768d9173fa5ca5f1ab8cb6d423f4a"
+    },
+    {
+      "path": "inherited_v2/tasks/T37_消息编解码与通道.md",
+      "bytes": 1630,
+      "sha256": "0fea96031a0f2056230845a9114f712b2730abcbf6e49c638d86d1421ebe147d"
+    },
+    {
+      "path": "inherited_v2/tasks/T38_CLI 与 Python API.md",
+      "bytes": 1619,
+      "sha256": "fba88148f9782ae7723475b61717c8e76445f7d211adb6d25258105e51e932c5"
+    },
+    {
+      "path": "inherited_v2/tasks/T39_checkpoint 与恢复.md",
+      "bytes": 1634,
+      "sha256": "ee6418155e60e60ba1e1f13441f76b3f73adf09d30ba7f95cbd51ac052cfe6d4"
+    },
+    {
+      "path": "inherited_v2/tasks/T40_能力与来源注册.md",
+      "bytes": 1632,
+      "sha256": "fe2c55c3abe45f564478bc891762ced8edb8105a8d48cebfaaed7d68714d86aa"
+    },
+    {
+      "path": "inherited_v2/tasks/T41_禁跑与权限实现.md",
+      "bytes": 1630,
+      "sha256": "d842b880dd6f8500c21249fa1a4eb8489db074deeb5c9ce63d020293dda17605"
+    },
+    {
+      "path": "inherited_v2/tasks/T42_数学与机制复核.md",
+      "bytes": 1721,
+      "sha256": "2bb7645233e3f57b11c97e21930628555459003244bc2f90ce8be1c6e21c0144"
+    },
+    {
+      "path": "inherited_v2/tasks/T43_安全与故障注入.md",
+      "bytes": 1592,
+      "sha256": "2960e39f950814b0674fc6fe2674a983a0d835639894decfa20de4583c7cd85d"
+    },
+    {
+      "path": "inherited_v2/tasks/T44_端到端数学演示.md",
+      "bytes": 1654,
+      "sha256": "e66ef36d91223358aeb148f659bf010a02952125ce11b5e6987be0f06201f92e"
+    },
+    {
+      "path": "inherited_v2/tasks/T45_方法稿与开放研究议程.md",
+      "bytes": 1609,
+      "sha256": "d603a8a2d16253199f919e3697d8e4dc7bead99ca48d47f32f3b20d4cf209231"
+    },
+    {
+      "path": "inherited_v2/tasks/T46_README 与开发文档.md",
+      "bytes": 1597,
+      "sha256": "17f8a448563d5d0fb5e53c7614bd23abcc74f224f720b268ff227fcbec72addd"
+    },
+    {
+      "path": "inherited_v2/tasks/T47_Word 研究稿.md",
+      "bytes": 1559,
+      "sha256": "56fbfa92a8daf307ebe9bc6b5bc0b164e0ad7b56f7f952dc14213f8e13d112e9"
+    },
+    {
+      "path": "inherited_v2/tasks/T48_24 页与 8 页演示.md",
+      "bytes": 1600,
+      "sha256": "3dddc438a88be6c2df63bd8c7559f0778160e1240e812b9406e35c914df9a38f"
+    },
+    {
+      "path": "inherited_v2/tasks/T49_机制图与海报.md",
+      "bytes": 1576,
+      "sha256": "6ceff9c24c2d64c0e6d1c36d19d7b85ccc26af07fe19bd5189877b1842b65ac1"
+    },
+    {
+      "path": "inherited_v2/tasks/T50_90 秒动画.md",
+      "bytes": 1578,
+      "sha256": "946051e4ecaf6733c80fefb58b128660e087a26c1e9a301a3914b5c6ce5df49b"
+    },
+    {
+      "path": "inherited_v2/tasks/T51_中文音轨与字幕.md",
+      "bytes": 1619,
+      "sha256": "e52aa4c1b961e1c9ed371f24289e316033e4d09a11990db14642c55cf18f326a"
+    },
+    {
+      "path": "inherited_v2/tasks/T52_长讲解视频与源工程.md",
+      "bytes": 1673,
+      "sha256": "533ac7eb1b8fa950fbc36c9bc2c7573fd7c03058d172368e010b5d2c5372a243"
+    },
+    {
+      "path": "inherited_v2/tasks/T53_媒体与主张一致性.md",
+      "bytes": 1652,
+      "sha256": "f5bc426fa32e9992c845a0e1cda9c77eb636080f8150c90be07d6b03b5d68c1f"
+    },
+    {
+      "path": "inherited_v2/tasks/T54_全源码完整性审查.md",
+      "bytes": 1622,
+      "sha256": "9dcfc4ac52736179a7d880f341ace52164e35286ece2c8a7532f3140404b2dee"
+    },
+    {
+      "path": "inherited_v2/tasks/T55_修复与回归.md",
+      "bytes": 1594,
+      "sha256": "4e62e4d6ebd6a6ead40b9e791e359c943605080b99602d777bb07922202d0fe8"
+    },
+    {
+      "path": "inherited_v2/tasks/T56_构建与本地发布包.md",
+      "bytes": 1764,
+      "sha256": "8a398388e7f70e342865cc1056bc7d3e6acea4d59e126638cc73dca510b5ae8f"
+    },
+    {
+      "path": "inherited_v2/tasks/T57_最终 ZIP 与索引.md",
+      "bytes": 1635,
+      "sha256": "d5e8d2559e6c8c862878109cdcc023f1117a761ea28d3f804845ba0a049cdc91"
+    },
+    {
+      "path": "inherited_v2/tasks/T58_最终报告与交接.md",
+      "bytes": 1668,
+      "sha256": "18a264736fdbe180627503a2199994bdbf2b82b711718c3db4890a5506f822b7"
+    },
+    {
+      "path": "inherited_v2/tasks/T59_许可证与公开发布草稿.md",
+      "bytes": 1639,
+      "sha256": "a7b7b2ac609c35d0354cc897a6b23cc5039c8f05f1cf2744c4d59adee5734dc8"
+    },
+    {
+      "path": "inherited_v2/tests/test_planctl.py",
+      "bytes": 3014,
+      "sha256": "96dac9ef3661fd7e9a7f18de6a626d45768c48421320402b942d5c33ead97fe2"
+    },
+    {
+      "path": "inherited_v2/tools/README.md",
+      "bytes": 758,
+      "sha256": "4102c69af2d9c4e4e89d7d12300930ff878c1ec6caa82a81cc8b05df052e1a07"
+    },
+    {
+      "path": "inherited_v2/tools/planctl.py",
+      "bytes": 4922,
+      "sha256": "e9fd3a90a9c9a019ed839b84410563c0d7cdf978f481f2416cd879b1607ee4a5"
+    },
+    {
+      "path": "inherited_v2/潜空间通信_前沿创新猜想与Dot全流程计划_20261024.docx",
+      "bytes": 133228,
+      "sha256": "e6bc4f440ecae15b403c4550c9606e02b7173279569677fd4ea095a98c73b4c4"
+    },
+    {
+      "path": "integration/I01_可组合潜算子.md",
+      "bytes": 2357,
+      "sha256": "869ebbc88b6037d72737c6c37228fba7451b428cfdf6022135d0f0905ebfbd66"
+    },
+    {
+      "path": "integration/I02_反事实响应包.md",
+      "bytes": 2403,
+      "sha256": "1dc6394768dc8f7c6330594a220d263f75b8f4cdeef0bef09008b7fb8cec4e09"
+    },
+    {
+      "path": "integration/I03_多假设信念包.md",
+      "bytes": 2374,
+      "sha256": "858698273456e6120ad2b0a4d25df5cee77cf6a62aab2d6bcee48b34f041aae8"
+    },
+    {
+      "path": "integration/I04_多主体共享约束场.md",
+      "bytes": 2409,
+      "sha256": "491db79db72a4a02f8fa02afc16e63f46a67207e7b7d45d5b9528c980faefed5"
+    },
+    {
+      "path": "integration/I05_推理续接胶囊.md",
+      "bytes": 2394,
+      "sha256": "bd7470cad219761205c5c31b1f6291fdba618092a73ce3457e0c6ee4326b7c02"
+    },
+    {
+      "path": "integration/I06_多图册语义对齐.md",
+      "bytes": 2335,
+      "sha256": "c41f224c07ccaa35fae8ba4890e664f9fbaaec9604d950fc2d617f24114aba9f"
+    },
+    {
+      "path": "integration/I07_类型化潜程序.md",
+      "bytes": 2306,
+      "sha256": "c3bae1b6a9c53d89bb16fe3b74a3b189e91eac2e6160373a9e66f5ae67c1fd9a"
+    },
+    {
+      "path": "integration/I08_关系结构通信.md",
+      "bytes": 2277,
+      "sha256": "4f7a7d2b301e11c73f6ca01037f3b066b285c47bc0aae38f1980a9b52c358e1a"
+    },
+    {
+      "path": "integration/I09_干预代数通信.md",
+      "bytes": 2304,
+      "sha256": "26e8d70dcdf54754ee66b07101381d6c88ae3602de1f950ad270c1209338211a"
+    },
+    {
+      "path": "integration/I10_高阶协同超边.md",
+      "bytes": 2311,
+      "sha256": "2492b32901c186023fa73ef22facc0da57f7914dda2a4d374571afb96309fbf8"
+    },
+    {
+      "path": "integration/I11_渐进潜编码.md",
+      "bytes": 2282,
+      "sha256": "54ce7ac395675d504cbcaf8857a8ea168e9508db598ed995dd0ff43b8ff11066"
+    },
+    {
+      "path": "integration/I12_多查询持久胶囊.md",
+      "bytes": 2302,
+      "sha256": "6a73319b6d2a08e72538c7017b94f7af4cfa382ecf704c356c441a4092c30d83"
+    },
+    {
+      "path": "integration/I13_可分叉潜计算.md",
+      "bytes": 2310,
+      "sha256": "9e1ed7a222f7b43ad8a163710c6abffa10bafb42d353a2f9a7093e52eb41aa4b"
+    },
+    {
+      "path": "integration/I14_潜技能语法.md",
+      "bytes": 2274,
+      "sha256": "749700064a469b955b27ce78ef114512781c1d50440cc3d782e65f2e37b95e3c"
+    },
+    {
+      "path": "integration/I15_接收者无关协议学习.md",
+      "bytes": 2358,
+      "sha256": "3cc35c498ff735e383ae915c1a84433e5417a924d8e2ffa0e25a5582f9c9ff45"
+    },
+    {
+      "path": "integration/I16_精确符号与潜状态双通道.md",
+      "bytes": 2326,
+      "sha256": "eb76032a98a362c3a54b2af967011ccac958510e25a40d5ede751c806b5be597"
+    },
+    {
+      "path": "integration/I17_跨模态坐标接地.md",
+      "bytes": 2299,
+      "sha256": "7ab3e4c513b49b2a90b1a3f084cb63b415d6c7181152550e8d4dc8a0e08cca27"
+    },
+    {
+      "path": "integration/I18_通信诱导计算结构.md",
+      "bytes": 2321,
+      "sha256": "e9e1eef6ca3977125db52add2d2a86c13225932ef2e781b1df913a400db7dd1b"
+    },
+    {
+      "path": "integration/I19_消息到技能巩固.md",
+      "bytes": 2402,
+      "sha256": "84a4b232b2c0df09d378385125c3d62e9a059c9a4665fbea2d28c60f89f0ab0d"
+    },
+    {
+      "path": "integration/I20_异步认知时钟.md",
+      "bytes": 2305,
+      "sha256": "409f6886f966fe722320acd35b72805124a13fec1ee53662beb6028c4498a3ea"
+    },
+    {
+      "path": "integration/I21_反事实分支组合搜索.md",
+      "bytes": 2313,
+      "sha256": "48f8007dadde1ff2bdabcc02b31be19705e8d61bb3540777abb04e1486eab739"
+    },
+    {
+      "path": "integration/I22_动态模型边界.md",
+      "bytes": 2309,
+      "sha256": "48664c390a5c94cff59d1f1e371a1b6565ba3c1bde3d95d6e48d0a9860afde66"
+    },
+    {
+      "path": "integration/I23_语义残差纠错.md",
+      "bytes": 2337,
+      "sha256": "de1a48dc0c756a0dacce06ae285de3087614b8e74d6720439a793efde47f9b71"
+    },
+    {
+      "path": "integration/I24_有作用域的潜计算能力.md",
+      "bytes": 2445,
+      "sha256": "424ef7e904ad0d551e7f99d2fc61ab94dac089cb4d283405443892e6b0b8831f"
+    },
+    {
+      "path": "media/01_36页研究版逐页脚本.md",
+      "bytes": 19258,
+      "sha256": "58cbfc07c7062f52104824708eed19e4c6baf3f2e44a0c9696bd05f294360060"
+    },
+    {
+      "path": "media/02_12页精简版逐页脚本.md",
+      "bytes": 4201,
+      "sha256": "3fe25cd9de55b83c96c33727f2635a134443392e2f3235046489905d776fcf64"
+    },
+    {
+      "path": "media/03_90秒分镜与旁白.md",
+      "bytes": 3409,
+      "sha256": "e9ecba3aa1ac2d1fdd7ab13a173d131159f45f5be48b7d27a88c0ba4b91f2f9a"
+    },
+    {
+      "path": "media/04_六分钟叙事与分镜.md",
+      "bytes": 5975,
+      "sha256": "521b3cd413739d918e23ab0e5f91dd9a3723293cf9c9e7a47f7511f81d4c9fa2"
+    },
+    {
+      "path": "media/05_音频字幕与工具提示词.md",
+      "bytes": 2186,
+      "sha256": "6e6d7daf28e0cbe9e2cc5e67d24f4c1ca19cb054a3a1346fc96a9a5debc0fb4f"
+    },
+    {
+      "path": "media/06_导出验收与降级.md",
+      "bytes": 1142,
+      "sha256": "03061417c840a1cada87ceda83cf7989b2bc715bd1fe33ba79b7b7ab0d46719d"
+    },
+    {
+      "path": "media/07_图形与动画规范.md",
+      "bytes": 3618,
+      "sha256": "d08d329e049c1e5f70de5b106848ef6125f6c023c8098ca0bf249e0ef7f1e666"
+    },
+    {
+      "path": "media/timeline_360.json",
+      "bytes": 6233,
+      "sha256": "fa3c262769276816e1fc71255daf59bd3d8e88af50afc667784242e30cc63ab7"
+    },
+    {
+      "path": "media/timeline_90.json",
+      "bytes": 2561,
+      "sha256": "9093e1e5eca25ede0efbf13d533b6865e2662a3e6bc5ff43588959a391774a0d"
+    },
+    {
+      "path": "prompts/P00_一次性总控.md",
+      "bytes": 7189,
+      "sha256": "6ee200b17b948747826446d42fb1868d2a615e76973c76bf5feef011e2d29d90"
+    },
+    {
+      "path": "prompts/P01_研究总架构.md",
+      "bytes": 2344,
+      "sha256": "dc4521024909cf91993fee78a7ce1d13813d93f492d88576b0f07a6f349a95f1"
+    },
+    {
+      "path": "prompts/P02_第一性原理发散.md",
+      "bytes": 2377,
+      "sha256": "a415510b5ab90ebd7320ae6389cb586f7a23c8767d077a768e46703a9581b3d9"
+    },
+    {
+      "path": "prompts/P03_机制完整实现.md",
+      "bytes": 2280,
+      "sha256": "19b33d73e2a6c1e6aa3f95bd2a785df8bbc3d48cd656dd8c88b17711c641868b"
+    },
+    {
+      "path": "prompts/P04_原机制接续.md",
+      "bytes": 2261,
+      "sha256": "2637d240486e8c0777f2ce37c8a08274cbeddad9fdf326b50bb2f4d82f2c9cb0"
+    },
+    {
+      "path": "prompts/P05_类型与协议.md",
+      "bytes": 2246,
+      "sha256": "93d7f0d03e9681e339a9b6b04d89e107c77f95973d6323775416638faa119727"
+    },
+    {
+      "path": "prompts/P06_科研编译器.md",
+      "bytes": 2256,
+      "sha256": "736feba9e35164490b45775153c69ccb2fbbe13831600bf90cf53c3e5de3d0e2"
+    },
+    {
+      "path": "prompts/P07_世界与数据.md",
+      "bytes": 2325,
+      "sha256": "13ae446c4cc9c8215b7394d94b1df3490ae301dd9f41c6054ae4a2d0d4209857"
+    },
+    {
+      "path": "prompts/P08_模型后端.md",
+      "bytes": 2265,
+      "sha256": "9c0b97f12389751e72c798b15114156c05effab4d0df9fb71ea85f6d285a55cb"
+    },
+    {
+      "path": "prompts/P09_训练与元学习.md",
+      "bytes": 2318,
+      "sha256": "e030d300c0d44f8d64e3959065610a0c78dd79e10602d78b5a0222882390f62a"
+    },
+    {
+      "path": "prompts/P10_运行时与事务.md",
+      "bytes": 2269,
+      "sha256": "066804099c3c6ab2dbabe3df7af7d0090234a631f81a0601ce7af2d23c7a715d"
+    },
+    {
+      "path": "prompts/P11_组合与终局.md",
+      "bytes": 2311,
+      "sha256": "88661916fe8d0b289986a21bf43d3afbbf9aa1d67db7828366c4e17ce3b2a83d"
+    },
+    {
+      "path": "prompts/P12_来源与新颖性.md",
+      "bytes": 2286,
+      "sha256": "4efafa6117b891b6312502ae403679445a803c58435b26bec0bea9b2dfc2775c"
+    },
+    {
+      "path": "prompts/P13_数学与软件审查.md",
+      "bytes": 2344,
+      "sha256": "27d03d5b53f4225a2e730f5872066edf63fa2e958ba5ee842fddf0ef372a88da"
+    },
+    {
+      "path": "prompts/P14_权限与执行边界.md",
+      "bytes": 2311,
+      "sha256": "ef987244d3c613b074bb46d8d2f4ef2d0d770502ca64b7dcbe8fe01d153690f8"
+    },
+    {
+      "path": "prompts/P15_论文与说明文档.md",
+      "bytes": 2331,
+      "sha256": "e28a982703ab5a7a601edb272509f976ff589181c6816fe8253ac0ce82bc9c4c"
+    },
+    {
+      "path": "prompts/P16_演示文稿.md",
+      "bytes": 2250,
+      "sha256": "c2a249e7e923314d445f1fb232696322b4a57241dbe957d7bf008880126ef0b1"
+    },
+    {
+      "path": "prompts/P17_视频音频与动画.md",
+      "bytes": 2292,
+      "sha256": "c75d26141ed3db758bbd546d8c6fdae7f10bb1acb11849211ea28dcf293a0193"
+    },
+    {
+      "path": "prompts/P18_上下文恢复.md",
+      "bytes": 2298,
+      "sha256": "8e208ad2dd0cdb367a7fde5f11ca0916d2e53b919e6fe5d7b70841d5abef61fa"
+    },
+    {
+      "path": "prompts/P19_封包与交付.md",
+      "bytes": 2276,
+      "sha256": "83eb6694fe110cb1c1dabd5be6a2d53ff68f2d133f8c0dbbb098854b71397420"
+    },
+    {
+      "path": "prompts/P20_形式推导.md",
+      "bytes": 2266,
+      "sha256": "d0bf709659150652b919a803d67660aa157a63d9a804a2441c07e932df51cbb6"
+    },
+    {
+      "path": "prompts/P21_应用能力发现.md",
+      "bytes": 2284,
+      "sha256": "3640893588b020945b4a0e728332ecda7ed62335fbeae7aaeda548bf0a5ec0a6"
+    },
+    {
+      "path": "prompts/P22_缺陷修复.md",
+      "bytes": 2262,
+      "sha256": "4aa513d594e8633886cb20d513a21272ccc51be82b57f67d5986acfddce221c3"
+    },
+    {
+      "path": "prompts/P23_未来模型侧模板.md",
+      "bytes": 2310,
+      "sha256": "c58ab544d6054e9fa20898e3f674baf2e5acb19f285c3886e9eea4c4618aca29"
+    },
+    {
+      "path": "prompts/P24_极限想法复审.md",
+      "bytes": 2302,
+      "sha256": "46b80f7e3e7806fab33e80f5e5ddf685a0f67b20b4278a4e2c9094b66fbdf656"
+    },
+    {
+      "path": "provenance/latent_frontier_innovation_20261024.zip",
+      "bytes": 1475945,
+      "sha256": "927e43f083e23f6c8efe717f37e3af7ad53f3f4e7b1e3219c37287def1a13857"
+    },
+    {
+      "path": "recipes/C01.json",
+      "bytes": 1025,
+      "sha256": "9076ab96df4ad446b04d104e520e2d65e97c07538f2d195dbd68408d96021476"
+    },
+    {
+      "path": "recipes/C02.json",
+      "bytes": 1004,
+      "sha256": "e0c741ca9debb2206e0d649253f435b5dbbf6a369da415309571eb16d88e6454"
+    },
+    {
+      "path": "recipes/C03.json",
+      "bytes": 1005,
+      "sha256": "69c992af15ae40cf7fd4e218a295eed350fd4158af7a51d5ad649b65c7f87d3a"
+    },
+    {
+      "path": "recipes/C04.json",
+      "bytes": 985,
+      "sha256": "050e3982a1b94f288dd8ff0008cf85f7d70d16b7ac9684557244994c17ddaab3"
+    },
+    {
+      "path": "recipes/C05.json",
+      "bytes": 977,
+      "sha256": "23b91e55d801a56934aab86d716547ca05cb2024862ab46c79546ac958c901b1"
+    },
+    {
+      "path": "recipes/C06.json",
+      "bytes": 1042,
+      "sha256": "2d168d032a4d8689257970b4c427085536e5ad22d1e569a06d460d4b368c3de1"
+    },
+    {
+      "path": "recipes/C07.json",
+      "bytes": 1020,
+      "sha256": "5a678a795a275da9cacca0c6296eacb012bf3be5438d5964e925107238c37712"
+    },
+    {
+      "path": "recipes/C08.json",
+      "bytes": 1030,
+      "sha256": "6725e0736b270328d8ad20f22f8e8b4a4648f9e1ed6c367cefce76ebe6c749a9"
+    },
+    {
+      "path": "recipes/C09.json",
+      "bytes": 671,
+      "sha256": "f65d1a99a6ecd483f4851e6bde39499b0f0d6cbb9aa6da2e84ffb83b3336c484"
+    },
+    {
+      "path": "recipes/C10.json",
+      "bytes": 658,
+      "sha256": "38e4db0976164e68e4248c002569dc86be90d3f9e9a9048d6b8097d71ee8e75f"
+    },
+    {
+      "path": "recipes/C11.json",
+      "bytes": 645,
+      "sha256": "54ce518a30cfc124f8c6395b0b53ac72c9675482e9aaea92cbf9a572266a2c36"
+    },
+    {
+      "path": "recipes/C12.json",
+      "bytes": 605,
+      "sha256": "0cdadf4b58e1c2ab0401796e31a4ee00c97be5d05f493ea1f2a653b652e24618"
+    },
+    {
+      "path": "recipes/C13.json",
+      "bytes": 629,
+      "sha256": "fb852015e431743ca9550ba05b651bc9356e65a020e13558d2a2e41d72bf5247"
+    },
+    {
+      "path": "recipes/C14.json",
+      "bytes": 643,
+      "sha256": "5cd2c3f352323eb97986bd5957ccb6f5093673d616bb2c1c8f9d00260c6a9938"
+    },
+    {
+      "path": "recipes/C15.json",
+      "bytes": 608,
+      "sha256": "ac76d790f150673778cdef3405e8464d6fb515dc744b695db36694053fec8065"
+    },
+    {
+      "path": "recipes/C16.json",
+      "bytes": 633,
+      "sha256": "b673ad9e4ebd820e753048ae586fd007c8b92ed39284e57e0d5296e60065c7fb"
+    },
+    {
+      "path": "recipes/C17.json",
+      "bytes": 614,
+      "sha256": "0cab0e168f4d4baad42ce6a0aab7a7b752f35067193f7735a9ca91eddce6818d"
+    },
+    {
+      "path": "recipes/C18.json",
+      "bytes": 647,
+      "sha256": "62f7dccdd828b74388ee62abb31032684603497df3b161fd1fdc2f50c86459ed"
+    },
+    {
+      "path": "recipes/C19.json",
+      "bytes": 651,
+      "sha256": "6e80198d4349b58e032b8643b7dba0424aaab7eec6ccec65225218d63266ca05"
+    },
+    {
+      "path": "recipes/C20.json",
+      "bytes": 721,
+      "sha256": "5a8848bd84f9b3fdb3c456caa5b05e551840bcf29591d98ee87dcd1cb51cb8de"
+    },
+    {
+      "path": "recipes/H01.json",
+      "bytes": 2368,
+      "sha256": "1fb5b7ef9edcbe12a3972e02e9cf7102bb5d26a6c0b1588c5fa1d720655f1621"
+    },
+    {
+      "path": "recipes/H02.json",
+      "bytes": 2371,
+      "sha256": "161afaa18ae108b5168c041cb57d79390c08de86b7722befc7cf8bf129bef8e8"
+    },
+    {
+      "path": "recipes/H03.json",
+      "bytes": 2393,
+      "sha256": "121e9f2201dd6d1bf75361f785129c79caa6fe67de5f4c10e235031c4800697c"
+    },
+    {
+      "path": "recipes/H04.json",
+      "bytes": 2419,
+      "sha256": "0b97c1b43868f6ee68332fddde2e890ed35ec073e7f4143cf40fcc9944a71382"
+    },
+    {
+      "path": "recipes/H05.json",
+      "bytes": 2399,
+      "sha256": "ba3fc0a2c654911128e0fa37408a41c0f512e474d25637b9d42cb5c6d446b645"
+    },
+    {
+      "path": "recipes/H06.json",
+      "bytes": 2406,
+      "sha256": "0ebfabe447125d707bc36e9141e8b2bd2f684e0d92b8cff1b9cb35e5c555415e"
+    },
+    {
+      "path": "recipes/H07.json",
+      "bytes": 2330,
+      "sha256": "fecb9a0c6a359f41e8a857bce78047e65c84a4ca174c1c1dc5d9516880e468ad"
+    },
+    {
+      "path": "recipes/H08.json",
+      "bytes": 2321,
+      "sha256": "191fe121cc37d4dc4817e22c0e526b6005f008997cc15ff94357150962a8aa12"
+    },
+    {
+      "path": "recipes/H09.json",
+      "bytes": 2351,
+      "sha256": "eec8223c16ec7973fb5638e26e371063107aa66a1e6955d724d9d005232225ab"
+    },
+    {
+      "path": "recipes/H10.json",
+      "bytes": 2333,
+      "sha256": "14fadbbd265563302aac76e2d004492e7d7c8602e637b282b4d9fa5ef1f51058"
+    },
+    {
+      "path": "recipes/H11.json",
+      "bytes": 2312,
+      "sha256": "9d1fc3a427707f03cdc3d134e2a37821806ce8cba1608012f8112783fc7a4c10"
+    },
+    {
+      "path": "recipes/H12.json",
+      "bytes": 2307,
+      "sha256": "6d1c682e8ed47144b1460e4f32936d78d82a2b962d48f73f95b8a77f757fb99a"
+    },
+    {
+      "path": "recipes/H13.json",
+      "bytes": 2322,
+      "sha256": "8465e1fca0930eb3cc835b84af408e19ac70283bd5eac4a76670f9f2d8ad2029"
+    },
+    {
+      "path": "recipes/H14.json",
+      "bytes": 2317,
+      "sha256": "3f837148b58d8a8c9164ee6143d41b6acb5a10183d05fa23da65654325bce728"
+    },
+    {
+      "path": "recipes/H15.json",
+      "bytes": 2381,
+      "sha256": "db9d496035b71ba989fb314b7791eb7b055223f6d4d8d3f0d3009496544e7eb7"
+    },
+    {
+      "path": "recipes/H16.json",
+      "bytes": 2357,
+      "sha256": "a8280b978267cece94a18a662410bb0492f131db0abf66ea6bf736999d222bda"
+    },
+    {
+      "path": "recipes/H17.json",
+      "bytes": 2343,
+      "sha256": "14ec5ce13175c1be28bc6fbc82628ab8e0cc6305e81643e7cb0a3ae692d4c0a3"
+    },
+    {
+      "path": "recipes/H18.json",
+      "bytes": 2347,
+      "sha256": "87e26dd3c7cc4e53ac84547db0bfa993eb016e43b2b7db7c944a2fa79385e89e"
+    },
+    {
+      "path": "recipes/H19.json",
+      "bytes": 2368,
+      "sha256": "2a395a0be26d376aa1111c49acd1f321795f8866dbe0a9450e1b7ff74411f34b"
+    },
+    {
+      "path": "recipes/H20.json",
+      "bytes": 2318,
+      "sha256": "81effcf945fc27bd1602e0c38515741b44953cf6f10c5f33e0bdb56a98da73b8"
+    },
+    {
+      "path": "recipes/H21.json",
+      "bytes": 2362,
+      "sha256": "81b336c057c4e6b1550133950db5b35dd9908c8e7e9921d9892851fff2cbcccf"
+    },
+    {
+      "path": "recipes/H22.json",
+      "bytes": 2336,
+      "sha256": "4bbced02a43f16c31a76f79246eb381e4b4f6273bb64191cb5d8b2ecc300ec68"
+    },
+    {
+      "path": "recipes/H23.json",
+      "bytes": 2327,
+      "sha256": "efe531ad4d3794b0fbfa823aede7d8e55c6080d2ba10b894ead7b6edb50bbdfb"
+    },
+    {
+      "path": "recipes/H24.json",
+      "bytes": 2362,
+      "sha256": "171472f0b62e3462dc4413b7b795b39b065431b5ff2141cc36415df96c2f09c7"
+    },
+    {
+      "path": "recipes/H25.json",
+      "bytes": 765,
+      "sha256": "b13a7ab582e8bf07da47400a01b1f97ed362e8a51c1400ae3448e35f969b2dbe"
+    },
+    {
+      "path": "recipes/H26.json",
+      "bytes": 753,
+      "sha256": "895f86959aaea7b14c35700875efa50a3578f0075c0de74c10e53fd954e4db79"
+    },
+    {
+      "path": "recipes/H27.json",
+      "bytes": 775,
+      "sha256": "b01fda69fdfaf0b151e63c118094533c63e4d80768025b01c47d1806f92dfef6"
+    },
+    {
+      "path": "recipes/H28.json",
+      "bytes": 796,
+      "sha256": "32e27667467943103ee96baafc3182577165d57fec08b9370115def81a1fa6f1"
+    },
+    {
+      "path": "recipes/H29.json",
+      "bytes": 818,
+      "sha256": "2ed96aa9442ef48b825598590d1741ba88cf1acec22f7ccfe55100d839af64d3"
+    },
+    {
+      "path": "recipes/H30.json",
+      "bytes": 752,
+      "sha256": "46a982948017af374016d10ab9f21c3163bd7281637a36d1916866237519f552"
+    },
+    {
+      "path": "recipes/H31.json",
+      "bytes": 745,
+      "sha256": "1593b830792aa5f3e2700bd9fad6bb295fe46e61e0409190de4c065c2fce36f7"
+    },
+    {
+      "path": "recipes/H32.json",
+      "bytes": 781,
+      "sha256": "2f4719301a00fe400b313213e0703010d9d33bd9a94ff2326d240066a78b214b"
+    },
+    {
+      "path": "recipes/H33.json",
+      "bytes": 796,
+      "sha256": "08436fedeb06922a4d9304de20b9b525929b7a69f3a1cd7a4e81d9dc354fe84d"
+    },
+    {
+      "path": "recipes/H34.json",
+      "bytes": 759,
+      "sha256": "24c86365d508363c6689bf04048ac9ae91f6baf2266ba4a754fe3b1755edbe00"
+    },
+    {
+      "path": "recipes/H35.json",
+      "bytes": 764,
+      "sha256": "4c62978a743cbb634151f734bf765b3d2a089b51da7e69a84b47c162b8073ec9"
+    },
+    {
+      "path": "recipes/H36.json",
+      "bytes": 794,
+      "sha256": "b09872f865627b91141be6363dd01239a97d7f86305fe8ce241aa906487ccd96"
+    },
+    {
+      "path": "recipes/H37.json",
+      "bytes": 789,
+      "sha256": "f9c055c39c48912018c8ad459f0d7f2a8347128d779b28f7f98359fc1eafa656"
+    },
+    {
+      "path": "recipes/H38.json",
+      "bytes": 786,
+      "sha256": "e09e1993cf7a213c4516e64c4ff2c078b07416e399b8bc742c09852e31c7c991"
+    },
+    {
+      "path": "recipes/H39.json",
+      "bytes": 805,
+      "sha256": "e4a87e3ba00072740dd904ee232c09cdafca7ca636540e02326bbc39842c8e3d"
+    },
+    {
+      "path": "recipes/H40.json",
+      "bytes": 768,
+      "sha256": "707b2c1fa085e57a4564f65652ac6ad0f882ac0cb5c32a5ca385159287d62d2d"
+    },
+    {
+      "path": "recipes/H41.json",
+      "bytes": 785,
+      "sha256": "f8e9db08927d1e89d934ca4534dc86cebfe04bd3b8b4ddd338d858bfb6964da1"
+    },
+    {
+      "path": "recipes/H42.json",
+      "bytes": 775,
+      "sha256": "cd674d69baa647994ba6988eb28b61864b3c71104caac3189c68297adcd98b26"
+    },
+    {
+      "path": "recipes/H43.json",
+      "bytes": 763,
+      "sha256": "561869af1f9f44a1e47376fa06af2e37e6db704ff0afe6df55268257af33bb4d"
+    },
+    {
+      "path": "recipes/H44.json",
+      "bytes": 789,
+      "sha256": "cc381676b0b521c97c141335d9e4edea2f2ddcb2370de411c2c41f427cdd01b7"
+    },
+    {
+      "path": "recipes/H45.json",
+      "bytes": 783,
+      "sha256": "3eca2dc04542cb6715e087be4b57dfde64fdccfc1a9d90e0aa505340b838f06b"
+    },
+    {
+      "path": "recipes/H46.json",
+      "bytes": 819,
+      "sha256": "f7922d94404669b48ef26aa41668731c124a858357cdaa92c2449b41ff4f6e5e"
+    },
+    {
+      "path": "recipes/H47.json",
+      "bytes": 794,
+      "sha256": "459241bb5b3a5b5005b690c39b6f80a5005b97d3ee10287fad0f726236ea78a1"
+    },
+    {
+      "path": "recipes/H48.json",
+      "bytes": 817,
+      "sha256": "bd3831922e30ba56fd4972383d25bd2ee300e4e3284273910bec2094a8468006"
+    },
+    {
+      "path": "reports/C13_plan_compilation.json",
+      "bytes": 952,
+      "sha256": "166652d052d76f02d4bbc00e41157daa0c620c6b7a62057b7917a6dfcb5d1662"
+    },
+    {
+      "path": "reports/all_recipes_and_json.json",
+      "bytes": 4034,
+      "sha256": "483dd81bd74583b97352a0f56182a5d0ef7b67356733d4baf3983c5b54a4128d"
+    },
+    {
+      "path": "reports/control_tool_tests.txt",
+      "bytes": 4643,
+      "sha256": "588dd914de80ef734e7b70745ceab23cb903d4c9d97b4630507f8d1921a2d6d1"
+    },
+    {
+      "path": "reports/final_document_check.json",
+      "bytes": 326,
+      "sha256": "971640a6fd07854404e73984aa4313e58b89378f5bf0693804e7dc74241d82b3"
+    },
+    {
+      "path": "reports/forbidden_model_gate_result.json",
+      "bytes": 98,
+      "sha256": "c4cca058be30dd6c42e4ea6b39c0d94d54393044c9d74ef55ba5746de9a244c7"
+    },
+    {
+      "path": "reports/forbidden_model_gate_stderr.json",
+      "bytes": 55,
+      "sha256": "b01797aa9a14f2f448499e9444e0c3322b928e06749d146f07c11fd735a4d1c7"
+    },
+    {
+      "path": "reports/forbidden_model_gate_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "reports/math_fixture_report.json",
+      "bytes": 420,
+      "sha256": "de49493c01438d2286a8bc951ddad58e9ed1649b48e0a4c2709c5881793dc1c7"
+    },
+    {
+      "path": "reports/package_validation.json",
+      "bytes": 1769,
+      "sha256": "4d2eace0c822a50d2bd609f9c2082bd1c4c02c5e54c8d51d4c569a69e223b67b"
+    },
+    {
+      "path": "reports/word_layout_qa.json",
+      "bytes": 906,
+      "sha256": "d8423503d95d902e3453acd0f6e178d12b6f4adfff9c46801f097469a5827b2a"
+    },
+    {
+      "path": "specs/claims.json",
+      "bytes": 19396,
+      "sha256": "d3e550ca6001630f31fa00f6dd92a35dffe1eb0c43cb8cc8b0bc3f9101264dd3"
+    },
+    {
+      "path": "specs/combinations.json",
+      "bytes": 5843,
+      "sha256": "c99902b636094a6ca04dfc118839496839e4c0c5b4f02268d96d811d256028e0"
+    },
+    {
+      "path": "specs/execution_policy.json",
+      "bytes": 1457,
+      "sha256": "e1dc9c916b5a8344759156337cf5b9520c77d78f787f24949de6f77f3acf453f"
+    },
+    {
+      "path": "specs/frontier_packet.schema.json",
+      "bytes": 28531,
+      "sha256": "d7cc8835d5e8454d04641f30cfa4f01f49a5be1c95d8f44d923e53c94fd2a980"
+    },
+    {
+      "path": "specs/horizons.json",
+      "bytes": 5676,
+      "sha256": "e98a030a215ba1e64b25be893f753b9fd2e05d6f6332f06d4f7cd330d93d2b28"
+    },
+    {
+      "path": "specs/hypotheses.json",
+      "bytes": 37020,
+      "sha256": "7aebf9e9ef3994b5951686239c12a39b4e50b8cd180d18934238266d540a67b8"
+    },
+    {
+      "path": "specs/initial_run_state.json",
+      "bytes": 11760,
+      "sha256": "9061f7be3d83ad7e552cde9395388ecc4b7e64d94efa4ee1b4a4ab20fbaecc54"
+    },
+    {
+      "path": "specs/legacy_module_aliases.json",
+      "bytes": 5201,
+      "sha256": "b17652efa7b3121b46bfdef73220a840308e644016d9c17029636fa58a774068"
+    },
+    {
+      "path": "specs/prompt_registry.json",
+      "bytes": 1820,
+      "sha256": "481d676ca3da70a19665cb66a551bd8440e47015f5ce1caf5b53a49a4c5bc818"
+    },
+    {
+      "path": "specs/requirements_traceability.json",
+      "bytes": 2379,
+      "sha256": "381a488196aa4ab38de7cb4236bab42b2978e2587ed91a6d9b397251cf443031"
+    },
+    {
+      "path": "specs/source_inventory.json",
+      "bytes": 32771,
+      "sha256": "af8cd2d2bed635bd78a156ae8518381089d263518c8454c8df005c327e22b248"
+    },
+    {
+      "path": "specs/sources.json",
+      "bytes": 11902,
+      "sha256": "e38813866e8050a2508fb08206235a85357ffaeae1b503a24734a0def7c7bfd6"
+    },
+    {
+      "path": "specs/target_ownership.json",
+      "bytes": 27779,
+      "sha256": "563ca3dd09f610ad0448270df2b531222a0922c7854a518c2025622a545059ba"
+    },
+    {
+      "path": "specs/task_graph.json",
+      "bytes": 148982,
+      "sha256": "cafee36f5795baa3f1d643dd0d79a11e1aee7479fa67784c960d3c9391a51759"
+    },
+    {
+      "path": "tasks/A00_工作区与能力发现.md",
+      "bytes": 1782,
+      "sha256": "9c941328e8ba0aba0cb1524bd421dba0e6fadf3bb8f5a029bb7c61796d3c7fa9"
+    },
+    {
+      "path": "tasks/A01_第一性原理总架构.md",
+      "bytes": 1887,
+      "sha256": "c3ef8df8683189a01bfc8e68a4e09b0c20137a2ff47854d28ed08716d14c6842"
+    },
+    {
+      "path": "tasks/A02_公共契约与迁移.md",
+      "bytes": 5352,
+      "sha256": "52fa4691c8cbbd23af7b55426866aae5677392bd1e85b09db7662bae91bf3315"
+    },
+    {
+      "path": "tasks/A03_研究IR与编译器.md",
+      "bytes": 1664,
+      "sha256": "f41c3d4988df7ab2518c0cb10eb3d67c85aa49a31d4884adad84da6385fcdc00"
+    },
+    {
+      "path": "tasks/A04_运行时与恢复系统.md",
+      "bytes": 1638,
+      "sha256": "2ec606c4d3f34c787c2e7cfa1e89c4de75dfd89c4240f45272be88f2218241c9"
+    },
+    {
+      "path": "tasks/A05_权限控制与禁跑闸门.md",
+      "bytes": 1712,
+      "sha256": "ac808d1a8a8bb806ed1086f19d8b7349c5f7e7b2c9d7feff90d90458bbaa9176"
+    },
+    {
+      "path": "tasks/B01_能力契约.md",
+      "bytes": 1761,
+      "sha256": "8befd9ee7c7f874cdb77a3126c3341c87174f9236007aedb246d6a86c050150f"
+    },
+    {
+      "path": "tasks/B02_前缀注入.md",
+      "bytes": 1752,
+      "sha256": "f79072f83731e38ab0e3e0b724fe9851a319f405e94b1fa5ffad1fa205bf88a6"
+    },
+    {
+      "path": "tasks/B03_残差注入.md",
+      "bytes": 1749,
+      "sha256": "744c90d51b22577597378a7a53098f1cf1f3433d224d63b460d103230a296d57"
+    },
+    {
+      "path": "tasks/B04_KV适配.md",
+      "bytes": 1736,
+      "sha256": "b8edc8f61843d8ad5d3ed9285aca3f035def81229f332a27d9201bc90d917ed0"
+    },
+    {
+      "path": "tasks/B05_异构行为接口.md",
+      "bytes": 1755,
+      "sha256": "6f77efd658aa3fa24e041ffd90a98f00e5599af237ef2973f23323c7aeba4e08"
+    },
+    {
+      "path": "tasks/B06_存储与设备.md",
+      "bytes": 1749,
+      "sha256": "6ce3cb3a3485a6d9c4ea0f2a64d10df08ab8f28325793d8c40b7b8a5a8167339"
+    },
+    {
+      "path": "tasks/C01_临时计算体.md",
+      "bytes": 1821,
+      "sha256": "2a10e114ec22ceceae956187b0e4ed8c9c6e5ea4b2aecd08b2f52eecbb687304"
+    },
+    {
+      "path": "tasks/C02_响应驱动共享场.md",
+      "bytes": 1822,
+      "sha256": "244bad1841cea4c381ee28deee21d62426f94c92eeb28e5c36b6b086ecccbb80"
+    },
+    {
+      "path": "tasks/C03_分布式信念树.md",
+      "bytes": 1819,
+      "sha256": "916a763b76262bed653d3fec9b735d4b542aa273d1a3e8c251ee4d143fc63204"
+    },
+    {
+      "path": "tasks/C04_异步跨模型续接.md",
+      "bytes": 1822,
+      "sha256": "870cfdde9da834b56036ff0e8aeff9c22600fa710d21b22ab5ba1223334b8bd7"
+    },
+    {
+      "path": "tasks/C05_关系接地接口.md",
+      "bytes": 1819,
+      "sha256": "411cf2a9cb8185ece062b463c45e310345890b541cb33b426453e65e516ded7b"
+    },
+    {
+      "path": "tasks/C06_连接结构中的技能.md",
+      "bytes": 1830,
+      "sha256": "5ff79f6161bfab94fe5cf4bee2a195004d8dbd77c4ad76cbf69b9faa8a63cba4"
+    },
+    {
+      "path": "tasks/C07_可迁移计算记忆.md",
+      "bytes": 1827,
+      "sha256": "7d29495aacd9af67f8f5f72988011ef3f718b41bdc331d50520567ed8b3bf8c9"
+    },
+    {
+      "path": "tasks/C08_协议作为计算语言.md",
+      "bytes": 1830,
+      "sha256": "843421872bdc34fce8082ac8f746d551ec861458e91cd05d84bb48dfc2de2a41"
+    },
+    {
+      "path": "tasks/C09_协变的多尺度计算语言.md",
+      "bytes": 1822,
+      "sha256": "35927fc714214a32366bbc0f338be63656b762edc6e0b6e5dd5d8799f94df47a"
+    },
+    {
+      "path": "tasks/C10_分歧驱动的概念诞生.md",
+      "bytes": 1811,
+      "sha256": "df05803780dbca8ce5d9be6c2153d42db8fb9ae4f33dae0e3e0f6c781af331c8"
+    },
+    {
+      "path": "tasks/C11_问题空间的跨域迁移.md",
+      "bytes": 1811,
+      "sha256": "77e25c160fecc94547f3fb0b46def3b654ed5d7517eb32622a6cc79abbe78d8d"
+    },
+    {
+      "path": "tasks/C12_可移植的科学小世界.md",
+      "bytes": 1811,
+      "sha256": "b5c5324a2f2a7db07613c7bd14b059fe5734a8e58dff862062e19e84febe93a8"
+    },
+    {
+      "path": "tasks/C13_跨模型学习协议网络.md",
+      "bytes": 1811,
+      "sha256": "ce288ab7d0224702ef8f4e748f95ebb3798d17025227be1beded9b481b77e1f5"
+    },
+    {
+      "path": "tasks/C14_认知结构的事务性跃迁.md",
+      "bytes": 1822,
+      "sha256": "0f79a6c9cf9f55dec161f4665201b184e3251cb98a1f81ecbcb72b47d29e96a7"
+    },
+    {
+      "path": "tasks/C15_多节律的轨迹推理.md",
+      "bytes": 1805,
+      "sha256": "2cc0f5968c8ff4714825ff20e6a09f2df2f9bcafda1a4f7c5295cd89775fc4ee"
+    },
+    {
+      "path": "tasks/C16_共同梦境与问题生态.md",
+      "bytes": 1816,
+      "sha256": "442e48bdc5a203b332993e2f531a6a1838f198332d8aec8452529c7cd7d7bcfb"
+    },
+    {
+      "path": "tasks/C17_以未知边界驱动通信.md",
+      "bytes": 1811,
+      "sha256": "d37b9f84e2bf1a0225f194ca5dd6c1bbff09d13f6bbc4258ec4d0a96891b0b74"
+    },
+    {
+      "path": "tasks/C18_不重复计信的能力联盟.md",
+      "bytes": 1817,
+      "sha256": "f4056264fd7f80d9dad3a4adf3a765549b0add317ca93531a6300c8fe03943f1"
+    },
+    {
+      "path": "tasks/C19_任务相对的世界观切换.md",
+      "bytes": 1822,
+      "sha256": "731051d915924888dc8b9e97bc5f3c99089fe523f054cfe5f6417e968490461d"
+    },
+    {
+      "path": "tasks/C20_自举的语义编译生态.md",
+      "bytes": 1831,
+      "sha256": "eaa44a1729831bb29abf3a39bd06e45b2caba9557e918ae72820dcee84a19946"
+    },
+    {
+      "path": "tasks/D01_近邻与新颖性台账.md",
+      "bytes": 1630,
+      "sha256": "cb4a49e90f3a72cf2acad8ac6b46dc51c3c1983f25f11c93c50af27b04d42dc8"
+    },
+    {
+      "path": "tasks/D02_形式推导与极限分叉.md",
+      "bytes": 1894,
+      "sha256": "8f6a0f41e686ea0be55dff892a4db30b380f38d7edbc42a203074a8083456b4b"
+    },
+    {
+      "path": "tasks/D03_研究总稿与README.md",
+      "bytes": 1724,
+      "sha256": "a84a7cca9b2cb9f13687646f540132b7413d2a3d4d40f69d9b566e253d98ab31"
+    },
+    {
+      "path": "tasks/D04_未来模型输入模板.md",
+      "bytes": 1647,
+      "sha256": "71f6f3d2cdaadcd26bbe6c8595f5ab2d8b222a32110ea5147b83060fdf6998c6"
+    },
+    {
+      "path": "tasks/L01_角色与双通道.md",
+      "bytes": 1769,
+      "sha256": "e5263fc793007e32f8943dc4002c4fcfce9fe7d4342eeb3e70decadc61fa1b0e"
+    },
+    {
+      "path": "tasks/L02_算子响应信念.md",
+      "bytes": 1780,
+      "sha256": "1c9594acbd9bba935b03ce00909c7af633e312fc75e0f527acf525d96caa33a5"
+    },
+    {
+      "path": "tasks/L03_坐标与局部限制.md",
+      "bytes": 1775,
+      "sha256": "f5a5890c1a91ec1c1a6c8844a7dfa20a5f66f6b27ebb99568689f77a307269df"
+    },
+    {
+      "path": "tasks/L04_概念和问题.md",
+      "bytes": 1802,
+      "sha256": "e745af6b48f7d1cfa4c54d6dc0b12960231ad6a1c9dd82cf3cbb1719a120d0ee"
+    },
+    {
+      "path": "tasks/L05_类比与因果.md",
+      "bytes": 1793,
+      "sha256": "5adf8ec5f855d64bca0850f9bfed3abb968216fd625d6720b7705e9965e4d311"
+    },
+    {
+      "path": "tasks/L06_动力学和尺度.md",
+      "bytes": 1809,
+      "sha256": "48c393a21c572b964f5791eccbf7843b56acc3d59550a6fee4f96585f5f9af24"
+    },
+    {
+      "path": "tasks/L07_行为方向运输.md",
+      "bytes": 1776,
+      "sha256": "298608ccbba711bc27a5e0a7cb4ac97d689959561b87f3dbcc399c0f0771516d"
+    },
+    {
+      "path": "tasks/L08_可塑性规则.md",
+      "bytes": 1776,
+      "sha256": "5b16224b0700b882cb24289f832088464db920e60d68f69faae2c50d767aeaa4"
+    },
+    {
+      "path": "tasks/L09_宏与结构搜索.md",
+      "bytes": 1779,
+      "sha256": "915afaec171440fd4805ae6ee31b6b37b44c0dad0dc72fcec60c1dbef256d87c"
+    },
+    {
+      "path": "tasks/L10_世界核与梦境.md",
+      "bytes": 1777,
+      "sha256": "c0182891ac4d601619194c97c9f5412d816c00c0247a300bc4bf5fecc4865bc3"
+    },
+    {
+      "path": "tasks/L11_可识别性与负知识.md",
+      "bytes": 1798,
+      "sha256": "f88ae851da089ca893f90781ac1ceaf48443cb5ffaa61be0f13921472f66998a"
+    },
+    {
+      "path": "tasks/L12_联盟与谱系.md",
+      "bytes": 1775,
+      "sha256": "00d5f491e562f3899b2cbd156c0bc00ea8391e712b9b291a0c57f7422308644d"
+    },
+    {
+      "path": "tasks/L13_组合级训练组织.md",
+      "bytes": 1852,
+      "sha256": "04feba38714b3e34800f750014fda5619b709133b89a6d70ce5b852525db26f7"
+    },
+    {
+      "path": "tasks/M01_H01_可组合潜算子.md",
+      "bytes": 1856,
+      "sha256": "4cffc4e4126cbac60d6001449532413eac81a84132fb462e03ec338048cba304"
+    },
+    {
+      "path": "tasks/M02_H02_反事实响应包.md",
+      "bytes": 1856,
+      "sha256": "387a33f2a5ace941576273b25ee9c79e857ef723b65237617bfd517bcd18ba8d"
+    },
+    {
+      "path": "tasks/M03_H03_多假设信念包.md",
+      "bytes": 1856,
+      "sha256": "843f24ddf2ccb0e464e7445e37a22077b3c2141e5a1c81bf0c062fad2f25ee11"
+    },
+    {
+      "path": "tasks/M04_H04_多主体共享约束场.md",
+      "bytes": 1874,
+      "sha256": "1c9bac514d3bbea86c5b13dc1d8f816b403b58a7402627d6d27e5e9c32ba6a59"
+    },
+    {
+      "path": "tasks/M05_H05_推理续接胶囊.md",
+      "bytes": 1856,
+      "sha256": "b8c13db5380fadd2339348b6bc0d777f02c9436431ba0ed280a499bc23ca4366"
+    },
+    {
+      "path": "tasks/M06_H06_多图册语义对齐.md",
+      "bytes": 1865,
+      "sha256": "ab8829526724269fa2a37c7108cd2ca35a99ce060c1c99a939cdba8ca7db84f2"
+    },
+    {
+      "path": "tasks/M07_H07_类型化潜程序.md",
+      "bytes": 1856,
+      "sha256": "d67d3510f684ac4cae6eba9a60b572618ab9ee3e757056506a77cee1fe5ddfed"
+    },
+    {
+      "path": "tasks/M08_H08_关系结构通信.md",
+      "bytes": 1856,
+      "sha256": "b916495010bc52b9d37cb8457ba509a50d0158d2cc4913300701250a28e2f324"
+    },
+    {
+      "path": "tasks/M09_H09_干预代数通信.md",
+      "bytes": 1856,
+      "sha256": "a30a6fb8cfc96eb98b6fc75b8905d9ac5f87013be4858c36f177a87c1057224f"
+    },
+    {
+      "path": "tasks/M10_H10_高阶协同超边.md",
+      "bytes": 1856,
+      "sha256": "cab130ae30dda3238a71c3a93f33cbd07773af075baee2d4791ccacb4cc02b5f"
+    },
+    {
+      "path": "tasks/M11_H11_渐进潜编码.md",
+      "bytes": 1847,
+      "sha256": "d44ea0425c56be5f724a658d3caba99c710ac8a5204b25bf916fbc4018983877"
+    },
+    {
+      "path": "tasks/M12_H12_多查询持久胶囊.md",
+      "bytes": 1865,
+      "sha256": "11c329f892b870674ed3086e208133cc11c67d8cb908e44dbf1e910e4a22ba3f"
+    },
+    {
+      "path": "tasks/M13_H13_可分叉潜计算.md",
+      "bytes": 1856,
+      "sha256": "dceb26bd211f28a7ee25fb9447917ac5f5f177d7c9a66195e3eef84b516aac9f"
+    },
+    {
+      "path": "tasks/M14_H14_潜技能语法.md",
+      "bytes": 1847,
+      "sha256": "08d1a0a9a6a47f61aafd95e409167cd5f2be4c985659a7a72959b292ee838e2e"
+    },
+    {
+      "path": "tasks/M15_H15_接收者无关协议学习.md",
+      "bytes": 1883,
+      "sha256": "d7b1cc2d517c042e8c9b426fd1b97bae448497ce8b6630d3b5198b6442763cd6"
+    },
+    {
+      "path": "tasks/M16_H16_精确符号与潜状态双通道.md",
+      "bytes": 1901,
+      "sha256": "9287a2755563b776462e5b75e7a6fbeeeb906a6ff666bd91b771d819b8138efa"
+    },
+    {
+      "path": "tasks/M17_H17_跨模态坐标接地.md",
+      "bytes": 1865,
+      "sha256": "38835b43e5ab3004a35d77c3695eb9701237110a18a9941e834f7473df6f8eba"
+    },
+    {
+      "path": "tasks/M18_H18_通信诱导计算结构.md",
+      "bytes": 1874,
+      "sha256": "97e5de14b1a620e3614bd500350733adad3b6a0c3429e65499516ade0ca47b2d"
+    },
+    {
+      "path": "tasks/M19_H19_消息到技能巩固.md",
+      "bytes": 1865,
+      "sha256": "a25e776b2e88c1999f101e6be93feb3a23d13d95a862eabbd845c7e4b7b7b27c"
+    },
+    {
+      "path": "tasks/M20_H20_异步认知时钟.md",
+      "bytes": 1856,
+      "sha256": "4176d6fdf1f756bf6c3a1bbcf980a7bdba294e83d207be281c608fd39ddc37f9"
+    },
+    {
+      "path": "tasks/M21_H21_反事实分支组合搜索.md",
+      "bytes": 1883,
+      "sha256": "8ea16ba41d5eea129a2d22fd5b936d62ce1ca8a2e73ece18bf84ac9b5efce030"
+    },
+    {
+      "path": "tasks/M22_H22_动态模型边界.md",
+      "bytes": 1856,
+      "sha256": "0e6cd3b8ab78be8047e0bb6272f659e92b8a2493fa7ec26ed8d585a0d924fbc3"
+    },
+    {
+      "path": "tasks/M23_H23_语义残差纠错.md",
+      "bytes": 1856,
+      "sha256": "6bc1b91dcd2f5a273d1c6eaab27bc8d0ba846dbc1bba84e83f70bf5103b9a6e8"
+    },
+    {
+      "path": "tasks/M24_H24_有作用域的潜计算能力.md",
+      "bytes": 1892,
+      "sha256": "a99e467ddb153b8e73b3a73caec4529178ed2deee8693c7858ca9111245e348c"
+    },
+    {
+      "path": "tasks/M25_H25_规范协变的认知接口.md",
+      "bytes": 1821,
+      "sha256": "7c5b5e12afe2f9041de022a6db48108d067d53402a80ecaa7fc4f5d9ba445dbb"
+    },
+    {
+      "path": "tasks/M26_H26_不可全局拼合的语义层.md",
+      "bytes": 1827,
+      "sha256": "e7e092b7935b322e945f9e4466f0d7f5813712757cf2a09f41391026d524b6e0"
+    },
+    {
+      "path": "tasks/M27_H27_交互中诞生的新概念.md",
+      "bytes": 1824,
+      "sha256": "433ac68053cce92acb6cc98933b0b8f4d2a8603bb9284659e03e67e036a2dd66"
+    },
+    {
+      "path": "tasks/M28_H28_语义结构的分岔与相变.md",
+      "bytes": 1833,
+      "sha256": "6f94f8c5551c0c34ea4dce3981b0feff99ac130a9106b0840ca20fbda61f94af"
+    },
+    {
+      "path": "tasks/M29_H29_问题生成的潜演算.md",
+      "bytes": 1819,
+      "sha256": "c81a1e15618036e82776f0cbf87e0283c4e11d5ed5bc6e60afa11afc40550b1a"
+    },
+    {
+      "path": "tasks/M30_H30_类比态射编译器.md",
+      "bytes": 1811,
+      "sha256": "c39c1f8b6ac224c83b19540c11e8a11fedbd15c7e1c0d5712001bfecdf4d68e1"
+    },
+    {
+      "path": "tasks/M31_H31_因果机制移植.md",
+      "bytes": 1806,
+      "sha256": "0a71d04856aef7a37d1db2b64ea135d880d6616ca7be3585148f0f919b07ba30"
+    },
+    {
+      "path": "tasks/M32_H32_视角与目标条件代数.md",
+      "bytes": 1827,
+      "sha256": "4829c3230a1d8304f77ed1dc2a563622977c53c08d88a500dc238e7a011aa8bd"
+    },
+    {
+      "path": "tasks/M33_H33_非梯度的互构认知动力学.md",
+      "bytes": 1838,
+      "sha256": "da829df777a406af238a71385751a4a2aa5c88b9712bd8428e085b9513f90a74"
+    },
+    {
+      "path": "tasks/M34_H34_双边边界条件推理.md",
+      "bytes": 1824,
+      "sha256": "3c38e6dbeac1fa1362acbcd5bd894665a1eadb8f3ba304f4617de994d948fac5"
+    },
+    {
+      "path": "tasks/M35_H35_跨尺度语义重整化.md",
+      "bytes": 1825,
+      "sha256": "a593a79774e913ebfed40d1b6817e1330fdbaf64be1f21442c299b41dde4f380"
+    },
+    {
+      "path": "tasks/M36_H36_以分歧生产结构的认知博弈.md",
+      "bytes": 1846,
+      "sha256": "339bda67f68f08c266f4849009efe35e6f663e180f3cf41cbbaf54c33dc9dc21"
+    },
+    {
+      "path": "tasks/M37_H37_跨模型学习方向运输.md",
+      "bytes": 1834,
+      "sha256": "faf59353a929602bfd9ded1e540993195efd96882f35e7f8c7da51ed6d4db888"
+    },
+    {
+      "path": "tasks/M38_H38_可传递的可塑性规则.md",
+      "bytes": 1826,
+      "sha256": "a44ed7f2be39b690caa50b3d8d0c0d53b1e9f15d6b35f04e9d943f810d06b12d"
+    },
+    {
+      "path": "tasks/M39_H39_可回滚的跨模型认知事务.md",
+      "bytes": 1840,
+      "sha256": "8c2c35f437e9d5f7731e1239efdc160829c9e2c8cd50dc4a9152702afa301e1b"
+    },
+    {
+      "path": "tasks/M40_H40_自举的潜指令集.md",
+      "bytes": 1819,
+      "sha256": "432e9ab43dd06e4a42b5e3063b9fc165395a4242948b8618835b0c987c720405"
+    },
+    {
+      "path": "tasks/M41_H41_互补能力的联盟契约.md",
+      "bytes": 1826,
+      "sha256": "279cf081c7ebcf7ab403fec4572a12202d8388d80bc35493cd118ee5c43e457c"
+    },
+    {
+      "path": "tasks/M42_H42_模型与任务的共演化生态.md",
+      "bytes": 1835,
+      "sha256": "ddce6141c46bc53a849181e2da95387a4ec3ee68430b4e8ed448a24b6cbe27a3"
+    },
+    {
+      "path": "tasks/M43_H43_可交换的世界动力学核.md",
+      "bytes": 1835,
+      "sha256": "e5f670c256c8ffa39d30d7db35f90669944847274211c66ca87dbd9a981e7b48"
+    },
+    {
+      "path": "tasks/M44_H44_共同构造的反事实梦境.md",
+      "bytes": 1830,
+      "sha256": "bb619d4f53c1eba466102e4805d3084a7c4d113f2d0825329912e052d7b206e7"
+    },
+    {
+      "path": "tasks/M45_H45_主动可识别性协议.md",
+      "bytes": 1825,
+      "sha256": "5c67687a1e3b403e0ec341780324f6974bacee3938c59c788ae46f5e13162761"
+    },
+    {
+      "path": "tasks/M46_H46_不可行域与负知识胶囊.md",
+      "bytes": 1840,
+      "sha256": "e373d2535be541282ec677eb764cf4e4fa1e68901e35ccf127e2a9fd3a403083"
+    },
+    {
+      "path": "tasks/M47_H47_任务相对的语义商空间.md",
+      "bytes": 1830,
+      "sha256": "5a6e60d3c5b2bc108912678bf929d9c8db6b827ab834690f09e6f130c895cdb7"
+    },
+    {
+      "path": "tasks/M48_H48_相关证据的认知谱系代数.md",
+      "bytes": 1846,
+      "sha256": "bab27d77c5a0ed4674d9692f36abd17c61ed82eae4e5cac24fde16ac7367accc"
+    },
+    {
+      "path": "tasks/Q01_数学与源码终审.md",
+      "bytes": 2180,
+      "sha256": "2396e9d1d9f39ce5fd7f23d70941910e52bf73630819f0e037ab3ce1e80e8ce2"
+    },
+    {
+      "path": "tasks/Q02_权限与秘密终审.md",
+      "bytes": 1571,
+      "sha256": "64428df7e812f93f3c83209ac894a28f3547d4f8f61e5b5d56b649836376575a"
+    },
+    {
+      "path": "tasks/V01_六张机制矢量图.md",
+      "bytes": 1635,
+      "sha256": "924331d3834c2ad13605c1e79fc875682b2c15fe8cd78700cd8bb35bee705076"
+    },
+    {
+      "path": "tasks/V02_研究版与精简PPT.md",
+      "bytes": 1630,
+      "sha256": "6a29a0d6c69d4723ab4712c49a195161d1a36e84a7af410dcab8c829864f9b9b"
+    },
+    {
+      "path": "tasks/V03_五个机制动画.md",
+      "bytes": 1635,
+      "sha256": "52fa4c5f0de0c12260211f5ee871841a9353454f4538032543b0b795bd692f9f"
+    },
+    {
+      "path": "tasks/V04_90秒视频.md",
+      "bytes": 1631,
+      "sha256": "694f95487354d0402be1fe7e458c0f1de3b23ead6745ec2f4ce6f75818290a19"
+    },
+    {
+      "path": "tasks/V05_6分钟解释视频.md",
+      "bytes": 1648,
+      "sha256": "726708a547b38145375613f156084096b44de13b3da42c40c8ac5d4b43cb6168"
+    },
+    {
+      "path": "tasks/V06_旁白与字幕.md",
+      "bytes": 1658,
+      "sha256": "06aaf00000ecbeaf1839bfeb6c171235b13614bcd50da4e4f6a055c5b499aa27"
+    },
+    {
+      "path": "tasks/V07_媒体总复核.md",
+      "bytes": 1655,
+      "sha256": "79a2ab9bde5a73e826991761b9524dec8ae3f8e82a9e3dbfec496b5d1e2d9495"
+    },
+    {
+      "path": "tasks/W01_矩阵与坐标世界.md",
+      "bytes": 1808,
+      "sha256": "0f9e1f343b5fda20d43be450b5211a96b25441d7f8ec8f9899899ebf987d8d4a"
+    },
+    {
+      "path": "tasks/W02_局部约束与拼合世界.md",
+      "bytes": 1826,
+      "sha256": "fe93586cd6c778f7ea08380ead88ff91ebf0c61a8078bbcba25e51306df0bfe6"
+    },
+    {
+      "path": "tasks/W03_概念与谓词世界.md",
+      "bytes": 1793,
+      "sha256": "fd51a0a66374ee86d07dce50942a2aa54e016e1e592ebdc07eb3cd0036c4203d"
+    },
+    {
+      "path": "tasks/W04_问题与解关系世界.md",
+      "bytes": 1799,
+      "sha256": "6b64cec202b1e1fd079096115a924188e49afc4994fff9ba1ec165b9783d9d16"
+    },
+    {
+      "path": "tasks/W05_因果与类比世界.md",
+      "bytes": 1811,
+      "sha256": "e15126a003591b332affa92d9d249eb33c9a8bfe6924eb2019b8bf4b1711f2e9"
+    },
+    {
+      "path": "tasks/W06_动力学与边界值世界.md",
+      "bytes": 1799,
+      "sha256": "00e2d904b96775d142c1e972da8cf1db7dd3e0028c351f3b097aa1e4eeaf77b0"
+    },
+    {
+      "path": "tasks/W07_尺度与商空间世界.md",
+      "bytes": 1790,
+      "sha256": "a5e5f3c36b096a1d864641194a90604d271002edc2a5887f94ddea4445ee0fb5"
+    },
+    {
+      "path": "tasks/W08_行为方向与更新世界.md",
+      "bytes": 1805,
+      "sha256": "412c6d0afd9f661009d15ec42b8ae8da44293419392060295715103afbb399d2"
+    },
+    {
+      "path": "tasks/W09_宏与事务世界.md",
+      "bytes": 1790,
+      "sha256": "27ef084512e81e37ae4cc2ad196d9419f713d8c4b5c5a50cb5a862f11f014e2a"
+    },
+    {
+      "path": "tasks/W10_联盟与谱系世界.md",
+      "bytes": 1799,
+      "sha256": "1e1a52e598132c29f64629b466c89e5b78d2280c943062de8fd4d8c90e5f41c5"
+    },
+    {
+      "path": "tasks/W11_世界核与梦境世界.md",
+      "bytes": 1811,
+      "sha256": "e569035938e21e40145bb6736a38987573bff50c59ca888f98f5f5959e8880ee"
+    },
+    {
+      "path": "tasks/W12_查询与负知识世界.md",
+      "bytes": 1817,
+      "sha256": "af8ecfd526e48e24c1c155c596d546ed75951b1ea065f5500dda32ed6deda3fd"
+    },
+    {
+      "path": "tasks/W13_共用数据视图与分割.md",
+      "bytes": 1687,
+      "sha256": "d3e374813ff916ab1aff4374272f3b63371e1a5b8523b7423646a15538520cd4"
+    },
+    {
+      "path": "tasks/X01_无固定模型个体的认知连续体.md",
+      "bytes": 1850,
+      "sha256": "f12373131a49757710aa13103e42ae9b84bcfb4c06a28cc42e4b602b15e7bab9"
+    },
+    {
+      "path": "tasks/X02_没有全局世界观的集体知识.md",
+      "bytes": 1824,
+      "sha256": "057910e7b6f04287360eb63a9efd0b743f15e4910785d9edc539e220c63081b6"
+    },
+    {
+      "path": "tasks/X03_问题先于答案的研究引擎.md",
+      "bytes": 1807,
+      "sha256": "a21ebd02913b47ae2d47aded7dd9138d815e8420651a2dc27e71098dac649022"
+    },
+    {
+      "path": "tasks/X04_可塑性互联网.md",
+      "bytes": 1772,
+      "sha256": "8696072ca974fd04e75f2c2c16149a8164723cbecb1f434743c3c8cf012d68a4"
+    },
+    {
+      "path": "tasks/X05_会进化语言的认知生态.md",
+      "bytes": 1796,
+      "sha256": "104077f11e51540cad3095905cace04bcabb13611f3d29ee76ea9e20614b7089"
+    },
+    {
+      "path": "tasks/X06_跨尺度的思想物质.md",
+      "bytes": 1786,
+      "sha256": "87033b395c0baa9215f849c7554aca7af410550a217e014da3ebc89e15b925dc"
+    },
+    {
+      "path": "tasks/X07_轨迹即思想而非终点即思想.md",
+      "bytes": 1810,
+      "sha256": "8b5cde38b10595996aa3a9272fe7a7a91bd63953ece0345da2286bd846c1ca91"
+    },
+    {
+      "path": "tasks/X08_能够传递的未完成证明与发现.md",
+      "bytes": 1817,
+      "sha256": "633d7315aab30df83f099bd8f7c41004c7de0e8cfc8e3d31b6226fdf724a00a9"
+    },
+    {
+      "path": "tasks/X09_共同梦境产生新的经验空间.md",
+      "bytes": 1818,
+      "sha256": "cc69b7762d2a4f4ea7e201ca00f2371dbc4cb34521775e96a73d57ec5603fa00"
+    },
+    {
+      "path": "tasks/X10_认知公共品与临时能力联盟.md",
+      "bytes": 1813,
+      "sha256": "8d4b521dc652254d390400d9a939aad7754e9a396893b7dc794522a7dcc93b36"
+    },
+    {
+      "path": "tasks/X11_可追溯的概念出生与死亡.md",
+      "bytes": 1780,
+      "sha256": "c2681c39565d20552dc8ff569a33556def2f63af60e8d0294e4899cd8d32d517"
+    },
+    {
+      "path": "tasks/X12_语义编译而非模型选型.md",
+      "bytes": 1812,
+      "sha256": "a488d1555c740e16eb18a3838c6aa2f81e4e8d08a57167e8afd5125d59fe7bbe"
+    },
+    {
+      "path": "tasks/Z01_完整性与交付准备.md",
+      "bytes": 1712,
+      "sha256": "94dfd7332786eedb64fe77ac77e12f8ad398d29d466533c4a6e97e6fc70e073b"
+    },
+    {
+      "path": "tasks/Z02_最终压缩包.md",
+      "bytes": 1624,
+      "sha256": "608c23579a42f26dee723f64b4d4be94636bad9903d63ec2ab21b9f5f418c378"
+    },
+    {
+      "path": "tests/test_plan_tools.py",
+      "bytes": 9378,
+      "sha256": "80eb75b4e42984a540e2bb8198cd2eb7903453d09354d632a50162688c35a34b"
+    },
+    {
+      "path": "tools/README.md",
+      "bytes": 1197,
+      "sha256": "4b47412878d177143f97906c591305c4eaedd22f76cd498d868a31c127278e9f"
+    },
+    {
+      "path": "tools/frontierctl.py",
+      "bytes": 17589,
+      "sha256": "9b130e6fd96d8122aee86b6b7282f4c83f0bd785f8af0c95d130a4646c3f62f6"
+    },
+    {
+      "path": "tools/math_reference.py",
+      "bytes": 6197,
+      "sha256": "d958022e5088e995dfceb193a65bca42be17cdfb008c8bbc78d6e96cf36bc7ac"
+    },
+    {
+      "path": "可改写认知_前沿创新与Dot全流程研究总册_V3.docx",
+      "bytes": 132275,
+      "sha256": "8a0a85c931d86f4565fefae01407bba5fbd032cadc40e3c96e5f483e608c39b7"
+    }
+  ]
+}

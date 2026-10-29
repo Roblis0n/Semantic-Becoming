@@ -1,0 +1,17 @@
+test_anchor_scope_and_expiration (test_h37.H37Contracts.test_anchor_scope_and_expiration) ... ok
+test_bounded_solver_and_migration (test_h37.H37Contracts.test_bounded_solver_and_migration) ... ok
+test_rank_and_unreachable (test_h37.H37Contracts.test_rank_and_unreachable) ... ok
+test_scalar_and_ridge (test_h37.H37Contracts.test_scalar_and_ridge) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+{
+  "selected": 4,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h37.H37Contracts.test_gate",
+    "test_h37.H37Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

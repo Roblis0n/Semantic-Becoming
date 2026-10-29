@@ -1,0 +1,178 @@
+{
+  "schema_version": 3,
+  "id": "H23",
+  "kind": "mechanism",
+  "title": "\u8bed\u4e49\u6b8b\u5dee\u7ea0\u9519",
+  "mechanisms": [
+    "H23"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H23_\u8bed\u4e49\u6b8b\u5dee\u7ea0\u9519.md",
+  "target_base": "src/latent_comm/mechanisms/h23_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H23",
+    "name": "semantic_repair",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "response",
+    "data_family": "conditional_response",
+    "training": {
+      "family": "R03",
+      "loss_terms": [
+        "repair_behavior",
+        "no_repair_gate"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.repair.diagnostics",
+      "latent_comm.mechanisms.repair.residual",
+      "latent_comm.mechanisms.repair.protocol"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I23_\u8bed\u4e49\u6b8b\u5dee\u7ea0\u9519.md",
+  "canonical_module": "latent_comm.mechanisms.h23_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h23_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h23_legacy.adapter.encode_repair",
+    "forward_entries": [
+      "latent_comm.mechanisms.h23_legacy.adapter.encode_repair",
+      "latent_comm.mechanisms.h23_legacy.adapter.no_repair_gate"
+    ],
+    "loss_input_bindings": {
+      "after": {
+        "producer": "stage public behavior probes after encode_repair delta",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "target": {
+        "producer": "SupervisionBatch.target; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "probe_valid": {
+        "producer": "stage explicit boolean probe_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "gate_logits": {
+        "producer": "no_repair_gate return[1]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "needs_repair": {
+        "producer": "SupervisionBatch.needs_repair; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "gate_valid": {
+        "producer": "stage explicit boolean gate_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "delta": {
+        "producer": "encode_repair return[0]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "normal_valid": {
+        "producer": "stage explicit boolean normal_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "no_repair_gate.weights",
+        "no_repair_gate.bias",
+        "stage.probe_response_writer"
+      ],
+      "mechanism_reader": [
+        "stage.repaired_behavior_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h23_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H26 conflict witness",
+    "H27 explicit ontology/variable binding",
+    "H46 scoped exclusion",
+    "H48 provenance retraction"
+  ]
+}

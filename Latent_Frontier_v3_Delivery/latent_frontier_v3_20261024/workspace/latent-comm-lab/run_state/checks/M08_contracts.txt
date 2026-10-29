@@ -1,0 +1,15 @@
+M08: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_actual_mapping_and_edges (test_h08.RelationTests.test_actual_mapping_and_edges) ... ok
+test_edge_is_not_intervention (test_h08.RelationTests.test_edge_is_not_intervention) ... ok
+test_operation_structural_and_noise_consumers (test_h08.RelationTests.test_operation_structural_and_noise_consumers) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h08.RelationTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h08.RelationTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h08.RelationTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_symmetry_and_budget (test_h08.RelationTests.test_symmetry_and_budget) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h08.RelationTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.020s
+
+OK
+M08: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

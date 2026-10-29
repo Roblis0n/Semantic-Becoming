@@ -1,0 +1,45 @@
+{
+  "task_id": "C07",
+  "status": "done",
+  "input_digest": "b2d9e6bed9b31acbca53baed124fb65253085b6e8ae98b48df52be989a4ad514",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compositions/c07.py",
+      "sha256": "d9c0c05d68bfa1f88d5eb2b10546a23cd622a3fdc70d602829c485b5bdc92371",
+      "bytes": 9554
+    },
+    {
+      "path": "configs/compositions/C07.json",
+      "sha256": "e0df1e4f8c79dbca8128370e09a74e08c29ae589f332d994c152b7563dccb004",
+      "bytes": 27774
+    },
+    {
+      "path": "tests/contracts/test_c07.py",
+      "sha256": "5985d9284cc98608474ce9f72de9f214c82fdd8f66f2f156a910b32441d873a3",
+      "bytes": 2930
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/C07_composition.txt",
+      "sha256": "e8fc6c9a9ed56b30927fa0fc3b60281e5c804462aa3a2efb7f7b40dcc6fe2b88"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "b4127847febf1ffeefb1d8515a256bf538eb09612791ea280ad808e6047ea41d"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_c07.txt",
+      "sha256": "c090f71c469068523d3c31ac86fc4c3bd34c0da9636bed92f619a529355f33a2"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Independent repair: explicit versioned capsule lineage validated before any write; revocation reconstructs validated dependency store. Eight finite tests pass; research NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:06.073372+00:00"
+}

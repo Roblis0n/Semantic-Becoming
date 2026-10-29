@@ -1,0 +1,19 @@
+{
+  "python": "3.11+",
+  "core": {
+    "dependencies": "stdlib only"
+  },
+  "tensor": {
+    "torch": "UNBOUND_NOT_INSTALLED"
+  },
+  "backend": {
+    "transformers": "UNBOUND_NOT_INSTALLED",
+    "safetensors": "UNBOUND_NOT_INSTALLED"
+  },
+  "media": {
+    "python-pptx": "1.0.2",
+    "Pillow": "12.3.0"
+  },
+  "lock_hashes": "NOT_FABRICATED",
+  "install_or_upgrade_performed": false
+}

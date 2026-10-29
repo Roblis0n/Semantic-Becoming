@@ -1,0 +1,86 @@
+{
+  "task_id": "L13",
+  "status": "done",
+  "input_digest": "27cabd13e3ea34e785db28b36070ec936711ea52828b55e34164b0f5268238f9",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/joint/AUDIT_INCIDENT.md",
+      "sha256": "640c3fbc813d89d659521324a6557ac1cecd2fbafd0aa153b3a19244e7de3e1d",
+      "bytes": 1448
+    },
+    {
+      "path": "src/latent_comm/learning/joint/README.md",
+      "sha256": "71d4a39bf202673f5b63d2f5c95c4042ede708523ad390cb2d95b6a9e8583d5d",
+      "bytes": 6431
+    },
+    {
+      "path": "src/latent_comm/learning/joint/__init__.py",
+      "sha256": "e5f0f4b37603e67f4c809fe7fc4b1faf053b91986273881301e65e0c4accb13b",
+      "bytes": 18569
+    },
+    {
+      "path": "src/latent_comm/learning/joint/audit_incident.json",
+      "sha256": "1732eda2a85179a19df44c77321a83e216ffecdf76de9c09c5067d98d1e9f6dc",
+      "bytes": 2075
+    },
+    {
+      "path": "src/latent_comm/learning/joint/static_audit.py",
+      "sha256": "0d59b045cf013eb07057ccc3d8c09a1798c1e67424c38cf928e8da07cb40f289",
+      "bytes": 3208
+    },
+    {
+      "path": "src/latent_comm/learning/joint/train.py",
+      "sha256": "543d31bdd11a3f8c2b0e6bd9c57d6f156f8b8a33ad9e94d14105bc664310a6cc",
+      "bytes": 2494
+    },
+    {
+      "path": "configs/learning/joint.json",
+      "sha256": "8ee22336c85ed4684e73190e91e2814969d60f32bd92ea31e77d897892104d6b",
+      "bytes": 3675
+    },
+    {
+      "path": "tests/research_locked/test_learning_joint.py",
+      "sha256": "4daeb07455e4b1fc4f9a38277370176aa735e93f1d96ca556c6c2b2c708be1e7",
+      "bytes": 5721
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L13_joint.txt",
+      "sha256": "9077302e3eaf9b13ff9ebeb1dc394c2eb252233a7bc539471d0e38a571a3403f"
+    },
+    {
+      "path": "run_state/checks/L13_all_learning_static.txt",
+      "sha256": "d14ba3a493590b8e5e3ae0f71097dbee9ec8de7412dea5b4007204dae3db995a"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/final_mechanism_revalidation/test_learning_joint.txt",
+      "sha256": "d68bd3522a78177b74400a4800a13fb617a540af8039dbcc8af7a333403590ef"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "sha256": "7ddd5307e366f61fcf9420d1cb43508e0e48e5d0fcf2c281482e5b071ad03204"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Concrete live H37→H38 plus namespaced L01–L12 phase composition. Independent review found JSON-key-order/RNG resume mismatch; component construction and execution now canonicalized, bounded stdlib regression added. Eleven current dedicated checks pass; preceding corrected all-learning audit passed 116 safe tests, zero neural imports. Noncompliant initial three denied legacy L04 entry attempts are separately recorded in audit_incident.json/AUDIT_INCIDENT.md and excluded from approved checks. No model/tensor/research execution occurred; NOT_RUN. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:19:40.669208+00:00"
+}

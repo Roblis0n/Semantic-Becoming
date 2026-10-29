@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "id": "C12",
+  "title": "可移植的科学小世界",
+  "kind": "combination",
+  "mechanisms": [
+    "H09",
+    "H17",
+    "H31",
+    "H43"
+  ],
+  "stages": [
+    "源方程",
+    "边界变换",
+    "局部移植",
+    "联合转移核",
+    "干预规划"
+  ],
+  "critical_invariant": "共享外生噪声必须显式；独立核乘积不是默认。",
+  "source_spec": "combinations/C12_可移植的科学小世界.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c12.py",
+  "research_outputs": "NOT_RUN"
+}

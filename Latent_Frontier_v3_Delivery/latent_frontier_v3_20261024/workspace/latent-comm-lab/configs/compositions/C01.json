@@ -1,0 +1,969 @@
+{
+  "recipe_id": "C01",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C01",
+    "nodes": [
+      {
+        "node_id": "typed_graph",
+        "operation": "C01.typed_graph",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "typed_graph:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TemporaryComputationInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TypedDependencyGraph",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H07",
+          "H22"
+        ],
+        "implementation": "latent_comm.compositions.c01.typed_graph",
+        "location": {
+          "source": "C01.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "bind_charts",
+        "operation": "C01.bind_charts",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "typed_graph:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "bind_charts:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TypedDependencyGraph",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ChartBinding",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "P"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H06",
+          "H22"
+        ],
+        "implementation": "latent_comm.compositions.c01.bind_charts",
+        "location": {
+          "source": "C01.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "dispatch_operator",
+        "operation": "C01.dispatch_operator",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "bind_charts:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "dispatch_operator:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ChartBinding",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "OperatorDispatch",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "P",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H01",
+          "H07"
+        ],
+        "implementation": "latent_comm.compositions.c01.dispatch_operator",
+        "location": {
+          "source": "C01.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "target_decode",
+        "operation": "C01.target_decode",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "dispatch_operator:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "target_decode:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "OperatorDispatch",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TemporaryComputationResult",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "P",
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H01",
+          "H06",
+          "H07"
+        ],
+        "implementation": "latent_comm.compositions.c01.target_decode",
+        "location": {
+          "source": "C01.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "bind_charts:out",
+        {
+          "name": "ChartBinding",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "dispatch_operator:out",
+        {
+          "name": "OperatorDispatch",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "TemporaryComputationInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "target_decode:out",
+        {
+          "name": "TemporaryComputationResult",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "typed_graph:out",
+        {
+          "name": "TypedDependencyGraph",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "bind_charts",
+        "dispatch_operator"
+      ],
+      [
+        "dispatch_operator",
+        "target_decode"
+      ],
+      [
+        "typed_graph",
+        "bind_charts"
+      ]
+    ],
+    "schedule": [
+      "typed_graph",
+      "bind_charts",
+      "dispatch_operator",
+      "target_decode"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 4,
+    "max_steps": 64,
+    "input_digest": "39259d27e491eed7ad9ec9b71330550bdf109c8f7bf63376144afcb730af236a",
+    "declared_parameters": {
+      "obligations": [
+        "Handoff changes local research partition only, not host privileges.",
+        "Heterogeneous chart edges retain explicit information-loss declarations."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C01",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "operators",
+        "objectives": [
+          {
+            "name": "task",
+            "mathematical_definition": "stage normalized task loss after dedicated mechanism",
+            "numerator": "sum valid task losses",
+            "denominator": "valid task count",
+            "valid_mask": "stage-normalized valid tasks",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "task_loss"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task instances",
+            "id": "H01.task"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "mean ||T(z)-teacher(z)||^2",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "state_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "predicted"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state elements",
+            "id": "H01.behavior"
+          },
+          {
+            "name": "composition",
+            "mathematical_definition": "mean ||Tb(Ta(z))-program_ba(z)||^2",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "composition_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "composed"
+            ],
+            "stop_gradient_edges": [
+              [
+                "composition_target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state elements",
+            "id": "H01.composition"
+          }
+        ],
+        "losses": [
+          "H01.task",
+          "H01.behavior",
+          "H01.composition"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "charts",
+        "objectives": [
+          {
+            "name": "task",
+            "mathematical_definition": "stage normalized task loss after dedicated mechanism",
+            "numerator": "sum valid task losses",
+            "denominator": "valid task count",
+            "valid_mask": "stage-normalized valid tasks",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "task_loss"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task instances",
+            "id": "H06.task"
+          },
+          {
+            "name": "reconstruction",
+            "mathematical_definition": "mean squared reconstruct(state)-state",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "encoded_valid[:,None].expand_as(state)",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "reconstructed",
+              "state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state coordinates",
+            "id": "H06.reconstruction"
+          },
+          {
+            "name": "effect",
+            "mathematical_definition": "mean behavioral anchor squared error",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "effect_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "effect"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior coordinates",
+            "id": "H06.effect"
+          },
+          {
+            "name": "cycle",
+            "mathematical_definition": "mean declared overlap cycle squared error",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "overlap_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "cycled",
+              "original"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "chart elements",
+            "id": "H06.cycle"
+          },
+          {
+            "name": "variance",
+            "mathematical_definition": "mean relu(min_std-std(valid chart encodings))",
+            "numerator": "sum coordinate standard-deviation hinge penalties",
+            "denominator": "chart dimension; active only with >=2 valid rows",
+            "valid_mask": "encoded_valid; at least two rows",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer"
+            ],
+            "requires_grad_inputs": [
+              "encoded"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "chart coordinates",
+            "id": "H06.variance"
+          }
+        ],
+        "losses": [
+          "H06.task",
+          "H06.reconstruction",
+          "H06.effect",
+          "H06.cycle",
+          "H06.variance"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "typed_program",
+        "objectives": [
+          {
+            "name": "structure",
+            "mathematical_definition": "CE(allowed_opcode_logits,supervised_opcode)",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "node_valid & legal opcode",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer"
+            ],
+            "requires_grad_inputs": [
+              "opcode_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "opcode_targets",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "nodes",
+            "id": "H07.structure"
+          },
+          {
+            "name": "parameters",
+            "mathematical_definition": "task loss through fixed typed program",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "stage-normalized valid tasks",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "task_loss"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "tasks",
+            "id": "H07.parameters"
+          }
+        ],
+        "losses": [
+          "H07.structure",
+          "H07.parameters"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "typed_graph": "stop",
+      "bind_charts": "differentiable",
+      "dispatch_operator": "stop",
+      "target_decode": "differentiable"
+    },
+    "training_routes": [
+      "frozen-base",
+      "one-sided adaptation",
+      "joint adapters with explicit ownership"
+    ],
+    "frozen": [
+      "host permissions",
+      "external model access"
+    ]
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

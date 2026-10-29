@@ -1,0 +1,8 @@
+test_boundary_rejected (test_causal_analogy.CausalAnalogyTests.test_boundary_rejected) ... ok
+test_commuting_case_and_counterexample (test_causal_analogy.CausalAnalogyTests.test_commuting_case_and_counterexample) ... ok
+test_shared_noise_distinct_joint (test_causal_analogy.CausalAnalogyTests.test_shared_noise_distinct_joint) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

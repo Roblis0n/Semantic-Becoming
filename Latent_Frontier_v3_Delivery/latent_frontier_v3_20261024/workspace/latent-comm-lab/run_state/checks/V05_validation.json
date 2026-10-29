@@ -1,0 +1,56 @@
+{
+  "task_id": "V05",
+  "status": "done",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "export_edition": "narrated_personal_noncommercial_unauditioned",
+  "narrated_export_created": true,
+  "narrated_final_acceptance": false,
+  "narration_wav_created": true,
+  "opened_checked": true,
+  "opened_scope": "Actual A/V container full decode and all cue-midpoint still frames; no auditory review",
+  "timing_verified": true,
+  "timing_scope": "Exact synthesized PCM chunk/scene boundaries, container duration and nonoverlapping caption margins",
+  "audio_timing_verified": true,
+  "audio_listened": false,
+  "pronunciation_assessed": false,
+  "word_level_alignment_verified": false,
+  "blockers": [],
+  "research_state": "NOT_RUN",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY for generated speech and this speech-containing video",
+  "export": {
+    "path": "assets/video/explainer_360/explainer_360_narrated_personal.mp4",
+    "sha256": "87e790afb5601eb34102cdf93a3de129c2401bd0e31c74e2d35f9a24eeb5ca16",
+    "duration_seconds": 360.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 1,
+    "video_start_time": "0.000000",
+    "audio_start_time": "0.000000",
+    "full_decode_passed": true
+  },
+  "evidence": [
+    {
+      "path": "assets/video/explainer_360/narrated_qa.json",
+      "sha256": "0829534abfb62165473b2d059e060e7d2668425e3027f70532d4f3927b86a5ee",
+      "bytes": 11547
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.assembly.json",
+      "sha256": "3e55fc6fdedf59990b2105924b5cfeb4f79ee86af4913179402b99977e942ce2",
+      "bytes": 50585
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_visual_review.json",
+      "sha256": "0f905e7ccf057be0c46366f1ea631699b20d0bc13a5bd8ad1e59dbc3b59d639b",
+      "bytes": 12236
+    }
+  ],
+  "silent_visual_history_preserved": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+  "prior_acceptance_blockers": [
+    "Mandatory actual audition, pronunciation and sound-quality assessment remain unperformed: no completed actual auditory review has been established for these editions. Waveform measurements, decoding and visual frames are not listening."
+  ],
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

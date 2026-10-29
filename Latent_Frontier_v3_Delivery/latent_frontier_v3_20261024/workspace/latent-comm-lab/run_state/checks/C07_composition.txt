@@ -1,0 +1,13 @@
+test_calibration_residual_scoped_write (test_c07.C07Tests.test_calibration_residual_scoped_write) ... ok
+test_forged_capability_and_withdrawn_source (test_c07.C07Tests.test_forged_capability_and_withdrawn_source) ... ok
+test_missing_lineage_rejected_before_apply (test_c07.C07Tests.test_missing_lineage_rejected_before_apply) ... ok
+test_new_model_is_not_unseen_pair (test_c07.C07Tests.test_new_model_is_not_unseen_pair) ... ok
+test_source_retraction_future_not_erasure (test_c07.C07Tests.test_source_retraction_future_not_erasure) ... ok
+test_stale_capsule_dependency (test_c07.C07Tests.test_stale_capsule_dependency) ... ok
+test_unknown_retained_detail_no_write (test_c07.C07Tests.test_unknown_retained_detail_no_write) ... ok
+test_versioned_capsule_with_explicit_lineage (test_c07.C07Tests.test_versioned_capsule_with_explicit_lineage) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.035s
+
+OK

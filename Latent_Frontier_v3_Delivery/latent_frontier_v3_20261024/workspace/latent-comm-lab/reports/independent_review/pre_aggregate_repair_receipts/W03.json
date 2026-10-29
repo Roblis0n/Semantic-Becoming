@@ -1,0 +1,55 @@
+{
+  "task_id": "W03",
+  "status": "done",
+  "input_digest": "0e2613ff096bdaefd7ba384d2966dc27167213ef3608ab88ee5a52710b21a61e",
+  "outputs": [
+    {
+      "path": "src/latent_comm/worlds/concepts/__init__.py",
+      "sha256": "12d417f95f016cf1517051182405d18f7f9a72c3b3bd89ce28686d5bc0a1cd03",
+      "bytes": 219
+    },
+    {
+      "path": "src/latent_comm/worlds/concepts/generator.py",
+      "sha256": "a189f660627ba23f6d4574ec5a3560f15a2425d01137c8730f06a6e649a9a4a1",
+      "bytes": 2208
+    },
+    {
+      "path": "src/latent_comm/worlds/concepts/pipeline.py",
+      "sha256": "2a7cbf79adddcce9fff0bda424d2ab6b838ed701aca587e2163c06b2154d9a0e",
+      "bytes": 1863
+    },
+    {
+      "path": "configs/worlds/concepts.json",
+      "sha256": "76c0afaceeb7b85ce6b0d5d999a9cbd5be1969e111d089e4ecfb1b4a3e1e1900",
+      "bytes": 575
+    },
+    {
+      "path": "tests/data/test_concepts.py",
+      "sha256": "9822402a7f27eea5cd24b2a380d2e616d375041d329611df40ad0d7aa9372b19",
+      "bytes": 619
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/W_concepts.txt",
+      "sha256": "5604764efa34851fa6b2b9ae5d132d4373584f915831e7d0cf58466cd9beaa2d"
+    },
+    {
+      "path": "run_state/checks/W_worlds_static.json",
+      "sha256": "10dd726945aa690ca5320a3d268b5ba4c928536a8ff6888f76b304ba62c7b9b6"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/W03_test_concepts.txt",
+      "sha256": "5604764efa34851fa6b2b9ae5d132d4373584f915831e7d0cf58466cd9beaa2d"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three dedicated finite-world contracts pass. Structural partition precedes sampling; role projection and resume sources present. Bulk data generation and all model research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:34.260233+00:00"
+}

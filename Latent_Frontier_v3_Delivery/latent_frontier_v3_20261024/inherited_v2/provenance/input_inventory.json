@@ -1,0 +1,23 @@
+[
+  {
+    "id": "U1",
+    "filename": "latent_comm_project_plan_20261023.zip",
+    "bytes": 189636,
+    "sha256": "f64f52ebfe56b86ac7ebb496718cea908124177e123ee8ee0c00feb158639c9a",
+    "usage": "read_only_reference_not_executable"
+  },
+  {
+    "id": "U2",
+    "filename": "latent_comm_dot_final_20261023.zip",
+    "bytes": 737816,
+    "sha256": "c61ed6950d8645d765bf9b9bcdeb2c381a81c884a11e865ecafac43e8a2ebc72",
+    "usage": "read_only_reference_not_executable"
+  },
+  {
+    "id": "U3",
+    "filename": "latent_communication_research_pack_20261023.zip",
+    "bytes": 88325,
+    "sha256": "4e8f0dccab992bfc1a0ebad0ae23c9708fe1ee8ef16697c7b0c7875eaf415b73",
+    "usage": "read_only_reference_not_executable"
+  }
+]

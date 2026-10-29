@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "research_state": "NOT_RUN",
+  "figures": [
+    {
+      "id": "F01",
+      "path": "assets/figures/F01.svg",
+      "sha256": "c0a6e407301e4eecd261830ca592e1e6323b5d2da3ceaa9883d7534b0712490b",
+      "text_objects": 19,
+      "accessible_description": "三层研究图谱。基础二十四机制产生可计算对象，新增二十四机制研究认知结构改写，十二远期方向通过二十条组合路线连接；不是二十个模型。",
+      "raster_embeds": 0,
+      "rendered_png": "assets/figures/renders/F01.png"
+    },
+    {
+      "id": "F02",
+      "path": "assets/figures/F02.svg",
+      "sha256": "83736f29ec10f60ebc121da9a5ef70a10a4f522a55250121edb35fef6772c360",
+      "text_objects": 16,
+      "accessible_description": "钥匙有效期例：旧类别有冲突，反例区分行为，定义授权有效期谓词，旧读者迁移。若无候选概念则保留未决分支。",
+      "raster_embeds": 0,
+      "rendered_png": "assets/figures/renders/F02.png"
+    },
+    {
+      "id": "F03",
+      "path": "assets/figures/F03.svg",
+      "sha256": "5bc930c9c9d752d9cd9d4e9e2b09ed360b6698076bccf6503c4175dde2305240",
+      "text_objects": 15,
+      "accessible_description": "源参数方向通过源雅可比映射到有限行为空间，目标最小二乘求可实现的参数方向，未实现部分保留为残差。两模型参数维数不要求相同。",
+      "raster_embeds": 0,
+      "rendered_png": "assets/figures/renders/F03.png"
+    },
+    {
+      "id": "F04",
+      "path": "assets/figures/F04.svg",
+      "sha256": "1341e0c7d2ba392c8915da6ba4c6f19091f3f13a5cff68c8a579bdbbed8c9bd6",
+      "text_objects": 15,
+      "accessible_description": "两个世界核共享外生变量和动作接口，产生带来源的合成观测与新问题。现实证据在独立命名空间，不接受合成观测作为独立现实证据回流。",
+      "raster_embeds": 0,
+      "rendered_png": "assets/figures/renders/F04.png"
+    },
+    {
+      "id": "F05",
+      "path": "assets/figures/F05.svg",
+      "sha256": "39201a193cc8d5ab4472c135192a120285dfef8bda4e282ae5867e5caa41e215",
+      "text_objects": 22,
+      "accessible_description": "任务相对语义：奇偶查询将一三与二四分别归类。添加大于二查询并拥有原始信息后，细化为四个单元素类；粗表示不能无中生有恢复已丢信息。",
+      "raster_embeds": 0,
+      "rendered_png": "assets/figures/renders/F05.png"
+    },
+    {
+      "id": "F06",
+      "path": "assets/figures/F06.svg",
+      "sha256": "b139c8c1c4625cc76c3ec243093c68e182e8182ab0ba06f42ac85cd0d5129606",
+      "text_objects": 15,
+      "accessible_description": "执行权限平面：只读计划进入任务图，文件所有者约束工作区写入，账本保存哈希和回执，动作代理拦截模型运行、付费和发布。这是应用级边界，不是已验证硬沙箱。",
+      "raster_embeds": 0,
+      "rendered_png": "assets/figures/renders/F06.png"
+    }
+  ],
+  "font_files_bundled": false,
+  "math_checks": "assets/animations/math_checks.json"
+}

@@ -1,0 +1,513 @@
+{
+  "title": "世界核的共同梦境",
+  "description": "两个世界核共享外生变量和动作接口，产生带来源的合成观测与新问题。现实证据在独立命名空间，不接受合成观测作为独立现实证据回流。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "世界核的共同梦境",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "共享噪声是语义的一部分",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "解析示意 / 数学示意 · 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "F04",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 250,
+      "w": 260,
+      "h": 150,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79,
+      "y": 265,
+      "w": 230,
+      "h": 42.9,
+      "text": "模块 A",
+      "size": 30,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79,
+      "y": 310.5,
+      "w": 230,
+      "h": 65.78,
+      "text": "x′ = f(x, a, u)\n单位与接口",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "x": 470,
+      "y": 250,
+      "w": 260,
+      "h": 150,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e009"
+    },
+    {
+      "x": 485,
+      "y": 265,
+      "w": 230,
+      "h": 42.9,
+      "text": "模块 B",
+      "size": 30,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e010"
+    },
+    {
+      "x": 485,
+      "y": 310.5,
+      "w": 230,
+      "h": 65.78,
+      "text": "y′ = g(y, a, u)\n动作接口 a",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e011"
+    },
+    {
+      "x": 360,
+      "y": 185,
+      "w": 70,
+      "h": 70,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "kind": "ellipse",
+      "id": "e012"
+    },
+    {
+      "x": 363,
+      "y": 197,
+      "w": 64,
+      "h": 50.05,
+      "text": "u",
+      "size": 35,
+      "color": "#9C5138",
+      "align": "center",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          365,
+          239
+        ],
+        [
+          280,
+          250
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          292.5424680166117,
+          253.41855174778345
+        ],
+        [
+          280,
+          250
+        ],
+        [
+          291.2590526846793,
+          243.50125145557888
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "points": [
+        [
+          425,
+          239
+        ],
+        [
+          500,
+          250
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e016"
+    },
+    {
+      "points": [
+        [
+          488.8525919657369,
+          243.31155517944217
+        ],
+        [
+          500,
+          250
+        ],
+        [
+          487.4014500914542,
+          253.2057043222792
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e017"
+    },
+    {
+      "x": 320,
+      "y": 165,
+      "w": 230,
+      "h": 32.89,
+      "text": "同一个外生变量",
+      "size": 23,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "points": [
+        [
+          194,
+          400
+        ],
+        [
+          194,
+          430
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e019"
+    },
+    {
+      "points": [
+        [
+          194,
+          430
+        ],
+        [
+          800,
+          430
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e020"
+    },
+    {
+      "points": [
+        [
+          800,
+          430
+        ],
+        [
+          800,
+          330
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e021"
+    },
+    {
+      "points": [
+        [
+          735,
+          330
+        ],
+        [
+          850,
+          330
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e022"
+    },
+    {
+      "points": [
+        [
+          838.0,
+          325.0
+        ],
+        [
+          850,
+          330
+        ],
+        [
+          838.0,
+          335.0
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e023"
+    },
+    {
+      "x": 860,
+      "y": 250,
+      "w": 356,
+      "h": 150,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e024"
+    },
+    {
+      "x": 875,
+      "y": 265,
+      "w": 326,
+      "h": 42.9,
+      "text": "synthetic 世界",
+      "size": 30,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e025"
+    },
+    {
+      "x": 875,
+      "y": 310.5,
+      "w": 326,
+      "h": 65.78,
+      "text": "观测 O → 新问题 Q\n携带 kernel / seed 来源",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e026"
+    },
+    {
+      "x": 64,
+      "y": 466,
+      "w": 666,
+      "h": 98,
+      "fill": "none",
+      "stroke": "#606258",
+      "sw": 2,
+      "r": 0,
+      "dash": true,
+      "kind": "rect",
+      "id": "e027"
+    },
+    {
+      "x": 90,
+      "y": 486,
+      "w": 620,
+      "h": 40.04,
+      "text": "现实证据：独立命名空间与来源",
+      "size": 28,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e028"
+    },
+    {
+      "x": 850,
+      "y": 465,
+      "w": 366,
+      "h": 35.75,
+      "text": "无回流为独立现实证据",
+      "size": 25,
+      "color": "#9C4540",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e029"
+    },
+    {
+      "points": [
+        [
+          1035,
+          420
+        ],
+        [
+          1035,
+          450
+        ]
+      ],
+      "stroke": "#9C4540",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e030"
+    },
+    {
+      "points": [
+        [
+          1018,
+          450
+        ],
+        [
+          1052,
+          450
+        ]
+      ],
+      "stroke": "#9C4540",
+      "sw": 4,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e031"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "有限示意：x′ = u，y′ = u；共享公平比特使 P(x′ = y′) = 1",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e032"
+    }
+  ],
+  "notes": "",
+  "sources": [
+    "media/07_图形与动画规范.md",
+    "docs/related_work.md"
+  ],
+  "research_state": "NOT_RUN"
+}

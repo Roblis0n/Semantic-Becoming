@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "id": "C14",
+  "title": "认知结构的事务性跃迁",
+  "kind": "combination",
+  "mechanisms": [
+    "H13",
+    "H22",
+    "H27",
+    "H28",
+    "H39"
+  ],
+  "stages": [
+    "快照",
+    "分岔候选",
+    "概念/图分区重写",
+    "迁移",
+    "版本检查",
+    "提交或回滚"
+  ],
+  "critical_invariant": "不允许已提交对象继续指向旧的可变共享内存。",
+  "source_spec": "combinations/C14_认知结构的事务性跃迁.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c14.py",
+  "research_outputs": "NOT_RUN"
+}

@@ -1,0 +1,21 @@
+test_engine_delegation_and_resume_command (test_learning_causal_analogy.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_exact_hardening_rechecks (test_learning_causal_analogy.ContractChecks.test_exact_hardening_rechecks) ... ok
+test_metadata (test_learning_causal_analogy.ContractChecks.test_metadata) ... ok
+test_no_supervised_module_generation (test_learning_causal_analogy.ContractChecks.test_no_supervised_module_generation) ... ok
+test_noise_identity_and_normalization (test_learning_causal_analogy.ContractChecks.test_noise_identity_and_normalization) ... ok
+test_operation_map_behavior_owner (test_learning_causal_analogy.ContractChecks.test_operation_map_behavior_owner) ... ok
+test_recipe_is_unbound (test_learning_causal_analogy.ContractChecks.test_recipe_is_unbound) ... ok
+test_scm_effect_and_false_analogy (test_learning_causal_analogy.ContractChecks.test_scm_effect_and_false_analogy) ... ok
+test_unknown_noise_rejected (test_learning_causal_analogy.ContractChecks.test_unknown_noise_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.004s
+
+OK
+{
+  "selected": 9,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_causal_analogy.ContractChecks.test_stage_syntax_and_gates"
+  ],
+  "neural_modules_loaded": []
+}

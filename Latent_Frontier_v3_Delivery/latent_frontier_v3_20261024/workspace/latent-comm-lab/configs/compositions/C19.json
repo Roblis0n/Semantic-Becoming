@@ -1,0 +1,1203 @@
+{
+  "recipe_id": "C19",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C19",
+    "nodes": [
+      {
+        "node_id": "freeze_external_goal",
+        "operation": "C19.freeze_external_goal",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "freeze_external_goal:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "GoalScaleInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "FrozenExternalGoal",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "V"
+        ],
+        "write_set": [
+          "V"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H32"
+        ],
+        "implementation": "latent_comm.compositions.c19.freeze_external_goal",
+        "location": {
+          "source": "C19.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "goal_preserving_view",
+        "operation": "C19.goal_preserving_view",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "freeze_external_goal:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "goal_preserving_view:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "FrozenExternalGoal",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "GoalPreservingCoordinates",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "V",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "V"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H06",
+          "H32"
+        ],
+        "implementation": "latent_comm.compositions.c19.goal_preserving_view",
+        "location": {
+          "source": "C19.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "quotient_plan",
+        "operation": "C19.quotient_plan",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "goal_preserving_view:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "quotient_plan:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "GoalPreservingCoordinates",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TaskQuotientPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H47"
+        ],
+        "implementation": "latent_comm.compositions.c19.quotient_plan",
+        "location": {
+          "source": "C19.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "macro_evolution",
+        "operation": "C19.macro_evolution",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "quotient_plan:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "macro_evolution:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TaskQuotientPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "MacroEvolution",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H35"
+        ],
+        "implementation": "latent_comm.compositions.c19.macro_evolution",
+        "location": {
+          "source": "C19.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "authorized_refinement",
+        "operation": "C19.authorized_refinement",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "macro_evolution:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "authorized_refinement:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "MacroEvolution",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AuthorizedRefinement",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "F",
+          "K",
+          "Q",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "K",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H12",
+          "H35",
+          "H47"
+        ],
+        "implementation": "latent_comm.compositions.c19.authorized_refinement",
+        "location": {
+          "source": "C19.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "recheck_original_goal",
+        "operation": "C19.recheck_original_goal",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "authorized_refinement:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "recheck_original_goal:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "AuthorizedRefinement",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "OriginalGoalReadout",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "V"
+        ],
+        "write_set": [
+          "V"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H32"
+        ],
+        "implementation": "latent_comm.compositions.c19.recheck_original_goal",
+        "location": {
+          "source": "C19.bound.json",
+          "path": "/nodes/5",
+          "line": 83,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "authorized_refinement:out",
+        {
+          "name": "AuthorizedRefinement",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "freeze_external_goal:out",
+        {
+          "name": "FrozenExternalGoal",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "goal_preserving_view:out",
+        {
+          "name": "GoalPreservingCoordinates",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "GoalScaleInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "macro_evolution:out",
+        {
+          "name": "MacroEvolution",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "quotient_plan:out",
+        {
+          "name": "TaskQuotientPlan",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "recheck_original_goal:out",
+        {
+          "name": "OriginalGoalReadout",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "authorized_refinement",
+        "recheck_original_goal"
+      ],
+      [
+        "freeze_external_goal",
+        "goal_preserving_view"
+      ],
+      [
+        "goal_preserving_view",
+        "quotient_plan"
+      ],
+      [
+        "macro_evolution",
+        "authorized_refinement"
+      ],
+      [
+        "quotient_plan",
+        "macro_evolution"
+      ]
+    ],
+    "schedule": [
+      "freeze_external_goal",
+      "goal_preserving_view",
+      "quotient_plan",
+      "macro_evolution",
+      "authorized_refinement",
+      "recheck_original_goal"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 6,
+    "max_steps": 64,
+    "input_digest": "3eb49c10f99a6bbd2ca034f98da330cb04fdec364a96bda581e352f13e2c6597",
+    "declared_parameters": {
+      "obligations": [
+        "Neither quotient representative nor lift recovers discarded detail.",
+        "Refinement reads only authorized version-bound capsule source fields.",
+        "Original immutable goal and hard constraints are rechecked after dynamics."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C19",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "goal_coordinates",
+        "objectives": [
+          {
+            "name": "value",
+            "mathematical_definition": "sum(m*(wprime dot cprime-w dot c)^2)/sum(m)",
+            "numerator": "objective-value preservation residual",
+            "denominator": "valid objective values",
+            "valid_mask": "goal_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "view_map",
+              "objective_readout"
+            ],
+            "requires_grad_inputs": [
+              "costs",
+              "weights"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "goals",
+            "id": "H32.value"
+          },
+          {
+            "name": "constraint",
+            "mathematical_definition": "sum(m*relu(A_original c_original-b)^2)/sum(m)",
+            "numerator": "original hard-constraint violation",
+            "denominator": "valid original constraints",
+            "valid_mask": "constraint_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "objective_readout"
+            ],
+            "requires_grad_inputs": [
+              "original_costs"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "constraints",
+            "id": "H32.constraint"
+          }
+        ],
+        "losses": [
+          "H32.value",
+          "H32.constraint"
+        ],
+        "owners": [
+          "objective_readout",
+          "view_map"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "closure_and_detail",
+        "objectives": [
+          {
+            "name": "commute",
+            "mathematical_definition": "sum(m*(C Fmicro(z)-Fmacro(Cz))^2)/sum(m)",
+            "numerator": "coarse dynamic closure error",
+            "denominator": "valid macro-state elements",
+            "valid_mask": "macro_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coarse_map",
+              "macro_dynamics"
+            ],
+            "requires_grad_inputs": [
+              "micro_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "macro elements",
+            "id": "H35.commute"
+          },
+          {
+            "name": "task",
+            "mathematical_definition": "sum(m*(macro_task-micro_task)^2)/sum(m)",
+            "numerator": "preserved task-response residual",
+            "denominator": "valid task responses",
+            "valid_mask": "task_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coarse_map",
+              "task_reader"
+            ],
+            "requires_grad_inputs": [
+              "macro_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task responses",
+            "id": "H35.task"
+          },
+          {
+            "name": "residual",
+            "mathematical_definition": "sum(m*(detail_prediction-detail)^2)/sum(m)",
+            "numerator": "retained detail prediction error",
+            "denominator": "valid micro residual elements",
+            "valid_mask": "detail_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "lift",
+              "detail_memory"
+            ],
+            "requires_grad_inputs": [
+              "coarse_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "micro elements",
+            "id": "H35.residual"
+          }
+        ],
+        "losses": [
+          "H35.commute",
+          "H35.task",
+          "H35.residual"
+        ],
+        "owners": [
+          "coarse_map",
+          "detail_memory",
+          "lift",
+          "macro_dynamics",
+          "task_reader"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "task_relative_quotient",
+        "objectives": [
+          {
+            "name": "behavior",
+            "mathematical_definition": "sum(mask*||predicted_query_response-target_query_response||^2)/sum(mask)",
+            "numerator": "task behavior MSE, not input reconstruction",
+            "denominator": "valid finite query responses",
+            "valid_mask": "behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "state_encoder",
+              "task_conditioner",
+              "prototypes"
+            ],
+            "requires_grad_inputs": [
+              "reconstructed_behavior"
+            ],
+            "stop_gradient_edges": [
+              [
+                "behavior_targets",
+                "behavior"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state_queries",
+            "id": "H47.behavior"
+          },
+          {
+            "name": "rate",
+            "mathematical_definition": "sum(mask*KL(assignment||mean_assignment))/sum(mask)",
+            "numerator": "soft information rate",
+            "denominator": "valid states",
+            "valid_mask": "state_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "state_encoder",
+              "task_conditioner",
+              "prototypes"
+            ],
+            "requires_grad_inputs": [
+              "assignments"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "states",
+            "id": "H47.rate"
+          }
+        ],
+        "losses": [
+          "H47.behavior",
+          "H47.rate"
+        ],
+        "owners": [
+          "prototypes",
+          "state_encoder",
+          "task_conditioner"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "freeze_external_goal": "stop",
+      "goal_preserving_view": "differentiable",
+      "quotient_plan": "enumeration",
+      "macro_evolution": "differentiable",
+      "authorized_refinement": "stop",
+      "recheck_original_goal": "stop"
+    },
+    "frozen": [
+      "external_goal",
+      "source_evidence",
+      "authorization"
+    ]
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

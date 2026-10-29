@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_040",
+  "edition": "explainer_360",
+  "scene_id": "S08",
+  "characters": 37,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "不擅自付费、发布或读取无关私密资料。遇到外部工具受限，要给真实的降级产物。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:13:29.211059+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 307002,
+    "duration_seconds": 6.961496598639456,
+    "sample_peak": 14477,
+    "sample_rms": 2227.569985986698,
+    "sha256": "1149177a0c77912f8167ecaf4577d585c71263507c6c15837b172afb764db266",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:14:05.269553+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

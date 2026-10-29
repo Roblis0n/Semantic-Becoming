@@ -1,0 +1,34 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "anchor": [
+    1.0
+  ],
+  "base": [
+    1.0
+  ],
+  "A": [
+    [
+      1.0
+    ]
+  ],
+  "B": [
+    [
+      1.0
+    ]
+  ],
+  "radius": 1.0,
+  "variables": [],
+  "observation_conditions": [],
+  "response_kind": "observational",
+  "approximation": "bound"
+}

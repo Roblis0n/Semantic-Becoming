@@ -1,0 +1,45 @@
+{
+  "task_id": "C06",
+  "status": "done",
+  "input_digest": "30764c8df25c45d76cfd907cd64aa00c56eb040d95e97cdb0ef4519d75c11a0f",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compositions/c06.py",
+      "sha256": "b73d07b67533e57a4c52e2962a4f50d2eec270a6832a5ee7a12696e268eb9250",
+      "bytes": 8195
+    },
+    {
+      "path": "configs/compositions/C06.json",
+      "sha256": "dac5815a9283ee2d3ea3994a6277efc126de478809460ef8825fb9369633ce7b",
+      "bytes": 28958
+    },
+    {
+      "path": "tests/contracts/test_c06.py",
+      "sha256": "ccb362d1b716a2d89d86cbede892c43eb08cbf8ccee65d8d0d23e0481a2eef30",
+      "bytes": 2263
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/C06_composition.txt",
+      "sha256": "443dff913d5716147a18869b9a67a54cc9ea0c440400efd9c17a90748d2bfe07"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "b4127847febf1ffeefb1d8515a256bf538eb09612791ea280ad808e6047ea41d"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_c06.txt",
+      "sha256": "f26927a901b331630ab303a4e795841a792a174c860b4ae11590e352a675e86a"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Concrete typed object flow, actual finite mechanism calls and compiled IR, dedicated source loss ledgers, negative and partial branches. Aggregate budget enforced; all research models/training NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:06.064648+00:00"
+}

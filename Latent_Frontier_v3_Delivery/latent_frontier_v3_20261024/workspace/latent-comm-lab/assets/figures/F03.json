@@ -1,0 +1,360 @@
+{
+  "title": "行为方向运输",
+  "description": "源参数方向通过源雅可比映射到有限行为空间，目标最小二乘求可实现的参数方向，未实现部分保留为残差。两模型参数维数不要求相同。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "行为方向运输",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "用共同可观察行为连接不同参数空间",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "解析示意 / 数学示意 · 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "F03",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 248,
+      "w": 300,
+      "h": 150,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79,
+      "y": 263,
+      "w": 270,
+      "h": 45.76,
+      "text": "源参数空间",
+      "size": 32,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79,
+      "y": 311.0,
+      "w": 270,
+      "h": 32.89,
+      "text": "Δθ_A ∈ Rᵖ",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "x": 490,
+      "y": 248,
+      "w": 300,
+      "h": 150,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e009"
+    },
+    {
+      "x": 505,
+      "y": 263,
+      "w": 270,
+      "h": 44.33,
+      "text": "有限行为空间",
+      "size": 31,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e010"
+    },
+    {
+      "x": 505,
+      "y": 309.75,
+      "w": 270,
+      "h": 32.89,
+      "text": "v = J_A Δθ_A ∈ Rᵐ",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e011"
+    },
+    {
+      "x": 916,
+      "y": 248,
+      "w": 300,
+      "h": 150,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e012"
+    },
+    {
+      "x": 931,
+      "y": 263,
+      "w": 270,
+      "h": 40.04,
+      "text": "目标参数空间",
+      "size": 28,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "x": 931,
+      "y": 306.0,
+      "w": 270,
+      "h": 32.89,
+      "text": "δ_B ∈ Rᑫ；p 可不同于 q",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          370,
+          320
+        ],
+        [
+          478,
+          320
+        ]
+      ],
+      "stroke": "#496974",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "points": [
+        [
+          466.0,
+          315.0
+        ],
+        [
+          478,
+          320
+        ],
+        [
+          466.0,
+          325.0
+        ]
+      ],
+      "stroke": "#496974",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e016"
+    },
+    {
+      "x": 376,
+      "y": 270,
+      "w": 110,
+      "h": 31.459999999999997,
+      "text": "源 JVP",
+      "size": 22,
+      "color": "#496974",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "points": [
+        [
+          802,
+          320
+        ],
+        [
+          904,
+          320
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e018"
+    },
+    {
+      "points": [
+        [
+          892.0,
+          315.0
+        ],
+        [
+          904,
+          320
+        ],
+        [
+          892.0,
+          325.0
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e019"
+    },
+    {
+      "x": 794,
+      "y": 270,
+      "w": 125,
+      "h": 31.459999999999997,
+      "text": "最小二乘",
+      "size": 22,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e020"
+    },
+    {
+      "x": 155,
+      "y": 452,
+      "w": 1000,
+      "h": 48.62,
+      "text": "δ* = argminδ ‖J_B δ − v‖² + λ‖δ‖²",
+      "size": 34,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e021"
+    },
+    {
+      "x": 155,
+      "y": 512,
+      "w": 1000,
+      "h": 40.04,
+      "text": "r = v − J_B δ*：不可达或正则化残差仍然保留",
+      "size": 28,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "行为坐标是否具有跨模型对应关系，仍是未证的研究假设",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    }
+  ],
+  "notes": "",
+  "sources": [
+    "media/07_图形与动画规范.md",
+    "docs/related_work.md"
+  ],
+  "research_state": "NOT_RUN"
+}

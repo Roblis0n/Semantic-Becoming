@@ -1,0 +1,114 @@
+{
+  "task_id": "V06",
+  "status": "complete_with_external_blockers",
+  "input_digest": "9ec307f444513e78b0a65c2a29fa6884b6fe33a412f0dfe4cbb25460b3c09fde",
+  "outputs": [
+    {
+      "path": "assets/audio/README.md",
+      "sha256": "67ad7bf6f75fdedb0ce9269d8bb3de6aed04f3b4f212847c7f61d87573a0d365",
+      "bytes": 1001
+    },
+    {
+      "path": "assets/audio/build_narration_sources.py",
+      "sha256": "3f776b31b0ccf805ed61e69f00865aefdb1f8cb4f554bb65cccd7884b08615c8",
+      "bytes": 5821
+    },
+    {
+      "path": "assets/audio/explainer_360.narration.json",
+      "sha256": "98ed0475bf89bc916c00c3615b1a894b92d702c01d144dccb075f79b5fc03116",
+      "bytes": 16510
+    },
+    {
+      "path": "assets/audio/explainer_360.narration.txt",
+      "sha256": "b147e07f1aa80a478b277f1a73acbdfa074918fe92e9fdcf17e149cd49cd3c55",
+      "bytes": 4703
+    },
+    {
+      "path": "assets/audio/explainer_360.ssml",
+      "sha256": "8c84f599b6ea75e6962d6c41638ce538b7b1a8a41b40a67e3024e311529bc72d",
+      "bytes": 4852
+    },
+    {
+      "path": "assets/audio/intro_90.narration.json",
+      "sha256": "83463b535dcf2946917554fdad5bcb11016d5572fb246e8d24e124df5a91236e",
+      "bytes": 6006
+    },
+    {
+      "path": "assets/audio/intro_90.narration.txt",
+      "sha256": "44f89522703e3234b5fe897626edea60c8d5e9619bc9a7e802551376c6d23492",
+      "bytes": 1319
+    },
+    {
+      "path": "assets/audio/intro_90.ssml",
+      "sha256": "2e02a63b799b4360d5dd0049a62b2cc57660a9f0d9e4758a6ef484161b5c2555",
+      "bytes": 1575
+    },
+    {
+      "path": "assets/audio/linebreak_repair.json",
+      "sha256": "7c8b48c1cd126827083f7f1b31bcfc30e110265b8e4da79907eee8f2ba73ea6f",
+      "bytes": 593
+    },
+    {
+      "path": "assets/audio/local_capability_check.log",
+      "sha256": "bd28d8edea01bede742b9f1ac58f6511fb3e4645ef40eeccc40a8055ec848d88",
+      "bytes": 270
+    },
+    {
+      "path": "assets/audio/media_status.json",
+      "sha256": "7f71d9af4e2703024f3ccf26aa02181f6e16435d8132fc8c7b7f92b5e68234ec",
+      "bytes": 1448
+    },
+    {
+      "path": "assets/audio/tts_tool_inventory.json",
+      "sha256": "ae74283ec321cc18b64afcfc8748ca18f825b3b24a4aa1b254dc2768f7fdee44",
+      "bytes": 389
+    },
+    {
+      "path": "assets/subtitles/explainer_360.draft_timing.json",
+      "sha256": "5fe813874865813f4e0dfebec9093383fcab9de91ab8f7e531efee6f0f2e912d",
+      "bytes": 8716
+    },
+    {
+      "path": "assets/subtitles/explainer_360.draft_timing.srt",
+      "sha256": "dd56714f0036f2ab4d38947b3f19d1f01175be3e908b5540440c29175aca8599",
+      "bytes": 5806
+    },
+    {
+      "path": "assets/subtitles/explainer_360.draft_timing.vtt",
+      "sha256": "415ddbe21becbf5e31c2c45fc6bd0c69ab70e20ca24da0535b72e913bfc6ec6b",
+      "bytes": 5749
+    },
+    {
+      "path": "assets/subtitles/intro_90.draft_timing.json",
+      "sha256": "6086acdc58e8e12c3b039960d82c8f52384fa4e5ecd4a6ab6bec3084d5c7709f",
+      "bytes": 2361
+    },
+    {
+      "path": "assets/subtitles/intro_90.draft_timing.srt",
+      "sha256": "87ce1628203f02a8fcb8d3ace07c4becc6637d14cff270e8347ed1b775cb5ade",
+      "bytes": 1503
+    },
+    {
+      "path": "assets/subtitles/intro_90.draft_timing.vtt",
+      "sha256": "43514b790fc0a2ab11ed695924b542d696caea9c17281366827c9cb567a0fbc2",
+      "bytes": 1536
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V06_validation.json",
+      "sha256": "7f71d9af4e2703024f3ccf26aa02181f6e16435d8132fc8c7b7f92b5e68234ec"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [
+    "Both requested narration audio files and final audio-aligned subtitle sets are not produced: metadata search across 171 enabled tools returned no TTS/speech/audio/narration route; espeak, espeak-ng, pico2wave, say, festival and pyttsx3 are absent; alternative synthesis authorization/cost is not established."
+  ],
+  "notes": "Complete original narration TXT/JSON/SSML, pronunciation guidance, 14/44-cue draft SRT/VTT and source timing delivered. Exact source coverage and punctuation-safe cue boundaries checked. No WAV/MP3, no listening, no loudness measurement and no final audio alignment.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:19:48.277168+00:00"
+}

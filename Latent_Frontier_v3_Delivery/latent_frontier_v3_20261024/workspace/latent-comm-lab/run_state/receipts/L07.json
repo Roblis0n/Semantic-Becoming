@@ -1,0 +1,63 @@
+{
+  "task_id": "L07",
+  "status": "done",
+  "input_digest": "f6d51b34c93da2c6388ab1a6b32a126064b29c74d89b87422cb3036c365e0afd",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/transport/README.md",
+      "sha256": "55b05adbe0468a6f309efb40fb0763c6e5300d65c52c25897ce303f542269a32",
+      "bytes": 3447
+    },
+    {
+      "path": "src/latent_comm/learning/transport/__init__.py",
+      "sha256": "ce825b7f4be5f28149c723313d0172c3f1d9fe933d7c688927edf1d74b1db965",
+      "bytes": 7346
+    },
+    {
+      "path": "src/latent_comm/learning/transport/train.py",
+      "sha256": "de45c514b95bd176ee5e921b6eb0d47a638f03987275196c42d09cfd565a49c7",
+      "bytes": 2330
+    },
+    {
+      "path": "configs/learning/transport.json",
+      "sha256": "2275934d855620d8c4c2f7ed6ce201bb7afe3fef383c4163d44eb27bb6716938",
+      "bytes": 1037
+    },
+    {
+      "path": "tests/research_locked/test_learning_transport.py",
+      "sha256": "90ae2cf65a3866b6eaf1da995c8314a71a6c71b46b8864de167cb87987006d7c",
+      "bytes": 3800
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L07_transport.txt",
+      "sha256": "710e0d10efb5f69a267443a5332038083d1f0c093c3d2923156d43bb3837ca61"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_transport.txt",
+      "sha256": "e80f542240959780429d14184b9dece0052838086d168db966d6a31bee6c6dd2"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "W08 dedicated JVP/VJP behavior transport with scoped calibration residual, live anchor normalization, functional model probe binding, and distinct unreachable/minimum-norm diagnostics. Seven metadata/AST/finite least-squares checks only; no model or guard invocation. Source-only engine optimizer/resume pinned; NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.649452+00:00"
+}

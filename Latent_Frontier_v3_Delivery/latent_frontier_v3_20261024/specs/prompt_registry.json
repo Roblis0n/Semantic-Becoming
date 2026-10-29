@@ -1,0 +1,102 @@
+[
+  {
+    "id": "P00",
+    "path": "prompts/P00_一次性总控.md"
+  },
+  {
+    "id": "P01",
+    "path": "prompts/P01_研究总架构.md"
+  },
+  {
+    "id": "P02",
+    "path": "prompts/P02_第一性原理发散.md"
+  },
+  {
+    "id": "P03",
+    "path": "prompts/P03_机制完整实现.md"
+  },
+  {
+    "id": "P04",
+    "path": "prompts/P04_原机制接续.md"
+  },
+  {
+    "id": "P05",
+    "path": "prompts/P05_类型与协议.md"
+  },
+  {
+    "id": "P06",
+    "path": "prompts/P06_科研编译器.md"
+  },
+  {
+    "id": "P07",
+    "path": "prompts/P07_世界与数据.md"
+  },
+  {
+    "id": "P08",
+    "path": "prompts/P08_模型后端.md"
+  },
+  {
+    "id": "P09",
+    "path": "prompts/P09_训练与元学习.md"
+  },
+  {
+    "id": "P10",
+    "path": "prompts/P10_运行时与事务.md"
+  },
+  {
+    "id": "P11",
+    "path": "prompts/P11_组合与终局.md"
+  },
+  {
+    "id": "P12",
+    "path": "prompts/P12_来源与新颖性.md"
+  },
+  {
+    "id": "P13",
+    "path": "prompts/P13_数学与软件审查.md"
+  },
+  {
+    "id": "P14",
+    "path": "prompts/P14_权限与执行边界.md"
+  },
+  {
+    "id": "P15",
+    "path": "prompts/P15_论文与说明文档.md"
+  },
+  {
+    "id": "P16",
+    "path": "prompts/P16_演示文稿.md"
+  },
+  {
+    "id": "P17",
+    "path": "prompts/P17_视频音频与动画.md"
+  },
+  {
+    "id": "P18",
+    "path": "prompts/P18_上下文恢复.md"
+  },
+  {
+    "id": "P19",
+    "path": "prompts/P19_封包与交付.md"
+  },
+  {
+    "id": "P20",
+    "path": "prompts/P20_形式推导.md"
+  },
+  {
+    "id": "P21",
+    "path": "prompts/P21_应用能力发现.md"
+  },
+  {
+    "id": "P22",
+    "path": "prompts/P22_缺陷修复.md"
+  },
+  {
+    "id": "P23",
+    "path": "prompts/P23_未来模型侧模板.md"
+  },
+  {
+    "id": "P24",
+    "path": "prompts/P24_极限想法复审.md"
+  }
+]

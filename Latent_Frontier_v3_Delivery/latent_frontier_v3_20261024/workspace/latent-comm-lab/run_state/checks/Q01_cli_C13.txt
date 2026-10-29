@@ -1,0 +1,9 @@
+recipe C13
+research_state NOT_RUN; execution LOCKED
+passes syntax_schema, reference_resolution, type_shape_scope, version_migration, role_view_leakage, differentiability_boundaries, bounded_schedule_gate
+budget 4/128
+h19 = ConstructObject[H19] (in0:MessageCorpus, in1:SkillContract) -> (out0:ConsolidatedSkill); effects=K; diff=differentiable; gate=no research dispatch
+h25 = TransformFrame[H25] (in0:FrameSpec, in1:State, in2:Operator, in3:Readout) -> (out0:TransportedOperator, out1:CovarianceReport, out2:PathComposition); effects=F; diff=differentiable; gate=no research dispatch
+h37 = TransportUpdate[H37] (in0:BehaviorAnchorSet, in1:SourceDirection, in2:JVPContract, in3:TargetVJPContract) -> (out0:TransportedUpdate, out1:ProjectionResidual, out2:RankDiagnostic); effects=U; diff=differentiable; gate=no research dispatch
+h38 = ApplyPlasticity[H38] (in0:PlasticityAST, in1:SupportBatch, in2:QueryBatch, in3:ScopedParameters) -> (out0:UpdateRule, out1:InnerTrajectory, out2:MetaGradientSpec); effects=U; diff=hybrid; gate=no research dispatch
+schedule h19, h25, h37, h38

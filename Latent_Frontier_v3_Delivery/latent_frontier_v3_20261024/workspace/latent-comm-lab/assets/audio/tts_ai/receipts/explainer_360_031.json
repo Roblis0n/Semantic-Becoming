@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_031",
+  "edition": "explainer_360",
+  "scene_id": "S06",
+  "characters": 19,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "这是一种新的研究空间，不是事实制造机。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-25T15:04:47.371094+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 169786,
+    "duration_seconds": 3.8500226757369616,
+    "sample_peak": 3901,
+    "sample_rms": 786.0304010261502,
+    "sha256": "fd6d289dbc0577a1894ee505828dbb56954c31f75f1b5b8f88dcce481fe2df27",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-25T15:05:39.426197+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

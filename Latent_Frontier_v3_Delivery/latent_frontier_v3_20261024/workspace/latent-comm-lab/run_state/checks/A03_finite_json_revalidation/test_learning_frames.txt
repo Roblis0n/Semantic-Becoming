@@ -1,0 +1,30 @@
+test_analytic_covariance (test_learning_frames.LearningFrames.test_analytic_covariance) ... ok
+test_ast_no_eager_neural (test_learning_frames.LearningFrames.test_ast_no_eager_neural) ... ok
+test_base_alias (test_learning_frames.LearningFrames.test_base_alias) ... ok
+test_covariance_has_no_readout_owner (test_learning_frames.LearningFrames.test_covariance_has_no_readout_owner) ... ok
+test_describe (test_learning_frames.LearningFrames.test_describe) ... ok
+test_fixture_cap_not_recipe_cap (test_learning_frames.LearningFrames.test_fixture_cap_not_recipe_cap) ... ok
+test_invalid_weights (test_learning_frames.LearningFrames.test_invalid_weights) ... ok
+test_no_supervisor_forward (test_learning_frames.LearningFrames.test_no_supervisor_forward) ... ok
+test_nonfinite_weight_decay (test_learning_frames.LearningFrames.test_nonfinite_weight_decay) ... ok
+test_owner_alias (test_learning_frames.LearningFrames.test_owner_alias) ... ok
+test_owner_names (test_learning_frames.LearningFrames.test_owner_names) ... ok
+test_role_origin (test_learning_frames.LearningFrames.test_role_origin) ... ok
+test_run_path (test_learning_frames.LearningFrames.test_run_path) ... ok
+test_semantic_batch_identity (test_learning_frames.LearningFrames.test_semantic_batch_identity) ... ok
+test_unowned_loss (test_learning_frames.LearningFrames.test_unowned_loss) ... ok
+test_zero_valid (test_learning_frames.LearningFrames.test_zero_valid) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.011s
+
+OK
+{
+  "selected": 16,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_frames.LearningFrames.test_aggregate_finite_guard_before_backward",
+    "test_learning_frames.LearningFrames.test_gate_before_model",
+    "test_learning_frames.LearningFrames.test_gate_before_training"
+  ],
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,1421 @@
+{
+  "recipe_id": "C20",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C20",
+    "nodes": [
+      {
+        "node_id": "question_and_concept_ir",
+        "operation": "C20.question_and_concept_ir",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "question_and_concept_ir:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "SemanticCompilerInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "SemanticIR",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "O",
+          "Q"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H27",
+          "H29"
+        ],
+        "implementation": "latent_comm.compositions.c20.question_and_concept_ir",
+        "location": {
+          "source": "C20.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "typed_operations",
+        "operation": "C20.typed_operations",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "question_and_concept_ir:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "typed_operations:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "SemanticIR",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TypedOperations",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "P",
+          "Q"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H07",
+          "H42"
+        ],
+        "implementation": "latent_comm.compositions.c20.typed_operations",
+        "location": {
+          "source": "C20.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "expand_macro",
+        "operation": "C20.expand_macro",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "typed_operations:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "expand_macro:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TypedOperations",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "LoweredMacro",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H40"
+        ],
+        "implementation": "latent_comm.compositions.c20.expand_macro",
+        "location": {
+          "source": "C20.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "transport_domains_and_coordinates",
+        "operation": "C20.transport_domains_and_coordinates",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "expand_macro:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "transport_domains_and_coordinates:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LoweredMacro",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TransportedSemantics",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "O",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "P"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H25",
+          "H30"
+        ],
+        "implementation": "latent_comm.compositions.c20.transport_domains_and_coordinates",
+        "location": {
+          "source": "C20.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "plan_owned_execution",
+        "operation": "C20.plan_owned_execution",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "transport_domains_and_coordinates:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "plan_owned_execution:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TransportedSemantics",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "OwnedExecutionPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P",
+          "U"
+        ],
+        "write_set": [
+          "P",
+          "U"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H07",
+          "H38"
+        ],
+        "implementation": "latent_comm.compositions.c20.plan_owned_execution",
+        "location": {
+          "source": "C20.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "bind_locked_backend",
+        "operation": "C20.bind_locked_backend",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "plan_owned_execution:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "bind_locked_backend:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "OwnedExecutionPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "LockedBackendPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H07"
+        ],
+        "implementation": "latent_comm.compositions.c20.bind_locked_backend",
+        "location": {
+          "source": "C20.bound.json",
+          "path": "/nodes/5",
+          "line": 83,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "bind_locked_backend:out",
+        {
+          "name": "LockedBackendPlan",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "expand_macro:out",
+        {
+          "name": "LoweredMacro",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "SemanticCompilerInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "plan_owned_execution:out",
+        {
+          "name": "OwnedExecutionPlan",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "question_and_concept_ir:out",
+        {
+          "name": "SemanticIR",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "transport_domains_and_coordinates:out",
+        {
+          "name": "TransportedSemantics",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "typed_operations:out",
+        {
+          "name": "TypedOperations",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "expand_macro",
+        "transport_domains_and_coordinates"
+      ],
+      [
+        "plan_owned_execution",
+        "bind_locked_backend"
+      ],
+      [
+        "question_and_concept_ir",
+        "typed_operations"
+      ],
+      [
+        "transport_domains_and_coordinates",
+        "plan_owned_execution"
+      ],
+      [
+        "typed_operations",
+        "expand_macro"
+      ]
+    ],
+    "schedule": [
+      "question_and_concept_ir",
+      "typed_operations",
+      "expand_macro",
+      "transport_domains_and_coordinates",
+      "plan_owned_execution",
+      "bind_locked_backend"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 6,
+    "max_steps": 64,
+    "input_digest": "b131695936a173d339e0d75c52fea99c2b08aabb469078e708909de40d41005c",
+    "declared_parameters": {
+      "obligations": [
+        "Numeric effects must agree with symbolic operation tables before backend binding.",
+        "Source-bound capability metadata is not empirical integration verification.",
+        "All research execution remains policy locked, even with complete backend metadata."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C20",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "concept",
+        "objectives": [
+          {
+            "name": "distinction",
+            "mathematical_definition": "sum(m*relu(margin-abs(ca-cb)))/sum(m)",
+            "numerator": "pair margin deficit",
+            "denominator": "known required pairs",
+            "valid_mask": "pair_known_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds"
+            ],
+            "requires_grad_inputs": [
+              "concept_values"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "pairs",
+            "id": "H27.distinction"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "sum(m*CE(action_logits,label))/sum(m)",
+            "numerator": "supervisor-only action cross entropy",
+            "denominator": "valid actions",
+            "valid_mask": "action_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds",
+              "behavior_readout"
+            ],
+            "requires_grad_inputs": [
+              "concept_values"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "actions",
+            "id": "H27.behavior"
+          },
+          {
+            "name": "drift",
+            "mathematical_definition": "sum(m*(new_old_domain-old)^2)/sum(m)",
+            "numerator": "historical-domain response change",
+            "denominator": "valid historical values",
+            "valid_mask": "old_domain_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds"
+            ],
+            "requires_grad_inputs": [
+              "new_response"
+            ],
+            "stop_gradient_edges": [
+              [
+                "old_response",
+                "drift"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "historical examples",
+            "id": "H27.drift"
+          }
+        ],
+        "losses": [
+          "H27.distinction",
+          "H27.behavior",
+          "H27.drift"
+        ],
+        "owners": [
+          "behavior_readout",
+          "concept_thresholds"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "question",
+        "objectives": [
+          {
+            "name": "relation",
+            "mathematical_definition": "sum(m*CE(relation_logits,verified_relation))/sum(m)",
+            "numerator": "relation classification CE",
+            "denominator": "verified rewrite edges",
+            "valid_mask": "edge_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transform_selector"
+            ],
+            "requires_grad_inputs": [
+              "question_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "rewrite edges",
+            "id": "H29.relation"
+          },
+          {
+            "name": "backtranslation",
+            "mathematical_definition": "sum(m*(translated-answer)^2)/sum(m)",
+            "numerator": "answer relation residual squared",
+            "denominator": "valid answer coordinates",
+            "valid_mask": "answer_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "answer_map"
+            ],
+            "requires_grad_inputs": [
+              "target_answer"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "answer coordinates",
+            "id": "H29.backtranslation"
+          }
+        ],
+        "losses": [
+          "H29.relation",
+          "H29.backtranslation"
+        ],
+        "owners": [
+          "answer_map",
+          "transform_selector"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "coordinate",
+        "objectives": [
+          {
+            "name": "covariance",
+            "mathematical_definition": "sum(mask * (Pprime Gi z - Gj P z)^2)/sum(mask)",
+            "numerator": "squared transported coordinate residual",
+            "denominator": "valid state elements",
+            "valid_mask": "state_element_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "cross_map",
+              "read_write_heads"
+            ],
+            "requires_grad_inputs": [
+              "state",
+              "cross_map"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state elements",
+            "id": "H25.covariance"
+          },
+          {
+            "name": "effect",
+            "mathematical_definition": "sum(mask * (rprime Tprime zprime-r T z)^2)/sum(mask)",
+            "numerator": "squared public behavior residual",
+            "denominator": "valid behavior elements",
+            "valid_mask": "behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "cross_map",
+              "read_write_heads"
+            ],
+            "requires_grad_inputs": [
+              "state",
+              "operator",
+              "readout"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "public behavior elements",
+            "id": "H25.effect"
+          }
+        ],
+        "losses": [
+          "H25.covariance",
+          "H25.effect"
+        ],
+        "owners": [
+          "cross_map",
+          "read_write_heads"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "analogy",
+        "objectives": [
+          {
+            "name": "commutation",
+            "mathematical_definition": "sum(mask*(F A-B F)^2)/sum(mask)",
+            "numerator": "sum of valid per-element errors",
+            "denominator": "valid elements",
+            "valid_mask": "declared_square_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "object_map",
+              "operation_map"
+            ],
+            "requires_grad_inputs": [
+              "source_operation",
+              "target_operation"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "commuting-square elements",
+            "id": "H30.commutation"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "sum(mask*(target_effect-supervised_effect)^2)/sum(mask)",
+            "numerator": "sum of valid per-element errors",
+            "denominator": "valid elements",
+            "valid_mask": "target_behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "object_map",
+              "target_readout"
+            ],
+            "requires_grad_inputs": [
+              "target_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "target behavior elements",
+            "id": "H30.behavior"
+          }
+        ],
+        "losses": [
+          "H30.commutation",
+          "H30.behavior"
+        ],
+        "owners": [
+          "object_map",
+          "operation_map",
+          "target_readout"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "plasticity",
+        "objectives": [
+          {
+            "name": "outer_query_full",
+            "mathematical_definition": "L_query(theta_T(psi),query)",
+            "numerator": "query-only loss after fixed support unroll",
+            "denominator": "valid held-out query targets",
+            "valid_mask": "query_valid_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "plasticity_rule_parameters"
+            ],
+            "requires_grad_inputs": [
+              "support_gradients",
+              "inner_parameters",
+              "rule_parameters"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "second_order",
+            "normalization_units": "query targets",
+            "id": "H38.outer_query_full"
+          },
+          {
+            "name": "update_budget",
+            "mathematical_definition": "mean relu(norm(delta)-max_norm)^2",
+            "numerator": "pre-clipping update norm exceedance",
+            "denominator": "valid scoped parameter groups",
+            "valid_mask": "group_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "plasticity_rule_parameters"
+            ],
+            "requires_grad_inputs": [
+              "raw_update"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "parameter groups",
+            "id": "H38.update_budget"
+          }
+        ],
+        "losses": [
+          "H38.outer_query_full",
+          "H38.update_budget"
+        ],
+        "owners": [
+          "plasticity_rule_parameters"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "macro",
+        "objectives": [
+          {
+            "name": "fast_behavior",
+            "mathematical_definition": "sum(m*(fast_mu(x)-Exec_base(lower(mu),x))^2)/sum(m)",
+            "numerator": "fast implementation anchor error",
+            "denominator": "valid declared behavior anchors",
+            "valid_mask": "anchor_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "fast_macro_coefficients"
+            ],
+            "requires_grad_inputs": [
+              "macro_inputs"
+            ],
+            "stop_gradient_edges": [
+              [
+                "exact_base_target",
+                "fast_behavior"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior anchors",
+            "id": "H40.fast_behavior"
+          },
+          {
+            "name": "binding",
+            "mathematical_definition": "sum(m*CE(binding_logits,binding))/sum(m)",
+            "numerator": "typed argument binding CE",
+            "denominator": "valid macro calls",
+            "valid_mask": "call_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "binding_selector"
+            ],
+            "requires_grad_inputs": [
+              "program_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "macro calls",
+            "id": "H40.binding"
+          }
+        ],
+        "losses": [
+          "H40.fast_behavior",
+          "H40.binding"
+        ],
+        "owners": [
+          "binding_selector",
+          "fast_macro_coefficients"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "ecology",
+        "objectives": [
+          {
+            "name": "interface",
+            "mathematical_definition": "sum(m*task_error)/sum(m)",
+            "numerator": "task-conditioned interface loss",
+            "denominator": "valid role-isolated tasks",
+            "valid_mask": "task_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "protocol_interface"
+            ],
+            "requires_grad_inputs": [
+              "public_task_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "tasks",
+            "id": "H42.interface"
+          },
+          {
+            "name": "proposal",
+            "mathematical_definition": "-sum(m*log_pi(mutation)*reward)/sum(m)",
+            "numerator": "mutation policy score times separately recorded novelty/solvability reward",
+            "denominator": "valid legal mutations",
+            "valid_mask": "mutation_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "environment_proposer"
+            ],
+            "requires_grad_inputs": [
+              "mutation_log_probability"
+            ],
+            "stop_gradient_edges": [
+              [
+                "reward",
+                "proposal"
+              ]
+            ],
+            "estimated_or_exact": "policy_gradient",
+            "normalization_units": "mutations",
+            "id": "H42.proposal"
+          }
+        ],
+        "losses": [
+          "H42.interface",
+          "H42.proposal"
+        ],
+        "owners": [
+          "environment_proposer",
+          "protocol_interface"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "question_and_concept_ir": "stop",
+      "typed_operations": "enumeration",
+      "expand_macro": "stop",
+      "transport_domains_and_coordinates": "differentiable",
+      "plan_owned_execution": "stop",
+      "bind_locked_backend": "stop"
+    },
+    "aggregation": "separate phases with exact parameter ownership, never one unweighted global loss",
+    "immutable": [
+      "base ISA",
+      "external goal",
+      "authorization",
+      "historical ontology definitions"
+    ]
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

@@ -1,0 +1,237 @@
+{
+  "owner_task": "A02",
+  "policy": "re-export or explicit multi-owner facade; no duplicate algorithm bodies",
+  "aliases": {
+    "src/latent_comm/operators/low_rank.py": [
+      "H01"
+    ],
+    "src/latent_comm/operators/composition.py": [
+      "H01"
+    ],
+    "src/latent_comm/bridges/operator_generator.py": [
+      "H01"
+    ],
+    "src/latent_comm/responses/low_rank_jet.py": [
+      "H02"
+    ],
+    "src/latent_comm/responses/finite_difference.py": [
+      "H02"
+    ],
+    "src/latent_comm/responses/trust_region.py": [
+      "H02"
+    ],
+    "src/latent_comm/beliefs/packet.py": [
+      "H03"
+    ],
+    "src/latent_comm/beliefs/mixture.py": [
+      "H03"
+    ],
+    "src/latent_comm/beliefs/update.py": [
+      "H03"
+    ],
+    "src/latent_comm/beliefs/matching.py": [
+      "H03"
+    ],
+    "src/latent_comm/fields/constraints.py": [
+      "H04"
+    ],
+    "src/latent_comm/fields/solver.py": [
+      "H04"
+    ],
+    "src/latent_comm/fields/conflicts.py": [
+      "H04"
+    ],
+    "src/latent_comm/fields/readwrite.py": [
+      "H04"
+    ],
+    "src/latent_comm/continuations/capture.py": [
+      "H05"
+    ],
+    "src/latent_comm/continuations/translate.py": [
+      "H05"
+    ],
+    "src/latent_comm/continuations/resume.py": [
+      "H05"
+    ],
+    "src/latent_comm/continuations/ledger.py": [
+      "H05"
+    ],
+    "src/latent_comm/atlas/charts.py": [
+      "H06"
+    ],
+    "src/latent_comm/atlas/routing.py": [
+      "H06"
+    ],
+    "src/latent_comm/atlas/transitions.py": [
+      "H06"
+    ],
+    "src/latent_comm/atlas/objectives.py": [
+      "H06"
+    ],
+    "src/latent_comm/ir/types.py": [
+      "H07"
+    ],
+    "src/latent_comm/ir/parser.py": [
+      "H07"
+    ],
+    "src/latent_comm/ir/compiler.py": [
+      "H07"
+    ],
+    "src/latent_comm/ir/runtime.py": [
+      "H07"
+    ],
+    "src/latent_comm/relations/packet.py": [
+      "H08"
+    ],
+    "src/latent_comm/relations/matching.py": [
+      "H08"
+    ],
+    "src/latent_comm/relations/exchange.py": [
+      "H08"
+    ],
+    "src/latent_comm/interventions/scm.py": [
+      "H09"
+    ],
+    "src/latent_comm/interventions/algebra.py": [
+      "H09"
+    ],
+    "src/latent_comm/interventions/transport.py": [
+      "H09"
+    ],
+    "src/latent_comm/synergy/hypergraph.py": [
+      "H10"
+    ],
+    "src/latent_comm/synergy/interactions.py": [
+      "H10"
+    ],
+    "src/latent_comm/synergy/composer.py": [
+      "H10"
+    ],
+    "src/latent_comm/coding/progressive.py": [
+      "H11"
+    ],
+    "src/latent_comm/coding/quantization.py": [
+      "H11"
+    ],
+    "src/latent_comm/coding/requests.py": [
+      "H11"
+    ],
+    "src/latent_comm/capsules/store.py": [
+      "H12"
+    ],
+    "src/latent_comm/capsules/reader.py": [
+      "H12"
+    ],
+    "src/latent_comm/capsules/versioning.py": [
+      "H12"
+    ],
+    "src/latent_comm/branching/fork.py": [
+      "H13"
+    ],
+    "src/latent_comm/branching/merge.py": [
+      "H13"
+    ],
+    "src/latent_comm/branching/ancestry.py": [
+      "H13"
+    ],
+    "src/latent_comm/grammar/productions.py": [
+      "H14"
+    ],
+    "src/latent_comm/grammar/bindings.py": [
+      "H14"
+    ],
+    "src/latent_comm/grammar/expansion.py": [
+      "H14"
+    ],
+    "src/latent_comm/population/pair_sampler.py": [
+      "H15"
+    ],
+    "src/latent_comm/population/protocol_objectives.py": [
+      "H15"
+    ],
+    "src/latent_comm/population/adapter_registry.py": [
+      "H15"
+    ],
+    "src/latent_comm/hybrid/symbols.py": [
+      "H16"
+    ],
+    "src/latent_comm/hybrid/bindings.py": [
+      "H16"
+    ],
+    "src/latent_comm/hybrid/fusion.py": [
+      "H16"
+    ],
+    "src/latent_comm/grounding/frames.py": [
+      "H17"
+    ],
+    "src/latent_comm/grounding/transform.py": [
+      "H17"
+    ],
+    "src/latent_comm/grounding/action_effects.py": [
+      "H17"
+    ],
+    "src/latent_comm/topology/candidates.py": [
+      "H18"
+    ],
+    "src/latent_comm/topology/controller.py": [
+      "H18"
+    ],
+    "src/latent_comm/topology/compiler.py": [
+      "H18"
+    ],
+    "src/latent_comm/consolidation/teacher.py": [
+      "H19"
+    ],
+    "src/latent_comm/consolidation/adapter_builder.py": [
+      "H19"
+    ],
+    "src/latent_comm/consolidation/distillation.py": [
+      "H19"
+    ],
+    "src/latent_comm/clocks/events.py": [
+      "H20"
+    ],
+    "src/latent_comm/clocks/scheduler.py": [
+      "H20"
+    ],
+    "src/latent_comm/clocks/staleness.py": [
+      "H20"
+    ],
+    "src/latent_comm/portfolios/tree.py": [
+      "H21"
+    ],
+    "src/latent_comm/portfolios/selector.py": [
+      "H21"
+    ],
+    "src/latent_comm/portfolios/reuse.py": [
+      "H21"
+    ],
+    "src/latent_comm/elastic/partition.py": [
+      "H22"
+    ],
+    "src/latent_comm/elastic/transitions.py": [
+      "H22"
+    ],
+    "src/latent_comm/elastic/controller.py": [
+      "H22"
+    ],
+    "src/latent_comm/repair/diagnostics.py": [
+      "H23"
+    ],
+    "src/latent_comm/repair/residual.py": [
+      "H23"
+    ],
+    "src/latent_comm/repair/protocol.py": [
+      "H23"
+    ],
+    "src/latent_comm/capabilities/scopes.py": [
+      "H24"
+    ],
+    "src/latent_comm/capabilities/enforcer.py": [
+      "H24"
+    ],
+    "src/latent_comm/capabilities/effects.py": [
+      "H24"
+    ]
+  }
+}

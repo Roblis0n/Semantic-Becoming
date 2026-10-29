@@ -1,0 +1,96 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "transaction_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "read_versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": -1
+          }
+        },
+        "required": [
+          "key",
+          "version"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "writes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "type_tag": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "payload_json": {
+            "type": "string",
+            "pattern": "^.+$"
+          }
+        },
+        "required": [
+          "key",
+          "type_tag",
+          "version",
+          "payload_json"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "migration_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^.+$"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "external_effects": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "transaction_id",
+    "read_versions",
+    "writes",
+    "migration_dependencies",
+    "external_effects"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H39:resolved-payload:3"
+}

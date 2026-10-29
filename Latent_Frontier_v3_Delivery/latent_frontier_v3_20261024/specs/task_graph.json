@@ -1,0 +1,4369 @@
+{
+  "schema_version": 3,
+  "graph_kind": "dot_authoring_dag_not_research_graph",
+  "task_count": 133,
+  "terminal_task": "Z02",
+  "max_concurrent_writers": 3,
+  "tasks": [
+    {
+      "id": "A00",
+      "title": "工作区与能力发现",
+      "role_prompt": "prompts/P21_应用能力发现.md",
+      "dependencies": [],
+      "design_inputs": [
+        "START_HERE.md",
+        "specs/execution_policy.json"
+      ],
+      "outputs": [
+        "run_state/tool_inventory.json",
+        "run_state/workspace_binding.json"
+      ],
+      "steps": [
+        "校验输入ZIP哈希，建立独立WORK_ROOT和只读PLAN_ROOT绑定",
+        "读取实际工具schema、连接和费用，不访问无关私有内容",
+        "生成工具选择和降级路线，初始化全部pending任务状态"
+      ],
+      "acceptance": "工作区未覆盖用户文件，能力与未知项有证据，研究动作被禁。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/A00.json",
+      "task_card": "tasks/A00_工作区与能力发现.md"
+    },
+    {
+      "id": "A01",
+      "title": "第一性原理总架构",
+      "role_prompt": "prompts/P01_研究总架构.md",
+      "dependencies": [
+        "A00"
+      ],
+      "design_inputs": [
+        "docs/00_研究宪章_本轮究竟追求什么.md",
+        "docs/04_统一元状态与对象流.md"
+      ],
+      "outputs": [
+        "docs/theory_architecture.md",
+        "specs/meta_state.json",
+        "specs/assumptions.json"
+      ],
+      "steps": [
+        "覆盖48机制与12终局的变量层级",
+        "声明不变量、不能统一的类型和条件桥梁",
+        "绘制所有家族与核心组合的对象关系"
+      ],
+      "acceptance": "无以近期实验为门槛的删项；每个主张有对象与假设。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/A01.json",
+      "task_card": "tasks/A01_第一性原理总架构.md",
+      "helper_prompts": [
+        "prompts/P02_第一性原理发散.md"
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "公共契约与迁移",
+      "role_prompt": "prompts/P05_类型与协议.md",
+      "dependencies": [
+        "A01"
+      ],
+      "design_inputs": [
+        "docs/05_数据契约与协议定义.md",
+        "specs/legacy_module_aliases.json",
+        "docs/20_机器契约的语义补充.md",
+        "specs/frontier_packet.schema.json"
+      ],
+      "outputs": [
+        "src/latent_comm/core/",
+        "src/latent_comm/packets/",
+        "specs/runtime_schemas/",
+        "specs/legacy_alias_ownership.json",
+        "src/latent_comm/operators/low_rank.py",
+        "src/latent_comm/operators/composition.py",
+        "src/latent_comm/bridges/operator_generator.py",
+        "src/latent_comm/responses/low_rank_jet.py",
+        "src/latent_comm/responses/finite_difference.py",
+        "src/latent_comm/responses/trust_region.py",
+        "src/latent_comm/beliefs/packet.py",
+        "src/latent_comm/beliefs/mixture.py",
+        "src/latent_comm/beliefs/update.py",
+        "src/latent_comm/beliefs/matching.py",
+        "src/latent_comm/fields/constraints.py",
+        "src/latent_comm/fields/solver.py",
+        "src/latent_comm/fields/conflicts.py",
+        "src/latent_comm/fields/readwrite.py",
+        "src/latent_comm/continuations/capture.py",
+        "src/latent_comm/continuations/translate.py",
+        "src/latent_comm/continuations/resume.py",
+        "src/latent_comm/continuations/ledger.py",
+        "src/latent_comm/atlas/charts.py",
+        "src/latent_comm/atlas/routing.py",
+        "src/latent_comm/atlas/transitions.py",
+        "src/latent_comm/atlas/objectives.py",
+        "src/latent_comm/ir/types.py",
+        "src/latent_comm/ir/parser.py",
+        "src/latent_comm/ir/compiler.py",
+        "src/latent_comm/ir/runtime.py",
+        "src/latent_comm/relations/packet.py",
+        "src/latent_comm/relations/matching.py",
+        "src/latent_comm/relations/exchange.py",
+        "src/latent_comm/interventions/scm.py",
+        "src/latent_comm/interventions/algebra.py",
+        "src/latent_comm/interventions/transport.py",
+        "src/latent_comm/synergy/hypergraph.py",
+        "src/latent_comm/synergy/interactions.py",
+        "src/latent_comm/synergy/composer.py",
+        "src/latent_comm/coding/progressive.py",
+        "src/latent_comm/coding/quantization.py",
+        "src/latent_comm/coding/requests.py",
+        "src/latent_comm/capsules/store.py",
+        "src/latent_comm/capsules/reader.py",
+        "src/latent_comm/capsules/versioning.py",
+        "src/latent_comm/branching/fork.py",
+        "src/latent_comm/branching/merge.py",
+        "src/latent_comm/branching/ancestry.py",
+        "src/latent_comm/grammar/productions.py",
+        "src/latent_comm/grammar/bindings.py",
+        "src/latent_comm/grammar/expansion.py",
+        "src/latent_comm/population/pair_sampler.py",
+        "src/latent_comm/population/protocol_objectives.py",
+        "src/latent_comm/population/adapter_registry.py",
+        "src/latent_comm/hybrid/symbols.py",
+        "src/latent_comm/hybrid/bindings.py",
+        "src/latent_comm/hybrid/fusion.py",
+        "src/latent_comm/grounding/frames.py",
+        "src/latent_comm/grounding/transform.py",
+        "src/latent_comm/grounding/action_effects.py",
+        "src/latent_comm/topology/candidates.py",
+        "src/latent_comm/topology/controller.py",
+        "src/latent_comm/topology/compiler.py",
+        "src/latent_comm/consolidation/teacher.py",
+        "src/latent_comm/consolidation/adapter_builder.py",
+        "src/latent_comm/consolidation/distillation.py",
+        "src/latent_comm/clocks/events.py",
+        "src/latent_comm/clocks/scheduler.py",
+        "src/latent_comm/clocks/staleness.py",
+        "src/latent_comm/portfolios/tree.py",
+        "src/latent_comm/portfolios/selector.py",
+        "src/latent_comm/portfolios/reuse.py",
+        "src/latent_comm/elastic/partition.py",
+        "src/latent_comm/elastic/transitions.py",
+        "src/latent_comm/elastic/controller.py",
+        "src/latent_comm/repair/diagnostics.py",
+        "src/latent_comm/repair/residual.py",
+        "src/latent_comm/repair/protocol.py",
+        "src/latent_comm/capabilities/scopes.py",
+        "src/latent_comm/capabilities/enforcer.py",
+        "src/latent_comm/capabilities/effects.py"
+      ],
+      "steps": [
+        "实现元状态/信封/shape/错误/scope/版本",
+        "建立迁移和旧模块别名，别名只做re-export或明确facade",
+        "冻结公共接口第一版供各writer依赖"
+      ],
+      "acceptance": "所有关键语义具备专用类型；别名不复制核心算法。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/A02.json",
+      "task_card": "tasks/A02_公共契约与迁移.md"
+    },
+    {
+      "id": "A03",
+      "title": "研究IR与编译器",
+      "role_prompt": "prompts/P06_科研编译器.md",
+      "dependencies": [
+        "A02"
+      ],
+      "design_inputs": [
+        "docs/07_编译器与可执行流水线.md"
+      ],
+      "outputs": [
+        "src/latent_comm/compiler/",
+        "src/latent_comm/cli/compile.py",
+        "tests/compiler/"
+      ],
+      "steps": [
+        "实现七遍编译和错误定位",
+        "区分计划DAG与bounded研究循环",
+        "为48机制注册节点能力，不自动导入模型"
+      ],
+      "acceptance": "源码具体、类型迁移可定位、编译不触发研究执行。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/A03.json",
+      "task_card": "tasks/A03_研究IR与编译器.md"
+    },
+    {
+      "id": "A04",
+      "title": "运行时与恢复系统",
+      "role_prompt": "prompts/P10_运行时与事务.md",
+      "dependencies": [
+        "A02"
+      ],
+      "design_inputs": [
+        "docs/11_运行时_事务_恢复与有界自主.md"
+      ],
+      "outputs": [
+        "src/latent_comm/runtime/",
+        "tests/runtime/"
+      ],
+      "steps": [
+        "实现队列、分支、时间、版本事务与恢复journal",
+        "保证bounded loop和输入变更失效",
+        "生成审计事件与终态记录"
+      ],
+      "acceptance": "没有无限重试；文件/科研事务语义明确。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/A04.json",
+      "task_card": "tasks/A04_运行时与恢复系统.md"
+    },
+    {
+      "id": "A05",
+      "title": "权限控制与禁跑闸门",
+      "role_prompt": "prompts/P14_权限与执行边界.md",
+      "dependencies": [
+        "A02"
+      ],
+      "design_inputs": [
+        "specs/execution_policy.json",
+        "docs/12_Dot工具编排与权限矩阵.md"
+      ],
+      "outputs": [
+        "src/latent_comm/safety/",
+        "tests/policy/",
+        "src/latent_comm/cli/research.py"
+      ],
+      "steps": [
+        "对所有研究入口实现前置拒绝",
+        "写工具动作broker和工作区边界",
+        "说明配置约束与平台硬隔离差别"
+      ],
+      "acceptance": "加载/前向/API/训练入口默认拒绝，未知高副作用动作拒绝。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/A05.json",
+      "task_card": "tasks/A05_权限控制与禁跑闸门.md"
+    },
+    {
+      "id": "M01",
+      "title": "H01_可组合潜算子",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H01_可组合潜算子.md",
+        "integration/I01_可组合潜算子.md",
+        "recipes/H01.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h01_legacy/",
+        "tests/contracts/test_h01.py",
+        "configs/mechanisms/H01.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M01.json",
+      "task_card": "tasks/M01_H01_可组合潜算子.md"
+    },
+    {
+      "id": "M02",
+      "title": "H02_反事实响应包",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H02_反事实响应包.md",
+        "integration/I02_反事实响应包.md",
+        "recipes/H02.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h02_legacy/",
+        "tests/contracts/test_h02.py",
+        "configs/mechanisms/H02.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M02.json",
+      "task_card": "tasks/M02_H02_反事实响应包.md"
+    },
+    {
+      "id": "M03",
+      "title": "H03_多假设信念包",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H03_多假设信念包.md",
+        "integration/I03_多假设信念包.md",
+        "recipes/H03.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h03_legacy/",
+        "tests/contracts/test_h03.py",
+        "configs/mechanisms/H03.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M03.json",
+      "task_card": "tasks/M03_H03_多假设信念包.md"
+    },
+    {
+      "id": "M04",
+      "title": "H04_多主体共享约束场",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H04_多主体共享约束场.md",
+        "integration/I04_多主体共享约束场.md",
+        "recipes/H04.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h04_legacy/",
+        "tests/contracts/test_h04.py",
+        "configs/mechanisms/H04.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M04.json",
+      "task_card": "tasks/M04_H04_多主体共享约束场.md"
+    },
+    {
+      "id": "M05",
+      "title": "H05_推理续接胶囊",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H05_推理续接胶囊.md",
+        "integration/I05_推理续接胶囊.md",
+        "recipes/H05.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h05_legacy/",
+        "tests/contracts/test_h05.py",
+        "configs/mechanisms/H05.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M05.json",
+      "task_card": "tasks/M05_H05_推理续接胶囊.md"
+    },
+    {
+      "id": "M06",
+      "title": "H06_多图册语义对齐",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H06_多图册语义对齐.md",
+        "integration/I06_多图册语义对齐.md",
+        "recipes/H06.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h06_legacy/",
+        "tests/contracts/test_h06.py",
+        "configs/mechanisms/H06.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M06.json",
+      "task_card": "tasks/M06_H06_多图册语义对齐.md"
+    },
+    {
+      "id": "M07",
+      "title": "H07_类型化潜程序",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H07_类型化潜程序.md",
+        "integration/I07_类型化潜程序.md",
+        "recipes/H07.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h07_legacy/",
+        "tests/contracts/test_h07.py",
+        "configs/mechanisms/H07.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M07.json",
+      "task_card": "tasks/M07_H07_类型化潜程序.md"
+    },
+    {
+      "id": "M08",
+      "title": "H08_关系结构通信",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H08_关系结构通信.md",
+        "integration/I08_关系结构通信.md",
+        "recipes/H08.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h08_legacy/",
+        "tests/contracts/test_h08.py",
+        "configs/mechanisms/H08.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M08.json",
+      "task_card": "tasks/M08_H08_关系结构通信.md"
+    },
+    {
+      "id": "M09",
+      "title": "H09_干预代数通信",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H09_干预代数通信.md",
+        "integration/I09_干预代数通信.md",
+        "recipes/H09.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h09_legacy/",
+        "tests/contracts/test_h09.py",
+        "configs/mechanisms/H09.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M09.json",
+      "task_card": "tasks/M09_H09_干预代数通信.md"
+    },
+    {
+      "id": "M10",
+      "title": "H10_高阶协同超边",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H10_高阶协同超边.md",
+        "integration/I10_高阶协同超边.md",
+        "recipes/H10.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h10_legacy/",
+        "tests/contracts/test_h10.py",
+        "configs/mechanisms/H10.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M10.json",
+      "task_card": "tasks/M10_H10_高阶协同超边.md"
+    },
+    {
+      "id": "M11",
+      "title": "H11_渐进潜编码",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H11_渐进潜编码.md",
+        "integration/I11_渐进潜编码.md",
+        "recipes/H11.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h11_legacy/",
+        "tests/contracts/test_h11.py",
+        "configs/mechanisms/H11.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M11.json",
+      "task_card": "tasks/M11_H11_渐进潜编码.md"
+    },
+    {
+      "id": "M12",
+      "title": "H12_多查询持久胶囊",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H12_多查询持久胶囊.md",
+        "integration/I12_多查询持久胶囊.md",
+        "recipes/H12.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h12_legacy/",
+        "tests/contracts/test_h12.py",
+        "configs/mechanisms/H12.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M12.json",
+      "task_card": "tasks/M12_H12_多查询持久胶囊.md"
+    },
+    {
+      "id": "M13",
+      "title": "H13_可分叉潜计算",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H13_可分叉潜计算.md",
+        "integration/I13_可分叉潜计算.md",
+        "recipes/H13.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h13_legacy/",
+        "tests/contracts/test_h13.py",
+        "configs/mechanisms/H13.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M13.json",
+      "task_card": "tasks/M13_H13_可分叉潜计算.md"
+    },
+    {
+      "id": "M14",
+      "title": "H14_潜技能语法",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H14_潜技能语法.md",
+        "integration/I14_潜技能语法.md",
+        "recipes/H14.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h14_legacy/",
+        "tests/contracts/test_h14.py",
+        "configs/mechanisms/H14.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M14.json",
+      "task_card": "tasks/M14_H14_潜技能语法.md"
+    },
+    {
+      "id": "M15",
+      "title": "H15_接收者无关协议学习",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H15_接收者无关协议学习.md",
+        "integration/I15_接收者无关协议学习.md",
+        "recipes/H15.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h15_legacy/",
+        "tests/contracts/test_h15.py",
+        "configs/mechanisms/H15.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M15.json",
+      "task_card": "tasks/M15_H15_接收者无关协议学习.md"
+    },
+    {
+      "id": "M16",
+      "title": "H16_精确符号与潜状态双通道",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md",
+        "integration/I16_精确符号与潜状态双通道.md",
+        "recipes/H16.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h16_legacy/",
+        "tests/contracts/test_h16.py",
+        "configs/mechanisms/H16.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M16.json",
+      "task_card": "tasks/M16_H16_精确符号与潜状态双通道.md"
+    },
+    {
+      "id": "M17",
+      "title": "H17_跨模态坐标接地",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H17_跨模态坐标接地.md",
+        "integration/I17_跨模态坐标接地.md",
+        "recipes/H17.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h17_legacy/",
+        "tests/contracts/test_h17.py",
+        "configs/mechanisms/H17.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M17.json",
+      "task_card": "tasks/M17_H17_跨模态坐标接地.md"
+    },
+    {
+      "id": "M18",
+      "title": "H18_通信诱导计算结构",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H18_通信诱导计算结构.md",
+        "integration/I18_通信诱导计算结构.md",
+        "recipes/H18.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h18_legacy/",
+        "tests/contracts/test_h18.py",
+        "configs/mechanisms/H18.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M18.json",
+      "task_card": "tasks/M18_H18_通信诱导计算结构.md"
+    },
+    {
+      "id": "M19",
+      "title": "H19_消息到技能巩固",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H19_消息到技能巩固.md",
+        "integration/I19_消息到技能巩固.md",
+        "recipes/H19.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h19_legacy/",
+        "tests/contracts/test_h19.py",
+        "configs/mechanisms/H19.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M19.json",
+      "task_card": "tasks/M19_H19_消息到技能巩固.md"
+    },
+    {
+      "id": "M20",
+      "title": "H20_异步认知时钟",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H20_异步认知时钟.md",
+        "integration/I20_异步认知时钟.md",
+        "recipes/H20.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h20_legacy/",
+        "tests/contracts/test_h20.py",
+        "configs/mechanisms/H20.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M20.json",
+      "task_card": "tasks/M20_H20_异步认知时钟.md"
+    },
+    {
+      "id": "M21",
+      "title": "H21_反事实分支组合搜索",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H21_反事实分支组合搜索.md",
+        "integration/I21_反事实分支组合搜索.md",
+        "recipes/H21.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h21_legacy/",
+        "tests/contracts/test_h21.py",
+        "configs/mechanisms/H21.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M21.json",
+      "task_card": "tasks/M21_H21_反事实分支组合搜索.md"
+    },
+    {
+      "id": "M22",
+      "title": "H22_动态模型边界",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H22_动态模型边界.md",
+        "integration/I22_动态模型边界.md",
+        "recipes/H22.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h22_legacy/",
+        "tests/contracts/test_h22.py",
+        "configs/mechanisms/H22.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M22.json",
+      "task_card": "tasks/M22_H22_动态模型边界.md"
+    },
+    {
+      "id": "M23",
+      "title": "H23_语义残差纠错",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H23_语义残差纠错.md",
+        "integration/I23_语义残差纠错.md",
+        "recipes/H23.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h23_legacy/",
+        "tests/contracts/test_h23.py",
+        "configs/mechanisms/H23.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M23.json",
+      "task_card": "tasks/M23_H23_语义残差纠错.md"
+    },
+    {
+      "id": "M24",
+      "title": "H24_有作用域的潜计算能力",
+      "role_prompt": "prompts/P04_原机制接续.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "inherited_v2/hypotheses/H24_有作用域的潜计算能力.md",
+        "integration/I24_有作用域的潜计算能力.md",
+        "recipes/H24.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h24_legacy/",
+        "tests/contracts/test_h24.py",
+        "configs/mechanisms/H24.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M24.json",
+      "task_card": "tasks/M24_H24_有作用域的潜计算能力.md"
+    },
+    {
+      "id": "M25",
+      "title": "H25_规范协变的认知接口",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H25_规范协变的认知接口.md",
+        "recipes/H25.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h25_gauge/",
+        "tests/contracts/test_h25.py",
+        "configs/mechanisms/H25.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M25.json",
+      "task_card": "tasks/M25_H25_规范协变的认知接口.md"
+    },
+    {
+      "id": "M26",
+      "title": "H26_不可全局拼合的语义层",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H26_不可全局拼合的语义层.md",
+        "recipes/H26.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h26_sheaf/",
+        "tests/contracts/test_h26.py",
+        "configs/mechanisms/H26.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M26.json",
+      "task_card": "tasks/M26_H26_不可全局拼合的语义层.md"
+    },
+    {
+      "id": "M27",
+      "title": "H27_交互中诞生的新概念",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H27_交互中诞生的新概念.md",
+        "recipes/H27.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h27_ontology/",
+        "tests/contracts/test_h27.py",
+        "configs/mechanisms/H27.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M27.json",
+      "task_card": "tasks/M27_H27_交互中诞生的新概念.md"
+    },
+    {
+      "id": "M28",
+      "title": "H28_语义结构的分岔与相变",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H28_语义结构的分岔与相变.md",
+        "recipes/H28.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h28_bifurcation/",
+        "tests/contracts/test_h28.py",
+        "configs/mechanisms/H28.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M28.json",
+      "task_card": "tasks/M28_H28_语义结构的分岔与相变.md"
+    },
+    {
+      "id": "M29",
+      "title": "H29_问题生成的潜演算",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H29_问题生成的潜演算.md",
+        "recipes/H29.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h29_questions/",
+        "tests/contracts/test_h29.py",
+        "configs/mechanisms/H29.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M29.json",
+      "task_card": "tasks/M29_H29_问题生成的潜演算.md"
+    },
+    {
+      "id": "M30",
+      "title": "H30_类比态射编译器",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H30_类比态射编译器.md",
+        "recipes/H30.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h30_analogy/",
+        "tests/contracts/test_h30.py",
+        "configs/mechanisms/H30.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M30.json",
+      "task_card": "tasks/M30_H30_类比态射编译器.md"
+    },
+    {
+      "id": "M31",
+      "title": "H31_因果机制移植",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H31_因果机制移植.md",
+        "recipes/H31.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h31_grafting/",
+        "tests/contracts/test_h31.py",
+        "configs/mechanisms/H31.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M31.json",
+      "task_card": "tasks/M31_H31_因果机制移植.md"
+    },
+    {
+      "id": "M32",
+      "title": "H32_视角与目标条件代数",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H32_视角与目标条件代数.md",
+        "recipes/H32.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h32_perspective/",
+        "tests/contracts/test_h32.py",
+        "configs/mechanisms/H32.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M32.json",
+      "task_card": "tasks/M32_H32_视角与目标条件代数.md"
+    },
+    {
+      "id": "M33",
+      "title": "H33_非梯度的互构认知动力学",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H33_非梯度的互构认知动力学.md",
+        "recipes/H33.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h33_reciprocal/",
+        "tests/contracts/test_h33.py",
+        "configs/mechanisms/H33.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M33.json",
+      "task_card": "tasks/M33_H33_非梯度的互构认知动力学.md"
+    },
+    {
+      "id": "M34",
+      "title": "H34_双边边界条件推理",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H34_双边边界条件推理.md",
+        "recipes/H34.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h34_boundary_value/",
+        "tests/contracts/test_h34.py",
+        "configs/mechanisms/H34.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M34.json",
+      "task_card": "tasks/M34_H34_双边边界条件推理.md"
+    },
+    {
+      "id": "M35",
+      "title": "H35_跨尺度语义重整化",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H35_跨尺度语义重整化.md",
+        "recipes/H35.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h35_renormalization/",
+        "tests/contracts/test_h35.py",
+        "configs/mechanisms/H35.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M35.json",
+      "task_card": "tasks/M35_H35_跨尺度语义重整化.md"
+    },
+    {
+      "id": "M36",
+      "title": "H36_以分歧生产结构的认知博弈",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H36_以分歧生产结构的认知博弈.md",
+        "recipes/H36.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h36_disagreement/",
+        "tests/contracts/test_h36.py",
+        "configs/mechanisms/H36.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M36.json",
+      "task_card": "tasks/M36_H36_以分歧生产结构的认知博弈.md"
+    },
+    {
+      "id": "M37",
+      "title": "H37_跨模型学习方向运输",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H37_跨模型学习方向运输.md",
+        "recipes/H37.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h37_gradient_transport/",
+        "tests/contracts/test_h37.py",
+        "configs/mechanisms/H37.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M37.json",
+      "task_card": "tasks/M37_H37_跨模型学习方向运输.md"
+    },
+    {
+      "id": "M38",
+      "title": "H38_可传递的可塑性规则",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H38_可传递的可塑性规则.md",
+        "recipes/H38.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h38_plasticity/",
+        "tests/contracts/test_h38.py",
+        "configs/mechanisms/H38.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M38.json",
+      "task_card": "tasks/M38_H38_可传递的可塑性规则.md"
+    },
+    {
+      "id": "M39",
+      "title": "H39_可回滚的跨模型认知事务",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H39_可回滚的跨模型认知事务.md",
+        "recipes/H39.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h39_transactions/",
+        "tests/contracts/test_h39.py",
+        "configs/mechanisms/H39.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M39.json",
+      "task_card": "tasks/M39_H39_可回滚的跨模型认知事务.md"
+    },
+    {
+      "id": "M40",
+      "title": "H40_自举的潜指令集",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H40_自举的潜指令集.md",
+        "recipes/H40.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h40_instruction_set/",
+        "tests/contracts/test_h40.py",
+        "configs/mechanisms/H40.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M40.json",
+      "task_card": "tasks/M40_H40_自举的潜指令集.md"
+    },
+    {
+      "id": "M41",
+      "title": "H41_互补能力的联盟契约",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H41_互补能力的联盟契约.md",
+        "recipes/H41.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h41_coalitions/",
+        "tests/contracts/test_h41.py",
+        "configs/mechanisms/H41.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M41.json",
+      "task_card": "tasks/M41_H41_互补能力的联盟契约.md"
+    },
+    {
+      "id": "M42",
+      "title": "H42_模型与任务的共演化生态",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H42_模型与任务的共演化生态.md",
+        "recipes/H42.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h42_ecology/",
+        "tests/contracts/test_h42.py",
+        "configs/mechanisms/H42.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M42.json",
+      "task_card": "tasks/M42_H42_模型与任务的共演化生态.md"
+    },
+    {
+      "id": "M43",
+      "title": "H43_可交换的世界动力学核",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H43_可交换的世界动力学核.md",
+        "recipes/H43.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h43_world_kernels/",
+        "tests/contracts/test_h43.py",
+        "configs/mechanisms/H43.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M43.json",
+      "task_card": "tasks/M43_H43_可交换的世界动力学核.md"
+    },
+    {
+      "id": "M44",
+      "title": "H44_共同构造的反事实梦境",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H44_共同构造的反事实梦境.md",
+        "recipes/H44.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h44_dreaming/",
+        "tests/contracts/test_h44.py",
+        "configs/mechanisms/H44.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M44.json",
+      "task_card": "tasks/M44_H44_共同构造的反事实梦境.md"
+    },
+    {
+      "id": "M45",
+      "title": "H45_主动可识别性协议",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H45_主动可识别性协议.md",
+        "recipes/H45.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h45_identifiability/",
+        "tests/contracts/test_h45.py",
+        "configs/mechanisms/H45.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M45.json",
+      "task_card": "tasks/M45_H45_主动可识别性协议.md"
+    },
+    {
+      "id": "M46",
+      "title": "H46_不可行域与负知识胶囊",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H46_不可行域与负知识胶囊.md",
+        "recipes/H46.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h46_negative_knowledge/",
+        "tests/contracts/test_h46.py",
+        "configs/mechanisms/H46.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M46.json",
+      "task_card": "tasks/M46_H46_不可行域与负知识胶囊.md"
+    },
+    {
+      "id": "M47",
+      "title": "H47_任务相对的语义商空间",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H47_任务相对的语义商空间.md",
+        "recipes/H47.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h47_quotient/",
+        "tests/contracts/test_h47.py",
+        "configs/mechanisms/H47.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M47.json",
+      "task_card": "tasks/M47_H47_任务相对的语义商空间.md"
+    },
+    {
+      "id": "M48",
+      "title": "H48_相关证据的认知谱系代数",
+      "role_prompt": "prompts/P03_机制完整实现.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "hypotheses/H48_相关证据的认知谱系代数.md",
+        "recipes/H48.json"
+      ],
+      "outputs": [
+        "src/latent_comm/mechanisms/h48_evidence_genealogy/",
+        "tests/contracts/test_h48.py",
+        "configs/mechanisms/H48.json"
+      ],
+      "steps": [
+        "从卡片明确输入输出、域和独特算法",
+        "实现types/reference/adapter/losses/schema和版本迁移",
+        "写专用正反例、梯度账本、配方与接口报告；只运行获准检查"
+      ],
+      "acceptance": "具体实现与本机制对象一致，不是通用桥接重命名；全部研究路径not_run。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/M48.json",
+      "task_card": "tasks/M48_H48_相关证据的认知谱系代数.md"
+    },
+    {
+      "id": "W01",
+      "title": "矩阵与坐标世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/matrix_frames/",
+        "configs/worlds/matrix_frames.json",
+        "tests/data/test_matrix_frames.py"
+      ],
+      "steps": [
+        "定义支持H25/H06的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W01.json",
+      "task_card": "tasks/W01_矩阵与坐标世界.md"
+    },
+    {
+      "id": "W02",
+      "title": "局部约束与拼合世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/local_constraints/",
+        "configs/worlds/local_constraints.json",
+        "tests/data/test_local_constraints.py"
+      ],
+      "steps": [
+        "定义支持H26/H36的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W02.json",
+      "task_card": "tasks/W02_局部约束与拼合世界.md"
+    },
+    {
+      "id": "W03",
+      "title": "概念与谓词世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/concepts/",
+        "configs/worlds/concepts.json",
+        "tests/data/test_concepts.py"
+      ],
+      "steps": [
+        "定义支持H27/H28的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W03.json",
+      "task_card": "tasks/W03_概念与谓词世界.md"
+    },
+    {
+      "id": "W04",
+      "title": "问题与解关系世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/questions/",
+        "configs/worlds/questions.json",
+        "tests/data/test_questions.py"
+      ],
+      "steps": [
+        "定义支持H29/H47的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W04.json",
+      "task_card": "tasks/W04_问题与解关系世界.md"
+    },
+    {
+      "id": "W05",
+      "title": "因果与类比世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/causal_analogy/",
+        "configs/worlds/causal_analogy.json",
+        "tests/data/test_causal_analogy.py"
+      ],
+      "steps": [
+        "定义支持H30/H31的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W05.json",
+      "task_card": "tasks/W05_因果与类比世界.md"
+    },
+    {
+      "id": "W06",
+      "title": "动力学与边界值世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/dynamics/",
+        "configs/worlds/dynamics.json",
+        "tests/data/test_dynamics.py"
+      ],
+      "steps": [
+        "定义支持H33/H34的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W06.json",
+      "task_card": "tasks/W06_动力学与边界值世界.md"
+    },
+    {
+      "id": "W07",
+      "title": "尺度与商空间世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/scales/",
+        "configs/worlds/scales.json",
+        "tests/data/test_scales.py"
+      ],
+      "steps": [
+        "定义支持H35/H47的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W07.json",
+      "task_card": "tasks/W07_尺度与商空间世界.md"
+    },
+    {
+      "id": "W08",
+      "title": "行为方向与更新世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/plasticity/",
+        "configs/worlds/plasticity.json",
+        "tests/data/test_plasticity.py"
+      ],
+      "steps": [
+        "定义支持H37/H38的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W08.json",
+      "task_card": "tasks/W08_行为方向与更新世界.md"
+    },
+    {
+      "id": "W09",
+      "title": "宏与事务世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/programs/",
+        "configs/worlds/programs.json",
+        "tests/data/test_programs.py"
+      ],
+      "steps": [
+        "定义支持H39/H40的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W09.json",
+      "task_card": "tasks/W09_宏与事务世界.md"
+    },
+    {
+      "id": "W10",
+      "title": "联盟与谱系世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/coalitions/",
+        "configs/worlds/coalitions.json",
+        "tests/data/test_coalitions.py"
+      ],
+      "steps": [
+        "定义支持H41/H48的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W10.json",
+      "task_card": "tasks/W10_联盟与谱系世界.md"
+    },
+    {
+      "id": "W11",
+      "title": "世界核与梦境世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/world_kernels/",
+        "configs/worlds/world_kernels.json",
+        "tests/data/test_world_kernels.py"
+      ],
+      "steps": [
+        "定义支持H43/H44的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W11.json",
+      "task_card": "tasks/W11_世界核与梦境世界.md"
+    },
+    {
+      "id": "W12",
+      "title": "查询与负知识世界",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/worlds/identifiability/",
+        "configs/worlds/identifiability.json",
+        "tests/data/test_identifiability.py"
+      ],
+      "steps": [
+        "定义支持H45/H46的有限世界、生成参数与结构签名",
+        "写generator/projection/collator/manifest，先结构分割再采样",
+        "准备可手工核对的有限fixture，训练样本生成入口保持锁定"
+      ],
+      "acceptance": "监督物理隔离；程序族分割可追踪；无真实模型和批量训练数据生成。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W12.json",
+      "task_card": "tasks/W12_查询与负知识世界.md"
+    },
+    {
+      "id": "W13",
+      "title": "共用数据视图与分割",
+      "role_prompt": "prompts/P07_世界与数据.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "src/latent_comm/data/",
+        "tests/data/test_role_views.py",
+        "specs/data_contracts.json"
+      ],
+      "steps": [
+        "实现三角色类型及白名单投影",
+        "实现结构签名split和派生追踪",
+        "创建泄漏字段拒绝与collator契约"
+      ],
+      "acceptance": "未知字段不默认进入输入；labels/IDs/oracle不得进入sender/receiver。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/W13.json",
+      "task_card": "tasks/W13_共用数据视图与分割.md"
+    },
+    {
+      "id": "B01",
+      "title": "能力契约",
+      "role_prompt": "prompts/P08_模型后端.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/10_模型后端与运行禁区.md"
+      ],
+      "outputs": [
+        "src/latent_comm/backends/capabilities/",
+        "backend_specs/capabilities.json",
+        "tests/research_locked/test_backend_capabilities.py"
+      ],
+      "steps": [
+        "从公开官方接口推导布局与作用范围",
+        "实现lazy绑定和完整接入源码；未知能力显式unbound",
+        "只静态审查，记录未运行integration命令及锁定原因"
+      ],
+      "acceptance": "未加载/初始化/前向模型；静态支持与真实兼容分开。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/B01.json",
+      "task_card": "tasks/B01_能力契约.md"
+    },
+    {
+      "id": "B02",
+      "title": "前缀注入",
+      "role_prompt": "prompts/P08_模型后端.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/10_模型后端与运行禁区.md"
+      ],
+      "outputs": [
+        "src/latent_comm/backends/hf_prefix/",
+        "backend_specs/hf_prefix.json",
+        "tests/research_locked/test_backend_hf_prefix.py"
+      ],
+      "steps": [
+        "从公开官方接口推导布局与作用范围",
+        "实现lazy绑定和完整接入源码；未知能力显式unbound",
+        "只静态审查，记录未运行integration命令及锁定原因"
+      ],
+      "acceptance": "未加载/初始化/前向模型；静态支持与真实兼容分开。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/B02.json",
+      "task_card": "tasks/B02_前缀注入.md"
+    },
+    {
+      "id": "B03",
+      "title": "残差注入",
+      "role_prompt": "prompts/P08_模型后端.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/10_模型后端与运行禁区.md"
+      ],
+      "outputs": [
+        "src/latent_comm/backends/hf_hooks/",
+        "backend_specs/hf_hooks.json",
+        "tests/research_locked/test_backend_hf_hooks.py"
+      ],
+      "steps": [
+        "从公开官方接口推导布局与作用范围",
+        "实现lazy绑定和完整接入源码；未知能力显式unbound",
+        "只静态审查，记录未运行integration命令及锁定原因"
+      ],
+      "acceptance": "未加载/初始化/前向模型；静态支持与真实兼容分开。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/B03.json",
+      "task_card": "tasks/B03_残差注入.md"
+    },
+    {
+      "id": "B04",
+      "title": "KV适配",
+      "role_prompt": "prompts/P08_模型后端.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/10_模型后端与运行禁区.md"
+      ],
+      "outputs": [
+        "src/latent_comm/backends/hf_kv/",
+        "backend_specs/hf_kv.json",
+        "tests/research_locked/test_backend_hf_kv.py"
+      ],
+      "steps": [
+        "从公开官方接口推导布局与作用范围",
+        "实现lazy绑定和完整接入源码；未知能力显式unbound",
+        "只静态审查，记录未运行integration命令及锁定原因"
+      ],
+      "acceptance": "未加载/初始化/前向模型；静态支持与真实兼容分开。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/B04.json",
+      "task_card": "tasks/B04_KV适配.md"
+    },
+    {
+      "id": "B05",
+      "title": "异构行为接口",
+      "role_prompt": "prompts/P08_模型后端.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/10_模型后端与运行禁区.md"
+      ],
+      "outputs": [
+        "src/latent_comm/backends/behavior/",
+        "backend_specs/behavior.json",
+        "tests/research_locked/test_backend_behavior.py"
+      ],
+      "steps": [
+        "从公开官方接口推导布局与作用范围",
+        "实现lazy绑定和完整接入源码；未知能力显式unbound",
+        "只静态审查，记录未运行integration命令及锁定原因"
+      ],
+      "acceptance": "未加载/初始化/前向模型；静态支持与真实兼容分开。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/B05.json",
+      "task_card": "tasks/B05_异构行为接口.md"
+    },
+    {
+      "id": "B06",
+      "title": "存储与设备",
+      "role_prompt": "prompts/P08_模型后端.md",
+      "dependencies": [
+        "A02",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/10_模型后端与运行禁区.md"
+      ],
+      "outputs": [
+        "src/latent_comm/backends/storage/",
+        "backend_specs/storage.json",
+        "tests/research_locked/test_backend_storage.py"
+      ],
+      "steps": [
+        "从公开官方接口推导布局与作用范围",
+        "实现lazy绑定和完整接入源码；未知能力显式unbound",
+        "只静态审查，记录未运行integration命令及锁定原因"
+      ],
+      "acceptance": "未加载/初始化/前向模型；静态支持与真实兼容分开。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/B06.json",
+      "task_card": "tasks/B06_存储与设备.md"
+    },
+    {
+      "id": "L01",
+      "title": "角色与双通道",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M01",
+        "M16"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/views/",
+        "configs/learning/views.json",
+        "tests/research_locked/test_learning_views.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L01.json",
+      "task_card": "tasks/L01_角色与双通道.md"
+    },
+    {
+      "id": "L02",
+      "title": "算子响应信念",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M01",
+        "M02",
+        "M03"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/objects/",
+        "configs/learning/objects.json",
+        "tests/research_locked/test_learning_objects.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L02.json",
+      "task_card": "tasks/L02_算子响应信念.md"
+    },
+    {
+      "id": "L03",
+      "title": "坐标与局部限制",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M25",
+        "M26"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/frames/",
+        "configs/learning/frames.json",
+        "tests/research_locked/test_learning_frames.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L03.json",
+      "task_card": "tasks/L03_坐标与局部限制.md"
+    },
+    {
+      "id": "L04",
+      "title": "概念和问题",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M27",
+        "M29"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/concept_questions/",
+        "configs/learning/concept_questions.json",
+        "tests/research_locked/test_learning_concept_questions.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L04.json",
+      "task_card": "tasks/L04_概念和问题.md"
+    },
+    {
+      "id": "L05",
+      "title": "类比与因果",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M30",
+        "M31"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/causal_analogy/",
+        "configs/learning/causal_analogy.json",
+        "tests/research_locked/test_learning_causal_analogy.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L05.json",
+      "task_card": "tasks/L05_类比与因果.md"
+    },
+    {
+      "id": "L06",
+      "title": "动力学和尺度",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M28",
+        "M33",
+        "M34",
+        "M35"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/dynamics_scales/",
+        "configs/learning/dynamics_scales.json",
+        "tests/research_locked/test_learning_dynamics_scales.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L06.json",
+      "task_card": "tasks/L06_动力学和尺度.md"
+    },
+    {
+      "id": "L07",
+      "title": "行为方向运输",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M37"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/transport/",
+        "configs/learning/transport.json",
+        "tests/research_locked/test_learning_transport.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L07.json",
+      "task_card": "tasks/L07_行为方向运输.md"
+    },
+    {
+      "id": "L08",
+      "title": "可塑性规则",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M38"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/meta_rules/",
+        "configs/learning/meta_rules.json",
+        "tests/research_locked/test_learning_meta_rules.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L08.json",
+      "task_card": "tasks/L08_可塑性规则.md"
+    },
+    {
+      "id": "L09",
+      "title": "宏与结构搜索",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M40"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/isa_search/",
+        "configs/learning/isa_search.json",
+        "tests/research_locked/test_learning_isa_search.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L09.json",
+      "task_card": "tasks/L09_宏与结构搜索.md"
+    },
+    {
+      "id": "L10",
+      "title": "世界核与梦境",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M42",
+        "M43",
+        "M44"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/worlds/",
+        "configs/learning/worlds.json",
+        "tests/research_locked/test_learning_worlds.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L10.json",
+      "task_card": "tasks/L10_世界核与梦境.md"
+    },
+    {
+      "id": "L11",
+      "title": "可识别性与负知识",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M45",
+        "M46",
+        "M47"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/uncertainty/",
+        "configs/learning/uncertainty.json",
+        "tests/research_locked/test_learning_uncertainty.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L11.json",
+      "task_card": "tasks/L11_可识别性与负知识.md"
+    },
+    {
+      "id": "L12",
+      "title": "联盟与谱系",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "M41",
+        "M48"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/evidence/",
+        "configs/learning/evidence.json",
+        "tests/research_locked/test_learning_evidence.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L12.json",
+      "task_card": "tasks/L12_联盟与谱系.md"
+    },
+    {
+      "id": "L13",
+      "title": "组合级训练组织",
+      "role_prompt": "prompts/P09_训练与元学习.md",
+      "dependencies": [
+        "A03",
+        "A05",
+        "W13",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12",
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06"
+      ],
+      "design_inputs": [
+        "docs/09_完整学习目标与梯度账本.md"
+      ],
+      "outputs": [
+        "src/latent_comm/learning/joint/",
+        "configs/learning/joint.json",
+        "tests/research_locked/test_learning_joint.py"
+      ],
+      "steps": [
+        "写完整batch/参数所有者/loss/归一化/冻结表",
+        "实现优化组织与恢复，不把禁止运行当允许留空",
+        "输出计算图、离散估计器和未运行命令"
+      ],
+      "acceptance": "目标与专用机制一致；无实际训练；没有假梯度连接。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/L13.json",
+      "task_card": "tasks/L13_组合级训练组织.md"
+    },
+    {
+      "id": "C01",
+      "title": "临时计算体",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M01",
+        "M06",
+        "M07",
+        "M22"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C01.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c01.py",
+        "configs/compositions/C01.json",
+        "tests/contracts/test_c01.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C01.json",
+      "task_card": "tasks/C01_临时计算体.md"
+    },
+    {
+      "id": "C02",
+      "title": "响应驱动共享场",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M02",
+        "M04",
+        "M23"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C02.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c02.py",
+        "configs/compositions/C02.json",
+        "tests/contracts/test_c02.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C02.json",
+      "task_card": "tasks/C02_响应驱动共享场.md"
+    },
+    {
+      "id": "C03",
+      "title": "分布式信念树",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M03",
+        "M13",
+        "M21"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C03.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c03.py",
+        "configs/compositions/C03.json",
+        "tests/contracts/test_c03.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C03.json",
+      "task_card": "tasks/C03_分布式信念树.md"
+    },
+    {
+      "id": "C04",
+      "title": "异步跨模型续接",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M05",
+        "M20",
+        "M22"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C04.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c04.py",
+        "configs/compositions/C04.json",
+        "tests/contracts/test_c04.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C04.json",
+      "task_card": "tasks/C04_异步跨模型续接.md"
+    },
+    {
+      "id": "C05",
+      "title": "关系接地接口",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M06",
+        "M08",
+        "M17"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C05.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c05.py",
+        "configs/compositions/C05.json",
+        "tests/contracts/test_c05.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C05.json",
+      "task_card": "tasks/C05_关系接地接口.md"
+    },
+    {
+      "id": "C06",
+      "title": "连接结构中的技能",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M01",
+        "M10",
+        "M14",
+        "M19"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C06.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c06.py",
+        "configs/compositions/C06.json",
+        "tests/contracts/test_c06.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C06.json",
+      "task_card": "tasks/C06_连接结构中的技能.md"
+    },
+    {
+      "id": "C07",
+      "title": "可迁移计算记忆",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M12",
+        "M15",
+        "M23",
+        "M24"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C07.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c07.py",
+        "configs/compositions/C07.json",
+        "tests/contracts/test_c07.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C07.json",
+      "task_card": "tasks/C07_可迁移计算记忆.md"
+    },
+    {
+      "id": "C08",
+      "title": "协议作为计算语言",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M07",
+        "M14",
+        "M18",
+        "M22"
+      ],
+      "design_inputs": [
+        "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+        "recipes/C08.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c08.py",
+        "configs/compositions/C08.json",
+        "tests/contracts/test_c08.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C08.json",
+      "task_card": "tasks/C08_协议作为计算语言.md"
+    },
+    {
+      "id": "C09",
+      "title": "协变的多尺度计算语言",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M01",
+        "M06",
+        "M25",
+        "M35",
+        "M40"
+      ],
+      "design_inputs": [
+        "combinations/C09_协变的多尺度计算语言.md",
+        "recipes/C09.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c09.py",
+        "configs/compositions/C09.json",
+        "tests/contracts/test_c09.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C09.json",
+      "task_card": "tasks/C09_协变的多尺度计算语言.md"
+    },
+    {
+      "id": "C10",
+      "title": "分歧驱动的概念诞生",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M03",
+        "M26",
+        "M27",
+        "M36"
+      ],
+      "design_inputs": [
+        "combinations/C10_分歧驱动的概念诞生.md",
+        "recipes/C10.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c10.py",
+        "configs/compositions/C10.json",
+        "tests/contracts/test_c10.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C10.json",
+      "task_card": "tasks/C10_分歧驱动的概念诞生.md"
+    },
+    {
+      "id": "C11",
+      "title": "问题空间的跨域迁移",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M07",
+        "M29",
+        "M30",
+        "M47"
+      ],
+      "design_inputs": [
+        "combinations/C11_问题空间的跨域迁移.md",
+        "recipes/C11.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c11.py",
+        "configs/compositions/C11.json",
+        "tests/contracts/test_c11.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C11.json",
+      "task_card": "tasks/C11_问题空间的跨域迁移.md"
+    },
+    {
+      "id": "C12",
+      "title": "可移植的科学小世界",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M09",
+        "M17",
+        "M31",
+        "M43"
+      ],
+      "design_inputs": [
+        "combinations/C12_可移植的科学小世界.md",
+        "recipes/C12.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c12.py",
+        "configs/compositions/C12.json",
+        "tests/contracts/test_c12.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C12.json",
+      "task_card": "tasks/C12_可移植的科学小世界.md"
+    },
+    {
+      "id": "C13",
+      "title": "跨模型学习协议网络",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M19",
+        "M25",
+        "M37",
+        "M38"
+      ],
+      "design_inputs": [
+        "combinations/C13_跨模型学习协议网络.md",
+        "recipes/C13.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c13.py",
+        "configs/compositions/C13.json",
+        "tests/contracts/test_c13.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C13.json",
+      "task_card": "tasks/C13_跨模型学习协议网络.md"
+    },
+    {
+      "id": "C14",
+      "title": "认知结构的事务性跃迁",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M13",
+        "M22",
+        "M27",
+        "M28",
+        "M39"
+      ],
+      "design_inputs": [
+        "combinations/C14_认知结构的事务性跃迁.md",
+        "recipes/C14.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c14.py",
+        "configs/compositions/C14.json",
+        "tests/contracts/test_c14.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C14.json",
+      "task_card": "tasks/C14_认知结构的事务性跃迁.md"
+    },
+    {
+      "id": "C15",
+      "title": "多节律的轨迹推理",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M05",
+        "M20",
+        "M33",
+        "M34"
+      ],
+      "design_inputs": [
+        "combinations/C15_多节律的轨迹推理.md",
+        "recipes/C15.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c15.py",
+        "configs/compositions/C15.json",
+        "tests/contracts/test_c15.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C15.json",
+      "task_card": "tasks/C15_多节律的轨迹推理.md"
+    },
+    {
+      "id": "C16",
+      "title": "共同梦境与问题生态",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M29",
+        "M40",
+        "M42",
+        "M43",
+        "M44"
+      ],
+      "design_inputs": [
+        "combinations/C16_共同梦境与问题生态.md",
+        "recipes/C16.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c16.py",
+        "configs/compositions/C16.json",
+        "tests/contracts/test_c16.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C16.json",
+      "task_card": "tasks/C16_共同梦境与问题生态.md"
+    },
+    {
+      "id": "C17",
+      "title": "以未知边界驱动通信",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M02",
+        "M03",
+        "M45",
+        "M46"
+      ],
+      "design_inputs": [
+        "combinations/C17_以未知边界驱动通信.md",
+        "recipes/C17.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c17.py",
+        "configs/compositions/C17.json",
+        "tests/contracts/test_c17.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C17.json",
+      "task_card": "tasks/C17_以未知边界驱动通信.md"
+    },
+    {
+      "id": "C18",
+      "title": "不重复计信的能力联盟",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M10",
+        "M16",
+        "M41",
+        "M48"
+      ],
+      "design_inputs": [
+        "combinations/C18_不重复计信的能力联盟.md",
+        "recipes/C18.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c18.py",
+        "configs/compositions/C18.json",
+        "tests/contracts/test_c18.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C18.json",
+      "task_card": "tasks/C18_不重复计信的能力联盟.md"
+    },
+    {
+      "id": "C19",
+      "title": "任务相对的世界观切换",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M06",
+        "M12",
+        "M32",
+        "M35",
+        "M47"
+      ],
+      "design_inputs": [
+        "combinations/C19_任务相对的世界观切换.md",
+        "recipes/C19.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c19.py",
+        "configs/compositions/C19.json",
+        "tests/contracts/test_c19.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C19.json",
+      "task_card": "tasks/C19_任务相对的世界观切换.md"
+    },
+    {
+      "id": "C20",
+      "title": "自举的语义编译生态",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M07",
+        "M25",
+        "M27",
+        "M29",
+        "M30",
+        "M38",
+        "M40",
+        "M42"
+      ],
+      "design_inputs": [
+        "combinations/C20_自举的语义编译生态.md",
+        "recipes/C20.json"
+      ],
+      "outputs": [
+        "src/latent_comm/compositions/c20.py",
+        "configs/compositions/C20.json",
+        "tests/contracts/test_c20.py"
+      ],
+      "steps": [
+        "逐边绑定专用对象/版本/角色/梯度",
+        "实现build_graph/infer_contracts/lower_plan/run_reference/describe_training",
+        "写失败分支、有限例与未来训练配置"
+      ],
+      "acceptance": "所有成员均source_complete才可标组合source_complete；不能用图替代程序。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/C20.json",
+      "task_card": "tasks/C20_自举的语义编译生态.md"
+    },
+    {
+      "id": "X01",
+      "title": "无固定模型个体的认知连续体",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M05",
+        "M22",
+        "M25",
+        "M39"
+      ],
+      "design_inputs": [
+        "horizons/X01_无固定模型个体的认知连续体.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/identity_continuum.py",
+        "docs/horizons/X01.md"
+      ],
+      "steps": [
+        "在一个固定有限任务图中允许状态跨模型转移、局部加入退出和事务提交，记录身份等价由哪些行为锚维持。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X01.json",
+      "task_card": "tasks/X01_无固定模型个体的认知连续体.md"
+    },
+    {
+      "id": "X02",
+      "title": "没有全局世界观的集体知识",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M26",
+        "M27",
+        "M36",
+        "M48"
+      ],
+      "design_inputs": [
+        "horizons/X02_没有全局世界观的集体知识.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/plural_worlds.py",
+        "docs/horizons/X02.md"
+      ],
+      "steps": [
+        "构造有限局部理论覆盖，输出拼合障碍；让系统提出区分新变量、分域或保留多理论的修订程序。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X02.json",
+      "task_card": "tasks/X02_没有全局世界观的集体知识.md"
+    },
+    {
+      "id": "X03",
+      "title": "问题先于答案的研究引擎",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M27",
+        "M29",
+        "M30",
+        "M45"
+      ],
+      "design_inputs": [
+        "horizons/X03_问题先于答案的研究引擎.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/problem_invention.py",
+        "docs/horizons/X03.md"
+      ],
+      "steps": [
+        "把目标、变量、查询和答案回译编成问题图，提议能区分机制的新问题与程序化测量。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X03.json",
+      "task_card": "tasks/X03_问题先于答案的研究引擎.md"
+    },
+    {
+      "id": "X04",
+      "title": "可塑性互联网",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M31",
+        "M37",
+        "M38",
+        "M40"
+      ],
+      "design_inputs": [
+        "horizons/X04_可塑性互联网.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/plasticity_network.py",
+        "docs/horizons/X04.md"
+      ],
+      "steps": [
+        "用有限维更新程序定义规则编译、运输和适用范围；未来神经训练脚本全部锁定。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X04.json",
+      "task_card": "tasks/X04_可塑性互联网.md"
+    },
+    {
+      "id": "X05",
+      "title": "会进化语言的认知生态",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M27",
+        "M40",
+        "M42",
+        "M44"
+      ],
+      "design_inputs": [
+        "horizons/X05_会进化语言的认知生态.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/language_ecology.py",
+        "docs/horizons/X05.md"
+      ],
+      "steps": [
+        "联合登记ontology/ISA/world/population四种版本，给出有限代的共演化scheduler和依赖迁移。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X05.json",
+      "task_card": "tasks/X05_会进化语言的认知生态.md"
+    },
+    {
+      "id": "X06",
+      "title": "跨尺度的思想物质",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M02",
+        "M25",
+        "M35",
+        "M47"
+      ],
+      "design_inputs": [
+        "horizons/X06_跨尺度的思想物质.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/multiscale_cognition.py",
+        "docs/horizons/X06.md"
+      ],
+      "steps": [
+        "以多尺度确定程序为参考，交付粗化、宏动态、细化与误差账本的完整组合算法。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X06.json",
+      "task_card": "tasks/X06_跨尺度的思想物质.md"
+    },
+    {
+      "id": "X07",
+      "title": "轨迹即思想而非终点即思想",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M20",
+        "M33",
+        "M34",
+        "M05"
+      ],
+      "design_inputs": [
+        "horizons/X07_轨迹即思想而非终点即思想.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/trajectory_semantics.py",
+        "docs/horizons/X07.md"
+      ],
+      "steps": [
+        "构建有界耦合动力系统、轨迹读出和边界约束，允许周期解而非强求全局固定点。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X07.json",
+      "task_card": "tasks/X07_轨迹即思想而非终点即思想.md"
+    },
+    {
+      "id": "X08",
+      "title": "能够传递的未完成证明与发现",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M05",
+        "M13",
+        "M29",
+        "M46"
+      ],
+      "design_inputs": [
+        "horizons/X08_能够传递的未完成证明与发现.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/discovery_continuations.py",
+        "docs/horizons/X08.md"
+      ],
+      "steps": [
+        "设计证明状态/搜索状态胶囊、剩余义务和排除前提；在有限逻辑解释器中接力。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X08.json",
+      "task_card": "tasks/X08_能够传递的未完成证明与发现.md"
+    },
+    {
+      "id": "X09",
+      "title": "共同梦境产生新的经验空间",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M31",
+        "M42",
+        "M43",
+        "M44"
+      ],
+      "design_inputs": [
+        "horizons/X09_共同梦境产生新的经验空间.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/shared_dreams.py",
+        "docs/horizons/X09.md"
+      ],
+      "steps": [
+        "把多个来源的局部机制拼成有限世界，生成任务和谱系，在与真实观察隔离的命名空间保存。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X09.json",
+      "task_card": "tasks/X09_共同梦境产生新的经验空间.md"
+    },
+    {
+      "id": "X10",
+      "title": "认知公共品与临时能力联盟",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M10",
+        "M18",
+        "M41",
+        "M48"
+      ],
+      "design_inputs": [
+        "horizons/X10_认知公共品与临时能力联盟.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/cognitive_commons.py",
+        "docs/horizons/X10.md"
+      ],
+      "steps": [
+        "定义互补性契约、共享来源校正和有限联盟价值表；实现动态加入退出的类型化计划。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X10.json",
+      "task_card": "tasks/X10_认知公共品与临时能力联盟.md"
+    },
+    {
+      "id": "X11",
+      "title": "可追溯的概念出生与死亡",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M27",
+        "M28",
+        "M39",
+        "M40"
+      ],
+      "design_inputs": [
+        "horizons/X11_可追溯的概念出生与死亡.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/concept_lifecycle.py",
+        "docs/horizons/X11.md"
+      ],
+      "steps": [
+        "建立概念生命周期图、版本读者、事务迁移与旧对象再解释流程。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X11.json",
+      "task_card": "tasks/X11_可追溯的概念出生与死亡.md"
+    },
+    {
+      "id": "X12",
+      "title": "语义编译而非模型选型",
+      "role_prompt": "prompts/P11_组合与终局.md",
+      "dependencies": [
+        "A03",
+        "A04",
+        "M07",
+        "M25",
+        "M30",
+        "M35",
+        "M40"
+      ],
+      "design_inputs": [
+        "horizons/X12_语义编译而非模型选型.md"
+      ],
+      "outputs": [
+        "src/latent_comm/horizon/semantic_compiler.py",
+        "docs/horizons/X12.md"
+      ],
+      "steps": [
+        "定义语义IR、操作保持契约、后端绑定和优化pass，生成一份可读执行图与未来锁定运行图。",
+        "实现有限orchestrator与假设依赖图",
+        "保留更远的结构分叉并明确未由有限程序兑现的主张"
+      ],
+      "acceptance": "远景不缩水；有限源码边界明确；无万能emerge占位函数。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/X12.json",
+      "task_card": "tasks/X12_语义编译而非模型选型.md"
+    },
+    {
+      "id": "D01",
+      "title": "近邻与新颖性台账",
+      "role_prompt": "prompts/P12_来源与新颖性.md",
+      "dependencies": [
+        "A01"
+      ],
+      "design_inputs": [
+        "docs/18_原始来源与主张边界.md",
+        "specs/claims.json"
+      ],
+      "outputs": [
+        "docs/related_work.md",
+        "specs/novelty_ledger.json",
+        "paper/references.bib"
+      ],
+      "steps": [
+        "按对象/操作检索近邻",
+        "记录首版/修订日期与差异",
+        "检查引用范围与来源真实性"
+      ],
+      "acceptance": "不主张未经核查的全球首创。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/D01.json",
+      "task_card": "tasks/D01_近邻与新颖性台账.md"
+    },
+    {
+      "id": "D02",
+      "title": "形式推导与极限分叉",
+      "role_prompt": "prompts/P20_形式推导.md",
+      "dependencies": [
+        "A01",
+        "M25",
+        "M26",
+        "M27",
+        "M28",
+        "M29",
+        "M30",
+        "M31",
+        "M32",
+        "M33",
+        "M34",
+        "M35",
+        "M36",
+        "M37",
+        "M38",
+        "M39",
+        "M40",
+        "M41",
+        "M42",
+        "M43",
+        "M44",
+        "M45",
+        "M46",
+        "M47",
+        "M48"
+      ],
+      "design_inputs": [
+        "docs/14_理论自洽与新颖性分层.md"
+      ],
+      "outputs": [
+        "docs/formal_notes/",
+        "docs/frontier_afterword.md",
+        "specs/future_branches.json"
+      ],
+      "steps": [
+        "审查公式、条件与反例",
+        "保留每条主线的极限分叉",
+        "写定义D/假设A/机制H/愿景V分层"
+      ],
+      "acceptance": "未证明桥梁显式，不用实验门槛裁剪。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/D02.json",
+      "task_card": "tasks/D02_形式推导与极限分叉.md",
+      "helper_prompts": [
+        "prompts/P24_极限想法复审.md"
+      ]
+    },
+    {
+      "id": "D03",
+      "title": "研究总稿与README",
+      "role_prompt": "prompts/P15_论文与说明文档.md",
+      "dependencies": [
+        "D01",
+        "D02",
+        "L13",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20"
+      ],
+      "design_inputs": [
+        "docs/16_媒体系统与展示叙事.md"
+      ],
+      "outputs": [
+        "docs/research_monograph.md",
+        "README.md",
+        "paper/main.tex"
+      ],
+      "steps": [
+        "围绕概念/学习/世界三主线成稿",
+        "完整映射实现与假设",
+        "结果表全部NOT_RUN，论文引用可追踪"
+      ],
+      "acceptance": "不把计划工具测试写成科研结果。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/D03.json",
+      "task_card": "tasks/D03_研究总稿与README.md"
+    },
+    {
+      "id": "D04",
+      "title": "未来模型输入模板",
+      "role_prompt": "prompts/P23_未来模型侧模板.md",
+      "dependencies": [
+        "W13",
+        "A05"
+      ],
+      "design_inputs": [
+        "docs/08_世界工厂与数据隔离.md"
+      ],
+      "outputs": [
+        "prompts/model_templates/",
+        "specs/role_view_contracts.json"
+      ],
+      "steps": [
+        "分别建立sender/receiver/critic/world模板",
+        "校验模板字段来自各自白名单",
+        "写模板编译和输入拒绝定义，不调用模型"
+      ],
+      "acceptance": "无答案泄漏，不以prompt代替机制。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/D04.json",
+      "task_card": "tasks/D04_未来模型输入模板.md"
+    },
+    {
+      "id": "V01",
+      "title": "六张机制矢量图",
+      "role_prompt": "prompts/P17_视频音频与动画.md",
+      "dependencies": [
+        "A00",
+        "D01"
+      ],
+      "design_inputs": [
+        "media/07_图形与动画规范.md"
+      ],
+      "outputs": [
+        "assets/figures/"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V01.json",
+      "task_card": "tasks/V01_六张机制矢量图.md"
+    },
+    {
+      "id": "V02",
+      "title": "研究版与精简PPT",
+      "role_prompt": "prompts/P16_演示文稿.md",
+      "dependencies": [
+        "A00",
+        "D01"
+      ],
+      "design_inputs": [
+        "media/01_36页研究版逐页脚本.md"
+      ],
+      "outputs": [
+        "assets/slides/"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V02.json",
+      "task_card": "tasks/V02_研究版与精简PPT.md"
+    },
+    {
+      "id": "V03",
+      "title": "五个机制动画",
+      "role_prompt": "prompts/P17_视频音频与动画.md",
+      "dependencies": [
+        "A00",
+        "D01"
+      ],
+      "design_inputs": [
+        "media/07_图形与动画规范.md"
+      ],
+      "outputs": [
+        "assets/animations/"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V03.json",
+      "task_card": "tasks/V03_五个机制动画.md"
+    },
+    {
+      "id": "V04",
+      "title": "90秒视频",
+      "role_prompt": "prompts/P17_视频音频与动画.md",
+      "dependencies": [
+        "A00",
+        "D01"
+      ],
+      "design_inputs": [
+        "media/03_90秒分镜与旁白.md"
+      ],
+      "outputs": [
+        "assets/video/intro_90/"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V04.json",
+      "task_card": "tasks/V04_90秒视频.md"
+    },
+    {
+      "id": "V05",
+      "title": "6分钟解释视频",
+      "role_prompt": "prompts/P17_视频音频与动画.md",
+      "dependencies": [
+        "A00",
+        "D01"
+      ],
+      "design_inputs": [
+        "media/04_六分钟叙事与分镜.md"
+      ],
+      "outputs": [
+        "assets/video/explainer_360/"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V05.json",
+      "task_card": "tasks/V05_6分钟解释视频.md"
+    },
+    {
+      "id": "V06",
+      "title": "旁白与字幕",
+      "role_prompt": "prompts/P17_视频音频与动画.md",
+      "dependencies": [
+        "A00",
+        "D01"
+      ],
+      "design_inputs": [
+        "media/05_音频字幕与工具提示词.md"
+      ],
+      "outputs": [
+        "assets/audio/",
+        "assets/subtitles/"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V06.json",
+      "task_card": "tasks/V06_旁白与字幕.md"
+    },
+    {
+      "id": "V07",
+      "title": "媒体总复核",
+      "role_prompt": "prompts/P13_数学与软件审查.md",
+      "dependencies": [
+        "V01",
+        "V02",
+        "V03",
+        "V04",
+        "V05",
+        "V06"
+      ],
+      "design_inputs": [
+        "media/06_导出验收与降级.md"
+      ],
+      "outputs": [
+        "reports/media_qa.json"
+      ],
+      "steps": [
+        "按脚本生产可编辑源和获准导出",
+        "无工具/权限时保留工程与明确blocker",
+        "核对对象作用、时长、可打开性与未实测标识"
+      ],
+      "acceptance": "真实产物与源文件一致；降级不能冒称已生成最终媒体。",
+      "external_optional": true,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/V07.json",
+      "task_card": "tasks/V07_媒体总复核.md"
+    },
+    {
+      "id": "Q01",
+      "title": "数学与源码终审",
+      "role_prompt": "prompts/P13_数学与软件审查.md",
+      "dependencies": [
+        "M01",
+        "M02",
+        "M03",
+        "M04",
+        "M05",
+        "M06",
+        "M07",
+        "M08",
+        "M09",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M15",
+        "M16",
+        "M17",
+        "M18",
+        "M19",
+        "M20",
+        "M21",
+        "M22",
+        "M23",
+        "M24",
+        "M25",
+        "M26",
+        "M27",
+        "M28",
+        "M29",
+        "M30",
+        "M31",
+        "M32",
+        "M33",
+        "M34",
+        "M35",
+        "M36",
+        "M37",
+        "M38",
+        "M39",
+        "M40",
+        "M41",
+        "M42",
+        "M43",
+        "M44",
+        "M45",
+        "M46",
+        "M47",
+        "M48",
+        "W01",
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "W11",
+        "W12",
+        "W13",
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L05",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12",
+        "L13",
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C17",
+        "C18",
+        "C19",
+        "C20",
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12",
+        "D03",
+        "D04"
+      ],
+      "design_inputs": [
+        "docs/17_完成标准与证据账本.md"
+      ],
+      "outputs": [
+        "reports/math_review.md",
+        "reports/source_review.json"
+      ],
+      "steps": [
+        "检查所有具体方法与梯度/类型",
+        "只运行获准检查并记录实际日志",
+        "缺陷交P22修复、使后代失效"
+      ],
+      "acceptance": "未实现核心必须列出；无模型实验。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/Q01.json",
+      "task_card": "tasks/Q01_数学与源码终审.md"
+    },
+    {
+      "id": "Q02",
+      "title": "权限与秘密终审",
+      "role_prompt": "prompts/P14_权限与执行边界.md",
+      "dependencies": [
+        "Q01"
+      ],
+      "design_inputs": [
+        "specs/execution_policy.json"
+      ],
+      "outputs": [
+        "reports/permission_review.json"
+      ],
+      "steps": [
+        "核查动作日志、禁跑与外部副作用",
+        "扫描私密凭据和路径越界",
+        "记录实际平台隔离与限制"
+      ],
+      "acceptance": "无未授权外部动作，无凭据入包。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/Q02.json",
+      "task_card": "tasks/Q02_权限与秘密终审.md"
+    },
+    {
+      "id": "Z01",
+      "title": "完整性与交付准备",
+      "role_prompt": "prompts/P19_封包与交付.md",
+      "dependencies": [
+        "Q02",
+        "V07",
+        "X01",
+        "X02",
+        "X03",
+        "X04",
+        "X05",
+        "X06",
+        "X07",
+        "X08",
+        "X09",
+        "X10",
+        "X11",
+        "X12"
+      ],
+      "design_inputs": [
+        "docs/17_完成标准与证据账本.md"
+      ],
+      "outputs": [
+        "RELEASE_REPORT.md",
+        "manifest.json",
+        "checksums.sha256",
+        "FILE_INDEX.md"
+      ],
+      "steps": [
+        "分类实际完成、外部阻塞、未运行研究",
+        "校验引用/所有者/产物/哈希",
+        "生成清晰续接入口与发布草案但不发布"
+      ],
+      "acceptance": "与真实状态一致，不偷减分母。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/Z01.json",
+      "task_card": "tasks/Z01_完整性与交付准备.md"
+    },
+    {
+      "id": "Z02",
+      "title": "最终压缩包",
+      "role_prompt": "prompts/P19_封包与交付.md",
+      "dependencies": [
+        "Z01"
+      ],
+      "design_inputs": [
+        "docs/17_完成标准与证据账本.md"
+      ],
+      "outputs": [
+        "release/latent-comm-lab-source-design.zip",
+        "reports/release_integrity.json"
+      ],
+      "steps": [
+        "制作本地ZIP",
+        "重新解压全量比对哈希与路径",
+        "输出唯一有效交付链接与状态"
+      ],
+      "acceptance": "包可打开、无路径穿越、无重复entry、无空成果冒充。",
+      "external_optional": false,
+      "status": "pending",
+      "output_root": "WORK_ROOT",
+      "research_execution": "forbidden",
+      "receipt": "run_state/receipts/Z02.json",
+      "task_card": "tasks/Z02_最终压缩包.md"
+    }
+  ]
+}

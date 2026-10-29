@@ -1,0 +1,66 @@
+{
+  "task_id": "A05",
+  "status": "done",
+  "input_digest": "353ac713064c8e4ee1b74f63c5343a80ec2737c3400b11977bcd2278115e1c30",
+  "outputs": [
+    {
+      "path": "src/latent_comm/safety/BOUNDARY.md",
+      "sha256": "579cbe864723dd6c7fe42c2b3d868cba37fd8dc2f751f4401ca04911149bf075",
+      "bytes": 792
+    },
+    {
+      "path": "src/latent_comm/safety/__init__.py",
+      "sha256": "8428122ff02747b61bfc0b78f8248c548af30eba1bf475d5d1f0dc52987422e5",
+      "bytes": 275
+    },
+    {
+      "path": "src/latent_comm/safety/broker.py",
+      "sha256": "1c0c542e4daded976992ac8a3be52e956094bb613d25fb7cf65645c999294f25",
+      "bytes": 2863
+    },
+    {
+      "path": "src/latent_comm/safety/current_task_policy_snapshot.json",
+      "sha256": "e1dc9c916b5a8344759156337cf5b9520c77d78f787f24949de6f77f3acf453f",
+      "bytes": 1457
+    },
+    {
+      "path": "src/latent_comm/safety/model_access.py",
+      "sha256": "e741a59b46d534d5756cd1b666881f669f7db122fc2582f5324b2236c3210656",
+      "bytes": 1201
+    },
+    {
+      "path": "src/latent_comm/safety/policy.py",
+      "sha256": "d82c8de38181044f639a0f66bb632f9c054949e40ae88991c67d52e7fb0f9aaa",
+      "bytes": 4828
+    },
+    {
+      "path": "tests/policy/test_policy.py",
+      "sha256": "e522702b4d4a9196cdf599fd207aef2b40d597ac0ba3890e3e90f87c97a93ae8",
+      "bytes": 4350
+    },
+    {
+      "path": "src/latent_comm/cli/research.py",
+      "sha256": "62644eb3fe06465f329e7a669167247d6d0aa2bc9bd47f04c0d5ab2b565e88bd",
+      "bytes": 2299
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A05_policy.txt",
+      "sha256": "22b6bc4a53311fd33f4813f6f713474f00bde91114bc8bccec9fd2d13091e4fb"
+    },
+    {
+      "path": "run_state/checks/A05_static.json",
+      "sha256": "839a2934b5aad890d52968e26e01f877605f14dd00777f53a5a14c255782997e"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "10 policy tests rerun after corrected A02; all pass. Research callbacks and imports remain denied.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T15:53:51.722009+00:00"
+}

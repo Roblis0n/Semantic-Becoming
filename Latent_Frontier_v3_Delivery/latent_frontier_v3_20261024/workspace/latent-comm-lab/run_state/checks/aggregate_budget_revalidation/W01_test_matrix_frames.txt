@@ -1,0 +1,14 @@
+test_singular_and_dimensional (test_matrix_frames.MatrixFramesTests.test_singular_and_dimensional) ... ok
+test_transport (test_matrix_frames.MatrixFramesTests.test_transport) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+{
+  "selected": 2,
+  "excluded_model_entry_or_gate_tests": [
+    "test_matrix_frames.MatrixFramesTests.test_roles_and_locked_sampling"
+  ],
+  "neural_modules_loaded": []
+}

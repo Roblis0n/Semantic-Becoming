@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "C02",
+  "title": "响应驱动共享场",
+  "kind": "combination",
+  "hypotheses": [
+    "H02",
+    "H04",
+    "H23"
+  ],
+  "training_routes": [
+    "R03",
+    "R05",
+    "R12"
+  ],
+  "pipeline_nodes": [
+    "source_responses",
+    "validity_check",
+    "field_update",
+    "residual_refresh"
+  ],
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+  "status": "planned_for_dot"
+}

@@ -1,0 +1,20 @@
+{
+  "research_execution": "NOT_RUN",
+  "cases": 1,
+  "max_dimension": 1,
+  "max_steps": 4,
+  "derived_grant_after_parent_revocation": "ACCEPTED",
+  "resolved_capability": "c",
+  "hashes": {
+    "src/latent_comm/mechanisms/h24_legacy/README.md": "9887e9cace99ffd521b8d2bc7ddc01806fb9b2730b128866726d5179c6db0c7d",
+    "src/latent_comm/mechanisms/h24_legacy/__init__.py": "a1794009866088ec3702c3bddfdefc8468aa871955540091d11658964154b64f",
+    "src/latent_comm/mechanisms/h24_legacy/adapter.py": "1bb77ee373a71f99f9fad382f921719c1a592434beeb6b6f9c7c435a03e908cc",
+    "src/latent_comm/mechanisms/h24_legacy/losses.py": "55f04a53f1af5ed8980c249f8f07fc3d83a94ea1544852761ef7e8ce9c18d2a7",
+    "src/latent_comm/mechanisms/h24_legacy/migration.py": "9149e2c9466d65f1ef3d49c297ec48b77fd44378e6b1d8dc516a9fe4bc942e1b",
+    "src/latent_comm/mechanisms/h24_legacy/reference.py": "6eead1facf6a0ba220ba4ae5771a30be9c13ee447e45b59f39f5f7db25ae3c0d",
+    "src/latent_comm/mechanisms/h24_legacy/schema.json": "47c8732ced987f0f7d156e41071378c249032260085b871a43b4ede47050830b",
+    "src/latent_comm/mechanisms/h24_legacy/types.py": "fb6e45801626083bf3178322eb1ad4f830e4076546095eddbb2e8b5677308947",
+    "tests/contracts/test_h24.py": "a6b9bba0dfb393eb1934267c0839d93320b0e55bd80faa41cb6e3fd3c6765351",
+    "configs/mechanisms/H24.json": "88401d0f1dc1575ebd2cb2b3e8ac32bee6761a3e6e1c797f4b8198b65fddded3"
+  }
+}

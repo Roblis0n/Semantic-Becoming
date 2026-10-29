@@ -1,0 +1,655 @@
+{
+  "title": "12个远期终局",
+  "description": "12张短卡三列四行，字号可读，不堆段落。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "12个远期终局",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "认知连续体、可塑性互联网、语义编译生态",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "32 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 207,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X01",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e006"
+    },
+    {
+      "x": 138,
+      "y": 204,
+      "w": 305,
+      "h": 41.47,
+      "text": "认知连续体",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "points": [
+        [
+          64,
+          269
+        ],
+        [
+          424,
+          269
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e008"
+    },
+    {
+      "x": 458,
+      "y": 207,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X02",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e009"
+    },
+    {
+      "x": 532,
+      "y": 204,
+      "w": 305,
+      "h": 41.47,
+      "text": "局部集体知识",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e010"
+    },
+    {
+      "points": [
+        [
+          458,
+          269
+        ],
+        [
+          818,
+          269
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e011"
+    },
+    {
+      "x": 852,
+      "y": 207,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X03",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 926,
+      "y": 204,
+      "w": 305,
+      "h": 41.47,
+      "text": "问题研究引擎",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          852,
+          269
+        ],
+        [
+          1212,
+          269
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "x": 64,
+      "y": 299,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X04",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e015"
+    },
+    {
+      "x": 138,
+      "y": 296,
+      "w": 305,
+      "h": 41.47,
+      "text": "可塑性互联网",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e016"
+    },
+    {
+      "points": [
+        [
+          64,
+          361
+        ],
+        [
+          424,
+          361
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e017"
+    },
+    {
+      "x": 458,
+      "y": 299,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X05",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 532,
+      "y": 296,
+      "w": 305,
+      "h": 41.47,
+      "text": "潜语言生态",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e019"
+    },
+    {
+      "points": [
+        [
+          458,
+          361
+        ],
+        [
+          818,
+          361
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e020"
+    },
+    {
+      "x": 852,
+      "y": 299,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X06",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e021"
+    },
+    {
+      "x": 926,
+      "y": 296,
+      "w": 305,
+      "h": 41.47,
+      "text": "跨尺度思想",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "points": [
+        [
+          852,
+          361
+        ],
+        [
+          1212,
+          361
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e023"
+    },
+    {
+      "x": 64,
+      "y": 391,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X07",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e024"
+    },
+    {
+      "x": 138,
+      "y": 388,
+      "w": 305,
+      "h": 41.47,
+      "text": "轨迹即思想",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e025"
+    },
+    {
+      "points": [
+        [
+          64,
+          453
+        ],
+        [
+          424,
+          453
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e026"
+    },
+    {
+      "x": 458,
+      "y": 391,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X08",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e027"
+    },
+    {
+      "x": 532,
+      "y": 388,
+      "w": 305,
+      "h": 41.47,
+      "text": "未完成发现",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e028"
+    },
+    {
+      "points": [
+        [
+          458,
+          453
+        ],
+        [
+          818,
+          453
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e029"
+    },
+    {
+      "x": 852,
+      "y": 391,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X09",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e030"
+    },
+    {
+      "x": 926,
+      "y": 388,
+      "w": 305,
+      "h": 41.47,
+      "text": "共同梦境",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e031"
+    },
+    {
+      "points": [
+        [
+          852,
+          453
+        ],
+        [
+          1212,
+          453
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e032"
+    },
+    {
+      "x": 64,
+      "y": 483,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X10",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e033"
+    },
+    {
+      "x": 138,
+      "y": 480,
+      "w": 305,
+      "h": 41.47,
+      "text": "能力公共品",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e034"
+    },
+    {
+      "points": [
+        [
+          64,
+          545
+        ],
+        [
+          424,
+          545
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e035"
+    },
+    {
+      "x": 458,
+      "y": 483,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X11",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e036"
+    },
+    {
+      "x": 532,
+      "y": 480,
+      "w": 305,
+      "h": 41.47,
+      "text": "概念出生与死亡",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e037"
+    },
+    {
+      "points": [
+        [
+          458,
+          545
+        ],
+        [
+          818,
+          545
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e038"
+    },
+    {
+      "x": 852,
+      "y": 483,
+      "w": 65,
+      "h": 31.459999999999997,
+      "text": "X12",
+      "size": 22,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e039"
+    },
+    {
+      "x": 926,
+      "y": 480,
+      "w": 305,
+      "h": 41.47,
+      "text": "语义编译生态",
+      "size": 29,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e040"
+    },
+    {
+      "points": [
+        [
+          852,
+          545
+        ],
+        [
+          1212,
+          545
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e041"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "12 个远期方向各有假设链与有限化入口，不是 12 个已证算法",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e042"
+    }
+  ],
+  "notes": "这些是远期架构方向，而非又增加12项已实现算法。每个都有假设链与有限化入口。\n\n原稿画面要求：12张短卡三列四行，字号可读，不堆段落。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第32页\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\n\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_32"
+  ],
+  "research_state": "NOT_RUN"
+}

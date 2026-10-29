@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H27：新概念必须改变计算</title><desc id="desc">读者从 v1 迁移到 v2。新概念包含定义和版本后果。下一步：无候选时保留未决分支</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H27：新概念必须改变计算</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">同形钥匙，授权有效期不同</tspan>
+</text>
+<polyline id="e003" points="64,658 1216,658" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">A03</tspan>
+</text>
+<rect id="e006" x="64" y="600" width="1152" height="47" rx="0" fill="#FFFCF5" stroke="#CECDBF" stroke-width="0" />
+<ellipse id="e007" cx="130" cy="260" rx="26.400000000000002" ry="26.400000000000002" fill="none" stroke="#536647" stroke-width="5"/>
+<polyline id="e008" points="156.4,260 243.3,260" fill="none" stroke="#536647" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e009" points="218,260 218,282" fill="none" stroke="#536647" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="240,260 240,282" fill="none" stroke="#536647" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse id="e011" cx="130" cy="390" rx="26.400000000000002" ry="26.400000000000002" fill="none" stroke="#9C5138" stroke-width="5"/>
+<polyline id="e012" points="156.4,390 243.3,390" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e013" points="218,390 218,412" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e014" points="240,390 240,412" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e015" x="320" y="260.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="320" dy="0">K₁：shape_match</tspan>
+</text>
+<text id="e016" x="320" y="390.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="320" dy="0">K₂：shape_match</tspan>
+</text>
+<text id="e017" x="660" y="265.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="660" dy="0">能开门</tspan>
+</text>
+<text id="e018" x="660" y="395.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="660" dy="0">不能开门</tspan>
+</text>
+<text id="e019" x="65" y="503.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="65" dy="0">valid_at = authorized ∧ (start ≤ t &lt; expiry)</tspan>
+</text>
+<text id="e020" x="925" y="267.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="925" dy="0">true</tspan>
+</text>
+<text id="e021" x="925" y="397.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="925" dy="0">false</tspan>
+</text>
+<text id="e022" x="65" y="563.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#725D7C" text-anchor="start">
+<tspan x="65" dy="0">v1：key 类型  →  v2：key + valid_at 谓词</tspan>
+</text>
+<text id="phase_feedback" x="77" y="626.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="77" dy="0">读者从 v1 迁移到 v2。新概念包含定义和版本后果。</tspan>
+</text>
+<rect id="time_progress" x="64" y="653" width="1152" height="3" rx="0" fill="#9C5138" stroke="none" stroke-width="0" />
+</svg>

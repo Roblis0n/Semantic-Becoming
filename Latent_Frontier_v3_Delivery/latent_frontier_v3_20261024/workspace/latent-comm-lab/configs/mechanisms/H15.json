@@ -1,0 +1,166 @@
+{
+  "schema_version": 3,
+  "id": "H15",
+  "kind": "mechanism",
+  "title": "\u63a5\u6536\u8005\u65e0\u5173\u534f\u8bae\u5b66\u4e60",
+  "mechanisms": [
+    "H15"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H15_\u63a5\u6536\u8005\u65e0\u5173\u534f\u8bae\u5b66\u4e60.md",
+  "target_base": "src/latent_comm/mechanisms/h15_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H15",
+    "name": "population_protocol",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "state",
+    "data_family": "local_charts",
+    "training": {
+      "family": "R09",
+      "loss_terms": [
+        "cross_pair_task",
+        "effect_alignment"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.population.pair_sampler",
+      "latent_comm.mechanisms.population.protocol_objectives",
+      "latent_comm.mechanisms.population.adapter_registry"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I15_\u63a5\u6536\u8005\u65e0\u5173\u534f\u8bae\u5b66\u4e60.md",
+  "canonical_module": "latent_comm.mechanisms.h15_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h15_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h15_legacy.adapter.population_forward",
+    "forward_entries": [
+      "latent_comm.mechanisms.h15_legacy.adapter.population_forward"
+    ],
+    "loss_input_bindings": {
+      "receiver_errors": {
+        "producer": "per-task stage loss on each population_forward output",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "receiver_valid": {
+        "producer": "stage explicit boolean receiver_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "behaviors": {
+        "producer": "common declared behavior heads on each population_forward output",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "behavior_target": {
+        "producer": "SupervisionBatch.behavior_target; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "behavior_valid": {
+        "producer": "stage explicit boolean behavior_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "behavior_spaces": {
+        "producer": "exact matching BehaviorSpace contracts, not tokenizer identity",
+        "requires_gradient": false,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "population_forward.sender_writer",
+        "population_forward.capability_projection"
+      ],
+      "mechanism_reader": [
+        "population_forward.receiver_readers",
+        "stage.common_behavior_heads"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h15_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H25: explicit common frame",
+    "H37: common behavioral coordinates not logits",
+    "H47: task-relative agreement only"
+  ]
+}

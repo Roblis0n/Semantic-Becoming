@@ -1,0 +1,100 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "queries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query_id": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "responses": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "likelihood": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            }
+          },
+          "cost": {
+            "type": "number",
+            "minimum": 0
+          },
+          "allowed": {
+            "type": "boolean"
+          },
+          "local_only": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "query_id",
+          "responses",
+          "likelihood",
+          "cost",
+          "allowed",
+          "local_only"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "prior": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": "number"
+      }
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "unknown_hypothesis_possible": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "hypotheses",
+    "queries",
+    "prior",
+    "version",
+    "unknown_hypothesis_possible"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H45:resolved-payload:3"
+}

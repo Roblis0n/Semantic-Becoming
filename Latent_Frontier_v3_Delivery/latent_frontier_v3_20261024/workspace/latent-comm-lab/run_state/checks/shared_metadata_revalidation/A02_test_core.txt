@@ -1,0 +1,41 @@
+test_aliases_have_no_algorithm_copies (test_core.CoreContractTests.test_aliases_have_no_algorithm_copies) ... ok
+test_budget_atomic_charge (test_core.CoreContractTests.test_budget_atomic_charge) ... ok
+test_embedded_reference_must_be_declared_dependency (test_core.CoreContractTests.test_embedded_reference_must_be_declared_dependency) ... ok
+test_future_budget_not_clipped_to_fixture_limit (test_core.CoreContractTests.test_future_budget_not_clipped_to_fixture_limit) ... ok
+test_gauge_arithmetic_and_singular_rejection (test_core.CoreContractTests.test_gauge_arithmetic_and_singular_rejection) ... ok
+test_graph_order_and_cycle (test_core.CoreContractTests.test_graph_order_and_cycle) ... ok
+test_immutable_registry_identity (test_core.CoreContractTests.test_immutable_registry_identity) ... ok
+test_import_has_no_neural_library (test_core.CoreContractTests.test_import_has_no_neural_library) ... ok
+test_live_tensor_retains_identity (test_core.CoreContractTests.test_live_tensor_retains_identity) ... ok
+test_loss_ledger_and_zero_valid (test_core.CoreContractTests.test_loss_ledger_and_zero_valid) ... ok
+test_metadata_classification_cross_boundary (test_core.CoreContractTests.test_metadata_classification_cross_boundary) ... ok
+test_migration_cycle_rejected (test_core.CoreContractTests.test_migration_cycle_rejected) ... ok
+test_migration_success_and_version_failure (test_core.CoreContractTests.test_migration_success_and_version_failure) ... ok
+test_minimum_norm_and_unreachable_residual (test_core.CoreContractTests.test_minimum_norm_and_unreachable_residual) ... ok
+test_nested_finite_wire_tree (test_core.CoreContractTests.test_nested_finite_wire_tree) ... ok
+test_nested_leakage_and_opaque_objects (test_core.CoreContractTests.test_nested_leakage_and_opaque_objects) ... ok
+test_nested_reference_leakage (test_core.CoreContractTests.test_nested_reference_leakage) ... ok
+test_nested_typed_public_payload_preserves_identity (test_core.CoreContractTests.test_nested_typed_public_payload_preserves_identity) ... ok
+test_post_registration_mutation_cannot_hide_reference (test_core.CoreContractTests.test_post_registration_mutation_cannot_hide_reference) ... ok
+test_recursive_dependency_versions_rejected (test_core.CoreContractTests.test_recursive_dependency_versions_rejected) ... ok
+test_reference_is_not_path_or_url (test_core.CoreContractTests.test_reference_is_not_path_or_url) ... ok
+test_referenced_public_payload_cannot_hide_labels (test_core.CoreContractTests.test_referenced_public_payload_cannot_hide_labels) ... ok
+test_registry_nested_supervision_is_rejected (test_core.CoreContractTests.test_registry_nested_supervision_is_rejected) ... ok
+test_registry_retraction_invalidates_descendants (test_core.CoreContractTests.test_registry_retraction_invalidates_descendants) ... ok
+test_required_versions_and_cache (test_core.CoreContractTests.test_required_versions_and_cache) ... ok
+test_ridge_and_finite_rejection (test_core.CoreContractTests.test_ridge_and_finite_rejection) ... ok
+test_role_projection_drops_unselected_supervision (test_core.CoreContractTests.test_role_projection_drops_unselected_supervision) ... ok
+test_schema_duplicate_nonfinite_json (test_core.CoreContractTests.test_schema_duplicate_nonfinite_json) ... ok
+test_schema_mechanism_specific_restrictions (test_core.CoreContractTests.test_schema_mechanism_specific_restrictions) ... ok
+test_schema_required_const_and_unknown (test_core.CoreContractTests.test_schema_required_const_and_unknown) ... ok
+test_scope_cannot_grant_host_authority (test_core.CoreContractTests.test_scope_cannot_grant_host_authority) ... ok
+test_scope_restriction_and_expiry (test_core.CoreContractTests.test_scope_restriction_and_expiry) ... ok
+test_shape_named_axes (test_core.CoreContractTests.test_shape_named_axes) ... ok
+test_type_and_stale_version_rejection (test_core.CoreContractTests.test_type_and_stale_version_rejection) ... ok
+test_unknown_is_not_zero (test_core.CoreContractTests.test_unknown_is_not_zero) ... ok
+test_workspace_storage_and_tamper (test_core.CoreContractTests.test_workspace_storage_and_tamper) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.013s
+
+OK

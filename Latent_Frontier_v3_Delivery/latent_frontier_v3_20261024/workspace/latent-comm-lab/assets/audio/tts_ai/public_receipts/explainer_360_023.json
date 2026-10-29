@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_023",
+  "edition": "explainer_360",
+  "scene_id": "S05",
+  "characters": 35,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "一个模型在某类问题上学到的学习策略，能否成为另一个模型形成能力的方法？",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:35:19.356799+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 274746,
+    "duration_seconds": 6.230068027210884,
+    "sample_peak": 11266,
+    "sample_rms": 1808.0832155681153,
+    "sha256": "b004d20020a71374284c57c055262cb7923e83c7aa6cb44fdc09836b29aee9e8",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:35:54.746698+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

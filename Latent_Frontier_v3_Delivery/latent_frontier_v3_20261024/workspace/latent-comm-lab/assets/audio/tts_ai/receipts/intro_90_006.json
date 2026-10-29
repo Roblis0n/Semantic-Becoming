@@ -1,0 +1,48 @@
+{
+  "id": "intro_90_006",
+  "edition": "intro_90",
+  "scene_id": "S04",
+  "characters": 22,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "第三步，传递怎样学习。不同模型不必共享参数，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:13:02.291629+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:13:10 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:13:11.668754+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 210746,
+    "duration_seconds": 4.778820861678004,
+    "sample_peak": 4274,
+    "sample_rms": 798.4529658050423,
+    "sha256": "4a7d4500d1f2ec923832f4ec2939b9154ced9d650fdbecaae08bd7a76279020d",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:13:37.964315+00:00"
+}

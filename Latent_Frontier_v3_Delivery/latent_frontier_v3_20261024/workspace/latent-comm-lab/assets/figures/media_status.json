@@ -1,0 +1,16 @@
+{
+  "task_id": "V01",
+  "status": "done",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "export_count": 6,
+  "opened_checked": true,
+  "opened_scope": "Rendered all 6 text-preserving SVGs, visually inspected",
+  "timing_verified": false,
+  "timing_applicable": false,
+  "blockers": [],
+  "limitations": [],
+  "evidence": "run_state/checks/V01_validation.json",
+  "research_state": "NOT_RUN"
+}

@@ -1,0 +1,710 @@
+{
+  "task_id": "D02",
+  "research_state": "NOT_RUN",
+  "neural_imports": [],
+  "research_execution_count": 0,
+  "fixture_policy": {
+    "max_dimension": 64,
+    "max_steps": 128,
+    "max_cases": 64,
+    "max_declared_fixture_dimension": 5,
+    "case_semantics": "Each listed fixture is an independently predeclared mathematical witness, not a training/evaluation sample. Every nested meter shares its enclosing aggregate.",
+    "unmetered_helpers": "Before source calls, Gaussian elimination reserves n pivots; Jacobi reserves four sweeps and receives max_sweeps<=4; topology reserves node count. Primitive scalar arithmetic is not a neural forward."
+  },
+  "checks": [
+    {
+      "id": "D02-F01-gauge",
+      "formal_note": "F01",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 26,
+      "consumed_cases": 2,
+      "consumed_branches": 0,
+      "witness": {
+        "before": [
+          2.0
+        ],
+        "after": [
+          2.0
+        ],
+        "cross_map_shape": [
+          1,
+          2
+        ],
+        "cross_map": [
+          [
+            4.0,
+            2.0
+          ]
+        ],
+        "fixed_readout_counterexample": [
+          1,
+          2.0
+        ]
+      }
+    },
+    {
+      "id": "D02-F01-objectives",
+      "formal_note": "F01",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 10,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "original": 2.5,
+        "transformed": 2.5,
+        "weights": [
+          0.008333333333333333,
+          0.5
+        ],
+        "lost_direction_rejected": "InformationLoss at <root>: view discards a required preference direction"
+      }
+    },
+    {
+      "id": "D02-F02-gluing",
+      "formal_note": "F02",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 3,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 26,
+      "consumed_cases": 5,
+      "consumed_branches": 0,
+      "witness": {
+        "residuals": [
+          [
+            "xy",
+            [
+              -0.33333333333333337
+            ]
+          ],
+          [
+            "yz",
+            [
+              -0.33333333333333315
+            ]
+          ],
+          [
+            "zx",
+            [
+              -0.3333333333333335
+            ]
+          ]
+        ],
+        "least_square_loss": 0.33333333333333337,
+        "exact_fraction_lower_bound": "1/3",
+        "conflict": [
+          "xy",
+          "yz",
+          "zx"
+        ]
+      }
+    },
+    {
+      "id": "D02-F03-concept",
+      "formal_note": "F03",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 4,
+      "consumed_cases": 5,
+      "consumed_branches": 0,
+      "witness": {
+        "old_signature": [
+          true,
+          true
+        ],
+        "new_signature": [
+          true,
+          false
+        ],
+        "missing_field": null,
+        "examined": 4
+      }
+    },
+    {
+      "id": "D02-F03-disagreement",
+      "formal_note": "F03",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 2,
+      "consumed_cases": 3,
+      "consumed_branches": 0,
+      "witness": {
+        "counterexample": 2,
+        "scope": [
+          2,
+          4
+        ],
+        "not_global": true
+      }
+    },
+    {
+      "id": "D02-F04-question",
+      "formal_note": "F04",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 5,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 10,
+      "consumed_cases": 11,
+      "consumed_branches": 0,
+      "witness": {
+        "relation": "sufficient",
+        "lost": [
+          [
+            -2.0
+          ]
+        ],
+        "original": [
+          [
+            -2.0
+          ],
+          [
+            2.0
+          ]
+        ],
+        "target": [
+          [
+            2.0
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D02-F04-analogy",
+      "formal_note": "F04",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 3,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 8,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "good_trace": [
+          "y0",
+          "y1",
+          "y2"
+        ],
+        "bad_squares": [
+          [
+            "next",
+            "x0",
+            "y1",
+            "y2"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "D02-F05-ridge",
+      "formal_note": "F05",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 10,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "unregularized": [
+          0.25
+        ],
+        "ridge1": [
+          0.23529411764705882
+        ],
+        "total_residual": [
+          -0.05882352941176472
+        ],
+        "unreachable": [
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "D02-F05-plasticity",
+      "formal_note": "F05",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 1,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 13,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "clipped_update": 1.9,
+        "exact_meta_gradient": -5.832,
+        "first_order_proxy": -6.156,
+        "analytic_not_neural": true
+      }
+    },
+    {
+      "id": "D02-F06-dynamics",
+      "formal_note": "F06",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 24,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "midpoint_squared_norms": [
+          1.0,
+          1.0,
+          0.9999999999999999,
+          0.9999999999999997,
+          0.9999999999999998
+        ],
+        "euler_norm_squared_growth": 1.0,
+        "general_quadratic_energy_derivative_counterexample": 1.0
+      }
+    },
+    {
+      "id": "D02-F06-bifurcation",
+      "formal_note": "F06",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 1,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 12,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "negative": [
+          {
+            "alpha": -1.0,
+            "stationary": 0.0,
+            "jacobian": -1.0,
+            "continuous": "stable",
+            "euler_multiplier": 0.9,
+            "discrete": "stable"
+          }
+        ],
+        "positive": [
+          {
+            "alpha": 1.0,
+            "stationary": 0.0,
+            "jacobian": 1.0,
+            "continuous": "unstable",
+            "euler_multiplier": 1.1,
+            "discrete": "unstable"
+          },
+          {
+            "alpha": 1.0,
+            "stationary": -1.0,
+            "jacobian": -2.0,
+            "continuous": "stable",
+            "euler_multiplier": 0.8,
+            "discrete": "stable"
+          },
+          {
+            "alpha": 1.0,
+            "stationary": 1.0,
+            "jacobian": -2.0,
+            "continuous": "stable",
+            "euler_multiplier": 0.8,
+            "discrete": "stable"
+          }
+        ],
+        "critical": [
+          {
+            "alpha": 0.0,
+            "stationary": 0.0,
+            "jacobian": 0.0,
+            "continuous": "nonhyperbolic_higher_order_attracting",
+            "euler_multiplier": 1.0,
+            "discrete": "nonhyperbolic"
+          }
+        ],
+        "alpha0_exact_state_at_t3": 0.4
+      }
+    },
+    {
+      "id": "D02-F06-distinct-bifurcations",
+      "formal_note": "F06",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 20,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "hopf_nonzero_orbit_radial_derivative": -2.0,
+        "angular_rate": 2.0,
+        "fold": {
+          "x": 0.5773502691896258,
+          "mu": -0.3849001794597505
+        },
+        "mu0_cubic_roots": [
+          -1,
+          0,
+          1
+        ],
+        "stable_outer_roots": [
+          -1,
+          1
+        ],
+        "scope": "Scalar algebra of proposed normal forms; no new branch algorithm or neural execution."
+      }
+    },
+    {
+      "id": "D02-F06-boundary",
+      "formal_note": "F06",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 4,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 12,
+      "consumed_cases": 2,
+      "consumed_branches": 1,
+      "witness": {
+        "path": [
+          [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        ],
+        "one_step_status": "BoundaryInfeasible"
+      }
+    },
+    {
+      "id": "D02-F07-scales",
+      "formal_note": "F07",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 11,
+      "consumed_cases": 2,
+      "consumed_branches": 0,
+      "witness": {
+        "closed_next_sum": 5,
+        "nonclosure": [
+          [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0
+            ],
+            [
+              1.0
+            ],
+            [
+              2.0
+            ]
+          ]
+        ],
+        "lost_detail_rejected": "IrrecoverableDetail at <root>: a lift is a representative, not an inverse; request missing source detail"
+      }
+    },
+    {
+      "id": "D02-F07-quotients",
+      "formal_note": "F07",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 4,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 18,
+      "consumed_cases": 15,
+      "consumed_branches": 0,
+      "witness": {
+        "old_classes": [
+          [
+            "two",
+            "four"
+          ],
+          [
+            "one",
+            "three"
+          ]
+        ],
+        "new_classes": [
+          [
+            "two"
+          ],
+          [
+            "four"
+          ],
+          [
+            "one"
+          ],
+          [
+            "three"
+          ]
+        ],
+        "nontransitive_witness": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": "D02-F08-causal",
+      "formal_note": "F08",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 3,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 12,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "grafted_values": {
+          "x": 3.0,
+          "y": 6.0,
+          "z": 7.0
+        },
+        "affected": [
+          "y",
+          "z"
+        ]
+      }
+    },
+    {
+      "id": "D02-F08-world",
+      "formal_note": "F08",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 4,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 21,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "shared_joint": [
+          0.5,
+          0.0,
+          0.0,
+          0.5
+        ],
+        "shared_equal_probability": 1,
+        "independent_equal_probability": 0.5,
+        "synthetic_real_claim_rejected": "SyntheticAsReal at <root>: dream observations cannot establish independent real-world truth"
+      }
+    },
+    {
+      "id": "D02-F08-evidence",
+      "formal_note": "F08",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 4,
+      "consumed_cases": 5,
+      "consumed_branches": 0,
+      "witness": {
+        "duplicate": 0.8,
+        "independent": 0.9600000000000001,
+        "unknown_bounds": [
+          0.8,
+          1.0
+        ],
+        "retraction_means": "dependency invalidation, not proof of falsehood"
+      }
+    },
+    {
+      "id": "D02-F09-macros",
+      "formal_note": "F09",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 4,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 24,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "ordered_macro_at0": 2.0,
+        "wrong_order_at0": 1,
+        "capture_avoidance": 3.0
+      }
+    },
+    {
+      "id": "D02-F09-coalition",
+      "formal_note": "F09",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 4,
+      "consumed_cases": 5,
+      "consumed_branches": 0,
+      "witness": {
+        "contributions": [
+          [
+            "A",
+            0.5
+          ],
+          [
+            "B",
+            0.5
+          ]
+        ],
+        "efficiency_residual": 0.0
+      }
+    },
+    {
+      "id": "D02-F09-ecology",
+      "formal_note": "F09",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 1,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 4,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "input_y": 0.5,
+        "sign_reversal_result": -0.5,
+        "forward_again": -0.5,
+        "not_general_inverse": true
+      }
+    },
+    {
+      "id": "D02-F10-identify",
+      "formal_note": "F10",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 2,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 7,
+      "consumed_cases": 4,
+      "consumed_branches": 0,
+      "witness": {
+        "selected": "x1",
+        "information_gain_nats": 0.6931471805599453,
+        "x0_only": "NonIdentifiable",
+        "noisy_information_positive_but_support_overlaps": 0.020135513550688766
+      }
+    },
+    {
+      "id": "D02-F10-exclusions",
+      "formal_note": "F10",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 128,
+        "max_dimension": 4,
+        "max_cases": 64,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 15,
+      "consumed_cases": 9,
+      "consumed_branches": 0,
+      "witness": {
+        "remaining": [
+          2,
+          4
+        ],
+        "restored": [
+          1,
+          3
+        ],
+        "overgeneralization_rejected": "UnsupportedExclusion at <root>: overgeneralized exclusion would prune feasible candidates: [4]",
+        "required_condition": "even_required is a valid task necessary condition in this fixture"
+      }
+    },
+    {
+      "id": "D02-budget-nested",
+      "formal_note": "policy",
+      "status": "PASS",
+      "declared_limits": {
+        "max_steps": 4,
+        "max_dimension": 1,
+        "max_cases": 2,
+        "max_branches": 16
+      },
+      "consumed_steps_including_precharged_solver_bounds": 3,
+      "consumed_cases": 1,
+      "consumed_branches": 0,
+      "witness": {
+        "expected_nested_rejection": "BudgetExhausted at <root>: steps exhausted before nested work",
+        "aggregate_steps_after_rejected_work": 3
+      }
+    }
+  ],
+  "passed": 24,
+  "failed": 0,
+  "source_runner_sha256": "47004286c47a6c104cd2a05b1ca2b4b38b3d0c26e46fc4eafa3c0ee59d5bb2f4"
+}

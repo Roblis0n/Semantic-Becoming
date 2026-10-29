@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_042",
+  "edition": "explainer_360",
+  "scene_id": "S09",
+  "characters": 37,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "以及足够清楚的对象和条件。已知数学、条件假设、机制猜想和远期愿景各有位置。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:14:36.939945+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 304442,
+    "duration_seconds": 6.90344671201814,
+    "sample_peak": 13334,
+    "sample_rms": 2207.5994879942173,
+    "sha256": "e87da1bc9f592091bd70fa6c78ca4d1fb128a910cf2e8402ffbf9022d7ded386",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:15:10.328047+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

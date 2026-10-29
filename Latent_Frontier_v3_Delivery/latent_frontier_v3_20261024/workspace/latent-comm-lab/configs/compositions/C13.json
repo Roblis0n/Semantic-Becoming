@@ -1,0 +1,1052 @@
+{
+  "recipe_id": "C13",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C13",
+    "nodes": [
+      {
+        "node_id": "bind_anchors",
+        "operation": "C13.bind_anchors",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "bind_anchors:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LearningProtocolInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "BoundAnchors",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "K",
+          "P",
+          "U",
+          "Z"
+        ],
+        "write_set": [
+          "K",
+          "U"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H19",
+          "H37"
+        ],
+        "implementation": "latent_comm.compositions.c13.bind_anchors",
+        "location": {
+          "source": "C13.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "source_learning_effect",
+        "operation": "C13.source_learning_effect",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "bind_anchors:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "source_learning_effect:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "BoundAnchors",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "LearningEffect",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "U",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "U"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H25",
+          "H37"
+        ],
+        "implementation": "latent_comm.compositions.c13.source_learning_effect",
+        "location": {
+          "source": "C13.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "project_target_effect",
+        "operation": "C13.project_target_effect",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "source_learning_effect:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "project_target_effect:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LearningEffect",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ProjectedEffect",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "U",
+          "Z"
+        ],
+        "write_set": [
+          "U"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H37"
+        ],
+        "implementation": "latent_comm.compositions.c13.project_target_effect",
+        "location": {
+          "source": "C13.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "compile_update_rule",
+        "operation": "C13.compile_update_rule",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "project_target_effect:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "compile_update_rule:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ProjectedEffect",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CompiledUpdateRule",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P",
+          "U",
+          "Z"
+        ],
+        "write_set": [
+          "K",
+          "U"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H19",
+          "H38"
+        ],
+        "implementation": "latent_comm.compositions.c13.compile_update_rule",
+        "location": {
+          "source": "C13.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "prepare_future_trainer",
+        "operation": "C13.prepare_future_trainer",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "compile_update_rule:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "prepare_future_trainer:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CompiledUpdateRule",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "FutureTrainerPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P",
+          "U"
+        ],
+        "write_set": [
+          "U"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H38"
+        ],
+        "implementation": "latent_comm.compositions.c13.prepare_future_trainer",
+        "location": {
+          "source": "C13.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "bind_anchors:out",
+        {
+          "name": "BoundAnchors",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "compile_update_rule:out",
+        {
+          "name": "CompiledUpdateRule",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "LearningProtocolInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "prepare_future_trainer:out",
+        {
+          "name": "FutureTrainerPlan",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "project_target_effect:out",
+        {
+          "name": "ProjectedEffect",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "source_learning_effect:out",
+        {
+          "name": "LearningEffect",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "bind_anchors",
+        "source_learning_effect"
+      ],
+      [
+        "compile_update_rule",
+        "prepare_future_trainer"
+      ],
+      [
+        "project_target_effect",
+        "compile_update_rule"
+      ],
+      [
+        "source_learning_effect",
+        "project_target_effect"
+      ]
+    ],
+    "schedule": [
+      "bind_anchors",
+      "source_learning_effect",
+      "project_target_effect",
+      "compile_update_rule",
+      "prepare_future_trainer"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "cfd09dc503daf75e0f8399e19cab697bffdfaa6779c0d34460711fdb91ed2fb1",
+    "declared_parameters": {
+      "obligations": [
+        "A local linear tangent effect is not a global functional equivalence.",
+        "Unreachable and post-clipping residuals remain explicit.",
+        "Future training is blocked; no source gradient was observed from a model."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C13",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "consolidate",
+        "objectives": [
+          {
+            "name": "distillation",
+            "mathematical_definition": "mean_valid ||student_without_message - stopgrad(teacher_with_message)||^2",
+            "numerator": "sum of valid per-probe mean coordinate errors",
+            "denominator": "count of valid probes",
+            "valid_mask": "valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "student"
+            ],
+            "stop_gradient_edges": [
+              [
+                "teacher",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "probes, each averaged over coordinates",
+            "id": "H19.distillation"
+          },
+          {
+            "name": "operation_behavior",
+            "mathematical_definition": "mean_valid ||student(compose(a,b),x)-teacher(b,teacher(a,x))||^2",
+            "numerator": "sum of valid per-probe mean coordinate errors",
+            "denominator": "count of valid probes",
+            "valid_mask": "operation_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "operation_student"
+            ],
+            "stop_gradient_edges": [
+              [
+                "operation_teacher",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "probes, each averaged over coordinates",
+            "id": "H19.operation_behavior"
+          }
+        ],
+        "losses": [
+          "H19.distillation",
+          "H19.operation_behavior"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "transport",
+        "objectives": [
+          {
+            "name": "effect",
+            "mathematical_definition": "sum(m*(behavior_after-behavior_before-v)^2)/sum(m)",
+            "numerator": "post-update public behavior error",
+            "denominator": "valid shared behavior coordinates",
+            "valid_mask": "behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transport_operator",
+              "behavior_encoder"
+            ],
+            "requires_grad_inputs": [
+              "source_direction",
+              "target_update"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "shared public behaviors",
+            "id": "H37.effect"
+          },
+          {
+            "name": "local",
+            "mathematical_definition": "sum(m*(actual_behavior_delta-Jtarget delta)^2)/sum(m)",
+            "numerator": "local linearization error",
+            "denominator": "valid public anchor coordinates",
+            "valid_mask": "anchor_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transport_operator"
+            ],
+            "requires_grad_inputs": [
+              "target_update"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "anchor coordinates",
+            "id": "H37.local"
+          },
+          {
+            "name": "ridge",
+            "mathematical_definition": "lambda * sum(delta^2)/count(delta)",
+            "numerator": "scoped parameter update squared norm",
+            "denominator": "updated parameter elements",
+            "valid_mask": "parameter_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transport_operator"
+            ],
+            "requires_grad_inputs": [
+              "target_update"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "updated parameters",
+            "id": "H37.ridge"
+          }
+        ],
+        "losses": [
+          "H37.effect",
+          "H37.local",
+          "H37.ridge"
+        ],
+        "owners": [
+          "behavior_encoder",
+          "transport_operator"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "meta_rule",
+        "objectives": [
+          {
+            "name": "outer_query_full",
+            "mathematical_definition": "L_query(theta_T(psi),query)",
+            "numerator": "query-only loss after fixed support unroll",
+            "denominator": "valid held-out query targets",
+            "valid_mask": "query_valid_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "plasticity_rule_parameters"
+            ],
+            "requires_grad_inputs": [
+              "support_gradients",
+              "inner_parameters",
+              "rule_parameters"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "second_order",
+            "normalization_units": "query targets",
+            "id": "H38.outer_query_full"
+          },
+          {
+            "name": "update_budget",
+            "mathematical_definition": "mean relu(norm(delta)-max_norm)^2",
+            "numerator": "pre-clipping update norm exceedance",
+            "denominator": "valid scoped parameter groups",
+            "valid_mask": "group_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "plasticity_rule_parameters"
+            ],
+            "requires_grad_inputs": [
+              "raw_update"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "parameter groups",
+            "id": "H38.update_budget"
+          }
+        ],
+        "losses": [
+          "H38.outer_query_full",
+          "H38.update_budget"
+        ],
+        "owners": [
+          "plasticity_rule_parameters"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "bind_anchors": "stop",
+      "source_learning_effect": "differentiable",
+      "project_target_effect": "differentiable",
+      "compile_update_rule": "stop",
+      "prepare_future_trainer": "stop"
+    },
+    "frozen": [
+      "base_models",
+      "immutable_source_definitions"
+    ],
+    "structure_search": "enumeration is distinct from differentiable phases",
+    "execution": "unified gated runner only; no joint global loss by default"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

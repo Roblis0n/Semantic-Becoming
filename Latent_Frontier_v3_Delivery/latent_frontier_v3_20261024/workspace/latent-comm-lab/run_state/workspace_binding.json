@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "project": "latent-comm-lab",
+  "PLAN_ROOT": "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024",
+  "WORK_ROOT": "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab",
+  "plan_access": "read_only_by_workflow",
+  "work_scope": "only this project tree",
+  "input_archive_sha256": "491ff1d21dc935e5aee96cb2d5a3392500074192ce7ea9a5b2a8a49a3894ab45",
+  "input_archives": [
+    {
+      "filename": "Anthropic_Claude_Design_Language_Research_20261008(3).zip",
+      "sha256": "abdab439cdbe42772e407bd643ff1182b2262e1960b7432cc42ec7bd32a35158",
+      "bytes": 7778298
+    },
+    {
+      "filename": "Duolingo_Design_Language_Research_20261008(1).zip",
+      "sha256": "1247e397f8bd29855d4d88247288a7dec2b1ecb156a499fde788aeaf774d0807",
+      "bytes": 7764590
+    },
+    {
+      "filename": "anthropic_claude_design_language_research(2).zip",
+      "sha256": "c30444eba05eb547bf90803171b88956c4038a27b8cdde597962d3fd7cbdc977",
+      "bytes": 1056245
+    },
+    {
+      "filename": "latent_frontier_v3_complete_20261024.zip",
+      "sha256": "491ff1d21dc935e5aee96cb2d5a3392500074192ce7ea9a5b2a8a49a3894ab45",
+      "bytes": 3932948
+    }
+  ],
+  "task_graph_sha256": "cafee36f5795baa3f1d643dd0d79a11e1aee7479fa67784c960d3c9391a51759",
+  "source_manifest_entries_verified": 563,
+  "source_manifest_failures": [],
+  "window": {
+    "start_utc": "2026-10-24T15:30:00Z",
+    "end_utc": "2026-10-24T23:30:00Z",
+    "timezone": "Asia/Shanghai"
+  },
+  "research_state": "NOT_RUN",
+  "hard_sandbox_guaranteed": false
+}

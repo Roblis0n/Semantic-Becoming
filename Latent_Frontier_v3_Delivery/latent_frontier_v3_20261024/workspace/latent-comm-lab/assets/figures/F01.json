@@ -1,0 +1,377 @@
+{
+  "title": "从潜通信到认知构造",
+  "description": "三层研究图谱。基础二十四机制产生可计算对象，新增二十四机制研究认知结构改写，十二远期方向通过二十条组合路线连接；不是二十个模型。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "从潜通信到认知构造",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "三层研究对象，二十条组合路线",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "F01",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 70,
+      "y": 225,
+      "w": 80,
+      "h": 68.64,
+      "text": "01",
+      "size": 48,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e006"
+    },
+    {
+      "x": 175,
+      "y": 205,
+      "w": 400,
+      "h": 50.05,
+      "text": "基础 24 机制",
+      "size": 35,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 175,
+      "y": 255,
+      "w": 300,
+      "h": 34.32,
+      "text": "H01–H24",
+      "size": 24,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "x": 565,
+      "y": 222,
+      "w": 650,
+      "h": 40.04,
+      "text": "状态 · 算子 · 响应 · 信念 · 约束 · 续接",
+      "size": 28,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          1190,
+          280
+        ],
+        [
+          1190,
+          323
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "points": [
+        [
+          1195.0,
+          311.0
+        ],
+        [
+          1190,
+          323
+        ],
+        [
+          1185.0,
+          311.0
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e011"
+    },
+    {
+      "x": 70,
+      "y": 360,
+      "w": 80,
+      "h": 68.64,
+      "text": "02",
+      "size": 48,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 175,
+      "y": 340,
+      "w": 400,
+      "h": 50.05,
+      "text": "新增 24 机制",
+      "size": 35,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "x": 175,
+      "y": 390,
+      "w": 300,
+      "h": 34.32,
+      "text": "H25–H48",
+      "size": 24,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e014"
+    },
+    {
+      "x": 565,
+      "y": 357,
+      "w": 650,
+      "h": 40.04,
+      "text": "概念 · 问题 · 学习规则 · 指令集 · 世界",
+      "size": 28,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e015"
+    },
+    {
+      "points": [
+        [
+          1190,
+          415
+        ],
+        [
+          1190,
+          458
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e016"
+    },
+    {
+      "points": [
+        [
+          1195.0,
+          446.0
+        ],
+        [
+          1190,
+          458
+        ],
+        [
+          1185.0,
+          446.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e017"
+    },
+    {
+      "x": 70,
+      "y": 495,
+      "w": 80,
+      "h": 68.64,
+      "text": "03",
+      "size": 48,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 175,
+      "y": 475,
+      "w": 400,
+      "h": 50.05,
+      "text": "12 个远期终局",
+      "size": 35,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e019"
+    },
+    {
+      "x": 175,
+      "y": 525,
+      "w": 300,
+      "h": 34.32,
+      "text": "X01–X12",
+      "size": 24,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e020"
+    },
+    {
+      "x": 565,
+      "y": 492,
+      "w": 650,
+      "h": 40.04,
+      "text": "认知连续体 · 可塑性网络 · 语义编译生态",
+      "size": 28,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e021"
+    },
+    {
+      "x": 995,
+      "y": 302,
+      "w": 170,
+      "h": 28.599999999999998,
+      "text": "objects",
+      "size": 20,
+      "color": "#536647",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "x": 995,
+      "y": 437,
+      "w": 170,
+      "h": 28.599999999999998,
+      "text": "rewrites",
+      "size": 20,
+      "color": "#9C5138",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "compositions：20 条组合路线连接机制，不代表 20 个独立模型",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e024"
+    }
+  ],
+  "notes": "",
+  "sources": [
+    "media/07_图形与动画规范.md",
+    "docs/related_work.md"
+  ],
+  "research_state": "NOT_RUN"
+}

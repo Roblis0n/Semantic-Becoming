@@ -1,0 +1,56 @@
+{
+  "research_state": "NOT_RUN",
+  "scope": "exact finite analytical illustrations, not model evidence",
+  "bounds": {
+    "max_scalar_dimension": 4,
+    "cases": 19,
+    "max_steps": 8
+  },
+  "checks": [
+    {
+      "name": "A01_H25_covariance",
+      "passed": true,
+      "details": "z=(1,2), T=diag(2,3), G=swap; both paths (6,2)"
+    },
+    {
+      "name": "A02_H26_obstruction",
+      "passed": true,
+      "details": "Left sum zero; right sum one. No simultaneous solution."
+    },
+    {
+      "name": "A03_H27_predicate",
+      "passed": true,
+      "details": "Same shape, authorized; expiry 10 versus 4 at t=5 yields true/false."
+    },
+    {
+      "name": "A04_H37_transport",
+      "passed": true,
+      "details": "delta=4/(16+lambda). lambda=0: 1/4; lambda=1: 4/17; residual=1/17."
+    },
+    {
+      "name": "A05_H43_shared_noise",
+      "passed": true,
+      "details": "Shared bit equality probability 1; independent bits 1/2. Synthetic illustration only."
+    },
+    {
+      "name": "F05_task_partition",
+      "passed": true,
+      "details": "Adding >2 refines parity partition, given original states."
+    },
+    {
+      "name": "H48_lineage",
+      "passed": true,
+      "details": "Repeated same event remains .8; union of distinct independent .8 events is .96."
+    },
+    {
+      "name": "H29_solution_preservation",
+      "passed": true,
+      "details": "Both +2 and -2 are retained."
+    },
+    {
+      "name": "H30_analogy",
+      "passed": true,
+      "details": "f(x)=2x maps source +1 to target +2 on finite checked inputs."
+    }
+  ]
+}

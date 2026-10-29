@@ -1,0 +1,18 @@
+M23: AST parsed 6 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_byte_corruption_is_not_semantic_repair (test_h23.TestRepair.test_byte_corruption_is_not_semantic_repair) ... ok
+test_conflict_missing_evidence_are_not_noise (test_h23.TestRepair.test_conflict_missing_evidence_are_not_noise) ... ok
+test_exclusion_and_provenance_are_typed_repairs (test_h23.TestRepair.test_exclusion_and_provenance_are_typed_repairs) ... ok
+test_numeric_repair_and_accounting (test_h23.TestRepair.test_numeric_repair_and_accounting) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h23.TestRepair.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_reply_binding_prevents_semantic_coercion (test_h23.TestRepair.test_reply_binding_prevents_semantic_coercion) ... ok
+test_single_sheaf_edge_is_two_domains (test_h23.TestRepair.test_single_sheaf_edge_is_two_domains) ... ok
+test_source_gate_and_schema (test_h23.TestRepair.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h23.TestRepair.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_unreachable_residual_preserved_and_no_repair (test_h23.TestRepair.test_unreachable_residual_preserved_and_no_repair) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h23.TestRepair.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.028s
+
+OK
+M23: 11 contract tests; failures=0 errors=0; no tensor/model import or execution.

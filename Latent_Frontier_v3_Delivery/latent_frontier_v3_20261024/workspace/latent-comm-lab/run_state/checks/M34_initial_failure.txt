@@ -1,0 +1,60 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_future_label_leak (test_h34.H34Contracts.test_future_label_leak) ... ok
+test_infeasible_and_multiple (test_h34.H34Contracts.test_infeasible_and_multiple) ... ERROR
+test_limit_retains_pending (test_h34.H34Contracts.test_limit_retains_pending) ... ERROR
+test_migration_and_gate (test_h34.H34Contracts.test_migration_and_gate) ... ERROR
+test_neural_source_is_lazy_and_gated (test_h34.H34Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_public_goal_prunes_waits (test_h34.H34Contracts.test_public_goal_prunes_waits) ... ERROR
+
+======================================================================
+ERROR: test_infeasible_and_multiple (test_h34.H34Contracts.test_infeasible_and_multiple)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/contracts/test_h34.py", line 16, in test_infeasible_and_multiple
+    g=replace(self.graph(),transitions=(self.graph().transitions[0],));self.assertEqual(solve_boundary(g).status,'BoundaryInfeasible')
+                                                                                        ^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h34_boundary_value/reference.py", line 26, in solve_boundary
+    return BoundaryResult(tuple(paths),tuple(tuple(sorted(s)) for s in forward),tuple(tuple(sorted(s)) for s in backward), 'planning_with_public_terminal_not_future_observation',tuple(pending),meter.steps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BoundaryResult.__init__() missing 1 required positional argument: 'steps'
+
+======================================================================
+ERROR: test_limit_retains_pending (test_h34.H34Contracts.test_limit_retains_pending)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/contracts/test_h34.py", line 19, in test_limit_retains_pending
+    r=solve_boundary(self.graph('2'),path_limit=1);self.assertEqual(r.status,'SolverLimit');self.assertTrue(r.unexplored_prefixes)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h34_boundary_value/reference.py", line 26, in solve_boundary
+    return BoundaryResult(tuple(paths),tuple(tuple(sorted(s)) for s in forward),tuple(tuple(sorted(s)) for s in backward), 'planning_with_public_terminal_not_future_observation',tuple(pending),meter.steps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BoundaryResult.__init__() missing 1 required positional argument: 'steps'
+
+======================================================================
+ERROR: test_migration_and_gate (test_h34.H34Contracts.test_migration_and_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/contracts/test_h34.py", line 26, in test_migration_and_gate
+    g=migrate_states(self.graph(),'2',{str(i):f's{i}' for i in range(4)});self.assertEqual(solve_boundary(g).paths[0][-1],'s3')
+                                                                                           ^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h34_boundary_value/reference.py", line 26, in solve_boundary
+    return BoundaryResult(tuple(paths),tuple(tuple(sorted(s)) for s in forward),tuple(tuple(sorted(s)) for s in backward), 'planning_with_public_terminal_not_future_observation',tuple(pending),meter.steps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BoundaryResult.__init__() missing 1 required positional argument: 'steps'
+
+======================================================================
+ERROR: test_public_goal_prunes_waits (test_h34.H34Contracts.test_public_goal_prunes_waits)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/contracts/test_h34.py", line 14, in test_public_goal_prunes_waits
+    r=solve_boundary(self.graph());self.assertEqual(r.paths,(('0','1','2','3'),));self.assertEqual(r.status,'UniquePath')
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h34_boundary_value/reference.py", line 26, in solve_boundary
+    return BoundaryResult(tuple(paths),tuple(tuple(sorted(s)) for s in forward),tuple(tuple(sorted(s)) for s in backward), 'planning_with_public_terminal_not_future_observation',tuple(pending),meter.steps)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BoundaryResult.__init__() missing 1 required positional argument: 'steps'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+FAILED (errors=4)

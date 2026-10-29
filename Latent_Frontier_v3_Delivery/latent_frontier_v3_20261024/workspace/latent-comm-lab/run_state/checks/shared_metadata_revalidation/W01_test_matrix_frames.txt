@@ -1,0 +1,8 @@
+test_roles_and_locked_sampling (test_matrix_frames.MatrixFramesTests.test_roles_and_locked_sampling) ... ok
+test_singular_and_dimensional (test_matrix_frames.MatrixFramesTests.test_singular_and_dimensional) ... ok
+test_transport (test_matrix_frames.MatrixFramesTests.test_transport) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

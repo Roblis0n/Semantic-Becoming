@@ -1,0 +1,18 @@
+{
+  "finished_at_utc": "2026-10-26T15:16:17.585988+00:00",
+  "status": "authorized_nine_cues_downloaded_036_still_blocked",
+  "new_characters": 273,
+  "new_jobs": 9,
+  "unique_source_jobs": 58,
+  "unique_source_characters": 1754,
+  "accepted_submission_count": 59,
+  "accepted_submission_characters": 1770,
+  "credits_used_total": 0,
+  "audio_listened": false,
+  "scope": "known-unsent037-044 and explicit duplicate-risk029",
+  "original_unknown_029_receipt": "assets/audio/tts_ai/history/explainer_360_029_original_unknown.json",
+  "resynthesis_authorization_record": "release/authorization_updates/20261026_TTS_APPROVAL.json",
+  "unknown036": "not submitted or queried; capability lost",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "research_state": "NOT_RUN"
+}

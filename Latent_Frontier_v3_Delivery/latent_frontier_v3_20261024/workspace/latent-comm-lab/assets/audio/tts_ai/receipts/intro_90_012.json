@@ -1,0 +1,48 @@
+{
+  "id": "intro_90_012",
+  "edition": "intro_90",
+  "scene_id": "S07",
+  "characters": 29,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "完整计划覆盖四十八个机制、二十条组合路线和十二个远期终局，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:16:34.767954+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:16:42 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:16:45.507896+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 226973,
+    "duration_seconds": 5.146780045351474,
+    "sample_peak": 15592,
+    "sample_rms": 2323.2860990966524,
+    "sha256": "0be5d6f717a91c20b250fd4c0d29db37eb36bfd603fee208308b41c9fd790b12",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:17:08.542246+00:00"
+}

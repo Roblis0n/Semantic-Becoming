@@ -1,0 +1,224 @@
+{
+  "schema_version": "3",
+  "research_state": "NOT_RUN",
+  "input_source": "physically projected RoleView only",
+  "roles": {
+    "sender": {
+      "accepted_view_role": "sender",
+      "input_keys": [
+        "versions",
+        "public_task",
+        "features"
+      ],
+      "required_version_axes": [
+        "schema",
+        "task"
+      ],
+      "public_field_policy": "Only fields already projected by the world ProjectionContract, each with a public justification. No implicit access to supervisor or opposite-role features.",
+      "output_schema": {
+        "type": "object",
+        "required": [
+          "status",
+          "object_kind",
+          "payload",
+          "required_versions",
+          "scope",
+          "obligations"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "present",
+              "unknown",
+              "missing",
+              "contradiction"
+            ]
+          },
+          "object_kind": {
+            "type": "string"
+          },
+          "payload": {
+            "type": "object"
+          },
+          "required_versions": {
+            "type": "object"
+          },
+          "scope": {
+            "type": "array"
+          },
+          "obligations": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "receiver": {
+      "accepted_view_role": "receiver",
+      "input_keys": [
+        "versions",
+        "public_task",
+        "features"
+      ],
+      "required_version_axes": [
+        "schema",
+        "task"
+      ],
+      "public_field_policy": "Only fields already projected by the world ProjectionContract, each with a public justification. No implicit access to supervisor or opposite-role features.",
+      "output_schema": {
+        "type": "object",
+        "required": [
+          "status",
+          "answer",
+          "used_object_refs",
+          "obligations"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "present",
+              "unknown",
+              "missing",
+              "contradiction"
+            ]
+          },
+          "answer": {
+            "type": "object"
+          },
+          "used_object_refs": {
+            "type": "array"
+          },
+          "obligations": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "critic": {
+      "accepted_view_role": "receiver",
+      "input_keys": [
+        "versions",
+        "public_task",
+        "features"
+      ],
+      "required_version_axes": [
+        "schema",
+        "task"
+      ],
+      "public_field_policy": "Only fields already projected by the world ProjectionContract, each with a public justification. No implicit access to supervisor or opposite-role features.",
+      "output_schema": {
+        "type": "object",
+        "required": [
+          "status",
+          "verdict",
+          "counterexample",
+          "violated_invariants",
+          "obligations"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "present",
+              "unknown",
+              "missing",
+              "contradiction"
+            ]
+          },
+          "verdict": {
+            "type": "string"
+          },
+          "counterexample": {
+            "type": "object"
+          },
+          "violated_invariants": {
+            "type": "array"
+          },
+          "obligations": {
+            "type": "array"
+          }
+        }
+      }
+    },
+    "world_proposer": {
+      "accepted_view_role": "sender",
+      "input_keys": [
+        "versions",
+        "public_task",
+        "features"
+      ],
+      "required_version_axes": [
+        "schema",
+        "task"
+      ],
+      "public_field_policy": "Only fields already projected by the world ProjectionContract, each with a public justification. No implicit access to supervisor or opposite-role features.",
+      "output_schema": {
+        "type": "object",
+        "required": [
+          "status",
+          "world_kernel",
+          "shared_noise",
+          "synthetic",
+          "assumptions",
+          "obligations"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "enum": [
+              "present",
+              "unknown",
+              "missing",
+              "contradiction"
+            ]
+          },
+          "world_kernel": {
+            "type": "object"
+          },
+          "shared_noise": {
+            "type": "array"
+          },
+          "synthetic": {
+            "const": true
+          },
+          "assumptions": {
+            "type": "array"
+          },
+          "obligations": {
+            "type": "array"
+          }
+        }
+      }
+    }
+  },
+  "forbidden_fields": [
+    "answer_key",
+    "hidden_solution",
+    "label",
+    "labels",
+    "manifest_digest",
+    "oracle_trace",
+    "query_labels",
+    "record_id",
+    "sample_id",
+    "split_id",
+    "supervision",
+    "supervision_view",
+    "supervisor_view",
+    "world_seed"
+  ],
+  "version_axes": [
+    "schema",
+    "state",
+    "ontology",
+    "isa",
+    "frame",
+    "world",
+    "task",
+    "evidence"
+  ],
+  "reference_policy": "References are rejected by this text compiler. Resolve and explicitly whitelist-project public payloads upstream; never stringify full registered objects.",
+  "authority_boundary": "Fixed system text and data-only JSON user message. World text is untrusted data; no model output authorizes tools, policy changes, or code execution.",
+  "field_classification_source": "latent_comm.core.views.FIELD_CLASSIFICATION"
+}

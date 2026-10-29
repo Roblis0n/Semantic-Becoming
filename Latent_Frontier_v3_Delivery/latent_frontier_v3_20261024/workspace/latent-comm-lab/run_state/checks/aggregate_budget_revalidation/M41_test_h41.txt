@@ -1,0 +1,17 @@
+test_complementarity_and_efficiency (test_h41.H41Contracts.test_complementarity_and_efficiency) ... ok
+test_dummy_and_nonzero_empty_value (test_h41.H41Contracts.test_dummy_and_nonzero_empty_value) ... ok
+test_sampling_budget_and_unique_source (test_h41.H41Contracts.test_sampling_budget_and_unique_source) ... ok
+test_unknown_is_not_zero (test_h41.H41Contracts.test_unknown_is_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+{
+  "selected": 4,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h41.H41Contracts.test_capability_dependency_and_gate",
+    "test_h41.H41Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

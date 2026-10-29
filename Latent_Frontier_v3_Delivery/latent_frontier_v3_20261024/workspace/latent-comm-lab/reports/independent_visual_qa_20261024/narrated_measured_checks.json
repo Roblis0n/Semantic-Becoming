@@ -1,0 +1,343 @@
+{
+  "cue_checks": [
+    {
+      "cue": 1,
+      "timed_wav_seconds": 7.890226757369614,
+      "assembly_seconds": 7.890226,
+      "difference_seconds": -7.573696141349728e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 2,
+      "timed_wav_seconds": 4.849818594104309,
+      "assembly_seconds": 4.849818000000001,
+      "difference_seconds": -5.941043079715769e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 3,
+      "timed_wav_seconds": 4.348798185941043,
+      "assembly_seconds": 4.348797999999999,
+      "difference_seconds": -1.8594104478353302e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 4,
+      "timed_wav_seconds": 7.746916099773243,
+      "assembly_seconds": 7.746915999999999,
+      "difference_seconds": -9.977324388898978e-08,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 5,
+      "timed_wav_seconds": 2.3919501133786847,
+      "assembly_seconds": 2.391949999999998,
+      "difference_seconds": -1.1337868688343633e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 6,
+      "timed_wav_seconds": 5.422403628117914,
+      "assembly_seconds": 5.422403000000003,
+      "difference_seconds": -6.281179114608904e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 7,
+      "timed_wav_seconds": 4.632290249433106,
+      "assembly_seconds": 4.632289999999998,
+      "difference_seconds": -2.4943310883429604e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 8,
+      "timed_wav_seconds": 6.464671201814059,
+      "assembly_seconds": 6.464671000000003,
+      "difference_seconds": -2.0181405613328707e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 9,
+      "timed_wav_seconds": 3.1818820861678003,
+      "assembly_seconds": 3.1818819999999945,
+      "difference_seconds": -8.616780577952454e-08,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 10,
+      "timed_wav_seconds": 7.4675056689342405,
+      "assembly_seconds": 7.467505000000003,
+      "difference_seconds": -6.689342377796947e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 11,
+      "timed_wav_seconds": 2.179183673469388,
+      "assembly_seconds": 2.1791829999999948,
+      "difference_seconds": -6.734693931420566e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 12,
+      "timed_wav_seconds": 6.021473922902494,
+      "assembly_seconds": 6.021474000000012,
+      "difference_seconds": 7.70975177033506e-08,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 13,
+      "timed_wav_seconds": 3.010294784580499,
+      "assembly_seconds": 3.0102949999999993,
+      "difference_seconds": 2.1541950046000125e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    },
+    {
+      "cue": 14,
+      "timed_wav_seconds": 7.4104081632653065,
+      "assembly_seconds": 7.410408000000004,
+      "difference_seconds": -1.6326530261068228e-07,
+      "display_covers_audio": true,
+      "display_within_scene": true,
+      "non_overlap": true
+    }
+  ],
+  "sample_frames": [
+    {
+      "label": "opening",
+      "second": 0.5,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/opening.png"
+    },
+    {
+      "label": "cue-01",
+      "second": 4.683526,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-01.png"
+    },
+    {
+      "label": "cue-02",
+      "second": 13.07856,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-02.png"
+    },
+    {
+      "label": "cue-03",
+      "second": 18.611655,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-03.png"
+    },
+    {
+      "label": "cue-04",
+      "second": 26.307721,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-04.png"
+    },
+    {
+      "label": "cue-05",
+      "second": 31.99754,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-05.png"
+    },
+    {
+      "label": "cue-06",
+      "second": 37.3984355,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-06.png"
+    },
+    {
+      "label": "cue-07",
+      "second": 43.407551,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-07.png"
+    },
+    {
+      "label": "cue-08",
+      "second": 51.0148075,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-08.png"
+    },
+    {
+      "label": "cue-09",
+      "second": 56.955906999999996,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-09.png"
+    },
+    {
+      "label": "cue-10",
+      "second": 64.2828685,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-10.png"
+    },
+    {
+      "label": "cue-11",
+      "second": 69.8906575,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-11.png"
+    },
+    {
+      "label": "cue-12",
+      "second": 75.236655,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-12.png"
+    },
+    {
+      "label": "cue-13",
+      "second": 80.07528350000001,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-13.png"
+    },
+    {
+      "label": "cue-14",
+      "second": 85.911553,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-14.png"
+    }
+  ],
+  "cut_frames": [
+    {
+      "cut_seconds": 10,
+      "side": "before",
+      "sample_seconds": 9.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-010.00-before.png"
+    },
+    {
+      "cut_seconds": 10,
+      "side": "after",
+      "sample_seconds": 10.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-010.00-after.png"
+    },
+    {
+      "cut_seconds": 22,
+      "side": "before",
+      "sample_seconds": 21.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-022.00-before.png"
+    },
+    {
+      "cut_seconds": 22,
+      "side": "after",
+      "sample_seconds": 22.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-022.00-after.png"
+    },
+    {
+      "cut_seconds": 34,
+      "side": "before",
+      "sample_seconds": 33.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-034.00-before.png"
+    },
+    {
+      "cut_seconds": 34,
+      "side": "after",
+      "sample_seconds": 34.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-034.00-after.png"
+    },
+    {
+      "cut_seconds": 44.01,
+      "side": "before",
+      "sample_seconds": 43.949999999999996,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-044.01-before.png"
+    },
+    {
+      "cut_seconds": 44.01,
+      "side": "after",
+      "sample_seconds": 44.07,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-044.01-after.png"
+    },
+    {
+      "cut_seconds": 47,
+      "side": "before",
+      "sample_seconds": 46.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-047.00-before.png"
+    },
+    {
+      "cut_seconds": 47,
+      "side": "after",
+      "sample_seconds": 47.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-047.00-after.png"
+    },
+    {
+      "cut_seconds": 60,
+      "side": "before",
+      "sample_seconds": 59.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-060.00-before.png"
+    },
+    {
+      "cut_seconds": 60,
+      "side": "after",
+      "sample_seconds": 60.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-060.00-after.png"
+    },
+    {
+      "cut_seconds": 63.96,
+      "side": "before",
+      "sample_seconds": 63.9,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-063.96-before.png"
+    },
+    {
+      "cut_seconds": 63.96,
+      "side": "after",
+      "sample_seconds": 64.02,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-063.96-after.png"
+    },
+    {
+      "cut_seconds": 68.04,
+      "side": "before",
+      "sample_seconds": 67.98,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-068.04-before.png"
+    },
+    {
+      "cut_seconds": 68.04,
+      "side": "after",
+      "sample_seconds": 68.10000000000001,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-068.04-after.png"
+    },
+    {
+      "cut_seconds": 72,
+      "side": "before",
+      "sample_seconds": 71.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-072.00-before.png"
+    },
+    {
+      "cut_seconds": 72,
+      "side": "after",
+      "sample_seconds": 72.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-072.00-after.png"
+    },
+    {
+      "cut_seconds": 78.5,
+      "side": "before",
+      "sample_seconds": 78.44,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-078.50-before.png"
+    },
+    {
+      "cut_seconds": 78.5,
+      "side": "after",
+      "sample_seconds": 78.56,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-078.50-after.png"
+    },
+    {
+      "cut_seconds": 82,
+      "side": "before",
+      "sample_seconds": 81.94,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-082.00-before.png"
+    },
+    {
+      "cut_seconds": 82,
+      "side": "after",
+      "sample_seconds": 82.06,
+      "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-082.00-after.png"
+    }
+  ],
+  "full_av_decode_exit_code": 0,
+  "full_av_decode_stderr": ""
+}

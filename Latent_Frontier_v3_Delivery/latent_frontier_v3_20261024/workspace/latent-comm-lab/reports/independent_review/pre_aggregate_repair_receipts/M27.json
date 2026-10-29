@@ -1,0 +1,76 @@
+{
+  "task_id": "M27",
+  "status": "done",
+  "input_digest": "12bd0d56714fcd60070e4d9dd10c37d4d3e01ec2f54e45281015d6f204987d89",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/README.md",
+      "sha256": "a939bf2120d10dface80ebff65dfdfe2e1b60ac9d069efd202a3952a7cc20049",
+      "bytes": 1588
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/__init__.py",
+      "sha256": "ef88cac3e2dfdb04fe82ef0acc6b155eb921125819405cf642836b32c6b92bc3",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/adapter.py",
+      "sha256": "a1fab636e20bf207fc11a3c5e07282ee0340304635c3655051839f7b758a1332",
+      "bytes": 2151
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/losses.py",
+      "sha256": "68908533d9d3863360c4ce5b7d106643a51fe291d07d629f138be9a33442fdfd",
+      "bytes": 1733
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/reference.py",
+      "sha256": "d43a465d0e30a3ac842e0afe5f7dd4835eab9343c258a928f7a4c7be22bca085",
+      "bytes": 5266
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/schema.json",
+      "sha256": "c5557feda889425714677227af78d495172120794e85726a3b4c25577064bcb2",
+      "bytes": 1917
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/serialization.py",
+      "sha256": "b96729227ba2016baf5604dd329d2655858573eeff2058c212544d555f24516d",
+      "bytes": 1392
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/types.py",
+      "sha256": "c425acf8ed9160da189d24f8f32694a22963e8994f54a5a4dd5f19c34b2176f7",
+      "bytes": 3003
+    },
+    {
+      "path": "tests/contracts/test_h27.py",
+      "sha256": "0c5416a6b14eda9b5e2a7db5b65e332f49ee198dcbfcef117aa3a641c85d6964",
+      "bytes": 4236
+    },
+    {
+      "path": "configs/mechanisms/H27.json",
+      "sha256": "5eebd187e0352302c0d60e55f6ccf9e079a26c01bbb9972ccc96fbb7a5db9196",
+      "bytes": 1198
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M27_contracts.txt",
+      "sha256": "026132795526e67037d9709cce582a085bb15618246fd7ad73806ba83bea9f0c"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/M27_test_h27.txt",
+      "sha256": "7698327facda7806dbef71d6912f9384997fc4fb1525be1cf90a5a52a6c397dd"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated algorithm, semantic payload validation and migration, positive/boundary/counterexample tests. Tensor source AST checked only; research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:34.100239+00:00"
+}

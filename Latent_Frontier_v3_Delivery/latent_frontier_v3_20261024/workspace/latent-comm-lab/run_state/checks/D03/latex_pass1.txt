@@ -1,0 +1,8 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex)
+
+kpathsea: Running mktexfmt xelatex.fmt
+mktexfmt: mktexfmt is using the following fmtutil.cnf files (in precedence order):
+mktexfmt: mktexfmt is using the following fmtutil.cnf file for writing changes:
+mktexfmt:   /home/agent/.texlive2025/texmf-config/web2c/fmtutil.cnf
+/usr/bin/mktexfmt: mkdir(/home/agent/.texlive2025/) failed for tree /home/agent/.texlive2025/texmf-var/web2c: Read-only file system at /usr/share/texlive/tlpkg/TeXLive/TLUtils.pm line 1247.
+I can't find the format file `xelatex.fmt'!

@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "claim_classes": {
+    "D": "definition or proved finite fact",
+    "A": "explicit conditional assumption",
+    "H": "mechanism hypothesis",
+    "V": "architectural conjecture",
+    "E": "empirical result; none in this release"
+  },
+  "assumptions": [
+    {
+      "id": "A_COMMON_BEHAVIOR",
+      "statement": "A declared finite public behavior coordinate system can compare participating models.",
+      "consumers": [
+        "H06",
+        "H15",
+        "H25",
+        "H37"
+      ],
+      "failure": "UnboundBehaviorMap or projection residual; no tokenizer-wise KL"
+    },
+    {
+      "id": "A_INVERTIBLE_FRAME",
+      "statement": "Gauge maps are square invertible on the declared domain.",
+      "consumers": [
+        "H25",
+        "H32"
+      ],
+      "failure": "OutOfDomain; compression follows H06/H35 instead"
+    },
+    {
+      "id": "A_PREDICATE_GRAMMAR",
+      "statement": "The finite predicate grammar contains a useful distinction for the selected witnesses.",
+      "consumers": [
+        "H27",
+        "H36"
+      ],
+      "failure": "NoCandidateWithinGrammar; retain branches"
+    },
+    {
+      "id": "A_RELATION_WITNESSES",
+      "statement": "Problem rewrites provide independently checked soundness and completeness evidence.",
+      "consumers": [
+        "H29",
+        "H30"
+      ],
+      "failure": "Partial or heuristic relation, never upgraded to equivalence"
+    },
+    {
+      "id": "A_LOCAL_NOISE",
+      "statement": "World composition supplies joint noise or explicit conditional independence.",
+      "consumers": [
+        "H31",
+        "H43",
+        "H44"
+      ],
+      "failure": "UnknownDependence or incompatible boundary"
+    },
+    {
+      "id": "A_SCOPED_UPDATES",
+      "statement": "Differentiable updates target explicitly authorized adapter parameters only.",
+      "consumers": [
+        "H37",
+        "H38",
+        "H39"
+      ],
+      "failure": "ScopeViolation; current policy denies all neural execution"
+    },
+    {
+      "id": "A_FINITE_EXECUTION",
+      "statement": "Reference worlds, DSL programs and searches have finite dimension, cases and steps.",
+      "consumers": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20",
+        "H21",
+        "H22",
+        "H23",
+        "H24",
+        "H25",
+        "H26",
+        "H27",
+        "H28",
+        "H29",
+        "H30",
+        "H31",
+        "H32",
+        "H33",
+        "H34",
+        "H35",
+        "H36",
+        "H37",
+        "H38",
+        "H39",
+        "H40",
+        "H41",
+        "H42",
+        "H43",
+        "H44",
+        "H45",
+        "H46",
+        "H47",
+        "H48"
+      ],
+      "failure": "BudgetExhausted with partial state, not an invented solution"
+    },
+    {
+      "id": "A_EVIDENCE_DEPENDENCE",
+      "statement": "Probability claims require a complete relevant joint model or explicitly independent atoms.",
+      "consumers": [
+        "H03",
+        "H41",
+        "H48"
+      ],
+      "failure": "Symbolic expression or rigorous bounds, not a scalar posterior"
+    },
+    {
+      "id": "A_PUBLIC_BOUNDARY",
+      "statement": "Terminal conditions and behavior probes are authorized public task conditions, not supervised answers.",
+      "consumers": [
+        "H34",
+        "H37"
+      ],
+      "failure": "RoleLeakage"
+    },
+    {
+      "id": "A_MODEL_BRIDGE",
+      "statement": "Future learned model adapters may realize the reference object behavior.",
+      "consumers": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20",
+        "H21",
+        "H22",
+        "H23",
+        "H24",
+        "H25",
+        "H26",
+        "H27",
+        "H28",
+        "H29",
+        "H30",
+        "H31",
+        "H32",
+        "H33",
+        "H34",
+        "H35",
+        "H36",
+        "H37",
+        "H38",
+        "H39",
+        "H40",
+        "H41",
+        "H42",
+        "H43",
+        "H44",
+        "H45",
+        "H46",
+        "H47",
+        "H48"
+      ],
+      "failure": "Unvalidated research hypothesis; does not erase the implemented finite object"
+    }
+  ],
+  "empirical_results": [],
+  "not_unified": [
+    [
+      "H04",
+      "H26",
+      "a common field is not mandatory when local theories cannot glue"
+    ],
+    [
+      "H25",
+      "H35",
+      "invertible gauge transport differs from information-losing coarse graining"
+    ],
+    [
+      "H33",
+      "H04",
+      "cyclic trajectories need not descend one common energy"
+    ],
+    [
+      "H29",
+      "H47",
+      "solution relation does not follow merely from equal sampled behavior"
+    ],
+    [
+      "H38",
+      "H40",
+      "learned update operators cannot expand immutable host or base-ISA authority"
+    ]
+  ]
+}

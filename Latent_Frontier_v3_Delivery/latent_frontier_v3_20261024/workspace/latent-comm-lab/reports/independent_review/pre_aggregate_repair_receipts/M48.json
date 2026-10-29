@@ -1,0 +1,76 @@
+{
+  "task_id": "M48",
+  "status": "done",
+  "input_digest": "ca5adeb7950304a1839bc6fe076d31f0b989d809febf738aa9c507f05c05603b",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/README.md",
+      "sha256": "7a5cc92478d7a34bad66f269cddfd0bb96678c95ea51e50cb27889b5a5321cab",
+      "bytes": 2671
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/__init__.py",
+      "sha256": "01052b7d7c1b6a3ae161fa27de6b2c2a3c9f746406bf800d44fb63191ee50e6e",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/adapter.py",
+      "sha256": "91d7daaf2d29b92d3549e3561bdf01e9f3db98345d6a17c55989ad45c2549f0d",
+      "bytes": 3746
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/losses.py",
+      "sha256": "7b1bf9c1d24469f8ebd7ca7879d5b4c470edda14f1d55905aa11719fe5c94331",
+      "bytes": 1457
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/reference.py",
+      "sha256": "7a4cb6d487d7469b144a2b04e23a527f2092ec93b6fba2e337ddfb8556c21366",
+      "bytes": 7482
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/schema.json",
+      "sha256": "6291c6d410a5f6bfaf04e8436ee53bb87076ed5999a6f5e4a02abcbb60b3745f",
+      "bytes": 4209
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/serialization.py",
+      "sha256": "5617ea119b22ccf383fe1e63d20dc9c3bdd1e5a43b2a5acb99ce11d0b1e6cf72",
+      "bytes": 2607
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/types.py",
+      "sha256": "bc172d6a416404b5acd559bc8425a15ec98fee935e54664dd25e734cd9d79bcc",
+      "bytes": 3531
+    },
+    {
+      "path": "tests/contracts/test_h48.py",
+      "sha256": "970830f1c8af6a5eb25559e535386626ba2577625d9de28d43cea2032256fb4d",
+      "bytes": 5538
+    },
+    {
+      "path": "configs/mechanisms/H48.json",
+      "sha256": "f973739a9a56326e51af6d1745b3e3433987433601c3b61c29042670d8c797df",
+      "bytes": 1309
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M48_contracts.txt",
+      "sha256": "a50c87af8518b7d5722a152be9c38c0ece80ce14f4687525c104b674cd8ac5c7"
+    },
+    {
+      "path": "run_state/checks/M48_frontier_final_audit.txt",
+      "sha256": "8960eed64b84b6c78cf0db4767ad85520c185a5985bae3e366956b6cace59c71"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated source complete. Final bounded audit: 157 contracts across M25–M48, 144 source modules AST parsed, all24 receipts and inputs verified; no torch/transformers imported, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:37:13.987899+00:00"
+}

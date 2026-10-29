@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H25：不必有万能潜语言</title><desc id="desc">两套坐标的同一算子，显示T′=GTG⁻¹。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H25：不必有万能潜语言</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">坐标改变，作用关系保持</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">24 / 36</tspan>
+</text>
+<text id="e006" x="64" y="240.88" font-family="Noto Sans CJK SC" font-size="39" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">作用保持：T′ = G T G⁻¹</tspan>
+</text>
+<text id="e007" x="200.0" y="340.88" font-family="Noto Sans CJK SC" font-size="39" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="200.0" dy="0">z</tspan>
+</text>
+<text id="e008" x="920.0" y="340.88" font-family="Noto Sans CJK SC" font-size="39" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="920.0" dy="0">Tz</tspan>
+</text>
+<text id="e009" x="200.0" y="525.88" font-family="Noto Sans CJK SC" font-size="39" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="200.0" dy="0">Gz</tspan>
+</text>
+<text id="e010" x="920.0" y="525.88" font-family="Noto Sans CJK SC" font-size="39" font-weight="400" fill="#262A25" text-anchor="middle">
+<tspan x="920.0" dy="0">GTz</tspan>
+</text>
+<polyline id="e011" points="300.000,337.000 810.000,337.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e012" points="798.000,332.000 810.000,337.000 798.000,342.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e013" x="550.0" y="314.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="400" fill="#536647" text-anchor="middle">
+<tspan x="550.0" dy="0">T</tspan>
+</text>
+<polyline id="e014" points="300.000,522.000 810.000,522.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="798.000,517.000 810.000,522.000 798.000,527.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e016" x="570.0" y="490.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="570.0" dy="0">T′ = GTG⁻¹</tspan>
+</text>
+<polyline id="e017" points="190.000,365.000 190.000,475.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e018" points="195.000,463.000 190.000,475.000 185.000,463.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e019" x="105" y="430.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="105" dy="0">G</tspan>
+</text>
+<polyline id="e020" points="915.000,365.000 915.000,475.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e021" points="920.000,463.000 915.000,475.000 910.000,463.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e022" x="945" y="430.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="945" dy="0">G</tspan>
+</text>
+<text id="e023" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">坐标可不同，作用关系须保持；真实模型上的对应仍是假设</tspan>
+</text>
+</svg>

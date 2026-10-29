@@ -1,0 +1,60 @@
+{
+  "task_id": "X06",
+  "status": "done",
+  "input_digest": "1e24df7ff942b2c4f5ce7b20fc64766d7915218a6b3d449bf7d1227e5586a6d5",
+  "outputs": [
+    {
+      "path": "src/latent_comm/horizon/multiscale_cognition.py",
+      "sha256": "d312407dd30c2a0457a886c5ed8ec51ee20533cee1ee1b2bbf4fe3be765e5341",
+      "bytes": 4433
+    },
+    {
+      "path": "docs/horizons/X06.md",
+      "sha256": "7ee52d11a8285cbcf09d920588f00f304b91b479e1dfaddcfa5f087cd91dfa7b",
+      "bytes": 7671
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/horizons_contracts.txt",
+      "sha256": "93bb0d61baead20bc89e80995fa51c7a76a46b70c472fcd70072062b7a020365"
+    },
+    {
+      "path": "run_state/checks/horizon_source_bindings.txt",
+      "sha256": "5ec3293ca6ad9435ee56db9761b4c363bca4d5fe2d4ebaec0c496db74f3785b7"
+    },
+    {
+      "path": "src/latent_comm/horizon/contracts.py",
+      "sha256": "ee5dc6a8918f4657aae3021bc851516c642e3b57530f16edcb4807a719c57ad9"
+    },
+    {
+      "path": "tests/contracts/test_horizons.py",
+      "sha256": "4465c5685f402a92ab51afc23ff22f2ad8aee1dffa96fd545b5015872c4c64e7"
+    },
+    {
+      "path": "reports/horizon_examples/X06.json",
+      "sha256": "cf8ec54136d17684642543689f501da5cc82e6e890a0dec62e61b9b8452654df"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_horizons.txt",
+      "sha256": "1b6a0e5ce4969b7a675d0f4240853529a9f86558f05f2b188cefb8101d2cf0bf"
+    },
+    {
+      "path": "run_state/checks/final_mechanism_revalidation/test_horizons.txt",
+      "sha256": "fee0017caf5a69c36a3073625db11b80ec2a920a0a3367d4776dec535feb30e6"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "sha256": "fb6550b458c8b60d08ee842a12149e18c385460c99b9315913383357b22d917c"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated finite orchestrator, typed objects and actual mechanism calls, explicit assumption DAG and three distinct future structural branches. Finite exports checked under end-to-end aggregate budget. All research NOT_RUN; no neural imports or model calls. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports. Independent review repair: any exhausted aggregate propagates a partial envelope with no final digest; an explicit completed-generation prefix may be retained. Twenty-one bounded tests pass. X01 blocked-program migration snapshot and explicit partition-version binding repaired; twenty-three horizon checks pass. X04 finite nonnegative resource limit checked before comparison; twenty-four horizon checks pass. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:16:12.725083+00:00"
+}

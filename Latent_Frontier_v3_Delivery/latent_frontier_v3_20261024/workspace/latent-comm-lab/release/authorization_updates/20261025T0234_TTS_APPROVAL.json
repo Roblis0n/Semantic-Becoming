@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "record_type": "scoped_user_authorization",
+  "recorded_at_utc": "2026-10-25T02:37:12.968351+00:00",
+  "user_reply_received_utc_minute": "2026-10-25T02:34Z",
+  "transcript_evidence": [
+    {
+      "speaker": "assistant",
+      "message_id": "Sentinel_976cf6158bac819185c4b9e198beb272",
+      "text": "配音制作途中遇到授权拦截：已生成 90 秒版；继续长版需要将剩余约 493 字项目讲解文案发送至 TTS.ai（api.tts.ai）。这会向该服务披露这些文案，不包含源码包或私人文件，仍使用免费、个人非商业方案。\n\n你是否同意我继续发送这些配音文案？我已停止外传，已完成文件会保留，其他本地检查继续。"
+    },
+    {
+      "speaker": "user",
+      "message_id": "Sentinel_a60a1785b4d4819199963ac439e8667a",
+      "text": "所有判断均允许，不要过问"
+    }
+  ],
+  "interpretation": "The verified user response resolves the pending disclosed TTS.ai narration-continuation permission. It is scoped to that pending question, not unlimited standing authority.",
+  "approved_scope": {
+    "recipient": "TTS.ai, api.tts.ai",
+    "payload": "the remaining approximately493 characters of project narration, currently15 unsubmitted chunks",
+    "purpose": "continue the requested long narrated video",
+    "cost": "existing free route only; no paid fallback or new account",
+    "license": "personal/noncommercial use for generated audio and videos incorporating it",
+    "excludes": [
+      "source packages or private files",
+      "arbitrary external sharing",
+      "payments or changed financial commitments",
+      "research model initialization/inference/training/evaluation",
+      "bypassing tool denials or other policy restrictions",
+      "blind duplicate submission of a previously accepted uncertain job"
+    ]
+  },
+  "execution_restriction": {
+    "substantive_work_now": false,
+    "reason": "User reply arrived outside the daily23:30–07:30 Asia/Shanghai work window. This update only records status.",
+    "next_window_start_utc": "2026-10-25T15:30:00Z",
+    "next_window_end_utc": "2026-10-25T23:30:00Z",
+    "next_window_local": "2026-10-25 23:30 to2026-10-26 07:30 Asia/Shanghai"
+  },
+  "retry_rule": "For the denied unsubmitted continuation, this is materially new relevant evidence. Do not blind-retry an uncertain outcome. The previously accepted cue must be resolved first as described in the current status.",
+  "tts_external_calls_during_this_update": 0,
+  "research_state": "NOT_RUN"
+}

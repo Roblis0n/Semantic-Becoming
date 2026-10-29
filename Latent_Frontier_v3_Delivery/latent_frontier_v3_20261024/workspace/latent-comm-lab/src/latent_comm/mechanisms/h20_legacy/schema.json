@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H20:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "event_id",
+    "kind",
+    "source",
+    "clock",
+    "dependencies",
+    "source_state_version",
+    "receiver_versions",
+    "earliest_step",
+    "expires_step",
+    "stale_policy",
+    "payload_ref"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "evidence",
+        "ontology",
+        "schema",
+        "state",
+        "world"
+      ],
+      "additionalProperties": false
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "kind": {
+      "enum": [
+        "evidence_ready",
+        "branch_resolved",
+        "constraint_changed",
+        "continuation_requested"
+      ]
+    },
+    "source": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "clock": {
+      "type": "object",
+      "properties": {
+        "physical_step": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "phase": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "phase_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "path_id": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "path_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "causal": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "number",
+                "boolean",
+                "null",
+                "array",
+                "object"
+              ]
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "minItems": 0,
+          "maxItems": 64
+        }
+      },
+      "required": [
+        "physical_step",
+        "phase",
+        "phase_index",
+        "path_id",
+        "path_index",
+        "causal"
+      ],
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "source_state_version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "receiver_versions": {
+      "type": "object"
+    },
+    "earliest_step": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "expires_step": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "stale_policy": {
+      "enum": [
+        "reject",
+        "recompute",
+        "remap"
+      ]
+    },
+    "payload_ref": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "id": "C05",
+  "title": "关系接地接口",
+  "kind": "combination",
+  "hypotheses": [
+    "H06",
+    "H08",
+    "H17"
+  ],
+  "training_routes": [
+    "R07",
+    "R09"
+  ],
+  "pipeline_nodes": [
+    "relation_extract",
+    "anchor_match",
+    "chart_bind",
+    "modal_action"
+  ],
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+  "status": "planned_for_dot"
+}

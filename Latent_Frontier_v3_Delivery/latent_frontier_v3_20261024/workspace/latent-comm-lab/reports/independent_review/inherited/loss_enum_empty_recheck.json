@@ -1,0 +1,39 @@
+{
+  "research_execution": "NOT_RUN",
+  "method": "AST only",
+  "core_loss_sha256": "f028a9f789d5de9ab4d0a9fc34bcae12b8df7e2a3d6210eb09681c372c49eb92",
+  "results": [
+    {
+      "task": "M19",
+      "path": "src/latent_comm/mechanisms/h19_legacy/losses.py",
+      "sha256": "bbfb4a78c681b664e6c0550dc353a64f61465a47a8c27a0b4c072105cbe1de5d",
+      "invalid_enum_refs": [],
+      "loss_policy_calls": [
+        [
+          14,
+          "differentiable_zero"
+        ],
+        [
+          14,
+          "differentiable_zero"
+        ]
+      ]
+    },
+    {
+      "task": "M20",
+      "path": "src/latent_comm/mechanisms/h20_legacy/losses.py",
+      "sha256": "bed94da099928aaf21b6e8d6f978bd8a21150ee5d10738896b59dbdcee19f487",
+      "invalid_enum_refs": [],
+      "loss_policy_calls": [
+        [
+          14,
+          "differentiable_zero"
+        ],
+        [
+          14,
+          "differentiable_zero"
+        ]
+      ]
+    }
+  ]
+}

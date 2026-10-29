@@ -1,0 +1,11 @@
+{
+  "task_id": "D03",
+  "current": "run_state/checks/D03/media_waiver_20261027/qa_delta.json",
+  "previous_current": "run_state/checks/D03/media_delta_20261027/qa_delta.json",
+  "current_pdf": {
+    "path": "run_state/checks/D03/media_waiver_20261027/render/main.pdf",
+    "sha256": "bae11d47560dd50ad495d52cb6dad4c756b9b298792bd7a5361a05cbb8849e1d",
+    "pages": 55
+  },
+  "historical_artifacts_not_overwritten": true
+}

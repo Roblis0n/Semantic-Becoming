@@ -1,0 +1,179 @@
+{
+  "schema_version": 3,
+  "id": "H05",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "forward_entry": "latent_comm.mechanisms.h05_legacy.adapter.translate_progress",
+  "forward_entries": {
+    "translate_cache": {
+      "entry": "latent_comm.mechanisms.h05_legacy.adapter.translate_cache",
+      "signature": "cache, transfer, *, key_projections, value_projections, source_rope=None, target_rope=None",
+      "arguments": [
+        "cache",
+        "transfer",
+        "key_projections",
+        "value_projections",
+        "source_rope",
+        "target_rope"
+      ]
+    },
+    "translate_progress": {
+      "entry": "latent_comm.mechanisms.h05_legacy.adapter.translate_progress",
+      "signature": "state, projection, public_boundary, dependency_mask",
+      "arguments": [
+        "state",
+        "projection",
+        "public_boundary",
+        "dependency_mask"
+      ]
+    },
+    "resume_model": {
+      "entry": "latent_comm.mechanisms.h05_legacy.adapter.resume_model",
+      "signature": "model, new_token_ids, cache, attention_mask, cache_position, *, layout, contract, expected_contract, role_origins",
+      "arguments": [
+        "model",
+        "new_token_ids",
+        "cache",
+        "attention_mask",
+        "cache_position",
+        "layout",
+        "contract",
+        "expected_contract",
+        "role_origins"
+      ]
+    },
+    "capture_model_snapshot": {
+      "entry": "latent_comm.mechanisms.h05_legacy.adapter.capture_model_snapshot",
+      "signature": "cache, attention_mask, pending_token_ids, position_ids, *, contract, layout, position_spec, random_state_scope, cuda_devices, completed_operations, pending_dependencies, branch_lineage, transaction_version, role_origins, versions",
+      "arguments": [
+        "cache",
+        "attention_mask",
+        "pending_token_ids",
+        "position_ids",
+        "contract",
+        "layout",
+        "position_spec",
+        "random_state_scope",
+        "cuda_devices",
+        "completed_operations",
+        "pending_dependencies",
+        "branch_lineage",
+        "transaction_version",
+        "role_origins",
+        "versions"
+      ]
+    },
+    "resume_model_snapshot": {
+      "entry": "latent_comm.mechanisms.h05_legacy.adapter.resume_model_snapshot",
+      "signature": "model, snapshot, *, layout, contract, versions, transaction_version, available_dependencies",
+      "arguments": [
+        "model",
+        "snapshot",
+        "layout",
+        "contract",
+        "versions",
+        "transaction_version",
+        "available_dependencies"
+      ]
+    },
+    "close_model_snapshot": {
+      "entry": "latent_comm.mechanisms.h05_legacy.adapter.close_model_snapshot",
+      "signature": "snapshot",
+      "arguments": [
+        "snapshot"
+      ]
+    }
+  },
+  "loss_entry": "latent_comm.mechanisms.h05_legacy.losses.tensor_losses",
+  "loss_signature": "action_logits, action_targets, valid, *, task_loss",
+  "loss_input_bindings": {
+    "action_logits": {
+      "producer": "stage.common_action_readout on translate_progress or explicitly approximate translate_cache result",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "action_targets": {
+      "producer": "SupervisionBatch.action_targets; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "valid": {
+      "producer": "stage explicit boolean valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    },
+    "task_loss": {
+      "producer": "stage suffix task head",
+      "requires_gradient": true,
+      "detached_supervision": false
+    }
+  },
+  "loss_specs": [
+    {
+      "name": "task",
+      "mathematical_definition": "stage normalized task loss after dedicated mechanism",
+      "numerator": "sum valid task losses",
+      "denominator": "valid task count",
+      "valid_mask": "stage-normalized valid tasks",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "requires_grad_inputs": [
+        "task_loss"
+      ],
+      "stop_gradient_edges": [],
+      "estimator": "EXACT",
+      "normalization_units": "task instances"
+    },
+    {
+      "name": "continuation",
+      "mathematical_definition": "mean suffix_action_error",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "requires_grad_inputs": [
+        "action_logits"
+      ],
+      "stop_gradient_edges": [
+        [
+          "action_targets",
+          "target_or_return"
+        ]
+      ],
+      "estimator": "EXACT",
+      "normalization_units": "future actions"
+    }
+  ],
+  "parameter_bindings": {
+    "mechanism_writer": [
+      "translate_progress.projection"
+    ],
+    "mechanism_reader": [
+      "translate_cache.key_projections",
+      "translate_cache.value_projections",
+      "stage.common_action_readout"
+    ]
+  },
+  "stage_parameter_rule": "Bindings beginning stage. are constructed by the L-stage, not implicit model parameters. Each actual Parameter must be uniquely assigned to exactly one owner, including shared aliases. Unlisted base parameters stay frozen.",
+  "shared_training_engine": "latent_comm.learning.engine.train",
+  "stage_api": [
+    "parameter_groups()",
+    "frozen_parameters()",
+    "forward_roles(sender, receiver, maximum_unroll=...)",
+    "losses(output, SupervisionBatch)",
+    "loss_specs",
+    "versions",
+    "device"
+  ],
+  "input_contract": "RoleBatch projections only. Finite floating tensors including padding; exact mask shapes, valid class indices, and explicit typed applicability are required. Supervision is passed only to losses.",
+  "loss_selection": "Select named LossSpec terms, never total plus its components. Non-LossSpec return fields are diagnostics. External task_loss inputs are already masked/normalized with differentiable empty zero by the L-stage.",
+  "gradient_contract": "Freeze base parameters with requires_grad=False, not no_grad around receiver computation. Teacher targets only may be detached. A discrete sampled decision uses its live selected log probability; deterministic argmax does not impersonate a policy gradient.",
+  "tokenizer_contract": "No cross-tokenizer direct logit KL. Shared token-mixture losses require identical declared vocabulary; heterogeneous receivers use named common behavior coordinates.",
+  "execution": "All adapters and losses gate before tensor backend import. No neural test, model import, initialization, optimization or efficacy claim in this task."
+}

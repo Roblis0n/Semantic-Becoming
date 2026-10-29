@@ -1,0 +1,20 @@
+{
+  "observed_at_utc": "2026-10-24T18:19:30Z",
+  "base_inventory": "run_state/tool_inventory.json",
+  "base_inventory_is_historical": true,
+  "media_service": {
+    "provider": "freeTTS.ai",
+    "official_api": "https://tts.ai/api/",
+    "voice": "MeloTTS/ZH",
+    "authentication": "anonymous; no account or API key",
+    "authorization": "parent confirmed user-authorized media production with verified zero-new-cost route",
+    "license": "personal/noncommercial only",
+    "terms": "https://tts.ai/terms/",
+    "privacy": "https://tts.ai/privacy/",
+    "transmitted_category": "existing public/synthetic Mandarin narration text only",
+    "status": "production_in_progress",
+    "listening_review": "NOT_PERFORMED",
+    "research_inference": false
+  },
+  "research_state": "NOT_RUN"
+}

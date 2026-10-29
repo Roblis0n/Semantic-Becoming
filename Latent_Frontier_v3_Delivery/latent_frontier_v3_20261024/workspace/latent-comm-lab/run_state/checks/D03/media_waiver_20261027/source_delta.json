@@ -1,0 +1,26 @@
+{
+  "scope": "User-waiver media status only; all nonmedia content unchanged",
+  "unchanged_research_content": true,
+  "outputs": [
+    {
+      "path": "README.md",
+      "sha256": "afc47e7fe80fff0d225b7e45731d0fd1827180c0e9bac19e4390ec22cd949399",
+      "bytes": 9072
+    },
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "3b55b3b562da0574e554061cc5a5113900d9845203acd7b34f25e29809a9922f",
+      "bytes": 217106
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "7395ca9b8f01d2b32bf9f62af5d8210a5d80a8f69a46228f9ff43df408958956",
+      "bytes": 275044
+    }
+  ],
+  "authorization": {
+    "path": "run_state/checks/D03/media_waiver_20261027/authorization.json",
+    "sha256": "1d0da0e93b965e58464fdd64be34cda4c57290f734be2ce703c2224236d9bc84"
+  },
+  "prior_qa": "run_state/checks/D03/media_delta_20261027/qa_delta.json"
+}

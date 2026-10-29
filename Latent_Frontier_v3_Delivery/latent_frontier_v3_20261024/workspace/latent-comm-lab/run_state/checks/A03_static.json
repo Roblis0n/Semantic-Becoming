@@ -1,0 +1,23 @@
+{
+  "task_id": "A03",
+  "status": "passed",
+  "files_ast_checked": 8,
+  "files": [
+    "src/latent_comm/compiler/__init__.py",
+    "src/latent_comm/compiler/export.py",
+    "src/latent_comm/compiler/pipeline.py",
+    "src/latent_comm/compiler/registry.py",
+    "src/latent_comm/compiler/source.py",
+    "src/latent_comm/compiler/types.py",
+    "src/latent_comm/cli/compile.py",
+    "tests/compiler/test_compiler.py"
+  ],
+  "no_model_imports": true,
+  "no_empty_concrete_function_bodies": true,
+  "research_state": "NOT_RUN",
+  "fixture_caps": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  }
+}

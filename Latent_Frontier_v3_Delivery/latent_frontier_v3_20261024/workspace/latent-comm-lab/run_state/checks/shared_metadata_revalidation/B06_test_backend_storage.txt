@@ -1,0 +1,10 @@
+test_checkpoint_identity_cannot_escape (test_backend_storage.StorageContracts.test_checkpoint_identity_cannot_escape) ... ok
+test_explicit_device_not_auto (test_backend_storage.StorageContracts.test_explicit_device_not_auto) ... ok
+test_loading_and_saving_locked (test_backend_storage.StorageContracts.test_loading_and_saving_locked) ... ok
+test_no_pickle_or_torch_load (test_backend_storage.StorageContracts.test_no_pickle_or_torch_load) ... ok
+test_recompute_boundary_required (test_backend_storage.StorageContracts.test_recompute_boundary_required) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

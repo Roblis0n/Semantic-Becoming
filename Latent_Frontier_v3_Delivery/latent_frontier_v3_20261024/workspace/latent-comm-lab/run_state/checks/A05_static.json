@@ -1,0 +1,14 @@
+{
+  "files_ast_parsed": [
+    "src/latent_comm/safety/__init__.py",
+    "src/latent_comm/safety/broker.py",
+    "src/latent_comm/safety/model_access.py",
+    "src/latent_comm/safety/policy.py",
+    "src/latent_comm/cli/research.py"
+  ],
+  "current_policy_sha256": "e1dc9c916b5a8344759156337cf5b9520c77d78f787f24949de6f77f3acf453f",
+  "model_loader_import_order": "unconditional rejection precedes imports in all4 entrypoints",
+  "actual_policy_test_cases": 10,
+  "research_state": "NOT_RUN",
+  "hard_sandbox_guaranteed": false
+}

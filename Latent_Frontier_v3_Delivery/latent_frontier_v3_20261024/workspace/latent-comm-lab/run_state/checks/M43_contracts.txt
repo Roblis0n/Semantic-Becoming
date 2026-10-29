@@ -1,0 +1,11 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_action_and_port_conflicts (test_h43.H43Contracts.test_action_and_port_conflicts) ... ok
+test_migration_and_gate (test_h43.H43Contracts.test_migration_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h43.H43Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_normalization_and_prediction_lineage (test_h43.H43Contracts.test_normalization_and_prediction_lineage) ... ok
+test_shared_noise_not_independent (test_h43.H43Contracts.test_shared_noise_not_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK

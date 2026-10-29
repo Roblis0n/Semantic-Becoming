@@ -1,0 +1,11 @@
+{
+  "record_type": "work_window_update",
+  "recorded_at_utc": "2026-10-25T15:06:43.088563+00:00",
+  "message_id": "Sentinel_cca1e1b6841c8191ae1895b7cf78bbee",
+  "user_text": "晚上那个定时任务时间调整为23：00-7:30.今天的话现在就开始干吧",
+  "today_start_utc": "2026-10-25T14:57:00Z",
+  "today_end_utc": "2026-10-25T23:30:00Z",
+  "future_window_local": "Asia/Shanghai 23:00–07:30",
+  "scope": "Latent Frontier v3 / Semantic Becoming only; no Bible or other project changes",
+  "research_state": "NOT_RUN"
+}

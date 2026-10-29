@@ -1,0 +1,378 @@
+{
+  "scope": "Author actual visual inspection of six SVG renders, 25 animation source keyframes, seven actual decoded opening frames, and sampled narrative-video containers. No audio listening.",
+  "reviewed_at_utc": "2026-10-24T17:18:01.053195+00:00",
+  "research_state": "NOT_RUN",
+  "figures": [
+    {
+      "path": "assets/figures/renders/F01.png",
+      "sha256": "6d972cc4e0ae0f1aa37d49e3e10f359c9b959fbc63b2bcc8c575f469dccd396f",
+      "actual_visual_inspection": true,
+      "method": "individual full frame"
+    },
+    {
+      "path": "assets/figures/renders/F02.png",
+      "sha256": "e0c7ccced900c1f28c29aa9691e65932d04865cb7cd7f6e948c46205cff8bdfa",
+      "actual_visual_inspection": true,
+      "method": "individual full frame"
+    },
+    {
+      "path": "assets/figures/renders/F03.png",
+      "sha256": "c50201f275398ed8f2c8638cb4b03be165982c94350dbb150ea427de19a1cd53",
+      "actual_visual_inspection": true,
+      "method": "individual full frame"
+    },
+    {
+      "path": "assets/figures/renders/F04.png",
+      "sha256": "af8535b66007b59ea908858ea9ae1fb63bc5c9c97638136ea98db07391122197",
+      "actual_visual_inspection": true,
+      "method": "individual full frame"
+    },
+    {
+      "path": "assets/figures/renders/F05.png",
+      "sha256": "3c8908dee403f4d53e767a5bf2e5cd052b4760abddfeeb7a1df863b5c3f63719",
+      "actual_visual_inspection": true,
+      "method": "individual full frame"
+    },
+    {
+      "path": "assets/figures/renders/F06.png",
+      "sha256": "f40326f993cfb941c26d459f0d3c49bbf4a42c0c7dc532f3d2c121b80b667d50",
+      "actual_visual_inspection": true,
+      "method": "individual full frame"
+    }
+  ],
+  "animations": [
+    {
+      "path": "assets/animations/A01/renders/00.png",
+      "sha256": "d1f45ff4cebf8d811b6cd97a0811c8ebb6cb378b4fc57c7cb138a0aa23513771",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A01/renders/04.png",
+      "sha256": "f058572b65442e89fb85b152f044bbe073132581f93c8ec58ba2c38dab3e55d3",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A01/renders/08.png",
+      "sha256": "705f905b32a4e99f3e6d294ef511ec6658987107fb38d3be85d50b0ac0c676f7",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A01/renders/12.png",
+      "sha256": "bb58f3e9f48be70c936ef82daf921ec878240faa01cf86a3b7f6a518846ea81f",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A01/renders/16.png",
+      "sha256": "826686349929e25bd4b6545844950fd338403b8b82a72120aa8b3b9fdca0049c",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A02/renders/00.png",
+      "sha256": "17b3e50c82f00535d4681a83003709bd99a93f3f46523c2b53443f2b52444c06",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A02/renders/05.png",
+      "sha256": "b3f965271ab4c2824e9981d472f1ce7c567ada1882c95a17a9f08048d8c0ea0b",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A02/renders/10.png",
+      "sha256": "bbe88949af1545b7a0fcb219203f2a9ef80633e0dfb28a1de238aec19e9ad156",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A02/renders/15.png",
+      "sha256": "8a2fea78a34dc74d9ae17dda47f85781b6b912ebc31265333599f3a804e21705",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A02/renders/20.png",
+      "sha256": "99fcaf06c6ea735def7be5938ba41f839764ba60f62aa57f36461308e3ac0324",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A03/renders/00.png",
+      "sha256": "4aa8c65deced8f5b4bf61a1cddd89f02bc086c12e461a43f1db31b9c19a8c34d",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A03/renders/06.png",
+      "sha256": "2dcdda3aa7dbf2e2692a2c761ff70e971f9b7c9520c650ec1ff32e99a8d438f9",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A03/renders/12.png",
+      "sha256": "8037bf2d9bed290944dca129e226e5e493b6b39c89353faf8bf1cbbe0130b3f4",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A03/renders/18.png",
+      "sha256": "2cac895794a67dc43261bc2daea1c254c5a25acce634d2a9a0bac659f66ddcac",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A03/renders/24.png",
+      "sha256": "ad1a99bfc6478c306c5223215882ce8b367cc73e8ef73607c1e764fc3e7378ca",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A04/renders/00.png",
+      "sha256": "8f675c2fec449d8d82081d5f907fc69028527de330cb56f12ed52cf9244bfdfa",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A04/renders/04.png",
+      "sha256": "5c10b0852612de7f4bac3307f2cccfade6b91af49c1ed249f7a7295ff2e99532",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A04/renders/09.png",
+      "sha256": "8ba1cd30ea607f4deac036a29f0328bd3a824c7649c719a63f008f4bfda3c2df",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A04/renders/14.png",
+      "sha256": "a7fd47f01162d1549af34e7b1a3c4670d8a32bba63470a66a831fe9ffa73440c",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A04/renders/20.png",
+      "sha256": "41dbc52c353d2dcdce1d4618412abd66ffa961593c1ca2977c5101e39894410e",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A05/renders/00.png",
+      "sha256": "793f9909e8efb4e0f476612f28fa09513175dbf2702c6f549d75e05d93442baf",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A05/renders/06.png",
+      "sha256": "4982a267773cecc7edc9823399a3dbaa25c903e853110486f3024ee9072a92a3",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A05/renders/12.png",
+      "sha256": "d088dc78eabde1b66dd65fd5750a84ad0dc3c953d744e4d3734faeafc92f395c",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A05/renders/18.png",
+      "sha256": "64b7c37c17653e6165facec1e1e820cbec57c8254ddf2fca967b1f79c49af3d6",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    },
+    {
+      "path": "assets/animations/A05/renders/24.png",
+      "sha256": "49c8a24b94a7f8b0459834a8190a8938a765f931c91f07db721cc8f8b5f6ad55",
+      "actual_visual_inspection": true,
+      "method": "five-stage contact sheets plus selected individual full frames"
+    }
+  ],
+  "opening_frames": [
+    {
+      "path": "assets/animations/A01/A01_opening.png",
+      "sha256": "a1d57848d491b456b603cd5ab45351916a4c5279024554866dac15768d94b4fd",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    },
+    {
+      "path": "assets/animations/A02/A02_opening.png",
+      "sha256": "936ad3466798de4d5ca0bc9421ab05e31eceb3f23c25fd69c2b0dd634e29a23a",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    },
+    {
+      "path": "assets/animations/A03/A03_opening.png",
+      "sha256": "862402876ff7fea3e27b581f112fee70ca02db8b1af5c868f0cc6d05e53d64bf",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    },
+    {
+      "path": "assets/animations/A04/A04_opening.png",
+      "sha256": "dcffac6abc8113d4a385d8dde9aeca4056705ec2b2885886cdbbeb8ade91f3f7",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    },
+    {
+      "path": "assets/animations/A05/A05_opening.png",
+      "sha256": "272defc96def0b4f024ba27e78fcb5105bc30bc5131065b63d7be2d809f89fe1",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft_opening.png",
+      "sha256": "a475f22d884cf575f5805fe6308c9ca90fc5992bea61280c8d4a1cc4c3c18ab2",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft_opening.png",
+      "sha256": "7fc1cef1812cf67e934b40d5864df3bfe617e8302e59dcc2c3fe681d495f639b",
+      "actual_visual_inspection": true,
+      "method": "individually viewed actual decoded opening frame"
+    }
+  ],
+  "audio_listened": false,
+  "whole_videos_watched_realtime": false,
+  "video_full_decode_passed": true,
+  "claim_boundary": "Visual readability and playability only, not research validation.",
+  "video_sample_reviews": [
+    {
+      "container": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "samples": [
+        {
+          "second": 6,
+          "path": "assets/video/intro_90/decoded_samples/006.png",
+          "sha256": "402528a2e23da761dfa8f511764421f08f31280c684bb7064960b989849d85d1"
+        },
+        {
+          "second": 15,
+          "path": "assets/video/intro_90/decoded_samples/015.png",
+          "sha256": "42eae98900a6c9b0378a687c69aab2ed525059239dcc2bfa225a8dbc71af442d"
+        },
+        {
+          "second": 26,
+          "path": "assets/video/intro_90/decoded_samples/026.png",
+          "sha256": "cd3917d5c61c1d8176ee1a172431dffaa3280584a7140fb327dad0b662e5aa79"
+        },
+        {
+          "second": 38,
+          "path": "assets/video/intro_90/decoded_samples/038.png",
+          "sha256": "30ed2915bf1ba421c65d22bdd4989c85ec1ad4d2c395aa8d45511371e8f0c442"
+        },
+        {
+          "second": 51,
+          "path": "assets/video/intro_90/decoded_samples/051.png",
+          "sha256": "fe1c4c63917abd96461d8b6e896693a218c16f30a296d0685bfab228a3f7bfae"
+        },
+        {
+          "second": 61,
+          "path": "assets/video/intro_90/decoded_samples/061.png",
+          "sha256": "29d6128d8bd36e0d917a62cc453dbf099b6bbe62e6fa0354939740262e7b1ceb"
+        },
+        {
+          "second": 71,
+          "path": "assets/video/intro_90/decoded_samples/071.png",
+          "sha256": "1e69b8ac8473c1f8dcbb7b4169165fd7d8a9d22ccf5882a9753f2d17e812f090"
+        },
+        {
+          "second": 85,
+          "path": "assets/video/intro_90/decoded_samples/085.png",
+          "sha256": "c0557a6a38ddc1daf154f13459c55accf792f3af3fba8bbdc8c99c7656901e5f"
+        }
+      ],
+      "review_method": "Decoded-container contact sheets inspected; 11s,169s,240s,357s long-video caption repairs separately viewed at full frame.",
+      "actual_visual_inspection": true,
+      "caption_alignment": "source budget only, no audio"
+    },
+    {
+      "container": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "samples": [
+        {
+          "second": 11,
+          "path": "assets/video/explainer_360/decoded_samples/011.png",
+          "sha256": "b2fc107fae6a6d5ea9ff3fd03773c11ba958e52fda9297805159d4f1026a8a34"
+        },
+        {
+          "second": 13,
+          "path": "assets/video/explainer_360/decoded_samples/013.png",
+          "sha256": "838a8a0cbac274a3471d99a07aa933610bb9b43a90453e0e99b968968d1869cd"
+        },
+        {
+          "second": 55,
+          "path": "assets/video/explainer_360/decoded_samples/055.png",
+          "sha256": "c667eae03c66b16bcabafc5bd8d5218299479a10940da169c43f76925849d169"
+        },
+        {
+          "second": 105,
+          "path": "assets/video/explainer_360/decoded_samples/105.png",
+          "sha256": "38d174259333e20fc3806d85d7dd59520dfcd85eb76188b9bf14ddbab4e43963"
+        },
+        {
+          "second": 145,
+          "path": "assets/video/explainer_360/decoded_samples/145.png",
+          "sha256": "5e2492afa6468a863cb6d635df9284214cd3e7888b0a5bfaf3d698ab861e52e3"
+        },
+        {
+          "second": 169,
+          "path": "assets/video/explainer_360/decoded_samples/169.png",
+          "sha256": "cb7db14b8c4a87a171fd6d285947b16b6ab79270a564a4b9dbaa9c9e464259d5"
+        },
+        {
+          "second": 200,
+          "path": "assets/video/explainer_360/decoded_samples/200.png",
+          "sha256": "efd86e0d306ba6414fc294e76147184fedc8d22df6f994ada7b55c67d29350cf"
+        },
+        {
+          "second": 230,
+          "path": "assets/video/explainer_360/decoded_samples/230.png",
+          "sha256": "0f6c25d41c735946e45ece8b7c9f8002046f1352aeb464d0f9e080048db38791"
+        },
+        {
+          "second": 240,
+          "path": "assets/video/explainer_360/decoded_samples/240.png",
+          "sha256": "2e61db707e19e3d2aad138b6a2dc9b7314fedabb5d5610a83a33a23084a567c7"
+        },
+        {
+          "second": 285,
+          "path": "assets/video/explainer_360/decoded_samples/285.png",
+          "sha256": "b0ad957539f7fcf57b50dada34b24b12babdebec26be3842020711de585d68c2"
+        },
+        {
+          "second": 320,
+          "path": "assets/video/explainer_360/decoded_samples/320.png",
+          "sha256": "ffedfd116a551533be0ba34cd8d22a43faea941cb5ceaa323b90524987395214"
+        },
+        {
+          "second": 345,
+          "path": "assets/video/explainer_360/decoded_samples/345.png",
+          "sha256": "0b33d2e7ec33560b24d8748787e648bd70416abc6011ffb0d2e5c20b9570b646"
+        },
+        {
+          "second": 357,
+          "path": "assets/video/explainer_360/decoded_samples/357.png",
+          "sha256": "1dc898f6ecaaefa85bcf23c29dc6036859c56092b4811cbd3e4cebfe1e34654c"
+        }
+      ],
+      "review_method": "Decoded-container contact sheets inspected; 11s,169s,240s,357s long-video caption repairs separately viewed at full frame.",
+      "actual_visual_inspection": true,
+      "caption_alignment": "source budget only, no audio"
+    }
+  ],
+  "resolved_findings": [
+    "Updated F06 route through action broker.",
+    "Fixed orphan/leading punctuation in captions.",
+    "Kept original complete synthetic-evidence prohibition within one cue."
+  ],
+  "independent_review": {
+    "path": "reports/independent_visual_qa_20261024/review.json",
+    "sha256": "5116426c721a030c3744ae65f539f860be4e65f7be87a62d15ba1d7eabae0c49",
+    "outcome": "all current container hashes agree; actual sampled frames and caption repairs rechecked"
+  }
+}

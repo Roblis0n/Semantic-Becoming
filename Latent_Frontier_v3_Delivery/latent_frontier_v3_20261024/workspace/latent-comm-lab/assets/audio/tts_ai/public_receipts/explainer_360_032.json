@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_032",
+  "edition": "explainer_360",
+  "scene_id": "S07",
+  "characters": 42,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "还有几条不必服从主流形态的方向。模型之间不一定要统一坐标，只要能保持操作的作用关系。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-25T15:05:39.451161+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 342487,
+    "duration_seconds": 7.766145124716553,
+    "sample_peak": 6250,
+    "sample_rms": 979.4293186888829,
+    "sha256": "f912756c1e3c79a0f4b478a39dbf3e8daaefc23230cd485a355f867b148b5755",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-25T15:06:13.675655+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

@@ -1,0 +1,49 @@
+{
+  "as_of_utc": "2026-10-24T18:46:00Z",
+  "purpose": "Local documentation snapshot; no new network/media/research action",
+  "source_files": [
+    {
+      "path": "assets/audio/tts_ai/authorization_status.json",
+      "sha256": "f1a03f9a579096d10f7710f5ff2c229d4c504876100f4198b39b5000bc7ee76e",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/authorization_status.json"
+    },
+    {
+      "path": "run_state/permission_events/tts_destination_disclosure_denial.json",
+      "sha256": "d515d01344507c72fa3f26b9666b54950219e3d407696ca8135d8aabb98144bc",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/tts_destination_disclosure_denial.json"
+    },
+    {
+      "path": "assets/video/intro_90/narrated_qa.json",
+      "sha256": "f3fd02495979a78eb592c1e80399b4066e4ad96b3ca44774d2e63b835df3b7f0",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/narrated_qa.json"
+    },
+    {
+      "path": "assets/video/intro_90/narrated_visual_review.json",
+      "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/narrated_visual_review.json"
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.assembly.json",
+      "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/intro_90.assembly.json"
+    }
+  ],
+  "facts": {
+    "short_narrated_seconds": 90.0,
+    "short_audio_created": true,
+    "aligned_cues": 14,
+    "long_narrated_complete": false,
+    "long_silent_draft_seconds": 360,
+    "accepted_jobs": 43,
+    "downloaded_wavs": 42,
+    "accepted_chars": 1261,
+    "credits_used": 0,
+    "accepted_remote_outcome_unknown_chars": 16,
+    "unsubmitted_chunks": 15,
+    "unsubmitted_chars": 493,
+    "all_external_tts_activity": "stopped",
+    "user_explicit_destination_payload_permission": "pending",
+    "auditory_review": "unperformed; independently blocked by verified unsupported audio input"
+  },
+  "private_recovery_references_included": false
+}

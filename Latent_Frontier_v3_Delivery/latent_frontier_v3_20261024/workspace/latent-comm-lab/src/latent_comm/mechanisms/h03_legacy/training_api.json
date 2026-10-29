@@ -1,0 +1,173 @@
+{
+  "schema_version": 3,
+  "id": "H03",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "forward_entry": "latent_comm.mechanisms.h03_legacy.adapter.mixture_sequence_logprob",
+  "forward_entries": {
+    "mixture_sequence_logprob": {
+      "entry": "latent_comm.mechanisms.h03_legacy.adapter.mixture_sequence_logprob",
+      "signature": "branch_logits, token_ids, token_mask, branch_log_weights, *, tokenizer_contracts",
+      "arguments": [
+        "branch_logits",
+        "token_ids",
+        "token_mask",
+        "branch_log_weights",
+        "tokenizer_contracts"
+      ]
+    },
+    "tensor_prefix_update": {
+      "entry": "latent_comm.mechanisms.h03_legacy.adapter.tensor_prefix_update",
+      "signature": "log_weights, token_logps",
+      "arguments": [
+        "log_weights",
+        "token_logps"
+      ]
+    },
+    "generate_branches": {
+      "entry": "latent_comm.mechanisms.h03_legacy.adapter.generate_branches",
+      "signature": "log_weights, branch_step, branch_generate, *, mode, max_steps, eos_id, tokenizer_contracts=()",
+      "arguments": [
+        "log_weights",
+        "branch_step",
+        "branch_generate",
+        "mode",
+        "max_steps",
+        "eos_id",
+        "tokenizer_contracts"
+      ]
+    },
+    "matched_branch_cost": {
+      "entry": "latent_comm.mechanisms.h03_legacy.adapter.matched_branch_cost",
+      "signature": "branch_states, target_states, assignment, matched_valid",
+      "arguments": [
+        "branch_states",
+        "target_states",
+        "assignment",
+        "matched_valid"
+      ]
+    }
+  },
+  "loss_entry": "latent_comm.mechanisms.h03_legacy.losses.tensor_losses",
+  "loss_signature": "sequence_logprob, sequence_valid, weights, calibration_target, calibration_valid, coverage_cost, coverage_valid",
+  "loss_input_bindings": {
+    "sequence_logprob": {
+      "producer": "mixture_sequence_logprob return",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "sequence_valid": {
+      "producer": "stage explicit boolean sequence_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    },
+    "weights": {
+      "producer": "branch_log_weights entering mixture_sequence_logprob",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "calibration_target": {
+      "producer": "SupervisionBatch.calibration_target; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "calibration_valid": {
+      "producer": "stage explicit boolean calibration_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    },
+    "coverage_cost": {
+      "producer": "matched_branch_cost return with fixed externally validated assignment",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "coverage_valid": {
+      "producer": "stage explicit boolean coverage_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    }
+  },
+  "loss_specs": [
+    {
+      "name": "mixture_nll",
+      "mathematical_definition": "-logsumexp_k(log pi_k + sum_t log p_kt)",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "sequence_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "requires_grad_inputs": [
+        "sequence_logprob"
+      ],
+      "stop_gradient_edges": [],
+      "estimator": "EXACT",
+      "normalization_units": "sequences"
+    },
+    {
+      "name": "calibration",
+      "mathematical_definition": "sum_k (pi_k-target_k)^2",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "calibration_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_writer"
+      ],
+      "requires_grad_inputs": [
+        "weights"
+      ],
+      "stop_gradient_edges": [
+        [
+          "calibration_target",
+          "target_or_return"
+        ]
+      ],
+      "estimator": "EXACT",
+      "normalization_units": "branches"
+    },
+    {
+      "name": "coverage",
+      "mathematical_definition": "minimum valid set assignment cost",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "coverage_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "mechanism_writer"
+      ],
+      "requires_grad_inputs": [
+        "coverage_cost"
+      ],
+      "stop_gradient_edges": [],
+      "estimator": "FIRST_ORDER",
+      "normalization_units": "matched branches (assignment fixed; matched distances pathwise)"
+    }
+  ],
+  "parameter_bindings": {
+    "mechanism_writer": [
+      "stage.branch_state_writer",
+      "stage.branch_log_weight_head"
+    ],
+    "mechanism_reader": [
+      "stage.branch_decoder_adapter"
+    ]
+  },
+  "stage_parameter_rule": "Bindings beginning stage. are constructed by the L-stage, not implicit model parameters. Each actual Parameter must be uniquely assigned to exactly one owner, including shared aliases. Unlisted base parameters stay frozen.",
+  "shared_training_engine": "latent_comm.learning.engine.train",
+  "stage_api": [
+    "parameter_groups()",
+    "frozen_parameters()",
+    "forward_roles(sender, receiver, maximum_unroll=...)",
+    "losses(output, SupervisionBatch)",
+    "loss_specs",
+    "versions",
+    "device"
+  ],
+  "input_contract": "RoleBatch projections only. Finite floating tensors including padding; exact mask shapes, valid class indices, and explicit typed applicability are required. Supervision is passed only to losses.",
+  "loss_selection": "Select named LossSpec terms, never total plus its components. Non-LossSpec return fields are diagnostics. External task_loss inputs are already masked/normalized with differentiable empty zero by the L-stage.",
+  "gradient_contract": "Freeze base parameters with requires_grad=False, not no_grad around receiver computation. Teacher targets only may be detached. A discrete sampled decision uses its live selected log probability; deterministic argmax does not impersonate a policy gradient.",
+  "tokenizer_contract": "No cross-tokenizer direct logit KL. Shared token-mixture losses require identical declared vocabulary; heterogeneous receivers use named common behavior coordinates.",
+  "execution": "All adapters and losses gate before tensor backend import. No neural test, model import, initialization, optimization or efficacy claim in this task."
+}

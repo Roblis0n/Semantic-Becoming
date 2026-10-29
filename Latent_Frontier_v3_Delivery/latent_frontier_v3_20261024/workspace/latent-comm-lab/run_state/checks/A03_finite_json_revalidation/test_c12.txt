@@ -1,0 +1,16 @@
+test_bound_versions (test_c12.C12Tests.test_bound_versions) ... ok
+test_observational_dependence (test_c12.C12Tests.test_observational_dependence) ... ok
+test_shared_noise_do_not_condition (test_c12.C12Tests.test_shared_noise_do_not_condition) ... ok
+test_uncompiled_intervention (test_c12.C12Tests.test_uncompiled_intervention) ... ok
+test_unit_mismatch (test_c12.C12Tests.test_unit_mismatch) ... ok
+test_unknown_noise (test_c12.C12Tests.test_unknown_noise) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.036s
+
+OK
+{
+  "selected": 6,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

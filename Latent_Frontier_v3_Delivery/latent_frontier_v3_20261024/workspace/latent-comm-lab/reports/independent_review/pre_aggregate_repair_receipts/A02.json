@@ -1,0 +1,518 @@
+{
+  "task_id": "A02",
+  "status": "done",
+  "input_digest": "8f97aac8027cd48583d04bc2c05fb92d1a9bdcb5c140a3f40456b37dba00d697",
+  "outputs": [
+    {
+      "path": "src/latent_comm/core/__init__.py",
+      "sha256": "2e8ad0d804e71cfc39cefbedb78436ba8e519dce07a9ae872a4c03f4d0e84ac1",
+      "bytes": 640
+    },
+    {
+      "path": "src/latent_comm/core/budgets.py",
+      "sha256": "ab6857bac17925b5a74d0e2caefde57e2da0d100f177b7493f41ad23d2a8fd1d",
+      "bytes": 2667
+    },
+    {
+      "path": "src/latent_comm/core/errors.py",
+      "sha256": "6e5ceabd79804cae80e2d54a1d996a89cd655c7546804373dae59941fa2a744e",
+      "bytes": 1389
+    },
+    {
+      "path": "src/latent_comm/core/finite.py",
+      "sha256": "1e8b77abc04622f44aecdc3325a50ed04faa827169e221b87409dbbf2c20af9b",
+      "bytes": 7555
+    },
+    {
+      "path": "src/latent_comm/core/learning.py",
+      "sha256": "f028a9f789d5de9ab4d0a9fc34bcae12b8df7e2a3d6210eb09681c372c49eb92",
+      "bytes": 3445
+    },
+    {
+      "path": "src/latent_comm/core/refs.py",
+      "sha256": "8805593f735b79bb82ee2355e0ae9dfe252d9c8ddc242d8296267b1b4bedd628",
+      "bytes": 6959
+    },
+    {
+      "path": "src/latent_comm/core/scopes.py",
+      "sha256": "de5e6bea63b7f7a6ffeafb8a0a29fbb25900fff62758e40f4805c2c53f2dcfdd",
+      "bytes": 2720
+    },
+    {
+      "path": "src/latent_comm/core/shapes.py",
+      "sha256": "8bc9f5c40ad0c44d20c96b627be72a5b4d2a44f74f4ad773dc07d2db4ba58f59",
+      "bytes": 1966
+    },
+    {
+      "path": "src/latent_comm/core/types.py",
+      "sha256": "219764187e0a5e47b0ab4856a550ab9d5e2abfe7bee85ac1b348c5effe20c6ee",
+      "bytes": 2809
+    },
+    {
+      "path": "src/latent_comm/core/versions.py",
+      "sha256": "562e1688b277d2a8a232f1ead2c5df23bd1a3fa1d24a7830b5da48096733a8dc",
+      "bytes": 1859
+    },
+    {
+      "path": "src/latent_comm/core/views.py",
+      "sha256": "769bd5510b6cdf4fa2806b497b5068189fa29dfcf17de0035216b69282eca844",
+      "bytes": 3254
+    },
+    {
+      "path": "src/latent_comm/packets/__init__.py",
+      "sha256": "6ec4efbe3db2e7b9339defcd39df861c3304181a3e5070bb7816f5b011cc3c25",
+      "bytes": 237
+    },
+    {
+      "path": "src/latent_comm/packets/envelope.py",
+      "sha256": "e315bb1ae8b0cc6f798638d7ffb03f0f9c53e41fb3a47bed41d47ef5aa203c21",
+      "bytes": 2041
+    },
+    {
+      "path": "src/latent_comm/packets/migrations.py",
+      "sha256": "bf1846357749938c7590f21fa84041d398e9994667bb17aed4f4da8b5100a4fc",
+      "bytes": 2446
+    },
+    {
+      "path": "src/latent_comm/packets/schema.py",
+      "sha256": "46b6abf6a61101cbc94ce45bcd9712757afe3a618e1b651ccdfaa8c7eb05e8eb",
+      "bytes": 5283
+    },
+    {
+      "path": "src/latent_comm/packets/storage.py",
+      "sha256": "59b5e84b46113d9a49c94a1947e0521be95884d79a7f38955da83b3ea0487fe2",
+      "bytes": 1867
+    },
+    {
+      "path": "specs/runtime_schemas/frontier_packet.schema.json",
+      "sha256": "d7cc8835d5e8454d04641f30cfa4f01f49a5be1c95d8f44d923e53c94fd2a980",
+      "bytes": 28531
+    },
+    {
+      "path": "specs/runtime_schemas/semantic_validation.json",
+      "sha256": "7363a6bfa9476b39300797405e0e337c2bd18c0b38398ec4a7ac6ec0cd5b71a1",
+      "bytes": 856
+    },
+    {
+      "path": "specs/legacy_alias_ownership.json",
+      "sha256": "481c2b8f520ef3ef19eb8cd62631e7a44b0f5abca4d4d8dc198f73dcb6d9b660",
+      "bytes": 29908
+    },
+    {
+      "path": "src/latent_comm/operators/low_rank.py",
+      "sha256": "cf902829f6d095eba9938213c8c30179a660be9103ea6525e25ddf1dfdb6400b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/operators/composition.py",
+      "sha256": "cf902829f6d095eba9938213c8c30179a660be9103ea6525e25ddf1dfdb6400b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/bridges/operator_generator.py",
+      "sha256": "cf902829f6d095eba9938213c8c30179a660be9103ea6525e25ddf1dfdb6400b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/responses/low_rank_jet.py",
+      "sha256": "b85b508d1db0cc15560b8a34df27b33f4e705121b43f405c0a9ab7b6162b056f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/responses/finite_difference.py",
+      "sha256": "b85b508d1db0cc15560b8a34df27b33f4e705121b43f405c0a9ab7b6162b056f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/responses/trust_region.py",
+      "sha256": "b85b508d1db0cc15560b8a34df27b33f4e705121b43f405c0a9ab7b6162b056f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/beliefs/packet.py",
+      "sha256": "5b807aacda69119c985e3903be40f5f5e102ab6e7704a0b72969982b59253047",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/beliefs/mixture.py",
+      "sha256": "5b807aacda69119c985e3903be40f5f5e102ab6e7704a0b72969982b59253047",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/beliefs/update.py",
+      "sha256": "5b807aacda69119c985e3903be40f5f5e102ab6e7704a0b72969982b59253047",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/beliefs/matching.py",
+      "sha256": "5b807aacda69119c985e3903be40f5f5e102ab6e7704a0b72969982b59253047",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/fields/constraints.py",
+      "sha256": "d4f9f6148f80563f5b01a65090d36e0f6a8b191635d4e015ce3fc9c8c5a71aef",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/fields/solver.py",
+      "sha256": "d4f9f6148f80563f5b01a65090d36e0f6a8b191635d4e015ce3fc9c8c5a71aef",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/fields/conflicts.py",
+      "sha256": "d4f9f6148f80563f5b01a65090d36e0f6a8b191635d4e015ce3fc9c8c5a71aef",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/fields/readwrite.py",
+      "sha256": "d4f9f6148f80563f5b01a65090d36e0f6a8b191635d4e015ce3fc9c8c5a71aef",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/continuations/capture.py",
+      "sha256": "86cdae500aaf803c50b5cd9cf865e7b2073dc39d2504e369e12786967f2c8e9f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/continuations/translate.py",
+      "sha256": "86cdae500aaf803c50b5cd9cf865e7b2073dc39d2504e369e12786967f2c8e9f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/continuations/resume.py",
+      "sha256": "86cdae500aaf803c50b5cd9cf865e7b2073dc39d2504e369e12786967f2c8e9f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/continuations/ledger.py",
+      "sha256": "86cdae500aaf803c50b5cd9cf865e7b2073dc39d2504e369e12786967f2c8e9f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/atlas/charts.py",
+      "sha256": "410856bf907ed11966258c44a0d307b5c8bedd1cbc7c13acd62fcb5ca488f233",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/atlas/routing.py",
+      "sha256": "410856bf907ed11966258c44a0d307b5c8bedd1cbc7c13acd62fcb5ca488f233",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/atlas/transitions.py",
+      "sha256": "410856bf907ed11966258c44a0d307b5c8bedd1cbc7c13acd62fcb5ca488f233",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/atlas/objectives.py",
+      "sha256": "410856bf907ed11966258c44a0d307b5c8bedd1cbc7c13acd62fcb5ca488f233",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/ir/types.py",
+      "sha256": "8729accf9c9307a1d3701cf376143e169fcd41938b403c8026e145b7d4c80299",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/ir/parser.py",
+      "sha256": "8729accf9c9307a1d3701cf376143e169fcd41938b403c8026e145b7d4c80299",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/ir/compiler.py",
+      "sha256": "8729accf9c9307a1d3701cf376143e169fcd41938b403c8026e145b7d4c80299",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/ir/runtime.py",
+      "sha256": "8729accf9c9307a1d3701cf376143e169fcd41938b403c8026e145b7d4c80299",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/relations/packet.py",
+      "sha256": "c691fab2ef3a56ccde6c03f0285fe250c9ccd81ffb2e96a60ecdee473db57c0f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/relations/matching.py",
+      "sha256": "c691fab2ef3a56ccde6c03f0285fe250c9ccd81ffb2e96a60ecdee473db57c0f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/relations/exchange.py",
+      "sha256": "c691fab2ef3a56ccde6c03f0285fe250c9ccd81ffb2e96a60ecdee473db57c0f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/interventions/scm.py",
+      "sha256": "4102cd51305a0c37e9b8b1efe0501620168b4a656c09b92cd2d3e8af96ea98fe",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/interventions/algebra.py",
+      "sha256": "4102cd51305a0c37e9b8b1efe0501620168b4a656c09b92cd2d3e8af96ea98fe",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/interventions/transport.py",
+      "sha256": "4102cd51305a0c37e9b8b1efe0501620168b4a656c09b92cd2d3e8af96ea98fe",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/synergy/hypergraph.py",
+      "sha256": "638c824693849ab5ab6e0ba7d2c0a5bf018a95d64c68c65543b97f5945bfce85",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/synergy/interactions.py",
+      "sha256": "638c824693849ab5ab6e0ba7d2c0a5bf018a95d64c68c65543b97f5945bfce85",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/synergy/composer.py",
+      "sha256": "638c824693849ab5ab6e0ba7d2c0a5bf018a95d64c68c65543b97f5945bfce85",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/coding/progressive.py",
+      "sha256": "96d7480bb38fc8c09c8adc7e4d9b6c54ef751634c89be18d67ff0cd6c2740223",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/coding/quantization.py",
+      "sha256": "96d7480bb38fc8c09c8adc7e4d9b6c54ef751634c89be18d67ff0cd6c2740223",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/coding/requests.py",
+      "sha256": "96d7480bb38fc8c09c8adc7e4d9b6c54ef751634c89be18d67ff0cd6c2740223",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/capsules/store.py",
+      "sha256": "44271528e84ad5a88e7c7e9d64433a333a34bee9b2fabd6c863bea034e9af8a0",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/capsules/reader.py",
+      "sha256": "44271528e84ad5a88e7c7e9d64433a333a34bee9b2fabd6c863bea034e9af8a0",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/capsules/versioning.py",
+      "sha256": "44271528e84ad5a88e7c7e9d64433a333a34bee9b2fabd6c863bea034e9af8a0",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/branching/fork.py",
+      "sha256": "a32a05739c1addaa853196c7de4e959383683bd24172e9ca74e55bede679e4f9",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/branching/merge.py",
+      "sha256": "a32a05739c1addaa853196c7de4e959383683bd24172e9ca74e55bede679e4f9",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/branching/ancestry.py",
+      "sha256": "a32a05739c1addaa853196c7de4e959383683bd24172e9ca74e55bede679e4f9",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/grammar/productions.py",
+      "sha256": "1db219166ddc69bb0edd0886438e136d6a3a60bb56cc2808b4c9d20d2bdfc774",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/grammar/bindings.py",
+      "sha256": "1db219166ddc69bb0edd0886438e136d6a3a60bb56cc2808b4c9d20d2bdfc774",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/grammar/expansion.py",
+      "sha256": "1db219166ddc69bb0edd0886438e136d6a3a60bb56cc2808b4c9d20d2bdfc774",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/population/pair_sampler.py",
+      "sha256": "a4da7363fb64a3bfeaa37bfd7296330de47f6c9f5558f6d0ef24e82b95de763f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/population/protocol_objectives.py",
+      "sha256": "a4da7363fb64a3bfeaa37bfd7296330de47f6c9f5558f6d0ef24e82b95de763f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/population/adapter_registry.py",
+      "sha256": "a4da7363fb64a3bfeaa37bfd7296330de47f6c9f5558f6d0ef24e82b95de763f",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/hybrid/symbols.py",
+      "sha256": "cbe9799e38dcc3a2723de5e6ce830f75436a503ba010b2c1f52cd72aef3ed61b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/hybrid/bindings.py",
+      "sha256": "cbe9799e38dcc3a2723de5e6ce830f75436a503ba010b2c1f52cd72aef3ed61b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/hybrid/fusion.py",
+      "sha256": "cbe9799e38dcc3a2723de5e6ce830f75436a503ba010b2c1f52cd72aef3ed61b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/grounding/frames.py",
+      "sha256": "f9627161b9377fbad561f7ab792bb266d06beed0c72502a354d1fc2915e7fac8",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/grounding/transform.py",
+      "sha256": "f9627161b9377fbad561f7ab792bb266d06beed0c72502a354d1fc2915e7fac8",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/grounding/action_effects.py",
+      "sha256": "f9627161b9377fbad561f7ab792bb266d06beed0c72502a354d1fc2915e7fac8",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/topology/candidates.py",
+      "sha256": "4ad8f7a5ed4be66f9851fd12391c2f14d32fbf83ae52d0032f11f98960673b0b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/topology/controller.py",
+      "sha256": "4ad8f7a5ed4be66f9851fd12391c2f14d32fbf83ae52d0032f11f98960673b0b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/topology/compiler.py",
+      "sha256": "4ad8f7a5ed4be66f9851fd12391c2f14d32fbf83ae52d0032f11f98960673b0b",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/consolidation/teacher.py",
+      "sha256": "329dd96d7a03ef78b16b65299841bca780f2d3e2747a4ec1ea5a8b8c96d28f63",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/consolidation/adapter_builder.py",
+      "sha256": "329dd96d7a03ef78b16b65299841bca780f2d3e2747a4ec1ea5a8b8c96d28f63",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/consolidation/distillation.py",
+      "sha256": "329dd96d7a03ef78b16b65299841bca780f2d3e2747a4ec1ea5a8b8c96d28f63",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/clocks/events.py",
+      "sha256": "bd00e30c95ea967900d9e2ac54b3ff038672c803eb842f1ff21dcc0fed87ee52",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/clocks/scheduler.py",
+      "sha256": "bd00e30c95ea967900d9e2ac54b3ff038672c803eb842f1ff21dcc0fed87ee52",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/clocks/staleness.py",
+      "sha256": "bd00e30c95ea967900d9e2ac54b3ff038672c803eb842f1ff21dcc0fed87ee52",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/portfolios/tree.py",
+      "sha256": "a628c01248c4748da31d2747f7adeeebdcce0fdd60707865336c4d9776bf70ca",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/portfolios/selector.py",
+      "sha256": "a628c01248c4748da31d2747f7adeeebdcce0fdd60707865336c4d9776bf70ca",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/portfolios/reuse.py",
+      "sha256": "a628c01248c4748da31d2747f7adeeebdcce0fdd60707865336c4d9776bf70ca",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/elastic/partition.py",
+      "sha256": "1ec8e7c6183241ff4b4061a8db1eb535c51a6363de16cd567d1e96bdc0c21214",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/elastic/transitions.py",
+      "sha256": "1ec8e7c6183241ff4b4061a8db1eb535c51a6363de16cd567d1e96bdc0c21214",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/elastic/controller.py",
+      "sha256": "1ec8e7c6183241ff4b4061a8db1eb535c51a6363de16cd567d1e96bdc0c21214",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/repair/diagnostics.py",
+      "sha256": "8794f7dc9b4a1b6278cfd9b5e9674fa60b87b4d2982f0a08843974af26515751",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/repair/residual.py",
+      "sha256": "8794f7dc9b4a1b6278cfd9b5e9674fa60b87b4d2982f0a08843974af26515751",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/repair/protocol.py",
+      "sha256": "8794f7dc9b4a1b6278cfd9b5e9674fa60b87b4d2982f0a08843974af26515751",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/capabilities/scopes.py",
+      "sha256": "893a129bf869ea1349c6edcac0746203091e1ba098a55691f419ea291e2ec184",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/capabilities/enforcer.py",
+      "sha256": "893a129bf869ea1349c6edcac0746203091e1ba098a55691f419ea291e2ec184",
+      "bytes": 571
+    },
+    {
+      "path": "src/latent_comm/capabilities/effects.py",
+      "sha256": "893a129bf869ea1349c6edcac0746203091e1ba098a55691f419ea291e2ec184",
+      "bytes": 571
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A02_contracts.txt",
+      "sha256": "1a8295d51e387f74bab571ede8c82a857a270294f636c4a06ff2a9a4a286f060"
+    },
+    {
+      "path": "run_state/checks/A02_static.json",
+      "sha256": "2452f7791edfc7507256f5dd5690e774953b5f493d3ebbdad7af0439801e356d"
+    },
+    {
+      "path": "run_state/checks/A02_review_repairs.json",
+      "sha256": "873e85735022fe3a1ebd895b314d86f55d8f58dd838329cc504b87f7310ee966"
+    },
+    {
+      "path": "tests/contracts/test_core.py",
+      "sha256": "8c81ba461095cfe57a79252fc35c84013366b292b9f97f46b29f5417994044e7"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/A02_test_core.txt",
+      "sha256": "87dcaf5cff69ccf03cefa303c1d525c104160971a863bb4584d0985ed82fde0a"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "34 current stdlib tests pass, including exact mutation variant. Recursive versions and role payload/ref completeness checked at resolution; live identity retained. Future budgets separate. NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:33.912309+00:00"
+}

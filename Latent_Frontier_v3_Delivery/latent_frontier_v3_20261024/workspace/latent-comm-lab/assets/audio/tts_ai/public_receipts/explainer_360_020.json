@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_020",
+  "edition": "explainer_360",
+  "scene_id": "S04",
+  "characters": 17,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "不说明真实模型已经实现了这种运输。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:33:36.321271+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 135325,
+    "duration_seconds": 3.06859410430839,
+    "sample_peak": 10226,
+    "sample_rms": 2138.865530486269,
+    "sha256": "846753aaf581fa0c78af4fa51ebbce2c86cdd4a450a6534e1a8aacc0aaf99c77",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:34:10.771884+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

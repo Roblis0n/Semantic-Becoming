@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_036",
+  "edition": "explainer_360",
+  "scene_id": "S08",
+  "characters": 41,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "计划保留原来的二十四项机制，并新增二十四项，组织成二十条组合路线和十二个远期方向。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-27T10:47:09.967660+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 318266,
+    "duration_seconds": 7.216916099773242,
+    "sample_peak": 19583,
+    "sample_rms": 2162.60526459756,
+    "sha256": "2d772fcf0e32ce577314734155db00a9f1bff6bf949c1ad230e42d2ae95de61f",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-27T10:47:59.835787+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

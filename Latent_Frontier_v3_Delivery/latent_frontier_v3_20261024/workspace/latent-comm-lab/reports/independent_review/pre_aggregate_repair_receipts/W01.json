@@ -1,0 +1,55 @@
+{
+  "task_id": "W01",
+  "status": "done",
+  "input_digest": "c976fd8046e2d547dc568f30000d5e19682e523bbd1294ef0e56b2a5b8b28243",
+  "outputs": [
+    {
+      "path": "src/latent_comm/worlds/matrix_frames/__init__.py",
+      "sha256": "fb0745241e2df26b426d95567cb347497b5caab1f7704c05aae6913e51596bd5",
+      "bytes": 224
+    },
+    {
+      "path": "src/latent_comm/worlds/matrix_frames/generator.py",
+      "sha256": "90606be6bdf39d952ed15cc390dc3af3f4e4704338054d1455fa3b28ea8f98de",
+      "bytes": 2129
+    },
+    {
+      "path": "src/latent_comm/worlds/matrix_frames/pipeline.py",
+      "sha256": "2a7cbf79adddcce9fff0bda424d2ab6b838ed701aca587e2163c06b2154d9a0e",
+      "bytes": 1863
+    },
+    {
+      "path": "configs/worlds/matrix_frames.json",
+      "sha256": "008a34cc3077dfeb481e25eff7bd1e488e15f4be927bb7dff34fd3b9f43e9eeb",
+      "bytes": 580
+    },
+    {
+      "path": "tests/data/test_matrix_frames.py",
+      "sha256": "970b0314a8580bcc6811370adf7e4f53abce3d583c811eb1eae1e50b7f06d2c5",
+      "bytes": 871
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/W_matrix_frames.txt",
+      "sha256": "2dde2531677e6e839804eed0da14170ff6ad7ca59914ddab7c6c102366de317d"
+    },
+    {
+      "path": "run_state/checks/W_worlds_static.json",
+      "sha256": "10dd726945aa690ca5320a3d268b5ba4c928536a8ff6888f76b304ba62c7b9b6"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/W01_test_matrix_frames.txt",
+      "sha256": "2dde2531677e6e839804eed0da14170ff6ad7ca59914ddab7c6c102366de317d"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three dedicated finite-world contracts pass. Structural partition precedes sampling; role projection and resume sources present. Bulk data generation and all model research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:34.246905+00:00"
+}

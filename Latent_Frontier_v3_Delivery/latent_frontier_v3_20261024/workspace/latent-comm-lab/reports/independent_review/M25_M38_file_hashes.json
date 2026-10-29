@@ -1,0 +1,680 @@
+{
+  "reviewed_at_utc": "2026-10-24T16:23:43.498000+00:00",
+  "scope": "M25-M38 focused mechanism source; not whole-project acceptance",
+  "work_root": "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab",
+  "research_state": "NOT_RUN",
+  "receipts": [
+    {
+      "task": "M25",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "b3b1ce5934c6e9c6095c02ddc9369d2a909c2c4eab775afa508f7a96c10ab9f9",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/README.md",
+          "sha256": "e8bd60218576b6325e3818c2c9bce9fee058f097bbfdd2672cd5e84c935a0469"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/__init__.py",
+          "sha256": "77bd74fd89031ea109b50ac79a0b4ad7deac8168b380ede6e49e3ca42b8bda44"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/adapter.py",
+          "sha256": "ee7a7853f093c65fe9fb46dd63ccf9cc82450303a846137870486049b4c07583"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/losses.py",
+          "sha256": "44bb9fc6c53fa8ec52eff0f7e7a85da919cfd24ff458928794ee7573fd183286"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/reference.py",
+          "sha256": "5a85d577afba9fdec107064ea9ae037ae7c4420e65dd95e164b9aab6439a49aa"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/schema.json",
+          "sha256": "aea8c57a636edc96cb7443c0c15e8256103722df6d8e7ab70731cfee7e6d7988"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/serialization.py",
+          "sha256": "6d5d44609ff2167767d67704a9535bfa85c1cf9067a11c5d766c08218b2ec119"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h25_gauge/types.py",
+          "sha256": "c515aef9b2f37e0baef4a70d85a38be6cf2b1a332165af104587a4298dea9f8f"
+        },
+        {
+          "path": "tests/contracts/test_h25.py",
+          "sha256": "56af84b005ef58911b724800b6c3a9a4ed0c50bcf55f62e98c0cbcf1133dc4bb"
+        },
+        {
+          "path": "configs/mechanisms/H25.json",
+          "sha256": "2bee0896f2ac3f9ff95b96d4301ca9c307957f90221651b1e5895bc1011f09e2"
+        }
+      ]
+    },
+    {
+      "task": "M26",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "a764f0bd5f3037dc7743848afc797ed43079618cddae7c2f8adb9b521c7fcd96",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/README.md",
+          "sha256": "d9495b9a6aa5ba161b8eb5b027d65303998bb5b6091467a85fbd7a96493a1710"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/__init__.py",
+          "sha256": "c65d3982c26814c65960837151c3a6f9843322285f6e95323d94b4924ea4210f"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/adapter.py",
+          "sha256": "f1295e9bebdfcd1956fce07589ff34d6f84c56f782103d16979791b386f997ce"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/losses.py",
+          "sha256": "012ff1e20c053d57ca1c0bb8f464a92fd2ff90dd4c875db19f9ddaed9093ddf4"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/reference.py",
+          "sha256": "dc1376d0ca0cdb56092194563b0972357ffbcda459ddd69bc839a11e50dee858"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/schema.json",
+          "sha256": "150ef5547f4df44d1ded3b533f1b1a5962aa7d9f24e9e901f9a16827367c5e63"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/serialization.py",
+          "sha256": "ba5f6a52b09ceac941dda680f1c0d882a875981aabcc23ba1de4cd577e13966e"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h26_sheaf/types.py",
+          "sha256": "41403c3ff0aecb7bd0b6f073459385be7c6c2eb1a0481eb546d0a8c1b6d4d31c"
+        },
+        {
+          "path": "tests/contracts/test_h26.py",
+          "sha256": "a26cd6bd5827f68c1274946cffa207485308d982541e902d6633fd1c527f3356"
+        },
+        {
+          "path": "configs/mechanisms/H26.json",
+          "sha256": "826b4e2f95ad0791e2fb750a80f3e9dc17746a7132132661963ff03fd9566aa9"
+        }
+      ]
+    },
+    {
+      "task": "M27",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "86a3ae5839d0b37726525336c0b4906a18adde09bca80855f9e8e28c7037143c",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/README.md",
+          "sha256": "a939bf2120d10dface80ebff65dfdfe2e1b60ac9d069efd202a3952a7cc20049"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/__init__.py",
+          "sha256": "ef88cac3e2dfdb04fe82ef0acc6b155eb921125819405cf642836b32c6b92bc3"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/adapter.py",
+          "sha256": "a1fab636e20bf207fc11a3c5e07282ee0340304635c3655051839f7b758a1332"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/losses.py",
+          "sha256": "68908533d9d3863360c4ce5b7d106643a51fe291d07d629f138be9a33442fdfd"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/reference.py",
+          "sha256": "d43a465d0e30a3ac842e0afe5f7dd4835eab9343c258a928f7a4c7be22bca085"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/schema.json",
+          "sha256": "c5557feda889425714677227af78d495172120794e85726a3b4c25577064bcb2"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/serialization.py",
+          "sha256": "b96729227ba2016baf5604dd329d2655858573eeff2058c212544d555f24516d"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h27_ontology/types.py",
+          "sha256": "c425acf8ed9160da189d24f8f32694a22963e8994f54a5a4dd5f19c34b2176f7"
+        },
+        {
+          "path": "tests/contracts/test_h27.py",
+          "sha256": "0c5416a6b14eda9b5e2a7db5b65e332f49ee198dcbfcef117aa3a641c85d6964"
+        },
+        {
+          "path": "configs/mechanisms/H27.json",
+          "sha256": "5eebd187e0352302c0d60e55f6ccf9e079a26c01bbb9972ccc96fbb7a5db9196"
+        }
+      ]
+    },
+    {
+      "task": "M28",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "68c388762ad5ae6a07adcacba99b312b2033676ec2ee61dc3d6f6aeb39419012",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/README.md",
+          "sha256": "04ae092704bc56056bbf954c186e472c24e6453f222668458bf5d2ce8f29fb2f"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/__init__.py",
+          "sha256": "eae887718179e01cd729c6300062d3868469f3baa8eade95ec97951caa64c491"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/adapter.py",
+          "sha256": "a9455601062dc7b81707bde72d0dcea72cbcccd54a168a97c16f10dcbb06ecc0"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/losses.py",
+          "sha256": "131975a8c349921b057203b89ba9943d78ea3d0f63b301e03fc45d915f95cb36"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/reference.py",
+          "sha256": "31aea05dcbca2b311f3be0cac7e8bfb4bd3234cca6fc71cf8d4916bb1dfa789e"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/schema.json",
+          "sha256": "d93132c39b57b4db51ef24dd1a63ab833b240fba3070251621b62523ac125c8c"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/serialization.py",
+          "sha256": "21798ab7ff91432a77e9ed420b5e3cc603836e07c140515de7ef1242c67a9b3e"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h28_bifurcation/types.py",
+          "sha256": "ae4c5f68bf57202c5e36ff38e0b0dba0438fdf88e4be623212c1ffcfa7de5355"
+        },
+        {
+          "path": "tests/contracts/test_h28.py",
+          "sha256": "5446775c329e4cbf949858b2161df6728a5ec04aeba061a060974eb8937c29e2"
+        },
+        {
+          "path": "configs/mechanisms/H28.json",
+          "sha256": "96766862eab348a215f3cbb74ea635cbf4f4c035ead1563d1903117f06d263c7"
+        }
+      ]
+    },
+    {
+      "task": "M29",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "1b7f82e374bf0cc738c8c7d187955f07296b9ad373c7e65508869be0bcd445e6",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/README.md",
+          "sha256": "58eea73480ebbef0fcbd3a02aacaa0a3801e43b139f28706f8efc55a0a176279"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/__init__.py",
+          "sha256": "6291ea6a1e2ca4562c09feabff83f00a66af3d6baafc58a02a556b78d9f4c983"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/adapter.py",
+          "sha256": "a4f7ca505702db374aace7ac34c2315e9f79f4e9e5291fb3bee7451eaf526b95"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/losses.py",
+          "sha256": "1f38deeb99d735b5d59b81eaf388e693b2e134bd2d3c07e2c49dde37cf3c8329"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/reference.py",
+          "sha256": "62c442bf67290bdecb46fac75e8f0787571cad331d52f43db627a1434268ed03"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/schema.json",
+          "sha256": "a4ff743abdb085f58009f626d642c53a4bbb79854218195d2b1c9f6bc750f88f"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/serialization.py",
+          "sha256": "9ba1bc0d765f93f848ce7fe67eccfcaa79d61be70875bc77724d8a79574cd476"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h29_questions/types.py",
+          "sha256": "da157f83b11040e007e752c4a90765ba4010bdb06ac2a26d1558f8a8edb306ca"
+        },
+        {
+          "path": "tests/contracts/test_h29.py",
+          "sha256": "04716c2a88b3a13dfa73afe07125b191651c4d54bb16a2e812585af5cdaaa0e1"
+        },
+        {
+          "path": "configs/mechanisms/H29.json",
+          "sha256": "6bef836f0743f123e7487a97073b33496cde301574c2d9110601d94993f1ffe7"
+        }
+      ]
+    },
+    {
+      "task": "M30",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "513a73d8ad6292727e2bdaac76562030b885ecc1411f98506ffe86101e374d3f",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/README.md",
+          "sha256": "6c1368725447116a72de0aa5ca7150a4b61653145b25c8463ac27aaf9c122399"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/__init__.py",
+          "sha256": "eac43eb8b7d5152797631d80f328dd975ddbb84cf09327215cffe0c8e2dfeec3"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/adapter.py",
+          "sha256": "c0b54cf0219ba4620dac2fbab72097b7308d85b4d144f49a2d172613461bef56"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/losses.py",
+          "sha256": "9067925d3df28623c6597d4cf5123490a576752afa516d9f3998be618a37cc40"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/reference.py",
+          "sha256": "5ed21eecbd508cd0465be328a8741a8f7cc37d68e12f92557d248d509eb74d78"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/schema.json",
+          "sha256": "89aa4ce8ead398b72144073625266aba8ef9b1d9a204801f81ceff1b48555f7b"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/serialization.py",
+          "sha256": "f7aed30e763d819378b8eb53a55eed31765c50219891dc2fe59829106e15f9b3"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h30_analogy/types.py",
+          "sha256": "3f10bf14e025b882177007580a3b5ec7b0419e0795b4bc101ba0b25a1d271137"
+        },
+        {
+          "path": "tests/contracts/test_h30.py",
+          "sha256": "b38e8fa8e854a492729f9580626aef0cd06acfeee177d558b4c9e263337057d7"
+        },
+        {
+          "path": "configs/mechanisms/H30.json",
+          "sha256": "d67df3fca99f376d361e1f56685f7474d8332ac138832c63a1ceb58a72d8be8d"
+        }
+      ]
+    },
+    {
+      "task": "M31",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "65c919d68f91f1abca6b88a13841fee1f2b5fc93e28d28cc1ac8635869814a1a",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/README.md",
+          "sha256": "3e1e71d4271e95d62831b432d5eb50a021c3b2c5d7405757d5e6f43716069a08"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/__init__.py",
+          "sha256": "ef610582e1484a4573146c634b2bdcb9e48b059115d5f8acfc4c35aeb5a6105e"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/adapter.py",
+          "sha256": "a9b794ad716ac9a3f507ff94141620a1379b60641622c6481acfa897d2b85715"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/losses.py",
+          "sha256": "96896ca8ca0aef5ad877749d698082ce981f0a0b2aa8a9bb41be2228e36f38b9"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/reference.py",
+          "sha256": "b2ef7ab98f4ac5f39d46be80c4c84633ff479fd6339f8821de4805d643c65ab0"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/schema.json",
+          "sha256": "d2eeb10ae3bea0fe3e42843b36882fcf2557675cf72b7079c0bba3ea68885375"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/serialization.py",
+          "sha256": "389fff4f1d14b61ee060a316fc51c7c72571ec757efc962db342b53b916812a2"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h31_grafting/types.py",
+          "sha256": "c970cb76c4ab6ca9a8a9ef183c385c9f3cac111c120bcd02d7151b7caff945ce"
+        },
+        {
+          "path": "tests/contracts/test_h31.py",
+          "sha256": "137f57d91b929a2f1327e0375ed7b413a0f0f4c86aa0eef97f10f6abd5506f13"
+        },
+        {
+          "path": "configs/mechanisms/H31.json",
+          "sha256": "681ce5552063c79569a3d1fbbdf3d246f05461891f92a1a965d5d86cc1c34191"
+        }
+      ]
+    },
+    {
+      "task": "M32",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "4471aeb212576257822897f0408850271e03e498b03928bedf8c83ea1cc40cc6",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/README.md",
+          "sha256": "01ac48545ab02cf5c8c4d7beae5154bf54d043a245583095d9a30d58e4f20cb2"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/__init__.py",
+          "sha256": "37b44844d3e68ef57894208f97729d91766a8c2f5265e67057b2f551d01d1e5a"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/adapter.py",
+          "sha256": "343773dc07d91f646d6d9f5dc71a7a532f7fad6e40cd38c32db2de4d339d6a65"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/losses.py",
+          "sha256": "8131715002d527b5e0f4a3d3b7f7c5f67fbf98464ed188fe73b03b686ccbb207"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/reference.py",
+          "sha256": "18f4af69a3e7491276a18296f2b78309105a6ff40cdc14987c2a266f0f4b818d"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/schema.json",
+          "sha256": "ea634c3bdda5aa24ec5089a00d70eb5001deed78d67ab38e0247d1a5460769ca"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/serialization.py",
+          "sha256": "6e99b6f0f64dec7fd352ed2f1fcd7b69057330e70305a2e7747bf6e6f44a47d7"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h32_perspective/types.py",
+          "sha256": "3ea60c7ee24fca8dc6bbbeb4514e6e57b272b89695e403afc03ea116d7b917b2"
+        },
+        {
+          "path": "tests/contracts/test_h32.py",
+          "sha256": "965902f159077375dd241cb7c14c019c7bb7e72dc6322518d281909694450e07"
+        },
+        {
+          "path": "configs/mechanisms/H32.json",
+          "sha256": "e4f199ee63cfaaf4834365f536fb377252020c3bdd493881c5e5a6422bf157da"
+        }
+      ]
+    },
+    {
+      "task": "M33",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "f19000afe7736368a85309e9af9891782b26140fa93b6d23e698d18d898f5b56",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/README.md",
+          "sha256": "f2ab7d8b4ddad9479fb7c400ed4225ba067c72138c3314f125c15f8209c1c130"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/__init__.py",
+          "sha256": "03fb730daab2f3e94bd80a26496fa78c925a42d6236fb792b277869e4805bfd6"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/adapter.py",
+          "sha256": "ff051bd5823525700e126ca57483fcbcfc7db53514885e3fad1f706c47f38645"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/losses.py",
+          "sha256": "8fd4b5e24f0135761c41b252b1d27d1d46595e8d833cafe47001aba4d9fefc71"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/reference.py",
+          "sha256": "696e9aba3423ed2a9ee54616046a23c20ebbbd80689d6c20f4c4dd95a7a26063"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/schema.json",
+          "sha256": "0c64299cf21367b79a8104e02b400ec49235f377f16c479ecd7deff02d95f916"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/serialization.py",
+          "sha256": "6c306a0b4a713077d29ef8f41c48bb725697d7816e366d14d4d44628461043ce"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h33_reciprocal/types.py",
+          "sha256": "133c69e5815be55676a0a55b72d7d007ebc193613472133729dcd1e518b8dcb9"
+        },
+        {
+          "path": "tests/contracts/test_h33.py",
+          "sha256": "102f058720f8a5647eaf95521caad4da93f9710c8246614d57fb415c79544265"
+        },
+        {
+          "path": "configs/mechanisms/H33.json",
+          "sha256": "7209c5eb38c6ef6230b0c706746fb665b2fd09588bfce19956d31a24f60c874d"
+        }
+      ]
+    },
+    {
+      "task": "M34",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "15987e73818f6d8599c9390d3ef99c975533d7f6c88b82f75b6e7ef7532b73f4",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/README.md",
+          "sha256": "fe37447d9eeab4b95ca021f45edbf1379fa014b112438b293eb29c83e3729b65"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/__init__.py",
+          "sha256": "3cafed4b73b9ecaefe7e15b0a0ed319631d91f788b0225aa417a786005a605b4"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/adapter.py",
+          "sha256": "a119bad3c29021dc042762e9e7c4316c9853d7f7c79f05cdaac8d9264e1789ee"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/losses.py",
+          "sha256": "eef7ce1678968ff69e4d65bd9433e5ea8cf917e9e21c25d16c1ef89f5aed5ac9"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/reference.py",
+          "sha256": "a06211a1e68b9894ec836eebc6e3efd3e0064fbf2651e6d46c08d9af2eeeebb2"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/schema.json",
+          "sha256": "36c0812c80486ad5413cf520076d487ad4d15975489bea954a8a8940a6164da5"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/serialization.py",
+          "sha256": "23dceb90167e8d9cd73508c9f7f6085e3840ed9ae7d551e9c546bf9ff610a9ec"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h34_boundary_value/types.py",
+          "sha256": "10f52e6135c663d3beab86379fab4fe2d71a09ba14b57f6ca5e4c29033a08f77"
+        },
+        {
+          "path": "tests/contracts/test_h34.py",
+          "sha256": "1fb3a26e9873c205da8a4cb7be99a46e23c040b0fffc12b94164dcea1b87a5db"
+        },
+        {
+          "path": "configs/mechanisms/H34.json",
+          "sha256": "183a7cde325d0b2be3aa8fb3fa935a3f3ba5fd35dad00d38e9dd1969b26a9956"
+        }
+      ]
+    },
+    {
+      "task": "M35",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "a0ef142a805b9dc1b8b81d028b825e0b45ca66a9dab2ba3e5412d2123282baaa",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/README.md",
+          "sha256": "b556ec131bf31caf3fcaaeab723a7baf0ab282122ce8e417c5af8954fb92b01c"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/__init__.py",
+          "sha256": "752cdeab13005bf39c54013ce3bfef36306f54d6dee3de60f020fc0bd3f75019"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/adapter.py",
+          "sha256": "765af56379211f65345869ea5a03f125fd457efed2f23f3632703b2d3e9d98bc"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/losses.py",
+          "sha256": "b453fa3c3575435ba55efa1c16d362844a8ca498d333dc1185df475ef4636e20"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/reference.py",
+          "sha256": "f4c98279fc1fb12b3efa3c1f05130a141bde39d321f59a0561def5ffc09d98d6"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/schema.json",
+          "sha256": "453d4b8c79c9f28917d8a999c136564e44d7ab76ad70e9ccc5b46dc0470f4f30"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/serialization.py",
+          "sha256": "4b142ff3813a1e30630eb5fb8c746855d7b1cfbf05ba97bca3a7dbb743fa2b70"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h35_renormalization/types.py",
+          "sha256": "3d04b4cad1b87870bda541453ad062b2ea8dcab3168bd8e7b0a121af32a3c22a"
+        },
+        {
+          "path": "tests/contracts/test_h35.py",
+          "sha256": "1754fd1d6b8f2869e9b44991e5b2d1289a98e521c6bbd20b879ba10e91ce676a"
+        },
+        {
+          "path": "configs/mechanisms/H35.json",
+          "sha256": "eaeba704eb881b8f4ddfb6efbae70ff9fc1252bde28324725ab014198c3083f7"
+        }
+      ]
+    },
+    {
+      "task": "M36",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "a7f33f21b04f50579a980a5ebb0c0048cc0dd31d655765a62ba9a6ae3f0edd42",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/README.md",
+          "sha256": "1a78d3733cde437dee93592ccb09606bdcfdbba2f8ffbff6700f23862ad0bc80"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/__init__.py",
+          "sha256": "13969ea503eabb63469aa34d3cd0d4a546b777bbbfef9a2ffabd97cf2b6f25ea"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/adapter.py",
+          "sha256": "85ef83fc7af4010d92ca85357b21cb7c43e60e590acbfca3f4f2c6922c103a98"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/losses.py",
+          "sha256": "c714ec31007f0c4ed1cbb54749b7d372f0bc8105055752c65348a288f25e9ef6"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/reference.py",
+          "sha256": "b6bec041e38cf209d9e8f065b5fe159574fe894307ef7615008eb73c03589db1"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/schema.json",
+          "sha256": "04851f4fc85cad886a9781195224b9be211493ec771b3ae8daeb247b938ecddf"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/serialization.py",
+          "sha256": "50f16e0fe94f048fcd6a8fdc7d8e5d5f512340dbe7fdbbcf873252650d797154"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h36_disagreement/types.py",
+          "sha256": "f43d7afe8bbd9498957abc42d9e8d01be81aa5ae925990728547fb4eeb3e6e1a"
+        },
+        {
+          "path": "tests/contracts/test_h36.py",
+          "sha256": "5789294301517435c1727882528d8851027f940b999ef5447601ce54d7fc14c4"
+        },
+        {
+          "path": "configs/mechanisms/H36.json",
+          "sha256": "4511a765cc31ba6bf1c4f00c7f98296cef0919b49aa8f2306ce9c7a3e1471236"
+        }
+      ]
+    },
+    {
+      "task": "M37",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "a77117b3562bb0d8067df3298ae4ac020f6dd10ab49646de68037fcb1f98fab5",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/README.md",
+          "sha256": "8fc2c8932020ac312d5b7da28d7d3847fc5460764338b9e432913378f45fdb39"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/__init__.py",
+          "sha256": "4ae2d73d4010457e5223bb0aef6aa88dbfe0ff2f165be259bce401316394733e"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/adapter.py",
+          "sha256": "1e19b2886858075c0092fce43db5e644a43a39eea50e3ebda002a935e1b351e9"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/losses.py",
+          "sha256": "5401d56546679150acc0a0edc9f1e1afecdfc868777107d17879d7c6a0b58ef3"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/reference.py",
+          "sha256": "1b3e364d29770b3849eec0807bb2eb6b4ef08ec952c9fd3f78ad49d699e43fc6"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/schema.json",
+          "sha256": "06eeb32ba5a86725fe33a507bf466321bb535a1d097d2c84ef6b1235051fe673"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/serialization.py",
+          "sha256": "948ec6233b05f00bd209f3e496f1303348c8a3afd9b99e0972684f7a79bdc0d0"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h37_gradient_transport/types.py",
+          "sha256": "3ef30d016f4a71e5b012cb29865b01a2d7063daabeee535d16a2b3e4a33d9b1b"
+        },
+        {
+          "path": "tests/contracts/test_h37.py",
+          "sha256": "8d9c9e7e21140a84e7d71483f52d17f4d357b135a69a2bc0581d20dc9326a20e"
+        },
+        {
+          "path": "configs/mechanisms/H37.json",
+          "sha256": "6fe0a887b3d50d404949b22a69297c1731e561a7bd1e6c85e67613c2659e32ac"
+        }
+      ]
+    },
+    {
+      "task": "M38",
+      "status": "done",
+      "research_state": "NOT_RUN",
+      "receipt_sha256": "d79b8241924ecbcb29865a8b140555c1879785c1267f1eec5ac715b951182f15",
+      "files": [
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/README.md",
+          "sha256": "c8441b5b1c87b93abfe71e5032bbf08921d0bbae3c472b833cb654617bf8246a"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/__init__.py",
+          "sha256": "ae2e329aa99404d67365c5541ed54c63b61aab5b3584255e941180c2049e0722"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/adapter.py",
+          "sha256": "2b57f35b31e9eca61d1408e2cd0926b9a8160fdbbd9a0d7d262e096f82b5d7e5"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/losses.py",
+          "sha256": "385d21d87698eaf521a490c18f5e993d27bc2d54c8c24086f95a302e955516ca"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/reference.py",
+          "sha256": "8ef871bf088edbb05e0aed675c23c38f8eeaafed516d8eaf51b8412f919c6242"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/schema.json",
+          "sha256": "7794e5e2ecbe40b70c2d07e495aca17642c8ce47682fb9ce3b34e3df335172d4"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/serialization.py",
+          "sha256": "f529d333d467bb1b51efe81677f15ef669221763e6209f6f1d4fda0d17653fd9"
+        },
+        {
+          "path": "src/latent_comm/mechanisms/h38_plasticity/types.py",
+          "sha256": "bc373d5d22f4e2c6ea29ac1e715d3458f36273489caf58e5d7c65e95cf12bada"
+        },
+        {
+          "path": "tests/contracts/test_h38.py",
+          "sha256": "b94191c7f59a14421e9dbed34e659c48485c5989c3fa9c680ed9062980e921df"
+        },
+        {
+          "path": "configs/mechanisms/H38.json",
+          "sha256": "fa0550677be57b93b8eda0494fdfe2c9468d07cd76bb4e6c5207d7e47fed530a"
+        }
+      ]
+    }
+  ]
+}

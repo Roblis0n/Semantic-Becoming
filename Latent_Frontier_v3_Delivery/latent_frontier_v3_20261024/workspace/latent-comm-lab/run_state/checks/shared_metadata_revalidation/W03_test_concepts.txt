@@ -1,0 +1,8 @@
+test_invalid_feature (test_concepts.ConceptsTests.test_invalid_feature) ... ok
+test_new_distinction (test_concepts.ConceptsTests.test_new_distinction) ... ok
+test_old_predicate_cannot_distinguish (test_concepts.ConceptsTests.test_old_predicate_cannot_distinguish) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

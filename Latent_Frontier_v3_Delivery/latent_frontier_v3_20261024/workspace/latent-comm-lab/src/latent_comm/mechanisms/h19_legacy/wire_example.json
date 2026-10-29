@@ -1,0 +1,33 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "teacher_trace": {
+    "trace_id": "bound",
+    "instance_id": "bound",
+    "message_ref": "bound",
+    "operation_ids": [],
+    "evidence_sources": [],
+    "task_family": "bound",
+    "teacher_revision": "bound",
+    "expires_step": 0,
+    "versions": {
+      "schema": "bound"
+    }
+  },
+  "adapter_version": "bound",
+  "parent_version": "bound",
+  "parameter_digest": "bound",
+  "training_sources": [],
+  "writable_groups": [],
+  "task_family": "bound",
+  "base_revision": "bound"
+}

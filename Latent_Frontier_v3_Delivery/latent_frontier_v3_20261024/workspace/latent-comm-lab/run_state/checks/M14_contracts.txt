@@ -1,0 +1,14 @@
+M14: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_concept_analogy_and_macro_consumers (test_h14.GrammarTests.test_concept_analogy_and_macro_consumers) ... ok
+test_hygiene_and_old_reader (test_h14.GrammarTests.test_hygiene_and_old_reader) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h14.GrammarTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_recursion_and_capture (test_h14.GrammarTests.test_recursion_and_capture) ... ok
+test_source_gate_and_schema (test_h14.GrammarTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h14.GrammarTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h14.GrammarTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.044s
+
+OK
+M14: 7 contract tests; failures=0 errors=0; no tensor/model import or execution.

@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_030",
+  "edition": "explainer_360",
+  "scene_id": "S06",
+  "characters": 28,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "系统不能先生成一个结论，再把自己生成的观察当作现实证据。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-25T15:03:38.441548+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 225082,
+    "duration_seconds": 5.10390022675737,
+    "sample_peak": 9748,
+    "sample_rms": 1352.4617312996497,
+    "sha256": "5b2156e7dcbd68541d8f629112b29d37e70e921ee332bf0048c6f4fa5ade90a8",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-25T15:04:47.332220+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

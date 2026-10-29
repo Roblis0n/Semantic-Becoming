@@ -1,0 +1,2 @@
+# Preserve the exact audited bytes; disable checkout newline conversion.
+* -text

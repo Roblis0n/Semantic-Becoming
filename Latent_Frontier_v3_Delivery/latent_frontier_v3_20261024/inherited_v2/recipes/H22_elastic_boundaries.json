@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "hypothesis_id": "H22",
+  "name": "elastic_boundaries",
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "model_binding": "late_bound_for_future_research_only",
+  "reference_scope": "mechanism_source_complete_without_model_execution",
+  "message_kind": "program",
+  "data_family": "computation_graphs",
+  "training": {
+    "family": "R12",
+    "loss_terms": [
+      "partition_policy",
+      "handoff_behavior"
+    ],
+    "trainable_groups": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+  },
+  "defaults": {
+    "working_dim": 256,
+    "operator_rank": 8,
+    "belief_branches": 4,
+    "field_steps": 8,
+    "local_charts": 4
+  },
+  "implementation_modules": [
+    "latent_comm.mechanisms.elastic.partition",
+    "latent_comm.mechanisms.elastic.transitions",
+    "latent_comm.mechanisms.elastic.controller"
+  ],
+  "requires": [
+    "typed_state",
+    "coordinate_contract",
+    "scope_contract"
+  ],
+  "pipeline": [
+    "world_generate",
+    "view_build",
+    "state_extract",
+    "mechanism_build",
+    "typed_channel",
+    "mechanism_apply",
+    "decode_or_task",
+    "objective",
+    "artifact_export"
+  ],
+  "locked_nodes": [
+    "state_extract_with_research_model",
+    "decode_with_research_model",
+    "optimize_parameters"
+  ],
+  "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+  "scientific_status": "hypothesis_not_tested"
+}

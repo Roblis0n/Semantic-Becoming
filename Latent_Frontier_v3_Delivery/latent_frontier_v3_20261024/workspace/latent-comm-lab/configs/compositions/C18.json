@@ -1,0 +1,1044 @@
+{
+  "recipe_id": "C18",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C18",
+    "nodes": [
+      {
+        "node_id": "bind_evidence",
+        "operation": "C18.bind_evidence",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "bind_evidence:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "EvidenceCoalitionInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "BoundEvidenceDAG",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "E",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H16",
+          "H48"
+        ],
+        "implementation": "latent_comm.compositions.c18.bind_evidence",
+        "location": {
+          "source": "C18.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "deduplicate_evidence",
+        "operation": "C18.deduplicate_evidence",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "bind_evidence:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "deduplicate_evidence:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "BoundEvidenceDAG",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "DeduplicatedSupport",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "Z"
+        ],
+        "write_set": [
+          "E",
+          "Z"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H10",
+          "H48"
+        ],
+        "implementation": "latent_comm.compositions.c18.deduplicate_evidence",
+        "location": {
+          "source": "C18.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "form_coalition",
+        "operation": "C18.form_coalition",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "deduplicate_evidence:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "form_coalition:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "DeduplicatedSupport",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CoalitionHyperedge",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "V",
+          "Z"
+        ],
+        "write_set": [
+          "P",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H10",
+          "H41"
+        ],
+        "implementation": "latent_comm.compositions.c18.form_coalition",
+        "location": {
+          "source": "C18.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "analytic_value_function",
+        "operation": "C18.analytic_value_function",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "form_coalition:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "analytic_value_function:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CoalitionHyperedge",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AnalyticCoalitionGame",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "V",
+          "Z"
+        ],
+        "write_set": [
+          "P",
+          "Z"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H10",
+          "H41"
+        ],
+        "implementation": "latent_comm.compositions.c18.analytic_value_function",
+        "location": {
+          "source": "C18.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "allocate_internal_credit",
+        "operation": "C18.allocate_internal_credit",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "analytic_value_function:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "allocate_internal_credit:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "AnalyticCoalitionGame",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "InternalCreditAllocation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "V"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H41"
+        ],
+        "implementation": "latent_comm.compositions.c18.allocate_internal_credit",
+        "location": {
+          "source": "C18.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "allocate_internal_credit:out",
+        {
+          "name": "InternalCreditAllocation",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "analytic_value_function:out",
+        {
+          "name": "AnalyticCoalitionGame",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "bind_evidence:out",
+        {
+          "name": "BoundEvidenceDAG",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "deduplicate_evidence:out",
+        {
+          "name": "DeduplicatedSupport",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "form_coalition:out",
+        {
+          "name": "CoalitionHyperedge",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "EvidenceCoalitionInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "analytic_value_function",
+        "allocate_internal_credit"
+      ],
+      [
+        "bind_evidence",
+        "deduplicate_evidence"
+      ],
+      [
+        "deduplicate_evidence",
+        "form_coalition"
+      ],
+      [
+        "form_coalition",
+        "analytic_value_function"
+      ]
+    ],
+    "schedule": [
+      "bind_evidence",
+      "deduplicate_evidence",
+      "form_coalition",
+      "analytic_value_function",
+      "allocate_internal_credit"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "c1aba31b72374c1e393c4ded29e1e52d4be8ec63f2a3cf862bb4148ab1b9f0cc",
+    "declared_parameters": {
+      "obligations": [
+        "Credit is an analytic internal attribution, not currency or measured competence.",
+        "Unknown evidence dependence remains unknown; allocation does not calibrate truth.",
+        "Repeated source handles cannot become independent atom copies."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C18",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "joint_factor",
+        "objectives": [
+          {
+            "name": "joint",
+            "mathematical_definition": "mean CE(joint output,task)",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "joint_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "tasks",
+            "id": "H10.joint"
+          },
+          {
+            "name": "dropout",
+            "mathematical_definition": "mean task error under declared source subsets",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "subset_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "subset_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "subset_targets",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "subsets",
+            "id": "H10.dropout"
+          }
+        ],
+        "losses": [
+          "H10.joint",
+          "H10.dropout"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "coalition_selector",
+        "objectives": [
+          {
+            "name": "value",
+            "mathematical_definition": "sum(m*(estimated-v_table)^2)/sum(m)",
+            "numerator": "known coalition value residual",
+            "denominator": "known coalition values",
+            "valid_mask": "known_value_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coalition_value_estimator"
+            ],
+            "requires_grad_inputs": [
+              "capability_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "coalitions",
+            "id": "H41.value"
+          },
+          {
+            "name": "allocation",
+            "mathematical_definition": "-sum(m*log_pi(S)*task_utility)/sum(m)",
+            "numerator": "policy score times actual task utility",
+            "denominator": "valid feasible allocations",
+            "valid_mask": "feasible_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coalition_proposer"
+            ],
+            "requires_grad_inputs": [
+              "allocation_log_probability"
+            ],
+            "stop_gradient_edges": [
+              [
+                "task_utility",
+                "allocation"
+              ]
+            ],
+            "estimated_or_exact": "policy_gradient",
+            "normalization_units": "allocations",
+            "id": "H41.allocation"
+          }
+        ],
+        "losses": [
+          "H41.value",
+          "H41.allocation"
+        ],
+        "owners": [
+          "coalition_proposer",
+          "coalition_value_estimator"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "dependence_calibration",
+        "objectives": [
+          {
+            "name": "link",
+            "mathematical_definition": "sum(mask*BCEWithLogits(source_link_logits,shared_source))/sum(mask)",
+            "numerator": "source-identity link BCE",
+            "denominator": "labelled source pairs including circular negative cases",
+            "valid_mask": "link_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "source_linker"
+            ],
+            "requires_grad_inputs": [
+              "source_link_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "source_identity_labels",
+                "link"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "source_pairs",
+            "id": "H48.link"
+          },
+          {
+            "name": "calibration",
+            "mathematical_definition": "sum(mask*(predicted_support-observed_support)^2)/sum(mask)",
+            "numerator": "Brier calibration conditional on named dependence model",
+            "denominator": "independent heldout outcomes",
+            "valid_mask": "calibration_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "source_calibrator"
+            ],
+            "requires_grad_inputs": [
+              "atom_probabilities"
+            ],
+            "stop_gradient_edges": [
+              [
+                "observed_support",
+                "calibration"
+              ],
+              [
+                "declared_dependence",
+                "calibration"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "claims",
+            "id": "H48.calibration"
+          }
+        ],
+        "losses": [
+          "H48.link",
+          "H48.calibration"
+        ],
+        "owners": [
+          "source_calibrator",
+          "source_linker"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "bind_evidence": "stop",
+      "deduplicate_evidence": "enumeration",
+      "form_coalition": "stop",
+      "analytic_value_function": "enumeration",
+      "allocate_internal_credit": "stop"
+    },
+    "exact_fields": "not overwritten by learned readout",
+    "credit_is_money": false
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

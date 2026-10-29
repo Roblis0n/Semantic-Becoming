@@ -1,0 +1,197 @@
+{
+  "src/latent_comm/backends/hf_prefix/__init__.py": {
+    "sha256": "6a44eb4007f07e15c4bb6c43365833c30da1b9c98e41178f167fa83fb86baa37",
+    "evidence": "backend_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/backends/hf_kv/__init__.py": {
+    "sha256": "6d21eb4630e85ddc1465a9b9fe251bc6e1fa86ea8241d18dd6173ad8ed78d99b",
+    "evidence": "backend_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h19_legacy/losses.py": {
+    "sha256": "bbfb4a78c681b664e6c0550dc353a64f61465a47a8c27a0b4c072105cbe1de5d",
+    "evidence": "loss_enum_empty_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h20_legacy/losses.py": {
+    "sha256": "bed94da099928aaf21b6e8d6f978bd8a21150ee5d10738896b59dbdcee19f487",
+    "evidence": "loss_enum_empty_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h22_legacy/__init__.py": {
+    "sha256": "519826668392f61e809942dd7c71cf013c5743653a13d875f36e8d63672dcf04",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h22_legacy/adapter.py": {
+    "sha256": "fd01aebb0255649e4a2f7eb3ed0c8d5c8ccaadb9ad7b48daba8c39b180d44462",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h22_legacy/losses.py": {
+    "sha256": "08255497c4098c34d21457fd8f61be570d71e68094aeb415ee0415f422eaa4ab",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h22_legacy/migration.py": {
+    "sha256": "9161fc99201cb4d8efbd3ff6d006f44968e73d15f6f37efd0691837806623f87",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h22_legacy/reference.py": {
+    "sha256": "7724247f38da7da94d4478ef9613934039dc556ba0b21db66b24c97ed1ae8710",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h22_legacy/types.py": {
+    "sha256": "fd307a92e4eaeb92022d0303eb1c32dc4c257dacc031b0ea3a426a6d18471119",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h23_legacy/__init__.py": {
+    "sha256": "04ad23e6c03003274f4ec815c7bd3267b67fb01c24ed2c0e10b13ec405474cd7",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h23_legacy/adapter.py": {
+    "sha256": "0b7da9a64a3a9acd09d657cab571ce10716e34211c79c1b1f88cf6ff905e2273",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h23_legacy/losses.py": {
+    "sha256": "c0ff8a6e03bc4dc77082c695805942f5333e7e19e0031bdaafe3a0e64e3658a5",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h23_legacy/migration.py": {
+    "sha256": "6b4eaa900d5e4412142b0da30d7e551b737c2866354db20ca6363a29ceaa5a07",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h23_legacy/reference.py": {
+    "sha256": "ff9ed049318b84a222fcfd04afac9f7e7946bd64c7641f5b0980cdc636bc3f21",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h23_legacy/types.py": {
+    "sha256": "5becdfc9c4faea4e3ed5abb35a55bf1a88d157094a5a77ee0e3ffb0ca4679604",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h24_legacy/__init__.py": {
+    "sha256": "a1794009866088ec3702c3bddfdefc8468aa871955540091d11658964154b64f",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h24_legacy/adapter.py": {
+    "sha256": "1bb77ee373a71f99f9fad382f921719c1a592434beeb6b6f9c7c435a03e908cc",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h24_legacy/losses.py": {
+    "sha256": "55f04a53f1af5ed8980c249f8f07fc3d83a94ea1544852761ef7e8ce9c18d2a7",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h24_legacy/migration.py": {
+    "sha256": "c37f52d2df08b6b433962613f71427374ff535ba884fcd565655e0fb776e8070",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h24_legacy/reference.py": {
+    "sha256": "46ce5752122b9460b837aea7f8f031e5db3dc4924091ee6c38e49087cfe37f39",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h24_legacy/types.py": {
+    "sha256": "fb6e45801626083bf3178322eb1ad4f830e4076546095eddbb2e8b5677308947",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h26_sheaf/__init__.py": {
+    "sha256": "c65d3982c26814c65960837151c3a6f9843322285f6e95323d94b4924ea4210f",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h26_sheaf/adapter.py": {
+    "sha256": "f1295e9bebdfcd1956fce07589ff34d6f84c56f782103d16979791b386f997ce",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h26_sheaf/losses.py": {
+    "sha256": "012ff1e20c053d57ca1c0bb8f464a92fd2ff90dd4c875db19f9ddaed9093ddf4",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h26_sheaf/reference.py": {
+    "sha256": "dc1376d0ca0cdb56092194563b0972357ffbcda459ddd69bc839a11e50dee858",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h26_sheaf/serialization.py": {
+    "sha256": "ba5f6a52b09ceac941dda680f1c0d882a875981aabcc23ba1de4cd577e13966e",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h26_sheaf/types.py": {
+    "sha256": "41403c3ff0aecb7bd0b6f073459385be7c6c2eb1a0481eb546d0a8c1b6d4d31c",
+    "evidence": "M22_M24_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h02_legacy/adapter.py": {
+    "sha256": "f0f740c66ae0e8e32b834003fc3ec32f40542f4bcfed0157966501048e80775b",
+    "evidence": "M02_M13_M16_M17_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h13_legacy/adapter.py": {
+    "sha256": "9b6f420c339ab2b39b6509b8cf6f90fc2173debc6c7b1f7d43d887e2596f33a9",
+    "evidence": "M02_M13_M16_M17_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h13_legacy/reference.py": {
+    "sha256": "6d58ff91b76831156e7a88a144dfb83807b9cbb3ac03a6e4c94b4e64b60a4f75",
+    "evidence": "M02_M13_M16_M17_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h16_legacy/types.py": {
+    "sha256": "1567f9fbf295bd8b9f4720cdc74b8d6726602e77597b3f2d9280c7acea2fd748",
+    "evidence": "M02_M13_M16_M17_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h17_legacy/losses.py": {
+    "sha256": "d3258f7206bc5a69e5ead5f076e734c3e0c63c0218c7c7155ac4d0d9d26cc8ef",
+    "evidence": "M02_M13_M16_M17_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h01_legacy/reference.py": {
+    "sha256": "e85491d7a158ff14b82d4082c284c80f5228429e27261c7e9ce3d87ab0ec4248",
+    "evidence": "M07_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h01_legacy/types.py": {
+    "sha256": "be9d48f775e186f77fca5e07bf72c23dbc9b223e184dff9446c15794161538a8",
+    "evidence": "M07_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h03_legacy/reference.py": {
+    "sha256": "d2babed9776edb0745beda6e5f48bff7aeb43af97a1dd66791895c4ffeced0a8",
+    "evidence": "M07_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h03_legacy/types.py": {
+    "sha256": "083a51d1078e0f76c5131bb0ba31bbc8d0f16dc4491936d688a248feccb53eb7",
+    "evidence": "M07_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h07_legacy/reference.py": {
+    "sha256": "813349a91c2401f08492b0622a20b98dc8f9c9e8b8224c6f4da15048f261b6e6",
+    "evidence": "M07_recheck.json",
+    "still_current_at_report": true
+  },
+  "src/latent_comm/mechanisms/h07_legacy/types.py": {
+    "sha256": "337bcd306971f7343dab40c9a94895afc39eb1f513afc03789727cc695ec1c5d",
+    "evidence": "M07_recheck.json",
+    "still_current_at_report": true
+  }
+}

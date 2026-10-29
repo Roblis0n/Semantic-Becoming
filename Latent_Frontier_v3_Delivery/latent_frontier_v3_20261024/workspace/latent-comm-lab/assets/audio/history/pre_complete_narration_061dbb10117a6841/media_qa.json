@@ -1,0 +1,796 @@
+{
+  "schema_version": "latent-frontier-media-qa.v2-partial-audio",
+  "status": "complete_with_external_blockers",
+  "research_state": "NOT_RUN",
+  "research_model_executions": 0,
+  "checked_at_utc": "2026-10-24T18:56:31.792148+00:00",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "opened_checked": true,
+  "opened_scope": "All original graphics plus the actual short narrated A/V container and 15 sampled frames; no listening",
+  "timing_verified": false,
+  "timing_scope": "All silent durations and measured short PCM cue boundaries verified; long audio incomplete",
+  "production_statuses": [
+    {
+      "task_id": "V01",
+      "status": "done",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_count": 6,
+      "opened_checked": true,
+      "opened_scope": "Rendered all 6 text-preserving SVGs, visually inspected",
+      "timing_verified": false,
+      "timing_applicable": false,
+      "blockers": [],
+      "limitations": [],
+      "evidence": "run_state/checks/V01_validation.json",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "task_id": "V02",
+      "status": "done",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_count": 2,
+      "opened_checked": true,
+      "opened_scope": "Exact native-editable PPTX reopened via LibreOffice; all 48 page pixels visually inspected",
+      "timing_verified": false,
+      "timing_applicable": false,
+      "blockers": [],
+      "limitations": [],
+      "evidence": "run_state/checks/V02_validation.json",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "task_id": "V03",
+      "status": "done",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_count": 5,
+      "opened_checked": true,
+      "opened_scope": "All 5 MP4s fully decoded; opening frames and 25 semantic keyframes inspected; browser interaction remains unverified",
+      "timing_verified": true,
+      "timing_applicable": true,
+      "blockers": [],
+      "limitations": [
+        "Real browser interaction unverified: Chromium socket() failed: Operation not permitted; JS DOM-contract tests are not browser proof."
+      ],
+      "evidence": "run_state/checks/V03_validation.json",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "status": "complete_with_external_blockers",
+      "requested": true,
+      "source_created": true,
+      "audio_listened": false,
+      "research_state": "NOT_RUN",
+      "updated_at_utc": "2026-10-24T18:56:31.792148+00:00",
+      "license_scope": "Generated speech and speech-containing videos: PERSONAL AND NONCOMMERCIAL USE ONLY. Independently authored source/PPT/SVG and silent visuals do not automatically inherit this TTS restriction.",
+      "task_id": "V04",
+      "export_created": true,
+      "export_edition": "narrated_personal_noncommercial_unauditioned",
+      "narrated_export_created": true,
+      "narrated_final_acceptance": false,
+      "narration_wav_created": true,
+      "opened_checked": true,
+      "opened_scope": "Actual A/V full decode and all 14 cue-midpoint frames plus opening; no auditory review",
+      "timing_verified": true,
+      "audio_timing_verified": true,
+      "timing_scope": "Exact measured synthesized PCM chunk and scene boundaries with nonoverlapping subtitle margins",
+      "word_level_alignment_verified": false,
+      "blockers": [
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ],
+      "export": {
+        "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+        "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+        "duration_seconds": 90.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "audio_channels": 1,
+        "video_start_time": "0.000000",
+        "audio_start_time": "0.000000",
+        "full_decode_passed": true
+      },
+      "evidence": [
+        {
+          "path": "assets/video/intro_90/narrated_qa.json",
+          "sha256": "f3fd02495979a78eb592c1e80399b4066e4ad96b3ca44774d2e63b835df3b7f0",
+          "bytes": 4906
+        },
+        {
+          "path": "assets/video/intro_90/narrated_visual_review.json",
+          "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+          "bytes": 3582
+        },
+        {
+          "path": "assets/audio/tts_ai/intro_90.assembly.json",
+          "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+          "bytes": 19608
+        }
+      ],
+      "silent_visual_history_preserved": "assets/video/intro_90/intro_90_silent_draft.mp4"
+    },
+    {
+      "status": "complete_with_external_blockers",
+      "requested": true,
+      "source_created": true,
+      "audio_listened": false,
+      "research_state": "NOT_RUN",
+      "updated_at_utc": "2026-10-24T18:56:31.792148+00:00",
+      "license_scope": "Generated speech and speech-containing videos: PERSONAL AND NONCOMMERCIAL USE ONLY. Independently authored source/PPT/SVG and silent visuals do not automatically inherit this TTS restriction.",
+      "task_id": "V05",
+      "export_created": true,
+      "export_edition": "silent_visual_draft_only",
+      "narrated_export_created": false,
+      "narrated_final_acceptance": false,
+      "narration_wav_created": false,
+      "opened_checked": true,
+      "opened_scope": "Previously verified 360-second silent container; no complete long narrated container exists",
+      "timing_verified": true,
+      "timing_scope": "Silent visual duration only; long audio timeline not complete",
+      "audio_timing_verified": false,
+      "downloaded_long_cue_wavs": 28,
+      "planned_long_cue_wavs": 44,
+      "pending_previously_accepted_cue": 1,
+      "unsubmitted_long_cues": 15,
+      "blockers": [
+        "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ],
+      "evidence": [
+        {
+          "path": "assets/video/explainer_360/media_status_silent_history.json",
+          "sha256": "037d85d3d9993141043e8ffcae0252ff255e00e4ee7eb74882feea46ba2dab65",
+          "bytes": 1335
+        },
+        {
+          "path": "assets/audio/tts_ai/authorization_status.json",
+          "sha256": "ceb00f456a2ada3e05b31e0b70aa30b4b357a93ebee0079ac957d7f4036d1dd8",
+          "bytes": 1179
+        }
+      ]
+    },
+    {
+      "status": "complete_with_external_blockers",
+      "requested": true,
+      "source_created": true,
+      "audio_listened": false,
+      "research_state": "NOT_RUN",
+      "updated_at_utc": "2026-10-24T18:56:31.792148+00:00",
+      "license_scope": "Generated speech and speech-containing videos: PERSONAL AND NONCOMMERCIAL USE ONLY. Independently authored source/PPT/SVG and silent visuals do not automatically inherit this TTS restriction.",
+      "task_id": "V06",
+      "export_created": true,
+      "export_edition": "partial_actual_audio_and_complete_sources",
+      "opened_checked": true,
+      "opened_scope": "42 raw WAVs parsed; short final WAV and voiced container objectively measured, not listened",
+      "timing_verified": false,
+      "timing_scope": "14 short-edition cues have measured PCM boundaries; long edition remains source-timed only",
+      "narration_wav_editions_created": 1,
+      "narration_wav_editions_requested": 2,
+      "assembled_scene_wavs": 8,
+      "downloaded_source_chunk_wavs": 42,
+      "accepted_jobs": 43,
+      "characters_submitted": 1261,
+      "remaining_unsubmitted_characters": 493,
+      "credits_used": 0,
+      "audio_timed_subtitle_cues": 14,
+      "long_audio_timed_subtitles_created": false,
+      "blockers": [
+        "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ],
+      "evidence": [
+        {
+          "path": "assets/audio/tts_ai/sanitization.json",
+          "sha256": "d8aba002351b50e969af7d157e4b639434fdb53ebd35bb0444a039ec6ee2791b",
+          "bytes": 532
+        },
+        {
+          "path": "assets/audio/tts_ai/authorization_status.json",
+          "sha256": "ceb00f456a2ada3e05b31e0b70aa30b4b357a93ebee0079ac957d7f4036d1dd8",
+          "bytes": 1179
+        },
+        {
+          "path": "assets/audio/tts_ai/intro_90.assembly.json",
+          "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+          "bytes": 19608
+        }
+      ]
+    }
+  ],
+  "finished_graphical_exports": {
+    "svg_figures": 6,
+    "editable_pptx_decks": 2,
+    "slide_count": 48,
+    "mechanism_mp4": 5,
+    "silent_explainer_mp4": 2,
+    "silent_explainer_seconds": [
+      90,
+      360
+    ]
+  },
+  "editable_sources": {
+    "figures": "assets/figures/F01–F06.json and build_media_sources.py",
+    "slides": "assets/slides/source, both source.json, build/export_decks.mjs and rebuild.sh",
+    "animations": "assets/animations/A01–A05/index.html, scene.json, source.svg, animation_engine.js and build_animations.py",
+    "videos": "assets/video/intro_90 and explainer_360: timeline.json, project.mlt, clips, build_video_projects.py; shared renderer in assets/animations/render_media.mjs; short voiced timeline_audio.json, project_audio.mlt and narrated renderer are separate",
+    "narration": "assets/audio: full TXT, per-scene JSON, SSML, pronunciation guide",
+    "subtitles": "Original source-timed SRT/VTT/JSON preserved; separate short PCM-measured audio_timed SRT/VTT/JSON created; long audio timing incomplete"
+  },
+  "artifacts": [
+    {
+      "path": "assets/figures/F01.svg",
+      "sha256": "c0a6e407301e4eecd261830ca592e1e6323b5d2da3ceaa9883d7534b0712490b",
+      "bytes": 5018
+    },
+    {
+      "path": "assets/figures/F02.svg",
+      "sha256": "83736f29ec10f60ebc121da9a5ef70a10a4f522a55250121edb35fef6772c360",
+      "bytes": 6849
+    },
+    {
+      "path": "assets/figures/F03.svg",
+      "sha256": "5bc930c9c9d752d9cd9d4e9e2b09ed360b6698076bccf6503c4175dde2305240",
+      "bytes": 4635
+    },
+    {
+      "path": "assets/figures/F04.svg",
+      "sha256": "1341e0c7d2ba392c8915da6ba4c6f19091f3f13a5cff68c8a579bdbbed8c9bd6",
+      "bytes": 6094
+    },
+    {
+      "path": "assets/figures/F05.svg",
+      "sha256": "39201a193cc8d5ab4472c135192a120285dfef8bda4e282ae5867e5caa41e215",
+      "bytes": 6218
+    },
+    {
+      "path": "assets/figures/F06.svg",
+      "sha256": "b139c8c1c4625cc76c3ec243093c68e182e8182ab0ba06f42ac85cd0d5129606",
+      "bytes": 5539
+    },
+    {
+      "path": "assets/slides/research_36.pptx",
+      "sha256": "b1fb8feeabdc38d684bf5f124cbd67bdf1c2b36cb0e2f9c43bb0549fc1f66ec1",
+      "bytes": 222966
+    },
+    {
+      "path": "assets/slides/brief_12.pptx",
+      "sha256": "4f389fa6417797e84e77230c97db5b932d173856914c5530839787d30589fe9a",
+      "bytes": 86834
+    },
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "bytes": 111758
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "bytes": 151150
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "bytes": 177070
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "bytes": 200742
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "bytes": 173917
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "bytes": 826212
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "bytes": 2977456
+    },
+    {
+      "path": "assets/audio/intro_90.narration.wav",
+      "sha256": "9fc67803982f2a9d2607d90b154acfa14bc3470a1355834f25e916e26a414ea6",
+      "bytes": 7938044
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+      "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+      "bytes": 2485518
+    }
+  ],
+  "container_checks": [
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "duration_seconds": 20.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A01/A01_opening.png",
+      "opening_frame_sha256": "a1d57848d491b456b603cd5ab45351916a4c5279024554866dac15768d94b4fd",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A02/A02_opening.png",
+      "opening_frame_sha256": "936ad3466798de4d5ca0bc9421ab05e31eceb3f23c25fd69c2b0dd634e29a23a",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A03/A03_opening.png",
+      "opening_frame_sha256": "862402876ff7fea3e27b581f112fee70ca02db8b1af5c868f0cc6d05e53d64bf",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A04/A04_opening.png",
+      "opening_frame_sha256": "dcffac6abc8113d4a385d8dde9aeca4056705ec2b2885886cdbbeb8ade91f3f7",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A05/A05_opening.png",
+      "opening_frame_sha256": "272defc96def0b4f024ba27e78fcb5105bc30bc5131065b63d7be2d809f89fe1",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "duration_seconds": 90.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/video/intro_90/intro_90_silent_draft_opening.png",
+      "opening_frame_sha256": "7fc1cef1812cf67e934b40d5864df3bfe617e8302e59dcc2c3fe681d495f639b",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "duration_seconds": 360.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/video/explainer_360/explainer_360_silent_draft_opening.png",
+      "opening_frame_sha256": "a475f22d884cf575f5805fe6308c9ca90fc5992bea61280c8d4a1cc4c3c18ab2",
+      "research_state": "NOT_RUN"
+    }
+  ],
+  "validation": {
+    "all_48_slides_visually_inspected": true,
+    "slide_review": {
+      "path": "assets/slides/visual_review.json",
+      "sha256": "1c59f0ae3626911c0707d5f162ad11b04479feaf45855c656742392be2439cfc",
+      "bytes": 26555
+    },
+    "artifact_tool_validation": [
+      {
+        "path": "assets/slides/build/research_36_review/validation.json",
+        "sha256": "2a73d45d3477e930cf858638950187350cecf18f77b3bdbaac08d67c63ab318f",
+        "bytes": 3860
+      },
+      {
+        "path": "assets/slides/build/brief_12_review/validation.json",
+        "sha256": "f363897146a4017984e1ffa8b3edd629cde72c46bf3034913e2ce26808dfd750",
+        "bytes": 3859
+      }
+    ],
+    "native_pptx_shapes": true,
+    "slide_screenshots_as_editable_originals": false,
+    "powerpoint_application_opened": false,
+    "exact_pptx_reopened_in_libreoffice": true,
+    "all_six_svg_text_preserving": true,
+    "font_files_bundled": false,
+    "all_seven_mp4_full_decodes": true,
+    "animation_keyframes_inspected": 25,
+    "author_visual_review": {
+      "path": "assets/animations/visual_review.json",
+      "sha256": "11ad56840ae3abbc4ccfb7f37eb737defdda6a35b58669ae5e06c9ebe4f4e447",
+      "bytes": 16222
+    },
+    "finite_math": {
+      "path": "assets/animations/math_checks.json",
+      "sha256": "9cf57f96929896bbe4c4dbfdfdae70f002739ae437678c56db9df7a1adc1a54b",
+      "bytes": 1569
+    },
+    "html_control_contracts": {
+      "path": "assets/animations/animation_contract_checks.json",
+      "sha256": "82c5948fa62e1b6f2b6b8f193882a3858e8ea4a9bbb79eff6b0ffcdf7be86165",
+      "bytes": 3863
+    },
+    "real_browser_interaction_verified": false,
+    "browser_failure_evidence": {
+      "path": "assets/animations/browser_qa.json",
+      "sha256": "50b018fe3aaf307cf7421b70c004296ce6f82482e069686c1dee984baa53f355",
+      "bytes": 5301
+    },
+    "mlt_xml_validated": true,
+    "mlt_gui_editor_opened": false,
+    "audio_listened": false,
+    "audio_loudness_measured": true,
+    "subtitles_audio_aligned": false,
+    "subtitles_complete_verbatim_source_coverage": true,
+    "subtitles_punctuation_safe": true,
+    "synthetic_evidence_prohibition_unsplit": true,
+    "short_subtitles_pcm_timed": true,
+    "long_subtitles_audio_aligned": false,
+    "short_narrated_visual_review": {
+      "path": "assets/video/intro_90/narrated_visual_review.json",
+      "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+      "bytes": 3582
+    }
+  },
+  "design_provenance": {
+    "path": "assets/figures/design_provenance.json",
+    "sha256": "f59a92ef2e109b623cd2a7bcae779e7dad1653e4cd735030d5d93c8dfeee87c1",
+    "bytes": 2622
+  },
+  "resolved_review_findings": [
+    "The action plane now routes DAG → action broker → WORK_ROOT without a visual bypass.",
+    "Zero benchmark is explicitly an execution count, not a model score.",
+    "Caption closing punctuation no longer starts a line or stands alone; original wording remains unchanged.",
+    "The full synthetic-evidence prohibition stays within one caption cue. S06 source-timing budgets were recalculated, not audio-aligned."
+  ],
+  "limitations": [
+    "No actual HTML browser interaction: Chromium failed before load with socket() failed: Operation not permitted; simulated DOM tests are not browser evidence.",
+    "No real-time watch-through or audio listening claim. Container decoding, still-frame inspection and exact timings establish graphical playability only.",
+    "PowerPoint native application and MLT editor GUI were not opened. Editable PowerPoint package, LibreOffice reopening, and MLT XML were checked.",
+    "Duolingo token references are research-author prototypes, not verified official standards. No logos, mascots, or font binaries copied."
+  ],
+  "blockers": [
+    {
+      "code": "EXTERNAL_NARRATION_DISCLOSURE_AUTHORIZATION_PENDING",
+      "affected_tasks": [
+        "V05",
+        "V06",
+        "V07"
+      ],
+      "reason": "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+      "missing_deliverables": [
+        "complete six-minute narration WAV",
+        "six-minute narrated MP4",
+        "audio-timed long-edition subtitles"
+      ],
+      "completed": "90-second voiced edition and WAV; 42 downloaded raw cues; all original visual exports, source narration and draft timing",
+      "next_action": "Wait for explicit user authorization. If granted, first check the already accepted job outcome using preserved private recovery state, then send only unsubmitted text."
+    },
+    {
+      "code": "MANDATORY_AUDITION_UNAVAILABLE",
+      "affected_tasks": [
+        "V04",
+        "V05",
+        "V06",
+        "V07"
+      ],
+      "reason": "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening.",
+      "next_action": "A capable listener must audition all produced narration and verify pronunciation/sound quality before final auditory acceptance."
+    }
+  ],
+  "dependency_receipts_verified": [
+    {
+      "task_id": "V01",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V01.json",
+        "sha256": "52bddf775c02faa1ae12315d478212f77bb2eeada52a4b8c180c6565987c4dad",
+        "bytes": 4595
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V02",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V02.json",
+        "sha256": "d4089cff3c347b4cc27615f37433af1a8017c7bbef3eb967ee45450f85f16d49",
+        "bytes": 32983
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V03",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V03.json",
+        "sha256": "b7dc3231defc1363eeae73c2f30c712fde91aa06de1b13ea3fb96cd5ff1bcf69",
+        "bytes": 15569
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V04",
+      "status": "complete_with_external_blockers",
+      "receipt": {
+        "path": "run_state/receipts/V04.json",
+        "sha256": "a01a234c20821388192627e8428a4679c60b34b2e0ee096ee3076ea860d27f86",
+        "bytes": 16746
+      },
+      "blockers": [
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ]
+    },
+    {
+      "task_id": "V05",
+      "status": "complete_with_external_blockers",
+      "receipt": {
+        "path": "run_state/receipts/V05.json",
+        "sha256": "b2fee693e1c372915dc0152d468d52dca0e18da8be0d8ac6e94f2a29c95edefc",
+        "bytes": 9595
+      },
+      "blockers": [
+        "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ]
+    },
+    {
+      "task_id": "V06",
+      "status": "complete_with_external_blockers",
+      "receipt": {
+        "path": "run_state/receipts/V06.json",
+        "sha256": "51f93ffb49c01d4107012e9896443499325a9e642884de1fff626c472ccbadbb",
+        "bytes": 42466
+      },
+      "blockers": [
+        "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ]
+    }
+  ],
+  "claim_boundary": "All original graphical media and the short voiced edition exist. The long voiced edition is incomplete due a stopped external-disclosure action. Mandatory audition remains blocked and is not waived. No graphical/audio-production check establishes research validity; research_state remains NOT_RUN.",
+  "independent_visual_review": {
+    "path": "reports/independent_visual_qa_20261024/review.json",
+    "sha256": "5116426c721a030c3744ae65f539f860be4e65f7be87a62d15ba1d7eabae0c49",
+    "bytes": 30915
+  },
+  "audio_listened": false,
+  "new_narrated_exports": {
+    "short_voiced_mp4": 1,
+    "short_final_wav": 1,
+    "short_measured_subtitle_cues": 14,
+    "assembled_scene_wavs": 8,
+    "downloaded_raw_cue_wavs": 42,
+    "long_voiced_mp4": 0,
+    "long_full_wav": 0,
+    "audition": "NOT_PERFORMED_REQUIRED",
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY for generated speech and containing videos"
+  },
+  "short_narrated_container_check": {
+    "checked_at_utc": "2026-10-24T18:21:36.774271+00:00",
+    "edition": "intro_90",
+    "status": "containers_and_measured_timing_pass_audition_pending",
+    "video": {
+      "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+      "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+      "duration_seconds": 90.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_channels": 1,
+      "video_start_time": "0.000000",
+      "audio_start_time": "0.000000",
+      "full_decode_passed": true
+    },
+    "waveform": {
+      "decoded_pcm_frames": 3969024,
+      "decoded_audio_seconds": 90.00054421768708,
+      "peak": 27783,
+      "rms": 4794.5660421382345,
+      "samples_at_int16_limit": 0
+    },
+    "actual_container_loudness": {
+      "integrated_lufs": -15.84,
+      "true_peak_dbtp": -1.43,
+      "loudness_range_lu": 6.8,
+      "measurement": "FFmpeg loudnorm input statistics measured from the actual decoded container"
+    },
+    "maximum_detected_silence_seconds": 2.134626,
+    "subtitle_cues": 14,
+    "subtitle_timing": "measured exact generated PCM chunk boundaries with margins, no proportional text-duration guessing",
+    "source_text_coverage": true,
+    "subtitle_scene_bounds": true,
+    "samples": [
+      {
+        "cue": 0,
+        "second": 0.5,
+        "path": "assets/video/intro_90/narrated_samples/cue-000.png",
+        "sha256": "6bec75c5d9a0655cea0f4d1adabddca97b6e933a3681a0643bab3d67c9451b9f"
+      },
+      {
+        "cue": 1,
+        "second": 4.683526,
+        "path": "assets/video/intro_90/narrated_samples/cue-001.png",
+        "sha256": "b8449fc57b20621c7169cbefefbc7e439d76b81d1a06fc6dc0b55ea1349b7e05"
+      },
+      {
+        "cue": 2,
+        "second": 13.07856,
+        "path": "assets/video/intro_90/narrated_samples/cue-002.png",
+        "sha256": "9563dce1482a70347a7938cab4abefbebdec2a2bd56ac82b2b0dabbba26ee1e4"
+      },
+      {
+        "cue": 3,
+        "second": 18.611655,
+        "path": "assets/video/intro_90/narrated_samples/cue-003.png",
+        "sha256": "90e0056acb948e6b4fd1fd5a3304e380570d89b67ab4fb360c624aed2639090a"
+      },
+      {
+        "cue": 4,
+        "second": 26.307721,
+        "path": "assets/video/intro_90/narrated_samples/cue-004.png",
+        "sha256": "d1de7a95efe6b2af15e3d23185e4ee7c46d3d121542686faf1a7283e3ce59885"
+      },
+      {
+        "cue": 5,
+        "second": 31.99754,
+        "path": "assets/video/intro_90/narrated_samples/cue-005.png",
+        "sha256": "5570417d63fd7c87d2ec5163f898adb1b20f706bc61a8bf2eb843b7cf6c6ef6f"
+      },
+      {
+        "cue": 6,
+        "second": 37.3984355,
+        "path": "assets/video/intro_90/narrated_samples/cue-006.png",
+        "sha256": "4e502be38d07e73eaf2da3bb03d03d9bea016a839cdc3e652bd80fedf60b23bd"
+      },
+      {
+        "cue": 7,
+        "second": 43.407551,
+        "path": "assets/video/intro_90/narrated_samples/cue-007.png",
+        "sha256": "00f590c47d6c7e266f4143a58e52e808dbdcb5ea23246af93fd3cd52173a39fb"
+      },
+      {
+        "cue": 8,
+        "second": 51.0148075,
+        "path": "assets/video/intro_90/narrated_samples/cue-008.png",
+        "sha256": "6602df0a3e457984647fce2621813f6e8489b7dcd1505ce79e8859490896f590"
+      },
+      {
+        "cue": 9,
+        "second": 56.955906999999996,
+        "path": "assets/video/intro_90/narrated_samples/cue-009.png",
+        "sha256": "1159f663f965cdb29b662861e2bad6efafecb171f1371df3fabca8ed33172c1c"
+      },
+      {
+        "cue": 10,
+        "second": 64.2828685,
+        "path": "assets/video/intro_90/narrated_samples/cue-010.png",
+        "sha256": "400e4ced39e4450839247f081ddab2246a10b8631dce43a76bafd23f7885458d"
+      },
+      {
+        "cue": 11,
+        "second": 69.8906575,
+        "path": "assets/video/intro_90/narrated_samples/cue-011.png",
+        "sha256": "09b2605fc8b973bff86603747b859f14fb54703de0ec6e72af1bd0ccfa744aa3"
+      },
+      {
+        "cue": 12,
+        "second": 75.236655,
+        "path": "assets/video/intro_90/narrated_samples/cue-012.png",
+        "sha256": "244c870f7bd98e994db92c23076e2f77192dd7acd42ef22ce6f7200f82a14a44"
+      },
+      {
+        "cue": 13,
+        "second": 80.07528350000001,
+        "path": "assets/video/intro_90/narrated_samples/cue-013.png",
+        "sha256": "e8b11997fa984d4ed53ca5e490dc6147f386105530602ece8c95e2360476d9b6"
+      },
+      {
+        "cue": 14,
+        "second": 85.911553,
+        "path": "assets/video/intro_90/narrated_samples/cue-014.png",
+        "sha256": "aa6f4d7a19097a2d25e35d85dbb56469547fbfd0511fca6a92b68b9ffeb96806"
+      }
+    ],
+    "audio_listened": false,
+    "spoken_word_accuracy_checked": false,
+    "word_level_alignment": false,
+    "mlt_xml_validated": true,
+    "mlt_editor_gui_opened": false,
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+    "research_state": "NOT_RUN",
+    "loudnorm_measurement_raw": {
+      "input_i": "-15.84",
+      "input_tp": "-1.43",
+      "input_lra": "6.80",
+      "input_thresh": "-26.45",
+      "output_i": "-15.96",
+      "output_tp": "-1.50",
+      "output_lra": "6.30",
+      "output_thresh": "-26.54",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.04"
+    }
+  },
+  "audio_production_state": {
+    "accepted": 43,
+    "downloaded": 42,
+    "characters_submitted": 1261,
+    "unsubmitted_characters": 493,
+    "pending_accepted_chunks": 1,
+    "credits_used": 0,
+    "private_state_preserved": true,
+    "capability_identifiers_in_deliverable": false,
+    "evidence": [
+      {
+        "path": "assets/audio/tts_ai/authorization_status.json",
+        "sha256": "ceb00f456a2ada3e05b31e0b70aa30b4b357a93ebee0079ac957d7f4036d1dd8",
+        "bytes": 1179
+      },
+      {
+        "path": "assets/audio/tts_ai/sanitization.json",
+        "sha256": "d8aba002351b50e969af7d157e4b639434fdb53ebd35bb0444a039ec6ee2791b",
+        "bytes": 532
+      }
+    ]
+  },
+  "local_pause_validation": {
+    "path": "assets/audio/tts_ai/pause_validation.json",
+    "sha256": "a3ca4cdbb31dbe13bbe9b0c110618b472426d5a9cf32b9c822a661b1d590a881",
+    "bytes": 14282
+  }
+}

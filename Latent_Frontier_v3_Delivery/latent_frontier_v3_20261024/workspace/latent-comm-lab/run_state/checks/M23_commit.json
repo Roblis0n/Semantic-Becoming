@@ -1,0 +1,91 @@
+{
+  "task_id": "M23",
+  "status": "done",
+  "input_digest": "f47a92a929519ff2d3c70b23247104ac05875028c03239f7c4e7b50349056f0e",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/INTERFACE_REPORT.md",
+      "sha256": "0d8183b357e7949bb2782135d0b2ba6d5650036892064b0e40627c3dafd20cd4",
+      "bytes": 3912
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/README.md",
+      "sha256": "657004287137c773f0cbfc35801bd9c2beaf7d79fbb4b81f66d1eac18c13d5a9",
+      "bytes": 2486
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/__init__.py",
+      "sha256": "04ad23e6c03003274f4ec815c7bd3267b67fb01c24ed2c0e10b13ec405474cd7",
+      "bytes": 102
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/adapter.py",
+      "sha256": "0b7da9a64a3a9acd09d657cab571ce10716e34211c79c1b1f88cf6ff905e2273",
+      "bytes": 1307
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/losses.py",
+      "sha256": "a424a2dd2e04072ced2f247d6ea8d7fcd0e964e2016440fca7896861a65a2b57",
+      "bytes": 1778
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/migration.py",
+      "sha256": "6b4eaa900d5e4412142b0da30d7e551b737c2866354db20ca6363a29ceaa5a07",
+      "bytes": 2961
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/reference.py",
+      "sha256": "ff9ed049318b84a222fcfd04afac9f7e7946bd64c7641f5b0980cdc636bc3f21",
+      "bytes": 6820
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/schema.json",
+      "sha256": "b50a63b65798191c2e19380915121f559f8c682dbf15db93ea54381703038004",
+      "bytes": 3264
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/training_api.json",
+      "sha256": "0d39af6d59b9a51232838d26eb625fae33efb977c75fa6f721a96b505878f97b",
+      "bytes": 6246
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/types.py",
+      "sha256": "5becdfc9c4faea4e3ed5abb35a55bf1a88d157094a5a77ee0e3ffb0ca4679604",
+      "bytes": 3359
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/wire_example.json",
+      "sha256": "5e1dc62e3110ab49aedeb73c4003e92a66338d8f30a363249c67e9a354d2b799",
+      "bytes": 455
+    },
+    {
+      "path": "tests/contracts/test_h23.py",
+      "sha256": "fac4d2176265c14471159eb11588b7eb94fa9a93b0700163de94301c44eb30bb",
+      "bytes": 10481
+    },
+    {
+      "path": "configs/mechanisms/H23.json",
+      "sha256": "be9e229c47deef3456fb908796c879391b956bf47ecbe3cf578d7466eded28eb",
+      "bytes": 5665
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M23_contracts.txt",
+      "sha256": "9783b4fe5c8832cf1e3862a37949b40dda7d7c4ac8934d1316a2cb855cbe02a4"
+    },
+    {
+      "path": "run_state/checks/M01_M24_contract_runner.py",
+      "sha256": "42bd761f1a0ea832bfeb3e97014d24daea93d4412d8d540a6d142cbc1fe07c86"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated original mechanism source, typed consumer integration, explicit recipe/gradient API and bounded stdlib contracts. Final tests use per-test aggregate_budget and deny neural/array/network imports. Research NOT_RUN. See canonical INTERFACE_REPORT.md and training_api.json for exact APIs and limitations.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:24:19.576183+00:00"
+}

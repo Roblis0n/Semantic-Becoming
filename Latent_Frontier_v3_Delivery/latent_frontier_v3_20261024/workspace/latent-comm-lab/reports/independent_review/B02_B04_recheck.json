@@ -1,0 +1,65 @@
+{
+  "research_execution": "NOT_RUN",
+  "kind": "bounded_stdlib_metadata_only",
+  "cases": 4,
+  "max_dimension": 4,
+  "max_steps": 4,
+  "B02_predecessors": [
+    [
+      [
+        -1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        -1
+      ]
+    ],
+    [
+      [
+        -1,
+        -1
+      ]
+    ],
+    [
+      [
+        1,
+        2
+      ]
+    ]
+  ],
+  "hashes": [
+    {
+      "task": "B02",
+      "path": "src/latent_comm/backends/hf_prefix/__init__.py",
+      "sha256": "6a44eb4007f07e15c4bb6c43365833c30da1b9c98e41178f167fa83fb86baa37"
+    },
+    {
+      "task": "B02",
+      "path": "backend_specs/hf_prefix.json",
+      "sha256": "4e7c8c6d837d618d205c9a30c46b6d94f08a2f1a524924928c4f6280bdf15a1f"
+    },
+    {
+      "task": "B02",
+      "path": "tests/research_locked/test_backend_hf_prefix.py",
+      "sha256": "7664afdc33c004fd5c5c0fd89c267ec4af1b9ca614767313cbfac4941b1102d4"
+    },
+    {
+      "task": "B04",
+      "path": "src/latent_comm/backends/hf_kv/__init__.py",
+      "sha256": "6d21eb4630e85ddc1465a9b9fe251bc6e1fa86ea8241d18dd6173ad8ed78d99b"
+    },
+    {
+      "task": "B04",
+      "path": "backend_specs/hf_kv.json",
+      "sha256": "c1dd752ff63e18e4b43018e85f63bd7c3aea7538ffef37ef68923e71da4f4ec0"
+    },
+    {
+      "task": "B04",
+      "path": "tests/research_locked/test_backend_hf_kv.py",
+      "sha256": "4cecfe14a9f229eba2fdca9a8cbbe40903ed50ffd5b6a562ae434644c6248f76"
+    }
+  ]
+}

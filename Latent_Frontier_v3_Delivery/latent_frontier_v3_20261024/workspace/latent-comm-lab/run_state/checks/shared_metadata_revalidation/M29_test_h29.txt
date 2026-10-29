@@ -1,0 +1,13 @@
+test_auxiliary_elimination_preserves_solutions (test_h29.H29Contracts.test_auxiliary_elimination_preserves_solutions) ... ok
+test_both_roots_and_partial_detection (test_h29.H29Contracts.test_both_roots_and_partial_detection) ... ok
+test_bounded_question_graph_retains_failures_and_transports (test_h29.H29Contracts.test_bounded_question_graph_retains_failures_and_transports) ... ok
+test_composition_and_migration (test_h29.H29Contracts.test_composition_and_migration) ... ok
+test_empty_and_no_fake_inverse (test_h29.H29Contracts.test_empty_and_no_fake_inverse) ... ok
+test_gate (test_h29.H29Contracts.test_gate) ... ok
+test_necessary_not_sufficient (test_h29.H29Contracts.test_necessary_not_sufficient) ... ok
+test_neural_source_is_lazy_and_gated (test_h29.H29Contracts.test_neural_source_is_lazy_and_gated) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.007s
+
+OK

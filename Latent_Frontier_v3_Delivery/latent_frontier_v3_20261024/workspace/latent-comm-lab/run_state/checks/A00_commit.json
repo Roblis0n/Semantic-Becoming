@@ -1,0 +1,36 @@
+{
+  "task_id": "A00",
+  "status": "done",
+  "input_digest": "3b8afe58f6357ecf3f51c00a369e937ed33f182a301f9498be39ad0c1f450eee",
+  "outputs": [
+    {
+      "path": "run_state/tool_inventory.json",
+      "sha256": "36d406081d3bd4c593fb805678608eb84af9e633df4c951937bf24f4e49d9f4b",
+      "bytes": 2469
+    },
+    {
+      "path": "run_state/workspace_binding.json",
+      "sha256": "32642aa45043fbcad791bdb81d7b23123fe0be1cbb7acaa5d945c449030ba431",
+      "bytes": 1722
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A00_integrity.json",
+      "sha256": "eb0901b737b1d1ad2cca3759a28329a16b2261aa7d9fe3208320401885eaaff4"
+    },
+    {
+      "path": "run_state/checks/A00_plan_validation.json",
+      "sha256": "4d2eace0c822a50d2bd609f9c2082bd1c4c02c5e54c8d51d4c569a69e223b67b"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Current source restored and verified; tool inventory observed without neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T15:44:14.853739+00:00"
+}

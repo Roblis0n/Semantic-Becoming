@@ -1,0 +1,164 @@
+[
+  {
+    "id": "R01",
+    "title": "Enabling Agents to Communicate Entirely in Latent Space",
+    "date": "2025-11-12",
+    "url": "https://arxiv.org/abs/2511.09149",
+    "note": "隐藏状态通信与压缩；邻近参考，不提供本方案算子组合的证据。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R02",
+    "title": "Latent Collaboration in Multi-Agent Systems",
+    "date": "2025-11-25",
+    "url": "https://arxiv.org/abs/2511.20639",
+    "note": "潜空间多模型协作；本方案不声称首次潜通信。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R03",
+    "title": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+    "date": "2025-10-03",
+    "url": "https://arxiv.org/abs/2510.03215",
+    "note": "KV 映射与融合；帮助界定状态通道已有范围。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R04",
+    "title": "Thought Blocks: Non-Autoregressive Latent Communication for Multi-Agent Systems via Trajectory-to-State Compilation",
+    "date": "2026-10-16",
+    "url": "https://arxiv.org/abs/2610.23056",
+    "note": "一次构造续接状态；与 H05 相邻，不等于本方案异构多切点续接已成立。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R05",
+    "title": "LatBridge: Efficient and Stable Model Replacement in Latent-Communication Multi-Agent Systems",
+    "date": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.27813",
+    "note": "模型替换后的接口复用；H06/H15 需说明新增结构。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R06",
+    "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+    "date": "2026-10-20",
+    "url": "https://arxiv.org/abs/2610.28905",
+    "note": "扩散模型的隐藏消息与通信时机；本方案不复制其效果数字。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R07",
+    "title": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+    "date": "2016-05-21",
+    "url": "https://arxiv.org/abs/1605.06676",
+    "note": "RIAL/DIAL；可微协议学习的早期基础。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R08",
+    "title": "HyperNetworks",
+    "date": "2016-09-27",
+    "url": "https://arxiv.org/abs/1609.09106",
+    "note": "用网络生成另一个网络的参数；不是本方案独有思想。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R09",
+    "title": "Coordination Among Neural Modules Through a Shared Global Workspace",
+    "date": "2021（年份）",
+    "url": "https://arxiv.org/abs/2103.01197",
+    "note": "共享工作空间与模块协调；为共享场提供相邻思想。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R10",
+    "title": "Deep Equilibrium Models",
+    "date": "2019-09-03",
+    "url": "https://arxiv.org/abs/1909.01377",
+    "note": "固定点计算与隐式梯度；本方案有限展开场不自动具有其性质。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R11",
+    "title": "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations",
+    "date": "2023（年份）",
+    "url": "https://arxiv.org/abs/2303.02536",
+    "note": "分布式因果对齐；操作与行为联系的参考。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R12",
+    "title": "The Platonic Representation Hypothesis",
+    "date": "2024-05-13",
+    "url": "https://arxiv.org/abs/2405.07987",
+    "note": "表示趋同假说；不是所有模型共享同一坐标的既定事实。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R13",
+    "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+    "date": "2026-02-16",
+    "url": "https://arxiv.org/abs/2602.14486",
+    "note": "讨论规模校准与局部关系；支持审慎区分关系与几何。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R14",
+    "title": "What Converges in the Platonic Representation Hypothesis? Structure over Geometry",
+    "date": "2026-09-23",
+    "url": "https://arxiv.org/abs/2609.27252",
+    "note": "进一步区分关系结构与度量几何；本方案多图册是据此提出的设计选择。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R15",
+    "title": "Introducing dots",
+    "date": "2026-09-29",
+    "url": "https://openai.com/index/introducing-dots/",
+    "note": "官方能力范围、浏览器、应用生态与权限；不能替代当前账户能力盘点。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R16",
+    "title": "PyTorch — Autograd mechanics",
+    "date": "持续更新文档",
+    "url": "https://docs.pytorch.org/docs/stable/notes/autograd.html",
+    "note": "冻结参数、梯度记录与 no_grad 的区分；执行时核验并锁定版本。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R17",
+    "title": "Transformers — Cache strategies",
+    "date": "持续更新文档",
+    "url": "https://huggingface.co/docs/transformers/main/en/kv_cache",
+    "note": "缓存类别与实现接口；main 页面不是永久兼容承诺。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  },
+  {
+    "id": "R18",
+    "title": "Safetensors documentation",
+    "date": "持续更新文档",
+    "url": "https://huggingface.co/docs/safetensors/index",
+    "note": "安全张量序列化格式；不替代完整权限和数据大小检查。",
+    "checked_on": "2026-10-24",
+    "source_kind": "primary"
+  }
+]

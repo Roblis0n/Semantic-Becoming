@@ -1,0 +1,145 @@
+{
+  "checked_at_utc": "2026-10-24T18:21:36.774271+00:00",
+  "edition": "intro_90",
+  "status": "containers_and_measured_timing_pass_audition_pending",
+  "video": {
+    "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+    "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+    "duration_seconds": 90.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 1,
+    "video_start_time": "0.000000",
+    "audio_start_time": "0.000000",
+    "full_decode_passed": true
+  },
+  "waveform": {
+    "decoded_pcm_frames": 3969024,
+    "decoded_audio_seconds": 90.00054421768708,
+    "peak": 27783,
+    "rms": 4794.5660421382345,
+    "samples_at_int16_limit": 0
+  },
+  "actual_container_loudness": {
+    "integrated_lufs": -15.84,
+    "true_peak_dbtp": -1.43,
+    "loudness_range_lu": 6.8,
+    "measurement": "FFmpeg loudnorm input statistics measured from the actual decoded container"
+  },
+  "maximum_detected_silence_seconds": 2.134626,
+  "subtitle_cues": 14,
+  "subtitle_timing": "measured exact generated PCM chunk boundaries with margins, no proportional text-duration guessing",
+  "source_text_coverage": true,
+  "subtitle_scene_bounds": true,
+  "samples": [
+    {
+      "cue": 0,
+      "second": 0.5,
+      "path": "assets/video/intro_90/narrated_samples/cue-000.png",
+      "sha256": "6bec75c5d9a0655cea0f4d1adabddca97b6e933a3681a0643bab3d67c9451b9f"
+    },
+    {
+      "cue": 1,
+      "second": 4.683526,
+      "path": "assets/video/intro_90/narrated_samples/cue-001.png",
+      "sha256": "b8449fc57b20621c7169cbefefbc7e439d76b81d1a06fc6dc0b55ea1349b7e05"
+    },
+    {
+      "cue": 2,
+      "second": 13.07856,
+      "path": "assets/video/intro_90/narrated_samples/cue-002.png",
+      "sha256": "9563dce1482a70347a7938cab4abefbebdec2a2bd56ac82b2b0dabbba26ee1e4"
+    },
+    {
+      "cue": 3,
+      "second": 18.611655,
+      "path": "assets/video/intro_90/narrated_samples/cue-003.png",
+      "sha256": "90e0056acb948e6b4fd1fd5a3304e380570d89b67ab4fb360c624aed2639090a"
+    },
+    {
+      "cue": 4,
+      "second": 26.307721,
+      "path": "assets/video/intro_90/narrated_samples/cue-004.png",
+      "sha256": "d1de7a95efe6b2af15e3d23185e4ee7c46d3d121542686faf1a7283e3ce59885"
+    },
+    {
+      "cue": 5,
+      "second": 31.99754,
+      "path": "assets/video/intro_90/narrated_samples/cue-005.png",
+      "sha256": "5570417d63fd7c87d2ec5163f898adb1b20f706bc61a8bf2eb843b7cf6c6ef6f"
+    },
+    {
+      "cue": 6,
+      "second": 37.3984355,
+      "path": "assets/video/intro_90/narrated_samples/cue-006.png",
+      "sha256": "4e502be38d07e73eaf2da3bb03d03d9bea016a839cdc3e652bd80fedf60b23bd"
+    },
+    {
+      "cue": 7,
+      "second": 43.407551,
+      "path": "assets/video/intro_90/narrated_samples/cue-007.png",
+      "sha256": "00f590c47d6c7e266f4143a58e52e808dbdcb5ea23246af93fd3cd52173a39fb"
+    },
+    {
+      "cue": 8,
+      "second": 51.0148075,
+      "path": "assets/video/intro_90/narrated_samples/cue-008.png",
+      "sha256": "6602df0a3e457984647fce2621813f6e8489b7dcd1505ce79e8859490896f590"
+    },
+    {
+      "cue": 9,
+      "second": 56.955906999999996,
+      "path": "assets/video/intro_90/narrated_samples/cue-009.png",
+      "sha256": "1159f663f965cdb29b662861e2bad6efafecb171f1371df3fabca8ed33172c1c"
+    },
+    {
+      "cue": 10,
+      "second": 64.2828685,
+      "path": "assets/video/intro_90/narrated_samples/cue-010.png",
+      "sha256": "400e4ced39e4450839247f081ddab2246a10b8631dce43a76bafd23f7885458d"
+    },
+    {
+      "cue": 11,
+      "second": 69.8906575,
+      "path": "assets/video/intro_90/narrated_samples/cue-011.png",
+      "sha256": "09b2605fc8b973bff86603747b859f14fb54703de0ec6e72af1bd0ccfa744aa3"
+    },
+    {
+      "cue": 12,
+      "second": 75.236655,
+      "path": "assets/video/intro_90/narrated_samples/cue-012.png",
+      "sha256": "244c870f7bd98e994db92c23076e2f77192dd7acd42ef22ce6f7200f82a14a44"
+    },
+    {
+      "cue": 13,
+      "second": 80.07528350000001,
+      "path": "assets/video/intro_90/narrated_samples/cue-013.png",
+      "sha256": "e8b11997fa984d4ed53ca5e490dc6147f386105530602ece8c95e2360476d9b6"
+    },
+    {
+      "cue": 14,
+      "second": 85.911553,
+      "path": "assets/video/intro_90/narrated_samples/cue-014.png",
+      "sha256": "aa6f4d7a19097a2d25e35d85dbb56469547fbfd0511fca6a92b68b9ffeb96806"
+    }
+  ],
+  "audio_listened": false,
+  "spoken_word_accuracy_checked": false,
+  "word_level_alignment": false,
+  "mlt_xml_validated": true,
+  "mlt_editor_gui_opened": false,
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "research_state": "NOT_RUN",
+  "loudnorm_measurement_raw": {
+    "input_i": "-15.84",
+    "input_tp": "-1.43",
+    "input_lra": "6.80",
+    "input_thresh": "-26.45",
+    "output_i": "-15.96",
+    "output_tp": "-1.50",
+    "output_lra": "6.30",
+    "output_thresh": "-26.54",
+    "normalization_type": "dynamic",
+    "target_offset": "-0.04"
+  }
+}

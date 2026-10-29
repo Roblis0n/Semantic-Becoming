@@ -1,0 +1,18 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "members": [],
+  "held_out_pairs": [],
+  "required_capabilities": [],
+  "behavior_coordinates": [],
+  "training_pair_graph": []
+}

@@ -1,0 +1,1257 @@
+{
+  "tasks": [
+    {
+      "id": "T00",
+      "title": "接管与能力盘点",
+      "depends_on": [],
+      "owner": "总控",
+      "outputs": [
+        "RUN_STATE.json",
+        "capability_inventory.json",
+        "policy_snapshot.json"
+      ],
+      "detail": "核验输入、读新版宪法、创建独立目录、发现浏览器与制作工具；不运行历史提示词。",
+      "checks": "确认研究模型执行关闭；原有环境未变；实际能力与猜测分开。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T01",
+      "title": "来源与近邻研究",
+      "depends_on": [
+        "T00"
+      ],
+      "owner": "研究",
+      "outputs": [
+        "sources.json",
+        "novelty_notes.md"
+      ],
+      "detail": "核验主要机制与官方接口，保留新假说跨度，逐条写明前作与新增对象。",
+      "checks": "不把历史会话引用自动标核验，不以查不到声称首创。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T02",
+      "title": "研究形式化与总图",
+      "depends_on": [
+        "T01"
+      ],
+      "owner": "理论",
+      "outputs": [
+        "research/overview.md",
+        "research/mechanisms.md"
+      ],
+      "detail": "展开六旗舰与十八扩展，定义有限参考范围、训练信号与组合问题。",
+      "checks": "没有把研究降回单桥；每机制有具体算法而非形容词。",
+      "hypotheses": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20",
+        "H21",
+        "H22",
+        "H23",
+        "H24"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T03",
+      "title": "公共类型与配置契约",
+      "depends_on": [
+        "T02"
+      ],
+      "owner": "架构",
+      "outputs": [
+        "contracts/types.py",
+        "contracts/config.py",
+        "contracts/errors.py"
+      ],
+      "detail": "实现八类消息、StateBatch、坐标、作用域、训练配置与状态字段。",
+      "checks": "未知字段、重复键、错误维度被拒绝；导入不执行模型。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T04",
+      "title": "数据世界与角色视图",
+      "depends_on": [
+        "T03"
+      ],
+      "owner": "实现",
+      "outputs": [
+        "tasks/worlds.py",
+        "tasks/views.py",
+        "tasks/splits.py"
+      ],
+      "detail": "实现八类世界的共用真值、分组与信息权限，输出可读样例。",
+      "checks": "答案与世界 ID 不进入模型视图；反事实同组。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T05",
+      "title": "程序解释器与参考数学",
+      "depends_on": [
+        "T04"
+      ],
+      "owner": "实现",
+      "outputs": [
+        "tasks/generators/",
+        "tests/fixed_math/"
+      ],
+      "detail": "实现规则、响应、约束、暂停、坐标、图与事件的确定性参考程序。",
+      "checks": "解析结果与手算一致；不含神经模型或训练。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T06",
+      "title": "可组合潜算子参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/operators/low_rank.py",
+        "src/latent_comm/mechanisms/operators/composition.py",
+        "src/latent_comm/mechanisms/bridges/operator_generator.py"
+      ],
+      "detail": "逐节实现 H01 卡的对象、算法、生命周期、可微路径和配置；不发送已经求得的答案，发送作用于接收者状态的函数。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H01"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T07",
+      "title": "反事实响应包参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/responses/low_rank_jet.py",
+        "src/latent_comm/mechanisms/responses/finite_difference.py",
+        "src/latent_comm/mechanisms/responses/trust_region.py"
+      ],
+      "detail": "逐节实现 H02 卡的对象、算法、生命周期、可微路径和配置；传送条件变化下的局部响应，而非单个静态状态。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H02"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T08",
+      "title": "多假设信念包参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/beliefs/packet.py",
+        "src/latent_comm/mechanisms/beliefs/mixture.py",
+        "src/latent_comm/mechanisms/beliefs/update.py",
+        "src/latent_comm/mechanisms/beliefs/matching.py"
+      ],
+      "detail": "逐节实现 H03 卡的对象、算法、生命周期、可微路径和配置；让接收者继承尚未决出的分歧，而不是只继承一个结论。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H03"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T09",
+      "title": "多主体共享约束场参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/fields/constraints.py",
+        "src/latent_comm/mechanisms/fields/solver.py",
+        "src/latent_comm/mechanisms/fields/conflicts.py",
+        "src/latent_comm/mechanisms/fields/readwrite.py"
+      ],
+      "detail": "逐节实现 H04 卡的对象、算法、生命周期、可微路径和配置；不再轮流发结论，而是共同塑造一个可继续求解的状态空间。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H04"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T10",
+      "title": "推理续接胶囊参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/continuations/capture.py",
+        "src/latent_comm/mechanisms/continuations/translate.py",
+        "src/latent_comm/mechanisms/continuations/resume.py",
+        "src/latent_comm/mechanisms/continuations/ledger.py"
+      ],
+      "detail": "逐节实现 H05 卡的对象、算法、生命周期、可微路径和配置；让另一模型接手未完成的计算，而不必从文字摘要重新开始。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H05"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T11",
+      "title": "多图册语义对齐参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/atlas/charts.py",
+        "src/latent_comm/mechanisms/atlas/routing.py",
+        "src/latent_comm/mechanisms/atlas/transitions.py",
+        "src/latent_comm/mechanisms/atlas/objectives.py"
+      ],
+      "detail": "逐节实现 H06 卡的对象、算法、生命周期、可微路径和配置；不强迫所有模型共享一个坐标，而学习局部坐标与操作关系。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H06"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T12",
+      "title": "类型化潜程序参考实现",
+      "depends_on": [
+        "T06",
+        "T08",
+        "T09",
+        "T10",
+        "T29"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/ir/types.py",
+        "src/latent_comm/mechanisms/ir/parser.py",
+        "src/latent_comm/mechanisms/ir/compiler.py",
+        "src/latent_comm/mechanisms/ir/runtime.py"
+      ],
+      "detail": "逐节实现 H07 卡的对象、算法、生命周期、可微路径和配置；让消息不只可读取，还可作为受限计算程序执行。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H07"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T13",
+      "title": "关系结构通信参考实现",
+      "depends_on": [
+        "T03",
+        "T05",
+        "T11"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/relations/packet.py",
+        "src/latent_comm/mechanisms/relations/matching.py",
+        "src/latent_comm/mechanisms/relations/exchange.py"
+      ],
+      "detail": "逐节实现 H08 卡的对象、算法、生命周期、可微路径和配置；传递对象之间的关系，而非强求向量坐标一致。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H08"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T14",
+      "title": "干预代数通信参考实现",
+      "depends_on": [
+        "T06",
+        "T07",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/interventions/scm.py",
+        "src/latent_comm/mechanisms/interventions/algebra.py",
+        "src/latent_comm/mechanisms/interventions/transport.py"
+      ],
+      "detail": "逐节实现 H09 卡的对象、算法、生命周期、可微路径和配置；发送可组合干预及其影响，而不是相关性描述。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H09"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T15",
+      "title": "高阶协同超边参考实现",
+      "depends_on": [
+        "T08",
+        "T09",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/synergy/hypergraph.py",
+        "src/latent_comm/mechanisms/synergy/interactions.py",
+        "src/latent_comm/mechanisms/synergy/composer.py"
+      ],
+      "detail": "逐节实现 H10 卡的对象、算法、生命周期、可微路径和配置；优化只有联合出现才有用的消息组合。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H10"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T16",
+      "title": "渐进潜编码参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/coding/progressive.py",
+        "src/latent_comm/mechanisms/coding/quantization.py",
+        "src/latent_comm/mechanisms/coding/requests.py"
+      ],
+      "detail": "逐节实现 H11 卡的对象、算法、生命周期、可微路径和配置；同一个消息可逐级展开，而不是固定一次传完。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H11"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T17",
+      "title": "多查询持久胶囊参考实现",
+      "depends_on": [
+        "T03",
+        "T05",
+        "T06"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/capsules/store.py",
+        "src/latent_comm/mechanisms/capsules/reader.py",
+        "src/latent_comm/mechanisms/capsules/versioning.py"
+      ],
+      "detail": "逐节实现 H12 卡的对象、算法、生命周期、可微路径和配置；把一段证据变成可反复询问的计算对象。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H12"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T18",
+      "title": "可分叉潜计算参考实现",
+      "depends_on": [
+        "T10",
+        "T08"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/branching/fork.py",
+        "src/latent_comm/mechanisms/branching/merge.py",
+        "src/latent_comm/mechanisms/branching/ancestry.py"
+      ],
+      "detail": "逐节实现 H13 卡的对象、算法、生命周期、可微路径和配置；让计算分支可以复制、并行继续并有条件合并。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H13"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T19",
+      "title": "潜技能语法参考实现",
+      "depends_on": [
+        "T12",
+        "T06"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/grammar/productions.py",
+        "src/latent_comm/mechanisms/grammar/bindings.py",
+        "src/latent_comm/mechanisms/grammar/expansion.py"
+      ],
+      "detail": "逐节实现 H14 卡的对象、算法、生命周期、可微路径和配置；让潜算子组合具有可学习的类型与层级。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H14"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T20",
+      "title": "接收者无关协议学习参考实现",
+      "depends_on": [
+        "T11",
+        "T04"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/population/pair_sampler.py",
+        "src/latent_comm/mechanisms/population/protocol_objectives.py",
+        "src/latent_comm/mechanisms/population/adapter_registry.py"
+      ],
+      "detail": "逐节实现 H15 卡的对象、算法、生命周期、可微路径和配置；让发送者学习面向一族接收模型的接口。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H15"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T21",
+      "title": "精确符号与潜状态双通道参考实现",
+      "depends_on": [
+        "T03",
+        "T04"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/hybrid/symbols.py",
+        "src/latent_comm/mechanisms/hybrid/bindings.py",
+        "src/latent_comm/mechanisms/hybrid/fusion.py"
+      ],
+      "detail": "逐节实现 H16 卡的对象、算法、生命周期、可微路径和配置；把必须精确的内容与开放计算状态分开传输。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H16"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T22",
+      "title": "跨模态坐标接地参考实现",
+      "depends_on": [
+        "T13",
+        "T11",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/grounding/frames.py",
+        "src/latent_comm/mechanisms/grounding/transform.py",
+        "src/latent_comm/mechanisms/grounding/action_effects.py"
+      ],
+      "detail": "逐节实现 H17 卡的对象、算法、生命周期、可微路径和配置；让视觉、语言与动作通过环境关系对接。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H17"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T23",
+      "title": "通信诱导计算结构参考实现",
+      "depends_on": [
+        "T12",
+        "T15"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/topology/candidates.py",
+        "src/latent_comm/mechanisms/topology/controller.py",
+        "src/latent_comm/mechanisms/topology/compiler.py"
+      ],
+      "detail": "逐节实现 H18 卡的对象、算法、生命周期、可微路径和配置；让通信方式参与决定计算分工与层级。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H18"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T24",
+      "title": "消息到技能巩固参考实现",
+      "depends_on": [
+        "T06",
+        "T10",
+        "T33"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/consolidation/teacher.py",
+        "src/latent_comm/mechanisms/consolidation/adapter_builder.py",
+        "src/latent_comm/mechanisms/consolidation/distillation.py"
+      ],
+      "detail": "逐节实现 H19 卡的对象、算法、生命周期、可微路径和配置；把一次通信中的操作经验蒸馏成以后可用的适配能力。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H19"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T25",
+      "title": "异步认知时钟参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/clocks/events.py",
+        "src/latent_comm/mechanisms/clocks/scheduler.py",
+        "src/latent_comm/mechanisms/clocks/staleness.py"
+      ],
+      "detail": "逐节实现 H20 卡的对象、算法、生命周期、可微路径和配置；让不同计算阶段的模型以事件而非固定轮次同步。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H20"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T26",
+      "title": "反事实分支组合搜索参考实现",
+      "depends_on": [
+        "T07",
+        "T08",
+        "T18"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/portfolios/tree.py",
+        "src/latent_comm/mechanisms/portfolios/selector.py",
+        "src/latent_comm/mechanisms/portfolios/reuse.py"
+      ],
+      "detail": "逐节实现 H21 卡的对象、算法、生命周期、可微路径和配置；在潜空间中维护可复用的多条计算假设。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H21"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T27",
+      "title": "动态模型边界参考实现",
+      "depends_on": [
+        "T23",
+        "T10",
+        "T11",
+        "T25"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/elastic/partition.py",
+        "src/latent_comm/mechanisms/elastic/transitions.py",
+        "src/latent_comm/mechanisms/elastic/controller.py"
+      ],
+      "detail": "逐节实现 H22 卡的对象、算法、生命周期、可微路径和配置；让同一个任务临时形成、拆分和重组计算模块。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H22"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T28",
+      "title": "语义残差纠错参考实现",
+      "depends_on": [
+        "T07",
+        "T16",
+        "T25"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/repair/diagnostics.py",
+        "src/latent_comm/mechanisms/repair/residual.py",
+        "src/latent_comm/mechanisms/repair/protocol.py"
+      ],
+      "detail": "逐节实现 H23 卡的对象、算法、生命周期、可微路径和配置；让接收者请求会改变任务判断的修正，而非重发全部状态。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H23"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T29",
+      "title": "有作用域的潜计算能力参考实现",
+      "depends_on": [
+        "T03",
+        "T05"
+      ],
+      "owner": "机制实现",
+      "outputs": [
+        "src/latent_comm/mechanisms/capabilities/scopes.py",
+        "src/latent_comm/mechanisms/capabilities/enforcer.py",
+        "src/latent_comm/mechanisms/capabilities/effects.py"
+      ],
+      "detail": "逐节实现 H24 卡的对象、算法、生命周期、可微路径和配置；研究如何让消息只开放指定计算作用，而非任意状态访问。",
+      "checks": "固定数学样例与错误路径；核查本卡新增逻辑；不靠同名包装冒充机制，不执行研究模型。",
+      "hypotheses": [
+        "H24"
+      ],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T30",
+      "title": "HF 后端与加载源码",
+      "depends_on": [
+        "T03",
+        "T41"
+      ],
+      "owner": "后端",
+      "outputs": [
+        "backends/hf_causal.py",
+        "backends/embeddings.py"
+      ],
+      "detail": "实现 guarded loader、角色渲染与状态抽取源码。",
+      "checks": "所有真实入口先经 guard；不下载权重，不跑随机模型。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T31",
+      "title": "三种注入路径",
+      "depends_on": [
+        "T30",
+        "T03"
+      ],
+      "owner": "后端",
+      "outputs": [
+        "backends/injection.py",
+        "backends/kv_layout.py"
+      ],
+      "detail": "完整实现 prefix、声明层 residual 与受限 KV 目标布局，明确 capability。",
+      "checks": "spy 检查 mask、位置、层、dtype；未知布局报错。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T32",
+      "title": "生成与续接后端",
+      "depends_on": [
+        "T31",
+        "T10"
+      ],
+      "owner": "后端",
+      "outputs": [
+        "backends/reference_decode.py",
+        "backends/cached_decode.py"
+      ],
+      "detail": "实现自由生成、停止、缓存更新、捕获与续接；与 loss forward 分开。",
+      "checks": "无答案参数；参考与缓存路径代码齐备，模型状态未实测。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T33",
+      "title": "统一训练循环",
+      "depends_on": [
+        "T03",
+        "T04",
+        "T41"
+      ],
+      "owner": "训练",
+      "outputs": [
+        "training/trainer.py",
+        "training/parameter_groups.py"
+      ],
+      "detail": "实现更新、累积、分母、参数组、裁剪、适配与联合训练路径。",
+      "checks": "固定梯度计算检查；训练入口拒绝；不运行优化实验。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T34",
+      "title": "全部机制目标函数",
+      "depends_on": [
+        "T33",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23",
+        "T24",
+        "T25",
+        "T26",
+        "T27",
+        "T28",
+        "T29"
+      ],
+      "owner": "训练",
+      "outputs": [
+        "training/losses/",
+        "training/recipes.py"
+      ],
+      "detail": "把 R00—R12 对应损失接入训练器，逐机制明确有效域与分母。",
+      "checks": "跨词表 KL 拒绝；混合 NLL、响应、场、图册与策略各自真实实现。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T35",
+      "title": "32 配方与组合编译",
+      "depends_on": [
+        "T34",
+        "T32"
+      ],
+      "owner": "架构",
+      "outputs": [
+        "recipes/",
+        "training/registry.py"
+      ],
+      "detail": "为24张 H 卡和 C01—C08 共32条路线生成可解析 recipe，明确 trainable_groups 与 mode。",
+      "checks": "每 recipe 连接真实模块；没有未知损失名；model mode locked。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T36",
+      "title": "DAG 运行时与逻辑时钟",
+      "depends_on": [
+        "T12",
+        "T25",
+        "T29"
+      ],
+      "owner": "运行时",
+      "outputs": [
+        "runtime/planner.py",
+        "runtime/graph.py",
+        "runtime/scheduler.py"
+      ],
+      "detail": "实现三种 DAG、类型编译、依赖、幂等、缓存和逻辑事件。",
+      "checks": "循环拒绝或受限 solver；中断不会记成功；不隐式 mock。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T37",
+      "title": "消息编解码与通道",
+      "depends_on": [
+        "T03",
+        "T29"
+      ],
+      "owner": "运行时",
+      "outputs": [
+        "runtime/local_channel.py",
+        "runtime/packet_channel.py"
+      ],
+      "detail": "训练图通路与 bytes 通路分离；实现八类 packet 和尺寸/权限检查。",
+      "checks": "字节、checksum、类型、scope 拒绝正确；无 pickle/eval。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T38",
+      "title": "CLI 与 Python API",
+      "depends_on": [
+        "T35",
+        "T36",
+        "T37"
+      ],
+      "owner": "实现",
+      "outputs": [
+        "cli/main.py",
+        "cli/commands/"
+      ],
+      "detail": "实现 ideas、recipe、compile、fixture、packet、model locked 与 export 命令。",
+      "checks": "help 无副作用；JSON 不混日志；中文空格路径与错误退出码正确。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T39",
+      "title": "checkpoint 与恢复",
+      "depends_on": [
+        "T33",
+        "T36"
+      ],
+      "owner": "实现",
+      "outputs": [
+        "training/checkpoints.py",
+        "training/resume.py",
+        "artifacts/cache.py"
+      ],
+      "detail": "保存更新边界状态、指纹与 RNG；区别 warm start 和 exact resume。",
+      "checks": "模拟中断、损坏缓存、错配置；不存在即不标完成。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T40",
+      "title": "能力与来源注册",
+      "depends_on": [
+        "T30",
+        "T31",
+        "T32",
+        "T11",
+        "T37"
+      ],
+      "owner": "文档",
+      "outputs": [
+        "compatibility_registry.json",
+        "claim_registry.json"
+      ],
+      "detail": "区分格式、数学、后端源码、模型实测；记录版本与来源。",
+      "checks": "model_evidence 全部 not_run；没有从源实现推导实测支持。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T41",
+      "title": "禁跑与权限实现",
+      "depends_on": [
+        "T00",
+        "T03"
+      ],
+      "owner": "安全",
+      "outputs": [
+        "contracts/policies.py",
+        "runtime/guard.py"
+      ],
+      "detail": "统一限制研究执行，允许正常编码及授权媒体工具，防止旧提示覆盖。",
+      "checks": "研究 load/forward/train/remote 拒绝；固定数学和文档渲染允许。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T42",
+      "title": "数学与机制复核",
+      "depends_on": [
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18",
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23",
+        "T24",
+        "T25",
+        "T26",
+        "T27",
+        "T28",
+        "T29"
+      ],
+      "owner": "复核",
+      "outputs": [
+        "tests/unit/",
+        "mechanism_review.md"
+      ],
+      "detail": "按六旗舰与扩展机制检查公式、生命周期、作用域与错误路径。",
+      "checks": "只运行固定数学和状态机；不把检查结果写成模型效果。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T43",
+      "title": "安全与故障注入",
+      "depends_on": [
+        "T41",
+        "T37",
+        "T36"
+      ],
+      "owner": "安全",
+      "outputs": [
+        "tests/security/",
+        "policy_report.md"
+      ],
+      "detail": "检查入口、网络、路径、payload、缓存、子进程与权限边界。",
+      "checks": "实际执行证据；不宣称 guard 是万能沙箱。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T44",
+      "title": "端到端数学演示",
+      "depends_on": [
+        "T38",
+        "T39",
+        "T40",
+        "T42",
+        "T43"
+      ],
+      "owner": "整合",
+      "outputs": [
+        "examples/fixture_pipeline/",
+        "fixture_report.md"
+      ],
+      "detail": "跑明确命名的固定数学组合 DAG，展示编译、算子、chart、程序与恢复。",
+      "checks": "mode 为 math_fixture；真实模型调用为零；输出不冒名科学结果。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T45",
+      "title": "方法稿与开放研究议程",
+      "depends_on": [
+        "T02",
+        "T35"
+      ],
+      "owner": "研究",
+      "outputs": [
+        "paper/proposal.md",
+        "paper/appendix.md"
+      ],
+      "detail": "写研究提案、六旗舰、24 分支、训练与组合机制；无假结果。",
+      "checks": "前作与推导分开；创新目标未被工程验收覆盖。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T46",
+      "title": "README 与开发文档",
+      "depends_on": [
+        "T38",
+        "T45"
+      ],
+      "owner": "文档",
+      "outputs": [
+        "README.md",
+        "docs/api/",
+        "docs/recipes/"
+      ],
+      "detail": "第一屏讲创新，随后准确说明状态；写操作与扩展说明。",
+      "checks": "链接存在；新读者可定位每条机制与训练代码。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T47",
+      "title": "Word 研究稿",
+      "depends_on": [
+        "T45",
+        "T46"
+      ],
+      "owner": "文档",
+      "outputs": [
+        "research_program.docx"
+      ],
+      "detail": "生成可编辑 Word、目录、章节、公式与来源；渲染检查。",
+      "checks": "逐页可读；不返回只有封面或文本截图。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T48",
+      "title": "24 页与 8 页演示",
+      "depends_on": [
+        "T45"
+      ],
+      "owner": "媒体",
+      "outputs": [
+        "media/research_24.pptx",
+        "media/summary_8.pptx"
+      ],
+      "detail": "按逐页稿制作可编辑研究演示，缺插件采用本地可行工具。",
+      "checks": "渲染全页检查；机制与状态正确；无虚构数据。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T49",
+      "title": "机制图与海报",
+      "depends_on": [
+        "T45"
+      ],
+      "owner": "媒体",
+      "outputs": [
+        "media/figures/",
+        "media/poster/"
+      ],
+      "detail": "制作八张机制图和研究海报，保留矢量与文本源。",
+      "checks": "方向、类型、分支和图册语义正确；示意标签可见。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T50",
+      "title": "90 秒动画",
+      "depends_on": [
+        "T49"
+      ],
+      "owner": "媒体",
+      "outputs": [
+        "media/animation.mp4",
+        "media/timeline_source/"
+      ],
+      "detail": "用受控时间线制作机制动画，保留工程源与素材来源。",
+      "checks": "按实际工具状态记录渲染；无假实验画面。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T51",
+      "title": "中文音轨与字幕",
+      "depends_on": [
+        "T45"
+      ],
+      "owner": "媒体",
+      "outputs": [
+        "media/narration.wav",
+        "media/subtitles.srt",
+        "media/subtitles.vtt"
+      ],
+      "detail": "使用完整旁白与通用授权声音，按实际音频对齐字幕。",
+      "checks": "无声线克隆；无空音轨；工具不支持时明确 blocked。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T52",
+      "title": "长讲解视频与源工程",
+      "depends_on": [
+        "T50",
+        "T51",
+        "T44"
+      ],
+      "owner": "媒体",
+      "outputs": [
+        "media/explainer.mp4",
+        "media/edit_source/"
+      ],
+      "detail": "合成机制画面与真实软件示意；音频受阻则保留明确无声版和完整源。",
+      "checks": "检查全片、音画同步和无虚假跑分；准确记录成品属性。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": true,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T53",
+      "title": "媒体与主张一致性",
+      "depends_on": [
+        "T48",
+        "T49",
+        "T50",
+        "T51",
+        "T52"
+      ],
+      "owner": "复核",
+      "outputs": [
+        "media/review.md",
+        "media/manifest.json"
+      ],
+      "detail": "逐资产核对来源、模式、文字、公式与实际文件；缺项不伪造。",
+      "checks": "rendered 和 source_ready 分开；阻塞不阻止汇总。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": true,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T54",
+      "title": "全源码完整性审查",
+      "depends_on": [
+        "T44",
+        "T46"
+      ],
+      "owner": "复核",
+      "outputs": [
+        "source_completion_matrix.json",
+        "review_findings.md"
+      ],
+      "detail": "从 CLI 到所有 H 卡追踪真实逻辑，不允许空壳与重复包装。",
+      "checks": "源码范围完整；科学未决不当 bug；实现缺项真实列出。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T55",
+      "title": "修复与回归",
+      "depends_on": [
+        "T54"
+      ],
+      "owner": "整合",
+      "outputs": [
+        "fix_report.md",
+        "test_evidence/"
+      ],
+      "detail": "修正实际工程问题，重跑受影响的允许检查；不修改研究范围来缩减。",
+      "checks": "无模型实测；真实日志；不能删测试冒充修复。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T56",
+      "title": "构建与本地发布包",
+      "depends_on": [
+        "T55",
+        "T47",
+        "T53",
+        "T59"
+      ],
+      "owner": "构建",
+      "outputs": [
+        "dist/",
+        "release_draft.md"
+      ],
+      "detail": "构建 wheel/sdist、源码、研究文档和媒体源；部分媒体阻塞不隐藏。以修复后的源码校准方法稿、配方和媒体说明，失效资产重新生成，纳入许可与发布草稿。",
+      "checks": "从解包目录验证路径与文件完整性；不公开发布。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": true,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T57",
+      "title": "最终 ZIP 与索引",
+      "depends_on": [
+        "T56"
+      ],
+      "owner": "构建",
+      "outputs": [
+        "FINAL_DELIVERY.zip",
+        "FILE_INDEX.md",
+        "CHECKSUMS.json"
+      ],
+      "detail": "生成完整交付、源码与媒体索引，校验压缩包路径及 hash。",
+      "checks": "解包重查；不打包凭证、字体、缓存权重。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": true,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T58",
+      "title": "最终报告与交接",
+      "depends_on": [
+        "T57",
+        "T59"
+      ],
+      "owner": "总控",
+      "outputs": [
+        "DELIVERY_REPORT.md",
+        "HANDOFF.md"
+      ],
+      "detail": "按实际结果写完成情况和链接，先讲研究机制，再讲工程状态与阻塞。",
+      "checks": "无虚构实测；未完成不能称完成；没有把普通内部任务再交回用户。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": true,
+      "status": "planned_for_dot"
+    },
+    {
+      "id": "T59",
+      "title": "许可证与公开发布草稿",
+      "depends_on": [
+        "T01",
+        "T45",
+        "T46"
+      ],
+      "owner": "文档",
+      "outputs": [
+        "LICENSE_REVIEW.md",
+        "CITATION_DRAFT.cff",
+        "PUBLISH_DRAFT.md"
+      ],
+      "detail": "核查依赖来源，准备作者与发布待定项；不替用户确定身份或自动发布。",
+      "checks": "不填假机构；不声称已经开源或投稿。",
+      "hypotheses": [],
+      "accept_terminal_dependencies": false,
+      "status": "planned_for_dot"
+    }
+  ],
+  "research_execution": false,
+  "terminal_task": "T58"
+}

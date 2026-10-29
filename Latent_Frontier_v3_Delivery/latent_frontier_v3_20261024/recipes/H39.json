@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H39",
+  "kind": "mechanism",
+  "title": "可回滚的跨模型认知事务",
+  "mechanisms": [
+    "H39"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H39_可回滚的跨模型认知事务.md",
+  "target_base": "src/latent_comm/mechanisms/h39_transactions",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "coordinator": "single",
+    "isolation": "optimistic_snapshot",
+    "external_effects": false,
+    "journal": "append_only"
+  }
+}

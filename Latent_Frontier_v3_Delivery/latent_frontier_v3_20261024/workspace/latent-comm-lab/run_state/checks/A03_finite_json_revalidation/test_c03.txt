@@ -1,0 +1,15 @@
+test_all_contradicted_preserves_unknown (test_c03.C03Tests.test_all_contradicted_preserves_unknown) ... ok
+test_conflict_not_vector_average (test_c03.C03Tests.test_conflict_not_vector_average) ... ok
+test_disjoint_computation_merges_not_beliefs (test_c03.C03Tests.test_disjoint_computation_merges_not_beliefs) ... ok
+test_repeat_evidence_does_not_reweight (test_c03.C03Tests.test_repeat_evidence_does_not_reweight) ... ok
+test_synthetic_worlds_not_merged (test_c03.C03Tests.test_synthetic_worlds_not_merged) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.037s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

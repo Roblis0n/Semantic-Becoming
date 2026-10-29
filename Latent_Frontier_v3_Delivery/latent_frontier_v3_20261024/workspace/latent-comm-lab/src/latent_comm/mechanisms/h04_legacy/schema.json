@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H04:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "sources",
+    "anchor",
+    "anchor_strength",
+    "domain"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "ontology",
+        "schema",
+        "state"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "A": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "b": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "temperature": {
+            "type": "number"
+          },
+          "domain": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "frame": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "source_state_version": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "evidence_support": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "source_id",
+          "A",
+          "b",
+          "temperature",
+          "domain",
+          "frame",
+          "source_state_version",
+          "evidence_support"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "anchor": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "anchor_strength": {
+      "type": "number",
+      "minimum": 0
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false
+}

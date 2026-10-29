@@ -1,0 +1,49 @@
+{
+  "stage": "L07",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "linear_behavior",
+  "run_id": "future-l07",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "frame": "f1",
+    "isa": "i1",
+    "evidence": "e1"
+  },
+  "dimensions": {
+    "ridge": 0.0,
+    "solver_steps": 16
+  },
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "linear_behavior": [
+      {
+        "name": "linear_behavior_calibration",
+        "parameter_owners": [
+          "transport_operator",
+          "behavior_encoder"
+        ],
+        "loss_weights": {
+          "effect": 1.0,
+          "local": 0.1,
+          "ridge": 0.1,
+          "anchors": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  }
+}

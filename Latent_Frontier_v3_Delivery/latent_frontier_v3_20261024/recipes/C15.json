@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "id": "C15",
+  "title": "多节律的轨迹推理",
+  "kind": "combination",
+  "mechanisms": [
+    "H05",
+    "H20",
+    "H33",
+    "H34"
+  ],
+  "stages": [
+    "公开边界",
+    "局部动力学",
+    "双向消息",
+    "异步续接",
+    "轨迹读出"
+  ],
+  "critical_invariant": "反向消息只含目标约束；不能从未来标签向前泄漏。",
+  "source_spec": "combinations/C15_多节律的轨迹推理.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c15.py",
+  "research_outputs": "NOT_RUN"
+}

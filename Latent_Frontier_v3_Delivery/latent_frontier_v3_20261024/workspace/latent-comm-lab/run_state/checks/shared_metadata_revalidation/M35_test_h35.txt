@@ -1,0 +1,10 @@
+test_migration_and_gate (test_h35.H35Contracts.test_migration_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h35.H35Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_no_detail_invention (test_h35.H35Contracts.test_no_detail_invention) ... ok
+test_nonclosure_witness_and_memory_repair (test_h35.H35Contracts.test_nonclosure_witness_and_memory_repair) ... ok
+test_sum_closes_and_steps_by_two (test_h35.H35Contracts.test_sum_closes_and_steps_by_two) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK

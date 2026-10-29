@@ -1,0 +1,16 @@
+M01: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_explicit_consumers_gauge_analogy_scale_macro (test_h01.OperatorTests.test_explicit_consumers_gauge_analogy_scale_macro) ... ok
+test_frame_transport_nonlinear (test_h01.OperatorTests.test_frame_transport_nonlinear) ... ok
+test_identity_immutable_and_budget (test_h01.OperatorTests.test_identity_immutable_and_budget) ... ok
+test_order_not_factor_addition (test_h01.OperatorTests.test_order_not_factor_addition) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h01.OperatorTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_scope_and_migration (test_h01.OperatorTests.test_scope_and_migration) ... ok
+test_source_gate_and_schema (test_h01.OperatorTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h01.OperatorTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h01.OperatorTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.023s
+
+OK
+M01: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

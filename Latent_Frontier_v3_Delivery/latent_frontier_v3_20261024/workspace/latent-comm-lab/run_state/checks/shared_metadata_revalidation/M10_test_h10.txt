@@ -1,0 +1,9 @@
+test_joint_not_additive (test_h10.HyperedgeTests.test_joint_not_additive) ... ok
+test_source_gate_and_schema (test_h10.HyperedgeTests.test_source_gate_and_schema) ... ok
+test_unknown_subset (test_h10.HyperedgeTests.test_unknown_subset) ... ok
+test_xor_synergy (test_h10.HyperedgeTests.test_xor_synergy) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK

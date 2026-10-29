@@ -1,0 +1,13 @@
+test_contribution_efficiency (test_coalitions.CoalitionsTests.test_contribution_efficiency) ... ok
+test_nonmonetary_and_no_source_ids (test_coalitions.CoalitionsTests.test_nonmonetary_and_no_source_ids) ... ok
+test_repeated_source_not_independent (test_coalitions.CoalitionsTests.test_repeated_source_not_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+{
+  "selected": 3,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

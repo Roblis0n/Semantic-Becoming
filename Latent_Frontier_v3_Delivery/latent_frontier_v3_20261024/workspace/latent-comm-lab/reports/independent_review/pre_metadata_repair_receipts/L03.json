@@ -1,0 +1,64 @@
+{
+  "task_id": "L03",
+  "status": "done",
+  "input_digest": "239978a9fa653b5117206a7f92887b30c13f5f378c2c8f83fd2309d4d20dadf2",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/frames/README.md",
+      "sha256": "40d3a64fd103a0482eac3493023635d426721122e9b0f9cca72dd54697ab7b7e",
+      "bytes": 1922
+    },
+    {
+      "path": "src/latent_comm/learning/frames/__init__.py",
+      "sha256": "b67e3ebe592f7131da9a66248fcdeee623a12e345e8a4b7e72c29cd71b933d45",
+      "bytes": 9180
+    },
+    {
+      "path": "src/latent_comm/learning/frames/finite_objectives.py",
+      "sha256": "c45882af77208529bb1d76a46652d6162fce18017cdf6a4218b7c28c7477dbd5",
+      "bytes": 752
+    },
+    {
+      "path": "src/latent_comm/learning/frames/train.py",
+      "sha256": "cd2150416cc017284f71ecbf69e30f718b612809db511bef92c9f6184a7d430a",
+      "bytes": 2266
+    },
+    {
+      "path": "configs/learning/frames.json",
+      "sha256": "7d467cc291ab67b1f7ebfde373e5a4d62c5ac387f76393354f29ac639417823f",
+      "bytes": 1706
+    },
+    {
+      "path": "tests/research_locked/test_learning_frames.py",
+      "sha256": "69c734bf92859e6d9164bf82e382d3cb3bd7a7774df3b99868c00c77a4bb5369",
+      "bytes": 4089
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L03_frames.txt",
+      "sha256": "e79cfe3c717df6c92f43d6d12fe42264ee6d8af7cf7ce083ce6b4f191b07369a"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "665da6304d1f2da11ac38c9e3393aa34a3b36fc9b91ac0cd69e810df3c5d157d"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "db5a096ab2bcf19ab1e436854305b9a566b8c43e5b8a48c0f8042b24b8d3ad52"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "GL calibration, rectangular cross-map residual, hard-anchor restriction learning, dedicated losses, complete shared future AdamW/accumulation/checkpoint/resume source; 15 stdlib/AST/finite checks. No model initialization, forward or optimizer run.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:25:17.741761+00:00"
+}

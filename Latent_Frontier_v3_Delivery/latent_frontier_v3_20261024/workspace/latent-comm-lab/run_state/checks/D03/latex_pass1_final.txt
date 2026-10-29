@@ -1,0 +1,16 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/run_state/checks/D03/render/xelatex.fmt)
+entering extended mode
+(./paper/main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+! Font TU/lmr/m/n/10=[lmroman10-regular]:mapping=tex-text; at 10.0pt not loadab
+le: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.54 \normalsize
+                
+No pages of output.
+Transcript written on run_state/checks/D03/render/main.log.

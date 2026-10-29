@@ -1,0 +1,72 @@
+{
+  "task_id": "M42",
+  "status": "done",
+  "input_digest": "dc9f7e817399fa55db30314f6dbc44281a78c742e014cc08799cfe1a15070df5",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/README.md",
+      "sha256": "63a38a596397aa44cd32d8669fba9fcd26b3710505153413c134873e3a780cad",
+      "bytes": 1812
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/__init__.py",
+      "sha256": "a0d0112d4c8ea383dcfd4a3e5690ff0d98e1e848f71c377b27bd4a3beda9ecac",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/adapter.py",
+      "sha256": "db372853544267f8bbe0d39f2367188b44451e79f1647bfdd5b582ac23e8c575",
+      "bytes": 2743
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/losses.py",
+      "sha256": "4c7a351cb2203a54ed7f76d2a551a883f255d7dae7638e3273a9e4c515a15f53",
+      "bytes": 1105
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/reference.py",
+      "sha256": "e5f067c220b2d0b9d6d0606f279fb735e55106c695694d176b86954b2d38dedd",
+      "bytes": 5760
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/schema.json",
+      "sha256": "aec464110ce7a2990ad7d42fae13f3ac2247a668fef2f9d41a72d6028bff53d0",
+      "bytes": 1046
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/serialization.py",
+      "sha256": "41521e6fe4e327169266d341a7d44898e4ca574ba72a76c3dfb1c9fea2718b91",
+      "bytes": 1299
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/types.py",
+      "sha256": "4744b7071c405290ee1f59a1448a39ca3fa2b1b4ae6ab18104eaae778f0f58d7",
+      "bytes": 1947
+    },
+    {
+      "path": "tests/contracts/test_h42.py",
+      "sha256": "3b82a83ea70141d4cf4fa1d89c58e7a7f5b1845247900f9e1ab1af3e43010524",
+      "bytes": 3358
+    },
+    {
+      "path": "configs/mechanisms/H42.json",
+      "sha256": "125717155d274224a59aca4706bc3993dd16bfdd10f83e7782f356e56ddb0974",
+      "bytes": 1218
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M42_contracts.txt",
+      "sha256": "4f2e4067a382cfb5ea8b27bf7ac94260ab951021fccb0d63ff1ca2ac9d2eaab0"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated algorithm, semantic payload validation and migration, positive/boundary/counterexample tests. Tensor source AST checked only; research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:36:36.956830+00:00"
+}

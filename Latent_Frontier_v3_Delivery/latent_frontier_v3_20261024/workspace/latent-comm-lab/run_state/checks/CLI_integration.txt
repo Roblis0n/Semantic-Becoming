@@ -1,0 +1,11 @@
+test_future_research_description_only (test_cli.CliTests.test_future_research_description_only) ... ok
+test_inspect_strict_finite (test_cli.CliTests.test_inspect_strict_finite) ... ok
+test_inventory_is_complete (test_cli.CliTests.test_inventory_is_complete) ... ok
+test_no_neural_imports (test_cli.CliTests.test_no_neural_imports) ... ok
+test_research_gate_source_precedes_dispatch (test_cli.CliTests.test_research_gate_source_precedes_dispatch) ... ok
+test_specific_design_no_execution (test_cli.CliTests.test_specific_design_no_execution) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.087s
+
+OK

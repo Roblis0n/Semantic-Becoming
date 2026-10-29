@@ -1,0 +1,1050 @@
+{
+  "recipe_id": "C17",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C17",
+    "nodes": [
+      {
+        "node_id": "candidate_family",
+        "operation": "C17.candidate_family",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "candidate_family:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "IdentificationInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CandidateFamily",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H03"
+        ],
+        "implementation": "latent_comm.compositions.c17.candidate_family",
+        "location": {
+          "source": "C17.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "conditional_exclusions",
+        "operation": "C17.conditional_exclusions",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "candidate_family:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "conditional_exclusions:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CandidateFamily",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ConditionalCandidates",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E"
+        ],
+        "write_set": [
+          "E"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H46"
+        ],
+        "implementation": "latent_comm.compositions.c17.conditional_exclusions",
+        "location": {
+          "source": "C17.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "partition_allowed_queries",
+        "operation": "C17.partition_allowed_queries",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "conditional_exclusions:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "partition_allowed_queries:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ConditionalCandidates",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AllowedQueryPartition",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "Q",
+          "Z"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H02",
+          "H45"
+        ],
+        "implementation": "latent_comm.compositions.c17.partition_allowed_queries",
+        "location": {
+          "source": "C17.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "finite_local_response",
+        "operation": "C17.finite_local_response",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "partition_allowed_queries:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "finite_local_response:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "AllowedQueryPartition",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "QueriedFamily",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H02"
+        ],
+        "implementation": "latent_comm.compositions.c17.finite_local_response",
+        "location": {
+          "source": "C17.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "refine_belief",
+        "operation": "C17.refine_belief",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "finite_local_response:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "refine_belief:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "QueriedFamily",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "RefinedIdentification",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "Q",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H03",
+          "H45"
+        ],
+        "implementation": "latent_comm.compositions.c17.refine_belief",
+        "location": {
+          "source": "C17.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "candidate_family:out",
+        {
+          "name": "CandidateFamily",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "conditional_exclusions:out",
+        {
+          "name": "ConditionalCandidates",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "finite_local_response:out",
+        {
+          "name": "QueriedFamily",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "IdentificationInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "partition_allowed_queries:out",
+        {
+          "name": "AllowedQueryPartition",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "refine_belief:out",
+        {
+          "name": "RefinedIdentification",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "candidate_family",
+        "conditional_exclusions"
+      ],
+      [
+        "conditional_exclusions",
+        "partition_allowed_queries"
+      ],
+      [
+        "finite_local_response",
+        "refine_belief"
+      ],
+      [
+        "partition_allowed_queries",
+        "finite_local_response"
+      ]
+    ],
+    "schedule": [
+      "candidate_family",
+      "conditional_exclusions",
+      "partition_allowed_queries",
+      "finite_local_response",
+      "refine_belief"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "621a004495a93a051efee057abbecc69a8520ce787510cc7f6852ec563a207ef",
+    "declared_parameters": {
+      "obligations": [
+        "Permission filtering precedes information gain and query evaluation.",
+        "A nonlinear local response capsule does not establish an exact likelihood.",
+        "Posterior identification is conditional on the candidate family; unknown hypotheses remain possible."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C17",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "local_response",
+        "objectives": [
+          {
+            "name": "task",
+            "mathematical_definition": "stage normalized task loss after dedicated mechanism",
+            "numerator": "sum valid task losses",
+            "denominator": "valid task count",
+            "valid_mask": "stage-normalized valid tasks",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "task_loss"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task instances",
+            "id": "H02.task"
+          },
+          {
+            "name": "response",
+            "mathematical_definition": "mean ||z_hat-z_teacher||^2",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "predicted"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "response elements",
+            "id": "H02.response"
+          },
+          {
+            "name": "locality",
+            "mathematical_definition": "BCE(refresh_logit,outside_or_error)",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "refresh_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer"
+            ],
+            "requires_grad_inputs": [
+              "refresh_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "refresh_target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "queries",
+            "id": "H02.locality"
+          }
+        ],
+        "losses": [
+          "H02.task",
+          "H02.response",
+          "H02.locality"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "query_policy",
+        "objectives": [
+          {
+            "name": "response",
+            "mathematical_definition": "sum(m*-log p(observation|hypothesis,query))/sum(m)",
+            "numerator": "observed response NLL",
+            "denominator": "valid program-observation cases",
+            "valid_mask": "observation_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "response_encoder"
+            ],
+            "requires_grad_inputs": [
+              "public_query_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "observations",
+            "id": "H45.response"
+          },
+          {
+            "name": "query_policy",
+            "mathematical_definition": "-sum(m*log_pi(query)*verified_information_gain)/sum(m)",
+            "numerator": "legal query policy score",
+            "denominator": "valid host-authorized local queries",
+            "valid_mask": "query_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "query_proposer"
+            ],
+            "requires_grad_inputs": [
+              "query_log_probability"
+            ],
+            "stop_gradient_edges": [
+              [
+                "verified_information_gain",
+                "query_policy"
+              ]
+            ],
+            "estimated_or_exact": "policy_gradient",
+            "normalization_units": "queries",
+            "id": "H45.query_policy"
+          }
+        ],
+        "losses": [
+          "H45.response",
+          "H45.query_policy"
+        ],
+        "owners": [
+          "query_proposer",
+          "response_encoder"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "scoped_exclusions",
+        "objectives": [
+          {
+            "name": "exclusion",
+            "mathematical_definition": "sum(mask*BCEWithLogits(predicate_logits,verified_exclusion))/sum(mask)",
+            "numerator": "certificate-labelled predicate BCE",
+            "denominator": "valid scoped finite predicate cases",
+            "valid_mask": "predicate_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "exclusion_generator"
+            ],
+            "requires_grad_inputs": [
+              "predicate_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "verified_exclusion",
+                "exclusion"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "candidate_predicates",
+            "id": "H46.exclusion"
+          },
+          {
+            "name": "scope",
+            "mathematical_definition": "sum(mask*BCEWithLogits(scope_logits,scope_applies))/sum(mask)",
+            "numerator": "scope applicability BCE",
+            "denominator": "known assumption cases",
+            "valid_mask": "scope_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "scope_predictor"
+            ],
+            "requires_grad_inputs": [
+              "scope_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "scope_applies",
+                "scope"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "scopes",
+            "id": "H46.scope"
+          }
+        ],
+        "losses": [
+          "H46.exclusion",
+          "H46.scope"
+        ],
+        "owners": [
+          "exclusion_generator",
+          "scope_predictor"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "candidate_family": "stop",
+      "conditional_exclusions": "enumeration",
+      "partition_allowed_queries": "enumeration",
+      "finite_local_response": "stop",
+      "refine_belief": "stop"
+    },
+    "permissions": "not learned and never optimized away"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

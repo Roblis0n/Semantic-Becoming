@@ -1,0 +1,72 @@
+{
+  "task_id": "M10",
+  "status": "done",
+  "input_digest": "5bc114b636686f256abe3cee11e36ca65108b4f04504b07989a687810176e588",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/README.md",
+      "sha256": "894244bb810214d847179dc6f41eb0835c47120083ee78f56ecff53aa0ab1111",
+      "bytes": 2206
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/__init__.py",
+      "sha256": "d0019568bc17a10dcd5f33524399fced9825719d681bfa36e8091e0817089761",
+      "bytes": 84
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/adapter.py",
+      "sha256": "1a8df15b131a852bedebdb767fbbe80247d390d0c0d8e20767718df456bd93a5",
+      "bytes": 886
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/losses.py",
+      "sha256": "2bdf8d1918edcca830cb1fa16a2fa06d39939db7bd73c1603a299b59c0c22908",
+      "bytes": 1359
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/migration.py",
+      "sha256": "9edd6d74f8e57cb656fec85b4435dab245d88a0b008044e94a4ef07b4508f975",
+      "bytes": 2097
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/reference.py",
+      "sha256": "a917311d1f8fd47a6e4645e03487abb2495cb959caf87762fa8c1c9c8021c4c0",
+      "bytes": 2225
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/schema.json",
+      "sha256": "51002a3b178e3c6bb49f5797447158085208c7c6dac31f3551cba163e56e38fb",
+      "bytes": 1146
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/types.py",
+      "sha256": "9ddc47a635d70cec42b20a478a5bf3a01188a284e3a8edb5790e0c909841bd6e",
+      "bytes": 1266
+    },
+    {
+      "path": "tests/contracts/test_h10.py",
+      "sha256": "44ab6848f8d8cff613c51737de7eb3ce28a72baadcb4467b2969c5d2ff82d306",
+      "bytes": 2487
+    },
+    {
+      "path": "configs/mechanisms/H10.json",
+      "sha256": "81c9dc1b6a4025b9e752c4363f70845a792f9b26460ffd245c4849a4e39f3a3d",
+      "bytes": 3199
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M10_contracts.txt",
+      "sha256": "56121641e039c78ee80d5feac9615fe96f0f108cd3529fd3364b203085e0bb8d"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded high-order/XOR/subset-variance/source-dedup contracts and AST gates pass; tensor multilinear factors source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:24:35.294878+00:00"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H37",
+  "kind": "mechanism",
+  "title": "跨模型学习方向运输",
+  "mechanisms": [
+    "H37"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H37_跨模型学习方向运输.md",
+  "target_base": "src/latent_comm/mechanisms/h37_gradient_transport",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "ridge": 0.001,
+    "probe_dimension": 16,
+    "linear_solver_steps": 32,
+    "parameter_update_authorized": false
+  }
+}

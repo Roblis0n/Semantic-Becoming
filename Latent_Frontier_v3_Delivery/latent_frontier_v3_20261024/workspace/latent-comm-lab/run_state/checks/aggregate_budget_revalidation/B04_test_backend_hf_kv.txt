@@ -1,0 +1,19 @@
+test_axes_and_grouping (test_backend_hf_kv.KVContracts.test_axes_and_grouping) ... ok
+test_exact_identity_branch_source (test_backend_hf_kv.KVContracts.test_exact_identity_branch_source) ... ok
+test_exact_rejects_any_projection_or_phase_remapping (test_backend_hf_kv.KVContracts.test_exact_rejects_any_projection_or_phase_remapping) ... ok
+test_exact_transfer_cannot_change_revision (test_backend_hf_kv.KVContracts.test_exact_transfer_cannot_change_revision) ... ok
+test_explicit_layer_head_position_maps (test_backend_hf_kv.KVContracts.test_explicit_layer_head_position_maps) ... ok
+test_unbound_cache_identity_rejected (test_backend_hf_kv.KVContracts.test_unbound_cache_identity_rejected) ... ok
+test_unknown_rotary_layout (test_backend_hf_kv.KVContracts.test_unknown_rotary_layout) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [
+    "test_backend_hf_kv.KVContracts.test_cache_transport_gate"
+  ],
+  "neural_modules_loaded": []
+}

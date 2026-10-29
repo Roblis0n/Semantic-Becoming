@@ -1,0 +1,72 @@
+{
+  "task_id": "M05",
+  "status": "done",
+  "input_digest": "feb087a9fd83411c275ba9f8cefed299d563ecf1dcc2f6c0b75a26f4bb1833e4",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/README.md",
+      "sha256": "333f02c11fc6187502aec7ee04aa01c5f9491f6a9e4562c2939ae85e27e0c44b",
+      "bytes": 2363
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/__init__.py",
+      "sha256": "1cafa1bc2a264793dee845aa5449cb363d168b718a9cf55f0b512126e9ab2af1",
+      "bytes": 96
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/adapter.py",
+      "sha256": "c01bf040023cb80016303daa48f6179bea03ce1339651933b2a4cc5a108a2beb",
+      "bytes": 2716
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/losses.py",
+      "sha256": "c0e602195fea892d99a589907259af829ebed49774d06c19c1db88c321d49098",
+      "bytes": 1091
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/migration.py",
+      "sha256": "2b37e9b7fc8b481f4e1a7b1728365287908f4d9e8ee0b966ed51c706753a5f4d",
+      "bytes": 2232
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/reference.py",
+      "sha256": "c70ac49b3821205b311fcfa587f9478421905f2507508b945fbfebef2110b0b8",
+      "bytes": 2869
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/schema.json",
+      "sha256": "c7d4ce0ccd685e9ade16318a8fc817481b44972d706b9549ca8f8f7bc978d101",
+      "bytes": 1783
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/types.py",
+      "sha256": "e093321e5bc38b211c215b8ac169f5eaf4f1bf78c45972927a608f26ed18bace",
+      "bytes": 1888
+    },
+    {
+      "path": "tests/contracts/test_h05.py",
+      "sha256": "43bf4827d724bf0f22f4865c02741b366f17e0848a7be59cb5bd26547db46137",
+      "bytes": 2738
+    },
+    {
+      "path": "configs/mechanisms/H05.json",
+      "sha256": "6e6354a5c83aa5d90289989b8188de13b6caf2a10c3c2f60873e1abcc4f0b848",
+      "bytes": 3251
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M05_contracts.txt",
+      "sha256": "6cc5c0b055d50678eaec8b3a405d4596316e9baf9418f139f1ab1a897e8e8d9e"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three bounded continuation/version/close/AST contracts pass; W09 evaluator reused; exact model cache resume and heterogeneous translation source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:18:13.404707+00:00"
+}

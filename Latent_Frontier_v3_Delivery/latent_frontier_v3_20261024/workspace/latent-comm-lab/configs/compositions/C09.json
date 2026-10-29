@@ -1,0 +1,1217 @@
+{
+  "recipe_id": "C09",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C09",
+    "nodes": [
+      {
+        "node_id": "register_frames",
+        "operation": "C09.register_frames",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "register_frames:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LanguageInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "FrameBinding",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "Z"
+        ],
+        "write_set": [
+          "F"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H06",
+          "H25"
+        ],
+        "implementation": "latent_comm.compositions.c09.register_frames",
+        "location": {
+          "source": "C09.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "select_scale",
+        "operation": "C09.select_scale",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "register_frames:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "select_scale:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "FrameBinding",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ScaleSelection",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H35"
+        ],
+        "implementation": "latent_comm.compositions.c09.select_scale",
+        "location": {
+          "source": "C09.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "lower_instruction",
+        "operation": "C09.lower_instruction",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "select_scale:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "lower_instruction:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ScaleSelection",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "LoweredOperation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H40"
+        ],
+        "implementation": "latent_comm.compositions.c09.lower_instruction",
+        "location": {
+          "source": "C09.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "transport_operation",
+        "operation": "C09.transport_operation",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "lower_instruction:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "transport_operation:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LoweredOperation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TransportedAction",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H01",
+          "H25",
+          "H06"
+        ],
+        "implementation": "latent_comm.compositions.c09.transport_operation",
+        "location": {
+          "source": "C09.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "apply_target",
+        "operation": "C09.apply_target",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "transport_operation:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "apply_target:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TransportedAction",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "EffectBundle",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H01",
+          "H06"
+        ],
+        "implementation": "latent_comm.compositions.c09.apply_target",
+        "location": {
+          "source": "C09.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "read_behavior",
+        "operation": "C09.read_behavior",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "apply_target:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "read_behavior:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "EffectBundle",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "BehaviorReadout",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "F",
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H25",
+          "H35"
+        ],
+        "implementation": "latent_comm.compositions.c09.read_behavior",
+        "location": {
+          "source": "C09.bound.json",
+          "path": "/nodes/5",
+          "line": 83,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "apply_target:out",
+        {
+          "name": "EffectBundle",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "LanguageInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "lower_instruction:out",
+        {
+          "name": "LoweredOperation",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "read_behavior:out",
+        {
+          "name": "BehaviorReadout",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "register_frames:out",
+        {
+          "name": "FrameBinding",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "select_scale:out",
+        {
+          "name": "ScaleSelection",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "transport_operation:out",
+        {
+          "name": "TransportedAction",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "apply_target",
+        "read_behavior"
+      ],
+      [
+        "lower_instruction",
+        "transport_operation"
+      ],
+      [
+        "register_frames",
+        "select_scale"
+      ],
+      [
+        "select_scale",
+        "lower_instruction"
+      ],
+      [
+        "transport_operation",
+        "apply_target"
+      ]
+    ],
+    "schedule": [
+      "register_frames",
+      "select_scale",
+      "lower_instruction",
+      "transport_operation",
+      "apply_target",
+      "read_behavior"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 6,
+    "max_steps": 64,
+    "input_digest": "9fa0d2a28ca85f182d6e33ee7aa814d102dc22ecf765dd8a4eda5dc342a07d65",
+    "declared_parameters": {
+      "obligations": [
+        "Heterogeneous chart transitions are partial actions, not invertible gauge transformations.",
+        "Real-model action and discovered semantic alignment remain NOT_RUN."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C09",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "coordinate_calibration",
+        "objectives": [
+          {
+            "name": "covariance",
+            "mathematical_definition": "sum(mask * (Pprime Gi z - Gj P z)^2)/sum(mask)",
+            "numerator": "squared transported coordinate residual",
+            "denominator": "valid state elements",
+            "valid_mask": "state_element_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "cross_map",
+              "read_write_heads"
+            ],
+            "requires_grad_inputs": [
+              "state",
+              "cross_map"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "state elements",
+            "id": "H25.covariance"
+          },
+          {
+            "name": "effect",
+            "mathematical_definition": "sum(mask * (rprime Tprime zprime-r T z)^2)/sum(mask)",
+            "numerator": "squared public behavior residual",
+            "denominator": "valid behavior elements",
+            "valid_mask": "behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "cross_map",
+              "read_write_heads"
+            ],
+            "requires_grad_inputs": [
+              "state",
+              "operator",
+              "readout"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "public behavior elements",
+            "id": "H25.effect"
+          }
+        ],
+        "losses": [
+          "H25.covariance",
+          "H25.effect"
+        ],
+        "owners": [
+          "cross_map",
+          "read_write_heads"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "scale_closure",
+        "objectives": [
+          {
+            "name": "commute",
+            "mathematical_definition": "sum(m*(C Fmicro(z)-Fmacro(Cz))^2)/sum(m)",
+            "numerator": "coarse dynamic closure error",
+            "denominator": "valid macro-state elements",
+            "valid_mask": "macro_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coarse_map",
+              "macro_dynamics"
+            ],
+            "requires_grad_inputs": [
+              "micro_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "macro elements",
+            "id": "H35.commute"
+          },
+          {
+            "name": "task",
+            "mathematical_definition": "sum(m*(macro_task-micro_task)^2)/sum(m)",
+            "numerator": "preserved task-response residual",
+            "denominator": "valid task responses",
+            "valid_mask": "task_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coarse_map",
+              "task_reader"
+            ],
+            "requires_grad_inputs": [
+              "macro_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task responses",
+            "id": "H35.task"
+          },
+          {
+            "name": "residual",
+            "mathematical_definition": "sum(m*(detail_prediction-detail)^2)/sum(m)",
+            "numerator": "retained detail prediction error",
+            "denominator": "valid micro residual elements",
+            "valid_mask": "detail_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "lift",
+              "detail_memory"
+            ],
+            "requires_grad_inputs": [
+              "coarse_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "micro elements",
+            "id": "H35.residual"
+          }
+        ],
+        "losses": [
+          "H35.commute",
+          "H35.task",
+          "H35.residual"
+        ],
+        "owners": [
+          "coarse_map",
+          "detail_memory",
+          "lift",
+          "macro_dynamics",
+          "task_reader"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "macro_definition_and_fast_implementation",
+        "objectives": [
+          {
+            "name": "description",
+            "mathematical_definition": "encoded_original_bytes-encoded_definition_bytes-encoded_calls_bytes",
+            "numerator": "actual byte savings",
+            "denominator": "one candidate library",
+            "valid_mask": "candidate_valid",
+            "zero_valid_policy": "error",
+            "parameter_owners": [],
+            "requires_grad_inputs": [],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "finite_enumeration",
+            "normalization_units": "bytes",
+            "id": "H40.description"
+          },
+          {
+            "name": "fast_behavior",
+            "mathematical_definition": "sum(m*(fast_mu(x)-Exec_base(lower(mu),x))^2)/sum(m)",
+            "numerator": "fast implementation anchor error",
+            "denominator": "valid declared behavior anchors",
+            "valid_mask": "anchor_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "fast_macro_coefficients"
+            ],
+            "requires_grad_inputs": [
+              "macro_inputs"
+            ],
+            "stop_gradient_edges": [
+              [
+                "exact_base_target",
+                "fast_behavior"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior anchors",
+            "id": "H40.fast_behavior"
+          },
+          {
+            "name": "binding",
+            "mathematical_definition": "sum(m*CE(binding_logits,binding))/sum(m)",
+            "numerator": "typed argument binding CE",
+            "denominator": "valid macro calls",
+            "valid_mask": "call_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "binding_selector"
+            ],
+            "requires_grad_inputs": [
+              "program_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "macro calls",
+            "id": "H40.binding"
+          }
+        ],
+        "losses": [
+          "H40.description",
+          "H40.fast_behavior",
+          "H40.binding"
+        ],
+        "owners": [
+          "binding_selector",
+          "fast_macro_coefficients"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "register_frames": "stop",
+      "select_scale": "stop",
+      "lower_instruction": "enumeration",
+      "transport_operation": "differentiable",
+      "apply_target": "differentiable",
+      "read_behavior": "differentiable"
+    },
+    "frozen": [
+      "base_models",
+      "immutable_source_definitions"
+    ],
+    "structure_search": "enumeration is distinct from differentiable phases",
+    "execution": "unified gated runner only; no joint global loss by default"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

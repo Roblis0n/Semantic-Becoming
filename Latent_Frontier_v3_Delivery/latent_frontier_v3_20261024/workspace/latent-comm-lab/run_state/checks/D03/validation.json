@@ -1,0 +1,320 @@
+{
+  "task_id": "D03",
+  "scope": "static documentation/source/AST/provenance only",
+  "research_state": "NOT_RUN",
+  "research_entries_invoked_by_D03": 0,
+  "neural_imports": [],
+  "check_count": 54,
+  "passed": 54,
+  "checks": [
+    {
+      "name": "three_owned_deliverables_substantive",
+      "passed": true,
+      "detail": [
+        126170,
+        184220,
+        4388
+      ]
+    },
+    {
+      "name": "mechanisms_full_distinct_sections",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "compositions_full_distinct_sections",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "horizons_full_distinct_sections",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "thirty_eight_future_branches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "thirteen_learning_sections",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sixty_eight_explicit_original_recipes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_forty_eight_bound_configs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_twenty_bound_configs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_forty_eight_algorithm_contract_paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_主线一",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_主线二",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_主线三",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_完整元梯度",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_不可达分量",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_观测噪声独立",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_required_predicate",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_单进程内同一协调实例",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_conditional",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_projection_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_first_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "semantic_topic_W13 负责",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_invented_W14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "model_result_rows_not_run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "honest_incident",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "noncommercial_audio_disclosure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "media_snapshot_1846_dated",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "media_short_real_long_incomplete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "media_denial_stopped_uncertain_pending",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "media_only_monograph_delta",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source_evidence_limits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_research_not_run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bibliography_all_46_resolve",
+      "passed": true,
+      "detail": {
+        "known": 46,
+        "used": 46,
+        "missing": []
+      }
+    },
+    {
+      "name": "no_N07_substantive_citation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_46_bibliography_date_fields_preserved",
+      "passed": true,
+      "detail": {
+        "sources": 46,
+        "failures": []
+      }
+    },
+    {
+      "name": "no_conflated_first_public_date",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "N03_UAI2004_not_2012_deposit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "graft_original_new_descendant_union",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "joint_kernel_conditional_independence_and_locality",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "adaptive_identifiability_sequence_condition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "23_assumptions_render_as_real_list",
+      "passed": true,
+      "detail": {
+        "latex_items": 23
+      }
+    },
+    {
+      "name": "all_code_formatted_paths_exist",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "source_snapshot_current",
+      "passed": true,
+      "detail": {
+        "files": 734,
+        "changed": []
+      }
+    },
+    {
+      "name": "127_static_loss_specs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_loss_fields_recorded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_127_loss_formulas_preserve_source_spacing",
+      "passed": true,
+      "detail": {
+        "formulas": 127,
+        "with_whitespace": 77
+      }
+    },
+    {
+      "name": "latex_full_content_coverage",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "latex_real_document",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "balanced_markdown_math",
+      "passed": true,
+      "detail": 128
+    },
+    {
+      "name": "paper_input_matches_current_monograph",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "latex_compiles_without_glyph_or_box_errors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_unsafe_getting_started",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "mechanism_source_ast_parse",
+      "passed": true,
+      "detail": 306
+    },
+    {
+      "name": "all_current_dependency_receipts",
+      "passed": true,
+      "detail": {
+        "direct": 23,
+        "transitive": 95
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "9bf8378475dbf742cb6b0b2557ff3baf4fba4d48c0c1e8f3697ce7a300846fd5",
+      "bytes": 216921
+    },
+    {
+      "path": "README.md",
+      "sha256": "c102a4ae20138b6be04cda582179d60024f768912c1477fe51f943b2935baf8f",
+      "bytes": 9118
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "31938e1baf75022d249dfd39f3d15d6ba4e7ad3eecc5b2fe2e8c4f0afc543297",
+      "bytes": 274929
+    }
+  ]
+}

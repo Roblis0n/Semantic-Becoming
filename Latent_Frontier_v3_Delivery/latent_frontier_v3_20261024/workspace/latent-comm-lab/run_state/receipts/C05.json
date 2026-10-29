@@ -1,0 +1,45 @@
+{
+  "task_id": "C05",
+  "status": "done",
+  "input_digest": "1f81af6c9d3223baaadfde80f9590b0e0ddfbc64acc912ff506b443b9267b16a",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compositions/c05.py",
+      "sha256": "8c9ec96fb890550e1778c7eaa38c3dec0260256683db392794bc99a243ea459b",
+      "bytes": 9285
+    },
+    {
+      "path": "configs/compositions/C05.json",
+      "sha256": "ca1e301f1670c0dc6f237fecff31b734c043108f21c1c7767c3f7ff2065b339d",
+      "bytes": 26295
+    },
+    {
+      "path": "tests/contracts/test_c05.py",
+      "sha256": "8b323ebfab2ede4f512fbff9977306a030f1e1e46943a6bc353bcde3d989d570",
+      "bytes": 3243
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/C05_composition.txt",
+      "sha256": "45a497b7dd983cbbe3d618ac9deb80e9e2fecc2ef6b1953e6be38855722eaf52"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "b4127847febf1ffeefb1d8515a256bf538eb09612791ea280ad808e6047ea41d"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_c05.txt",
+      "sha256": "065bc8987d0ca5254c5521912b14a14f150caf5fa7ccd0bdc1485232d3c72674"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Repaired physical-object/context version binding identified in independent review; six finite tests pass, no research execution. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:06.056176+00:00"
+}

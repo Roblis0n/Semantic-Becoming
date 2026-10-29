@@ -1,0 +1,9 @@
+test_sequence_not_token_average (test_h03.BeliefTests.test_sequence_not_token_average) ... ok
+test_set_matching_and_domain (test_h03.BeliefTests.test_set_matching_and_domain) ... ok
+test_source_gate_and_schema (test_h03.BeliefTests.test_source_gate_and_schema) ... ok
+test_unknown_and_deduplicated_evidence (test_h03.BeliefTests.test_unknown_and_deduplicated_evidence) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK

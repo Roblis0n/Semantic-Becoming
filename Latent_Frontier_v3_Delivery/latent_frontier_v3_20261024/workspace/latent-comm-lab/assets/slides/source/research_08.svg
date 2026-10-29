@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H36：反例不是一句反对</title><desc id="desc">命题→候选反例→执行检查→修订，文字争论旁路标未证。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H36：反例不是一句反对</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">分歧必须产生可操作见证</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">08 / 36</tspan>
+</text>
+<rect id="e006" x="64.0" y="280" width="264.0" height="150" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e007" x="79.0" y="322.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="79.0" dy="0">命题</tspan>
+</text>
+<text id="e008" x="79.0" y="361.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79.0" dy="0">明确域与前提</tspan>
+</text>
+<polyline id="e009" points="334.000,355.000 354.000,355.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="342.000,350.000 354.000,355.000 342.000,360.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e011" x="360.0" y="280" width="264.0" height="150" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e012" x="375.0" y="322.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="375.0" dy="0">候选反例</tspan>
+</text>
+<text id="e013" x="375.0" y="361.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="375.0" dy="0">输入与失败后果</tspan>
+</text>
+<polyline id="e014" points="630.000,355.000 650.000,355.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="638.000,350.000 650.000,355.000 638.000,360.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e016" x="656.0" y="280" width="264.0" height="150" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e017" x="671.0" y="322.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="671.0" dy="0">执行检查</tspan>
+</text>
+<text id="e018" x="671.0" y="361.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="671.0" dy="0">有限对象见证</tspan>
+</text>
+<polyline id="e019" points="926.000,355.000 946.000,355.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e020" points="934.000,350.000 946.000,355.000 934.000,360.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e021" x="952.0" y="280" width="264.0" height="150" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e022" x="967.0" y="322.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="967.0" dy="0">修订</tspan>
+</text>
+<text id="e023" x="967.0" y="361.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="967.0" dy="0">保留失败分支</tspan>
+</text>
+<text id="e024" x="90" y="522.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="90" dy="0">只有文字争论、没有可检查见证：未证</tspan>
+</text>
+<text id="e025" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">下一步：为反例写出输入、操作与原命题失效的位置</tspan>
+</text>
+</svg>

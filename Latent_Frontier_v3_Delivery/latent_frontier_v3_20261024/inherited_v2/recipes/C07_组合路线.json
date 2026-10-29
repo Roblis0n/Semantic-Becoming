@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "C07",
+  "title": "可迁移计算记忆",
+  "kind": "combination",
+  "hypotheses": [
+    "H12",
+    "H15",
+    "H23",
+    "H24"
+  ],
+  "training_routes": [
+    "R09",
+    "R10"
+  ],
+  "pipeline_nodes": [
+    "scope_check",
+    "version_calibrate",
+    "query_residual",
+    "apply",
+    "revoke"
+  ],
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+  "status": "planned_for_dot"
+}

@@ -1,0 +1,466 @@
+{
+  "id": "A01",
+  "duration": 20,
+  "fps": 12,
+  "scene": {
+    "title": "H25：换基保持作用",
+    "description": "两条路径得到同一个结果 (6,2)。T=diag(2,3)，G 交换坐标。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H25：换基保持作用",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "两套坐标，同一计算作用",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "解析示意 / 数学示意 · 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "A01",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 600,
+        "w": 1152,
+        "h": 47,
+        "fill": "#FFFCF5",
+        "stroke": "#CECDBF",
+        "sw": 0,
+        "r": 0,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 70,
+        "y": 200,
+        "w": 370,
+        "h": 52.91,
+        "text": "z = (1, 2)",
+        "size": 37,
+        "color": "#496974",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 850,
+        "y": 200,
+        "w": 366,
+        "h": 52.91,
+        "text": "Gz = (2, 1)",
+        "size": 37,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            455,
+            240
+          ],
+          [
+            810,
+            240
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            798.0,
+            235.0
+          ],
+          [
+            810,
+            240
+          ],
+          [
+            798.0,
+            245.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 570,
+        "y": 190,
+        "w": 220,
+        "h": 37.18,
+        "text": "交换 G",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "center",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011"
+      },
+      {
+        "points": [
+          [
+            250,
+            270
+          ],
+          [
+            250,
+            365
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e012",
+        "reveal_at": 4
+      },
+      {
+        "points": [
+          [
+            255.0,
+            353.0
+          ],
+          [
+            250,
+            365
+          ],
+          [
+            245.0,
+            353.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e013",
+        "reveal_at": 4
+      },
+      {
+        "x": 290,
+        "y": 300,
+        "w": 300,
+        "h": 37.18,
+        "text": "T = diag(2,3)",
+        "size": 26,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e014",
+        "reveal_at": 4
+      },
+      {
+        "x": 70,
+        "y": 395,
+        "w": 450,
+        "h": 52.91,
+        "text": "Tz = (2, 6)",
+        "size": 37,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015",
+        "reveal_at": 4
+      },
+      {
+        "points": [
+          [
+            455,
+            435
+          ],
+          [
+            810,
+            435
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e016",
+        "reveal_at": 8
+      },
+      {
+        "points": [
+          [
+            798.0,
+            430.0
+          ],
+          [
+            810,
+            435
+          ],
+          [
+            798.0,
+            440.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e017",
+        "reveal_at": 8
+      },
+      {
+        "x": 565,
+        "y": 380,
+        "w": 230,
+        "h": 37.18,
+        "text": "再交换 G",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "center",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018",
+        "reveal_at": 8
+      },
+      {
+        "x": 850,
+        "y": 395,
+        "w": 366,
+        "h": 52.91,
+        "text": "GTz = (6, 2)",
+        "size": 37,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e019",
+        "reveal_at": 8
+      },
+      {
+        "points": [
+          [
+            1030,
+            270
+          ],
+          [
+            1030,
+            365
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e020",
+        "reveal_at": 12
+      },
+      {
+        "points": [
+          [
+            1035.0,
+            353.0
+          ],
+          [
+            1030,
+            365
+          ],
+          [
+            1025.0,
+            353.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e021",
+        "reveal_at": 12
+      },
+      {
+        "x": 800,
+        "y": 300,
+        "w": 380,
+        "h": 37.18,
+        "text": "T′ = diag(3,2)",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022",
+        "reveal_at": 12
+      },
+      {
+        "x": 70,
+        "y": 520,
+        "w": 1146,
+        "h": 57.199999999999996,
+        "text": "T′Gz = GTz = (6, 2)",
+        "size": 40,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e023",
+        "reveal_at": 16
+      }
+    ],
+    "notes": "",
+    "sources": [],
+    "research_state": "NOT_RUN"
+  },
+  "steps": [
+    {
+      "t": 0,
+      "fact": "给定 z、T 与交换矩阵 G",
+      "explanation": "坐标变换不等于计算作用改变",
+      "next": "沿左侧先施加 T"
+    },
+    {
+      "t": 4,
+      "fact": "Tz = (2, 6)",
+      "explanation": "第一坐标乘 2，第二坐标乘 3",
+      "next": "交换结果的坐标"
+    },
+    {
+      "t": 8,
+      "fact": "GTz = (6, 2)",
+      "explanation": "左路先作用、后换基",
+      "next": "检查另一条路径"
+    },
+    {
+      "t": 12,
+      "fact": "T′ = GTG⁻¹ = diag(3,2)",
+      "explanation": "换基后也要改写算子",
+      "next": "将 T′ 作用于 Gz"
+    },
+    {
+      "t": 16,
+      "fact": "两条路径都得到 (6, 2)",
+      "explanation": "此例作用关系保持",
+      "next": "真实模型对应仍待研究"
+    }
+  ],
+  "mechanisms": [
+    "H25"
+  ],
+  "math_inputs": {
+    "z": [
+      1,
+      2
+    ],
+    "T": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "G": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "result": [
+      6,
+      2
+    ]
+  },
+  "research_state": "NOT_RUN",
+  "export_audio": false,
+  "semantic_contract": "Each state is an exact finite mathematical illustration, not a research model output."
+}

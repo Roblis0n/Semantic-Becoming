@@ -1,0 +1,11 @@
+test_freeze_does_not_disable_input_graph (test_backend_capabilities.BackendCapabilitiesContracts.test_freeze_does_not_disable_input_graph) ... ok
+test_identity_needs_revision (test_backend_capabilities.BackendCapabilitiesContracts.test_identity_needs_revision) ... ok
+test_loading_locked (test_backend_capabilities.BackendCapabilitiesContracts.test_loading_locked) ... ok
+test_model_input_cannot_smuggle_labels (test_backend_capabilities.BackendCapabilitiesContracts.test_model_input_cannot_smuggle_labels) ... ok
+test_neural_integration_is_not_run (test_backend_capabilities.BackendCapabilitiesContracts.test_neural_integration_is_not_run) ... ok
+test_unknown_capability_not_guessed (test_backend_capabilities.BackendCapabilitiesContracts.test_unknown_capability_not_guessed) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.002s
+
+OK

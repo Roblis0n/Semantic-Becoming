@@ -1,0 +1,41 @@
+{
+  "snapshot": "2026-10-27 10:53 UTC",
+  "scope": "media prose only; research prefix/suffix byte-equivalent text verified",
+  "unchanged_research_content": true,
+  "outputs": [
+    {
+      "path": "README.md",
+      "sha256": "506446767c4dcf35f2b39705b9af22e706669382336602bed864b460cbdebd7f",
+      "bytes": 8979
+    },
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "23e99116efbc4f29b6e9b818f539326f9c6be94888a1f3dabf5415fa124aeb19",
+      "bytes": 217029
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "2f28ebd10448505413dc37e0c1b252f3b29295c88cde0e5846627542bdf103cc",
+      "bytes": 274964
+    }
+  ],
+  "evidence": [
+    {
+      "path": "assets/video/explainer_360/narrated_qa.json",
+      "sha256": "0829534abfb62165473b2d059e060e7d2668425e3027f70532d4f3927b86a5ee"
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_visual_review.json",
+      "sha256": "0f905e7ccf057be0c46366f1ea631699b20d0bc13a5bd8ad1e59dbc3b59d639b"
+    },
+    {
+      "path": "assets/audio/tts_ai/generation_summary.json",
+      "sha256": "63d357aaa35ba6c86f651aa61cf60a954b3a479774f772545516e3d97a25a537"
+    },
+    {
+      "path": "reports/audio_input_capability_20261027.json",
+      "sha256": "4a8a885fc64316a1c85aed62a4536b0addaadd3b7a9c3e76e6ba09c33657c35c"
+    }
+  ],
+  "research_state": "NOT_RUN"
+}

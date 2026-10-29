@@ -1,0 +1,39 @@
+{
+  "id": "intro_90_002",
+  "edition": "intro_90",
+  "scene_id": "S02",
+  "characters": 21,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "第一步，让分歧产生新概念。不是换一个名字，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:10:06.466964+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 189754,
+    "duration_seconds": 4.30281179138322,
+    "sample_peak": 5326,
+    "sample_rms": 863.9939189815276,
+    "sha256": "875966edfb1a170e4980cad37a21732ed8f32341d6c3111b11c6f4c214e16ba3",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:10:40.618217+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

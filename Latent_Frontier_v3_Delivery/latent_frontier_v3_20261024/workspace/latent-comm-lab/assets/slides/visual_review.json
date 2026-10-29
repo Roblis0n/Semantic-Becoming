@@ -1,0 +1,467 @@
+{
+  "reviewed_at_utc": "2026-10-24T17:09:51.618167+00:00",
+  "scope": "Actual rendered pixels of both exact PPTX exports; 36 research plus 12 brief pages",
+  "renderer": "LibreOffice headless PDF then pdftoppm at 1280x720",
+  "powerpoint_opened": false,
+  "reviewer": "authoring agent",
+  "review_method": "Contact sheets for flow, every page separately at full frame, followed by repair and exact-render pixel comparison.",
+  "repairs": [
+    "Slide 13: restored target least-squares objective and residual instead of accidentally dropping them during figure extraction.",
+    "Slide 15: moved query-data isolation boundary out of text.",
+    "Slide 29: added axis labels and kept the analytical curves below the formula.",
+    "Slide 34: restored omitted action-plane connector paths.",
+    "Independent QA: slide 34 and F06 now route DAG → action broker → WORK_ROOT without a bypass arrow.",
+    "Independent QA: slide 35 explicitly says benchmark execution count, not score, is zero."
+  ],
+  "pages": [
+    {
+      "deck": "research_36",
+      "page": 1,
+      "path": "assets/slides/verified_renders/research_36/slide-01.png",
+      "sha256": "71418df0569b951da86631a48d2dd8ac55406fb2867a05021e30cb1b3cb81361",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 2,
+      "path": "assets/slides/verified_renders/research_36/slide-02.png",
+      "sha256": "c22079ec5568da9f1211229524768e931703dab9d7c16d36395461c5232c4c94",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 3,
+      "path": "assets/slides/verified_renders/research_36/slide-03.png",
+      "sha256": "804b0a787e261e53cfd8a0d7496a169f798e6a0a2028f05775f808260eccc31a",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 4,
+      "path": "assets/slides/verified_renders/research_36/slide-04.png",
+      "sha256": "6e346313664d8aac336b9ef55e84cf1fc84d365f289ca45b1d1ccaa50291a8c9",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 5,
+      "path": "assets/slides/verified_renders/research_36/slide-05.png",
+      "sha256": "ba62dab731d330bb524aa2f285f663ebd48067b5353f8b111343d488ae538bfd",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 6,
+      "path": "assets/slides/verified_renders/research_36/slide-06.png",
+      "sha256": "e906d6932202022aeb478f114d49fa171672691e41632d92801d581e7e824629",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 7,
+      "path": "assets/slides/verified_renders/research_36/slide-07.png",
+      "sha256": "e4f0c8921b56d73ad251c5872d167110b82c13f0421e9903cbb7fb1cd320ea2a",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 8,
+      "path": "assets/slides/verified_renders/research_36/slide-08.png",
+      "sha256": "2f9e435106872ea874fb106a96b7896de47944503c81bfd96cef4d9214f137b2",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 9,
+      "path": "assets/slides/verified_renders/research_36/slide-09.png",
+      "sha256": "35d89b60351a7564d4963b647b600eb0b1ccf7562aa0989aead9a2ac1fdaa8ed",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 10,
+      "path": "assets/slides/verified_renders/research_36/slide-10.png",
+      "sha256": "577125a690092fcf58681acc210029a89abcda1b1a4fbd3031d9a94bbb2807ed",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 11,
+      "path": "assets/slides/verified_renders/research_36/slide-11.png",
+      "sha256": "22d27477137dd8ee35815173a68983a52af312cce0df9ca14f4ccb1e638e428d",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 12,
+      "path": "assets/slides/verified_renders/research_36/slide-12.png",
+      "sha256": "3cef0a190db282eb4fdcbb1ee951b0cd43ef1e703416f42278ee7d2258e4fce1",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 13,
+      "path": "assets/slides/verified_renders/research_36/slide-13.png",
+      "sha256": "844aa9e3fea536ef96a7ac004f148c19d8242de877438352d53ef11471c75b66",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 14,
+      "path": "assets/slides/verified_renders/research_36/slide-14.png",
+      "sha256": "1b10dd20902bcda85efb99cc617d89b309f8036ccb2f28b2d892fdb143fedc75",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 15,
+      "path": "assets/slides/verified_renders/research_36/slide-15.png",
+      "sha256": "d95e2e8f37c0c3a0d042fb6a7e6f4a98291808ec1ea9753f0c927a9f1aa668ba",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 16,
+      "path": "assets/slides/verified_renders/research_36/slide-16.png",
+      "sha256": "13b4d8aaba4e60d328f68f76bb91029ab55b6129bb199f24064fdc13b235f503",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 17,
+      "path": "assets/slides/verified_renders/research_36/slide-17.png",
+      "sha256": "6adeb3334b45f04f3654bc71a15217d0728b28ec3b965d0dfab9851f2eef71c0",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 18,
+      "path": "assets/slides/verified_renders/research_36/slide-18.png",
+      "sha256": "e6d968ea0dc6e09b78ed9c4ce46a380007905df61adcf8ecfc3d0818c29ceac0",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 19,
+      "path": "assets/slides/verified_renders/research_36/slide-19.png",
+      "sha256": "b6625b0b77e01f9ca0ca68adf0e3811ba92eafa8d034f6a30d9eea467f4db82d",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 20,
+      "path": "assets/slides/verified_renders/research_36/slide-20.png",
+      "sha256": "a2793f523d0b1029a26541a5bc64088619361ad89a8b317358190e0783c38490",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 21,
+      "path": "assets/slides/verified_renders/research_36/slide-21.png",
+      "sha256": "322442a9e3aa83864f0010c70354084725fcc6cda2931b5d05926e1b324af946",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 22,
+      "path": "assets/slides/verified_renders/research_36/slide-22.png",
+      "sha256": "a6f0ef885db4e51e3d2688c23960aefefaf6f81b5aa39d9a00e549aca7d1d701",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 23,
+      "path": "assets/slides/verified_renders/research_36/slide-23.png",
+      "sha256": "75f53fcb0e2cb0e62b7191a2ff94c83e79a835f24b24b7cbaf2ddfe86344375e",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 24,
+      "path": "assets/slides/verified_renders/research_36/slide-24.png",
+      "sha256": "d7cee7e73e3ba31f1383e94de896f4874bc0b7b881c530a57c3f16b061f12038",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 25,
+      "path": "assets/slides/verified_renders/research_36/slide-25.png",
+      "sha256": "119280ede175e07fae425a69730b09e25a39010b3ce513d8f0873d03a0268d31",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 26,
+      "path": "assets/slides/verified_renders/research_36/slide-26.png",
+      "sha256": "31676f2dfc84ed0bef0222966800d97b0a03d6afa20d3e8e4099b110657c99d4",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 27,
+      "path": "assets/slides/verified_renders/research_36/slide-27.png",
+      "sha256": "ea5dafa507edb4aca284ef2ab89ece49b4bd06838c5fa32bb307b9cacc92c58c",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 28,
+      "path": "assets/slides/verified_renders/research_36/slide-28.png",
+      "sha256": "bfe60b63a7feb31a05f087c6c8159014168826ddc208df8add2ca48455038c6a",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 29,
+      "path": "assets/slides/verified_renders/research_36/slide-29.png",
+      "sha256": "66417b8e79af95e0a00812ae7fd2bd966e7ab71f08738cf0210af721997c60f6",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 30,
+      "path": "assets/slides/verified_renders/research_36/slide-30.png",
+      "sha256": "b783b2aae4dc2d7674c5cc1bdd8478dc8e9c99d14703261cbd3a3ff6e4417a79",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 31,
+      "path": "assets/slides/verified_renders/research_36/slide-31.png",
+      "sha256": "e4ea8624686d8cf5bc17b1a5c18e7d79d88f91fcd63fd243f64330870d680df2",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 32,
+      "path": "assets/slides/verified_renders/research_36/slide-32.png",
+      "sha256": "5b8f8fa1e2b88f42f30122a005d72ab7b1bcb3e084b9dd1ae7952406f1cb442c",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 33,
+      "path": "assets/slides/verified_renders/research_36/slide-33.png",
+      "sha256": "7ebe8f89f01875da4135f1b2b540438d8f758811b20abd7bb1101963df88256f",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 34,
+      "path": "assets/slides/verified_renders/research_36/slide-34.png",
+      "sha256": "36a645088204db4f3901a20c9d32978057753c3552fceb974633b2a4a58c2c6c",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 35,
+      "path": "assets/slides/verified_renders/research_36/slide-35.png",
+      "sha256": "f6926057c372f91df19f9e9d0f761b2b695fa063f57429ebfef945450584e466",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "research_36",
+      "page": 36,
+      "path": "assets/slides/verified_renders/research_36/slide-36.png",
+      "sha256": "845a938eb38531a61c5174786a3e2510bff943654ed8648cb8974966c6a2640f",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 1,
+      "path": "assets/slides/verified_renders/brief_12/slide-01.png",
+      "sha256": "aa7b4f4f17f173e808fa6c02e9a07d25d0099927bc67024c76bcfab00715c1d8",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 2,
+      "path": "assets/slides/verified_renders/brief_12/slide-02.png",
+      "sha256": "bb3194b6d56ae58ca6cf449fdb5ceb63528a6a1fdb5ce4fc7935ac9ecaae0399",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 3,
+      "path": "assets/slides/verified_renders/brief_12/slide-03.png",
+      "sha256": "80b2d1cbbfab0ca57e26a31247b2d2072753550b9eac11676f6c7faf2c083fec",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 4,
+      "path": "assets/slides/verified_renders/brief_12/slide-04.png",
+      "sha256": "5878ba86349e90ef59cc9486d7b2a0978f09cb2c4d3d8b30de155b111bdbc063",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 5,
+      "path": "assets/slides/verified_renders/brief_12/slide-05.png",
+      "sha256": "07b4335536ae47beaa0db4258e45d4080ded340847a8c47c2df452f1f389e420",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 6,
+      "path": "assets/slides/verified_renders/brief_12/slide-06.png",
+      "sha256": "714252bb1fcf19d966f80f4ce12e6a5cc71e5b55223cb341e62814ba8b17c5bb",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 7,
+      "path": "assets/slides/verified_renders/brief_12/slide-07.png",
+      "sha256": "4865e9a5f185e8e6a52dc55a018d53406ec8e2cfcdd90a71b0c57acd2260d7a8",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 8,
+      "path": "assets/slides/verified_renders/brief_12/slide-08.png",
+      "sha256": "a1e7c44d952b01b3d9820146ab94470c3f56f04f55046d4400ad19516148474d",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 9,
+      "path": "assets/slides/verified_renders/brief_12/slide-09.png",
+      "sha256": "391fb3c8c9e3ccd3d04dd37bb8aec60d353989642ca5d4161aa9a5db83e27a45",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 10,
+      "path": "assets/slides/verified_renders/brief_12/slide-10.png",
+      "sha256": "9ba7080191ffab1ee02b79f34c54ca57dd5dbb619368f7ef3bcda35701c8e3f7",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 11,
+      "path": "assets/slides/verified_renders/brief_12/slide-11.png",
+      "sha256": "677bb638a4e314e7aff2b8e9d4682869ea3e7b2580ecb8f53a63f17e26332557",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    },
+    {
+      "deck": "brief_12",
+      "page": 12,
+      "path": "assets/slides/verified_renders/brief_12/slide-12.png",
+      "sha256": "88ca84feac9743b14d9f6a220cb5eb1f8df2fe565723a8289758b52a77da1aea",
+      "actual_visual_inspection": true,
+      "review_basis": "Individually viewed at 1280×720; exact latest PPTX re-rendered. All pages except research 34 and 35 are pixel-identical to previously viewed final export. Both revised pages viewed again.",
+      "clipping_or_unintended_overlap_seen": false
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "latest_pixel_comparison": {
+    "research_36": [
+      "slide-34.png",
+      "slide-35.png"
+    ],
+    "brief_12": []
+  },
+  "artifact_validation": [
+    "assets/slides/build/research_36_review/validation.json",
+    "assets/slides/build/brief_12_review/validation.json"
+  ],
+  "independent_review": {
+    "path": "reports/independent_visual_qa_20261024/review.json",
+    "sha256": "5116426c721a030c3744ae65f539f860be4e65f7be87a62d15ba1d7eabae0c49",
+    "outcome": "all 48 actual page images reviewed; narrow clarity repairs rechecked"
+  }
+}

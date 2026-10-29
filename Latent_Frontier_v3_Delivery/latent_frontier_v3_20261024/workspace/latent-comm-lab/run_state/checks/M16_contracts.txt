@@ -1,0 +1,15 @@
+M16: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_decimal_and_authority (test_h16.SymbolTests.test_decimal_and_authority) ... ok
+test_entity_target_is_a_recursive_typed_reference (test_h16.SymbolTests.test_entity_target_is_a_recursive_typed_reference) ... ok
+test_exact_relation_intervention_and_source_bindings (test_h16.SymbolTests.test_exact_relation_intervention_and_source_bindings) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h16.SymbolTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h16.SymbolTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h16.SymbolTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_supervision_and_bad_symbol (test_h16.SymbolTests.test_supervision_and_bad_symbol) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h16.SymbolTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.025s
+
+OK
+M16: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

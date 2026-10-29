@@ -1,0 +1,16 @@
+{
+  "scope": "finite_exact_math_only",
+  "research_models_run": 0,
+  "gauge_equal": true,
+  "inconsistent_cycle_residual_squared": "1/3",
+  "transport_no_regularization": "1/4",
+  "transport_lambda_one": "4/17",
+  "task_partition_refines": true,
+  "repeated_evidence": "4/5",
+  "independent_two_evidence": "24/25",
+  "coalition_credit": {
+    "a": "1/2",
+    "b": "1/2"
+  },
+  "scientific_effectiveness_tested": false
+}

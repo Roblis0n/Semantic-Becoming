@@ -1,0 +1,289 @@
+{
+  "title": "第一条主线：概念出生",
+  "description": "钥匙例：形状相同，权限有效期不同。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "第一条主线：概念出生",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "分歧可以产生一个之前没有的可计算区分",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "06 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 114.0,
+      "y": 264.0,
+      "w": 72.0,
+      "h": 72.0,
+      "fill": "none",
+      "stroke": "#536647",
+      "sw": 5,
+      "kind": "ellipse",
+      "id": "e006"
+    },
+    {
+      "points": [
+        [
+          186.0,
+          300
+        ],
+        [
+          304.5,
+          300
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e007"
+    },
+    {
+      "points": [
+        [
+          270.0,
+          300
+        ],
+        [
+          270.0,
+          330.0
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          300.0,
+          300
+        ],
+        [
+          300.0,
+          330.0
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "x": 114.0,
+      "y": 434.0,
+      "w": 72.0,
+      "h": 72.0,
+      "fill": "none",
+      "stroke": "#9C5138",
+      "sw": 5,
+      "kind": "ellipse",
+      "id": "e010"
+    },
+    {
+      "points": [
+        [
+          186.0,
+          470
+        ],
+        [
+          304.5,
+          470
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e011"
+    },
+    {
+      "points": [
+        [
+          270.0,
+          470
+        ],
+        [
+          270.0,
+          500.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e012"
+    },
+    {
+      "points": [
+        [
+          300.0,
+          470
+        ],
+        [
+          300.0,
+          500.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e013"
+    },
+    {
+      "x": 370,
+      "y": 264,
+      "w": 800,
+      "h": 45.76,
+      "text": "K₁：形状匹配，授权有效",
+      "size": 32,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e014"
+    },
+    {
+      "x": 370,
+      "y": 430,
+      "w": 800,
+      "h": 45.76,
+      "text": "K₂：形状匹配，授权过期",
+      "size": 32,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e015"
+    },
+    {
+      "x": 370,
+      "y": 320,
+      "w": 800,
+      "h": 42.9,
+      "text": "可以开门",
+      "size": 30,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e016"
+    },
+    {
+      "x": 370,
+      "y": 486,
+      "w": 800,
+      "h": 42.9,
+      "text": "不能开门",
+      "size": 30,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "下一步：定义“授权有效期”，使新概念改变可执行判断",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    }
+  ],
+  "notes": "两方都叫它钥匙，并不意味着现有语言足以解释行为差异。新概念需要带定义和后果。\n\n原稿画面要求：钥匙例：形状相同，权限有效期不同。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第06页\nhypotheses/H26_不可全局拼合的语义层.md\nhypotheses/H27_交互中诞生的新概念.md\nhypotheses/H36_以分歧生产结构的认知博弈.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/2202.04579\nhttps://arxiv.org/abs/2605.11178\nhttps://arxiv.org/abs/2006.08381\nhttps://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a\nhttps://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_06"
+  ],
+  "research_state": "NOT_RUN"
+}

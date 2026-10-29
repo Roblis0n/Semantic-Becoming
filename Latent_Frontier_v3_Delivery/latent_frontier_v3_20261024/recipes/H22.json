@@ -1,0 +1,85 @@
+{
+  "schema_version": 3,
+  "id": "H22",
+  "kind": "mechanism",
+  "title": "动态模型边界",
+  "mechanisms": [
+    "H22"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "inherited_v2/hypotheses/H22_动态模型边界.md",
+  "target_base": "src/latent_comm/mechanisms/h22_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H22",
+    "name": "elastic_boundaries",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "program",
+    "data_family": "computation_graphs",
+    "training": {
+      "family": "R12",
+      "loss_terms": [
+        "partition_policy",
+        "handoff_behavior"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.elastic.partition",
+      "latent_comm.mechanisms.elastic.transitions",
+      "latent_comm.mechanisms.elastic.controller"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I22_动态模型边界.md"
+}

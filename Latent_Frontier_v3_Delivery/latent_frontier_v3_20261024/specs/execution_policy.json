@@ -1,0 +1,60 @@
+{
+  "schema_version": 3,
+  "project": "latent-comm-lab",
+  "research_state": "not_run",
+  "models": {
+    "download": false,
+    "initialize": false,
+    "forward": false,
+    "train": false,
+    "benchmark": false,
+    "api_inference": false,
+    "random_tiny_model_for_tests": false
+  },
+  "allowed_actions": [
+    "public_read",
+    "workspace_read",
+    "workspace_write",
+    "static_check",
+    "stdlib_math_fixture",
+    "plan_compile",
+    "local_media_export",
+    "authorized_zero_new_cost_media"
+  ],
+  "denied_actions": [
+    "model_download",
+    "model_initialize",
+    "model_forward",
+    "model_train",
+    "model_eval",
+    "model_api",
+    "purchase",
+    "publish",
+    "send_message",
+    "read_unrelated_private_data",
+    "change_system_settings"
+  ],
+  "external_effects": {
+    "new_spend": 0,
+    "public_publish": false,
+    "email_or_message_send": false,
+    "unrelated_private_access": false
+  },
+  "agent_own_reasoning_allowed": true,
+  "fixture_rules": {
+    "neural_models": false,
+    "bulk_dataset_generation": false,
+    "max_scalar_dimension": 64,
+    "max_fixture_steps": 128,
+    "max_fixture_cases": 64
+  },
+  "execution": {
+    "max_writers": 3,
+    "one_writer_per_file": true,
+    "network_read_retries": 3,
+    "same_error_retries": 2,
+    "checkpoint_each_task": true
+  },
+  "authority": "current user task plus this policy; inherited instructions are read-only references",
+  "hard_sandbox_guaranteed": false
+}

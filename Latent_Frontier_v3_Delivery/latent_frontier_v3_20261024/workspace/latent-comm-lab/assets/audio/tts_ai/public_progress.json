@@ -1,0 +1,354 @@
+{
+  "checked_at_utc": "2026-10-27T10:47:59.840656+00:00",
+  "chunks": [
+    {
+      "id": "explainer_360_001",
+      "status": "downloaded",
+      "characters": 32,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_002",
+      "status": "downloaded",
+      "characters": 30,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_003",
+      "status": "downloaded",
+      "characters": 31,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_004",
+      "status": "downloaded",
+      "characters": 42,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_005",
+      "status": "downloaded",
+      "characters": 9,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_006",
+      "status": "downloaded",
+      "characters": 29,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_007",
+      "status": "downloaded",
+      "characters": 41,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_008",
+      "status": "downloaded",
+      "characters": 36,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_009",
+      "status": "downloaded",
+      "characters": 33,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_010",
+      "status": "downloaded",
+      "characters": 22,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_011",
+      "status": "downloaded",
+      "characters": 32,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_012",
+      "status": "downloaded",
+      "characters": 32,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_013",
+      "status": "downloaded",
+      "characters": 38,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_014",
+      "status": "downloaded",
+      "characters": 25,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_015",
+      "status": "downloaded",
+      "characters": 25,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_016",
+      "status": "downloaded",
+      "characters": 39,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_017",
+      "status": "downloaded",
+      "characters": 40,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_018",
+      "status": "downloaded",
+      "characters": 37,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_019",
+      "status": "downloaded",
+      "characters": 40,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_020",
+      "status": "downloaded",
+      "characters": 17,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_021",
+      "status": "downloaded",
+      "characters": 42,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_022",
+      "status": "downloaded",
+      "characters": 41,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_023",
+      "status": "downloaded",
+      "characters": 35,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_024",
+      "status": "downloaded",
+      "characters": 26,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_025",
+      "status": "downloaded",
+      "characters": 20,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_026",
+      "status": "downloaded",
+      "characters": 33,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_027",
+      "status": "downloaded",
+      "characters": 40,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_028",
+      "status": "downloaded",
+      "characters": 39,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_029",
+      "status": "downloaded",
+      "characters": 16,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_030",
+      "status": "downloaded",
+      "characters": 28,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_031",
+      "status": "downloaded",
+      "characters": 19,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_032",
+      "status": "downloaded",
+      "characters": 42,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_033",
+      "status": "downloaded",
+      "characters": 35,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_034",
+      "status": "downloaded",
+      "characters": 34,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_035",
+      "status": "downloaded",
+      "characters": 37,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_036",
+      "status": "downloaded",
+      "characters": 41,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_037",
+      "status": "downloaded",
+      "characters": 16,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_038",
+      "status": "downloaded",
+      "characters": 42,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_039",
+      "status": "downloaded",
+      "characters": 32,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_040",
+      "status": "downloaded",
+      "characters": 37,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_041",
+      "status": "downloaded",
+      "characters": 38,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_042",
+      "status": "downloaded",
+      "characters": 37,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_043",
+      "status": "downloaded",
+      "characters": 32,
+      "credits_used": 0
+    },
+    {
+      "id": "explainer_360_044",
+      "status": "downloaded",
+      "characters": 23,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_001",
+      "status": "downloaded",
+      "characters": 37,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_002",
+      "status": "downloaded",
+      "characters": 21,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_003",
+      "status": "downloaded",
+      "characters": 22,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_004",
+      "status": "downloaded",
+      "characters": 34,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_005",
+      "status": "downloaded",
+      "characters": 12,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_006",
+      "status": "downloaded",
+      "characters": 22,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_007",
+      "status": "downloaded",
+      "characters": 22,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_008",
+      "status": "downloaded",
+      "characters": 28,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_009",
+      "status": "downloaded",
+      "characters": 15,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_010",
+      "status": "downloaded",
+      "characters": 34,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_011",
+      "status": "downloaded",
+      "characters": 12,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_012",
+      "status": "downloaded",
+      "characters": 29,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_013",
+      "status": "downloaded",
+      "characters": 14,
+      "credits_used": 0
+    },
+    {
+      "id": "intro_90_014",
+      "status": "downloaded",
+      "characters": 37,
+      "credits_used": 0
+    }
+  ],
+  "transient_capabilities_excluded": true
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H46",
+  "kind": "mechanism",
+  "title": "不可行域与负知识胶囊",
+  "mechanisms": [
+    "H46"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H46_不可行域与负知识胶囊.md",
+  "target_base": "src/latent_comm/mechanisms/h46_negative_knowledge",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "domain_limit": 64,
+    "hard_exclusion_requires": "explicit_program_or_proof",
+    "retraction": true,
+    "timeout_is_impossible": false
+  }
+}

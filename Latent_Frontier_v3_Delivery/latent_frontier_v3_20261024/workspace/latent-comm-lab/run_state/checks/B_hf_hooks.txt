@@ -1,0 +1,10 @@
+test_cleanup_has_finally (test_backend_hf_hooks.HookContracts.test_cleanup_has_finally) ... ok
+test_context_gate_precedes_registration (test_backend_hf_hooks.HookContracts.test_context_gate_precedes_registration) ... ok
+test_forward_locked (test_backend_hf_hooks.HookContracts.test_forward_locked) ... ok
+test_nested_policy_is_explicit (test_backend_hf_hooks.HookContracts.test_nested_policy_is_explicit) ... ok
+test_no_implicit_broadcast_source (test_backend_hf_hooks.HookContracts.test_no_implicit_broadcast_source) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

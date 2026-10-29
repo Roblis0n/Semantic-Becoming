@@ -1,0 +1,72 @@
+{
+  "task_id": "M09",
+  "status": "done",
+  "input_digest": "a8fbb980af41a2c1f103086956587344764f0cb283b3e60ece708093ccae5ccd",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/README.md",
+      "sha256": "1de2965bb2d61b5d19fbdfc3e5797ad8590989e45c8cda19bcc0423015d30b22",
+      "bytes": 2169
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/__init__.py",
+      "sha256": "81cb4814a5051b69117b8be727672a605236f97f9a51628e19577ce7fcb52e6b",
+      "bytes": 95
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/adapter.py",
+      "sha256": "1063d538cbd44ae97722c4ee4bc015559367c7ec3e1d730d088c486e237bccff",
+      "bytes": 1168
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/losses.py",
+      "sha256": "fd74d4ad678543c1d7910bcb7f946eb54e1f5fd07339599f7723a66e3f36ba26",
+      "bytes": 1236
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/migration.py",
+      "sha256": "2bfb05efd960176cb51f84d1e95672b2c307df854a31f8f94796e94b57c6e053",
+      "bytes": 2082
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/reference.py",
+      "sha256": "074183764b1373f5e7037a0ae9dec9f3b86cdba81ad5c471758ac74a4b311f93",
+      "bytes": 3302
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/schema.json",
+      "sha256": "19a23a2e43af7e9ab1af17644fc619edcb01212b73657b6781619b65f781aaf8",
+      "bytes": 1079
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/types.py",
+      "sha256": "0b4df51816c924060e0a4e275e9fd678f65939879966c76b7c948ff2269be632",
+      "bytes": 1160
+    },
+    {
+      "path": "tests/contracts/test_h09.py",
+      "sha256": "2ed3db1c68ec7d13085cb13cb8d9cf50cca9ddef501e1bde0266be0f72dd4665",
+      "bytes": 2703
+    },
+    {
+      "path": "configs/mechanisms/H09.json",
+      "sha256": "f0db524de5dc5b3da205d57c3c0c5441bf188dea568816f88aa882d4c4d9199f",
+      "bytes": 3204
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M09_contracts.txt",
+      "sha256": "f982c7d43107919818b83ee6ffd871b0f805cd77da320d8da9819977d354a962"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded do/condition/shared-noise/overwrite/budget contracts and AST gates pass. Canonical H31 SCM reused; tensor intervention source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:23:26.888760+00:00"
+}

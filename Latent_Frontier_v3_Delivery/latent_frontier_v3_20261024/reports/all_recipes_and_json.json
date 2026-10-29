@@ -1,0 +1,281 @@
+{
+  "all_json_files_checked": 135,
+  "json_errors": [],
+  "recipes_checked": 68,
+  "research_models_executed": 0,
+  "recipe_compilation_scope": "Plan references and locks only, not scientific IR execution",
+  "results": [
+    {
+      "recipe_id": "C01",
+      "ok": true
+    },
+    {
+      "recipe_id": "C02",
+      "ok": true
+    },
+    {
+      "recipe_id": "C03",
+      "ok": true
+    },
+    {
+      "recipe_id": "C04",
+      "ok": true
+    },
+    {
+      "recipe_id": "C05",
+      "ok": true
+    },
+    {
+      "recipe_id": "C06",
+      "ok": true
+    },
+    {
+      "recipe_id": "C07",
+      "ok": true
+    },
+    {
+      "recipe_id": "C08",
+      "ok": true
+    },
+    {
+      "recipe_id": "C09",
+      "ok": true
+    },
+    {
+      "recipe_id": "C10",
+      "ok": true
+    },
+    {
+      "recipe_id": "C11",
+      "ok": true
+    },
+    {
+      "recipe_id": "C12",
+      "ok": true
+    },
+    {
+      "recipe_id": "C13",
+      "ok": true
+    },
+    {
+      "recipe_id": "C14",
+      "ok": true
+    },
+    {
+      "recipe_id": "C15",
+      "ok": true
+    },
+    {
+      "recipe_id": "C16",
+      "ok": true
+    },
+    {
+      "recipe_id": "C17",
+      "ok": true
+    },
+    {
+      "recipe_id": "C18",
+      "ok": true
+    },
+    {
+      "recipe_id": "C19",
+      "ok": true
+    },
+    {
+      "recipe_id": "C20",
+      "ok": true
+    },
+    {
+      "recipe_id": "H01",
+      "ok": true
+    },
+    {
+      "recipe_id": "H02",
+      "ok": true
+    },
+    {
+      "recipe_id": "H03",
+      "ok": true
+    },
+    {
+      "recipe_id": "H04",
+      "ok": true
+    },
+    {
+      "recipe_id": "H05",
+      "ok": true
+    },
+    {
+      "recipe_id": "H06",
+      "ok": true
+    },
+    {
+      "recipe_id": "H07",
+      "ok": true
+    },
+    {
+      "recipe_id": "H08",
+      "ok": true
+    },
+    {
+      "recipe_id": "H09",
+      "ok": true
+    },
+    {
+      "recipe_id": "H10",
+      "ok": true
+    },
+    {
+      "recipe_id": "H11",
+      "ok": true
+    },
+    {
+      "recipe_id": "H12",
+      "ok": true
+    },
+    {
+      "recipe_id": "H13",
+      "ok": true
+    },
+    {
+      "recipe_id": "H14",
+      "ok": true
+    },
+    {
+      "recipe_id": "H15",
+      "ok": true
+    },
+    {
+      "recipe_id": "H16",
+      "ok": true
+    },
+    {
+      "recipe_id": "H17",
+      "ok": true
+    },
+    {
+      "recipe_id": "H18",
+      "ok": true
+    },
+    {
+      "recipe_id": "H19",
+      "ok": true
+    },
+    {
+      "recipe_id": "H20",
+      "ok": true
+    },
+    {
+      "recipe_id": "H21",
+      "ok": true
+    },
+    {
+      "recipe_id": "H22",
+      "ok": true
+    },
+    {
+      "recipe_id": "H23",
+      "ok": true
+    },
+    {
+      "recipe_id": "H24",
+      "ok": true
+    },
+    {
+      "recipe_id": "H25",
+      "ok": true
+    },
+    {
+      "recipe_id": "H26",
+      "ok": true
+    },
+    {
+      "recipe_id": "H27",
+      "ok": true
+    },
+    {
+      "recipe_id": "H28",
+      "ok": true
+    },
+    {
+      "recipe_id": "H29",
+      "ok": true
+    },
+    {
+      "recipe_id": "H30",
+      "ok": true
+    },
+    {
+      "recipe_id": "H31",
+      "ok": true
+    },
+    {
+      "recipe_id": "H32",
+      "ok": true
+    },
+    {
+      "recipe_id": "H33",
+      "ok": true
+    },
+    {
+      "recipe_id": "H34",
+      "ok": true
+    },
+    {
+      "recipe_id": "H35",
+      "ok": true
+    },
+    {
+      "recipe_id": "H36",
+      "ok": true
+    },
+    {
+      "recipe_id": "H37",
+      "ok": true
+    },
+    {
+      "recipe_id": "H38",
+      "ok": true
+    },
+    {
+      "recipe_id": "H39",
+      "ok": true
+    },
+    {
+      "recipe_id": "H40",
+      "ok": true
+    },
+    {
+      "recipe_id": "H41",
+      "ok": true
+    },
+    {
+      "recipe_id": "H42",
+      "ok": true
+    },
+    {
+      "recipe_id": "H43",
+      "ok": true
+    },
+    {
+      "recipe_id": "H44",
+      "ok": true
+    },
+    {
+      "recipe_id": "H45",
+      "ok": true
+    },
+    {
+      "recipe_id": "H46",
+      "ok": true
+    },
+    {
+      "recipe_id": "H47",
+      "ok": true
+    },
+    {
+      "recipe_id": "H48",
+      "ok": true
+    }
+  ]
+}

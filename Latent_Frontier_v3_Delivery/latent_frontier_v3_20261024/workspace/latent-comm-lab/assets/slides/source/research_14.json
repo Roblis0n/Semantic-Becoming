@@ -1,0 +1,205 @@
+{
+  "title": "一个能够手算的运输例",
+  "description": "数轴4×.25=1；加入λ=1显示4/17，标解析示意。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "一个能够手算的运输例",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "J_B=4，目标行为变化1，δ=.25",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "解析示意 / 数学示意 · 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "14 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 220,
+      "w": 550,
+      "h": 44.33,
+      "text": "无正则化：λ = 0",
+      "size": 31,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e006"
+    },
+    {
+      "x": 64,
+      "y": 295,
+      "w": 550,
+      "h": 85.8,
+      "text": "4 × 0.25 = 1",
+      "size": 60,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 64,
+      "y": 400,
+      "w": 550,
+      "h": 91.52,
+      "text": "目标行为变化 1\n目标参数改动 δ = 1/4",
+      "size": 32,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          640,
+          230
+        ],
+        [
+          640,
+          550
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "x": 700,
+      "y": 220,
+      "w": 516,
+      "h": 44.33,
+      "text": "加入正则化：λ = 1",
+      "size": 31,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e010"
+    },
+    {
+      "x": 700,
+      "y": 295,
+      "w": 516,
+      "h": 85.8,
+      "text": "δ = 4/17",
+      "size": 60,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e011"
+    },
+    {
+      "x": 700,
+      "y": 400,
+      "w": 516,
+      "h": 91.52,
+      "text": "实现变化 16/17\n残差 1/17 仍保留",
+      "size": 32,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "解析式 δ = 4 / (16 + λ)；手算正确不代表真实模型运输有效",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    }
+  ],
+  "notes": "这个例子只检查公式含义，不证明真实模型之间存在所需行为对应。\n\n原稿画面要求：数轴4×.25=1；加入λ=1显示4/17，标解析示意。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第14页\nhypotheses/H37_跨模型学习方向运输.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1503.02531\nhttps://arxiv.org/abs/1606.04474\nhttps://arxiv.org/abs/2106.02997\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_14"
+  ],
+  "research_state": "NOT_RUN"
+}

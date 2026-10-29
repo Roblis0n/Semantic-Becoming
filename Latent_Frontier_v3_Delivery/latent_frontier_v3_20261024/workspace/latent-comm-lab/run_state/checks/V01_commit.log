@@ -1,0 +1,132 @@
+{
+  "task_id": "V01",
+  "status": "done",
+  "input_digest": "9444dbf2207600f1ce2fea45133b9e54f699ad292358813ffeb929649ce967dd",
+  "outputs": [
+    {
+      "path": "assets/figures/F01.json",
+      "sha256": "e9a77efb53016678110749d83b3b93dc72d63497a1ada2fb6c85780317181e62",
+      "bytes": 7327
+    },
+    {
+      "path": "assets/figures/F01.svg",
+      "sha256": "c0a6e407301e4eecd261830ca592e1e6323b5d2da3ceaa9883d7534b0712490b",
+      "bytes": 5018
+    },
+    {
+      "path": "assets/figures/F02.json",
+      "sha256": "6ece95ca64e738ddd733302622d0a39e042e444c2bd21a50813665d4e222709f",
+      "bytes": 10564
+    },
+    {
+      "path": "assets/figures/F02.svg",
+      "sha256": "83736f29ec10f60ebc121da9a5ef70a10a4f522a55250121edb35fef6772c360",
+      "bytes": 6849
+    },
+    {
+      "path": "assets/figures/F03.json",
+      "sha256": "3b564e66583fad06322c95f8e0e065186466513d3a6ad8190c669af7764996f9",
+      "bytes": 6916
+    },
+    {
+      "path": "assets/figures/F03.svg",
+      "sha256": "5bc930c9c9d752d9cd9d4e9e2b09ed360b6698076bccf6503c4175dde2305240",
+      "bytes": 4635
+    },
+    {
+      "path": "assets/figures/F04.json",
+      "sha256": "8dd5271046a0a7b0ed591e12155e8e4386a62dc04e82c2b09b7f5017950b3ade",
+      "bytes": 9306
+    },
+    {
+      "path": "assets/figures/F04.svg",
+      "sha256": "1341e0c7d2ba392c8915da6ba4c6f19091f3f13a5cff68c8a579bdbbed8c9bd6",
+      "bytes": 6094
+    },
+    {
+      "path": "assets/figures/F05.json",
+      "sha256": "e523ac24762b2b0b5e3c7b305f44f8fa2ffe5df4f76554bf62ecad3ad4681a8a",
+      "bytes": 9378
+    },
+    {
+      "path": "assets/figures/F05.svg",
+      "sha256": "39201a193cc8d5ab4472c135192a120285dfef8bda4e282ae5867e5caa41e215",
+      "bytes": 6218
+    },
+    {
+      "path": "assets/figures/F06.json",
+      "sha256": "c8d139d4a18c856fbf1891ff0ad651d8008948084386a6dbbc380e169afe44c6",
+      "bytes": 8494
+    },
+    {
+      "path": "assets/figures/F06.svg",
+      "sha256": "b139c8c1c4625cc76c3ec243093c68e182e8182ab0ba06f42ac85cd0d5129606",
+      "bytes": 5539
+    },
+    {
+      "path": "assets/figures/build_media_sources.py",
+      "sha256": "b7ae9859729519b2215be232b42df13b0683572219ca80b9c5462e79d7d8b05b",
+      "bytes": 34423
+    },
+    {
+      "path": "assets/figures/design_provenance.json",
+      "sha256": "f59a92ef2e109b623cd2a7bcae779e7dad1653e4cd735030d5d93c8dfeee87c1",
+      "bytes": 2622
+    },
+    {
+      "path": "assets/figures/figure_captions.json",
+      "sha256": "7d2220f96043039c8d00d8e7370863110b4b23e6f1190d5e4233f72de19f0a6f",
+      "bytes": 1604
+    },
+    {
+      "path": "assets/figures/media_status.json",
+      "sha256": "bafe1951f742c07eecef8dd0b9e2bcdc9900d69911c266d0c3b14098f3d3e135",
+      "bytes": 422
+    },
+    {
+      "path": "assets/figures/renders/F01.png",
+      "sha256": "6d972cc4e0ae0f1aa37d49e3e10f359c9b959fbc63b2bcc8c575f469dccd396f",
+      "bytes": 100975
+    },
+    {
+      "path": "assets/figures/renders/F02.png",
+      "sha256": "e0c7ccced900c1f28c29aa9691e65932d04865cb7cd7f6e948c46205cff8bdfa",
+      "bytes": 96027
+    },
+    {
+      "path": "assets/figures/renders/F03.png",
+      "sha256": "c50201f275398ed8f2c8638cb4b03be165982c94350dbb150ea427de19a1cd53",
+      "bytes": 90983
+    },
+    {
+      "path": "assets/figures/renders/F04.png",
+      "sha256": "af8535b66007b59ea908858ea9ae1fb63bc5c9c97638136ea98db07391122197",
+      "bytes": 91128
+    },
+    {
+      "path": "assets/figures/renders/F05.png",
+      "sha256": "3c8908dee403f4d53e767a5bf2e5cd052b4760abddfeeb7a1df863b5c3f63719",
+      "bytes": 96837
+    },
+    {
+      "path": "assets/figures/renders/F06.png",
+      "sha256": "f40326f993cfb941c26d459f0d3c49bbf4a42c0c7dc532f3d2c121b80b667d50",
+      "bytes": 97581
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V01_validation.json",
+      "sha256": "0525a51733c5ae97c18f018857937f1838c17935054d823eee5827c9e17a48b6"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Six real text-preserving SVG figures with editable scenes, accessible captions, actual rendered visual review and explicit NOT_RUN boundaries.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:19:19.312960+00:00"
+}

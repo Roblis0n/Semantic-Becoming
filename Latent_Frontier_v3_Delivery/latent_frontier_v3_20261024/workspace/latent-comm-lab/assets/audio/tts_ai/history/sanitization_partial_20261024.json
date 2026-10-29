@@ -1,0 +1,19 @@
+{
+  "status": "sanitized_partial",
+  "checked_at_utc": "2026-10-24T18:48:34.181781+00:00",
+  "transient_result_urls_removed": true,
+  "raw_job_capability_ids_removed": true,
+  "sensitive_header_fields_removed": true,
+  "private_recovery_state_preserved": true,
+  "accepted_records": 43,
+  "downloaded": 42,
+  "pending": 1,
+  "retained": [
+    "exact public/synthetic text",
+    "provider/model/voice/settings",
+    "status and credit counters",
+    "license restriction",
+    "actual WAV SHA256"
+  ],
+  "removed_field_count": 357
+}

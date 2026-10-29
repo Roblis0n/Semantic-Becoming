@@ -1,0 +1,13 @@
+# Research compiler (A03)
+
+Source requirements: docs/07; P06; A03; shared contracts. This is not the authoring task-graph compiler.
+
+The seven passes are implemented in pipeline.py and leave a pass trace, source JSON pointers, and one-based line/column diagnostics. The registry is data-only and covers all H01–H48 with distinct object contracts, effects, version axes, and capability requirements. Importing it never imports the referenced implementation. Declarative custom NodeCapability entries may be added but may not replace existing semantic contracts.
+
+Explicit recipes contain objects, nodes (named input/output ports referring to objects), optional node depends_on controls, migrations, and bounded_loops. Object contracts carry type, named tensor axes, shape, role, scope, versions, and dependency IDs. Migration declarations are explicit named axis transitions with dependency ordering and a source implementation name, never automatically executed conversions. Sender/receiver visibility and forbidden fields propagate through both object dependencies and producer outputs. Differentiability marks are separate from discrete estimators; freezing weights does not stop required input gradients.
+
+High-level supplied recipes lacking edge bindings compile to typed declarations with BindingsRequired diagnostics and bound=false objects. This deliberately does not fabricate inter-mechanism wiring or turn an unresolved combination into a runnable pipeline. Explicit node recipes provide the real edges. Ordinary dependencies must be acyclic; repetition is represented by a bounded_loop with an ordered body and optional type/version-exact next-iteration carried edges. Worst-case cost is computed algebraically without iterating the research loop. Future finite budgets and parameters (including H40 expansion_budget=256) remain unchanged in IR metadata; this does not authorize running them or relax the current fixture caps.
+
+Exports are JSON, readable text, and DOT. Run `PYTHONPATH=src python -m latent_comm.cli.compile path.json --format text`. The CLI has no run mode. request_research_execution enters the immutable central safety gate before any dispatch and cannot grant research permission. All model execution, training, scoring, neural fixtures, and backend integration remain NOT_RUN.
+
+Verification: tests/compiler/test_compiler.py exercises all capability registrations, seven passes, every supplied recipe, source locations, typed migration insertion/conflicts, recursive leakage, gradients, finite loops, and import isolation using only JSON, standard-library control examples, and compile-time metadata.

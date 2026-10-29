@@ -1,0 +1,8 @@
+{
+  "checked_at_utc": "2026-10-24T17:09:37.526Z",
+  "scope": "enabled nested tool metadata exposed to this worker",
+  "query_regex": "tts|speech|audio|narrat",
+  "matches": [],
+  "total_tool_metadata_entries": 171,
+  "decision": "No matching supported zero-spend TTS route identified in enabled tool metadata. No TTS called. Actual narration and audio-aligned subtitles remain blocked."
+}

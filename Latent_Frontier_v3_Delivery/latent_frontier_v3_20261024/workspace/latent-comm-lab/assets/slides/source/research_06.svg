@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">第一条主线：概念出生</title><desc id="desc">钥匙例：形状相同，权限有效期不同。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">第一条主线：概念出生</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">分歧可以产生一个之前没有的可计算区分</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">06 / 36</tspan>
+</text>
+<ellipse id="e006" cx="150.0" cy="300.0" rx="36.0" ry="36.0" fill="none" stroke="#536647" stroke-width="5"/>
+<polyline id="e007" points="186.000,300.000 304.500,300.000" fill="none" stroke="#536647" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e008" points="270.000,300.000 270.000,330.000" fill="none" stroke="#536647" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e009" points="300.000,300.000 300.000,330.000" fill="none" stroke="#536647" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse id="e010" cx="150.0" cy="470.0" rx="36.0" ry="36.0" fill="none" stroke="#9C5138" stroke-width="5"/>
+<polyline id="e011" points="186.000,470.000 304.500,470.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e012" points="270.000,470.000 270.000,500.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e013" points="300.000,470.000 300.000,500.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e014" x="370" y="293.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="370" dy="0">K₁：形状匹配，授权有效</tspan>
+</text>
+<text id="e015" x="370" y="459.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="370" dy="0">K₂：形状匹配，授权过期</tspan>
+</text>
+<text id="e016" x="370" y="347.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="370" dy="0">可以开门</tspan>
+</text>
+<text id="e017" x="370" y="513.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="370" dy="0">不能开门</tspan>
+</text>
+<text id="e018" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">下一步：定义“授权有效期”，使新概念改变可执行判断</tspan>
+</text>
+</svg>

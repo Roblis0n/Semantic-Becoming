@@ -1,0 +1,27 @@
+{
+  "id": "explainer_360_029",
+  "edition": "explainer_360",
+  "scene_id": "S06",
+  "characters": 16,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "但合成世界中的观察必须带着来源。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:38:52.950389+00:00",
+  "status": "queued",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

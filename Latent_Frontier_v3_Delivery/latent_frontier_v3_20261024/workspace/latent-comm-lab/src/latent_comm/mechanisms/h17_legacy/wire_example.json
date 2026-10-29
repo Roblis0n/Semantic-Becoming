@@ -1,0 +1,48 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "physical_frame": {
+    "frame_id": "bound",
+    "unit": "bound",
+    "handedness": "left",
+    "observation_model": "bound",
+    "latent_frame_id": "bound"
+  },
+  "latent_frame_id": "bound",
+  "objects": [],
+  "transform": {
+    "source": {
+      "frame_id": "bound",
+      "unit": "bound",
+      "handedness": "left",
+      "observation_model": "bound",
+      "latent_frame_id": "bound"
+    },
+    "target": {
+      "frame_id": "bound",
+      "unit": "bound",
+      "handedness": "left",
+      "observation_model": "bound",
+      "latent_frame_id": "bound"
+    },
+    "linear": [
+      [
+        1.0
+      ]
+    ],
+    "translation": [
+      1.0
+    ],
+    "unit_scale": 1.0
+  },
+  "action_semantics": "bound"
+}

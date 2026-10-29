@@ -1,0 +1,405 @@
+{
+  "page_count": 55,
+  "previous_page_count": 55,
+  "previous_pdf_sha256": "963676a0a77417c83bc26b0ec5eccde62f53ae3d2eb673dd66e5dfd446b91c28",
+  "pdf_sha256": "897f5bdb185b35810b2ca0507afd5c9794873735ae6a1e9e2a26fb61b6a2d625",
+  "all_pages_nonempty": true,
+  "out_of_page_words": 0,
+  "pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "changed_pages": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "page_checks": [
+    {
+      "page": 1,
+      "characters": 503,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 2,
+      "characters": 1700,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 3,
+      "characters": 1750,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 4,
+      "characters": 1746,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 5,
+      "characters": 1856,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 6,
+      "characters": 1696,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 7,
+      "characters": 1727,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 8,
+      "characters": 1752,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 9,
+      "characters": 1587,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 10,
+      "characters": 2529,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 11,
+      "characters": 1643,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 12,
+      "characters": 1679,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 13,
+      "characters": 2247,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 14,
+      "characters": 2708,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 15,
+      "characters": 2682,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 16,
+      "characters": 2861,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 17,
+      "characters": 2494,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 18,
+      "characters": 2618,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 19,
+      "characters": 2578,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 20,
+      "characters": 2826,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 21,
+      "characters": 2733,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 22,
+      "characters": 2809,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 23,
+      "characters": 2707,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 24,
+      "characters": 2784,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 25,
+      "characters": 2646,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 26,
+      "characters": 2760,
+      "same_render_as_previous": false,
+      "outside_page_words": 0
+    },
+    {
+      "page": 27,
+      "characters": 2663,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 28,
+      "characters": 2495,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 29,
+      "characters": 2554,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 30,
+      "characters": 2631,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 31,
+      "characters": 2642,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 32,
+      "characters": 2610,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 33,
+      "characters": 2635,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 34,
+      "characters": 2725,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 35,
+      "characters": 2542,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 36,
+      "characters": 2597,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 37,
+      "characters": 2195,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 38,
+      "characters": 1842,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 39,
+      "characters": 1840,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 40,
+      "characters": 1975,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 41,
+      "characters": 2012,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 42,
+      "characters": 2036,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 43,
+      "characters": 2037,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 44,
+      "characters": 1782,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 45,
+      "characters": 1619,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 46,
+      "characters": 1654,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 47,
+      "characters": 1633,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 48,
+      "characters": 1629,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 49,
+      "characters": 1707,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 50,
+      "characters": 1782,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 51,
+      "characters": 2510,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 52,
+      "characters": 3357,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 53,
+      "characters": 3176,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 54,
+      "characters": 2711,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    },
+    {
+      "page": 55,
+      "characters": 391,
+      "same_render_as_previous": true,
+      "outside_page_words": 0
+    }
+  ],
+  "contact_sheets": [
+    "run_state/checks/D03/media_delta_1846/visual/changed_10_21.jpg",
+    "run_state/checks/D03/media_delta_1846/visual/changed_22_26.jpg"
+  ],
+  "render_pass6_missing_glyph_warnings": 0,
+  "render_pass6_overfull_warnings": 0
+}

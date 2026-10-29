@@ -1,0 +1,493 @@
+{
+  "docs": [
+    "docs/00_项目重定义与本轮交付.md",
+    "docs/01_来源继承与逐项改写.md",
+    "docs/02_第一性原则与跃迁空间.md",
+    "docs/03_研究总图与创新资源分配.md",
+    "docs/04_统一数学对象与语义分层.md",
+    "docs/05_前作地图与新意表达.md",
+    "docs/06_总体软件架构与实现范围.md",
+    "docs/07_数据世界与监督信号工厂.md",
+    "docs/08_全训练路线与优化目标.md",
+    "docs/09_自动求导与训练循环细则.md",
+    "docs/10_模型接口与状态注入.md",
+    "docs/11_消息协议与可执行语义边界.md",
+    "docs/12_Pipeline与命令行全流程.md",
+    "docs/13_Dot总控章程与授权边界.md",
+    "docs/14_浏览器与软件能力使用计划.md",
+    "docs/15_一次性工作流与任务协作.md",
+    "docs/16_代码检查不再等于研究立项.md",
+    "docs/17_未来实验矩阵与开放问题.md",
+    "docs/18_论文与开源叙事.md",
+    "docs/19_资源依赖与已有环境保护.md",
+    "docs/20_失败恢复与不缩减创新的决策规则.md",
+    "docs/21_交付清单与用户接手方式.md",
+    "docs/22_来源索引与引用边界.md",
+    "docs/23_八条组合研究路线与远期极端猜想.md"
+  ],
+  "hypotheses": [
+    {
+      "id": "H01",
+      "title": "可组合潜算子",
+      "english": "Composable Latent Operators",
+      "tier": "旗舰",
+      "summary": "不发送已经求得的答案，发送作用于接收者状态的函数。",
+      "path": "hypotheses/H01_可组合潜算子.md",
+      "modules": [
+        "operators/low_rank.py",
+        "operators/composition.py",
+        "bridges/operator_generator.py"
+      ],
+      "recipe": "operator_composition",
+      "refs": [
+        "R01",
+        "R03",
+        "R08"
+      ]
+    },
+    {
+      "id": "H02",
+      "title": "反事实响应包",
+      "english": "Counterfactual Response Capsules",
+      "tier": "旗舰",
+      "summary": "传送条件变化下的局部响应，而非单个静态状态。",
+      "path": "hypotheses/H02_反事实响应包.md",
+      "modules": [
+        "responses/low_rank_jet.py",
+        "responses/finite_difference.py",
+        "responses/trust_region.py"
+      ],
+      "recipe": "counterfactual_response",
+      "refs": [
+        "R01",
+        "R11"
+      ]
+    },
+    {
+      "id": "H03",
+      "title": "多假设信念包",
+      "english": "Multi-Hypothesis Belief Packets",
+      "tier": "旗舰",
+      "summary": "让接收者继承尚未决出的分歧，而不是只继承一个结论。",
+      "path": "hypotheses/H03_多假设信念包.md",
+      "modules": [
+        "beliefs/packet.py",
+        "beliefs/mixture.py",
+        "beliefs/update.py",
+        "beliefs/matching.py"
+      ],
+      "recipe": "belief_mixture",
+      "refs": [
+        "R01",
+        "R06"
+      ]
+    },
+    {
+      "id": "H04",
+      "title": "多主体共享约束场",
+      "english": "Multi-Model Constraint Fields",
+      "tier": "旗舰",
+      "summary": "不再轮流发结论，而是共同塑造一个可继续求解的状态空间。",
+      "path": "hypotheses/H04_多主体共享约束场.md",
+      "modules": [
+        "fields/constraints.py",
+        "fields/solver.py",
+        "fields/conflicts.py",
+        "fields/readwrite.py"
+      ],
+      "recipe": "constraint_field",
+      "refs": [
+        "R09",
+        "R10"
+      ]
+    },
+    {
+      "id": "H05",
+      "title": "推理续接胶囊",
+      "english": "Cross-Model Continuation Capsules",
+      "tier": "旗舰",
+      "summary": "让另一模型接手未完成的计算，而不必从文字摘要重新开始。",
+      "path": "hypotheses/H05_推理续接胶囊.md",
+      "modules": [
+        "continuations/capture.py",
+        "continuations/translate.py",
+        "continuations/resume.py",
+        "continuations/ledger.py"
+      ],
+      "recipe": "continuation_transfer",
+      "refs": [
+        "R04",
+        "R03",
+        "R17"
+      ]
+    },
+    {
+      "id": "H06",
+      "title": "多图册语义对齐",
+      "english": "Behavioral Semantic Atlases",
+      "tier": "旗舰",
+      "summary": "不强迫所有模型共享一个坐标，而学习局部坐标与操作关系。",
+      "path": "hypotheses/H06_多图册语义对齐.md",
+      "modules": [
+        "atlas/charts.py",
+        "atlas/routing.py",
+        "atlas/transitions.py",
+        "atlas/objectives.py"
+      ],
+      "recipe": "semantic_atlas",
+      "refs": [
+        "R05",
+        "R11",
+        "R12",
+        "R13",
+        "R14"
+      ]
+    },
+    {
+      "id": "H07",
+      "title": "类型化潜程序",
+      "english": "Typed Latent Programs",
+      "tier": "扩展",
+      "summary": "让消息不只可读取，还可作为受限计算程序执行。",
+      "path": "hypotheses/H07_类型化潜程序.md",
+      "modules": [
+        "ir/types.py",
+        "ir/parser.py",
+        "ir/compiler.py",
+        "ir/runtime.py"
+      ],
+      "recipe": "typed_program",
+      "refs": [
+        "R07",
+        "R08"
+      ]
+    },
+    {
+      "id": "H08",
+      "title": "关系结构通信",
+      "english": "Relational Latent Exchange",
+      "tier": "扩展",
+      "summary": "传递对象之间的关系，而非强求向量坐标一致。",
+      "path": "hypotheses/H08_关系结构通信.md",
+      "modules": [
+        "relations/packet.py",
+        "relations/matching.py",
+        "relations/exchange.py"
+      ],
+      "recipe": "relational_exchange",
+      "refs": [
+        "R12",
+        "R13",
+        "R14"
+      ]
+    },
+    {
+      "id": "H09",
+      "title": "干预代数通信",
+      "english": "Intervention Algebra Messages",
+      "tier": "扩展",
+      "summary": "发送可组合干预及其影响，而不是相关性描述。",
+      "path": "hypotheses/H09_干预代数通信.md",
+      "modules": [
+        "interventions/scm.py",
+        "interventions/algebra.py",
+        "interventions/transport.py"
+      ],
+      "recipe": "intervention_algebra",
+      "refs": [
+        "R11"
+      ]
+    },
+    {
+      "id": "H10",
+      "title": "高阶协同超边",
+      "english": "Higher-Order Latent Synergy",
+      "tier": "扩展",
+      "summary": "优化只有联合出现才有用的消息组合。",
+      "path": "hypotheses/H10_高阶协同超边.md",
+      "modules": [
+        "synergy/hypergraph.py",
+        "synergy/interactions.py",
+        "synergy/composer.py"
+      ],
+      "recipe": "higher_order_synergy",
+      "refs": [
+        "R07"
+      ]
+    },
+    {
+      "id": "H11",
+      "title": "渐进潜编码",
+      "english": "Progressive Latent Codes",
+      "tier": "扩展",
+      "summary": "同一个消息可逐级展开，而不是固定一次传完。",
+      "path": "hypotheses/H11_渐进潜编码.md",
+      "modules": [
+        "coding/progressive.py",
+        "coding/quantization.py",
+        "coding/requests.py"
+      ],
+      "recipe": "progressive_code",
+      "refs": [
+        "R01"
+      ]
+    },
+    {
+      "id": "H12",
+      "title": "多查询持久胶囊",
+      "english": "Multi-Query Latent Capsules",
+      "tier": "扩展",
+      "summary": "把一段证据变成可反复询问的计算对象。",
+      "path": "hypotheses/H12_多查询持久胶囊.md",
+      "modules": [
+        "capsules/store.py",
+        "capsules/reader.py",
+        "capsules/versioning.py"
+      ],
+      "recipe": "multiquery_capsule",
+      "refs": [
+        "R01",
+        "R03"
+      ]
+    },
+    {
+      "id": "H13",
+      "title": "可分叉潜计算",
+      "english": "Forkable Latent Computation",
+      "tier": "扩展",
+      "summary": "让计算分支可以复制、并行继续并有条件合并。",
+      "path": "hypotheses/H13_可分叉潜计算.md",
+      "modules": [
+        "branching/fork.py",
+        "branching/merge.py",
+        "branching/ancestry.py"
+      ],
+      "recipe": "fork_merge",
+      "refs": [
+        "R04"
+      ]
+    },
+    {
+      "id": "H14",
+      "title": "潜技能语法",
+      "english": "Latent Skill Grammars",
+      "tier": "扩展",
+      "summary": "让潜算子组合具有可学习的类型与层级。",
+      "path": "hypotheses/H14_潜技能语法.md",
+      "modules": [
+        "grammar/productions.py",
+        "grammar/bindings.py",
+        "grammar/expansion.py"
+      ],
+      "recipe": "skill_grammar",
+      "refs": [
+        "R07",
+        "R08"
+      ]
+    },
+    {
+      "id": "H15",
+      "title": "接收者无关协议学习",
+      "english": "Receiver-Agnostic Protocol Learning",
+      "tier": "扩展",
+      "summary": "让发送者学习面向一族接收模型的接口。",
+      "path": "hypotheses/H15_接收者无关协议学习.md",
+      "modules": [
+        "population/pair_sampler.py",
+        "population/protocol_objectives.py",
+        "population/adapter_registry.py"
+      ],
+      "recipe": "population_protocol",
+      "refs": [
+        "R05",
+        "R07"
+      ]
+    },
+    {
+      "id": "H16",
+      "title": "精确符号与潜状态双通道",
+      "english": "Symbol-Latent Dual Channels",
+      "tier": "扩展",
+      "summary": "把必须精确的内容与开放计算状态分开传输。",
+      "path": "hypotheses/H16_精确符号与潜状态双通道.md",
+      "modules": [
+        "hybrid/symbols.py",
+        "hybrid/bindings.py",
+        "hybrid/fusion.py"
+      ],
+      "recipe": "dual_channel",
+      "refs": [
+        "R01",
+        "R03"
+      ]
+    },
+    {
+      "id": "H17",
+      "title": "跨模态坐标接地",
+      "english": "Grounded Cross-Modal Latent Exchange",
+      "tier": "扩展",
+      "summary": "让视觉、语言与动作通过环境关系对接。",
+      "path": "hypotheses/H17_跨模态坐标接地.md",
+      "modules": [
+        "grounding/frames.py",
+        "grounding/transform.py",
+        "grounding/action_effects.py"
+      ],
+      "recipe": "grounded_exchange",
+      "refs": [
+        "R12",
+        "R14"
+      ]
+    },
+    {
+      "id": "H18",
+      "title": "通信诱导计算结构",
+      "english": "Communication-Induced Computation",
+      "tier": "扩展",
+      "summary": "让通信方式参与决定计算分工与层级。",
+      "path": "hypotheses/H18_通信诱导计算结构.md",
+      "modules": [
+        "topology/candidates.py",
+        "topology/controller.py",
+        "topology/compiler.py"
+      ],
+      "recipe": "communication_topology",
+      "refs": [
+        "R07",
+        "R09"
+      ]
+    },
+    {
+      "id": "H19",
+      "title": "消息到技能巩固",
+      "english": "Message-to-Skill Consolidation",
+      "tier": "扩展",
+      "summary": "把一次通信中的操作经验蒸馏成以后可用的适配能力。",
+      "path": "hypotheses/H19_消息到技能巩固.md",
+      "modules": [
+        "consolidation/teacher.py",
+        "consolidation/adapter_builder.py",
+        "consolidation/distillation.py"
+      ],
+      "recipe": "message_consolidation",
+      "refs": [
+        "R08"
+      ]
+    },
+    {
+      "id": "H20",
+      "title": "异步认知时钟",
+      "english": "Asynchronous Latent Clocks",
+      "tier": "扩展",
+      "summary": "让不同计算阶段的模型以事件而非固定轮次同步。",
+      "path": "hypotheses/H20_异步认知时钟.md",
+      "modules": [
+        "clocks/events.py",
+        "clocks/scheduler.py",
+        "clocks/staleness.py"
+      ],
+      "recipe": "asynchronous_clocks",
+      "refs": [
+        "R06"
+      ]
+    },
+    {
+      "id": "H21",
+      "title": "反事实分支组合搜索",
+      "english": "Counterfactual Branch Portfolios",
+      "tier": "扩展",
+      "summary": "在潜空间中维护可复用的多条计算假设。",
+      "path": "hypotheses/H21_反事实分支组合搜索.md",
+      "modules": [
+        "portfolios/tree.py",
+        "portfolios/selector.py",
+        "portfolios/reuse.py"
+      ],
+      "recipe": "counterfactual_portfolio",
+      "refs": [
+        "R04",
+        "R06"
+      ]
+    },
+    {
+      "id": "H22",
+      "title": "动态模型边界",
+      "english": "Elastic Model Boundaries",
+      "tier": "扩展",
+      "summary": "让同一个任务临时形成、拆分和重组计算模块。",
+      "path": "hypotheses/H22_动态模型边界.md",
+      "modules": [
+        "elastic/partition.py",
+        "elastic/transitions.py",
+        "elastic/controller.py"
+      ],
+      "recipe": "elastic_boundaries",
+      "refs": [
+        "R05",
+        "R09"
+      ]
+    },
+    {
+      "id": "H23",
+      "title": "语义残差纠错",
+      "english": "Semantic Residual Repair",
+      "tier": "扩展",
+      "summary": "让接收者请求会改变任务判断的修正，而非重发全部状态。",
+      "path": "hypotheses/H23_语义残差纠错.md",
+      "modules": [
+        "repair/diagnostics.py",
+        "repair/residual.py",
+        "repair/protocol.py"
+      ],
+      "recipe": "semantic_repair",
+      "refs": [
+        "R01",
+        "R06"
+      ]
+    },
+    {
+      "id": "H24",
+      "title": "有作用域的潜计算能力",
+      "english": "Scoped Latent Capabilities",
+      "tier": "扩展",
+      "summary": "研究如何让消息只开放指定计算作用，而非任意状态访问。",
+      "path": "hypotheses/H24_有作用域的潜计算能力.md",
+      "modules": [
+        "capabilities/scopes.py",
+        "capabilities/enforcer.py",
+        "capabilities/effects.py"
+      ],
+      "recipe": "scoped_capabilities",
+      "refs": [
+        "R15"
+      ]
+    }
+  ],
+  "prompts": [
+    "prompts/P00_一次性总控执行提示词.md",
+    "prompts/P01_研究总设计师.md",
+    "prompts/P02_机制形式化.md",
+    "prompts/P03_完整模块实现.md",
+    "prompts/P04_模型后端源码.md",
+    "prompts/P05_训练系统.md",
+    "prompts/P06_数据与反事实工厂.md",
+    "prompts/P07_Pipeline与运行时.md",
+    "prompts/P08_创新与相邻机制审查.md",
+    "prompts/P09_数学与软件复核.md",
+    "prompts/P10_权限与禁跑审查.md",
+    "prompts/P11_论文与研究文档.md",
+    "prompts/P12_PPT制作.md",
+    "prompts/P13_动画与视频制作.md",
+    "prompts/P14_旁白音频与字幕.md",
+    "prompts/P15_上下文恢复.md",
+    "prompts/P16_最终整合与交付.md",
+    "prompts/P17_模型侧提示模板.md"
+  ],
+  "media": [
+    "media/00_媒体总导演方案.md",
+    "media/01_研究PPT逐页稿.md",
+    "media/02_90秒机制动画分镜.md",
+    "media/03_完整旁白与长视频结构.md",
+    "media/04_机制图与海报源稿.md"
+  ]
+}

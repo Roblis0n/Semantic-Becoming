@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "dissipation": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "skew_coupling": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "state": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "step_size": {
+      "type": "number"
+    },
+    "steps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 128
+    },
+    "readout_window": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 129
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "integrator": {
+      "const": "implicit_midpoint_linear"
+    }
+  },
+  "required": [
+    "schema_version",
+    "dissipation",
+    "skew_coupling",
+    "state",
+    "version",
+    "step_size",
+    "steps",
+    "readout_window",
+    "integrator"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H33:resolved-payload:3"
+}

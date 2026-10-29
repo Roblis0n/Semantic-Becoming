@@ -1,0 +1,72 @@
+{
+  "task_id": "M01",
+  "status": "done",
+  "input_digest": "c69c8ed2d0d2381151128a5065b0ac6e70adf62c8c553ca803c4b8ab0e8aecee",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/README.md",
+      "sha256": "0519079b2e48db55d6535b4b070011ce15b7e8a5c58d6db98a8a9d1956e3ec91",
+      "bytes": 2158
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/__init__.py",
+      "sha256": "ef8c57ef0b71dbc68ad673df1ca01902ceaa2c4a973dc344d54e3fe1b0d011e3",
+      "bytes": 83
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/adapter.py",
+      "sha256": "c23293e1be58d7d9fb4ff10a912f52a623d769a7baeb1ccff4336a40a0323d23",
+      "bytes": 3679
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/losses.py",
+      "sha256": "494759664520bc7eca1b048aa69e98ea425dde771dce308f006bd09e2e041207",
+      "bytes": 1492
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/migration.py",
+      "sha256": "5b530d916afdb8d56996d6a3a03fd42c46614d63df96b6f87ba4e7e8af08460d",
+      "bytes": 2095
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/reference.py",
+      "sha256": "e85491d7a158ff14b82d4082c284c80f5228429e27261c7e9ce3d87ab0ec4248",
+      "bytes": 2375
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/schema.json",
+      "sha256": "f506b271cc48650a57bbf70099362d09fa5b91f7c0fdda2221ad03b50012b783",
+      "bytes": 1485
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/types.py",
+      "sha256": "be9d48f775e186f77fca5e07bf72c23dbc9b223e184dff9446c15794161538a8",
+      "bytes": 2070
+    },
+    {
+      "path": "tests/contracts/test_h01.py",
+      "sha256": "829edec1d66f4fb9379efa713198b355e1bfacc547cc7b462bd86fe1cf28c2ea",
+      "bytes": 3460
+    },
+    {
+      "path": "configs/mechanisms/H01.json",
+      "sha256": "7fd813a06881934b793fccdfd225573fc2c4c19f51e4c55ff0c26861477463b1",
+      "bytes": 3245
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M01_contracts.txt",
+      "sha256": "169893cd5dc63b2a14cc28393bcd589ae4cf49419135ccc96ff9cec4f51308ab"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Five bounded contracts and AST gates; direct B02/B03 integration source. No neural imports/execution; NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:13:33.844266+00:00"
+}

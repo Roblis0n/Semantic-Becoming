@@ -1,0 +1,465 @@
+{
+  "task_id": "V04",
+  "status": "done",
+  "input_digest": "5c129751c97c1cc36cd93c7f0e8208768e2e717baeaee8a6a5d084bbc328bc36",
+  "outputs": [
+    {
+      "path": "assets/video/intro_90/README.md",
+      "sha256": "a5767adec683e40fad99212350e53dacc1c57fa6e2654feadbecbf06bef3b7fa",
+      "bytes": 1612
+    },
+    {
+      "path": "assets/video/intro_90/build_narrated_projects.py",
+      "sha256": "410e9dae09e124ea00bf8f66bc3f8d40e15ad770da04021c1b95e57f4d61af66",
+      "bytes": 3062
+    },
+    {
+      "path": "assets/video/intro_90/build_video_projects.py",
+      "sha256": "e1ee694ca7dc2dafd9db1fc4167411ad4def85b443ad39ed532f645059f31847",
+      "bytes": 4316
+    },
+    {
+      "path": "assets/video/intro_90/clips/S01.mp4",
+      "sha256": "829e4ed3b8cc0bb0033373009765a2eb9286075ea546540ef686ec7ef108ca11",
+      "bytes": 64711
+    },
+    {
+      "path": "assets/video/intro_90/clips/S02.mp4",
+      "sha256": "b9ae0c164b34894f3ef75a527809f83d4fe0fc5be392d48eace926cc95d0e7f2",
+      "bytes": 116381
+    },
+    {
+      "path": "assets/video/intro_90/clips/S03.mp4",
+      "sha256": "00781a35c1fd445d86bea80200afe340f33a6ec10dfa96b8bdba9b440df9fb7d",
+      "bytes": 91191
+    },
+    {
+      "path": "assets/video/intro_90/clips/S04.mp4",
+      "sha256": "faa3ca4fdcc66ae89f068cd8437e4c967bb60a30c25ec195c41bb8f2ddf0ac87",
+      "bytes": 150054
+    },
+    {
+      "path": "assets/video/intro_90/clips/S05.mp4",
+      "sha256": "5d04890208a08aa41d24e770199264b2094b94925efdd395ba51c75f05cfd8ea",
+      "bytes": 112143
+    },
+    {
+      "path": "assets/video/intro_90/clips/S06.mp4",
+      "sha256": "81d940e2b2ff6acb0efe161794ccde249bd96706312c71fdea5a3d77c237b844",
+      "bytes": 141316
+    },
+    {
+      "path": "assets/video/intro_90/clips/S07.mp4",
+      "sha256": "cf221a52de608293d6812cf552dd5cdbde97a6f1e8eb881bbf1380736ba92b18",
+      "bytes": 97896
+    },
+    {
+      "path": "assets/video/intro_90/clips/S08.mp4",
+      "sha256": "ac04b670a03ffa268525b1cbf7b3c3708a25cb1f19bab9861a776e33345653d7",
+      "bytes": 58007
+    },
+    {
+      "path": "assets/video/intro_90/commit_narrated_branch.py",
+      "sha256": "d80011c0b72cfd3917c03625bc2cc404eeac12958c9a208307d7af51da494cbe",
+      "bytes": 3984
+    },
+    {
+      "path": "assets/video/intro_90/commit_paused_branch.py",
+      "sha256": "3cd47ffe3021a4c69d54c4b6566a4e5887cd08f51b2f2d4105980ab5c14f81e5",
+      "bytes": 3752
+    },
+    {
+      "path": "assets/video/intro_90/concat.txt",
+      "sha256": "800dd2a89e36ae40250ffa89ce4424127dfeaee9f90be7546bb932d538c36474",
+      "bytes": 167
+    },
+    {
+      "path": "assets/video/intro_90/concat_narrated.txt",
+      "sha256": "bf3a72dbc1ec25733a65d3dc013641380519180d907c613866a411ec6ed270f8",
+      "bytes": 239
+    },
+    {
+      "path": "assets/video/intro_90/contact_sheet.jpg",
+      "sha256": "0c4e78269836688281994faa5fc60ae130e71a418b859625c34d0b3e7d8c6488",
+      "bytes": 259641
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/006.png",
+      "sha256": "402528a2e23da761dfa8f511764421f08f31280c684bb7064960b989849d85d1",
+      "bytes": 172045
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/015.png",
+      "sha256": "42eae98900a6c9b0378a687c69aab2ed525059239dcc2bfa225a8dbc71af442d",
+      "bytes": 166714
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/026.png",
+      "sha256": "cd3917d5c61c1d8176ee1a172431dffaa3280584a7140fb327dad0b662e5aa79",
+      "bytes": 163608
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/038.png",
+      "sha256": "30ed2915bf1ba421c65d22bdd4989c85ec1ad4d2c395aa8d45511371e8f0c442",
+      "bytes": 143565
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/051.png",
+      "sha256": "fe1c4c63917abd96461d8b6e896693a218c16f30a296d0685bfab228a3f7bfae",
+      "bytes": 135542
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/061.png",
+      "sha256": "29d6128d8bd36e0d917a62cc453dbf099b6bbe62e6fa0354939740262e7b1ceb",
+      "bytes": 137515
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/071.png",
+      "sha256": "1e69b8ac8473c1f8dcbb7b4169165fd7d8a9d22ccf5882a9753f2d17e812f090",
+      "bytes": 166482
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/085.png",
+      "sha256": "c0557a6a38ddc1daf154f13459c55accf792f3af3fba8bbdc8c99c7656901e5f",
+      "bytes": 210483
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/contact_sheet.jpg",
+      "sha256": "e36ebf05d7974e8c8d3532734e61f2a082aa8555535f4d46f7731f14996ed7d1",
+      "bytes": 282665
+    },
+    {
+      "path": "assets/video/intro_90/decoded_samples/samples.json",
+      "sha256": "d8d25888e1b8bcd737b3ba8414aeb3ff2bb926ea7d5fa6eea74d59bdd28cd0da",
+      "bytes": 1622
+    },
+    {
+      "path": "assets/video/intro_90/finalize_narrated_qa.py",
+      "sha256": "9d84787369986380869541c3b9bec695ad2c85a3a5f0305f38416c56490b7f5f",
+      "bytes": 12526
+    },
+    {
+      "path": "assets/video/intro_90/finalize_narrated_qa_v2.py",
+      "sha256": "5a8e2d69aae3222e1207adcf8f978638672a5c063d4b2be7d656ba27bcfa23a8",
+      "bytes": 17625
+    },
+    {
+      "path": "assets/video/intro_90/finalize_narrated_qa_v3.py",
+      "sha256": "669eddeee09232fdcecd35d5984b3686b6315aef7288dd41c3726cd8f78d8b41",
+      "bytes": 19262
+    },
+    {
+      "path": "assets/video/intro_90/finalize_paused_media.py",
+      "sha256": "4047e23c65b86f560021de4047addea720882b0fcaa0b37090fc7109df969d85",
+      "bytes": 12803
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+      "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+      "bytes": 2485518
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "bytes": 826212
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft_opening.png",
+      "sha256": "7fc1cef1812cf67e934b40d5864df3bfe617e8302e59dcc2c3fe681d495f639b",
+      "bytes": 164089
+    },
+    {
+      "path": "assets/video/intro_90/media_status.json",
+      "sha256": "0604784fb012de545312698868e280b08da2a24957bb20ecc0b5583b854cf3f3",
+      "bytes": 2389
+    },
+    {
+      "path": "assets/video/intro_90/media_status_silent_history.json",
+      "sha256": "2580f0e9604a58570d520fb9e2e6bd2a6a99dcaec93c40eb02eab63ecc0f3866",
+      "bytes": 1314
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S01.mp4",
+      "sha256": "9332a6f2f946a3d63218be2e63cba8c9c69b9939443b5de32b57f972fbb1a756",
+      "bytes": 64830
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S02.mp4",
+      "sha256": "4502f81c997064aa3bbc631ebe2f51d944498eef408525241366dbb0e9fe1088",
+      "bytes": 115777
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S03.mp4",
+      "sha256": "9e02e947c0fec34cf228d08f4fdb7f18751512e1d82ca2679f9ba09675a00ffe",
+      "bytes": 91362
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S04.mp4",
+      "sha256": "0d7b9fc256f7fa75ee67e05668c56564b181ce7bcdcf3b7138efec4481cfdd05",
+      "bytes": 150392
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S05.mp4",
+      "sha256": "387f87f443d9ff3a92f8c3a49141f084e883fbcd63304eddbd55d316358a3d56",
+      "bytes": 112393
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S06.mp4",
+      "sha256": "bef6ffc5c8b8086e9ae7a8ff13059654be86de020633470e559155f3875f9d19",
+      "bytes": 141187
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S07.mp4",
+      "sha256": "def2cb52e96f7e41f7f91f0d4e67567851bc1ebf1189c49422c38c06675af4f0",
+      "bytes": 111622
+    },
+    {
+      "path": "assets/video/intro_90/narrated_clips/S08.mp4",
+      "sha256": "3325386037c9b00fcaed6c1f685edf0a8f3846d5141ff2e283d0c55037574536",
+      "bytes": 58002
+    },
+    {
+      "path": "assets/video/intro_90/narrated_qa.json",
+      "sha256": "f3fd02495979a78eb592c1e80399b4066e4ad96b3ca44774d2e63b835df3b7f0",
+      "bytes": 4906
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/contact-01.jpg",
+      "sha256": "03dcd6d6a92f55ef69f2e139c69610ce04939353174a16205eb45974c2450c26",
+      "bytes": 277993
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/contact-02.jpg",
+      "sha256": "c09f0ece54c82e9793bd69c1f4bdd83e2663bd116cdd55ee603c2f39a4f00b3e",
+      "bytes": 272972
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-000.png",
+      "sha256": "6bec75c5d9a0655cea0f4d1adabddca97b6e933a3681a0643bab3d67c9451b9f",
+      "bytes": 116812
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-001.png",
+      "sha256": "b8449fc57b20621c7169cbefefbc7e439d76b81d1a06fc6dc0b55ea1349b7e05",
+      "bytes": 171490
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-002.png",
+      "sha256": "9563dce1482a70347a7938cab4abefbebdec2a2bd56ac82b2b0dabbba26ee1e4",
+      "bytes": 137609
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-003.png",
+      "sha256": "90e0056acb948e6b4fd1fd5a3304e380570d89b67ab4fb360c624aed2639090a",
+      "bytes": 179401
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-004.png",
+      "sha256": "d1de7a95efe6b2af15e3d23185e4ee7c46d3d121542686faf1a7283e3ce59885",
+      "bytes": 163034
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-005.png",
+      "sha256": "5570417d63fd7c87d2ec5163f898adb1b20f706bc61a8bf2eb843b7cf6c6ef6f",
+      "bytes": 138249
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-006.png",
+      "sha256": "4e502be38d07e73eaf2da3bb03d03d9bea016a839cdc3e652bd80fedf60b23bd",
+      "bytes": 157032
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-007.png",
+      "sha256": "00f590c47d6c7e266f4143a58e52e808dbdcb5ea23246af93fd3cd52173a39fb",
+      "bytes": 182299
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-008.png",
+      "sha256": "6602df0a3e457984647fce2621813f6e8489b7dcd1505ce79e8859490896f590",
+      "bytes": 135146
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-009.png",
+      "sha256": "1159f663f965cdb29b662861e2bad6efafecb171f1371df3fabca8ed33172c1c",
+      "bytes": 163214
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-010.png",
+      "sha256": "400e4ced39e4450839247f081ddab2246a10b8631dce43a76bafd23f7885458d",
+      "bytes": 123688
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-011.png",
+      "sha256": "09b2605fc8b973bff86603747b859f14fb54703de0ec6e72af1bd0ccfa744aa3",
+      "bytes": 154420
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-012.png",
+      "sha256": "244c870f7bd98e994db92c23076e2f77192dd7acd42ef22ce6f7200f82a14a44",
+      "bytes": 222221
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-013.png",
+      "sha256": "e8b11997fa984d4ed53ca5e490dc6147f386105530602ece8c95e2360476d9b6",
+      "bytes": 204270
+    },
+    {
+      "path": "assets/video/intro_90/narrated_samples/cue-014.png",
+      "sha256": "aa6f4d7a19097a2d25e35d85dbb56469547fbfd0511fca6a92b68b9ffeb96806",
+      "bytes": 209438
+    },
+    {
+      "path": "assets/video/intro_90/narrated_validation.log",
+      "sha256": "16c89ecfec3a8253eb657f5813b1ffaf10c24acd5c2a4776cfe10d6c0ecac116",
+      "bytes": 336
+    },
+    {
+      "path": "assets/video/intro_90/narrated_visual_review.json",
+      "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+      "bytes": 3582
+    },
+    {
+      "path": "assets/video/intro_90/project.mlt",
+      "sha256": "f0f8eca8780ff459204d141d8250016db1fcc58e71d8d7b9f583bf4d6453ad6c",
+      "bytes": 2586
+    },
+    {
+      "path": "assets/video/intro_90/project_audio.mlt",
+      "sha256": "85d4dd72df3b6ef69f5611066089b9cbef258ca5994bf4e367d13ea0442b3ce8",
+      "bytes": 2993
+    },
+    {
+      "path": "assets/video/intro_90/render_narrated.log",
+      "sha256": "be929b0cabfbce72ac31cc6481db533a42ce44ac2fd44fe66c57f68363a41081",
+      "bytes": 1759
+    },
+    {
+      "path": "assets/video/intro_90/render_narrated.mjs",
+      "sha256": "6e778bef6f9babe648233a20285270c386a89a8977d6f9362d83fd6ed7a8e528",
+      "bytes": 7560
+    },
+    {
+      "path": "assets/video/intro_90/renders/S01.png",
+      "sha256": "3470662de6f39fd50010bdb29a6b50756a7fb11af2901658c192a518752f85a7",
+      "bytes": 81052
+    },
+    {
+      "path": "assets/video/intro_90/renders/S02.png",
+      "sha256": "f007026a9532948d7ff7916fdfbb09a50b1d424c44214c53a5ae4a4cdeee55c9",
+      "bytes": 74963
+    },
+    {
+      "path": "assets/video/intro_90/renders/S03.png",
+      "sha256": "69fe62282c95ed4b57ce8f5c413c8086bc6625fc008f010a5174c0ace4643bcb",
+      "bytes": 79490
+    },
+    {
+      "path": "assets/video/intro_90/renders/S04.png",
+      "sha256": "1e7eb9c091f7a27c76e0a3f3aec1cfdc0e4fc35797b4729522380bde7c95c5d5",
+      "bytes": 78578
+    },
+    {
+      "path": "assets/video/intro_90/renders/S05.png",
+      "sha256": "3985e36a25e06e82f1a6d24bd6a45bbc31bbb339a93d64bd9052a337bccbf3c9",
+      "bytes": 74861
+    },
+    {
+      "path": "assets/video/intro_90/renders/S06.png",
+      "sha256": "4196b1e755b58a47c70b86532e155fbca18ef431585dc4f059d9ea406dd7debf",
+      "bytes": 68826
+    },
+    {
+      "path": "assets/video/intro_90/renders/S07.png",
+      "sha256": "f632131d5d21d30ec0ad315e47da2ab5a3a4ca9910b411467179f61294d5ff8a",
+      "bytes": 101891
+    },
+    {
+      "path": "assets/video/intro_90/renders/S08.png",
+      "sha256": "b65ee534ebfc09c2f4fb32ae3279b71c7e418dccd0626e817e204db1810f666d",
+      "bytes": 93695
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S01.png",
+      "sha256": "d5998cf0e1e1f2c24e11a83a81e34c434cf731ae6944a4d352b38e4932e605c5",
+      "bytes": 81018
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S02.png",
+      "sha256": "d6228439028d67a5e12f8adf99e9ba8ee954d6be1f6d1cc66a180fde0b2c729e",
+      "bytes": 74936
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S03.png",
+      "sha256": "5cd0cb8817d28c2e1865fde428a9983326258a6c9627917a56a44cb69ed28d11",
+      "bytes": 79453
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S04.png",
+      "sha256": "216e105808d7a275f1f2fb85829202600670a5bf870659659e22f97664ed5ff5",
+      "bytes": 78549
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S05.png",
+      "sha256": "11c45b98e4e320a74e4aa532522e616290b42afcdcf09917e4b3b28673f55503",
+      "bytes": 74859
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S06.png",
+      "sha256": "1b8331c847a5047dd0a5763664f08ec97b3198bcee81096b9b8ec1e537b1ccda",
+      "bytes": 68799
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S07.png",
+      "sha256": "2cf72df7f0e14c139fd24615f5bc5745973acd09597f5910b2830ba18faa970a",
+      "bytes": 101870
+    },
+    {
+      "path": "assets/video/intro_90/renders_narrated/S08.png",
+      "sha256": "ebf625f03c468b9c5b1e567d69cf3980720a92f14745b4a2453201cee0e885e6",
+      "bytes": 93695
+    },
+    {
+      "path": "assets/video/intro_90/timeline.json",
+      "sha256": "ecabc452fb6f494d2943e7d415f19ace90b92ac810d2a52cf8857843d177aeae",
+      "bytes": 5213
+    },
+    {
+      "path": "assets/video/intro_90/timeline_audio.json",
+      "sha256": "4a5c09fec4ad2094ade3f760e64f4f9b3536092c7d7c49df1502eefba9c512b4",
+      "bytes": 5687
+    },
+    {
+      "path": "assets/video/intro_90/validate_narrated.py",
+      "sha256": "c6bf011ffe372278306a1911a54c909d7a80492b14629736db5420c0e68ab8b6",
+      "bytes": 5553
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V04_validation.json",
+      "sha256": "0604784fb012de545312698868e280b08da2a24957bb20ecc0b5583b854cf3f3"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Actual 90-second personal/noncommercial narrated H.264/AAC edition, PCM WAV, measured 14-cue subtitles and editable MLT/timeline. Full A/V decode and every cue-midpoint frame checked. Silent history preserved. Actual audition USER_WAIVED_NOT_PERFORMED under20261027scope change.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:11:22.229351+00:00",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "opened_checked": true,
+  "timing_verified": true,
+  "timing_scope": "Exact measured synthesized PCM chunk and scene boundaries with nonoverlapping subtitle margins",
+  "opened_scope": "Actual A/V full decode and all 14 cue-midpoint frames plus opening; no auditory review",
+  "export_edition": "narrated_personal_noncommercial_unauditioned",
+  "audio_timing_verified": true,
+  "audio_listened": false,
+  "media_status_source": "assets/video/intro_90/media_status.json",
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

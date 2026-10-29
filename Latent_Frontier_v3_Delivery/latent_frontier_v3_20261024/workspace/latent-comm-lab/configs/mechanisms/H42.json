@@ -1,0 +1,47 @@
+{
+  "schema_version": 3,
+  "id": "H42",
+  "kind": "mechanism",
+  "title": "模型与任务的共演化生态",
+  "mechanisms": [
+    "H42"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "hypotheses/H42_模型与任务的共演化生态.md",
+  "target_base": "src/latent_comm/mechanisms/h42_ecology",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "population_limit": 16,
+    "world_limit": 32,
+    "generations": 8,
+    "research_training": false
+  },
+  "integration_status": "NOT_RUN",
+  "reference_module": "latent_comm.mechanisms.h42_ecology.reference",
+  "adapter_module": "latent_comm.mechanisms.h42_ecology.adapter",
+  "required_version_axes": [
+    "task",
+    "isa",
+    "ontology"
+  ],
+  "loss_ledger_module": "latent_comm.mechanisms.h42_ecology.losses",
+  "fixture_bounds": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  },
+  "source_recipe": "PLAN_ROOT/recipes/H42.json"
+}

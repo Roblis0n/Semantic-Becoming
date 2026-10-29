@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_029",
+  "edition": "explainer_360",
+  "scene_id": "S06",
+  "characters": 16,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "但合成世界中的观察必须带着来源。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:10:31.162882+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 131229,
+    "duration_seconds": 2.9757142857142855,
+    "sample_peak": 9025,
+    "sample_rms": 1474.0827308251405,
+    "sha256": "d69c81dfde80919ebc2c338bd8ba39798a47932c28c5a215d9defcfe65df2c64",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:11:31.351825+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

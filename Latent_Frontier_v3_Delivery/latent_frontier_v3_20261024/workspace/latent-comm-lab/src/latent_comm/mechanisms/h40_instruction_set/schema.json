@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "base_version": {
+      "const": "base:1"
+    },
+    "base_isa_immutable": {
+      "const": true
+    },
+    "future_expansion_budget": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4096
+    },
+    "macros": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "parameters": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "body": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "type": "string",
+                "pattern": "^.+$"
+              },
+              "args": {
+                "type": "array",
+                "items": {
+                  "type": "object"
+                },
+                "minItems": 0,
+                "maxItems": 64
+              },
+              "name": {
+                "type": "string"
+              },
+              "value": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "op",
+              "args",
+              "name",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "input_types": {
+            "type": "array",
+            "items": {
+              "const": "scalar"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "output_type": {
+            "const": "scalar"
+          }
+        },
+        "required": [
+          "name",
+          "parameters",
+          "body",
+          "input_types",
+          "output_type"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "required": [
+    "schema_version",
+    "version",
+    "base_version",
+    "base_isa_immutable",
+    "future_expansion_budget",
+    "macros"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H40:resolved-payload:3"
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "A01",
+  "status": "done",
+  "input_digest": "cd52e55d50fcc4404b4a85e3ae48d7172e7e3a25fca541de107c62d873ef1dab",
+  "outputs": [
+    {
+      "path": "docs/theory_architecture.md",
+      "sha256": "c79629c4bea669ebbd470fabf206078fe7282acf7ab966eac697e7d94c1ad690",
+      "bytes": 33373
+    },
+    {
+      "path": "specs/meta_state.json",
+      "sha256": "e892ee96881ee78e8d0d3f31701837c4b18e91b8456900ba2b89de76a5fbe57f",
+      "bytes": 44317
+    },
+    {
+      "path": "specs/assumptions.json",
+      "sha256": "9546bf15a7f20ebf5b87982f50a7f6b6530a74217091757461ef3b609eb3fb3a",
+      "bytes": 5178
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A01_architecture.json",
+      "sha256": "af83717592b17d8a41ac6adbe27ceea62572da7370adc9b46d1f07e5c8a69c48"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Full architecture and assumptions, all research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T15:44:14.886335+00:00"
+}

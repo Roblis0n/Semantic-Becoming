@@ -1,0 +1,19 @@
+test_backend_does_not_shift_labels (test_backend_hf_prefix.PrefixContracts.test_backend_does_not_shift_labels) ... ok
+test_future_length_not_clipped (test_backend_hf_prefix.PrefixContracts.test_future_length_not_clipped) ... ok
+test_left_padding_positions (test_backend_hf_prefix.PrefixContracts.test_left_padding_positions) ... ok
+test_left_padding_visible_causal_target (test_backend_hf_prefix.PrefixContracts.test_left_padding_visible_causal_target) ... ok
+test_padding_mismatch_and_empty (test_backend_hf_prefix.PrefixContracts.test_padding_mismatch_and_empty) ... ok
+test_predecessors_without_prefix_or_right_padding (test_backend_hf_prefix.PrefixContracts.test_predecessors_without_prefix_or_right_padding) ... ok
+test_right_padding_positions (test_backend_hf_prefix.PrefixContracts.test_right_padding_positions) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [
+    "test_backend_hf_prefix.PrefixContracts.test_forward_gate_before_inputs"
+  ],
+  "neural_modules_loaded": []
+}

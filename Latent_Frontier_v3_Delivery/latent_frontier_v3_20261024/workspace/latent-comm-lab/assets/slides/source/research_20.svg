@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H43：世界核带着依赖一起传</title><desc id="desc">共享噪声节点分叉到两个动力学盒；与错误独立图对照。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H43：世界核带着依赖一起传</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">不能默认各模块噪声独立</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">20 / 36</tspan>
+</text>
+<text id="e006" x="64" y="240.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="64" dy="0">共享同一 u</tspan>
+</text>
+<ellipse id="e007" cx="310.0" cy="290.0" rx="32.0" ry="32.0" fill="#F0DDD1" stroke="#9C5138" stroke-width="2"/>
+<text id="e008" x="310.0" y="294.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="310.0" dy="0">u</tspan>
+</text>
+<polyline id="e009" points="285.000,317.000 180.000,390.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="192.707,387.255 180.000,390.000 186.999,379.045" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e011" points="335.000,317.000 455.000,390.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e012" points="447.347,379.492 455.000,390.000 442.149,388.035" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e013" x="95" y="446.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="95" dy="0">x′ = u</tspan>
+</text>
+<text id="e014" x="395" y="446.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="395" dy="0">y′ = u</tspan>
+</text>
+<text id="e015" x="64" y="527.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="64" dy="0">公平比特：P(x′ = y′) = 1</tspan>
+</text>
+<polyline id="e016" points="640.000,230.000 640.000,555.000" fill="none" stroke="#CECDBF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e017" x="710" y="240.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="710" dy="0">错误拆成独立噪声</tspan>
+</text>
+<text id="e018" x="710" y="342.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="710" dy="0">x′ = u₁       y′ = u₂</tspan>
+</text>
+<text id="e019" x="710" y="432.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="710" dy="0">P(x′ = y′) = 1/2</tspan>
+</text>
+<text id="e020" x="710" y="526.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="710" dy="0">这是另一个联合世界</tspan>
+</text>
+<text id="e021" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">共享依赖属于可观察语义，不能仅作为附属 metadata</tspan>
+</text>
+</svg>

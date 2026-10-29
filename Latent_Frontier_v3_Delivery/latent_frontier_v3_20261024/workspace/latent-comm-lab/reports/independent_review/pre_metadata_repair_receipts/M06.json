@@ -1,0 +1,72 @@
+{
+  "task_id": "M06",
+  "status": "done",
+  "input_digest": "6869a9c97b4a2a61fe45e8a8929311aca48dcef344feb2e91ad46b9ea725b529",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/README.md",
+      "sha256": "56210970067cd48efa1b1427708f7bebd36235a82957404941f3fd16948a26ec",
+      "bytes": 2227
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/__init__.py",
+      "sha256": "eb4d337c67d7f28ac893fdf536a78178fadb4880384d1dce0509b03e16dc6cbf",
+      "bytes": 87
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/adapter.py",
+      "sha256": "d14b315644be1abddef0505ba24e86c55323b2d8f1ce194bf43a8c2bea1ef48d",
+      "bytes": 1526
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/losses.py",
+      "sha256": "faa1407211148da588f9ca70ef4c27231e6ff76c6355e505c4b66ae5e9f395c4",
+      "bytes": 1909
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/migration.py",
+      "sha256": "138bdb6331608656350e86b010787617f5b0561b791346235871f60b3994bde6",
+      "bytes": 2068
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/reference.py",
+      "sha256": "619b815a1fc07dd21147483c0e2dfefb9bbec782c506adb80e0e066295e46203",
+      "bytes": 2816
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/schema.json",
+      "sha256": "cfec19716315b2b579275214731a5dbd1837f4bf7d3c6a444e064e727b1b93d6",
+      "bytes": 1093
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/types.py",
+      "sha256": "cc81ad42ff151a13a3b1408b863d3474dd126f14e6de42468a77d55f6303c5e8",
+      "bytes": 1802
+    },
+    {
+      "path": "tests/contracts/test_h06.py",
+      "sha256": "ba36089c03dbd8c6b6a2a9ec902f0bb464016928e980b3b7415d2549faeb676c",
+      "bytes": 2914
+    },
+    {
+      "path": "configs/mechanisms/H06.json",
+      "sha256": "ea090a737c7c33f75db325e154f24de5b0e032dd6e68e155e627e3a2d48c5751",
+      "bytes": 3304
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M06_contracts.txt",
+      "sha256": "83fc9ba659352595a27ea79384cf0ef2b349b845e2958d9f804437ef7dfee35b"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded partial chart/routing/cycle/lossiness/version contracts and AST gates pass. Heterogeneous tensor local maps source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:19:22.521028+00:00"
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": 3,
+  "id": "H18",
+  "kind": "mechanism",
+  "title": "\u901a\u4fe1\u8bf1\u5bfc\u8ba1\u7b97\u7ed3\u6784",
+  "mechanisms": [
+    "H18"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H18_\u901a\u4fe1\u8bf1\u5bfc\u8ba1\u7b97\u7ed3\u6784.md",
+  "target_base": "src/latent_comm/mechanisms/h18_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H18",
+    "name": "communication_topology",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "program",
+    "data_family": "computation_graphs",
+    "training": {
+      "family": "R12",
+      "loss_terms": [
+        "structure_policy",
+        "task"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.topology.candidates",
+      "latent_comm.mechanisms.topology.controller",
+      "latent_comm.mechanisms.topology.compiler"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I18_\u901a\u4fe1\u8bf1\u5bfc\u8ba1\u7b97\u7ed3\u6784.md",
+  "canonical_module": "latent_comm.mechanisms.h18_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h18_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer",
+      "topology_controller"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h18_legacy.adapter.route_candidates",
+    "forward_entries": [
+      "latent_comm.mechanisms.h18_legacy.adapter.tensor_candidate_outputs",
+      "latent_comm.mechanisms.h18_legacy.adapter.route_candidates"
+    ],
+    "loss_input_bindings": {
+      "log_probability": {
+        "producer": "route_candidates(mode=sample) return[2], live selected log probability",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "reward": {
+        "producer": "SupervisionBatch.reward; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "baseline": {
+        "producer": "SupervisionBatch.baseline; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "valid": {
+        "producer": "stage explicit boolean valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "task_loss": {
+        "producer": "stage task readout on route_candidates return[0]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "actual_cost": {
+        "producer": "route_candidates return[1], all executed candidates in soft mode",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "cost_weight": {
+        "producer": "recipe scalar hyperparameter cost_weight",
+        "requires_gradient": false,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "topology_controller": [
+        "stage.topology_logits_head"
+      ],
+      "mechanism_writer": [
+        "stage.graph_input_writer"
+      ],
+      "mechanism_reader": [
+        "stage.graph_task_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h18_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H27: concept delta certificate required",
+    "H38: learning-rule version delta required",
+    "H40: ISA transition recorded",
+    "H42: candidate graph lineage retained"
+  ]
+}

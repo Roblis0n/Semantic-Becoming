@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H47",
+  "kind": "mechanism",
+  "title": "任务相对的语义商空间",
+  "mechanisms": [
+    "H47"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H47_任务相对的语义商空间.md",
+  "target_base": "src/latent_comm/mechanisms/h47_quotient",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "exact_domain_limit": 64,
+    "query_family_size": 8,
+    "approximate_mode": false,
+    "refinement_requires_source": true
+  }
+}

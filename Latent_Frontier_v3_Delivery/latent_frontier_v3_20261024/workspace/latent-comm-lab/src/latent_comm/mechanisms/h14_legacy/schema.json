@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H14:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "productions",
+    "grammar_version",
+    "base_isa",
+    "task_family"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "isa",
+        "ontology",
+        "schema"
+      ],
+      "additionalProperties": false
+    },
+    "productions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "parameters",
+          "body",
+          "result_name",
+          "output_type"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "parameters": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "body": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "local_name",
+                "operation",
+                "arguments",
+                "output_type",
+                "bound"
+              ],
+              "properties": {
+                "local_name": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "operation": {
+                  "type": "string",
+                  "pattern": "\\S"
+                },
+                "arguments": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "\\S"
+                  },
+                  "minItems": 0,
+                  "maxItems": 64
+                },
+                "output_type": {
+                  "type": "object",
+                  "required": [
+                    "kind",
+                    "dimension",
+                    "frame"
+                  ],
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "pattern": "\\S"
+                    },
+                    "dimension": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "minimum": 1,
+                      "maximum": 64
+                    },
+                    "frame": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "bound": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 128
+                }
+              },
+              "additionalProperties": false
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "result_name": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "output_type": {
+            "type": "object",
+            "required": [
+              "kind",
+              "dimension",
+              "frame"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "dimension": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 64
+              },
+              "frame": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "grammar_version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "base_isa": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "task_family": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,47 @@
+{
+  "task_id": "V06",
+  "status": "complete_with_external_blockers",
+  "requested": true,
+  "source_created": true,
+  "export_created": false,
+  "narration_wav_created": false,
+  "opened_checked": false,
+  "timing_verified": false,
+  "final_aligned_subtitles_created": false,
+  "audio_listened": false,
+  "loudness_measured": false,
+  "subtitles": [
+    {
+      "edition": "intro_90",
+      "cues": 14,
+      "characters": 339,
+      "complete_script_coverage": true,
+      "nonoverlap": true,
+      "punctuation_safe_linebreaks": true,
+      "evidence_prohibition_kept_in_one_cue": false,
+      "max_lines": 2,
+      "max_characters_per_line": 22,
+      "status": "draft_timing_budget_not_audio_aligned"
+    },
+    {
+      "edition": "explainer_360",
+      "cues": 44,
+      "characters": 1415,
+      "complete_script_coverage": true,
+      "nonoverlap": true,
+      "punctuation_safe_linebreaks": true,
+      "evidence_prohibition_kept_in_one_cue": true,
+      "max_lines": 2,
+      "max_characters_per_line": 22,
+      "status": "draft_timing_budget_not_audio_aligned"
+    }
+  ],
+  "blockers": [
+    "Requested narration audio and final audio-aligned subtitles are not produced: no available supported zero-spend TTS route; authorization/cost for alternative speech synthesis is not established."
+  ],
+  "evidence": [
+    "assets/audio/tts_tool_inventory.json",
+    "assets/audio/local_capability_check.log"
+  ],
+  "research_state": "NOT_RUN"
+}

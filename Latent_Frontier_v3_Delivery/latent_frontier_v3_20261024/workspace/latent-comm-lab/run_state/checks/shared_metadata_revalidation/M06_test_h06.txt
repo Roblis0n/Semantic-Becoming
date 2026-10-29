@@ -1,0 +1,9 @@
+test_cycle_and_not_inverse (test_h06.AtlasTests.test_cycle_and_not_inverse) ... ok
+test_local_partial_map (test_h06.AtlasTests.test_local_partial_map) ... ok
+test_registry (test_h06.AtlasTests.test_registry) ... ok
+test_source_gate_and_schema (test_h06.AtlasTests.test_source_gate_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.003s
+
+OK

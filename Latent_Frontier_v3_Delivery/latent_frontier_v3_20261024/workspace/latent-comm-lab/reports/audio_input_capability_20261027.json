@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-10-27T10:47:12Z",
+  "checker": "independent read-only capability reviewer",
+  "input": "assets/audio/tts_ai/raw/intro_90_001.wav",
+  "input_sha256": "51acdf1d7bfb7d67ac8b0b21392cd9507c7ff17d545eff75b4a305672f3c6d8b",
+  "attempt": "first3seconds locally streamed asMP3 to official audio helper",
+  "result": "audio content omitted because you do not support audio input",
+  "status": "BLOCKED_UNSUPPORTED_AUDIO_INPUT",
+  "heard_seconds": 0,
+  "actual_audition": "NOT_RUN",
+  "not_policy_denial": true,
+  "research_state": "NOT_RUN"
+}

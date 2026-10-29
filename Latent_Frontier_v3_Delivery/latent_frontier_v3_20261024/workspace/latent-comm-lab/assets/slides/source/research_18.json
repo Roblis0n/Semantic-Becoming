@@ -1,0 +1,318 @@
+{
+  "title": "第三条主线：共同制造世界",
+  "description": "两个局部转移核拼出新世界，注释synthetic。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "第三条主线：共同制造世界",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "消息可以是一小块可行动的动力学",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "18 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64.0,
+      "y": 270,
+      "w": 362.6666666666667,
+      "h": 175,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79.0,
+      "y": 285,
+      "w": 332.6666666666667,
+      "h": 47.19,
+      "text": "局部核 A",
+      "size": 33,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79.0,
+      "y": 334.25,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "状态、动作与转移",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          432.6666666666667,
+          357.5
+        ],
+        [
+          452.6666666666667,
+          357.5
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          440.6666666666667,
+          352.5
+        ],
+        [
+          452.6666666666667,
+          357.5
+        ],
+        [
+          440.6666666666667,
+          362.5
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 458.6666666666667,
+      "y": 270,
+      "w": 362.6666666666667,
+      "h": 175,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 473.6666666666667,
+      "y": 285,
+      "w": 332.6666666666667,
+      "h": 47.19,
+      "text": "局部核 B",
+      "size": 33,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 473.6666666666667,
+      "y": 334.25,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "观测与依赖语义",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          827.3333333333334,
+          357.5
+        ],
+        [
+          847.3333333333334,
+          357.5
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          835.3333333333334,
+          352.5
+        ],
+        [
+          847.3333333333334,
+          357.5
+        ],
+        [
+          835.3333333333334,
+          362.5
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 853.3333333333334,
+      "y": 270,
+      "w": 362.6666666666667,
+      "h": 175,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 868.3333333333334,
+      "y": 285,
+      "w": 332.6666666666667,
+      "h": 47.19,
+      "text": "可行动的新世界",
+      "size": 33,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 868.3333333333334,
+      "y": 334.25,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "synthetic，保留谱系",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 64,
+      "y": 500,
+      "w": 1152,
+      "h": 50.05,
+      "text": "消息的对象：一小块可执行动力学",
+      "size": 35,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e019"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "合成世界能提出新问题，不能自行制造现实证据",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e020"
+    }
+  ],
+  "notes": "共享世界不只是共同写故事，而是定义可执行状态变化和观测。\n\n原稿画面要求：两个局部转移核拼出新世界，注释synthetic。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第18页\nhypotheses/H43_可交换的世界动力学核.md\nhypotheses/H44_共同构造的反事实梦境.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/2106.02997\nhttps://arxiv.org/abs/2602.16612\nhttps://arxiv.org/abs/1803.10122\nhttps://arxiv.org/abs/1901.01753\nhttps://arxiv.org/abs/2012.02096\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_18"
+  ],
+  "research_state": "NOT_RUN"
+}

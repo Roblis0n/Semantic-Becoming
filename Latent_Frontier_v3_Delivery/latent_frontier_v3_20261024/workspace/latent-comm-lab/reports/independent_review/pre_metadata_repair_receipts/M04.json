@@ -1,0 +1,72 @@
+{
+  "task_id": "M04",
+  "status": "done",
+  "input_digest": "8f18d9364f8ea8deed7bbc006ec749063f6fdcc13ba842689fa9a4ae70cb499d",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/README.md",
+      "sha256": "4aa47a57e9af66e2cb30fcb83cfb0a1bcd46e57a0dc860e570b097c5747b45ff",
+      "bytes": 2201
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/__init__.py",
+      "sha256": "0b38e680f2c3c2f3d153489b136d7d7aad874b0e3d6c746d136e266f79ccdf38",
+      "bytes": 80
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/adapter.py",
+      "sha256": "8b708822c4631821ad6f33a85d69bef032e3b003824b32fe56cb55a4a10dc1cb",
+      "bytes": 1609
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/losses.py",
+      "sha256": "9cf3e0bd1a885b76f646e11ae223a864bae178cdc3f647f478c17617394e48f6",
+      "bytes": 1722
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/migration.py",
+      "sha256": "5efa432d5fca3b33e2835da6701dedc66f4add2d64522a3df55610d5358197a8",
+      "bytes": 2063
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/reference.py",
+      "sha256": "7691c27ffe300921f881a681486fb50275fa1d7e635879d99c8ef92ebd8fc79d",
+      "bytes": 1965
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/schema.json",
+      "sha256": "88e3009776b4eba1bdf67a33f5d40c7037f583fe62db89127205913263f4be3c",
+      "bytes": 1084
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/types.py",
+      "sha256": "a6aaa1bf3cf15db9b4e5012eed97aeb37733b4acc6d1e3262490fae7221b0fea",
+      "bytes": 1951
+    },
+    {
+      "path": "tests/contracts/test_h04.py",
+      "sha256": "d2d4e23a42b4febac2bc9adc737387c01424290f92dc03ae5cb3456868078ef9",
+      "bytes": 2746
+    },
+    {
+      "path": "configs/mechanisms/H04.json",
+      "sha256": "4a14eef95fe29da9dd69aaf3d2598e467b4308a418461170fd0e7cccb6f9150c",
+      "bytes": 3308
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M04_contracts.txt",
+      "sha256": "9015574e82817bce344e0d9147daeaa507af6bdb0598c8a318cf7c5484e2a466"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded anchored-field/conflict/stability/domain contracts and AST gates pass; finite-step neural residual unrolling source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:17:03.063484+00:00"
+}

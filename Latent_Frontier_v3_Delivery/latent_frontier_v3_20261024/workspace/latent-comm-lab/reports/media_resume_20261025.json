@@ -1,0 +1,84 @@
+{
+  "recorded_at_utc": "2026-10-25T15:10:24.335663+00:00",
+  "scope": "six newly downloaded cue WAVs only; unchanged prior assets not rechecked",
+  "status": "local_pcm_and_receipt_hash_passed",
+  "new_wavs": [
+    {
+      "id": "explainer_360_030",
+      "sha256": "5b2156e7dcbd68541d8f629112b29d37e70e921ee332bf0048c6f4fa5ade90a8",
+      "duration_seconds": 5.10390022675737,
+      "frames": 225082,
+      "sample_peak": 9748,
+      "rms": 1352.4617312996497,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_031",
+      "sha256": "fd6d289dbc0577a1894ee505828dbb56954c31f75f1b5b8f88dcce481fe2df27",
+      "duration_seconds": 3.8500226757369616,
+      "frames": 169786,
+      "sample_peak": 3901,
+      "rms": 786.0304010261502,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_032",
+      "sha256": "f912756c1e3c79a0f4b478a39dbf3e8daaefc23230cd485a355f867b148b5755",
+      "duration_seconds": 7.766145124716553,
+      "frames": 342487,
+      "sample_peak": 6250,
+      "rms": 979.4293186888829,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_033",
+      "sha256": "5bb93f0bdd6f0e3d012c23022911d8a58ab89d651c86154a8edc5cd63f39477d",
+      "duration_seconds": 6.148798185941043,
+      "frames": 271162,
+      "sample_peak": 11309,
+      "rms": 1903.9029308482134,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_034",
+      "sha256": "c825611353989f2a904c89d0bc13a14b57ae8c0ef6bad8e56197ab65ac1de5a7",
+      "duration_seconds": 6.125578231292517,
+      "frames": 270138,
+      "sample_peak": 13364,
+      "rms": 2546.695147056612,
+      "audio_listened": false
+    },
+    {
+      "id": "explainer_360_035",
+      "sha256": "b78018fe702ff5a8a5125bca101fefa513b2f3a524b5cf9dd0022835fdb71ea7",
+      "duration_seconds": 7.007936507936508,
+      "frames": 309050,
+      "sample_peak": 10964,
+      "rms": 1902.0127373376502,
+      "audio_listened": false
+    }
+  ],
+  "cumulative_accepted_jobs": 50,
+  "cumulative_accepted_characters": 1497,
+  "cumulative_downloaded_wavs": 48,
+  "credits_used": 0,
+  "accepted_unknown_cues": [
+    {
+      "id": "explainer_360_029",
+      "characters": 16,
+      "private_recovery_present": false
+    },
+    {
+      "id": "explainer_360_036",
+      "characters": 41,
+      "private_recovery_present": true
+    }
+  ],
+  "unsent_cues": 8,
+  "unsent_characters": 257,
+  "new_submissions_this_run": 7,
+  "new_submitted_characters": 236,
+  "research_state": "NOT_RUN",
+  "audio_listened": false,
+  "producer_process_present": false
+}

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H43 / H44：共同构造可行动的世界</title><desc id="desc">核 A 和核 B 使用同一个公平比特 u。有限合成观测附 kernel 来源，不作为独立现实证据。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H43 / H44：共同构造可行动的世界</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">两个核、一个共享外生变量</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">A05</tspan>
+</text>
+<rect id="e006" x="64" y="600" width="1152" height="47" rx="0" fill="#FFFCF5" stroke="#CECDBF" stroke-width="0" />
+<rect id="e007" x="64" y="235" width="310" height="150" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e008" x="79" y="281.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="79" dy="0">核 A</tspan>
+</text>
+<text id="e009" x="79" y="321.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">x′ = u</tspan>
+<tspan x="79" dy="31.05">动作 a：读取</tspan>
+</text>
+<rect id="e010" x="905" y="235" width="310" height="150" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e011" x="920" y="281.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="920" dy="0">核 B</tspan>
+</text>
+<text id="e012" x="920" y="321.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="920" dy="0">y′ = u</tspan>
+<tspan x="920" dy="31.05">单位：bit</tspan>
+</text>
+<text id="e013" x="635.0" y="246.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#606258" text-anchor="middle">
+<tspan x="635.0" dy="0">接口一致：a / bit</tspan>
+</text>
+<ellipse id="e014" cx="640.0" cy="320.0" rx="47.0" ry="47.0" fill="#F0DDD1" stroke="#9C5138" stroke-width="2"/>
+<text id="e015" x="640.0" y="331.56" font-family="Noto Sans CJK SC" font-size="43" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="640.0" dy="0">u</tspan>
+</text>
+<polyline id="e016" points="590.000,320.000 390.000,320.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e017" points="402.000,325.000 390.000,320.000 402.000,315.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e018" points="690.000,320.000 890.000,320.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e019" points="878.000,315.000 890.000,320.000 878.000,325.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e020" x="64" y="477.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#725D7C" text-anchor="start">
+<tspan x="64" dy="0">synthetic：u = 0 ⇒ (x′, y′) = (0, 0)</tspan>
+</text>
+<text id="e021" x="64" y="527.08" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">来源：shared_bit_kernel / deterministic_schedule</tspan>
+</text>
+<text id="e022" x="64" y="577.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">新问题：为什么两侧观测总是一致？</tspan>
+</text>
+</svg>

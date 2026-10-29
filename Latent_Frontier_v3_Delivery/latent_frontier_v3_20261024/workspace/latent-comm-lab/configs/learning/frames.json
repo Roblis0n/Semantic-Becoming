@@ -1,0 +1,80 @@
+{
+  "stage": "L03",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "gauge",
+  "run_id": "future-l03",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "world": "w1",
+    "task": "t1"
+  },
+  "dimensions": {
+    "source_dim": 2,
+    "target_dim": 2,
+    "observations": 1,
+    "rank": 1
+  },
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "gauge": [
+      {
+        "name": "gauge_calibration",
+        "parameter_owners": [
+          "cross_map",
+          "read_write_heads"
+        ],
+        "loss_weights": {
+          "covariance": 1.0,
+          "effect": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "cross_map": [
+      {
+        "name": "cross_map_calibration",
+        "parameter_owners": [
+          "cross_map",
+          "read_write_heads"
+        ],
+        "loss_weights": {
+          "covariance": 1.0,
+          "effect": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "restrictions": [
+      {
+        "name": "restrictions_calibration",
+        "parameter_owners": [
+          "restriction_maps",
+          "conflict_head"
+        ],
+        "loss_weights": {
+          "section": 1.0,
+          "overlap": 0.1,
+          "obstruction": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  }
+}

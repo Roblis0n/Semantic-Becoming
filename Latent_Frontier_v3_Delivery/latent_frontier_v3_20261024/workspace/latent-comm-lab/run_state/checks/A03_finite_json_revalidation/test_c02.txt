@@ -1,0 +1,15 @@
+test_linear_response_field_and_repair (test_c02.C02Tests.test_linear_response_field_and_repair) ... ok
+test_nonlinear_residual_requires_resolve (test_c02.C02Tests.test_nonlinear_residual_requires_resolve) ... ok
+test_stale_response_refreshes_exact_context (test_c02.C02Tests.test_stale_response_refreshes_exact_context) ... ok
+test_unauthorized_refresh_not_skipped (test_c02.C02Tests.test_unauthorized_refresh_not_skipped) ... ok
+test_unstable_solver_rejected (test_c02.C02Tests.test_unstable_solver_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.024s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

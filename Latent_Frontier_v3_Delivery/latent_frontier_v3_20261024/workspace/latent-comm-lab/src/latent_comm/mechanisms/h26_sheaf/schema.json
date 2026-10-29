@@ -1,0 +1,149 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "cover": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "dimension": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 64
+          }
+        },
+        "required": [
+          "name",
+          "dimension"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "restrictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "edge_id": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "left": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "right": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "left_map": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "right_map": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "bias": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "support": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "edge_id",
+          "left",
+          "right",
+          "left_map",
+          "right_map",
+          "bias",
+          "support"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "domain": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "coordinate": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 64
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "domain",
+          "coordinate",
+          "value"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "required": [
+    "schema_version",
+    "version",
+    "cover",
+    "restrictions",
+    "anchors"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H26:resolved-payload:3"
+}

@@ -1,0 +1,64 @@
+{
+  "task_id": "X07",
+  "status": "done",
+  "input_digest": "b9847f3c2d7ad2b080578d3f9cfdeb3bb39f375904202084a1bf30c8a2f54d76",
+  "outputs": [
+    {
+      "path": "src/latent_comm/horizon/trajectory_semantics.py",
+      "sha256": "6331adf49436cddc2caa42b4383df09c40f030bc3cdf3b0a9a7b8c9702ecd2b8",
+      "bytes": 2775
+    },
+    {
+      "path": "docs/horizons/X07.md",
+      "sha256": "f3ec96206271af17c3c66813ed603066528abdacf314ec27e9dc1e7b2063ad56",
+      "bytes": 6983
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/horizons_contracts.txt",
+      "sha256": "93bb0d61baead20bc89e80995fa51c7a76a46b70c472fcd70072062b7a020365"
+    },
+    {
+      "path": "run_state/checks/horizon_source_bindings.txt",
+      "sha256": "5ec3293ca6ad9435ee56db9761b4c363bca4d5fe2d4ebaec0c496db74f3785b7"
+    },
+    {
+      "path": "src/latent_comm/horizon/contracts.py",
+      "sha256": "ee5dc6a8918f4657aae3021bc851516c642e3b57530f16edcb4807a719c57ad9"
+    },
+    {
+      "path": "tests/contracts/test_horizons.py",
+      "sha256": "4465c5685f402a92ab51afc23ff22f2ad8aee1dffa96fd545b5015872c4c64e7"
+    },
+    {
+      "path": "reports/horizon_examples/X07.json",
+      "sha256": "eda2135143054191d5eda2775134d79085e946334dfe17c3691e8665bb4c3b5b"
+    },
+    {
+      "path": "run_state/receipts/C15.json",
+      "sha256": "72826e200d9f3324853082ca9e358c6f74d6fb7a0c34b0f468e89fbf2fb55776"
+    },
+    {
+      "path": "src/latent_comm/compositions/c15.py",
+      "sha256": "d4f2a936e1600f0ed755b8e125f86e65122361868e3967760918f3341636ac31"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "b4127847febf1ffeefb1d8515a256bf538eb09612791ea280ad808e6047ea41d"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_horizons.txt",
+      "sha256": "1b6a0e5ce4969b7a675d0f4240853529a9f86558f05f2b188cefb8101d2cf0bf"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated finite orchestrator, typed objects and actual mechanism calls, explicit assumption DAG and three distinct future structural branches. Finite exports checked under end-to-end aggregate budget. All research NOT_RUN; no neural imports or model calls. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports. Independent review repair: any exhausted aggregate propagates a partial envelope with no final digest; an explicit completed-generation prefix may be retained. Twenty-one bounded tests pass. X01 blocked-program migration snapshot and explicit partition-version binding repaired; twenty-three horizon checks pass. X04 finite nonnegative resource limit checked before comparison; twenty-four horizon checks pass.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:01:29.484384+00:00"
+}

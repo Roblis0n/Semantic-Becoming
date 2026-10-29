@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "goal_text": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "goal_digest": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "costs": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "weights": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "constraint_matrix": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "constraint_bounds": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "external_goal_mutable": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "goal_text",
+    "goal_digest",
+    "costs",
+    "weights",
+    "constraint_matrix",
+    "constraint_bounds",
+    "version",
+    "external_goal_mutable"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H32:resolved-payload:3"
+}

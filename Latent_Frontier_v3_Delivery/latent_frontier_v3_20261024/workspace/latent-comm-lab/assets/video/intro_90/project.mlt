@@ -1,0 +1,58 @@
+<mlt producer="tractor" version="7.0.0">
+  <profile description="HD 720p24" width="1280" height="720" frame_rate_num="24" frame_rate_den="1" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" colorspace="709" />
+  <producer id="S01">
+    <property name="resource">clips/S01.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">通信的旧边界</property>
+  </producer>
+  <producer id="S02">
+    <property name="resource">clips/S02.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">概念出生</property>
+  </producer>
+  <producer id="S03">
+    <property name="resource">clips/S03.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">问题变换</property>
+  </producer>
+  <producer id="S04">
+    <property name="resource">clips/S04.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">学习能力传递</property>
+  </producer>
+  <producer id="S05">
+    <property name="resource">clips/S05.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">共同世界</property>
+  </producer>
+  <producer id="S06">
+    <property name="resource">clips/S06.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">超越统一向量</property>
+  </producer>
+  <producer id="S07">
+    <property name="resource">clips/S07.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">全量研究计划</property>
+  </producer>
+  <producer id="S08">
+    <property name="resource">clips/S08.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">准确收束</property>
+  </producer>
+  <playlist id="timeline">
+    <property name="shotcut:name">V1 · silent draft</property>
+    <entry producer="S01" in="0" out="239" />
+    <entry producer="S02" in="0" out="287" />
+    <entry producer="S03" in="0" out="287" />
+    <entry producer="S04" in="0" out="311" />
+    <entry producer="S05" in="0" out="311" />
+    <entry producer="S06" in="0" out="287" />
+    <entry producer="S07" in="0" out="239" />
+    <entry producer="S08" in="0" out="191" />
+  </playlist>
+  <tractor id="tractor" shotcut="1" in="0" out="2159">
+    <property name="shotcut:name">intro_90 · 无声视觉稿</property>
+    <track producer="timeline" />
+  </tractor>
+</mlt>

@@ -1,0 +1,1160 @@
+{
+  "recipe_id": "C14",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C14",
+    "nodes": [
+      {
+        "node_id": "take_snapshot",
+        "operation": "C14.take_snapshot",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "take_snapshot:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "StructureTransitionInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "MetaStateSnapshot",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "F",
+          "K",
+          "O",
+          "P",
+          "Q",
+          "U",
+          "V",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "E",
+          "F",
+          "K",
+          "O",
+          "P",
+          "Q",
+          "U",
+          "V",
+          "W",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H13",
+          "H39"
+        ],
+        "implementation": "latent_comm.compositions.c14.take_snapshot",
+        "location": {
+          "source": "C14.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "form_bifurcation",
+        "operation": "C14.form_bifurcation",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "take_snapshot:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "form_bifurcation:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "MetaStateSnapshot",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "BifurcationCandidate",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "O",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H13",
+          "H28"
+        ],
+        "implementation": "latent_comm.compositions.c14.form_bifurcation",
+        "location": {
+          "source": "C14.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "rewrite_structure",
+        "operation": "C14.rewrite_structure",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "form_bifurcation:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "rewrite_structure:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "BifurcationCandidate",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "RewrittenStructure",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "O",
+          "P"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H22",
+          "H27"
+        ],
+        "implementation": "latent_comm.compositions.c14.rewrite_structure",
+        "location": {
+          "source": "C14.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "prepare_migration",
+        "operation": "C14.prepare_migration",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "rewrite_structure:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "prepare_migration:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "RewrittenStructure",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "PreparedMigration",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "O",
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H22",
+          "H27"
+        ],
+        "implementation": "latent_comm.compositions.c14.prepare_migration",
+        "location": {
+          "source": "C14.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "check_read_versions",
+        "operation": "C14.check_read_versions",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "prepare_migration:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "check_read_versions:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "PreparedMigration",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CheckedReadSet",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "F",
+          "K",
+          "O",
+          "P",
+          "Q",
+          "U",
+          "V",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "E",
+          "F",
+          "K",
+          "O",
+          "P",
+          "Q",
+          "U",
+          "V",
+          "W",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H39"
+        ],
+        "implementation": "latent_comm.compositions.c14.check_read_versions",
+        "location": {
+          "source": "C14.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "commit_or_restore",
+        "operation": "C14.commit_or_restore",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "check_read_versions:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "commit_or_restore:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CheckedReadSet",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AtomicTransitionResult",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "F",
+          "K",
+          "O",
+          "P",
+          "Q",
+          "U",
+          "V",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "E",
+          "F",
+          "K",
+          "O",
+          "P",
+          "Q",
+          "U",
+          "V",
+          "W",
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H39"
+        ],
+        "implementation": "latent_comm.compositions.c14.commit_or_restore",
+        "location": {
+          "source": "C14.bound.json",
+          "path": "/nodes/5",
+          "line": 83,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "check_read_versions:out",
+        {
+          "name": "CheckedReadSet",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "commit_or_restore:out",
+        {
+          "name": "AtomicTransitionResult",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "form_bifurcation:out",
+        {
+          "name": "BifurcationCandidate",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "StructureTransitionInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "prepare_migration:out",
+        {
+          "name": "PreparedMigration",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "rewrite_structure:out",
+        {
+          "name": "RewrittenStructure",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "take_snapshot:out",
+        {
+          "name": "MetaStateSnapshot",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "check_read_versions",
+        "commit_or_restore"
+      ],
+      [
+        "form_bifurcation",
+        "rewrite_structure"
+      ],
+      [
+        "prepare_migration",
+        "check_read_versions"
+      ],
+      [
+        "rewrite_structure",
+        "prepare_migration"
+      ],
+      [
+        "take_snapshot",
+        "form_bifurcation"
+      ]
+    ],
+    "schedule": [
+      "take_snapshot",
+      "form_bifurcation",
+      "rewrite_structure",
+      "prepare_migration",
+      "check_read_versions",
+      "commit_or_restore"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 6,
+    "max_steps": 64,
+    "input_digest": "4031a14c49a173d13325b2543fc152fb94b4106f48340c5627531f478e112f32",
+    "declared_parameters": {
+      "obligations": [
+        "The graph version context is the immutable source snapshot; candidate versions are explicit nested objects.",
+        "Read-only dependencies participate in optimistic conflict validation.",
+        "No account, permission, filesystem authority or external action is rolled back."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C14",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "concept_proposal",
+        "objectives": [
+          {
+            "name": "distinction",
+            "mathematical_definition": "sum(m*relu(margin-abs(ca-cb)))/sum(m)",
+            "numerator": "pair margin deficit",
+            "denominator": "known required pairs",
+            "valid_mask": "pair_known_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds"
+            ],
+            "requires_grad_inputs": [
+              "concept_values"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "pairs",
+            "id": "H27.distinction"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "sum(m*CE(action_logits,label))/sum(m)",
+            "numerator": "supervisor-only action cross entropy",
+            "denominator": "valid actions",
+            "valid_mask": "action_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds",
+              "behavior_readout"
+            ],
+            "requires_grad_inputs": [
+              "concept_values"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "actions",
+            "id": "H27.behavior"
+          },
+          {
+            "name": "description",
+            "mathematical_definition": "UTF8_prefix_AST_bytes",
+            "numerator": "actual prefix-encoded AST byte length",
+            "denominator": "one candidate",
+            "valid_mask": "candidate_valid",
+            "zero_valid_policy": "error",
+            "parameter_owners": [],
+            "requires_grad_inputs": [],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "finite_enumeration",
+            "normalization_units": "bytes",
+            "id": "H27.description"
+          },
+          {
+            "name": "drift",
+            "mathematical_definition": "sum(m*(new_old_domain-old)^2)/sum(m)",
+            "numerator": "historical-domain response change",
+            "denominator": "valid historical values",
+            "valid_mask": "old_domain_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds"
+            ],
+            "requires_grad_inputs": [
+              "new_response"
+            ],
+            "stop_gradient_edges": [
+              [
+                "old_response",
+                "drift"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "historical examples",
+            "id": "H27.drift"
+          }
+        ],
+        "losses": [
+          "H27.distinction",
+          "H27.behavior",
+          "H27.description",
+          "H27.drift"
+        ],
+        "owners": [
+          "behavior_readout",
+          "concept_thresholds"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "take_snapshot": "stop",
+      "form_bifurcation": "stop",
+      "rewrite_structure": "enumeration",
+      "prepare_migration": "stop",
+      "check_read_versions": "stop",
+      "commit_or_restore": "stop"
+    },
+    "nonlearnable_invariants": [
+      "version equality",
+      "capability bounds",
+      "atomic publication",
+      "historical reader resolution"
+    ],
+    "branch_selection": "explicit finite control path, not claimed neural phase transition"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

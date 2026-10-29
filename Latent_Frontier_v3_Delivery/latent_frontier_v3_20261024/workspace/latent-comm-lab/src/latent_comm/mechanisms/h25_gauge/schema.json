@@ -1,0 +1,108 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "frame_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "frame_version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "target_frame_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "dimension": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 64
+    },
+    "group": {
+      "enum": [
+        "GL",
+        "orthogonal"
+      ]
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "state": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "operator": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "readout": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "gauge": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "condition_limit": {
+      "type": "number",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "frame_id",
+    "frame_version",
+    "target_frame_id",
+    "dimension",
+    "group",
+    "domain",
+    "state",
+    "operator",
+    "readout",
+    "gauge",
+    "condition_limit"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H25:resolved-payload:3"
+}

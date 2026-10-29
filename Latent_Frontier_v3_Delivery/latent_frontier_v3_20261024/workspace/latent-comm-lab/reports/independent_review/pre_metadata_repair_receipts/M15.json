@@ -1,0 +1,72 @@
+{
+  "task_id": "M15",
+  "status": "done",
+  "input_digest": "d96b7c691fc5b7418f189f86fefde0543071fab01d977afbe276ffc9c5cb414e",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/README.md",
+      "sha256": "f5fa235cd34fa8b0f98b4b72643780aa8b93c7a8f103a4cdd8ae6cc21b027b08",
+      "bytes": 2280
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/__init__.py",
+      "sha256": "2e8ac03538041d9fc3cefbb02d7ae6a4f0fac9d99c8e19f2329c4761bb673ee7",
+      "bytes": 97
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/adapter.py",
+      "sha256": "0d5a11d7687eabf1d979d38c3b284113be6add1c42e00c9bf350bfae32925c79",
+      "bytes": 1471
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/losses.py",
+      "sha256": "335151f185709782bde196c5f942e92db13fa1606a1db076dc17e0528727cc16",
+      "bytes": 1578
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/migration.py",
+      "sha256": "c8b1c95965119a6bc11252b897f96cab9ce8eaf087d99ace38a525936f662122",
+      "bytes": 2113
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/reference.py",
+      "sha256": "2d1cb9e5799ccd213a717622bdcf687c58b163352416ac4eeefd057e073c9aea",
+      "bytes": 2575
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/schema.json",
+      "sha256": "8a5e4da8645e35e811b8bceb4c25c12be7c8319b4491aeef151c3abe4414cc4c",
+      "bytes": 1221
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/types.py",
+      "sha256": "8f54c51514112d92b2bbb5567c77026eba43d1be12a9de2f5713c9c9d656a457",
+      "bytes": 1055
+    },
+    {
+      "path": "tests/contracts/test_h15.py",
+      "sha256": "6530012052bb73bb892b878abebf28fee835b9e4aebe800984008954466a827b",
+      "bytes": 2524
+    },
+    {
+      "path": "configs/mechanisms/H15.json",
+      "sha256": "f8f80ecc3dfa0df382fc3be3268d97bae22b55bda9b4bc963b7d1601aae275af",
+      "bytes": 3236
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M15_contracts.txt",
+      "sha256": "4d481a687b3f697adf9ceb87193e53db85fe118c766cbddab5db92ca6369acdc"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three bounded heldout/dropout/heterogeneous interface/new-model contracts and AST gates pass. Capability-conditioned population tensor source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:29:57.187473+00:00"
+}

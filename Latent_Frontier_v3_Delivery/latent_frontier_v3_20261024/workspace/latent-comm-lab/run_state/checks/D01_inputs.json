@@ -1,0 +1,251 @@
+{
+  "task_id": "D01",
+  "captured_at_utc": "2026-10-24T15:42:16.632118+00:00",
+  "inputs": [
+    {
+      "path": "START_HERE.md",
+      "sha256": "e5e4de0fbebcfd63ff5f00a389f66d4f4800e31fbf4cca4fd19fbc5ee063d367"
+    },
+    {
+      "path": "specs/execution_policy.json",
+      "sha256": "e1dc9c916b5a8344759156337cf5b9520c77d78f787f24949de6f77f3acf453f"
+    },
+    {
+      "path": "prompts/P00_一次性总控.md",
+      "sha256": "6ee200b17b948747826446d42fb1868d2a615e76973c76bf5feef011e2d29d90"
+    },
+    {
+      "path": "prompts/P12_来源与新颖性.md",
+      "sha256": "4efafa6117b891b6312502ae403679445a803c58435b26bec0bea9b2dfc2775c"
+    },
+    {
+      "path": "tasks/D01_近邻与新颖性台账.md",
+      "sha256": "cb4a49e90f3a72cf2acad8ac6b46dc51c3c1983f25f11c93c50af27b04d42dc8"
+    },
+    {
+      "path": "docs/18_原始来源与主张边界.md",
+      "sha256": "f012976b78d3eb240535495e7a835ed1ea343023c50a07ff9da164236c7101e1"
+    },
+    {
+      "path": "specs/claims.json",
+      "sha256": "d3e550ca6001630f31fa00f6dd92a35dffe1eb0c43cb8cc8b0bc3f9101264dd3"
+    },
+    {
+      "path": "specs/hypotheses.json",
+      "sha256": "7aebf9e9ef3994b5951686239c12a39b4e50b8cd180d18934238266d540a67b8"
+    },
+    {
+      "path": "specs/sources.json",
+      "sha256": "e38813866e8050a2508fb08206235a85357ffaeae1b503a24734a0def7c7bfd6"
+    },
+    {
+      "path": "inherited_v2/specs/sources.json",
+      "sha256": "8aa4413dbe1c9649d7434ec182829e03f6d088d019968e19074f28c313074017"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H01_可组合潜算子.md",
+      "sha256": "1014f300a8f64564ff63c3b56d2c81e0e563b6f1115322907e7e34df73a690f5"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H02_反事实响应包.md",
+      "sha256": "eb88d5f3649cdbf144c8dad00bd3c14bb658798f0d59f3d435e20f2075ec5c92"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H03_多假设信念包.md",
+      "sha256": "77092a5f60e2d55e02eecc8568910fba2b2e4a40d17912cf3c9b42d5c3ccd873"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H04_多主体共享约束场.md",
+      "sha256": "ec136c0161e7a01a2a74223f742c262562d80b28a313b226e3963001ebb05b15"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H05_推理续接胶囊.md",
+      "sha256": "0c9c4ed205c979cfc8445914860f6e32bd610d744bf77290a083a8664ee6fa7b"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H06_多图册语义对齐.md",
+      "sha256": "8747ca9dfb2c70a988754e2bce1b365141568e683e910bfcad4e555bcba5a15b"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H07_类型化潜程序.md",
+      "sha256": "c68a0ec1daff187f3d52e1f1b930e8827f0c9f9a49054bfeda3703ae8454ace9"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H08_关系结构通信.md",
+      "sha256": "ef12a70dd637a042f699261eaa40682024d0d4335cb16f1f1a01edacacb1ede4"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H09_干预代数通信.md",
+      "sha256": "60f0547714f57c49e443ae52c30b7a5407d219ecebad35692a2974de2e4f9e00"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H10_高阶协同超边.md",
+      "sha256": "8220e68cbc21db019cf4750d244563a4713463238b8bfb94c684a0b206d718c7"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H11_渐进潜编码.md",
+      "sha256": "71bd2bc395b7e72ba5517ec3eac400645e650392d2205bd7d50c4ebdf69d8c13"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H12_多查询持久胶囊.md",
+      "sha256": "b881907d6be017f8c4711a69efea9a5b3b2b16e221801b43590bb179e0fc78cb"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H13_可分叉潜计算.md",
+      "sha256": "1518f46d101117de804719911f869bd90f167e245eb0aa23a64187dfec38d09f"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H14_潜技能语法.md",
+      "sha256": "411813a2d24e5d0aa2ea1bc42b81ab8e390fda5a6897634d0602e4c546928616"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H15_接收者无关协议学习.md",
+      "sha256": "98fbe006c01455439c5096a1ec1be483ee2b1fb740d0557ce879c8466c47a64e"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md",
+      "sha256": "3ff58e8eb6e18a0b79e11fa5556aaa085c2c6e418ae8e4498dea89bbf090ba08"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H17_跨模态坐标接地.md",
+      "sha256": "ac97cc0acbcb2118f577a5ea3f93275c1f1d9267bc9a2477b0899fade0f68c22"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H18_通信诱导计算结构.md",
+      "sha256": "655b08ccc9c08f65227221a91a718a850ce55c7dcadf763f54c387119c150130"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H19_消息到技能巩固.md",
+      "sha256": "ef100adc989317abc5c5199521e7344306c30d04ad25a3251b82941586578cc9"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H20_异步认知时钟.md",
+      "sha256": "eedc52f3fad3a71f3d77f7aeadb8245263eda9158545fc517e7dd56a79fca4b4"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H21_反事实分支组合搜索.md",
+      "sha256": "db0c18392360f7406b482bf7dee1d20cbad1938b2e9a18ee73345ea530de2cbd"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H22_动态模型边界.md",
+      "sha256": "97b5d4be870c47c81dfff25eda44a2f5d2724fb69a8507beeb61aceee55ebc86"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H23_语义残差纠错.md",
+      "sha256": "72f70c82068b9074f81b050d270d9543407616282a7b6e5e44e69b8752f7684a"
+    },
+    {
+      "path": "inherited_v2/hypotheses/H24_有作用域的潜计算能力.md",
+      "sha256": "da04696eb6138d3a9e5e56a1d32f47dc90790370a02bc760748605efcfcbd655"
+    },
+    {
+      "path": "hypotheses/H25_规范协变的认知接口.md",
+      "sha256": "f43448eff2aaab168c6a9329e6322b155c76e0305d8810ab1048f884b98d828b"
+    },
+    {
+      "path": "hypotheses/H26_不可全局拼合的语义层.md",
+      "sha256": "27ea76657de842d694e1254fefcabeeeed540df60a148881aedf229068dea984"
+    },
+    {
+      "path": "hypotheses/H27_交互中诞生的新概念.md",
+      "sha256": "c43a4ca653f7a457f2ca55769b1d1fccf98afc1fa6a395aa5218021acd7724c1"
+    },
+    {
+      "path": "hypotheses/H28_语义结构的分岔与相变.md",
+      "sha256": "49b4b41b48984bf6231af04ccac1863cabf238fc4d3cd31379713710de413109"
+    },
+    {
+      "path": "hypotheses/H29_问题生成的潜演算.md",
+      "sha256": "4ee2e19a82abb5fb2b11d0bdbe77890529060b10ed831ecdad2ff587d015ccf2"
+    },
+    {
+      "path": "hypotheses/H30_类比态射编译器.md",
+      "sha256": "f011c333853bc7f24188c3be2aedc9fe0215f4e272455ad7c91ea90009128a2f"
+    },
+    {
+      "path": "hypotheses/H31_因果机制移植.md",
+      "sha256": "aece0fa90e19c6410afd48118cc039f6970c817f79a893f4dbf2423541e76a09"
+    },
+    {
+      "path": "hypotheses/H32_视角与目标条件代数.md",
+      "sha256": "19be0b1218742c9f450edd09c3f1f7ca3a441501d34f01eff034e856ef352df2"
+    },
+    {
+      "path": "hypotheses/H33_非梯度的互构认知动力学.md",
+      "sha256": "1df9cc5951176351bc81695738d6c7bf40db2b12625daaf3fd96c15357e4dd53"
+    },
+    {
+      "path": "hypotheses/H34_双边边界条件推理.md",
+      "sha256": "ece11336236f49b23cfea47fe2645c38b2839fd678fcb602580914ab29a58f61"
+    },
+    {
+      "path": "hypotheses/H35_跨尺度语义重整化.md",
+      "sha256": "c2ff3601efd3fa54d6090964126cf2ca66b54bdab409a7b424e5f83f7ce380e3"
+    },
+    {
+      "path": "hypotheses/H36_以分歧生产结构的认知博弈.md",
+      "sha256": "504339ec1fcca36734b7cc860a9fd83520765f45f33cb3d1910e8021899fee88"
+    },
+    {
+      "path": "hypotheses/H37_跨模型学习方向运输.md",
+      "sha256": "b5e7e41c50fdac72d0b13176c143e5e5b411b39b90dfcabc30d6976080dbfce3"
+    },
+    {
+      "path": "hypotheses/H38_可传递的可塑性规则.md",
+      "sha256": "99493baf4c6ceb253bd820650d1bda0036a295c4f948d9c5fff082f3f75f438b"
+    },
+    {
+      "path": "hypotheses/H39_可回滚的跨模型认知事务.md",
+      "sha256": "2af71da5d484031a337e82571c9b02ceaa9b0c8f0da93e11c40015d029403981"
+    },
+    {
+      "path": "hypotheses/H40_自举的潜指令集.md",
+      "sha256": "a18b997a72ebc7e582520144a3871e4698ddda50a1a1d4ffb80d14f91242b32a"
+    },
+    {
+      "path": "hypotheses/H41_互补能力的联盟契约.md",
+      "sha256": "e2a9088b513b4ec81f9bdb1c8375720169790cf33d1601860e89f752e55160e9"
+    },
+    {
+      "path": "hypotheses/H42_模型与任务的共演化生态.md",
+      "sha256": "c42cd7c238b1f5bf13bbe00a840b50cf7bc13e4b89f94838d8e945c04f23cba3"
+    },
+    {
+      "path": "hypotheses/H43_可交换的世界动力学核.md",
+      "sha256": "565cb1023da1f8ce699dba7021116f6b34a222581db7c041dff0c3434720242d"
+    },
+    {
+      "path": "hypotheses/H44_共同构造的反事实梦境.md",
+      "sha256": "7082e75936034483271d296d82bacbd19f5373af2b5e7de1fdc4124b833e6f27"
+    },
+    {
+      "path": "hypotheses/H45_主动可识别性协议.md",
+      "sha256": "7fcc85a0e5d91c5935ed49a57d2829b84725aeaba89a2d6303fb59bdbbeb7d5a"
+    },
+    {
+      "path": "hypotheses/H46_不可行域与负知识胶囊.md",
+      "sha256": "7f17900b8a681d115ebd1b301b95362a544b2aa0006cebbb4b29988f1ebd936c"
+    },
+    {
+      "path": "hypotheses/H47_任务相对的语义商空间.md",
+      "sha256": "f68817831496603e792307306c3cc74f6fa5626a91128e7a52924a76ff279e05"
+    },
+    {
+      "path": "hypotheses/H48_相关证据的认知谱系代数.md",
+      "sha256": "d4f43ef9274e6e27ff333fe48eb89ab103513ee44cfab9327df460ae11664f15"
+    },
+    {
+      "path": "workspace/latent-comm-lab/specs/innovation_deltas.json",
+      "sha256": "41d6c41fa0d1c747098707e2aa482003ed4a34e9cc5996df105a8e1c8399afe4"
+    },
+    {
+      "path": "workspace/latent-comm-lab/run_state/receipts/A01.json",
+      "sha256": "019a1d78073010be6d7918c03a1681521aaf7f06dc2444eb1e86d897c3316349"
+    }
+  ],
+  "authorized_upstream_refresh": {
+    "reason": "Coordinator strengthened receipt bindings and recommitted A01; output semantics unchanged; verified new receipt.",
+    "old_receipt_sha256": "bf11ce39ed131a9e6846191729057bb759fdfc8bbe51330db30569c318df2f8e",
+    "new_receipt_sha256": "019a1d78073010be6d7918c03a1681521aaf7f06dc2444eb1e86d897c3316349"
+  }
+}

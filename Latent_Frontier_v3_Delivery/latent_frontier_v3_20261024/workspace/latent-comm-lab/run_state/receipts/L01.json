@@ -1,0 +1,67 @@
+{
+  "task_id": "L01",
+  "status": "done",
+  "input_digest": "a2ff579a4e8872d9aea1bedb0508a7ac264fa9ccdd83fdab550c9ebbe45f77a8",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/views/README.md",
+      "sha256": "cac789c7ee5d3fc8694cd301a1c84327bfe2e5615f613fcce37829cd1cdeaf7b",
+      "bytes": 4323
+    },
+    {
+      "path": "src/latent_comm/learning/views/__init__.py",
+      "sha256": "750cd735a5a61ff613f024ec4b4247c03202bef719c7f7d6e7c6e04fa4b2d645",
+      "bytes": 13191
+    },
+    {
+      "path": "src/latent_comm/learning/views/train.py",
+      "sha256": "8d72f9f7e180da3e4735a3b7d6742992ab5a753c3d41d55750982f2765493b9e",
+      "bytes": 2408
+    },
+    {
+      "path": "configs/learning/views.json",
+      "sha256": "5ac745897bee5d3958228fa674950441ae5976dd8ec601a7bf3b8adab1c280c2",
+      "bytes": 1619
+    },
+    {
+      "path": "tests/research_locked/test_learning_views.py",
+      "sha256": "2ff1f4467b22429c68e7cb10e5263541c75ab130e06665d4e86dabfdc59c37d1",
+      "bytes": 4686
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L01_views.txt",
+      "sha256": "ecc6e6ed3469eda140866f4764cbff7d3147a11160c6c07c11bd0dacddea49c5"
+    },
+    {
+      "path": "run_state/checks/L01_views_initial_projection_failure.txt",
+      "sha256": "9adaffb905e1e1d20f4227f3af328f0c93ea94ac2e5c96b8095b73c6e9a5a335"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_views.txt",
+      "sha256": "6f42315066ea9c125a184e524cbaec091da2e91d183b7b5bebbf6a8cf2b8602e"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated physical role/H01 and scoped exact H16 dual-channel stages. Independent static review found auxiliary category/conflict losses also reach writer/reader; stage-local ledger corrected, no mechanism source changed, owner-only phase regression added. Nine final stdlib/AST tests passed; initial MappingProxy projection failure retained. All neural/model/guard paths NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.600172+00:00"
+}

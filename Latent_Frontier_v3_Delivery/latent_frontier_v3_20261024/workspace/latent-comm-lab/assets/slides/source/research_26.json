@@ -1,0 +1,264 @@
+{
+  "title": "H29：问题也能被计算",
+  "description": "x²=4展开为±2，错误只保留+2用虚线排除。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "H29：问题也能被计算",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "改写问题必须保留解关系",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "解析示意 / 数学示意 · 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "26 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 300,
+      "w": 350,
+      "h": 145,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79,
+      "y": 315,
+      "w": 320,
+      "h": 52.91,
+      "text": "问题：x² = 4",
+      "size": 37,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79,
+      "y": 369.25,
+      "w": 320,
+      "h": 32.89,
+      "text": "保留全部解的关系",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          430,
+          370
+        ],
+        [
+          600,
+          265
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          587.162959628079,
+          267.05192458186656
+        ],
+        [
+          600,
+          265
+        ],
+        [
+          592.4178884352981,
+          275.55990455545947
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "points": [
+        [
+          430,
+          380
+        ],
+        [
+          600,
+          490
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e011"
+    },
+    {
+      "points": [
+        [
+          592.6414145049606,
+          479.28313387635194
+        ],
+        [
+          600,
+          490
+        ],
+        [
+          587.2089017233878,
+          487.67883544787344
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e012"
+    },
+    {
+      "x": 650,
+      "y": 220,
+      "w": 500,
+      "h": 68.64,
+      "text": "x = +2",
+      "size": 48,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "x": 650,
+      "y": 450,
+      "w": 500,
+      "h": 68.64,
+      "text": "x = −2",
+      "size": 48,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e014"
+    },
+    {
+      "x": 650,
+      "y": 337,
+      "w": 500,
+      "h": 42.9,
+      "text": "只保留 +2 会丢解",
+      "size": 30,
+      "color": "#9C4540",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e015"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "每条变换明确：保持全部解、保持部分解，或仅作启发",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e016"
+    }
+  ],
+  "notes": "普通任务分解并不等于问题演算。每条变换要说明保持全部解、部分解还是只提供启发。\n\n原稿画面要求：x²=4展开为±2，错误只保留+2用虚线排除。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第26页\nhypotheses/H29_问题生成的潜演算.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html\nhttps://arxiv.org/abs/2006.08381\nhttps://arxiv.org/abs/1807.03480\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_26"
+  ],
+  "research_state": "NOT_RUN"
+}

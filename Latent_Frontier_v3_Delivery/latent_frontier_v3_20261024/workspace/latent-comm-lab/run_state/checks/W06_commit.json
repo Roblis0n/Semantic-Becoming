@@ -1,0 +1,51 @@
+{
+  "task_id": "W06",
+  "status": "done",
+  "input_digest": "df5849a84bfa40782418f543e85aa84f3abec0d8300957249f784d281d65af8b",
+  "outputs": [
+    {
+      "path": "src/latent_comm/worlds/dynamics/__init__.py",
+      "sha256": "08e005ffe85d61887461dc76ffb7e0b7a791192651a1b0d1343b2ebc5b44f3bc",
+      "bytes": 219
+    },
+    {
+      "path": "src/latent_comm/worlds/dynamics/generator.py",
+      "sha256": "f8cfefe14420ef565c754d271aa2b1768b66c81ee161275f60fc0e47f4dc9faa",
+      "bytes": 2493
+    },
+    {
+      "path": "src/latent_comm/worlds/dynamics/pipeline.py",
+      "sha256": "2a7cbf79adddcce9fff0bda424d2ab6b838ed701aca587e2163c06b2154d9a0e",
+      "bytes": 1863
+    },
+    {
+      "path": "configs/worlds/dynamics.json",
+      "sha256": "4b33344ca1a84d372ddde8ad32a390f470d35456f6c93400b69bd135019fc504",
+      "bytes": 575
+    },
+    {
+      "path": "tests/data/test_dynamics.py",
+      "sha256": "addc5b4eef2f5ea4f8471ffe6928a0a47515df7b6c75ede2d53a324fbcd1ed11",
+      "bytes": 790
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/W_dynamics.txt",
+      "sha256": "72c88a6c47b2ce8bc3740f8d9a9cb1bd5f98c6785905d14889a0d0fc1464f5e2"
+    },
+    {
+      "path": "run_state/checks/W_worlds_static.json",
+      "sha256": "10dd726945aa690ca5320a3d268b5ba4c928536a8ff6888f76b304ba62c7b9b6"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three dedicated finite-world contracts pass. Structural partition precedes sampling; role projection and resume sources present. Bulk data generation and all model research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:02:04.305986+00:00"
+}

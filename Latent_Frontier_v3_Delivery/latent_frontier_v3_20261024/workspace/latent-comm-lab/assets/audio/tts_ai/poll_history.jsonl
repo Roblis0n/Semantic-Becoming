@@ -1,0 +1,60 @@
+{"at_utc": "2026-10-24T18:09:39.862423+00:00", "id": "intro_90_001", "status": 200, "response": {"status": "processing", "has_priority": false, "upgrade_available": false}}
+{"at_utc": "2026-10-24T18:10:00.749593+00:00", "id": "intro_90_001", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:09:39.727408+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:10:33.816365+00:00", "id": "intro_90_002", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:10:20.976693+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:11:07.180558+00:00", "id": "intro_90_003", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:10:50.433524+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:11:42.270245+00:00", "id": "intro_90_004", "status": 200, "response": {"status": "processing", "has_priority": false, "upgrade_available": false}}
+{"at_utc": "2026-10-24T18:12:00.912179+00:00", "id": "intro_90_004", "status": 200, "response": {"status": "processing", "has_priority": false, "upgrade_available": false}}
+{"at_utc": "2026-10-24T18:12:19.383830+00:00", "id": "intro_90_004", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:12:02.124777+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:12:53.592852+00:00", "id": "intro_90_005", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:12:36.480982+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:13:29.082683+00:00", "id": "intro_90_006", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:13:11.668754+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:14:03.293510+00:00", "id": "intro_90_007", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:13:45.940734+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:14:38.110041+00:00", "id": "intro_90_008", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:14:21.108891+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:15:20.445258+00:00", "id": "intro_90_009", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:15:03.155486+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:15:53.837197+00:00", "id": "intro_90_010", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:15:38.954480+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:16:29.694323+00:00", "id": "intro_90_011", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:16:10.550615+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:16:59.851851+00:00", "id": "intro_90_012", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:16:45.507896+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:17:34.225787+00:00", "id": "intro_90_013", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:17:19.587056+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:18:06.668542+00:00", "id": "intro_90_014", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:17:54.060685+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:18:40.541164+00:00", "id": "explainer_360_001", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:18:25.512703+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:19:15.021063+00:00", "id": "explainer_360_002", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:18:57.961262+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:19:48.116794+00:00", "id": "explainer_360_003", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:19:36.388801+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:20:20.968610+00:00", "id": "explainer_360_004", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:20:38.203565+00:00", "id": "explainer_360_004", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:20:56.130739+00:00", "id": "explainer_360_004", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:21:14.347644+00:00", "id": "explainer_360_004", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:21:34.584184+00:00", "id": "explainer_360_004", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:21:51.583004+00:00", "id": "explainer_360_004", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:21:39.584879+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:22:27.150359+00:00", "id": "explainer_360_005", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:22:25.280861+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:23:02.211611+00:00", "id": "explainer_360_006", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:22:43.826476+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:23:34.046485+00:00", "id": "explainer_360_007", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:23:17.212424+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:24:06.101422+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:24:24.057746+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:24:41.734838+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:24:59.228447+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:25:16.814881+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:25:34.325187+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:25:51.564549+00:00", "id": "explainer_360_008", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:25:46.468011+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:26:31.477731+00:00", "id": "explainer_360_009", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:26:30.064922+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:27:00.820201+00:00", "id": "explainer_360_010", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:26:46.333873+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:27:42.757093+00:00", "id": "explainer_360_011", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:27:19.020867+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:28:11.327962+00:00", "id": "explainer_360_012", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:27:56.153159+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:28:47.163101+00:00", "id": "explainer_360_013", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:28:28.724754+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:29:18.030080+00:00", "id": "explainer_360_014", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:29:02.488862+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:29:53.377245+00:00", "id": "explainer_360_015", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:30:11.187863+00:00", "id": "explainer_360_015", "status": 200, "response": {"status": "processing", "has_priority": false, "upgrade_available": false}}
+{"at_utc": "2026-10-24T18:30:29.033727+00:00", "id": "explainer_360_015", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:30:11.261795+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:31:03.107496+00:00", "id": "explainer_360_016", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:31:23.114477+00:00", "id": "explainer_360_016", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:31:07.448789+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:32:02.331268+00:00", "id": "explainer_360_017", "status": 200, "response": {"status": "queued", "has_priority": false, "upgrade_available": true, "queue_position": 1, "estimated_wait_seconds": 15}}
+{"at_utc": "2026-10-24T18:32:22.205811+00:00", "id": "explainer_360_017", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:32:08.960941+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:32:54.889180+00:00", "id": "explainer_360_018", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:32:38.596760+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:33:28.284946+00:00", "id": "explainer_360_019", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:33:13.076761+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:34:02.596968+00:00", "id": "explainer_360_020", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:33:51.169129+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:34:37.204269+00:00", "id": "explainer_360_021", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:34:20.648856+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:35:11.016489+00:00", "id": "explainer_360_022", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:34:55.448906+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:35:46.484587+00:00", "id": "explainer_360_023", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:35:29.636729+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:36:21.762201+00:00", "id": "explainer_360_024", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:36:05.363683+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:36:55.943571+00:00", "id": "explainer_360_025", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:36:38.912775+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:37:31.094457+00:00", "id": "explainer_360_026", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:37:13.844756+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:38:10.281380+00:00", "id": "explainer_360_027", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:37:53.260274+00:00", "transferred": false}}
+{"at_utc": "2026-10-24T18:38:45.582427+00:00", "id": "explainer_360_028", "status": 200, "response": {"status": "completed", "finished_at": "2026-10-24T18:38:29.624791+00:00", "transferred": false}}

@@ -1,0 +1,41 @@
+{
+  "task_id": "B03",
+  "status": "done",
+  "input_digest": "27210d8e4b66ff4b81ead79974bc34e65efb3fd9fa8952e6bb7cbdc2f8e0f9cd",
+  "outputs": [
+    {
+      "path": "src/latent_comm/backends/hf_hooks/__init__.py",
+      "sha256": "adef3bb6b426ce3ea32098eabbc94ed88c90b755b20ac97e6bfeb83c6d0712ef",
+      "bytes": 2722
+    },
+    {
+      "path": "backend_specs/hf_hooks.json",
+      "sha256": "695ce5743d8be59818a68757b63ecbd74b8ac939f442c125237c53f1f7c1f934",
+      "bytes": 1418
+    },
+    {
+      "path": "tests/research_locked/test_backend_hf_hooks.py",
+      "sha256": "1d2dc474772d7ee56fc95fd84540724ca30ddf2f261e55699e2686a9a1e95b5f",
+      "bytes": 2061
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/B_hf_hooks.txt",
+      "sha256": "9d802715d8fb552bf8e1cbedd040a59be27cd2626aa1b884d50890b2ff882fa6"
+    },
+    {
+      "path": "run_state/checks/B_backend_static.json",
+      "sha256": "f09a540c89c4498781d691003d9b79cea2df1fc053351d0f875e98053fc096cd"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated backend source plus source/declaration/gate tests. All actual model integration is NOT_RUN; unknown backend bindings explicit UNBOUND. Official public documentation read, no model package installed/imported.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:10:57.264540+00:00"
+}

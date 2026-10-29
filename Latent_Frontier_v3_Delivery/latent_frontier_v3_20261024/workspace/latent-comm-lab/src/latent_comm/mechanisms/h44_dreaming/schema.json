@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "world_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "parent_kernel_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "edits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "kernel_id": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "state": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "action": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "noise_values": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "probabilities": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "kernel_id",
+          "state",
+          "action",
+          "noise_values",
+          "probabilities"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 3
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "synthetic": {
+      "const": true
+    },
+    "external_truth_claims": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "world_id",
+    "parent_kernel_ids",
+    "edits",
+    "assumptions",
+    "synthetic",
+    "external_truth_claims"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H44:resolved-payload:3"
+}

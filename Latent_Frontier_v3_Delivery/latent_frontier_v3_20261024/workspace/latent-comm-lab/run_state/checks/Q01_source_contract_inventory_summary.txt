@@ -1,0 +1,14 @@
+{
+  "report": "run_state/checks/Q01_source_contract_inventory.json",
+  "counts": {
+    "python_files": 679,
+    "json_files": 203,
+    "source_functions": 1851,
+    "protocol_only_methods": 8,
+    "guarded_research_import_statements": 200,
+    "mechanisms": 48,
+    "q01_dependencies_current": 114
+  },
+  "errors": [],
+  "pending_dependencies": []
+}

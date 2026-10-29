@@ -1,0 +1,29 @@
+{
+  "task_id": "V07",
+  "status": "complete_with_external_blockers",
+  "input_digest": "2a0748ba62cfe5d8c4ad17d0b2e523b77ceb3d951ee0ff8a2baba9c09dc6f432",
+  "outputs": [
+    {
+      "path": "reports/media_qa.json",
+      "sha256": "cd46bafb6e500ac60aba1eff313e9809a230f214960b74bfba02d58867f37d42",
+      "bytes": 22156
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V07_validation.json",
+      "sha256": "b0fc91cc5515a06344b44a82fb884cb2ba2d1bed6226cb07cdef5a8a7ec88bb2"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [
+    "Inherited unresolved requested outputs: both narration audio files, both narrated-final explainer videos and both final audio-aligned subtitle sets. No supported authorized zero-spend TTS route is available. Silent visual editions and source-timed captions are real fallbacks, not narrated finals."
+  ],
+  "notes": "Media branch QA verifies six dependency receipts, six text-preserving SVGs, native-editable 36/12-page PPTX with every page visually inspected, five mechanism MP4s, 90/360-second silent editions, exact source narration and draft subtitles. Independent visual review passes after repairs. Research remains NOT_RUN; pending requested audio outputs are not silently removed from scope.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:19:48.455378+00:00"
+}

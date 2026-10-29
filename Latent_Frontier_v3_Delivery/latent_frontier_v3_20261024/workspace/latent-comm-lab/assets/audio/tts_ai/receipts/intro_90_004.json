@@ -1,0 +1,48 @@
+{
+  "id": "intro_90_004",
+  "edition": "intro_90",
+  "scene_id": "S03",
+  "characters": 34,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "第二步，让问题本身成为对象。系统交换的不只是答案，还有新的提问方式，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:11:15.508296+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:11:23 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:12:02.124777+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 295383,
+    "duration_seconds": 6.698027210884354,
+    "sample_peak": 6846,
+    "sample_rms": 1033.5903899251225,
+    "sha256": "3ed350cd50bf93b1e0e85b8f519b8d8f7cdcaa096d954f6890cfb314969a51f6",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:12:27.962497+00:00"
+}

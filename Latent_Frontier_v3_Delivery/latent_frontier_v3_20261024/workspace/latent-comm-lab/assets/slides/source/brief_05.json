@@ -1,0 +1,265 @@
+{
+  "title": "H40：语言也能学会新指令",
+  "description": "三段重复程序折叠为宏，显示lower到旧ISA。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "H40：语言也能学会新指令",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "反复使用的结构被编译为可扩展操作",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "05 / 12",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 235,
+      "w": 380,
+      "h": 44.33,
+      "text": "重复结构",
+      "size": 31,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e006"
+    },
+    {
+      "x": 64,
+      "y": 300,
+      "w": 400,
+      "h": 141.57,
+      "text": "检查授权\n检查时间范围\n执行动作",
+      "size": 33,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "points": [
+        [
+          430,
+          365
+        ],
+        [
+          600,
+          365
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          588.0,
+          360.0
+        ],
+        [
+          600,
+          365
+        ],
+        [
+          588.0,
+          370.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "x": 650,
+      "y": 265,
+      "w": 566,
+      "h": 140,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e010"
+    },
+    {
+      "x": 665,
+      "y": 280,
+      "w": 536,
+      "h": 47.19,
+      "text": "宏：authorized_action",
+      "size": 33,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e011"
+    },
+    {
+      "x": 665,
+      "y": 329.25,
+      "w": 536,
+      "h": 32.89,
+      "text": "可扩展指令，带类型与前置条件",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "points": [
+        [
+          935,
+          420
+        ],
+        [
+          935,
+          490
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          940.0,
+          478.0
+        ],
+        [
+          935,
+          490
+        ],
+        [
+          930.0,
+          478.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "x": 650,
+      "y": 510,
+      "w": 566,
+      "h": 41.47,
+      "text": "lower：还原到旧 ISA 的同一语义",
+      "size": 29,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e015"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "宏可以压缩程序，不能隐藏无法解释的“万能函数”",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e016"
+    }
+  ],
+  "notes": "精简版第 5 页，对应研究版第 10 页。\n\n指令集可以演化，但新宏必须能解释和降低到已知语义，不能是一个神秘函数。\n\n原稿画面要求：三段重复程序折叠为宏，显示lower到旧ISA。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第10页\nhypotheses/H40_自举的潜指令集.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/2006.08381\nhttps://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html\nhttps://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_10"
+  ],
+  "research_state": "NOT_RUN",
+  "source_research_slide": 10
+}

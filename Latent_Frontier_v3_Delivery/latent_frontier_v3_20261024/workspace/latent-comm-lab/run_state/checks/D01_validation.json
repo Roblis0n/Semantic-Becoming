@@ -1,0 +1,202 @@
+{
+  "task_id": "D01",
+  "checked_at_utc": "2026-10-24T15:51:51.238983+00:00",
+  "check_kind": "stdlib_static_provenance_and_document_checks",
+  "checks": [
+    {
+      "name": "all_48_mechanisms",
+      "passed": true,
+      "detail": "Exact registry coverage, not example-only coverage."
+    },
+    {
+      "name": "unique_mechanism_ids",
+      "passed": true,
+      "detail": "No duplicate mechanism hides missing coverage."
+    },
+    {
+      "name": "all_43_supplied_source_records_retained",
+      "passed": true,
+      "detail": "25 v3 + 18 inherited records retained."
+    },
+    {
+      "name": "14_targeted_source_additions",
+      "passed": true,
+      "detail": "Includes optional N07 explicitly excluded from evidence."
+    },
+    {
+      "name": "57_unique_source_ids",
+      "passed": true,
+      "detail": "Aliases retain distinct supplied IDs with canonical IDs."
+    },
+    {
+      "name": "all_43_supplied_sources_rechecked",
+      "passed": true,
+      "detail": "Stable docs target independently checked after redirect."
+    },
+    {
+      "name": "all_mechanisms_have_specific_comparison",
+      "passed": true,
+      "detail": "Object, operation, invariant, shared primitive, candidate delta, counterexample, bridge, extension."
+    },
+    {
+      "name": "distinct_case_per_mechanism",
+      "passed": true,
+      "detail": "No generic duplicated counterexample."
+    },
+    {
+      "name": "at_least_two_checked_neighbors_per_mechanism",
+      "passed": true,
+      "detail": "Every mechanism has multiple actually checked primary neighbors."
+    },
+    {
+      "name": "supplied_refs_resolve",
+      "passed": true,
+      "detail": "Original references remain traceable, including inherited aliases."
+    },
+    {
+      "name": "canonical_refs_resolve",
+      "passed": true,
+      "detail": "All aliases target a real source."
+    },
+    {
+      "name": "canonical_citation_keys_match",
+      "passed": true,
+      "detail": "Duplicate source identities share citation keys."
+    },
+    {
+      "name": "source_scopes_nonempty",
+      "passed": true,
+      "detail": "All sources have bounded relevance and non-validation caveat."
+    },
+    {
+      "name": "priority_not_claimed",
+      "passed": true,
+      "detail": "No assertion of global first priority."
+    },
+    {
+      "name": "aggressive_extensions_preserved",
+      "passed": true,
+      "detail": "No mechanism cancelled for absent experiment."
+    },
+    {
+      "name": "research_not_run",
+      "passed": true,
+      "detail": "Static bibliography/claim review only."
+    },
+    {
+      "name": "counterexamples_not_misreported_as_executed",
+      "passed": true,
+      "detail": "Design cases are not model results."
+    },
+    {
+      "name": "arxiv_first_dates_and_versions",
+      "passed": true,
+      "detail": "Visible arXiv versions and submission dates retained."
+    },
+    {
+      "name": "no_future_or_reverse_arxiv_dates",
+      "passed": true,
+      "detail": "Chronology checked against 2026-10-24; first and revised dates separate."
+    },
+    {
+      "name": "recent_2026_identities_checked",
+      "passed": true,
+      "detail": "All supplied recent 2026 research identities have direct primary observations."
+    },
+    {
+      "name": "all_source_snapshots_resolve",
+      "passed": true,
+      "detail": "Metadata observation index, not unclaimed full-paper snapshots."
+    },
+    {
+      "name": "snapshot_hashes_valid",
+      "passed": true,
+      "detail": "Hashes bind exact metadata records."
+    },
+    {
+      "name": "optional_fetch_failure_scoped",
+      "passed": true,
+      "detail": "Direct DOI 403 not represented as a successful full-text read."
+    },
+    {
+      "name": "S15_title_corrected",
+      "passed": true,
+      "detail": "Supplied lecture label not silently reused."
+    },
+    {
+      "name": "H39_has_real_predecessor",
+      "passed": true,
+      "detail": "Fills the empty supplied source list."
+    },
+    {
+      "name": "46_unique_bib_entries",
+      "passed": true,
+      "detail": "Canonical checked source identities only."
+    },
+    {
+      "name": "bib_brace_balance",
+      "passed": true,
+      "detail": "Balanced BibTeX field and entry delimiters."
+    },
+    {
+      "name": "bib_required_fields",
+      "passed": true,
+      "detail": "Every bibliography entry has author/title/location/retrieval/scope metadata."
+    },
+    {
+      "name": "no_N07_bib_citation",
+      "passed": true,
+      "detail": "Access-limited optional lead not promoted to usable bibliography."
+    },
+    {
+      "name": "related_work_has_48_sections",
+      "passed": true,
+      "detail": "Every mechanism appears in the human-readable deliverable."
+    },
+    {
+      "name": "related_work_source_links",
+      "passed": true,
+      "detail": "Direct verified source URLs, not search-result links."
+    },
+    {
+      "name": "all_60_input_hashes_unchanged",
+      "passed": true,
+      "detail": {
+        "changed": []
+      }
+    },
+    {
+      "name": "A01_receipt_reverified",
+      "passed": true,
+      "detail": "Verified latest A01 and recursive dependencies."
+    },
+    {
+      "name": "three_declared_outputs_nonempty",
+      "passed": true,
+      "detail": "D01 does not claim other tasks or media outputs."
+    }
+  ],
+  "passed": 34,
+  "failed": 0,
+  "model_or_neural_imports": 0,
+  "model_execution": 0,
+  "numeric_fixture_cases": 0,
+  "research_state": "NOT_RUN",
+  "outputs": [
+    {
+      "path": "docs/related_work.md",
+      "sha256": "79b3a979a5b3d7dc3c17560aca29e009f33811731f2ff3168f5b2cee682ba58f",
+      "bytes": 75209
+    },
+    {
+      "path": "specs/novelty_ledger.json",
+      "sha256": "ee423dd85636a7625c8e50de1c5aebe24176d293bb1a38c920eb8750462be1d8",
+      "bytes": 274357
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "b7b06d7d9b18f10fb59e1b47c096cc3cec566176f7249a5dcfc25e8d7ffa8c85",
+      "bytes": 20792
+    }
+  ]
+}

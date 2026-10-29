@@ -1,0 +1,59 @@
+test_engine_delegation_and_resume_command (test_learning_views.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_exact_symbol_preserved (test_learning_views.ContractChecks.test_exact_symbol_preserved) ... ERROR
+test_metadata (test_learning_views.ContractChecks.test_metadata) ... ok
+test_no_total_double_count (test_learning_views.ContractChecks.test_no_total_double_count) ... ok
+test_receiver_backend_keeps_live_input_path (test_learning_views.ContractChecks.test_receiver_backend_keeps_live_input_path) ... ok
+test_recipe_is_unbound (test_learning_views.ContractChecks.test_recipe_is_unbound) ... ok
+test_stage_syntax_and_gates (test_learning_views.ContractChecks.test_stage_syntax_and_gates) ... ok
+test_symbol_source_conflict_and_role_leak_rejected (test_learning_views.ContractChecks.test_symbol_source_conflict_and_role_leak_rejected) ... ERROR
+
+======================================================================
+ERROR: test_exact_symbol_preserved (test_learning_views.ContractChecks.test_exact_symbol_preserved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/research_locked/test_learning_views.py", line 44, in test_exact_symbol_preserved
+    packet=checked_symbol_packet(*self.source_views());self.assertEqual(packet.symbols[0].value,'1.20')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/learning/views/__init__.py", line 14, in checked_symbol_packet
+    packet=parse_symbols(json.dumps(sender_view.features['symbol_packet']))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type mappingproxy is not JSON serializable
+
+======================================================================
+ERROR: test_symbol_source_conflict_and_role_leak_rejected (test_learning_views.ContractChecks.test_symbol_source_conflict_and_role_leak_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/research_locked/test_learning_views.py", line 47, in test_symbol_source_conflict_and_role_leak_rejected
+    with self.assertRaises(ContractError):checked_symbol_packet(*self.source_views(**kwargs))
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/learning/views/__init__.py", line 14, in checked_symbol_packet
+    packet=parse_symbols(json.dumps(sender_view.features['symbol_packet']))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type mappingproxy is not JSON serializable
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.016s
+
+FAILED (errors=2)

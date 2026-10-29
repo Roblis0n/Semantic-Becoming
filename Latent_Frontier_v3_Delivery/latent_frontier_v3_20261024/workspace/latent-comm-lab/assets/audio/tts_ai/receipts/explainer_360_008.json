@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_008",
+  "edition": "explainer_360",
+  "scene_id": "S02",
+  "characters": 36,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "再找出可操作的反例，最后提出授权有效期这个新谓词。重要的不是发明一个词，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:23:41.375350+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:23:48 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:25:46.468011+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 294202,
+    "duration_seconds": 6.67124716553288,
+    "sample_peak": 13412,
+    "sample_rms": 2060.7156788952398,
+    "sha256": "49fcb6fc756790842b51702b03593e9d6eb40a2241d85a655455bf3a9fd4a8a9",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:25:59.719751+00:00"
+}

@@ -1,0 +1,64 @@
+{
+  "task_id": "Q01",
+  "status": "done",
+  "input_digest": "a89e4f54f6fa80e8be34729bc393261ed6f19ccf80ca0d7c8bbc610b8b5fcb88",
+  "outputs": [
+    {
+      "path": "reports/math_review.md",
+      "sha256": "51f5937871f14f7beccb2b0314a9a74de6956ea525c77f27b75a236e5d44a91a",
+      "bytes": 6749
+    },
+    {
+      "path": "reports/source_review.json",
+      "sha256": "5f89646fb25a9bd534d6caaf8c219892bebc0c0f48e2a505fa7b725a4d5845ad",
+      "bytes": 68833
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/Q01_source_contract_inventory.json",
+      "sha256": "702606759a713ad5d8c6f2f31dff0cbe8340330c2d925e4fa4c540dfd607067f"
+    },
+    {
+      "path": "run_state/checks/Q01_static_bindings.json",
+      "sha256": "b805a100348f696aafa5d7d0a010f6ba5ab6e0280bfe3f3bb34c67c1bdb1b61d"
+    },
+    {
+      "path": "reports/independent_review/D03_media_delta_review_hashes.json",
+      "sha256": "f1a6f8d1799423021d9925ae2b10dbca4279544080214b5de3857ee44feb82bd"
+    },
+    {
+      "path": "run_state/checks/Q01_receipt_portability.txt",
+      "sha256": "b3f69302bebc9a3d93b94accd5885be469d42766971018180066f9920874caff"
+    },
+    {
+      "path": "run_state/checks/Q01_release_contracts.txt",
+      "sha256": "7feb3936990646dd6063196f7a51f7d91d7914c0e0dd46d066fe408b88974548"
+    },
+    {
+      "path": "run_state/checks/Q01_media_delta_20261027.json",
+      "sha256": "75ba0d69ef624946abd3fb4667627a2bba6ac30b71c99ddbba047f7ef3dd11b9"
+    },
+    {
+      "path": "run_state/checks/Q01_release_contracts_20261027.txt",
+      "sha256": "8961b638eb9065f705384579660ea79fdc0ca6c276b29d96a137ffee3d81c199"
+    },
+    {
+      "path": "run_state/checks/release_authorization_contract_20261027.json",
+      "sha256": "645a3cb5f847f1afd89d4920daba75d396d7ad29a0aba954540651c756ee19dd"
+    },
+    {
+      "path": "run_state/checks/Q01_waiver_delta_20261027.json",
+      "sha256": "2c2685b8b83de562df05e4144d2893246b9df5c04ea4352f91a53f15b286c4fb"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Explicit user scope change removes listening acceptance condition, USER_WAIVED_NOT_PERFORMED not PASS. Changed helper AST and documentary delta checked, prior research/media checks reused, researchNOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:12:00.315370+00:00"
+}

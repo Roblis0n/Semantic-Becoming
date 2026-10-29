@@ -1,0 +1,1574 @@
+{
+  "schema_version": 1,
+  "task_id": "D02",
+  "claim_classes": {
+    "D": "definition or proved finite fact",
+    "A": "explicit conditional assumption",
+    "H": "mechanism hypothesis",
+    "V": "architectural conjecture",
+    "E": "empirical result; none in this release"
+  },
+  "research_state": "NOT_RUN",
+  "empirical_results": [],
+  "assumptions": [
+    {
+      "id": "A_COMMON_BEHAVIOR",
+      "statement": "A declared finite public behavior coordinate system can compare participating models.",
+      "consumers": [
+        "H06",
+        "H15",
+        "H25",
+        "H37"
+      ],
+      "failure": "UnboundBehaviorMap or projection residual; no tokenizer-wise KL",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_INVERTIBLE_FRAME",
+      "statement": "Gauge maps are square invertible on the declared domain.",
+      "consumers": [
+        "H25",
+        "H32"
+      ],
+      "failure": "OutOfDomain; compression follows H06/H35 instead",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_PREDICATE_GRAMMAR",
+      "statement": "The finite predicate grammar contains a useful distinction for the selected witnesses.",
+      "consumers": [
+        "H27",
+        "H36"
+      ],
+      "failure": "NoCandidateWithinGrammar; retain branches",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_RELATION_WITNESSES",
+      "statement": "Problem rewrites provide independently checked soundness and completeness evidence.",
+      "consumers": [
+        "H29",
+        "H30"
+      ],
+      "failure": "Partial or heuristic relation, never upgraded to equivalence",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_LOCAL_NOISE",
+      "statement": "World composition supplies joint noise or explicit conditional independence.",
+      "consumers": [
+        "H31",
+        "H43",
+        "H44"
+      ],
+      "failure": "UnknownDependence or incompatible boundary",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_SCOPED_UPDATES",
+      "statement": "Differentiable updates target explicitly authorized adapter parameters only.",
+      "consumers": [
+        "H37",
+        "H38",
+        "H39"
+      ],
+      "failure": "ScopeViolation; current policy denies all neural execution",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_FINITE_EXECUTION",
+      "statement": "Reference worlds, DSL programs and searches have finite dimension, cases and steps.",
+      "consumers": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20",
+        "H21",
+        "H22",
+        "H23",
+        "H24",
+        "H25",
+        "H26",
+        "H27",
+        "H28",
+        "H29",
+        "H30",
+        "H31",
+        "H32",
+        "H33",
+        "H34",
+        "H35",
+        "H36",
+        "H37",
+        "H38",
+        "H39",
+        "H40",
+        "H41",
+        "H42",
+        "H43",
+        "H44",
+        "H45",
+        "H46",
+        "H47",
+        "H48"
+      ],
+      "failure": "BudgetExhausted with partial state, not an invented solution",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_EVIDENCE_DEPENDENCE",
+      "statement": "Probability claims require a complete relevant joint model or explicitly independent atoms.",
+      "consumers": [
+        "H03",
+        "H41",
+        "H48"
+      ],
+      "failure": "Symbolic expression or rigorous bounds, not a scalar posterior",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_PUBLIC_BOUNDARY",
+      "statement": "Terminal conditions and behavior probes are authorized public task conditions, not supervised answers.",
+      "consumers": [
+        "H34",
+        "H37"
+      ],
+      "failure": "RoleLeakage",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_MODEL_BRIDGE",
+      "statement": "Future learned model adapters may realize the reference object behavior.",
+      "consumers": [
+        "H01",
+        "H02",
+        "H03",
+        "H04",
+        "H05",
+        "H06",
+        "H07",
+        "H08",
+        "H09",
+        "H10",
+        "H11",
+        "H12",
+        "H13",
+        "H14",
+        "H15",
+        "H16",
+        "H17",
+        "H18",
+        "H19",
+        "H20",
+        "H21",
+        "H22",
+        "H23",
+        "H24",
+        "H25",
+        "H26",
+        "H27",
+        "H28",
+        "H29",
+        "H30",
+        "H31",
+        "H32",
+        "H33",
+        "H34",
+        "H35",
+        "H36",
+        "H37",
+        "H38",
+        "H39",
+        "H40",
+        "H41",
+        "H42",
+        "H43",
+        "H44",
+        "H45",
+        "H46",
+        "H47",
+        "H48"
+      ],
+      "failure": "Unvalidated research hypothesis; does not erase the implemented finite object",
+      "claim_class": "A",
+      "origin": "specs/assumptions.json",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_IMPLEMENTABLE_READWRITE",
+      "claim_class": "A",
+      "statement": "模型注入器和读出器能够实现所声明的协变变换；矩阵恒等式不能推出。",
+      "consumers": [
+        "H25"
+      ],
+      "failure": "固定读出反例；保留近似行为误差，不宣称语义对称。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_CONFLICT_CAUSE",
+      "claim_class": "A",
+      "statement": "拼合冲突可能来自缺少语境变量，但也可能来自错误观测、单位、映射或过强约束。",
+      "consumers": [
+        "H26",
+        "H27",
+        "H36"
+      ],
+      "failure": "分域、扩变量、撤回和未决并存，不强制产生概念。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_TRAJECTORY_READOUT",
+      "claim_class": "A",
+      "statement": "不同轨迹或结构分支的读出与所研究任务的有用区别相关。",
+      "consumers": [
+        "H28",
+        "H33",
+        "H34"
+      ],
+      "failure": "轨迹数学仍成立，但认知收益不成立；保留 V。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_CLOSURE_DOMAIN",
+      "claim_class": "A",
+      "statement": "粗化纤维上的后继粗态相同，或显式保留记忆/残差；闭合仅在声明域。",
+      "consumers": [
+        "H35"
+      ],
+      "failure": "返回闭合失败或新宏变量，不伪装 Markov。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_REFINEMENT_INFORMATION",
+      "claim_class": "A",
+      "statement": "细化可访问旧等价类成员的原始区别或新观测。",
+      "consumers": [
+        "H47",
+        "H35"
+      ],
+      "failure": "请求来源；代表元不能恢复被丢失区别。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_OBSERVATION_MODEL",
+      "claim_class": "A",
+      "statement": "许可查询的似然/确定响应覆盖声明候选机制；条件响应模型支持所用序列推断。",
+      "consumers": [
+        "H45"
+      ],
+      "failure": "模型不匹配/未知似然；族内后验不是真机制保证。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_REQUIRED_CONSTRAINT",
+      "claim_class": "A",
+      "statement": "负知识证书中的 required_predicate 确为当前任务在有效前提下的必要条件。",
+      "consumers": [
+        "H46"
+      ],
+      "failure": "标签和有限检查不足以证明任意任务排除安全。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_CONDITIONAL_OBSERVATION_INDEPENDENCE",
+      "claim_class": "A",
+      "statement": "观测核乘积需给定状态后的观测噪声独立，与转移的条件独立分别承担。",
+      "consumers": [
+        "H43",
+        "H44"
+      ],
+      "failure": "扩状态、给联合观测核或保留未知依赖。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_SINGLE_COORDINATOR",
+      "claim_class": "A",
+      "statement": "所有 VersionedStore 读写经同一个协调实例；未决日志恢复后才接纳后续写入；底层原子替换/fsync 成立。",
+      "consumers": [
+        "H39"
+      ],
+      "failure": "不声称跨实例、跨进程或分布式原子性。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_VALUE_FUNCTION",
+      "claim_class": "A",
+      "statement": "联盟价值函数对所比较子集有明确语义；未知值不能视为零，来源支持和执行价值分开。",
+      "consumers": [
+        "H41"
+      ],
+      "failure": "UndefinedValue 或有界估计，不宣称公平/因果/金融价值。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_LANGUAGE_INFORMATION",
+      "claim_class": "A",
+      "statement": "新谓词只能用获准可观察字段；纯旧签名函数不能创造新的区分信息。",
+      "consumers": [
+        "H27",
+        "H40"
+      ],
+      "failure": "unknown 与 False 分开；若需要新字段则明确提出信息需求。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_LOCAL_SMOOTHNESS",
+      "claim_class": "A",
+      "statement": "行为映射在更新线段邻域可微，定量 Taylor 界另需 Lipschitz Jacobian；裁剪阈值单独处理。",
+      "consumers": [
+        "H37",
+        "H38"
+      ],
+      "failure": "局部更新效果只能条件估计，不把一阶方向当有限真实变化。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    },
+    {
+      "id": "A_ECOLOGY_MEANING",
+      "claim_class": "A",
+      "statement": "结构档案和语法扩张能够产生与目标相关的新操作，而非重复、作弊或无用任务。",
+      "consumers": [
+        "H42"
+      ],
+      "failure": "只记录结构候选，不宣称神经 competence 或无界创新。",
+      "origin": "D02 formal review",
+      "status": "explicit_condition_not_empirically_established"
+    }
+  ],
+  "claims": [
+    {
+      "id": "D02-F01",
+      "claim_class": "D",
+      "statement": "D01a 函数作用恒等；D01b 异维协变/路径消去；D01c 目标对偶可表示性。",
+      "exact_scope": "可逆同域共轭与读出同时运输；一般线性目标满足 Aᵀwprime=w；固定可行域。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F01_covariance_and_objectives.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F02",
+      "claim_class": "D",
+      "statement": "最小残差为正交补投影；三环最小值1/3；冲突删除仅包含最小。",
+      "exact_scope": "有限实仿射系统与可行硬锚；精确可解性与浮点容差分别处理。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F02_affine_gluing_and_obstructions.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F03",
+      "claim_class": "D",
+      "statement": "旧等价状态不可由旧签名区分；新可计算谓词形成有限表达见证。",
+      "exact_scope": "有限可观测签名和确定/同核随机决策；候选语法与信息权限固定。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F03_concepts_counterexamples_and_language.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F04",
+      "claim_class": "D",
+      "statement": "可靠/完整回译可分别复合；局部操作交换在合法路径上归纳到程序。",
+      "exact_scope": "回译在目标解纤维全定义；中间实例/操作域相容；精确关系或显式容差。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F04_questions_and_partial_morphisms.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F05",
+      "claim_class": "D",
+      "statement": "ridge 正规方程和残差分解；局部 Taylor 界；完整元梯度与 first_order 不等。",
+      "exact_scope": "有限共同实行为坐标；lambda>0 正定，lambda=0 单列最小范数选择；C1/C2 及 Lipschitz 条件按结论分开。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F05_behavior_transport_and_plasticity.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F06",
+      "claim_class": "D",
+      "statement": "欧氏范数不变量与能量区别；alpha=0 高阶吸引；Hopf 稳定圆与非退化 fold；前后可达集路径条件。",
+      "exact_scope": "局部 Lipschitz 场；h>0 线性 skew/PSD Q 中点；固定 alpha pitchfork；显式二维 Hopf 和一维 cubic fold 正规形；有限 Markov 状态的公开边界。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F06_trajectories_bifurcations_and_boundaries.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F07",
+      "claim_class": "D",
+      "statement": "商与单调细化；确定闭合充要条件；粗细残差递推与不可恢复信息。",
+      "exact_scope": "精确任务查询；确定动力学在粗化纤维一致；记忆展开需 CL=I；概率扩展另需 strong lumpability。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F07_quotients_and_scale_closure.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F08",
+      "claim_class": "D",
+      "statement": "未受影响 SCM 节点不变；核归一；合成不自证；幂等/联合概率/Fréchet 界。",
+      "exact_scope": "共同概率空间和变量身份；DAG 方程；条件独立乘积核；布尔事件与给定联合分布；合成数据 Markov 条件。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F08_worlds_causality_and_evidence.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F09",
+      "claim_class": "D",
+      "statement": "宏保守扩展；条件串行性；Shapley 效率/dummy；有限生态终止。",
+      "exact_scope": "纯无环卫生宏；单协调实例原子版本检查；完整有限联盟价值；固定有界变异。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F09_programs_transactions_coalitions_ecology.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "D02-F10",
+      "claim_class": "D",
+      "statement": "IG=互信息>=0；相同响应族不可识别；硬排除并集安全及撤回恢复。",
+      "exact_scope": "归一有限似然和正预测事件；条件响应序列模型；排除谓词经任务必要条件支持并覆盖精确域。",
+      "proof_status": "stepwise_derivation_in_note",
+      "proof_file": "docs/formal_notes/F10_identifiability_and_negative_knowledge.md",
+      "verification_limit": "Finite fixtures illustrate and challenge special cases; not a general proof checker or empirical efficacy test.",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "id": "H25",
+      "claim_class": "H",
+      "statement": "状态、操作和读出一起协变，并将合法变换族/局部域显式化。",
+      "depends_on": [
+        "D02-F01",
+        "A_COMMON_BEHAVIOR",
+        "A_INVERTIBLE_FRAME",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_IMPLEMENTABLE_READWRITE"
+      ],
+      "unproved_bridge": "换基恒等式不证明任意模型隐藏状态有真实对称性。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H26",
+      "claim_class": "H",
+      "statement": "在有语义锚的局部知识中保存拼合障碍，并据此提出补变量/问题。",
+      "depends_on": [
+        "D02-F02",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_CONFLICT_CAUSE"
+      ],
+      "unproved_bridge": "代数不一致残差不自动是拓扑上同调障碍，更不自动是语义矛盾。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H27",
+      "claim_class": "H",
+      "statement": "新增概念须有可执行定义、区分见证和旧引用迁移。",
+      "depends_on": [
+        "D02-F03",
+        "A_PREDICATE_GRAMMAR",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_CONFLICT_CAUSE",
+        "A_LANGUAGE_INFORMATION"
+      ],
+      "unproved_bridge": "相对当前语法的新表达不等于历史首创或一般智能的新概念。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H28",
+      "claim_class": "H",
+      "statement": "连续控制路径与离散结构事件共同管理分支及迁移。",
+      "depends_on": [
+        "D02-F06",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_TRAJECTORY_READOUT"
+      ],
+      "unproved_bridge": "有限示例不能推出神经语义的热力学相变或普适类。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H29",
+      "claim_class": "H",
+      "statement": "问题是带答案关系的对象，变换后保存解的回译及健全/完备见证。",
+      "depends_on": [
+        "D02-F04",
+        "A_RELATION_WITNESSES",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE"
+      ],
+      "unproved_bridge": "一般程序等价不可判定；有限关系证明不覆盖任意自然问题。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H30",
+      "claim_class": "H",
+      "statement": "类型化部分态射被编译为目标操作，并显式保存不交换方块。",
+      "depends_on": [
+        "D02-F04",
+        "A_RELATION_WITNESSES",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE"
+      ],
+      "unproved_bridge": "有限锚点通过不证明跨域普遍有效。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H31",
+      "claim_class": "H",
+      "statement": "消息实际携带可接入局部方程，检查父边界、共享噪声与未受影响方程。",
+      "depends_on": [
+        "D02-F08",
+        "A_LOCAL_NOISE",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE"
+      ],
+      "unproved_bridge": "神经网络中可识别、可移植机制是强假设。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H32",
+      "claim_class": "H",
+      "statement": "目标坐标和偏好协向量共同转换，外部目标和硬约束只读。",
+      "depends_on": [
+        "D02-F01",
+        "A_INVERTIBLE_FRAME",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE"
+      ],
+      "unproved_bridge": "有限线性目标框架不能代表一切偏好，更非价值对齐证明。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H33",
+      "claim_class": "H",
+      "statement": "把耦合向量场、读出窗口及有用瞬态作为传输对象，允许非梯度环流。",
+      "depends_on": [
+        "D02-F06",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_TRAJECTORY_READOUT"
+      ],
+      "unproved_bridge": "振荡的存在不等于有用认知；尚需更广泛非平衡计算近邻审查。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H34",
+      "claim_class": "H",
+      "statement": "把起终端公开约束与可迁移中间未知状态组成有类型轨迹对象。",
+      "depends_on": [
+        "D02-F06",
+        "A_FINITE_EXECUTION",
+        "A_PUBLIC_BOUNDARY",
+        "A_MODEL_BRIDGE",
+        "A_TRAJECTORY_READOUT"
+      ],
+      "unproved_bridge": "双向消息本身不是新算法；候选贡献在跨模型状态/契约实现。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H35",
+      "claim_class": "H",
+      "statement": "同时交换粗化、宏动态及闭合残差，并提供所需细化条件。",
+      "depends_on": [
+        "D02-F07",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_CLOSURE_DOMAIN",
+        "A_REFINEMENT_INFORMATION"
+      ],
+      "unproved_bridge": "有限 coarse-graining 不证明物理重整化群或无损提升。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H36",
+      "claim_class": "H",
+      "statement": "反例驱动的是概念/程序结构修改而非投票胜负，保留反例谱系。",
+      "depends_on": [
+        "D02-F03",
+        "A_PREDICATE_GRAMMAR",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_CONFLICT_CAUSE"
+      ],
+      "unproved_bridge": "自然任务 oracle 缺失时只能称候选反例；CEGIS 本身非新颖。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H37",
+      "claim_class": "H",
+      "statement": "交换行为切向量并用目标 Jacobian 的正则最小二乘投回参数空间。",
+      "depends_on": [
+        "D02-F05",
+        "A_COMMON_BEHAVIOR",
+        "A_SCOPED_UPDATES",
+        "A_FINITE_EXECUTION",
+        "A_PUBLIC_BOUNDARY",
+        "A_MODEL_BRIDGE",
+        "A_LOCAL_SMOOTHNESS"
+      ],
+      "unproved_bridge": "有限探针与局部线性化不足以保证更新后全局行为；自然梯度近邻尚须全文复核。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H38",
+      "claim_class": "H",
+      "statement": "学习规则作为受限可运输 DSL，带可读统计、参数组与寿命。",
+      "depends_on": [
+        "D02-F05",
+        "A_SCOPED_UPDATES",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_LOCAL_SMOOTHNESS"
+      ],
+      "unproved_bridge": "有界更新不保证有效或避免遗忘；跨模型规则迁移仍待研究。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H39",
+      "claim_class": "H",
+      "statement": "将本体/ISA/证据迁移纳入单个受控认知状态事务。",
+      "depends_on": [
+        "D02-F09",
+        "A_SCOPED_UPDATES",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_SINGLE_COORDINATOR"
+      ],
+      "unproved_bridge": "本项是支撑性集成而非新智能范式；本地原子性不等于分布式容错。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H40",
+      "claim_class": "H",
+      "statement": "通信指令集与读者版本共同自举，宏有卫生展开、迁移与基底 lowering。",
+      "depends_on": [
+        "D02-F09",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_LANGUAGE_INFORMATION"
+      ],
+      "unproved_bridge": "可展开宏只改变描述/搜索复杂度，不突破基底表达能力。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H41",
+      "claim_class": "H",
+      "statement": "用有类型前置条件/联合产出契约形成互补联盟，未知子集值不记零。",
+      "depends_on": [
+        "D02-F09",
+        "A_FINITE_EXECUTION",
+        "A_EVIDENCE_DEPENDENCE",
+        "A_MODEL_BRIDGE",
+        "A_VALUE_FUNCTION"
+      ],
+      "unproved_bridge": "Shapley 分摊依赖价值定义，不能自动保证公平或因果贡献。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H42",
+      "claim_class": "H",
+      "statement": "将本体、潜协议、学习规则及世界版本共同纳入生态档案。",
+      "depends_on": [
+        "D02-F09",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_ECOLOGY_MEANING"
+      ],
+      "unproved_bridge": "联合演化可能循环、作弊或漂移；不承诺无界有意义创新。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H43",
+      "claim_class": "H",
+      "statement": "可交换的是带动作、观测、噪声身份和边界契约的转移核。",
+      "depends_on": [
+        "D02-F08",
+        "A_LOCAL_NOISE",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_CONDITIONAL_OBSERVATION_INDEPENDENCE"
+      ],
+      "unproved_bridge": "核可执行不等于现实正确；组合的多步误差可能累积。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H44",
+      "claim_class": "H",
+      "statement": "多个贡献者的局部核共同合成可追溯、可反事实编辑的世界。",
+      "depends_on": [
+        "D02-F08",
+        "A_LOCAL_NOISE",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_CONDITIONAL_OBSERVATION_INDEPENDENCE"
+      ],
+      "unproved_bridge": "共同构造不是观测现实；不能把合成样本当实证研究结果。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H45",
+      "claim_class": "H",
+      "statement": "对允许查询明确计算机制等价类如何分裂，保留未知响应。",
+      "depends_on": [
+        "D02-F10",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_OBSERVATION_MODEL"
+      ],
+      "unproved_bridge": "候选族遗漏真机制会产生伪自信，信息增益不保证真实识别。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H46",
+      "claim_class": "H",
+      "statement": "条件化排除集合携带证据等级与撤销规则，区分硬证书和软启发式。",
+      "depends_on": [
+        "D02-F10",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_REQUIRED_CONSTRAINT"
+      ],
+      "unproved_bridge": "模型生成理由未验证时不能升级为不可行性证明。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H47",
+      "claim_class": "H",
+      "statement": "协议对象是有限查询族的等价类及精化见证，而非固定潜向量。",
+      "depends_on": [
+        "D02-F07",
+        "A_FINITE_EXECUTION",
+        "A_MODEL_BRIDGE",
+        "A_REFINEMENT_INFORMATION"
+      ],
+      "unproved_bridge": "有限查询相同不推出递归 bisimulation 或所有未来任务等价。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "H48",
+      "claim_class": "H",
+      "statement": "将可撤销证据谱系接入潜对象/学习/联盟，并显式建模共享祖先。",
+      "depends_on": [
+        "D02-F08",
+        "A_FINITE_EXECUTION",
+        "A_EVIDENCE_DEPENDENCE",
+        "A_MODEL_BRIDGE"
+      ],
+      "unproved_bridge": "谱系不证明来源真实；预训练数据相关性只能局部标识。",
+      "research_state": "NOT_RUN",
+      "source_implemented_is_not_validated": true
+    },
+    {
+      "id": "X01-B1",
+      "claim_class": "V",
+      "statement": "IdentityFiber=(state, public_behavior_contract, pending_obligations, version_path)，身份是声明查询族上的关系而非单一参数文件。",
+      "depends_on": [
+        "H05",
+        "H22",
+        "H25",
+        "H39"
+      ],
+      "additional_assumptions": [
+        "存在可恢复的待完成计算",
+        "行为合同范围可显式列出",
+        "迁移保持合同但不必保持全部隐藏状态"
+      ],
+      "unproved_bridge": "有限行为等价不足以证明一切未来行为连续，更不推出意识/人格延续。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X01-B2",
+      "claim_class": "V",
+      "statement": "ObligationHypergraph 的顶点是版本化义务，超边是分工/合并证明；主体由当前义务闭包定义。",
+      "depends_on": [
+        "H05",
+        "H22",
+        "H25",
+        "H39"
+      ],
+      "additional_assumptions": [
+        "义务分解具有可靠合取/析取规则",
+        "共享约束可以显式检查"
+      ],
+      "unproved_bridge": "需要超出现有 VersionedStore 的分区语义与可组合完成证书。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X01-B3",
+      "claim_class": "V",
+      "statement": "BoundaryContract=(ports, intervention_family, internal_transition, external_observables)，主体是可替换动力学模块。",
+      "depends_on": [
+        "H05",
+        "H22",
+        "H25",
+        "H39"
+      ],
+      "additional_assumptions": [
+        "内部依赖能被边界状态充分概括",
+        "环境干预映射可定义"
+      ],
+      "unproved_bridge": "跨模块因果充分性强于有限输出吻合，真实模型是否可识别未定。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X02-B1",
+      "claim_class": "V",
+      "statement": "ContextCoverDelta=(old_cover,new_cover,restriction_maps,evidence_scopes)，修订对象是知识适用域而非一个全局答案。",
+      "depends_on": [
+        "H26",
+        "H27",
+        "H36",
+        "H48"
+      ],
+      "additional_assumptions": [
+        "语境变量可从允许证据计算",
+        "覆盖修订保持旧命题解释入口"
+      ],
+      "unproved_bridge": "如何在自然任务选出有用语境而非无限分裂仍为 H。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X02-B2",
+      "claim_class": "V",
+      "statement": "TruthPair(p)=(support,refutation)∈{0,1}²，加上来源 DAG；矛盾与未知分为 (1,1) 和 (0,0)。",
+      "depends_on": [
+        "H26",
+        "H27",
+        "H36",
+        "H48"
+      ],
+      "additional_assumptions": [
+        "选定逻辑规则对目标应用可解释",
+        "支持和反支持不混为概率互补"
+      ],
+      "unproved_bridge": "需要独立核验次协调逻辑的完整近邻；此分支仅提出具体演算对象，不声称发明四值逻辑。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X02-B3",
+      "claim_class": "V",
+      "statement": "CellularTheoryComplex=(C0,C1,C2,delta0,delta1,anchors)，新增胞腔与边界算子，不再只存图残差。",
+      "depends_on": [
+        "H26",
+        "H27",
+        "H36",
+        "H48"
+      ],
+      "additional_assumptions": [
+        "高阶语境有明确定义",
+        "边界映射满足复形关系",
+        "锚的相对复形被正确处理"
+      ],
+      "unproved_bridge": "自然语言的限制映射与高阶关系未识别，不能把现有 glue 输出改名为 H1。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X03-B1",
+      "claim_class": "V",
+      "statement": "MeasurementProgram=(observable_AST, allowed_actions, noise_model, answer_relation)，问题新增可操作观测而非同义改写。",
+      "depends_on": [
+        "H27",
+        "H29",
+        "H30",
+        "H45"
+      ],
+      "additional_assumptions": [
+        "新测量能从允许信息取得响应",
+        "响应模型足够明确"
+      ],
+      "unproved_bridge": "现实测量可行性与响应正确性是新假设，有限 IG 不证明发明了有效科学实验。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X03-B2",
+      "claim_class": "V",
+      "statement": "ProblemSpan=(Q,auxiliary_space,Qprime,forward_relation,answer_backtranslation)，允许多值而非单一函数改写。",
+      "depends_on": [
+        "H27",
+        "H29",
+        "H30",
+        "H45"
+      ],
+      "additional_assumptions": [
+        "有限或可证规则支持关系组合",
+        "中间实例域相容"
+      ],
+      "unproved_bridge": "哪些关系扩张能使自然任务更易解仍未知；不是宣称一般程序等价可判。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X03-B3",
+      "claim_class": "V",
+      "statement": "QuestionConstructor=(witness_program, constraint_generator, proof_of_inclusion)，先构造有解见证再反推问题，但隐藏见证只留监督侧。",
+      "depends_on": [
+        "H27",
+        "H29",
+        "H30",
+        "H45"
+      ],
+      "additional_assumptions": [
+        "见证到约束的导出可靠",
+        "公开视图不会泄露生成解"
+      ],
+      "unproved_bridge": "可解性不保证研究价值，新的问题分布可能与真实需求脱离。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X04-B1",
+      "claim_class": "V",
+      "statement": "TangentRouteGraph 的节点为行为像空间 im J_i，边携带投影、残差及线性化版本。",
+      "depends_on": [
+        "H31",
+        "H37",
+        "H38",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "各节点共享行为坐标",
+        "多节点作用可按已声明组合律相加或复合"
+      ],
+      "unproved_bridge": "联合行为是否可加、组合后 Jacobian 是否仍适用都未证明。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X04-B2",
+      "claim_class": "V",
+      "statement": "MetricUpdate=(v,W,M,anchor_version)，把行为度量与参数度量作为协议对象。",
+      "depends_on": [
+        "H31",
+        "H37",
+        "H38",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "度量来源和正定性可验证",
+        "线性化局部有效"
+      ],
+      "unproved_bridge": "与自然梯度及几何优化的全文优先权审查尚缺，标准加权解不主张原创。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X04-B3",
+      "claim_class": "V",
+      "statement": "PlasticitySimulation=(source_rule,target_rule,state_relation,step_witness)，运输的是多步更新程序而非一次梯度。",
+      "depends_on": [
+        "H31",
+        "H37",
+        "H38",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "支持统计可对应",
+        "更新域可显式映射",
+        "模拟步数有限"
+      ],
+      "unproved_bridge": "局部规则模拟能否带来实际学习收益仍为 H，不是免费跨模型元学习。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X05-B1",
+      "claim_class": "V",
+      "statement": "OntologyLens=(get,put,domain,unknown_policy,version_pair)，明确何时可往返、何时损失。",
+      "depends_on": [
+        "H27",
+        "H40",
+        "H42",
+        "H44"
+      ],
+      "additional_assumptions": [
+        "存在可计算公共字段",
+        "往返律只在显式域成立"
+      ],
+      "unproved_bridge": "双向变换已有完整文献需后续核查，候选贡献在认知协议生命周期结合。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X05-B2",
+      "claim_class": "V",
+      "statement": "PrimitiveProposal=(denotation,effect_type,authority,implementation_relation)，区别可展开宏和真正新测量/计算能力。",
+      "depends_on": [
+        "H27",
+        "H40",
+        "H42",
+        "H44"
+      ],
+      "additional_assumptions": [
+        "新语义可独立定义",
+        "宿主能检查效果范围"
+      ],
+      "unproved_bridge": "不可约新原语可能需要新传感器/后端，尚未实现；不是因宏命名而产生超计算。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X05-B3",
+      "claim_class": "V",
+      "statement": "MetaGrammarPopulation=(task_grammars,ontology_grammars,compiler_migrations,archive)，变异作用于生成规则而非只有参数。",
+      "depends_on": [
+        "H27",
+        "H40",
+        "H42",
+        "H44"
+      ],
+      "additional_assumptions": [
+        "元语法自身有类型和终止界",
+        "旧任务具有可回放关系"
+      ],
+      "unproved_bridge": "扩张能否持续产生有用而非作弊任务未证明，保留多分支而不承诺无界进步。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X06-B1",
+      "claim_class": "V",
+      "statement": "MemoryKernelState=(coarse_history,unresolved_initial,memory_operators)，把丢失细节的延迟效应纳入宏对象。",
+      "depends_on": [
+        "H02",
+        "H25",
+        "H35",
+        "H47"
+      ],
+      "additional_assumptions": [
+        "线性或可分析动力学",
+        "CL=I",
+        "截断界有明确条件"
+      ],
+      "unproved_bridge": "真实语义中的低复杂度记忆核是否存在未定。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X06-B2",
+      "claim_class": "V",
+      "statement": "FiberBelief(m)=distribution over C^-1(m)，压缩对象携带可识别的不确定性。",
+      "depends_on": [
+        "H02",
+        "H25",
+        "H35",
+        "H47"
+      ],
+      "additional_assumptions": [
+        "条件分布来源可解释或保留集合",
+        "观察模型显式"
+      ],
+      "unproved_bridge": "可计算的纤维分布可能过大，有限近似及误差需另定义，不以资源困难删除构想。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X06-B3",
+      "claim_class": "V",
+      "statement": "ScalePolicy=(query_set,partition_refinement,closure_obligations)，新问题触发新尺度而非固定层级。",
+      "depends_on": [
+        "H02",
+        "H25",
+        "H35",
+        "H47"
+      ],
+      "additional_assumptions": [
+        "可读取保留源信息或获得新观测",
+        "任务变化有明确授权"
+      ],
+      "unproved_bridge": "如何选择最有用查询和尺度是未证 H，不等同信息瓶颈方法已解决。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X07-B1",
+      "claim_class": "V",
+      "statement": "EventTrace=(events,happens_before,read_write_effects,commutation_witnesses)，只对独立操作交换次序。",
+      "depends_on": [
+        "H20",
+        "H33",
+        "H34",
+        "H05"
+      ],
+      "additional_assumptions": [
+        "事件效果可明示",
+        "交换性在声明域成立"
+      ],
+      "unproved_bridge": "需要与并发迹理论完整比较；当前异步时钟并非已实现此语义商。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X07-B2",
+      "claim_class": "V",
+      "statement": "PhaseRelationState=(torus_coordinates,relative_phase,window_readout,noise_contract)，状态在循环相位关系而非终点。",
+      "depends_on": [
+        "H20",
+        "H33",
+        "H34",
+        "H05"
+      ],
+      "additional_assumptions": [
+        "稳定相位关系可定义",
+        "读出区分与任务有可验证联系"
+      ],
+      "unproved_bridge": "相位编码是否能在真实模型间提供有用计算完全未验证。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X07-B3",
+      "claim_class": "V",
+      "statement": "PathMeasure=(transition_factors,public_boundary,normalizer,branch_weights)，从单条最优路径扩成条件轨迹集合。",
+      "depends_on": [
+        "H20",
+        "H33",
+        "H34",
+        "H05"
+      ],
+      "additional_assumptions": [
+        "核和边界来源合法",
+        "状态包含足够历史满足 Markov 分解"
+      ],
+      "unproved_bridge": "双向消息已有，候选 H 在跨模型路径协议和读出，不是逆因果。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X08-B1",
+      "claim_class": "V",
+      "statement": "ProofContinuation=(proved_lemmas,open_goals,context,proof_kernel_version)，不是最后一段解释文本。",
+      "depends_on": [
+        "H05",
+        "H13",
+        "H29",
+        "H46"
+      ],
+      "additional_assumptions": [
+        "有受限可检查证明演算",
+        "上下文和内核版本可迁移"
+      ],
+      "unproved_bridge": "自然语言研究中的未完成发现如何形式化仍为 H，不要求所有探索先形式化才允许存在。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X08-B2",
+      "claim_class": "V",
+      "statement": "NoGoodRegion=(predicate,assumptions,certificate,domain_version)，迁移整个失败区域而非单一坏答案。",
+      "depends_on": [
+        "H05",
+        "H13",
+        "H29",
+        "H46"
+      ],
+      "additional_assumptions": [
+        "证书覆盖被剪区域",
+        "必要条件关系可检查"
+      ],
+      "unproved_bridge": "模型能否提出广泛但正确区域证书未验证。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X08-B3",
+      "claim_class": "V",
+      "statement": "ConjectureLineage=(claim_versions,refutations,repair_transformations,open_bridges)，保留相互竞争的修订而不单线覆盖。",
+      "depends_on": [
+        "H05",
+        "H13",
+        "H29",
+        "H46"
+      ],
+      "additional_assumptions": [
+        "修订关系可表达",
+        "未决桥梁可版本化追踪"
+      ],
+      "unproved_bridge": "怎样选择有研究生产力的谱系未定，不能以多数票定理论真伪。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X09-B1",
+      "claim_class": "V",
+      "statement": "GraftWorld=(local_SCMs,boundary_units,shared_noise,intervention_map)，多个源各持部分方程。",
+      "depends_on": [
+        "H31",
+        "H42",
+        "H43",
+        "H44"
+      ],
+      "additional_assumptions": [
+        "模块方程可执行且边界正确",
+        "联合噪声给定"
+      ],
+      "unproved_bridge": "自然模型中识别模块是强假设，有限 SCM 接枝不证明已找到它。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X09-B2",
+      "claim_class": "V",
+      "statement": "CounterfactualBoundarySearch=(kernel_edit_grammar,distinguishing_queries,validity_constraints)，搜索改变哪条机制才改变结论。",
+      "depends_on": [
+        "H31",
+        "H42",
+        "H43",
+        "H44"
+      ],
+      "additional_assumptions": [
+        "允许比较的机制编辑有清晰语义",
+        "查询不能泄露生成答案"
+      ],
+      "unproved_bridge": "生成差异不等于科学重要性，价值判断仍是明确 H。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X09-B3",
+      "claim_class": "V",
+      "statement": "CouplingSet={joint laws with declared marginals and dependence constraints}，消息携带一族世界而非猜定独立联合。",
+      "depends_on": [
+        "H31",
+        "H42",
+        "H43",
+        "H44"
+      ],
+      "additional_assumptions": [
+        "有限约束可表示",
+        "边缘本身可靠或另带误差区间"
+      ],
+      "unproved_bridge": "真实联合依赖能否被低复杂度表示未定；不是靠多模型数量保证识别。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X10-B1",
+      "claim_class": "V",
+      "statement": "CapabilityHypergraph=(input_types,provider_sets,output_types,composition_witness)，能力属于有条件联盟。",
+      "depends_on": [
+        "H10",
+        "H18",
+        "H41",
+        "H48"
+      ],
+      "additional_assumptions": [
+        "有明确组合操作",
+        "联合价值定义不混淆额外资源"
+      ],
+      "unproved_bridge": "联合能力是否能由不同模型实现尚未验证。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X10-B2",
+      "claim_class": "V",
+      "statement": "ProvenanceCoalitionGame 将玩家持有的支持 DAG 映到唯一来源/操作贡献，再定义 v(S)。",
+      "depends_on": [
+        "H10",
+        "H18",
+        "H41",
+        "H48"
+      ],
+      "additional_assumptions": [
+        "来源身份至少局部可追溯",
+        "选择的价值函数符合用途"
+      ],
+      "unproved_bridge": "预训练相关性不可完全追踪，来源商只能局部成立。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X10-B3",
+      "claim_class": "V",
+      "statement": "JoinLeaveContract=(required_state,obligation_transfer,tombstones,exit_conditions)，联盟动态变化时保留计算责任。",
+      "depends_on": [
+        "H10",
+        "H18",
+        "H41",
+        "H48"
+      ],
+      "additional_assumptions": [
+        "义务可转移或可中止",
+        "状态迁移在声明合同内可靠"
+      ],
+      "unproved_bridge": "动态联盟的活性与容错超出现有本地事务保证，需独立设计。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X11-B1",
+      "claim_class": "V",
+      "statement": "StructuralBifurcation=(control_parameter,order_observable,branch_atlas,migration)，将结构变量与连续态分开。",
+      "depends_on": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "分支对任务可观察作用不同",
+        "分岔与离散类型变化有明确映射"
+      ],
+      "unproved_bridge": "数学分岔如何驱动真实认知类型变化尚未证明。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X11-B2",
+      "claim_class": "V",
+      "statement": "RetiredConcept=(historical_reader,expiry_conditions,reactivation_conditions,evidence_lineage)，退休不是删除定义。",
+      "depends_on": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "适用域和证据变化可记录",
+        "历史解释仍有合法用途"
+      ],
+      "unproved_bridge": "自然任务概念生命周期可能无法清晰离散，需部分/不确定版本。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X11-B3",
+      "claim_class": "V",
+      "statement": "OntologyMerge=(base,left,right,semantic_conflicts,migration_proofs)，三方合并对象包含定义关系而非文本 diff。",
+      "depends_on": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "语义冲突能在声明有限域检测",
+        "迁移顺序与依赖明确"
+      ],
+      "unproved_bridge": "全域语义合并一般不可判，有限证据之外须保留桥梁而非强行全局统一。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X12-B1",
+      "claim_class": "V",
+      "statement": "ProofCarryingIR=(typed_ops,domain,lowering_relation,error_budget)，每个 pass 输出作用关系证书。",
+      "depends_on": [
+        "H07",
+        "H25",
+        "H30",
+        "H35",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "有限语义可验证或规则有证明",
+        "误差界适用域闭合"
+      ],
+      "unproved_bridge": "神经后端的操作关系需另建证据，静态 IR 不能认证其能力。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X12-B2",
+      "claim_class": "V",
+      "statement": "BackendAtlas=(local_domains,frame_maps,operator_contracts,path_residuals)，同一语义程序在不同域绑定不同后端。",
+      "depends_on": [
+        "H07",
+        "H25",
+        "H30",
+        "H35",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "局部操作可对应",
+        "转换误差和条件数有范围"
+      ],
+      "unproved_bridge": "未知任务是否有合适图册未证明，路径相关性不自动是语义曲率。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X12-B3",
+      "claim_class": "V",
+      "statement": "ScaleAwareProgram=(query_contract,macro_ops,memory_residuals,refinement_requests)，按任务选择粗细操作及信息保留。",
+      "depends_on": [
+        "H07",
+        "H25",
+        "H30",
+        "H35",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "粗化保指定任务",
+        "细节请求可由源信息支持"
+      ],
+      "unproved_bridge": "如何自动发现高效尺度尚为 H；标准聚合与细化不声称新创。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X11-B4",
+      "claim_class": "V",
+      "statement": "PhaseConceptAtlas=(amplitude,relative_phase,periodic_readout,phase_invariant_contract)，概念驻留于稳定周期轨道及相位关系而非单个固定点。",
+      "depends_on": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "频率非零",
+        "局部动力学近似满足正规形条件",
+        "任务读出对相对相位有明确意义"
+      ],
+      "unproved_bridge": "Hopf 定理和振荡编码均有既有文献需专门核查；周期轨道能否成为跨模型概念接口仍是 V。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    },
+    {
+      "id": "X11-B5",
+      "claim_class": "V",
+      "statement": "HystereticConcept=(control,stable_branch,history,fold_conditions)，同一当前控制值可以因历史位于不同稳定解释分支。",
+      "depends_on": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "additional_assumptions": [
+        "读出区分稳定分支",
+        "变化足够慢才可近似准静态迟滞",
+        "有噪声时需另给跃迁语义"
+      ],
+      "unproved_bridge": "标准灾变/迟滞理论不主张原创，真实认知语义的状态变量和控制参量尚未识别。",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented"
+    }
+  ],
+  "dependency_semantics": "An edge is an explicit logical/research prerequisite, not evidence that the child is true. D proofs do not depend on A_MODEL_BRIDGE. H/V keep open bridges.",
+  "external_legacy_nodes": [
+    "H02",
+    "H05",
+    "H07",
+    "H10",
+    "H13",
+    "H18",
+    "H20",
+    "H22"
+  ],
+  "non_unifications": [
+    [
+      "H04",
+      "H26",
+      "a common field is not mandatory when local theories cannot glue"
+    ],
+    [
+      "H25",
+      "H35",
+      "invertible gauge transport differs from information-losing coarse graining"
+    ],
+    [
+      "H33",
+      "H04",
+      "cyclic trajectories need not descend one common energy"
+    ],
+    [
+      "H29",
+      "H47",
+      "solution relation does not follow merely from equal sampled behavior"
+    ],
+    [
+      "H38",
+      "H40",
+      "learned update operators cannot expand immutable host or base-ISA authority"
+    ]
+  ],
+  "global_control_invariants": [
+    "user goal unchanged",
+    "no research execution",
+    "no permissions/spend/publication expansion",
+    "synthetic evidence not independent reality",
+    "shared budgets across nested finite calls"
+  ]
+}

@@ -1,0 +1,16 @@
+test_agreement_not_concept_birth (test_c10.C10Tests.test_agreement_not_concept_birth) ... ok
+test_compiler_all_edges_bound (test_c10.C10Tests.test_compiler_all_edges_bound) ... ok
+test_domain_mismatch (test_c10.C10Tests.test_domain_mismatch) ... ok
+test_no_candidate_keeps_old_world (test_c10.C10Tests.test_no_candidate_keeps_old_world) ... ok
+test_old_reader_and_weights (test_c10.C10Tests.test_old_reader_and_weights) ... ok
+test_real_object_flow_preserves_disagreement (test_c10.C10Tests.test_real_object_flow_preserves_disagreement) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.031s
+
+OK
+{
+  "selected": 6,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_025",
+  "edition": "explainer_360",
+  "scene_id": "S05",
+  "characters": 20,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "也不把尚未证明的桥梁藏到一个万能接口中。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:36:29.437017+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:36:37 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:36:38.912775+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 159389,
+    "duration_seconds": 3.614263038548753,
+    "sample_peak": 10354,
+    "sample_rms": 2092.659480995081,
+    "sha256": "bac976210e6dcac89b6ec135add928dca040bdbffff17cd44705d76de016d523",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:37:04.289800+00:00"
+}

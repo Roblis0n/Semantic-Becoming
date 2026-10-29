@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H40",
+  "kind": "mechanism",
+  "title": "自举的潜指令集",
+  "mechanisms": [
+    "H40"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H40_自举的潜指令集.md",
+  "target_base": "src/latent_comm/mechanisms/h40_instruction_set",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "macro_depth": 6,
+    "expansion_budget": 256,
+    "base_isa_immutable": true,
+    "versioned_readers": true
+  }
+}

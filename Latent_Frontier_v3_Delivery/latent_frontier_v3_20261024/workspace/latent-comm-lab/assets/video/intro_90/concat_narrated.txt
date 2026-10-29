@@ -1,0 +1,8 @@
+file 'narrated_clips/S01.mp4'
+file 'narrated_clips/S02.mp4'
+file 'narrated_clips/S03.mp4'
+file 'narrated_clips/S04.mp4'
+file 'narrated_clips/S05.mp4'
+file 'narrated_clips/S06.mp4'
+file 'narrated_clips/S07.mp4'
+file 'narrated_clips/S08.mp4'

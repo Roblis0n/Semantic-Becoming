@@ -1,0 +1,201 @@
+{
+  "schema_version": 3,
+  "id": "H06",
+  "kind": "mechanism",
+  "title": "\u591a\u56fe\u518c\u8bed\u4e49\u5bf9\u9f50",
+  "mechanisms": [
+    "H06"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H06_\u591a\u56fe\u518c\u8bed\u4e49\u5bf9\u9f50.md",
+  "target_base": "src/latent_comm/mechanisms/h06_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H06",
+    "name": "semantic_atlas",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "state",
+    "data_family": "local_charts",
+    "training": {
+      "family": "R07",
+      "loss_terms": [
+        "task",
+        "effect_alignment",
+        "local_cycle",
+        "anti_collapse"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.atlas.charts",
+      "latent_comm.mechanisms.atlas.routing",
+      "latent_comm.mechanisms.atlas.transitions",
+      "latent_comm.mechanisms.atlas.objectives"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I06_\u591a\u56fe\u518c\u8bed\u4e49\u5bf9\u9f50.md",
+  "canonical_module": "latent_comm.mechanisms.h06_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h06_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h06_legacy.adapter.tensor_charts",
+    "forward_entries": [
+      "latent_comm.mechanisms.h06_legacy.adapter.tensor_charts"
+    ],
+    "loss_input_bindings": {
+      "effect": {
+        "producer": "stage.common_behavior_readout on tensor_charts locals",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "target": {
+        "producer": "SupervisionBatch.target; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "effect_valid": {
+        "producer": "stage explicit boolean effect_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "cycled": {
+        "producer": "explicit ordered overlap transition maps",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "original": {
+        "producer": "starting chart encoding",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "overlap_valid": {
+        "producer": "stage explicit boolean overlap_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "encoded": {
+        "producer": "one selected same-dimensional chart encoding",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "encoded_valid": {
+        "producer": "stage explicit boolean encoded_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "reconstructed": {
+        "producer": "tensor_charts return[1]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "state": {
+        "producer": "receiver state entering tensor_charts",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "task_loss": {
+        "producer": "stage task head on reconstruction",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "min_std": {
+        "producer": "recipe scalar hyperparameter min_std",
+        "requires_gradient": false,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "tensor_charts.read_maps",
+        "stage.route_head"
+      ],
+      "mechanism_reader": [
+        "tensor_charts.write_maps",
+        "stage.overlap_transition_maps",
+        "stage.common_behavior_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h06_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H25: only square lossless maps can invert",
+    "H26: local domains retained",
+    "H35: loss recorded on compression",
+    "H47: equivalence scoped by task family"
+  ]
+}

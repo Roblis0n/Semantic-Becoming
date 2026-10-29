@@ -1,0 +1,114 @@
+{
+  "task_id": "D03",
+  "checked_at_utc": "2026-10-27T11:11:25.558882+00:00",
+  "scope": "Audition condition user waiver only; affected PDF page checked",
+  "research_state": "NOT_RUN",
+  "status": "passed",
+  "checks_passed": {
+    "docs/research_monograph.md_nonmedia_unchanged": true,
+    "paper/main.tex_nonmedia_unchanged": true,
+    "README_nonmedia_unchanged": true,
+    "waiver_not_PASS_explicit": true,
+    "zero_actual_audition_disclosed": true,
+    "P17_history_preserved": true,
+    "media_objective_completion_preserved": true
+  },
+  "current_pdf": {
+    "path": "run_state/checks/D03/media_waiver_20261027/render/main.pdf",
+    "sha256": "bae11d47560dd50ad495d52cb6dad4c756b9b298792bd7a5361a05cbb8849e1d",
+    "pages": 55
+  },
+  "previous_pdf": {
+    "path": "run_state/checks/D03/media_waiver_20261027/baseline/main.pdf",
+    "sha256": "9c0998c51afa0acfff39d3da06244d19208e7a96d9dd2091667f736a649b083e",
+    "pages": 55
+  },
+  "changed_render_pages": [
+    10
+  ],
+  "pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "visual_review": {
+    "reviewer": "assistant, not human",
+    "actual_visual_inspection": true,
+    "scope": "Page10 1.5x PNG directly inspected; 54 remaining pages pixel-identical",
+    "findings": "Waiver text, zero actual listening, retained P17 history and objective media completion legible; no clipping, overlap or missing glyphs."
+  },
+  "outputs": [
+    {
+      "path": "README.md",
+      "sha256": "afc47e7fe80fff0d225b7e45731d0fd1827180c0e9bac19e4390ec22cd949399",
+      "bytes": 9072
+    },
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "3b55b3b562da0574e554061cc5a5113900d9845203acd7b34f25e29809a9922f",
+      "bytes": 217106
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "7395ca9b8f01d2b32bf9f62af5d8210a5d80a8f69a46228f9ff43df408958956",
+      "bytes": 275044
+    }
+  ],
+  "source_evidence": "run_state/checks/D03/media_waiver_20261027/source_delta.json",
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "actual_heard_seconds": 0,
+  "limitations": [
+    "Auditory review was not performed or passed; user removed this acceptance requirement."
+  ]
+}

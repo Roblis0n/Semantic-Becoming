@@ -1,0 +1,47 @@
+{
+  "schema_version": 3,
+  "id": "H36",
+  "kind": "mechanism",
+  "title": "以分歧生产结构的认知博弈",
+  "mechanisms": [
+    "H36"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "hypotheses/H36_以分歧生产结构的认知博弈.md",
+  "target_base": "src/latent_comm/mechanisms/h36_disagreement",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "rounds": 6,
+    "counterexample_budget": 64,
+    "oracle": "program_only",
+    "consensus_required": false
+  },
+  "integration_status": "NOT_RUN",
+  "reference_module": "latent_comm.mechanisms.h36_disagreement.reference",
+  "adapter_module": "latent_comm.mechanisms.h36_disagreement.adapter",
+  "required_version_axes": [
+    "ontology",
+    "task",
+    "evidence"
+  ],
+  "loss_ledger_module": "latent_comm.mechanisms.h36_disagreement.losses",
+  "fixture_bounds": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  },
+  "source_recipe": "PLAN_ROOT/recipes/H36.json"
+}

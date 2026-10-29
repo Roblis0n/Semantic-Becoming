@@ -1,0 +1,21 @@
+test_ast_and_partition_isolation (test_learning_meta_rules.ContractChecks.test_ast_and_partition_isolation) ... ok
+test_bounded_rule_updates (test_learning_meta_rules.ContractChecks.test_bounded_rule_updates) ... FAIL
+test_engine_delegation_and_resume_command (test_learning_meta_rules.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_first_order_stop_is_explicit (test_learning_meta_rules.ContractChecks.test_first_order_stop_is_explicit) ... ok
+test_metadata (test_learning_meta_rules.ContractChecks.test_metadata) ... ok
+test_recipe_is_unbound (test_learning_meta_rules.ContractChecks.test_recipe_is_unbound) ... ok
+test_stage_syntax_and_gates (test_learning_meta_rules.ContractChecks.test_stage_syntax_and_gates) ... ok
+
+======================================================================
+FAIL: test_bounded_rule_updates (test_learning_meta_rules.ContractChecks.test_bounded_rule_updates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/research_locked/test_learning_meta_rules.py", line 48, in test_bounded_rule_updates
+    self.assertAlmostEqual(theta[0],.799875);self.assertAlmostEqual(theta[1],1.7)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0.797375 != 0.799875 within 7 places (0.0025000000000000577 difference)
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.005s
+
+FAILED (failures=1)

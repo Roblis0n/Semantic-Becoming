@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "message_kind": "operator",
+  "coordinate_version": "work-v1",
+  "scope": {
+    "task_id": "math-example",
+    "allowed_operations": [
+      "apply"
+    ],
+    "expires_at": null
+  },
+  "payload_layout": [
+    {
+      "name": "U",
+      "shape": [
+        2,
+        1
+      ],
+      "dtype": "float32",
+      "nbytes": 8
+    }
+  ],
+  "provenance": [
+    "fixed_mathematical_illustration"
+  ],
+  "approximation": "exact_by_construction"
+}

@@ -1,0 +1,66 @@
+{
+  "task_id": "D04",
+  "status": "done",
+  "input_digest": "77c79bba45e01a6dbeef3aadb2a653e8abef23f986f5a4f3630c306cc375f2f2",
+  "outputs": [
+    {
+      "path": "prompts/model_templates/README.md",
+      "sha256": "924abb36a7278af215413eff890ea7adf60643f5f47ddaabc5a7f2e0e61c55ce",
+      "bytes": 1750
+    },
+    {
+      "path": "prompts/model_templates/compiler.py",
+      "sha256": "7418dc649b3e09de3535d61eae5fb95a04d40b325a701b4f1666ac357ef7835a",
+      "bytes": 3716
+    },
+    {
+      "path": "prompts/model_templates/critic.jinja",
+      "sha256": "7e5d4da974b158b442b62ff860bf66e75d08ca80b23cf7fcc70d228b73c00e41",
+      "bytes": 743
+    },
+    {
+      "path": "prompts/model_templates/receiver.jinja",
+      "sha256": "ba877a9731c235f2cdcea8359d14f662084a909cef4e9c94719b34b48619a520",
+      "bytes": 684
+    },
+    {
+      "path": "prompts/model_templates/sender.jinja",
+      "sha256": "d15dde4af1d4f11262e166f50342c2cb983b5ceb4f8049b17d2a786254ce0bb9",
+      "bytes": 748
+    },
+    {
+      "path": "prompts/model_templates/test_contracts.py",
+      "sha256": "7d0e9754e1c2ce757f510be93202c1f2ee1c99efa470cdabf04f29228531af56",
+      "bytes": 3747
+    },
+    {
+      "path": "prompts/model_templates/world_proposer.jinja",
+      "sha256": "8d22b4e1686e79d27f2c934c617f7b54bf43855377dc8533f7167540fd55245d",
+      "bytes": 837
+    },
+    {
+      "path": "specs/role_view_contracts.json",
+      "sha256": "f8d341416fb505b648960f001961cc2e2481b501bf9de20227e49775e2bc5353",
+      "bytes": 5708
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/D04_templates.txt",
+      "sha256": "a110f00520a644d23fce6fa4fc59d572cff6347ff675a1ae2ecc7418e21f9ddb"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/D04_test_contracts.txt",
+      "sha256": "b3d8db8d1836f1d19fc3b63cbae04b4ab927f51eb5635281eec640844ac54e3c"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four typed role templates and 16 actual stdlib contracts; recursive metadata-field rejection and finite exponent parsing repair independently reported boundary gaps. No models called; auxiliary roles cannot widen source visibility. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:34.344466+00:00"
+}

@@ -1,0 +1,91 @@
+{
+  "stage": "L08",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "quadratic_full",
+  "run_id": "future-l08",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "frame": "f1",
+    "isa": "i1",
+    "evidence": "e1"
+  },
+  "dimensions": {
+    "inner_steps": 3,
+    "max_update_norm": 1.0
+  },
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "quadratic_full": [
+      {
+        "name": "quadratic_full_calibration",
+        "parameter_owners": [
+          "plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "outer_query_full": 1.0,
+          "update_budget": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "quadratic_first_order": [
+      {
+        "name": "quadratic_first_order_calibration",
+        "parameter_owners": [
+          "plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "outer_query_first_order": 1.0,
+          "update_budget": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "episodic_full": [
+      {
+        "name": "episodic_full_calibration",
+        "parameter_owners": [
+          "plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "outer_query_full": 1.0,
+          "update_budget": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "episodic_first_order": [
+      {
+        "name": "episodic_first_order_calibration",
+        "parameter_owners": [
+          "plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "outer_query_first_order": 1.0,
+          "update_budget": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  }
+}

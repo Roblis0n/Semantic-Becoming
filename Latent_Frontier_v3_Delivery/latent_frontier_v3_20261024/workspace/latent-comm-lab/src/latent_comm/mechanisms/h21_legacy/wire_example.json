@@ -1,0 +1,24 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "anchor_state": {},
+  "intervention": {},
+  "response_packet_ref": "bound",
+  "continuation_ref": "bound",
+  "lineage": [],
+  "branch_kind": "answer",
+  "question_id": "bound",
+  "world_id": "bound",
+  "selection_basis": "bound",
+  "synthetic": false,
+  "evidence": []
+}

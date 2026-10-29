@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H43",
+  "kind": "mechanism",
+  "title": "可交换的世界动力学核",
+  "mechanisms": [
+    "H43"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H43_可交换的世界动力学核.md",
+  "target_base": "src/latent_comm/mechanisms/h43_world_kernels",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "states": 16,
+    "actions": 4,
+    "horizon": 8,
+    "noise_factorization": "explicit"
+  }
+}

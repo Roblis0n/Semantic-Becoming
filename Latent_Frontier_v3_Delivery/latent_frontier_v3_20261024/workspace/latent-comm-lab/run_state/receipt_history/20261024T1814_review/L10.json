@@ -1,0 +1,71 @@
+{
+  "task_id": "L10",
+  "status": "done",
+  "input_digest": "322d2458d2af9db8af00ebec63024f7169dc77e238d7bc72b8ac0ca9f5c94076",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/worlds/README.md",
+      "sha256": "4959ded90a668cb07696da91f52f304062a0604a3720f229a5a4abe9ae3a44d8",
+      "bytes": 4556
+    },
+    {
+      "path": "src/latent_comm/learning/worlds/__init__.py",
+      "sha256": "40834d8109172dbcac7118b2d8680f1ca4941e95bf41ae7176838d59e648b3c1",
+      "bytes": 17088
+    },
+    {
+      "path": "src/latent_comm/learning/worlds/train.py",
+      "sha256": "4d313d8f35cac37b47d99cd3c157e59c1102998f387f95654d2c1e0f647ee5c9",
+      "bytes": 2356
+    },
+    {
+      "path": "configs/learning/worlds.json",
+      "sha256": "025f8248e2eb2b3d2cf68ef6a55c895b72b9175e708ddc1cf48b8f66a080123d",
+      "bytes": 2185
+    },
+    {
+      "path": "tests/research_locked/test_learning_worlds.py",
+      "sha256": "2ae5079ab6465c13db7c5597334bf6ea8b432d7264e125fe143b034c986b5325",
+      "bytes": 4110
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L10_worlds.txt",
+      "sha256": "9f4a3240d3091f671685b696c48e9a4a2d3b1ed5e234bcc11bd14075cf151683"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_worlds.txt",
+      "sha256": "dec44b9183b9fd392e7b90a67511d4a3fd5e6f28253c3c20403d405274479e19"
+    },
+    {
+      "path": "run_state/checks/final_mechanism_revalidation/test_learning_worlds.txt",
+      "sha256": "691eee2642c3ff3ec8932fc6a5089080e55b3684dc6cf83cbfba3fb9fe4e3049"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "sha256": "fb6550b458c8b60d08ee842a12149e18c385460c99b9315913383357b22d917c"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated H43 joint-noise world kernel distribution learning, H42 niche-conditioned policy gradient, H44 explicitly synthetic independently validated curriculum/proposer stages. Exact schemas, owners and alternating phases; eight stdlib/AST tests only. No models, guard invocation, dataset generation or research execution. Shared optimizer/resume source pinned; NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:16:12.603062+00:00"
+}

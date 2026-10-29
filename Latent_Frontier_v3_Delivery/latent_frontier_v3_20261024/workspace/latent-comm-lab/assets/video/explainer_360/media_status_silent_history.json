@@ -1,0 +1,36 @@
+{
+  "task_id": "V05",
+  "status": "complete_with_external_blockers",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "export_edition": "silent_visual_draft",
+  "narrated_final_created": false,
+  "opened_checked": true,
+  "opened_method": "FFmpeg full decode plus sampled frame visual inspection",
+  "timing_verified": true,
+  "timing_scope": "silent container duration only, not narration alignment",
+  "container_timing_verified": true,
+  "audio_timing_verified": false,
+  "audio_listened": false,
+  "blockers": [
+    "Requested narration WAV/audio and final audio-aligned subtitles remain missing. No supported authorized zero-new-cost TTS route was identified; no paid or uncertain TTS was called."
+  ],
+  "evidence": {
+    "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "duration_seconds": 360.0,
+    "video_codec": "h264",
+    "fps": "24/1",
+    "size": [
+      1280,
+      720
+    ],
+    "audio_streams": 0,
+    "full_decode_passed": true,
+    "opening_frame": "assets/video/explainer_360/explainer_360_silent_draft_opening.png",
+    "opening_frame_sha256": "a475f22d884cf575f5805fe6308c9ca90fc5992bea61280c8d4a1cc4c3c18ab2",
+    "research_state": "NOT_RUN"
+  },
+  "research_state": "NOT_RUN"
+}

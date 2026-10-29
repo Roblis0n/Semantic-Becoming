@@ -1,0 +1,117 @@
+{
+  "checks": [
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "duration_seconds": 20.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A01/A01_opening.png",
+      "opening_frame_sha256": "a1d57848d491b456b603cd5ab45351916a4c5279024554866dac15768d94b4fd",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A02/A02_opening.png",
+      "opening_frame_sha256": "936ad3466798de4d5ca0bc9421ab05e31eceb3f23c25fd69c2b0dd634e29a23a",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A03/A03_opening.png",
+      "opening_frame_sha256": "862402876ff7fea3e27b581f112fee70ca02db8b1af5c868f0cc6d05e53d64bf",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A04/A04_opening.png",
+      "opening_frame_sha256": "dcffac6abc8113d4a385d8dde9aeca4056705ec2b2885886cdbbeb8ade91f3f7",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A05/A05_opening.png",
+      "opening_frame_sha256": "272defc96def0b4f024ba27e78fcb5105bc30bc5131065b63d7be2d809f89fe1",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "duration_seconds": 90.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/video/intro_90/intro_90_silent_draft_opening.png",
+      "opening_frame_sha256": "7fc1cef1812cf67e934b40d5864df3bfe617e8302e59dcc2c3fe681d495f639b",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "duration_seconds": 360.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/video/explainer_360/explainer_360_silent_draft_opening.png",
+      "opening_frame_sha256": "a475f22d884cf575f5805fe6308c9ca90fc5992bea61280c8d4a1cc4c3c18ab2",
+      "research_state": "NOT_RUN"
+    }
+  ],
+  "claim_boundary": "Decode, dimensions and duration demonstrate playable graphics, not research validity."
+}

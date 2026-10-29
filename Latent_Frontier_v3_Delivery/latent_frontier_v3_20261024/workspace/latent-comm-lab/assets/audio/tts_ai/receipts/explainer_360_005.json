@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_005",
+  "edition": "explainer_360",
+  "scene_id": "S01",
+  "characters": 9,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "没有进行模型实测。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:22:00.023307+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:22:09 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:22:25.280861+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 88733,
+    "duration_seconds": 2.0120861678004536,
+    "sample_peak": 3223,
+    "sample_rms": 666.6085397463451,
+    "sha256": "948ad60beb2b560e143383fd8f7f699bd336e31f912fc07c14a403a8602621ff",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:22:34.326538+00:00"
+}

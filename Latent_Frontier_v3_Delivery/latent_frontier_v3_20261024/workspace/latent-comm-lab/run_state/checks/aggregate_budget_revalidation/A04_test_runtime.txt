@@ -1,0 +1,62 @@
+test_branch_budget_and_discard (test_runtime.Branches.test_branch_budget_and_discard) ... ok
+test_competing_branches_conflict (test_runtime.Branches.test_competing_branches_conflict) ... ok
+test_nested_conflict_does_not_average (test_runtime.Branches.test_nested_conflict_does_not_average) ... ok
+test_nested_merge_and_ancestry (test_runtime.Branches.test_nested_merge_and_ancestry) ... ok
+test_private_branch_commit (test_runtime.Branches.test_private_branch_commit) ... ok
+test_complete_line_corruption_rejected (test_runtime.FilesAndRecovery.test_complete_line_corruption_rejected) ... ok
+test_crash_after_commit_replays_all (test_runtime.FilesAndRecovery.test_crash_after_commit_replays_all) ... ok
+test_crash_before_commit_aborts (test_runtime.FilesAndRecovery.test_crash_before_commit_aborts) ... ok
+test_journal_limit_is_finite (test_runtime.FilesAndRecovery.test_journal_limit_is_finite) ... ok
+test_manifest_corruption_rejected (test_runtime.FilesAndRecovery.test_manifest_corruption_rejected) ... ok
+test_multifile_generation_visibility (test_runtime.FilesAndRecovery.test_multifile_generation_visibility) ... ok
+test_path_escape_and_symlink_rejected (test_runtime.FilesAndRecovery.test_path_escape_and_symlink_rejected) ... ok
+test_single_coordinator (test_runtime.FilesAndRecovery.test_single_coordinator) ... ok
+test_stale_file_version (test_runtime.FilesAndRecovery.test_stale_file_version) ... ok
+test_store_recovery_committed_state (test_runtime.FilesAndRecovery.test_store_recovery_committed_state) ... ok
+test_torn_tail_only_is_repairable (test_runtime.FilesAndRecovery.test_torn_tail_only_is_repairable) ... ok
+test_carry_loop_executes_exact_three_steps (test_runtime.IRLoops.test_carry_loop_executes_exact_three_steps) ... ok
+test_fixture_budget_never_lifted_by_ir (test_runtime.IRLoops.test_fixture_budget_never_lifted_by_ir) ... ok
+test_fixture_dimension_cannot_exceed_budget (test_runtime.IRLoops.test_fixture_dimension_cannot_exceed_budget) ... ok
+test_no_model_imports (test_runtime.IRLoops.test_no_model_imports) ... ok
+test_research_dispatch_never_runs (test_runtime.IRLoops.test_research_dispatch_never_runs) ... ok
+test_blocker_requires_specific_reason (test_runtime.Invalidation.test_blocker_requires_specific_reason) ... ok
+test_cannot_claim_missing_checks (test_runtime.Invalidation.test_cannot_claim_missing_checks) ... ok
+test_dependency_ready_and_done_evidence (test_runtime.Invalidation.test_dependency_ready_and_done_evidence) ... ok
+test_hash_change_invalidates_on_resume (test_runtime.Invalidation.test_hash_change_invalidates_on_resume) ... ok
+test_input_change_invalidates_descendants (test_runtime.Invalidation.test_input_change_invalidates_descendants) ... ok
+test_interrupted_running_becomes_pending (test_runtime.Invalidation.test_interrupted_running_becomes_pending) ... ok
+test_budget_exhaustion_keeps_queue (test_runtime.Scheduling.test_budget_exhaustion_keeps_queue) ... ok
+test_duplicate_event_not_replayed (test_runtime.Scheduling.test_duplicate_event_not_replayed) ... ok
+test_emission_validation_before_commit (test_runtime.Scheduling.test_emission_validation_before_commit) ... ok
+test_event_execution_and_clock (test_runtime.Scheduling.test_event_execution_and_clock) ... ok
+test_expired_scope_records_terminal_failure (test_runtime.Scheduling.test_expired_scope_records_terminal_failure) ... ok
+test_finite_queue (test_runtime.Scheduling.test_finite_queue) ... ok
+test_missing_handler_fails (test_runtime.Scheduling.test_missing_handler_fails) ... ok
+test_resume_rejects_changed_inputs_or_state (test_runtime.Scheduling.test_resume_rejects_changed_inputs_or_state) ... ok
+test_resume_safe_boundary (test_runtime.Scheduling.test_resume_safe_boundary) ... ok
+test_retry_bound (test_runtime.Scheduling.test_retry_bound) ... ok
+test_stale_event_fails (test_runtime.Scheduling.test_stale_event_fails) ... ok
+test_abort_discards_draft (test_runtime.Transactions.test_abort_discards_draft) ... ok
+test_absence_reads_conflict (test_runtime.Transactions.test_absence_reads_conflict) ... ok
+test_blind_writes_track_versions (test_runtime.Transactions.test_blind_writes_track_versions) ... ok
+test_delete_recreate_aba_rejected (test_runtime.Transactions.test_delete_recreate_aba_rejected) ... ok
+test_duplicate_commit_identity (test_runtime.Transactions.test_duplicate_commit_identity) ... ok
+test_read_conflict_even_disjoint_writes (test_runtime.Transactions.test_read_conflict_even_disjoint_writes) ... ok
+test_reject_external_effects (test_runtime.Transactions.test_reject_external_effects) ... ok
+test_returned_values_cannot_mutate_store (test_runtime.Transactions.test_returned_values_cannot_mutate_store) ... ok
+test_schema_migration_explicit (test_runtime.Transactions.test_schema_migration_explicit) ... ok
+test_scope_and_expiry (test_runtime.Transactions.test_scope_and_expiry) ... ok
+test_sensitive_payload_rejected (test_runtime.Transactions.test_sensitive_payload_rejected) ... ok
+test_snapshot_isolation_and_atomic_commit (test_runtime.Transactions.test_snapshot_isolation_and_atomic_commit) ... ok
+
+----------------------------------------------------------------------
+Ran 50 tests in 0.110s
+
+OK
+{
+  "selected": 50,
+  "excluded_model_entry_or_gate_tests": [
+    "test_runtime.Scheduling.test_policy_gate_before_callback"
+  ],
+  "neural_modules_loaded": []
+}

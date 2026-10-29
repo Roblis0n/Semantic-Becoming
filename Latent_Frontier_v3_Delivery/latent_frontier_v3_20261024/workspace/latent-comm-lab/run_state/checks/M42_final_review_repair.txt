@@ -1,0 +1,18 @@
+test_dedup_and_budget (test_h42.H42Contracts.test_dedup_and_budget) ... ok
+test_executable_program_and_type (test_h42.H42Contracts.test_executable_program_and_type) ... ok
+test_generated_identity_collision_preserves_acyclic_lineage (test_h42.H42Contracts.test_generated_identity_collision_preserves_acyclic_lineage) ... ok
+test_joint_mutation_lineage_and_archive (test_h42.H42Contracts.test_joint_mutation_lineage_and_archive) ... ok
+test_transfer_graph_consumes_shared_budget (test_h42.H42Contracts.test_transfer_graph_consumes_shared_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h42.H42Contracts.test_gate",
+    "test_h42.H42Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

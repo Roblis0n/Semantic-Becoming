@@ -1,0 +1,15 @@
+M05: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_exact_model_snapshot_contract_without_tensor_execution (test_h05.ContinuationTests.test_exact_model_snapshot_contract_without_tensor_execution) ... ok
+test_pause_resume_no_replay (test_h05.ContinuationTests.test_pause_resume_no_replay) ... ok
+test_public_boundary_transaction_and_evidence_lifecycle (test_h05.ContinuationTests.test_public_boundary_transaction_and_evidence_lifecycle) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h05.ContinuationTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h05.ContinuationTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h05.ContinuationTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_version_and_close (test_h05.ContinuationTests.test_version_and_close) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h05.ContinuationTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.015s
+
+OK
+M05: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

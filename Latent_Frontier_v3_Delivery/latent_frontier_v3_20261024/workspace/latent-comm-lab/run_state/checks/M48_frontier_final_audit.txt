@@ -1,0 +1,222 @@
+test_action_preservation_and_counterexample (test_h25.H25Contracts.test_action_preservation_and_counterexample) ... ok
+test_budget_and_migration (test_h25.H25Contracts.test_budget_and_migration) ... ok
+test_cross_map_can_be_rectangular (test_h25.H25Contracts.test_cross_map_can_be_rectangular) ... ok
+test_dimension_rejection (test_h25.H25Contracts.test_dimension_rejection) ... ok
+test_gate_precedes_any_tensor_access (test_h25.H25Contracts.test_gate_precedes_any_tensor_access) ... ok
+test_neural_source_is_lazy_and_gated (test_h25.H25Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_serialization_and_unsupported_migration (test_h25.H25Contracts.test_serialization_and_unsupported_migration) ... ok
+test_singular_and_near_singular (test_h25.H25Contracts.test_singular_and_near_singular) ... ok
+test_three_stage_path (test_h25.H25Contracts.test_three_stage_path) ... ok
+test_budget (test_h26.H26Contracts.test_budget) ... ok
+test_consistent_chain_and_missing_overlap (test_h26.H26Contracts.test_consistent_chain_and_missing_overlap) ... ok
+test_cycle_retains_conflict_and_hard_anchor (test_h26.H26Contracts.test_cycle_retains_conflict_and_hard_anchor) ... ok
+test_gate (test_h26.H26Contracts.test_gate) ... ok
+test_migration_preserves_constraints (test_h26.H26Contracts.test_migration_preserves_constraints) ... ok
+test_mixed_batch_cannot_hide_homogeneous_row (test_h26.H26Contracts.test_mixed_batch_cannot_hide_homogeneous_row) ... ok
+test_neural_source_is_lazy_and_gated (test_h26.H26Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_semantic_schema_rejects_bad_anchor (test_h26.H26Contracts.test_semantic_schema_rejects_bad_anchor) ... ok
+test_zero_consensus_rejected (test_h26.H26Contracts.test_zero_consensus_rejected) ... ok
+test_extensional_duplicate_provenance (test_h27.H27Contracts.test_extensional_duplicate_provenance) ... ok
+test_gate (test_h27.H27Contracts.test_gate) ... ok
+test_nested_atom_domain_is_enforced (test_h27.H27Contracts.test_nested_atom_domain_is_enforced) ... ok
+test_neural_source_is_lazy_and_gated (test_h27.H27Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_new_executable_concept_and_old_reader (test_h27.H27Contracts.test_new_executable_concept_and_old_reader) ... ok
+test_retirement_requires_consumer_migration (test_h27.H27Contracts.test_retirement_requires_consumer_migration) ... ok
+test_schema_and_migration (test_h27.H27Contracts.test_schema_and_migration) ... ok
+test_unexpressible_counterexample (test_h27.H27Contracts.test_unexpressible_counterexample) ... ok
+test_unknown_not_false_and_forbidden_label (test_h27.H27Contracts.test_unknown_not_false_and_forbidden_label) ... ok
+test_analytic_stability (test_h28.H28Contracts.test_analytic_stability) ... ok
+test_branch_bounds_and_schema (test_h28.H28Contracts.test_branch_bounds_and_schema) ... ok
+test_gate (test_h28.H28Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h28.H28Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_numerical_artifact_detected (test_h28.H28Contracts.test_numerical_artifact_detected) ... ok
+test_structure_event_and_cache_invalidation (test_h28.H28Contracts.test_structure_event_and_cache_invalidation) ... ok
+test_auxiliary_elimination_preserves_solutions (test_h29.H29Contracts.test_auxiliary_elimination_preserves_solutions) ... ok
+test_both_roots_and_partial_detection (test_h29.H29Contracts.test_both_roots_and_partial_detection) ... ok
+test_bounded_question_graph_retains_failures_and_transports (test_h29.H29Contracts.test_bounded_question_graph_retains_failures_and_transports) ... ok
+test_composition_and_migration (test_h29.H29Contracts.test_composition_and_migration) ... ok
+test_empty_and_no_fake_inverse (test_h29.H29Contracts.test_empty_and_no_fake_inverse) ... ok
+test_gate (test_h29.H29Contracts.test_gate) ... ok
+test_necessary_not_sufficient (test_h29.H29Contracts.test_necessary_not_sufficient) ... ok
+test_neural_source_is_lazy_and_gated (test_h29.H29Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_commuting_and_program (test_h30.H30Contracts.test_commuting_and_program) ... ok
+test_gate (test_h30.H30Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h30.H30Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_symmetry_returns_multiple (test_h30.H30Contracts.test_symmetry_returns_multiple) ... ok
+test_typed_schema_and_migration (test_h30.H30Contracts.test_typed_schema_and_migration) ... ok
+test_unmapped_step_rejected (test_h30.H30Contracts.test_unmapped_step_rejected) ... ok
+test_gate (test_h31.H31Contracts.test_gate) ... ok
+test_graft_intervention_descendants_rollback (test_h31.H31Contracts.test_graft_intervention_descendants_rollback) ... ok
+test_neural_source_is_lazy_and_gated (test_h31.H31Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_recompute_only_affected (test_h31.H31Contracts.test_recompute_only_affected) ... ok
+test_shared_noise_identity (test_h31.H31Contracts.test_shared_noise_identity) ... ok
+test_units_and_cycles_rejected (test_h31.H31Contracts.test_units_and_cycles_rejected) ... ok
+test_goal_digest_and_gate (test_h32.H32Contracts.test_goal_digest_and_gate) ... ok
+test_lost_preference (test_h32.H32Contracts.test_lost_preference) ... ok
+test_neural_source_is_lazy_and_gated (test_h32.H32Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_original_goal_and_constraints (test_h32.H32Contracts.test_original_goal_and_constraints) ... ok
+test_pareto_no_forced_ranking (test_h32.H32Contracts.test_pareto_no_forced_ranking) ... ok
+test_unit_duality_and_counterexample (test_h32.H32Contracts.test_unit_duality_and_counterexample) ... ok
+test_dissipative_condition (test_h33.H33Contracts.test_dissipative_condition) ... ok
+test_gate (test_h33.H33Contracts.test_gate) ... ok
+test_midpoint_norm_and_euler_artifact (test_h33.H33Contracts.test_midpoint_norm_and_euler_artifact) ... ok
+test_migration_and_invalid_skew (test_h33.H33Contracts.test_migration_and_invalid_skew) ... ok
+test_neural_source_is_lazy_and_gated (test_h33.H33Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_stale_coupling (test_h33.H33Contracts.test_stale_coupling) ... ok
+test_future_label_leak (test_h34.H34Contracts.test_future_label_leak) ... ok
+test_infeasible_and_multiple (test_h34.H34Contracts.test_infeasible_and_multiple) ... ok
+test_limit_retains_pending (test_h34.H34Contracts.test_limit_retains_pending) ... ok
+test_migration_and_gate (test_h34.H34Contracts.test_migration_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h34.H34Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_public_goal_prunes_waits (test_h34.H34Contracts.test_public_goal_prunes_waits) ... ok
+test_migration_and_gate (test_h35.H35Contracts.test_migration_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h35.H35Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_no_detail_invention (test_h35.H35Contracts.test_no_detail_invention) ... ok
+test_nonclosure_witness_and_memory_repair (test_h35.H35Contracts.test_nonclosure_witness_and_memory_repair) ... ok
+test_sum_closes_and_steps_by_two (test_h35.H35Contracts.test_sum_closes_and_steps_by_two) ... ok
+test_agreement_not_truth (test_h36.H36Contracts.test_agreement_not_truth) ... ok
+test_gate (test_h36.H36Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h36.H36Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_real_counterexample_and_revision (test_h36.H36Contracts.test_real_counterexample_and_revision) ... ok
+test_text_not_evidence_and_scope (test_h36.H36Contracts.test_text_not_evidence_and_scope) ... ok
+test_unresolved_and_scope_migration (test_h36.H36Contracts.test_unresolved_and_scope_migration) ... ok
+test_anchor_scope_and_expiration (test_h37.H37Contracts.test_anchor_scope_and_expiration) ... ok
+test_bounded_solver_and_migration (test_h37.H37Contracts.test_bounded_solver_and_migration) ... ok
+test_gate (test_h37.H37Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h37.H37Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_rank_and_unreachable (test_h37.H37Contracts.test_rank_and_unreachable) ... ok
+test_scalar_and_ridge (test_h37.H37Contracts.test_scalar_and_ridge) ... ok
+test_clipped_update_is_1_9 (test_h38.H38Contracts.test_clipped_update_is_1_9) ... ok
+test_first_order_distinct_and_lifetime (test_h38.H38Contracts.test_first_order_distinct_and_lifetime) ... ok
+test_full_first_order_source_and_gate (test_h38.H38Contracts.test_full_first_order_source_and_gate) ... ok
+test_migration_and_unsafe_ast (test_h38.H38Contracts.test_migration_and_unsafe_ast) ... ok
+test_neural_source_is_lazy_and_gated (test_h38.H38Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_outer_optimizer_owner_is_exact (test_h38.H38Contracts.test_outer_optimizer_owner_is_exact) ... ok
+test_outer_owner_alias_and_learned_scalar (test_h38.H38Contracts.test_outer_owner_alias_and_learned_scalar) ... ok
+test_running_mean_and_preconditioner (test_h38.H38Contracts.test_running_mean_and_preconditioner) ... ok
+test_scope_and_query_leak_rejected (test_h38.H38Contracts.test_scope_and_query_leak_rejected) ... ok
+test_commit_conflict_and_compensation (test_h39.H39Contracts.test_commit_conflict_and_compensation) ... ok
+test_crash_after_publish_rolls_forward (test_h39.H39Contracts.test_crash_after_publish_rolls_forward) ... ok
+test_crash_before_publish_aborts (test_h39.H39Contracts.test_crash_before_publish_aborts) ... ok
+test_external_and_gate (test_h39.H39Contracts.test_external_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h39.H39Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_read_dependency_even_disjoint_write (test_h39.H39Contracts.test_read_dependency_even_disjoint_write) ... ok
+test_capture_avoidance (test_h40.H40Contracts.test_capture_avoidance) ... ok
+test_gate (test_h40.H40Contracts.test_gate) ... ok
+test_immutable_base_and_fixture_limit (test_h40.H40Contracts.test_immutable_base_and_fixture_limit) ... ok
+test_lowering_and_old_reader (test_h40.H40Contracts.test_lowering_and_old_reader) ... ok
+test_neural_source_is_lazy_and_gated (test_h40.H40Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_real_description_gain (test_h40.H40Contracts.test_real_description_gain) ... ok
+test_recursion_rejected (test_h40.H40Contracts.test_recursion_rejected) ... ok
+test_capability_dependency_and_gate (test_h41.H41Contracts.test_capability_dependency_and_gate) ... ok
+test_complementarity_and_efficiency (test_h41.H41Contracts.test_complementarity_and_efficiency) ... ok
+test_dummy_and_nonzero_empty_value (test_h41.H41Contracts.test_dummy_and_nonzero_empty_value) ... ok
+test_neural_source_is_lazy_and_gated (test_h41.H41Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_sampling_budget_and_unique_source (test_h41.H41Contracts.test_sampling_budget_and_unique_source) ... ok
+test_unknown_is_not_zero (test_h41.H41Contracts.test_unknown_is_not_zero) ... ok
+test_dedup_and_budget (test_h42.H42Contracts.test_dedup_and_budget) ... ok
+test_executable_program_and_type (test_h42.H42Contracts.test_executable_program_and_type) ... ok
+test_gate (test_h42.H42Contracts.test_gate) ... ok
+test_joint_mutation_lineage_and_archive (test_h42.H42Contracts.test_joint_mutation_lineage_and_archive) ... ok
+test_neural_source_is_lazy_and_gated (test_h42.H42Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_transfer_graph_consumes_shared_budget (test_h42.H42Contracts.test_transfer_graph_consumes_shared_budget) ... ok
+test_action_and_port_conflicts (test_h43.H43Contracts.test_action_and_port_conflicts) ... ok
+test_migration_and_gate (test_h43.H43Contracts.test_migration_and_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h43.H43Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_normalization_and_prediction_lineage (test_h43.H43Contracts.test_normalization_and_prediction_lineage) ... ok
+test_shared_noise_not_independent (test_h43.H43Contracts.test_shared_noise_not_independent) ... ok
+test_counterfactual_world_is_executable_and_new (test_h44.H44Contracts.test_counterfactual_world_is_executable_and_new) ... ok
+test_incompatible_edits_and_holdout (test_h44.H44Contracts.test_incompatible_edits_and_holdout) ... ok
+test_neural_source_is_lazy_and_gated (test_h44.H44Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_role_projection_and_gate (test_h44.H44Contracts.test_role_projection_and_gate) ... ok
+test_synthetic_not_real_and_cycle (test_h44.H44Contracts.test_synthetic_not_real_and_cycle) ... ok
+test_gate (test_h45.H45Contracts.test_gate) ... ok
+test_identify_and_no_prior (test_h45.H45Contracts.test_identify_and_no_prior) ... ok
+test_migration_and_unknown (test_h45.H45Contracts.test_migration_and_unknown) ... ok
+test_neural_source_is_lazy_and_gated (test_h45.H45Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_no_allowed_information (test_h45.H45Contracts.test_no_allowed_information) ... ok
+test_noise_and_model_mismatch (test_h45.H45Contracts.test_noise_and_model_mismatch) ... ok
+test_gate (test_h46.H46Contracts.test_gate) ... ok
+test_hard_intersection_and_empty (test_h46.H46Contracts.test_hard_intersection_and_empty) ... ok
+test_neural_source_is_lazy_and_gated (test_h46.H46Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_overgeneralization_migration_budget (test_h46.H46Contracts.test_overgeneralization_migration_budget) ... ok
+test_retraction_dependency_and_scope (test_h46.H46Contracts.test_retraction_dependency_and_scope) ... ok
+test_timeout_and_soft_never_hard (test_h46.H46Contracts.test_timeout_and_soft_never_hard) ... ok
+test_empty_family_schema_migration_budget (test_h47.H47Contracts.test_empty_family_schema_migration_budget) ... ok
+test_epsilon_chain_is_not_equivalence (test_h47.H47Contracts.test_epsilon_chain_is_not_equivalence) ... ok
+test_equivalence_and_refinement (test_h47.H47Contracts.test_equivalence_and_refinement) ... ok
+test_gate (test_h47.H47Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h47.H47Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_source_required_and_preserved (test_h47.H47Contracts.test_source_required_and_preserved) ... ok
+test_duplicate_is_point8_not_point96 (test_h48.H48Contracts.test_duplicate_is_point8_not_point96) ... ok
+test_independent_vs_correlated_joint_and_unknown (test_h48.H48Contracts.test_independent_vs_correlated_joint_and_unknown) ... ok
+test_migration_truth_table_and_synthetic_lineage (test_h48.H48Contracts.test_migration_truth_table_and_synthetic_lineage) ... ok
+test_neural_source_is_lazy_and_gated (test_h48.H48Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_retraction_cycle_and_missing (test_h48.H48Contracts.test_retraction_cycle_and_missing) ... ok
+test_schema_rejects_uncovered_dependence (test_h48.H48Contracts.test_schema_rejects_uncovered_dependence) ... ok
+test_schema_roundtrip_and_gate (test_h48.H48Contracts.test_schema_roundtrip_and_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 157 tests in 0.048s
+
+OK
+
+{
+  "task_counts": {
+    "M25": 9,
+    "M26": 9,
+    "M27": 9,
+    "M28": 6,
+    "M29": 8,
+    "M30": 6,
+    "M31": 6,
+    "M32": 6,
+    "M33": 6,
+    "M34": 6,
+    "M35": 5,
+    "M36": 6,
+    "M37": 6,
+    "M38": 9,
+    "M39": 6,
+    "M40": 7,
+    "M41": 6,
+    "M42": 6,
+    "M43": 5,
+    "M44": 5,
+    "M45": 6,
+    "M46": 6,
+    "M47": 6,
+    "M48": 7
+  },
+  "total_tests": 157,
+  "ast_modules": 144,
+  "verified_receipts": [
+    "M25",
+    "M26",
+    "M27",
+    "M28",
+    "M29",
+    "M30",
+    "M31",
+    "M32",
+    "M33",
+    "M34",
+    "M35",
+    "M36",
+    "M37",
+    "M38",
+    "M39",
+    "M40",
+    "M41",
+    "M42",
+    "M43",
+    "M44",
+    "M45",
+    "M46",
+    "M47",
+    "M48"
+  ],
+  "forbidden_backend_modules_imported": [],
+  "research_state": "NOT_RUN",
+  "input_verification": "all24 current design and dependency input digests verified"
+}

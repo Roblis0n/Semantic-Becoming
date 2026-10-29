@@ -1,0 +1,11 @@
+test_ambiguous_mapping_is_not_action (test_c05.C05Tests.test_ambiguous_mapping_is_not_action) ... ok
+test_physical_anchor_mismatch_rejected (test_c05.C05Tests.test_physical_anchor_mismatch_rejected) ... ok
+test_physical_latent_maps_commute (test_c05.C05Tests.test_physical_latent_maps_commute) ... ok
+test_stale_physical_world_rejected (test_c05.C05Tests.test_stale_physical_world_rejected) ... ok
+test_target_chart_invalidation (test_c05.C05Tests.test_target_chart_invalidation) ... ok
+test_units_cannot_be_substituted_by_latent_shape (test_c05.C05Tests.test_units_cannot_be_substituted_by_latent_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.027s
+
+OK

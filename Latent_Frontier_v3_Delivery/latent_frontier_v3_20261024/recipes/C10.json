@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "id": "C10",
+  "title": "分歧驱动的概念诞生",
+  "kind": "combination",
+  "mechanisms": [
+    "H03",
+    "H26",
+    "H27",
+    "H36"
+  ],
+  "stages": [
+    "局部解释",
+    "拼合障碍",
+    "最小候选反例",
+    "概念提案",
+    "版本迁移",
+    "分歧保留"
+  ],
+  "critical_invariant": "冲突可能来自真分歧而非缺变量；概念失败时保留多域，不强合并。",
+  "source_spec": "combinations/C10_分歧驱动的概念诞生.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c10.py",
+  "research_outputs": "NOT_RUN"
+}

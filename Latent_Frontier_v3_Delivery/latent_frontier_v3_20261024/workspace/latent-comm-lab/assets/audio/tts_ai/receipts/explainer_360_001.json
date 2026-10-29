@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_001",
+  "edition": "explainer_360",
+  "scene_id": "S01",
+  "characters": 32,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "多数协作系统的起点是：一个模型想出内容，再把内容传给另一个模型。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:18:14.880730+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:18:23 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:18:25.512703+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 268602,
+    "duration_seconds": 6.090748299319728,
+    "sample_peak": 11564,
+    "sample_rms": 1741.4983597152807,
+    "sha256": "c9fa1a25ff9c26f9e61542d993cfb397f0278ee2965b4ba39e15b30eb9936a0c",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:18:48.846534+00:00"
+}

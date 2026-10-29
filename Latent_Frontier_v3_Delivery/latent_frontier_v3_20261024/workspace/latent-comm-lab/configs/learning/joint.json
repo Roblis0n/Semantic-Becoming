@@ -1,0 +1,152 @@
+{
+  "stage": "L13",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "transport_meta_full",
+  "run_id": "future-l13",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "frame": "f1",
+    "isa": "i1",
+    "evidence": "e1"
+  },
+  "dimensions": {
+    "inner_steps": 3,
+    "solver_steps": 8,
+    "trust_radius": 1.0
+  },
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "transport_meta_full": [
+      {
+        "name": "transport_meta_full_calibration",
+        "parameter_owners": [
+          "transport.transport_operator",
+          "transport.behavior_encoder",
+          "plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "coupled_query_full": 1.0,
+          "coupled_update_budget": 0.1,
+          "realized_transport": 0.2,
+          "transport.anchors": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "transport_meta_first_order": [
+      {
+        "name": "transport_meta_first_order_calibration",
+        "parameter_owners": [
+          "transport.transport_operator",
+          "transport.behavior_encoder",
+          "plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "coupled_query_first_order": 1.0,
+          "coupled_update_budget": 0.1,
+          "realized_transport": 0.2,
+          "transport.anchors": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "stagewise": [
+      {
+        "name": "stagewise_calibration",
+        "parameter_owners": [
+          "transport.transport_operator",
+          "transport.behavior_encoder"
+        ],
+        "loss_weights": {
+          "transport.effect": 1.0,
+          "transport.anchors": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      },
+      {
+        "name": "rules_meta",
+        "parameter_owners": [
+          "rules.plasticity_rule_parameters"
+        ],
+        "loss_weights": {
+          "rules.outer_query_full": 1.0,
+          "rules.update_budget": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  },
+  "components": {
+    "transport": {
+      "stage": "L07",
+      "variant": "linear_behavior",
+      "versions": {
+        "schema": "3",
+        "state": "s1",
+        "world": "w1",
+        "task": "t1",
+        "frame": "f1",
+        "isa": "i1",
+        "evidence": "e1"
+      },
+      "dimensions": {
+        "solver_steps": 8
+      },
+      "maximum_unroll": 8
+    },
+    "rules": {
+      "stage": "L08",
+      "variant": "quadratic_full",
+      "versions": {
+        "schema": "3",
+        "state": "s1",
+        "world": "w1",
+        "task": "t1",
+        "frame": "f1",
+        "isa": "i1",
+        "evidence": "e1"
+      },
+      "dimensions": {
+        "inner_steps": 3
+      },
+      "maximum_unroll": 3
+    }
+  },
+  "boundaries": [
+    {
+      "source": "transport",
+      "target": "rules",
+      "object_type": "versioned_behavior_update_record",
+      "version_axes": [
+        "frame",
+        "isa",
+        "task"
+      ],
+      "scope_components": [
+        "U"
+      ],
+      "mode": "serialized_recompute",
+      "reason": "Stagewise training uses independently projected immutable records, not an alleged autograd graph across a saved packet."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+test_extensional_duplicate_provenance (test_h27.H27Contracts.test_extensional_duplicate_provenance) ... ok
+test_gate (test_h27.H27Contracts.test_gate) ... ok
+test_nested_atom_domain_is_enforced (test_h27.H27Contracts.test_nested_atom_domain_is_enforced) ... ok
+test_neural_source_is_lazy_and_gated (test_h27.H27Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_new_executable_concept_and_old_reader (test_h27.H27Contracts.test_new_executable_concept_and_old_reader) ... ok
+test_retirement_requires_consumer_migration (test_h27.H27Contracts.test_retirement_requires_consumer_migration) ... ok
+test_schema_and_migration (test_h27.H27Contracts.test_schema_and_migration) ... ok
+test_unexpressible_counterexample (test_h27.H27Contracts.test_unexpressible_counterexample) ... ok
+test_unknown_not_false_and_forbidden_label (test_h27.H27Contracts.test_unknown_not_false_and_forbidden_label) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.006s
+
+OK

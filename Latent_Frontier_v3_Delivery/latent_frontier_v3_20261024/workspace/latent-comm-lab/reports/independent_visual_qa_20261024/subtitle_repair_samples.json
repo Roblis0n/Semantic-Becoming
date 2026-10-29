@@ -1,0 +1,62 @@
+[
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "frame": "reports/independent_visual_qa_20261024/repaired_explainer_360_11.00.png",
+    "seconds": 11.0
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "frame": "reports/independent_visual_qa_20261024/repaired_explainer_360_143.50.png",
+    "seconds": 143.5
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "frame": "reports/independent_visual_qa_20261024/repaired_explainer_360_168.25.png",
+    "seconds": 168.25
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "frame": "reports/independent_visual_qa_20261024/repaired_explainer_360_235.50.png",
+    "seconds": 235.5
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "frame": "reports/independent_visual_qa_20261024/repaired_explainer_360_241.30.png",
+    "seconds": 241.3
+  },
+  {
+    "video": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+    "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+    "frame": "reports/independent_visual_qa_20261024/repaired_explainer_360_356.00.png",
+    "seconds": 356.0
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+    "frame": "reports/independent_visual_qa_20261024/repaired_intro_90_5.00.png",
+    "seconds": 5.0
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+    "frame": "reports/independent_visual_qa_20261024/repaired_intro_90_45.50.png",
+    "seconds": 45.5
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+    "frame": "reports/independent_visual_qa_20261024/repaired_intro_90_75.25.png",
+    "seconds": 75.25
+  },
+  {
+    "video": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+    "frame": "reports/independent_visual_qa_20261024/repaired_intro_90_86.00.png",
+    "seconds": 86.0
+  }
+]

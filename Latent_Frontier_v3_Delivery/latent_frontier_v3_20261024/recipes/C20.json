@@ -1,0 +1,30 @@
+{
+  "schema_version": 3,
+  "id": "C20",
+  "title": "自举的语义编译生态",
+  "kind": "combination",
+  "mechanisms": [
+    "H07",
+    "H25",
+    "H27",
+    "H29",
+    "H30",
+    "H38",
+    "H40",
+    "H42"
+  ],
+  "stages": [
+    "问题与概念IR",
+    "类型化操作",
+    "宏扩展",
+    "跨域/跨坐标运输",
+    "学习或推理计划",
+    "后端绑定"
+  ],
+  "critical_invariant": "这是总集成，不是强行把所有损失相加；每个stage有owner与版本边界。",
+  "source_spec": "combinations/C20_自举的语义编译生态.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c20.py",
+  "research_outputs": "NOT_RUN"
+}

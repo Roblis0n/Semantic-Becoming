@@ -1,0 +1,36 @@
+{
+  "task_id": "V04",
+  "status": "complete_with_external_blockers",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "export_edition": "silent_visual_draft",
+  "narrated_final_created": false,
+  "opened_checked": true,
+  "opened_method": "FFmpeg full decode plus sampled frame visual inspection",
+  "timing_verified": true,
+  "timing_scope": "silent container duration only, not narration alignment",
+  "container_timing_verified": true,
+  "audio_timing_verified": false,
+  "audio_listened": false,
+  "blockers": [
+    "Requested narration WAV/audio and final audio-aligned subtitles remain missing. No supported authorized zero-new-cost TTS route was identified; no paid or uncertain TTS was called."
+  ],
+  "evidence": {
+    "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+    "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+    "duration_seconds": 90.0,
+    "video_codec": "h264",
+    "fps": "24/1",
+    "size": [
+      1280,
+      720
+    ],
+    "audio_streams": 0,
+    "full_decode_passed": true,
+    "opening_frame": "assets/video/intro_90/intro_90_silent_draft_opening.png",
+    "opening_frame_sha256": "7fc1cef1812cf67e934b40d5864df3bfe617e8302e59dcc2c3fe681d495f639b",
+    "research_state": "NOT_RUN"
+  },
+  "research_state": "NOT_RUN"
+}

@@ -1,0 +1,58 @@
+{
+  "stage": "L09",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "fast_macro",
+  "run_id": "future-l09",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "ontology": "o1",
+    "isa": "i1",
+    "evidence": "e1"
+  },
+  "dimensions": {},
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "fast_macro": [
+      {
+        "name": "fast_macro_calibration",
+        "parameter_owners": [
+          "fast_macro_coefficients"
+        ],
+        "loss_weights": {
+          "fast_behavior": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "typed_binding": [
+      {
+        "name": "typed_binding_calibration",
+        "parameter_owners": [
+          "fast_macro_coefficients",
+          "binding_selector"
+        ],
+        "loss_weights": {
+          "fast_behavior": 1.0,
+          "binding": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  }
+}

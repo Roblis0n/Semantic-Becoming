@@ -1,0 +1,13 @@
+test_engine_delegation_and_resume_command (test_learning_isa_search.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_hygienic_base_binding (test_learning_isa_search.ContractChecks.test_hygienic_base_binding) ... ok
+test_metadata (test_learning_isa_search.ContractChecks.test_metadata) ... ok
+test_no_description_gradient (test_learning_isa_search.ContractChecks.test_no_description_gradient) ... ok
+test_polynomial_is_explicit (test_learning_isa_search.ContractChecks.test_polynomial_is_explicit) ... ok
+test_recipe_is_unbound (test_learning_isa_search.ContractChecks.test_recipe_is_unbound) ... ok
+test_stage_syntax_and_gates (test_learning_isa_search.ContractChecks.test_stage_syntax_and_gates) ... ok
+test_unknown_instruction_rejected (test_learning_isa_search.ContractChecks.test_unknown_instruction_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+OK

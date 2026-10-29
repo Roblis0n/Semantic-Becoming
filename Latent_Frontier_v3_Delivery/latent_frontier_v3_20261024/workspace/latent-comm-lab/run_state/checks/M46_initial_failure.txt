@@ -1,0 +1,26 @@
+test_gate (test_h46.H46Contracts.test_gate) ... ok
+test_hard_intersection_and_empty (test_h46.H46Contracts.test_hard_intersection_and_empty) ... ok
+test_neural_source_is_lazy_and_gated (test_h46.H46Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_overgeneralization_migration_budget (test_h46.H46Contracts.test_overgeneralization_migration_budget) ... ERROR
+test_retraction_dependency_and_scope (test_h46.H46Contracts.test_retraction_dependency_and_scope) ... ok
+test_timeout_and_soft_never_hard (test_h46.H46Contracts.test_timeout_and_soft_never_hard) ... ok
+
+======================================================================
+ERROR: test_overgeneralization_migration_budget (test_h46.H46Contracts.test_overgeneralization_migration_budget)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/contracts/test_h46.py", line 29, in test_overgeneralization_migration_budget
+    with self.assertRaises(ContractError):apply_exclusions((1,2,3,4),(bad,),('a',),'v1')
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h46_negative_knowledge/reference.py", line 50, in apply_exclusions
+    if capsule.mode=='hard':verify_hard(capsule,domain,meter)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h46_negative_knowledge/reference.py", line 24, in verify_hard
+    if counterexamples:raise ContractError('UnsupportedExclusion','overgeneralized exclusion would prune feasible candidates',details={'counterexamples':counterexamples})
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ContractError.__init__() got an unexpected keyword argument 'details'
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+FAILED (errors=1)

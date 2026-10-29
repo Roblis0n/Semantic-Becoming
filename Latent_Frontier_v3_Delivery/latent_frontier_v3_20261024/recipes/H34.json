@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H34",
+  "kind": "mechanism",
+  "title": "双边边界条件推理",
+  "mechanisms": [
+    "H34"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H34_双边边界条件推理.md",
+  "target_base": "src/latent_comm/mechanisms/h34_boundary_value",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "horizon": 6,
+    "state_limit": 32,
+    "message_rounds": 8,
+    "goal_source": "public_task"
+  }
+}

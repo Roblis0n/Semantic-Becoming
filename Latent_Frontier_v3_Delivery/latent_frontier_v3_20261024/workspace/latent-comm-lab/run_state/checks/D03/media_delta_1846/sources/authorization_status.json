@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-10-24T18:42:05.073762+00:00",
+  "status": "paused_authorization_denial",
+  "denied_action": "External TTS upload of the existing 1754-character narration to https://api.tts.ai/v1/tts/",
+  "reason": "Execution reviewer requires explicit user authorization naming the destination and payload disclosure.",
+  "known_accepted": 43,
+  "known_downloaded": 42,
+  "characters_submitted": 1261,
+  "credits_used": 0,
+  "pending_accepted_chunk": "explainer_360_029",
+  "retry_policy": "No retry or alternate route until materially relevant user authorization evidence; recover existing accepted job before any new submission.",
+  "short_narrated_edition_created": true,
+  "long_narrated_edition_created": false,
+  "research_state": "NOT_RUN",
+  "local_check_at_utc": "2026-10-24T18:44:40.283161+00:00",
+  "remaining_unsubmitted_characters": 493,
+  "remaining_unsubmitted_chunks": 15,
+  "pending_accepted_chunks": 1,
+  "remote_pending_outcome": "unknown; no GET after explicit stop",
+  "all_external_tts_activity": "stopped pending explicit destination and payload authorization"
+}

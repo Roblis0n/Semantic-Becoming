@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "C06",
+  "title": "连接结构中的技能",
+  "kind": "combination",
+  "hypotheses": [
+    "H01",
+    "H10",
+    "H14",
+    "H19"
+  ],
+  "training_routes": [
+    "R02",
+    "R08",
+    "R11"
+  ],
+  "pipeline_nodes": [
+    "skill_parse",
+    "bind",
+    "hyperedge_apply",
+    "decode",
+    "optional_consolidate"
+  ],
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+  "status": "planned_for_dot"
+}

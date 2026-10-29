@@ -1,0 +1,43 @@
+# Python and development caches
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.venv/
+**/venv/
+**/node_modules/
+
+# Generated model/checkpoint and release payloads
+**/checkpoints/
+**/release/*
+!**/release/authorization_updates/
+!**/release/authorization_updates/*.json
+
+# Generated audio/video are distributed separately
+**/*.wav
+**/*.mp3
+**/*.mp4
+**/*.m4a
+**/*.ogg
+**/*.flac
+
+# Historical copies and temporary render/compiler products
+**/run_state/history/
+**/run_state/checks/D03/cache/
+**/run_state/checks/D03/render/
+**/assets/slides/verified_renders/
+**/*.aux
+**/*.fls
+**/*.fdb_latexmk
+**/*.synctex.gz
+
+# Local credentials and machine files
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.sample
+**/*.pem
+**/*.key
+**/.DS_Store
+**/Thumbs.db

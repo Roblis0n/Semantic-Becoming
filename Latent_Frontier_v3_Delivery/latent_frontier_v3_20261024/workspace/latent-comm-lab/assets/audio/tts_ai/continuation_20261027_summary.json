@@ -1,0 +1,16 @@
+{
+  "finished_at_utc": "2026-10-27T10:47:59.841947+00:00",
+  "status": "authorized036downloaded",
+  "new_characters": 41,
+  "new_jobs": 1,
+  "unique_source_jobs": 58,
+  "unique_source_characters": 1754,
+  "accepted_submission_count": 60,
+  "accepted_submission_characters": 1811,
+  "credits_used_total": 0,
+  "audio_listened": false,
+  "original_unknown_036_receipt": "assets/audio/tts_ai/history/explainer_360_036_original_unknown.json",
+  "resynthesis_authorization_record": "release/authorization_updates/20261027_TTS036_APPROVAL.json",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "research_state": "NOT_RUN"
+}

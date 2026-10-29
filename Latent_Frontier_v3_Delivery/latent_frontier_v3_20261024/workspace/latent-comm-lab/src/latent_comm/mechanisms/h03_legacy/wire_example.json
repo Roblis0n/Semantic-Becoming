@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "branches": [
+    {
+      "branch_id": "bound",
+      "state": [],
+      "log_weight": 1.0,
+      "semantic_domain": "bound",
+      "evidence_support": [],
+      "ontology_version": "bound",
+      "unknown": false
+    }
+  ],
+  "generation_mode": "sequence_mixture",
+  "consumed_evidence": [],
+  "probability_semantics": "candidate_weights"
+}

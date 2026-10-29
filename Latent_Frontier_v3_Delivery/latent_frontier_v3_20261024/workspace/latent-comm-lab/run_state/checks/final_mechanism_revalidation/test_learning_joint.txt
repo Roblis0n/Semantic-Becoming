@@ -1,0 +1,33 @@
+test_all_learning_stages_registered (test_learning_joint.ContractChecks.test_all_learning_stages_registered) ... ok
+test_component_order_preserves_rng_assignment_on_reordered_config (test_learning_joint.ContractChecks.test_component_order_preserves_rng_assignment_on_reordered_config) ... ok
+test_engine_delegation_and_resume_command (test_learning_joint.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_live_transport_uses_no_serialization (test_learning_joint.ContractChecks.test_live_transport_uses_no_serialization) ... ok
+test_metadata (test_learning_joint.ContractChecks.test_metadata) ... ok
+test_namespaced_ledger_and_coupled_path_owners (test_learning_joint.ContractChecks.test_namespaced_ledger_and_coupled_path_owners) ... ok
+test_owner_alias_cannot_hide_between_components (test_learning_joint.ContractChecks.test_owner_alias_cannot_hide_between_components) ... ok
+test_recipe_is_unbound (test_learning_joint.ContractChecks.test_recipe_is_unbound) ... ok
+test_role_and_supervisor_projection_separated (test_learning_joint.ContractChecks.test_role_and_supervisor_projection_separated) ... ok
+test_serialized_boundary_does_not_claim_live_graph (test_learning_joint.ContractChecks.test_serialized_boundary_does_not_claim_live_graph) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+{
+  "selected": 10,
+  "excluded_research_entry_tests": [
+    {
+      "test": "test_learning_joint.ContractChecks.test_stage_syntax_and_gates",
+      "guarded_calls": [
+        "conservative legacy gate-test exclusion"
+      ]
+    }
+  ],
+  "test_file": "tests/research_locked/test_learning_joint.py",
+  "research_state": "NOT_RUN",
+  "budget_scope": "per test aggregate",
+  "tests_run": 10,
+  "failures": 0,
+  "errors": 0,
+  "neural_modules_loaded": []
+}

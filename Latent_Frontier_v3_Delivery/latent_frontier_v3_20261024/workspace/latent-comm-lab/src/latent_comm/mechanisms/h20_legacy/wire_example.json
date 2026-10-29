@@ -1,0 +1,31 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "event_id": "bound",
+  "kind": "evidence_ready",
+  "source": "bound",
+  "clock": {
+    "physical_step": 0,
+    "phase": "bound",
+    "phase_index": 0,
+    "path_id": "bound",
+    "path_index": 0,
+    "causal": []
+  },
+  "dependencies": [],
+  "source_state_version": "bound",
+  "receiver_versions": {},
+  "earliest_step": 0,
+  "expires_step": 0,
+  "stale_policy": "reject",
+  "payload_ref": "bound"
+}

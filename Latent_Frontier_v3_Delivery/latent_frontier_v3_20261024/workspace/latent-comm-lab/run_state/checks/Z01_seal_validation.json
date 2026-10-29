@@ -1,0 +1,16 @@
+{
+  "static_files_verified": 3014,
+  "original_plan_files_verified": 565,
+  "manifest_sha256": "67661b8ab706e6078833831d35a0000d5aef3ab7e72f1b7ef0b91260978b6291",
+  "research_state": "NOT_RUN",
+  "excluded_self_reference": [
+    "checksums.sha256",
+    "manifest.json",
+    "reports/release_integrity.json",
+    "run_state/checks/Z01_seal_validation.json",
+    "run_state/ledger.json",
+    "run_state/next_actions.json",
+    "run_state/receipts/Z01.json",
+    "run_state/receipts/Z02.json"
+  ]
+}

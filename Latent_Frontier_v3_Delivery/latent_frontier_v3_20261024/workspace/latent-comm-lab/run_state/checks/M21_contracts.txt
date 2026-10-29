@@ -1,0 +1,16 @@
+M21: AST parsed 6 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_causal_search_preserves_prefix (test_h21.TestPortfolios.test_causal_search_preserves_prefix) ... ok
+test_evidence_update_idempotence_and_identification (test_h21.TestPortfolios.test_evidence_update_idempotence_and_identification) ... ok
+test_question_counterexample_concept_and_synthetic_branches (test_h21.TestPortfolios.test_question_counterexample_concept_and_synthetic_branches) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h21.TestPortfolios.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_root_anchor_must_match_same_structural_world (test_h21.TestPortfolios.test_root_anchor_must_match_same_structural_world) ... ok
+test_source_gate_and_schema (test_h21.TestPortfolios.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h21.TestPortfolios.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_timeout_not_proof_and_semantic_dedup (test_h21.TestPortfolios.test_timeout_not_proof_and_semantic_dedup) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h21.TestPortfolios.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.030s
+
+OK
+M21: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

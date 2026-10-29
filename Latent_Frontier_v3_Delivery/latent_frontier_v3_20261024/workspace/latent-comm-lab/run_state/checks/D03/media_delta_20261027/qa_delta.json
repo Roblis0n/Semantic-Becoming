@@ -1,0 +1,119 @@
+{
+  "task_id": "D03",
+  "checked_at_utc": "2026-10-27T10:55:37.637977+00:00",
+  "scope": "Media-status-only source correction and affected PDF render; no research tests rerun",
+  "research_state": "NOT_RUN",
+  "status": "passed",
+  "checks_passed": {
+    "monograph_nonmedia_prefix_suffix_unchanged": true,
+    "latex_nonmedia_prefix_suffix_unchanged": true,
+    "README_nonmedia_prefix_unchanged": true,
+    "new_long_qa_and_visual_evidence_bound": true,
+    "exact_unique_vs_accepted_counts": true,
+    "historical029036UNKNOWN_preserved": true,
+    "audition_remaining_blocker_disclosed": true,
+    "no_stale_pending_or_missing_long_claim": true,
+    "TOC_stable_after_three_passes": true,
+    "pdf_55pages": true,
+    "out_of_page_words_zero": true,
+    "missing_glyph_warnings_zero": true,
+    "overfull_warnings_zero": true
+  },
+  "current_pdf": {
+    "path": "run_state/checks/D03/media_delta_20261027/render/main.pdf",
+    "sha256": "9c0998c51afa0acfff39d3da06244d19208e7a96d9dd2091667f736a649b083e",
+    "pages": 55
+  },
+  "previous_pdf": {
+    "path": "run_state/checks/D03/media_delta_20261027/baseline/main.pdf",
+    "sha256": "897f5bdb185b35810b2ca0507afd5c9794873735ae6a1e9e2a26fb61b6a2d625",
+    "pages": 55
+  },
+  "changed_render_pages": [
+    10
+  ],
+  "pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "visual_review": {
+    "reviewer": "assistant, not human",
+    "actual_visual_inspection": true,
+    "scope": "fresh page10 1.5x PNG inspected; other54pages pixel-identical to previously reviewed PDF",
+    "findings": "Updated media completion, exact submission counts, two UNKNOWN histories, mandatory audition limitation and personal/noncommercial license legible; no clipping/overlap/missing glyphs. Section10 continuation retained."
+  },
+  "outputs": [
+    {
+      "path": "README.md",
+      "sha256": "506446767c4dcf35f2b39705b9af22e706669382336602bed864b460cbdebd7f",
+      "bytes": 8979
+    },
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "23e99116efbc4f29b6e9b818f539326f9c6be94888a1f3dabf5415fa124aeb19",
+      "bytes": 217029
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "2f28ebd10448505413dc37e0c1b252f3b29295c88cde0e5846627542bdf103cc",
+      "bytes": 274964
+    }
+  ],
+  "source_evidence": "run_state/checks/D03/media_delta_20261027/source_delta.json",
+  "limitations": [
+    "No actual auditory review; objective measurements and visual review are not listening.",
+    "Full original55page research review reused for54pixel-identical pages; no unchanged source tests rerun."
+  ]
+}

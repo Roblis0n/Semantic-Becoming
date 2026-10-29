@@ -1,0 +1,8 @@
+test_bound (test_plasticity.PlasticityTests.test_bound) ... ok
+test_full_rank_and_scoped_rule (test_plasticity.PlasticityTests.test_full_rank_and_scoped_rule) ... ok
+test_rank_residual (test_plasticity.PlasticityTests.test_rank_residual) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

@@ -1,0 +1,266 @@
+[
+  {
+    "id": "C01",
+    "title": "临时计算体",
+    "mechanisms": [
+      "H01",
+      "H06",
+      "H07",
+      "H22"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C01.json"
+  },
+  {
+    "id": "C02",
+    "title": "响应驱动共享场",
+    "mechanisms": [
+      "H02",
+      "H04",
+      "H23"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C02.json"
+  },
+  {
+    "id": "C03",
+    "title": "分布式信念树",
+    "mechanisms": [
+      "H03",
+      "H13",
+      "H21"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C03.json"
+  },
+  {
+    "id": "C04",
+    "title": "异步跨模型续接",
+    "mechanisms": [
+      "H05",
+      "H20",
+      "H22"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C04.json"
+  },
+  {
+    "id": "C05",
+    "title": "关系接地接口",
+    "mechanisms": [
+      "H06",
+      "H08",
+      "H17"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C05.json"
+  },
+  {
+    "id": "C06",
+    "title": "连接结构中的技能",
+    "mechanisms": [
+      "H01",
+      "H10",
+      "H14",
+      "H19"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C06.json"
+  },
+  {
+    "id": "C07",
+    "title": "可迁移计算记忆",
+    "mechanisms": [
+      "H12",
+      "H15",
+      "H23",
+      "H24"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C07.json"
+  },
+  {
+    "id": "C08",
+    "title": "协议作为计算语言",
+    "mechanisms": [
+      "H07",
+      "H14",
+      "H18",
+      "H22"
+    ],
+    "origin": "inherited_v2",
+    "design_path": "inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md",
+    "recipe_path": "recipes/C08.json"
+  },
+  {
+    "id": "C09",
+    "title": "协变的多尺度计算语言",
+    "mechanisms": [
+      "H01",
+      "H06",
+      "H25",
+      "H35",
+      "H40"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C09_协变的多尺度计算语言.md",
+    "recipe_path": "recipes/C09.json"
+  },
+  {
+    "id": "C10",
+    "title": "分歧驱动的概念诞生",
+    "mechanisms": [
+      "H03",
+      "H26",
+      "H27",
+      "H36"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C10_分歧驱动的概念诞生.md",
+    "recipe_path": "recipes/C10.json"
+  },
+  {
+    "id": "C11",
+    "title": "问题空间的跨域迁移",
+    "mechanisms": [
+      "H07",
+      "H29",
+      "H30",
+      "H47"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C11_问题空间的跨域迁移.md",
+    "recipe_path": "recipes/C11.json"
+  },
+  {
+    "id": "C12",
+    "title": "可移植的科学小世界",
+    "mechanisms": [
+      "H09",
+      "H17",
+      "H31",
+      "H43"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C12_可移植的科学小世界.md",
+    "recipe_path": "recipes/C12.json"
+  },
+  {
+    "id": "C13",
+    "title": "跨模型学习协议网络",
+    "mechanisms": [
+      "H19",
+      "H25",
+      "H37",
+      "H38"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C13_跨模型学习协议网络.md",
+    "recipe_path": "recipes/C13.json"
+  },
+  {
+    "id": "C14",
+    "title": "认知结构的事务性跃迁",
+    "mechanisms": [
+      "H13",
+      "H22",
+      "H27",
+      "H28",
+      "H39"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C14_认知结构的事务性跃迁.md",
+    "recipe_path": "recipes/C14.json"
+  },
+  {
+    "id": "C15",
+    "title": "多节律的轨迹推理",
+    "mechanisms": [
+      "H05",
+      "H20",
+      "H33",
+      "H34"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C15_多节律的轨迹推理.md",
+    "recipe_path": "recipes/C15.json"
+  },
+  {
+    "id": "C16",
+    "title": "共同梦境与问题生态",
+    "mechanisms": [
+      "H29",
+      "H40",
+      "H42",
+      "H43",
+      "H44"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C16_共同梦境与问题生态.md",
+    "recipe_path": "recipes/C16.json"
+  },
+  {
+    "id": "C17",
+    "title": "以未知边界驱动通信",
+    "mechanisms": [
+      "H02",
+      "H03",
+      "H45",
+      "H46"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C17_以未知边界驱动通信.md",
+    "recipe_path": "recipes/C17.json"
+  },
+  {
+    "id": "C18",
+    "title": "不重复计信的能力联盟",
+    "mechanisms": [
+      "H10",
+      "H16",
+      "H41",
+      "H48"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C18_不重复计信的能力联盟.md",
+    "recipe_path": "recipes/C18.json"
+  },
+  {
+    "id": "C19",
+    "title": "任务相对的世界观切换",
+    "mechanisms": [
+      "H06",
+      "H12",
+      "H32",
+      "H35",
+      "H47"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C19_任务相对的世界观切换.md",
+    "recipe_path": "recipes/C19.json"
+  },
+  {
+    "id": "C20",
+    "title": "自举的语义编译生态",
+    "mechanisms": [
+      "H07",
+      "H25",
+      "H27",
+      "H29",
+      "H30",
+      "H38",
+      "H40",
+      "H42"
+    ],
+    "origin": "new_v3",
+    "design_path": "combinations/C20_自举的语义编译生态.md",
+    "recipe_path": "recipes/C20.json"
+  }
+]

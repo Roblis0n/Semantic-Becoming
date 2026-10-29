@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_007",
+  "edition": "explainer_360",
+  "scene_id": "S02",
+  "characters": 41,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "双方的语言都只有钥匙这个类别，于是反复交换结论也无法解释差异。系统可以先保留冲突，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:23:07.607673+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 340439,
+    "duration_seconds": 7.719705215419501,
+    "sample_peak": 9854,
+    "sample_rms": 1408.7172488336957,
+    "sha256": "c2fa9af7c3256bad7ad60e14a52bdab45233e107fe4703590513a9b505c6ce65",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:23:41.374990+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

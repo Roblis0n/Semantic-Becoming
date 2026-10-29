@@ -1,0 +1,15 @@
+M22: AST parsed 6 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_atomic_failure_map_and_rollback (test_h22.TestBoundaries.test_atomic_failure_map_and_rollback) ... ok
+test_coalition_capability_bound (test_h22.TestBoundaries.test_coalition_capability_bound) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h22.TestBoundaries.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h22.TestBoundaries.test_source_gate_and_schema) ... ok
+test_split_join_and_reference_lifecycle (test_h22.TestBoundaries.test_split_join_and_reference_lifecycle) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h22.TestBoundaries.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_structure_map_requires_cell_revision (test_h22.TestBoundaries.test_structure_map_requires_cell_revision) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h22.TestBoundaries.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.017s
+
+OK
+M22: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

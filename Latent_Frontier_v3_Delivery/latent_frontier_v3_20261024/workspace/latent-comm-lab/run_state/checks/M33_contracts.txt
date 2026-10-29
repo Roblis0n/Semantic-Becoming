@@ -1,0 +1,12 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_dissipative_condition (test_h33.H33Contracts.test_dissipative_condition) ... ok
+test_gate (test_h33.H33Contracts.test_gate) ... ok
+test_midpoint_norm_and_euler_artifact (test_h33.H33Contracts.test_midpoint_norm_and_euler_artifact) ... ok
+test_migration_and_invalid_skew (test_h33.H33Contracts.test_migration_and_invalid_skew) ... ok
+test_neural_source_is_lazy_and_gated (test_h33.H33Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_stale_coupling (test_h33.H33Contracts.test_stale_coupling) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.007s
+
+OK

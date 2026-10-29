@@ -1,0 +1,136 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "kernel_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "state_port": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^.+$"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "noise_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "transition_rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "state": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "action": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "noise_values": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "probabilities": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "state",
+          "action",
+          "noise_values",
+          "probabilities"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 4096
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "observation_rows": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "scope": {
+      "type": "string",
+      "pattern": "^.+$"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kernel_id",
+    "state_port",
+    "states",
+    "actions",
+    "noise_ids",
+    "transition_rows",
+    "observations",
+    "observation_rows",
+    "version",
+    "scope"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H43:resolved-payload:3"
+}

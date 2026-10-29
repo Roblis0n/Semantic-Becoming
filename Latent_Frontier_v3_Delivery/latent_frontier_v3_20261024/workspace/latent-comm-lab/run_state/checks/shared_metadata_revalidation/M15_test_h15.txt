@@ -1,0 +1,8 @@
+test_heldout_and_dropout (test_h15.PopulationTests.test_heldout_and_dropout) ... ok
+test_heterogeneous_tokenizers_not_logits (test_h15.PopulationTests.test_heterogeneous_tokenizers_not_logits) ... ok
+test_source_gate_and_schema (test_h15.PopulationTests.test_source_gate_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

@@ -1,0 +1,184 @@
+[
+  {
+    "dependency": "A01",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "019a1d78073010be6d7918c03a1681521aaf7f06dc2444eb1e86d897c3316349"
+  },
+  {
+    "dependency": "M25",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "2b0dcff1b6f94dd787cc8f62c42b9e366babd77756a3ab565ad6c1fbc6d4727b"
+  },
+  {
+    "dependency": "M26",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "472897afe4d9bdec7c1fac82871e6926e2d2540c05b60bcbe40f574d29cb2c06"
+  },
+  {
+    "dependency": "M27",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "2e4ca12766af55287cec922089d78774d06d83012c14a6b075690f6d31e5cbd3"
+  },
+  {
+    "dependency": "M28",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "e16def18a964ab53ca89b8a82154fa71b8c9b26c62a4306dec7514b66e7c75e8"
+  },
+  {
+    "dependency": "M29",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "35df034c4f69e0d408046a4e070ae0d8700a76f5fa009edfd6436a6025818ead"
+  },
+  {
+    "dependency": "M30",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "319b4b2b7265a1ecafa0b83d40d62a1eb788b585d7014dcdce8abf1256651d2e"
+  },
+  {
+    "dependency": "M31",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "5627c1a39442b42a6860c94a34400a9ff7d2c57e9615e3e3aeeae5d7b83ba2cc"
+  },
+  {
+    "dependency": "M32",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "196a9d218c55f9d5f0bd64c5623fc1f0da07de1e0282b7ea50d42de9658cbe68"
+  },
+  {
+    "dependency": "M33",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "3bc8db1ae059e9638289a8c88d0e793c3e7a3c2145dd86f5f2866990e5168c99"
+  },
+  {
+    "dependency": "M34",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "d3b7a636906657ca68d3a478403296906de660439a267bb5d142c82ce54a47aa"
+  },
+  {
+    "dependency": "M35",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "fbba96962fce9e18b48b70b4914625024f068b501c081dfec34a340197f8803c"
+  },
+  {
+    "dependency": "M36",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "7945209eb43b961b3a7df2ff4c071619bc01d093c79b3ff690e154cd0099f34f"
+  },
+  {
+    "dependency": "M37",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "77cdb5d740d0c105a791f24e65f85dc8b91249d00bb07d15a6226f7d86884b2d"
+  },
+  {
+    "dependency": "M38",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "7bf05397d19f1d63ade259173d1806a4f2733a5ac69aeb175599e34dce71c64e"
+  },
+  {
+    "dependency": "M39",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "cef57781e984ccd455f12a19b39161990cfa377050ba599cd830beb0c548e978"
+  },
+  {
+    "dependency": "M40",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "854be61f1ab78d29e0ebc7ae4afc0da9b8d8fad5013fcd6180f43cfd72e2ab69"
+  },
+  {
+    "dependency": "M41",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "2e38e2616a04d09802b57550e04831257e8d3fa7e57062e014017cd59e3c7d75"
+  },
+  {
+    "dependency": "M42",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "7e84f0fcfebfe787f4533f679039a0a90b7dd3662440aadb97400c759f39fd72"
+  },
+  {
+    "dependency": "M43",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "97886595bd5dadb3c9b123aa2b0283f0ebd7d02e23c6ac320e3e392ca0297884"
+  },
+  {
+    "dependency": "M44",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "d52567bf9626eea8d96485de7b2cc6e6acba055e0ca4f67937e4d4c8166d4ed9"
+  },
+  {
+    "dependency": "M45",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "fbe1f1c1de6a689bf00627a7829adc6822d769743f42a314939b5e563f13816e"
+  },
+  {
+    "dependency": "M46",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "929d1939ec9fbc729ec3d0ce8a291cd99e4558d347286bf923f4310ea755c271"
+  },
+  {
+    "dependency": "M47",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "6b91d914063ced5354d1dc3cd885fda4088c8d7b133f2572db7bd585c380657f"
+  },
+  {
+    "dependency": "M48",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "30b189d51ec21217fa14c59f92810f66bd66b3e5f657893e4ad914969e5b427b"
+  },
+  {
+    "dependency": "D01",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null,
+    "receipt_sha256": "427c7c6f8387ed0b1738e0c6bc4b115ad87a1716cf6f8d6a275accbeb61d7c90"
+  }
+]

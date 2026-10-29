@@ -1,0 +1,8 @@
+test_fork_disjoint_merge (test_h13.BranchTests.test_fork_disjoint_merge) ... ok
+test_read_write_conflict_retained (test_h13.BranchTests.test_read_write_conflict_retained) ... ok
+test_source_gate_and_schema (test_h13.BranchTests.test_source_gate_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.002s
+
+OK

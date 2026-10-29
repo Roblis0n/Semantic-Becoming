@@ -1,0 +1,21 @@
+{
+  "recorded_at_utc": "2026-10-24T18:44:32.805745+00:00",
+  "action": "continue anonymous Mandarin narration synthesis and recover accepted job",
+  "target": "https://api.tts.ai/v1/tts/ and its official job/result routes",
+  "outcome": "DENIED; no further external activity permitted pending actual user authorization",
+  "exact_tool_reason": "Unified exec process failed: This action was rejected due to unacceptable risk. Reason: The command uploads 1,754 characters of project-derived narration text to the untrusted external host api.tts.ai, but the user did not explicitly authorize this destination and payload disclosure. Do not bypass this rejection through a workaround or indirect execution.",
+  "state_reported_by_media_owner": {
+    "accepted_jobs": 43,
+    "downloaded_wavs": 42,
+    "accepted_characters": 1261,
+    "credits_used": 0,
+    "accepted_pending_jobs": 1,
+    "accepted_pending_characters": 16,
+    "unsubmitted_jobs": 15,
+    "unsubmitted_characters": 493
+  },
+  "response": "Stopped all TTS submission/poll/download and alternate routes. Parent requested explicit destination/payload permission from user; response pending. Preserve accepted pending-job recovery reference privately, do not blindly resubmit.",
+  "research_state": "NOT_RUN",
+  "mandatory_audition_blocker_separate": true,
+  "no_private_recovery_ids_in_this_record": true
+}

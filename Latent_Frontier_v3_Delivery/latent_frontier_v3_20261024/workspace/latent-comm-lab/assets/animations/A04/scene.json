@@ -1,0 +1,323 @@
+{
+  "id": "A04",
+  "duration": 25,
+  "fps": 12,
+  "scene": {
+    "title": "H37：从行为变化求目标更新",
+    "description": "标量目标雅可比为四，目标行为变化为一，最小二乘参数改动为四分之一。加单位正则后为四除十七。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H37：从行为变化求目标更新",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "J_B = 4，v = 1；仅为标量解析例",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "解析示意 / 数学示意 · 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "A04",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 600,
+        "w": 1152,
+        "h": 47,
+        "fill": "#FFFCF5",
+        "stroke": "#CECDBF",
+        "sw": 0,
+        "r": 0,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 64,
+        "y": 213,
+        "w": 430,
+        "h": 42.9,
+        "text": "目标行为",
+        "size": 30,
+        "color": "#496974",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 64,
+        "y": 264,
+        "w": 430,
+        "h": 75.78999999999999,
+        "text": "v = 1",
+        "size": 53,
+        "color": "#496974",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "x": 500,
+        "y": 213,
+        "w": 430,
+        "h": 42.9,
+        "text": "目标参数变化",
+        "size": 30,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e009"
+      },
+      {
+        "x": 500,
+        "y": 264,
+        "w": 430,
+        "h": 75.78999999999999,
+        "text": "δ = 0",
+        "size": 53,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e010",
+        "dynamic": "delta"
+      },
+      {
+        "x": 950,
+        "y": 213,
+        "w": 266,
+        "h": 42.9,
+        "text": "实现的行为",
+        "size": 30,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011"
+      },
+      {
+        "x": 950,
+        "y": 264,
+        "w": 266,
+        "h": 61.489999999999995,
+        "text": "4δ = 0",
+        "size": 43,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012",
+        "dynamic": "achieved"
+      },
+      {
+        "points": [
+          [
+            135,
+            420
+          ],
+          [
+            1100,
+            420
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 4,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            135,
+            420
+          ],
+          [
+            135,
+            420
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 7,
+        "fill": "none",
+        "dynamic": "behavior_bar",
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "x": 120,
+        "y": 455,
+        "w": 100,
+        "h": 37.18,
+        "text": "0",
+        "size": 26,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015"
+      },
+      {
+        "x": 1080,
+        "y": 455,
+        "w": 100,
+        "h": 37.18,
+        "text": "1",
+        "size": 26,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e016"
+      },
+      {
+        "x": 64,
+        "y": 525,
+        "w": 1152,
+        "h": 45.76,
+        "text": "λ = 1：δ = 4/17，4δ = 16/17，残差 = 1/17",
+        "size": 32,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017",
+        "reveal_at": 14
+      }
+    ],
+    "notes": "",
+    "sources": [],
+    "research_state": "NOT_RUN"
+  },
+  "steps": [
+    {
+      "t": 0,
+      "fact": "源方向映为行为变化 v = 1",
+      "explanation": "比较发生在行为空间",
+      "next": "求目标端可实现参数方向"
+    },
+    {
+      "t": 4,
+      "fact": "无正则目标：min (4δ − 1)²",
+      "explanation": "参数改动通过 J_B 影响行为",
+      "next": "到达 δ = 1/4"
+    },
+    {
+      "t": 9,
+      "fact": "4 × 0.25 = 1",
+      "explanation": "本标量例的残差为零",
+      "next": "加入 λ = 1 的正则化"
+    },
+    {
+      "t": 14,
+      "fact": "最优 δ 变为 4/17",
+      "explanation": "正则化收缩了参数变化",
+      "next": "保留未实现的 1/17"
+    },
+    {
+      "t": 20,
+      "fact": "实现 16/17，残差 1/17",
+      "explanation": "残差没有被隐藏",
+      "next": "不把手算示例写成模型结果"
+    }
+  ],
+  "mechanisms": [
+    "H37"
+  ],
+  "math_inputs": {
+    "J_B": 4,
+    "v": 1,
+    "lambda_values": [
+      0,
+      1
+    ],
+    "solutions": [
+      "1/4",
+      "4/17"
+    ],
+    "residuals": [
+      "0",
+      "1/17"
+    ]
+  },
+  "research_state": "NOT_RUN",
+  "export_audio": false,
+  "semantic_contract": "Each state is an exact finite mathematical illustration, not a research model output."
+}

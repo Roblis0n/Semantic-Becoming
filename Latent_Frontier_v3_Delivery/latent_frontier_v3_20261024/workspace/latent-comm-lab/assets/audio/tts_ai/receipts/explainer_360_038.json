@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_038",
+  "edition": "explainer_360",
+  "scene_id": "S08",
+  "characters": 42,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "包括类型、编译器、世界工厂、训练源码、后端和恢复系统。不同机制必须有各自的计算对象，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:12:04.990557+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 334650,
+    "duration_seconds": 7.58843537414966,
+    "sample_peak": 17961,
+    "sample_rms": 2184.0841734509595,
+    "sha256": "c455b65f7086338f97602099c60952785e56b78c27da9609f332860ed31f6151",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:12:36.665918+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

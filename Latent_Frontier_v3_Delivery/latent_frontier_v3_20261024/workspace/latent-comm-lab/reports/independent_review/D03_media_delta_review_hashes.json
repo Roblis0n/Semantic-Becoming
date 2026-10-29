@@ -1,0 +1,262 @@
+{
+  "checks": {
+    "archived_research_monograph.md": true,
+    "archived_main.tex": true,
+    "archived_README.md": true,
+    "archived_main.pdf": true,
+    "research_prefix_unchanged": true,
+    "research_suffix_unchanged": true
+  },
+  "current_files": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "9bf8378475dbf742cb6b0b2557ff3baf4fba4d48c0c1e8f3697ce7a300846fd5",
+      "bytes": 216921
+    },
+    {
+      "path": "README.md",
+      "sha256": "c102a4ae20138b6be04cda582179d60024f768912c1477fe51f943b2935baf8f",
+      "bytes": 9118
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "31938e1baf75022d249dfd39f3d15d6ba4e7ad3eecc5b2fe2e8c4f0afc543297",
+      "bytes": 274929
+    },
+    {
+      "path": "run_state/checks/D03/render/main.pdf",
+      "sha256": "897f5bdb185b35810b2ca0507afd5c9794873735ae6a1e9e2a26fb61b6a2d625",
+      "bytes": 658519
+    },
+    {
+      "path": "run_state/receipts/D03.json",
+      "sha256": "2638c362feec8ba0d3cc6fb7d943e2debb925ec88f5320248a5bd6a0d8547367",
+      "bytes": 6336
+    },
+    {
+      "path": "run_state/checks/D03/current_qa_index.json",
+      "sha256": "77ba4837e2b5d8f42637ce49a0eeaf58101a069adfc66a609858a24f3c32d05d",
+      "bytes": 410
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/qa_delta.json",
+      "sha256": "1c795be83aa99c6503ec917d244d4d97eb91314605320005473ae54239e259fd",
+      "bytes": 2802
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/source_evidence.json",
+      "sha256": "c424764d1c1764fbeb03321a6904a7187e771f61294e1dd273b07347ab5a5e8f",
+      "bytes": 2102
+    },
+    {
+      "path": "reports/independent_review/D03_monograph_review.md",
+      "sha256": "3fcf066a4c20241640782a924f8e8fcf6362653f69856e13660886546c404d9e",
+      "bytes": 6789
+    },
+    {
+      "path": "reports/independent_review/D03_monograph_hashes.json",
+      "sha256": "161b1c729fa189a680aa9597822b5dba2614ed538e317e1edbe724b1dd8255cf",
+      "bytes": 10308
+    }
+  ],
+  "source_evidence_hash_checks": [
+    {
+      "path": "assets/audio/tts_ai/authorization_status.json",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/authorization_status.json",
+      "expected_sha256": "f1a03f9a579096d10f7710f5ff2c229d4c504876100f4198b39b5000bc7ee76e",
+      "snapshot_match": true,
+      "current_match": false
+    },
+    {
+      "path": "run_state/permission_events/tts_destination_disclosure_denial.json",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/tts_destination_disclosure_denial.json",
+      "expected_sha256": "d515d01344507c72fa3f26b9666b54950219e3d407696ca8135d8aabb98144bc",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "path": "assets/video/intro_90/narrated_qa.json",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/narrated_qa.json",
+      "expected_sha256": "f3fd02495979a78eb592c1e80399b4066e4ad96b3ca44774d2e63b835df3b7f0",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "path": "assets/video/intro_90/narrated_visual_review.json",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/narrated_visual_review.json",
+      "expected_sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+      "snapshot_match": true,
+      "current_match": true
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.assembly.json",
+      "snapshot_path": "run_state/checks/D03/media_delta_1846/sources/intro_90.assembly.json",
+      "expected_sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+      "snapshot_match": true,
+      "current_match": true
+    }
+  ],
+  "media_artifact_hash_checks": [
+    {
+      "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+      "expected_sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+      "match": true
+    },
+    {
+      "path": "assets/audio/intro_90.narration.wav",
+      "expected_sha256": "9fc67803982f2a9d2607d90b154acfa14bc3470a1355834f25e916e26a414ea6",
+      "match": true
+    }
+  ],
+  "wav_duration_seconds_independent": 90.0,
+  "cue_count": 14,
+  "pdf_pages": 55,
+  "pixel_comparison_scale": 1,
+  "pixel_identical_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55
+  ],
+  "changed_pages": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "empty_pages": [],
+  "out_of_page_words": [],
+  "visual_contact_pages": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "detail_pages": [
+    10,
+    11,
+    12,
+    13,
+    25,
+    26
+  ],
+  "detail_scale": 1.5,
+  "all_pages_full_resolution_inspected": false,
+  "visual_artifacts": [
+    {
+      "path": "run_state/checks/D03/media_delta_1846/visual/changed_10_21.jpg",
+      "sha256": "da87f2ea31546374c39d050387932aea49d871be3e0618f6513eece8707b09fe"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/visual/changed_22_26.jpg",
+      "sha256": "1743c7c75a41c0175f048132f2e800a5f304f2699d535fa11cbcdaf47da844cb"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/visual/detail_10.png",
+      "sha256": "1356080506f5eb4abe69800d22349c2336ab9ad98f37632a9f4698aa3c4d2977"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/visual/detail_11.png",
+      "sha256": "700a51c281c5e6652dfdafc104037e9bb5939d7675779697a4f3ece974637967"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/visual/detail_12.png",
+      "sha256": "bab2623b888feb28bfa48c8cc3f5cdbd4729fff4fed151eaed5ed366b051eefa"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/media_delta/page_13.png",
+      "sha256": "9e58e55f2ea28840801a9019a47f8d05730ef78c2414d84e5e712258e7125f65"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/media_delta/page_25.png",
+      "sha256": "ae3fab1cc6004d07afe74f03ba4cb248e242278a90f62bf6dcc32bcaa58cdb6c"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/media_delta/page_26.png",
+      "sha256": "22d6893127f0ba571fec237ae242e813eca020482e745b4075882ee6fdde8aa1"
+    }
+  ],
+  "reviewed_at_utc": "2026-10-24T19:03:33.771705+00:00",
+  "verdict": "PASS_BOUNDED_DOCUMENTATION_DELTA",
+  "research_state": "NOT_RUN",
+  "audio_listened": false,
+  "authorization_source_delta": {
+    "current_path": "assets/audio/tts_ai/authorization_status.json",
+    "current_sha256": "ceb00f456a2ada3e05b31e0b70aa30b4b357a93ebee0079ac957d7f4036d1dd8",
+    "snapshot_sha256": "f1a03f9a579096d10f7710f5ff2c229d4c504876100f4198b39b5000bc7ee76e",
+    "diff_reviewed": true,
+    "changes": [
+      "Reason wording now states explicit destination/payload permission pending without internal reviewer attribution.",
+      "Added producer_process_state: terminated; exact prior process handle no longer exists."
+    ],
+    "contradicts_1846_document_snapshot": false
+  },
+  "scope_limits": [
+    "The previous full review remains unchanged; this is a separate media-status text and affected-render delta review.",
+    "No audio listening, pronunciation certification, external TTS action or research execution was performed.",
+    "Completed short-media and process-status claims were checked against local owner evidence; MP4/WAV hashes and WAV duration were independently checked.",
+    "All 17 changed pages were viewed at contact-sheet scale; only six listed changed pages were viewed individually at 1.5x.",
+    "Pixel equality of the other 38 pages was independently reproduced at 1x and does not imply new full-resolution visual inspection.",
+    "Pending authorization, uncertain accepted remote job and mandatory audio audition remain unresolved."
+  ]
+}

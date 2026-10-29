@@ -1,0 +1,13 @@
+test_conditional_query_refines_real_finite_response (test_c17.C17Tests.test_conditional_query_refines_real_finite_response) ... ok
+test_nonlinear_response_does_not_fabricate_likelihood (test_c17.C17Tests.test_nonlinear_response_does_not_fabricate_likelihood) ... ok
+test_outside_candidate_family_unknown (test_c17.C17Tests.test_outside_candidate_family_unknown) ... ok
+test_permissions_before_query (test_c17.C17Tests.test_permissions_before_query) ... ok
+test_repeated_evidence_not_squared (test_c17.C17Tests.test_repeated_evidence_not_squared) ... ok
+test_retracted_assumption_restores_candidates (test_c17.C17Tests.test_retracted_assumption_restores_candidates) ... ok
+test_same_response_nonidentifiable (test_c17.C17Tests.test_same_response_nonidentifiable) ... ok
+test_sequential_retraction_restores_conditional_mass (test_c17.C17Tests.test_sequential_retraction_restores_conditional_mass) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.069s
+
+OK

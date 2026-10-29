@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">概念诞生的四步</title><desc id="desc">钥匙有效期例：旧类别有冲突，反例区分行为，定义授权有效期谓词，旧读者迁移。若无候选概念则保留未决分支。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">概念诞生的四步</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">每一步都输出可计算对象</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">F02</tspan>
+</text>
+<rect id="e006" x="64" y="240" width="264" height="130" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e007" x="79" y="283.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="79" dy="0">局部冲突</tspan>
+</text>
+<text id="e008" x="79" y="322.91" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">同形钥匙，行为不同</tspan>
+</text>
+<polyline id="e009" points="334.000,305.000 352.000,305.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="340.000,300.000 352.000,305.000 340.000,310.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e011" x="360" y="240" width="264" height="130" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e012" x="375" y="283.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="375" dy="0">操作反例</tspan>
+</text>
+<text id="e013" x="375" y="322.91" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="375" dy="0">K₁ 能开 / K₂ 不能</tspan>
+</text>
+<polyline id="e014" points="630.000,305.000 648.000,305.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="636.000,300.000 648.000,305.000 636.000,310.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e016" x="656" y="240" width="264" height="130" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e017" x="671" y="283.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="671" dy="0">新谓词</tspan>
+</text>
+<text id="e018" x="671" y="322.91" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="671" dy="0">valid_at(key, t)</tspan>
+</text>
+<polyline id="e019" points="926.000,305.000 944.000,305.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e020" points="932.000,300.000 944.000,305.000 932.000,310.000" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e021" x="952" y="240" width="264" height="130" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e022" x="967" y="283.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="967" dy="0">版本迁移</tspan>
+</text>
+<text id="e023" x="967" y="322.91" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="967" dy="0">v1 读者转入 v2</tspan>
+</text>
+<ellipse id="e024" cx="105.0" cy="445.0" rx="19.200000000000003" ry="19.200000000000003" fill="none" stroke="#9C5138" stroke-width="5"/>
+<polyline id="e025" points="124.200,445.000 187.400,445.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e026" points="169.000,445.000 169.000,461.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e027" points="185.000,445.000 185.000,461.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<ellipse id="e028" cx="245.0" cy="445.0" rx="19.200000000000003" ry="19.200000000000003" fill="none" stroke="#9C5138" stroke-width="5"/>
+<polyline id="e029" points="264.200,445.000 327.400,445.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e030" points="309.000,445.000 309.000,461.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e031" points="325.000,445.000 325.000,461.000" fill="none" stroke="#9C5138" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e032" x="64" y="518.0" font-family="Noto Sans CJK SC" font-size="25" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">形状相同 ≠ 授权相同</tspan>
+</text>
+<text id="e033" x="650" y="444.84" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="650" dy="0">shape_match ∧ authorized</tspan>
+<tspan x="650" dy="36.45">∧ (start ≤ t &lt; expiry)</tspan>
+</text>
+<polyline id="e034" points="490.000,375.000 490.000,455.000" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8 6"/>
+<polyline id="e035" points="495.000,443.000 490.000,455.000 485.000,443.000" fill="none" stroke="#9C5138" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e036" x="365" y="498.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="365" dy="0">没有可用候选</tspan>
+<tspan x="365" dy="35.1">保留未决 / 多域</tspan>
+</text>
+<text id="e037" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">新变量必须带定义程序；新名字本身不增加可区分性</tspan>
+</text>
+</svg>

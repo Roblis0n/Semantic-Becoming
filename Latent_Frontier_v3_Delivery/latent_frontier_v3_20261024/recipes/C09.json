@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "id": "C09",
+  "title": "协变的多尺度计算语言",
+  "kind": "combination",
+  "mechanisms": [
+    "H01",
+    "H06",
+    "H25",
+    "H35",
+    "H40"
+  ],
+  "stages": [
+    "frame登记",
+    "尺度选择",
+    "指令lowering",
+    "操作运输",
+    "目标作用",
+    "行为回译"
+  ],
+  "critical_invariant": "CoordinateSpec/ScaleSpec/ISAVersion必须同时匹配；不能只有shape相同就接边。",
+  "source_spec": "combinations/C09_协变的多尺度计算语言.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c09.py",
+  "research_outputs": "NOT_RUN"
+}

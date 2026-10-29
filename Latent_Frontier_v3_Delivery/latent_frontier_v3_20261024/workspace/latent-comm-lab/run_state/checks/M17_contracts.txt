@@ -1,0 +1,15 @@
+M17: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_covariance_head_has_explicit_loss_path_source (test_h17.GroundingTests.test_covariance_head_has_explicit_loss_path_source) ... ok
+test_occlusion_and_bad_units (test_h17.GroundingTests.test_occlusion_and_bad_units) ... ok
+test_physical_and_latent_consumer_boundaries (test_h17.GroundingTests.test_physical_and_latent_consumer_boundaries) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h17.GroundingTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h17.GroundingTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h17.GroundingTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_units_handedness_covariance (test_h17.GroundingTests.test_units_handedness_covariance) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h17.GroundingTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.020s
+
+OK
+M17: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

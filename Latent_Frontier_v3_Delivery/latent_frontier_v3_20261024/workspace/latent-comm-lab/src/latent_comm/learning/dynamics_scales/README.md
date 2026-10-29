@@ -1,0 +1,21 @@
+# L06: four explicit mechanisms, four batch contracts
+
+NOT_RUN. Reciprocal and boundary stages bind W06; scales binds W07. The bifurcation branch requires its own manifest-bound control-path records, not relabeled W06 rotation data.
+
+1. Reciprocal: sender mode/damping, receiver start, public steps/dt. K is antisymmetrized, Q=DᵀD, and H33 implicit midpoint solves each finite step; the entire live trajectory reaches readout, trajectory and energy-increment losses. Variable horizons are handled record-by-record, with equal record weighting after per-coordinate normalization. The full-horizon softmax reader is a trainable trajectory readout, not an assertion that the last state equals the public terminal goal. Supervision is the analytic trajectory.
+2. Boundary: the sender must declare boundary mode; terminal and terminal_source come only from public_task. The continuous H34 path solves a finite tridiagonal quadratic system over interior points with exact public endpoints. Time-dependent drift and a backward public-goal calibration have distinct owners. The boundary loss measures calibration, not a fabricated gradient through exact endpoint assignment. No future state label reaches the solver.
+3. Scales: sender coarse_map/micro_dynamics and receiver microstate. H35 separately computes closure, lifted detail and exact retained-detail memory propagation. Macro dynamics, C, lift, detail predictor and task reader have distinct owners. Public coarse observables anchor C against collapse. Lost detail is retained explicitly; a learned detail predictor is assessed, never called an exact inverse. Closure and residual objectives can disagree in nonclosed worlds.
+4. Bifurcation: sender control_path, receiver initial_state, public dt/steps_per_control. H28 positive cubic coefficients use softplus; bounded Euler follows the declared control path. Stability features feed a three-class event predictor. Supervision supplies task_target and structure_event only in losses. A learned structure_map is separately penalized for behavior changes. The hard event decision is not differentiable; event classification uses exact CE gradients, not claimed gradients through structure installation.
+
+Freeze table is each variant's explicit phase owner list. All nonselected owners would be frozen by the engine; there are no base-model parameters in these finite adapter families. No no_grad wraps receiver trajectories. Differentiation is through finite solves/unrolls, not an unimplemented adjoint. Runtime horizons must fit both the configured cap and adapter cap (H33 ≤128); bifurcation numerical stability is conditional on dt and potential, not certified for arbitrary settings. Per-loss specs state units, masks, numerator/denominator and skip policy. Fixed structural equalities are not optimized as if they had live gradients.
+
+## Optimizer, checkpoints and source boundary
+The shared learning.engine is the sole AdamW/accumulation/clipping loop. Each phase activates only its named owners, leaves all other parameters frozen, and keeps input graphs recorded. Every batch is physically split into RoleBatch(sender), RoleBatch(receiver), and SupervisionBatch; only losses receive supervision. JsonlSource verifies shard hashes, the train split and structure signatures, rejects mathematical fixtures, and records its exact position/epoch cursor. Checkpoints bind model, data and configuration digests, semantic versions, named owners, Adam moments and RNG states. Resume is source-reviewed, not empirically tested; serialized edges require fresh forward recomputation. No research runtime has been invoked.
+
+Future commands, NOT_RUN and currently policy-denied except --describe:
+
+    PYTHONPATH=src python -m latent_comm.learning.dynamics_scales.train --describe
+    PYTHONPATH=src python -m latent_comm.learning.dynamics_scales.train --config configs/learning/dynamics_scales.json --root .
+    PYTHONPATH=src python -m latent_comm.learning.dynamics_scales.train --config configs/learning/dynamics_scales.json --root . --resume-record RECORD --resume-sha256 SHA256
+
+A future authorized run must bind immutable research-data and model manifests and an exact stage schema first. UNBOUND is deliberately rejected. Source-level completion is not model validation.

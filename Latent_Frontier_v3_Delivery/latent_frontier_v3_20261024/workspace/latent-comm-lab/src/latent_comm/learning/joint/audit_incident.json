@@ -1,0 +1,47 @@
+{
+  "incident_id": "L13_legacy_guard_audit_20261024T180038Z",
+  "observed_at_utc": "2026-10-24T18:00:38Z",
+  "command": "PYTHONPATH=src python -m latent_comm.learning.joint.static_audit > run_state/checks/L13_all_learning_static.txt 2>&1",
+  "noncompliant_log": "run_state/checks/L13_noncompliant_legacy_guard_attempt.txt",
+  "affected_test_methods": [
+    "test_learning_concept_questions.LearningConceptQuestions.test_build_locked",
+    "test_learning_concept_questions.LearningConceptQuestions.test_structural_train_locked"
+  ],
+  "guard_only_invocations": [
+    {
+      "entry": "latent_comm.learning.concept_questions.build_stage",
+      "arguments": "'concept', VersionSet()",
+      "guard": "model_initialize",
+      "outcome": "denied before torch import"
+    },
+    {
+      "entry": "latent_comm.learning.concept_questions.select_concept_structure",
+      "arguments": "None, None, None, None, concept_id='x', evidence=()",
+      "guard": "model_train",
+      "outcome": "denied before mechanism search import"
+    },
+    {
+      "entry": "latent_comm.learning.concept_questions.search_question_structure",
+      "arguments": "None, None",
+      "guard": "model_train",
+      "outcome": "denied before mechanism graph search import"
+    }
+  ],
+  "classification": "authoring audit-rule deviation; guarded calls attempted, no research execution",
+  "neural_modules_loaded": [],
+  "model_execution": false,
+  "research_state": "NOT_RUN",
+  "credited_as_approved_check": false,
+  "corrected_exclusions": [
+    "test_build_locked",
+    "test_gate_before_model",
+    "test_gate_before_training",
+    "test_structural_train_locked"
+  ],
+  "corrected_check": "run_state/checks/L13_all_learning_static.txt",
+  "corrected_test_count": 116,
+  "corrected_failures": 0,
+  "corrected_errors": 0,
+  "additional_prevention": "AST preflight rejects unexpected calls to known model/research entry points before test collection.",
+  "later_isolated_change": "Canonicalized component construction/execution order; verified with dedicated 11-test L13 suite, not another broad audit."
+}

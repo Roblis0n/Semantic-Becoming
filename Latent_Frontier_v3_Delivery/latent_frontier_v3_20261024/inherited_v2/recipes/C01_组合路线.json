@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "id": "C01",
+  "title": "临时计算体",
+  "kind": "combination",
+  "hypotheses": [
+    "H01",
+    "H06",
+    "H07",
+    "H22"
+  ],
+  "training_routes": [
+    "R02",
+    "R07",
+    "R08",
+    "R11"
+  ],
+  "pipeline_nodes": [
+    "typed_graph",
+    "chart_binding",
+    "operator_dispatch",
+    "target_decode"
+  ],
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+  "status": "planned_for_dot"
+}

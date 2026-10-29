@@ -1,0 +1,84 @@
+{
+  "task_id": "M48",
+  "status": "done",
+  "input_digest": "4845f2ab5f9b3b2f1249dd203c7b528a86c56b72549242fe242701b3d8a6cb4a",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/README.md",
+      "sha256": "7a5cc92478d7a34bad66f269cddfd0bb96678c95ea51e50cb27889b5a5321cab",
+      "bytes": 2671
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/__init__.py",
+      "sha256": "01052b7d7c1b6a3ae161fa27de6b2c2a3c9f746406bf800d44fb63191ee50e6e",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/adapter.py",
+      "sha256": "4694af1749de829d0f9dd25ebcaa6f1ffc16b4b5361cde8856fb03f413b2a62f",
+      "bytes": 4098
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/losses.py",
+      "sha256": "7b1bf9c1d24469f8ebd7ca7879d5b4c470edda14f1d55905aa11719fe5c94331",
+      "bytes": 1457
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/reference.py",
+      "sha256": "7a4cb6d487d7469b144a2b04e23a527f2092ec93b6fba2e337ddfb8556c21366",
+      "bytes": 7482
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/schema.json",
+      "sha256": "6291c6d410a5f6bfaf04e8436ee53bb87076ed5999a6f5e4a02abcbb60b3745f",
+      "bytes": 4209
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/serialization.py",
+      "sha256": "5617ea119b22ccf383fe1e63d20dc9c3bdd1e5a43b2a5acb99ce11d0b1e6cf72",
+      "bytes": 2607
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/types.py",
+      "sha256": "bc172d6a416404b5acd559bc8425a15ec98fee935e54664dd25e734cd9d79bcc",
+      "bytes": 3531
+    },
+    {
+      "path": "tests/contracts/test_h48.py",
+      "sha256": "8562cbf87b20b86c92e9893387432b153d62faa4e77b3e24244d29b904e1588b",
+      "bytes": 6246
+    },
+    {
+      "path": "configs/mechanisms/H48.json",
+      "sha256": "f973739a9a56326e51af6d1745b3e3433987433601c3b61c29042670d8c797df",
+      "bytes": 1309
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M48_contracts.txt",
+      "sha256": "a50c87af8518b7d5722a152be9c38c0ece80ce14f4687525c104b674cd8ac5c7"
+    },
+    {
+      "path": "run_state/checks/M48_frontier_final_audit.txt",
+      "sha256": "8960eed64b84b6c78cf0db4767ad85520c185a5985bae3e366956b6cace59c71"
+    },
+    {
+      "path": "run_state/checks/aggregate_budget_revalidation/M48_test_h48.txt",
+      "sha256": "48c873dbbe5268d5ee01cc27df8c256bb8272d803d2f8374b913c7c59d79cb3f"
+    },
+    {
+      "path": "run_state/checks/M48_final_review_repair.txt",
+      "sha256": "dbd37501f5c39bbcb2e9060d364bd56e014bf5eecaba4351f892da17b19a6eb9"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated source complete. Final bounded audit: 157 contracts across M25–M48, 144 source modules AST parsed, all24 receipts and inputs verified; no torch/transformers imported, research NOT_RUN. Aggregate finite-budget boundary revalidated 2026-10-24 with blocked neural-entry tests excluded and neural imports denied. All research NOT_RUN. Final focused review repairs: finite budgets/unique observation and lineage IDs; synthetic pool identity binding; skipped empty objectives and actual optimizer-forward parameter ownership. Only stdlib finite and source/AST checks executed.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:14:34.405165+00:00"
+}

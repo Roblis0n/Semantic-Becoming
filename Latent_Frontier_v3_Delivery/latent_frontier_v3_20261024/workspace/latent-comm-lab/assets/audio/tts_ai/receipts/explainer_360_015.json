@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_015",
+  "edition": "explainer_360",
+  "scene_id": "S03",
+  "characters": 25,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "这条路线允许群体知识不是一个单一、完整的世界模型。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:29:26.848585+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:29:34 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:30:11.261795+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 187037,
+    "duration_seconds": 4.241201814058957,
+    "sample_peak": 15389,
+    "sample_rms": 2378.9156707461775,
+    "sha256": "112c4f16b04bf88c7e0a8652582c65c3ce2c7d824f29eeb7d620257afba4c44e",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:30:36.913681+00:00"
+}

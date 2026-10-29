@@ -1,0 +1,118 @@
+{
+  "status": "pass_with_disclosed_inspection_limit",
+  "research_state": "NOT_RUN",
+  "container_checks": [
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "duration_seconds": 20.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A01/A01_opening.png",
+      "opening_frame_sha256": "a1d57848d491b456b603cd5ab45351916a4c5279024554866dac15768d94b4fd",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A02/A02_opening.png",
+      "opening_frame_sha256": "936ad3466798de4d5ca0bc9421ab05e31eceb3f23c25fd69c2b0dd634e29a23a",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A03/A03_opening.png",
+      "opening_frame_sha256": "862402876ff7fea3e27b581f112fee70ca02db8b1af5c868f0cc6d05e53d64bf",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A04/A04_opening.png",
+      "opening_frame_sha256": "dcffac6abc8113d4a385d8dde9aeca4056705ec2b2885886cdbbeb8ade91f3f7",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A05/A05_opening.png",
+      "opening_frame_sha256": "272defc96def0b4f024ba27e78fcb5105bc30bc5131065b63d7be2d809f89fe1",
+      "research_state": "NOT_RUN"
+    }
+  ],
+  "javascript_syntax": "passed",
+  "exact_math": [
+    {
+      "name": "A01_H25_covariance",
+      "passed": true,
+      "details": "z=(1,2), T=diag(2,3), G=swap; both paths (6,2)"
+    },
+    {
+      "name": "A02_H26_obstruction",
+      "passed": true,
+      "details": "Left sum zero; right sum one. No simultaneous solution."
+    },
+    {
+      "name": "A03_H27_predicate",
+      "passed": true,
+      "details": "Same shape, authorized; expiry 10 versus 4 at t=5 yields true/false."
+    },
+    {
+      "name": "A04_H37_transport",
+      "passed": true,
+      "details": "delta=4/(16+lambda). lambda=0: 1/4; lambda=1: 4/17; residual=1/17."
+    },
+    {
+      "name": "A05_H43_shared_noise",
+      "passed": true,
+      "details": "Shared bit equality probability 1; independent bits 1/2. Synthetic illustration only."
+    }
+  ],
+  "interactive_browser_checked": false,
+  "interactive_browser_reason": "Chromium failed before page load: socket() failed: Operation not permitted. No restriction bypass or browser installation attempted.",
+  "browser_log": "assets/animations/browser_qa.json",
+  "rendered_keyframes_per_animation": 5
+}

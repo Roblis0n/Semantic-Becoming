@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">多尺度任务语义</title><desc id="desc">任务相对语义：奇偶查询将一三与二四分别归类。添加大于二查询并拥有原始信息后，细化为四个单元素类；粗表示不能无中生有恢复已丢信息。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">多尺度任务语义</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">等价类由可问的问题决定</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">F05</tspan>
+</text>
+<text id="e006" x="64" y="238.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="64" dy="0">问题族 Q₁：是否为奇数？</tspan>
+</text>
+<rect id="e007" x="64" y="284" width="245" height="110" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e008" x="79" y="332.12" font-family="Noto Sans CJK SC" font-size="36" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="79" dy="0">{1, 3}</tspan>
+</text>
+<text id="e009" x="79" y="373.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">奇数</tspan>
+</text>
+<rect id="e010" x="344" y="284" width="245" height="110" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e011" x="359" y="332.12" font-family="Noto Sans CJK SC" font-size="36" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="359" dy="0">{2, 4}</tspan>
+</text>
+<text id="e012" x="359" y="373.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="359" dy="0">偶数</tspan>
+</text>
+<text id="e013" x="710" y="236.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="710" dy="0">Q₂ = Q₁ ＋「是否大于 2？」</tspan>
+</text>
+<rect id="e014" x="710" y="284" width="244" height="110" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e015" x="725" y="330.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="725" dy="0">{1}</tspan>
+</text>
+<text id="e016" x="725" y="370.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="725" dy="0">保留原始值</tspan>
+</text>
+<rect id="e017" x="972" y="284" width="244" height="110" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e018" x="987" y="330.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="987" dy="0">{3}</tspan>
+</text>
+<text id="e019" x="987" y="370.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="987" dy="0">保留原始值</tspan>
+</text>
+<rect id="e020" x="710" y="418" width="244" height="110" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e021" x="725" y="464.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="725" dy="0">{2}</tspan>
+</text>
+<text id="e022" x="725" y="504.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="725" dy="0">保留原始值</tspan>
+</text>
+<rect id="e023" x="972" y="418" width="244" height="110" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e024" x="987" y="464.28" font-family="Noto Sans CJK SC" font-size="34" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="987" dy="0">{4}</tspan>
+</text>
+<text id="e025" x="987" y="504.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="987" dy="0">保留原始值</tspan>
+</text>
+<polyline id="e026" points="610.000,328.000 688.000,328.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e027" points="676.000,323.000 688.000,328.000 676.000,333.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e028" x="654.0" y="298.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="654.0" dy="0">细化</tspan>
+</text>
+<polyline id="e029" points="688.000,503.000 610.000,503.000" fill="none" stroke="#606258" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e030" points="622.000,508.000 610.000,503.000 622.000,498.000" fill="none" stroke="#606258" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e031" x="654.0" y="550.24" font-family="Noto Sans CJK SC" font-size="22" font-weight="400" fill="#606258" text-anchor="middle">
+<tspan x="654.0" dy="0">粗化</tspan>
+</text>
+<text id="e032" x="64" y="479.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">细化所需：</tspan>
+<tspan x="64" dy="40.5">原始状态，或新的可用查询</tspan>
+</text>
+<text id="e033" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">粗化会丢信息；仅有奇偶类别无法判断原值是否大于 2</tspan>
+</text>
+</svg>

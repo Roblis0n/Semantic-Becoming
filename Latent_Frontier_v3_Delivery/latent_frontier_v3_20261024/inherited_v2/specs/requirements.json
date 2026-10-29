@@ -1,0 +1,96 @@
+[
+  {
+    "id": "U01",
+    "requirement": "前沿创新优先而不是验证优先",
+    "locations": [
+      "docs/00",
+      "docs/02",
+      "docs/23",
+      "hypotheses/"
+    ]
+  },
+  {
+    "id": "U02",
+    "requirement": "综合旧方案但明确覆盖",
+    "locations": [
+      "docs/01",
+      "provenance/"
+    ]
+  },
+  {
+    "id": "U03",
+    "requirement": "全部目标、细节和提示词",
+    "locations": [
+      "docs/",
+      "prompts/",
+      "tasks/"
+    ]
+  },
+  {
+    "id": "U04",
+    "requirement": "浏览器和软件生态充分使用",
+    "locations": [
+      "docs/14",
+      "media/",
+      "prompts/P12",
+      "prompts/P13",
+      "prompts/P14"
+    ]
+  },
+  {
+    "id": "U05",
+    "requirement": "Agent执行边界与状态恢复",
+    "locations": [
+      "docs/13",
+      "docs/15",
+      "docs/20",
+      "specs/execution_policy.json"
+    ]
+  },
+  {
+    "id": "U06",
+    "requirement": "一次性全流程自主执行",
+    "locations": [
+      "prompts/P00",
+      "specs/task_graph.json"
+    ]
+  },
+  {
+    "id": "U07",
+    "requirement": "每个补充点独立Markdown",
+    "locations": [
+      "hypotheses/",
+      "docs/",
+      "tasks/"
+    ]
+  },
+  {
+    "id": "U08",
+    "requirement": "不跑研究模型但写完整源码",
+    "locations": [
+      "docs/06",
+      "docs/08",
+      "docs/09",
+      "docs/10",
+      "docs/12"
+    ]
+  },
+  {
+    "id": "U09",
+    "requirement": "Word及ZIP交付",
+    "locations": [
+      "START_HERE.md",
+      "MASTER_PLAN.md",
+      "DELIVERY_MANIFEST.json"
+    ]
+  },
+  {
+    "id": "U10",
+    "requirement": "不因难以验证而删除猜想",
+    "locations": [
+      "docs/03",
+      "docs/16",
+      "docs/23"
+    ]
+  }
+]

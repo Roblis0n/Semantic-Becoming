@@ -1,0 +1,364 @@
+{
+  "title": "H48：十次转述不是十份证据",
+  "description": "两个转述共同指向e，P=.8；独立误算.96划掉。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "H48：十次转述不是十份证据",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "共同祖先必须进入聚合计算",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "解析示意 / 数学示意 · 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "31 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 285,
+      "w": 280,
+      "h": 140,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79,
+      "y": 300,
+      "w": 250,
+      "h": 51.48,
+      "text": "来源事件 e",
+      "size": 36,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79,
+      "y": 353.0,
+      "w": 250,
+      "h": 32.89,
+      "text": "P(e) = 0.8",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          360,
+          350
+        ],
+        [
+          560,
+          280
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          547.0219475999672,
+          279.2449133149072
+        ],
+        [
+          560,
+          280
+        ],
+        [
+          550.3254518472484,
+          288.6834968785673
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "points": [
+        [
+          360,
+          365
+        ],
+        [
+          560,
+          470
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e011"
+    },
+    {
+      "points": [
+        [
+          551.6993946608943,
+          459.9950036979313
+        ],
+        [
+          560,
+          470
+        ],
+        [
+          547.0510556709951,
+          468.8489827263107
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e012"
+    },
+    {
+      "x": 580,
+      "y": 225,
+      "w": 240,
+      "h": 100,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e013"
+    },
+    {
+      "x": 595,
+      "y": 240,
+      "w": 210,
+      "h": 42.9,
+      "text": "转述 A",
+      "size": 30,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e014"
+    },
+    {
+      "x": 595,
+      "y": 285.5,
+      "w": 210,
+      "h": 32.89,
+      "text": "仅引用 e",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e015"
+    },
+    {
+      "x": 580,
+      "y": 440,
+      "w": 240,
+      "h": 100,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 595,
+      "y": 455,
+      "w": 210,
+      "h": 42.9,
+      "text": "转述 B",
+      "size": 30,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 595,
+      "y": 500.5,
+      "w": 210,
+      "h": 32.89,
+      "text": "仅引用 e",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 895,
+      "y": 230,
+      "w": 321,
+      "h": 54.339999999999996,
+      "text": "e ∨ e = e",
+      "size": 38,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e019"
+    },
+    {
+      "x": 895,
+      "y": 312,
+      "w": 321,
+      "h": 51.48,
+      "text": "仍为 0.8",
+      "size": 36,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e020"
+    },
+    {
+      "x": 895,
+      "y": 430,
+      "w": 321,
+      "h": 42.9,
+      "text": "独立误算 0.96",
+      "size": 30,
+      "color": "#9C4540",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e021"
+    },
+    {
+      "points": [
+        [
+          890,
+          468
+        ],
+        [
+          1200,
+          468
+        ]
+      ],
+      "stroke": "#9C4540",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e022"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "0.96 仅适用于两个不同、独立、各为 0.8 的事件之并",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    }
+  ],
+  "notes": "谱系不保证来源真实，但能避免把重复声音误当独立支持。\n\n原稿画面要求：两个转述共同指向e，P=.8；独立误算.96划掉。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第31页\nhypotheses/H48_相关证据的认知谱系代数.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1910.07910\nhttps://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a\nhttps://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_31"
+  ],
+  "research_state": "NOT_RUN"
+}

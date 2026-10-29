@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_039",
+  "edition": "explainer_360",
+  "scene_id": "S08",
+  "characters": 32,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "不能全都退化成同一种向量桥接。自动执行也有边界：不运行研究模型，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:12:36.671731+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 278330,
+    "duration_seconds": 6.3113378684807255,
+    "sample_peak": 9963,
+    "sample_rms": 1777.7830917734216,
+    "sha256": "40e00b26d32e095106fb132251514971c0a2bdcdca583f9a36977df2784e5620",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:13:29.201391+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

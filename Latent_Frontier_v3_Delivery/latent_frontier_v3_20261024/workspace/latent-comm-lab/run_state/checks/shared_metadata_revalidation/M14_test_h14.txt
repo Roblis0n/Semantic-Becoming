@@ -1,0 +1,8 @@
+test_hygiene_and_old_reader (test_h14.GrammarTests.test_hygiene_and_old_reader) ... ok
+test_recursion_and_capture (test_h14.GrammarTests.test_recursion_and_capture) ... ok
+test_source_gate_and_schema (test_h14.GrammarTests.test_source_gate_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.022s
+
+OK

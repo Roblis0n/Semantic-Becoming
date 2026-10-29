@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H06:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "charts",
+    "transitions",
+    "routing_mode",
+    "task_family"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "ontology",
+        "schema",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "charts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "chart_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "model_revision": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "center": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "radius": {
+            "type": "number"
+          },
+          "read_map": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "write_map": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "task_family": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "versions": {
+            "type": "object",
+            "properties": {
+              "schema": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "ontology": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "isa": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "frame": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "world": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "task": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "evidence": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "schema"
+            ],
+            "additionalProperties": false
+          },
+          "invalidated": {
+            "type": "boolean"
+          },
+          "behavioral_anchor": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "chart_id",
+          "model_revision",
+          "center",
+          "radius",
+          "read_map",
+          "write_map",
+          "task_family",
+          "versions",
+          "behavioral_anchor"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_chart": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "target_chart": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "mapping": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "bias": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "source_frame": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "target_frame": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "tasks": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "information_loss": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "source_chart",
+          "target_chart",
+          "mapping",
+          "bias",
+          "source_frame",
+          "target_frame",
+          "tasks",
+          "information_loss"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "routing_mode": {
+      "enum": [
+        "hard",
+        "soft"
+      ]
+    },
+    "task_family": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

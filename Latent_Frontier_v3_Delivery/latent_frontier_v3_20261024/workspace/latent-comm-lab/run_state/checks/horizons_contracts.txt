@@ -1,0 +1,29 @@
+test_dream_never_real_namespace (test_horizons.HorizonTests.test_dream_never_real_namespace) ... ok
+test_each_budget_stops_before_excess (test_horizons.HorizonTests.test_each_budget_stops_before_excess) ... ok
+test_ecology_partial_never_registers_final_digest (test_horizons.HorizonTests.test_ecology_partial_never_registers_final_digest) ... ok
+test_identity_blocked_program_still_migrates_snapshot_frame (test_horizons.HorizonTests.test_identity_blocked_program_still_migrates_snapshot_frame) ... ok
+test_identity_no_new_permission (test_horizons.HorizonTests.test_identity_no_new_permission) ... ok
+test_identity_partition_version_is_not_invented (test_horizons.HorizonTests.test_identity_partition_version_is_not_invented) ... ok
+test_invention_no_hidden_measurement (test_horizons.HorizonTests.test_invention_no_hidden_measurement) ... ok
+test_lifecycle_no_dangling_reader (test_horizons.HorizonTests.test_lifecycle_no_dangling_reader) ... ok
+test_no_neural_modules_loaded (test_horizons.HorizonTests.test_no_neural_modules_loaded) ... ok
+test_plasticity_budget_must_be_finite (test_horizons.HorizonTests.test_plasticity_budget_must_be_finite) ... ok
+test_scale_missing_detail_is_not_inverse (test_horizons.HorizonTests.test_scale_missing_detail_is_not_inverse) ... ok
+test_semantic_dead_code_pass_has_actual_transform (test_horizons.HorizonTests.test_semantic_dead_code_pass_has_actual_transform) ... ok
+test_x01_identity (test_horizons.HorizonTests.test_x01_identity) ... ok
+test_x02_plural (test_horizons.HorizonTests.test_x02_plural) ... ok
+test_x03_invention (test_horizons.HorizonTests.test_x03_invention) ... ok
+test_x04_plasticity (test_horizons.HorizonTests.test_x04_plasticity) ... ok
+test_x05_ecology (test_horizons.HorizonTests.test_x05_ecology) ... ok
+test_x06_multiscale (test_horizons.HorizonTests.test_x06_multiscale) ... ok
+test_x07_trajectory (test_horizons.HorizonTests.test_x07_trajectory) ... ok
+test_x08_unfinished (test_horizons.HorizonTests.test_x08_unfinished) ... ok
+test_x09_dream (test_horizons.HorizonTests.test_x09_dream) ... ok
+test_x10_commons (test_horizons.HorizonTests.test_x10_commons) ... ok
+test_x11_lifecycle (test_horizons.HorizonTests.test_x11_lifecycle) ... ok
+test_x12_unbound (test_horizons.HorizonTests.test_x12_unbound) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.149s
+
+OK

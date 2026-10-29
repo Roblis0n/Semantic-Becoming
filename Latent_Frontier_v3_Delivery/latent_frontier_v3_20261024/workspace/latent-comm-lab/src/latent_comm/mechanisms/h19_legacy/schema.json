@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H19:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "teacher_trace",
+    "adapter_version",
+    "parent_version",
+    "parameter_digest",
+    "training_sources",
+    "writable_groups",
+    "task_family",
+    "base_revision"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "evidence",
+        "isa",
+        "ontology",
+        "schema",
+        "state",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "teacher_trace": {
+      "type": "object",
+      "properties": {
+        "trace_id": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "instance_id": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "message_ref": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "operation_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "evidence_sources": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "task_family": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "teacher_revision": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "expires_step": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "versions": {
+          "type": "object",
+          "properties": {
+            "schema": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "state": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            },
+            "ontology": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            },
+            "isa": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            },
+            "frame": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            },
+            "world": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            },
+            "task": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            },
+            "evidence": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "\\S"
+            }
+          },
+          "required": [
+            "schema"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "trace_id",
+        "instance_id",
+        "message_ref",
+        "operation_ids",
+        "evidence_sources",
+        "task_family",
+        "teacher_revision",
+        "expires_step",
+        "versions"
+      ],
+      "additionalProperties": false
+    },
+    "adapter_version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "parent_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parameter_digest": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "training_sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "writable_groups": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "task_family": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "base_revision": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false
+}

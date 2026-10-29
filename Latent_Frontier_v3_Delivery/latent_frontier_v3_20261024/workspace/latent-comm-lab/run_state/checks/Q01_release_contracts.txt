@@ -1,0 +1,19 @@
+test_paths_duplicates_and_symlinks_reject (test_release.ReleaseContracts.test_paths_duplicates_and_symlinks_reject) ... ok
+test_postbuild_evidence_is_not_self_hashed (test_release.ReleaseContracts.test_postbuild_evidence_is_not_self_hashed) ... ok
+test_seal_detects_byte_and_file_set_changes (test_release.ReleaseContracts.test_seal_detects_byte_and_file_set_changes) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+{
+  "selected": 3,
+  "excluded_research_entry_tests": [],
+  "test_file": "tests/control/test_release.py",
+  "research_state": "NOT_RUN",
+  "budget_scope": "per test aggregate",
+  "tests_run": 3,
+  "failures": 0,
+  "errors": 0,
+  "neural_modules_loaded": []
+}

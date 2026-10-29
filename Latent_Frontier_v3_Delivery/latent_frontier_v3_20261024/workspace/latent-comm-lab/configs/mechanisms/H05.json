@@ -1,0 +1,162 @@
+{
+  "schema_version": 3,
+  "id": "H05",
+  "kind": "mechanism",
+  "title": "\u63a8\u7406\u7eed\u63a5\u80f6\u56ca",
+  "mechanisms": [
+    "H05"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H05_\u63a8\u7406\u7eed\u63a5\u80f6\u56ca.md",
+  "target_base": "src/latent_comm/mechanisms/h05_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H05",
+    "name": "continuation_transfer",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "continuation",
+    "data_family": "pausable_programs",
+    "training": {
+      "family": "R06",
+      "loss_terms": [
+        "continuation_behavior",
+        "task"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.continuations.capture",
+      "latent_comm.mechanisms.continuations.translate",
+      "latent_comm.mechanisms.continuations.resume",
+      "latent_comm.mechanisms.continuations.ledger"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I05_\u63a8\u7406\u7eed\u63a5\u80f6\u56ca.md",
+  "canonical_module": "latent_comm.mechanisms.h05_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h05_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h05_legacy.adapter.translate_progress",
+    "forward_entries": [
+      "latent_comm.mechanisms.h05_legacy.adapter.translate_cache",
+      "latent_comm.mechanisms.h05_legacy.adapter.translate_progress",
+      "latent_comm.mechanisms.h05_legacy.adapter.resume_model",
+      "latent_comm.mechanisms.h05_legacy.adapter.capture_model_snapshot",
+      "latent_comm.mechanisms.h05_legacy.adapter.resume_model_snapshot",
+      "latent_comm.mechanisms.h05_legacy.adapter.close_model_snapshot"
+    ],
+    "loss_input_bindings": {
+      "action_logits": {
+        "producer": "stage.common_action_readout on translate_progress or explicitly approximate translate_cache result",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "action_targets": {
+        "producer": "SupervisionBatch.action_targets; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "valid": {
+        "producer": "stage explicit boolean valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "task_loss": {
+        "producer": "stage suffix task head",
+        "requires_gradient": true,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "translate_progress.projection"
+      ],
+      "mechanism_reader": [
+        "translate_cache.key_projections",
+        "translate_cache.value_projections",
+        "stage.common_action_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h05_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H34: public boundary conditions",
+    "H39: checked transaction snapshot",
+    "H48: source dependencies must survive"
+  ]
+}

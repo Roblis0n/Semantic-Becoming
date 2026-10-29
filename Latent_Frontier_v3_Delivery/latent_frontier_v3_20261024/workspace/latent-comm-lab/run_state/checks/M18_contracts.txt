@@ -1,0 +1,15 @@
+M18: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_explicit_graph_search_and_cost (test_h18.TopologyTests.test_explicit_graph_search_and_cost) ... ok
+test_illegal_graph (test_h18.TopologyTests.test_illegal_graph) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h18.TopologyTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h18.TopologyTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h18.TopologyTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_structure_proposal_consumers_do_not_apply_themselves (test_h18.TopologyTests.test_structure_proposal_consumers_do_not_apply_themselves) ... ok
+test_timeout_is_not_optimality (test_h18.TopologyTests.test_timeout_is_not_optimality) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h18.TopologyTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.025s
+
+OK
+M18: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

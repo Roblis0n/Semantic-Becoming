@@ -1,0 +1,1078 @@
+{
+  "recipe_id": "C07",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C07",
+    "nodes": [
+      {
+        "node_id": "scope_check",
+        "operation": "C07.scope_check",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "scope_check:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ScopedMemoryInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ScopedMemory",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H24"
+        ],
+        "implementation": "latent_comm.compositions.c07.scope_check",
+        "location": {
+          "source": "C07.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "version_calibrate",
+        "operation": "C07.version_calibrate",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "scope_check:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "version_calibrate:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ScopedMemory",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CalibratedMemory",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "F",
+          "K",
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "K"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H12",
+          "H15"
+        ],
+        "implementation": "latent_comm.compositions.c07.version_calibrate",
+        "location": {
+          "source": "C07.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "query_residual",
+        "operation": "C07.query_residual",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "version_calibrate:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "query_residual:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CalibratedMemory",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "MemoryRepair",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H23"
+        ],
+        "implementation": "latent_comm.compositions.c07.query_residual",
+        "location": {
+          "source": "C07.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "apply",
+        "operation": "C07.apply",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "query_residual:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "apply:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "MemoryRepair",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AppliedMemory",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H24"
+        ],
+        "implementation": "latent_comm.compositions.c07.apply",
+        "location": {
+          "source": "C07.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "revoke",
+        "operation": "C07.revoke",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "apply:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "revoke:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "AppliedMemory",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ScopedMemoryReadout",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "K",
+          "P",
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "K",
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H12",
+          "H24"
+        ],
+        "implementation": "latent_comm.compositions.c07.revoke",
+        "location": {
+          "source": "C07.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "apply:out",
+        {
+          "name": "AppliedMemory",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "ScopedMemoryInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "query_residual:out",
+        {
+          "name": "MemoryRepair",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "revoke:out",
+        {
+          "name": "ScopedMemoryReadout",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "scope_check:out",
+        {
+          "name": "ScopedMemory",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "version_calibrate:out",
+        {
+          "name": "CalibratedMemory",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "apply",
+        "revoke"
+      ],
+      [
+        "query_residual",
+        "apply"
+      ],
+      [
+        "scope_check",
+        "version_calibrate"
+      ],
+      [
+        "version_calibrate",
+        "query_residual"
+      ]
+    ],
+    "schedule": [
+      "scope_check",
+      "version_calibrate",
+      "query_residual",
+      "apply",
+      "revoke"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "42f99a70418e47b9553c42002cc046aa3c1d223a0ae2e46d390acdb23350bbc2",
+    "declared_parameters": {
+      "obligations": [
+        "Host bootstrap grants are not created by message content.",
+        "Revocation invalidates future access and evidence but does not claim erasure of already derived knowledge.",
+        "New models need adaptation; unseen pair is a separate claim."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C07",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "persistent_queries",
+        "objectives": [
+          {
+            "name": "multiquery",
+            "mathematical_definition": "mean_document weighted_mean_query task_error",
+            "numerator": "sum valid document weighted query means",
+            "denominator": "count valid documents, inner sum query_weights*query_valid",
+            "valid_mask": "query_valid; sum(query_weights * query_valid)>0 per document",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "query_errors"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "documents then weighted queries",
+            "id": "H12.multiquery"
+          }
+        ],
+        "losses": [
+          "H12.multiquery"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "population_protocol",
+        "objectives": [
+          {
+            "name": "cross_receiver",
+            "mathematical_definition": "mean_receiver mean_valid_task loss",
+            "numerator": "sum valid receiver task means",
+            "denominator": "count valid receivers, inner valid task count",
+            "valid_mask": "receiver_valid; at least one valid task per receiver",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "receiver_errors"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "receivers then tasks",
+            "id": "H15.cross_receiver"
+          },
+          {
+            "name": "effect",
+            "mathematical_definition": "common behavior discrepancy",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "behavior_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "behaviors"
+            ],
+            "stop_gradient_edges": [
+              [
+                "behavior_target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "shared behavior coordinates",
+            "id": "H15.effect"
+          }
+        ],
+        "losses": [
+          "H15.cross_receiver",
+          "H15.effect"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "typed_repair",
+        "objectives": [
+          {
+            "name": "unnecessary_change",
+            "mathematical_definition": "mean squared correction norm on clean packets",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "normal_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "delta"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "clean packets",
+            "id": "H23.unnecessary_change"
+          },
+          {
+            "name": "repair_behavior",
+            "mathematical_definition": "mean_valid ||behavior_after-stopgrad(correct_behavior)||^2",
+            "numerator": "sum of valid per-probe mean coordinate errors",
+            "denominator": "count of valid probes",
+            "valid_mask": "probe_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "after"
+            ],
+            "stop_gradient_edges": [
+              [
+                "target",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "probes, each averaged over coordinates",
+            "id": "H23.repair_behavior"
+          },
+          {
+            "name": "no_repair_gate",
+            "mathematical_definition": "binary cross entropy repair/no-repair on both normal and corrupted messages",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "gate_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer"
+            ],
+            "requires_grad_inputs": [
+              "gate_logits"
+            ],
+            "stop_gradient_edges": [
+              [
+                "needs_repair",
+                "target_or_return"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "messages",
+            "id": "H23.no_repair_gate"
+          }
+        ],
+        "losses": [
+          "H23.unnecessary_change",
+          "H23.repair_behavior",
+          "H23.no_repair_gate"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "local_scope",
+        "objectives": [
+          {
+            "name": "scoped_effect",
+            "mathematical_definition": "mean_valid squared proposed effects in forbidden coordinates",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "(~write_mask).expand_as(proposed_delta) & coordinate_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "proposed_delta"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "protected coordinates",
+            "id": "H24.scoped_effect"
+          },
+          {
+            "name": "task",
+            "mathematical_definition": "mean_valid task loss after structurally masked operation",
+            "numerator": "sum of valid terms",
+            "denominator": "count of valid terms",
+            "valid_mask": "task_valid",
+            "zero_valid_policy": "differentiable_zero",
+            "parameter_owners": [
+              "mechanism_writer",
+              "mechanism_reader"
+            ],
+            "requires_grad_inputs": [
+              "task_losses"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task instances",
+            "id": "H24.task"
+          }
+        ],
+        "losses": [
+          "H24.scoped_effect",
+          "H24.task"
+        ],
+        "owners": [
+          "mechanism_reader",
+          "mechanism_writer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "scope_check": "stop",
+      "version_calibrate": "differentiable",
+      "query_residual": "stop",
+      "apply": "stop",
+      "revoke": "stop"
+    }
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

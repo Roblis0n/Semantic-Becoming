@@ -1,0 +1,63 @@
+{
+  "task_id": "Q02",
+  "status": "done",
+  "input_digest": "31892da14efa88224c9f92b58419934f2049e726b17170c49ce3aa4c4867109c",
+  "outputs": [
+    {
+      "path": "reports/permission_review.json",
+      "sha256": "01a60d37fd0d103c6a18298d2f9ec963040c6ce67975357c1c13aacc2dd5cb6b",
+      "bytes": 19197
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/Q02_release_secret_scan.json",
+      "sha256": "0dd74b8935b759a6087ffa87bf95de2d0830991b79323d97441d806f94f78857"
+    },
+    {
+      "path": "run_state/checks/Q02_allowed_policy_contracts.txt",
+      "sha256": "ef700c80fb4f849d0370cdf7f8df6773e11b0e6bc53aff8165115b49923dd2a7"
+    },
+    {
+      "path": "reports/independent_visual_qa_20261024/narrated_review.json",
+      "sha256": "b0707669a19a5436109b58eff3cfe82b9bff2ed029b7b74ccc65a124d0b247f7"
+    },
+    {
+      "path": "run_state/permission_events/tts_destination_disclosure_denial.json",
+      "sha256": "d515d01344507c72fa3f26b9666b54950219e3d407696ca8135d8aabb98144bc"
+    },
+    {
+      "path": "reports/audio_input_capability_20261027.json",
+      "sha256": "4a8a885fc64316a1c85aed62a4536b0addaadd3b7a9c3e76e6ba09c33657c35c"
+    },
+    {
+      "path": "assets/audio/tts_ai/generation_summary.json",
+      "sha256": "63d357aaa35ba6c86f651aa61cf60a954b3a479774f772545516e3d97a25a537"
+    },
+    {
+      "path": "release/authorization_updates/20261026_TTS_APPROVAL.json",
+      "sha256": "c994aa7020aac6a6e718adf1d05f33ae72f9d9c50e027ebdd0b3d7506ee225e4"
+    },
+    {
+      "path": "release/authorization_updates/20261027_TTS036_APPROVAL.json",
+      "sha256": "06145d17477ef4b47964e1a32f9723343a12b02e822dde9c7e1f86dd58b92766"
+    },
+    {
+      "path": "run_state/permission_events/tts_continuation_denial_20261025.json",
+      "sha256": "bea33c78f70016e60286bd3a89a6292064af11f1fd1b9d10a9731e3d103112c7"
+    },
+    {
+      "path": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json",
+      "sha256": "d7afb73da5140d37dd78c8305bdedab684657db1ca7db8e9cf03eeb8cbd108c6"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Explicit user listening waiver recorded, not performed not PASS. Scoped final scan0findings, zero spend, private capabilities excluded, historical grants/denials unchanged; researchNOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:12:05.127786+00:00"
+}

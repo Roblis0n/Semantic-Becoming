@@ -1,0 +1,416 @@
+{
+  "title": "H38：规则本身成为消息",
+  "description": "support→规则AST→局部更新→query损失；标签边隔离。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "H38：规则本身成为消息",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "传递一个受限更新程序",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "15 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64.0,
+      "y": 270,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79.0,
+      "y": 285,
+      "w": 234.0,
+      "h": 44.33,
+      "text": "support",
+      "size": 31,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79.0,
+      "y": 331.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "只供局部更新",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          334.0,
+          355.0
+        ],
+        [
+          354.0,
+          355.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          342.0,
+          350.0
+        ],
+        [
+          354.0,
+          355.0
+        ],
+        [
+          342.0,
+          360.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 360.0,
+      "y": 270,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 375.0,
+      "y": 285,
+      "w": 234.0,
+      "h": 44.33,
+      "text": "规则 AST",
+      "size": 31,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 375.0,
+      "y": 331.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "受限读取与写入",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          630.0,
+          355.0
+        ],
+        [
+          650.0,
+          355.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          638.0,
+          350.0
+        ],
+        [
+          650.0,
+          355.0
+        ],
+        [
+          638.0,
+          360.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 656.0,
+      "y": 270,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 671.0,
+      "y": 285,
+      "w": 234.0,
+      "h": 44.33,
+      "text": "局部更新",
+      "size": 31,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 671.0,
+      "y": 331.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "仅授权参数域",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "points": [
+        [
+          926.0,
+          355.0
+        ],
+        [
+          946.0,
+          355.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e019"
+    },
+    {
+      "points": [
+        [
+          934.0,
+          350.0
+        ],
+        [
+          946.0,
+          355.0
+        ],
+        [
+          934.0,
+          360.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e020"
+    },
+    {
+      "x": 952.0,
+      "y": 270,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e021"
+    },
+    {
+      "x": 967.0,
+      "y": 285,
+      "w": 234.0,
+      "h": 44.33,
+      "text": "query",
+      "size": 31,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "x": 967.0,
+      "y": 331.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "仅供外层目标",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    },
+    {
+      "points": [
+        [
+          936,
+          235
+        ],
+        [
+          936,
+          490
+        ]
+      ],
+      "stroke": "#9C4540",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e024"
+    },
+    {
+      "x": 850,
+      "y": 515,
+      "w": 366,
+      "h": 41.47,
+      "text": "标签与数据边界隔离",
+      "size": 29,
+      "color": "#9C4540",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e025"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "query 不得泄漏到 support 更新；本轮不运行训练",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e026"
+    }
+  ],
+  "notes": "学习规则可以有参数，也可以离散选择。support和query隔离，否则所谓学习能力可能只是泄漏。\n\n原稿画面要求：support→规则AST→局部更新→query损失；标签边隔离。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第15页\nhypotheses/H38_可传递的可塑性规则.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1606.04474\nhttps://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_15"
+  ],
+  "research_state": "NOT_RUN"
+}

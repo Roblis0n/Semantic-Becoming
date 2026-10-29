@@ -1,0 +1,65 @@
+{
+  "task_id": "D01",
+  "status": "done",
+  "input_digest": "dd6f6e140fc3ad4239c5e9df3c5f20098dc3d5782c4b0dabb59c95597f23a8db",
+  "outputs": [
+    {
+      "path": "docs/related_work.md",
+      "sha256": "79b3a979a5b3d7dc3c17560aca29e009f33811731f2ff3168f5b2cee682ba58f",
+      "bytes": 75209
+    },
+    {
+      "path": "specs/novelty_ledger.json",
+      "sha256": "ee423dd85636a7625c8e50de1c5aebe24176d293bb1a38c920eb8750462be1d8",
+      "bytes": 274357
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "b7b06d7d9b18f10fb59e1b47c096cc3cec566176f7249a5dcfc25e8d7ffa8c85",
+      "bytes": 20792
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/D01_validation.json",
+      "sha256": "35a1ed80db503a51f386cfcfaf6bb011f25175339def85fe83dd20b8e6920216"
+    },
+    {
+      "path": "run_state/checks/D01_inputs.json",
+      "sha256": "b9b79ad2ed782afd46394112568ad8feba52085931d2c78e94f2ad2db01d122a"
+    },
+    {
+      "path": "run_state/checks/D01_dependency_A01.json",
+      "sha256": "019a1d78073010be6d7918c03a1681521aaf7f06dc2444eb1e86d897c3316349"
+    },
+    {
+      "path": "run_state/checks/D01_source_observations.json",
+      "sha256": "7b9703a00d43da368427a22ac080239ae7a07b614202d47bd3628ba962b57dea"
+    },
+    {
+      "path": "run_state/checks/D01_search_log.json",
+      "sha256": "c6b0a1fe2d59936b070597ef5932f556a71b8fa0f6716f8dbca2ae1a383e7944"
+    },
+    {
+      "path": "run_state/checks/D01_mechanism_review.tsv",
+      "sha256": "82fdbe1de9e17c33fc29c6a2cbbd468928d064f3e834811a29f4dae95c27cdc0"
+    },
+    {
+      "path": "run_state/checks/D01_build_ledger.py",
+      "sha256": "3101f7c06a0d336866ac844124486de361aa5062af61ad0fb78ebd6aab5363eb"
+    },
+    {
+      "path": "run_state/checks/D01_validate.py",
+      "sha256": "223220e8fa5ab5ed72fa3b0191000c4ab0741a36ba57db98db959fb5a9f96bff"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "D01 completed: all 48 mechanism comparisons; 43 supplied source records independently checked, 14 additional leads (13 primary-checked plus 1 optional direct-fetch-limited lead excluded from citations), 46 deduplicated usable bibliography entries. Actual 34 stdlib static checks passed. Metadata snapshot index is not full remote article archival evidence. No global priority or efficacy claim; all research NOT_RUN. Optional N07 DOI 403 and further full-text priority review are documented limitations, not fabricated successes.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T15:52:38.497000+00:00"
+}

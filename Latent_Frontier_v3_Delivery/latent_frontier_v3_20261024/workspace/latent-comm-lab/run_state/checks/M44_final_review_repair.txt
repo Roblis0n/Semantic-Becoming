@@ -1,0 +1,17 @@
+test_counterfactual_world_is_executable_and_new (test_h44.H44Contracts.test_counterfactual_world_is_executable_and_new) ... ok
+test_duplicate_parent_identity_rejected_before_edit (test_h44.H44Contracts.test_duplicate_parent_identity_rejected_before_edit) ... ok
+test_incompatible_edits_and_holdout (test_h44.H44Contracts.test_incompatible_edits_and_holdout) ... ok
+test_synthetic_not_real_and_cycle (test_h44.H44Contracts.test_synthetic_not_real_and_cycle) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+{
+  "selected": 4,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h44.H44Contracts.test_neural_source_is_lazy_and_gated",
+    "test_h44.H44Contracts.test_role_projection_and_gate"
+  ],
+  "neural_modules_loaded": []
+}

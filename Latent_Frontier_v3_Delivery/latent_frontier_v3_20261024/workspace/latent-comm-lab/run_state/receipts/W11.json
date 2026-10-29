@@ -1,0 +1,59 @@
+{
+  "task_id": "W11",
+  "status": "done",
+  "input_digest": "6eb647a5b6987b8243cf7e1318005c8269aaf0dcd3d99ff3384b37ba67d3e50a",
+  "outputs": [
+    {
+      "path": "src/latent_comm/worlds/world_kernels/__init__.py",
+      "sha256": "710bf16b16330d4f22028410c16cb1527fa2c7b6d12858d393f92649a7b8452a",
+      "bytes": 224
+    },
+    {
+      "path": "src/latent_comm/worlds/world_kernels/generator.py",
+      "sha256": "a02bbb469a4fb169a42d3fea6280a250fb1bc1c4dd4acc90eb30405c97db4856",
+      "bytes": 2780
+    },
+    {
+      "path": "src/latent_comm/worlds/world_kernels/pipeline.py",
+      "sha256": "2a7cbf79adddcce9fff0bda424d2ab6b838ed701aca587e2163c06b2154d9a0e",
+      "bytes": 1863
+    },
+    {
+      "path": "configs/worlds/world_kernels.json",
+      "sha256": "ccc9649e3a8c20720793ab01c9db27d31a33b0b2a84db5540c4fd557db42a170",
+      "bytes": 580
+    },
+    {
+      "path": "tests/data/test_world_kernels.py",
+      "sha256": "8e2289d354f8f986bd15e886ec00d4f83e9f3a0dd3857c74ac33e3de81b52284",
+      "bytes": 786
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/W_world_kernels.txt",
+      "sha256": "a43d9153ea36c3c12ee204afc393a7bc843fd020ce018efbd041e986f210fbb0"
+    },
+    {
+      "path": "run_state/checks/W_worlds_static.json",
+      "sha256": "10dd726945aa690ca5320a3d268b5ba4c928536a8ff6888f76b304ba62c7b9b6"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/W11_test_world_kernels.txt",
+      "sha256": "a43d9153ea36c3c12ee204afc393a7bc843fd020ce018efbd041e986f210fbb0"
+    },
+    {
+      "path": "run_state/checks/aggregate_budget_revalidation/W11_test_world_kernels.txt",
+      "sha256": "0f9c5933418cc51e29bf1939f7f9f7f2c10a6525fb48d58d72457cf7138d4b9a"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three dedicated finite-world contracts pass. Structural partition precedes sampling; role projection and resume sources present. Bulk data generation and all model research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution. Aggregate finite-budget boundary revalidated 2026-10-24 with blocked neural-entry tests excluded and neural imports denied. All research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:22:27.238230+00:00"
+}

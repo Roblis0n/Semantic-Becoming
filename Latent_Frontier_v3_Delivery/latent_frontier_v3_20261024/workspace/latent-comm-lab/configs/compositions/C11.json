@@ -1,0 +1,1157 @@
+{
+  "recipe_id": "C11",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C11",
+    "nodes": [
+      {
+        "node_id": "question_ir",
+        "operation": "C11.question_ir",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "question_ir:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ProblemMigrationInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CheckedQuestion",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "O",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "Q"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H29"
+        ],
+        "implementation": "latent_comm.compositions.c11.question_ir",
+        "location": {
+          "source": "C11.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "task_quotient",
+        "operation": "C11.task_quotient",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "question_ir:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "task_quotient:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CheckedQuestion",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "QuotientProblem",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H47"
+        ],
+        "implementation": "latent_comm.compositions.c11.task_quotient",
+        "location": {
+          "source": "C11.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "analogy_morphism",
+        "operation": "C11.analogy_morphism",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "task_quotient:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "analogy_morphism:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "QuotientProblem",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AnalogicalProgram",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "O",
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H30"
+        ],
+        "implementation": "latent_comm.compositions.c11.analogy_morphism",
+        "location": {
+          "source": "C11.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "compile_target_program",
+        "operation": "C11.compile_target_program",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "analogy_morphism:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "compile_target_program:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "AnalogicalProgram",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ExecutableTargetProgram",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "O",
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H07",
+          "H30"
+        ],
+        "implementation": "latent_comm.compositions.c11.compile_target_program",
+        "location": {
+          "source": "C11.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "execute_target",
+        "operation": "C11.execute_target",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "compile_target_program:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "execute_target:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ExecutableTargetProgram",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TargetAnswer",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P"
+        ],
+        "write_set": [
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H07"
+        ],
+        "implementation": "latent_comm.compositions.c11.execute_target",
+        "location": {
+          "source": "C11.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "translate_answer",
+        "operation": "C11.translate_answer",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "execute_target:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "translate_answer:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TargetAnswer",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "MigratedAnswer",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "O",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "Q"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H29"
+        ],
+        "implementation": "latent_comm.compositions.c11.translate_answer",
+        "location": {
+          "source": "C11.bound.json",
+          "path": "/nodes/5",
+          "line": 83,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "analogy_morphism:out",
+        {
+          "name": "AnalogicalProgram",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "compile_target_program:out",
+        {
+          "name": "ExecutableTargetProgram",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "execute_target:out",
+        {
+          "name": "TargetAnswer",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "ProblemMigrationInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "question_ir:out",
+        {
+          "name": "CheckedQuestion",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "task_quotient:out",
+        {
+          "name": "QuotientProblem",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "translate_answer:out",
+        {
+          "name": "MigratedAnswer",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "analogy_morphism",
+        "compile_target_program"
+      ],
+      [
+        "compile_target_program",
+        "execute_target"
+      ],
+      [
+        "execute_target",
+        "translate_answer"
+      ],
+      [
+        "question_ir",
+        "task_quotient"
+      ],
+      [
+        "task_quotient",
+        "analogy_morphism"
+      ]
+    ],
+    "schedule": [
+      "question_ir",
+      "task_quotient",
+      "analogy_morphism",
+      "compile_target_program",
+      "execute_target",
+      "translate_answer"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 6,
+    "max_steps": 64,
+    "input_digest": "a08e98a1ec59729e33a3264ab8bc4dc75c5dd490455d867c71a38b029ebfb4ec",
+    "declared_parameters": {
+      "obligations": [
+        "A query quotient does not authorize representative execution without congruence.",
+        "A sound partial answer map is not a completeness proof."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C11",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "relation_and_backtranslation",
+        "objectives": [
+          {
+            "name": "relation",
+            "mathematical_definition": "sum(m*CE(relation_logits,verified_relation))/sum(m)",
+            "numerator": "relation classification CE",
+            "denominator": "verified rewrite edges",
+            "valid_mask": "edge_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transform_selector"
+            ],
+            "requires_grad_inputs": [
+              "question_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "rewrite edges",
+            "id": "H29.relation"
+          },
+          {
+            "name": "backtranslation",
+            "mathematical_definition": "sum(m*(translated-answer)^2)/sum(m)",
+            "numerator": "answer relation residual squared",
+            "denominator": "valid answer coordinates",
+            "valid_mask": "answer_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "answer_map"
+            ],
+            "requires_grad_inputs": [
+              "target_answer"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "answer coordinates",
+            "id": "H29.backtranslation"
+          },
+          {
+            "name": "path_policy",
+            "mathematical_definition": "-sum(m*log_pi(path)*advantage)/sum(m)",
+            "numerator": "negative path log probability times stopped advantage",
+            "denominator": "valid paths",
+            "valid_mask": "path_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transform_selector"
+            ],
+            "requires_grad_inputs": [
+              "path_log_probability"
+            ],
+            "stop_gradient_edges": [
+              [
+                "advantage",
+                "path_policy"
+              ]
+            ],
+            "estimated_or_exact": "policy_gradient",
+            "normalization_units": "paths",
+            "id": "H29.path_policy"
+          }
+        ],
+        "losses": [
+          "H29.relation",
+          "H29.backtranslation",
+          "H29.path_policy"
+        ],
+        "owners": [
+          "answer_map",
+          "transform_selector"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "commuting_structure",
+        "objectives": [
+          {
+            "name": "matching",
+            "mathematical_definition": "sum(mask*(-log P(correct_object)))/sum(mask)",
+            "numerator": "sum of valid per-element errors",
+            "denominator": "valid elements",
+            "valid_mask": "known_match_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "matching_logits"
+            ],
+            "requires_grad_inputs": [
+              "source_features",
+              "target_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "matched objects",
+            "id": "H30.matching"
+          },
+          {
+            "name": "commutation",
+            "mathematical_definition": "sum(mask*(F A-B F)^2)/sum(mask)",
+            "numerator": "sum of valid per-element errors",
+            "denominator": "valid elements",
+            "valid_mask": "declared_square_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "object_map",
+              "operation_map"
+            ],
+            "requires_grad_inputs": [
+              "source_operation",
+              "target_operation"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "commuting-square elements",
+            "id": "H30.commutation"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "sum(mask*(target_effect-supervised_effect)^2)/sum(mask)",
+            "numerator": "sum of valid per-element errors",
+            "denominator": "valid elements",
+            "valid_mask": "target_behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "object_map",
+              "target_readout"
+            ],
+            "requires_grad_inputs": [
+              "target_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "target behavior elements",
+            "id": "H30.behavior"
+          }
+        ],
+        "losses": [
+          "H30.matching",
+          "H30.commutation",
+          "H30.behavior"
+        ],
+        "owners": [
+          "matching_logits",
+          "object_map",
+          "operation_map",
+          "target_readout"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "question_ir": "stop",
+      "task_quotient": "enumeration",
+      "analogy_morphism": "enumeration",
+      "compile_target_program": "stop",
+      "execute_target": "stop",
+      "translate_answer": "stop"
+    },
+    "frozen": [
+      "base_models",
+      "immutable_source_definitions"
+    ],
+    "structure_search": "enumeration is distinct from differentiable phases",
+    "execution": "unified gated runner only; no joint global loss by default"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

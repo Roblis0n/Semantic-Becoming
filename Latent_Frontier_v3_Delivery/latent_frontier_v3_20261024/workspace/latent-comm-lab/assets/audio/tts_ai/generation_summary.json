@@ -1,0 +1,25 @@
+{
+  "status": "all_audio_downloaded",
+  "finished_at_utc": "2026-10-27T10:48:45.453642+00:00",
+  "unique_source_jobs": 58,
+  "unique_source_characters": 1754,
+  "accepted_submission_count": 60,
+  "accepted_submission_characters": 1811,
+  "credits_used_total": 0,
+  "outcome_unknown_prior_submissions": 2,
+  "replacement_history": [
+    {
+      "cue_id": "explainer_360_029",
+      "authorization_record": "release/authorization_updates/20261026_TTS_APPROVAL.json",
+      "original_unknown_receipt": "assets/audio/tts_ai/history/explainer_360_029_original_unknown.json"
+    },
+    {
+      "cue_id": "explainer_360_036",
+      "authorization_record": "release/authorization_updates/20261027_TTS036_APPROVAL.json",
+      "original_unknown_receipt": "assets/audio/tts_ai/history/explainer_360_036_original_unknown.json"
+    }
+  ],
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio_listened": false,
+  "research_state": "NOT_RUN"
+}

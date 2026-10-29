@@ -1,0 +1,5115 @@
+[
+  {
+    "title": "Semantic Becoming",
+    "description": "前沿机制提案 / 无模型实测。可改写认知的跨模型计算。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 74,
+        "w": 650,
+        "h": 191.62,
+        "text": "Semantic\nBecoming",
+        "size": 67,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 285,
+        "w": 700,
+        "h": 143.0,
+        "text": "可改写认知的\n跨模型计算",
+        "size": 50,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "x": 64,
+        "y": 465,
+        "w": 700,
+        "h": 44.33,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 31,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e003"
+      },
+      {
+        "x": 835,
+        "y": 85,
+        "w": 380,
+        "h": 112,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e004"
+      },
+      {
+        "x": 850,
+        "y": 100,
+        "w": 350,
+        "h": 45.76,
+        "text": "概念",
+        "size": 32,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 850,
+        "y": 148.0,
+        "w": 350,
+        "h": 32.89,
+        "text": "可计算区分",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e006"
+      },
+      {
+        "x": 835,
+        "y": 217,
+        "w": 380,
+        "h": 112,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e007"
+      },
+      {
+        "x": 850,
+        "y": 232,
+        "w": 350,
+        "h": 45.76,
+        "text": "问题",
+        "size": 32,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "x": 850,
+        "y": 280.0,
+        "w": 350,
+        "h": 32.89,
+        "text": "答案关系",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e009"
+      },
+      {
+        "x": 835,
+        "y": 349,
+        "w": 380,
+        "h": 112,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e010"
+      },
+      {
+        "x": 850,
+        "y": 364,
+        "w": 350,
+        "h": 45.76,
+        "text": "学习",
+        "size": 32,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011"
+      },
+      {
+        "x": 850,
+        "y": 412.0,
+        "w": 350,
+        "h": 32.89,
+        "text": "更新规则",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 835,
+        "y": 481,
+        "w": 380,
+        "h": 112,
+        "fill": "#E9E1EC",
+        "stroke": "#725D7C",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e013"
+      },
+      {
+        "x": 850,
+        "y": 496,
+        "w": 350,
+        "h": 45.76,
+        "text": "世界",
+        "size": 32,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e014"
+      },
+      {
+        "x": 850,
+        "y": 544.0,
+        "w": 350,
+        "h": 32.89,
+        "text": "可执行动力学",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e016"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "01 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      }
+    ],
+    "notes": "精简版第 1 页，对应研究版第 1 页。\n\n这份计划不是要证明两个现有模型现在能涨多少分，而是提出一套更大的研究对象：交流可否改变认知的组织方式。\n\n原稿画面要求：左侧消息箭头，右侧概念/问题/学习/世界四对象；封面角标“研究提案·未做模型实测”。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第01页\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\n\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 1
+  },
+  {
+    "title": "本轮再向前一层",
+    "description": "原有状态空间网格上出现新轴、新类型和新操作。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "本轮再向前一层",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "通信可以改变表达空间本身",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "02 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "points": [
+          [
+            120,
+            235
+          ],
+          [
+            120,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e006"
+      },
+      {
+        "points": [
+          [
+            190,
+            235
+          ],
+          [
+            190,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e007"
+      },
+      {
+        "points": [
+          [
+            260,
+            235
+          ],
+          [
+            260,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            330,
+            235
+          ],
+          [
+            330,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            400,
+            235
+          ],
+          [
+            400,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "points": [
+          [
+            470,
+            235
+          ],
+          [
+            470,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e011"
+      },
+      {
+        "points": [
+          [
+            540,
+            235
+          ],
+          [
+            540,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e012"
+      },
+      {
+        "points": [
+          [
+            120,
+            240
+          ],
+          [
+            610,
+            240
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            120,
+            310
+          ],
+          [
+            610,
+            310
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            120,
+            380
+          ],
+          [
+            610,
+            380
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "points": [
+          [
+            120,
+            450
+          ],
+          [
+            610,
+            450
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e016"
+      },
+      {
+        "points": [
+          [
+            120,
+            520
+          ],
+          [
+            610,
+            520
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e017"
+      },
+      {
+        "points": [
+          [
+            120,
+            520
+          ],
+          [
+            610,
+            520
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e018"
+      },
+      {
+        "points": [
+          [
+            598.0,
+            515.0
+          ],
+          [
+            610,
+            520
+          ],
+          [
+            598.0,
+            525.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e019"
+      },
+      {
+        "points": [
+          [
+            120,
+            520
+          ],
+          [
+            120,
+            225
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e020"
+      },
+      {
+        "points": [
+          [
+            115.0,
+            237.0
+          ],
+          [
+            120,
+            225
+          ],
+          [
+            125.0,
+            237.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e021"
+      },
+      {
+        "x": 150,
+        "y": 535,
+        "w": 460,
+        "h": 38.61,
+        "text": "原有表示空间",
+        "size": 27,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022"
+      },
+      {
+        "points": [
+          [
+            640,
+            375
+          ],
+          [
+            740,
+            375
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e023"
+      },
+      {
+        "points": [
+          [
+            728.0,
+            370.0
+          ],
+          [
+            740,
+            375
+          ],
+          [
+            728.0,
+            380.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e024"
+      },
+      {
+        "x": 800,
+        "y": 255,
+        "w": 400,
+        "h": 51.48,
+        "text": "新增可计算区分",
+        "size": 36,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e025"
+      },
+      {
+        "x": 800,
+        "y": 330,
+        "w": 400,
+        "h": 150.15,
+        "text": "新变量\n新类型\n新操作",
+        "size": 35,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e026"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "结构变化须给出定义与迁移，不能只添一根装饰性坐标轴",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e027"
+      }
+    ],
+    "notes": "精简版第 2 页，对应研究版第 4 页。\n\n最关键的跃迁不是发送更好的向量，而是扩大系统能够表达、提出和学习的对象。\n\n原稿画面要求：原有状态空间网格上出现新轴、新类型和新操作。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第04页\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\n\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_04"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 4
+  },
+  {
+    "title": "48项机制的全景",
+    "description": "三层图谱：基础、认知结构、终局；H编号可读。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "48项机制的全景",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "基础24＋新增24，不是48项已证成果",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "03 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 215,
+        "w": 210,
+        "h": 44.33,
+        "text": "基础对象",
+        "size": 31,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e006"
+      },
+      {
+        "x": 280,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H01",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 358,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H02",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "x": 436,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H03",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e009"
+      },
+      {
+        "x": 514,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H04",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e010"
+      },
+      {
+        "x": 592,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H05",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011"
+      },
+      {
+        "x": 670,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H06",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 748,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H07",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "x": 826,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H08",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e014"
+      },
+      {
+        "x": 904,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H09",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015"
+      },
+      {
+        "x": 982,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H10",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e016"
+      },
+      {
+        "x": 1060,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H11",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 1138,
+        "y": 215,
+        "w": 75,
+        "h": 35.75,
+        "text": "H12",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "x": 280,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H13",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e019"
+      },
+      {
+        "x": 358,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H14",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e020"
+      },
+      {
+        "x": 436,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H15",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e021"
+      },
+      {
+        "x": 514,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H16",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022"
+      },
+      {
+        "x": 592,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H17",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e023"
+      },
+      {
+        "x": 670,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H18",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e024"
+      },
+      {
+        "x": 748,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H19",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e025"
+      },
+      {
+        "x": 826,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H20",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e026"
+      },
+      {
+        "x": 904,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H21",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e027"
+      },
+      {
+        "x": 982,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H22",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e028"
+      },
+      {
+        "x": 1060,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H23",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e029"
+      },
+      {
+        "x": 1138,
+        "y": 258,
+        "w": 75,
+        "h": 35.75,
+        "text": "H24",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e030"
+      },
+      {
+        "x": 64,
+        "y": 340,
+        "w": 210,
+        "h": 44.33,
+        "text": "认知结构",
+        "size": 31,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e031"
+      },
+      {
+        "x": 280,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H25",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e032"
+      },
+      {
+        "x": 358,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H26",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e033"
+      },
+      {
+        "x": 436,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H27",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e034"
+      },
+      {
+        "x": 514,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H28",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e035"
+      },
+      {
+        "x": 592,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H29",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e036"
+      },
+      {
+        "x": 670,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H30",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e037"
+      },
+      {
+        "x": 748,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H31",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e038"
+      },
+      {
+        "x": 826,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H32",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e039"
+      },
+      {
+        "x": 904,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H33",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e040"
+      },
+      {
+        "x": 982,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H34",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e041"
+      },
+      {
+        "x": 1060,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H35",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e042"
+      },
+      {
+        "x": 1138,
+        "y": 340,
+        "w": 75,
+        "h": 35.75,
+        "text": "H36",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e043"
+      },
+      {
+        "x": 280,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H37",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e044"
+      },
+      {
+        "x": 358,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H38",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e045"
+      },
+      {
+        "x": 436,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H39",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e046"
+      },
+      {
+        "x": 514,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H40",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e047"
+      },
+      {
+        "x": 592,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H41",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e048"
+      },
+      {
+        "x": 670,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H42",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e049"
+      },
+      {
+        "x": 748,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H43",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e050"
+      },
+      {
+        "x": 826,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H44",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e051"
+      },
+      {
+        "x": 904,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H45",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e052"
+      },
+      {
+        "x": 982,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H46",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e053"
+      },
+      {
+        "x": 1060,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H47",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e054"
+      },
+      {
+        "x": 1138,
+        "y": 383,
+        "w": 75,
+        "h": 35.75,
+        "text": "H48",
+        "size": 25,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e055"
+      },
+      {
+        "x": 64,
+        "y": 480,
+        "w": 210,
+        "h": 44.33,
+        "text": "远期架构",
+        "size": 31,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e056"
+      },
+      {
+        "x": 280,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X01",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e057"
+      },
+      {
+        "x": 358,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X02",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e058"
+      },
+      {
+        "x": 436,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X03",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e059"
+      },
+      {
+        "x": 514,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X04",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e060"
+      },
+      {
+        "x": 592,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X05",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e061"
+      },
+      {
+        "x": 670,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X06",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e062"
+      },
+      {
+        "x": 748,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X07",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e063"
+      },
+      {
+        "x": 826,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X08",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e064"
+      },
+      {
+        "x": 904,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X09",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e065"
+      },
+      {
+        "x": 982,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X10",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e066"
+      },
+      {
+        "x": 1060,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X11",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e067"
+      },
+      {
+        "x": 1138,
+        "y": 480,
+        "w": 75,
+        "h": 35.75,
+        "text": "X12",
+        "size": 25,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e068"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "20 条组合路线连接机制；图谱表达研究覆盖，不是性能排名",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e069"
+      }
+    ],
+    "notes": "精简版第 3 页，对应研究版第 5 页。\n\n图谱表示研究覆盖，不表示性能排名。各机制允许不同数学语义，不强行压成一种接口。\n\n原稿画面要求：三层图谱：基础、认知结构、终局；H编号可读。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第05页\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\n\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_05"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 5
+  },
+  {
+    "title": "第一条主线：概念出生",
+    "description": "钥匙例：形状相同，权限有效期不同。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "第一条主线：概念出生",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "分歧可以产生一个之前没有的可计算区分",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "04 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 114.0,
+        "y": 264.0,
+        "w": 72.0,
+        "h": 72.0,
+        "fill": "none",
+        "stroke": "#536647",
+        "sw": 5,
+        "kind": "ellipse",
+        "id": "e006"
+      },
+      {
+        "points": [
+          [
+            186.0,
+            300
+          ],
+          [
+            304.5,
+            300
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e007"
+      },
+      {
+        "points": [
+          [
+            270.0,
+            300
+          ],
+          [
+            270.0,
+            330.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            300.0,
+            300
+          ],
+          [
+            300.0,
+            330.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "x": 114.0,
+        "y": 434.0,
+        "w": 72.0,
+        "h": 72.0,
+        "fill": "none",
+        "stroke": "#9C5138",
+        "sw": 5,
+        "kind": "ellipse",
+        "id": "e010"
+      },
+      {
+        "points": [
+          [
+            186.0,
+            470
+          ],
+          [
+            304.5,
+            470
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e011"
+      },
+      {
+        "points": [
+          [
+            270.0,
+            470
+          ],
+          [
+            270.0,
+            500.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e012"
+      },
+      {
+        "points": [
+          [
+            300.0,
+            470
+          ],
+          [
+            300.0,
+            500.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e013"
+      },
+      {
+        "x": 370,
+        "y": 264,
+        "w": 800,
+        "h": 45.76,
+        "text": "K₁：形状匹配，授权有效",
+        "size": 32,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e014"
+      },
+      {
+        "x": 370,
+        "y": 430,
+        "w": 800,
+        "h": 45.76,
+        "text": "K₂：形状匹配，授权过期",
+        "size": 32,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015"
+      },
+      {
+        "x": 370,
+        "y": 320,
+        "w": 800,
+        "h": 42.9,
+        "text": "可以开门",
+        "size": 30,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e016"
+      },
+      {
+        "x": 370,
+        "y": 486,
+        "w": 800,
+        "h": 42.9,
+        "text": "不能开门",
+        "size": 30,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "下一步：定义“授权有效期”，使新概念改变可执行判断",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      }
+    ],
+    "notes": "精简版第 4 页，对应研究版第 6 页。\n\n两方都叫它钥匙，并不意味着现有语言足以解释行为差异。新概念需要带定义和后果。\n\n原稿画面要求：钥匙例：形状相同，权限有效期不同。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第06页\nhypotheses/H26_不可全局拼合的语义层.md\nhypotheses/H27_交互中诞生的新概念.md\nhypotheses/H36_以分歧生产结构的认知博弈.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/2202.04579\nhttps://arxiv.org/abs/2605.11178\nhttps://arxiv.org/abs/2006.08381\nhttps://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a\nhttps://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_06"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 6
+  },
+  {
+    "title": "H40：语言也能学会新指令",
+    "description": "三段重复程序折叠为宏，显示lower到旧ISA。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H40：语言也能学会新指令",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "反复使用的结构被编译为可扩展操作",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "05 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 235,
+        "w": 380,
+        "h": 44.33,
+        "text": "重复结构",
+        "size": 31,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e006"
+      },
+      {
+        "x": 64,
+        "y": 300,
+        "w": 400,
+        "h": 141.57,
+        "text": "检查授权\n检查时间范围\n执行动作",
+        "size": 33,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "points": [
+          [
+            430,
+            365
+          ],
+          [
+            600,
+            365
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            588.0,
+            360.0
+          ],
+          [
+            600,
+            365
+          ],
+          [
+            588.0,
+            370.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "x": 650,
+        "y": 265,
+        "w": 566,
+        "h": 140,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e010"
+      },
+      {
+        "x": 665,
+        "y": 280,
+        "w": 536,
+        "h": 47.19,
+        "text": "宏：authorized_action",
+        "size": 33,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011"
+      },
+      {
+        "x": 665,
+        "y": 329.25,
+        "w": 536,
+        "h": 32.89,
+        "text": "可扩展指令，带类型与前置条件",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "points": [
+          [
+            935,
+            420
+          ],
+          [
+            935,
+            490
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            940.0,
+            478.0
+          ],
+          [
+            935,
+            490
+          ],
+          [
+            930.0,
+            478.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 3,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "x": 650,
+        "y": 510,
+        "w": 566,
+        "h": 41.47,
+        "text": "lower：还原到旧 ISA 的同一语义",
+        "size": 29,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "宏可以压缩程序，不能隐藏无法解释的“万能函数”",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e016"
+      }
+    ],
+    "notes": "精简版第 5 页，对应研究版第 10 页。\n\n指令集可以演化，但新宏必须能解释和降低到已知语义，不能是一个神秘函数。\n\n原稿画面要求：三段重复程序折叠为宏，显示lower到旧ISA。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第10页\nhypotheses/H40_自举的潜指令集.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/2006.08381\nhttps://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html\nhttps://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_10"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 10
+  },
+  {
+    "title": "第二条主线：传递怎样学习",
+    "description": "答案消息、行为方向、更新规则三个不同对象。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "第二条主线：传递怎样学习",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "知识之外，还能交换改进方向与规则",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "06 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64.0,
+        "y": 275,
+        "w": 362.6666666666667,
+        "h": 190,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 79.0,
+        "y": 290,
+        "w": 332.6666666666667,
+        "h": 51.48,
+        "text": "答案消息",
+        "size": 36,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 79.0,
+        "y": 343.0,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "当前问题的输出",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            432.6666666666667,
+            370.0
+          ],
+          [
+            452.6666666666667,
+            370.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            440.6666666666667,
+            365.0
+          ],
+          [
+            452.6666666666667,
+            370.0
+          ],
+          [
+            440.6666666666667,
+            375.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 458.6666666666667,
+        "y": 275,
+        "w": 362.6666666666667,
+        "h": 190,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e011"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 290,
+        "w": 332.6666666666667,
+        "h": 51.48,
+        "text": "行为方向",
+        "size": 36,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 343.0,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "改变哪些可观察行为",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            827.3333333333334,
+            370.0
+          ],
+          [
+            847.3333333333334,
+            370.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            835.3333333333334,
+            365.0
+          ],
+          [
+            847.3333333333334,
+            370.0
+          ],
+          [
+            835.3333333333334,
+            375.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "x": 853.3333333333334,
+        "y": 275,
+        "w": 362.6666666666667,
+        "h": 190,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e016"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 290,
+        "w": 332.6666666666667,
+        "h": 51.48,
+        "text": "更新规则",
+        "size": 36,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 343.0,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "怎样产生局部修改",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "共同可观察行为是桥梁；参数空间无需相同",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e019"
+      }
+    ],
+    "notes": "精简版第 6 页，对应研究版第 12 页。\n\n参数不同不代表不能交换学习效应；但必须先找到共同可观测的行为坐标。\n\n原稿画面要求：答案消息、行为方向、更新规则三个不同对象。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第12页\nhypotheses/H37_跨模型学习方向运输.md\nhypotheses/H38_可传递的可塑性规则.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1503.02531\nhttps://arxiv.org/abs/1606.04474\nhttps://arxiv.org/abs/2106.02997\nhttps://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_12"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 12
+  },
+  {
+    "title": "C13：可塑性网络",
+    "description": "三模块图，外层模型研究入口显示锁定。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "C13：可塑性网络",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "行为锚＋方向运输＋更新规则",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "07 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64.0,
+        "y": 260,
+        "w": 362.6666666666667,
+        "h": 170,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 79.0,
+        "y": 275,
+        "w": 332.6666666666667,
+        "h": 44.33,
+        "text": "共同有限行为锚",
+        "size": 31,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 79.0,
+        "y": 321.75,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "规定可比较的变化",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            432.6666666666667,
+            345.0
+          ],
+          [
+            452.6666666666667,
+            345.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            440.6666666666667,
+            340.0
+          ],
+          [
+            452.6666666666667,
+            345.0
+          ],
+          [
+            440.6666666666667,
+            350.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 458.6666666666667,
+        "y": 260,
+        "w": 362.6666666666667,
+        "h": 170,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e011"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 275,
+        "w": 332.6666666666667,
+        "h": 44.33,
+        "text": "方向运输 H37",
+        "size": 31,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 321.75,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "可实现部分与残差",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            827.3333333333334,
+            345.0
+          ],
+          [
+            847.3333333333334,
+            345.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            835.3333333333334,
+            340.0
+          ],
+          [
+            847.3333333333334,
+            345.0
+          ],
+          [
+            835.3333333333334,
+            350.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "x": 853.3333333333334,
+        "y": 260,
+        "w": 362.6666666666667,
+        "h": 170,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e016"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 275,
+        "w": 332.6666666666667,
+        "h": 44.33,
+        "text": "规则协议 H38",
+        "size": 31,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 321.75,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "生成受限局部更新",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "x": 64,
+        "y": 485,
+        "w": 1152,
+        "h": 75,
+        "fill": "none",
+        "stroke": "#9C4540",
+        "sw": 2,
+        "r": 0,
+        "dash": true,
+        "kind": "rect",
+        "id": "e019"
+      },
+      {
+        "x": 90,
+        "y": 499,
+        "w": 1100,
+        "h": 40.04,
+        "text": "研究入口锁定：模型初始化、前向、训练、评测均 NOT_RUN",
+        "size": 28,
+        "color": "#9C4540",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e020"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "C13 的远期目标：交流形成能力的方法，而非直接叠加参数",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e021"
+      }
+    ],
+    "notes": "精简版第 7 页，对应研究版第 17 页。\n\n本轮把这些程序与接口写完整，但不运行训练。更远的目标是让系统交换形成能力的方法。\n\n原稿画面要求：三模块图，外层模型研究入口显示锁定。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第17页\nhypotheses/H37_跨模型学习方向运输.md\nhypotheses/H38_可传递的可塑性规则.md\nhypotheses/H39_可回滚的跨模型认知事务.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1503.02531\nhttps://arxiv.org/abs/1606.04474\nhttps://arxiv.org/abs/2106.02997\nhttps://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf\nhttps://arxiv.org/abs/cs/0408036\nhttps://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_17"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 17
+  },
+  {
+    "title": "第三条主线：共同制造世界",
+    "description": "两个局部转移核拼出新世界，注释synthetic。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "第三条主线：共同制造世界",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "消息可以是一小块可行动的动力学",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "08 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64.0,
+        "y": 270,
+        "w": 362.6666666666667,
+        "h": 175,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 79.0,
+        "y": 285,
+        "w": 332.6666666666667,
+        "h": 47.19,
+        "text": "局部核 A",
+        "size": 33,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 79.0,
+        "y": 334.25,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "状态、动作与转移",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            432.6666666666667,
+            357.5
+          ],
+          [
+            452.6666666666667,
+            357.5
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            440.6666666666667,
+            352.5
+          ],
+          [
+            452.6666666666667,
+            357.5
+          ],
+          [
+            440.6666666666667,
+            362.5
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 458.6666666666667,
+        "y": 270,
+        "w": 362.6666666666667,
+        "h": 175,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e011"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 285,
+        "w": 332.6666666666667,
+        "h": 47.19,
+        "text": "局部核 B",
+        "size": 33,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 334.25,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "观测与依赖语义",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            827.3333333333334,
+            357.5
+          ],
+          [
+            847.3333333333334,
+            357.5
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            835.3333333333334,
+            352.5
+          ],
+          [
+            847.3333333333334,
+            357.5
+          ],
+          [
+            835.3333333333334,
+            362.5
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "x": 853.3333333333334,
+        "y": 270,
+        "w": 362.6666666666667,
+        "h": 175,
+        "fill": "#E9E1EC",
+        "stroke": "#725D7C",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e016"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 285,
+        "w": 332.6666666666667,
+        "h": 47.19,
+        "text": "可行动的新世界",
+        "size": 33,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 334.25,
+        "w": 332.6666666666667,
+        "h": 32.89,
+        "text": "synthetic，保留谱系",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "x": 64,
+        "y": 500,
+        "w": 1152,
+        "h": 50.05,
+        "text": "消息的对象：一小块可执行动力学",
+        "size": 35,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e019"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "合成世界能提出新问题，不能自行制造现实证据",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e020"
+      }
+    ],
+    "notes": "精简版第 8 页，对应研究版第 18 页。\n\n共享世界不只是共同写故事，而是定义可执行状态变化和观测。\n\n原稿画面要求：两个局部转移核拼出新世界，注释synthetic。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第18页\nhypotheses/H43_可交换的世界动力学核.md\nhypotheses/H44_共同构造的反事实梦境.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/2106.02997\nhttps://arxiv.org/abs/2602.16612\nhttps://arxiv.org/abs/1803.10122\nhttps://arxiv.org/abs/1901.01753\nhttps://arxiv.org/abs/2012.02096\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_18"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 18
+  },
+  {
+    "title": "C16：从梦境到研究生态",
+    "description": "五节点环，分离现实与synthetic命名空间。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "C16：从梦境到研究生态",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "核组合→问题→语言变异→归档",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "09 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64.0,
+        "y": 270,
+        "w": 204.8,
+        "h": 160,
+        "fill": "#E9E1EC",
+        "stroke": "#725D7C",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 79.0,
+        "y": 285,
+        "w": 174.8,
+        "h": 40.04,
+        "text": "世界核",
+        "size": 28,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 79.0,
+        "y": 328.0,
+        "w": 174.8,
+        "h": 32.89,
+        "text": "保留依赖",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            274.8,
+            350.0
+          ],
+          [
+            294.8,
+            350.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            282.8,
+            345.0
+          ],
+          [
+            294.8,
+            350.0
+          ],
+          [
+            282.8,
+            355.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 300.8,
+        "y": 270,
+        "w": 204.8,
+        "h": 160,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e011"
+      },
+      {
+        "x": 315.8,
+        "y": 285,
+        "w": 174.8,
+        "h": 40.04,
+        "text": "新问题",
+        "size": 28,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 315.8,
+        "y": 328.0,
+        "w": 174.8,
+        "h": 32.89,
+        "text": "带答案关系",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            511.6,
+            350.0
+          ],
+          [
+            531.6,
+            350.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            519.6,
+            345.0
+          ],
+          [
+            531.6,
+            350.0
+          ],
+          [
+            519.6,
+            355.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "x": 537.6,
+        "y": 270,
+        "w": 204.8,
+        "h": 160,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e016"
+      },
+      {
+        "x": 552.6,
+        "y": 285,
+        "w": 174.8,
+        "h": 40.04,
+        "text": "语言变异",
+        "size": 28,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 552.6,
+        "y": 328.0,
+        "w": 174.8,
+        "h": 32.89,
+        "text": "可执行定义",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "points": [
+          [
+            748.4000000000001,
+            350.0
+          ],
+          [
+            768.4000000000001,
+            350.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e019"
+      },
+      {
+        "points": [
+          [
+            756.4000000000001,
+            345.0
+          ],
+          [
+            768.4000000000001,
+            350.0
+          ],
+          [
+            756.4000000000001,
+            355.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e020"
+      },
+      {
+        "x": 774.4000000000001,
+        "y": 270,
+        "w": 204.8,
+        "h": 160,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e021"
+      },
+      {
+        "x": 789.4000000000001,
+        "y": 285,
+        "w": 174.8,
+        "h": 40.04,
+        "text": "有限检查",
+        "size": 28,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022"
+      },
+      {
+        "x": 789.4000000000001,
+        "y": 328.0,
+        "w": 174.8,
+        "h": 32.89,
+        "text": "预算内见证",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e023"
+      },
+      {
+        "points": [
+          [
+            985.2,
+            350.0
+          ],
+          [
+            1005.2,
+            350.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e024"
+      },
+      {
+        "points": [
+          [
+            993.2,
+            345.0
+          ],
+          [
+            1005.2,
+            350.0
+          ],
+          [
+            993.2,
+            355.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e025"
+      },
+      {
+        "x": 1011.2,
+        "y": 270,
+        "w": 204.8,
+        "h": 160,
+        "fill": "#E9E1EC",
+        "stroke": "#725D7C",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e026"
+      },
+      {
+        "x": 1026.2,
+        "y": 285,
+        "w": 174.8,
+        "h": 40.04,
+        "text": "归档",
+        "size": 28,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e027"
+      },
+      {
+        "x": 1026.2,
+        "y": 328.0,
+        "w": 174.8,
+        "h": 32.89,
+        "text": "版本与来源",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e028"
+      },
+      {
+        "x": 64,
+        "y": 495,
+        "w": 1152,
+        "h": 42.9,
+        "text": "synthetic / real：命名空间和证据边界始终分离",
+        "size": 30,
+        "color": "#9C4540",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e029"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "C16 研究能生产问题空间的生态，而非自动生成现实“事实”",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e030"
+      }
+    ],
+    "notes": "精简版第 9 页，对应研究版第 23 页。\n\n这里最远的方向是系统自己制造有生产力的问题空间，而不是只回答人类给定的旧问题。\n\n原稿画面要求：五节点环，分离现实与synthetic命名空间。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第23页\nhypotheses/H42_模型与任务的共演化生态.md\nhypotheses/H43_可交换的世界动力学核.md\nhypotheses/H44_共同构造的反事实梦境.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1901.01753\nhttps://arxiv.org/abs/2012.02096\nhttps://arxiv.org/abs/2006.08381\nhttps://arxiv.org/abs/2106.02997\nhttps://arxiv.org/abs/2602.16612\nhttps://arxiv.org/abs/1803.10122\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_23"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 23
+  },
+  {
+    "title": "H33与H34：思想可能在轨迹里",
+    "description": "稳定圆周路径和双端约束路径并置；不画未来信息。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H33与H34：思想可能在轨迹里",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "终点不是唯一的读出对象",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "解析示意 / 数学示意 · 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "10 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "points": [
+          [
+            462.0,
+            375.0
+          ],
+          [
+            461.33167123492933,
+            387.75247251865375
+          ],
+          [
+            459.33400728952427,
+            400.36522627976666
+          ],
+          [
+            456.02889498800874,
+            412.7000733137436
+          ],
+          [
+            451.4525458323973,
+            424.62187045524763
+          ],
+          [
+            445.65509926170154,
+            436.0
+          ],
+          [
+            438.7000733137436,
+            446.7098007796817
+          ],
+          [
+            430.6636687082421,
+            456.6339339757807
+          ],
+          [
+            421.6339339757807,
+            465.6636687082421
+          ],
+          [
+            411.7098007796817,
+            473.7000733137436
+          ],
+          [
+            401.0,
+            480.6550992617015
+          ],
+          [
+            389.62187045524763,
+            486.4525458323973
+          ],
+          [
+            377.7000733137436,
+            491.02889498800874
+          ],
+          [
+            365.3652262797666,
+            494.33400728952427
+          ],
+          [
+            352.75247251865375,
+            496.33167123492933
+          ],
+          [
+            340.00000000000006,
+            497.0
+          ],
+          [
+            327.2475274813463,
+            496.33167123492933
+          ],
+          [
+            314.63477372023334,
+            494.33400728952427
+          ],
+          [
+            302.2999266862564,
+            491.02889498800874
+          ],
+          [
+            290.37812954475237,
+            486.45254583239733
+          ],
+          [
+            279.0,
+            480.65509926170154
+          ],
+          [
+            268.2901992203183,
+            473.7000733137436
+          ],
+          [
+            258.3660660242193,
+            465.66366870824214
+          ],
+          [
+            249.33633129175792,
+            456.63393397578074
+          ],
+          [
+            241.2999266862564,
+            446.70980077968176
+          ],
+          [
+            234.34490073829846,
+            436.0
+          ],
+          [
+            228.54745416760267,
+            424.62187045524763
+          ],
+          [
+            223.97110501199126,
+            412.7000733137436
+          ],
+          [
+            220.6659927104757,
+            400.36522627976666
+          ],
+          [
+            218.66832876507064,
+            387.7524725186537
+          ],
+          [
+            218.0,
+            375.00000000000006
+          ],
+          [
+            218.66832876507064,
+            362.2475274813463
+          ],
+          [
+            220.6659927104757,
+            349.6347737202334
+          ],
+          [
+            223.97110501199126,
+            337.2999266862564
+          ],
+          [
+            228.5474541676027,
+            325.37812954475237
+          ],
+          [
+            234.34490073829846,
+            314.00000000000006
+          ],
+          [
+            241.2999266862564,
+            303.2901992203183
+          ],
+          [
+            249.33633129175792,
+            293.3660660242193
+          ],
+          [
+            258.36606602421926,
+            284.3363312917579
+          ],
+          [
+            268.29019922031824,
+            276.2999266862564
+          ],
+          [
+            278.99999999999994,
+            269.3449007382985
+          ],
+          [
+            290.3781295447523,
+            263.5474541676027
+          ],
+          [
+            302.2999266862564,
+            258.97110501199126
+          ],
+          [
+            314.6347737202333,
+            255.66599271047573
+          ],
+          [
+            327.2475274813462,
+            253.66832876507067
+          ],
+          [
+            340.0,
+            253.0
+          ],
+          [
+            352.7524725186537,
+            253.66832876507064
+          ],
+          [
+            365.36522627976666,
+            255.66599271047573
+          ],
+          [
+            377.7000733137436,
+            258.97110501199126
+          ],
+          [
+            389.6218704552476,
+            263.54745416760267
+          ],
+          [
+            401.0,
+            269.3449007382985
+          ],
+          [
+            411.7098007796817,
+            276.2999266862564
+          ],
+          [
+            421.63393397578074,
+            284.3363312917579
+          ],
+          [
+            430.6636687082421,
+            293.3660660242193
+          ],
+          [
+            438.7000733137436,
+            303.29019922031824
+          ],
+          [
+            445.65509926170154,
+            314.00000000000006
+          ],
+          [
+            451.45254583239733,
+            325.37812954475237
+          ],
+          [
+            456.02889498800874,
+            337.2999266862564
+          ],
+          [
+            459.33400728952427,
+            349.6347737202334
+          ],
+          [
+            461.33167123492933,
+            362.2475274813463
+          ],
+          [
+            462.0,
+            374.9999999999999
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 4,
+        "fill": "none",
+        "closed": false,
+        "kind": "polyline",
+        "id": "e006"
+      },
+      {
+        "x": 453,
+        "y": 366,
+        "w": 18,
+        "h": 18,
+        "fill": "#536647",
+        "stroke": "#536647",
+        "sw": 2,
+        "kind": "ellipse",
+        "id": "e007"
+      },
+      {
+        "x": 135,
+        "y": 535,
+        "w": 460,
+        "h": 41.47,
+        "text": "相位 / 顺序 / 事件读出",
+        "size": 29,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            760.0,
+            480.0
+          ],
+          [
+            766.5,
+            480.1168683346307
+          ],
+          [
+            773.0,
+            480.18509898136307
+          ],
+          [
+            779.5,
+            480.1568132271512
+          ],
+          [
+            786.0,
+            479.98563846510507
+          ],
+          [
+            792.5,
+            479.62743182351153
+          ],
+          [
+            799.0,
+            479.04096900058335
+          ],
+          [
+            805.5,
+            478.18858755590065
+          ],
+          [
+            812.0,
+            477.03677462019743
+          ],
+          [
+            818.5,
+            475.5566898524774
+          ],
+          [
+            825.0,
+            473.72461548388964
+          ],
+          [
+            831.5,
+            471.5223264255789
+          ],
+          [
+            838.0,
+            468.93737466510134
+          ],
+          [
+            844.5,
+            465.9632835134958
+          ],
+          [
+            851.0,
+            462.5996486718484
+          ],
+          [
+            857.5,
+            458.85214454024236
+          ],
+          [
+            864.0,
+            454.732435670642
+          ],
+          [
+            870.5,
+            450.2579947454613
+          ],
+          [
+            877.0,
+            445.45182992219804
+          ],
+          [
+            883.5,
+            440.3421257988318
+          ],
+          [
+            890.0,
+            434.96180360259893
+          ],
+          [
+            896.5,
+            429.34800746525224
+          ],
+          [
+            903.0,
+            423.5415248013083
+          ],
+          [
+            909.5,
+            417.5861498340855
+          ],
+          [
+            916.0,
+            411.5280002014967
+          ],
+          [
+            922.5,
+            405.4147973057337
+          ],
+          [
+            929.0,
+            399.2951216367473
+          ],
+          [
+            935.5,
+            393.2176546899494
+          ],
+          [
+            942.0,
+            387.2304193077595
+          ],
+          [
+            948.5,
+            381.38003029920975
+          ],
+          [
+            955.0,
+            375.7109670314414
+          ],
+          [
+            961.5,
+            370.2648793440566
+          ],
+          [
+            968.0,
+            365.07993761730177
+          ],
+          [
+            974.5,
+            360.1902371360503
+          ],
+          [
+            981.0,
+            355.6252660442854
+          ],
+          [
+            987.5,
+            351.4094451924759
+          ],
+          [
+            994.0,
+            347.5617470583726
+          ],
+          [
+            1000.5,
+            344.09539968783804
+          ],
+          [
+            1007.0,
+            341.01768027561553
+          ],
+          [
+            1013.5,
+            338.32980160713896
+          ],
+          [
+            1020.0,
+            336.02689313342154
+          ],
+          [
+            1026.5,
+            334.09807697434394
+          ],
+          [
+            1033.0,
+            332.5266376643352
+          ],
+          [
+            1039.5,
+            331.2902829916226
+          ],
+          [
+            1046.0,
+            330.3614918607402
+          ],
+          [
+            1052.5,
+            329.7079437500192
+          ],
+          [
+            1059.0,
+            329.29302306251856
+          ],
+          [
+            1065.5,
+            329.0763905001688
+          ],
+          [
+            1072.0,
+            329.01461254502686
+          ],
+          [
+            1078.5,
+            329.0618392247964
+          ],
+          [
+            1085.0,
+            329.17051958631106
+          ],
+          [
+            1091.5,
+            329.2921437122545
+          ],
+          [
+            1098.0,
+            329.3779997021954
+          ],
+          [
+            1104.5,
+            329.37993380550216
+          ],
+          [
+            1111.0,
+            329.25110184451546
+          ],
+          [
+            1117.5,
+            328.9467002022735
+          ],
+          [
+            1124.0,
+            328.4246649679697
+          ],
+          [
+            1130.5,
+            327.6463283302122
+          ],
+          [
+            1137.0,
+            326.57702197528766
+          ],
+          [
+            1143.5,
+            325.1866180746019
+          ],
+          [
+            1150.0,
+            323.44999941936845
+          ]
+        ],
+        "stroke": "#496974",
+        "sw": 4,
+        "fill": "none",
+        "closed": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "x": 752,
+        "y": 472,
+        "w": 16,
+        "h": 16,
+        "fill": "#496974",
+        "stroke": "#496974",
+        "sw": 2,
+        "kind": "ellipse",
+        "id": "e010"
+      },
+      {
+        "x": 1142,
+        "y": 315.44999941936845,
+        "w": 16,
+        "h": 16,
+        "fill": "#9C5138",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "kind": "ellipse",
+        "id": "e011"
+      },
+      {
+        "x": 730,
+        "y": 535,
+        "w": 500,
+        "h": 40.04,
+        "text": "双端约束，不偷用未来信息",
+        "size": 28,
+        "color": "#496974",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "有界非收敛轨迹可有意义；数值发散仍是失败，而非更深的智能",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      }
+    ],
+    "notes": "精简版第 10 页，对应研究版第 28 页。\n\n有些计算可以从相位、顺序和路径结构读出。不收敛不必等于失败，但数值发散不能被美化。\n\n原稿画面要求：稳定圆周路径和双端约束路径并置；不画未来信息。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第28页\nhypotheses/H33_非梯度的互构认知动力学.md\nhypotheses/H34_双边边界条件推理.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1909.01377\nhttps://www.ee.ucla.edu/~tabuada/Papers/EventTriggered.pdf\nhttps://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf\nhttps://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html\nhttps://arxiv.org/abs/1807.03480\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_28"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 28
+  },
+  {
+    "title": "完整程序怎样组织",
+    "description": "源码树＋typed IR＋任务DAG，分清三层。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "完整程序怎样组织",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "48机制＋20组合＋12世界＋13学习阶段",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "11 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64.0,
+        "y": 255,
+        "w": 362.6666666666667,
+        "h": 210,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 79.0,
+        "y": 270,
+        "w": 332.6666666666667,
+        "h": 47.19,
+        "text": "目标源码",
+        "size": 33,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 79.0,
+        "y": 319.25,
+        "w": 332.6666666666667,
+        "h": 65.78,
+        "text": "48 机制 / 20 组合\n12 世界 / 13 学习阶段",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            432.6666666666667,
+            360.0
+          ],
+          [
+            452.6666666666667,
+            360.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            440.6666666666667,
+            355.0
+          ],
+          [
+            452.6666666666667,
+            360.0
+          ],
+          [
+            440.6666666666667,
+            365.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 458.6666666666667,
+        "y": 255,
+        "w": 362.6666666666667,
+        "h": 210,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e011"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 270,
+        "w": 332.6666666666667,
+        "h": 47.19,
+        "text": "Typed IR",
+        "size": 33,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 473.6666666666667,
+        "y": 319.25,
+        "w": 332.6666666666667,
+        "h": 65.78,
+        "text": "未来研究计算图\n类型、依赖与权限",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            827.3333333333334,
+            360.0
+          ],
+          [
+            847.3333333333334,
+            360.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            835.3333333333334,
+            355.0
+          ],
+          [
+            847.3333333333334,
+            360.0
+          ],
+          [
+            835.3333333333334,
+            365.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "x": 853.3333333333334,
+        "y": 255,
+        "w": 362.6666666666667,
+        "h": 210,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e016"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 270,
+        "w": 332.6666666666667,
+        "h": 47.19,
+        "text": "任务 DAG",
+        "size": 33,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 868.3333333333334,
+        "y": 319.25,
+        "w": 332.6666666666667,
+        "h": 65.78,
+        "text": "当前生产调度\n文件 owner 与回执",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "x": 64,
+        "y": 515,
+        "w": 1152,
+        "h": 51.48,
+        "text": "研究计算图 ≠ 产物生产任务图",
+        "size": 36,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e019"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "源码准备与静态检查不推出模型研究结果",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e020"
+      }
+    ],
+    "notes": "精简版第 11 页，对应研究版第 33 页。\n\n任务图调度Dot写程序，研究图调度未来计算。两者不可混为同一个通过标准。\n\n原稿画面要求：源码树＋typed IR＋任务DAG，分清三层。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第33页\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\n\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_33"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 33
+  },
+  {
+    "title": "最终问题：交流能否创造新的认知可能",
+    "description": "概念、问题、更新、世界四对象再组合；结尾not_run角标。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "最终问题：交流能否创造新的认知可能",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "从交换已有知识，走向产生新的表达与学习方式",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "前沿机制提案 / 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "12 / 12",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 330,
+        "w": 260,
+        "h": 135,
+        "fill": "#E4EAD9",
+        "stroke": "#536647",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 79,
+        "y": 345,
+        "w": 230,
+        "h": 51.48,
+        "text": "概念",
+        "size": 36,
+        "color": "#536647",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007"
+      },
+      {
+        "x": 79,
+        "y": 398.0,
+        "w": 230,
+        "h": 32.89,
+        "text": "新谓词",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            331,
+            397
+          ],
+          [
+            350,
+            397
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            338.0,
+            392.0
+          ],
+          [
+            350,
+            397
+          ],
+          [
+            338.0,
+            402.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 357,
+        "y": 330,
+        "w": 260,
+        "h": 135,
+        "fill": "#F0DDD1",
+        "stroke": "#9C5138",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e011"
+      },
+      {
+        "x": 372,
+        "y": 345,
+        "w": 230,
+        "h": 51.48,
+        "text": "问题",
+        "size": 36,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012"
+      },
+      {
+        "x": 372,
+        "y": 398.0,
+        "w": 230,
+        "h": 32.89,
+        "text": "解关系",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            624,
+            397
+          ],
+          [
+            643,
+            397
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "points": [
+          [
+            631.0,
+            392.0
+          ],
+          [
+            643,
+            397
+          ],
+          [
+            631.0,
+            402.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e015"
+      },
+      {
+        "x": 650,
+        "y": 330,
+        "w": 260,
+        "h": 135,
+        "fill": "#E1E9EA",
+        "stroke": "#496974",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e016"
+      },
+      {
+        "x": 665,
+        "y": 345,
+        "w": 230,
+        "h": 51.48,
+        "text": "学习",
+        "size": 36,
+        "color": "#496974",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017"
+      },
+      {
+        "x": 665,
+        "y": 398.0,
+        "w": 230,
+        "h": 32.89,
+        "text": "更新规则",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018"
+      },
+      {
+        "points": [
+          [
+            917,
+            397
+          ],
+          [
+            936,
+            397
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e019"
+      },
+      {
+        "points": [
+          [
+            924.0,
+            392.0
+          ],
+          [
+            936,
+            397
+          ],
+          [
+            924.0,
+            402.0
+          ]
+        ],
+        "stroke": "#606258",
+        "sw": 2,
+        "fill": "none",
+        "kind": "polyline",
+        "id": "e020"
+      },
+      {
+        "x": 943,
+        "y": 330,
+        "w": 260,
+        "h": 135,
+        "fill": "#E9E1EC",
+        "stroke": "#725D7C",
+        "sw": 2,
+        "r": 8,
+        "dash": false,
+        "kind": "rect",
+        "id": "e021"
+      },
+      {
+        "x": 958,
+        "y": 345,
+        "w": 230,
+        "h": 51.48,
+        "text": "世界",
+        "size": 36,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": true,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022"
+      },
+      {
+        "x": 958,
+        "y": 398.0,
+        "w": 230,
+        "h": 32.89,
+        "text": "可执行动力学",
+        "size": 23,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e023"
+      },
+      {
+        "x": 64,
+        "y": 230,
+        "w": 1152,
+        "h": 60.059999999999995,
+        "text": "可操作的认知对象",
+        "size": 42,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e024"
+      },
+      {
+        "x": 64,
+        "y": 607,
+        "w": 1152,
+        "h": 37.18,
+        "text": "研究命题：交流能否扩展系统能够表达、提问和学习的对象集合？",
+        "size": 26,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e025"
+      }
+    ],
+    "notes": "精简版第 12 页，对应研究版第 36 页。\n\n真正想推进的不是一张榜单，而是让多模型系统能够改变自己可思考的对象集合。这是研究命题，不是已验证宣告。\n\n原稿画面要求：概念、问题、更新、世界四对象再组合；结尾not_run角标。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第36页\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\n\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+    "sources": [
+      "media/01_36页研究版逐页脚本.md",
+      "research_slide_36"
+    ],
+    "research_state": "NOT_RUN",
+    "source_research_slide": 36
+  }
+]

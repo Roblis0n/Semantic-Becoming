@@ -1,0 +1,112 @@
+{
+  "stage": "L06",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "reciprocal",
+  "run_id": "future-l06",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "dimensions": {
+    "maximum_horizon": 16
+  },
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "reciprocal": [
+      {
+        "name": "reciprocal_calibration",
+        "parameter_owners": [
+          "coupling",
+          "dissipation_factor",
+          "trajectory_reader"
+        ],
+        "loss_weights": {
+          "terminal": 1.0,
+          "trajectory": 1.0,
+          "stability": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "boundary": [
+      {
+        "name": "boundary_calibration",
+        "parameter_owners": [
+          "transition_messages",
+          "backward_constraint_encoder"
+        ],
+        "loss_weights": {
+          "transition": 0.1,
+          "boundary": 1.0,
+          "task": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "scales": [
+      {
+        "name": "scales_calibration",
+        "parameter_owners": [
+          "coarse_map",
+          "macro_dynamics",
+          "lift",
+          "detail_memory",
+          "task_reader"
+        ],
+        "loss_weights": {
+          "commute": 1.0,
+          "task": 1.0,
+          "residual": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "bifurcation": [
+      {
+        "name": "bifurcation_calibration",
+        "parameter_owners": [
+          "potential_coefficients",
+          "readout",
+          "structure_map",
+          "trigger_policy"
+        ],
+        "loss_weights": {
+          "task": 1.0,
+          "migration": 0.2,
+          "event": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  },
+  "variant_versions": {
+    "scales": {
+      "schema": "3",
+      "state": "s1",
+      "world": "w1",
+      "task": "t1",
+      "evidence": "e1",
+      "frame": "f1"
+    }
+  }
+}

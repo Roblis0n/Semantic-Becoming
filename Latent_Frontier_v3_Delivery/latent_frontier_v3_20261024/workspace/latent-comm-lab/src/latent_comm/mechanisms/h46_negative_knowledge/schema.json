@@ -1,0 +1,201 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "domain_version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "active_assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "capsules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "capsule_id": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "excluded": {
+            "type": "object",
+            "properties": {
+              "op": {
+                "enum": [
+                  "eq",
+                  "ne",
+                  "lt",
+                  "le",
+                  "gt",
+                  "ge",
+                  "divisible",
+                  "not_divisible"
+                ]
+              },
+              "value": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "op",
+              "value"
+            ],
+            "additionalProperties": false
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "witness": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "enum": [
+                  "proof_scoped",
+                  "program_exhaustive",
+                  "search_failed_in_grammar",
+                  "soft_empirical"
+                ]
+              },
+              "required_predicate": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "op": {
+                        "type": "string",
+                        "pattern": "^.+$"
+                      },
+                      "value": {
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "op",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "checked_domain": {
+                "type": "array",
+                "items": {
+                  "type": "integer"
+                },
+                "minItems": 0,
+                "maxItems": 64
+              },
+              "grammar_scope": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^.+$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "status": {
+                "type": "string",
+                "pattern": "^.+$"
+              }
+            },
+            "required": [
+              "kind",
+              "required_predicate",
+              "checked_domain",
+              "grammar_scope",
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "reliability": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "mode": {
+            "enum": [
+              "hard",
+              "soft",
+              "report_only"
+            ]
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "retract_on": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "domain_version": {
+            "type": "string",
+            "pattern": "^.+$"
+          }
+        },
+        "required": [
+          "capsule_id",
+          "excluded",
+          "assumptions",
+          "witness",
+          "reliability",
+          "mode",
+          "dependencies",
+          "retract_on",
+          "domain_version"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "required": [
+    "schema_version",
+    "domain",
+    "domain_version",
+    "active_assumptions",
+    "capsules"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H46:resolved-payload:3"
+}

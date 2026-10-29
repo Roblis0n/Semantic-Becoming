@@ -1,0 +1,85 @@
+{
+  "task_id": "A04",
+  "status": "done",
+  "input_digest": "3076662697c0bf84cbfd440943e2243b59c76ebad91b0d1f989d777a736a1343",
+  "outputs": [
+    {
+      "path": "src/latent_comm/runtime/README.md",
+      "sha256": "b4b2490aaa85b47d2661aabbdc1c79300222194bf4dad7d1164bf462264422e3",
+      "bytes": 5412
+    },
+    {
+      "path": "src/latent_comm/runtime/__init__.py",
+      "sha256": "b262e52a095f7c3a40b44118a62999c088909159ac435fc2ae6fb7631db6156e",
+      "bytes": 810
+    },
+    {
+      "path": "src/latent_comm/runtime/branches.py",
+      "sha256": "3210ad063a214fdfffa256027c2ee7c2681cfe5a14bf109241e40c4c9588d9b5",
+      "bytes": 4340
+    },
+    {
+      "path": "src/latent_comm/runtime/files.py",
+      "sha256": "188e53c404b2e17e1982c4ac7dddb41a2443b7f6066edef4ba50200ed99a8ad2",
+      "bytes": 8875
+    },
+    {
+      "path": "src/latent_comm/runtime/journal.py",
+      "sha256": "f12318d6da2e645c88e4a72fee9c92a29f6ca2573363b3b41eecba5012a5e05c",
+      "bytes": 3275
+    },
+    {
+      "path": "src/latent_comm/runtime/loops.py",
+      "sha256": "4516c87fbaac147c182a65c01a41fffa3c085dca2bbb87b3c35513a3b41fe594",
+      "bytes": 4344
+    },
+    {
+      "path": "src/latent_comm/runtime/recovery.py",
+      "sha256": "00e0e3897d7d7e7fdc3d51b13ab41e2b479d092b95183897e864002c6845029e",
+      "bytes": 7720
+    },
+    {
+      "path": "src/latent_comm/runtime/scheduler.py",
+      "sha256": "d2dfca101e76c8b0b782847dabf4660d9a5c78d6f9955bd85d993f13437e985f",
+      "bytes": 10674
+    },
+    {
+      "path": "src/latent_comm/runtime/state.schema.json",
+      "sha256": "fe8712da293a390684c081238113c61bd7a697dc2e3cf9e98a04bd2eeb03cd04",
+      "bytes": 5554
+    },
+    {
+      "path": "src/latent_comm/runtime/transactions.py",
+      "sha256": "6a1fce159ba21c83606bcb3e100ad83d91cfa811d59fb82be264fa91ec1cfcd5",
+      "bytes": 11612
+    },
+    {
+      "path": "tests/runtime/test_runtime.py",
+      "sha256": "43d1171f14ac74e346e39140ca5aaddb7a5f6bc8ab9d99686581500610425cf9",
+      "bytes": 18097
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A04_runtime.txt",
+      "sha256": "fc27b87a1466698a67887302805299d7d11126580393870532e2fac0de082988"
+    },
+    {
+      "path": "run_state/checks/A04_static.json",
+      "sha256": "0005a02e5bb860c8ef76862a803169bcd10476c6b9d11c5eb6af264ba9e0e000"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/A04_test_runtime.txt",
+      "sha256": "776772c5615376417e579707d36a2a910bd6c63f96344b8af3bff2561baec220"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "51 actual finite stdlib runtime tests passed. Optimistic read-version transactions with ABA-proof tombstones, nested branches, finite queue/clock/retry scheduler, gated IR fixture loops, hashed WAL and immutable-generation atomic publication, simulated crash recovery, input/artifact descendant invalidation. Scheduler/store checkpoint interval is detected on resume, not claimed globally atomic. Linux single coordinator; no external-effect rollback. All research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:32:33.923730+00:00"
+}

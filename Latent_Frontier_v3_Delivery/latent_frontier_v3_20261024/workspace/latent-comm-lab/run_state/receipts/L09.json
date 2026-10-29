@@ -1,0 +1,63 @@
+{
+  "task_id": "L09",
+  "status": "done",
+  "input_digest": "df23513ff7aee93e62aee83fdcaad5515bb58be404560b9aa38335bae4b4b2b1",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/isa_search/README.md",
+      "sha256": "f188e6e681a1556ecb610c45ba5e185f1bddf3b8e64fe6de53e2e800aea9a2eb",
+      "bytes": 3532
+    },
+    {
+      "path": "src/latent_comm/learning/isa_search/__init__.py",
+      "sha256": "18ad7d791a536b4e4845a6b3cce2bdd59c29d2c458ae94ec434c25f170319a8c",
+      "bytes": 7120
+    },
+    {
+      "path": "src/latent_comm/learning/isa_search/train.py",
+      "sha256": "d4f934a00aba6f2516f9a8aa2136839d4bf82f7ca75e719f41afecf788775eca",
+      "bytes": 2342
+    },
+    {
+      "path": "configs/learning/isa_search.json",
+      "sha256": "0b90b7b66151f8650b4901c2a3be2b618f8096b7c8dcf8e42ca6be6912b40929",
+      "bytes": 1273
+    },
+    {
+      "path": "tests/research_locked/test_learning_isa_search.py",
+      "sha256": "f04e19f15fe8e4e2a8f6c754a037d24b4690c1ad4d5e0ffa736949d82ce98267",
+      "bytes": 3577
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L09_isa_search.txt",
+      "sha256": "57a57e1158c7f5577a5fae0a8e76e1afdc7875db5da61fe8b56c4590c8205531"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_isa_search.txt",
+      "sha256": "7d09b3cad0c7b9d29b00eba8592985b6fb63afa7645d2895201aac977add90fb"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated immutable-base macro learning, exact stopped interpreter anchors, polynomial fast implementation, explicit typed binding extension and real byte-saving finite structure search. Eight AST/metadata/finite DSL checks passed under aggregate budgets; no research/guard invocation. Source-only shared optimization/resume pinned; NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.663763+00:00"
+}

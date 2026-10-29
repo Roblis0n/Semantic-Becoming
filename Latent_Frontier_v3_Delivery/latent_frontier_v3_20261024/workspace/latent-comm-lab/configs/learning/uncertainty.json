@@ -1,0 +1,85 @@
+{
+  "stage": "L11",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "identification",
+  "run_id": "future-l11",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "dimensions": {},
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "identification": [
+      {
+        "name": "identification_calibration",
+        "parameter_owners": [
+          "response_encoder",
+          "query_proposer"
+        ],
+        "loss_weights": {
+          "response": 1.0,
+          "query_policy": 0.2
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "exclusions": [
+      {
+        "name": "exclusions_calibration",
+        "parameter_owners": [
+          "exclusion_generator",
+          "scope_predictor"
+        ],
+        "loss_weights": {
+          "exclusion": 1.0,
+          "scope": 0.5
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "quotient": [
+      {
+        "name": "quotient_calibration",
+        "parameter_owners": [
+          "state_encoder",
+          "task_conditioner",
+          "prototypes"
+        ],
+        "loss_weights": {
+          "behavior": 1.0,
+          "rate": 0.01
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  },
+  "variant_versions": {
+    "quotient": {
+      "schema": "3",
+      "state": "s1",
+      "world": "w1",
+      "task": "t1",
+      "evidence": "e1",
+      "frame": "f1"
+    }
+  }
+}

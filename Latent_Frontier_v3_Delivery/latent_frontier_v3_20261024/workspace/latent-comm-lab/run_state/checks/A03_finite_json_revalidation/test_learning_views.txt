@@ -1,0 +1,20 @@
+test_auxiliary_loss_live_owners (test_learning_views.ContractChecks.test_auxiliary_loss_live_owners) ... ok
+test_engine_delegation_and_resume_command (test_learning_views.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_exact_symbol_preserved (test_learning_views.ContractChecks.test_exact_symbol_preserved) ... ok
+test_metadata (test_learning_views.ContractChecks.test_metadata) ... ok
+test_no_total_double_count (test_learning_views.ContractChecks.test_no_total_double_count) ... ok
+test_receiver_backend_keeps_live_input_path (test_learning_views.ContractChecks.test_receiver_backend_keeps_live_input_path) ... ok
+test_recipe_is_unbound (test_learning_views.ContractChecks.test_recipe_is_unbound) ... ok
+test_symbol_source_conflict_and_role_leak_rejected (test_learning_views.ContractChecks.test_symbol_source_conflict_and_role_leak_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.012s
+
+OK
+{
+  "selected": 8,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_views.ContractChecks.test_stage_syntax_and_gates"
+  ],
+  "neural_modules_loaded": []
+}

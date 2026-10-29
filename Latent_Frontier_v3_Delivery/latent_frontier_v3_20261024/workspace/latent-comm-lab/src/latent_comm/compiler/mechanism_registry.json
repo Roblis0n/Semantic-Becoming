@@ -1,0 +1,2228 @@
+[
+  {
+    "key": "H01",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "State"
+      ],
+      [
+        "in1",
+        "LowRankFactors"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "LatentOperator"
+      ]
+    ],
+    "read_set": [
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "differentiable",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H01:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h01_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H01_可组合潜算子.md"
+  },
+  {
+    "key": "H02",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ResponseAnchors"
+      ],
+      [
+        "in1",
+        "TrustRegion"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ResponseCapsule"
+      ]
+    ],
+    "read_set": [
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H02:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h02_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H02_反事实响应包.md"
+  },
+  {
+    "key": "H03",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "HypothesisSet"
+      ],
+      [
+        "in1",
+        "EvidenceAtoms"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "BeliefPacket"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H03:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "evidence"
+    ],
+    "implementation": "latent_comm.mechanisms.h03_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H03_多假设信念包.md"
+  },
+  {
+    "key": "H04",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "LocalConstraints"
+      ],
+      [
+        "in1",
+        "StateDomain"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ConstraintField"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H04:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h04_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H04_多主体共享约束场.md"
+  },
+  {
+    "key": "H05",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ProgramState"
+      ],
+      [
+        "in1",
+        "ClockContract"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ContinuationCapsule"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "K",
+      "P",
+      "Z"
+    ],
+    "write_set": [
+      "K"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H05:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "isa"
+    ],
+    "implementation": "latent_comm.mechanisms.h05_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H05_推理续接胶囊.md"
+  },
+  {
+    "key": "H06",
+    "operation": "TransformFrame",
+    "inputs": [
+      [
+        "in0",
+        "BehaviorAnchorSet"
+      ],
+      [
+        "in1",
+        "LocalCharts"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "SemanticAtlas"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "Z"
+    ],
+    "write_set": [
+      "F"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H06:TransformFrame"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h06_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H06_多图册语义对齐.md"
+  },
+  {
+    "key": "H07",
+    "operation": "CompileMacro",
+    "inputs": [
+      [
+        "in0",
+        "TypedProgram"
+      ],
+      [
+        "in1",
+        "InstructionSet"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ExecutableProgram"
+      ]
+    ],
+    "read_set": [
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H07:CompileMacro"
+    ],
+    "required_version_axes": [
+      "schema",
+      "isa"
+    ],
+    "implementation": "latent_comm.mechanisms.h07_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H07_类型化潜程序.md"
+  },
+  {
+    "key": "H08",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "RelationalGraph"
+      ],
+      [
+        "in1",
+        "RoleBindings"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "RelationalPacket"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H08:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h08_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H08_关系结构通信.md"
+  },
+  {
+    "key": "H09",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "StructuralCausalModel"
+      ],
+      [
+        "in1",
+        "InterventionSet"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "InterventionAlgebra"
+      ]
+    ],
+    "read_set": [
+      "W"
+    ],
+    "write_set": [
+      "W"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H09:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "world"
+    ],
+    "implementation": "latent_comm.mechanisms.h09_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H09_干预代数通信.md"
+  },
+  {
+    "key": "H10",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "OperatorFamily"
+      ],
+      [
+        "in1",
+        "InteractionGraph"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "SynergyHypergraph"
+      ]
+    ],
+    "read_set": [
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H10:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h10_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H10_高阶协同超边.md"
+  },
+  {
+    "key": "H11",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "State"
+      ],
+      [
+        "in1",
+        "BitBudget"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ProgressiveCode"
+      ]
+    ],
+    "read_set": [
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H11:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h11_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H11_渐进潜编码.md"
+  },
+  {
+    "key": "H12",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "EvidenceAtoms"
+      ],
+      [
+        "in1",
+        "QueryFamily"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "QueryCapsule"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "K",
+      "Q",
+      "Z"
+    ],
+    "write_set": [
+      "K"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H12:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h12_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H12_多查询持久胶囊.md"
+  },
+  {
+    "key": "H13",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "StateSnapshot"
+      ],
+      [
+        "in1",
+        "BranchPolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "BranchSet"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "O",
+      "P",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H13:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h13_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H13_可分叉潜计算.md"
+  },
+  {
+    "key": "H14",
+    "operation": "CompileMacro",
+    "inputs": [
+      [
+        "in0",
+        "ProductionRules"
+      ],
+      [
+        "in1",
+        "TypedBindings"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "SkillGrammar"
+      ]
+    ],
+    "read_set": [
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H14:CompileMacro"
+    ],
+    "required_version_axes": [
+      "schema",
+      "isa"
+    ],
+    "implementation": "latent_comm.mechanisms.h14_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H14_潜技能语法.md"
+  },
+  {
+    "key": "H15",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ProtocolPopulation"
+      ],
+      [
+        "in1",
+        "AgentCapabilities"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ProtocolContract"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "K",
+      "Z"
+    ],
+    "write_set": [
+      "K"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H15:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h15_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H15_接收者无关协议学习.md"
+  },
+  {
+    "key": "H16",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "SymbolGraph"
+      ],
+      [
+        "in1",
+        "LatentBindings"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "HybridPacket"
+      ]
+    ],
+    "read_set": [
+      "O",
+      "P",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H16:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "ontology"
+    ],
+    "implementation": "latent_comm.mechanisms.h16_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md"
+  },
+  {
+    "key": "H17",
+    "operation": "TransformFrame",
+    "inputs": [
+      [
+        "in0",
+        "GroundingFrames"
+      ],
+      [
+        "in1",
+        "ActionEffects"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "GroundedPacket"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "W"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H17:TransformFrame"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h17_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H17_跨模态坐标接地.md"
+  },
+  {
+    "key": "H18",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "TypedGraph"
+      ],
+      [
+        "in1",
+        "RoutingPolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ComputationTopology"
+      ]
+    ],
+    "read_set": [
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H18:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "isa"
+    ],
+    "implementation": "latent_comm.mechanisms.h18_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H18_通信诱导计算结构.md"
+  },
+  {
+    "key": "H19",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "MessageCorpus"
+      ],
+      [
+        "in1",
+        "SkillContract"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ConsolidatedSkill"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "P",
+      "Z"
+    ],
+    "write_set": [
+      "K"
+    ],
+    "differentiability": "differentiable",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H19:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h19_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H19_消息到技能巩固.md"
+  },
+  {
+    "key": "H20",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "EventSet"
+      ],
+      [
+        "in1",
+        "ClockContract"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "CausalSchedule"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H20:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h20_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H20_异步认知时钟.md"
+  },
+  {
+    "key": "H21",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "BranchSet"
+      ],
+      [
+        "in1",
+        "QueryFamily"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "BranchPortfolio"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "Q",
+      "Z"
+    ],
+    "write_set": [
+      "K"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H21:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h21_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H21_反事实分支组合搜索.md"
+  },
+  {
+    "key": "H22",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ComputationGraph"
+      ],
+      [
+        "in1",
+        "BoundaryPolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ElasticPartition"
+      ]
+    ],
+    "read_set": [
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H22:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h22_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H22_动态模型边界.md"
+  },
+  {
+    "key": "H23",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ResponseResidual"
+      ],
+      [
+        "in1",
+        "RepairBudget"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "RepairMessage"
+      ]
+    ],
+    "read_set": [
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H23:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h23_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H23_语义残差纠错.md"
+  },
+  {
+    "key": "H24",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "CapabilityRequest"
+      ],
+      [
+        "in1",
+        "ScopeContract"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ScopedCapability"
+      ]
+    ],
+    "read_set": [
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H24:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h24_legacy.reference",
+    "source_spec": "inherited_v2/hypotheses/H24_有作用域的潜计算能力.md"
+  },
+  {
+    "key": "H25",
+    "operation": "TransformFrame",
+    "inputs": [
+      [
+        "in0",
+        "FrameSpec"
+      ],
+      [
+        "in1",
+        "State"
+      ],
+      [
+        "in2",
+        "Operator"
+      ],
+      [
+        "in3",
+        "Readout"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "TransportedOperator"
+      ],
+      [
+        "out1",
+        "CovarianceReport"
+      ],
+      [
+        "out2",
+        "PathComposition"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "Z"
+    ],
+    "write_set": [
+      "F"
+    ],
+    "differentiability": "differentiable",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H25:TransformFrame"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h25_gauge.reference",
+    "source_spec": "hypotheses/H25_规范协变的认知接口.md"
+  },
+  {
+    "key": "H26",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "CoverGraph"
+      ],
+      [
+        "in1",
+        "LocalSection"
+      ],
+      [
+        "in2",
+        "AffineRestriction"
+      ],
+      [
+        "in3",
+        "AnchorSet"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "GluingCandidate"
+      ],
+      [
+        "out1",
+        "OverlapResiduals"
+      ],
+      [
+        "out2",
+        "ConflictWitness"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H26:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h26_sheaf.reference",
+    "source_spec": "hypotheses/H26_不可全局拼合的语义层.md"
+  },
+  {
+    "key": "H27",
+    "operation": "ProposeConcept",
+    "inputs": [
+      [
+        "in0",
+        "OntologySnapshot"
+      ],
+      [
+        "in1",
+        "CounterexamplePair"
+      ],
+      [
+        "in2",
+        "PredicateGrammar"
+      ],
+      [
+        "in3",
+        "MigrationPolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ConceptDefinition"
+      ],
+      [
+        "out1",
+        "DistinctionWitness"
+      ],
+      [
+        "out2",
+        "OntologyDelta"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "O",
+      "Q"
+    ],
+    "write_set": [
+      "O"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H27:ProposeConcept"
+    ],
+    "required_version_axes": [
+      "schema",
+      "ontology"
+    ],
+    "implementation": "latent_comm.mechanisms.h27_ontology.reference",
+    "source_spec": "hypotheses/H27_交互中诞生的新概念.md"
+  },
+  {
+    "key": "H28",
+    "operation": "IntegrateTrajectory",
+    "inputs": [
+      [
+        "in0",
+        "PotentialSpec"
+      ],
+      [
+        "in1",
+        "ControlPath"
+      ],
+      [
+        "in2",
+        "StateVector"
+      ],
+      [
+        "in3",
+        "StructureGraph"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "BranchTrajectory"
+      ],
+      [
+        "out1",
+        "StabilityRecord"
+      ],
+      [
+        "out2",
+        "StructureTransition"
+      ]
+    ],
+    "read_set": [
+      "O",
+      "P",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H28:IntegrateTrajectory"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h28_bifurcation.reference",
+    "source_spec": "hypotheses/H28_语义结构的分岔与相变.md"
+  },
+  {
+    "key": "H29",
+    "operation": "RewriteQuestion",
+    "inputs": [
+      [
+        "in0",
+        "QuestionIR"
+      ],
+      [
+        "in1",
+        "TransformLibrary"
+      ],
+      [
+        "in2",
+        "DomainConstraints"
+      ],
+      [
+        "in3",
+        "AnswerRelation"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "QuestionGraph"
+      ],
+      [
+        "out1",
+        "SolutionTransport"
+      ],
+      [
+        "out2",
+        "RelationWitness"
+      ]
+    ],
+    "read_set": [
+      "O",
+      "P",
+      "Q"
+    ],
+    "write_set": [
+      "Q"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H29:RewriteQuestion"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h29_questions.reference",
+    "source_spec": "hypotheses/H29_问题生成的潜演算.md"
+  },
+  {
+    "key": "H30",
+    "operation": "MapAnalogy",
+    "inputs": [
+      [
+        "in0",
+        "TypedOperationGraph"
+      ],
+      [
+        "in1",
+        "PartialObjectMap"
+      ],
+      [
+        "in2",
+        "OperationMap"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "CompiledAnalogy"
+      ],
+      [
+        "out1",
+        "BrokenCommutingSquares"
+      ],
+      [
+        "out2",
+        "TargetProgram"
+      ]
+    ],
+    "read_set": [
+      "O",
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H30:MapAnalogy"
+    ],
+    "required_version_axes": [
+      "schema",
+      "ontology"
+    ],
+    "implementation": "latent_comm.mechanisms.h30_analogy.reference",
+    "source_spec": "hypotheses/H30_类比态射编译器.md"
+  },
+  {
+    "key": "H31",
+    "operation": "GraftMechanism",
+    "inputs": [
+      [
+        "in0",
+        "SourceSCMModule"
+      ],
+      [
+        "in1",
+        "TargetSCM"
+      ],
+      [
+        "in2",
+        "BoundaryMap"
+      ],
+      [
+        "in3",
+        "NoiseContract"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "GraftedSCM"
+      ],
+      [
+        "out1",
+        "InterventionMap"
+      ],
+      [
+        "out2",
+        "CompatibilityCertificate"
+      ]
+    ],
+    "read_set": [
+      "W"
+    ],
+    "write_set": [
+      "W"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H31:GraftMechanism"
+    ],
+    "required_version_axes": [
+      "schema",
+      "world"
+    ],
+    "implementation": "latent_comm.mechanisms.h31_grafting.reference",
+    "source_spec": "hypotheses/H31_因果机制移植.md"
+  },
+  {
+    "key": "H32",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ImmutableGoal"
+      ],
+      [
+        "in1",
+        "CostVector"
+      ],
+      [
+        "in2",
+        "InvertibleViewMap"
+      ],
+      [
+        "in3",
+        "PreferenceWeights"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "GoalPreservingView"
+      ],
+      [
+        "out1",
+        "ParetoFront"
+      ],
+      [
+        "out2",
+        "ViewComparison"
+      ]
+    ],
+    "read_set": [
+      "V"
+    ],
+    "write_set": [
+      "V"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H32:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h32_perspective.reference",
+    "source_spec": "hypotheses/H32_视角与目标条件代数.md"
+  },
+  {
+    "key": "H33",
+    "operation": "IntegrateTrajectory",
+    "inputs": [
+      [
+        "in0",
+        "CoupledState"
+      ],
+      [
+        "in1",
+        "EnergyFunction"
+      ],
+      [
+        "in2",
+        "SkewCoupling"
+      ],
+      [
+        "in3",
+        "IntegratorSpec"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "TrajectoryObject"
+      ],
+      [
+        "out1",
+        "CycleDescriptor"
+      ],
+      [
+        "out2",
+        "EnergyBudget"
+      ]
+    ],
+    "read_set": [
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "differentiable",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H33:IntegrateTrajectory"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h33_reciprocal.reference",
+    "source_spec": "hypotheses/H33_非梯度的互构认知动力学.md"
+  },
+  {
+    "key": "H34",
+    "operation": "IntegrateTrajectory",
+    "inputs": [
+      [
+        "in0",
+        "StartConstraint"
+      ],
+      [
+        "in1",
+        "PublicTerminalConstraint"
+      ],
+      [
+        "in2",
+        "Dynamics"
+      ],
+      [
+        "in3",
+        "BoundarySolver"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "PathCandidate"
+      ],
+      [
+        "out1",
+        "BoundaryResiduals"
+      ],
+      [
+        "out2",
+        "CausalityLabels"
+      ]
+    ],
+    "read_set": [
+      "P",
+      "W",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H34:IntegrateTrajectory"
+    ],
+    "required_version_axes": [
+      "schema",
+      "world"
+    ],
+    "implementation": "latent_comm.mechanisms.h34_boundary_value.reference",
+    "source_spec": "hypotheses/H34_双边边界条件推理.md"
+  },
+  {
+    "key": "H35",
+    "operation": "CoarseGrain",
+    "inputs": [
+      [
+        "in0",
+        "MicroState"
+      ],
+      [
+        "in1",
+        "CoarseMap"
+      ],
+      [
+        "in2",
+        "MicroDynamics"
+      ],
+      [
+        "in3",
+        "MacroClosure"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "MultiScaleState"
+      ],
+      [
+        "out1",
+        "ClosureResidual"
+      ],
+      [
+        "out2",
+        "ScaleTransition"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "W",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H35:CoarseGrain"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h35_renormalization.reference",
+    "source_spec": "hypotheses/H35_跨尺度语义重整化.md"
+  },
+  {
+    "key": "H36",
+    "operation": "SelectQuery",
+    "inputs": [
+      [
+        "in0",
+        "ProposerState"
+      ],
+      [
+        "in1",
+        "CriticProgram"
+      ],
+      [
+        "in2",
+        "SharedObservationRules"
+      ],
+      [
+        "in3",
+        "RevisionBudget"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "DisagreementGame"
+      ],
+      [
+        "out1",
+        "CounterexampleSet"
+      ],
+      [
+        "out2",
+        "RevisedStructure"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "O",
+      "Q",
+      "Z"
+    ],
+    "write_set": [
+      "Q"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H36:SelectQuery"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h36_disagreement.reference",
+    "source_spec": "hypotheses/H36_以分歧生产结构的认知博弈.md"
+  },
+  {
+    "key": "H37",
+    "operation": "TransportUpdate",
+    "inputs": [
+      [
+        "in0",
+        "BehaviorAnchorSet"
+      ],
+      [
+        "in1",
+        "SourceDirection"
+      ],
+      [
+        "in2",
+        "JVPContract"
+      ],
+      [
+        "in3",
+        "TargetVJPContract"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "TransportedUpdate"
+      ],
+      [
+        "out1",
+        "ProjectionResidual"
+      ],
+      [
+        "out2",
+        "RankDiagnostic"
+      ]
+    ],
+    "read_set": [
+      "F",
+      "U",
+      "Z"
+    ],
+    "write_set": [
+      "U"
+    ],
+    "differentiability": "differentiable",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H37:TransportUpdate"
+    ],
+    "required_version_axes": [
+      "schema",
+      "frame"
+    ],
+    "implementation": "latent_comm.mechanisms.h37_gradient_transport.reference",
+    "source_spec": "hypotheses/H37_跨模型学习方向运输.md"
+  },
+  {
+    "key": "H38",
+    "operation": "ApplyPlasticity",
+    "inputs": [
+      [
+        "in0",
+        "PlasticityAST"
+      ],
+      [
+        "in1",
+        "SupportBatch"
+      ],
+      [
+        "in2",
+        "QueryBatch"
+      ],
+      [
+        "in3",
+        "ScopedParameters"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "UpdateRule"
+      ],
+      [
+        "out1",
+        "InnerTrajectory"
+      ],
+      [
+        "out2",
+        "MetaGradientSpec"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "P",
+      "U"
+    ],
+    "write_set": [
+      "U"
+    ],
+    "differentiability": "hybrid",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H38:ApplyPlasticity"
+    ],
+    "required_version_axes": [
+      "schema",
+      "isa"
+    ],
+    "implementation": "latent_comm.mechanisms.h38_plasticity.reference",
+    "source_spec": "hypotheses/H38_可传递的可塑性规则.md"
+  },
+  {
+    "key": "H39",
+    "operation": "CommitTransaction",
+    "inputs": [
+      [
+        "in0",
+        "VersionedStore"
+      ],
+      [
+        "in1",
+        "ReadSet"
+      ],
+      [
+        "in2",
+        "WriteSet"
+      ],
+      [
+        "in3",
+        "MigrationPlan"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "CommitRecord"
+      ],
+      [
+        "out1",
+        "ConflictRecord"
+      ],
+      [
+        "out2",
+        "RollbackPlan"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "F",
+      "K",
+      "O",
+      "P",
+      "Q",
+      "U",
+      "V",
+      "W",
+      "Z"
+    ],
+    "write_set": [
+      "E",
+      "F",
+      "K",
+      "O",
+      "P",
+      "Q",
+      "U",
+      "V",
+      "W",
+      "Z"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H39:CommitTransaction"
+    ],
+    "required_version_axes": [
+      "schema",
+      "state"
+    ],
+    "implementation": "latent_comm.mechanisms.h39_transactions.reference",
+    "source_spec": "hypotheses/H39_可回滚的跨模型认知事务.md"
+  },
+  {
+    "key": "H40",
+    "operation": "CompileMacro",
+    "inputs": [
+      [
+        "in0",
+        "ProgramCorpus"
+      ],
+      [
+        "in1",
+        "BaseISA"
+      ],
+      [
+        "in2",
+        "MacroGrammar"
+      ],
+      [
+        "in3",
+        "ReaderRegistry"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "MacroDefinition"
+      ],
+      [
+        "out1",
+        "LoweredProgram"
+      ],
+      [
+        "out2",
+        "ISARevision"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "P"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H40:CompileMacro"
+    ],
+    "required_version_axes": [
+      "schema",
+      "isa"
+    ],
+    "implementation": "latent_comm.mechanisms.h40_instruction_set.reference",
+    "source_spec": "hypotheses/H40_自举的潜指令集.md"
+  },
+  {
+    "key": "H41",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "AgentCapabilities"
+      ],
+      [
+        "in1",
+        "CoalitionContract"
+      ],
+      [
+        "in2",
+        "ValueOracleSpec"
+      ],
+      [
+        "in3",
+        "CreditPolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "CoalitionPlan"
+      ],
+      [
+        "out1",
+        "ContributionRecord"
+      ],
+      [
+        "out2",
+        "InternalCreditLedger"
+      ]
+    ],
+    "read_set": [
+      "P",
+      "V"
+    ],
+    "write_set": [
+      "P"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H41:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h41_coalitions.reference",
+    "source_spec": "hypotheses/H41_互补能力的联盟契约.md"
+  },
+  {
+    "key": "H42",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "TaskPopulation"
+      ],
+      [
+        "in1",
+        "ProtocolPopulation"
+      ],
+      [
+        "in2",
+        "MutationGrammar"
+      ],
+      [
+        "in3",
+        "ResourceBudget"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "EcologyState"
+      ],
+      [
+        "out1",
+        "LineageTree"
+      ],
+      [
+        "out2",
+        "TaskTransferGraph"
+      ]
+    ],
+    "read_set": [
+      "K",
+      "P",
+      "Q"
+    ],
+    "write_set": [
+      "Q"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H42:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h42_ecology.reference",
+    "source_spec": "hypotheses/H42_模型与任务的共演化生态.md"
+  },
+  {
+    "key": "H43",
+    "operation": "StepWorld",
+    "inputs": [
+      [
+        "in0",
+        "TransitionKernel"
+      ],
+      [
+        "in1",
+        "ObservationKernel"
+      ],
+      [
+        "in2",
+        "ActionInterface"
+      ],
+      [
+        "in3",
+        "SharedNoiseGraph"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ComposedWorldKernel"
+      ],
+      [
+        "out1",
+        "RolloutContract"
+      ],
+      [
+        "out2",
+        "DependencyMap"
+      ]
+    ],
+    "read_set": [
+      "W"
+    ],
+    "write_set": [
+      "W"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H43:StepWorld"
+    ],
+    "required_version_axes": [
+      "schema",
+      "world"
+    ],
+    "implementation": "latent_comm.mechanisms.h43_world_kernels.reference",
+    "source_spec": "hypotheses/H43_可交换的世界动力学核.md"
+  },
+  {
+    "key": "H44",
+    "operation": "StepWorld",
+    "inputs": [
+      [
+        "in0",
+        "WorldKernelPool"
+      ],
+      [
+        "in1",
+        "CompatibilityRules"
+      ],
+      [
+        "in2",
+        "QuestionSeeds"
+      ],
+      [
+        "in3",
+        "DreamBudget"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "DreamWorld"
+      ],
+      [
+        "out1",
+        "SyntheticEvidence"
+      ],
+      [
+        "out2",
+        "NewQuestionCandidates"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "Q",
+      "W"
+    ],
+    "write_set": [
+      "E"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H44:StepWorld"
+    ],
+    "required_version_axes": [
+      "schema",
+      "world"
+    ],
+    "implementation": "latent_comm.mechanisms.h44_dreaming.reference",
+    "source_spec": "hypotheses/H44_共同构造的反事实梦境.md"
+  },
+  {
+    "key": "H45",
+    "operation": "SelectQuery",
+    "inputs": [
+      [
+        "in0",
+        "HypothesisSet"
+      ],
+      [
+        "in1",
+        "AllowedQuerySet"
+      ],
+      [
+        "in2",
+        "ObservationModel"
+      ],
+      [
+        "in3",
+        "CostPolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "QuerySelection"
+      ],
+      [
+        "out1",
+        "IdentifiabilityPartition"
+      ],
+      [
+        "out2",
+        "PosteriorUpdate"
+      ]
+    ],
+    "read_set": [
+      "E",
+      "Q",
+      "Z"
+    ],
+    "write_set": [
+      "Q"
+    ],
+    "differentiability": "discrete",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H45:SelectQuery"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h45_identifiability.reference",
+    "source_spec": "hypotheses/H45_主动可识别性协议.md"
+  },
+  {
+    "key": "H46",
+    "operation": "ConstructObject",
+    "inputs": [
+      [
+        "in0",
+        "ScopedConstraint"
+      ],
+      [
+        "in1",
+        "NegativeWitness"
+      ],
+      [
+        "in2",
+        "AssumptionSet"
+      ],
+      [
+        "in3",
+        "RetractionRules"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ExclusionCapsule"
+      ],
+      [
+        "out1",
+        "ConditionalFeasibleRegion"
+      ],
+      [
+        "out2",
+        "RetractionEvent"
+      ]
+    ],
+    "read_set": [
+      "E"
+    ],
+    "write_set": [
+      "E"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H46:ConstructObject"
+    ],
+    "required_version_axes": [
+      "schema",
+      "evidence"
+    ],
+    "implementation": "latent_comm.mechanisms.h46_negative_knowledge.reference",
+    "source_spec": "hypotheses/H46_不可行域与负知识胶囊.md"
+  },
+  {
+    "key": "H47",
+    "operation": "CoarseGrain",
+    "inputs": [
+      [
+        "in0",
+        "StateDomain"
+      ],
+      [
+        "in1",
+        "FiniteQueryFamily"
+      ],
+      [
+        "in2",
+        "BehaviorMap"
+      ],
+      [
+        "in3",
+        "TolerancePolicy"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "TaskRelativeQuotient"
+      ],
+      [
+        "out1",
+        "RefinementMap"
+      ],
+      [
+        "out2",
+        "IndistinguishabilityClass"
+      ]
+    ],
+    "read_set": [
+      "Q",
+      "Z"
+    ],
+    "write_set": [
+      "Z"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H47:CoarseGrain"
+    ],
+    "required_version_axes": [
+      "schema",
+      "task"
+    ],
+    "implementation": "latent_comm.mechanisms.h47_quotient.reference",
+    "source_spec": "hypotheses/H47_任务相对的语义商空间.md"
+  },
+  {
+    "key": "H48",
+    "operation": "AccumulateProvenance",
+    "inputs": [
+      [
+        "in0",
+        "EvidenceAtoms"
+      ],
+      [
+        "in1",
+        "BooleanSupportExpr"
+      ],
+      [
+        "in2",
+        "DependenceModel"
+      ],
+      [
+        "in3",
+        "RetractionSet"
+      ]
+    ],
+    "outputs": [
+      [
+        "out0",
+        "ProvenanceGraph"
+      ],
+      [
+        "out1",
+        "CalibratedSupport"
+      ],
+      [
+        "out2",
+        "InvalidationSet"
+      ]
+    ],
+    "read_set": [
+      "E"
+    ],
+    "write_set": [
+      "E"
+    ],
+    "differentiability": "exact",
+    "determinism": "deterministic_given_inputs",
+    "required_capabilities": [
+      "H48:AccumulateProvenance"
+    ],
+    "required_version_axes": [
+      "schema",
+      "evidence"
+    ],
+    "implementation": "latent_comm.mechanisms.h48_evidence_genealogy.reference",
+    "source_spec": "hypotheses/H48_相关证据的认知谱系代数.md"
+  }
+]

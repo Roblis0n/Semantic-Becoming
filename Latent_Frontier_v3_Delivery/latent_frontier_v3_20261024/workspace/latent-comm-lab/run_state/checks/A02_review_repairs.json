@@ -1,0 +1,16 @@
+{
+  "defects_reproduced_by_independent_review": [
+    "stale dependency version accepted",
+    "nested referenced supervision labels accepted",
+    "embedded supervision ref omitted from dependencies accepted"
+  ],
+  "repairs": [
+    "recursive version validation",
+    "recursive referenced role payload validation",
+    "embedded reference dependency completeness check",
+    "Resolution-time embedded-reference validation prevents post-registration mutable-container bypass"
+  ],
+  "regression_test_count_total": 34,
+  "fixture_vs_future_research_budget": "separate types; future research budget metadata preserved without execution",
+  "research_state": "NOT_RUN"
+}

@@ -1,0 +1,26 @@
+# L02: operator, response and belief objects
+
+NOT_RUN. Three dedicated stage schemas are accepted by the same manifest-verified JSONL source; each must be projected with W13's physical role separation before writing research data. No existing world is silently reinterpreted as a different schema.
+
+Operators: sender operator_features[B,N,F]; receiver state[B,D], readout[B,O,D]; supervisor first_operator_target, composition_target, task_target. Each message generates its own H01 low-rank factors and is applied in declared program order; factors are never added as a substitute for composition. The reader projects the live state into/out of the local workspace. Losses compare action and ordered composition against executable program targets and separately normalize the task output.
+
+Responses: sender response_features/anchor; receiver query; public response_kind and observation_conditions. H02's actual factor generator predicts left/right low-rank derivative factors, base value and positive radius. The local predictor returns its applicability mask. Both response and task losses are masked outside that radius; a separately learned refresh head sees only permitted distance/radius diagnostics. An out-of-domain extrapolation is never accepted as an answer. Hidden response_target, refresh_target and task_target enter losses only. acquire_local_response also binds the exact-JVP and central-finite-difference alternatives with explicit method and step. Observational derivatives are not automatically causal effects.
+
+Beliefs: sender branch_features[B,K,F]; receiver context_features[B,C]; public branch_domains, branch_ontologies, unique branch_ids and explicit branch_unknown flags. Separate latent states and candidate weights are preserved. The default finite categorical decoder is an explicit first-order token-transition model conditioned on branch and receiver context. Supervisor target_tokens are used only inside losses, shifted by one position for causal teacher forcing, with contiguous-prefix/right-padding masks enforced. At each position, no current or future target token is fed into its own logits. H03 first sums each entire branch sequence log likelihood and only then performs logsumexp over branches. Different tokenizer contracts are rejected.
+
+Branch coverage uses supervisor target_branch_states, matched_target_indices, target_branch_domains, target_branch_ontologies and matching_verified=true, with compatible semantic domains and one-to-one target assignments rechecked. Explicit unknown branches retain their mixture mass but are excluded from forced coverage matching. Discrete assignment is checked externally and fixed; matched distances retain their pathwise gradients. branch_probabilities are a declared candidate-distribution target, not assumed true posterior beliefs. Empty masks follow the inherited differentiable-zero policy. The source filters named LossSpec terms and never counts total plus components.
+
+Generation is fully specified but NOT_RUN: sequence_mixture uses prefix-updated branch weights, select_then_generate selects a branch first, and rerank generates then scores complete candidates. The inherited generation implementation performs the correct posterior update, and each path has a finite horizon. Heterogeneous vocabularies require a different common-behavior contract rather than direct token KL.
+
+Freeze table: mechanism_writer owns factor/refresh heads or branch-state/weight writers; mechanism_reader owns state read/write, response readout or categorical decoder/transition/context parameters. Observational inputs and targets are not parameters. The response objective correctly lists only the factor writer, while its downstream task objective also reaches the reader. All future optimizer/checkpoint work remains centralized; no alternate generic training loop is introduced.
+
+## Optimizer, checkpoints and source boundary
+The shared learning.engine is the sole AdamW/accumulation/clipping loop. Each phase activates only its named owners, leaves all other parameters frozen, and keeps input graphs recorded. Every batch is physically split into RoleBatch(sender), RoleBatch(receiver), and SupervisionBatch; only losses receive supervision. JsonlSource verifies shard hashes, the train split and structure signatures, rejects mathematical fixtures, and records its exact position/epoch cursor. Checkpoints bind model, data and configuration digests, semantic versions, named owners, Adam moments and RNG states. Resume is source-reviewed, not empirically tested; serialized edges require fresh forward recomputation. No research runtime has been invoked.
+
+Future commands, NOT_RUN and currently policy-denied except --describe:
+
+    PYTHONPATH=src python -m latent_comm.learning.objects.train --describe
+    PYTHONPATH=src python -m latent_comm.learning.objects.train --config configs/learning/objects.json --root .
+    PYTHONPATH=src python -m latent_comm.learning.objects.train --config configs/learning/objects.json --root . --resume-record RECORD --resume-sha256 SHA256
+
+A future authorized run must bind immutable research-data and model manifests and an exact stage schema first. UNBOUND is deliberately rejected. Source-level completion is not model validation.

@@ -1,0 +1,8 @@
+{
+  "message_id": "Sentinel_5503d7e4a82481919968d26a5bc5da75",
+  "time_utc": "2026-10-27T11:09:00Z",
+  "text": "听审去掉，别的先完成，如果都做好了的话，最后检查一遍就发我",
+  "scope": "Remove auditory review acceptance condition only",
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "actual_heard_seconds": 0
+}

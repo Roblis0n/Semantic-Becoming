@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H48",
+  "kind": "mechanism",
+  "title": "相关证据的认知谱系代数",
+  "mechanisms": [
+    "H48"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H48_相关证据的认知谱系代数.md",
+  "target_base": "src/latent_comm/mechanisms/h48_evidence_genealogy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "atoms": 12,
+    "exact_probability_limit": 16,
+    "unknown_dependence": "do_not_factorize",
+    "source_truth_guaranteed": false
+  }
+}

@@ -1,0 +1,16 @@
+M10: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_coalition_ecology_and_evidence_consumers (test_h10.HyperedgeTests.test_coalition_ecology_and_evidence_consumers) ... ok
+test_joint_not_additive (test_h10.HyperedgeTests.test_joint_not_additive) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h10.HyperedgeTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h10.HyperedgeTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h10.HyperedgeTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_typed_hyperedge_wire_matrix_and_atom_identity (test_h10.HyperedgeTests.test_typed_hyperedge_wire_matrix_and_atom_identity) ... ok
+test_unknown_subset (test_h10.HyperedgeTests.test_unknown_subset) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h10.HyperedgeTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+test_xor_synergy (test_h10.HyperedgeTests.test_xor_synergy) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.023s
+
+OK
+M10: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

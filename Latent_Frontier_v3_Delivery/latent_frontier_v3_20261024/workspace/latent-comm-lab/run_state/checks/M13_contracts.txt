@@ -1,0 +1,16 @@
+M13: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_distinct_roots_do_not_invent_common_ancestry (test_h13.BranchTests.test_distinct_roots_do_not_invent_common_ancestry) ... ok
+test_fork_disjoint_merge (test_h13.BranchTests.test_fork_disjoint_merge) ... ok
+test_read_write_conflict_retained (test_h13.BranchTests.test_read_write_conflict_retained) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h13.BranchTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h13.BranchTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h13.BranchTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_structure_question_and_transaction_branches (test_h13.BranchTests.test_structure_question_and_transaction_branches) ... ok
+test_tensor_merge_metadata_cardinality_is_checked (test_h13.BranchTests.test_tensor_merge_metadata_cardinality_is_checked) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h13.BranchTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.027s
+
+OK
+M13: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

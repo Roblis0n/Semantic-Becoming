@@ -1,0 +1,19 @@
+{
+  "research_execution": "NOT_RUN",
+  "method": "receipt-bound AST and bounded stdlib metadata only",
+  "cases": 5,
+  "max_dimension": 2,
+  "conservative_upper_bound_steps_per_case": 32,
+  "M02_basis_guard_before_derivative": "verified_source_only",
+  "M13_incomplete_metadata_rejected": true,
+  "M16_missing_pointer_rejected": "RoleLeakage",
+  "M16_complete_pointer_resolved": true,
+  "M17_covariance_objective_connected": "verified_source_only",
+  "hashes": {
+    "src/latent_comm/mechanisms/h02_legacy/adapter.py": "f0f740c66ae0e8e32b834003fc3ec32f40542f4bcfed0157966501048e80775b",
+    "src/latent_comm/mechanisms/h13_legacy/adapter.py": "9b6f420c339ab2b39b6509b8cf6f90fc2173debc6c7b1f7d43d887e2596f33a9",
+    "src/latent_comm/mechanisms/h13_legacy/reference.py": "6d58ff91b76831156e7a88a144dfb83807b9cbb3ac03a6e4c94b4e64b60a4f75",
+    "src/latent_comm/mechanisms/h16_legacy/types.py": "1567f9fbf295bd8b9f4720cdc74b8d6726602e77597b3f2d9280c7acea2fd748",
+    "src/latent_comm/mechanisms/h17_legacy/losses.py": "d3258f7206bc5a69e5ead5f076e734c3e0c63c0218c7c7155ac4d0d9d26cc8ef"
+  }
+}

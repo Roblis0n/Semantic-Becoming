@@ -1,0 +1,109 @@
+{
+  "task_id": "D03",
+  "status": "done",
+  "input_digest": "1eb62b3618bf2de9bc626cce2c8877804aec3029f2cb406610ac0c526b74924f",
+  "outputs": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "9bf8378475dbf742cb6b0b2557ff3baf4fba4d48c0c1e8f3697ce7a300846fd5",
+      "bytes": 216921
+    },
+    {
+      "path": "README.md",
+      "sha256": "c102a4ae20138b6be04cda582179d60024f768912c1477fe51f943b2935baf8f",
+      "bytes": 9118
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "31938e1baf75022d249dfd39f3d15d6ba4e7ad3eecc5b2fe2e8c4f0afc543297",
+      "bytes": 274929
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/D03/validation.json",
+      "sha256": "05813b44e5ec2371e24375124756e96b894caedd0bd01cdff8c72e2ba6752aac"
+    },
+    {
+      "path": "run_state/checks/D03/dependencies_final.json",
+      "sha256": "a6cf53237e067cc39dc7c071b70a0b4a2bc7a9f70d9d9ca8c6adedbc223801ae"
+    },
+    {
+      "path": "run_state/checks/D03/source_snapshot.json",
+      "sha256": "0a5c32662deb75b5de5ecb4dab8ac99a81199d1c2102a1075fecf02dc85785f6"
+    },
+    {
+      "path": "run_state/checks/D03/loss_snapshot.json",
+      "sha256": "b5f033df724f2aca4a5a91fa879a62a5bb9dc5855215d7cf2dcba8b275678bdd"
+    },
+    {
+      "path": "run_state/checks/D03/qa_report.json",
+      "sha256": "3f41612d114b3b58053f9910edbbdbeb6f8d127dc39b57de5eed9b8333bbb321"
+    },
+    {
+      "path": "run_state/checks/D03/latex_pass6.txt",
+      "sha256": "d79c5af53c417a046836e3090cb83a688bc91dfe816d99a39c13bfed938178d2"
+    },
+    {
+      "path": "run_state/checks/D03/render/main.pdf",
+      "sha256": "897f5bdb185b35810b2ca0507afd5c9794873735ae6a1e9e2a26fb61b6a2d625"
+    },
+    {
+      "path": "run_state/checks/D03/validate_documentation.py",
+      "sha256": "dcce980c0d4b2946c78209fd10090c84ad4d80ae9f0d21267f0f3617677f1e58"
+    },
+    {
+      "path": "run_state/checks/D03/build_appendices.py",
+      "sha256": "46134571a4bab235ca473ef6fd25b4cd950d8311b3fe7f18bf90bc1da105d33b"
+    },
+    {
+      "path": "run_state/checks/D03/render_paper.sh",
+      "sha256": "d3569e26c9848a36e01e0ebe3748ba29c11124e44a97ede95b3a9501a7bebbf1"
+    },
+    {
+      "path": "run_state/checks/D03/format_tex.lua",
+      "sha256": "d06d5710050fca8e036803077a35c9e78a4f6f76c9e61b619579f1f4c05fc8c1"
+    },
+    {
+      "path": "run_state/checks/D03/header.tex",
+      "sha256": "4dc009f426e2e478fb53f77ad624744efe73a08a04e00b4a6ec34326577065f7"
+    },
+    {
+      "path": "run_state/checks/D03/refresh_render_qa.py",
+      "sha256": "610b1c01ad34986a05d7e05f1fe828e069d85ad893fcfd4b90cde7c00f8da52e"
+    },
+    {
+      "path": "run_state/checks/D03/review_reconciliation.json",
+      "sha256": "855301b99c29a20b5bf8d3beb8a036a3adaece8e811e0ebf4c0303098eb0ddf8"
+    },
+    {
+      "path": "run_state/checks/D03/current_qa_index.json",
+      "sha256": "77ba4837e2b5d8f42637ce49a0eeaf58101a069adfc66a609858a24f3c32d05d"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/qa_delta.json",
+      "sha256": "1c795be83aa99c6503ec917d244d4d97eb91314605320005473ae54239e259fd"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/source_evidence.json",
+      "sha256": "c424764d1c1764fbeb03321a6904a7187e771f61294e1dd273b07347ab5a5e8f"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/layout_comparison.json",
+      "sha256": "99c68a09ef558fb48130ca6d20ea20f9f3515fc1d57b8882d56a3be939e14c72"
+    },
+    {
+      "path": "run_state/checks/D03/pre_media_1846/snapshot_manifest.json",
+      "sha256": "d265a99e9ede3d5deeac52434986ea3ed93ecfcc702ee33e4df120f4b873198b"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "D03 complete source/design monograph, README and full LaTeX. Three substantive concept/learning/world mainlines; 48 mechanisms, 20 actual typed compositions, all68 original recipe bindings, 13 learning stages, 23 assumptions, 127 full static LossSpec mappings, 12 horizons, 38 explicitly unimplemented V branches, 46 source-traceable bibliography records. 54 documentation/static checks pass, 734 source hashes and95 transitive dependency receipts verified current. Full LaTeX actually rendered to55 pages; final pass has zero missing glyph or overfull warnings, all-page contact sheets and selected detail pages visually inspected by assistant, no fabricated human review. First rendering failures and repaired local TeX setup are documented. Preserves L13 three policy-blocked legacy entry attempts with no neural import/model/tensor execution, separate corrected116 checks, and media noncommercial/unauditioned limitations. No D03 research entry call, neural import, model loading/initialization/forward/train/eval/benchmark/API, dataset generation, spend, publish, external message or attachment. All research result rows NOT_RUN; no global priority or empirical efficacy claim. paper/references.bib remains D01-owned unchanged. Independent review corrections: preserve publication versus arXiv submission dates for all46 sources; preserve SCM affected-set/context, local-kernel boundary and adaptive-sequence assumptions; render23 real assumption list items; preserve all127 source objective formula spaces. Regenerated and inspected55 pages, including revised detail pages6,7,10,25,31,32,54. No D01/formal source/algorithm edit. Media-only snapshot reconciled as of2026-10-24 18:46UTC: real90.000s short voicedMP4/WAV and14 measured cues, no audition; long voiced export incomplete; all external TTS activity stopped after explicit destination/payload authorization denial, user response pending,43accepted/42downloaded/1261chars/0credits, one16char accepted cue remote-outcome-unknown and15unsubmitted493chars. Personal/noncommercial restriction scoped to generated speech and videos containing it; mandatory audition separately blocked by verified unsupported audio input. Preserved preceding55-page full-review evidence; new media_delta_1846 report covers17 changed pages and38 pixel-identical pages. Research text unchanged outside media section. D03 document delivery complete; external media and audition blockers are not misrepresented as resolved.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:50:17.706799+00:00"
+}

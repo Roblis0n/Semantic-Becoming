@@ -1,0 +1,88 @@
+{
+  "task_id": "M44",
+  "status": "done",
+  "input_digest": "571305533a26d0ed4053d739d65dba4ad08dd83cab3ceb7d411957c0076c3702",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/README.md",
+      "sha256": "e8a0ae7122f77cc52d3673f03d53078dd6ac4362a0be4591718345b1e4a017b6",
+      "bytes": 1591
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/__init__.py",
+      "sha256": "ebdf4268b3dddf1b924433825a10e467a5a88a9369d0f8c61593813246181d6a",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/adapter.py",
+      "sha256": "d93ee8998568230a33363180f9a6333a01d4c50e7c4cabce1fa3d8164b72a06f",
+      "bytes": 3088
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/losses.py",
+      "sha256": "93d302cb4f923f08c038751e2d59bf3ed482890f077be95a8fa59626cd3b54dc",
+      "bytes": 1593
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/reference.py",
+      "sha256": "0e975c453e4458044b921f4abbbabb55cb474b6f2a9230ab2421a7221797a02d",
+      "bytes": 5512
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/schema.json",
+      "sha256": "f707cdd6b01fd1537eddb3edb5a6870f22d2887e2154cfe5c6988eaf688ae00e",
+      "bytes": 1989
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/serialization.py",
+      "sha256": "f9de642259d739161f6bea1812aa9388f203ecdf41f4bc3c585e2cadb7fe32b1",
+      "bytes": 1563
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/types.py",
+      "sha256": "a794e1745ae2aa05c686571462567152ab20d40e7963365136afa49f82dbafd4",
+      "bytes": 1594
+    },
+    {
+      "path": "tests/contracts/test_h44.py",
+      "sha256": "289a53e307eb93d684b1dfe9200d0acdb19f45876535869b029c9dd92b1a3d14",
+      "bytes": 3323
+    },
+    {
+      "path": "configs/mechanisms/H44.json",
+      "sha256": "9fc20ac67e7aeb668e1246ccf1596cdaf220ea1e06f9605be4bd4b6182a7c1b8",
+      "bytes": 1237
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M44_contracts.txt",
+      "sha256": "8b77f152dc6dbf9a2caee357e19218e26b3e277b7147a8bff8f6416434d1bfda"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/types.py",
+      "sha256": "b39dd0752ae3b0415e7cbe3e7d3129681f0ddebead29a5451ee3e869f4b73baf"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/reference.py",
+      "sha256": "1d07e267c508d3cfe84e5d9928440a1c600dea84cae4fee0b5ef3eb597566393"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/M44_test_h44.txt",
+      "sha256": "2fbd3b6726fd053c3e48f6df2c72e8771aaa1aa7709682796e8d7c6a4483325d"
+    },
+    {
+      "path": "run_state/checks/aggregate_budget_revalidation/M44_test_h44.txt",
+      "sha256": "5091209d25b5681f2fee7480537b7e9ee3eebe35a929d6112f3c7f9d500707ec"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "H44 reuses and pins H43 normalized kernel semantics. Synthetic lineage and independent holdout enforced. Research NOT_RUN. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution. Aggregate finite-budget boundary revalidated 2026-10-24 with blocked neural-entry tests excluded and neural imports denied. All research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:22:27.144301+00:00"
+}

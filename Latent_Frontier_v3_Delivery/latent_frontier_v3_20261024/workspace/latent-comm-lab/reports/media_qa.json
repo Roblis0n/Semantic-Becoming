@@ -1,0 +1,1417 @@
+{
+  "schema_version": "latent-frontier-media-qa.v3",
+  "status": "done",
+  "research_state": "NOT_RUN",
+  "research_model_executions": 0,
+  "checked_at_utc": "2026-10-27T10:52:55.733296+00:00",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "opened_checked": true,
+  "opened_scope": "Actual A/V full decodes and all measured cue-midpoint still frames for both narrated editions; no auditory review",
+  "timing_verified": true,
+  "timing_scope": "Silent and voiced container durations plus exact synthesized PCM cue boundaries; no word-level alignment or listening",
+  "production_statuses": [
+    {
+      "task_id": "V01",
+      "status": "done",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_count": 6,
+      "opened_checked": true,
+      "opened_scope": "Rendered all 6 text-preserving SVGs, visually inspected",
+      "timing_verified": false,
+      "timing_applicable": false,
+      "blockers": [],
+      "limitations": [],
+      "evidence": "run_state/checks/V01_validation.json",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "task_id": "V02",
+      "status": "done",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_count": 2,
+      "opened_checked": true,
+      "opened_scope": "Exact native-editable PPTX reopened via LibreOffice; all 48 page pixels visually inspected",
+      "timing_verified": false,
+      "timing_applicable": false,
+      "blockers": [],
+      "limitations": [],
+      "evidence": "run_state/checks/V02_validation.json",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "task_id": "V03",
+      "status": "done",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_count": 5,
+      "opened_checked": true,
+      "opened_scope": "All 5 MP4s fully decoded; opening frames and 25 semantic keyframes inspected; browser interaction remains unverified",
+      "timing_verified": true,
+      "timing_applicable": true,
+      "blockers": [],
+      "limitations": [
+        "Real browser interaction unverified: Chromium socket() failed: Operation not permitted; JS DOM-contract tests are not browser proof."
+      ],
+      "evidence": "run_state/checks/V03_validation.json",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "status": "complete_with_external_blockers",
+      "requested": true,
+      "source_created": true,
+      "audio_listened": false,
+      "research_state": "NOT_RUN",
+      "updated_at_utc": "2026-10-24T18:56:31.792148+00:00",
+      "license_scope": "Generated speech and speech-containing videos: PERSONAL AND NONCOMMERCIAL USE ONLY. Independently authored source/PPT/SVG and silent visuals do not automatically inherit this TTS restriction.",
+      "task_id": "V04",
+      "export_created": true,
+      "export_edition": "narrated_personal_noncommercial_unauditioned",
+      "narrated_export_created": true,
+      "narrated_final_acceptance": false,
+      "narration_wav_created": true,
+      "opened_checked": true,
+      "opened_scope": "Actual A/V full decode and all 14 cue-midpoint frames plus opening; no auditory review",
+      "timing_verified": true,
+      "audio_timing_verified": true,
+      "timing_scope": "Exact measured synthesized PCM chunk and scene boundaries with nonoverlapping subtitle margins",
+      "word_level_alignment_verified": false,
+      "blockers": [
+        "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+      ],
+      "export": {
+        "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+        "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+        "duration_seconds": 90.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "audio_channels": 1,
+        "video_start_time": "0.000000",
+        "audio_start_time": "0.000000",
+        "full_decode_passed": true
+      },
+      "evidence": [
+        {
+          "path": "assets/video/intro_90/narrated_qa.json",
+          "sha256": "f3fd02495979a78eb592c1e80399b4066e4ad96b3ca44774d2e63b835df3b7f0",
+          "bytes": 4906
+        },
+        {
+          "path": "assets/video/intro_90/narrated_visual_review.json",
+          "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+          "bytes": 3582
+        },
+        {
+          "path": "assets/audio/tts_ai/intro_90.assembly.json",
+          "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+          "bytes": 19608
+        }
+      ],
+      "silent_visual_history_preserved": "assets/video/intro_90/intro_90_silent_draft.mp4"
+    },
+    {
+      "task_id": "V05",
+      "status": "complete_with_external_blockers",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "export_edition": "narrated_personal_noncommercial_unauditioned",
+      "narrated_export_created": true,
+      "narrated_final_acceptance": false,
+      "narration_wav_created": true,
+      "opened_checked": true,
+      "opened_scope": "Actual A/V container full decode and all cue-midpoint still frames; no auditory review",
+      "timing_verified": true,
+      "timing_scope": "Exact synthesized PCM chunk/scene boundaries, container duration and nonoverlapping caption margins",
+      "audio_timing_verified": true,
+      "audio_listened": false,
+      "pronunciation_assessed": false,
+      "word_level_alignment_verified": false,
+      "blockers": [
+        "Mandatory actual audition, pronunciation and sound-quality assessment remain unperformed: no completed actual auditory review has been established for these editions. Waveform measurements, decoding and visual frames are not listening."
+      ],
+      "research_state": "NOT_RUN",
+      "license": "PERSONAL AND NONCOMMERCIAL USE ONLY for generated speech and this speech-containing video",
+      "export": {
+        "path": "assets/video/explainer_360/explainer_360_narrated_personal.mp4",
+        "sha256": "87e790afb5601eb34102cdf93a3de129c2401bd0e31c74e2d35f9a24eeb5ca16",
+        "duration_seconds": 360.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "audio_channels": 1,
+        "video_start_time": "0.000000",
+        "audio_start_time": "0.000000",
+        "full_decode_passed": true
+      },
+      "evidence": [
+        {
+          "path": "assets/video/explainer_360/narrated_qa.json",
+          "sha256": "0829534abfb62165473b2d059e060e7d2668425e3027f70532d4f3927b86a5ee",
+          "bytes": 11547
+        },
+        {
+          "path": "assets/audio/tts_ai/explainer_360.assembly.json",
+          "sha256": "3e55fc6fdedf59990b2105924b5cfeb4f79ee86af4913179402b99977e942ce2",
+          "bytes": 50585
+        },
+        {
+          "path": "assets/video/explainer_360/narrated_visual_review.json",
+          "sha256": "0f905e7ccf057be0c46366f1ea631699b20d0bc13a5bd8ad1e59dbc3b59d639b",
+          "bytes": 12236
+        }
+      ],
+      "silent_visual_history_preserved": "assets/video/explainer_360/explainer_360_silent_draft.mp4"
+    },
+    {
+      "task_id": "V06",
+      "status": "complete_with_external_blockers",
+      "requested": true,
+      "source_created": true,
+      "export_created": true,
+      "opened_checked": true,
+      "opened_scope": "All raw and final WAVs parsed; actual audio streams decoded and objectively measured, not listened",
+      "timing_verified": true,
+      "timing_scope": "Measured exact PCM cue and scene boundaries",
+      "narration_wav_created": true,
+      "audio_timed_subtitles_created": true,
+      "final_acceptance_pending_audition": true,
+      "audio_listened": false,
+      "pronunciation_assessed": false,
+      "word_level_alignment_verified": false,
+      "actual_narration_editions": 2,
+      "actual_scene_wavs": 17,
+      "source_chunk_wavs": 58,
+      "unique_source_jobs": 58,
+      "unique_source_characters": 1754,
+      "accepted_submission_count": 60,
+      "characters_transmitted": 1811,
+      "outcome_unknown_prior_submissions": 2,
+      "credits_used": 0,
+      "blockers": [
+        "Mandatory actual audition, pronunciation and sound-quality assessment remain unperformed: no completed actual auditory review has been established for these editions. Waveform measurements, decoding and visual frames are not listening."
+      ],
+      "license": "PERSONAL AND NONCOMMERCIAL USE ONLY for generated speech and speech-containing derivatives",
+      "evidence": [
+        {
+          "path": "assets/audio/tts_ai/generation_summary.json",
+          "sha256": "63d357aaa35ba6c86f651aa61cf60a954b3a479774f772545516e3d97a25a537",
+          "bytes": 938
+        },
+        {
+          "path": "assets/audio/tts_ai/sanitization.json",
+          "sha256": "6137253f336acade87e09f27efb2632be73515aedc18e594b06885a9e9b11261",
+          "bytes": 623
+        },
+        {
+          "path": "assets/audio/tts_ai/intro_90.assembly.json",
+          "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+          "bytes": 19608
+        },
+        {
+          "path": "assets/audio/tts_ai/explainer_360.assembly.json",
+          "sha256": "3e55fc6fdedf59990b2105924b5cfeb4f79ee86af4913179402b99977e942ce2",
+          "bytes": 50585
+        }
+      ],
+      "research_state": "NOT_RUN"
+    }
+  ],
+  "finished_graphical_exports": {
+    "svg_figures": 6,
+    "editable_pptx_decks": 2,
+    "slide_count": 48,
+    "mechanism_mp4": 5,
+    "silent_explainer_mp4": 2,
+    "silent_explainer_seconds": [
+      90,
+      360
+    ]
+  },
+  "editable_sources": {
+    "figures": "assets/figures/F01–F06.json and build_media_sources.py",
+    "slides": "assets/slides/source, both source.json, build/export_decks.mjs and rebuild.sh",
+    "animations": "assets/animations/A01–A05/index.html, scene.json, source.svg, animation_engine.js and build_animations.py",
+    "videos": "Both editions: preserved silent timeline.json/project.mlt and separate narrated timeline_audio.json/project_audio.mlt, source renderer and measured captions",
+    "narration": "assets/audio: full TXT, per-scene JSON, SSML, pronunciation guide",
+    "subtitles": "Original draft timing preserved; both editions have exact PCM chunk-boundary audio_timed SRT/VTT/JSON, not word-level alignment"
+  },
+  "artifacts": [
+    {
+      "path": "assets/figures/F01.svg",
+      "sha256": "c0a6e407301e4eecd261830ca592e1e6323b5d2da3ceaa9883d7534b0712490b",
+      "bytes": 5018
+    },
+    {
+      "path": "assets/figures/F02.svg",
+      "sha256": "83736f29ec10f60ebc121da9a5ef70a10a4f522a55250121edb35fef6772c360",
+      "bytes": 6849
+    },
+    {
+      "path": "assets/figures/F03.svg",
+      "sha256": "5bc930c9c9d752d9cd9d4e9e2b09ed360b6698076bccf6503c4175dde2305240",
+      "bytes": 4635
+    },
+    {
+      "path": "assets/figures/F04.svg",
+      "sha256": "1341e0c7d2ba392c8915da6ba4c6f19091f3f13a5cff68c8a579bdbbed8c9bd6",
+      "bytes": 6094
+    },
+    {
+      "path": "assets/figures/F05.svg",
+      "sha256": "39201a193cc8d5ab4472c135192a120285dfef8bda4e282ae5867e5caa41e215",
+      "bytes": 6218
+    },
+    {
+      "path": "assets/figures/F06.svg",
+      "sha256": "b139c8c1c4625cc76c3ec243093c68e182e8182ab0ba06f42ac85cd0d5129606",
+      "bytes": 5539
+    },
+    {
+      "path": "assets/slides/research_36.pptx",
+      "sha256": "b1fb8feeabdc38d684bf5f124cbd67bdf1c2b36cb0e2f9c43bb0549fc1f66ec1",
+      "bytes": 222966
+    },
+    {
+      "path": "assets/slides/brief_12.pptx",
+      "sha256": "4f389fa6417797e84e77230c97db5b932d173856914c5530839787d30589fe9a",
+      "bytes": 86834
+    },
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "bytes": 111758
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "bytes": 151150
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "bytes": 177070
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "bytes": 200742
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "bytes": 173917
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "bytes": 826212
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "bytes": 2977456
+    },
+    {
+      "path": "assets/audio/intro_90.narration.wav",
+      "sha256": "9fc67803982f2a9d2607d90b154acfa14bc3470a1355834f25e916e26a414ea6",
+      "bytes": 7938044
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+      "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+      "bytes": 2485518
+    },
+    {
+      "path": "assets/audio/explainer_360.narration.wav",
+      "sha256": "6ca533d0557d9699a18979d297155df53e4bf2c5b6f29ebc4223a7b799c9150f",
+      "bytes": 31752044
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_narrated_personal.mp4",
+      "sha256": "87e790afb5601eb34102cdf93a3de129c2401bd0e31c74e2d35f9a24eeb5ca16",
+      "bytes": 9846320
+    }
+  ],
+  "container_checks": [
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "duration_seconds": 20.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A01/A01_opening.png",
+      "opening_frame_sha256": "a1d57848d491b456b603cd5ab45351916a4c5279024554866dac15768d94b4fd",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A02/A02_opening.png",
+      "opening_frame_sha256": "936ad3466798de4d5ca0bc9421ab05e31eceb3f23c25fd69c2b0dd634e29a23a",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A03/A03_opening.png",
+      "opening_frame_sha256": "862402876ff7fea3e27b581f112fee70ca02db8b1af5c868f0cc6d05e53d64bf",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "duration_seconds": 25.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A04/A04_opening.png",
+      "opening_frame_sha256": "dcffac6abc8113d4a385d8dde9aeca4056705ec2b2885886cdbbeb8ade91f3f7",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "duration_seconds": 30.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/animations/A05/A05_opening.png",
+      "opening_frame_sha256": "272defc96def0b4f024ba27e78fcb5105bc30bc5131065b63d7be2d809f89fe1",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/video/intro_90/intro_90_silent_draft.mp4",
+      "sha256": "f02f7c156acf52336d3f58af8b557240690c5f10620e326026f5bdbd8617410c",
+      "duration_seconds": 90.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/video/intro_90/intro_90_silent_draft_opening.png",
+      "opening_frame_sha256": "7fc1cef1812cf67e934b40d5864df3bfe617e8302e59dcc2c3fe681d495f639b",
+      "research_state": "NOT_RUN"
+    },
+    {
+      "path": "assets/video/explainer_360/explainer_360_silent_draft.mp4",
+      "sha256": "7398c2fd4cf3c7b49a5fc33b545bf189839424a71ffc9b95e34f9a4862996a26",
+      "duration_seconds": 360.0,
+      "video_codec": "h264",
+      "fps": "24/1",
+      "size": [
+        1280,
+        720
+      ],
+      "audio_streams": 0,
+      "full_decode_passed": true,
+      "opening_frame": "assets/video/explainer_360/explainer_360_silent_draft_opening.png",
+      "opening_frame_sha256": "a475f22d884cf575f5805fe6308c9ca90fc5992bea61280c8d4a1cc4c3c18ab2",
+      "research_state": "NOT_RUN"
+    }
+  ],
+  "validation": {
+    "all_48_slides_visually_inspected": true,
+    "slide_review": {
+      "path": "assets/slides/visual_review.json",
+      "sha256": "1c59f0ae3626911c0707d5f162ad11b04479feaf45855c656742392be2439cfc",
+      "bytes": 26555
+    },
+    "artifact_tool_validation": [
+      {
+        "path": "assets/slides/build/research_36_review/validation.json",
+        "sha256": "2a73d45d3477e930cf858638950187350cecf18f77b3bdbaac08d67c63ab318f",
+        "bytes": 3860
+      },
+      {
+        "path": "assets/slides/build/brief_12_review/validation.json",
+        "sha256": "f363897146a4017984e1ffa8b3edd629cde72c46bf3034913e2ce26808dfd750",
+        "bytes": 3859
+      }
+    ],
+    "native_pptx_shapes": true,
+    "slide_screenshots_as_editable_originals": false,
+    "powerpoint_application_opened": false,
+    "exact_pptx_reopened_in_libreoffice": true,
+    "all_six_svg_text_preserving": true,
+    "font_files_bundled": false,
+    "all_seven_mp4_full_decodes": true,
+    "animation_keyframes_inspected": 25,
+    "author_visual_review": {
+      "path": "assets/animations/visual_review.json",
+      "sha256": "11ad56840ae3abbc4ccfb7f37eb737defdda6a35b58669ae5e06c9ebe4f4e447",
+      "bytes": 16222
+    },
+    "finite_math": {
+      "path": "assets/animations/math_checks.json",
+      "sha256": "9cf57f96929896bbe4c4dbfdfdae70f002739ae437678c56db9df7a1adc1a54b",
+      "bytes": 1569
+    },
+    "html_control_contracts": {
+      "path": "assets/animations/animation_contract_checks.json",
+      "sha256": "82c5948fa62e1b6f2b6b8f193882a3858e8ea4a9bbb79eff6b0ffcdf7be86165",
+      "bytes": 3863
+    },
+    "real_browser_interaction_verified": false,
+    "browser_failure_evidence": {
+      "path": "assets/animations/browser_qa.json",
+      "sha256": "50b018fe3aaf307cf7421b70c004296ce6f82482e069686c1dee984baa53f355",
+      "bytes": 5301
+    },
+    "mlt_xml_validated": true,
+    "mlt_gui_editor_opened": false,
+    "audio_listened": false,
+    "audio_loudness_measured": true,
+    "subtitles_audio_aligned": true,
+    "subtitles_complete_verbatim_source_coverage": true,
+    "subtitles_punctuation_safe": true,
+    "synthetic_evidence_prohibition_unsplit": true,
+    "short_subtitles_pcm_timed": true,
+    "long_subtitles_audio_aligned": true,
+    "short_narrated_visual_review": {
+      "path": "assets/video/intro_90/narrated_visual_review.json",
+      "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+      "bytes": 3582
+    },
+    "subtitle_alignment_scope": "exact generated audio chunk boundaries, not word-level forced alignment",
+    "spoken_word_accuracy_checked": false,
+    "all_voiced_containers_full_decodes": true,
+    "narrated_frame_visual_reviews": [
+      {
+        "path": "assets/video/intro_90/narrated_visual_review.json",
+        "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+        "bytes": 3582
+      },
+      {
+        "path": "assets/video/explainer_360/narrated_visual_review.json",
+        "sha256": "0f905e7ccf057be0c46366f1ea631699b20d0bc13a5bd8ad1e59dbc3b59d639b",
+        "bytes": 12236
+      }
+    ]
+  },
+  "design_provenance": {
+    "path": "assets/figures/design_provenance.json",
+    "sha256": "f59a92ef2e109b623cd2a7bcae779e7dad1653e4cd735030d5d93c8dfeee87c1",
+    "bytes": 2622
+  },
+  "resolved_review_findings": [
+    "The action plane now routes DAG → action broker → WORK_ROOT without a visual bypass.",
+    "Zero benchmark is explicitly an execution count, not a model score.",
+    "Caption closing punctuation no longer starts a line or stands alone; original wording remains unchanged.",
+    "The full synthetic-evidence prohibition stays within one caption cue. S06 source-timing budgets were recalculated, not audio-aligned."
+  ],
+  "limitations": [
+    "No actual HTML browser interaction: Chromium failed before load with socket() failed: Operation not permitted; simulated DOM tests are not browser evidence.",
+    "PowerPoint native application and MLT editor GUI were not opened. Editable PowerPoint package, LibreOffice reopening, and MLT XML were checked.",
+    "Duolingo token references are research-author prototypes, not verified official standards. No logos, mascots, or font binaries copied.",
+    "Mandatory audio audition remains unperformed; objective waveform/stream checks are not listening and cannot establish auditory acceptance.",
+    "Audio-timed subtitles use exact generated chunk boundaries; word-level alignment and spoken-word accuracy have not been checked."
+  ],
+  "blockers": [],
+  "dependency_receipts_verified": [
+    {
+      "task_id": "V01",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V01.json",
+        "sha256": "52bddf775c02faa1ae12315d478212f77bb2eeada52a4b8c180c6565987c4dad",
+        "bytes": 4595
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V02",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V02.json",
+        "sha256": "d4089cff3c347b4cc27615f37433af1a8017c7bbef3eb967ee45450f85f16d49",
+        "bytes": 32983
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V03",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V03.json",
+        "sha256": "b7dc3231defc1363eeae73c2f30c712fde91aa06de1b13ea3fb96cd5ff1bcf69",
+        "bytes": 15569
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V04",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V04.json",
+        "sha256": "a6ebf36e77d2dd90013efb09562b1b9b640a17ac3d967d175c066e8b8b4c2989",
+        "bytes": 17059
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V05",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V05.json",
+        "sha256": "5ce16dd055a5cad5caca6750645911090bea9d7b29bc768bc8984dc5f3241e39",
+        "bytes": 23508
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V06",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V06.json",
+        "sha256": "2621e9f4260e8df36cf1d8254175617e3f0ad784c3c23dd49e85da4cfbfa224d",
+        "bytes": 75869
+      },
+      "blockers": []
+    }
+  ],
+  "claim_boundary": "All requested media production and objective QA complete. Real audition USER_WAIVED_NOT_PERFORMED under explicit20261027user scope change, not listening PASS. Research NOT_RUN.",
+  "independent_visual_review": {
+    "path": "reports/independent_visual_qa_20261024/review.json",
+    "sha256": "5116426c721a030c3744ae65f539f860be4e65f7be87a62d15ba1d7eabae0c49",
+    "bytes": 30915
+  },
+  "audio_listened": false,
+  "new_narrated_exports": {
+    "wav_editions": 2,
+    "scene_wavs": 17,
+    "source_chunk_wavs": 58,
+    "audio_timed_subtitle_cues": [
+      14,
+      44
+    ],
+    "voiced_mp4": 2,
+    "seconds": [
+      90,
+      360
+    ],
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+    "audition": "USER_WAIVED_NOT_PERFORMED"
+  },
+  "short_narrated_container_check": {
+    "checked_at_utc": "2026-10-24T18:21:36.774271+00:00",
+    "edition": "intro_90",
+    "status": "containers_and_measured_timing_pass_audition_pending",
+    "video": {
+      "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+      "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+      "duration_seconds": 90.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "audio_channels": 1,
+      "video_start_time": "0.000000",
+      "audio_start_time": "0.000000",
+      "full_decode_passed": true
+    },
+    "waveform": {
+      "decoded_pcm_frames": 3969024,
+      "decoded_audio_seconds": 90.00054421768708,
+      "peak": 27783,
+      "rms": 4794.5660421382345,
+      "samples_at_int16_limit": 0
+    },
+    "actual_container_loudness": {
+      "integrated_lufs": -15.84,
+      "true_peak_dbtp": -1.43,
+      "loudness_range_lu": 6.8,
+      "measurement": "FFmpeg loudnorm input statistics measured from the actual decoded container"
+    },
+    "maximum_detected_silence_seconds": 2.134626,
+    "subtitle_cues": 14,
+    "subtitle_timing": "measured exact generated PCM chunk boundaries with margins, no proportional text-duration guessing",
+    "source_text_coverage": true,
+    "subtitle_scene_bounds": true,
+    "samples": [
+      {
+        "cue": 0,
+        "second": 0.5,
+        "path": "assets/video/intro_90/narrated_samples/cue-000.png",
+        "sha256": "6bec75c5d9a0655cea0f4d1adabddca97b6e933a3681a0643bab3d67c9451b9f"
+      },
+      {
+        "cue": 1,
+        "second": 4.683526,
+        "path": "assets/video/intro_90/narrated_samples/cue-001.png",
+        "sha256": "b8449fc57b20621c7169cbefefbc7e439d76b81d1a06fc6dc0b55ea1349b7e05"
+      },
+      {
+        "cue": 2,
+        "second": 13.07856,
+        "path": "assets/video/intro_90/narrated_samples/cue-002.png",
+        "sha256": "9563dce1482a70347a7938cab4abefbebdec2a2bd56ac82b2b0dabbba26ee1e4"
+      },
+      {
+        "cue": 3,
+        "second": 18.611655,
+        "path": "assets/video/intro_90/narrated_samples/cue-003.png",
+        "sha256": "90e0056acb948e6b4fd1fd5a3304e380570d89b67ab4fb360c624aed2639090a"
+      },
+      {
+        "cue": 4,
+        "second": 26.307721,
+        "path": "assets/video/intro_90/narrated_samples/cue-004.png",
+        "sha256": "d1de7a95efe6b2af15e3d23185e4ee7c46d3d121542686faf1a7283e3ce59885"
+      },
+      {
+        "cue": 5,
+        "second": 31.99754,
+        "path": "assets/video/intro_90/narrated_samples/cue-005.png",
+        "sha256": "5570417d63fd7c87d2ec5163f898adb1b20f706bc61a8bf2eb843b7cf6c6ef6f"
+      },
+      {
+        "cue": 6,
+        "second": 37.3984355,
+        "path": "assets/video/intro_90/narrated_samples/cue-006.png",
+        "sha256": "4e502be38d07e73eaf2da3bb03d03d9bea016a839cdc3e652bd80fedf60b23bd"
+      },
+      {
+        "cue": 7,
+        "second": 43.407551,
+        "path": "assets/video/intro_90/narrated_samples/cue-007.png",
+        "sha256": "00f590c47d6c7e266f4143a58e52e808dbdcb5ea23246af93fd3cd52173a39fb"
+      },
+      {
+        "cue": 8,
+        "second": 51.0148075,
+        "path": "assets/video/intro_90/narrated_samples/cue-008.png",
+        "sha256": "6602df0a3e457984647fce2621813f6e8489b7dcd1505ce79e8859490896f590"
+      },
+      {
+        "cue": 9,
+        "second": 56.955906999999996,
+        "path": "assets/video/intro_90/narrated_samples/cue-009.png",
+        "sha256": "1159f663f965cdb29b662861e2bad6efafecb171f1371df3fabca8ed33172c1c"
+      },
+      {
+        "cue": 10,
+        "second": 64.2828685,
+        "path": "assets/video/intro_90/narrated_samples/cue-010.png",
+        "sha256": "400e4ced39e4450839247f081ddab2246a10b8631dce43a76bafd23f7885458d"
+      },
+      {
+        "cue": 11,
+        "second": 69.8906575,
+        "path": "assets/video/intro_90/narrated_samples/cue-011.png",
+        "sha256": "09b2605fc8b973bff86603747b859f14fb54703de0ec6e72af1bd0ccfa744aa3"
+      },
+      {
+        "cue": 12,
+        "second": 75.236655,
+        "path": "assets/video/intro_90/narrated_samples/cue-012.png",
+        "sha256": "244c870f7bd98e994db92c23076e2f77192dd7acd42ef22ce6f7200f82a14a44"
+      },
+      {
+        "cue": 13,
+        "second": 80.07528350000001,
+        "path": "assets/video/intro_90/narrated_samples/cue-013.png",
+        "sha256": "e8b11997fa984d4ed53ca5e490dc6147f386105530602ece8c95e2360476d9b6"
+      },
+      {
+        "cue": 14,
+        "second": 85.911553,
+        "path": "assets/video/intro_90/narrated_samples/cue-014.png",
+        "sha256": "aa6f4d7a19097a2d25e35d85dbb56469547fbfd0511fca6a92b68b9ffeb96806"
+      }
+    ],
+    "audio_listened": false,
+    "spoken_word_accuracy_checked": false,
+    "word_level_alignment": false,
+    "mlt_xml_validated": true,
+    "mlt_editor_gui_opened": false,
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+    "research_state": "NOT_RUN",
+    "loudnorm_measurement_raw": {
+      "input_i": "-15.84",
+      "input_tp": "-1.43",
+      "input_lra": "6.80",
+      "input_thresh": "-26.45",
+      "output_i": "-15.96",
+      "output_tp": "-1.50",
+      "output_lra": "6.30",
+      "output_thresh": "-26.54",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.04"
+    },
+    "historical_check_status": "containers_and_measured_timing_pass_audition_pending",
+    "current_acceptance_scope": "USER_WAIVED_NOT_PERFORMED"
+  },
+  "prior_aggregate_evidence": [
+    {
+      "path": "assets/audio/history/pre_complete_narration_061dbb10117a6841/media_qa.json",
+      "sha256": "061dbb10117a6841e3164bd75187fe040968dbf079b763a37431fe6a11f8a3aa",
+      "bytes": 32273
+    }
+  ],
+  "narrated_container_checks": [
+    {
+      "checked_at_utc": "2026-10-24T18:21:36.774271+00:00",
+      "edition": "intro_90",
+      "status": "containers_and_measured_timing_pass_audition_pending",
+      "video": {
+        "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+        "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+        "duration_seconds": 90.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "audio_channels": 1,
+        "video_start_time": "0.000000",
+        "audio_start_time": "0.000000",
+        "full_decode_passed": true
+      },
+      "waveform": {
+        "decoded_pcm_frames": 3969024,
+        "decoded_audio_seconds": 90.00054421768708,
+        "peak": 27783,
+        "rms": 4794.5660421382345,
+        "samples_at_int16_limit": 0
+      },
+      "actual_container_loudness": {
+        "integrated_lufs": -15.84,
+        "true_peak_dbtp": -1.43,
+        "loudness_range_lu": 6.8,
+        "measurement": "FFmpeg loudnorm input statistics measured from the actual decoded container"
+      },
+      "maximum_detected_silence_seconds": 2.134626,
+      "subtitle_cues": 14,
+      "subtitle_timing": "measured exact generated PCM chunk boundaries with margins, no proportional text-duration guessing",
+      "source_text_coverage": true,
+      "subtitle_scene_bounds": true,
+      "samples": [
+        {
+          "cue": 0,
+          "second": 0.5,
+          "path": "assets/video/intro_90/narrated_samples/cue-000.png",
+          "sha256": "6bec75c5d9a0655cea0f4d1adabddca97b6e933a3681a0643bab3d67c9451b9f"
+        },
+        {
+          "cue": 1,
+          "second": 4.683526,
+          "path": "assets/video/intro_90/narrated_samples/cue-001.png",
+          "sha256": "b8449fc57b20621c7169cbefefbc7e439d76b81d1a06fc6dc0b55ea1349b7e05"
+        },
+        {
+          "cue": 2,
+          "second": 13.07856,
+          "path": "assets/video/intro_90/narrated_samples/cue-002.png",
+          "sha256": "9563dce1482a70347a7938cab4abefbebdec2a2bd56ac82b2b0dabbba26ee1e4"
+        },
+        {
+          "cue": 3,
+          "second": 18.611655,
+          "path": "assets/video/intro_90/narrated_samples/cue-003.png",
+          "sha256": "90e0056acb948e6b4fd1fd5a3304e380570d89b67ab4fb360c624aed2639090a"
+        },
+        {
+          "cue": 4,
+          "second": 26.307721,
+          "path": "assets/video/intro_90/narrated_samples/cue-004.png",
+          "sha256": "d1de7a95efe6b2af15e3d23185e4ee7c46d3d121542686faf1a7283e3ce59885"
+        },
+        {
+          "cue": 5,
+          "second": 31.99754,
+          "path": "assets/video/intro_90/narrated_samples/cue-005.png",
+          "sha256": "5570417d63fd7c87d2ec5163f898adb1b20f706bc61a8bf2eb843b7cf6c6ef6f"
+        },
+        {
+          "cue": 6,
+          "second": 37.3984355,
+          "path": "assets/video/intro_90/narrated_samples/cue-006.png",
+          "sha256": "4e502be38d07e73eaf2da3bb03d03d9bea016a839cdc3e652bd80fedf60b23bd"
+        },
+        {
+          "cue": 7,
+          "second": 43.407551,
+          "path": "assets/video/intro_90/narrated_samples/cue-007.png",
+          "sha256": "00f590c47d6c7e266f4143a58e52e808dbdcb5ea23246af93fd3cd52173a39fb"
+        },
+        {
+          "cue": 8,
+          "second": 51.0148075,
+          "path": "assets/video/intro_90/narrated_samples/cue-008.png",
+          "sha256": "6602df0a3e457984647fce2621813f6e8489b7dcd1505ce79e8859490896f590"
+        },
+        {
+          "cue": 9,
+          "second": 56.955906999999996,
+          "path": "assets/video/intro_90/narrated_samples/cue-009.png",
+          "sha256": "1159f663f965cdb29b662861e2bad6efafecb171f1371df3fabca8ed33172c1c"
+        },
+        {
+          "cue": 10,
+          "second": 64.2828685,
+          "path": "assets/video/intro_90/narrated_samples/cue-010.png",
+          "sha256": "400e4ced39e4450839247f081ddab2246a10b8631dce43a76bafd23f7885458d"
+        },
+        {
+          "cue": 11,
+          "second": 69.8906575,
+          "path": "assets/video/intro_90/narrated_samples/cue-011.png",
+          "sha256": "09b2605fc8b973bff86603747b859f14fb54703de0ec6e72af1bd0ccfa744aa3"
+        },
+        {
+          "cue": 12,
+          "second": 75.236655,
+          "path": "assets/video/intro_90/narrated_samples/cue-012.png",
+          "sha256": "244c870f7bd98e994db92c23076e2f77192dd7acd42ef22ce6f7200f82a14a44"
+        },
+        {
+          "cue": 13,
+          "second": 80.07528350000001,
+          "path": "assets/video/intro_90/narrated_samples/cue-013.png",
+          "sha256": "e8b11997fa984d4ed53ca5e490dc6147f386105530602ece8c95e2360476d9b6"
+        },
+        {
+          "cue": 14,
+          "second": 85.911553,
+          "path": "assets/video/intro_90/narrated_samples/cue-014.png",
+          "sha256": "aa6f4d7a19097a2d25e35d85dbb56469547fbfd0511fca6a92b68b9ffeb96806"
+        }
+      ],
+      "audio_listened": false,
+      "spoken_word_accuracy_checked": false,
+      "word_level_alignment": false,
+      "mlt_xml_validated": true,
+      "mlt_editor_gui_opened": false,
+      "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+      "research_state": "NOT_RUN",
+      "loudnorm_measurement_raw": {
+        "input_i": "-15.84",
+        "input_tp": "-1.43",
+        "input_lra": "6.80",
+        "input_thresh": "-26.45",
+        "output_i": "-15.96",
+        "output_tp": "-1.50",
+        "output_lra": "6.30",
+        "output_thresh": "-26.54",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.04"
+      }
+    },
+    {
+      "checked_at_utc": "2026-10-27T10:51:29.034881+00:00",
+      "edition": "explainer_360",
+      "status": "containers_and_measured_timing_pass_audition_pending",
+      "video": {
+        "path": "assets/video/explainer_360/explainer_360_narrated_personal.mp4",
+        "sha256": "87e790afb5601eb34102cdf93a3de129c2401bd0e31c74e2d35f9a24eeb5ca16",
+        "duration_seconds": 360.0,
+        "video_codec": "h264",
+        "audio_codec": "aac",
+        "audio_channels": 1,
+        "video_start_time": "0.000000",
+        "audio_start_time": "0.000000",
+        "full_decode_passed": true
+      },
+      "waveform": {
+        "decoded_pcm_frames": 15876096,
+        "decoded_audio_seconds": 360.0021768707483,
+        "peak": 27744,
+        "rms": 4879.732495846405,
+        "samples_at_int16_limit": 0
+      },
+      "actual_container_loudness": {
+        "integrated_lufs": -16.0,
+        "true_peak_dbtp": -1.44,
+        "loudness_range_lu": 7.0,
+        "measurement": "FFmpeg loudnorm input statistics measured from the actual decoded container"
+      },
+      "loudnorm_measurement_raw": {
+        "input_i": "-16.00",
+        "input_tp": "-1.44",
+        "input_lra": "7.00",
+        "input_thresh": "-26.62",
+        "output_i": "-15.77",
+        "output_tp": "-1.50",
+        "output_lra": "6.20",
+        "output_thresh": "-26.36",
+        "normalization_type": "dynamic",
+        "target_offset": "-0.23"
+      },
+      "maximum_detected_silence_seconds": 2.740998,
+      "subtitle_cues": 44,
+      "subtitle_timing": "measured exact generated PCM chunk boundaries with margins, no proportional text-duration guessing",
+      "source_text_coverage": true,
+      "subtitle_scene_bounds": true,
+      "samples": [
+        {
+          "cue": 0,
+          "second": 0.5,
+          "path": "assets/video/explainer_360/narrated_samples/cue-000.png",
+          "sha256": "905a2f947746dea1841193e9cff3d3dc4c467a6c35c8bc03548168e95e53dd09"
+        },
+        {
+          "cue": 1,
+          "second": 3.8727099999999997,
+          "path": "assets/video/explainer_360/narrated_samples/cue-001.png",
+          "sha256": "c7323694260ab5495e516e2ab7a84648645fe23673ca319d6aa23dbf32cdc376"
+        },
+        {
+          "cue": 2,
+          "second": 11.3604535,
+          "path": "assets/video/explainer_360/narrated_samples/cue-002.png",
+          "sha256": "e397208a9f04c1f2b2229089db57e70d560e9aa0effdb1febae5571c3a635625"
+        },
+        {
+          "cue": 3,
+          "second": 18.7405555,
+          "path": "assets/video/explainer_360/narrated_samples/cue-003.png",
+          "sha256": "65d21978c5517963e09763f3dd423582b221d329051893ff8eea0c7115b859af"
+        },
+        {
+          "cue": 4,
+          "second": 27.296134000000002,
+          "path": "assets/video/explainer_360/narrated_samples/cue-004.png",
+          "sha256": "7d4d7553aa9e6a4df427cda1f23e25c0cc514624ccb75a80cf7cd7d2f82f655f"
+        },
+        {
+          "cue": 5,
+          "second": 33.3939685,
+          "path": "assets/video/explainer_360/narrated_samples/cue-005.png",
+          "sha256": "d28698dde4a0d5b5010f0aafa10d95fb65dad25ba694a9f6bc3abe6a5107e2c5"
+        },
+        {
+          "cue": 6,
+          "second": 38.9399545,
+          "path": "assets/video/explainer_360/narrated_samples/cue-006.png",
+          "sha256": "8d3569687eb455f2bfb6885380588cbf174fa64641e549450a1c5377c981d4b8"
+        },
+        {
+          "cue": 7,
+          "second": 47.829398999999995,
+          "path": "assets/video/explainer_360/narrated_samples/cue-007.png",
+          "sha256": "ab48d01be83ef43064ecc0cce494961bc4dd6b912517c4ccd03ea66225ad58d9"
+        },
+        {
+          "cue": 8,
+          "second": 57.6178685,
+          "path": "assets/video/explainer_360/narrated_samples/cue-008.png",
+          "sha256": "369efccc2fd832882084c76472db6b3b3fcf0de13310baed999d23d3f347ba08"
+        },
+        {
+          "cue": 9,
+          "second": 66.606451,
+          "path": "assets/video/explainer_360/narrated_samples/cue-009.png",
+          "sha256": "14c5b7292d8a41eb99f048b8f85d7f326cda2f088a5106ed74a2d84e6b15c887"
+        },
+        {
+          "cue": 10,
+          "second": 73.9896715,
+          "path": "assets/video/explainer_360/narrated_samples/cue-010.png",
+          "sha256": "a56da46ac04058a059c8fa66e9c88a3dc2518645916e1942a932e1ca838e7f7d"
+        },
+        {
+          "cue": 11,
+          "second": 82.361009,
+          "path": "assets/video/explainer_360/narrated_samples/cue-011.png",
+          "sha256": "2baa3be7b0d11fcc10794c0aa0af8813714b6001878007a77aa3d18a6c09bebd"
+        },
+        {
+          "cue": 12,
+          "second": 90.57549900000001,
+          "path": "assets/video/explainer_360/narrated_samples/cue-012.png",
+          "sha256": "4df42aa57a15e6eda0d1e4bdeb70649371e1e2b1f2cdc35b2e979d03fd28e2e7"
+        },
+        {
+          "cue": 13,
+          "second": 99.534864,
+          "path": "assets/video/explainer_360/narrated_samples/cue-013.png",
+          "sha256": "107c6262a7f9bfe062b41d9d8966759ae3797daed408c678fa969537e3652f82"
+        },
+        {
+          "cue": 14,
+          "second": 107.9675055,
+          "path": "assets/video/explainer_360/narrated_samples/cue-014.png",
+          "sha256": "fb96cc54de1dc87e0279fbf608da3e8049f826f4a4fb2a0e93e30d32b860c452"
+        },
+        {
+          "cue": 15,
+          "second": 114.723186,
+          "path": "assets/video/explainer_360/narrated_samples/cue-015.png",
+          "sha256": "9ca5e2a2e777f4479a32cb9263229e87b9bc399eee8d992084c1fb53f628a5ff"
+        },
+        {
+          "cue": 16,
+          "second": 123.94994299999999,
+          "path": "assets/video/explainer_360/narrated_samples/cue-016.png",
+          "sha256": "12191ed10d895227572fed53c8ac9044c3ea9e3bdc10878dacbb4578d59a4f91"
+        },
+        {
+          "cue": 17,
+          "second": 133.484025,
+          "path": "assets/video/explainer_360/narrated_samples/cue-017.png",
+          "sha256": "97c182f38b464ad63b03baca587d0a1147bfebb38284c57e53e6a78940b28901"
+        },
+        {
+          "cue": 18,
+          "second": 142.8828005,
+          "path": "assets/video/explainer_360/narrated_samples/cue-018.png",
+          "sha256": "43c6b6b8559fa81252caa008e7289792ffb3dfd06331ee84144d22573ff1611b"
+        },
+        {
+          "cue": 19,
+          "second": 152.663571,
+          "path": "assets/video/explainer_360/narrated_samples/cue-019.png",
+          "sha256": "9b089e93f7e14d31b35445437c432cf535abf8e2e46b5a9729eeb76515c2f6af"
+        },
+        {
+          "cue": 20,
+          "second": 160.01887749999997,
+          "path": "assets/video/explainer_360/narrated_samples/cue-020.png",
+          "sha256": "e515f7fed34cdf085d0bb18ff15e190fb22092da7d1b187eb2f398a88a764eda"
+        },
+        {
+          "cue": 21,
+          "second": 168.0855105,
+          "path": "assets/video/explainer_360/narrated_samples/cue-021.png",
+          "sha256": "afac5fccfdfdd067ea3bad6a97f2e7bb090a7f97aec4198d517d28beb0413ecf"
+        },
+        {
+          "cue": 22,
+          "second": 178.04797050000002,
+          "path": "assets/video/explainer_360/narrated_samples/cue-022.png",
+          "sha256": "af9a1f71f09768f912e116a4e1bd0f812e3013340cee7ea6575cb2809273b57a"
+        },
+        {
+          "cue": 23,
+          "second": 187.2854535,
+          "path": "assets/video/explainer_360/narrated_samples/cue-023.png",
+          "sha256": "70ed2b5debfabd06f54617687891fd59ac9d0e2225f8bfb7bc9ffe287614d0af"
+        },
+        {
+          "cue": 24,
+          "second": 194.86931950000002,
+          "path": "assets/video/explainer_360/narrated_samples/cue-024.png",
+          "sha256": "268c90caa3646edccc55a42ec7964b117a913fd611baaed780d2cb06d0a4f4aa"
+        },
+        {
+          "cue": 25,
+          "second": 200.769728,
+          "path": "assets/video/explainer_360/narrated_samples/cue-025.png",
+          "sha256": "afc0f6a380a760ae2e4f30576982fee1bf7ce73ada2ed4fc1d152497ca766fa1"
+        },
+        {
+          "cue": 26,
+          "second": 208.4934015,
+          "path": "assets/video/explainer_360/narrated_samples/cue-026.png",
+          "sha256": "94411fcc852b39f728a2dd6661b932359359c2cd3c094b3ceb4b47fb0fe1a604"
+        },
+        {
+          "cue": 27,
+          "second": 217.5214515,
+          "path": "assets/video/explainer_360/narrated_samples/cue-027.png",
+          "sha256": "82d7d3b828c7ae1092aafaffa5b7a91df9736934aa213a4d899d77c16f6f6cdf"
+        },
+        {
+          "cue": 28,
+          "second": 227.24758500000002,
+          "path": "assets/video/explainer_360/narrated_samples/cue-028.png",
+          "sha256": "52812df5ff9bc13a4df9a7f8eb4644fbbc90560370a38c52c1bda6a7eba2fc31"
+        },
+        {
+          "cue": 29,
+          "second": 234.4233785,
+          "path": "assets/video/explainer_360/narrated_samples/cue-029.png",
+          "sha256": "0e07b71a14035498387441451da3e4d1da58f5d2ac988a3f29c615796045aca4"
+        },
+        {
+          "cue": 30,
+          "second": 240.15441049999998,
+          "path": "assets/video/explainer_360/narrated_samples/cue-030.png",
+          "sha256": "7af1294197df38a31a627c03702d69f968a1cb652aad98bbc02b23da1fca6875"
+        },
+        {
+          "cue": 31,
+          "second": 246.3908505,
+          "path": "assets/video/explainer_360/narrated_samples/cue-031.png",
+          "sha256": "7842135aa678430ca2b490fec8dfb3b1450b9cee625112e6f8b3ed5a4aa35da0"
+        },
+        {
+          "cue": 32,
+          "second": 255.75483000000003,
+          "path": "assets/video/explainer_360/narrated_samples/cue-032.png",
+          "sha256": "fd918909f39bf8a04fb2e6a95664ff44ab9a43619f4b737c181004fcc30e5a86"
+        },
+        {
+          "cue": 33,
+          "second": 265.5364285,
+          "path": "assets/video/explainer_360/narrated_samples/cue-033.png",
+          "sha256": "aad9591ae6d3b93cd378f96871defb6a614f1b901353e68f0c58e2edb2c418d6"
+        },
+        {
+          "cue": 34,
+          "second": 274.2836055,
+          "path": "assets/video/explainer_360/narrated_samples/cue-034.png",
+          "sha256": "7ba8c9b09783abfaf18c0a148bdea76d0e1fbff351b1151b85d001ca307de8b1"
+        },
+        {
+          "cue": 35,
+          "second": 283.68746050000004,
+          "path": "assets/video/explainer_360/narrated_samples/cue-035.png",
+          "sha256": "43c5e42e42996d76b63ce11e76dead5f00eece9de113a47f6588f3e7aaf7bc92"
+        },
+        {
+          "cue": 36,
+          "second": 294.75534,
+          "path": "assets/video/explainer_360/narrated_samples/cue-036.png",
+          "sha256": "49a6decd46fdcc84cdc1103e7eefeaa1e282063d9c1ccf903c554e72e16d3ee5"
+        },
+        {
+          "cue": 37,
+          "second": 301.22756200000003,
+          "path": "assets/video/explainer_360/narrated_samples/cue-037.png",
+          "sha256": "ca73e8e150b96616973af3792f82aea2394651deb366b54552d8831ccca358d2"
+        },
+        {
+          "cue": 38,
+          "second": 307.8843875,
+          "path": "assets/video/explainer_360/narrated_samples/cue-038.png",
+          "sha256": "0f3d8c169cf6bfc49b453ec977919d0b0742e1e9717b746802480facf54ab71a"
+        },
+        {
+          "cue": 39,
+          "second": 316.707585,
+          "path": "assets/video/explainer_360/narrated_samples/cue-039.png",
+          "sha256": "e79eff64532047522e620127343cc5d218a0101861d9c84fff2e08828e0dd88e"
+        },
+        {
+          "cue": 40,
+          "second": 325.10797049999996,
+          "path": "assets/video/explainer_360/narrated_samples/cue-040.png",
+          "sha256": "277482c5f8552847210623b6aa714444c5693654f130b5510a78c9443587513a"
+        },
+        {
+          "cue": 41,
+          "second": 334.45484150000004,
+          "path": "assets/video/explainer_360/narrated_samples/cue-041.png",
+          "sha256": "137eae2be03d3c8aa822f58b1bbb10846f55506fa715e1feea6d869f982ec005"
+        },
+        {
+          "cue": 42,
+          "second": 343.06685949999996,
+          "path": "assets/video/explainer_360/narrated_samples/cue-042.png",
+          "sha256": "126a0c0f4d6ac3b0df48897eebb1646ea93b5ada1f12615d5e21c1243528ff1d"
+        },
+        {
+          "cue": 43,
+          "second": 350.865476,
+          "path": "assets/video/explainer_360/narrated_samples/cue-043.png",
+          "sha256": "aa8848c82db3849c8765c67ea8bb726cf2bb604b82b7086237d4d8a394fd3733"
+        },
+        {
+          "cue": 44,
+          "second": 357.1007025,
+          "path": "assets/video/explainer_360/narrated_samples/cue-044.png",
+          "sha256": "55cc034977bc09ae802986899a9c7205e3c7ffe1493559e4a15a57803ebf3283"
+        }
+      ],
+      "audio_listened": false,
+      "spoken_word_accuracy_checked": false,
+      "word_level_alignment": false,
+      "mlt_xml_validated": true,
+      "mlt_editor_gui_opened": false,
+      "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+      "research_state": "NOT_RUN"
+    }
+  ],
+  "audio_generation_provenance": {
+    "provider": "TTS.ai",
+    "model": "melotts",
+    "voice": "ZH",
+    "authentication": "none",
+    "unique_source_characters": 1754,
+    "unique_source_jobs": 58,
+    "characters": 1811,
+    "requests": 60,
+    "outcome_unknown_prior_submissions": 2,
+    "credits_used": 0,
+    "official_api": "https://tts.ai/api/",
+    "terms": "https://tts.ai/terms/",
+    "terms_effective_date": "2026-09-14",
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+    "evidence": [
+      {
+        "path": "assets/audio/tts_ai/manifest.json",
+        "sha256": "c9e474dfb4fc7c058b41bbc88c0e56ff2a86e51b25319170d02c25654e5e65bf",
+        "bytes": 22377
+      },
+      {
+        "path": "assets/audio/tts_ai/generation_summary.json",
+        "sha256": "63d357aaa35ba6c86f651aa61cf60a954b3a479774f772545516e3d97a25a537",
+        "bytes": 938
+      },
+      {
+        "path": "assets/audio/tts_ai/sanitization.json",
+        "sha256": "6137253f336acade87e09f27efb2632be73515aedc18e594b06885a9e9b11261",
+        "bytes": 623
+      }
+    ],
+    "research_model_execution": false
+  },
+  "resolved_audio_blocker": "Scoped TTS continuation and any separately authorized duplicate-risk replacement are recorded in generation provenance; actual unique-source audio and narrated containers now exist. Prior permission denials and unknown-job history are preserved, not erased.",
+  "preserved_historical_submission_uncertainty": {
+    "count": 2,
+    "does_not_imply_missing_current_audio": true,
+    "source": "assets/audio/tts_ai/generation_summary.json",
+    "replacement_history": [
+      {
+        "cue_id": "explainer_360_029",
+        "authorization_record": "release/authorization_updates/20261026_TTS_APPROVAL.json",
+        "original_unknown_receipt": "assets/audio/tts_ai/history/explainer_360_029_original_unknown.json"
+      },
+      {
+        "cue_id": "explainer_360_036",
+        "authorization_record": "release/authorization_updates/20261027_TTS036_APPROVAL.json",
+        "original_unknown_receipt": "assets/audio/tts_ai/history/explainer_360_036_original_unknown.json"
+      }
+    ],
+    "evidence": [
+      {
+        "path": "release/authorization_updates/20261026_TTS_APPROVAL.json",
+        "sha256": "c994aa7020aac6a6e718adf1d05f33ae72f9d9c50e027ebdd0b3d7506ee225e4",
+        "bytes": 735
+      },
+      {
+        "path": "assets/audio/tts_ai/history/explainer_360_029_original_unknown.json",
+        "sha256": "2d476be34eca9b199b7ba7be7e90716003d3c89aa6d8c5c0d01c835268127b79",
+        "bytes": 813
+      },
+      {
+        "path": "release/authorization_updates/20261027_TTS036_APPROVAL.json",
+        "sha256": "06145d17477ef4b47964e1a32f9723343a12b02e822dde9c7e1f86dd58b92766",
+        "bytes": 646
+      },
+      {
+        "path": "assets/audio/tts_ai/history/explainer_360_036_original_unknown.json",
+        "sha256": "d6b798142ccd6afb770fa4ca11c6023c7050ecee59850415d0d7177b90b98cf9",
+        "bytes": 845
+      }
+    ]
+  },
+  "historical_pause_snapshot": {
+    "audio_production_state": {
+      "accepted": 43,
+      "downloaded": 42,
+      "characters_submitted": 1261,
+      "unsubmitted_characters": 493,
+      "pending_accepted_chunks": 1,
+      "credits_used": 0,
+      "private_state_preserved": true,
+      "capability_identifiers_in_deliverable": false,
+      "evidence": [
+        {
+          "path": "assets/audio/tts_ai/authorization_status.json",
+          "sha256": "ceb00f456a2ada3e05b31e0b70aa30b4b357a93ebee0079ac957d7f4036d1dd8",
+          "bytes": 1179
+        },
+        {
+          "path": "assets/audio/tts_ai/sanitization.json",
+          "sha256": "d8aba002351b50e969af7d157e4b639434fdb53ebd35bb0444a039ec6ee2791b",
+          "bytes": 532
+        }
+      ]
+    },
+    "local_pause_validation": {
+      "path": "assets/audio/tts_ai/pause_validation.json",
+      "sha256": "a3ca4cdbb31dbe13bbe9b0c110618b472426d5a9cf32b9c822a661b1d590a881",
+      "bytes": 14282
+    }
+  },
+  "audio_production_state": {
+    "status": "all_audio_downloaded",
+    "finished_at_utc": "2026-10-27T10:48:45.453642+00:00",
+    "unique_source_jobs": 58,
+    "unique_source_characters": 1754,
+    "accepted_submission_count": 60,
+    "accepted_submission_characters": 1811,
+    "credits_used_total": 0,
+    "outcome_unknown_prior_submissions": 2,
+    "replacement_history": [
+      {
+        "cue_id": "explainer_360_029",
+        "authorization_record": "release/authorization_updates/20261026_TTS_APPROVAL.json",
+        "original_unknown_receipt": "assets/audio/tts_ai/history/explainer_360_029_original_unknown.json"
+      },
+      {
+        "cue_id": "explainer_360_036",
+        "authorization_record": "release/authorization_updates/20261027_TTS036_APPROVAL.json",
+        "original_unknown_receipt": "assets/audio/tts_ai/history/explainer_360_036_original_unknown.json"
+      }
+    ],
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+    "audio_listened": false,
+    "research_state": "NOT_RUN"
+  },
+  "audio_perception_capability": {
+    "path": "reports/audio_input_capability_20261027.json",
+    "sha256": "4a8a885fc64316a1c85aed62a4536b0addaadd3b7a9c3e76e6ba09c33657c35c",
+    "status": "BLOCKED_UNSUPPORTED_AUDIO_INPUT",
+    "heard_seconds": 0
+  },
+  "prior_acceptance_blockers": [
+    {
+      "code": "MANDATORY_AUDITION_UNAVAILABLE",
+      "affected_tasks": [
+        "V04",
+        "V05",
+        "V06",
+        "V07"
+      ],
+      "missing_files": [],
+      "pending_requirement": "Actual auditory review of every narration segment, including specialized words and formulas",
+      "reason": "Actual auditory review capability and completed listening evidence have not been established for these editions. No listening or pronunciation assessment is claimed.",
+      "already_completed": "Actual free TTS WAVs, precise chunk-boundary captions, 90/360-second narrated containers, measured loudness/clipping/silence, full A/V decoding, editable timelines and actual sampled-frame visual review.",
+      "next_action": "A capable listener must audition every scene, assess pronunciation and sound quality, repair only verified problems, then update acceptance receipts.",
+      "license_scope": "Generated speech and videos containing it are personal/noncommercial only; independently authored source/PPT/SVG are not automatically restricted."
+    }
+  ],
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

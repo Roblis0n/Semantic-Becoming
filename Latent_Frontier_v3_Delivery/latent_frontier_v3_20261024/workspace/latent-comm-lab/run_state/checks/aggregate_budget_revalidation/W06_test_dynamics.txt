@@ -1,0 +1,13 @@
+test_bound (test_dynamics.DynamicsTests.test_bound) ... ok
+test_dissipation_and_public_boundary (test_dynamics.DynamicsTests.test_dissipation_and_public_boundary) ... ok
+test_rotation_retains_path_and_norm (test_dynamics.DynamicsTests.test_rotation_retains_path_and_norm) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+{
+  "selected": 3,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

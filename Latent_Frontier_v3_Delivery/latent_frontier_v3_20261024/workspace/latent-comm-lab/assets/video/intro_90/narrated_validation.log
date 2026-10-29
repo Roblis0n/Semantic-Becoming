@@ -1,0 +1,1 @@
+intro_90 {'path': 'assets/video/intro_90/intro_90_narrated_personal.mp4', 'sha256': 'a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e', 'duration_seconds': 90.0, 'video_codec': 'h264', 'audio_codec': 'aac', 'audio_channels': 1, 'video_start_time': '0.000000', 'audio_start_time': '0.000000', 'full_decode_passed': True}

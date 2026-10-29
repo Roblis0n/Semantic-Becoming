@@ -1,0 +1,20 @@
+{
+  "affected_scenes": [
+    "explainer_360:S01",
+    "explainer_360:S02",
+    "explainer_360:S03",
+    "explainer_360:S04",
+    "explainer_360:S05",
+    "explainer_360:S06",
+    "explainer_360:S07",
+    "explainer_360:S08",
+    "explainer_360:S09",
+    "intro_90:S03",
+    "intro_90:S05",
+    "intro_90:S06",
+    "intro_90:S07"
+  ],
+  "scope": "Punctuation-safe caption line breaks with exact original wording. S06 source-timing budgets reallocated to keep the complete evidence prohibition together; no audio alignment claimed.",
+  "explainer_cues_before": 43,
+  "explainer_cues_after": 44
+}

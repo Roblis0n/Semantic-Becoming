@@ -1,0 +1,96 @@
+{
+  "task_id": "M04",
+  "status": "done",
+  "input_digest": "0448a4adb4ab177f913283dd9d27759cdb637aa2fafa9ffdad7214c82ac1ab43",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/INTERFACE_REPORT.md",
+      "sha256": "80a31a41f885d5af07a98f19e8e94a32c5170e82a30188367d3bcec3da54327c",
+      "bytes": 3305
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/README.md",
+      "sha256": "77a7d4ea16064019acf25e6081c173609d5cd9ed948af9bce1c4a2fe0fb5bf4c",
+      "bytes": 2423
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/__init__.py",
+      "sha256": "0b38e680f2c3c2f3d153489b136d7d7aad874b0e3d6c746d136e266f79ccdf38",
+      "bytes": 80
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/adapter.py",
+      "sha256": "8b708822c4631821ad6f33a85d69bef032e3b003824b32fe56cb55a4a10dc1cb",
+      "bytes": 1609
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/integration.py",
+      "sha256": "ee64bfd750d72157309f9f05f0dd6553eeec1f05a401ce2a06b538d69c412cbf",
+      "bytes": 1990
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/losses.py",
+      "sha256": "8882eca56bcc27ee7e1d30573f2973653046489be191a98b613c05aa5602554d",
+      "bytes": 2013
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/migration.py",
+      "sha256": "ca77240646b879b96f6406b8688f92c253d4593adefb39619ed29f5c0d18a9c6",
+      "bytes": 2811
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/reference.py",
+      "sha256": "7691c27ffe300921f881a681486fb50275fa1d7e635879d99c8ef92ebd8fc79d",
+      "bytes": 1965
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/schema.json",
+      "sha256": "aee493697bd63696b02faec622c525085730f666486f9486ff73e90b8d39a325",
+      "bytes": 3460
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/training_api.json",
+      "sha256": "a8c41a7cd624467b363e3ce9a79f29903637e9d59fec4bfbb75eaa361eb2d2c6",
+      "bytes": 6765
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/types.py",
+      "sha256": "a6aaa1bf3cf15db9b4e5012eed97aeb37733b4acc6d1e3262490fae7221b0fea",
+      "bytes": 1951
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/wire_example.json",
+      "sha256": "eef46a44c5aa894b28b9ccd6960da6cb8ee6e88e1c3ab1ae9fdccc13d3152fe5",
+      "bytes": 568
+    },
+    {
+      "path": "tests/contracts/test_h04.py",
+      "sha256": "67bd6aa2ea236b6be4296c0a27f334dad388389a1035d37748914cf44af2824f",
+      "bytes": 8040
+    },
+    {
+      "path": "configs/mechanisms/H04.json",
+      "sha256": "b2c94e76faf3406bc5a61c02800ad65d8eee8a74fd8ad0f4486a8ec06da72c0e",
+      "bytes": 6032
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M04_contracts.txt",
+      "sha256": "3c4f7205a4b66240f9df69932a9d8a07291aa64054a1eed4c27c2afac6263459"
+    },
+    {
+      "path": "run_state/checks/M01_M24_contract_runner.py",
+      "sha256": "42bd761f1a0ea832bfeb3e97014d24daea93d4412d8d540a6d142cbc1fe07c86"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated original mechanism source, typed consumer integration, explicit recipe/gradient API and bounded stdlib contracts. Final tests use per-test aggregate_budget and deny neural/array/network imports. Research NOT_RUN. See canonical INTERFACE_REPORT.md and training_api.json for exact APIs and limitations.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:24:17.958041+00:00"
+}

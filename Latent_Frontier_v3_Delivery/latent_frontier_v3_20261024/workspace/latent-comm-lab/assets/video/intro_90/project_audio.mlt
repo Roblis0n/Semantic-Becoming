@@ -1,0 +1,66 @@
+<mlt producer="tractor" version="7.0.0">
+  <profile description="HD 720p24 with narration" width="1280" height="720" frame_rate_num="24" frame_rate_den="1" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" colorspace="709" />
+  <producer id="S01">
+    <property name="resource">narrated_clips/S01.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">通信的旧边界</property>
+  </producer>
+  <producer id="S02">
+    <property name="resource">narrated_clips/S02.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">概念出生</property>
+  </producer>
+  <producer id="S03">
+    <property name="resource">narrated_clips/S03.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">问题变换</property>
+  </producer>
+  <producer id="S04">
+    <property name="resource">narrated_clips/S04.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">学习能力传递</property>
+  </producer>
+  <producer id="S05">
+    <property name="resource">narrated_clips/S05.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">共同世界</property>
+  </producer>
+  <producer id="S06">
+    <property name="resource">narrated_clips/S06.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">超越统一向量</property>
+  </producer>
+  <producer id="S07">
+    <property name="resource">narrated_clips/S07.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">全量研究计划</property>
+  </producer>
+  <producer id="S08">
+    <property name="resource">narrated_clips/S08.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="shotcut:caption">准确收束</property>
+  </producer>
+  <producer id="narration">
+    <property name="resource">../../audio/intro_90.narration.wav</property>
+    <property name="mlt_service">avformat</property>
+  </producer>
+  <playlist id="visual">
+    <property name="shotcut:name">V1 · measured captions</property>
+    <entry producer="S01" in="0" out="239" />
+    <entry producer="S02" in="0" out="287" />
+    <entry producer="S03" in="0" out="287" />
+    <entry producer="S04" in="0" out="311" />
+    <entry producer="S05" in="0" out="311" />
+    <entry producer="S06" in="0" out="287" />
+    <entry producer="S07" in="0" out="239" />
+    <entry producer="S08" in="0" out="191" />
+  </playlist>
+  <playlist id="audio">
+    <property name="shotcut:name">A1 · synthesized Mandarin · PERSONAL/NONCOMMERCIAL</property>
+    <entry producer="narration" in="0" out="2159" />
+  </playlist>
+  <tractor id="tractor" in="0" out="2159">
+    <track producer="visual" />
+    <track producer="audio" hide="video" />
+  </tractor>
+</mlt>

@@ -1,0 +1,15 @@
+test_end_to_end_budget_preserves_partial (test_c08.C08Tests.test_end_to_end_budget_preserves_partial) ... ok
+test_macro_graph_owned_execution (test_c08.C08Tests.test_macro_graph_owned_execution) ... ok
+test_noncommuting_graph_rejected_not_probe_fitted (test_c08.C08Tests.test_noncommuting_graph_rejected_not_probe_fitted) ... ok
+test_nonlinear_graph_requires_different_certificate (test_c08.C08Tests.test_nonlinear_graph_requires_different_certificate) ... ok
+test_stale_ownership_reference (test_c08.C08Tests.test_stale_ownership_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.045s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

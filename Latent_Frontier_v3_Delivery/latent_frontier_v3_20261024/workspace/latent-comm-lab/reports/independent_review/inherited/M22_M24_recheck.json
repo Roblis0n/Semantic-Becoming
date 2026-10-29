@@ -1,0 +1,77 @@
+{
+  "research_execution": "NOT_RUN",
+  "kind": "bounded_stdlib_and_AST",
+  "cases": 6,
+  "max_dimension": 2,
+  "M22_live_sampled_policy_source": "verified_no_tensor_execution",
+  "M23_coercion_rejected": "SemanticMismatch",
+  "M24_revocation_rejected": [
+    [
+      "p",
+      "CapabilityDenied"
+    ],
+    [
+      "c",
+      "CapabilityDenied"
+    ],
+    [
+      "g",
+      "CapabilityDenied"
+    ]
+  ],
+  "M23_H26_single_edge_witness": {
+    "edge": [
+      "edge:ab"
+    ],
+    "domains": [
+      "a",
+      "b"
+    ]
+  },
+  "hashes": {
+    "src/latent_comm/mechanisms/h22_legacy/README.md": "702e64b85d08b2f063ade7afd0befed9d5c7d3d53f1cee39819658c3f2f7557c",
+    "src/latent_comm/mechanisms/h22_legacy/__init__.py": "519826668392f61e809942dd7c71cf013c5743653a13d875f36e8d63672dcf04",
+    "src/latent_comm/mechanisms/h22_legacy/adapter.py": "fd01aebb0255649e4a2f7eb3ed0c8d5c8ccaadb9ad7b48daba8c39b180d44462",
+    "src/latent_comm/mechanisms/h22_legacy/losses.py": "08255497c4098c34d21457fd8f61be570d71e68094aeb415ee0415f422eaa4ab",
+    "src/latent_comm/mechanisms/h22_legacy/migration.py": "9161fc99201cb4d8efbd3ff6d006f44968e73d15f6f37efd0691837806623f87",
+    "src/latent_comm/mechanisms/h22_legacy/reference.py": "7724247f38da7da94d4478ef9613934039dc556ba0b21db66b24c97ed1ae8710",
+    "src/latent_comm/mechanisms/h22_legacy/schema.json": "22433ae4868bde81db31a510681ed494d3e91e5a57ca084e3caed1ec44fba436",
+    "src/latent_comm/mechanisms/h22_legacy/types.py": "fd307a92e4eaeb92022d0303eb1c32dc4c257dacc031b0ea3a426a6d18471119",
+    "src/latent_comm/mechanisms/h22_legacy/wire_example.json": "7780f65b1c02bd4b3624fc7dec0f64f218c7ef8fc9441c9464381a7ea5b5b3c4",
+    "tests/contracts/test_h22.py": "80b70859826ebb7503d4fb7bbe58894e22bcb1c1010cd2357a64ffb399841cff",
+    "configs/mechanisms/H22.json": "7233907acd29798561cf69420778228f10aa8a95c1b1c7007cf736f6ef3080b6",
+    "src/latent_comm/mechanisms/h23_legacy/README.md": "d45c40d36e36ac0a62b8d7981a250a945b92ba54a4f0e9b57f1f37c5f8760d89",
+    "src/latent_comm/mechanisms/h23_legacy/__init__.py": "04ad23e6c03003274f4ec815c7bd3267b67fb01c24ed2c0e10b13ec405474cd7",
+    "src/latent_comm/mechanisms/h23_legacy/adapter.py": "0b7da9a64a3a9acd09d657cab571ce10716e34211c79c1b1f88cf6ff905e2273",
+    "src/latent_comm/mechanisms/h23_legacy/losses.py": "c0ff8a6e03bc4dc77082c695805942f5333e7e19e0031bdaafe3a0e64e3658a5",
+    "src/latent_comm/mechanisms/h23_legacy/migration.py": "6b4eaa900d5e4412142b0da30d7e551b737c2866354db20ca6363a29ceaa5a07",
+    "src/latent_comm/mechanisms/h23_legacy/reference.py": "ff9ed049318b84a222fcfd04afac9f7e7946bd64c7641f5b0980cdc636bc3f21",
+    "src/latent_comm/mechanisms/h23_legacy/schema.json": "b50a63b65798191c2e19380915121f559f8c682dbf15db93ea54381703038004",
+    "src/latent_comm/mechanisms/h23_legacy/types.py": "5becdfc9c4faea4e3ed5abb35a55bf1a88d157094a5a77ee0e3ffb0ca4679604",
+    "src/latent_comm/mechanisms/h23_legacy/wire_example.json": "5e1dc62e3110ab49aedeb73c4003e92a66338d8f30a363249c67e9a354d2b799",
+    "tests/contracts/test_h23.py": "bf68e3fc02f3f28008af79355c6e5b4771aead3238c70f8da5b3ef8cc205a281",
+    "configs/mechanisms/H23.json": "281d9e7764e8c9792df83d9466fac0e0db097fd7698dc38450730de4c5a26ccb",
+    "src/latent_comm/mechanisms/h24_legacy/README.md": "9887e9cace99ffd521b8d2bc7ddc01806fb9b2730b128866726d5179c6db0c7d",
+    "src/latent_comm/mechanisms/h24_legacy/__init__.py": "a1794009866088ec3702c3bddfdefc8468aa871955540091d11658964154b64f",
+    "src/latent_comm/mechanisms/h24_legacy/adapter.py": "1bb77ee373a71f99f9fad382f921719c1a592434beeb6b6f9c7c435a03e908cc",
+    "src/latent_comm/mechanisms/h24_legacy/losses.py": "55f04a53f1af5ed8980c249f8f07fc3d83a94ea1544852761ef7e8ce9c18d2a7",
+    "src/latent_comm/mechanisms/h24_legacy/migration.py": "c37f52d2df08b6b433962613f71427374ff535ba884fcd565655e0fb776e8070",
+    "src/latent_comm/mechanisms/h24_legacy/reference.py": "46ce5752122b9460b837aea7f8f031e5db3dc4924091ee6c38e49087cfe37f39",
+    "src/latent_comm/mechanisms/h24_legacy/schema.json": "f90fde28e30c541b1f8e17c0dc895865e4e9a2d91afd579b42a91a35ba5ef765",
+    "src/latent_comm/mechanisms/h24_legacy/types.py": "fb6e45801626083bf3178322eb1ad4f830e4076546095eddbb2e8b5677308947",
+    "src/latent_comm/mechanisms/h24_legacy/wire_example.json": "35708729d8d3e24be83ccfdb2ca076e6f1ab60c45a0517f695fd02aaabaa2b38",
+    "tests/contracts/test_h24.py": "f507aa39b38a4a2d8ef1fcbc081165d3a54d1ef6e78d4d541c4d8f899b88f776",
+    "configs/mechanisms/H24.json": "88401d0f1dc1575ebd2cb2b3e8ac32bee6761a3e6e1c797f4b8198b65fddded3",
+    "src/latent_comm/mechanisms/h26_sheaf/README.md": "d9495b9a6aa5ba161b8eb5b027d65303998bb5b6091467a85fbd7a96493a1710",
+    "src/latent_comm/mechanisms/h26_sheaf/__init__.py": "c65d3982c26814c65960837151c3a6f9843322285f6e95323d94b4924ea4210f",
+    "src/latent_comm/mechanisms/h26_sheaf/adapter.py": "f1295e9bebdfcd1956fce07589ff34d6f84c56f782103d16979791b386f997ce",
+    "src/latent_comm/mechanisms/h26_sheaf/losses.py": "012ff1e20c053d57ca1c0bb8f464a92fd2ff90dd4c875db19f9ddaed9093ddf4",
+    "src/latent_comm/mechanisms/h26_sheaf/reference.py": "dc1376d0ca0cdb56092194563b0972357ffbcda459ddd69bc839a11e50dee858",
+    "src/latent_comm/mechanisms/h26_sheaf/schema.json": "150ef5547f4df44d1ded3b533f1b1a5962aa7d9f24e9e901f9a16827367c5e63",
+    "src/latent_comm/mechanisms/h26_sheaf/serialization.py": "ba5f6a52b09ceac941dda680f1c0d882a875981aabcc23ba1de4cd577e13966e",
+    "src/latent_comm/mechanisms/h26_sheaf/types.py": "41403c3ff0aecb7bd0b6f073459385be7c6c2eb1a0481eb546d0a8c1b6d4d31c",
+    "tests/contracts/test_h26.py": "a26cd6bd5827f68c1274946cffa207485308d982541e902d6633fd1c527f3356",
+    "configs/mechanisms/H26.json": "826b4e2f95ad0791e2fb750a80f3e9dc17746a7132132661963ff03fd9566aa9"
+  },
+  "conservative_upper_bound_steps_per_case": 32
+}

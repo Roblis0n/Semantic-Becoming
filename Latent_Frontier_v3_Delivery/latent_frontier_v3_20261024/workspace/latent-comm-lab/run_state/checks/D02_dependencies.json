@@ -1,0 +1,158 @@
+[
+  {
+    "dependency": "A01",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M25",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M26",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M27",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M28",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M29",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M30",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M31",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M32",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M33",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M34",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M35",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M36",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M37",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M38",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M39",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M40",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M41",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M42",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M43",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M44",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M45",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M46",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M47",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "M48",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  },
+  {
+    "dependency": "D01",
+    "returncode": 0,
+    "receipt_verified": true,
+    "error": null
+  }
+]

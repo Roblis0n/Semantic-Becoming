@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H48：十次转述不是十份证据</title><desc id="desc">两个转述共同指向e，P=.8；独立误算.96划掉。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H48：十次转述不是十份证据</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">共同祖先必须进入聚合计算</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">31 / 36</tspan>
+</text>
+<rect id="e006" x="64" y="285" width="280" height="140" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e007" x="79" y="333.12" font-family="Noto Sans CJK SC" font-size="36" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="79" dy="0">来源事件 e</tspan>
+</text>
+<text id="e008" x="79" y="374.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79" dy="0">P(e) = 0.8</tspan>
+</text>
+<polyline id="e009" points="360.000,350.000 560.000,280.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="547.022,279.245 560.000,280.000 550.325,288.683" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e011" points="360.000,365.000 560.000,470.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e012" points="551.699,459.995 560.000,470.000 547.051,468.849" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e013" x="580" y="225" width="240" height="100" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e014" x="595" y="267.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="595" dy="0">转述 A</tspan>
+</text>
+<text id="e015" x="595" y="306.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="595" dy="0">仅引用 e</tspan>
+</text>
+<rect id="e016" x="580" y="440" width="240" height="100" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e017" x="595" y="482.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="595" dy="0">转述 B</tspan>
+</text>
+<text id="e018" x="595" y="521.66" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="595" dy="0">仅引用 e</tspan>
+</text>
+<text id="e019" x="895" y="264.96" font-family="Noto Sans CJK SC" font-size="38" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="895" dy="0">e ∨ e = e</tspan>
+</text>
+<text id="e020" x="895" y="345.12" font-family="Noto Sans CJK SC" font-size="36" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="895" dy="0">仍为 0.8</tspan>
+</text>
+<text id="e021" x="895" y="457.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="895" dy="0">独立误算 0.96</tspan>
+</text>
+<polyline id="e022" points="890.000,468.000 1200.000,468.000" fill="none" stroke="#9C4540" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e023" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">0.96 仅适用于两个不同、独立、各为 0.8 的事件之并</tspan>
+</text>
+</svg>

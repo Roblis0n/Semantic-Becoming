@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "research_state": "NOT_RUN",
+  "decks": [
+    {
+      "path": "assets/slides/research_36.pptx",
+      "sha256": "b1fb8feeabdc38d684bf5f124cbd67bdf1c2b36cb0e2f9c43bb0549fc1f66ec1",
+      "slides": 36,
+      "native_shapes": 843,
+      "native_text_runs": 548,
+      "bitmap_slides": 0,
+      "all_slides_reopened_with": "LibreOffice PDF export and pdftoppm",
+      "all_slides_rendered": true,
+      "powerpoint_application_opened": false,
+      "font_embedding": false
+    },
+    {
+      "path": "assets/slides/brief_12.pptx",
+      "sha256": "4f389fa6417797e84e77230c97db5b932d173856914c5530839787d30589fe9a",
+      "slides": 12,
+      "native_shapes": 296,
+      "native_text_runs": 201,
+      "bitmap_slides": 0,
+      "all_slides_reopened_with": "LibreOffice PDF export and pdftoppm",
+      "all_slides_rendered": true,
+      "powerpoint_application_opened": false,
+      "font_embedding": false
+    }
+  ],
+  "visual_review": "assets/slides/visual_review.json"
+}

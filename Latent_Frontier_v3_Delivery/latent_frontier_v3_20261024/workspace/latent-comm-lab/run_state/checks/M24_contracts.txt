@@ -1,0 +1,16 @@
+M24: AST parsed 6 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_alias_expiry_cross_session_and_forged_header (test_h24.TestCapabilities.test_alias_expiry_cross_session_and_forged_header) ... ok
+test_effect_and_protected_identity (test_h24.TestCapabilities.test_effect_and_protected_identity) ... ok
+test_goal_view_and_update_rule_grants (test_h24.TestCapabilities.test_goal_view_and_update_rule_grants) ... ok
+test_narrowing_and_integration_scopes (test_h24.TestCapabilities.test_narrowing_and_integration_scopes) ... ok
+test_parent_revocation_reaches_derived_grants (test_h24.TestCapabilities.test_parent_revocation_reaches_derived_grants) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h24.TestCapabilities.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h24.TestCapabilities.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h24.TestCapabilities.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h24.TestCapabilities.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.015s
+
+OK
+M24: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_004",
+  "edition": "explainer_360",
+  "scene_id": "S01",
+  "characters": 42,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "那么通信就不再只是一个传输通道，而可能成为构造认知组织的过程。这里提出的是研究命题，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:20:01.229136+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:20:03 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:21:39.584879+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 346583,
+    "duration_seconds": 7.859024943310658,
+    "sample_peak": 16861,
+    "sample_rms": 1718.1592685645137,
+    "sha256": "eecc760564583d96165ae6ad55efca62f7ec6a29fbe5bfec5095600586f48efa",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:22:00.022882+00:00"
+}

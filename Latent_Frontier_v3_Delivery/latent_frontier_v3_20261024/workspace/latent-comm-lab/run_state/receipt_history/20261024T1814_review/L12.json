@@ -1,0 +1,71 @@
+{
+  "task_id": "L12",
+  "status": "done",
+  "input_digest": "19579cb451423009273c5344baea00a1d575e09f040f417b02c15ee15fe990bb",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/evidence/README.md",
+      "sha256": "057331a2ef49b1d3fea080c03ab8567567f9c475c2952565236957c7aa2e8d53",
+      "bytes": 4234
+    },
+    {
+      "path": "src/latent_comm/learning/evidence/__init__.py",
+      "sha256": "81283c227d717bec35d84245f432b5b446cfb139e5aebc41d4d6ded544767525",
+      "bytes": 12713
+    },
+    {
+      "path": "src/latent_comm/learning/evidence/train.py",
+      "sha256": "73a718c09c66d6d8bd7fb4bfbdde30e043fdb72c60f628e330006d5f5e04bd79",
+      "bytes": 2414
+    },
+    {
+      "path": "configs/learning/evidence.json",
+      "sha256": "aef1625473f43935df9d17d27c3e135fbe86c3fb79ae9c40d466dc481d45e361",
+      "bytes": 2202
+    },
+    {
+      "path": "tests/research_locked/test_learning_evidence.py",
+      "sha256": "7975d8dc238285a4c40bff182cfdbd37b84c067149b974cea4d2cf265551a0fb",
+      "bytes": 3639
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L12_evidence.txt",
+      "sha256": "17e336030de4f70f0a2fe7d94a173f2ef061ae8671482241ce55848f70440202"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_evidence.txt",
+      "sha256": "7b8727fa1aaaf127d2e3e5f6e6fdeb9a1c53f33c32264215bedff3c1387a9de1"
+    },
+    {
+      "path": "run_state/checks/final_mechanism_revalidation/test_learning_evidence.txt",
+      "sha256": "28a4297bc9e9e6ed813017128ede05d7fe00e72c264238a9e1c5a4cabf0955fe"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "sha256": "fb6550b458c8b60d08ee842a12149e18c385460c99b9315913383357b22d917c"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated H41 known-value pair-coalition learning and stopped allocation policy; H48 unique-source identity, explicit dependence-aware support calibration, separate learned linking without independence authority. Eight metadata/AST/finite checks only, no neural/model/guard execution. Shared engine/source/resume pinned; NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:16:12.617735+00:00"
+}

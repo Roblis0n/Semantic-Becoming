@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PacketMetadata",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "message_kind",
+    "coordinate_version",
+    "scope",
+    "payload_layout",
+    "provenance",
+    "approximation"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "message_kind": {
+      "enum": [
+        "state",
+        "operator",
+        "response",
+        "belief",
+        "constraint",
+        "continuation",
+        "relation",
+        "program"
+      ]
+    },
+    "coordinate_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "task_id",
+        "allowed_operations",
+        "expires_at"
+      ],
+      "properties": {
+        "task_id": {
+          "type": "string"
+        },
+        "allowed_operations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "payload_layout": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "shape",
+          "dtype",
+          "nbytes"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "shape": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "dtype": {
+            "enum": [
+              "float32",
+              "float16",
+              "bfloat16",
+              "int8",
+              "uint8",
+              "int32",
+              "int64",
+              "bool"
+            ]
+          },
+          "nbytes": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "provenance": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approximation": {
+      "enum": [
+        "exact_by_construction",
+        "approximate",
+        "unspecified"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

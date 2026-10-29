@@ -1,0 +1,46 @@
+{
+  "schema_version": 3,
+  "id": "H26",
+  "kind": "mechanism",
+  "title": "不可全局拼合的语义层",
+  "mechanisms": [
+    "H26"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "hypotheses/H26_不可全局拼合的语义层.md",
+  "target_base": "src/latent_comm/mechanisms/h26_sheaf",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "nodes": 4,
+    "local_dimension": 3,
+    "affine": true,
+    "anchor_required": true
+  },
+  "integration_status": "NOT_RUN",
+  "reference_module": "latent_comm.mechanisms.h26_sheaf.reference",
+  "adapter_module": "latent_comm.mechanisms.h26_sheaf.adapter",
+  "required_version_axes": [
+    "ontology",
+    "frame"
+  ],
+  "loss_ledger_module": "latent_comm.mechanisms.h26_sheaf.losses",
+  "fixture_bounds": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  },
+  "source_recipe": "PLAN_ROOT/recipes/H26.json"
+}

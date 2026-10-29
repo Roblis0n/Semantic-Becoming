@@ -1,0 +1,63 @@
+{
+  "task_id": "L06",
+  "status": "done",
+  "input_digest": "178e6708d3768bcfdbe0d849ceb448680ff1d83a15d6edd0fdc8039deaeecb98",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/dynamics_scales/README.md",
+      "sha256": "5cfbc028358f1326079dc023a1db4f259497fd9f7f95251330c7924622bb994a",
+      "bytes": 4277
+    },
+    {
+      "path": "src/latent_comm/learning/dynamics_scales/__init__.py",
+      "sha256": "042affaa7579db5686443e75be550bfbb47f21c0c5c24d9f100be0ac8c3422eb",
+      "bytes": 16196
+    },
+    {
+      "path": "src/latent_comm/learning/dynamics_scales/train.py",
+      "sha256": "91d533b5f565a3707991c38fe8f16fa724acf7455c3fbd6c515bac322ed7434a",
+      "bytes": 2440
+    },
+    {
+      "path": "configs/learning/dynamics_scales.json",
+      "sha256": "13468e144b7ec4dac8eb48925fe8f16740e3abf7083fc8bab7d522d1f60914b6",
+      "bytes": 2444
+    },
+    {
+      "path": "tests/research_locked/test_learning_dynamics_scales.py",
+      "sha256": "906112e409ea42707c80e1bb217d5643ae88c8e96ff20cc1b184fade8a2c4190",
+      "bytes": 3992
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L06_dynamics_scales.txt",
+      "sha256": "18971883a9a33036c7264554382ea29950f24edbd857cf72b0142585a0dd94f5"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_dynamics_scales.txt",
+      "sha256": "3b03eb68b2912b4af1e8aec94df37983b35c348d2b45c74aa9f0d77b58866cbe"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated H28, H33, H34 continuous public-boundary, H35 closure/detail-memory stages. W06 and W07 bindings separated from explicitly declared H28 control-path schema. Eight metadata, AST and bounded analytical checks, no research/model/guard invocation. Shared optimizer/checkpoint/resume source pinned, NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.642801+00:00"
+}

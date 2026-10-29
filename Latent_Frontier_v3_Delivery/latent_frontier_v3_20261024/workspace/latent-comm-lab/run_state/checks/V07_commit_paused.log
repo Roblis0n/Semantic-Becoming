@@ -1,0 +1,30 @@
+{
+  "task_id": "V07",
+  "status": "complete_with_external_blockers",
+  "input_digest": "987cc9382dea5584a6dbf1134a8f5e28c4298e9c3f77131e6f6dbea871ca14eb",
+  "outputs": [
+    {
+      "path": "reports/media_qa.json",
+      "sha256": "061dbb10117a6841e3164bd75187fe040968dbf079b763a37431fe6a11f8a3aa",
+      "bytes": 32273
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V07_validation.json",
+      "sha256": "6b521072fc37346c8ca74b59b0b0e20d0b5cffc72b6e9d135821a2fb5132e764"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [
+    "Further external TTS disclosure to api.tts.ai is paused pending explicit user authorization: 493 characters in 15 chunks are unsubmitted; one previously accepted 16-character chunk has unknown remote outcome and is not being polled. No alternative route or resubmission is attempted.",
+    "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+  ],
+  "notes": "Pending-approval checkpoint: all original graphical exports and actual short narrated edition verified; long voice remains incomplete. Current dependency hashes verified and all declared output bytes included. External disclosure permission and mandatory audition remain real blockers. Research paths NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:56:49.031874+00:00"
+}

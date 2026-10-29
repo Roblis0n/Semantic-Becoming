@@ -1,0 +1,455 @@
+{
+  "title": "H42：问题、语言与解法共演化",
+  "description": "world/ontology/ISA/population四版本循环，标每轮预算。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "H42：问题、语言与解法共演化",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "不是只有模型变强，任务也变化",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "22 / 36",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64.0,
+      "y": 250,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79.0,
+      "y": 265,
+      "w": 234.0,
+      "h": 38.61,
+      "text": "world vₖ",
+      "size": 27,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79.0,
+      "y": 306.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "动力学与任务域",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          334.0,
+          335.0
+        ],
+        [
+          354.0,
+          335.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          342.0,
+          330.0
+        ],
+        [
+          354.0,
+          335.0
+        ],
+        [
+          342.0,
+          340.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 360.0,
+      "y": 250,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 375.0,
+      "y": 265,
+      "w": 234.0,
+      "h": 38.61,
+      "text": "ontology vₖ",
+      "size": 27,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 375.0,
+      "y": 306.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "概念与关系",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          630.0,
+          335.0
+        ],
+        [
+          650.0,
+          335.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          638.0,
+          330.0
+        ],
+        [
+          650.0,
+          335.0
+        ],
+        [
+          638.0,
+          340.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 656.0,
+      "y": 250,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 671.0,
+      "y": 265,
+      "w": 234.0,
+      "h": 38.61,
+      "text": "ISA vₖ",
+      "size": 27,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 671.0,
+      "y": 306.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "受限指令语义",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "points": [
+        [
+          926.0,
+          335.0
+        ],
+        [
+          946.0,
+          335.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e019"
+    },
+    {
+      "points": [
+        [
+          934.0,
+          330.0
+        ],
+        [
+          946.0,
+          335.0
+        ],
+        [
+          934.0,
+          340.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e020"
+    },
+    {
+      "x": 952.0,
+      "y": 250,
+      "w": 264.0,
+      "h": 170,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e021"
+    },
+    {
+      "x": 967.0,
+      "y": 265,
+      "w": 234.0,
+      "h": 38.61,
+      "text": "population vₖ",
+      "size": 27,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "x": 967.0,
+      "y": 306.75,
+      "w": 234.0,
+      "h": 32.89,
+      "text": "候选解法集合",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    },
+    {
+      "points": [
+        [
+          1090,
+          440
+        ],
+        [
+          1090,
+          510
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e024"
+    },
+    {
+      "points": [
+        [
+          1090,
+          510
+        ],
+        [
+          190,
+          510
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e025"
+    },
+    {
+      "points": [
+        [
+          202.0,
+          515.0
+        ],
+        [
+          190,
+          510
+        ],
+        [
+          202.0,
+          505.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e026"
+    },
+    {
+      "x": 330,
+      "y": 530,
+      "w": 740,
+      "h": 42.9,
+      "text": "每轮预算、停止条件、版本归档",
+      "size": 30,
+      "color": "#606258",
+      "align": "center",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e027"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "问题与语言一起演化；开放式研究不意味着无限运行",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e028"
+    }
+  ],
+  "notes": "借鉴已有开放式学习思想，进一步让协议和概念一起进入演化。开放式不等于无限运行。\n\n原稿画面要求：world/ontology/ISA/population四版本循环，标每轮预算。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第22页\nhypotheses/H42_模型与任务的共演化生态.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1901.01753\nhttps://arxiv.org/abs/2012.02096\nhttps://arxiv.org/abs/2006.08381\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_22"
+  ],
+  "research_state": "NOT_RUN"
+}

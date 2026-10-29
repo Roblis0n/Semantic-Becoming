@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H40：语言也能学会新指令</title><desc id="desc">三段重复程序折叠为宏，显示lower到旧ISA。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H40：语言也能学会新指令</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">反复使用的结构被编译为可扩展操作</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">05 / 12</tspan>
+</text>
+<text id="e006" x="64" y="263.52" font-family="Noto Sans CJK SC" font-size="31" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">重复结构</tspan>
+</text>
+<text id="e007" x="64" y="330.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">检查授权</tspan>
+<tspan x="64" dy="44.550000000000004">检查时间范围</tspan>
+<tspan x="64" dy="44.550000000000004">执行动作</tspan>
+</text>
+<polyline id="e008" points="430.000,365.000 600.000,365.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e009" points="588.000,360.000 600.000,365.000 588.000,370.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e010" x="650" y="265" width="566" height="140" rx="8" fill="#F0DDD1" stroke="#9C5138" stroke-width="2" />
+<text id="e011" x="665" y="310.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="700" fill="#9C5138" text-anchor="start">
+<tspan x="665" dy="0">宏：authorized_action</tspan>
+</text>
+<text id="e012" x="665" y="350.41" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="665" dy="0">可扩展指令，带类型与前置条件</tspan>
+</text>
+<polyline id="e013" points="935.000,420.000 935.000,490.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e014" points="940.000,478.000 935.000,490.000 930.000,478.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e015" x="650" y="536.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="650" dy="0">lower：还原到旧 ISA 的同一语义</tspan>
+</text>
+<text id="e016" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">宏可以压缩程序，不能隐藏无法解释的“万能函数”</tspan>
+</text>
+</svg>

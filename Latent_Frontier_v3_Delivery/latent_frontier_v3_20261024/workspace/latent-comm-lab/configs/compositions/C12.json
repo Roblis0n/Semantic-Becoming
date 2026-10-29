@@ -1,0 +1,998 @@
+{
+  "recipe_id": "C12",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C12",
+    "nodes": [
+      {
+        "node_id": "source_equations",
+        "operation": "C12.source_equations",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "source_equations:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ScientificWorldInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "SourceEquations",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "W"
+        ],
+        "write_set": [
+          "W"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H09",
+          "H31"
+        ],
+        "implementation": "latent_comm.compositions.c12.source_equations",
+        "location": {
+          "source": "C12.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "convert_boundary",
+        "operation": "C12.convert_boundary",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "source_equations:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "convert_boundary:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "SourceEquations",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "PhysicalBoundary",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "W"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H17"
+        ],
+        "implementation": "latent_comm.compositions.c12.convert_boundary",
+        "location": {
+          "source": "C12.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "graft_module",
+        "operation": "C12.graft_module",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "convert_boundary:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "graft_module:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "PhysicalBoundary",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "GraftedWorld",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w2",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "W"
+        ],
+        "write_set": [
+          "W"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H31"
+        ],
+        "implementation": "latent_comm.compositions.c12.graft_module",
+        "location": {
+          "source": "C12.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "compile_joint_kernel",
+        "operation": "C12.compile_joint_kernel",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "graft_module:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "compile_joint_kernel:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "GraftedWorld",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w2",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "JointKernelPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w2",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "W"
+        ],
+        "write_set": [
+          "W"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H43"
+        ],
+        "implementation": "latent_comm.compositions.c12.compile_joint_kernel",
+        "location": {
+          "source": "C12.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "plan_intervention",
+        "operation": "C12.plan_intervention",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "compile_joint_kernel:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "plan_intervention:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "JointKernelPlan",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w2",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "HypotheticalConsequence",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w2",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "W"
+        ],
+        "write_set": [
+          "W"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H09",
+          "H43"
+        ],
+        "implementation": "latent_comm.compositions.c12.plan_intervention",
+        "location": {
+          "source": "C12.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "compile_joint_kernel:out",
+        {
+          "name": "JointKernelPlan",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w2",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "convert_boundary:out",
+        {
+          "name": "PhysicalBoundary",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "graft_module:out",
+        {
+          "name": "GraftedWorld",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w2",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "ScientificWorldInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "plan_intervention:out",
+        {
+          "name": "HypotheticalConsequence",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w2",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "source_equations:out",
+        {
+          "name": "SourceEquations",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "compile_joint_kernel",
+        "plan_intervention"
+      ],
+      [
+        "convert_boundary",
+        "graft_module"
+      ],
+      [
+        "graft_module",
+        "compile_joint_kernel"
+      ],
+      [
+        "source_equations",
+        "convert_boundary"
+      ]
+    ],
+    "schedule": [
+      "source_equations",
+      "convert_boundary",
+      "graft_module",
+      "compile_joint_kernel",
+      "plan_intervention"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "e729fa1f3f48e6fed389ff06cdff2e06babc3de0abb45ad4d5a6c15c0ccb2a0e",
+    "declared_parameters": {
+      "obligations": [
+        "Kernel compilation is finite affine-SCM resampling, not an unbounded causal world model.",
+        "All consequences are synthetic; unit conversion is not causal identification."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C12",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "structural_boundary",
+        "objectives": [
+          {
+            "name": "graft",
+            "mathematical_definition": "sum(m*(grafted_effect-intervention_target)^2)/sum(m)",
+            "numerator": "interventional effect residual",
+            "denominator": "valid effect coordinates",
+            "valid_mask": "intervention_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "source_module_generator",
+              "boundary_reader"
+            ],
+            "requires_grad_inputs": [
+              "boundary_inputs"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "intervention effects",
+            "id": "H31.graft"
+          },
+          {
+            "name": "boundary",
+            "mathematical_definition": "sum(m*(unchanged_after-unchanged_before)^2)/sum(m)",
+            "numerator": "external invariant residual",
+            "denominator": "valid boundary invariants",
+            "valid_mask": "boundary_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "boundary_reader"
+            ],
+            "requires_grad_inputs": [
+              "grafted_state"
+            ],
+            "stop_gradient_edges": [
+              [
+                "unchanged_before",
+                "boundary"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "boundary coordinates",
+            "id": "H31.boundary"
+          }
+        ],
+        "losses": [
+          "H31.graft",
+          "H31.boundary"
+        ],
+        "owners": [
+          "boundary_reader",
+          "source_module_generator"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "world_kernel",
+        "objectives": [
+          {
+            "name": "transition",
+            "mathematical_definition": "mean masked -log K(snext|s,a)",
+            "numerator": "sum of masked per-case losses",
+            "denominator": "valid terms",
+            "valid_mask": "transition_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "kernel_generator",
+              "state_interface"
+            ],
+            "requires_grad_inputs": [
+              "current_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "observed transitions",
+            "id": "H43.transition"
+          },
+          {
+            "name": "observation",
+            "mathematical_definition": "mean masked -log O(observation|s)",
+            "numerator": "sum of masked per-case losses",
+            "denominator": "valid terms",
+            "valid_mask": "observation_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "observation_generator"
+            ],
+            "requires_grad_inputs": [
+              "world_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "observations",
+            "id": "H43.observation"
+          },
+          {
+            "name": "shared_noise",
+            "mathematical_definition": "mean masked (predicted_joint-target_joint)^2",
+            "numerator": "sum of masked per-case losses",
+            "denominator": "valid terms",
+            "valid_mask": "joint_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "noise_coupling"
+            ],
+            "requires_grad_inputs": [
+              "conditional_kernels"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "joint outcome cells",
+            "id": "H43.shared_noise"
+          },
+          {
+            "name": "multistep",
+            "mathematical_definition": "mean masked (predicted_behavior-target_behavior)^2",
+            "numerator": "sum of masked per-case losses",
+            "denominator": "valid terms",
+            "valid_mask": "horizon_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "kernel_generator"
+            ],
+            "requires_grad_inputs": [
+              "initial_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "horizon behavior elements",
+            "id": "H43.multistep"
+          }
+        ],
+        "losses": [
+          "H43.transition",
+          "H43.observation",
+          "H43.shared_noise",
+          "H43.multistep"
+        ],
+        "owners": [
+          "kernel_generator",
+          "noise_coupling",
+          "observation_generator",
+          "state_interface"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "source_equations": "stop",
+      "convert_boundary": "stop",
+      "graft_module": "stop",
+      "compile_joint_kernel": "enumeration",
+      "plan_intervention": "stop"
+    },
+    "frozen": [
+      "base_models",
+      "immutable_source_definitions"
+    ],
+    "structure_search": "enumeration is distinct from differentiable phases",
+    "execution": "unified gated runner only; no joint global loss by default"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

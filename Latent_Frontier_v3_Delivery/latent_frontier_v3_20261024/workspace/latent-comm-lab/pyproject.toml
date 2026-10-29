@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "latent-comm-lab"
+version = "0.1.0"
+description = "Semantic Becoming: typed research source and finite reference semantics; models NOT_RUN"
+requires-python = ">=3.11"
+dependencies = []
+[project.optional-dependencies]
+core = []
+tensor = ["torch"]
+backend = ["torch", "transformers", "safetensors"]
+media = ["python-pptx", "Pillow"]
+[project.scripts]
+lcomm = "latent_comm.cli.main:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.md"]

@@ -1,0 +1,95 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "ast": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "enum": [
+            "read",
+            "scale",
+            "clip",
+            "running_mean",
+            "precondition_diagonal",
+            "masked_add"
+          ]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 0,
+          "maxItems": 3
+        },
+        "scalar": {
+          "type": "number"
+        },
+        "slot": {
+          "type": "string"
+        },
+        "parameter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "op",
+        "children",
+        "scalar",
+        "slot",
+        "parameter"
+      ],
+      "additionalProperties": false
+    },
+    "writable_groups": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "max_update_norm": {
+      "type": "number"
+    },
+    "inner_steps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 128
+    },
+    "lifetime_steps": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "estimator": {
+      "enum": [
+        "exact_unroll",
+        "first_order"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "ast",
+    "writable_groups",
+    "max_update_norm",
+    "inner_steps",
+    "lifetime_steps",
+    "version",
+    "estimator"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H38:resolved-payload:3"
+}

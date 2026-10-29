@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_016",
+  "edition": "explainer_360",
+  "scene_id": "S04",
+  "characters": 39,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "第二条主线把学习能力本身当作消息。不同模型的参数数量、坐标甚至结构都可能不同，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:30:36.914090+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 317242,
+    "duration_seconds": 7.193696145124717,
+    "sample_peak": 12837,
+    "sample_rms": 2179.7533452405146,
+    "sha256": "0546baa399e39cda2907a83f299e06202c298563ebde053af954167333d7c7f5",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:31:34.688274+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "U01",
+    "requirement": "创新与前瞻优先",
+    "design_artifact": "docs/00_研究宪章_本轮究竟追求什么.md",
+    "dot_tasks": "A01,D02",
+    "acceptance": "不以当前实验/硬件可行性筛除方向"
+  },
+  {
+    "id": "U02",
+    "requirement": "保留并补充原ZIP",
+    "design_artifact": "specs/source_inventory.json",
+    "dot_tasks": "A00",
+    "acceptance": "原始字节与191个原文件完整保留"
+  },
+  {
+    "id": "U03",
+    "requirement": "全部目标、方法、提示",
+    "design_artifact": "specs/prompt_registry.json",
+    "dot_tasks": "A01-Z02",
+    "acceptance": "25角色提示+机制内专用指令+133任务卡"
+  },
+  {
+    "id": "U04",
+    "requirement": "用足Dot工具",
+    "design_artifact": "docs/12_Dot工具编排与权限矩阵.md",
+    "dot_tasks": "A00,V01-V07",
+    "acceptance": "真实schema发现，已授权工具优先，媒体有降级"
+  },
+  {
+    "id": "U05",
+    "requirement": "Agent防偏离",
+    "design_artifact": "specs/execution_policy.json",
+    "dot_tasks": "A05,Q02",
+    "acceptance": "动作分类、工作区、文件owner、回执；不是绝对防错保证"
+  },
+  {
+    "id": "U06",
+    "requirement": "一次性全流程",
+    "design_artifact": "prompts/P00_一次性总控.md",
+    "dot_tasks": "A00-Z02",
+    "acceptance": "自动推进与恢复，不许假承诺无限平台执行"
+  },
+  {
+    "id": "U07",
+    "requirement": "每点独立Markdown",
+    "design_artifact": "FILE_INDEX.md",
+    "dot_tasks": "all",
+    "acceptance": "独立H/I/C/X/F/P/task/media文件"
+  },
+  {
+    "id": "U08",
+    "requirement": "不做模型实测",
+    "design_artifact": "docs/15_未来研究入口_本轮锁定.md",
+    "dot_tasks": "A05,Q01,Q02",
+    "acceptance": "所有研究模型路径not_run；只实际执行计划工具与有限数学"
+  },
+  {
+    "id": "U09",
+    "requirement": "科研程序与pipeline写全的任务",
+    "design_artifact": "docs/06_完整目标仓库与源码责任.md",
+    "dot_tasks": "A02-L13,M01-M48,C01-C20,X01-X12",
+    "acceptance": "本包是执行设计，目标完整源码由Dot生成，不冒称已经实现"
+  },
+  {
+    "id": "U10",
+    "requirement": "ZIP和Word",
+    "design_artifact": "START_HERE.md",
+    "dot_tasks": "Z01,Z02",
+    "acceptance": "本次交付ZIP及研究总册Word，目标项目还要由Dot另封包"
+  }
+]

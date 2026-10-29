@@ -1,0 +1,953 @@
+{
+  "task_id": "D01",
+  "research_state": "NOT_RUN",
+  "observations": [
+    {
+      "capture_id": "D01_web_01_turn0view0",
+      "url": "https://arxiv.org/abs/2610.27813",
+      "title": "LatBridge: Efficient and Stable Model Replacement in Latent-Communication Multi-Agent Systems",
+      "authors": "Jiajun Zhu, Haobo Li, Zixin Chen, Huamin Qu, Wenshuo Zhang",
+      "metadata_lines": [
+        "L8: [Submitted on 20 Oct 2026]",
+        "L9: # Title:LatBridge: Efficient and Stable Model Replacement in Latent-Communication Multi-Agent Systems",
+        "L11: Authors:【5†Jiajun Zhu】, 【6†Haobo Li】, 【7†Zixin Chen】, 【8†Huamin Qu】, 【9†Wenshuo Zhang】",
+        "L26: [v1] Tue, 20 Oct 2026 08:06:13 UTC (725 KB)"
+      ],
+      "tool_locator": "turn0view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view1",
+      "url": "https://arxiv.org/abs/2610.23056",
+      "title": "Thought Blocks: Non-Autoregressive Latent Communication for Multi-Agent Systems via Trajectory-to-State Compilation",
+      "authors": "Zhenhan Guan, Xiaolong Liu, Hengwei Ye, Zheng Tian",
+      "metadata_lines": [
+        "L8: [Submitted on 16 Oct 2026]",
+        "L9: # Title:Thought Blocks: Non-Autoregressive Latent Communication for Multi-Agent Systems via Trajectory-to-State Compilation",
+        "L11: Authors:【5†Zhenhan Guan】, 【6†Xiaolong Liu】, 【7†Hengwei Ye】, 【8†Zheng Tian】",
+        "L26: [v1] Fri, 16 Oct 2026 07:35:02 UTC (1,096 KB)"
+      ],
+      "tool_locator": "turn0view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view2",
+      "url": "https://arxiv.org/abs/2605.11178",
+      "title": "Oversmoothing as Representation Degeneracy in Neural Sheaf Diffusion",
+      "authors": "Arif Dönmez, Axel Mosig, Ellen Fritsche, Katharina Koch",
+      "metadata_lines": [
+        "L8: [Submitted on 11 May 2026]",
+        "L9: # Title:Oversmoothing as Representation Degeneracy in Neural Sheaf Diffusion",
+        "L11: Authors:【5†Arif Dönmez】, 【6†Axel Mosig】, 【7†Ellen Fritsche】, 【8†Katharina Koch】",
+        "L21: Comments:  | 15 pages, Comments welcome"
+      ],
+      "tool_locator": "turn0view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view3",
+      "url": "https://arxiv.org/abs/2602.16612",
+      "title": "Causal and Compositional Abstraction",
+      "authors": "Robin Lorenz, Sean Tull",
+      "metadata_lines": [
+        "L8: [Submitted on 18 Feb 2026]",
+        "L9: # Title:Causal and Compositional Abstraction",
+        "L11: Authors:【5†Robin Lorenz】, 【6†Sean Tull】",
+        "L28: [v1] Wed, 18 Feb 2026 17:06:09 UTC (16,557 KB)"
+      ],
+      "tool_locator": "turn0view3",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view4",
+      "url": "https://arxiv.org/abs/2610.28905",
+      "title": "Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+      "authors": "Alan-Barsag Gazzaev, Alexey Gavrilov, Sergey Muravyov, Ilya Makarov",
+      "metadata_lines": [
+        "L8: [Submitted on 20 Oct 2026]",
+        "L9: # Title:Hidden Messages Between Diffusion Language Model Agents: Causal Evidence for Latent Communication",
+        "L11: Authors:【5†Alan-Barsag Gazzaev】, 【6†Alexey Gavrilov】, 【7†Sergey Muravyov】, 【8†Ilya Makarov】",
+        "L20: Comments:  | Accepted at the DiffuLM Workshop at NeurIPS 2026",
+        "L28: [v1] Tue, 20 Oct 2026 20:31:16 UTC (18 KB)"
+      ],
+      "tool_locator": "turn0view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view5",
+      "url": "https://arxiv.org/abs/2602.14486",
+      "title": "Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+      "authors": "Fabian Gröger, Shuo Wen, Maria Brbić",
+      "metadata_lines": [
+        "L8: [Submitted on 16 Feb 2026 (【5†v1】), last revised 25 Jun 2026 (this version, v2)]",
+        "L9: # Title:Revisiting the Platonic Representation Hypothesis: An Aristotelian View",
+        "L11: Authors:【6†Fabian Gröger】, 【7†Shuo Wen】, 【8†Maria Brbić】",
+        "L19: Comments:  | ICML 2026 camera-ready",
+        "L27: 【5†[v1]】 Mon, 16 Feb 2026 06:01:23 UTC (3,386 KB)",
+        "L28: [v2] Thu, 25 Jun 2026 06:33:52 UTC (3,554 KB)"
+      ],
+      "tool_locator": "turn0view5",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view6",
+      "url": "https://arxiv.org/abs/2609.27252",
+      "title": "What Converges in the Platonic Representation Hypothesis? Structure over Geometry",
+      "authors": "Junwon You, Mihyun Jang, Sangwoo Mo, Jae-Hun Jung",
+      "metadata_lines": [
+        "L8: [Submitted on 23 Sep 2026]",
+        "L9: # Title:What Converges in the Platonic Representation Hypothesis? Structure over Geometry",
+        "L11: Authors:【5†Junwon You】, 【6†Mihyun Jang】, 【7†Sangwoo Mo】, 【8†Jae-Hun Jung】",
+        "L20: Comments:  | 33 pages, 12 figures, 6 tables",
+        "L28: [v1] Wed, 23 Sep 2026 02:38:04 UTC (9,242 KB)"
+      ],
+      "tool_locator": "turn0view6",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_01_turn0view7",
+      "url": "https://arxiv.org/abs/2511.09149",
+      "title": "Enabling Agents to Communicate Entirely in Latent Space",
+      "authors": "Zhuoyun Du, Runze Wang, Huiyu Bai, Zouying Cao, Xiaoyong Zhu, Yu Cheng, Bo Zheng, Wei Chen, Haochao Ying",
+      "metadata_lines": [
+        "L8: [Submitted on 12 Nov 2025 (【5†v1】), last revised 13 Jul 2026 (this version, v5)]",
+        "L9: # Title:Enabling Agents to Communicate Entirely in Latent Space",
+        "L11: Authors:【6†Zhuoyun Du】, 【7†Runze Wang】, 【8†Huiyu Bai】, 【9†Zouying Cao】, 【10†Xiaoyong Zhu】, 【11†Yu Cheng】, 【12†Bo Zheng】, 【13†Wei Chen】, 【14†Haochao Ying】",
+        "L20: Comments:  | Accepted to ACL 2026",
+        "L28: 【5†[v1]】 Wed, 12 Nov 2025 09:37:22 UTC (6,748 KB)",
+        "L29: 【22†[v2]】 Wed, 7 Jan 2026 03:39:11 UTC (10,409 KB)",
+        "L30: 【23†[v3]】 Wed, 21 Jan 2026 02:35:09 UTC (10,409 KB)",
+        "L31: 【24†[v4]】 Thu, 16 Apr 2026 15:10:52 UTC (10,407 KB)",
+        "L32: [v5] Mon, 13 Jul 2026 02:48:50 UTC (10,407 KB)"
+      ],
+      "tool_locator": "turn0view7",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view0",
+      "url": "https://arxiv.org/abs/2511.20639",
+      "title": "Latent Collaboration in Multi-Agent Systems",
+      "authors": "Jiaru Zou, Ruizhong Qiu, Gaotang Li, Xiyuan Yang, Katherine Tieu, Pan Lu, Ke Shen, Hanghang Tong, Yejin Choi, Jingrui He, James Zou, Mengdi Wang, Ling Yang",
+      "metadata_lines": [
+        "L8: [Submitted on 25 Nov 2025 (【5†v1】), last revised 3 Aug 2026 (this version, v4)]",
+        "L9: # Title:Latent Collaboration in Multi-Agent Systems",
+        "L11: Authors:【6†Jiaru Zou】, 【7†Ruizhong Qiu】, 【8†Gaotang Li】, 【9†Xiyuan Yang】, 【10†Katherine Tieu】, 【11†Pan Lu】, 【12†Ke Shen】, 【13†Hanghang Tong】, 【14†Yejin Choi】, 【15†Jingrui He】, 【6†James Zou】, 【16†Mengdi Wang】, 【17†Ling Yang】",
+        "L19: Comments:  | ICML2026 Spotlight, Project: 【20†this https URL†github.com】",
+        "L27: 【5†[v1]】 Tue, 25 Nov 2025 18:56:57 UTC (2,194 KB)",
+        "L28: 【25†[v2]】 Mon, 8 Dec 2025 04:05:49 UTC (2,196 KB)",
+        "L29: 【26†[v3]】 Mon, 1 Jun 2026 00:56:21 UTC (3,729 KB)",
+        "L30: [v4] Mon, 3 Aug 2026 15:58:02 UTC (3,730 KB)"
+      ],
+      "tool_locator": "turn1view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view1",
+      "url": "https://arxiv.org/abs/2510.03215",
+      "title": "Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+      "authors": "Tianyu Fu, Zihan Min, Hanling Zhang, Jichao Yan, Guohao Dai, Wanli Ouyang, Yu Wang",
+      "metadata_lines": [
+        "L8: [Submitted on 3 Oct 2025 (【5†v1】), last revised 2 Mar 2026 (this version, v2)]",
+        "L9: # Title:Cache-to-Cache: Direct Semantic Communication Between Large Language Models",
+        "L11: Authors:【6†Tianyu Fu】, 【7†Zihan Min】, 【8†Hanling Zhang】, 【9†Jichao Yan】, 【10†Guohao Dai】, 【11†Wanli Ouyang】, 【12†Yu Wang】",
+        "L20: Comments:  | Published in ICLR'26",
+        "L30: 【5†[v1]】 Fri, 3 Oct 2025 17:52:32 UTC (484 KB)",
+        "L31: [v2] Mon, 2 Mar 2026 19:24:02 UTC (546 KB)"
+      ],
+      "tool_locator": "turn1view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view2",
+      "url": "https://arxiv.org/abs/1902.04615",
+      "title": "Gauge Equivariant Convolutional Networks and the Icosahedral CNN",
+      "authors": "Taco S. Cohen, Maurice Weiler, Berkay Kicanaoglu, Max Welling",
+      "metadata_lines": [
+        "L8: [Submitted on 11 Feb 2019 (【5†v1】), last revised 13 May 2019 (this version, v3)]",
+        "L9: # Title:Gauge Equivariant Convolutional Networks and the Icosahedral CNN",
+        "L11: Authors:【6†Taco S. Cohen】, 【7†Maurice Weiler】, 【8†Berkay Kicanaoglu】, 【9†Max Welling】",
+        "L19: Comments:  | Proceedings of the International Conference on Machine Learning (ICML), 2019",
+        "L27: 【5†[v1]】 Mon, 11 Feb 2019 17:01:05 UTC (1,704 KB)",
+        "L28: 【16†[v2]】 Mon, 22 Apr 2019 09:50:05 UTC (1,976 KB)",
+        "L29: [v3] Mon, 13 May 2019 23:03:52 UTC (2,180 KB)"
+      ],
+      "tool_locator": "turn1view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view3",
+      "url": "https://arxiv.org/abs/2202.04579",
+      "title": "Neural Sheaf Diffusion: A Topological Perspective on Heterophily and Oversmoothing in GNNs",
+      "authors": "Cristian Bodnar, Francesco Di Giovanni, Benjamin Paul Chamberlain, Pietro Liò, Michael M. Bronstein",
+      "metadata_lines": [
+        "L8: [Submitted on 9 Feb 2022 (【5†v1】), last revised 6 Jan 2023 (this version, v4)]",
+        "L9: # Title:Neural Sheaf Diffusion: A Topological Perspective on Heterophily and Oversmoothing in GNNs",
+        "L11: Authors:【6†Cristian Bodnar】, 【7†Francesco Di Giovanni】, 【8†Benjamin Paul Chamberlain】, 【9†Pietro Liò】, 【10†Michael M. Bronstein】",
+        "L20: Comments:  | Accepted to NeurIPS 2022. Contains 29 pages, 10 figures",
+        "L28: 【5†[v1]】 Wed, 9 Feb 2022 17:25:02 UTC (11,850 KB)",
+        "L29: 【17†[v2]】 Wed, 25 May 2022 11:39:37 UTC (13,879 KB)",
+        "L30: 【18†[v3]】 Fri, 21 Oct 2022 11:50:32 UTC (10,735 KB)",
+        "L31: [v4] Fri, 6 Jan 2023 12:48:30 UTC (10,735 KB)"
+      ],
+      "tool_locator": "turn1view3",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view4",
+      "url": "https://arxiv.org/abs/2006.08381",
+      "title": "DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning",
+      "authors": "Kevin Ellis, Catherine Wong, Maxwell Nye, Mathias Sable-Meyer, Luc Cary, Lucas Morales, Luke Hewitt, Armando Solar-Lezama, Joshua B. Tenenbaum",
+      "metadata_lines": [
+        "L8: [Submitted on 15 Jun 2020]",
+        "L9: # Title:DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning",
+        "L11: Authors:【5†Kevin Ellis】, 【6†Catherine Wong】, 【7†Maxwell Nye】, 【8†Mathias Sable-Meyer】, 【9†Luc Cary】, 【10†Lucas Morales】, 【11†Luke Hewitt】, 【12†Armando Solar-Lezama】, 【13†Joshua B. Tenenbaum】",
+        "L26: [v1] Mon, 15 Jun 2020 13:06:29 UTC (4,675 KB)"
+      ],
+      "tool_locator": "turn1view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view5",
+      "url": "https://arxiv.org/abs/1909.01377",
+      "title": "Deep Equilibrium Models",
+      "authors": "Shaojie Bai, J. Zico Kolter, Vladlen Koltun",
+      "metadata_lines": [
+        "L8: [Submitted on 3 Sep 2019 (【5†v1】), last revised 28 Oct 2019 (this version, v2)]",
+        "L9: # Title:Deep Equilibrium Models",
+        "L11: Authors:【6†Shaojie Bai】, 【7†J. Zico Kolter】, 【8†Vladlen Koltun】",
+        "L19: Comments:  | NeurIPS 2019 Spotlight Oral",
+        "L27: 【5†[v1]】 Tue, 3 Sep 2019 18:02:50 UTC (721 KB)",
+        "L28: [v2] Mon, 28 Oct 2019 22:25:01 UTC (720 KB)"
+      ],
+      "tool_locator": "turn1view5",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view6",
+      "url": "https://arxiv.org/abs/1807.03480",
+      "title": "Neural Task Graphs: Generalizing to Unseen Tasks from a Single Video Demonstration",
+      "authors": "De-An Huang, Suraj Nair, Danfei Xu, Yuke Zhu, Animesh Garg, Li Fei-Fei, Silvio Savarese, Juan Carlos Niebles",
+      "metadata_lines": [
+        "L8: [Submitted on 10 Jul 2018 (【5†v1】), last revised 6 Mar 2019 (this version, v2)]",
+        "L9: # Title:Neural Task Graphs: Generalizing to Unseen Tasks from a Single Video Demonstration",
+        "L11: Authors:【6†De-An Huang】, 【7†Suraj Nair】, 【8†Danfei Xu】, 【9†Yuke Zhu】, 【10†Animesh Garg】, 【11†Li Fei-Fei】, 【12†Silvio Savarese】, 【13†Juan Carlos Niebles】",
+        "L19: Comments:  | CVPR 2019",
+        "L27: 【5†[v1]】 Tue, 10 Jul 2018 04:55:45 UTC (6,279 KB)",
+        "L28: [v2] Wed, 6 Mar 2019 21:56:52 UTC (6,717 KB)"
+      ],
+      "tool_locator": "turn1view6",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_02_turn1view7",
+      "url": "https://arxiv.org/abs/2106.02997",
+      "title": "Causal Abstractions of Neural Networks",
+      "authors": "Atticus Geiger, Hanson Lu, Thomas Icard, Christopher Potts",
+      "metadata_lines": [
+        "L8: [Submitted on 6 Jun 2021 (【5†v1】), last revised 27 Oct 2021 (this version, v2)]",
+        "L9: # Title:Causal Abstractions of Neural Networks",
+        "L11: Authors:【6†Atticus Geiger】, 【7†Hanson Lu】, 【8†Thomas Icard】, 【9†Christopher Potts】",
+        "L19: Comments:  | NeurIPS 2021",
+        "L27: 【5†[v1]】 Sun, 6 Jun 2021 01:07:43 UTC (6,456 KB)",
+        "L28: [v2] Wed, 27 Oct 2021 00:41:24 UTC (6,462 KB)"
+      ],
+      "tool_locator": "turn1view7",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view0",
+      "url": "https://arxiv.org/abs/physics/0004057",
+      "title": "The information bottleneck method",
+      "authors": "Naftali Tishby (Hebrew University and NEC Research Institute), Fernando C. Pereira (ATT Shannon Laboratory), William Bialek (NEC Research Institute)",
+      "metadata_lines": [
+        "L8: [Submitted on 24 Apr 2000]",
+        "L9: # Title:The information bottleneck method",
+        "L11: Authors:【5†Naftali Tishby】 (Hebrew University and NEC Research Institute), 【6†Fernando C. Pereira】 (ATT Shannon Laboratory), 【7†William Bialek】 (NEC Research Institute)",
+        "L26: [v1] Mon, 24 Apr 2000 15:22:30 UTC (11 KB)"
+      ],
+      "tool_locator": "turn2view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view1",
+      "url": "https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture17.htm",
+      "title": "Lecture 17",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn2view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view2",
+      "url": "https://arxiv.org/abs/1606.04474",
+      "title": "Learning to learn by gradient descent by gradient descent",
+      "authors": "Marcin Andrychowicz, Misha Denil, Sergio Gomez, Matthew W. Hoffman, David Pfau, Tom Schaul, Brendan Shillingford, Nando de Freitas",
+      "metadata_lines": [
+        "L8: [Submitted on 14 Jun 2016 (【5†v1】), last revised 30 Nov 2016 (this version, v2)]",
+        "L9: # Title:Learning to learn by gradient descent by gradient descent",
+        "L11: Authors:【6†Marcin Andrychowicz】, 【7†Misha Denil】, 【8†Sergio Gomez】, 【9†Matthew W. Hoffman】, 【10†David Pfau】, 【11†Tom Schaul】, 【12†Brendan Shillingford】, 【13†Nando de Freitas】",
+        "L24: 【5†[v1]】 Tue, 14 Jun 2016 17:49:32 UTC (3,040 KB)",
+        "L25: [v2] Wed, 30 Nov 2016 16:45:45 UTC (3,270 KB)"
+      ],
+      "tool_locator": "turn2view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view3",
+      "url": "https://arxiv.org/abs/2310.20415",
+      "title": "Coalitional Manipulations and Immunity of the Shapley Value",
+      "authors": "Christian Basteck, Frank Huettner",
+      "metadata_lines": [
+        "L8: [Submitted on 31 Oct 2023]",
+        "L9: # Title:Coalitional Manipulations and Immunity of the Shapley Value",
+        "L11: Authors:【5†Christian Basteck】, 【6†Frank Huettner】",
+        "L26: [v1] Tue, 31 Oct 2023 12:43:31 UTC (89 KB)"
+      ],
+      "tool_locator": "turn2view3",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view4",
+      "url": "https://arxiv.org/abs/1901.01753",
+      "title": "Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions",
+      "authors": "Rui Wang, Joel Lehman, Jeff Clune, Kenneth O. Stanley",
+      "metadata_lines": [
+        "L8: [Submitted on 7 Jan 2019 (【5†v1】), last revised 21 Feb 2019 (this version, v3)]",
+        "L9: # Title:Paired Open-Ended Trailblazer (POET): Endlessly Generating Increasingly Complex and Diverse Learning Environments and Their Solutions",
+        "L11: Authors:【6†Rui Wang】, 【7†Joel Lehman】, 【8†Jeff Clune】, 【9†Kenneth O. Stanley】",
+        "L21: Comments:  | 28 pages, 9 figures"
+      ],
+      "tool_locator": "turn2view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view5",
+      "url": "https://arxiv.org/abs/2012.02096",
+      "title": "Emergent Complexity and Zero-shot Transfer via Unsupervised Environment Design",
+      "authors": "Michael Dennis, Natasha Jaques, Eugene Vinitsky, Alexandre Bayen, Stuart Russell, Andrew Critch, Sergey Levine",
+      "metadata_lines": [
+        "L8: [Submitted on 3 Dec 2020 (【5†v1】), last revised 4 Feb 2021 (this version, v2)]",
+        "L9: # Title:Emergent Complexity and Zero-shot Transfer via Unsupervised Environment Design",
+        "L11: Authors:【6†Michael Dennis】, 【7†Natasha Jaques】, 【8†Eugene Vinitsky】, 【9†Alexandre Bayen】, 【10†Stuart Russell】, 【11†Andrew Critch】, 【12†Sergey Levine】",
+        "L27: 【5†[v1]】 Thu, 3 Dec 2020 17:37:01 UTC (3,137 KB)",
+        "L28: [v2] Thu, 4 Feb 2021 03:01:31 UTC (6,307 KB)"
+      ],
+      "tool_locator": "turn2view5",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view6",
+      "url": "https://arxiv.org/abs/1112.5745",
+      "title": "Bayesian Active Learning for Classification and Preference Learning",
+      "authors": "Neil Houlsby, Ferenc Huszár, Zoubin Ghahramani, Máté Lengyel",
+      "metadata_lines": [
+        "L8: [Submitted on 24 Dec 2011]",
+        "L9: # Title:Bayesian Active Learning for Classification and Preference Learning",
+        "L11: Authors:【5†Neil Houlsby】, 【6†Ferenc Huszár】, 【7†Zoubin Ghahramani】, 【8†Máté Lengyel】",
+        "L26: [v1] Sat, 24 Dec 2011 17:53:19 UTC (88 KB)"
+      ],
+      "tool_locator": "turn2view6",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_03_turn2view7",
+      "url": "https://arxiv.org/abs/1910.07910",
+      "title": "Generalized Absorptive Polynomials and Provenance Semantics for Fixed-Point Logic",
+      "authors": "Katrin M. Dannert, Erich Grädel, Matthias Naaf, Val Tannen",
+      "metadata_lines": [
+        "L8: [Submitted on 17 Oct 2019 (【5†v1】), last revised 10 Jul 2020 (this version, v3)]",
+        "L9: # Title:Generalized Absorptive Polynomials and Provenance Semantics for Fixed-Point Logic",
+        "L11: Authors:【6†Katrin M. Dannert】, 【7†Erich Grädel】, 【8†Matthias Naaf】, 【9†Val Tannen】"
+      ],
+      "tool_locator": "turn2view7",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view0",
+      "url": "https://arxiv.org/abs/1605.06676",
+      "title": "Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+      "authors": "Jakob N. Foerster, Yannis M. Assael, Nando de Freitas, Shimon Whiteson",
+      "metadata_lines": [
+        "L8: [Submitted on 21 May 2016 (【5†v1】), last revised 24 May 2016 (this version, v2)]",
+        "L9: # Title:Learning to Communicate with Deep Multi-Agent Reinforcement Learning",
+        "L11: Authors:【6†Jakob N. Foerster】, 【7†Yannis M. Assael】, 【8†Nando de Freitas】, 【9†Shimon Whiteson】",
+        "L26: 【5†[v1]】 Sat, 21 May 2016 17:20:04 UTC (1,052 KB)",
+        "L27: [v2] Tue, 24 May 2016 18:16:56 UTC (3,387 KB)"
+      ],
+      "tool_locator": "turn3view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view1",
+      "url": "https://arxiv.org/abs/1609.09106",
+      "title": "HyperNetworks",
+      "authors": "David Ha, Andrew Dai, Quoc V. Le",
+      "metadata_lines": [
+        "L8: [Submitted on 27 Sep 2016 (【5†v1】), last revised 1 Dec 2016 (this version, v4)]",
+        "L9: # Title:HyperNetworks",
+        "L11: Authors:【6†David Ha】, 【7†Andrew Dai】, 【8†Quoc V. Le】",
+        "L27: 【5†[v1]】 Tue, 27 Sep 2016 05:57:00 UTC (4,158 KB)",
+        "L28: 【15†[v2]】 Thu, 27 Oct 2016 02:04:56 UTC (2,538 KB)",
+        "L29: 【16†[v3]】 Fri, 28 Oct 2016 00:28:32 UTC (2,538 KB)",
+        "L30: [v4] Thu, 1 Dec 2016 10:08:15 UTC (2,564 KB)"
+      ],
+      "tool_locator": "turn3view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view2",
+      "url": "https://arxiv.org/abs/2103.01197",
+      "title": "Coordination Among Neural Modules Through a Shared Global Workspace",
+      "authors": "Anirudh Goyal, Aniket Didolkar, Alex Lamb, Kartikeya Badola, Nan Rosemary Ke, Nasim Rahaman, Jonathan Binas, Charles Blundell, Michael Mozer, Yoshua Bengio",
+      "metadata_lines": [
+        "L8: [Submitted on 1 Mar 2021 (【5†v1】), last revised 22 Mar 2022 (this version, v2)]",
+        "L9: # Title:Coordination Among Neural Modules Through a Shared Global Workspace",
+        "L11: Authors:【6†Anirudh Goyal】, 【7†Aniket Didolkar】, 【8†Alex Lamb】, 【9†Kartikeya Badola】, 【10†Nan Rosemary Ke】, 【11†Nasim Rahaman】, 【12†Jonathan Binas】, 【13†Charles Blundell】, 【14†Michael Mozer】, 【15†Yoshua Bengio】"
+      ],
+      "tool_locator": "turn3view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view3",
+      "url": "https://arxiv.org/abs/2303.02536",
+      "title": "Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations",
+      "authors": "Atticus Geiger, Zhengxuan Wu, Christopher Potts, Thomas Icard, Noah D. Goodman",
+      "metadata_lines": [
+        "L8: [Submitted on 5 Mar 2023 (【5†v1】), last revised 21 Feb 2024 (this version, v4)]",
+        "L9: # Title:Finding Alignments Between Interpretable Causal Variables and Distributed Neural Representations",
+        "L11: Authors:【6†Atticus Geiger】, 【7†Zhengxuan Wu】, 【8†Christopher Potts】, 【9†Thomas Icard】, 【10†Noah D. Goodman】"
+      ],
+      "tool_locator": "turn3view3",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view4",
+      "url": "https://arxiv.org/abs/2405.07987",
+      "title": "The Platonic Representation Hypothesis",
+      "authors": "Minyoung Huh, Brian Cheung, Tongzhou Wang, Phillip Isola",
+      "metadata_lines": [
+        "L8: [Submitted on 13 May 2024 (【5†v1】), last revised 25 Jul 2024 (this version, v5)]",
+        "L9: # Title:The Platonic Representation Hypothesis",
+        "L11: Authors:【6†Minyoung Huh】, 【7†Brian Cheung】, 【8†Tongzhou Wang】, 【9†Phillip Isola】",
+        "L18: Comments:  | Equal contributions. Project: 【12†this https URL†phillipi.github.io】 Code: 【13†this https URL†github.com】",
+        "L26: 【5†[v1]】 Mon, 13 May 2024 17:58:30 UTC (1,316 KB)",
+        "L27: 【18†[v2]】 Sun, 21 Jul 2024 05:11:37 UTC (4,977 KB)",
+        "L28: 【19†[v3]】 Tue, 23 Jul 2024 01:42:21 UTC (4,977 KB)",
+        "L29: 【20†[v4]】 Wed, 24 Jul 2024 05:01:21 UTC (4,977 KB)",
+        "L30: [v5] Thu, 25 Jul 2024 09:33:50 UTC (4,977 KB)"
+      ],
+      "tool_locator": "turn3view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view5",
+      "url": "https://openai.com/index/introducing-dots/",
+      "title": "Introducing dots | OpenAI",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn3view5",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view6",
+      "url": "https://docs.pytorch.org/docs/2.14/notes/autograd.html",
+      "title": "Autograd mechanics — PyTorch 2.14 documentation",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn3view6",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view7",
+      "url": "https://huggingface.co/docs/transformers/main/en/kv_cache",
+      "title": "Cache strategies · Hugging Face",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn3view7",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view8",
+      "url": "https://huggingface.co/docs/safetensors/index",
+      "title": "Safetensors · Hugging Face",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn3view8",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_04_turn3view9",
+      "url": "https://docs.pytorch.org/docs/stable/notes/autograd.html",
+      "title": "Redirecting…",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn3view9",
+      "status": "redirect_or_minimal",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view0",
+      "url": "https://arxiv.org/abs/cs/0408036",
+      "title": "Consensus on Transaction Commit",
+      "authors": "Jim Gray, Leslie Lamport",
+      "metadata_lines": [
+        "L8: [Submitted on 14 Aug 2004]",
+        "L9: # Title:Consensus on Transaction Commit",
+        "L11: Authors:【5†Jim Gray】, 【6†Leslie Lamport】",
+        "L18: Comments:  | Original at 【8†this http URL†research.microsoft.com】",
+        "L28: [v1] Sat, 14 Aug 2004 21:23:41 UTC (242 KB)"
+      ],
+      "tool_locator": "turn6view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view1",
+      "url": "https://arxiv.org/abs/1004.2515",
+      "title": "Nonnegative Decomposition of Multivariate Information",
+      "authors": "Paul L. Williams, Randall D. Beer",
+      "metadata_lines": [
+        "L8: [Submitted on 14 Apr 2010]",
+        "L9: # Title:Nonnegative Decomposition of Multivariate Information",
+        "L11: Authors:【5†Paul L. Williams】, 【6†Randall D. Beer】",
+        "L20: Comments:  | 14 pages, 9 figures",
+        "L29: [v1] Wed, 14 Apr 2010 22:12:52 UTC (1,548 KB)"
+      ],
+      "tool_locator": "turn6view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view2",
+      "url": "https://www.cs.mcgill.ca/~prakash/Pubs/siamFP11.pdf",
+      "title": "siamFP11.dvi",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn6view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view3",
+      "url": "https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf",
+      "title": "Internal Error ()",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn6view3",
+      "status": "fetch_failed",
+      "fetch_error": "L0: Failed to fetch https://srl.cs.jhu.edu/pubs/SRL2003-02.pdf: (502) Bad Gateway",
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view4",
+      "url": "https://isl.stanford.edu/~cover/papers/paper94.pdf",
+      "title": "Successive refinement of information - Information Theory, IEEE Transactions on",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn6view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view5",
+      "url": "https://dspace.mit.edu/entities/publication/5377b306-4ecc-4687-b1f5-78cbb4a0543a",
+      "title": "A Truth Maintenance System",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn6view5",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_05_turn6view6",
+      "url": "https://doi.org/10.1162/089976698300017746",
+      "title": "Internal Error ()",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn6view6",
+      "status": "fetch_failed",
+      "fetch_error": "L0: Failed to fetch https://doi.org/10.1162/089976698300017746: (403) Forbidden",
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_06_turn9view0",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "authors": "Geoffrey Hinton, Oriol Vinyals, Jeff Dean",
+      "metadata_lines": [
+        "L8: [Submitted on 9 Mar 2015]",
+        "L9: # Title:Distilling the Knowledge in a Neural Network",
+        "L11: Authors:【5†Geoffrey Hinton】, 【6†Oriol Vinyals】, 【7†Jeff Dean】",
+        "L19: Comments:  | NIPS 2014 Deep Learning Workshop",
+        "L27: [v1] Mon, 9 Mar 2015 15:44:49 UTC (18 KB)"
+      ],
+      "tool_locator": "turn9view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_06_turn9view1",
+      "url": "https://arxiv.org/abs/1803.10122",
+      "title": "World Models",
+      "authors": "David Ha, Jürgen Schmidhuber",
+      "metadata_lines": [
+        "L8: [Submitted on 27 Mar 2018 (【5†v1】), last revised 9 May 2018 (this version, v4)]",
+        "L9: # Title:World Models",
+        "L11: Authors:【6†David Ha】, 【7†Jürgen Schmidhuber】",
+        "L27: 【5†[v1]】 Tue, 27 Mar 2018 15:08:55 UTC (2,167 KB)",
+        "L28: 【16†[v2]】 Mon, 2 Apr 2018 05:20:40 UTC (2,174 KB)",
+        "L29: 【17†[v3]】 Mon, 9 Apr 2018 07:33:20 UTC (1,952 KB)",
+        "L30: [v4] Wed, 9 May 2018 09:06:27 UTC (1,946 KB)"
+      ],
+      "tool_locator": "turn9view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_06_turn9view2",
+      "url": "https://www.ee.ucla.edu/~tabuada/Papers/EventTriggered.pdf",
+      "title": "",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn9view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_06_turn9view3",
+      "url": "https://www.microsoft.com/en-us/research/publication/consensus-on-transaction-commit/",
+      "title": "Internal Error ()",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn9view3",
+      "status": "fetch_failed",
+      "fetch_error": "L0: Failed to fetch https://www.microsoft.com/en-us/research/publication/consensus-on-transaction-commit/: (400) Timeout fetching",
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_06_turn9view4",
+      "url": "https://statistics.stanford.edu/technical-reports/successive-refinement-information",
+      "title": "Successive Refinement of Information | Department of Statistics",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn9view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_07_turn11view0",
+      "url": "https://arxiv.org/abs/1207.4114",
+      "title": "Metrics for Finite Markov Decision Processes",
+      "authors": "Norman Ferns, Prakash Panangaden, Doina Precup",
+      "metadata_lines": [
+        "L8: [Submitted on 11 Jul 2012]",
+        "L9: # Title:Metrics for Finite Markov Decision Processes",
+        "L11: Authors:【5†Norman Ferns】, 【6†Prakash Panangaden】, 【7†Doina Precup】",
+        "L18: Comments:  | Appears in Proceedings of the Twentieth Conference on Uncertainty in Artificial Intelligence (UAI2004)",
+        "L27: [v1] Wed, 11 Jul 2012 14:43:04 UTC (377 KB)"
+      ],
+      "tool_locator": "turn11view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_07_turn11view1",
+      "url": "https://papers.agoric.com/papers/capability-myths-demolished/full-text/",
+      "title": "Capability Myths Demolished - Agoric",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn11view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_07_turn11view2",
+      "url": "https://groups.psych.northwestern.edu/gentner/papers/Gentner83.2b.pdf",
+      "title": "",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn11view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_07_turn11view3",
+      "url": "https://www.seas.ucla.edu/~tabuada/pub.html",
+      "title": "Paulo Tabuada",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn11view3",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view0",
+      "url": "https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture17.htm",
+      "title": "Lecture 17",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view0",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view1",
+      "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html",
+      "title": "E.W.Dijkstra Archive: Guarded commands, non-determinacy and formal derivation of programs (EWD 472)",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view1",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view2",
+      "url": "https://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf",
+      "title": "Factor graphs and the sum-product algorithm - Information Theory, IEEE Transactions on",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view2",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view3",
+      "url": "https://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf",
+      "title": "capmyths-3.doc",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view3",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view4",
+      "url": "https://openai.com/index/introducing-dots/",
+      "title": "Introducing dots | OpenAI",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view4",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view5",
+      "url": "https://docs.pytorch.org/docs/2.14/notes/autograd.html",
+      "title": "Autograd mechanics — PyTorch 2.14 documentation",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view5",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view6",
+      "url": "https://huggingface.co/docs/transformers/main/en/kv_cache",
+      "title": "Cache strategies · Hugging Face",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view6",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_08_turn12view7",
+      "url": "https://www.seas.ucla.edu/~tabuada/pub.html",
+      "title": "Paulo Tabuada",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn12view7",
+      "status": "primary_open_succeeded",
+      "fetch_error": null,
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Metadata and visible primary-page contents inspected, not a full article replication; no web scripts or model code executed."
+    },
+    {
+      "capture_id": "D01_web_09_turn13view0",
+      "url": "https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture17.htm",
+      "title": "Lecture 17",
+      "authors": null,
+      "metadata_lines": [
+        "L18: ## Interplay of verification and synthesis"
+      ],
+      "tool_locator": "turn13view0",
+      "status": "primary_open_succeeded",
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Title and targeted content inspected; no entire-page archival copy."
+    },
+    {
+      "capture_id": "D01_web_09_turn13view1",
+      "url": "https://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf",
+      "title": "capmyths-3.doc",
+      "authors": null,
+      "metadata_lines": [],
+      "tool_locator": "turn13view1",
+      "status": "primary_open_succeeded",
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Title and targeted content inspected; no entire-page archival copy."
+    },
+    {
+      "capture_id": "D01_web_10_turn14view0",
+      "url": "https://people.csail.mit.edu/asolar/SynthesisCourse2020/Lecture10.htm",
+      "title": "Lecture 10",
+      "authors": null,
+      "metadata_lines": [
+        "L0: # Introduction to Program Synthesis",
+        "L2: © Armando Solar-Lezama. 2018. All rights reserved.",
+        "L3: # Lecture 10: Introduction to functional synthesis.",
+        "L9: ## Framing the synthesis problem",
+        "L18: ## Interplay of verification and synthesis",
+        "L30: ## Counterexample Guided Inductive Synthesis",
+        "L39: ## Beyond CEGIS"
+      ],
+      "tool_locator": "turn14view0",
+      "status": "primary_open_succeeded",
+      "retrieval_date_utc": "2026-10-24",
+      "capture_scope": "Title and targeted content inspected; no entire-page archival copy."
+    }
+  ]
+}

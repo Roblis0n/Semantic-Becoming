@@ -1,0 +1,72 @@
+{
+  "task_id": "M02",
+  "status": "done",
+  "input_digest": "533fd099fdb79b3c51d67f00b8ea586aec0c149fb483c2739bd865de46ff9fb5",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/README.md",
+      "sha256": "36d9a68e36037d962e6e086d191c27063232128dcb46cfed2ef42cc4815b2c24",
+      "bytes": 2186
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/__init__.py",
+      "sha256": "b56d02731dda3bfcfd92e66e26ce916ae93a8b9299fefc6358f681f6ac089ea2",
+      "bytes": 72
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/adapter.py",
+      "sha256": "aa75649c63cc2e3284d5ed61e659ae24f1a4463e7a8d6f606bc6f313f3e159e4",
+      "bytes": 2366
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/losses.py",
+      "sha256": "db8d6504a6f3bf3ce002841130814c54c55302a8ed3f2d48a059f7931e81c98b",
+      "bytes": 1319
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/migration.py",
+      "sha256": "0cbb1b7377fc8800150a23cb9e929a7e05510774b4971e57cdfc88d3335e687b",
+      "bytes": 2120
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/reference.py",
+      "sha256": "b14bc79c4efaf64c661cbaf8a103a0eb6f04a54826c779a5a77dbf65729fc522",
+      "bytes": 2807
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/schema.json",
+      "sha256": "8c9ac774dc69a6da6aa581a0931e649baace1ed7c7887cf81224f44d059de403",
+      "bytes": 1394
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/types.py",
+      "sha256": "a4a52cd9c6385972bc39e020d870d31e0b8b1c6ed36415f7649705f75883a6fd",
+      "bytes": 2100
+    },
+    {
+      "path": "tests/contracts/test_h02.py",
+      "sha256": "71d0e4837abc362fd59e03be8cf595e4eb9e8ad5261d8601a8488fe5cc106b30",
+      "bytes": 2980
+    },
+    {
+      "path": "configs/mechanisms/H02.json",
+      "sha256": "c7a201d03073246c128cf0bcb04864fa701dd2fa88e47cebbf553d05060889e2",
+      "bytes": 3243
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M02_contracts.txt",
+      "sha256": "a46e1cd258eee1cc02a9dc473a4ef87691cf3dbfbdbe50a221178e8c9f03e704"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded response/derivative/trust region/causality/AST contracts pass. Three tensor acquisition paths source only; NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:14:38.485468+00:00"
+}

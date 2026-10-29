@@ -1,0 +1,72 @@
+{
+  "task_id": "M12",
+  "status": "done",
+  "input_digest": "813f3fd1c476f43c8c3fac4666d6b2404a10ef0a38dd4f027472e121023af97b",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/README.md",
+      "sha256": "cbe2115b94197d6996ae2425825f4ad46c0e081afb160732f5bdb19198c5159a",
+      "bytes": 2308
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/__init__.py",
+      "sha256": "5d18c514010ee27e93e33a472d2c16f30ca34bd90b8a9b570a0c12bd6430c904",
+      "bytes": 88
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/adapter.py",
+      "sha256": "ce2e20a9847d167083d369770d283000a81f7c1f73d017e27a0ed3b68f8c1033",
+      "bytes": 1647
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/losses.py",
+      "sha256": "6e4082d780a52f2e5b6b0b43acbcb1c24d195bb8c3bd563556167203e08cd487",
+      "bytes": 1146
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/migration.py",
+      "sha256": "070a864eeda93f900f87784b8b32216a64553b5737757a462ff0f686d53a1e1a",
+      "bytes": 2181
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/reference.py",
+      "sha256": "9dac70c606ddc57bff1e1059f40c15fc1b789618e420974ff5a92b78d55cc9b9",
+      "bytes": 4314
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/schema.json",
+      "sha256": "8f2ba771ea59757a39c944342194fac77136c6e4d76dc10a897bb006797a49fa",
+      "bytes": 1635
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/types.py",
+      "sha256": "940e75a972ddc0dafab35e72ffb365f3835d138a56f6c50e943c66a2f0694374",
+      "bytes": 1244
+    },
+    {
+      "path": "tests/contracts/test_h12.py",
+      "sha256": "5fa0a30c3825310097487c6487182a5207cd7c5f4b4da5c18dc7cb767c38363d",
+      "bytes": 3033
+    },
+    {
+      "path": "configs/mechanisms/H12.json",
+      "sha256": "55c49b160bd6d7d0011276ee88cc97182f97ba9310a622c5661eeaf17f6f6251",
+      "bytes": 3177
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M12_contracts.txt",
+      "sha256": "3576b5d3bb2a08e438f705814e15651f234bbbc5f0f8c0490c72d2a078850884"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded query-independence/version/retraction/atomic persistence contracts and AST gates pass. Multiquery slot encoder-reader source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:26:55.125865+00:00"
+}

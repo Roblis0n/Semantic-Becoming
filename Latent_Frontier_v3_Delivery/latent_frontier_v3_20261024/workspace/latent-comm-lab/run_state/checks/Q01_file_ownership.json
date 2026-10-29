@@ -1,0 +1,2745 @@
+{
+  "files_checked": 684,
+  "unowned": [],
+  "multiple_distinct_owners": [],
+  "ownership_registry_sha256": "1b6a9d8c1aa0e3688cf03c95b13f5a59a7fa58b26da114c7bdd00e486aa45fd4",
+  "scope": "one declared task/coordinator owner per current Python source, test and helper file; workflow ownership, not OS enforcement",
+  "files": [
+    {
+      "path": "src/latent_comm/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/atlas/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/atlas/charts.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/atlas/objectives.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/atlas/routing.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/atlas/transitions.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/backends/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/backends/behavior/__init__.py",
+      "owner": "B05"
+    },
+    {
+      "path": "src/latent_comm/backends/capabilities/__init__.py",
+      "owner": "B01"
+    },
+    {
+      "path": "src/latent_comm/backends/hf_hooks/__init__.py",
+      "owner": "B03"
+    },
+    {
+      "path": "src/latent_comm/backends/hf_kv/__init__.py",
+      "owner": "B04"
+    },
+    {
+      "path": "src/latent_comm/backends/hf_prefix/__init__.py",
+      "owner": "B02"
+    },
+    {
+      "path": "src/latent_comm/backends/storage/__init__.py",
+      "owner": "B06"
+    },
+    {
+      "path": "src/latent_comm/beliefs/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/beliefs/matching.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/beliefs/mixture.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/beliefs/packet.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/beliefs/update.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/branching/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/branching/ancestry.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/branching/fork.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/branching/merge.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/bridges/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/bridges/operator_generator.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/capabilities/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/capabilities/effects.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/capabilities/enforcer.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/capabilities/scopes.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/capsules/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/capsules/reader.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/capsules/store.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/capsules/versioning.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/cli/__init__.py",
+      "owner": "coordinator_cli_integration"
+    },
+    {
+      "path": "src/latent_comm/cli/compile.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/cli/main.py",
+      "owner": "coordinator_cli_integration"
+    },
+    {
+      "path": "src/latent_comm/cli/research.py",
+      "owner": "A05"
+    },
+    {
+      "path": "src/latent_comm/clocks/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/clocks/events.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/clocks/scheduler.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/clocks/staleness.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/coding/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/coding/progressive.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/coding/quantization.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/coding/requests.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/compiler/__init__.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/compiler/export.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/compiler/pipeline.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/compiler/registry.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/compiler/source.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/compiler/types.py",
+      "owner": "A03"
+    },
+    {
+      "path": "src/latent_comm/compositions/__init__.py",
+      "owner": "coordinator_shared_compositions"
+    },
+    {
+      "path": "src/latent_comm/compositions/c01.py",
+      "owner": "C01"
+    },
+    {
+      "path": "src/latent_comm/compositions/c02.py",
+      "owner": "C02"
+    },
+    {
+      "path": "src/latent_comm/compositions/c03.py",
+      "owner": "C03"
+    },
+    {
+      "path": "src/latent_comm/compositions/c04.py",
+      "owner": "C04"
+    },
+    {
+      "path": "src/latent_comm/compositions/c05.py",
+      "owner": "C05"
+    },
+    {
+      "path": "src/latent_comm/compositions/c06.py",
+      "owner": "C06"
+    },
+    {
+      "path": "src/latent_comm/compositions/c07.py",
+      "owner": "C07"
+    },
+    {
+      "path": "src/latent_comm/compositions/c08.py",
+      "owner": "C08"
+    },
+    {
+      "path": "src/latent_comm/compositions/c09.py",
+      "owner": "C09"
+    },
+    {
+      "path": "src/latent_comm/compositions/c10.py",
+      "owner": "C10"
+    },
+    {
+      "path": "src/latent_comm/compositions/c11.py",
+      "owner": "C11"
+    },
+    {
+      "path": "src/latent_comm/compositions/c12.py",
+      "owner": "C12"
+    },
+    {
+      "path": "src/latent_comm/compositions/c13.py",
+      "owner": "C13"
+    },
+    {
+      "path": "src/latent_comm/compositions/c14.py",
+      "owner": "C14"
+    },
+    {
+      "path": "src/latent_comm/compositions/c15.py",
+      "owner": "C15"
+    },
+    {
+      "path": "src/latent_comm/compositions/c16.py",
+      "owner": "C16"
+    },
+    {
+      "path": "src/latent_comm/compositions/c17.py",
+      "owner": "C17"
+    },
+    {
+      "path": "src/latent_comm/compositions/c18.py",
+      "owner": "C18"
+    },
+    {
+      "path": "src/latent_comm/compositions/c19.py",
+      "owner": "C19"
+    },
+    {
+      "path": "src/latent_comm/compositions/c20.py",
+      "owner": "C20"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "owner": "coordinator_shared_compositions"
+    },
+    {
+      "path": "src/latent_comm/consolidation/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/consolidation/adapter_builder.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/consolidation/distillation.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/consolidation/teacher.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/continuations/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/continuations/capture.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/continuations/ledger.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/continuations/resume.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/continuations/translate.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/__init__.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/budgets.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/errors.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/finite.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/learning.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/refs.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/scopes.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/shapes.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/types.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/versions.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/core/views.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/data/__init__.py",
+      "owner": "W13"
+    },
+    {
+      "path": "src/latent_comm/data/collate.py",
+      "owner": "W13"
+    },
+    {
+      "path": "src/latent_comm/data/factory.py",
+      "owner": "W13"
+    },
+    {
+      "path": "src/latent_comm/data/records.py",
+      "owner": "W13"
+    },
+    {
+      "path": "src/latent_comm/data/splits.py",
+      "owner": "W13"
+    },
+    {
+      "path": "src/latent_comm/elastic/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/elastic/controller.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/elastic/partition.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/elastic/transitions.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/fields/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/fields/conflicts.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/fields/constraints.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/fields/readwrite.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/fields/solver.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/grammar/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/grammar/bindings.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/grammar/expansion.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/grammar/productions.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/grounding/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/grounding/action_effects.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/grounding/frames.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/grounding/transform.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/horizon/__init__.py",
+      "owner": "coordinator_shared_horizons"
+    },
+    {
+      "path": "src/latent_comm/horizon/cognitive_commons.py",
+      "owner": "X10"
+    },
+    {
+      "path": "src/latent_comm/horizon/concept_lifecycle.py",
+      "owner": "X11"
+    },
+    {
+      "path": "src/latent_comm/horizon/contracts.py",
+      "owner": "coordinator_shared_horizons"
+    },
+    {
+      "path": "src/latent_comm/horizon/discovery_continuations.py",
+      "owner": "X08"
+    },
+    {
+      "path": "src/latent_comm/horizon/identity_continuum.py",
+      "owner": "X01"
+    },
+    {
+      "path": "src/latent_comm/horizon/language_ecology.py",
+      "owner": "X05"
+    },
+    {
+      "path": "src/latent_comm/horizon/multiscale_cognition.py",
+      "owner": "X06"
+    },
+    {
+      "path": "src/latent_comm/horizon/plasticity_network.py",
+      "owner": "X04"
+    },
+    {
+      "path": "src/latent_comm/horizon/plural_worlds.py",
+      "owner": "X02"
+    },
+    {
+      "path": "src/latent_comm/horizon/problem_invention.py",
+      "owner": "X03"
+    },
+    {
+      "path": "src/latent_comm/horizon/semantic_compiler.py",
+      "owner": "X12"
+    },
+    {
+      "path": "src/latent_comm/horizon/shared_dreams.py",
+      "owner": "X09"
+    },
+    {
+      "path": "src/latent_comm/horizon/trajectory_semantics.py",
+      "owner": "X07"
+    },
+    {
+      "path": "src/latent_comm/hybrid/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/hybrid/bindings.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/hybrid/fusion.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/hybrid/symbols.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/interventions/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/interventions/algebra.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/interventions/scm.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/interventions/transport.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/ir/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/ir/compiler.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/ir/parser.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/ir/runtime.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/ir/types.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/learning/__init__.py",
+      "owner": "coordinator_shared_learning"
+    },
+    {
+      "path": "src/latent_comm/learning/causal_analogy/__init__.py",
+      "owner": "L05"
+    },
+    {
+      "path": "src/latent_comm/learning/causal_analogy/train.py",
+      "owner": "L05"
+    },
+    {
+      "path": "src/latent_comm/learning/concept_questions/__init__.py",
+      "owner": "L04"
+    },
+    {
+      "path": "src/latent_comm/learning/concept_questions/train.py",
+      "owner": "L04"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "owner": "coordinator_shared_learning"
+    },
+    {
+      "path": "src/latent_comm/learning/dynamics_scales/__init__.py",
+      "owner": "L06"
+    },
+    {
+      "path": "src/latent_comm/learning/dynamics_scales/train.py",
+      "owner": "L06"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "owner": "coordinator_shared_learning"
+    },
+    {
+      "path": "src/latent_comm/learning/evidence/__init__.py",
+      "owner": "L12"
+    },
+    {
+      "path": "src/latent_comm/learning/evidence/train.py",
+      "owner": "L12"
+    },
+    {
+      "path": "src/latent_comm/learning/frames/__init__.py",
+      "owner": "L03"
+    },
+    {
+      "path": "src/latent_comm/learning/frames/finite_objectives.py",
+      "owner": "L03"
+    },
+    {
+      "path": "src/latent_comm/learning/frames/train.py",
+      "owner": "L03"
+    },
+    {
+      "path": "src/latent_comm/learning/isa_search/__init__.py",
+      "owner": "L09"
+    },
+    {
+      "path": "src/latent_comm/learning/isa_search/train.py",
+      "owner": "L09"
+    },
+    {
+      "path": "src/latent_comm/learning/joint/__init__.py",
+      "owner": "L13"
+    },
+    {
+      "path": "src/latent_comm/learning/joint/static_audit.py",
+      "owner": "L13"
+    },
+    {
+      "path": "src/latent_comm/learning/joint/train.py",
+      "owner": "L13"
+    },
+    {
+      "path": "src/latent_comm/learning/meta_rules/__init__.py",
+      "owner": "L08"
+    },
+    {
+      "path": "src/latent_comm/learning/meta_rules/train.py",
+      "owner": "L08"
+    },
+    {
+      "path": "src/latent_comm/learning/objects/__init__.py",
+      "owner": "L02"
+    },
+    {
+      "path": "src/latent_comm/learning/objects/train.py",
+      "owner": "L02"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "owner": "coordinator_shared_learning"
+    },
+    {
+      "path": "src/latent_comm/learning/transport/__init__.py",
+      "owner": "L07"
+    },
+    {
+      "path": "src/latent_comm/learning/transport/train.py",
+      "owner": "L07"
+    },
+    {
+      "path": "src/latent_comm/learning/uncertainty/__init__.py",
+      "owner": "L11"
+    },
+    {
+      "path": "src/latent_comm/learning/uncertainty/train.py",
+      "owner": "L11"
+    },
+    {
+      "path": "src/latent_comm/learning/views/__init__.py",
+      "owner": "L01"
+    },
+    {
+      "path": "src/latent_comm/learning/views/train.py",
+      "owner": "L01"
+    },
+    {
+      "path": "src/latent_comm/learning/worlds/__init__.py",
+      "owner": "L10"
+    },
+    {
+      "path": "src/latent_comm/learning/worlds/train.py",
+      "owner": "L10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/__init__.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/adapter.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/integration.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/losses.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/migration.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/reference.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h01_legacy/types.py",
+      "owner": "M01"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/__init__.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/adapter.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/integration.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/losses.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/migration.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/reference.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h02_legacy/types.py",
+      "owner": "M02"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/__init__.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/adapter.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/integration.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/losses.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/migration.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/reference.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h03_legacy/types.py",
+      "owner": "M03"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/__init__.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/adapter.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/integration.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/losses.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/migration.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/reference.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h04_legacy/types.py",
+      "owner": "M04"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/__init__.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/adapter.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/integration.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/losses.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/migration.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/reference.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h05_legacy/types.py",
+      "owner": "M05"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/__init__.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/adapter.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/integration.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/losses.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/migration.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/reference.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h06_legacy/types.py",
+      "owner": "M06"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/__init__.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/adapter.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/integration.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/losses.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/migration.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/reference.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/types.py",
+      "owner": "M07"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/__init__.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/adapter.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/integration.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/losses.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/migration.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/reference.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/types.py",
+      "owner": "M08"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/__init__.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/adapter.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/integration.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/losses.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/migration.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/reference.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h09_legacy/types.py",
+      "owner": "M09"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/__init__.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/adapter.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/integration.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/losses.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/migration.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/reference.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h10_legacy/types.py",
+      "owner": "M10"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/__init__.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/adapter.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/integration.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/losses.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/migration.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/reference.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/types.py",
+      "owner": "M11"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/__init__.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/adapter.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/integration.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/losses.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/migration.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/reference.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h12_legacy/types.py",
+      "owner": "M12"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/__init__.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/adapter.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/integration.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/losses.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/migration.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/reference.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/types.py",
+      "owner": "M13"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/__init__.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/adapter.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/integration.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/losses.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/migration.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/reference.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/types.py",
+      "owner": "M14"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/__init__.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/adapter.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/integration.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/losses.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/migration.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/reference.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h15_legacy/types.py",
+      "owner": "M15"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/__init__.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/adapter.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/integration.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/losses.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/migration.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/reference.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h16_legacy/types.py",
+      "owner": "M16"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/__init__.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/adapter.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/integration.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/losses.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/migration.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/reference.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h17_legacy/types.py",
+      "owner": "M17"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/__init__.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/adapter.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/integration.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/losses.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/migration.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/reference.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h18_legacy/types.py",
+      "owner": "M18"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h19_legacy/__init__.py",
+      "owner": "M19"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h19_legacy/adapter.py",
+      "owner": "M19"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h19_legacy/losses.py",
+      "owner": "M19"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h19_legacy/migration.py",
+      "owner": "M19"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h19_legacy/reference.py",
+      "owner": "M19"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h19_legacy/types.py",
+      "owner": "M19"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h20_legacy/__init__.py",
+      "owner": "M20"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h20_legacy/adapter.py",
+      "owner": "M20"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h20_legacy/losses.py",
+      "owner": "M20"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h20_legacy/migration.py",
+      "owner": "M20"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h20_legacy/reference.py",
+      "owner": "M20"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h20_legacy/types.py",
+      "owner": "M20"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h21_legacy/__init__.py",
+      "owner": "M21"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h21_legacy/adapter.py",
+      "owner": "M21"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h21_legacy/losses.py",
+      "owner": "M21"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h21_legacy/migration.py",
+      "owner": "M21"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h21_legacy/reference.py",
+      "owner": "M21"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h21_legacy/types.py",
+      "owner": "M21"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h22_legacy/__init__.py",
+      "owner": "M22"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h22_legacy/adapter.py",
+      "owner": "M22"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h22_legacy/losses.py",
+      "owner": "M22"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h22_legacy/migration.py",
+      "owner": "M22"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h22_legacy/reference.py",
+      "owner": "M22"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h22_legacy/types.py",
+      "owner": "M22"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/__init__.py",
+      "owner": "M23"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/adapter.py",
+      "owner": "M23"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/losses.py",
+      "owner": "M23"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/migration.py",
+      "owner": "M23"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/reference.py",
+      "owner": "M23"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h23_legacy/types.py",
+      "owner": "M23"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h24_legacy/__init__.py",
+      "owner": "M24"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h24_legacy/adapter.py",
+      "owner": "M24"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h24_legacy/losses.py",
+      "owner": "M24"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h24_legacy/migration.py",
+      "owner": "M24"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h24_legacy/reference.py",
+      "owner": "M24"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h24_legacy/types.py",
+      "owner": "M24"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h25_gauge/__init__.py",
+      "owner": "M25"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h25_gauge/adapter.py",
+      "owner": "M25"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h25_gauge/losses.py",
+      "owner": "M25"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h25_gauge/reference.py",
+      "owner": "M25"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h25_gauge/serialization.py",
+      "owner": "M25"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h25_gauge/types.py",
+      "owner": "M25"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h26_sheaf/__init__.py",
+      "owner": "M26"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h26_sheaf/adapter.py",
+      "owner": "M26"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h26_sheaf/losses.py",
+      "owner": "M26"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h26_sheaf/reference.py",
+      "owner": "M26"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h26_sheaf/serialization.py",
+      "owner": "M26"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h26_sheaf/types.py",
+      "owner": "M26"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/__init__.py",
+      "owner": "M27"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/adapter.py",
+      "owner": "M27"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/losses.py",
+      "owner": "M27"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/reference.py",
+      "owner": "M27"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/serialization.py",
+      "owner": "M27"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h27_ontology/types.py",
+      "owner": "M27"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h28_bifurcation/__init__.py",
+      "owner": "M28"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h28_bifurcation/adapter.py",
+      "owner": "M28"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h28_bifurcation/losses.py",
+      "owner": "M28"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h28_bifurcation/reference.py",
+      "owner": "M28"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h28_bifurcation/serialization.py",
+      "owner": "M28"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h28_bifurcation/types.py",
+      "owner": "M28"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/__init__.py",
+      "owner": "M29"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/adapter.py",
+      "owner": "M29"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/losses.py",
+      "owner": "M29"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/reference.py",
+      "owner": "M29"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/serialization.py",
+      "owner": "M29"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/types.py",
+      "owner": "M29"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h30_analogy/__init__.py",
+      "owner": "M30"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h30_analogy/adapter.py",
+      "owner": "M30"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h30_analogy/losses.py",
+      "owner": "M30"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h30_analogy/reference.py",
+      "owner": "M30"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h30_analogy/serialization.py",
+      "owner": "M30"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h30_analogy/types.py",
+      "owner": "M30"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h31_grafting/__init__.py",
+      "owner": "M31"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h31_grafting/adapter.py",
+      "owner": "M31"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h31_grafting/losses.py",
+      "owner": "M31"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h31_grafting/reference.py",
+      "owner": "M31"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h31_grafting/serialization.py",
+      "owner": "M31"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h31_grafting/types.py",
+      "owner": "M31"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h32_perspective/__init__.py",
+      "owner": "M32"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h32_perspective/adapter.py",
+      "owner": "M32"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h32_perspective/losses.py",
+      "owner": "M32"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h32_perspective/reference.py",
+      "owner": "M32"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h32_perspective/serialization.py",
+      "owner": "M32"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h32_perspective/types.py",
+      "owner": "M32"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h33_reciprocal/__init__.py",
+      "owner": "M33"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h33_reciprocal/adapter.py",
+      "owner": "M33"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h33_reciprocal/losses.py",
+      "owner": "M33"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h33_reciprocal/reference.py",
+      "owner": "M33"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h33_reciprocal/serialization.py",
+      "owner": "M33"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h33_reciprocal/types.py",
+      "owner": "M33"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h34_boundary_value/__init__.py",
+      "owner": "M34"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h34_boundary_value/adapter.py",
+      "owner": "M34"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h34_boundary_value/losses.py",
+      "owner": "M34"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h34_boundary_value/reference.py",
+      "owner": "M34"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h34_boundary_value/serialization.py",
+      "owner": "M34"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h34_boundary_value/types.py",
+      "owner": "M34"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h35_renormalization/__init__.py",
+      "owner": "M35"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h35_renormalization/adapter.py",
+      "owner": "M35"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h35_renormalization/losses.py",
+      "owner": "M35"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h35_renormalization/reference.py",
+      "owner": "M35"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h35_renormalization/serialization.py",
+      "owner": "M35"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h35_renormalization/types.py",
+      "owner": "M35"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h36_disagreement/__init__.py",
+      "owner": "M36"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h36_disagreement/adapter.py",
+      "owner": "M36"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h36_disagreement/losses.py",
+      "owner": "M36"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h36_disagreement/reference.py",
+      "owner": "M36"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h36_disagreement/serialization.py",
+      "owner": "M36"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h36_disagreement/types.py",
+      "owner": "M36"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h37_gradient_transport/__init__.py",
+      "owner": "M37"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h37_gradient_transport/adapter.py",
+      "owner": "M37"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h37_gradient_transport/losses.py",
+      "owner": "M37"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h37_gradient_transport/reference.py",
+      "owner": "M37"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h37_gradient_transport/serialization.py",
+      "owner": "M37"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h37_gradient_transport/types.py",
+      "owner": "M37"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h38_plasticity/__init__.py",
+      "owner": "M38"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h38_plasticity/adapter.py",
+      "owner": "M38"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h38_plasticity/losses.py",
+      "owner": "M38"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h38_plasticity/reference.py",
+      "owner": "M38"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h38_plasticity/serialization.py",
+      "owner": "M38"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h38_plasticity/types.py",
+      "owner": "M38"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h39_transactions/__init__.py",
+      "owner": "M39"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h39_transactions/adapter.py",
+      "owner": "M39"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h39_transactions/losses.py",
+      "owner": "M39"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h39_transactions/reference.py",
+      "owner": "M39"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h39_transactions/serialization.py",
+      "owner": "M39"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h39_transactions/types.py",
+      "owner": "M39"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/__init__.py",
+      "owner": "M40"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/adapter.py",
+      "owner": "M40"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/losses.py",
+      "owner": "M40"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/reference.py",
+      "owner": "M40"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/serialization.py",
+      "owner": "M40"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h40_instruction_set/types.py",
+      "owner": "M40"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h41_coalitions/__init__.py",
+      "owner": "M41"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h41_coalitions/adapter.py",
+      "owner": "M41"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h41_coalitions/losses.py",
+      "owner": "M41"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h41_coalitions/reference.py",
+      "owner": "M41"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h41_coalitions/serialization.py",
+      "owner": "M41"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h41_coalitions/types.py",
+      "owner": "M41"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/__init__.py",
+      "owner": "M42"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/adapter.py",
+      "owner": "M42"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/losses.py",
+      "owner": "M42"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/reference.py",
+      "owner": "M42"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/serialization.py",
+      "owner": "M42"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h42_ecology/types.py",
+      "owner": "M42"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/__init__.py",
+      "owner": "M43"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/adapter.py",
+      "owner": "M43"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/losses.py",
+      "owner": "M43"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/reference.py",
+      "owner": "M43"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/serialization.py",
+      "owner": "M43"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h43_world_kernels/types.py",
+      "owner": "M43"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/__init__.py",
+      "owner": "M44"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/adapter.py",
+      "owner": "M44"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/losses.py",
+      "owner": "M44"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/reference.py",
+      "owner": "M44"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/serialization.py",
+      "owner": "M44"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h44_dreaming/types.py",
+      "owner": "M44"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h45_identifiability/__init__.py",
+      "owner": "M45"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h45_identifiability/adapter.py",
+      "owner": "M45"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h45_identifiability/losses.py",
+      "owner": "M45"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h45_identifiability/reference.py",
+      "owner": "M45"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h45_identifiability/serialization.py",
+      "owner": "M45"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h45_identifiability/types.py",
+      "owner": "M45"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h46_negative_knowledge/__init__.py",
+      "owner": "M46"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h46_negative_knowledge/adapter.py",
+      "owner": "M46"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h46_negative_knowledge/losses.py",
+      "owner": "M46"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h46_negative_knowledge/reference.py",
+      "owner": "M46"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h46_negative_knowledge/serialization.py",
+      "owner": "M46"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h46_negative_knowledge/types.py",
+      "owner": "M46"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h47_quotient/__init__.py",
+      "owner": "M47"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h47_quotient/adapter.py",
+      "owner": "M47"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h47_quotient/losses.py",
+      "owner": "M47"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h47_quotient/reference.py",
+      "owner": "M47"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h47_quotient/serialization.py",
+      "owner": "M47"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h47_quotient/types.py",
+      "owner": "M47"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/__init__.py",
+      "owner": "M48"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/adapter.py",
+      "owner": "M48"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/losses.py",
+      "owner": "M48"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/reference.py",
+      "owner": "M48"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/serialization.py",
+      "owner": "M48"
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h48_evidence_genealogy/types.py",
+      "owner": "M48"
+    },
+    {
+      "path": "src/latent_comm/operators/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/operators/composition.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/operators/low_rank.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/packets/__init__.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/packets/envelope.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/packets/migrations.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/packets/schema.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/packets/storage.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/population/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/population/adapter_registry.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/population/pair_sampler.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/population/protocol_objectives.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/portfolios/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/portfolios/reuse.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/portfolios/selector.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/portfolios/tree.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/relations/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/relations/exchange.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/relations/matching.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/relations/packet.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/repair/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/repair/diagnostics.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/repair/protocol.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/repair/residual.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/responses/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/responses/finite_difference.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/responses/low_rank_jet.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/responses/trust_region.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/runtime/__init__.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/branches.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/files.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/journal.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/loops.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/recovery.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/scheduler.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/runtime/transactions.py",
+      "owner": "A04"
+    },
+    {
+      "path": "src/latent_comm/safety/__init__.py",
+      "owner": "A05"
+    },
+    {
+      "path": "src/latent_comm/safety/broker.py",
+      "owner": "A05"
+    },
+    {
+      "path": "src/latent_comm/safety/model_access.py",
+      "owner": "A05"
+    },
+    {
+      "path": "src/latent_comm/safety/policy.py",
+      "owner": "A05"
+    },
+    {
+      "path": "src/latent_comm/synergy/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/synergy/composer.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/synergy/hypergraph.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/synergy/interactions.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/topology/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/topology/candidates.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/topology/compiler.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/topology/controller.py",
+      "owner": "A02"
+    },
+    {
+      "path": "src/latent_comm/worlds/__init__.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "src/latent_comm/worlds/causal_analogy/__init__.py",
+      "owner": "W05"
+    },
+    {
+      "path": "src/latent_comm/worlds/causal_analogy/generator.py",
+      "owner": "W05"
+    },
+    {
+      "path": "src/latent_comm/worlds/causal_analogy/pipeline.py",
+      "owner": "W05"
+    },
+    {
+      "path": "src/latent_comm/worlds/coalitions/__init__.py",
+      "owner": "W10"
+    },
+    {
+      "path": "src/latent_comm/worlds/coalitions/generator.py",
+      "owner": "W10"
+    },
+    {
+      "path": "src/latent_comm/worlds/coalitions/pipeline.py",
+      "owner": "W10"
+    },
+    {
+      "path": "src/latent_comm/worlds/concepts/__init__.py",
+      "owner": "W03"
+    },
+    {
+      "path": "src/latent_comm/worlds/concepts/generator.py",
+      "owner": "W03"
+    },
+    {
+      "path": "src/latent_comm/worlds/concepts/pipeline.py",
+      "owner": "W03"
+    },
+    {
+      "path": "src/latent_comm/worlds/dynamics/__init__.py",
+      "owner": "W06"
+    },
+    {
+      "path": "src/latent_comm/worlds/dynamics/generator.py",
+      "owner": "W06"
+    },
+    {
+      "path": "src/latent_comm/worlds/dynamics/pipeline.py",
+      "owner": "W06"
+    },
+    {
+      "path": "src/latent_comm/worlds/identifiability/__init__.py",
+      "owner": "W12"
+    },
+    {
+      "path": "src/latent_comm/worlds/identifiability/generator.py",
+      "owner": "W12"
+    },
+    {
+      "path": "src/latent_comm/worlds/identifiability/pipeline.py",
+      "owner": "W12"
+    },
+    {
+      "path": "src/latent_comm/worlds/local_constraints/__init__.py",
+      "owner": "W02"
+    },
+    {
+      "path": "src/latent_comm/worlds/local_constraints/generator.py",
+      "owner": "W02"
+    },
+    {
+      "path": "src/latent_comm/worlds/local_constraints/pipeline.py",
+      "owner": "W02"
+    },
+    {
+      "path": "src/latent_comm/worlds/matrix_frames/__init__.py",
+      "owner": "W01"
+    },
+    {
+      "path": "src/latent_comm/worlds/matrix_frames/generator.py",
+      "owner": "W01"
+    },
+    {
+      "path": "src/latent_comm/worlds/matrix_frames/pipeline.py",
+      "owner": "W01"
+    },
+    {
+      "path": "src/latent_comm/worlds/plasticity/__init__.py",
+      "owner": "W08"
+    },
+    {
+      "path": "src/latent_comm/worlds/plasticity/generator.py",
+      "owner": "W08"
+    },
+    {
+      "path": "src/latent_comm/worlds/plasticity/pipeline.py",
+      "owner": "W08"
+    },
+    {
+      "path": "src/latent_comm/worlds/programs/__init__.py",
+      "owner": "W09"
+    },
+    {
+      "path": "src/latent_comm/worlds/programs/generator.py",
+      "owner": "W09"
+    },
+    {
+      "path": "src/latent_comm/worlds/programs/pipeline.py",
+      "owner": "W09"
+    },
+    {
+      "path": "src/latent_comm/worlds/questions/__init__.py",
+      "owner": "W04"
+    },
+    {
+      "path": "src/latent_comm/worlds/questions/generator.py",
+      "owner": "W04"
+    },
+    {
+      "path": "src/latent_comm/worlds/questions/pipeline.py",
+      "owner": "W04"
+    },
+    {
+      "path": "src/latent_comm/worlds/scales/__init__.py",
+      "owner": "W07"
+    },
+    {
+      "path": "src/latent_comm/worlds/scales/generator.py",
+      "owner": "W07"
+    },
+    {
+      "path": "src/latent_comm/worlds/scales/pipeline.py",
+      "owner": "W07"
+    },
+    {
+      "path": "src/latent_comm/worlds/world_kernels/__init__.py",
+      "owner": "W11"
+    },
+    {
+      "path": "src/latent_comm/worlds/world_kernels/generator.py",
+      "owner": "W11"
+    },
+    {
+      "path": "src/latent_comm/worlds/world_kernels/pipeline.py",
+      "owner": "W11"
+    },
+    {
+      "path": "scripts/audit_release_permissions.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/audit_source_contracts.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/build_architecture.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "scripts/build_checkpoint.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/check_source_bindings.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/task_checkpoint.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/write_final_verification.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/write_permission_review.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "scripts/write_source_review.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "tests/compiler/test_compiler.py",
+      "owner": "A03"
+    },
+    {
+      "path": "tests/contracts/test_c01.py",
+      "owner": "C01"
+    },
+    {
+      "path": "tests/contracts/test_c02.py",
+      "owner": "C02"
+    },
+    {
+      "path": "tests/contracts/test_c03.py",
+      "owner": "C03"
+    },
+    {
+      "path": "tests/contracts/test_c04.py",
+      "owner": "C04"
+    },
+    {
+      "path": "tests/contracts/test_c05.py",
+      "owner": "C05"
+    },
+    {
+      "path": "tests/contracts/test_c06.py",
+      "owner": "C06"
+    },
+    {
+      "path": "tests/contracts/test_c07.py",
+      "owner": "C07"
+    },
+    {
+      "path": "tests/contracts/test_c08.py",
+      "owner": "C08"
+    },
+    {
+      "path": "tests/contracts/test_c09.py",
+      "owner": "C09"
+    },
+    {
+      "path": "tests/contracts/test_c10.py",
+      "owner": "C10"
+    },
+    {
+      "path": "tests/contracts/test_c11.py",
+      "owner": "C11"
+    },
+    {
+      "path": "tests/contracts/test_c12.py",
+      "owner": "C12"
+    },
+    {
+      "path": "tests/contracts/test_c13.py",
+      "owner": "C13"
+    },
+    {
+      "path": "tests/contracts/test_c14.py",
+      "owner": "C14"
+    },
+    {
+      "path": "tests/contracts/test_c15.py",
+      "owner": "C15"
+    },
+    {
+      "path": "tests/contracts/test_c16.py",
+      "owner": "C16"
+    },
+    {
+      "path": "tests/contracts/test_c17.py",
+      "owner": "C17"
+    },
+    {
+      "path": "tests/contracts/test_c18.py",
+      "owner": "C18"
+    },
+    {
+      "path": "tests/contracts/test_c19.py",
+      "owner": "C19"
+    },
+    {
+      "path": "tests/contracts/test_c20.py",
+      "owner": "C20"
+    },
+    {
+      "path": "tests/contracts/test_cli.py",
+      "owner": "coordinator_cli_integration"
+    },
+    {
+      "path": "tests/contracts/test_core.py",
+      "owner": "coordinator_foundation_and_delivery_helpers"
+    },
+    {
+      "path": "tests/contracts/test_h01.py",
+      "owner": "M01"
+    },
+    {
+      "path": "tests/contracts/test_h02.py",
+      "owner": "M02"
+    },
+    {
+      "path": "tests/contracts/test_h03.py",
+      "owner": "M03"
+    },
+    {
+      "path": "tests/contracts/test_h04.py",
+      "owner": "M04"
+    },
+    {
+      "path": "tests/contracts/test_h05.py",
+      "owner": "M05"
+    },
+    {
+      "path": "tests/contracts/test_h06.py",
+      "owner": "M06"
+    },
+    {
+      "path": "tests/contracts/test_h07.py",
+      "owner": "M07"
+    },
+    {
+      "path": "tests/contracts/test_h08.py",
+      "owner": "M08"
+    },
+    {
+      "path": "tests/contracts/test_h09.py",
+      "owner": "M09"
+    },
+    {
+      "path": "tests/contracts/test_h10.py",
+      "owner": "M10"
+    },
+    {
+      "path": "tests/contracts/test_h11.py",
+      "owner": "M11"
+    },
+    {
+      "path": "tests/contracts/test_h12.py",
+      "owner": "M12"
+    },
+    {
+      "path": "tests/contracts/test_h13.py",
+      "owner": "M13"
+    },
+    {
+      "path": "tests/contracts/test_h14.py",
+      "owner": "M14"
+    },
+    {
+      "path": "tests/contracts/test_h15.py",
+      "owner": "M15"
+    },
+    {
+      "path": "tests/contracts/test_h16.py",
+      "owner": "M16"
+    },
+    {
+      "path": "tests/contracts/test_h17.py",
+      "owner": "M17"
+    },
+    {
+      "path": "tests/contracts/test_h18.py",
+      "owner": "M18"
+    },
+    {
+      "path": "tests/contracts/test_h19.py",
+      "owner": "M19"
+    },
+    {
+      "path": "tests/contracts/test_h20.py",
+      "owner": "M20"
+    },
+    {
+      "path": "tests/contracts/test_h21.py",
+      "owner": "M21"
+    },
+    {
+      "path": "tests/contracts/test_h22.py",
+      "owner": "M22"
+    },
+    {
+      "path": "tests/contracts/test_h23.py",
+      "owner": "M23"
+    },
+    {
+      "path": "tests/contracts/test_h24.py",
+      "owner": "M24"
+    },
+    {
+      "path": "tests/contracts/test_h25.py",
+      "owner": "M25"
+    },
+    {
+      "path": "tests/contracts/test_h26.py",
+      "owner": "M26"
+    },
+    {
+      "path": "tests/contracts/test_h27.py",
+      "owner": "M27"
+    },
+    {
+      "path": "tests/contracts/test_h28.py",
+      "owner": "M28"
+    },
+    {
+      "path": "tests/contracts/test_h29.py",
+      "owner": "M29"
+    },
+    {
+      "path": "tests/contracts/test_h30.py",
+      "owner": "M30"
+    },
+    {
+      "path": "tests/contracts/test_h31.py",
+      "owner": "M31"
+    },
+    {
+      "path": "tests/contracts/test_h32.py",
+      "owner": "M32"
+    },
+    {
+      "path": "tests/contracts/test_h33.py",
+      "owner": "M33"
+    },
+    {
+      "path": "tests/contracts/test_h34.py",
+      "owner": "M34"
+    },
+    {
+      "path": "tests/contracts/test_h35.py",
+      "owner": "M35"
+    },
+    {
+      "path": "tests/contracts/test_h36.py",
+      "owner": "M36"
+    },
+    {
+      "path": "tests/contracts/test_h37.py",
+      "owner": "M37"
+    },
+    {
+      "path": "tests/contracts/test_h38.py",
+      "owner": "M38"
+    },
+    {
+      "path": "tests/contracts/test_h39.py",
+      "owner": "M39"
+    },
+    {
+      "path": "tests/contracts/test_h40.py",
+      "owner": "M40"
+    },
+    {
+      "path": "tests/contracts/test_h41.py",
+      "owner": "M41"
+    },
+    {
+      "path": "tests/contracts/test_h42.py",
+      "owner": "M42"
+    },
+    {
+      "path": "tests/contracts/test_h43.py",
+      "owner": "M43"
+    },
+    {
+      "path": "tests/contracts/test_h44.py",
+      "owner": "M44"
+    },
+    {
+      "path": "tests/contracts/test_h45.py",
+      "owner": "M45"
+    },
+    {
+      "path": "tests/contracts/test_h46.py",
+      "owner": "M46"
+    },
+    {
+      "path": "tests/contracts/test_h47.py",
+      "owner": "M47"
+    },
+    {
+      "path": "tests/contracts/test_h48.py",
+      "owner": "M48"
+    },
+    {
+      "path": "tests/contracts/test_horizons.py",
+      "owner": "coordinator_shared_horizons"
+    },
+    {
+      "path": "tests/control/test_receipts.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "tests/control/test_release.py",
+      "owner": "coordinator_control_and_audits"
+    },
+    {
+      "path": "tests/data/test_causal_analogy.py",
+      "owner": "W05"
+    },
+    {
+      "path": "tests/data/test_coalitions.py",
+      "owner": "W10"
+    },
+    {
+      "path": "tests/data/test_concepts.py",
+      "owner": "W03"
+    },
+    {
+      "path": "tests/data/test_dynamics.py",
+      "owner": "W06"
+    },
+    {
+      "path": "tests/data/test_identifiability.py",
+      "owner": "W12"
+    },
+    {
+      "path": "tests/data/test_local_constraints.py",
+      "owner": "W02"
+    },
+    {
+      "path": "tests/data/test_matrix_frames.py",
+      "owner": "W01"
+    },
+    {
+      "path": "tests/data/test_plasticity.py",
+      "owner": "W08"
+    },
+    {
+      "path": "tests/data/test_programs.py",
+      "owner": "W09"
+    },
+    {
+      "path": "tests/data/test_questions.py",
+      "owner": "W04"
+    },
+    {
+      "path": "tests/data/test_role_views.py",
+      "owner": "W13"
+    },
+    {
+      "path": "tests/data/test_scales.py",
+      "owner": "W07"
+    },
+    {
+      "path": "tests/data/test_world_kernels.py",
+      "owner": "W11"
+    },
+    {
+      "path": "tests/policy/test_policy.py",
+      "owner": "A05"
+    },
+    {
+      "path": "tests/research_locked/test_backend_behavior.py",
+      "owner": "B05"
+    },
+    {
+      "path": "tests/research_locked/test_backend_capabilities.py",
+      "owner": "B01"
+    },
+    {
+      "path": "tests/research_locked/test_backend_hf_hooks.py",
+      "owner": "B03"
+    },
+    {
+      "path": "tests/research_locked/test_backend_hf_kv.py",
+      "owner": "B04"
+    },
+    {
+      "path": "tests/research_locked/test_backend_hf_prefix.py",
+      "owner": "B02"
+    },
+    {
+      "path": "tests/research_locked/test_backend_storage.py",
+      "owner": "B06"
+    },
+    {
+      "path": "tests/research_locked/test_learning_causal_analogy.py",
+      "owner": "L05"
+    },
+    {
+      "path": "tests/research_locked/test_learning_concept_questions.py",
+      "owner": "L04"
+    },
+    {
+      "path": "tests/research_locked/test_learning_dynamics_scales.py",
+      "owner": "L06"
+    },
+    {
+      "path": "tests/research_locked/test_learning_evidence.py",
+      "owner": "L12"
+    },
+    {
+      "path": "tests/research_locked/test_learning_frames.py",
+      "owner": "L03"
+    },
+    {
+      "path": "tests/research_locked/test_learning_isa_search.py",
+      "owner": "L09"
+    },
+    {
+      "path": "tests/research_locked/test_learning_joint.py",
+      "owner": "L13"
+    },
+    {
+      "path": "tests/research_locked/test_learning_meta_rules.py",
+      "owner": "L08"
+    },
+    {
+      "path": "tests/research_locked/test_learning_objects.py",
+      "owner": "L02"
+    },
+    {
+      "path": "tests/research_locked/test_learning_transport.py",
+      "owner": "L07"
+    },
+    {
+      "path": "tests/research_locked/test_learning_uncertainty.py",
+      "owner": "L11"
+    },
+    {
+      "path": "tests/research_locked/test_learning_views.py",
+      "owner": "L01"
+    },
+    {
+      "path": "tests/research_locked/test_learning_worlds.py",
+      "owner": "L10"
+    },
+    {
+      "path": "tests/runtime/test_runtime.py",
+      "owner": "A04"
+    }
+  ]
+}

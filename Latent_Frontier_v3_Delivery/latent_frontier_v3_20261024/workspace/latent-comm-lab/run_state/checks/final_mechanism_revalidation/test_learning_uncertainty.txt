@@ -1,0 +1,30 @@
+test_certificate_and_retraction (test_learning_uncertainty.ContractChecks.test_certificate_and_retraction) ... ok
+test_engine_delegation_and_resume_command (test_learning_uncertainty.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_exact_partition_refinement (test_learning_uncertainty.ContractChecks.test_exact_partition_refinement) ... ok
+test_hard_mask_not_learned (test_learning_uncertainty.ContractChecks.test_hard_mask_not_learned) ... ok
+test_metadata (test_learning_uncertainty.ContractChecks.test_metadata) ... ok
+test_minimax_without_invented_prior (test_learning_uncertainty.ContractChecks.test_minimax_without_invented_prior) ... ok
+test_recipe_is_unbound (test_learning_uncertainty.ContractChecks.test_recipe_is_unbound) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.008s
+
+OK
+{
+  "selected": 7,
+  "excluded_research_entry_tests": [
+    {
+      "test": "test_learning_uncertainty.ContractChecks.test_stage_syntax_and_gates",
+      "guarded_calls": [
+        "conservative legacy gate-test exclusion"
+      ]
+    }
+  ],
+  "test_file": "tests/research_locked/test_learning_uncertainty.py",
+  "research_state": "NOT_RUN",
+  "budget_scope": "per test aggregate",
+  "tests_run": 7,
+  "failures": 0,
+  "errors": 0,
+  "neural_modules_loaded": []
+}

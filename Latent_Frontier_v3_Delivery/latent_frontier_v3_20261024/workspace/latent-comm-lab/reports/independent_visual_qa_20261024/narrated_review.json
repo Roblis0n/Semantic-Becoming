@@ -1,0 +1,486 @@
+{
+  "schema": "independent_narrated_av_delta_review.v1",
+  "checked_at_utc": "2026-10-24T19:05:40.817501+00:00",
+  "status": "objective_av_and_sampled_visual_checks_pass_mandatory_audition_unperformed",
+  "scope": "Frozen intro_90 narrated_personal MP4 only. Local read-only analysis plus reviewer-owned evidence files. No external requests. Prior 48-slide, 6-figure, 5-animation and silent-media baseline report is unchanged.",
+  "baseline_report": {
+    "path": "reports/independent_visual_qa_20261024/review.json",
+    "sha256": "5116426c721a030c3744ae65f539f860be4e65f7be87a62d15ba1d7eabae0c49",
+    "expected_sha256": "5116426c721a030c3744ae65f539f860be4e65f7be87a62d15ba1d7eabae0c49",
+    "mutated": false
+  },
+  "video": {
+    "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+    "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+    "expected_sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+    "duration_seconds": 90.0,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec": "h264",
+        "start_time": "0.000000",
+        "duration": "90.000000",
+        "width": 1280,
+        "height": 720,
+        "fps": "24/1",
+        "sample_rate": null,
+        "channels": null
+      },
+      {
+        "codec_type": "audio",
+        "codec": "aac",
+        "start_time": "0.000000",
+        "duration": "90.000000",
+        "width": null,
+        "height": null,
+        "fps": "0/0",
+        "sample_rate": "44100",
+        "channels": 1
+      }
+    ],
+    "full_av_decode_exit_code": 0,
+    "full_av_decode_stderr": ""
+  },
+  "waveform": {
+    "path": "assets/audio/intro_90.narration.wav",
+    "sha256": "9fc67803982f2a9d2607d90b154acfa14bc3470a1355834f25e916e26a414ea6",
+    "sample_rate": 44100,
+    "channels": 1,
+    "frames": 3969000,
+    "seconds": 90.0,
+    "equals_concatenated_scene_pcm": true,
+    "decoded_mp4_sample_count": 3969024,
+    "decoded_mp4_seconds": 90.00054421768708,
+    "decoded_peak_int16": 27783,
+    "decoded_rms_int16": 4794.5660421382345,
+    "decoded_samples_at_int16_limit": 0,
+    "maximum_silence_at_minus45db_min300ms_seconds": 2.134626,
+    "boundary": "All measurements are objective signal/container checks, not listening, pronunciation, fluency, or spoken-word accuracy checks."
+  },
+  "cue_checks": {
+    "cue_count": 14,
+    "audio_timed_json_matches_assembly": true,
+    "srt_matches_json_ms_and_display_text": true,
+    "subtitle_source_text_matches_timeline_after_whitespace_removal": true,
+    "source_character_count": 339,
+    "all_display_cues_cover_measured_chunks": true,
+    "all_display_cues_within_scenes": true,
+    "all_display_cues_nonoverlapping": true,
+    "maximum_chunk_duration_difference_seconds": 7.573696141349728e-07,
+    "one_pcm_sample_seconds": 2.2675736961451248e-05,
+    "word_level_alignment_verified": false,
+    "audio_words_or_pronunciation_verified": false,
+    "details": [
+      {
+        "cue": 1,
+        "timed_wav_seconds": 7.890226757369614,
+        "assembly_seconds": 7.890226,
+        "difference_seconds": -7.573696141349728e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 2,
+        "timed_wav_seconds": 4.849818594104309,
+        "assembly_seconds": 4.849818000000001,
+        "difference_seconds": -5.941043079715769e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 3,
+        "timed_wav_seconds": 4.348798185941043,
+        "assembly_seconds": 4.348797999999999,
+        "difference_seconds": -1.8594104478353302e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 4,
+        "timed_wav_seconds": 7.746916099773243,
+        "assembly_seconds": 7.746915999999999,
+        "difference_seconds": -9.977324388898978e-08,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 5,
+        "timed_wav_seconds": 2.3919501133786847,
+        "assembly_seconds": 2.391949999999998,
+        "difference_seconds": -1.1337868688343633e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 6,
+        "timed_wav_seconds": 5.422403628117914,
+        "assembly_seconds": 5.422403000000003,
+        "difference_seconds": -6.281179114608904e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 7,
+        "timed_wav_seconds": 4.632290249433106,
+        "assembly_seconds": 4.632289999999998,
+        "difference_seconds": -2.4943310883429604e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 8,
+        "timed_wav_seconds": 6.464671201814059,
+        "assembly_seconds": 6.464671000000003,
+        "difference_seconds": -2.0181405613328707e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 9,
+        "timed_wav_seconds": 3.1818820861678003,
+        "assembly_seconds": 3.1818819999999945,
+        "difference_seconds": -8.616780577952454e-08,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 10,
+        "timed_wav_seconds": 7.4675056689342405,
+        "assembly_seconds": 7.467505000000003,
+        "difference_seconds": -6.689342377796947e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 11,
+        "timed_wav_seconds": 2.179183673469388,
+        "assembly_seconds": 2.1791829999999948,
+        "difference_seconds": -6.734693931420566e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 12,
+        "timed_wav_seconds": 6.021473922902494,
+        "assembly_seconds": 6.021474000000012,
+        "difference_seconds": 7.70975177033506e-08,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 13,
+        "timed_wav_seconds": 3.010294784580499,
+        "assembly_seconds": 3.0102949999999993,
+        "difference_seconds": 2.1541950046000125e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      },
+      {
+        "cue": 14,
+        "timed_wav_seconds": 7.4104081632653065,
+        "assembly_seconds": 7.410408000000004,
+        "difference_seconds": -1.6326530261068228e-07,
+        "display_covers_audio": true,
+        "display_within_scene": true,
+        "non_overlap": true
+      }
+    ]
+  },
+  "visual_review": {
+    "actually_opened_full_size_frames": 15,
+    "actually_opened_cut_frames_as_640x360_tiles": 22,
+    "cut_boundaries": [
+      10,
+      22,
+      34,
+      44.01,
+      47,
+      60,
+      63.96,
+      68.04,
+      72,
+      78.5,
+      82
+    ],
+    "result": "No new clipping, overlap, corrupted/blank content or contradictory research-state labels found in sampled frames. All 14 caption midpoints were visually opened at 1280×720. The opening and every midpoint show the new synthesized narration / not auditioned / personal noncommercial footer. Before/after samples show expected scene and within-scene visual changes, with caption cues remaining bounded as planned.",
+    "claim_boundary": "Sampled static frames, not full real-time playback. Does not certify every intermediate frame or auditory continuity.",
+    "samples": [
+      {
+        "label": "opening",
+        "second": 0.5,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/opening.png",
+        "sha256": "6bec75c5d9a0655cea0f4d1adabddca97b6e933a3681a0643bab3d67c9451b9f"
+      },
+      {
+        "label": "cue-01",
+        "second": 4.683526,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-01.png",
+        "sha256": "b8449fc57b20621c7169cbefefbc7e439d76b81d1a06fc6dc0b55ea1349b7e05"
+      },
+      {
+        "label": "cue-02",
+        "second": 13.07856,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-02.png",
+        "sha256": "9563dce1482a70347a7938cab4abefbebdec2a2bd56ac82b2b0dabbba26ee1e4"
+      },
+      {
+        "label": "cue-03",
+        "second": 18.611655,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-03.png",
+        "sha256": "90e0056acb948e6b4fd1fd5a3304e380570d89b67ab4fb360c624aed2639090a"
+      },
+      {
+        "label": "cue-04",
+        "second": 26.307721,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-04.png",
+        "sha256": "d1de7a95efe6b2af15e3d23185e4ee7c46d3d121542686faf1a7283e3ce59885"
+      },
+      {
+        "label": "cue-05",
+        "second": 31.99754,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-05.png",
+        "sha256": "5570417d63fd7c87d2ec5163f898adb1b20f706bc61a8bf2eb843b7cf6c6ef6f"
+      },
+      {
+        "label": "cue-06",
+        "second": 37.3984355,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-06.png",
+        "sha256": "4e502be38d07e73eaf2da3bb03d03d9bea016a839cdc3e652bd80fedf60b23bd"
+      },
+      {
+        "label": "cue-07",
+        "second": 43.407551,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-07.png",
+        "sha256": "00f590c47d6c7e266f4143a58e52e808dbdcb5ea23246af93fd3cd52173a39fb"
+      },
+      {
+        "label": "cue-08",
+        "second": 51.0148075,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-08.png",
+        "sha256": "6602df0a3e457984647fce2621813f6e8489b7dcd1505ce79e8859490896f590"
+      },
+      {
+        "label": "cue-09",
+        "second": 56.955906999999996,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-09.png",
+        "sha256": "1159f663f965cdb29b662861e2bad6efafecb171f1371df3fabca8ed33172c1c"
+      },
+      {
+        "label": "cue-10",
+        "second": 64.2828685,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-10.png",
+        "sha256": "400e4ced39e4450839247f081ddab2246a10b8631dce43a76bafd23f7885458d"
+      },
+      {
+        "label": "cue-11",
+        "second": 69.8906575,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-11.png",
+        "sha256": "09b2605fc8b973bff86603747b859f14fb54703de0ec6e72af1bd0ccfa744aa3"
+      },
+      {
+        "label": "cue-12",
+        "second": 75.236655,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-12.png",
+        "sha256": "244c870f7bd98e994db92c23076e2f77192dd7acd42ef22ce6f7200f82a14a44"
+      },
+      {
+        "label": "cue-13",
+        "second": 80.07528350000001,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-13.png",
+        "sha256": "e8b11997fa984d4ed53ca5e490dc6147f386105530602ece8c95e2360476d9b6"
+      },
+      {
+        "label": "cue-14",
+        "second": 85.911553,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cue-14.png",
+        "sha256": "aa6f4d7a19097a2d25e35d85dbb56469547fbfd0511fca6a92b68b9ffeb96806"
+      },
+      {
+        "cut_seconds": 10,
+        "side": "before",
+        "sample_seconds": 9.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-010.00-before.png",
+        "sha256": "43356b99fd8005d84021d7ee7540951b8843ed0f6c1f69e3d0f1439b09ab9235"
+      },
+      {
+        "cut_seconds": 10,
+        "side": "after",
+        "sample_seconds": 10.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-010.00-after.png",
+        "sha256": "7b230774e06318b4fd6dc6d0caebf5ed00743916abbb018a0469737ec9052739"
+      },
+      {
+        "cut_seconds": 22,
+        "side": "before",
+        "sample_seconds": 21.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-022.00-before.png",
+        "sha256": "7e54b2013c00294013c0db524fcb667978c9cb56fa5d2bf9639cb8d225d3d3ea"
+      },
+      {
+        "cut_seconds": 22,
+        "side": "after",
+        "sample_seconds": 22.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-022.00-after.png",
+        "sha256": "256febf56d3e048458158a9d012b103cc1de77b41caedd691591d763d85dfae3"
+      },
+      {
+        "cut_seconds": 34,
+        "side": "before",
+        "sample_seconds": 33.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-034.00-before.png",
+        "sha256": "9fb77728ab78e990b5effdbdb0daf875c976e2ed02bf55b4f1522fd3205aed4d"
+      },
+      {
+        "cut_seconds": 34,
+        "side": "after",
+        "sample_seconds": 34.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-034.00-after.png",
+        "sha256": "7da50817461312937101e88bf5fd94ad1fb4623be15dfcd34a23d3f3ebfa786a"
+      },
+      {
+        "cut_seconds": 44.01,
+        "side": "before",
+        "sample_seconds": 43.949999999999996,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-044.01-before.png",
+        "sha256": "49124e9bb6a69c61ffc7717dde541dba6669d98367022d71d35421701a6ce7b9"
+      },
+      {
+        "cut_seconds": 44.01,
+        "side": "after",
+        "sample_seconds": 44.07,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-044.01-after.png",
+        "sha256": "f23d4d2372ccc96a893bf06da66f66c6552eda7b0a152ee84965605a79a04c3f"
+      },
+      {
+        "cut_seconds": 47,
+        "side": "before",
+        "sample_seconds": 46.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-047.00-before.png",
+        "sha256": "016be10521280d1dc26821b661523b800a29b8dec6e1b56ec879b3d812f0a526"
+      },
+      {
+        "cut_seconds": 47,
+        "side": "after",
+        "sample_seconds": 47.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-047.00-after.png",
+        "sha256": "e0a8e55d4a831348053b736a5266502f711501111cf254820e1aeae2c6f84aac"
+      },
+      {
+        "cut_seconds": 60,
+        "side": "before",
+        "sample_seconds": 59.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-060.00-before.png",
+        "sha256": "954ee2b8e35fcaa70a955ca891d431b5fd013b0193242af1996ab5b1e53e77b9"
+      },
+      {
+        "cut_seconds": 60,
+        "side": "after",
+        "sample_seconds": 60.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-060.00-after.png",
+        "sha256": "9f3c76c612aa1667117918f902eda684d178b712b11375698d03bd3362da96be"
+      },
+      {
+        "cut_seconds": 63.96,
+        "side": "before",
+        "sample_seconds": 63.9,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-063.96-before.png",
+        "sha256": "548c9e71d70f8eab11c4e8413dbd6b208a948dea55bdeaa5b82ca0564439e9a0"
+      },
+      {
+        "cut_seconds": 63.96,
+        "side": "after",
+        "sample_seconds": 64.02,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-063.96-after.png",
+        "sha256": "4864432f6140c9fa491a6d3ebb2a5a133664eeb13d71ebdd7ff15c98e5d450b3"
+      },
+      {
+        "cut_seconds": 68.04,
+        "side": "before",
+        "sample_seconds": 67.98,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-068.04-before.png",
+        "sha256": "664b6f17cbd80ba241e0f9411552c9ee662c9f81b57918b7bc0300abb7f18976"
+      },
+      {
+        "cut_seconds": 68.04,
+        "side": "after",
+        "sample_seconds": 68.10000000000001,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-068.04-after.png",
+        "sha256": "223c8cff6fe5ea57e34080ac6e2c104da6a9b13c9ffcd48b8f3bf3a6df6bc699"
+      },
+      {
+        "cut_seconds": 72,
+        "side": "before",
+        "sample_seconds": 71.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-072.00-before.png",
+        "sha256": "3baa10542dd7850998b2bb1ba870c45d553c2ed7df524f5652c458604c1262ad"
+      },
+      {
+        "cut_seconds": 72,
+        "side": "after",
+        "sample_seconds": 72.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-072.00-after.png",
+        "sha256": "962dffe12b4771e6b10011e2cf790f9af44cd007007875890a14896994c5432a"
+      },
+      {
+        "cut_seconds": 78.5,
+        "side": "before",
+        "sample_seconds": 78.44,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-078.50-before.png",
+        "sha256": "a8602f2661c6ba0f9aa86dbe53e4c3a2f024b36aad62101a8e7d890bd538e26e"
+      },
+      {
+        "cut_seconds": 78.5,
+        "side": "after",
+        "sample_seconds": 78.56,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-078.50-after.png",
+        "sha256": "097a5fd21b1fbda637b1f118b545de5e95b59b5742cf91e0636e90365a260e10"
+      },
+      {
+        "cut_seconds": 82,
+        "side": "before",
+        "sample_seconds": 81.94,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-082.00-before.png",
+        "sha256": "d9fdc90770980f7795157e9cbf8a8cd10c5e942178d5618b84566bea302ebf65"
+      },
+      {
+        "cut_seconds": 82,
+        "side": "after",
+        "sample_seconds": 82.06,
+        "path": "reports/independent_visual_qa_20261024/narrated_samples/cut-082.00-after.png",
+        "sha256": "deedbf8d9795562b33593a3c7bc420233b2befe0611bff6432f775c880f7a3ad"
+      }
+    ]
+  },
+  "license_notice": {
+    "metadata_value": "Synthesized Mandarin narration: TTS.ai MeloTTS ZH. PERSONAL AND NONCOMMERCIAL USE ONLY. Research models NOT_RUN.",
+    "visible_notice": "合成旁白（未试听）·仅个人非商业·数学示意/无模型实测",
+    "restriction": "Personal and noncommercial use only, as declared in frozen asset and supplied task context. No independent legal verification or external license check was performed."
+  },
+  "long_narrated_edition": {
+    "exists": false,
+    "matching_files": [],
+    "status": "ABSENT_PERMISSION_BLOCKED",
+    "source_of_permission_status": "Parent task states external TTS was denied and stopped pending user permission. Reviewer made no external requests.",
+    "existing_silent_long_video_untouched": true
+  },
+  "findings": [],
+  "blocking_unverified_items": [
+    "Mandatory listening/audition is unperformed because audio ingestion was tested unsupported by the parent.",
+    "Spoken wording, pronunciation, prosody, naturalness and word-level audiovisual alignment are not verified.",
+    "Long narrated edition is absent and permission-blocked."
+  ],
+  "research_state": "NOT_RUN"
+}

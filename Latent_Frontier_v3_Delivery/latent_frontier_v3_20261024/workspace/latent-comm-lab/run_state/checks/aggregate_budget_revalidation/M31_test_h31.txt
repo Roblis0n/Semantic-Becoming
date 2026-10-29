@@ -1,0 +1,17 @@
+test_graft_intervention_descendants_rollback (test_h31.H31Contracts.test_graft_intervention_descendants_rollback) ... ok
+test_recompute_only_affected (test_h31.H31Contracts.test_recompute_only_affected) ... ok
+test_shared_noise_identity (test_h31.H31Contracts.test_shared_noise_identity) ... ok
+test_units_and_cycles_rejected (test_h31.H31Contracts.test_units_and_cycles_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+{
+  "selected": 4,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h31.H31Contracts.test_gate",
+    "test_h31.H31Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "states": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "transitions": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^.+$"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "minItems": 0,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 128
+    },
+    "start_states": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "terminal_states": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "terminal_source": {
+      "enum": [
+        "public_goal",
+        "public_boundary"
+      ]
+    },
+    "task_version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    }
+  },
+  "required": [
+    "schema_version",
+    "states",
+    "transitions",
+    "start_states",
+    "terminal_states",
+    "terminal_source",
+    "task_version",
+    "version"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H34:resolved-payload:3"
+}

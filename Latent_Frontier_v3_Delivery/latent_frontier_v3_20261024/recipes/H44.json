@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H44",
+  "kind": "mechanism",
+  "title": "共同构造的反事实梦境",
+  "mechanisms": [
+    "H44"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H44_共同构造的反事实梦境.md",
+  "target_base": "src/latent_comm/mechanisms/h44_dreaming",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "world_budget": 32,
+    "edits_per_world": 3,
+    "synthetic_label_required": true,
+    "external_truth_claims": false
+  }
+}

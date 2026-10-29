@@ -1,0 +1,321 @@
+{
+  "checked_at_utc": "2026-10-27T10:52:23.393156+00:00",
+  "actual_visual_inspection": true,
+  "video_sha256": "87e790afb5601eb34102cdf93a3de129c2401bd0e31c74e2d35f9a24eeb5ca16",
+  "sample_count": 45,
+  "method": "Actually viewed all six decoded contact sheets covering opening plus every one of the44caption-cue midpoints. Checked Chinese glyph rendering, at-most-two-line captions, formula/diagram visibility, source-scene/title/caption correspondence, and persistent synthesized/unauditioned/personal-noncommercial/no-model-experiment labels. No clipping, missing glyph boxes, obscured key objects or misleading model-result claims observed in these sampled frames. This is sampled-frame visual review, not continuous playback or auditory review.",
+  "samples": [
+    {
+      "cue": 0,
+      "second": 0.5,
+      "path": "assets/video/explainer_360/narrated_samples/cue-000.png",
+      "sha256": "905a2f947746dea1841193e9cff3d3dc4c467a6c35c8bc03548168e95e53dd09"
+    },
+    {
+      "cue": 1,
+      "second": 3.8727099999999997,
+      "path": "assets/video/explainer_360/narrated_samples/cue-001.png",
+      "sha256": "c7323694260ab5495e516e2ab7a84648645fe23673ca319d6aa23dbf32cdc376"
+    },
+    {
+      "cue": 2,
+      "second": 11.3604535,
+      "path": "assets/video/explainer_360/narrated_samples/cue-002.png",
+      "sha256": "e397208a9f04c1f2b2229089db57e70d560e9aa0effdb1febae5571c3a635625"
+    },
+    {
+      "cue": 3,
+      "second": 18.7405555,
+      "path": "assets/video/explainer_360/narrated_samples/cue-003.png",
+      "sha256": "65d21978c5517963e09763f3dd423582b221d329051893ff8eea0c7115b859af"
+    },
+    {
+      "cue": 4,
+      "second": 27.296134000000002,
+      "path": "assets/video/explainer_360/narrated_samples/cue-004.png",
+      "sha256": "7d4d7553aa9e6a4df427cda1f23e25c0cc514624ccb75a80cf7cd7d2f82f655f"
+    },
+    {
+      "cue": 5,
+      "second": 33.3939685,
+      "path": "assets/video/explainer_360/narrated_samples/cue-005.png",
+      "sha256": "d28698dde4a0d5b5010f0aafa10d95fb65dad25ba694a9f6bc3abe6a5107e2c5"
+    },
+    {
+      "cue": 6,
+      "second": 38.9399545,
+      "path": "assets/video/explainer_360/narrated_samples/cue-006.png",
+      "sha256": "8d3569687eb455f2bfb6885380588cbf174fa64641e549450a1c5377c981d4b8"
+    },
+    {
+      "cue": 7,
+      "second": 47.829398999999995,
+      "path": "assets/video/explainer_360/narrated_samples/cue-007.png",
+      "sha256": "ab48d01be83ef43064ecc0cce494961bc4dd6b912517c4ccd03ea66225ad58d9"
+    },
+    {
+      "cue": 8,
+      "second": 57.6178685,
+      "path": "assets/video/explainer_360/narrated_samples/cue-008.png",
+      "sha256": "369efccc2fd832882084c76472db6b3b3fcf0de13310baed999d23d3f347ba08"
+    },
+    {
+      "cue": 9,
+      "second": 66.606451,
+      "path": "assets/video/explainer_360/narrated_samples/cue-009.png",
+      "sha256": "14c5b7292d8a41eb99f048b8f85d7f326cda2f088a5106ed74a2d84e6b15c887"
+    },
+    {
+      "cue": 10,
+      "second": 73.9896715,
+      "path": "assets/video/explainer_360/narrated_samples/cue-010.png",
+      "sha256": "a56da46ac04058a059c8fa66e9c88a3dc2518645916e1942a932e1ca838e7f7d"
+    },
+    {
+      "cue": 11,
+      "second": 82.361009,
+      "path": "assets/video/explainer_360/narrated_samples/cue-011.png",
+      "sha256": "2baa3be7b0d11fcc10794c0aa0af8813714b6001878007a77aa3d18a6c09bebd"
+    },
+    {
+      "cue": 12,
+      "second": 90.57549900000001,
+      "path": "assets/video/explainer_360/narrated_samples/cue-012.png",
+      "sha256": "4df42aa57a15e6eda0d1e4bdeb70649371e1e2b1f2cdc35b2e979d03fd28e2e7"
+    },
+    {
+      "cue": 13,
+      "second": 99.534864,
+      "path": "assets/video/explainer_360/narrated_samples/cue-013.png",
+      "sha256": "107c6262a7f9bfe062b41d9d8966759ae3797daed408c678fa969537e3652f82"
+    },
+    {
+      "cue": 14,
+      "second": 107.9675055,
+      "path": "assets/video/explainer_360/narrated_samples/cue-014.png",
+      "sha256": "fb96cc54de1dc87e0279fbf608da3e8049f826f4a4fb2a0e93e30d32b860c452"
+    },
+    {
+      "cue": 15,
+      "second": 114.723186,
+      "path": "assets/video/explainer_360/narrated_samples/cue-015.png",
+      "sha256": "9ca5e2a2e777f4479a32cb9263229e87b9bc399eee8d992084c1fb53f628a5ff"
+    },
+    {
+      "cue": 16,
+      "second": 123.94994299999999,
+      "path": "assets/video/explainer_360/narrated_samples/cue-016.png",
+      "sha256": "12191ed10d895227572fed53c8ac9044c3ea9e3bdc10878dacbb4578d59a4f91"
+    },
+    {
+      "cue": 17,
+      "second": 133.484025,
+      "path": "assets/video/explainer_360/narrated_samples/cue-017.png",
+      "sha256": "97c182f38b464ad63b03baca587d0a1147bfebb38284c57e53e6a78940b28901"
+    },
+    {
+      "cue": 18,
+      "second": 142.8828005,
+      "path": "assets/video/explainer_360/narrated_samples/cue-018.png",
+      "sha256": "43c6b6b8559fa81252caa008e7289792ffb3dfd06331ee84144d22573ff1611b"
+    },
+    {
+      "cue": 19,
+      "second": 152.663571,
+      "path": "assets/video/explainer_360/narrated_samples/cue-019.png",
+      "sha256": "9b089e93f7e14d31b35445437c432cf535abf8e2e46b5a9729eeb76515c2f6af"
+    },
+    {
+      "cue": 20,
+      "second": 160.01887749999997,
+      "path": "assets/video/explainer_360/narrated_samples/cue-020.png",
+      "sha256": "e515f7fed34cdf085d0bb18ff15e190fb22092da7d1b187eb2f398a88a764eda"
+    },
+    {
+      "cue": 21,
+      "second": 168.0855105,
+      "path": "assets/video/explainer_360/narrated_samples/cue-021.png",
+      "sha256": "afac5fccfdfdd067ea3bad6a97f2e7bb090a7f97aec4198d517d28beb0413ecf"
+    },
+    {
+      "cue": 22,
+      "second": 178.04797050000002,
+      "path": "assets/video/explainer_360/narrated_samples/cue-022.png",
+      "sha256": "af9a1f71f09768f912e116a4e1bd0f812e3013340cee7ea6575cb2809273b57a"
+    },
+    {
+      "cue": 23,
+      "second": 187.2854535,
+      "path": "assets/video/explainer_360/narrated_samples/cue-023.png",
+      "sha256": "70ed2b5debfabd06f54617687891fd59ac9d0e2225f8bfb7bc9ffe287614d0af"
+    },
+    {
+      "cue": 24,
+      "second": 194.86931950000002,
+      "path": "assets/video/explainer_360/narrated_samples/cue-024.png",
+      "sha256": "268c90caa3646edccc55a42ec7964b117a913fd611baaed780d2cb06d0a4f4aa"
+    },
+    {
+      "cue": 25,
+      "second": 200.769728,
+      "path": "assets/video/explainer_360/narrated_samples/cue-025.png",
+      "sha256": "afc0f6a380a760ae2e4f30576982fee1bf7ce73ada2ed4fc1d152497ca766fa1"
+    },
+    {
+      "cue": 26,
+      "second": 208.4934015,
+      "path": "assets/video/explainer_360/narrated_samples/cue-026.png",
+      "sha256": "94411fcc852b39f728a2dd6661b932359359c2cd3c094b3ceb4b47fb0fe1a604"
+    },
+    {
+      "cue": 27,
+      "second": 217.5214515,
+      "path": "assets/video/explainer_360/narrated_samples/cue-027.png",
+      "sha256": "82d7d3b828c7ae1092aafaffa5b7a91df9736934aa213a4d899d77c16f6f6cdf"
+    },
+    {
+      "cue": 28,
+      "second": 227.24758500000002,
+      "path": "assets/video/explainer_360/narrated_samples/cue-028.png",
+      "sha256": "52812df5ff9bc13a4df9a7f8eb4644fbbc90560370a38c52c1bda6a7eba2fc31"
+    },
+    {
+      "cue": 29,
+      "second": 234.4233785,
+      "path": "assets/video/explainer_360/narrated_samples/cue-029.png",
+      "sha256": "0e07b71a14035498387441451da3e4d1da58f5d2ac988a3f29c615796045aca4"
+    },
+    {
+      "cue": 30,
+      "second": 240.15441049999998,
+      "path": "assets/video/explainer_360/narrated_samples/cue-030.png",
+      "sha256": "7af1294197df38a31a627c03702d69f968a1cb652aad98bbc02b23da1fca6875"
+    },
+    {
+      "cue": 31,
+      "second": 246.3908505,
+      "path": "assets/video/explainer_360/narrated_samples/cue-031.png",
+      "sha256": "7842135aa678430ca2b490fec8dfb3b1450b9cee625112e6f8b3ed5a4aa35da0"
+    },
+    {
+      "cue": 32,
+      "second": 255.75483000000003,
+      "path": "assets/video/explainer_360/narrated_samples/cue-032.png",
+      "sha256": "fd918909f39bf8a04fb2e6a95664ff44ab9a43619f4b737c181004fcc30e5a86"
+    },
+    {
+      "cue": 33,
+      "second": 265.5364285,
+      "path": "assets/video/explainer_360/narrated_samples/cue-033.png",
+      "sha256": "aad9591ae6d3b93cd378f96871defb6a614f1b901353e68f0c58e2edb2c418d6"
+    },
+    {
+      "cue": 34,
+      "second": 274.2836055,
+      "path": "assets/video/explainer_360/narrated_samples/cue-034.png",
+      "sha256": "7ba8c9b09783abfaf18c0a148bdea76d0e1fbff351b1151b85d001ca307de8b1"
+    },
+    {
+      "cue": 35,
+      "second": 283.68746050000004,
+      "path": "assets/video/explainer_360/narrated_samples/cue-035.png",
+      "sha256": "43c5e42e42996d76b63ce11e76dead5f00eece9de113a47f6588f3e7aaf7bc92"
+    },
+    {
+      "cue": 36,
+      "second": 294.75534,
+      "path": "assets/video/explainer_360/narrated_samples/cue-036.png",
+      "sha256": "49a6decd46fdcc84cdc1103e7eefeaa1e282063d9c1ccf903c554e72e16d3ee5"
+    },
+    {
+      "cue": 37,
+      "second": 301.22756200000003,
+      "path": "assets/video/explainer_360/narrated_samples/cue-037.png",
+      "sha256": "ca73e8e150b96616973af3792f82aea2394651deb366b54552d8831ccca358d2"
+    },
+    {
+      "cue": 38,
+      "second": 307.8843875,
+      "path": "assets/video/explainer_360/narrated_samples/cue-038.png",
+      "sha256": "0f3d8c169cf6bfc49b453ec977919d0b0742e1e9717b746802480facf54ab71a"
+    },
+    {
+      "cue": 39,
+      "second": 316.707585,
+      "path": "assets/video/explainer_360/narrated_samples/cue-039.png",
+      "sha256": "e79eff64532047522e620127343cc5d218a0101861d9c84fff2e08828e0dd88e"
+    },
+    {
+      "cue": 40,
+      "second": 325.10797049999996,
+      "path": "assets/video/explainer_360/narrated_samples/cue-040.png",
+      "sha256": "277482c5f8552847210623b6aa714444c5693654f130b5510a78c9443587513a"
+    },
+    {
+      "cue": 41,
+      "second": 334.45484150000004,
+      "path": "assets/video/explainer_360/narrated_samples/cue-041.png",
+      "sha256": "137eae2be03d3c8aa822f58b1bbb10846f55506fa715e1feea6d869f982ec005"
+    },
+    {
+      "cue": 42,
+      "second": 343.06685949999996,
+      "path": "assets/video/explainer_360/narrated_samples/cue-042.png",
+      "sha256": "126a0c0f4d6ac3b0df48897eebb1646ea93b5ada1f12615d5e21c1243528ff1d"
+    },
+    {
+      "cue": 43,
+      "second": 350.865476,
+      "path": "assets/video/explainer_360/narrated_samples/cue-043.png",
+      "sha256": "aa8848c82db3849c8765c67ea8bb726cf2bb604b82b7086237d4d8a394fd3733"
+    },
+    {
+      "cue": 44,
+      "second": 357.1007025,
+      "path": "assets/video/explainer_360/narrated_samples/cue-044.png",
+      "sha256": "55cc034977bc09ae802986899a9c7205e3c7ffe1493559e4a15a57803ebf3283"
+    }
+  ],
+  "contact_sheets_viewed": [
+    {
+      "path": "assets/video/explainer_360/narrated_samples/contact-01.jpg",
+      "sha256": "684e629ebf72a27279ee80ecb223e7e3cd912a8a4ebafee75faf6800efbfc468"
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_samples/contact-02.jpg",
+      "sha256": "ab2d7f360655ea1ecb891e7be383f8d546f48d38e00ef66b6a7d88dd0f70f388"
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_samples/contact-03.jpg",
+      "sha256": "de8ee3f7e24a5c7004a0acba163eb0f9d63a59e0607b7c717e3bddbe8d78074c"
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_samples/contact-04.jpg",
+      "sha256": "9a6264660f4a5badeb454463a5b13d8377f06ab35b0c83ac80bdd1d15ef00419"
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_samples/contact-05.jpg",
+      "sha256": "efc027dfa73367d0f8135f5a712fcc612d81efbaf83c324cf09c39e47a5c4996"
+    },
+    {
+      "path": "assets/video/explainer_360/narrated_samples/contact-06.jpg",
+      "sha256": "7e91a8aab65a7d15d289d1447a61cfc338d04e510940595d267545acdd91e252"
+    }
+  ],
+  "checks": {
+    "chinese_glyphs_legible": true,
+    "captions_no_more_than_two_lines_in_samples": true,
+    "key_objects_unobscured": true,
+    "sampled_scene_caption_correspondence": true,
+    "synthesis_unauditioned_license_and_not_run_labels_visible": true
+  },
+  "blocking_visual_findings": [],
+  "limitations": [
+    "Sampled opening and cue-midpoints, not every video frame.",
+    "No audio listening, pronunciation assessment or spoken-word verification.",
+    "Metadata and rendered subtitles do not prove exact spoken-word alignment."
+  ],
+  "audio_listened": false,
+  "spoken_word_accuracy_checked": false,
+  "research_state": "NOT_RUN"
+}

@@ -1,0 +1,19 @@
+test_actual_distinction_and_length (test_learning_concept_questions.LearningConceptQuestions.test_actual_distinction_and_length) ... ok
+test_describe (test_learning_concept_questions.LearningConceptQuestions.test_describe) ... ok
+test_no_eager_models (test_learning_concept_questions.LearningConceptQuestions.test_no_eager_models) ... ok
+test_no_query_supervision_forward (test_learning_concept_questions.LearningConceptQuestions.test_no_query_supervision_forward) ... ok
+test_positive_root_not_equivalence (test_learning_concept_questions.LearningConceptQuestions.test_positive_root_not_equivalence) ... ok
+test_three_valued_unknown (test_learning_concept_questions.LearningConceptQuestions.test_three_valued_unknown) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.010s
+
+OK
+{
+  "selected": 6,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_concept_questions.LearningConceptQuestions.test_build_locked",
+    "test_learning_concept_questions.LearningConceptQuestions.test_structural_train_locked"
+  ],
+  "neural_modules_loaded": []
+}

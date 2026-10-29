@@ -1,0 +1,5 @@
+Inspect the supplied public or receiver-visible proposal and its declared witnesses. Distinguish contradiction, unsupported, and unknown. Do not claim empirical validation.
+This is a frontier proposal with no model measurements. Output only JSON matching this schema:
+{"additionalProperties": false, "properties": {"counterexample": {"type": "object"}, "obligations": {"type": "array"}, "status": {"enum": ["present", "unknown", "missing", "contradiction"]}, "verdict": {"type": "string"}, "violated_invariants": {"type": "array"}}, "required": ["status", "verdict", "counterexample", "violated_invariants", "obligations"], "type": "object"}
+DATA_ONLY
+{"versions": {{ versions }}, "public_task": {{ public_task }}, "features": {{ features }}}

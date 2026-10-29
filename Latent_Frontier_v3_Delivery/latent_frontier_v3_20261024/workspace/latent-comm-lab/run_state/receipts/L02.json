@@ -1,0 +1,63 @@
+{
+  "task_id": "L02",
+  "status": "done",
+  "input_digest": "53fb5b8b40fa5ab2ab6745df8bd6b9f2e98e724a2cf15ca1d76d92d195b70704",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/objects/README.md",
+      "sha256": "babac891ce48061618808e90dd8c03441080e27ecb74f33c7b07cecc00262d03",
+      "bytes": 5252
+    },
+    {
+      "path": "src/latent_comm/learning/objects/__init__.py",
+      "sha256": "c3218eb7e6e428d5c7b7ae93ebd59597d83969a3ddfa19c19224e6cd505e1f41",
+      "bytes": 17614
+    },
+    {
+      "path": "src/latent_comm/learning/objects/train.py",
+      "sha256": "16c4feb7cf456b4ecbe10255d5f2eb38bb9bd8168ede87625f8b94aa8f4eccaa",
+      "bytes": 2362
+    },
+    {
+      "path": "configs/learning/objects.json",
+      "sha256": "de8773091767f40a072a584f351fd65b1386e7cd3bdf751a34e2ba6e5ae4409b",
+      "bytes": 1719
+    },
+    {
+      "path": "tests/research_locked/test_learning_objects.py",
+      "sha256": "28848ccbb2aaeafd110a3f6e131fb76c21101aad6f16864974e5f095e6bcd045",
+      "bytes": 3937
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L02_objects.txt",
+      "sha256": "32f2400851deaa3bd7f69774677909ac76f802e125c5c193a7b15ad16b918496"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_objects.txt",
+      "sha256": "77db15e4fbe3e36db2b9d6a1e512fbd21d1d3190a9bd3fe345dc2a152446ea93"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated H01 ordered operator program, H02 local response factor/refresh/reader and JVP/finite-difference bindings, H03 whole-sequence categorical branch decoder with causal loss-only teacher forcing, explicit unknown support, compatible one-to-one fixed coverage matching and all three generation modes. Nine metadata/AST/finite checks only. No neural/model/guard invocation; NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:52.609148+00:00"
+}

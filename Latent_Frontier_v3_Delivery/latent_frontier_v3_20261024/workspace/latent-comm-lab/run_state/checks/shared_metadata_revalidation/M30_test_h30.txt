@@ -1,0 +1,11 @@
+test_commuting_and_program (test_h30.H30Contracts.test_commuting_and_program) ... ok
+test_gate (test_h30.H30Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h30.H30Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_symmetry_returns_multiple (test_h30.H30Contracts.test_symmetry_returns_multiple) ... ok
+test_typed_schema_and_migration (test_h30.H30Contracts.test_typed_schema_and_migration) ... ok
+test_unmapped_step_rejected (test_h30.H30Contracts.test_unmapped_step_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

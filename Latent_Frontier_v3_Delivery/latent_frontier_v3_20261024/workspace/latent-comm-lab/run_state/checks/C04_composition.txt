@@ -1,0 +1,10 @@
+test_contract_change_not_exact (test_c04.C04Tests.test_contract_change_not_exact) ... ok
+test_dependency_wait_is_preserved (test_c04.C04Tests.test_dependency_wait_is_preserved) ... ok
+test_no_authorization_expansion (test_c04.C04Tests.test_no_authorization_expansion) ... ok
+test_stale_receiver_does_not_resume (test_c04.C04Tests.test_stale_receiver_does_not_resume) ... ok
+test_suffix_no_replay_at_multiple_cuts (test_c04.C04Tests.test_suffix_no_replay_at_multiple_cuts) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.053s
+
+OK

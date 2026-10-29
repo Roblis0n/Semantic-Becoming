@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "id": "C03",
+  "title": "分布式信念树",
+  "kind": "combination",
+  "hypotheses": [
+    "H03",
+    "H13",
+    "H21"
+  ],
+  "training_routes": [
+    "R04",
+    "R08",
+    "R12"
+  ],
+  "pipeline_nodes": [
+    "belief_encode",
+    "fork",
+    "condition_update",
+    "compatible_merge",
+    "decode"
+  ],
+  "execution_mode": "design",
+  "research_execution_authorized": false,
+  "source_spec": "docs/23_八条组合研究路线与远期极端猜想.md",
+  "status": "planned_for_dot"
+}

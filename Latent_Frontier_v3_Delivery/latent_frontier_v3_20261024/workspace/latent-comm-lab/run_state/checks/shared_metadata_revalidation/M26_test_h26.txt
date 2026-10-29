@@ -1,0 +1,14 @@
+test_budget (test_h26.H26Contracts.test_budget) ... ok
+test_consistent_chain_and_missing_overlap (test_h26.H26Contracts.test_consistent_chain_and_missing_overlap) ... ok
+test_cycle_retains_conflict_and_hard_anchor (test_h26.H26Contracts.test_cycle_retains_conflict_and_hard_anchor) ... ok
+test_gate (test_h26.H26Contracts.test_gate) ... ok
+test_migration_preserves_constraints (test_h26.H26Contracts.test_migration_preserves_constraints) ... ok
+test_mixed_batch_cannot_hide_homogeneous_row (test_h26.H26Contracts.test_mixed_batch_cannot_hide_homogeneous_row) ... ok
+test_neural_source_is_lazy_and_gated (test_h26.H26Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_semantic_schema_rejects_bad_anchor (test_h26.H26Contracts.test_semantic_schema_rejects_bad_anchor) ... ok
+test_zero_consensus_rejected (test_h26.H26Contracts.test_zero_consensus_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK

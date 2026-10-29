@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "coordinate_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "public_task_version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "observation_kind": {
+      "const": "public_behavior"
+    },
+    "jacobian": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "number"
+        },
+        "minItems": 1,
+        "maxItems": 64
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "parameter_names": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "parameter_version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "regularization": {
+      "type": "number",
+      "minimum": 0
+    },
+    "parameter_update_authorized": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "coordinate_ids",
+    "public_task_version",
+    "observation_kind",
+    "jacobian",
+    "parameter_names",
+    "parameter_version",
+    "regularization",
+    "parameter_update_authorized"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H37:resolved-payload:3"
+}

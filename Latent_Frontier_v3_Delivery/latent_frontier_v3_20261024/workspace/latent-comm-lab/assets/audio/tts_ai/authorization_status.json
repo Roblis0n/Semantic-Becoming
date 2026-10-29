@@ -1,0 +1,22 @@
+{
+  "recorded_at_utc": "2026-10-27T10:50:58.437623+00:00",
+  "status": "authorized_narration_complete",
+  "accepted_submission_count": 60,
+  "accepted_submission_characters": 1811,
+  "unique_source_count": 58,
+  "unique_source_characters": 1754,
+  "downloaded_wavs": 58,
+  "missing_wavs": 0,
+  "credits_used": 0,
+  "historical_unknown_submissions": [
+    "explainer_360_029_original",
+    "explainer_360_036_original"
+  ],
+  "current_pending_submission": null,
+  "provider_activity": "complete; no new submissions required",
+  "authorities": [
+    "release/authorization_updates/20261026_TTS_APPROVAL.json",
+    "release/authorization_updates/20261027_TTS036_APPROVAL.json"
+  ],
+  "research_state": "NOT_RUN"
+}

@@ -1,0 +1,45 @@
+{
+  "task_id": "C03",
+  "status": "done",
+  "input_digest": "34af184c7e8d0fe38f4fc108af351e3e19acc842a35b031bb34e8197c5e5f18c",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compositions/c03.py",
+      "sha256": "c7695b8cb909311a6721343344659ff7dd21c26fa772365891cbfd564317b283",
+      "bytes": 7416
+    },
+    {
+      "path": "configs/compositions/C03.json",
+      "sha256": "91bf019cfc915a541384e8aa70f363b184771612fbeabac500c304bf93f0f28d",
+      "bytes": 27378
+    },
+    {
+      "path": "tests/contracts/test_c03.py",
+      "sha256": "3559c9c3a74c81c50b228275359e4d7de88b8370405d8be4cee10f7485e81a5c",
+      "bytes": 2283
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/C03_composition.txt",
+      "sha256": "4da9f6e57b8591d6d3117824431231078b641702b4442a7551044ecf928586b1"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "b4127847febf1ffeefb1d8515a256bf538eb09612791ea280ad808e6047ea41d"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_c03.txt",
+      "sha256": "3bedbbd52c8ef77dcfbbef8d636f45813f463945ee6737460b312f6a94aebcf0"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Concrete typed object flow with actual bounded finite mechanism calls and compiled IR, exact source loss ledgers, failure/partial obligations. End-to-end aggregate fixture accounting enforced. Research models/training NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:59:06.040354+00:00"
+}

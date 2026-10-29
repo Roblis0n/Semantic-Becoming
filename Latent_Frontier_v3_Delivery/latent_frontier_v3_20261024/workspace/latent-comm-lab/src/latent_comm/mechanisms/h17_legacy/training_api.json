@@ -1,0 +1,178 @@
+{
+  "schema_version": 3,
+  "id": "H17",
+  "status": "SOURCE_ONLY_NOT_RUN",
+  "forward_entry": "latent_comm.mechanisms.h17_legacy.adapter.tensor_ground_objects",
+  "forward_entries": {
+    "tensor_ground_objects": {
+      "entry": "latent_comm.mechanisms.h17_legacy.adapter.tensor_ground_objects",
+      "signature": "patch_features, patch_mask, object_queries, position_weight, covariance_weight",
+      "arguments": [
+        "patch_features",
+        "patch_mask",
+        "object_queries",
+        "position_weight",
+        "covariance_weight"
+      ]
+    },
+    "tensor_transform": {
+      "entry": "latent_comm.mechanisms.h17_legacy.adapter.tensor_transform",
+      "signature": "positions, covariance, linear, translation",
+      "arguments": [
+        "positions",
+        "covariance",
+        "linear",
+        "translation"
+      ]
+    }
+  },
+  "loss_entry": "latent_comm.mechanisms.h17_legacy.losses.tensor_losses",
+  "loss_signature": "aligned_positions, position_target, visible_valid, predicted_next, next_target, action_valid, *, aligned_covariances, covariance_target, covariance_valid",
+  "loss_input_bindings": {
+    "aligned_positions": {
+      "producer": "tensor_transform(tensor_ground_objects positions/covariances) return[0]",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "position_target": {
+      "producer": "SupervisionBatch.position_target; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "visible_valid": {
+      "producer": "stage explicit boolean visible_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    },
+    "predicted_next": {
+      "producer": "tensor_transform under known action adapter",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "next_target": {
+      "producer": "SupervisionBatch.next_target; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "action_valid": {
+      "producer": "stage explicit boolean action_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    },
+    "aligned_covariances": {
+      "producer": "tensor_transform return[1]",
+      "requires_gradient": true,
+      "detached_supervision": false
+    },
+    "covariance_target": {
+      "producer": "SupervisionBatch.covariance_target; loss-only, detached or discrete target",
+      "requires_gradient": false,
+      "detached_supervision": true
+    },
+    "covariance_valid": {
+      "producer": "stage explicit boolean covariance_valid from typed applicability and supervision availability",
+      "requires_gradient": false,
+      "detached_supervision": false
+    }
+  },
+  "loss_specs": [
+    {
+      "name": "frame",
+      "mathematical_definition": "mean aligned position error",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "visible_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "vision_reader",
+        "mechanism_reader"
+      ],
+      "requires_grad_inputs": [
+        "aligned_positions"
+      ],
+      "stop_gradient_edges": [
+        [
+          "position_target",
+          "target_or_return"
+        ]
+      ],
+      "estimator": "EXACT",
+      "normalization_units": "physical coordinates"
+    },
+    {
+      "name": "action",
+      "mathematical_definition": "mean predicted action consequence error",
+      "numerator": "sum of valid terms",
+      "denominator": "count of valid terms",
+      "valid_mask": "action_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "action_adapter"
+      ],
+      "requires_grad_inputs": [
+        "predicted_next"
+      ],
+      "stop_gradient_edges": [
+        [
+          "next_target",
+          "target_or_return"
+        ]
+      ],
+      "estimator": "EXACT",
+      "normalization_units": "physical coordinates"
+    },
+    {
+      "name": "covariance",
+      "mathematical_definition": "mean squared aligned covariance-target error",
+      "numerator": "sum of valid squared covariance entries",
+      "denominator": "count of valid covariance entries",
+      "valid_mask": "covariance_valid",
+      "zero_valid_policy": "differentiable_zero",
+      "parameter_owners": [
+        "vision_reader",
+        "mechanism_reader"
+      ],
+      "requires_grad_inputs": [
+        "aligned_covariances"
+      ],
+      "stop_gradient_edges": [
+        [
+          "covariance_target",
+          "target_or_return"
+        ]
+      ],
+      "estimator": "EXACT",
+      "normalization_units": "covariance matrix entries"
+    }
+  ],
+  "parameter_bindings": {
+    "vision_reader": [
+      "tensor_ground_objects.object_queries",
+      "tensor_ground_objects.position_weight",
+      "tensor_ground_objects.covariance_weight"
+    ],
+    "mechanism_reader": [
+      "stage.object_behavior_readout"
+    ],
+    "action_adapter": [
+      "tensor_transform.linear",
+      "tensor_transform.translation"
+    ]
+  },
+  "stage_parameter_rule": "Bindings beginning stage. are constructed by the L-stage, not implicit model parameters. Each actual Parameter must be uniquely assigned to exactly one owner, including shared aliases. Unlisted base parameters stay frozen.",
+  "shared_training_engine": "latent_comm.learning.engine.train",
+  "stage_api": [
+    "parameter_groups()",
+    "frozen_parameters()",
+    "forward_roles(sender, receiver, maximum_unroll=...)",
+    "losses(output, SupervisionBatch)",
+    "loss_specs",
+    "versions",
+    "device"
+  ],
+  "input_contract": "RoleBatch projections only. Finite floating tensors including padding; exact mask shapes, valid class indices, and explicit typed applicability are required. Supervision is passed only to losses.",
+  "loss_selection": "Select named LossSpec terms, never total plus its components. Non-LossSpec return fields are diagnostics. External task_loss inputs are already masked/normalized with differentiable empty zero by the L-stage.",
+  "gradient_contract": "Freeze base parameters with requires_grad=False, not no_grad around receiver computation. Teacher targets only may be detached. A discrete sampled decision uses its live selected log probability; deterministic argmax does not impersonate a policy gradient.",
+  "tokenizer_contract": "No cross-tokenizer direct logit KL. Shared token-mixture losses require identical declared vocabulary; heterogeneous receivers use named common behavior coordinates.",
+  "execution": "All adapters and losses gate before tensor backend import. No neural test, model import, initialization, optimization or efficacy claim in this task."
+}

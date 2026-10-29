@@ -1,0 +1,57 @@
+{
+  "task_id": "W13",
+  "status": "done",
+  "input_digest": "5a2e5c2ed133ae7fda658a4622601173fcca362f04d1d5d96ddc4d05b0bd86f0",
+  "outputs": [
+    {
+      "path": "src/latent_comm/data/__init__.py",
+      "sha256": "c763fb812d46abeb8347d149eb35f22352e741bb591516fee936f360d9e5cf07",
+      "bytes": 478
+    },
+    {
+      "path": "src/latent_comm/data/collate.py",
+      "sha256": "2d4387838598807a0b31a06f933fb8d40c6e01786b68675e1adfa03d7e96e54d",
+      "bytes": 5093
+    },
+    {
+      "path": "src/latent_comm/data/factory.py",
+      "sha256": "11d08db947e9cf74b327c012e1cbd76aade6d97e04f69764ea06cec8eb93fd39",
+      "bytes": 3293
+    },
+    {
+      "path": "src/latent_comm/data/records.py",
+      "sha256": "1e3296adbe0fc9101f78ffcc5f3d1654f61484e3d35feb119ae8fd0ef3caf05e",
+      "bytes": 3801
+    },
+    {
+      "path": "src/latent_comm/data/splits.py",
+      "sha256": "d71dedacfb2fd917221fccf57e68aa9d54fdfb739c8e7703802c4e449264042b",
+      "bytes": 4291
+    },
+    {
+      "path": "tests/data/test_role_views.py",
+      "sha256": "c881654b745e61c8afa7407b1fcdb9c55a78eef94d6d632d97509568fd58c2c3",
+      "bytes": 4687
+    },
+    {
+      "path": "specs/data_contracts.json",
+      "sha256": "0df1302f37ed5ccf5cb163db29b480dcfcdf9dd8844b69f3f4322dc9fd2c90d4",
+      "bytes": 808
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/W13_data.txt",
+      "sha256": "c67ecff28b8c497d44f058bbaea0395e89fabe0cc9b759186f77eeab552ede28"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "14 finite data contracts pass. Separate EncodedRoleBatch preserves live encoder tensor identity while role metadata remains physically isolated. Tensor/bulk paths NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T15:56:29.213511+00:00"
+}

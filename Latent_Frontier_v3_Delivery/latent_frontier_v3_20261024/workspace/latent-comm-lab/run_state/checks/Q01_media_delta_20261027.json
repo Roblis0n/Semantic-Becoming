@@ -1,0 +1,81 @@
+{
+  "recorded_at_utc": "2026-10-27T10:58:16.093123+00:00",
+  "status": "passed",
+  "scope": "Current media, packaging and documentary delta; baseline research code/tests exact-byte unchanged",
+  "unchanged_research_and_test_files": 862,
+  "research_tree_bytes_match_candidate": true,
+  "changed_or_new_python_AST_passed": [
+    {
+      "path": "scripts/build_release.py",
+      "sha256": "d04fe3a0b4cb9a6a6d5a4c7cd872489a0a3f1a1c797ebb73e062f309355b4e65"
+    },
+    {
+      "path": "scripts/write_permission_review.py",
+      "sha256": "594b3eae35c7525290270840bf9211e35cbe6986f5e876d8bfba65d9361ffdac"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_20261027/check_render_delta.py",
+      "sha256": "5e35a19a2ad2919786b79556a373c9ec7fc32f2271b68c94a0e07fc251e63f7f"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_20261027/update_media_docs.py",
+      "sha256": "440fca9bcd024ffba3ef7e220d55f28dcf2aad7c84e5273d1643e326d4a2a4f9"
+    },
+    {
+      "path": "assets/video/intro_90/commit_narrated_branch.py",
+      "sha256": "9cc59cc509c94b2783e94f8f254459989e48738a5abd7f716e3bbf73946ce6cb"
+    },
+    {
+      "path": "assets/video/intro_90/finalize_narrated_qa_v3.py",
+      "sha256": "669eddeee09232fdcecd35d5984b3686b6315aef7288dd41c3726cd8f78d8b41"
+    },
+    {
+      "path": "assets/video/intro_90/finalize_narrated_qa_v2.py",
+      "sha256": "5a8e2d69aae3222e1207adcf8f978638672a5c063d4b2be7d656ba27bcfa23a8"
+    },
+    {
+      "path": "assets/audio/tts_ai/produce_narration.py",
+      "sha256": "5e035611c84dd4db41df334a0e7d66c3c81d6ca96b07317cdcea9d20e70fd8c4"
+    },
+    {
+      "path": "assets/audio/tts_ai/continue_authorized_036.py",
+      "sha256": "ba90b4173f4fff7bed5a748c69256985f1193e8f94596a698229eac62c378f72"
+    },
+    {
+      "path": "assets/audio/tts_ai/continue_authorized_493.py",
+      "sha256": "58c4afe17ee3144187b929897bda153bffaa10aa4b718d93eb73dd3afa6c42a7"
+    },
+    {
+      "path": "assets/audio/tts_ai/continue_authorized_20261026.py",
+      "sha256": "cded28e59c70d51ba6d3f059fa450c853f2be0b91c6041a3da44dd00f9c6097a"
+    },
+    {
+      "path": "assets/audio/tts_ai/history/produce_narration_original_20261024.py",
+      "sha256": "aff206be616cfe7e02d0e3b716037b70d22a20f0a7d2f760200b32ac104ae513"
+    }
+  ],
+  "changed_packaging_tests": {
+    "path": "run_state/checks/Q01_release_contracts_20261027.txt",
+    "sha256": "8961b638eb9065f705384579660ea79fdc0ca6c276b29d96a137ffee3d81c199"
+  },
+  "authorization_inclusion_test": {
+    "path": "run_state/checks/release_authorization_contract_20261027.json",
+    "sha256": "645a3cb5f847f1afd89d4920daba75d396d7ad29a0aba954540651c756ee19dd"
+  },
+  "document_delta": {
+    "path": "run_state/checks/D03/media_delta_20261027/qa_delta.json",
+    "sha256": "7afeb675acb97c20c9410d7bd3dd181e1915f7177f907c5fe7e8d1a4f091fcec"
+  },
+  "new_long_container_qa": {
+    "path": "assets/video/explainer_360/narrated_qa.json",
+    "sha256": "0829534abfb62165473b2d059e060e7d2668425e3027f70532d4f3927b86a5ee"
+  },
+  "new_long_actual_visual_review": {
+    "path": "assets/video/explainer_360/narrated_visual_review.json",
+    "sha256": "0f905e7ccf057be0c46366f1ea631699b20d0bc13a5bd8ad1e59dbc3b59d639b"
+  },
+  "actual_audition": "BLOCKED_UNSUPPORTED_AUDIO_INPUT",
+  "research_state": "NOT_RUN",
+  "neural_execution": false,
+  "unchanged_tests_rerun": false
+}

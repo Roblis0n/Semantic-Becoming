@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H07:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "nodes",
+    "input_types",
+    "result_id",
+    "scope"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "isa",
+        "ontology",
+        "schema"
+      ],
+      "additionalProperties": false
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "node_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "opcode": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "output_type": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "dimension": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1,
+                "maximum": 64
+              },
+              "frame": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "kind",
+              "dimension",
+              "frame"
+            ],
+            "additionalProperties": false
+          },
+          "bound": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 128
+          }
+        },
+        "required": [
+          "node_id",
+          "opcode",
+          "inputs",
+          "output_type",
+          "bound"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "input_types": {
+      "type": "object"
+    },
+    "result_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "scope": {
+      "type": "object",
+      "properties": {
+        "scope_id": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "readers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "writable_components": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "object_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "expires_step": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "required": [
+        "scope_id",
+        "readers",
+        "writable_components"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

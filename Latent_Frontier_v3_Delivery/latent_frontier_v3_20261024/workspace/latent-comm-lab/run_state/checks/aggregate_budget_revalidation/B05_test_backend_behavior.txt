@@ -1,0 +1,16 @@
+test_common_space_requires_explicit_correspondence (test_backend_behavior.BehaviorContracts.test_common_space_requires_explicit_correspondence) ... ok
+test_parameter_scope_disjoint (test_backend_behavior.BehaviorContracts.test_parameter_scope_disjoint) ... ok
+test_public_anchor_only (test_backend_behavior.BehaviorContracts.test_public_anchor_only) ... ok
+test_tokenizer_kl_rejects_mismatch (test_backend_behavior.BehaviorContracts.test_tokenizer_kl_rejects_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+{
+  "selected": 4,
+  "excluded_model_entry_or_gate_tests": [
+    "test_backend_behavior.BehaviorContracts.test_functional_binding_locked"
+  ],
+  "neural_modules_loaded": []
+}

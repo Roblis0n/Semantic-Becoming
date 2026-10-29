@@ -1,0 +1,102 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "ontology_version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "concept_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "predicate": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "enum": [
+            "eq",
+            "le",
+            "and",
+            "or",
+            "not"
+          ]
+        },
+        "field": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "constant": {
+          "type": [
+            "number",
+            "string",
+            "boolean",
+            "null"
+          ]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        }
+      },
+      "required": [
+        "op",
+        "field",
+        "constant",
+        "children"
+      ],
+      "additionalProperties": false
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "domain": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "preserve_old_readers": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "ontology_version",
+    "concept_id",
+    "predicate",
+    "parents",
+    "evidence",
+    "domain",
+    "preserve_old_readers"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H27:resolved-payload:3"
+}

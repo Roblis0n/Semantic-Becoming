@@ -1,0 +1,2007 @@
+{
+  "task_id": "V06",
+  "status": "done",
+  "input_digest": "9ec307f444513e78b0a65c2a29fa6884b6fe33a412f0dfe4cbb25460b3c09fde",
+  "outputs": [
+    {
+      "path": "assets/audio/README.md",
+      "sha256": "db131e83680b3609f78c59ed520874e4471192e91662d182eab24094e6eb99c0",
+      "bytes": 2104
+    },
+    {
+      "path": "assets/audio/build_narration_sources.py",
+      "sha256": "3f776b31b0ccf805ed61e69f00865aefdb1f8cb4f554bb65cccd7884b08615c8",
+      "bytes": 5821
+    },
+    {
+      "path": "assets/audio/explainer_360.narration.json",
+      "sha256": "20ce8ead8f689f4226997a16fbd5332ec0678d5897fba9972e3ee2121afbf6ba",
+      "bytes": 16677
+    },
+    {
+      "path": "assets/audio/explainer_360.narration.txt",
+      "sha256": "b147e07f1aa80a478b277f1a73acbdfa074918fe92e9fdcf17e149cd49cd3c55",
+      "bytes": 4703
+    },
+    {
+      "path": "assets/audio/explainer_360.narration.wav",
+      "sha256": "6ca533d0557d9699a18979d297155df53e4bf2c5b6f29ebc4223a7b799c9150f",
+      "bytes": 31752044
+    },
+    {
+      "path": "assets/audio/explainer_360.ssml",
+      "sha256": "fc62a5cc4ea7d1801fa4a138c942e1ca8ce9619c1d33ecd45746ae50cf693375",
+      "bytes": 4951
+    },
+    {
+      "path": "assets/audio/history/pre_complete_narration_061dbb10117a6841/media_qa.json",
+      "sha256": "061dbb10117a6841e3164bd75187fe040968dbf079b763a37431fe6a11f8a3aa",
+      "bytes": 32273
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/README.md",
+      "sha256": "67ad7bf6f75fdedb0ce9269d8bb3de6aed04f3b4f212847c7f61d87573a0d365",
+      "bytes": 1001
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/V04.json",
+      "sha256": "07dd5eae428031d1ce0917f02f572a64c1f081d9272eacb31a0e3146afce05a7",
+      "bytes": 7662
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/V05.json",
+      "sha256": "d99335e0d865c896a6a9f6c35e2af13d9c25b5575e4663bee88f5ad6fe30fb68",
+      "bytes": 8980
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/V06.json",
+      "sha256": "56a1c2ba14c010f5de153962fb1fe7ad3a724d824aa9b061dd809757d3a9fa1d",
+      "bytes": 4521
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/V07.json",
+      "sha256": "23c0d9899e13f590f20e65c6197b4364a877c00bbcf43286ce0b3afba0113580",
+      "bytes": 1823
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/explainer_360.narration.json",
+      "sha256": "98ed0475bf89bc916c00c3615b1a894b92d702c01d144dccb075f79b5fc03116",
+      "bytes": 16510
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/explainer_360.ssml",
+      "sha256": "8c84f599b6ea75e6962d6c41638ce538b7b1a8a41b40a67e3024e311529bc72d",
+      "bytes": 4852
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/intro_90.narration.json",
+      "sha256": "83463b535dcf2946917554fdad5bcb11016d5572fb246e8d24e124df5a91236e",
+      "bytes": 6006
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/media_qa.json",
+      "sha256": "cd46bafb6e500ac60aba1eff313e9809a230f214960b74bfba02d58867f37d42",
+      "bytes": 22156
+    },
+    {
+      "path": "assets/audio/history/pre_narration_20261024/media_status.json",
+      "sha256": "7f71d9af4e2703024f3ccf26aa02181f6e16435d8132fc8c7b7f92b5e68234ec",
+      "bytes": 1448
+    },
+    {
+      "path": "assets/audio/intro_90.narration.json",
+      "sha256": "7cf71a0b3baf7898d12fca604804aa282f7b022bf986b900ca0fb61adba752f7",
+      "bytes": 6171
+    },
+    {
+      "path": "assets/audio/intro_90.narration.txt",
+      "sha256": "44f89522703e3234b5fe897626edea60c8d5e9619bc9a7e802551376c6d23492",
+      "bytes": 1319
+    },
+    {
+      "path": "assets/audio/intro_90.narration.wav",
+      "sha256": "9fc67803982f2a9d2607d90b154acfa14bc3470a1355834f25e916e26a414ea6",
+      "bytes": 7938044
+    },
+    {
+      "path": "assets/audio/intro_90.ssml",
+      "sha256": "2e02a63b799b4360d5dd0049a62b2cc57660a9f0d9e4758a6ef484161b5c2555",
+      "bytes": 1575
+    },
+    {
+      "path": "assets/audio/linebreak_repair.json",
+      "sha256": "7c8b48c1cd126827083f7f1b31bcfc30e110265b8e4da79907eee8f2ba73ea6f",
+      "bytes": 593
+    },
+    {
+      "path": "assets/audio/local_capability_check.log",
+      "sha256": "bd28d8edea01bede742b9f1ac58f6511fb3e4645ef40eeccc40a8055ec848d88",
+      "bytes": 270
+    },
+    {
+      "path": "assets/audio/media_status.json",
+      "sha256": "094fda2b5a3d0531b7a8d92cce004ba9b2bf54b0c1c3c69343ed7087e8d4745b",
+      "bytes": 2175
+    },
+    {
+      "path": "assets/audio/tts_ai/PROVENANCE.md",
+      "sha256": "38c8b07213c4a987cd22823c4db3577442dc691278da4f551da18f505f99ec7b",
+      "bytes": 2458
+    },
+    {
+      "path": "assets/audio/tts_ai/assemble_narration.py",
+      "sha256": "8f1fdba4308046738c8aea322cff6fbfd885ca9e0cba57f409f5b46490bc38b7",
+      "bytes": 8553
+    },
+    {
+      "path": "assets/audio/tts_ai/assembly_intro.log",
+      "sha256": "f0dfbca83208feeb6309fd8c2afdb11eb52eaea494b1c2f7e61269f6394789ac",
+      "bytes": 61
+    },
+    {
+      "path": "assets/audio/tts_ai/authorization_status.json",
+      "sha256": "506a80a7a0391d2f29206e006a589eaef3a01f15ce5d7b3b6cdc6dc28f94f07b",
+      "bytes": 711
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_001.timed.wav",
+      "sha256": "a4a024a79957cc1b3c881436a483923caab25c3322a1f0135600d7ecd07c33dc",
+      "bytes": 621752
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_001.trimmed.wav",
+      "sha256": "d132e7c743d822c485e11e6f345d4b33f1ff7bab00ffda75fe471fc34ee73c02",
+      "bytes": 498254
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_002.timed.wav",
+      "sha256": "a1e570bca3762fd2a56298408f261962f3bccb1f886cbbde81d1c627f53f6059",
+      "bytes": 611422
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_002.trimmed.wav",
+      "sha256": "eeb1457f91067e983d0d1a9193049d4f56390305fb78165715f513e8d6a7ce7d",
+      "bytes": 489944
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_003.timed.wav",
+      "sha256": "86f78a97e46b76cab538f36fb513e1127cf6d788537b3c6c10aab00e1e5658d7",
+      "bytes": 602764
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_003.trimmed.wav",
+      "sha256": "7533762eeff14b2791e063c31b2963bd5429b74c42c7b5cc39436b76a6f97c74",
+      "bytes": 482958
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_004.timed.wav",
+      "sha256": "fb13e49a227a817bf2cbee852afb5a7ca2d76b0980c6588f969bf66b64ffeb08",
+      "bytes": 818776
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_004.trimmed.wav",
+      "sha256": "4bc6721ef2f90b30c523c516fc266da49c9cf37fb6c4a25a223bb6043b126f2e",
+      "bytes": 656424
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_005.timed.wav",
+      "sha256": "70fd9b6d4f57c9db297844fef61656b1fc53fdc624a7baeac602535b010b8b91",
+      "bytes": 169218
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_005.trimmed.wav",
+      "sha256": "fb76b3b3a0acf587819fdd26147441db34d8fbef03e10b68b2b48856814315cb",
+      "bytes": 136894
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_006.timed.wav",
+      "sha256": "5853afee49982fc765aa220f8a849f75558541a9c9ebca6af08f10ac4314094f",
+      "bytes": 535242
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_006.trimmed.wav",
+      "sha256": "f142276cabe20257cfdac536d01135d01cbd7e48346425734224cbedc10011a4",
+      "bytes": 429466
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_007.timed.wav",
+      "sha256": "502f43e72b4d5b6288801fdc4950f63ceeff3805c02668504c37d0e9d4ee3164",
+      "bytes": 804668
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_007.trimmed.wav",
+      "sha256": "38226519bda98c2d6858e58269a74d1982e4fa24bdec422669d4fc853bbedfea",
+      "bytes": 644936
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_008.timed.wav",
+      "sha256": "72327fba88aed116e67433d0f37e32d67bdf9614ea74f938171c501383dd63a6",
+      "bytes": 693830
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_008.trimmed.wav",
+      "sha256": "0c60e22953911da9ad29611b4f671f7f537653aef189f3d5ee4faed775fb6256",
+      "bytes": 555496
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_009.timed.wav",
+      "sha256": "8bcd5a8df6a2c3651182bf2828abf0313d3ad02a8eedd15aaa6e8e5c9344ea95",
+      "bytes": 663568
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_009.trimmed.wav",
+      "sha256": "f46225ee6218b1ef62b5b594109e228ed063445681683a24e7203551e674f369",
+      "bytes": 532062
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_010.timed.wav",
+      "sha256": "822c2b8128b34500f1291d3c8eabc2253cd49c6be75c69327c771dc181af7c4d",
+      "bytes": 410644
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_010.trimmed.wav",
+      "sha256": "75977c8c7cee9ef090bb3f4e801cd415292dba190b9b19b5ed7f1240bf6ed3a1",
+      "bytes": 330738
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_011.timed.wav",
+      "sha256": "617e28ac07554fe0be466084c28e08c169b9402f4671d860be744765f0b8f9b7",
+      "bytes": 594860
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_011.trimmed.wav",
+      "sha256": "bdec1db03876f30d8a1fd6f03d16d940db1460a67975012c63ee3be4690f3709",
+      "bytes": 476916
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_012.timed.wav",
+      "sha256": "f43cf17ea9b8472f284f61836de26306c510e3e61f689d6cc01768a3046bd7b2",
+      "bytes": 605048
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_012.trimmed.wav",
+      "sha256": "d5128d3496b0ba2c2f47170d77801813aa407124b1d339c34a91187fa1634fbc",
+      "bytes": 486230
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_013.timed.wav",
+      "sha256": "b31991ee07307d3fb01cf9528e7c8d99f610f267b4a274b36cca6eec1439b9ab",
+      "bytes": 726256
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_013.trimmed.wav",
+      "sha256": "6b6e41a1cbe99eefe744e0cb9475c02c2ab26adc8c0cc9ebd2dd6dd55a4df517",
+      "bytes": 582246
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_014.timed.wav",
+      "sha256": "c68d96e953c4b199b89319ec4b6feec3d7a86cfd8cd2a07477c5201597e6d03e",
+      "bytes": 512134
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_014.trimmed.wav",
+      "sha256": "4f87285ebc2ced729d94e43c3408557dc82a64b43e66c2c9e7c3b040dde8f9c2",
+      "bytes": 411012
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_015.timed.wav",
+      "sha256": "81df84f7aba239ca90c8e6677e63f4e79f0a4b9de5b5fd031cb35a7c778a8fe1",
+      "bytes": 430440
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_015.trimmed.wav",
+      "sha256": "db9f7c580db6973a39b0cb823deea3c5d69ccd8380fefd382ced09b09ab5e282",
+      "bytes": 346438
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_016.timed.wav",
+      "sha256": "4e57178a78f9164baeaeb6e7ea0d2a90630d6c2a8ada81251e780940a2e37931",
+      "bytes": 751424
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_016.trimmed.wav",
+      "sha256": "3739d6a61c192c8c4f017b3066cfc28acc554556e7a6586111001fd0416bb8c0",
+      "bytes": 602394
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_017.timed.wav",
+      "sha256": "aeb3e2aad5f56d196890543708360752a753c58a58ca6edc15cb16dbb49d9330",
+      "bytes": 756512
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_017.trimmed.wav",
+      "sha256": "901981c8cc17455ebb3bead7e78377c9ed7effdda769624242bcc4db67c455a0",
+      "bytes": 607794
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_018.timed.wav",
+      "sha256": "99c75d491cdff3c1ee228703b38ffe9816d87193db76eb2df8a2eec58007253f",
+      "bytes": 727556
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_018.trimmed.wav",
+      "sha256": "a69b78bb7c00bf6496dc03e9665bd7226d2b2fdbefd03658ea5d809307c6d70e",
+      "bytes": 585018
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_019.timed.wav",
+      "sha256": "d5790e1dcc9bc929af90a123f0402abd0903109de3b00906b52100581171725c",
+      "bytes": 823896
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_019.trimmed.wav",
+      "sha256": "19e34de8ad800eddde9f0d69c3fcd387da4757e32f061a7a75a5dc4a5f2afa1b",
+      "bytes": 661252
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_020.timed.wav",
+      "sha256": "f583184908239d63f04c4d9084aaa18befd162b1f4102485e1b2a792c1b0eeca",
+      "bytes": 299704
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_020.trimmed.wav",
+      "sha256": "a536d1c73aeef49a4f51edbc641d88df59e7da7ad4a5634f6fb9c7426bc4f7df",
+      "bytes": 241916
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_021.timed.wav",
+      "sha256": "e0e445d860c6ff00314f760b767da292471d736584f3c4380389d70f5e0819a9",
+      "bytes": 783314
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_021.trimmed.wav",
+      "sha256": "45702b290cb940c32d4d5a7c24f1df22ae0dbe51d21d5e8cbae4a11d755af1fd",
+      "bytes": 629514
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_022.timed.wav",
+      "sha256": "1cf3dd854e646017519f6096c9e5ebb863b1ba6cfa7fcf07b58812396839b966",
+      "bytes": 811584
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_022.trimmed.wav",
+      "sha256": "53e622d873ac6659ddd86149ba68542f6b7d900b6f227c1824737063c1ae40d6",
+      "bytes": 649566
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_023.timed.wav",
+      "sha256": "9136274cc4d6faa312042f97a0d3f42c24f1b71994c097112f21b1987bf53b98",
+      "bytes": 655428
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_023.trimmed.wav",
+      "sha256": "43997acf4450ac329bd7e713e34c68b819cc54e8e0c45f9a88a7b941c3e9b10b",
+      "bytes": 525744
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_024.timed.wav",
+      "sha256": "dc1a584c6aa363fd6a1907e3196cfa189038203e65e38778434c7fd59df5e849",
+      "bytes": 519886
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_024.trimmed.wav",
+      "sha256": "b78537c1e0715d6f7e16d56c4497a87cf0fe1de95b3c20a29ab3f90d0d4a71e6",
+      "bytes": 416756
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_025.timed.wav",
+      "sha256": "d9644e16ce5f3f89c3fc639824490c666bfced3097a22108329374a75fec2c6f",
+      "bytes": 358466
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_025.trimmed.wav",
+      "sha256": "90077a65eba69ad21fa0e34fd2da43950c3a8ab7c541779210b90ff1650b7917",
+      "bytes": 288596
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_026.timed.wav",
+      "sha256": "976bd94162601a43b092a8afd645758e7d1a17d09407a72b31772afc654d58d1",
+      "bytes": 654494
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_026.trimmed.wav",
+      "sha256": "56993ebbc413a72ef6f6a15de4ad055c365ce4c383ddf34d3174578edc4be8be",
+      "bytes": 524522
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_027.timed.wav",
+      "sha256": "a61f533ddfec14689db3b429b262ae8b128b58defc2727f461125b41b33583b2",
+      "bytes": 740754
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_027.trimmed.wav",
+      "sha256": "8a43f187ad68530039dfd005392b1e74bc98e3b9abab069f805ea9179017c261",
+      "bytes": 594902
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_028.timed.wav",
+      "sha256": "c7038a9e89fa9ff6125abd8ea29e0a12071b6a2fa685b0a508e326e6db0993cc",
+      "bytes": 777636
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_028.trimmed.wav",
+      "sha256": "69c9c7ca449a924c8551cd8ea4933a7e242230ee1187e52ece4c8ccdb7f18215",
+      "bytes": 623854
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_029.timed.wav",
+      "sha256": "54e3c5f5abfe2453eb317e323765d74970d58270c0af8889b222c3a3ea522107",
+      "bytes": 290874
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_029.trimmed.wav",
+      "sha256": "e7ec095ec6350d19f41f6ee4f3a88cba2204e3d59fef5bbe629f88a210e604a0",
+      "bytes": 234026
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_030.timed.wav",
+      "sha256": "3009ba384425ed9c8586c423ed6252365faab5cbfae0781304c088f69013b5d8",
+      "bytes": 522780
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_030.trimmed.wav",
+      "sha256": "246c52eee013dd71659163c7eeaee25e73ceed80a6e3ac25e5bd5d5c2328604e",
+      "bytes": 419554
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_031.timed.wav",
+      "sha256": "0301ba4f72ea9c25e1477482ccd1af8b9929ca59e6ad938df1ff0037f39419a9",
+      "bytes": 380028
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_031.trimmed.wav",
+      "sha256": "0c1e58286691528d9a5ae538272eb12c5400c718ed0b7adda8a2c1b8bc0a2cd2",
+      "bytes": 305428
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_032.timed.wav",
+      "sha256": "1d249217974f5b870278261fe007392fcb3086f6007e4b815fe1ee0de6bcd553",
+      "bytes": 814070
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_032.trimmed.wav",
+      "sha256": "907ad9b8f12d8f1c86b883fde2fa9fc43aabb7a5b86f72d37d1490475320d679",
+      "bytes": 652532
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_033.timed.wav",
+      "sha256": "cefba15ba0c1a455e14a348983263490bc59a9c43cb72036784b6982b09f9817",
+      "bytes": 624192
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_033.trimmed.wav",
+      "sha256": "7dc3ea29bdfb88f1c7dcd503b90e7422542e5b4bca22b2e4a816de9012fe3c37",
+      "bytes": 501172
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_034.timed.wav",
+      "sha256": "f2fa2ef13816d8e0eabab2fef3c6721ad8a7f4c3871653c1308b99017a9bf009",
+      "bytes": 631598
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_034.trimmed.wav",
+      "sha256": "0bb65ae7af0feb29e4e970e64c3825d3b5012f59413312db2843b2a77ec16b0a",
+      "bytes": 507456
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_035.timed.wav",
+      "sha256": "574c6b2918aff04f487ed561f63c0245359976c5b71c0e614f5422d2427ddb7b",
+      "bytes": 740030
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_035.trimmed.wav",
+      "sha256": "95419c13f555de2422da3810cedbe97da2ed10d6be1bba03cc429426c65fe197",
+      "bytes": 594178
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_036.timed.wav",
+      "sha256": "57c6155b10fa1236d0968ed9dc5645b96f6a72f7cfd73e1c74830ed8a442b27c",
+      "bytes": 761772
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_036.trimmed.wav",
+      "sha256": "921fc8f1f35c74880e60c1c202295e65b1f174c48e69df587dd27d720e1f5f76",
+      "bytes": 611416
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_037.timed.wav",
+      "sha256": "0bfa014aca0089a20561a51abb9618b9e96d5d09ff114337254bb96aabb88420",
+      "bytes": 269876
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_037.trimmed.wav",
+      "sha256": "97e3e7c83856c161909e8f57c105eacf351456bc0b37df6acf62bbc1135b1cbf",
+      "bytes": 215622
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_038.timed.wav",
+      "sha256": "1e1dad0a8abe2e57a085fc5b1ab8b376a01773ab4cec1b64a7363e67e48da7bd",
+      "bytes": 794336
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_038.trimmed.wav",
+      "sha256": "b76c20a3d5458d09fc743e78153fa86846e95c68f5ee1e79d183bdd35ae5e271",
+      "bytes": 637014
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_039.timed.wav",
+      "sha256": "ee92b0ce5d48c3f3d8c37a1dd7b6a7c82c1dd225e6fa3a19c2296956c2334a53",
+      "bytes": 652024
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_039.trimmed.wav",
+      "sha256": "f8aedaf9fc3426d913d5f01a0fcc9676afab421acecbeedcd5e1c8fb9380812a",
+      "bytes": 523786
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_040.timed.wav",
+      "sha256": "8a191f43b8aaf75118d1e27d978bf6175f04e07176fbcfe66843288c412aed59",
+      "bytes": 719752
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_040.trimmed.wav",
+      "sha256": "cde649aa4262b50bb19fbe032f8011a57635facb821adfc25178d1673f0e8806",
+      "bytes": 577996
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_041.timed.wav",
+      "sha256": "e6941dd93bfeb09965d54865b402bccc9dc206561fb4408184d009d946339448",
+      "bytes": 748188
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_041.trimmed.wav",
+      "sha256": "797f841f9df6f70a91fd37c5f1ad78f6e61dd59e5c9dda07d160b53f17ccd496",
+      "bytes": 606300
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_042.timed.wav",
+      "sha256": "f80a6c95b517a5ffe1b928a188760f18620e2df5d2b1ad4d4fb9e110c2a55c17",
+      "bytes": 717236
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_042.trimmed.wav",
+      "sha256": "ceee01f74d510d990f61eefbc1d4a9c4d07e0b98a09c3e21bbafc9915a89ace2",
+      "bytes": 580882
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_043.timed.wav",
+      "sha256": "6db35fceb3ef2a53be3078fd09c527695d7c8aa66c3a24c9acd1763e20961e2f",
+      "bytes": 604704
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_043.trimmed.wav",
+      "sha256": "0e7242e241fa01583ad087ba0efd9f1a86a818abbbd22a7ea1f4208cda04769c",
+      "bytes": 487508
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_044.timed.wav",
+      "sha256": "37e7b8471692bcbae5b15bcc7e23522f8ab13e87f1d71b366960f4ee3e08796f",
+      "bytes": 441454
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/explainer_360_044.trimmed.wav",
+      "sha256": "ee68ee955c5a1d26ee815d068747d0295115d1defff2b5c2b50a05db1cbb0a3a",
+      "bytes": 357510
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_001.timed.wav",
+      "sha256": "84ec56ab558cdb441083cca08daecc5bb1704e1373fb3c39cc2c86978836aa6a",
+      "bytes": 695996
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_001.trimmed.wav",
+      "sha256": "a43dbda80135fffd63d83865efb47d7b099df3856d7e2197781fe907d9a36204",
+      "bytes": 557966
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_002.timed.wav",
+      "sha256": "12613769a59fa8db97bc78414d99551b6c97982fb378fb463972fc77f6ed5579",
+      "bytes": 427832
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_002.trimmed.wav",
+      "sha256": "15ee5680077115606ee1860478f107f7c3ab24736fc3b7b12a8ae4660ceefa49",
+      "bytes": 344034
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_003.timed.wav",
+      "sha256": "efa4ebb1b44323a72d323ac9202c3d6bc21c131c5619deae7d943abbebd3b1bd",
+      "bytes": 383642
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_003.trimmed.wav",
+      "sha256": "2a99e9bdc9f05d030acd6015c78e4cf7655f9846adff2d527af0e60d73822bd2",
+      "bytes": 309814
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_004.timed.wav",
+      "sha256": "d089c34e876b6cefd1402a1b10dc67224d86c00a210da06e765f83302d3c7797",
+      "bytes": 683356
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_004.trimmed.wav",
+      "sha256": "80d070890c2cd490c8dce9538297571a27f368fdf260a8ded9f759758a8a52c3",
+      "bytes": 547066
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_005.timed.wav",
+      "sha256": "158fa395c621493c8d12b3ba957ca79d5cab04c58d17fe17969ff07bcdb7c043",
+      "bytes": 211048
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_005.trimmed.wav",
+      "sha256": "aae1bdcdbd13f99c576cb4daf3dc567dbfa6b60db79b41e87d679bb1c93f67b2",
+      "bytes": 170874
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_006.timed.wav",
+      "sha256": "421f2fd2dad5b3d24d0d79a045e728cc39985df050342b3ece38d31bda9582d4",
+      "bytes": 478334
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_006.trimmed.wav",
+      "sha256": "564fca8bbb4af1b9d54caf7d046d594507cdace78c0d2f93124577e496b8d6aa",
+      "bytes": 383812
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_007.timed.wav",
+      "sha256": "a7c22d4758f10d7f1a23ca51a70e85075b9396a7e4c5d1896cbb4d029553f8f4",
+      "bytes": 408646
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_007.trimmed.wav",
+      "sha256": "7c503aeb4e5de7531fc4681c9fedf5ea0c14c1fd2231b284487633f2877f925f",
+      "bytes": 329150
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_008.timed.wav",
+      "sha256": "8699f027a19a593421c71584d02ab8109088e608409f20553acabea52ee4b6b4",
+      "bytes": 570262
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_008.trimmed.wav",
+      "sha256": "c2e4f3888fee1c3791af0cfff2dab0b06bb64acd904a2bb660b85509c20c8b87",
+      "bytes": 457666
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_009.timed.wav",
+      "sha256": "36be29eecd106a89b31797d0d9e49bd4b4eeea1afc85dbf9c03bbbdfdd4b44b1",
+      "bytes": 280720
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_009.trimmed.wav",
+      "sha256": "44041bae767f903f4b8515db31091c93e29cc4e5389abdbe099ff4c09f4f28f3",
+      "bytes": 226620
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_010.timed.wav",
+      "sha256": "a00c25ba09ecc77d55c5cd08159ce361581e592482636b67795779d2c0e28161",
+      "bytes": 658712
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_010.trimmed.wav",
+      "sha256": "6f540279f0e11f20cdd62b36d21daa151d4e8fdb33f5bcdfa3166dc640f2d58c",
+      "bytes": 528454
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_011.timed.wav",
+      "sha256": "4c64382dd579b66616898dc16b309606acf880ce87e48ee2126cbff1a9bb9e8a",
+      "bytes": 192282
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_011.trimmed.wav",
+      "sha256": "d8b8a953c28e627b13a43a6261d6c130cb92f68c86c8f0b396a654a28ab2d6cd",
+      "bytes": 154938
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_012.timed.wav",
+      "sha256": "04a0fe4de98ac6dd6488bd083fd9bf2c0f6412aa9ebe27416c1336ab83b4f1ca",
+      "bytes": 531172
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_012.trimmed.wav",
+      "sha256": "8d0d7662831e95680408cca67dfaf962389c0ba45d81697ffc027a6cd6248101",
+      "bytes": 427100
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_013.timed.wav",
+      "sha256": "d87bdd56770bb39a6804828ff862ad6a9c6a765d20c715f3e17dee42fd50fc77",
+      "bytes": 265586
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_013.trimmed.wav",
+      "sha256": "13410793eee29f44d72710b0cfe0303ada32e854aeaa1681e0c107e5ebe0b5ec",
+      "bytes": 213998
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_014.timed.wav",
+      "sha256": "ca57088da13c0e0a0b9975e97f939dc465c7ee7b064898beb215ddf2338caf74",
+      "bytes": 653676
+    },
+    {
+      "path": "assets/audio/tts_ai/chunks/intro_90_014.trimmed.wav",
+      "sha256": "fcfa8162762b12f31b65cd846d37a5debb1194e8beca4e913f2616649b21a650",
+      "bytes": 568466
+    },
+    {
+      "path": "assets/audio/tts_ai/continuation_20261026_summary.json",
+      "sha256": "f160d01a78e5b0f0ec42259fdaca19fcf49a23e8f83f6baa2a8a0de16612ad69",
+      "bytes": 774
+    },
+    {
+      "path": "assets/audio/tts_ai/continuation_20261027_summary.json",
+      "sha256": "20e41e1a725912840e532bcd19afa3efd0c6ec59ea9dc06e8b11f03efd39c5ea",
+      "bytes": 624
+    },
+    {
+      "path": "assets/audio/tts_ai/continue_authorized_036.py",
+      "sha256": "ba90b4173f4fff7bed5a748c69256985f1193e8f94596a698229eac62c378f72",
+      "bytes": 8929
+    },
+    {
+      "path": "assets/audio/tts_ai/continue_authorized_20261026.py",
+      "sha256": "cded28e59c70d51ba6d3f059fa450c853f2be0b91c6041a3da44dd00f9c6097a",
+      "bytes": 9435
+    },
+    {
+      "path": "assets/audio/tts_ai/continue_authorized_493.py",
+      "sha256": "58c4afe17ee3144187b929897bda153bffaa10aa4b718d93eb73dd3afa6c42a7",
+      "bytes": 8440
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.assembly.json",
+      "sha256": "3e55fc6fdedf59990b2105924b5cfeb4f79ee86af4913179402b99977e942ce2",
+      "bytes": 50585
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.loudness_after.json",
+      "sha256": "29faafd4cf5b570aed29aa24cac9aa8b66315748d9d65110a9280e220dd25965",
+      "bytes": 264
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.loudness_before.json",
+      "sha256": "8b21cc01234a4429d9db13106941a2c9a79f602ab0740ab8bf2e9c590fb22c44",
+      "bytes": 265
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.normalized.wav",
+      "sha256": "f0174bdbefea1eac5bb84d0f119d0083be3c1e3119e0901b7130590de212c976",
+      "bytes": 31752078
+    },
+    {
+      "path": "assets/audio/tts_ai/explainer_360.pre_normalization.wav",
+      "sha256": "735e0fe13a764ad911717071ab766402491abf56cfcebafdd7668b0f04220620",
+      "bytes": 31752044
+    },
+    {
+      "path": "assets/audio/tts_ai/generation_summary.json",
+      "sha256": "63d357aaa35ba6c86f651aa61cf60a954b3a479774f772545516e3d97a25a537",
+      "bytes": 938
+    },
+    {
+      "path": "assets/audio/tts_ai/history/PROVENANCE_paused_20261024.md",
+      "sha256": "d80485f53709567863dd71013dce7397fe692450a414ff64cc912f08da98ee0d",
+      "bytes": 3550
+    },
+    {
+      "path": "assets/audio/tts_ai/history/explainer_360_029_original_public_unknown.json",
+      "sha256": "414615ea3e38676a70134e92729d2b243f2db790375fea009fc6eaab566cbbbc",
+      "bytes": 814
+    },
+    {
+      "path": "assets/audio/tts_ai/history/explainer_360_029_original_unknown.json",
+      "sha256": "2d476be34eca9b199b7ba7be7e90716003d3c89aa6d8c5c0d01c835268127b79",
+      "bytes": 813
+    },
+    {
+      "path": "assets/audio/tts_ai/history/explainer_360_036_original_public_unknown.json",
+      "sha256": "d6b798142ccd6afb770fa4ca11c6023c7050ecee59850415d0d7177b90b98cf9",
+      "bytes": 845
+    },
+    {
+      "path": "assets/audio/tts_ai/history/explainer_360_036_original_unknown.json",
+      "sha256": "d6b798142ccd6afb770fa4ca11c6023c7050ecee59850415d0d7177b90b98cf9",
+      "bytes": 845
+    },
+    {
+      "path": "assets/audio/tts_ai/history/produce_narration_original_20261024.py",
+      "sha256": "aff206be616cfe7e02d0e3b716037b70d22a20f0a7d2f760200b32ac104ae513",
+      "bytes": 7677
+    },
+    {
+      "path": "assets/audio/tts_ai/history/sanitization_partial_20261024.json",
+      "sha256": "d8aba002351b50e969af7d157e4b639434fdb53ebd35bb0444a039ec6ee2791b",
+      "bytes": 532
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.assembly.json",
+      "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+      "bytes": 19608
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.loudness_after.json",
+      "sha256": "529ff2580ee7811432cb15007e7f129e28221694496417dc0e401fbbdbdbb0bf",
+      "bytes": 264
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.loudness_before.json",
+      "sha256": "d95e6879cefbd4f5db9cfbd725c4f1347a5055de87cd666d4137d6a44f513811",
+      "bytes": 265
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.normalized.wav",
+      "sha256": "3f2a1aedbd4d019e9693d5a632425f8aa7495277509cbfff44c25ea466c65d17",
+      "bytes": 7938078
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.pre_normalization.wav",
+      "sha256": "26d993de8ec8928c71705a5534aa67860198c4ab768110294e779ac3d6a3fcb5",
+      "bytes": 7938044
+    },
+    {
+      "path": "assets/audio/tts_ai/manifest.json",
+      "sha256": "c9e474dfb4fc7c058b41bbc88c0e56ff2a86e51b25319170d02c25654e5e65bf",
+      "bytes": 22377
+    },
+    {
+      "path": "assets/audio/tts_ai/pause_validation.json",
+      "sha256": "a3ca4cdbb31dbe13bbe9b0c110618b472426d5a9cf32b9c822a661b1d590a881",
+      "bytes": 14282
+    },
+    {
+      "path": "assets/audio/tts_ai/poll_history.jsonl",
+      "sha256": "aaa8b9e2302cad80eb724ea45d12ddbe4462aa342c5e6ee1e0fe1502b5bcbbc1",
+      "bytes": 12121
+    },
+    {
+      "path": "assets/audio/tts_ai/produce_narration.py",
+      "sha256": "5e035611c84dd4db41df334a0e7d66c3c81d6ca96b07317cdcea9d20e70fd8c4",
+      "bytes": 8039
+    },
+    {
+      "path": "assets/audio/tts_ai/production.log",
+      "sha256": "7de6864fd9abb107dd94d6a23a174b9f2a1ea1a5930a32875948ae197a9b2f46",
+      "bytes": 4760
+    },
+    {
+      "path": "assets/audio/tts_ai/public_progress.json",
+      "sha256": "975b5f12ef7a28d7f7edf7381f0543726e1187ce86f0443fd082b9c81ce8711a",
+      "bytes": 7241
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_001.json",
+      "sha256": "a3b83eb90d5d25eb3304e02a7e636876fd87cac267a50f6b9f67b2eaf0a883b9",
+      "bytes": 1256
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_002.json",
+      "sha256": "86d7c55a65731a0be3446644bd59ef74821be5e29e56b05ee1b15b41644452e0",
+      "bytes": 1249
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_003.json",
+      "sha256": "041f16fbe43fa1d2887b07fd1b4ccdff534b3cec777fe3523936865b7345e75c",
+      "bytes": 1251
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_004.json",
+      "sha256": "0c40318676e393311c733e183da219bd7068c13ed3f532af58c86da1426815eb",
+      "bytes": 1286
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_005.json",
+      "sha256": "81a154de5802417095ac4a4f15645a3324d9e3ea97cf827bfe1ca1895b3a927e",
+      "bytes": 1184
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_006.json",
+      "sha256": "1084f7254fbee385e5e40f981360e941c6ac643502051c0bf1595f4309aa28b1",
+      "bytes": 1248
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_007.json",
+      "sha256": "85671652f9f9c34e54219642287d0f74bd8e5514b546389f8ffa2ef53695165f",
+      "bytes": 1282
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_008.json",
+      "sha256": "458895708cf77eb112e06639919100be7d056c3d375f278dbcf6ec1f629d18d1",
+      "bytes": 1267
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_009.json",
+      "sha256": "ac8333ad7dffc6ba0b3b3962479dd24a9eff14d88f3c8e4f8fbbfc26377e09a6",
+      "bytes": 1258
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_010.json",
+      "sha256": "6a7c0771e6ca272f66c62aa0a802b3cdd4bd94c766453d5f9136aab7a3e53cf6",
+      "bytes": 1226
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_011.json",
+      "sha256": "57a183e18475236f3c321ef115f48cac7f95935aef558b908461ab5c7d001099",
+      "bytes": 1255
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_012.json",
+      "sha256": "eabc928333cfcd5411c7b65e8430b8273f1350e771df45731c40443aeb90994a",
+      "bytes": 1255
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_013.json",
+      "sha256": "0932cf4fb0a396828da8a6cfc962a57c233a53a8215f278105f47ba7b884a2f7",
+      "bytes": 1273
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_014.json",
+      "sha256": "a155a1a9b21f34af1555f9181fe3c358771b5801214b39dbe2ae819b45fdbe38",
+      "bytes": 1234
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_015.json",
+      "sha256": "4faf897739d3b540928aaccc6e8728540c633f2e10fcb562bd05a48464c2d8d4",
+      "bytes": 1235
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_016.json",
+      "sha256": "b6223c328d7acb535540767aefcfa3feefcb57365ed7135de94eebc161e6e8cb",
+      "bytes": 1277
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_017.json",
+      "sha256": "b598e45e3f92939e13eefc2d325386ceb371fa81c6064b97d99f1fdb37051ff6",
+      "bytes": 1279
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_018.json",
+      "sha256": "77fc6cca930885a304dd8159a8e44183692e6dbe794b00a9b075ea3db55676eb",
+      "bytes": 1270
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_019.json",
+      "sha256": "4364fde0df398aa6f42380ac5e752e999c18e3a5d5a61ccb0ac5e377c911f135",
+      "bytes": 1279
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_020.json",
+      "sha256": "cad064e2a26ce66adb46207b532aa3ffd0f230ba244950de19b99b7b8f15c592",
+      "bytes": 1209
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_021.json",
+      "sha256": "03ffc7708c4479f583bf5280528171beb8ff3af2ff57a354dfdc52ecbd1ca7d5",
+      "bytes": 1286
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_022.json",
+      "sha256": "78144003a6f298a74ee89088855943b332903f089f69da4d765e9600a3ac35a1",
+      "bytes": 1283
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_023.json",
+      "sha256": "3b11ed3934f0a291e577d6272d7b0d864ec0e188ac843769530d5d549a14b970",
+      "bytes": 1265
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_024.json",
+      "sha256": "c61187d5ada4873139ae59a05529f8221fd56a0ffea0bfbf63b3b30d75502f8c",
+      "bytes": 1237
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_025.json",
+      "sha256": "027c846744772fa48e5975e3d1ae22c067601a0569bdc8cf40187ade1bfbb89f",
+      "bytes": 1219
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_026.json",
+      "sha256": "6bc0c04c2fcec15fb8d4a2d616554db6059e75b056012cc3ad6e82f5983b207c",
+      "bytes": 1258
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_027.json",
+      "sha256": "c502a546d9ea6329bbc691e49160f85e9836108d9754c9896dad7534d6df0e32",
+      "bytes": 1279
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_028.json",
+      "sha256": "e15b1aea53300961c26d9b056fc6774a4358cbbcd10170e8df5b884304116f40",
+      "bytes": 1277
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_029.json",
+      "sha256": "1aecafda2c6394431667b0cd7ff83b94459faa5cccde34f66819a73971ee835a",
+      "bytes": 1164
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_030.json",
+      "sha256": "24112f363a9cda6ea2d4fb023ae2f22918b5191a749aa3679136961f14517eb2",
+      "bytes": 1198
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_031.json",
+      "sha256": "93f9b3f921cc55d24ea800e1e54578f6f2355aec91584622244520e6211606ce",
+      "bytes": 1172
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_032.json",
+      "sha256": "34970038bde530c848f2d55464dc7b53e90f4cce55ff4b7f6cbb8add1577a29e",
+      "bytes": 1240
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_033.json",
+      "sha256": "1d25d76936bff74469a9e6b0a9e45594938b167d6ffdb137e79a95cebac729fd",
+      "bytes": 1221
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_034.json",
+      "sha256": "ca51e4101ba1d8c3d8820917023a17bce9f8b343408c2deb35c68f05b24c1bea",
+      "bytes": 1217
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_035.json",
+      "sha256": "cb4210b91c6915d934607cf28c36ae67167c84f1ab887c52e6119adc15a6e1c8",
+      "bytes": 1227
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_036.json",
+      "sha256": "457b17d3fe63cd753a6d2984cc6de2004f8bbb90fd483c44bd4e423aaf508304",
+      "bytes": 1237
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_037.json",
+      "sha256": "79f11ea63a549c01ae4fcafa1256bf3b4fc3f2fac6489e9fedd3663918fa0651",
+      "bytes": 1157
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_038.json",
+      "sha256": "f761dadcbf92a96fe9b39cf382e96697c5234ad4e0e5b3e355dd218afc65d341",
+      "bytes": 1241
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_039.json",
+      "sha256": "c1c269316aaccacfaa30042722df4f9434141294e4a84bb423e8db96d0126db5",
+      "bytes": 1212
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_040.json",
+      "sha256": "4f05703aed86672d592178316a084a5bbd7c5157559d01a034dde473ab7089f7",
+      "bytes": 1226
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_041.json",
+      "sha256": "1738e88fe6818b3294a3de29cacf22ddcbc94090a34714098d51e7750bf78933",
+      "bytes": 1229
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_042.json",
+      "sha256": "0cac77cd85761c0de7ed2e149ea345b044ce974350c523c3117ed73d8bea276b",
+      "bytes": 1226
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_043.json",
+      "sha256": "193325969b02bc8cc641b75bb3d1bc9b30e623ca74d19307f11e14103fa0dea8",
+      "bytes": 1212
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/explainer_360_044.json",
+      "sha256": "5a0b92655ed496511624af93c2d03ece5cd65ef3947d685473419d88475e4ce5",
+      "bytes": 1184
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_001.json",
+      "sha256": "d21cf63979ad1bfb886bdb3250c42401ee1de061601c4f229ebeea30596c7886",
+      "bytes": 1260
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_002.json",
+      "sha256": "d32340e4436eb0bf2703c04d325822210458d4bb803c69a0383e397746d2708f",
+      "bytes": 1210
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_003.json",
+      "sha256": "f0c2905295b9357eeb92f7eafd22e5bcf18455b55dd99657b9960d2d8ba99356",
+      "bytes": 1216
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_004.json",
+      "sha256": "c5a87055dec604b5bc3b7e6b492efaf0f2cdb452a21acd68432a0d0b47fb47f7",
+      "bytes": 1251
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_005.json",
+      "sha256": "45fdc653e94397b180ab18b71e39d3e3123b59de9469ce2560565643e0f65d82",
+      "bytes": 1184
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_006.json",
+      "sha256": "9df93c8c00d9b79b13aa24ac08679c2260eef6e13e9836f3f7383d64824096e6",
+      "bytes": 1214
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_007.json",
+      "sha256": "7bdd190d24102b06e7362494bf10fcc70aa4e53d9f9cd9b1684a6403c449eede",
+      "bytes": 1215
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_008.json",
+      "sha256": "dd9b0d3b4bdf667b4cc75fb6ff62d2d7823e28f7205006fdce02b44798157f68",
+      "bytes": 1234
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_009.json",
+      "sha256": "b4a21bd8e747fd0a536daad82e1c08f680c7a3a38c035f97f2412cfa8c571236",
+      "bytes": 1195
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_010.json",
+      "sha256": "ae651bec57f5734c7994769ef674b4452f4ea4c4d13241abba2cc48eec921248",
+      "bytes": 1248
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_011.json",
+      "sha256": "be5b23b08839a2c97ef51e3ed494a9fc8a2b519e0d80d0e0598ef4c3949a9705",
+      "bytes": 1184
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_012.json",
+      "sha256": "589e3efe44363ef7729085cf3b8fb6a7e3ea40026ec678f0628621b2c2a80ebd",
+      "bytes": 1237
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_013.json",
+      "sha256": "94f38230f29296e17821af777dcec4e7e1a86737c9a91ba402e9a253e087c1bc",
+      "bytes": 1190
+    },
+    {
+      "path": "assets/audio/tts_ai/public_receipts/intro_90_014.json",
+      "sha256": "aa0e154c28eb6f69da8fe2a9921bbd1d24bdae1f02bc6382b91f3adc41c81e55",
+      "bytes": 1261
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_001.wav",
+      "sha256": "c9fa1a25ff9c26f9e61542d993cfb397f0278ee2965b4ba39e15b30eb9936a0c",
+      "bytes": 537248
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_002.wav",
+      "sha256": "796ce42a264c2e824474d8041230639a8ce5f7542950decd60809fbd71c8447c",
+      "bytes": 531104
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_003.wav",
+      "sha256": "bae344e541d677155630505b222c98c3f69b4c8d2967ec65518b297fcd5deb2e",
+      "bytes": 527008
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_004.wav",
+      "sha256": "eecc760564583d96165ae6ad55efca62f7ec6a29fbe5bfec5095600586f48efa",
+      "bytes": 693210
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_005.wav",
+      "sha256": "948ad60beb2b560e143383fd8f7f699bd336e31f912fc07c14a403a8602621ff",
+      "bytes": 177510
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_006.wav",
+      "sha256": "da73cb6785d3f49ec27405eca04fe4564039dcbddef9fe8afd7f7d28eb8fc918",
+      "bytes": 466592
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_007.wav",
+      "sha256": "c2fa9af7c3256bad7ad60e14a52bdab45233e107fe4703590513a9b505c6ce65",
+      "bytes": 680922
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_008.wav",
+      "sha256": "49fcb6fc756790842b51702b03593e9d6eb40a2241d85a655455bf3a9fd4a8a9",
+      "bytes": 588448
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_009.wav",
+      "sha256": "b97f1647c703c1cfb5115c2d2bce4f2ea45648c085722e9c98b4140054395b27",
+      "bytes": 563162
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_010.wav",
+      "sha256": "798e23045e0e551aeae3370f73edd7801e092940046976a5f3973a8f4997b8fc",
+      "bytes": 352614
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_011.wav",
+      "sha256": "e0468625b1a9306b0ba339236b1b41b979a8157cb12f89c0c920fa34dee81557",
+      "bytes": 512672
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_012.wav",
+      "sha256": "2380cefe1252d55271f1148b321e2a84e6e4a36700ff44aaf9dc5646cacf88a9",
+      "bytes": 511648
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_013.wav",
+      "sha256": "4ce1659587050294358c70f34e85c7f4fce97bc24b7c1bd94a6c3403ae38f543",
+      "bytes": 604832
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_014.wav",
+      "sha256": "c9f9b75db3194d07dad4adae23c89a74bd8277f518d2a15d94fbee1c79ff29e0",
+      "bytes": 446112
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_015.wav",
+      "sha256": "112c4f16b04bf88c7e0a8652582c65c3ce2c7d824f29eeb7d620257afba4c44e",
+      "bytes": 374118
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_016.wav",
+      "sha256": "0546baa399e39cda2907a83f299e06202c298563ebde053af954167333d7c7f5",
+      "bytes": 634528
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_017.wav",
+      "sha256": "629a4ffda0ae1dd6b3ed2623e72f136e74186f0b822570ff3b86ad7fc2355fd1",
+      "bytes": 632480
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_018.wav",
+      "sha256": "e8e902873fe7f139599815f6d9b922cccc1c32c754c0f9ddef9d611809a123ac",
+      "bytes": 610976
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_019.wav",
+      "sha256": "dda4ac83e372e95bd6d200f06576c6169b30634738608e87a41a912dd024e945",
+      "bytes": 681946
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_020.wav",
+      "sha256": "846753aaf581fa0c78af4fa51ebbce2c86cdd4a450a6534e1a8aacc0aaf99c77",
+      "bytes": 270694
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_021.wav",
+      "sha256": "55c9c2889b4ec8104924d8f6c2a8965097a70b29c0b14c58f0019537c41eeab0",
+      "bytes": 660128
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_022.wav",
+      "sha256": "16eea7c439d1474241cb631ab3ecc235fb46e812cf0291da393b8c9512f5e870",
+      "bytes": 688090
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_023.wav",
+      "sha256": "b004d20020a71374284c57c055262cb7923e83c7aa6cb44fdc09836b29aee9e8",
+      "bytes": 549536
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_024.wav",
+      "sha256": "311f7b2a5311dd2236b042a2ddd011f386a1eeec2351fe7dd51c496036f05687",
+      "bytes": 457376
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_025.wav",
+      "sha256": "bac976210e6dcac89b6ec135add928dca040bdbffff17cd44705d76de016d523",
+      "bytes": 318822
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_026.wav",
+      "sha256": "aba25ece159b93f2d1744343cd600ee33555ecb397867c570c0855795b542aed",
+      "bytes": 551584
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_027.wav",
+      "sha256": "e76ea7c9d482e0df4836cc95d9bd7b5b839210d92c912c22dc658b909c1f8db5",
+      "bytes": 631456
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_028.wav",
+      "sha256": "35088ccf0ad1a650786fb9b0586e954f87f31876c8b7cd59ad906e19f54f86e3",
+      "bytes": 663200
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_029.wav",
+      "sha256": "d69c81dfde80919ebc2c338bd8ba39798a47932c28c5a215d9defcfe65df2c64",
+      "bytes": 262502
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_030.wav",
+      "sha256": "5b2156e7dcbd68541d8f629112b29d37e70e921ee332bf0048c6f4fa5ade90a8",
+      "bytes": 450208
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_031.wav",
+      "sha256": "fd6d289dbc0577a1894ee505828dbb56954c31f75f1b5b8f88dcce481fe2df27",
+      "bytes": 339616
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_032.wav",
+      "sha256": "f912756c1e3c79a0f4b478a39dbf3e8daaefc23230cd485a355f867b148b5755",
+      "bytes": 685018
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_033.wav",
+      "sha256": "5bb93f0bdd6f0e3d012c23022911d8a58ab89d651c86154a8edc5cd63f39477d",
+      "bytes": 542368
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_034.wav",
+      "sha256": "c825611353989f2a904c89d0bc13a14b57ae8c0ef6bad8e56197ab65ac1de5a7",
+      "bytes": 540320
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_035.wav",
+      "sha256": "b78018fe702ff5a8a5125bca101fefa513b2f3a524b5cf9dd0022835fdb71ea7",
+      "bytes": 618144
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_036.wav",
+      "sha256": "2d772fcf0e32ce577314734155db00a9f1bff6bf949c1ad230e42d2ae95de61f",
+      "bytes": 636576
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_037.wav",
+      "sha256": "d735f1a7e33f55a5a91184bee11a45028816fccc0da3b429b9ca6a8c5efdd25b",
+      "bytes": 248166
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_038.wav",
+      "sha256": "c455b65f7086338f97602099c60952785e56b78c27da9609f332860ed31f6151",
+      "bytes": 669344
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_039.wav",
+      "sha256": "40e00b26d32e095106fb132251514971c0a2bdcdca583f9a36977df2784e5620",
+      "bytes": 556704
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_040.wav",
+      "sha256": "1149177a0c77912f8167ecaf4577d585c71263507c6c15837b172afb764db266",
+      "bytes": 614048
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_041.wav",
+      "sha256": "4c622bb863266ec599a56e6f3b8e7f06fb802b213fb669d51a79d0add805ff86",
+      "bytes": 632480
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_042.wav",
+      "sha256": "e87da1bc9f592091bd70fa6c78ca4d1fb128a910cf2e8402ffbf9022d7ded386",
+      "bytes": 608928
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_043.wav",
+      "sha256": "c3f7f197aa9993bf8dfac293a200f712075e17a4b6316d995f1f5dc626d422d6",
+      "bytes": 518816
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/explainer_360_044.wav",
+      "sha256": "ad01aff15d27d0afbde310700352bce6d889ef3269dc1bb503f12f42525c6afd",
+      "bytes": 388768
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_001.wav",
+      "sha256": "51acdf1d7bfb7d67ac8b0b21392cd9507c7ff17d545eff75b4a305672f3c6d8b",
+      "bytes": 574112
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_002.wav",
+      "sha256": "875966edfb1a170e4980cad37a21732ed8f32341d6c3111b11c6f4c214e16ba3",
+      "bytes": 379552
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_003.wav",
+      "sha256": "57c776383c48463e2fcc53080641809d9ab9dced308f59eb58e048f013138396",
+      "bytes": 330086
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_004.wav",
+      "sha256": "3ed350cd50bf93b1e0e85b8f519b8d8f7cdcaa096d954f6890cfb314969a51f6",
+      "bytes": 590810
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_005.wav",
+      "sha256": "f75ead9e9b2ca69af32d5813b071ee47b0bd6049933ef69ae127327823cb4318",
+      "bytes": 194918
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_006.wav",
+      "sha256": "4a7d4500d1f2ec923832f4ec2939b9154ced9d650fdbecaae08bd7a76279020d",
+      "bytes": 421536
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_007.wav",
+      "sha256": "407477de444d2008ed7796cdb625df5c8eb5a5065998a176af3dbc3f9fab6b8e",
+      "bytes": 351590
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_008.wav",
+      "sha256": "c8a049be163b9d5a5a3089a1a827dfc344c2a33695b97a4ce2ebef9bd9b56da6",
+      "bytes": 498336
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_009.wav",
+      "sha256": "e9c6aaf861f8b4e36547a47eb197c99ca3f7cf7b4041ede2cd46049c248144ff",
+      "bytes": 259430
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_010.wav",
+      "sha256": "ef456884f6d72b064006a6a8ea69e19741f85ed3bcdce29c0d674e2977c39d97",
+      "bytes": 559066
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_011.wav",
+      "sha256": "02c79b3abcb159505d4bd62f70e2477ffce424a3dec33fd09ca1768bc611b43a",
+      "bytes": 185702
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_012.wav",
+      "sha256": "0be5d6f717a91c20b250fd4c0d29db37eb36bfd603fee208308b41c9fd790b12",
+      "bytes": 453990
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_013.wav",
+      "sha256": "aeccd07799f3f97a2acf06867dda1e25377364346a3d730a257ebc8cd4801dc4",
+      "bytes": 247142
+    },
+    {
+      "path": "assets/audio/tts_ai/raw/intro_90_014.wav",
+      "sha256": "31932215f28ae2134abf7bec1499aacf9a0172b60e7638af9d7a6ef01d3330c3",
+      "bytes": 590496
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_001.json",
+      "sha256": "3c9f3ea64d5e159a9258cebedbb505fd04d11d1d50a5dfcc3e0fda540cc9bce8",
+      "bytes": 1386
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_002.json",
+      "sha256": "2c994252aefd63b96429156a0c6b47590dd961c44ba2c35013eb393713d6875b",
+      "bytes": 1379
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_003.json",
+      "sha256": "e6a1a71656112d038430d56906b4bcdbdc4cb7e7336ce28b3e4d34bf7c371293",
+      "bytes": 1381
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_004.json",
+      "sha256": "03ee4d04204fe499bfc7796577ae9ba099e79673db159985256f4096aa31a88f",
+      "bytes": 1416
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_005.json",
+      "sha256": "aee9c908d6e50fb94e41439ffaa4a845232f62e22a585f901fc6473882ac9dc2",
+      "bytes": 1314
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_006.json",
+      "sha256": "39491035fe29d69a963340b34b4232c94a99615c6c1bca382be77cca23db340c",
+      "bytes": 1378
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_007.json",
+      "sha256": "6fbbd09b27ee037c5ef51fb0f1adff6cc15f34c4fb5bd93c3234313b9eb18912",
+      "bytes": 1412
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_008.json",
+      "sha256": "7c307d5ef0e9819e80c7bc80851fc00c1030868e677aae65a34691af3a02fe23",
+      "bytes": 1397
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_009.json",
+      "sha256": "7cec66ff5c46220d14e30e323ecf911eeedf3d7f87d6fea7796554881af80f8b",
+      "bytes": 1388
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_010.json",
+      "sha256": "f34633cfc62594a2be0ad318835de052a1e1c8a4f5d4204b4a5e0117103be5f2",
+      "bytes": 1356
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_011.json",
+      "sha256": "ae29d3d9f2fd00c2db25db6416ae1700857a74e2027bee640b04193384d47387",
+      "bytes": 1385
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_012.json",
+      "sha256": "e904b76b2923bb878a7f7e6e72457e75e6bf6bda75e2a6a673902b8c7f8aaed0",
+      "bytes": 1385
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_013.json",
+      "sha256": "8869a1fc0d0726d47cea8c4a42cf8bc2d020390540accfcc6df78cf3e2a7aaec",
+      "bytes": 1403
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_014.json",
+      "sha256": "77492baca5fac5f0a132e184d05a78625667b951721bdcd20b2340f987173200",
+      "bytes": 1364
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_015.json",
+      "sha256": "13c53fc34aed3fe16a9344eb406536715704d284b96edce22f1a561e38921b36",
+      "bytes": 1365
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_016.json",
+      "sha256": "e8ad9748f84fcb7b2067d73cc0e652da5651e2d33baf15739202b91f3dca4662",
+      "bytes": 1407
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_017.json",
+      "sha256": "872578ba092f6d1bb3e0702d32fbcc78a04af0af3124ec90e03feafd40dc7298",
+      "bytes": 1409
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_018.json",
+      "sha256": "42e3ad2b68f0007744f2c9249bfd58327160cf18d785d8ac52b3739958a16116",
+      "bytes": 1400
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_019.json",
+      "sha256": "7a559212cb7b56545b8e1dca3bdefbfd6ab02ef256296bf82de3d87dccc7d229",
+      "bytes": 1409
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_020.json",
+      "sha256": "800f0693a94c894eb73619443af92b19c7688d7d52675542cd62c38100ae766f",
+      "bytes": 1339
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_021.json",
+      "sha256": "e95f5492ab8f922c4ed57a2e169fa72ed0cefc01699e7568d31251753e673392",
+      "bytes": 1416
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_022.json",
+      "sha256": "271aa6289dab031db8a2bc7c4cc2ede7394316fd052b00245f273804527fb3ad",
+      "bytes": 1413
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_023.json",
+      "sha256": "f35f770d16292a32fb790dc9695332790dd603fdf209e1fcacfeb036ad9e7645",
+      "bytes": 1395
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_024.json",
+      "sha256": "932c732493b10597412abd70f3502030e895378ad3157cda1bbca5c63864274e",
+      "bytes": 1367
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_025.json",
+      "sha256": "c5dfcf8b8fe128bb7cfa4e4912fca1cf1f7240ec610adfc9889ac81294d90ab6",
+      "bytes": 1349
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_026.json",
+      "sha256": "0d349d30997c358dd428023ae713323384635e406f2c1d85713b46a6ebd27cca",
+      "bytes": 1388
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_027.json",
+      "sha256": "be87bb78c3da417a5acfecf2e1dc63fa41d224e4ea7cdf57457d02d158c8ebd6",
+      "bytes": 1409
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_028.json",
+      "sha256": "fb01f6688d0d18597e30f9e38b29e75a64bea0c9fdb5c1d1809b7b4ace57607b",
+      "bytes": 1407
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_029.json",
+      "sha256": "1aecafda2c6394431667b0cd7ff83b94459faa5cccde34f66819a73971ee835a",
+      "bytes": 1164
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_030.json",
+      "sha256": "24112f363a9cda6ea2d4fb023ae2f22918b5191a749aa3679136961f14517eb2",
+      "bytes": 1198
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_031.json",
+      "sha256": "93f9b3f921cc55d24ea800e1e54578f6f2355aec91584622244520e6211606ce",
+      "bytes": 1172
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_032.json",
+      "sha256": "34970038bde530c848f2d55464dc7b53e90f4cce55ff4b7f6cbb8add1577a29e",
+      "bytes": 1240
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_033.json",
+      "sha256": "1d25d76936bff74469a9e6b0a9e45594938b167d6ffdb137e79a95cebac729fd",
+      "bytes": 1221
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_034.json",
+      "sha256": "ca51e4101ba1d8c3d8820917023a17bce9f8b343408c2deb35c68f05b24c1bea",
+      "bytes": 1217
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_035.json",
+      "sha256": "cb4210b91c6915d934607cf28c36ae67167c84f1ab887c52e6119adc15a6e1c8",
+      "bytes": 1227
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_036.json",
+      "sha256": "457b17d3fe63cd753a6d2984cc6de2004f8bbb90fd483c44bd4e423aaf508304",
+      "bytes": 1237
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_037.json",
+      "sha256": "79f11ea63a549c01ae4fcafa1256bf3b4fc3f2fac6489e9fedd3663918fa0651",
+      "bytes": 1157
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_038.json",
+      "sha256": "f761dadcbf92a96fe9b39cf382e96697c5234ad4e0e5b3e355dd218afc65d341",
+      "bytes": 1241
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_039.json",
+      "sha256": "c1c269316aaccacfaa30042722df4f9434141294e4a84bb423e8db96d0126db5",
+      "bytes": 1212
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_040.json",
+      "sha256": "4f05703aed86672d592178316a084a5bbd7c5157559d01a034dde473ab7089f7",
+      "bytes": 1226
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_041.json",
+      "sha256": "1738e88fe6818b3294a3de29cacf22ddcbc94090a34714098d51e7750bf78933",
+      "bytes": 1229
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_042.json",
+      "sha256": "0cac77cd85761c0de7ed2e149ea345b044ce974350c523c3117ed73d8bea276b",
+      "bytes": 1226
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_043.json",
+      "sha256": "193325969b02bc8cc641b75bb3d1bc9b30e623ca74d19307f11e14103fa0dea8",
+      "bytes": 1212
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/explainer_360_044.json",
+      "sha256": "5a0b92655ed496511624af93c2d03ece5cd65ef3947d685473419d88475e4ce5",
+      "bytes": 1184
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_001.json",
+      "sha256": "32676c9d0d78a0682913961d97320c1b7a58ddbf76dd92b12251922402a42958",
+      "bytes": 1390
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_002.json",
+      "sha256": "48053fcad72c34ac10ebf491c6b737d96e9d32a2c74c574982ebfb15d5a68b80",
+      "bytes": 1340
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_003.json",
+      "sha256": "530cdb1ae0a8406903363c40cb3264738ee13339e74f52ef078801b107bf8bb8",
+      "bytes": 1346
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_004.json",
+      "sha256": "351267e34cfaa8b1e4605d9cf26bc7a79e815385d8f97703584897341cac7dc0",
+      "bytes": 1381
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_005.json",
+      "sha256": "2eec2d563de0b15689e1c214e6287e2cd50df4f1ad80c52646d04afb47b39ab6",
+      "bytes": 1314
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_006.json",
+      "sha256": "6b7f66981c3fba35a3649f52c3cb533aa59c2917c6e6be19d5f2c9a8120aefc8",
+      "bytes": 1344
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_007.json",
+      "sha256": "7309bcbd9c6542ed6d73f5e2c2a450285a8bc1f4b9447c66c6b9710602c765a8",
+      "bytes": 1345
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_008.json",
+      "sha256": "9bb7b4d00566cb1d0773eb78320521ae07e56c59be494cdf329887e8785795fa",
+      "bytes": 1364
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_009.json",
+      "sha256": "fd461af2d8f499ebe113eee8774877e15bb3042a9fa8aac9515b6845702009ff",
+      "bytes": 1325
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_010.json",
+      "sha256": "4281f3c9ad123c7b735f5eac708e5deab60bfccb973ea5052a5b37e332ab964d",
+      "bytes": 1378
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_011.json",
+      "sha256": "6658db991db2112139071839f6cecc4d8cad2cb6fa9e414be8692a470ff83fb1",
+      "bytes": 1314
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_012.json",
+      "sha256": "5aec1bc00f6ad033c6d73dabef7f1e51fec0ef558eb5b65ebdef2033b51f3c59",
+      "bytes": 1367
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_013.json",
+      "sha256": "6e81e3e0fabae35b6a2660dc5a1931ed5a5919aa2da524a26ad65953138c0558",
+      "bytes": 1320
+    },
+    {
+      "path": "assets/audio/tts_ai/receipts/intro_90_014.json",
+      "sha256": "b50b8033c112f88b15d1304593ca898d9488864f40de60676f6f9a13c145a8fd",
+      "bytes": 1391
+    },
+    {
+      "path": "assets/audio/tts_ai/sanitization.json",
+      "sha256": "6137253f336acade87e09f27efb2632be73515aedc18e594b06885a9e9b11261",
+      "bytes": 623
+    },
+    {
+      "path": "assets/audio/tts_ai/sanitize_provenance.py",
+      "sha256": "f21bceda66b1d76c1509d89f8f91de99853bd6593ac9bfd0f76e7bbdfad9678b",
+      "bytes": 3081
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S01.pre_normalization.wav",
+      "sha256": "c293f7a8ae29343be9320554acad1e74f53443d4e1cea1237734f46faef49eb6",
+      "bytes": 3087044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S01.wav",
+      "sha256": "7f41da1e7c5b731b3163c7116cd06452f23b63babc9bedaab760e100e64767b8",
+      "bytes": 3087044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S02.pre_normalization.wav",
+      "sha256": "2a5609bbc2a9e57b2f5736c67c6c244d0e978cf605266710e5333013da8d05a9",
+      "bytes": 3792644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S02.wav",
+      "sha256": "f55af8e22728995b29acaead545600afa6de29117b239159cd4439aef7618dcd",
+      "bytes": 3792644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S03.pre_normalization.wav",
+      "sha256": "fcd3c85397a3f4cde59a597935498afc9d318957096a9795206273160dd54db8",
+      "bytes": 3616244
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S03.wav",
+      "sha256": "aa969209bdd36ae1a8816517c0f9e9e0e59e2701ba173ab146e38f50c1a6a246",
+      "bytes": 3616244
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S04.pre_normalization.wav",
+      "sha256": "910ffd2c460b6802fb6a753b719532acc68793019ebe85adeffd3c47a95e98cc",
+      "bytes": 3880844
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S04.wav",
+      "sha256": "812e4463013f09b08169582ce4d5fa0cd5474e5a045718c588d1d36afae8dfcf",
+      "bytes": 3880844
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S05.pre_normalization.wav",
+      "sha256": "f22bbcc31702058ea31c017e465c068677a2b01bddd8366a4f126987ee6ba320",
+      "bytes": 3616244
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S05.wav",
+      "sha256": "04df5f317953ca3183851db99e77af16ef91662b8c5af3f3ab7b56cd865ecad6",
+      "bytes": 3616244
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S06.pre_normalization.wav",
+      "sha256": "4275ccbebf466298d1c0a7a0eba493c0b08713464dba37d2dbc1c12e75a43e43",
+      "bytes": 4057244
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S06.wav",
+      "sha256": "eb0ca1793188ebfef01844fd44d6113cb6f8fc1131e292bdcc4bea5ae8c00076",
+      "bytes": 4057244
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S07.pre_normalization.wav",
+      "sha256": "56aef093e7b961006de84667ddf2e9581cfbce6d86a89d891b54dfef09328233",
+      "bytes": 3528044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S07.wav",
+      "sha256": "61fd102e770e2d46b136bbb6f4cefe0f07e64e095bfa91ce97dc597e9bc3f883",
+      "bytes": 3528044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S08.pre_normalization.wav",
+      "sha256": "14757e8af84d2a0511d0f3db02852b1594ce8bbb80e1b26e8f2dcdf25cb88f2c",
+      "bytes": 3528044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S08.wav",
+      "sha256": "370dca7a7552c5916e221edff8950b63efc934aaf76adf486d3b09d10e0fa55c",
+      "bytes": 3528044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S09.pre_normalization.wav",
+      "sha256": "5413753fcd870811a603125844e26684dd6ec6badb51796cd9eaabb8ff123348",
+      "bytes": 2646044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/explainer_360_S09.wav",
+      "sha256": "de1d00b68d8f9877eb128a8004e0b966f9df556de3ba9b4cbf05b7a37e0c0d41",
+      "bytes": 2646044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S01.pre_normalization.wav",
+      "sha256": "4d5d27220a7dd2032744262f437979cce17525e44d4d2c4cb3febead3fb610ba",
+      "bytes": 882044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S01.wav",
+      "sha256": "0c97b1d690e44d1c11a81ff164fcd867cf88452e9af76a3e09406abbc2338634",
+      "bytes": 882044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S02.pre_normalization.wav",
+      "sha256": "f5cae8ed220ea58a4879d964e590b6fe878551dd326fb708cdd4dd1128a30c3c",
+      "bytes": 1058444
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S02.wav",
+      "sha256": "d0833f3e5022f08ba20c9c09991668b38c25cb439bfaa58ffe1f9bb2813c660d",
+      "bytes": 1058444
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S03.pre_normalization.wav",
+      "sha256": "a3182e06d9484df0a3598de1b2dfe097d4ad205d1efec427642f31b4863bd1c4",
+      "bytes": 1058444
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S03.wav",
+      "sha256": "6a22d6c01f8898f04842ce67b10821fb12711dc154fc857727a286bf16d1a03a",
+      "bytes": 1058444
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S04.pre_normalization.wav",
+      "sha256": "489546d4b300e6628e506005f475bdedc7dc623ceb96a60a3003ab31f0245bc9",
+      "bytes": 1146644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S04.wav",
+      "sha256": "e40e0e4a46e9d6a4bc59527159b88dae967c73e76710fc844cd48d47571cb5a3",
+      "bytes": 1146644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S05.pre_normalization.wav",
+      "sha256": "98256b011dc6f8e3d689b4e7604783ecf82f6553185b4766bdfd741d8d6fee45",
+      "bytes": 1146644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S05.wav",
+      "sha256": "a60320bb7e499751b9daa70c6dd8ff239b8f8fb35f549f5832915b86d599d02f",
+      "bytes": 1146644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S06.pre_normalization.wav",
+      "sha256": "826c7fda079e406f54495908a35164a154296cfa952a03961b32e798d31f35cd",
+      "bytes": 1058444
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S06.wav",
+      "sha256": "2412e687a5e94049e9b113a45de8695054c26859299113f3c2e13ca8c86fea2b",
+      "bytes": 1058444
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S07.pre_normalization.wav",
+      "sha256": "c9f0151a1699a5226e27ae7e90b3c2648fa2a4a6a378c55ed4f4f7f5c015448c",
+      "bytes": 882044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S07.wav",
+      "sha256": "7c50a481bd4b2ff89533c2a11277c96593bd43e0c06b32ec80ad8a7fdedfc12c",
+      "bytes": 882044
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S08.pre_normalization.wav",
+      "sha256": "147dd40e06fe7120ec61abf141bda55dd945d0d6afa411c3744e08343a6e6dae",
+      "bytes": 705644
+    },
+    {
+      "path": "assets/audio/tts_ai/scenes/intro_90_S08.wav",
+      "sha256": "081199204de11c845c6f5f498c045fbb5079e029536be419531eaad1fd9b2648",
+      "bytes": 705644
+    },
+    {
+      "path": "assets/audio/tts_ai/validate_paused_state.py",
+      "sha256": "a801206e179728f7366fea0dc2ba4c9b3ce4b9b6d613620e4c7e7f3c6e91f09e",
+      "bytes": 3766
+    },
+    {
+      "path": "assets/audio/tts_tool_inventory.json",
+      "sha256": "ae74283ec321cc18b64afcfc8748ca18f825b3b24a4aa1b254dc2768f7fdee44",
+      "bytes": 389
+    },
+    {
+      "path": "assets/subtitles/explainer_360.audio_timed.json",
+      "sha256": "6e378d8a82c0c98a2cd137dc73e8467d358dc99bf8770fbbf28d9ca34843d57d",
+      "bytes": 39562
+    },
+    {
+      "path": "assets/subtitles/explainer_360.audio_timed.srt",
+      "sha256": "71796cb4018eb9c53db120082fe6a2a29a2e427dcd49b1682404f47b8ed426c9",
+      "bytes": 5806
+    },
+    {
+      "path": "assets/subtitles/explainer_360.audio_timed.vtt",
+      "sha256": "a9d4a452f1f9d89f1cca9b2642d5aa3d3a5f2843811cbc1aea4c345394da83e1",
+      "bytes": 5799
+    },
+    {
+      "path": "assets/subtitles/explainer_360.draft_timing.json",
+      "sha256": "5fe813874865813f4e0dfebec9093383fcab9de91ab8f7e531efee6f0f2e912d",
+      "bytes": 8716
+    },
+    {
+      "path": "assets/subtitles/explainer_360.draft_timing.srt",
+      "sha256": "dd56714f0036f2ab4d38947b3f19d1f01175be3e908b5540440c29175aca8599",
+      "bytes": 5806
+    },
+    {
+      "path": "assets/subtitles/explainer_360.draft_timing.vtt",
+      "sha256": "415ddbe21becbf5e31c2c45fc6bd0c69ab70e20ca24da0535b72e913bfc6ec6b",
+      "bytes": 5749
+    },
+    {
+      "path": "assets/subtitles/intro_90.audio_timed.json",
+      "sha256": "cd8eef3ea05f5a7ff0adf9edebe4345c000af2a28efa668f390967c506262b27",
+      "bytes": 11525
+    },
+    {
+      "path": "assets/subtitles/intro_90.audio_timed.srt",
+      "sha256": "281ac781383870a8233d9b479385ec987cfb3708f5f3c4fba2c0d9478353d0e2",
+      "bytes": 1503
+    },
+    {
+      "path": "assets/subtitles/intro_90.audio_timed.vtt",
+      "sha256": "e8323ed9bb6d81a11d38bdfffb8a9c991d77ebcd0996b7d8dba4f9088c9dd0ac",
+      "bytes": 1586
+    },
+    {
+      "path": "assets/subtitles/intro_90.draft_timing.json",
+      "sha256": "6086acdc58e8e12c3b039960d82c8f52384fa4e5ecd4a6ab6bec3084d5c7709f",
+      "bytes": 2361
+    },
+    {
+      "path": "assets/subtitles/intro_90.draft_timing.srt",
+      "sha256": "87ce1628203f02a8fcb8d3ace07c4becc6637d14cff270e8347ed1b775cb5ade",
+      "bytes": 1503
+    },
+    {
+      "path": "assets/subtitles/intro_90.draft_timing.vtt",
+      "sha256": "43514b790fc0a2ab11ed695924b542d696caea9c17281366827c9cb567a0fbc2",
+      "bytes": 1536
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V06_validation.json",
+      "sha256": "094fda2b5a3d0531b7a8d92cce004ba9b2bf54b0c1c3c69343ed7087e8d4745b"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "58 unique TTS.ai MeloTTS/ZH cue WAVs cover1754unique source characters;60accepted submissions/1811characters include two explicitly authorized replacements with oldUNKNOWNhistories retained;credits_used total0. Two full WAVs, 17 scene WAVs, precise PCM cue-boundary SRT/VTT and sanitized provenance exist. Loudness, clipping and silence measured. Audio input unsupported: no actual listening, pronunciation or word-level alignment claim.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:11:22.678064+00:00"
+}

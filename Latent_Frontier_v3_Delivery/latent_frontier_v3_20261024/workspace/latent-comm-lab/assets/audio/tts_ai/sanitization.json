@@ -1,0 +1,16 @@
+{
+  "status": "sanitized",
+  "checked_at_utc": "2026-10-27T10:50:58.437623+00:00",
+  "scope": "58current receipts and public receipt copies plus sanitized UNKNOWNhistory; no private capabilities copied",
+  "accepted_records": 60,
+  "unique_source_records": 58,
+  "downloaded": 58,
+  "current_missing_audio": 0,
+  "outcome_unknown_historical_submissions": 2,
+  "transient_result_urls_removed": true,
+  "raw_job_capability_ids_removed": true,
+  "sensitive_header_fields_removed": true,
+  "historical_029_036_private_recovery_lost": true,
+  "current036private_state_outside_deliverable": true,
+  "research_state": "NOT_RUN"
+}

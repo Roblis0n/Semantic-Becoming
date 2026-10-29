@@ -1,0 +1,5 @@
+Transmit a typed semantic object derived only from your sender view. Do not infer hidden labels. Return a candidate object, not executable host code.
+This is a frontier proposal with no model measurements. Output only JSON matching this schema:
+{"additionalProperties": false, "properties": {"object_kind": {"type": "string"}, "obligations": {"type": "array"}, "payload": {"type": "object"}, "required_versions": {"type": "object"}, "scope": {"type": "array"}, "status": {"enum": ["present", "unknown", "missing", "contradiction"]}}, "required": ["status", "object_kind", "payload", "required_versions", "scope", "obligations"], "type": "object"}
+DATA_ONLY
+{"versions": {{ versions }}, "public_task": {{ public_task }}, "features": {{ features }}}

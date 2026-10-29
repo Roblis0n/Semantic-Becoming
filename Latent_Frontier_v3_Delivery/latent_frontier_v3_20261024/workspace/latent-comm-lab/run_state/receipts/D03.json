@@ -1,0 +1,141 @@
+{
+  "task_id": "D03",
+  "status": "done",
+  "input_digest": "1eb62b3618bf2de9bc626cce2c8877804aec3029f2cb406610ac0c526b74924f",
+  "outputs": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "3b55b3b562da0574e554061cc5a5113900d9845203acd7b34f25e29809a9922f",
+      "bytes": 217106
+    },
+    {
+      "path": "README.md",
+      "sha256": "afc47e7fe80fff0d225b7e45731d0fd1827180c0e9bac19e4390ec22cd949399",
+      "bytes": 9072
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "7395ca9b8f01d2b32bf9f62af5d8210a5d80a8f69a46228f9ff43df408958956",
+      "bytes": 275044
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/D03/validation.json",
+      "sha256": "05813b44e5ec2371e24375124756e96b894caedd0bd01cdff8c72e2ba6752aac"
+    },
+    {
+      "path": "run_state/checks/D03/dependencies_final.json",
+      "sha256": "a6cf53237e067cc39dc7c071b70a0b4a2bc7a9f70d9d9ca8c6adedbc223801ae"
+    },
+    {
+      "path": "run_state/checks/D03/source_snapshot.json",
+      "sha256": "0a5c32662deb75b5de5ecb4dab8ac99a81199d1c2102a1075fecf02dc85785f6"
+    },
+    {
+      "path": "run_state/checks/D03/loss_snapshot.json",
+      "sha256": "b5f033df724f2aca4a5a91fa879a62a5bb9dc5855215d7cf2dcba8b275678bdd"
+    },
+    {
+      "path": "run_state/checks/D03/qa_report.json",
+      "sha256": "3f41612d114b3b58053f9910edbbdbeb6f8d127dc39b57de5eed9b8333bbb321"
+    },
+    {
+      "path": "run_state/checks/D03/latex_pass6.txt",
+      "sha256": "d79c5af53c417a046836e3090cb83a688bc91dfe816d99a39c13bfed938178d2"
+    },
+    {
+      "path": "run_state/checks/D03/render/main.pdf",
+      "sha256": "897f5bdb185b35810b2ca0507afd5c9794873735ae6a1e9e2a26fb61b6a2d625"
+    },
+    {
+      "path": "run_state/checks/D03/validate_documentation.py",
+      "sha256": "dcce980c0d4b2946c78209fd10090c84ad4d80ae9f0d21267f0f3617677f1e58"
+    },
+    {
+      "path": "run_state/checks/D03/build_appendices.py",
+      "sha256": "46134571a4bab235ca473ef6fd25b4cd950d8311b3fe7f18bf90bc1da105d33b"
+    },
+    {
+      "path": "run_state/checks/D03/render_paper.sh",
+      "sha256": "d3569e26c9848a36e01e0ebe3748ba29c11124e44a97ede95b3a9501a7bebbf1"
+    },
+    {
+      "path": "run_state/checks/D03/format_tex.lua",
+      "sha256": "d06d5710050fca8e036803077a35c9e78a4f6f76c9e61b619579f1f4c05fc8c1"
+    },
+    {
+      "path": "run_state/checks/D03/header.tex",
+      "sha256": "4dc009f426e2e478fb53f77ad624744efe73a08a04e00b4a6ec34326577065f7"
+    },
+    {
+      "path": "run_state/checks/D03/refresh_render_qa.py",
+      "sha256": "610b1c01ad34986a05d7e05f1fe828e069d85ad893fcfd4b90cde7c00f8da52e"
+    },
+    {
+      "path": "run_state/checks/D03/review_reconciliation.json",
+      "sha256": "855301b99c29a20b5bf8d3beb8a036a3adaece8e811e0ebf4c0303098eb0ddf8"
+    },
+    {
+      "path": "run_state/checks/D03/current_qa_index.json",
+      "sha256": "94a49b3871bd2055dec7aa9b98cdb7a9f695091b4d5f468a85220a40b2f552a2"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/qa_delta.json",
+      "sha256": "1c795be83aa99c6503ec917d244d4d97eb91314605320005473ae54239e259fd"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/source_evidence.json",
+      "sha256": "c424764d1c1764fbeb03321a6904a7187e771f61294e1dd273b07347ab5a5e8f"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_1846/layout_comparison.json",
+      "sha256": "99c68a09ef558fb48130ca6d20ea20f9f3515fc1d57b8882d56a3be939e14c72"
+    },
+    {
+      "path": "run_state/checks/D03/pre_media_1846/snapshot_manifest.json",
+      "sha256": "d265a99e9ede3d5deeac52434986ea3ed93ecfcc702ee33e4df120f4b873198b"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_20261027/qa_delta.json",
+      "sha256": "7afeb675acb97c20c9410d7bd3dd181e1915f7177f907c5fe7e8d1a4f091fcec"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_20261027/source_delta.json",
+      "sha256": "057afb204d1873d116e778c1aaaad0e445b3e10aebe286391e60c9307448e706"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_20261027/layout_comparison.json",
+      "sha256": "a1b56d4349f5aa85fefffcaafd1eaa3e042bc0e14efe94db3eb2ea1ffdf62d14"
+    },
+    {
+      "path": "run_state/checks/D03/media_delta_20261027/render/main.pdf",
+      "sha256": "9c0998c51afa0acfff39d3da06244d19208e7a96d9dd2091667f736a649b083e"
+    },
+    {
+      "path": "run_state/checks/D03/media_waiver_20261027/qa_delta.json",
+      "sha256": "342de21ac11e8c4fa8c970959d544cafadb159cfc244e2a672d104739101896f"
+    },
+    {
+      "path": "run_state/checks/D03/media_waiver_20261027/source_delta.json",
+      "sha256": "a6bfbe4fc671a5b5a1593850108348379dd2fcbc0728282444aa7a0ea68fae25"
+    },
+    {
+      "path": "run_state/checks/D03/media_waiver_20261027/layout_comparison.json",
+      "sha256": "a84c0ee91e63f55c0384f2947723a07da2596b23457bac66f456b1c99ed1184f"
+    },
+    {
+      "path": "run_state/checks/D03/media_waiver_20261027/render/main.pdf",
+      "sha256": "bae11d47560dd50ad495d52cb6dad4c756b9b298792bd7a5361a05cbb8849e1d"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Explicit user20261027audition waiver reflected only in media sections;USER_WAIVED_NOT_PERFORMED not listening PASS. Current55pagePDF onlypage10changed and visually checked,other54pages identical. Research unchanged/NOT_RUN, priorP17history retained.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-27T11:11:57.378338+00:00"
+}

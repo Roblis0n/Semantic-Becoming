@@ -1,0 +1,117 @@
+{
+  "timestamp_utc": "2026-10-24T18:04:12.860390+00:00",
+  "stages": {
+    "L01": "views",
+    "L02": "objects",
+    "L04": "concept_questions",
+    "L05": "causal_analogy",
+    "L06": "dynamics_scales",
+    "L07": "transport",
+    "L08": "meta_rules",
+    "L09": "isa_search",
+    "L10": "worlds",
+    "L11": "uncertainty",
+    "L12": "evidence",
+    "L13": "joint"
+  },
+  "tests_passed": 100,
+  "excluded_tests": [
+    "L04:test_build_locked",
+    "L04:test_structural_train_locked"
+  ],
+  "neural_modules_loaded": [],
+  "source_ast_parsed": [
+    "src/latent_comm/learning/views/__init__.py",
+    "src/latent_comm/learning/views/train.py",
+    "src/latent_comm/learning/objects/__init__.py",
+    "src/latent_comm/learning/objects/train.py",
+    "src/latent_comm/learning/concept_questions/__init__.py",
+    "src/latent_comm/learning/concept_questions/train.py",
+    "src/latent_comm/learning/causal_analogy/__init__.py",
+    "src/latent_comm/learning/causal_analogy/train.py",
+    "src/latent_comm/learning/dynamics_scales/__init__.py",
+    "src/latent_comm/learning/dynamics_scales/train.py",
+    "src/latent_comm/learning/transport/__init__.py",
+    "src/latent_comm/learning/transport/train.py",
+    "src/latent_comm/learning/meta_rules/__init__.py",
+    "src/latent_comm/learning/meta_rules/train.py",
+    "src/latent_comm/learning/isa_search/__init__.py",
+    "src/latent_comm/learning/isa_search/train.py",
+    "src/latent_comm/learning/worlds/__init__.py",
+    "src/latent_comm/learning/worlds/train.py",
+    "src/latent_comm/learning/uncertainty/__init__.py",
+    "src/latent_comm/learning/uncertainty/train.py",
+    "src/latent_comm/learning/evidence/__init__.py",
+    "src/latent_comm/learning/evidence/train.py",
+    "src/latent_comm/learning/joint/__init__.py",
+    "src/latent_comm/learning/joint/train.py",
+    "src/latent_comm/learning/joint/static_audit.py"
+  ],
+  "receipt_checks": {
+    "L01": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.600172+00:00",
+      "mismatches": []
+    },
+    "L02": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.609148+00:00",
+      "mismatches": []
+    },
+    "L04": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.625147+00:00",
+      "mismatches": []
+    },
+    "L05": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.632061+00:00",
+      "mismatches": []
+    },
+    "L06": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.642801+00:00",
+      "mismatches": []
+    },
+    "L07": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.649452+00:00",
+      "mismatches": []
+    },
+    "L08": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.656908+00:00",
+      "mismatches": []
+    },
+    "L09": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.663763+00:00",
+      "mismatches": []
+    },
+    "L10": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.671118+00:00",
+      "mismatches": []
+    },
+    "L11": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.678509+00:00",
+      "mismatches": []
+    },
+    "L12": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T17:59:52.685218+00:00",
+      "mismatches": []
+    },
+    "L13": {
+      "status": "done",
+      "committed_at_utc": "2026-10-24T18:03:04.284028+00:00",
+      "mismatches": []
+    }
+  },
+  "shared_hashes_unchanged": true,
+  "source_execution": "metadata validators and bounded stdlib checks only; no research gate invocation",
+  "static_imported_calls_checked": 353,
+  "static_imported_call_errors": [],
+  "remaining_review_findings_open": 0
+}

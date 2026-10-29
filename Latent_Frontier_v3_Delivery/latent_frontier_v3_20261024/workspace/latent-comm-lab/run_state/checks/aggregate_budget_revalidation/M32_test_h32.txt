@@ -1,0 +1,17 @@
+test_lost_preference (test_h32.H32Contracts.test_lost_preference) ... ok
+test_original_goal_and_constraints (test_h32.H32Contracts.test_original_goal_and_constraints) ... ok
+test_pareto_no_forced_ranking (test_h32.H32Contracts.test_pareto_no_forced_ranking) ... ok
+test_unit_duality_and_counterexample (test_h32.H32Contracts.test_unit_duality_and_counterexample) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+{
+  "selected": 4,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h32.H32Contracts.test_goal_digest_and_gate",
+    "test_h32.H32Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

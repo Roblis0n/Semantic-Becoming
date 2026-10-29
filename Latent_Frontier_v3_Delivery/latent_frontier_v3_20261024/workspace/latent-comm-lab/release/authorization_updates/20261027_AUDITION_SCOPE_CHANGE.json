@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-10-27T11:10:38.974690+00:00",
+  "user_message_id": "Sentinel_5503d7e4a82481919968d26a5bc5da75",
+  "user_message_time_utc": "2026-10-27T11:09:00Z",
+  "user_text": "听审去掉，别的先完成，如果都做好了的话，最后检查一遍就发我",
+  "scope_change": "Remove actual auditory review as a delivery acceptance condition. Finish all other required checks and deliver one unified package.",
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "audio_listened": false,
+  "prior_P17_requirement_preserved": true,
+  "not_a_listening_pass": true,
+  "research_state": "NOT_RUN",
+  "license_unchanged": "Generated TTS and incorporating videos personal/noncommercial only; independent code/PPT/SVG not automatically restricted",
+  "new_external_transmission_or_research_authorized": false
+}

@@ -1,0 +1,621 @@
+# V3文件总索引
+
+先读 [START_HERE.md](START_HERE.md)，连续阅读 [MASTER_PLAN_V3.md](MASTER_PLAN_V3.md)，给Dot执行 [P00_一次性总控](prompts/P00_一次性总控.md)。实际交付范围见 [DELIVERY_REPORT.md](DELIVERY_REPORT.md)。
+
+本索引覆盖全部物理文件；旧版191文件原样保留，旧入口不作为当前执行指令。
+
+## ROOT：总入口与总册
+
+- [DELIVERY_REPORT.md](DELIVERY_REPORT.md) — V3交付说明
+- [DELTA_FROM_V2.md](DELTA_FROM_V2.md) — V3究竟新增什么
+- [INNOVATION_MAP.md](INNOVATION_MAP.md) — 48机制创新地图
+- [MASTER_PLAN_V3.md](MASTER_PLAN_V3.md) — 可改写认知：V3完整方案聚合本
+- [START_HERE.md](START_HERE.md) — Semantic Becoming · 可改写认知的跨模型计算
+- [可改写认知_前沿创新与Dot全流程研究总册_V3.docx](可改写认知_前沿创新与Dot全流程研究总册_V3.docx) — 可改写认知_前沿创新与Dot全流程研究总册_V3
+
+## docs：全局研究与执行设计
+
+- [docs/00_研究宪章_本轮究竟追求什么.md](docs/00_研究宪章_本轮究竟追求什么.md) — 00 研究宪章：从潜通信到可改写认知的计算
+- [docs/01_版本继承与唯一权威入口.md](docs/01_版本继承与唯一权威入口.md) — 01 版本继承与唯一权威入口
+- [docs/02_第一性原理与创新生成法.md](docs/02_第一性原理与创新生成法.md) — 02 第一性原理与创新生成法
+- [docs/03_三层创新版图与研究主线.md](docs/03_三层创新版图与研究主线.md) — 03 三层创新版图与研究主线
+- [docs/04_统一元状态与对象流.md](docs/04_统一元状态与对象流.md) — 04 统一元状态与对象流
+- [docs/05_数据契约与协议定义.md](docs/05_数据契约与协议定义.md) — 05 数据契约与协议定义
+- [docs/06_完整目标仓库与源码责任.md](docs/06_完整目标仓库与源码责任.md) — 06 完整目标仓库与源码责任
+- [docs/07_编译器与可执行流水线.md](docs/07_编译器与可执行流水线.md) — 07 编译器与可执行流水线
+- [docs/08_世界工厂与数据隔离.md](docs/08_世界工厂与数据隔离.md) — 08 世界工厂与数据隔离
+- [docs/09_完整学习目标与梯度账本.md](docs/09_完整学习目标与梯度账本.md) — 09 完整学习目标与梯度账本
+- [docs/10_模型后端与运行禁区.md](docs/10_模型后端与运行禁区.md) — 10 模型后端与运行禁区
+- [docs/11_运行时_事务_恢复与有界自主.md](docs/11_运行时_事务_恢复与有界自主.md) — 11 运行时、事务、恢复与有界自主
+- [docs/12_Dot工具编排与权限矩阵.md](docs/12_Dot工具编排与权限矩阵.md) — 12 Dot 工具编排与权限矩阵
+- [docs/13_一次性执行阶段与交付边界.md](docs/13_一次性执行阶段与交付边界.md) — 13 一次性执行阶段与交付边界
+- [docs/14_理论自洽与新颖性分层.md](docs/14_理论自洽与新颖性分层.md) — 14 理论自洽与新颖性分层
+- [docs/15_未来研究入口_本轮锁定.md](docs/15_未来研究入口_本轮锁定.md) — 15 未来研究入口：只准备，不运行
+- [docs/16_媒体系统与展示叙事.md](docs/16_媒体系统与展示叙事.md) — 16 媒体系统与展示叙事
+- [docs/17_完成标准与证据账本.md](docs/17_完成标准与证据账本.md) — 17 完成标准与证据账本
+- [docs/18_原始来源与主张边界.md](docs/18_原始来源与主张边界.md) — 18 原始来源与主张边界
+- [docs/19_任务阶段与提示词索引.md](docs/19_任务阶段与提示词索引.md) — 19 任务阶段与提示词索引
+- [docs/20_机器契约的语义补充.md](docs/20_机器契约的语义补充.md) — 20 机器契约的语义补充
+
+## hypotheses：新增机制独立计划
+
+- [hypotheses/H25_规范协变的认知接口.md](hypotheses/H25_规范协变的认知接口.md) — H25 规范协变的认知接口
+- [hypotheses/H26_不可全局拼合的语义层.md](hypotheses/H26_不可全局拼合的语义层.md) — H26 不可全局拼合的语义层
+- [hypotheses/H27_交互中诞生的新概念.md](hypotheses/H27_交互中诞生的新概念.md) — H27 交互中诞生的新概念
+- [hypotheses/H28_语义结构的分岔与相变.md](hypotheses/H28_语义结构的分岔与相变.md) — H28 语义结构的分岔与相变
+- [hypotheses/H29_问题生成的潜演算.md](hypotheses/H29_问题生成的潜演算.md) — H29 问题生成的潜演算
+- [hypotheses/H30_类比态射编译器.md](hypotheses/H30_类比态射编译器.md) — H30 类比态射编译器
+- [hypotheses/H31_因果机制移植.md](hypotheses/H31_因果机制移植.md) — H31 因果机制移植
+- [hypotheses/H32_视角与目标条件代数.md](hypotheses/H32_视角与目标条件代数.md) — H32 视角与目标条件代数
+- [hypotheses/H33_非梯度的互构认知动力学.md](hypotheses/H33_非梯度的互构认知动力学.md) — H33 非梯度的互构认知动力学
+- [hypotheses/H34_双边边界条件推理.md](hypotheses/H34_双边边界条件推理.md) — H34 双边边界条件推理
+- [hypotheses/H35_跨尺度语义重整化.md](hypotheses/H35_跨尺度语义重整化.md) — H35 跨尺度语义重整化
+- [hypotheses/H36_以分歧生产结构的认知博弈.md](hypotheses/H36_以分歧生产结构的认知博弈.md) — H36 以分歧生产结构的认知博弈
+- [hypotheses/H37_跨模型学习方向运输.md](hypotheses/H37_跨模型学习方向运输.md) — H37 跨模型学习方向运输
+- [hypotheses/H38_可传递的可塑性规则.md](hypotheses/H38_可传递的可塑性规则.md) — H38 可传递的可塑性规则
+- [hypotheses/H39_可回滚的跨模型认知事务.md](hypotheses/H39_可回滚的跨模型认知事务.md) — H39 可回滚的跨模型认知事务
+- [hypotheses/H40_自举的潜指令集.md](hypotheses/H40_自举的潜指令集.md) — H40 自举的潜指令集
+- [hypotheses/H41_互补能力的联盟契约.md](hypotheses/H41_互补能力的联盟契约.md) — H41 互补能力的联盟契约
+- [hypotheses/H42_模型与任务的共演化生态.md](hypotheses/H42_模型与任务的共演化生态.md) — H42 模型与任务的共演化生态
+- [hypotheses/H43_可交换的世界动力学核.md](hypotheses/H43_可交换的世界动力学核.md) — H43 可交换的世界动力学核
+- [hypotheses/H44_共同构造的反事实梦境.md](hypotheses/H44_共同构造的反事实梦境.md) — H44 共同构造的反事实梦境
+- [hypotheses/H45_主动可识别性协议.md](hypotheses/H45_主动可识别性协议.md) — H45 主动可识别性协议
+- [hypotheses/H46_不可行域与负知识胶囊.md](hypotheses/H46_不可行域与负知识胶囊.md) — H46 不可行域与负知识胶囊
+- [hypotheses/H47_任务相对的语义商空间.md](hypotheses/H47_任务相对的语义商空间.md) — H47 任务相对的语义商空间
+- [hypotheses/H48_相关证据的认知谱系代数.md](hypotheses/H48_相关证据的认知谱系代数.md) — H48 相关证据的认知谱系代数
+
+## integration：原24机制逐项接续
+
+- [integration/I01_可组合潜算子.md](integration/I01_可组合潜算子.md) — I01 · H01 可组合潜算子 的 V3 接续
+- [integration/I02_反事实响应包.md](integration/I02_反事实响应包.md) — I02 · H02 反事实响应包 的 V3 接续
+- [integration/I03_多假设信念包.md](integration/I03_多假设信念包.md) — I03 · H03 多假设信念包 的 V3 接续
+- [integration/I04_多主体共享约束场.md](integration/I04_多主体共享约束场.md) — I04 · H04 多主体共享约束场 的 V3 接续
+- [integration/I05_推理续接胶囊.md](integration/I05_推理续接胶囊.md) — I05 · H05 推理续接胶囊 的 V3 接续
+- [integration/I06_多图册语义对齐.md](integration/I06_多图册语义对齐.md) — I06 · H06 多图册语义对齐 的 V3 接续
+- [integration/I07_类型化潜程序.md](integration/I07_类型化潜程序.md) — I07 · H07 类型化潜程序 的 V3 接续
+- [integration/I08_关系结构通信.md](integration/I08_关系结构通信.md) — I08 · H08 关系结构通信 的 V3 接续
+- [integration/I09_干预代数通信.md](integration/I09_干预代数通信.md) — I09 · H09 干预代数通信 的 V3 接续
+- [integration/I10_高阶协同超边.md](integration/I10_高阶协同超边.md) — I10 · H10 高阶协同超边 的 V3 接续
+- [integration/I11_渐进潜编码.md](integration/I11_渐进潜编码.md) — I11 · H11 渐进潜编码 的 V3 接续
+- [integration/I12_多查询持久胶囊.md](integration/I12_多查询持久胶囊.md) — I12 · H12 多查询持久胶囊 的 V3 接续
+- [integration/I13_可分叉潜计算.md](integration/I13_可分叉潜计算.md) — I13 · H13 可分叉潜计算 的 V3 接续
+- [integration/I14_潜技能语法.md](integration/I14_潜技能语法.md) — I14 · H14 潜技能语法 的 V3 接续
+- [integration/I15_接收者无关协议学习.md](integration/I15_接收者无关协议学习.md) — I15 · H15 接收者无关协议学习 的 V3 接续
+- [integration/I16_精确符号与潜状态双通道.md](integration/I16_精确符号与潜状态双通道.md) — I16 · H16 精确符号与潜状态双通道 的 V3 接续
+- [integration/I17_跨模态坐标接地.md](integration/I17_跨模态坐标接地.md) — I17 · H17 跨模态坐标接地 的 V3 接续
+- [integration/I18_通信诱导计算结构.md](integration/I18_通信诱导计算结构.md) — I18 · H18 通信诱导计算结构 的 V3 接续
+- [integration/I19_消息到技能巩固.md](integration/I19_消息到技能巩固.md) — I19 · H19 消息到技能巩固 的 V3 接续
+- [integration/I20_异步认知时钟.md](integration/I20_异步认知时钟.md) — I20 · H20 异步认知时钟 的 V3 接续
+- [integration/I21_反事实分支组合搜索.md](integration/I21_反事实分支组合搜索.md) — I21 · H21 反事实分支组合搜索 的 V3 接续
+- [integration/I22_动态模型边界.md](integration/I22_动态模型边界.md) — I22 · H22 动态模型边界 的 V3 接续
+- [integration/I23_语义残差纠错.md](integration/I23_语义残差纠错.md) — I23 · H23 语义残差纠错 的 V3 接续
+- [integration/I24_有作用域的潜计算能力.md](integration/I24_有作用域的潜计算能力.md) — I24 · H24 有作用域的潜计算能力 的 V3 接续
+
+## combinations：新增组合流水线
+
+- [combinations/C09_协变的多尺度计算语言.md](combinations/C09_协变的多尺度计算语言.md) — C09 协变的多尺度计算语言
+- [combinations/C10_分歧驱动的概念诞生.md](combinations/C10_分歧驱动的概念诞生.md) — C10 分歧驱动的概念诞生
+- [combinations/C11_问题空间的跨域迁移.md](combinations/C11_问题空间的跨域迁移.md) — C11 问题空间的跨域迁移
+- [combinations/C12_可移植的科学小世界.md](combinations/C12_可移植的科学小世界.md) — C12 可移植的科学小世界
+- [combinations/C13_跨模型学习协议网络.md](combinations/C13_跨模型学习协议网络.md) — C13 跨模型学习协议网络
+- [combinations/C14_认知结构的事务性跃迁.md](combinations/C14_认知结构的事务性跃迁.md) — C14 认知结构的事务性跃迁
+- [combinations/C15_多节律的轨迹推理.md](combinations/C15_多节律的轨迹推理.md) — C15 多节律的轨迹推理
+- [combinations/C16_共同梦境与问题生态.md](combinations/C16_共同梦境与问题生态.md) — C16 共同梦境与问题生态
+- [combinations/C17_以未知边界驱动通信.md](combinations/C17_以未知边界驱动通信.md) — C17 以未知边界驱动通信
+- [combinations/C18_不重复计信的能力联盟.md](combinations/C18_不重复计信的能力联盟.md) — C18 不重复计信的能力联盟
+- [combinations/C19_任务相对的世界观切换.md](combinations/C19_任务相对的世界观切换.md) — C19 任务相对的世界观切换
+- [combinations/C20_自举的语义编译生态.md](combinations/C20_自举的语义编译生态.md) — C20 自举的语义编译生态
+
+## horizons：远期终局与有限化入口
+
+- [horizons/X01_无固定模型个体的认知连续体.md](horizons/X01_无固定模型个体的认知连续体.md) — X01 无固定模型个体的认知连续体
+- [horizons/X02_没有全局世界观的集体知识.md](horizons/X02_没有全局世界观的集体知识.md) — X02 没有全局世界观的集体知识
+- [horizons/X03_问题先于答案的研究引擎.md](horizons/X03_问题先于答案的研究引擎.md) — X03 问题先于答案的研究引擎
+- [horizons/X04_可塑性互联网.md](horizons/X04_可塑性互联网.md) — X04 可塑性互联网
+- [horizons/X05_会进化语言的认知生态.md](horizons/X05_会进化语言的认知生态.md) — X05 会进化语言的认知生态
+- [horizons/X06_跨尺度的思想物质.md](horizons/X06_跨尺度的思想物质.md) — X06 跨尺度的思想物质
+- [horizons/X07_轨迹即思想而非终点即思想.md](horizons/X07_轨迹即思想而非终点即思想.md) — X07 轨迹即思想而非终点即思想
+- [horizons/X08_能够传递的未完成证明与发现.md](horizons/X08_能够传递的未完成证明与发现.md) — X08 能够传递的未完成证明与发现
+- [horizons/X09_共同梦境产生新的经验空间.md](horizons/X09_共同梦境产生新的经验空间.md) — X09 共同梦境产生新的经验空间
+- [horizons/X10_认知公共品与临时能力联盟.md](horizons/X10_认知公共品与临时能力联盟.md) — X10 认知公共品与临时能力联盟
+- [horizons/X11_可追溯的概念出生与死亡.md](horizons/X11_可追溯的概念出生与死亡.md) — X11 可追溯的概念出生与死亡
+- [horizons/X12_语义编译而非模型选型.md](horizons/X12_语义编译而非模型选型.md) — X12 语义编译而非模型选型
+
+## formal：条件化数学推导
+
+- [formal/F01_协变接口的作用保持.md](formal/F01_协变接口的作用保持.md) — F01 协变接口的作用保持
+- [formal/F02_不可拼合与新增变量.md](formal/F02_不可拼合与新增变量.md) — F02 不可拼合与新增变量
+- [formal/F03_概念创造与表达能力见证.md](formal/F03_概念创造与表达能力见证.md) — F03 概念创造与表达能力见证
+- [formal/F04_问题演算与答案关系.md](formal/F04_问题演算与答案关系.md) — F04 问题演算与答案关系
+- [formal/F05_行为切空间与可塑性.md](formal/F05_行为切空间与可塑性.md) — F05 行为切空间与可塑性
+- [formal/F06_轨迹语义与分岔.md](formal/F06_轨迹语义与分岔.md) — F06 轨迹语义与分岔
+- [formal/F07_任务商空间与尺度闭合.md](formal/F07_任务商空间与尺度闭合.md) — F07 任务商空间与尺度闭合
+- [formal/F08_世界与证据的依赖语义.md](formal/F08_世界与证据的依赖语义.md) — F08 世界与证据的依赖语义
+
+## prompts：可复制角色提示词
+
+- [prompts/P00_一次性总控.md](prompts/P00_一次性总控.md) — P00 · Dot 一次性总控执行提示词
+- [prompts/P01_研究总架构.md](prompts/P01_研究总架构.md) — P01 · 研究总架构提示词
+- [prompts/P02_第一性原理发散.md](prompts/P02_第一性原理发散.md) — P02 · 第一性原理发散提示词
+- [prompts/P03_机制完整实现.md](prompts/P03_机制完整实现.md) — P03 · 机制完整实现提示词
+- [prompts/P04_原机制接续.md](prompts/P04_原机制接续.md) — P04 · 原机制接续提示词
+- [prompts/P05_类型与协议.md](prompts/P05_类型与协议.md) — P05 · 类型与协议提示词
+- [prompts/P06_科研编译器.md](prompts/P06_科研编译器.md) — P06 · 科研编译器提示词
+- [prompts/P07_世界与数据.md](prompts/P07_世界与数据.md) — P07 · 世界与数据提示词
+- [prompts/P08_模型后端.md](prompts/P08_模型后端.md) — P08 · 模型后端提示词
+- [prompts/P09_训练与元学习.md](prompts/P09_训练与元学习.md) — P09 · 训练与元学习提示词
+- [prompts/P10_运行时与事务.md](prompts/P10_运行时与事务.md) — P10 · 运行时与事务提示词
+- [prompts/P11_组合与终局.md](prompts/P11_组合与终局.md) — P11 · 组合与终局提示词
+- [prompts/P12_来源与新颖性.md](prompts/P12_来源与新颖性.md) — P12 · 来源与新颖性提示词
+- [prompts/P13_数学与软件审查.md](prompts/P13_数学与软件审查.md) — P13 · 数学与软件审查提示词
+- [prompts/P14_权限与执行边界.md](prompts/P14_权限与执行边界.md) — P14 · 权限与执行边界提示词
+- [prompts/P15_论文与说明文档.md](prompts/P15_论文与说明文档.md) — P15 · 论文与说明文档提示词
+- [prompts/P16_演示文稿.md](prompts/P16_演示文稿.md) — P16 · 演示文稿提示词
+- [prompts/P17_视频音频与动画.md](prompts/P17_视频音频与动画.md) — P17 · 视频音频与动画提示词
+- [prompts/P18_上下文恢复.md](prompts/P18_上下文恢复.md) — P18 · 上下文恢复提示词
+- [prompts/P19_封包与交付.md](prompts/P19_封包与交付.md) — P19 · 封包与交付提示词
+- [prompts/P20_形式推导.md](prompts/P20_形式推导.md) — P20 · 形式推导提示词
+- [prompts/P21_应用能力发现.md](prompts/P21_应用能力发现.md) — P21 · 应用能力发现提示词
+- [prompts/P22_缺陷修复.md](prompts/P22_缺陷修复.md) — P22 · 缺陷修复提示词
+- [prompts/P23_未来模型侧模板.md](prompts/P23_未来模型侧模板.md) — P23 · 未来模型侧模板提示词
+- [prompts/P24_极限想法复审.md](prompts/P24_极限想法复审.md) — P24 · 极限想法复审提示词
+
+## tasks：逐任务产物与依赖
+
+- [tasks/A00_工作区与能力发现.md](tasks/A00_工作区与能力发现.md) — A00 · 工作区与能力发现
+- [tasks/A01_第一性原理总架构.md](tasks/A01_第一性原理总架构.md) — A01 · 第一性原理总架构
+- [tasks/A02_公共契约与迁移.md](tasks/A02_公共契约与迁移.md) — A02 · 公共契约与迁移
+- [tasks/A03_研究IR与编译器.md](tasks/A03_研究IR与编译器.md) — A03 · 研究IR与编译器
+- [tasks/A04_运行时与恢复系统.md](tasks/A04_运行时与恢复系统.md) — A04 · 运行时与恢复系统
+- [tasks/A05_权限控制与禁跑闸门.md](tasks/A05_权限控制与禁跑闸门.md) — A05 · 权限控制与禁跑闸门
+- [tasks/B01_能力契约.md](tasks/B01_能力契约.md) — B01 · 能力契约
+- [tasks/B02_前缀注入.md](tasks/B02_前缀注入.md) — B02 · 前缀注入
+- [tasks/B03_残差注入.md](tasks/B03_残差注入.md) — B03 · 残差注入
+- [tasks/B04_KV适配.md](tasks/B04_KV适配.md) — B04 · KV适配
+- [tasks/B05_异构行为接口.md](tasks/B05_异构行为接口.md) — B05 · 异构行为接口
+- [tasks/B06_存储与设备.md](tasks/B06_存储与设备.md) — B06 · 存储与设备
+- [tasks/C01_临时计算体.md](tasks/C01_临时计算体.md) — C01 · 临时计算体
+- [tasks/C02_响应驱动共享场.md](tasks/C02_响应驱动共享场.md) — C02 · 响应驱动共享场
+- [tasks/C03_分布式信念树.md](tasks/C03_分布式信念树.md) — C03 · 分布式信念树
+- [tasks/C04_异步跨模型续接.md](tasks/C04_异步跨模型续接.md) — C04 · 异步跨模型续接
+- [tasks/C05_关系接地接口.md](tasks/C05_关系接地接口.md) — C05 · 关系接地接口
+- [tasks/C06_连接结构中的技能.md](tasks/C06_连接结构中的技能.md) — C06 · 连接结构中的技能
+- [tasks/C07_可迁移计算记忆.md](tasks/C07_可迁移计算记忆.md) — C07 · 可迁移计算记忆
+- [tasks/C08_协议作为计算语言.md](tasks/C08_协议作为计算语言.md) — C08 · 协议作为计算语言
+- [tasks/C09_协变的多尺度计算语言.md](tasks/C09_协变的多尺度计算语言.md) — C09 · 协变的多尺度计算语言
+- [tasks/C10_分歧驱动的概念诞生.md](tasks/C10_分歧驱动的概念诞生.md) — C10 · 分歧驱动的概念诞生
+- [tasks/C11_问题空间的跨域迁移.md](tasks/C11_问题空间的跨域迁移.md) — C11 · 问题空间的跨域迁移
+- [tasks/C12_可移植的科学小世界.md](tasks/C12_可移植的科学小世界.md) — C12 · 可移植的科学小世界
+- [tasks/C13_跨模型学习协议网络.md](tasks/C13_跨模型学习协议网络.md) — C13 · 跨模型学习协议网络
+- [tasks/C14_认知结构的事务性跃迁.md](tasks/C14_认知结构的事务性跃迁.md) — C14 · 认知结构的事务性跃迁
+- [tasks/C15_多节律的轨迹推理.md](tasks/C15_多节律的轨迹推理.md) — C15 · 多节律的轨迹推理
+- [tasks/C16_共同梦境与问题生态.md](tasks/C16_共同梦境与问题生态.md) — C16 · 共同梦境与问题生态
+- [tasks/C17_以未知边界驱动通信.md](tasks/C17_以未知边界驱动通信.md) — C17 · 以未知边界驱动通信
+- [tasks/C18_不重复计信的能力联盟.md](tasks/C18_不重复计信的能力联盟.md) — C18 · 不重复计信的能力联盟
+- [tasks/C19_任务相对的世界观切换.md](tasks/C19_任务相对的世界观切换.md) — C19 · 任务相对的世界观切换
+- [tasks/C20_自举的语义编译生态.md](tasks/C20_自举的语义编译生态.md) — C20 · 自举的语义编译生态
+- [tasks/D01_近邻与新颖性台账.md](tasks/D01_近邻与新颖性台账.md) — D01 · 近邻与新颖性台账
+- [tasks/D02_形式推导与极限分叉.md](tasks/D02_形式推导与极限分叉.md) — D02 · 形式推导与极限分叉
+- [tasks/D03_研究总稿与README.md](tasks/D03_研究总稿与README.md) — D03 · 研究总稿与README
+- [tasks/D04_未来模型输入模板.md](tasks/D04_未来模型输入模板.md) — D04 · 未来模型输入模板
+- [tasks/L01_角色与双通道.md](tasks/L01_角色与双通道.md) — L01 · 角色与双通道
+- [tasks/L02_算子响应信念.md](tasks/L02_算子响应信念.md) — L02 · 算子响应信念
+- [tasks/L03_坐标与局部限制.md](tasks/L03_坐标与局部限制.md) — L03 · 坐标与局部限制
+- [tasks/L04_概念和问题.md](tasks/L04_概念和问题.md) — L04 · 概念和问题
+- [tasks/L05_类比与因果.md](tasks/L05_类比与因果.md) — L05 · 类比与因果
+- [tasks/L06_动力学和尺度.md](tasks/L06_动力学和尺度.md) — L06 · 动力学和尺度
+- [tasks/L07_行为方向运输.md](tasks/L07_行为方向运输.md) — L07 · 行为方向运输
+- [tasks/L08_可塑性规则.md](tasks/L08_可塑性规则.md) — L08 · 可塑性规则
+- [tasks/L09_宏与结构搜索.md](tasks/L09_宏与结构搜索.md) — L09 · 宏与结构搜索
+- [tasks/L10_世界核与梦境.md](tasks/L10_世界核与梦境.md) — L10 · 世界核与梦境
+- [tasks/L11_可识别性与负知识.md](tasks/L11_可识别性与负知识.md) — L11 · 可识别性与负知识
+- [tasks/L12_联盟与谱系.md](tasks/L12_联盟与谱系.md) — L12 · 联盟与谱系
+- [tasks/L13_组合级训练组织.md](tasks/L13_组合级训练组织.md) — L13 · 组合级训练组织
+- [tasks/M01_H01_可组合潜算子.md](tasks/M01_H01_可组合潜算子.md) — M01 · H01_可组合潜算子
+- [tasks/M02_H02_反事实响应包.md](tasks/M02_H02_反事实响应包.md) — M02 · H02_反事实响应包
+- [tasks/M03_H03_多假设信念包.md](tasks/M03_H03_多假设信念包.md) — M03 · H03_多假设信念包
+- [tasks/M04_H04_多主体共享约束场.md](tasks/M04_H04_多主体共享约束场.md) — M04 · H04_多主体共享约束场
+- [tasks/M05_H05_推理续接胶囊.md](tasks/M05_H05_推理续接胶囊.md) — M05 · H05_推理续接胶囊
+- [tasks/M06_H06_多图册语义对齐.md](tasks/M06_H06_多图册语义对齐.md) — M06 · H06_多图册语义对齐
+- [tasks/M07_H07_类型化潜程序.md](tasks/M07_H07_类型化潜程序.md) — M07 · H07_类型化潜程序
+- [tasks/M08_H08_关系结构通信.md](tasks/M08_H08_关系结构通信.md) — M08 · H08_关系结构通信
+- [tasks/M09_H09_干预代数通信.md](tasks/M09_H09_干预代数通信.md) — M09 · H09_干预代数通信
+- [tasks/M10_H10_高阶协同超边.md](tasks/M10_H10_高阶协同超边.md) — M10 · H10_高阶协同超边
+- [tasks/M11_H11_渐进潜编码.md](tasks/M11_H11_渐进潜编码.md) — M11 · H11_渐进潜编码
+- [tasks/M12_H12_多查询持久胶囊.md](tasks/M12_H12_多查询持久胶囊.md) — M12 · H12_多查询持久胶囊
+- [tasks/M13_H13_可分叉潜计算.md](tasks/M13_H13_可分叉潜计算.md) — M13 · H13_可分叉潜计算
+- [tasks/M14_H14_潜技能语法.md](tasks/M14_H14_潜技能语法.md) — M14 · H14_潜技能语法
+- [tasks/M15_H15_接收者无关协议学习.md](tasks/M15_H15_接收者无关协议学习.md) — M15 · H15_接收者无关协议学习
+- [tasks/M16_H16_精确符号与潜状态双通道.md](tasks/M16_H16_精确符号与潜状态双通道.md) — M16 · H16_精确符号与潜状态双通道
+- [tasks/M17_H17_跨模态坐标接地.md](tasks/M17_H17_跨模态坐标接地.md) — M17 · H17_跨模态坐标接地
+- [tasks/M18_H18_通信诱导计算结构.md](tasks/M18_H18_通信诱导计算结构.md) — M18 · H18_通信诱导计算结构
+- [tasks/M19_H19_消息到技能巩固.md](tasks/M19_H19_消息到技能巩固.md) — M19 · H19_消息到技能巩固
+- [tasks/M20_H20_异步认知时钟.md](tasks/M20_H20_异步认知时钟.md) — M20 · H20_异步认知时钟
+- [tasks/M21_H21_反事实分支组合搜索.md](tasks/M21_H21_反事实分支组合搜索.md) — M21 · H21_反事实分支组合搜索
+- [tasks/M22_H22_动态模型边界.md](tasks/M22_H22_动态模型边界.md) — M22 · H22_动态模型边界
+- [tasks/M23_H23_语义残差纠错.md](tasks/M23_H23_语义残差纠错.md) — M23 · H23_语义残差纠错
+- [tasks/M24_H24_有作用域的潜计算能力.md](tasks/M24_H24_有作用域的潜计算能力.md) — M24 · H24_有作用域的潜计算能力
+- [tasks/M25_H25_规范协变的认知接口.md](tasks/M25_H25_规范协变的认知接口.md) — M25 · H25_规范协变的认知接口
+- [tasks/M26_H26_不可全局拼合的语义层.md](tasks/M26_H26_不可全局拼合的语义层.md) — M26 · H26_不可全局拼合的语义层
+- [tasks/M27_H27_交互中诞生的新概念.md](tasks/M27_H27_交互中诞生的新概念.md) — M27 · H27_交互中诞生的新概念
+- [tasks/M28_H28_语义结构的分岔与相变.md](tasks/M28_H28_语义结构的分岔与相变.md) — M28 · H28_语义结构的分岔与相变
+- [tasks/M29_H29_问题生成的潜演算.md](tasks/M29_H29_问题生成的潜演算.md) — M29 · H29_问题生成的潜演算
+- [tasks/M30_H30_类比态射编译器.md](tasks/M30_H30_类比态射编译器.md) — M30 · H30_类比态射编译器
+- [tasks/M31_H31_因果机制移植.md](tasks/M31_H31_因果机制移植.md) — M31 · H31_因果机制移植
+- [tasks/M32_H32_视角与目标条件代数.md](tasks/M32_H32_视角与目标条件代数.md) — M32 · H32_视角与目标条件代数
+- [tasks/M33_H33_非梯度的互构认知动力学.md](tasks/M33_H33_非梯度的互构认知动力学.md) — M33 · H33_非梯度的互构认知动力学
+- [tasks/M34_H34_双边边界条件推理.md](tasks/M34_H34_双边边界条件推理.md) — M34 · H34_双边边界条件推理
+- [tasks/M35_H35_跨尺度语义重整化.md](tasks/M35_H35_跨尺度语义重整化.md) — M35 · H35_跨尺度语义重整化
+- [tasks/M36_H36_以分歧生产结构的认知博弈.md](tasks/M36_H36_以分歧生产结构的认知博弈.md) — M36 · H36_以分歧生产结构的认知博弈
+- [tasks/M37_H37_跨模型学习方向运输.md](tasks/M37_H37_跨模型学习方向运输.md) — M37 · H37_跨模型学习方向运输
+- [tasks/M38_H38_可传递的可塑性规则.md](tasks/M38_H38_可传递的可塑性规则.md) — M38 · H38_可传递的可塑性规则
+- [tasks/M39_H39_可回滚的跨模型认知事务.md](tasks/M39_H39_可回滚的跨模型认知事务.md) — M39 · H39_可回滚的跨模型认知事务
+- [tasks/M40_H40_自举的潜指令集.md](tasks/M40_H40_自举的潜指令集.md) — M40 · H40_自举的潜指令集
+- [tasks/M41_H41_互补能力的联盟契约.md](tasks/M41_H41_互补能力的联盟契约.md) — M41 · H41_互补能力的联盟契约
+- [tasks/M42_H42_模型与任务的共演化生态.md](tasks/M42_H42_模型与任务的共演化生态.md) — M42 · H42_模型与任务的共演化生态
+- [tasks/M43_H43_可交换的世界动力学核.md](tasks/M43_H43_可交换的世界动力学核.md) — M43 · H43_可交换的世界动力学核
+- [tasks/M44_H44_共同构造的反事实梦境.md](tasks/M44_H44_共同构造的反事实梦境.md) — M44 · H44_共同构造的反事实梦境
+- [tasks/M45_H45_主动可识别性协议.md](tasks/M45_H45_主动可识别性协议.md) — M45 · H45_主动可识别性协议
+- [tasks/M46_H46_不可行域与负知识胶囊.md](tasks/M46_H46_不可行域与负知识胶囊.md) — M46 · H46_不可行域与负知识胶囊
+- [tasks/M47_H47_任务相对的语义商空间.md](tasks/M47_H47_任务相对的语义商空间.md) — M47 · H47_任务相对的语义商空间
+- [tasks/M48_H48_相关证据的认知谱系代数.md](tasks/M48_H48_相关证据的认知谱系代数.md) — M48 · H48_相关证据的认知谱系代数
+- [tasks/Q01_数学与源码终审.md](tasks/Q01_数学与源码终审.md) — Q01 · 数学与源码终审
+- [tasks/Q02_权限与秘密终审.md](tasks/Q02_权限与秘密终审.md) — Q02 · 权限与秘密终审
+- [tasks/V01_六张机制矢量图.md](tasks/V01_六张机制矢量图.md) — V01 · 六张机制矢量图
+- [tasks/V02_研究版与精简PPT.md](tasks/V02_研究版与精简PPT.md) — V02 · 研究版与精简PPT
+- [tasks/V03_五个机制动画.md](tasks/V03_五个机制动画.md) — V03 · 五个机制动画
+- [tasks/V04_90秒视频.md](tasks/V04_90秒视频.md) — V04 · 90秒视频
+- [tasks/V05_6分钟解释视频.md](tasks/V05_6分钟解释视频.md) — V05 · 6分钟解释视频
+- [tasks/V06_旁白与字幕.md](tasks/V06_旁白与字幕.md) — V06 · 旁白与字幕
+- [tasks/V07_媒体总复核.md](tasks/V07_媒体总复核.md) — V07 · 媒体总复核
+- [tasks/W01_矩阵与坐标世界.md](tasks/W01_矩阵与坐标世界.md) — W01 · 矩阵与坐标世界
+- [tasks/W02_局部约束与拼合世界.md](tasks/W02_局部约束与拼合世界.md) — W02 · 局部约束与拼合世界
+- [tasks/W03_概念与谓词世界.md](tasks/W03_概念与谓词世界.md) — W03 · 概念与谓词世界
+- [tasks/W04_问题与解关系世界.md](tasks/W04_问题与解关系世界.md) — W04 · 问题与解关系世界
+- [tasks/W05_因果与类比世界.md](tasks/W05_因果与类比世界.md) — W05 · 因果与类比世界
+- [tasks/W06_动力学与边界值世界.md](tasks/W06_动力学与边界值世界.md) — W06 · 动力学与边界值世界
+- [tasks/W07_尺度与商空间世界.md](tasks/W07_尺度与商空间世界.md) — W07 · 尺度与商空间世界
+- [tasks/W08_行为方向与更新世界.md](tasks/W08_行为方向与更新世界.md) — W08 · 行为方向与更新世界
+- [tasks/W09_宏与事务世界.md](tasks/W09_宏与事务世界.md) — W09 · 宏与事务世界
+- [tasks/W10_联盟与谱系世界.md](tasks/W10_联盟与谱系世界.md) — W10 · 联盟与谱系世界
+- [tasks/W11_世界核与梦境世界.md](tasks/W11_世界核与梦境世界.md) — W11 · 世界核与梦境世界
+- [tasks/W12_查询与负知识世界.md](tasks/W12_查询与负知识世界.md) — W12 · 查询与负知识世界
+- [tasks/W13_共用数据视图与分割.md](tasks/W13_共用数据视图与分割.md) — W13 · 共用数据视图与分割
+- [tasks/X01_无固定模型个体的认知连续体.md](tasks/X01_无固定模型个体的认知连续体.md) — X01 · 无固定模型个体的认知连续体
+- [tasks/X02_没有全局世界观的集体知识.md](tasks/X02_没有全局世界观的集体知识.md) — X02 · 没有全局世界观的集体知识
+- [tasks/X03_问题先于答案的研究引擎.md](tasks/X03_问题先于答案的研究引擎.md) — X03 · 问题先于答案的研究引擎
+- [tasks/X04_可塑性互联网.md](tasks/X04_可塑性互联网.md) — X04 · 可塑性互联网
+- [tasks/X05_会进化语言的认知生态.md](tasks/X05_会进化语言的认知生态.md) — X05 · 会进化语言的认知生态
+- [tasks/X06_跨尺度的思想物质.md](tasks/X06_跨尺度的思想物质.md) — X06 · 跨尺度的思想物质
+- [tasks/X07_轨迹即思想而非终点即思想.md](tasks/X07_轨迹即思想而非终点即思想.md) — X07 · 轨迹即思想而非终点即思想
+- [tasks/X08_能够传递的未完成证明与发现.md](tasks/X08_能够传递的未完成证明与发现.md) — X08 · 能够传递的未完成证明与发现
+- [tasks/X09_共同梦境产生新的经验空间.md](tasks/X09_共同梦境产生新的经验空间.md) — X09 · 共同梦境产生新的经验空间
+- [tasks/X10_认知公共品与临时能力联盟.md](tasks/X10_认知公共品与临时能力联盟.md) — X10 · 认知公共品与临时能力联盟
+- [tasks/X11_可追溯的概念出生与死亡.md](tasks/X11_可追溯的概念出生与死亡.md) — X11 · 可追溯的概念出生与死亡
+- [tasks/X12_语义编译而非模型选型.md](tasks/X12_语义编译而非模型选型.md) — X12 · 语义编译而非模型选型
+- [tasks/Z01_完整性与交付准备.md](tasks/Z01_完整性与交付准备.md) — Z01 · 完整性与交付准备
+- [tasks/Z02_最终压缩包.md](tasks/Z02_最终压缩包.md) — Z02 · 最终压缩包
+
+## recipes：锁定模型执行的当前配方
+
+- [recipes/C01.json](recipes/C01.json) — C01
+- [recipes/C02.json](recipes/C02.json) — C02
+- [recipes/C03.json](recipes/C03.json) — C03
+- [recipes/C04.json](recipes/C04.json) — C04
+- [recipes/C05.json](recipes/C05.json) — C05
+- [recipes/C06.json](recipes/C06.json) — C06
+- [recipes/C07.json](recipes/C07.json) — C07
+- [recipes/C08.json](recipes/C08.json) — C08
+- [recipes/C09.json](recipes/C09.json) — C09
+- [recipes/C10.json](recipes/C10.json) — C10
+- [recipes/C11.json](recipes/C11.json) — C11
+- [recipes/C12.json](recipes/C12.json) — C12
+- [recipes/C13.json](recipes/C13.json) — C13
+- [recipes/C14.json](recipes/C14.json) — C14
+- [recipes/C15.json](recipes/C15.json) — C15
+- [recipes/C16.json](recipes/C16.json) — C16
+- [recipes/C17.json](recipes/C17.json) — C17
+- [recipes/C18.json](recipes/C18.json) — C18
+- [recipes/C19.json](recipes/C19.json) — C19
+- [recipes/C20.json](recipes/C20.json) — C20
+- [recipes/H01.json](recipes/H01.json) — H01
+- [recipes/H02.json](recipes/H02.json) — H02
+- [recipes/H03.json](recipes/H03.json) — H03
+- [recipes/H04.json](recipes/H04.json) — H04
+- [recipes/H05.json](recipes/H05.json) — H05
+- [recipes/H06.json](recipes/H06.json) — H06
+- [recipes/H07.json](recipes/H07.json) — H07
+- [recipes/H08.json](recipes/H08.json) — H08
+- [recipes/H09.json](recipes/H09.json) — H09
+- [recipes/H10.json](recipes/H10.json) — H10
+- [recipes/H11.json](recipes/H11.json) — H11
+- [recipes/H12.json](recipes/H12.json) — H12
+- [recipes/H13.json](recipes/H13.json) — H13
+- [recipes/H14.json](recipes/H14.json) — H14
+- [recipes/H15.json](recipes/H15.json) — H15
+- [recipes/H16.json](recipes/H16.json) — H16
+- [recipes/H17.json](recipes/H17.json) — H17
+- [recipes/H18.json](recipes/H18.json) — H18
+- [recipes/H19.json](recipes/H19.json) — H19
+- [recipes/H20.json](recipes/H20.json) — H20
+- [recipes/H21.json](recipes/H21.json) — H21
+- [recipes/H22.json](recipes/H22.json) — H22
+- [recipes/H23.json](recipes/H23.json) — H23
+- [recipes/H24.json](recipes/H24.json) — H24
+- [recipes/H25.json](recipes/H25.json) — H25
+- [recipes/H26.json](recipes/H26.json) — H26
+- [recipes/H27.json](recipes/H27.json) — H27
+- [recipes/H28.json](recipes/H28.json) — H28
+- [recipes/H29.json](recipes/H29.json) — H29
+- [recipes/H30.json](recipes/H30.json) — H30
+- [recipes/H31.json](recipes/H31.json) — H31
+- [recipes/H32.json](recipes/H32.json) — H32
+- [recipes/H33.json](recipes/H33.json) — H33
+- [recipes/H34.json](recipes/H34.json) — H34
+- [recipes/H35.json](recipes/H35.json) — H35
+- [recipes/H36.json](recipes/H36.json) — H36
+- [recipes/H37.json](recipes/H37.json) — H37
+- [recipes/H38.json](recipes/H38.json) — H38
+- [recipes/H39.json](recipes/H39.json) — H39
+- [recipes/H40.json](recipes/H40.json) — H40
+- [recipes/H41.json](recipes/H41.json) — H41
+- [recipes/H42.json](recipes/H42.json) — H42
+- [recipes/H43.json](recipes/H43.json) — H43
+- [recipes/H44.json](recipes/H44.json) — H44
+- [recipes/H45.json](recipes/H45.json) — H45
+- [recipes/H46.json](recipes/H46.json) — H46
+- [recipes/H47.json](recipes/H47.json) — H47
+- [recipes/H48.json](recipes/H48.json) — H48
+
+## specs：机器可读契约、权限和注册表
+
+- [specs/claims.json](specs/claims.json) — claims
+- [specs/combinations.json](specs/combinations.json) — combinations
+- [specs/execution_policy.json](specs/execution_policy.json) — execution_policy
+- [specs/frontier_packet.schema.json](specs/frontier_packet.schema.json) — frontier_packet.schema
+- [specs/horizons.json](specs/horizons.json) — horizons
+- [specs/hypotheses.json](specs/hypotheses.json) — hypotheses
+- [specs/initial_run_state.json](specs/initial_run_state.json) — initial_run_state
+- [specs/legacy_module_aliases.json](specs/legacy_module_aliases.json) — legacy_module_aliases
+- [specs/prompt_registry.json](specs/prompt_registry.json) — prompt_registry
+- [specs/requirements_traceability.json](specs/requirements_traceability.json) — requirements_traceability
+- [specs/source_inventory.json](specs/source_inventory.json) — source_inventory
+- [specs/sources.json](specs/sources.json) — sources
+- [specs/target_ownership.json](specs/target_ownership.json) — target_ownership
+- [specs/task_graph.json](specs/task_graph.json) — task_graph
+
+## media：媒体脚本和制作规格
+
+- [media/01_36页研究版逐页脚本.md](media/01_36页研究版逐页脚本.md) — 36页研究版：逐页制作脚本
+- [media/02_12页精简版逐页脚本.md](media/02_12页精简版逐页脚本.md) — 12页精简版
+- [media/03_90秒分镜与旁白.md](media/03_90秒分镜与旁白.md) — 90秒介绍：分镜、旁白、对象动作
+- [media/04_六分钟叙事与分镜.md](media/04_六分钟叙事与分镜.md) — 六分钟研究解释视频：完整旁白与分镜
+- [media/05_音频字幕与工具提示词.md](media/05_音频字幕与工具提示词.md) — 音频、字幕与跨工具生产提示
+- [media/06_导出验收与降级.md](media/06_导出验收与降级.md) — 导出、校验与降级矩阵
+- [media/07_图形与动画规范.md](media/07_图形与动画规范.md) — 六图与五动画制作规范
+- [media/timeline_360.json](media/timeline_360.json) — timeline_360
+- [media/timeline_90.json](media/timeline_90.json) — timeline_90
+
+## tools：当前真实可运行的离线工具
+
+- [tools/README.md](tools/README.md) — 本包中真正实现的工具
+- [tools/frontierctl.py](tools/frontierctl.py) — frontierctl
+- [tools/math_reference.py](tools/math_reference.py) — math_reference
+
+## tests：当前工具测试源码
+
+- [tests/test_plan_tools.py](tests/test_plan_tools.py) — test_plan_tools
+
+## reports：真实检查记录
+
+- [reports/C13_plan_compilation.json](reports/C13_plan_compilation.json) — C13_plan_compilation
+- [reports/all_recipes_and_json.json](reports/all_recipes_and_json.json) — all_recipes_and_json
+- [reports/control_tool_tests.txt](reports/control_tool_tests.txt) — control_tool_tests
+- [reports/forbidden_model_gate_result.json](reports/forbidden_model_gate_result.json) — forbidden_model_gate_result
+- [reports/forbidden_model_gate_stderr.json](reports/forbidden_model_gate_stderr.json) — forbidden_model_gate_stderr
+- [reports/forbidden_model_gate_stdout.txt](reports/forbidden_model_gate_stdout.txt) — forbidden_model_gate_stdout
+- [reports/math_fixture_report.json](reports/math_fixture_report.json) — math_fixture_report
+- [reports/package_validation.json](reports/package_validation.json) — package_validation
+- [reports/word_layout_qa.json](reports/word_layout_qa.json) — word_layout_qa
+
+## provenance：原始输入留档
+
+- [provenance/latent_frontier_innovation_20261024.zip](provenance/latent_frontier_innovation_20261024.zip) — latent_frontier_innovation_20261024
+
+## inherited_v2：完整原版本（只作历史资料）
+
+- [inherited_v2/DELIVERY_NOTES.md](inherited_v2/DELIVERY_NOTES.md) — 本次交付状态
+- [inherited_v2/MASTER_PLAN.md](inherited_v2/MASTER_PLAN.md) — 潜空间通信：前沿创新猜想与 Dot 全流程计划
+- [inherited_v2/START_HERE.md](inherited_v2/START_HERE.md) — 开始｜潜空间通信 → 可组合潜计算
+- [inherited_v2/annex/01_研究与软件状态模板.md](inherited_v2/annex/01_研究与软件状态模板.md) — 研究与软件状态模板
+- [inherited_v2/annex/02_接口签名与错误约定.md](inherited_v2/annex/02_接口签名与错误约定.md) — 核心接口签名与错误约定
+- [inherited_v2/docs/00_项目重定义与本轮交付.md](inherited_v2/docs/00_项目重定义与本轮交付.md) — 00｜项目重定义与本轮交付
+- [inherited_v2/docs/01_来源继承与逐项改写.md](inherited_v2/docs/01_来源继承与逐项改写.md) — 01｜来源继承与逐项改写
+- [inherited_v2/docs/02_第一性原则与跃迁空间.md](inherited_v2/docs/02_第一性原则与跃迁空间.md) — 02｜第一性原则与跃迁空间
+- [inherited_v2/docs/03_研究总图与创新资源分配.md](inherited_v2/docs/03_研究总图与创新资源分配.md) — 03｜研究总图与创新资源分配
+- [inherited_v2/docs/04_统一数学对象与语义分层.md](inherited_v2/docs/04_统一数学对象与语义分层.md) — 04｜统一数学对象与语义分层
+- [inherited_v2/docs/05_前作地图与新意表达.md](inherited_v2/docs/05_前作地图与新意表达.md) — 05｜前作地图与新意表达
+- [inherited_v2/docs/06_总体软件架构与实现范围.md](inherited_v2/docs/06_总体软件架构与实现范围.md) — 06｜总体软件架构与实现范围
+- [inherited_v2/docs/07_数据世界与监督信号工厂.md](inherited_v2/docs/07_数据世界与监督信号工厂.md) — 07｜数据世界与监督信号工厂
+- [inherited_v2/docs/08_全训练路线与优化目标.md](inherited_v2/docs/08_全训练路线与优化目标.md) — 08｜全训练路线与优化目标
+- [inherited_v2/docs/09_自动求导与训练循环细则.md](inherited_v2/docs/09_自动求导与训练循环细则.md) — 09｜自动求导与训练循环细则
+- [inherited_v2/docs/10_模型接口与状态注入.md](inherited_v2/docs/10_模型接口与状态注入.md) — 10｜模型接口与状态注入
+- [inherited_v2/docs/11_消息协议与可执行语义边界.md](inherited_v2/docs/11_消息协议与可执行语义边界.md) — 11｜消息协议与可执行语义边界
+- [inherited_v2/docs/12_Pipeline与命令行全流程.md](inherited_v2/docs/12_Pipeline与命令行全流程.md) — 12｜Pipeline与命令行全流程
+- [inherited_v2/docs/13_Dot总控章程与授权边界.md](inherited_v2/docs/13_Dot总控章程与授权边界.md) — 13｜Dot总控章程与授权边界
+- [inherited_v2/docs/14_浏览器与软件能力使用计划.md](inherited_v2/docs/14_浏览器与软件能力使用计划.md) — 14｜浏览器与软件能力使用计划
+- [inherited_v2/docs/15_一次性工作流与任务协作.md](inherited_v2/docs/15_一次性工作流与任务协作.md) — 15｜一次性工作流与任务协作
+- [inherited_v2/docs/16_代码检查不再等于研究立项.md](inherited_v2/docs/16_代码检查不再等于研究立项.md) — 16｜代码检查不再等于研究立项
+- [inherited_v2/docs/17_未来实验矩阵与开放问题.md](inherited_v2/docs/17_未来实验矩阵与开放问题.md) — 17｜未来实验矩阵与开放问题
+- [inherited_v2/docs/18_论文与开源叙事.md](inherited_v2/docs/18_论文与开源叙事.md) — 18｜论文与开源叙事
+- [inherited_v2/docs/19_资源依赖与已有环境保护.md](inherited_v2/docs/19_资源依赖与已有环境保护.md) — 19｜资源依赖与已有环境保护
+- [inherited_v2/docs/20_失败恢复与不缩减创新的决策规则.md](inherited_v2/docs/20_失败恢复与不缩减创新的决策规则.md) — 20｜失败恢复与不缩减创新的决策规则
+- [inherited_v2/docs/21_交付清单与用户接手方式.md](inherited_v2/docs/21_交付清单与用户接手方式.md) — 21｜交付清单与用户接手方式
+- [inherited_v2/docs/22_来源索引与引用边界.md](inherited_v2/docs/22_来源索引与引用边界.md) — 22｜来源索引与引用边界
+- [inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md](inherited_v2/docs/23_八条组合研究路线与远期极端猜想.md) — 23｜八条组合研究路线与远期极端猜想
+- [inherited_v2/hypotheses/H01_可组合潜算子.md](inherited_v2/hypotheses/H01_可组合潜算子.md) — H01｜可组合潜算子
+- [inherited_v2/hypotheses/H02_反事实响应包.md](inherited_v2/hypotheses/H02_反事实响应包.md) — H02｜反事实响应包
+- [inherited_v2/hypotheses/H03_多假设信念包.md](inherited_v2/hypotheses/H03_多假设信念包.md) — H03｜多假设信念包
+- [inherited_v2/hypotheses/H04_多主体共享约束场.md](inherited_v2/hypotheses/H04_多主体共享约束场.md) — H04｜多主体共享约束场
+- [inherited_v2/hypotheses/H05_推理续接胶囊.md](inherited_v2/hypotheses/H05_推理续接胶囊.md) — H05｜推理续接胶囊
+- [inherited_v2/hypotheses/H06_多图册语义对齐.md](inherited_v2/hypotheses/H06_多图册语义对齐.md) — H06｜多图册语义对齐
+- [inherited_v2/hypotheses/H07_类型化潜程序.md](inherited_v2/hypotheses/H07_类型化潜程序.md) — H07｜类型化潜程序
+- [inherited_v2/hypotheses/H08_关系结构通信.md](inherited_v2/hypotheses/H08_关系结构通信.md) — H08｜关系结构通信
+- [inherited_v2/hypotheses/H09_干预代数通信.md](inherited_v2/hypotheses/H09_干预代数通信.md) — H09｜干预代数通信
+- [inherited_v2/hypotheses/H10_高阶协同超边.md](inherited_v2/hypotheses/H10_高阶协同超边.md) — H10｜高阶协同超边
+- [inherited_v2/hypotheses/H11_渐进潜编码.md](inherited_v2/hypotheses/H11_渐进潜编码.md) — H11｜渐进潜编码
+- [inherited_v2/hypotheses/H12_多查询持久胶囊.md](inherited_v2/hypotheses/H12_多查询持久胶囊.md) — H12｜多查询持久胶囊
+- [inherited_v2/hypotheses/H13_可分叉潜计算.md](inherited_v2/hypotheses/H13_可分叉潜计算.md) — H13｜可分叉潜计算
+- [inherited_v2/hypotheses/H14_潜技能语法.md](inherited_v2/hypotheses/H14_潜技能语法.md) — H14｜潜技能语法
+- [inherited_v2/hypotheses/H15_接收者无关协议学习.md](inherited_v2/hypotheses/H15_接收者无关协议学习.md) — H15｜接收者无关协议学习
+- [inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md](inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md) — H16｜精确符号与潜状态双通道
+- [inherited_v2/hypotheses/H17_跨模态坐标接地.md](inherited_v2/hypotheses/H17_跨模态坐标接地.md) — H17｜跨模态坐标接地
+- [inherited_v2/hypotheses/H18_通信诱导计算结构.md](inherited_v2/hypotheses/H18_通信诱导计算结构.md) — H18｜通信诱导计算结构
+- [inherited_v2/hypotheses/H19_消息到技能巩固.md](inherited_v2/hypotheses/H19_消息到技能巩固.md) — H19｜消息到技能巩固
+- [inherited_v2/hypotheses/H20_异步认知时钟.md](inherited_v2/hypotheses/H20_异步认知时钟.md) — H20｜异步认知时钟
+- [inherited_v2/hypotheses/H21_反事实分支组合搜索.md](inherited_v2/hypotheses/H21_反事实分支组合搜索.md) — H21｜反事实分支组合搜索
+- [inherited_v2/hypotheses/H22_动态模型边界.md](inherited_v2/hypotheses/H22_动态模型边界.md) — H22｜动态模型边界
+- [inherited_v2/hypotheses/H23_语义残差纠错.md](inherited_v2/hypotheses/H23_语义残差纠错.md) — H23｜语义残差纠错
+- [inherited_v2/hypotheses/H24_有作用域的潜计算能力.md](inherited_v2/hypotheses/H24_有作用域的潜计算能力.md) — H24｜有作用域的潜计算能力
+- [inherited_v2/media/00_媒体总导演方案.md](inherited_v2/media/00_媒体总导演方案.md) — 00｜媒体总导演方案
+- [inherited_v2/media/01_研究PPT逐页稿.md](inherited_v2/media/01_研究PPT逐页稿.md) — 01｜24 页研究演示逐页稿
+- [inherited_v2/media/02_90秒机制动画分镜.md](inherited_v2/media/02_90秒机制动画分镜.md) — 02｜90 秒机制动画分镜
+- [inherited_v2/media/03_完整旁白与长视频结构.md](inherited_v2/media/03_完整旁白与长视频结构.md) — 03｜长讲解完整中文旁白
+- [inherited_v2/media/04_机制图与海报源稿.md](inherited_v2/media/04_机制图与海报源稿.md) — 04｜机制图与海报源稿
+- [inherited_v2/prompts/P00_一次性总控执行提示词.md](inherited_v2/prompts/P00_一次性总控执行提示词.md) — P00｜一次性总控执行提示词
+- [inherited_v2/prompts/P01_研究总设计师.md](inherited_v2/prompts/P01_研究总设计师.md) — P01｜研究总设计师
+- [inherited_v2/prompts/P02_机制形式化.md](inherited_v2/prompts/P02_机制形式化.md) — P02｜机制形式化
+- [inherited_v2/prompts/P03_完整模块实现.md](inherited_v2/prompts/P03_完整模块实现.md) — P03｜完整模块实现
+- [inherited_v2/prompts/P04_模型后端源码.md](inherited_v2/prompts/P04_模型后端源码.md) — P04｜模型后端源码
+- [inherited_v2/prompts/P05_训练系统.md](inherited_v2/prompts/P05_训练系统.md) — P05｜训练系统
+- [inherited_v2/prompts/P06_数据与反事实工厂.md](inherited_v2/prompts/P06_数据与反事实工厂.md) — P06｜数据与反事实工厂
+- [inherited_v2/prompts/P07_Pipeline与运行时.md](inherited_v2/prompts/P07_Pipeline与运行时.md) — P07｜Pipeline与运行时
+- [inherited_v2/prompts/P08_创新与相邻机制审查.md](inherited_v2/prompts/P08_创新与相邻机制审查.md) — P08｜创新与相邻机制审查
+- [inherited_v2/prompts/P09_数学与软件复核.md](inherited_v2/prompts/P09_数学与软件复核.md) — P09｜数学与软件复核
+- [inherited_v2/prompts/P10_权限与禁跑审查.md](inherited_v2/prompts/P10_权限与禁跑审查.md) — P10｜权限与禁跑审查
+- [inherited_v2/prompts/P11_论文与研究文档.md](inherited_v2/prompts/P11_论文与研究文档.md) — P11｜论文与研究文档
+- [inherited_v2/prompts/P12_PPT制作.md](inherited_v2/prompts/P12_PPT制作.md) — P12｜PPT制作
+- [inherited_v2/prompts/P13_动画与视频制作.md](inherited_v2/prompts/P13_动画与视频制作.md) — P13｜动画与视频制作
+- [inherited_v2/prompts/P14_旁白音频与字幕.md](inherited_v2/prompts/P14_旁白音频与字幕.md) — P14｜旁白音频与字幕
+- [inherited_v2/prompts/P15_上下文恢复.md](inherited_v2/prompts/P15_上下文恢复.md) — P15｜上下文恢复
+- [inherited_v2/prompts/P16_最终整合与交付.md](inherited_v2/prompts/P16_最终整合与交付.md) — P16｜最终整合与交付
+- [inherited_v2/prompts/P17_模型侧提示模板.md](inherited_v2/prompts/P17_模型侧提示模板.md) — P17｜模型侧提示模板
+- [inherited_v2/provenance/README.md](inherited_v2/provenance/README.md) — 原始依据
+- [inherited_v2/provenance/input_inventory.json](inherited_v2/provenance/input_inventory.json) — input_inventory
+- [inherited_v2/provenance/latent_comm_dot_final_20261023.zip](inherited_v2/provenance/latent_comm_dot_final_20261023.zip) — latent_comm_dot_final_20261023
+- [inherited_v2/provenance/latent_comm_project_plan_20261023.zip](inherited_v2/provenance/latent_comm_project_plan_20261023.zip) — latent_comm_project_plan_20261023
+- [inherited_v2/provenance/latent_communication_research_pack_20261023.zip](inherited_v2/provenance/latent_communication_research_pack_20261023.zip) — latent_communication_research_pack_20261023
+- [inherited_v2/recipes/C01_组合路线.json](inherited_v2/recipes/C01_组合路线.json) — C01_组合路线
+- [inherited_v2/recipes/C02_组合路线.json](inherited_v2/recipes/C02_组合路线.json) — C02_组合路线
+- [inherited_v2/recipes/C03_组合路线.json](inherited_v2/recipes/C03_组合路线.json) — C03_组合路线
+- [inherited_v2/recipes/C04_组合路线.json](inherited_v2/recipes/C04_组合路线.json) — C04_组合路线
+- [inherited_v2/recipes/C05_组合路线.json](inherited_v2/recipes/C05_组合路线.json) — C05_组合路线
+- [inherited_v2/recipes/C06_组合路线.json](inherited_v2/recipes/C06_组合路线.json) — C06_组合路线
+- [inherited_v2/recipes/C07_组合路线.json](inherited_v2/recipes/C07_组合路线.json) — C07_组合路线
+- [inherited_v2/recipes/C08_组合路线.json](inherited_v2/recipes/C08_组合路线.json) — C08_组合路线
+- [inherited_v2/recipes/H01_operator_composition.json](inherited_v2/recipes/H01_operator_composition.json) — H01_operator_composition
+- [inherited_v2/recipes/H02_counterfactual_response.json](inherited_v2/recipes/H02_counterfactual_response.json) — H02_counterfactual_response
+- [inherited_v2/recipes/H03_belief_mixture.json](inherited_v2/recipes/H03_belief_mixture.json) — H03_belief_mixture
+- [inherited_v2/recipes/H04_constraint_field.json](inherited_v2/recipes/H04_constraint_field.json) — H04_constraint_field
+- [inherited_v2/recipes/H05_continuation_transfer.json](inherited_v2/recipes/H05_continuation_transfer.json) — H05_continuation_transfer
+- [inherited_v2/recipes/H06_semantic_atlas.json](inherited_v2/recipes/H06_semantic_atlas.json) — H06_semantic_atlas
+- [inherited_v2/recipes/H07_typed_program.json](inherited_v2/recipes/H07_typed_program.json) — H07_typed_program
+- [inherited_v2/recipes/H08_relational_exchange.json](inherited_v2/recipes/H08_relational_exchange.json) — H08_relational_exchange
+- [inherited_v2/recipes/H09_intervention_algebra.json](inherited_v2/recipes/H09_intervention_algebra.json) — H09_intervention_algebra
+- [inherited_v2/recipes/H10_higher_order_synergy.json](inherited_v2/recipes/H10_higher_order_synergy.json) — H10_higher_order_synergy
+- [inherited_v2/recipes/H11_progressive_code.json](inherited_v2/recipes/H11_progressive_code.json) — H11_progressive_code
+- [inherited_v2/recipes/H12_multiquery_capsule.json](inherited_v2/recipes/H12_multiquery_capsule.json) — H12_multiquery_capsule
+- [inherited_v2/recipes/H13_fork_merge.json](inherited_v2/recipes/H13_fork_merge.json) — H13_fork_merge
+- [inherited_v2/recipes/H14_skill_grammar.json](inherited_v2/recipes/H14_skill_grammar.json) — H14_skill_grammar
+- [inherited_v2/recipes/H15_population_protocol.json](inherited_v2/recipes/H15_population_protocol.json) — H15_population_protocol
+- [inherited_v2/recipes/H16_dual_channel.json](inherited_v2/recipes/H16_dual_channel.json) — H16_dual_channel
+- [inherited_v2/recipes/H17_grounded_exchange.json](inherited_v2/recipes/H17_grounded_exchange.json) — H17_grounded_exchange
+- [inherited_v2/recipes/H18_communication_topology.json](inherited_v2/recipes/H18_communication_topology.json) — H18_communication_topology
+- [inherited_v2/recipes/H19_message_consolidation.json](inherited_v2/recipes/H19_message_consolidation.json) — H19_message_consolidation
+- [inherited_v2/recipes/H20_asynchronous_clocks.json](inherited_v2/recipes/H20_asynchronous_clocks.json) — H20_asynchronous_clocks
+- [inherited_v2/recipes/H21_counterfactual_portfolio.json](inherited_v2/recipes/H21_counterfactual_portfolio.json) — H21_counterfactual_portfolio
+- [inherited_v2/recipes/H22_elastic_boundaries.json](inherited_v2/recipes/H22_elastic_boundaries.json) — H22_elastic_boundaries
+- [inherited_v2/recipes/H23_semantic_repair.json](inherited_v2/recipes/H23_semantic_repair.json) — H23_semantic_repair
+- [inherited_v2/recipes/H24_scoped_capabilities.json](inherited_v2/recipes/H24_scoped_capabilities.json) — H24_scoped_capabilities
+- [inherited_v2/reports/document_review.json](inherited_v2/reports/document_review.json) — document_review
+- [inherited_v2/reports/plan_structure_check.json](inherited_v2/reports/plan_structure_check.json) — plan_structure_check
+- [inherited_v2/reports/plan_tool_tests.txt](inherited_v2/reports/plan_tool_tests.txt) — plan_tool_tests
+- [inherited_v2/specs/combinations.json](inherited_v2/specs/combinations.json) — combinations
+- [inherited_v2/specs/document_index.json](inherited_v2/specs/document_index.json) — document_index
+- [inherited_v2/specs/execution_policy.json](inherited_v2/specs/execution_policy.json) — execution_policy
+- [inherited_v2/specs/hypotheses.json](inherited_v2/specs/hypotheses.json) — hypotheses
+- [inherited_v2/specs/packet_metadata.example.json](inherited_v2/specs/packet_metadata.example.json) — packet_metadata.example
+- [inherited_v2/specs/packet_metadata.schema.json](inherited_v2/specs/packet_metadata.schema.json) — packet_metadata.schema
+- [inherited_v2/specs/requirements.json](inherited_v2/specs/requirements.json) — requirements
+- [inherited_v2/specs/sources.json](inherited_v2/specs/sources.json) — sources
+- [inherited_v2/specs/task_graph.json](inherited_v2/specs/task_graph.json) — task_graph
+- [inherited_v2/tasks/T00_接管与能力盘点.md](inherited_v2/tasks/T00_接管与能力盘点.md) — T00｜接管与能力盘点
+- [inherited_v2/tasks/T01_来源与近邻研究.md](inherited_v2/tasks/T01_来源与近邻研究.md) — T01｜来源与近邻研究
+- [inherited_v2/tasks/T02_研究形式化与总图.md](inherited_v2/tasks/T02_研究形式化与总图.md) — T02｜研究形式化与总图
+- [inherited_v2/tasks/T03_公共类型与配置契约.md](inherited_v2/tasks/T03_公共类型与配置契约.md) — T03｜公共类型与配置契约
+- [inherited_v2/tasks/T04_数据世界与角色视图.md](inherited_v2/tasks/T04_数据世界与角色视图.md) — T04｜数据世界与角色视图
+- [inherited_v2/tasks/T05_程序解释器与参考数学.md](inherited_v2/tasks/T05_程序解释器与参考数学.md) — T05｜程序解释器与参考数学
+- [inherited_v2/tasks/T06_可组合潜算子参考实现.md](inherited_v2/tasks/T06_可组合潜算子参考实现.md) — T06｜可组合潜算子参考实现
+- [inherited_v2/tasks/T07_反事实响应包参考实现.md](inherited_v2/tasks/T07_反事实响应包参考实现.md) — T07｜反事实响应包参考实现
+- [inherited_v2/tasks/T08_多假设信念包参考实现.md](inherited_v2/tasks/T08_多假设信念包参考实现.md) — T08｜多假设信念包参考实现
+- [inherited_v2/tasks/T09_多主体共享约束场参考实现.md](inherited_v2/tasks/T09_多主体共享约束场参考实现.md) — T09｜多主体共享约束场参考实现
+- [inherited_v2/tasks/T10_推理续接胶囊参考实现.md](inherited_v2/tasks/T10_推理续接胶囊参考实现.md) — T10｜推理续接胶囊参考实现
+- [inherited_v2/tasks/T11_多图册语义对齐参考实现.md](inherited_v2/tasks/T11_多图册语义对齐参考实现.md) — T11｜多图册语义对齐参考实现
+- [inherited_v2/tasks/T12_类型化潜程序参考实现.md](inherited_v2/tasks/T12_类型化潜程序参考实现.md) — T12｜类型化潜程序参考实现
+- [inherited_v2/tasks/T13_关系结构通信参考实现.md](inherited_v2/tasks/T13_关系结构通信参考实现.md) — T13｜关系结构通信参考实现
+- [inherited_v2/tasks/T14_干预代数通信参考实现.md](inherited_v2/tasks/T14_干预代数通信参考实现.md) — T14｜干预代数通信参考实现
+- [inherited_v2/tasks/T15_高阶协同超边参考实现.md](inherited_v2/tasks/T15_高阶协同超边参考实现.md) — T15｜高阶协同超边参考实现
+- [inherited_v2/tasks/T16_渐进潜编码参考实现.md](inherited_v2/tasks/T16_渐进潜编码参考实现.md) — T16｜渐进潜编码参考实现
+- [inherited_v2/tasks/T17_多查询持久胶囊参考实现.md](inherited_v2/tasks/T17_多查询持久胶囊参考实现.md) — T17｜多查询持久胶囊参考实现
+- [inherited_v2/tasks/T18_可分叉潜计算参考实现.md](inherited_v2/tasks/T18_可分叉潜计算参考实现.md) — T18｜可分叉潜计算参考实现
+- [inherited_v2/tasks/T19_潜技能语法参考实现.md](inherited_v2/tasks/T19_潜技能语法参考实现.md) — T19｜潜技能语法参考实现
+- [inherited_v2/tasks/T20_接收者无关协议学习参考实现.md](inherited_v2/tasks/T20_接收者无关协议学习参考实现.md) — T20｜接收者无关协议学习参考实现
+- [inherited_v2/tasks/T21_精确符号与潜状态双通道参考实现.md](inherited_v2/tasks/T21_精确符号与潜状态双通道参考实现.md) — T21｜精确符号与潜状态双通道参考实现
+- [inherited_v2/tasks/T22_跨模态坐标接地参考实现.md](inherited_v2/tasks/T22_跨模态坐标接地参考实现.md) — T22｜跨模态坐标接地参考实现
+- [inherited_v2/tasks/T23_通信诱导计算结构参考实现.md](inherited_v2/tasks/T23_通信诱导计算结构参考实现.md) — T23｜通信诱导计算结构参考实现
+- [inherited_v2/tasks/T24_消息到技能巩固参考实现.md](inherited_v2/tasks/T24_消息到技能巩固参考实现.md) — T24｜消息到技能巩固参考实现
+- [inherited_v2/tasks/T25_异步认知时钟参考实现.md](inherited_v2/tasks/T25_异步认知时钟参考实现.md) — T25｜异步认知时钟参考实现
+- [inherited_v2/tasks/T26_反事实分支组合搜索参考实现.md](inherited_v2/tasks/T26_反事实分支组合搜索参考实现.md) — T26｜反事实分支组合搜索参考实现
+- [inherited_v2/tasks/T27_动态模型边界参考实现.md](inherited_v2/tasks/T27_动态模型边界参考实现.md) — T27｜动态模型边界参考实现
+- [inherited_v2/tasks/T28_语义残差纠错参考实现.md](inherited_v2/tasks/T28_语义残差纠错参考实现.md) — T28｜语义残差纠错参考实现
+- [inherited_v2/tasks/T29_有作用域的潜计算能力参考实现.md](inherited_v2/tasks/T29_有作用域的潜计算能力参考实现.md) — T29｜有作用域的潜计算能力参考实现
+- [inherited_v2/tasks/T30_HF 后端与加载源码.md](inherited_v2/tasks/T30_HF 后端与加载源码.md) — T30｜HF 后端与加载源码
+- [inherited_v2/tasks/T31_三种注入路径.md](inherited_v2/tasks/T31_三种注入路径.md) — T31｜三种注入路径
+- [inherited_v2/tasks/T32_生成与续接后端.md](inherited_v2/tasks/T32_生成与续接后端.md) — T32｜生成与续接后端
+- [inherited_v2/tasks/T33_统一训练循环.md](inherited_v2/tasks/T33_统一训练循环.md) — T33｜统一训练循环
+- [inherited_v2/tasks/T34_全部机制目标函数.md](inherited_v2/tasks/T34_全部机制目标函数.md) — T34｜全部机制目标函数
+- [inherited_v2/tasks/T35_32 配方与组合编译.md](inherited_v2/tasks/T35_32 配方与组合编译.md) — T35｜32 配方与组合编译
+- [inherited_v2/tasks/T36_DAG 运行时与逻辑时钟.md](inherited_v2/tasks/T36_DAG 运行时与逻辑时钟.md) — T36｜DAG 运行时与逻辑时钟
+- [inherited_v2/tasks/T37_消息编解码与通道.md](inherited_v2/tasks/T37_消息编解码与通道.md) — T37｜消息编解码与通道
+- [inherited_v2/tasks/T38_CLI 与 Python API.md](inherited_v2/tasks/T38_CLI 与 Python API.md) — T38｜CLI 与 Python API
+- [inherited_v2/tasks/T39_checkpoint 与恢复.md](inherited_v2/tasks/T39_checkpoint 与恢复.md) — T39｜checkpoint 与恢复
+- [inherited_v2/tasks/T40_能力与来源注册.md](inherited_v2/tasks/T40_能力与来源注册.md) — T40｜能力与来源注册
+- [inherited_v2/tasks/T41_禁跑与权限实现.md](inherited_v2/tasks/T41_禁跑与权限实现.md) — T41｜禁跑与权限实现
+- [inherited_v2/tasks/T42_数学与机制复核.md](inherited_v2/tasks/T42_数学与机制复核.md) — T42｜数学与机制复核
+- [inherited_v2/tasks/T43_安全与故障注入.md](inherited_v2/tasks/T43_安全与故障注入.md) — T43｜安全与故障注入
+- [inherited_v2/tasks/T44_端到端数学演示.md](inherited_v2/tasks/T44_端到端数学演示.md) — T44｜端到端数学演示
+- [inherited_v2/tasks/T45_方法稿与开放研究议程.md](inherited_v2/tasks/T45_方法稿与开放研究议程.md) — T45｜方法稿与开放研究议程
+- [inherited_v2/tasks/T46_README 与开发文档.md](inherited_v2/tasks/T46_README 与开发文档.md) — T46｜README 与开发文档
+- [inherited_v2/tasks/T47_Word 研究稿.md](inherited_v2/tasks/T47_Word 研究稿.md) — T47｜Word 研究稿
+- [inherited_v2/tasks/T48_24 页与 8 页演示.md](inherited_v2/tasks/T48_24 页与 8 页演示.md) — T48｜24 页与 8 页演示
+- [inherited_v2/tasks/T49_机制图与海报.md](inherited_v2/tasks/T49_机制图与海报.md) — T49｜机制图与海报
+- [inherited_v2/tasks/T50_90 秒动画.md](inherited_v2/tasks/T50_90 秒动画.md) — T50｜90 秒动画
+- [inherited_v2/tasks/T51_中文音轨与字幕.md](inherited_v2/tasks/T51_中文音轨与字幕.md) — T51｜中文音轨与字幕
+- [inherited_v2/tasks/T52_长讲解视频与源工程.md](inherited_v2/tasks/T52_长讲解视频与源工程.md) — T52｜长讲解视频与源工程
+- [inherited_v2/tasks/T53_媒体与主张一致性.md](inherited_v2/tasks/T53_媒体与主张一致性.md) — T53｜媒体与主张一致性
+- [inherited_v2/tasks/T54_全源码完整性审查.md](inherited_v2/tasks/T54_全源码完整性审查.md) — T54｜全源码完整性审查
+- [inherited_v2/tasks/T55_修复与回归.md](inherited_v2/tasks/T55_修复与回归.md) — T55｜修复与回归
+- [inherited_v2/tasks/T56_构建与本地发布包.md](inherited_v2/tasks/T56_构建与本地发布包.md) — T56｜构建与本地发布包
+- [inherited_v2/tasks/T57_最终 ZIP 与索引.md](inherited_v2/tasks/T57_最终 ZIP 与索引.md) — T57｜最终 ZIP 与索引
+- [inherited_v2/tasks/T58_最终报告与交接.md](inherited_v2/tasks/T58_最终报告与交接.md) — T58｜最终报告与交接
+- [inherited_v2/tasks/T59_许可证与公开发布草稿.md](inherited_v2/tasks/T59_许可证与公开发布草稿.md) — T59｜许可证与公开发布草稿
+- [inherited_v2/tests/test_planctl.py](inherited_v2/tests/test_planctl.py) — test_planctl
+- [inherited_v2/tools/README.md](inherited_v2/tools/README.md) — 计划包工具
+- [inherited_v2/tools/planctl.py](inherited_v2/tools/planctl.py) — planctl
+- [inherited_v2/潜空间通信_前沿创新猜想与Dot全流程计划_20261024.docx](inherited_v2/潜空间通信_前沿创新猜想与Dot全流程计划_20261024.docx) — 潜空间通信_前沿创新猜想与Dot全流程计划_20261024
+
+## 交付校验
+
+- [FILE_INDEX.md](FILE_INDEX.md) — 本索引。
+- [DELIVERY_MANIFEST.json](DELIVERY_MANIFEST.json) — 逐文件大小与SHA-256（不包含自身及checksums）。
+- [checksums.sha256](checksums.sha256) — 同一范围的纯文本校验列表。

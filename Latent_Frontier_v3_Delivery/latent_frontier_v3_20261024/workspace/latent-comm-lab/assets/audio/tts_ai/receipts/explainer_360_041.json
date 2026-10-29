@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_041",
+  "edition": "explainer_360",
+  "scene_id": "S09",
+  "characters": 38,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "这份计划不以现在能否跑出分数决定哪些想法值得保留。它要求的是更大的想象空间，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:14:05.274745+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 316218,
+    "duration_seconds": 7.17047619047619,
+    "sample_peak": 11079,
+    "sample_rms": 1904.7185107465627,
+    "sha256": "4c622bb863266ec599a56e6f3b8e7f06fb802b213fb669d51a79d0add805ff86",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:14:36.932833+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_028",
+  "edition": "explainer_360",
+  "scene_id": "S06",
+  "characters": 39,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "不能简单拼接。形成的世界可以产生任何单体没有原样保存过的场景，并提出新的问题。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:38:18.237876+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:38:26 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:38:29.624791+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 331578,
+    "duration_seconds": 7.518775510204081,
+    "sample_peak": 13049,
+    "sample_rms": 2245.3046926259085,
+    "sha256": "35088ccf0ad1a650786fb9b0586e954f87f31876c8b7cd59ad906e19f54f86e3",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:38:52.950021+00:00"
+}

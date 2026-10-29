@@ -1,0 +1,1184 @@
+{
+  "recipe_id": "C10",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C10",
+    "nodes": [
+      {
+        "node_id": "local_interpretations",
+        "operation": "C10.local_interpretations",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "local_interpretations:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "DisagreementInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "LocalInterpretations",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H03"
+        ],
+        "implementation": "latent_comm.compositions.c10.local_interpretations",
+        "location": {
+          "source": "C10.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "find_obstruction",
+        "operation": "C10.find_obstruction",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "local_interpretations:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "find_obstruction:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LocalInterpretations",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "Obstruction",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "F",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H26"
+        ],
+        "implementation": "latent_comm.compositions.c10.find_obstruction",
+        "location": {
+          "source": "C10.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "executable_counterexample",
+        "operation": "C10.executable_counterexample",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "find_obstruction:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "executable_counterexample:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "Obstruction",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CounterexamplePair",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "Q",
+          "Z"
+        ],
+        "write_set": [
+          "Q"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H36"
+        ],
+        "implementation": "latent_comm.compositions.c10.executable_counterexample",
+        "location": {
+          "source": "C10.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "propose_concept",
+        "operation": "C10.propose_concept",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "executable_counterexample:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "propose_concept:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CounterexamplePair",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "ConceptProposal",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "Q"
+        ],
+        "write_set": [
+          "O"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H27"
+        ],
+        "implementation": "latent_comm.compositions.c10.propose_concept",
+        "location": {
+          "source": "C10.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "prepare_migration",
+        "operation": "C10.prepare_migration",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "propose_concept:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "prepare_migration:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "ConceptProposal",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "MigrationProposal",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "Q"
+        ],
+        "write_set": [
+          "O"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H27"
+        ],
+        "implementation": "latent_comm.compositions.c10.prepare_migration",
+        "location": {
+          "source": "C10.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "retain_disagreement",
+        "operation": "C10.retain_disagreement",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "prepare_migration:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "retain_disagreement:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "MigrationProposal",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "MultiDomainBelief",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "F",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H03",
+          "H26"
+        ],
+        "implementation": "latent_comm.compositions.c10.retain_disagreement",
+        "location": {
+          "source": "C10.bound.json",
+          "path": "/nodes/5",
+          "line": 83,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "executable_counterexample:out",
+        {
+          "name": "CounterexamplePair",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "find_obstruction:out",
+        {
+          "name": "Obstruction",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "DisagreementInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "local_interpretations:out",
+        {
+          "name": "LocalInterpretations",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "prepare_migration:out",
+        {
+          "name": "MigrationProposal",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "propose_concept:out",
+        {
+          "name": "ConceptProposal",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "retain_disagreement:out",
+        {
+          "name": "MultiDomainBelief",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "executable_counterexample",
+        "propose_concept"
+      ],
+      [
+        "find_obstruction",
+        "executable_counterexample"
+      ],
+      [
+        "local_interpretations",
+        "find_obstruction"
+      ],
+      [
+        "prepare_migration",
+        "retain_disagreement"
+      ],
+      [
+        "propose_concept",
+        "prepare_migration"
+      ]
+    ],
+    "schedule": [
+      "local_interpretations",
+      "find_obstruction",
+      "executable_counterexample",
+      "propose_concept",
+      "prepare_migration",
+      "retain_disagreement"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 6,
+    "max_steps": 64,
+    "input_digest": "0ed7c19228bae91367b2b58fe152828738e3b3612cd3915657dcf8a3f4a5ded0",
+    "declared_parameters": {
+      "obligations": [
+        "IR versions identify the prior snapshot; MigrationProposal carries explicit before/after ontology alternatives.",
+        "No candidate is a grammar-relative result, not global impossibility.",
+        "A prepared ontology branch requires an explicit later commit; disagreement remains available."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C10",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "local_restrictions",
+        "objectives": [
+          {
+            "name": "local",
+            "mathematical_definition": "sum(m*(prediction-evidence)^2)/sum(m)",
+            "numerator": "local evidence residual squared",
+            "denominator": "valid local elements",
+            "valid_mask": "local_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "anchor_encoder"
+            ],
+            "requires_grad_inputs": [
+              "local_state"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "local evidence elements",
+            "id": "H26.local"
+          },
+          {
+            "name": "overlap",
+            "mathematical_definition": "sum(m*(Ri zi-Rj zj-b)^2)/sum(m)",
+            "numerator": "declared overlap residual squared",
+            "denominator": "valid declared overlap elements",
+            "valid_mask": "overlap_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "restriction_maps"
+            ],
+            "requires_grad_inputs": [
+              "local_state",
+              "restriction_maps"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "overlap elements",
+            "id": "H26.overlap"
+          },
+          {
+            "name": "obstruction",
+            "mathematical_definition": "sum(m*BCEWithLogits(logit,conflict))/sum(m)",
+            "numerator": "conflict classification cross entropy",
+            "denominator": "valid graph labels",
+            "valid_mask": "conflict_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "conflict_head"
+            ],
+            "requires_grad_inputs": [
+              "overlap_residual"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "graphs",
+            "id": "H26.obstruction"
+          }
+        ],
+        "losses": [
+          "H26.local",
+          "H26.overlap",
+          "H26.obstruction"
+        ],
+        "owners": [
+          "anchor_encoder",
+          "conflict_head",
+          "restriction_maps"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "predicate_structure_search",
+        "objectives": [
+          {
+            "name": "description",
+            "mathematical_definition": "UTF8_prefix_AST_bytes",
+            "numerator": "actual prefix-encoded AST byte length",
+            "denominator": "one candidate",
+            "valid_mask": "candidate_valid",
+            "zero_valid_policy": "error",
+            "parameter_owners": [],
+            "requires_grad_inputs": [],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "finite_enumeration",
+            "normalization_units": "bytes",
+            "id": "H27.description"
+          }
+        ],
+        "losses": [
+          "H27.description"
+        ],
+        "owners": [],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "concept_behavior",
+        "objectives": [
+          {
+            "name": "distinction",
+            "mathematical_definition": "sum(m*relu(margin-abs(ca-cb)))/sum(m)",
+            "numerator": "pair margin deficit",
+            "denominator": "known required pairs",
+            "valid_mask": "pair_known_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds"
+            ],
+            "requires_grad_inputs": [
+              "concept_values"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "pairs",
+            "id": "H27.distinction"
+          },
+          {
+            "name": "behavior",
+            "mathematical_definition": "sum(m*CE(action_logits,label))/sum(m)",
+            "numerator": "supervisor-only action cross entropy",
+            "denominator": "valid actions",
+            "valid_mask": "action_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds",
+              "behavior_readout"
+            ],
+            "requires_grad_inputs": [
+              "concept_values"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "actions",
+            "id": "H27.behavior"
+          },
+          {
+            "name": "drift",
+            "mathematical_definition": "sum(m*(new_old_domain-old)^2)/sum(m)",
+            "numerator": "historical-domain response change",
+            "denominator": "valid historical values",
+            "valid_mask": "old_domain_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "concept_thresholds"
+            ],
+            "requires_grad_inputs": [
+              "new_response"
+            ],
+            "stop_gradient_edges": [
+              [
+                "old_response",
+                "drift"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "historical examples",
+            "id": "H27.drift"
+          }
+        ],
+        "losses": [
+          "H27.distinction",
+          "H27.behavior",
+          "H27.drift"
+        ],
+        "owners": [
+          "behavior_readout",
+          "concept_thresholds"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "local_interpretations": "stop",
+      "find_obstruction": "stop",
+      "executable_counterexample": "enumeration",
+      "propose_concept": "enumeration",
+      "prepare_migration": "stop",
+      "retain_disagreement": "stop"
+    },
+    "frozen": [
+      "base_models",
+      "immutable_source_definitions"
+    ],
+    "structure_search": "enumeration is distinct from differentiable phases",
+    "execution": "unified gated runner only; no joint global loss by default"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

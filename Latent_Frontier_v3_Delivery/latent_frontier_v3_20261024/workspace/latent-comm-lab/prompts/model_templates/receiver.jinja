@@ -1,0 +1,5 @@
+Apply only validated mechanism objects to the public task and receiver view. If information is insufficient, return unknown. Never invent resolved references or proof witnesses.
+This is a frontier proposal with no model measurements. Output only JSON matching this schema:
+{"additionalProperties": false, "properties": {"answer": {"type": "object"}, "obligations": {"type": "array"}, "status": {"enum": ["present", "unknown", "missing", "contradiction"]}, "used_object_refs": {"type": "array"}}, "required": ["status", "answer", "used_object_refs", "obligations"], "type": "object"}
+DATA_ONLY
+{"versions": {{ versions }}, "public_task": {{ public_task }}, "features": {{ features }}}

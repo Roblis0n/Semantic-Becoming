@@ -1,0 +1,49 @@
+{
+  "task_id": "B04",
+  "status": "done",
+  "input_digest": "22208516ee37c98f06af16da2a024dfa930135320b0284378abdc18f3af49590",
+  "outputs": [
+    {
+      "path": "src/latent_comm/backends/hf_kv/__init__.py",
+      "sha256": "6d21eb4630e85ddc1465a9b9fe251bc6e1fa86ea8241d18dd6173ad8ed78d99b",
+      "bytes": 9355
+    },
+    {
+      "path": "backend_specs/hf_kv.json",
+      "sha256": "c1dd752ff63e18e4b43018e85f63bd7c3aea7538ffef37ef68923e71da4f4ec0",
+      "bytes": 1409
+    },
+    {
+      "path": "tests/research_locked/test_backend_hf_kv.py",
+      "sha256": "4cecfe14a9f229eba2fdca9a8cbbe40903ed50ffd5b6a562ae434644c6248f76",
+      "bytes": 2711
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/B_hf_kv.txt",
+      "sha256": "ea91afa8a169a7427fc606f5a44c1b669b20970f6b73907ec55a796cc65141b8"
+    },
+    {
+      "path": "run_state/checks/B_backend_static.json",
+      "sha256": "f09a540c89c4498781d691003d9b79cea2df1fc053351d0f875e98053fc096cd"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/B04_test_backend_hf_kv.txt",
+      "sha256": "9ff54cad1f08af004325d18d0f54660ea432c2bc3b02d716b3b3e4a5cf342ba0"
+    },
+    {
+      "path": "run_state/checks/B04_exact_identity_repair.txt",
+      "sha256": "29d45e6591f0f3822510e134bee26157e1f716d955e9b5404294152116ebd9df"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated backend source plus source/declaration/gate tests. All actual model integration is NOT_RUN; unknown backend bindings explicit UNBOUND. Official public documentation read, no model package installed/imported. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution. Exact same-backend transport now rejects all projection/phase arguments and preserves original tensor values; seven metadata/AST/gate checks, no neural execution. Explicit nonempty cache revision/dtype binding checked; eight focused contracts pass.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:48:36.811280+00:00"
+}

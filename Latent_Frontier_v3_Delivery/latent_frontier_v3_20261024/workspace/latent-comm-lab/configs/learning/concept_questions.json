@@ -1,0 +1,82 @@
+{
+  "stage": "L04",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "concept",
+  "run_id": "future-l04",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "concept": [
+      {
+        "name": "concept_continuous",
+        "parameter_owners": [
+          "concept_thresholds",
+          "behavior_readout"
+        ],
+        "loss_weights": {
+          "distinction": 1.0,
+          "behavior": 1.0,
+          "description": 0.001,
+          "drift": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "questions": [
+      {
+        "name": "questions_continuous",
+        "parameter_owners": [
+          "transform_selector",
+          "answer_map"
+        ],
+        "loss_weights": {
+          "relation": 1.0,
+          "backtranslation": 1.0,
+          "path_policy": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  },
+  "mechanisms": [
+    "H27",
+    "H29"
+  ],
+  "discrete_structure": {
+    "concept": "finite_enumeration",
+    "questions": "bounded_witnessed_graph",
+    "path_selector": "policy_gradient",
+    "straight_through": false
+  },
+  "versions_by_variant": {
+    "concept": {
+      "schema": "3",
+      "state": "s1",
+      "ontology": "o1",
+      "world": "w1",
+      "task": "t1",
+      "evidence": "e1"
+    },
+    "questions": {
+      "schema": "3",
+      "state": "s1",
+      "ontology": "o1",
+      "world": "w1",
+      "task": "t1",
+      "evidence": "e1",
+      "isa": "i1"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "intro_90_001",
+  "edition": "intro_90",
+  "scene_id": "S01",
+  "characters": 37,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "今天，我们通常让模型交换答案。更远的问题是：交流能否改变它们能够思考什么？",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:09:15.044032+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:09:21 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:09:39.727408+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 287034,
+    "duration_seconds": 6.508707482993198,
+    "sample_peak": 10156,
+    "sample_rms": 2089.459937972652,
+    "sha256": "51acdf1d7bfb7d67ac8b0b21392cd9507c7ff17d545eff75b4a305672f3c6d8b",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:10:06.466547+00:00"
+}

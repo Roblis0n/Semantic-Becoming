@@ -1,0 +1,13 @@
+test_assumption_not_inferred_from_link (test_learning_evidence.ContractChecks.test_assumption_not_inferred_from_link) ... ok
+test_duplicate_source_is_one_atom (test_learning_evidence.ContractChecks.test_duplicate_source_is_one_atom) ... ok
+test_engine_delegation_and_resume_command (test_learning_evidence.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_identity_must_be_equivalence (test_learning_evidence.ContractChecks.test_identity_must_be_equivalence) ... ok
+test_metadata (test_learning_evidence.ContractChecks.test_metadata) ... ok
+test_pair_value_calibration (test_learning_evidence.ContractChecks.test_pair_value_calibration) ... ok
+test_recipe_is_unbound (test_learning_evidence.ContractChecks.test_recipe_is_unbound) ... ok
+test_stage_syntax_and_gates (test_learning_evidence.ContractChecks.test_stage_syntax_and_gates) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+OK

@@ -1,0 +1,1049 @@
+{
+  "recipe_id": "C16",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C16",
+    "nodes": [
+      {
+        "node_id": "compatible_pool",
+        "operation": "C16.compatible_pool",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "compatible_pool:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CounterfactualEcologyInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "CompatibleKernelPool",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "W"
+        ],
+        "write_set": [
+          "W"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H43"
+        ],
+        "implementation": "latent_comm.compositions.c16.compatible_pool",
+        "location": {
+          "source": "C16.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "synthetic_world",
+        "operation": "C16.synthetic_world",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "compatible_pool:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "synthetic_world:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "CompatibleKernelPool",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "SyntheticCounterfactual",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "Q",
+          "W"
+        ],
+        "write_set": [
+          "E",
+          "W"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H43",
+          "H44"
+        ],
+        "implementation": "latent_comm.compositions.c16.synthetic_world",
+        "location": {
+          "source": "C16.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "generate_questions",
+        "operation": "C16.generate_questions",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "synthetic_world:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "generate_questions:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "SyntheticCounterfactual",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "NewQuestions",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "O",
+          "P",
+          "Q",
+          "W"
+        ],
+        "write_set": [
+          "E",
+          "Q"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H29",
+          "H44"
+        ],
+        "implementation": "latent_comm.compositions.c16.generate_questions",
+        "location": {
+          "source": "C16.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "mutate_and_compile",
+        "operation": "C16.mutate_and_compile",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "generate_questions:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "mutate_and_compile:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "NewQuestions",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TypedProtocolPopulation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "K",
+          "P",
+          "Q"
+        ],
+        "write_set": [
+          "P",
+          "Q"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H40",
+          "H42"
+        ],
+        "implementation": "latent_comm.compositions.c16.mutate_and_compile",
+        "location": {
+          "source": "C16.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "archive_lineage",
+        "operation": "C16.archive_lineage",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "mutate_and_compile:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "archive_lineage:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "TypedProtocolPopulation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "SyntheticLineageArchive",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "K",
+          "P",
+          "Q",
+          "W"
+        ],
+        "write_set": [
+          "E",
+          "Q"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H42",
+          "H44"
+        ],
+        "implementation": "latent_comm.compositions.c16.archive_lineage",
+        "location": {
+          "source": "C16.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "archive_lineage:out",
+        {
+          "name": "SyntheticLineageArchive",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "compatible_pool:out",
+        {
+          "name": "CompatibleKernelPool",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "generate_questions:out",
+        {
+          "name": "NewQuestions",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "CounterfactualEcologyInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "mutate_and_compile:out",
+        {
+          "name": "TypedProtocolPopulation",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "synthetic_world:out",
+        {
+          "name": "SyntheticCounterfactual",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "compatible_pool",
+        "synthetic_world"
+      ],
+      [
+        "generate_questions",
+        "mutate_and_compile"
+      ],
+      [
+        "mutate_and_compile",
+        "archive_lineage"
+      ],
+      [
+        "synthetic_world",
+        "generate_questions"
+      ]
+    ],
+    "schedule": [
+      "compatible_pool",
+      "synthetic_world",
+      "generate_questions",
+      "mutate_and_compile",
+      "archive_lineage"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "2924d8ed64c8df2281a013537fc5c6a0a23f339aae7b66320ab5ceb6b41de301",
+    "declared_parameters": {
+      "obligations": [
+        "Synthetic descendants never count as independent real-world evidence.",
+        "World and question IDs are provenance, not model input features.",
+        "Base ISA cannot express compare; those ecology candidates remain explicit obligations."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C16",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "world_proposal",
+        "objectives": [
+          {
+            "name": "legality",
+            "mathematical_definition": "sum(m*BCE(legal_logits,structural_valid))/sum(m)",
+            "numerator": "world structural-validity CE",
+            "denominator": "checked world proposals",
+            "valid_mask": "world_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "world_proposer"
+            ],
+            "requires_grad_inputs": [
+              "kernel_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "proposals",
+            "id": "H44.legality"
+          },
+          {
+            "name": "curriculum",
+            "mathematical_definition": "sum(m*synthetic_task_loss)/sum(m)",
+            "numerator": "synthetic task loss with parent lineage",
+            "denominator": "valid synthetic tasks",
+            "valid_mask": "synthetic_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "protocol_interface"
+            ],
+            "requires_grad_inputs": [
+              "role_views"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "synthetic tasks",
+            "id": "H44.curriculum"
+          },
+          {
+            "name": "heldout_proposal",
+            "mathematical_definition": "log_pi(world)*stopgrad(L_independent_holdout)",
+            "numerator": "world score times held-out loss",
+            "denominator": "valid proposals with independent holdout",
+            "valid_mask": "holdout_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "world_proposer"
+            ],
+            "requires_grad_inputs": [
+              "world_log_probability"
+            ],
+            "stop_gradient_edges": [
+              [
+                "independent_holdout_loss",
+                "heldout_proposal"
+              ]
+            ],
+            "estimated_or_exact": "policy_gradient",
+            "normalization_units": "independent held-out tasks",
+            "id": "H44.heldout_proposal"
+          }
+        ],
+        "losses": [
+          "H44.legality",
+          "H44.curriculum",
+          "H44.heldout_proposal"
+        ],
+        "owners": [
+          "protocol_interface",
+          "world_proposer"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "alternating_protocol_and_tasks",
+        "objectives": [
+          {
+            "name": "interface",
+            "mathematical_definition": "sum(m*task_error)/sum(m)",
+            "numerator": "task-conditioned interface loss",
+            "denominator": "valid role-isolated tasks",
+            "valid_mask": "task_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "protocol_interface"
+            ],
+            "requires_grad_inputs": [
+              "public_task_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "tasks",
+            "id": "H42.interface"
+          },
+          {
+            "name": "proposal",
+            "mathematical_definition": "-sum(m*log_pi(mutation)*reward)/sum(m)",
+            "numerator": "mutation policy score times separately recorded novelty/solvability reward",
+            "denominator": "valid legal mutations",
+            "valid_mask": "mutation_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "environment_proposer"
+            ],
+            "requires_grad_inputs": [
+              "mutation_log_probability"
+            ],
+            "stop_gradient_edges": [
+              [
+                "reward",
+                "proposal"
+              ]
+            ],
+            "estimated_or_exact": "policy_gradient",
+            "normalization_units": "mutations",
+            "id": "H42.proposal"
+          }
+        ],
+        "losses": [
+          "H42.interface",
+          "H42.proposal"
+        ],
+        "owners": [
+          "environment_proposer",
+          "protocol_interface"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "fast_macro",
+        "objectives": [
+          {
+            "name": "fast_behavior",
+            "mathematical_definition": "sum(m*(fast_mu(x)-Exec_base(lower(mu),x))^2)/sum(m)",
+            "numerator": "fast implementation anchor error",
+            "denominator": "valid declared behavior anchors",
+            "valid_mask": "anchor_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "fast_macro_coefficients"
+            ],
+            "requires_grad_inputs": [
+              "macro_inputs"
+            ],
+            "stop_gradient_edges": [
+              [
+                "exact_base_target",
+                "fast_behavior"
+              ]
+            ],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior anchors",
+            "id": "H40.fast_behavior"
+          },
+          {
+            "name": "binding",
+            "mathematical_definition": "sum(m*CE(binding_logits,binding))/sum(m)",
+            "numerator": "typed argument binding CE",
+            "denominator": "valid macro calls",
+            "valid_mask": "call_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "binding_selector"
+            ],
+            "requires_grad_inputs": [
+              "program_features"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "macro calls",
+            "id": "H40.binding"
+          }
+        ],
+        "losses": [
+          "H40.fast_behavior",
+          "H40.binding"
+        ],
+        "owners": [
+          "binding_selector",
+          "fast_macro_coefficients"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "compatible_pool": "stop",
+      "synthetic_world": "stop",
+      "generate_questions": "enumeration",
+      "mutate_and_compile": "enumeration",
+      "archive_lineage": "stop"
+    },
+    "holdout": "independent source lineage required; synthetic parent kernels cannot certify their own truth"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

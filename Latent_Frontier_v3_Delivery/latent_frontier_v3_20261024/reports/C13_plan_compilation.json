@@ -1,0 +1,35 @@
+{
+  "recipe_id": "C13",
+  "plan_compilation_only": true,
+  "research_execution": false,
+  "mechanisms": [
+    {
+      "id": "H19",
+      "design": "inherited_v2/hypotheses/H19_消息到技能巩固.md",
+      "target": "src/latent_comm/mechanisms/h19_legacy"
+    },
+    {
+      "id": "H25",
+      "design": "hypotheses/H25_规范协变的认知接口.md",
+      "target": "src/latent_comm/mechanisms/h25_gauge"
+    },
+    {
+      "id": "H37",
+      "design": "hypotheses/H37_跨模型学习方向运输.md",
+      "target": "src/latent_comm/mechanisms/h37_gradient_transport"
+    },
+    {
+      "id": "H38",
+      "design": "hypotheses/H38_可传递的可塑性规则.md",
+      "target": "src/latent_comm/mechanisms/h38_plasticity"
+    }
+  ],
+  "stages": [
+    "行为锚",
+    "源学习效果",
+    "目标切空间投影",
+    "更新规则编译",
+    "未来训练器"
+  ],
+  "implementation_state": "assigned_to_dot_not_executed_by_this_tool"
+}

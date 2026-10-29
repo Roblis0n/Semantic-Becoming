@@ -1,0 +1,15 @@
+M06: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_chart_new_consumers_and_version_rejection (test_h06.AtlasTests.test_chart_new_consumers_and_version_rejection) ... ok
+test_cycle_and_not_inverse (test_h06.AtlasTests.test_cycle_and_not_inverse) ... ok
+test_local_partial_map (test_h06.AtlasTests.test_local_partial_map) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h06.AtlasTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_registry (test_h06.AtlasTests.test_registry) ... ok
+test_source_gate_and_schema (test_h06.AtlasTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h06.AtlasTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h06.AtlasTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.021s
+
+OK
+M06: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

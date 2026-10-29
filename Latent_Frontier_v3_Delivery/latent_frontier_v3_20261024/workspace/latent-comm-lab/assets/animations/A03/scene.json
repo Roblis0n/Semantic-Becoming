@@ -1,0 +1,410 @@
+{
+  "id": "A03",
+  "duration": 30,
+  "fps": 12,
+  "scene": {
+    "title": "H27：新概念必须改变计算",
+    "description": "同形钥匙的有效期差异，通过谓词 AST 形成可计算的新区分，随后迁移旧版本读者。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H27：新概念必须改变计算",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "同形钥匙，授权有效期不同",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "解析示意 / 数学示意 · 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "A03",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 600,
+        "w": 1152,
+        "h": 47,
+        "fill": "#FFFCF5",
+        "stroke": "#CECDBF",
+        "sw": 0,
+        "r": 0,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 103.6,
+        "y": 233.6,
+        "w": 52.800000000000004,
+        "h": 52.800000000000004,
+        "fill": "none",
+        "stroke": "#536647",
+        "sw": 5,
+        "kind": "ellipse",
+        "id": "e007"
+      },
+      {
+        "points": [
+          [
+            156.4,
+            260
+          ],
+          [
+            243.3,
+            260
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e008"
+      },
+      {
+        "points": [
+          [
+            218.0,
+            260
+          ],
+          [
+            218.0,
+            282.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e009"
+      },
+      {
+        "points": [
+          [
+            240.0,
+            260
+          ],
+          [
+            240.0,
+            282.0
+          ]
+        ],
+        "stroke": "#536647",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e010"
+      },
+      {
+        "x": 103.6,
+        "y": 363.6,
+        "w": 52.800000000000004,
+        "h": 52.800000000000004,
+        "fill": "none",
+        "stroke": "#9C5138",
+        "sw": 5,
+        "kind": "ellipse",
+        "id": "e011"
+      },
+      {
+        "points": [
+          [
+            156.4,
+            390
+          ],
+          [
+            243.3,
+            390
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e012"
+      },
+      {
+        "points": [
+          [
+            218.0,
+            390
+          ],
+          [
+            218.0,
+            412.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e013"
+      },
+      {
+        "points": [
+          [
+            240.0,
+            390
+          ],
+          [
+            240.0,
+            412.0
+          ]
+        ],
+        "stroke": "#9C5138",
+        "sw": 6,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e014"
+      },
+      {
+        "x": 320,
+        "y": 235,
+        "w": 450,
+        "h": 40.04,
+        "text": "K₁：shape_match",
+        "size": 28,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e015"
+      },
+      {
+        "x": 320,
+        "y": 365,
+        "w": 450,
+        "h": 40.04,
+        "text": "K₂：shape_match",
+        "size": 28,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e016"
+      },
+      {
+        "x": 660,
+        "y": 235,
+        "w": 500,
+        "h": 47.19,
+        "text": "能开门",
+        "size": 33,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e017",
+        "reveal_at": 6
+      },
+      {
+        "x": 660,
+        "y": 365,
+        "w": 500,
+        "h": 47.19,
+        "text": "不能开门",
+        "size": 33,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e018",
+        "reveal_at": 6
+      },
+      {
+        "x": 65,
+        "y": 475,
+        "w": 1150,
+        "h": 44.33,
+        "text": "valid_at = authorized ∧ (start ≤ t < expiry)",
+        "size": 31,
+        "color": "#496974",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e019",
+        "reveal_at": 12
+      },
+      {
+        "x": 925,
+        "y": 235,
+        "w": 280,
+        "h": 50.05,
+        "text": "true",
+        "size": 35,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e020",
+        "reveal_at": 18
+      },
+      {
+        "x": 925,
+        "y": 365,
+        "w": 280,
+        "h": 50.05,
+        "text": "false",
+        "size": 35,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e021",
+        "reveal_at": 18
+      },
+      {
+        "x": 65,
+        "y": 537,
+        "w": 1150,
+        "h": 41.47,
+        "text": "v1：key 类型  →  v2：key + valid_at 谓词",
+        "size": 29,
+        "color": "#725D7C",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e022",
+        "reveal_at": 24
+      }
+    ],
+    "notes": "",
+    "sources": [],
+    "research_state": "NOT_RUN"
+  },
+  "steps": [
+    {
+      "t": 0,
+      "fact": "旧类别只能判断形状",
+      "explanation": "K₁ 与 K₂ 暂时不可区分",
+      "next": "寻找行为不同的反例对"
+    },
+    {
+      "t": 6,
+      "fact": "同形钥匙出现不同行为",
+      "explanation": "“钥匙”一词不足以解释差异",
+      "next": "提出可计算的有效期条件"
+    },
+    {
+      "t": 12,
+      "fact": "新变量进入谓词 AST",
+      "explanation": "authorized 与期限共同决定行为",
+      "next": "分别计算两把钥匙"
+    },
+    {
+      "t": 18,
+      "fact": "K₁ = true；K₂ = false",
+      "explanation": "此区分现在能影响动作",
+      "next": "迁移旧版本程序"
+    },
+    {
+      "t": 24,
+      "fact": "读者从 v1 迁移到 v2",
+      "explanation": "新概念包含定义和版本后果",
+      "next": "无候选时保留未决分支"
+    }
+  ],
+  "mechanisms": [
+    "H27"
+  ],
+  "math_inputs": {
+    "keys": [
+      {
+        "id": "K1",
+        "shape_match": true,
+        "authorized": true,
+        "start": 0,
+        "expiry": 10,
+        "t": 5
+      },
+      {
+        "id": "K2",
+        "shape_match": true,
+        "authorized": true,
+        "start": 0,
+        "expiry": 4,
+        "t": 5
+      }
+    ]
+  },
+  "research_state": "NOT_RUN",
+  "export_audio": false,
+  "semantic_contract": "Each state is an exact finite mathematical illustration, not a research model output."
+}

@@ -1,0 +1,17 @@
+M12: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_dependency_identity_is_in_cache_key (test_h12.CapsuleTests.test_dependency_identity_is_in_cache_key) ... ok
+test_dependency_retraction_propagates_and_restore_rejects_cycle (test_h12.CapsuleTests.test_dependency_retraction_propagates_and_restore_rejects_cycle) ... ok
+test_future_queries_and_unknown (test_h12.CapsuleTests.test_future_queries_and_unknown) ... ok
+test_ontology_transaction_and_genealogy_consumers (test_h12.CapsuleTests.test_ontology_transaction_and_genealogy_consumers) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h12.CapsuleTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_retraction_and_atomic_persistence (test_h12.CapsuleTests.test_retraction_and_atomic_persistence) ... ok
+test_source_gate_and_schema (test_h12.CapsuleTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h12.CapsuleTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_version_is_immutable (test_h12.CapsuleTests.test_version_is_immutable) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h12.CapsuleTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.041s
+
+OK
+M12: 10 contract tests; failures=0 errors=0; no tensor/model import or execution.

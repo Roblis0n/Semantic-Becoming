@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_011",
+  "edition": "explainer_360",
+  "scene_id": "S03",
+  "characters": 32,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "并非所有分歧都来自缺少一个变量。三个局部约束分别要求两个量相等，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:27:09.977047+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:27:16 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:27:19.020867+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 256314,
+    "duration_seconds": 5.812108843537415,
+    "sample_peak": 7092,
+    "sample_rms": 1291.6675280367701,
+    "sha256": "e0468625b1a9306b0ba339236b1b41b979a8157cb12f89c0c920fa34dee81557",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:27:45.967636+00:00"
+}

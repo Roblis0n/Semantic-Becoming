@@ -1,0 +1,72 @@
+{
+  "task_id": "A03",
+  "status": "done",
+  "input_digest": "c8420ea5f09569be6e1543b143923142c8cec32a61647bb026dc642e95b5c6d8",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compiler/README.md",
+      "sha256": "f8662d479818a01ceede2678dc5b5ff4fee34b6dcb2f4c4875234a545c7e7bfb",
+      "bytes": 2634
+    },
+    {
+      "path": "src/latent_comm/compiler/__init__.py",
+      "sha256": "39425e548a91cf078776bf8318e359da459083057c3e7d5c4ad24e7cec0ea0bf",
+      "bytes": 591
+    },
+    {
+      "path": "src/latent_comm/compiler/export.py",
+      "sha256": "b9ea165fb79275d8c75368e57e0ab940e379ad5325cde20373dc35aa3d914b65",
+      "bytes": 1488
+    },
+    {
+      "path": "src/latent_comm/compiler/mechanism_registry.json",
+      "sha256": "ea49e58b5874a48016b5b86d6d20db17b72ca21e7b19866b666187f419a9cf8b",
+      "bytes": 40434
+    },
+    {
+      "path": "src/latent_comm/compiler/pipeline.py",
+      "sha256": "643a1a46ce5076e48e2514b4e59041357f49bbb69d0ce796131c1a160814a68b",
+      "bytes": 26657
+    },
+    {
+      "path": "src/latent_comm/compiler/registry.py",
+      "sha256": "126aafb5adacee6e53888856268e183b1bef73e8eb5f9e48ceecb9d4120d73f3",
+      "bytes": 2357
+    },
+    {
+      "path": "src/latent_comm/compiler/source.py",
+      "sha256": "c5fba28c62b7193ea062046adde08e3cc7ea1cceddc4f2596af9d3e1142b3807",
+      "bytes": 4261
+    },
+    {
+      "path": "src/latent_comm/compiler/types.py",
+      "sha256": "001c462f7067fb9e455190ab69d6bc2f92641105dbe2530bcc827abcd44d9ca8",
+      "bytes": 3376
+    },
+    {
+      "path": "src/latent_comm/cli/compile.py",
+      "sha256": "d0051aef83f412f32c2d35ad0706371519635df5ad83d2c31c7aad5eda32f236",
+      "bytes": 983
+    },
+    {
+      "path": "tests/compiler/test_compiler.py",
+      "sha256": "a14fe475a8780ad2420b893aeea85647a029a9fe0a665f034297f1cbcacdc46b",
+      "bytes": 9584
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/A03_finite_json_repair.txt",
+      "sha256": "53ac5b92b5fdf887e0675b3c59a846527145993b47e95038856332e04915a34e"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Strict JSON parse_float now rejects nested exponent overflow before IR construction. Safe compiler contracts revalidated with model-entry gate tests excluded, neural imports denied. Future research budgets remain source metadata, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:58:38.172997+00:00"
+}

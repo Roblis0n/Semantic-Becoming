@@ -1,0 +1,116 @@
+[
+  {
+    "id": "C01",
+    "title": "临时计算体",
+    "hypotheses": [
+      "H01",
+      "H06",
+      "H07",
+      "H22"
+    ],
+    "training_routes": [
+      "R02",
+      "R07",
+      "R08",
+      "R11"
+    ]
+  },
+  {
+    "id": "C02",
+    "title": "响应驱动共享场",
+    "hypotheses": [
+      "H02",
+      "H04",
+      "H23"
+    ],
+    "training_routes": [
+      "R03",
+      "R05",
+      "R12"
+    ]
+  },
+  {
+    "id": "C03",
+    "title": "分布式信念树",
+    "hypotheses": [
+      "H03",
+      "H13",
+      "H21"
+    ],
+    "training_routes": [
+      "R04",
+      "R08",
+      "R12"
+    ]
+  },
+  {
+    "id": "C04",
+    "title": "异步跨模型续接",
+    "hypotheses": [
+      "H05",
+      "H20",
+      "H22"
+    ],
+    "training_routes": [
+      "R06",
+      "R12"
+    ]
+  },
+  {
+    "id": "C05",
+    "title": "关系接地接口",
+    "hypotheses": [
+      "H06",
+      "H08",
+      "H17"
+    ],
+    "training_routes": [
+      "R07",
+      "R09"
+    ]
+  },
+  {
+    "id": "C06",
+    "title": "连接结构中的技能",
+    "hypotheses": [
+      "H01",
+      "H10",
+      "H14",
+      "H19"
+    ],
+    "training_routes": [
+      "R02",
+      "R08",
+      "R11"
+    ]
+  },
+  {
+    "id": "C07",
+    "title": "可迁移计算记忆",
+    "hypotheses": [
+      "H12",
+      "H15",
+      "H23",
+      "H24"
+    ],
+    "training_routes": [
+      "R09",
+      "R10"
+    ]
+  },
+  {
+    "id": "C08",
+    "title": "协议作为计算语言",
+    "hypotheses": [
+      "H07",
+      "H14",
+      "H18",
+      "H22"
+    ],
+    "training_routes": [
+      "R08",
+      "R09",
+      "R12"
+    ]
+  }
+]

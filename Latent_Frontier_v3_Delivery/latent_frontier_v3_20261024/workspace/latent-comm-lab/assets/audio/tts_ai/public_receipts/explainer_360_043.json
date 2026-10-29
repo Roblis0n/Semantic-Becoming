@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_043",
+  "edition": "explainer_360",
+  "scene_id": "S09",
+  "characters": 32,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "最终要追问的不是：多个模型能否更快重复已有知识？而是：交流本身，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:15:10.333631+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 259386,
+    "duration_seconds": 5.881768707482993,
+    "sample_peak": 11607,
+    "sample_rms": 2013.8902697624885,
+    "sha256": "c3f7f197aa9993bf8dfac293a200f712075e17a4b6316d995f1f5dc626d422d6",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:15:43.664849+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

@@ -1,0 +1,15 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_clipped_update_is_1_9 (test_h38.H38Contracts.test_clipped_update_is_1_9) ... ok
+test_first_order_distinct_and_lifetime (test_h38.H38Contracts.test_first_order_distinct_and_lifetime) ... ok
+test_full_first_order_source_and_gate (test_h38.H38Contracts.test_full_first_order_source_and_gate) ... ok
+test_migration_and_unsafe_ast (test_h38.H38Contracts.test_migration_and_unsafe_ast) ... ok
+test_neural_source_is_lazy_and_gated (test_h38.H38Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_outer_optimizer_owner_is_exact (test_h38.H38Contracts.test_outer_optimizer_owner_is_exact) ... ok
+test_outer_owner_alias_and_learned_scalar (test_h38.H38Contracts.test_outer_owner_alias_and_learned_scalar) ... ok
+test_running_mean_and_preconditioner (test_h38.H38Contracts.test_running_mean_and_preconditioner) ... ok
+test_scope_and_query_leak_rejected (test_h38.H38Contracts.test_scope_and_query_leak_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.006s
+
+OK

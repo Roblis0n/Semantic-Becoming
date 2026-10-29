@@ -1,0 +1,16 @@
+M02: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_chain_and_invalid_basis (test_h02.ResponseTests.test_chain_and_invalid_basis) ... ok
+test_derivative_and_radius (test_h02.ResponseTests.test_derivative_and_radius) ... ok
+test_no_causal_inference (test_h02.ResponseTests.test_no_causal_inference) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h02.ResponseTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_scm_kernel_and_identification_consumers (test_h02.ResponseTests.test_scm_kernel_and_identification_consumers) ... ok
+test_source_gate_and_schema (test_h02.ResponseTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h02.ResponseTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_tensor_basis_guard_is_present_without_tensor_import (test_h02.ResponseTests.test_tensor_basis_guard_is_present_without_tensor_import) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h02.ResponseTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.023s
+
+OK
+M02: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

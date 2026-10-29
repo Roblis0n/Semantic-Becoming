@@ -1,0 +1,7 @@
+# Authoring audit incident and corrected check boundary
+
+Research state remains NOT_RUN. On 2026-10-24 at approximately 18:00 UTC, the initial all-learning audit used incorrect names when excluding two legacy L04 guard-only tests. It consequently called three policy-locked entries: concept build_stage, select_concept_structure and search_question_structure. All three immediately raised at their first policy guard, before backend imports. The import blocker and final module inventory reported neural_modules_loaded=[]. No model, tensor, initialization, forward, generation, training, evaluation or dataset generation occurred.
+
+Invoking those entries was nevertheless contrary to the stricter authoring instruction not to invoke model/research entry points even merely to test their guards. The attempt is not counted as an approved check. Its truthful log is retained at run_state/checks/L13_noncompliant_legacy_guard_attempt.txt and the coordinator was notified immediately.
+
+The corrected static_audit.py excludes the exact four legacy L03/L04 method names and AST-checks the selected tests for known model-entry calls before test collection. The corrected run completed 116 stdlib/AST/contract tests with no neural imports and without selecting any entry-call tests. Its approved evidence is run_state/checks/L13_all_learning_static.txt. These checks establish source/finite contracts only, not research efficacy or empirical exact resume.

@@ -1,0 +1,89 @@
+QUEUED intro_90_001 37 [private job reference removed]
+DOWNLOADED intro_90_001 6.508707482993198
+QUEUED intro_90_002 21 [private job reference removed]
+DOWNLOADED intro_90_002 4.30281179138322
+QUEUED intro_90_003 22 [private job reference removed]
+DOWNLOADED intro_90_003 3.7419727891156462
+QUEUED intro_90_004 34 [private job reference removed]
+DOWNLOADED intro_90_004 6.698027210884354
+QUEUED intro_90_005 12 [private job reference removed]
+DOWNLOADED intro_90_005 2.2094557823129253
+QUEUED intro_90_006 22 [private job reference removed]
+DOWNLOADED intro_90_006 4.778820861678004
+QUEUED intro_90_007 22 [private job reference removed]
+DOWNLOADED intro_90_007 3.98578231292517
+QUEUED intro_90_008 28 [private job reference removed]
+DOWNLOADED intro_90_008 5.649569160997732
+QUEUED intro_90_009 15 [private job reference removed]
+DOWNLOADED intro_90_009 2.9408843537414966
+QUEUED intro_90_010 34 [private job reference removed]
+DOWNLOADED intro_90_010 6.3381179138322
+QUEUED intro_90_011 12 [private job reference removed]
+DOWNLOADED intro_90_011 2.104965986394558
+QUEUED intro_90_012 29 [private job reference removed]
+DOWNLOADED intro_90_012 5.146780045351474
+QUEUED intro_90_013 14 [private job reference removed]
+DOWNLOADED intro_90_013 2.80156462585034
+QUEUED intro_90_014 37 [private job reference removed]
+DOWNLOADED intro_90_014 6.694467120181406
+QUEUED explainer_360_001 32 [private job reference removed]
+DOWNLOADED explainer_360_001 6.090748299319728
+QUEUED explainer_360_002 30 [private job reference removed]
+DOWNLOADED explainer_360_002 6.02108843537415
+QUEUED explainer_360_003 31 [private job reference removed]
+DOWNLOADED explainer_360_003 5.974648526077098
+QUEUED explainer_360_004 42 [private job reference removed]
+DOWNLOADED explainer_360_004 7.859024943310658
+QUEUED explainer_360_005 9 [private job reference removed]
+DOWNLOADED explainer_360_005 2.0120861678004536
+QUEUED explainer_360_006 29 [private job reference removed]
+DOWNLOADED explainer_360_006 5.2896598639455785
+QUEUED explainer_360_007 41 [private job reference removed]
+DOWNLOADED explainer_360_007 7.719705215419501
+QUEUED explainer_360_008 36 [private job reference removed]
+DOWNLOADED explainer_360_008 6.67124716553288
+QUEUED explainer_360_009 33 [private job reference removed]
+DOWNLOADED explainer_360_009 6.384557823129252
+QUEUED explainer_360_010 22 [private job reference removed]
+DOWNLOADED explainer_360_010 3.997392290249433
+QUEUED explainer_360_011 32 [private job reference removed]
+DOWNLOADED explainer_360_011 5.812108843537415
+QUEUED explainer_360_012 32 [private job reference removed]
+DOWNLOADED explainer_360_012 5.800498866213152
+QUEUED explainer_360_013 38 [private job reference removed]
+DOWNLOADED explainer_360_013 6.857006802721089
+QUEUED explainer_360_014 25 [private job reference removed]
+DOWNLOADED explainer_360_014 5.057460317460317
+QUEUED explainer_360_015 25 [private job reference removed]
+DOWNLOADED explainer_360_015 4.241201814058957
+QUEUED explainer_360_016 39 [private job reference removed]
+DOWNLOADED explainer_360_016 7.193696145124717
+QUEUED explainer_360_017 40 [private job reference removed]
+DOWNLOADED explainer_360_017 7.17047619047619
+QUEUED explainer_360_018 37 [private job reference removed]
+DOWNLOADED explainer_360_018 6.926666666666667
+QUEUED explainer_360_019 40 [private job reference removed]
+DOWNLOADED explainer_360_019 7.731315192743764
+QUEUED explainer_360_020 17 [private job reference removed]
+DOWNLOADED explainer_360_020 3.06859410430839
+QUEUED explainer_360_021 42 [private job reference removed]
+DOWNLOADED explainer_360_021 7.4839455782312925
+QUEUED explainer_360_022 41 [private job reference removed]
+DOWNLOADED explainer_360_022 7.800975056689342
+QUEUED explainer_360_023 35 [private job reference removed]
+DOWNLOADED explainer_360_023 6.230068027210884
+QUEUED explainer_360_024 26 [private job reference removed]
+DOWNLOADED explainer_360_024 5.185170068027211
+QUEUED explainer_360_025 20 [private job reference removed]
+DOWNLOADED explainer_360_025 3.614263038548753
+QUEUED explainer_360_026 33 [private job reference removed]
+DOWNLOADED explainer_360_026 6.25328798185941
+QUEUED explainer_360_027 40 [private job reference removed]
+DOWNLOADED explainer_360_027 7.158866213151928
+QUEUED explainer_360_028 39 [private job reference removed]
+DOWNLOADED explainer_360_028 7.518775510204081
+QUEUED explainer_360_029 16 [private job reference removed]
+Traceback (most recent call last):
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/http/client.py", line 1386, in request

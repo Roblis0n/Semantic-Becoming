@@ -1,0 +1,53 @@
+{
+  "task_id": "B02",
+  "status": "done",
+  "input_digest": "24985ca8f918289c72a5bd6eac7dc2a539e9d2b7f29d7cd3bb1e27bbb2aa5374",
+  "outputs": [
+    {
+      "path": "src/latent_comm/backends/hf_prefix/__init__.py",
+      "sha256": "6a44eb4007f07e15c4bb6c43365833c30da1b9c98e41178f167fa83fb86baa37",
+      "bytes": 8920
+    },
+    {
+      "path": "backend_specs/hf_prefix.json",
+      "sha256": "4e7c8c6d837d618d205c9a30c46b6d94f08a2f1a524924928c4f6280bdf15a1f",
+      "bytes": 1421
+    },
+    {
+      "path": "tests/research_locked/test_backend_hf_prefix.py",
+      "sha256": "7664afdc33c004fd5c5c0fd89c267ec4af1b9ca614767313cbfac4941b1102d4",
+      "bytes": 2616
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/B_hf_prefix.txt",
+      "sha256": "112c0d4f533181e592e0f756d640e89fc9d97bc2699d7b0877a79e5df6f0073d"
+    },
+    {
+      "path": "run_state/checks/B_backend_static.json",
+      "sha256": "f09a540c89c4498781d691003d9b79cea2df1fc053351d0f875e98053fc096cd"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/B02_test_backend_hf_prefix.txt",
+      "sha256": "112c0d4f533181e592e0f756d640e89fc9d97bc2699d7b0877a79e5df6f0073d"
+    },
+    {
+      "path": "run_state/checks/B02_visible_predecessor_repair.txt",
+      "sha256": "f7373aea4a83ec91e1bca7c8946b31f615db180ccbf8caf64a51c967bc37a133"
+    },
+    {
+      "path": "run_state/checks/aggregate_budget_revalidation/B02_test_backend_hf_prefix.txt",
+      "sha256": "fa1cbd0d056c41fa5c53aa0591ebcf735d6b6a0f87c489f7f240cd5f01cbd4a2"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated backend source plus source/declaration/gate tests. All actual model integration is NOT_RUN; unknown backend bindings explicit UNBOUND. Official public documentation read, no model package installed/imported. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution. Causal training labels are now gathered against preceding visible positions, never shifted across left-padding holes; eight metadata/AST checks, no neural execution. Aggregate finite-budget boundary revalidated 2026-10-24 with blocked neural-entry tests excluded and neural imports denied. All research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:22:27.006472+00:00"
+}

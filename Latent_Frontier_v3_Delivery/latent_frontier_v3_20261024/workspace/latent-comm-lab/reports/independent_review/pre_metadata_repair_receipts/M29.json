@@ -1,0 +1,72 @@
+{
+  "task_id": "M29",
+  "status": "done",
+  "input_digest": "cf701b02b4e82696e78a8e57e131f9257b063f63433f55b89239844c1804856d",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/README.md",
+      "sha256": "58eea73480ebbef0fcbd3a02aacaa0a3801e43b139f28706f8efc55a0a176279",
+      "bytes": 1895
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/__init__.py",
+      "sha256": "6291ea6a1e2ca4562c09feabff83f00a66af3d6baafc58a02a556b78d9f4c983",
+      "bytes": 85
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/adapter.py",
+      "sha256": "a4f7ca505702db374aace7ac34c2315e9f79f4e9e5291fb3bee7451eaf526b95",
+      "bytes": 1836
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/losses.py",
+      "sha256": "1f38deeb99d735b5d59b81eaf388e693b2e134bd2d3c07e2c49dde37cf3c8329",
+      "bytes": 1524
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/reference.py",
+      "sha256": "62c442bf67290bdecb46fac75e8f0787571cad331d52f43db627a1434268ed03",
+      "bytes": 9079
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/schema.json",
+      "sha256": "a4ff743abdb085f58009f626d642c53a4bbb79854218195d2b1c9f6bc750f88f",
+      "bytes": 2379
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/serialization.py",
+      "sha256": "9ba1bc0d765f93f848ce7fe67eccfcaa79d61be70875bc77724d8a79574cd476",
+      "bytes": 1488
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h29_questions/types.py",
+      "sha256": "da157f83b11040e007e752c4a90765ba4010bdb06ac2a26d1558f8a8edb306ca",
+      "bytes": 3715
+    },
+    {
+      "path": "tests/contracts/test_h29.py",
+      "sha256": "04716c2a88b3a13dfa73afe07125b191651c4d54bb16a2e812585af5cdaaa0e1",
+      "bytes": 3919
+    },
+    {
+      "path": "configs/mechanisms/H29.json",
+      "sha256": "6bef836f0743f123e7487a97073b33496cde301574c2d9110601d94993f1ffe7",
+      "bytes": 1256
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M29_contracts.txt",
+      "sha256": "bdea0b5cc7a4af9ff2c4abcfed625605bac0e578acb30b7f8b5f0481c605b26b"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated algorithm, semantic payload validation and migration, positive/boundary/counterexample tests. Tensor source AST checked only; research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:20:59.603878+00:00"
+}

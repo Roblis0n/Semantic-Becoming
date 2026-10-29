@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H27",
+  "kind": "mechanism",
+  "title": "交互中诞生的新概念",
+  "mechanisms": [
+    "H27"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H27_交互中诞生的新概念.md",
+  "target_base": "src/latent_comm/mechanisms/h27_ontology",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "grammar_depth": 4,
+    "candidate_limit": 64,
+    "ontology_version": "0.1",
+    "preserve_old_readers": true
+  }
+}

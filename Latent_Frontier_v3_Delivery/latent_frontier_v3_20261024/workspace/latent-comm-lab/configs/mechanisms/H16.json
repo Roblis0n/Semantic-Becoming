@@ -1,0 +1,176 @@
+{
+  "schema_version": 3,
+  "id": "H16",
+  "kind": "mechanism",
+  "title": "\u7cbe\u786e\u7b26\u53f7\u4e0e\u6f5c\u72b6\u6001\u53cc\u901a\u9053",
+  "mechanisms": [
+    "H16"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H16_\u7cbe\u786e\u7b26\u53f7\u4e0e\u6f5c\u72b6\u6001\u53cc\u901a\u9053.md",
+  "target_base": "src/latent_comm/mechanisms/h16_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H16",
+    "name": "dual_channel",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "state",
+    "data_family": "symbol_sensitive_worlds",
+    "training": {
+      "family": "R01",
+      "loss_terms": [
+        "exact_symbol",
+        "latent_task"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.hybrid.symbols",
+      "latent_comm.mechanisms.hybrid.bindings",
+      "latent_comm.mechanisms.hybrid.fusion"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I16_\u7cbe\u786e\u7b26\u53f7\u4e0e\u6f5c\u72b6\u6001\u53cc\u901a\u9053.md",
+  "canonical_module": "latent_comm.mechanisms.h16_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h16_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer",
+      "symbol_predictor"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h16_legacy.adapter.tensor_dual_fusion",
+    "forward_entries": [
+      "latent_comm.mechanisms.h16_legacy.adapter.tensor_dual_fusion"
+    ],
+    "loss_input_bindings": {
+      "symbol_logits": {
+        "producer": "stage.symbol_classifier predicts categories only, never authority",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "symbol_labels": {
+        "producer": "SupervisionBatch.symbol_labels; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "symbol_valid": {
+        "producer": "stage explicit boolean symbol_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "conflict_logits": {
+        "producer": "stage.conflict_head on exact-symbol versus latent-behavior discrepancy",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "conflict_labels": {
+        "producer": "SupervisionBatch.conflict_labels; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "conflict_valid": {
+        "producer": "stage explicit boolean conflict_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "latent_task_loss": {
+        "producer": "stage task head after tensor_dual_fusion with registry-resolved SymbolPacket",
+        "requires_gradient": true,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "symbol_predictor": [
+        "stage.symbol_classifier"
+      ],
+      "mechanism_writer": [
+        "stage.latent_writer"
+      ],
+      "mechanism_reader": [
+        "tensor_dual_fusion.query_projection",
+        "tensor_dual_fusion.key_projection",
+        "tensor_dual_fusion.value_projection",
+        "stage.conflict_head"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h16_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H29: exact answer-relation enum",
+    "H31: explicit units",
+    "H48: source handles retained"
+  ]
+}

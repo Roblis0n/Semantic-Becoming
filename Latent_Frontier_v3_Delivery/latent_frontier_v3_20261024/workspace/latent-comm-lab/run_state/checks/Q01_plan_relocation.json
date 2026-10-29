@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "prefers shipped relative plan over existing historical absolute tree",
+    "tampered relative plan rejects rather than silently selecting old tree",
+    "flat checkpoint can resolve verified historical plan",
+    "missing plan identity rejects"
+  ],
+  "passed": 4,
+  "source_sha256": "9f99a039468266422a4462137dd590c6b602d82fe8e34659aa96f7a73a4a1171",
+  "research_state": "NOT_RUN",
+  "model_entry_calls": 0
+}

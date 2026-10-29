@@ -1,0 +1,10 @@
+test_capability_budget_is_real (test_c18.C18Tests.test_capability_budget_is_real) ... ok
+test_duplicate_atom_handles_rejected (test_c18.C18Tests.test_duplicate_atom_handles_rejected) ... ok
+test_duplicate_evidence_not_96_and_exact_credit (test_c18.C18Tests.test_duplicate_evidence_not_96_and_exact_credit) ... ok
+test_exact_symbol_not_overwritten (test_c18.C18Tests.test_exact_symbol_not_overwritten) ... ok
+test_missing_member_not_zero (test_c18.C18Tests.test_missing_member_not_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.023s
+
+OK

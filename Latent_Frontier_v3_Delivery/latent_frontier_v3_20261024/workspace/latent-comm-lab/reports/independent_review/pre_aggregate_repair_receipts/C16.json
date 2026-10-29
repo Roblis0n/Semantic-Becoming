@@ -1,0 +1,41 @@
+{
+  "task_id": "C16",
+  "status": "done",
+  "input_digest": "2bd183fcfe78fdec99dbc8753ec1574f2511f725b663ca93fd7d44fd631fa723",
+  "outputs": [
+    {
+      "path": "src/latent_comm/compositions/c16.py",
+      "sha256": "de40d5b1c5d4af6e7b730bf0614cc42a251f1cc30767753b84a799626d87283c",
+      "bytes": 10546
+    },
+    {
+      "path": "configs/compositions/C16.json",
+      "sha256": "e86cbffd9567dfa7930d34efb690df0e871ff332b9aafc1cdc17c96976cc8031",
+      "bytes": 26705
+    },
+    {
+      "path": "tests/contracts/test_c16.py",
+      "sha256": "b1e91e19b3b64329baf63ce9adf657b5e6ddd2b7b9c36cf3a168e615748b3221",
+      "bytes": 2129
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/C16_composition.txt",
+      "sha256": "02a15de6fe8ff2d7f49d747385547b2ad460aceb4410de17949bd41a8ffd86d4"
+    },
+    {
+      "path": "src/latent_comm/compositions/contracts.py",
+      "sha256": "08cd9d7b4753715255a451991d08b9eaacd5e3de1456f6e5cb44ac7464141248"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Concrete kernel/question/ecology/ISA object flow; five finite tests, synthetic lineage preserved, conditional lowering remains explicit obligation; all research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:08:28.783974+00:00"
+}

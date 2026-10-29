@@ -1,0 +1,65 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^.+$"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^.+$"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "value": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "members",
+          "value"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 256
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "credit_is_money": {
+      "const": false
+    },
+    "new_spending": {
+      "const": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "players",
+    "values",
+    "version",
+    "credit_is_money",
+    "new_spending"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H41:resolved-payload:3"
+}

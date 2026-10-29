@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H17:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "physical_frame",
+    "latent_frame_id",
+    "objects",
+    "transform",
+    "action_semantics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "schema",
+        "world"
+      ],
+      "additionalProperties": false
+    },
+    "physical_frame": {
+      "type": "object",
+      "required": [
+        "frame_id",
+        "unit",
+        "handedness",
+        "observation_model",
+        "latent_frame_id"
+      ],
+      "properties": {
+        "frame_id": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "unit": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "handedness": {
+          "enum": [
+            "left",
+            "right"
+          ]
+        },
+        "observation_model": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "latent_frame_id": {
+          "type": "string",
+          "pattern": "\\S"
+        }
+      },
+      "additionalProperties": false
+    },
+    "latent_frame_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "object_id",
+          "position",
+          "covariance",
+          "frame",
+          "timestamp",
+          "status",
+          "versions"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "position": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "number"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "covariance": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "frame": {
+            "type": "object",
+            "required": [
+              "frame_id",
+              "unit",
+              "handedness",
+              "observation_model",
+              "latent_frame_id"
+            ],
+            "properties": {
+              "frame_id": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "unit": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "handedness": {
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              },
+              "observation_model": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "latent_frame_id": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            },
+            "additionalProperties": false
+          },
+          "timestamp": {
+            "type": "number"
+          },
+          "status": {
+            "enum": [
+              "observed",
+              "occluded",
+              "predicted"
+            ]
+          },
+          "versions": {
+            "type": "object",
+            "properties": {
+              "schema": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "ontology": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "isa": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "frame": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "world": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "task": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "evidence": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "frame",
+              "isa",
+              "ontology",
+              "schema"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "transform": {
+      "type": "object",
+      "required": [
+        "source",
+        "target",
+        "linear",
+        "translation",
+        "unit_scale"
+      ],
+      "properties": {
+        "source": {
+          "type": "object",
+          "required": [
+            "frame_id",
+            "unit",
+            "handedness",
+            "observation_model",
+            "latent_frame_id"
+          ],
+          "properties": {
+            "frame_id": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "unit": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "handedness": {
+              "enum": [
+                "left",
+                "right"
+              ]
+            },
+            "observation_model": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "latent_frame_id": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "additionalProperties": false
+        },
+        "target": {
+          "type": "object",
+          "required": [
+            "frame_id",
+            "unit",
+            "handedness",
+            "observation_model",
+            "latent_frame_id"
+          ],
+          "properties": {
+            "frame_id": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "unit": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "handedness": {
+              "enum": [
+                "left",
+                "right"
+              ]
+            },
+            "observation_model": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "latent_frame_id": {
+              "type": "string",
+              "pattern": "\\S"
+            }
+          },
+          "additionalProperties": false
+        },
+        "linear": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "minItems": 1,
+          "maxItems": 64
+        },
+        "translation": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 1,
+          "maxItems": 64
+        },
+        "unit_scale": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "action_semantics": {
+      "type": "string",
+      "pattern": "\\S"
+    }
+  },
+  "additionalProperties": false
+}

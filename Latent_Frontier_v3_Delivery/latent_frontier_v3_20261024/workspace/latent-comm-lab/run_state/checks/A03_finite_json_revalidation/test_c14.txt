@@ -1,0 +1,17 @@
+test_atomic_ontology_and_partition (test_c14.C14Tests.test_atomic_ontology_and_partition) ... ok
+test_no_new_access (test_c14.C14Tests.test_no_new_access) ... ok
+test_prepare_crash_aborts (test_c14.C14Tests.test_prepare_crash_aborts) ... ok
+test_publish_crash_recovers_atomic_side (test_c14.C14Tests.test_publish_crash_recovers_atomic_side) ... ok
+test_read_only_conflict_blocks_both_writes (test_c14.C14Tests.test_read_only_conflict_blocks_both_writes) ... ok
+test_retired_reader_requires_migration (test_c14.C14Tests.test_retired_reader_requires_migration) ... ok
+test_rollback_monotonic_versions (test_c14.C14Tests.test_rollback_monotonic_versions) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.059s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

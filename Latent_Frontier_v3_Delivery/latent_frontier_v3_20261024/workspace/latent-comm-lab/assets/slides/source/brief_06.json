@@ -1,0 +1,305 @@
+{
+  "title": "第二条主线：传递怎样学习",
+  "description": "答案消息、行为方向、更新规则三个不同对象。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "第二条主线：传递怎样学习",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "知识之外，还能交换改进方向与规则",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "06 / 12",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64.0,
+      "y": 275,
+      "w": 362.6666666666667,
+      "h": 190,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79.0,
+      "y": 290,
+      "w": 332.6666666666667,
+      "h": 51.48,
+      "text": "答案消息",
+      "size": 36,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79.0,
+      "y": 343.0,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "当前问题的输出",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          432.6666666666667,
+          370.0
+        ],
+        [
+          452.6666666666667,
+          370.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          440.6666666666667,
+          365.0
+        ],
+        [
+          452.6666666666667,
+          370.0
+        ],
+        [
+          440.6666666666667,
+          375.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 458.6666666666667,
+      "y": 275,
+      "w": 362.6666666666667,
+      "h": 190,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 473.6666666666667,
+      "y": 290,
+      "w": 332.6666666666667,
+      "h": 51.48,
+      "text": "行为方向",
+      "size": 36,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 473.6666666666667,
+      "y": 343.0,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "改变哪些可观察行为",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          827.3333333333334,
+          370.0
+        ],
+        [
+          847.3333333333334,
+          370.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          835.3333333333334,
+          365.0
+        ],
+        [
+          847.3333333333334,
+          370.0
+        ],
+        [
+          835.3333333333334,
+          375.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 853.3333333333334,
+      "y": 275,
+      "w": 362.6666666666667,
+      "h": 190,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 868.3333333333334,
+      "y": 290,
+      "w": 332.6666666666667,
+      "h": 51.48,
+      "text": "更新规则",
+      "size": 36,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 868.3333333333334,
+      "y": 343.0,
+      "w": 332.6666666666667,
+      "h": 32.89,
+      "text": "怎样产生局部修改",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "共同可观察行为是桥梁；参数空间无需相同",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e019"
+    }
+  ],
+  "notes": "精简版第 6 页，对应研究版第 12 页。\n\n参数不同不代表不能交换学习效应；但必须先找到共同可观测的行为坐标。\n\n原稿画面要求：答案消息、行为方向、更新规则三个不同对象。\n\n来源（PLAN_ROOT 相对路径）：\nmedia/01_36页研究版逐页脚本.md#第12页\nhypotheses/H37_跨模型学习方向运输.md\nhypotheses/H38_可传递的可塑性规则.md\n\n已核验近邻来源（仅支持先行工作，不证明本项目效果）：\nhttps://arxiv.org/abs/1503.02531\nhttps://arxiv.org/abs/1606.04474\nhttps://arxiv.org/abs/2106.02997\nhttps://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf\n\n研究状态：NOT_RUN。此页是定义、条件命题或解析示意，无模型实测。",
+  "sources": [
+    "media/01_36页研究版逐页脚本.md",
+    "research_slide_12"
+  ],
+  "research_state": "NOT_RUN",
+  "source_research_slide": 12
+}

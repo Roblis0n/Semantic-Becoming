@@ -1,0 +1,71 @@
+{
+  "task_id": "L11",
+  "status": "done",
+  "input_digest": "b9b033462dee4edae18a55941e82b69c846b90d70a930e54409066f3da8a7d0b",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/uncertainty/README.md",
+      "sha256": "0947aaa56755ace361c00276d4a200b726e64d80a07ca835663bafed5336f696",
+      "bytes": 4047
+    },
+    {
+      "path": "src/latent_comm/learning/uncertainty/__init__.py",
+      "sha256": "221a24267a9d3aacc94780618976c8d44e22e8c8b24166a23e66668bdc6c5cf6",
+      "bytes": 12946
+    },
+    {
+      "path": "src/latent_comm/learning/uncertainty/train.py",
+      "sha256": "578adaa46afd12862fdfa2e36f8c9be9fcf3c67ea3a910b5cd9537646aa276af",
+      "bytes": 2426
+    },
+    {
+      "path": "configs/learning/uncertainty.json",
+      "sha256": "6dca8dd32a157cb1e5924de9e8a81d51c94cbd0a71c7d31511232cf82ca13692",
+      "bytes": 1837
+    },
+    {
+      "path": "tests/research_locked/test_learning_uncertainty.py",
+      "sha256": "61b659e04b9bba082c8873522c7d14033f667a6657e2dfe040d44b8bfb2511e5",
+      "bytes": 3714
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L11_uncertainty.txt",
+      "sha256": "56de826d02a255e178667647589d417f5fbfa092cd936292f0a741d961d8eaa1"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    },
+    {
+      "path": "run_state/checks/A03_finite_json_revalidation/test_learning_uncertainty.txt",
+      "sha256": "11ed41ad6358f2cfe9904efa41f8633d6887e402a42df7809fd9f5f198e56275"
+    },
+    {
+      "path": "run_state/checks/final_mechanism_revalidation/test_learning_uncertainty.txt",
+      "sha256": "c9322ea09119f75c0619931bee8d8f9500dba535f3f8dd2e4e2e695981f0a955"
+    },
+    {
+      "path": "scripts/run_allowed_contracts.py",
+      "sha256": "fb6550b458c8b60d08ee842a12149e18c385460c99b9315913383357b22d917c"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "W12 minimax legal query learning without an invented prior, certified-only finite exclusion masks/retraction, and W07 query-relative approximate clusters separate from exact quotient construction. Eight AST/metadata/finite checks; no research/model/guard calls. Shared optimization/resume source pinned; NOT_RUN. Strict compiler finite-JSON repair revalidated 2026-10-24; unchanged finite semantic paths passed with no neural imports. Final H41/H42/H43/H44/H46/H47/H48 source-contract repair revalidated 2026-10-24. Current guarded-call-excluding runner and no-neural imports; finite semantics preserved, research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T18:16:12.611141+00:00"
+}

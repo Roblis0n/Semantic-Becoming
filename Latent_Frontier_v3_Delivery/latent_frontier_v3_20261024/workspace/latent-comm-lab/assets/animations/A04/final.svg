@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H37：从行为变化求目标更新</title><desc id="desc">实现 16/17，残差 1/17。残差没有被隐藏。下一步：不把手算示例写成模型结果</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H37：从行为变化求目标更新</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">J_B = 4，v = 1；仅为标量解析例</tspan>
+</text>
+<polyline id="e003" points="64,658 1216,658" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">A04</tspan>
+</text>
+<rect id="e006" x="64" y="600" width="1152" height="47" rx="0" fill="#FFFCF5" stroke="#CECDBF" stroke-width="0" />
+<text id="e007" x="64" y="240.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="64" dy="0">目标行为</tspan>
+</text>
+<text id="e008" x="64" y="312.76" font-family="Noto Sans CJK SC" font-size="53" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="64" dy="0">v = 1</tspan>
+</text>
+<text id="e009" x="500" y="240.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="500" dy="0">目标参数变化</tspan>
+</text>
+<text id="e010" x="500" y="312.76" font-family="Noto Sans CJK SC" font-size="53" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="500" dy="0">δ = 4/17</tspan>
+</text>
+<text id="e011" x="950" y="240.6" font-family="Noto Sans CJK SC" font-size="30" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="950" dy="0">实现的行为</tspan>
+</text>
+<text id="e012" x="950" y="303.56" font-family="Noto Sans CJK SC" font-size="43" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="950" dy="0">4δ = 16/17</tspan>
+</text>
+<polyline id="e013" points="135,420 1100,420" fill="none" stroke="#CECDBF" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e014" points="135,420 1043.235294117647,420" fill="none" stroke="#536647" stroke-width="7" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e015" x="120" y="478.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="120" dy="0">0</tspan>
+</text>
+<text id="e016" x="1080" y="478.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="1080" dy="0">1</tspan>
+</text>
+<text id="e017" x="64" y="554.44" font-family="Noto Sans CJK SC" font-size="32" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">λ = 1：δ = 4/17，4δ = 16/17，残差 = 1/17</tspan>
+</text>
+<text id="phase_feedback" x="77" y="626.16" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="77" dy="0">实现 16/17，残差 1/17。残差没有被隐藏。</tspan>
+</text>
+<rect id="time_progress" x="64" y="653" width="1152" height="3" rx="0" fill="#9C5138" stroke="none" stroke-width="0" />
+</svg>

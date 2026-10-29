@@ -1,0 +1,12 @@
+AST parsed 6 dedicated source modules. Tensor paths NOT_RUN.
+test_analytic_stability (test_h28.H28Contracts.test_analytic_stability) ... ok
+test_branch_bounds_and_schema (test_h28.H28Contracts.test_branch_bounds_and_schema) ... ok
+test_gate (test_h28.H28Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h28.H28Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_numerical_artifact_detected (test_h28.H28Contracts.test_numerical_artifact_detected) ... ok
+test_structure_event_and_cache_invalidation (test_h28.H28Contracts.test_structure_event_and_cache_invalidation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.006s
+
+OK

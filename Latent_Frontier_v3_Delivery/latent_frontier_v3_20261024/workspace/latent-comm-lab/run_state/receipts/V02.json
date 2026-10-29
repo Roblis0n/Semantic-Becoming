@@ -1,0 +1,925 @@
+{
+  "task_id": "V02",
+  "status": "done",
+  "input_digest": "39fca3890e8d44129ff76c100eeafa65e4ee0576e45959f63a609a0291df8187",
+  "outputs": [
+    {
+      "path": "assets/slides/README.md",
+      "sha256": "2a6f562fe027df6389bdd382e487b29e4975f3717492592cc48a58941c27994d",
+      "bytes": 1374
+    },
+    {
+      "path": "assets/slides/brief_12.pptx",
+      "sha256": "4f389fa6417797e84e77230c97db5b932d173856914c5530839787d30589fe9a",
+      "bytes": 86834
+    },
+    {
+      "path": "assets/slides/brief_12.source.json",
+      "sha256": "d1fd3321c20ebbfa132f7eeba109e85339320632fde15472f426458ce118fda6",
+      "bytes": 114545
+    },
+    {
+      "path": "assets/slides/build/brief_12_review/candidate.pptx",
+      "sha256": "4f389fa6417797e84e77230c97db5b932d173856914c5530839787d30589fe9a",
+      "bytes": 86834
+    },
+    {
+      "path": "assets/slides/build/brief_12_review/candidate.pptx.inspect.ndjson",
+      "sha256": "9ee20a7af29a168730cda3dea04881e6ad2514ad00b67e333c460b00b3b11306",
+      "bytes": 91748
+    },
+    {
+      "path": "assets/slides/build/brief_12_review/validation.json",
+      "sha256": "f363897146a4017984e1ffa8b3edd629cde72c46bf3034913e2ce26808dfd750",
+      "bytes": 3859
+    },
+    {
+      "path": "assets/slides/build/export.log",
+      "sha256": "c473ecaa333b98ee365b3302b0c9c9b6346ad6a958d6a7e6d1279d97bbe0111d",
+      "bytes": 16216
+    },
+    {
+      "path": "assets/slides/build/export_decks.mjs",
+      "sha256": "dfe01935c301afbecbe21fedb963fb318ae9d8105e4eaff7ddf8d9c74940246d",
+      "bytes": 3911
+    },
+    {
+      "path": "assets/slides/build/export_final.log",
+      "sha256": "1b1ca26a83e5986c0e682072fb48662356412f312807d6efade794f3e77d2d4e",
+      "bytes": 8572
+    },
+    {
+      "path": "assets/slides/build/export_review.log",
+      "sha256": "96aeaa236e6a00acf4f965332306a63f34129a62a5d6040cc44a9502cbf0d299",
+      "bytes": 8641
+    },
+    {
+      "path": "assets/slides/build/export_v2.log",
+      "sha256": "1615f8d5ea1f469c3843d83e043cb4e2a48da2e7421bbd2fce6397b181aafb93",
+      "bytes": 2200
+    },
+    {
+      "path": "assets/slides/build/export_v2_retry.log",
+      "sha256": "af25b6d7f89d303a7ff93725edf14225cff98c75f2878d43900358cebea96adf",
+      "bytes": 8554
+    },
+    {
+      "path": "assets/slides/build/export_v3.log",
+      "sha256": "ae118d187cc975c8b2a8ff505b113da4867f7c8bd122eb093c3c329b7d064369",
+      "bytes": 8554
+    },
+    {
+      "path": "assets/slides/build/libreoffice_export.log",
+      "sha256": "d00be9906339ca49d5b43e01132e378a22c53a8a0381d377db4a936b84d53728",
+      "bytes": 2438
+    },
+    {
+      "path": "assets/slides/build/libreoffice_final_export.log",
+      "sha256": "914678aab842f0fa53fbce7067815e695abe705a04c7ef4ff1ec1aa3253ae6c5",
+      "bytes": 2450
+    },
+    {
+      "path": "assets/slides/build/libreoffice_review_export.log",
+      "sha256": "5e7fa7955093c6ab9f1264e35ad365dad7de1245324d68c41627de33b3f0ae3a",
+      "bytes": 2452
+    },
+    {
+      "path": "assets/slides/build/libreoffice_verified_export.log",
+      "sha256": "e356403da2bb7f666a6aa6b19172cb0834ba4d9c96f5cfd1b2aea6bee14eef1b",
+      "bytes": 2456
+    },
+    {
+      "path": "assets/slides/build/rebuild.sh",
+      "sha256": "ac95f0ed0be4a1fd991a4b3a5eb83269ba9a8d441cb830f123f9007a8adae08e",
+      "bytes": 573
+    },
+    {
+      "path": "assets/slides/build/research_36_review/candidate.pptx",
+      "sha256": "b1fb8feeabdc38d684bf5f124cbd67bdf1c2b36cb0e2f9c43bb0549fc1f66ec1",
+      "bytes": 222966
+    },
+    {
+      "path": "assets/slides/build/research_36_review/candidate.pptx.inspect.ndjson",
+      "sha256": "bdd36f51da975b0066ec7c926eca90ba2e3b10f6bf000f6f486125cb5d938819",
+      "bytes": 259176
+    },
+    {
+      "path": "assets/slides/build/research_36_review/validation.json",
+      "sha256": "2a73d45d3477e930cf858638950187350cecf18f77b3bdbaac08d67c63ab318f",
+      "bytes": 3860
+    },
+    {
+      "path": "assets/slides/exports_review/brief_12.pptx",
+      "sha256": "4f389fa6417797e84e77230c97db5b932d173856914c5530839787d30589fe9a",
+      "bytes": 86834
+    },
+    {
+      "path": "assets/slides/exports_review/research_36.pptx",
+      "sha256": "b1fb8feeabdc38d684bf5f124cbd67bdf1c2b36cb0e2f9c43bb0549fc1f66ec1",
+      "bytes": 222966
+    },
+    {
+      "path": "assets/slides/media_status.json",
+      "sha256": "54618882f78d7d6a21c894ca75d62268d5c93e6ade258b6b2ea29ebca8e7caf9",
+      "bytes": 457
+    },
+    {
+      "path": "assets/slides/pdf_verified/brief_12.pdf",
+      "sha256": "6963987e7b1cecee9fe24de5cb2523f4ae1cca8310ffa4a971918fc0ae7a7793",
+      "bytes": 397285
+    },
+    {
+      "path": "assets/slides/pdf_verified/research_36.pdf",
+      "sha256": "caa9aaf4302d12459fa65eb3a9603221a3edb165c20ed4f0a84879654e1d4b15",
+      "bytes": 966792
+    },
+    {
+      "path": "assets/slides/research_36.pptx",
+      "sha256": "b1fb8feeabdc38d684bf5f124cbd67bdf1c2b36cb0e2f9c43bb0549fc1f66ec1",
+      "bytes": 222966
+    },
+    {
+      "path": "assets/slides/research_36.source.json",
+      "sha256": "4d0210637809ba6008133a436633023174f22769c6cf54c7dd75edb580f668cf",
+      "bytes": 322756
+    },
+    {
+      "path": "assets/slides/source/brief_01.json",
+      "sha256": "668e781b9ac7052a4c41fec85b85dc7b10ad23a61096a06f6f92e1484c5095ad",
+      "bytes": 5716
+    },
+    {
+      "path": "assets/slides/source/brief_01.svg",
+      "sha256": "3d651d7c17573e2a60c19ac1badcf04ba4d968968523d9d839acd0554a583990",
+      "bytes": 3476
+    },
+    {
+      "path": "assets/slides/source/brief_02.json",
+      "sha256": "813a947b198339cee66652db677ae6e53da5566fff02e75af885ea470ebaf89f",
+      "bytes": 8456
+    },
+    {
+      "path": "assets/slides/source/brief_02.svg",
+      "sha256": "50e4414f9970ded44f9cf5023a52379cfd42064327571e028944e71c483dd418",
+      "bytes": 5046
+    },
+    {
+      "path": "assets/slides/source/brief_03.json",
+      "sha256": "b0fad76c41497dee90239bccedd0f2267bf80cfca297181a4f5189515ca4b629",
+      "bytes": 19206
+    },
+    {
+      "path": "assets/slides/source/brief_03.svg",
+      "sha256": "5b9f2e4fb97fa570aac56eec39a31b9f28f726629156055c6c3058edabfc93a0",
+      "bytes": 12654
+    },
+    {
+      "path": "assets/slides/source/brief_04.json",
+      "sha256": "704deca062811f67568773fc1ad948051c3a9aa8c91b1b33c9f182d9f1356c3d",
+      "bytes": 6227
+    },
+    {
+      "path": "assets/slides/source/brief_04.svg",
+      "sha256": "66fb18d966ea97d44ef5f1eb57179517ef3f4375a9a72fd1e8093d938ccc6409",
+      "bytes": 3481
+    },
+    {
+      "path": "assets/slides/source/brief_05.json",
+      "sha256": "f7a45b41d93163fb00c916bf4c5689d8784d31fd1030a49ed892bfd977228e54",
+      "bytes": 5705
+    },
+    {
+      "path": "assets/slides/source/brief_05.svg",
+      "sha256": "5c40c1a7e13f9e2e9aa7353cf400e134970aaf4795b86965831f6727cb2f112e",
+      "bytes": 3429
+    },
+    {
+      "path": "assets/slides/source/brief_06.json",
+      "sha256": "4bb4ee20e8a913c0d5d5b98437277b5b325e1528ec863db24a7a4b4a968224cd",
+      "bytes": 6771
+    },
+    {
+      "path": "assets/slides/source/brief_06.svg",
+      "sha256": "bbe00e2dfb40a9ff10b1632093013cabb6e8dada4d0d80b6a10da9c701ddd86d",
+      "bytes": 3882
+    },
+    {
+      "path": "assets/slides/source/brief_07.json",
+      "sha256": "ae5ae07a9a525ab5d30c95dff0fed483fa98e8ef75a8f4f4a5ffd00a3172919a",
+      "bytes": 7492
+    },
+    {
+      "path": "assets/slides/source/brief_07.svg",
+      "sha256": "ab0c096c89b6ccc53fa90c9d8280fb65a79c3fb4be9946b0cd699d8a45c841b8",
+      "bytes": 4250
+    },
+    {
+      "path": "assets/slides/source/brief_08.json",
+      "sha256": "a3181142b7df3eddc28cdbcb27afe0d4c633b825997e2e06fa7f4a1a81eb3cde",
+      "bytes": 7056
+    },
+    {
+      "path": "assets/slides/source/brief_08.svg",
+      "sha256": "bd76c7a3649cabb2a0b3e7717b73d01fc5ba7b5149cd974d02e6fd69bfeb0d15",
+      "bytes": 4099
+    },
+    {
+      "path": "assets/slides/source/brief_09.json",
+      "sha256": "e39e7a2694cc7131c61d22d06626c141321d68aaa9fb672f98b9f6b739c607c2",
+      "bytes": 9669
+    },
+    {
+      "path": "assets/slides/source/brief_09.svg",
+      "sha256": "23f996943146ed7b84378e2cd71c19d2c92bccacdf3ff8cf539ed63b214aab89",
+      "bytes": 5641
+    },
+    {
+      "path": "assets/slides/source/brief_10.json",
+      "sha256": "c2c2a5f691bb1b04669537d3c58e52ec93ab12b014fa89994a1d453cd17b0065",
+      "bytes": 13306
+    },
+    {
+      "path": "assets/slides/source/brief_10.svg",
+      "sha256": "39f93689d5399ca55aa6523f2586694bc18a7eb1f145754fb1a7c3441a2eaeb7",
+      "bytes": 4547
+    },
+    {
+      "path": "assets/slides/source/brief_11.json",
+      "sha256": "3952974a50d691932ba115fd39fbb46393e79dcf38a644196fbb0de101f4f296",
+      "bytes": 6815
+    },
+    {
+      "path": "assets/slides/source/brief_11.svg",
+      "sha256": "f5ad21bc21755765be814610533e1fcdae94944abfbcdacf93bce09caf20c8fb",
+      "bytes": 4243
+    },
+    {
+      "path": "assets/slides/source/brief_12.json",
+      "sha256": "b779e9ddc5a3f84f4f2e189c9e2e1ee7a442299d5fb2438438d9931c0f4ef691",
+      "bytes": 7874
+    },
+    {
+      "path": "assets/slides/source/brief_12.svg",
+      "sha256": "42e106f18ae08d731b563195e8aa7d26e5e7295d04a3e9c96f8a6a5aa1afcbb7",
+      "bytes": 4733
+    },
+    {
+      "path": "assets/slides/source/research_01.json",
+      "sha256": "8cc9d7c4f06f72057b73767297929538ec241e412dcb23f91e187d41b4a25a40",
+      "bytes": 5634
+    },
+    {
+      "path": "assets/slides/source/research_01.svg",
+      "sha256": "600b033c9edbdcd075a4f8a45a8cd3bd84dbc0fe688ec5aabd706e6cc904c7ff",
+      "bytes": 3476
+    },
+    {
+      "path": "assets/slides/source/research_02.json",
+      "sha256": "8589110a51b1d31816c1868c73d1e50afb7c364d9fecfd56d06ac850609046b0",
+      "bytes": 5355
+    },
+    {
+      "path": "assets/slides/source/research_02.svg",
+      "sha256": "2d643bb34986bf3cd682c204bd833c28a1c8e2c2a3784733a28a0feba91ff7c6",
+      "bytes": 3395
+    },
+    {
+      "path": "assets/slides/source/research_03.json",
+      "sha256": "3897d83ab235f19b43677d9286b6bdc325ddc8d6e4f56a356b15684e98bef802",
+      "bytes": 7152
+    },
+    {
+      "path": "assets/slides/source/research_03.svg",
+      "sha256": "9b368e569159f9319b0396ca73ac67df414d0552b7aca274238b58ef9142e0cd",
+      "bytes": 4440
+    },
+    {
+      "path": "assets/slides/source/research_04.json",
+      "sha256": "fb7f759a459dc3c140cbdb79e676ab4786b74effb8b611a5a62c0153060609c7",
+      "bytes": 8374
+    },
+    {
+      "path": "assets/slides/source/research_04.svg",
+      "sha256": "bfb3bc0404afb7e0baebf761e1a221e08457b3d600a76570926d05266c9c7a19",
+      "bytes": 5046
+    },
+    {
+      "path": "assets/slides/source/research_05.json",
+      "sha256": "7c55335b0202664326d907ca4a6e39de50ff042535d1c2065e9a0c1a48d4a2be",
+      "bytes": 19124
+    },
+    {
+      "path": "assets/slides/source/research_05.svg",
+      "sha256": "3d434c09542a92ce9ae8da05233477779c961750352f62150a8918953fcbdb66",
+      "bytes": 12654
+    },
+    {
+      "path": "assets/slides/source/research_06.json",
+      "sha256": "1cc6bf223be03a2a53b8a909f1037ea4c16b31a0f0585cbcf7782eed587e4000",
+      "bytes": 6145
+    },
+    {
+      "path": "assets/slides/source/research_06.svg",
+      "sha256": "eb9ae3d3f0e7325f5d273431c67cb38bc0fff478d467debf506fa33f3946e2ac",
+      "bytes": 3481
+    },
+    {
+      "path": "assets/slides/source/research_07.json",
+      "sha256": "f53bbdbcc76e2451685e04f6ac7f301526bc19266804ceebe064e0e8ae841ba3",
+      "bytes": 4662
+    },
+    {
+      "path": "assets/slides/source/research_07.svg",
+      "sha256": "fe550a7c0161f025495a7fd1cc71f857121a24ea0909b4e41994270b0cbbd307",
+      "bytes": 2759
+    },
+    {
+      "path": "assets/slides/source/research_08.json",
+      "sha256": "265ae389fd9651743ea0f5dacaab00af46a64b4898699da2bfd1211f1885084d",
+      "bytes": 8024
+    },
+    {
+      "path": "assets/slides/source/research_08.svg",
+      "sha256": "b771dd935c2741b73459b7dfb701cbe51de07df9ec002cc0295e43a137c91665",
+      "bytes": 4753
+    },
+    {
+      "path": "assets/slides/source/research_09.json",
+      "sha256": "afb63b139066116f69a462d35f3542da97dd1411fce2b232ec76c952d6bceec6",
+      "bytes": 5537
+    },
+    {
+      "path": "assets/slides/source/research_09.svg",
+      "sha256": "fa8d0fe3c6e1e2a108283036c2b195fc02c8eed51e9faf836cd68c5f74dc44a1",
+      "bytes": 3383
+    },
+    {
+      "path": "assets/slides/source/research_10.json",
+      "sha256": "b8c44fcb82420cb53ebf60bc3681832f3bb051506d297d93d0b6586721916e13",
+      "bytes": 5621
+    },
+    {
+      "path": "assets/slides/source/research_10.svg",
+      "sha256": "8dc24d5e0f47ff9d5ab74f65bc0a34a5dcf9588a3a01c1bf21cb8e1909bfbfd8",
+      "bytes": 3429
+    },
+    {
+      "path": "assets/slides/source/research_11.json",
+      "sha256": "58f247dde61966019bc11d4c1f13dea2ca8462a6860b14d2b4b76d7222efb3fb",
+      "bytes": 8829
+    },
+    {
+      "path": "assets/slides/source/research_11.svg",
+      "sha256": "5fdc9af882b22a53fd92b4bbd4ef82c9703d8ef79d1cd98df395a972201c92bf",
+      "bytes": 5064
+    },
+    {
+      "path": "assets/slides/source/research_12.json",
+      "sha256": "497c032572e187b1db9d526b8f353edfc919f21134feda5002946c0a2fdb6214",
+      "bytes": 6687
+    },
+    {
+      "path": "assets/slides/source/research_12.svg",
+      "sha256": "e7fd6d54c562607daf1eeb889daa856bed5f62b312166f14ebc380a220585539",
+      "bytes": 3882
+    },
+    {
+      "path": "assets/slides/source/research_13.json",
+      "sha256": "0750b1d68de83a33bfa41973c199dcb4e2abea9be338d71855989d26f9cd931e",
+      "bytes": 7460
+    },
+    {
+      "path": "assets/slides/source/research_13.svg",
+      "sha256": "6bf9a98c51e0bcec34965c546ca7a02d869b8f40c4cdaa248cd71308aa10fc42",
+      "bytes": 4545
+    },
+    {
+      "path": "assets/slides/source/research_14.json",
+      "sha256": "dcd48df894436a3814a03b0e64fd19f40d3c466ef7f9a6fed475b36cd88ead39",
+      "bytes": 4694
+    },
+    {
+      "path": "assets/slides/source/research_14.svg",
+      "sha256": "69c4b423d159c39e8f58aa400a180db9dff53241c7e962b803658f4de19d8bbe",
+      "bytes": 2950
+    },
+    {
+      "path": "assets/slides/source/research_15.json",
+      "sha256": "178d6c26df7c3917dcca796cc960b18059625f178417e58df279e88c9000d24d",
+      "bytes": 8182
+    },
+    {
+      "path": "assets/slides/source/research_15.svg",
+      "sha256": "42add04c6ebf91fdd36491cb8b580c71837e1423cefad1506fd8b3fe10673918",
+      "bytes": 4870
+    },
+    {
+      "path": "assets/slides/source/research_16.json",
+      "sha256": "bb05101ae75b1ba03861605379a250356fdf21cf54b43774807e3375e08999c7",
+      "bytes": 7728
+    },
+    {
+      "path": "assets/slides/source/research_16.svg",
+      "sha256": "f0590d373252e3771bbc0a4cb81d4157cec2dc59b60ad3948b2496620ebd0b4f",
+      "bytes": 4577
+    },
+    {
+      "path": "assets/slides/source/research_17.json",
+      "sha256": "8b94cc60b652c63947ded14033fd97ccd7d5b287b2ba1a130d51809146b492a0",
+      "bytes": 7408
+    },
+    {
+      "path": "assets/slides/source/research_17.svg",
+      "sha256": "740c1602cb8533221883746e1ec6ec377fe434812cf979e02119569d97af2523",
+      "bytes": 4250
+    },
+    {
+      "path": "assets/slides/source/research_18.json",
+      "sha256": "64e2757a4997e33bca71aa6115a9c3810bca4aa96828f02a57d3b01832eb91bc",
+      "bytes": 6972
+    },
+    {
+      "path": "assets/slides/source/research_18.svg",
+      "sha256": "6939d0311886bf3e00fcbd6f346aa64c820525e13f2161cf13762caf4f02741c",
+      "bytes": 4099
+    },
+    {
+      "path": "assets/slides/source/research_19.json",
+      "sha256": "c0b7ee6ffbd8d3082e3c67542fae896dbffc8073e9b6e92281b20c1bbca433be",
+      "bytes": 6745
+    },
+    {
+      "path": "assets/slides/source/research_19.svg",
+      "sha256": "e0e054b405c722c1652bc7364c85616072148eec822fa4e126df46b6f94b0b83",
+      "bytes": 4040
+    },
+    {
+      "path": "assets/slides/source/research_20.json",
+      "sha256": "828c1bcacc1930bcc76f8f21edc6af3fc873eef6d276a9621dc3f33937c1fac6",
+      "bytes": 6982
+    },
+    {
+      "path": "assets/slides/source/research_20.svg",
+      "sha256": "2caaccc7c95e58a91251ddcc921a0fcd9676e94b0446b44d89ae9f934b9a59a3",
+      "bytes": 4206
+    },
+    {
+      "path": "assets/slides/source/research_21.json",
+      "sha256": "2fcdd691b7e94c3e7ebf15d4861bd4466dda6665c3b87bfac1678d7b8c19194e",
+      "bytes": 7090
+    },
+    {
+      "path": "assets/slides/source/research_21.svg",
+      "sha256": "08b79ace5007bb9b1820ec1f61654d4b9e03473c0b12b511afc0f3e4b8272878",
+      "bytes": 4243
+    },
+    {
+      "path": "assets/slides/source/research_22.json",
+      "sha256": "c812e32ff3828d971aa76fedd838a4cd11d41a4694f5298942690e5942a3c978",
+      "bytes": 8807
+    },
+    {
+      "path": "assets/slides/source/research_22.svg",
+      "sha256": "73c72dc7219599434a9502dfe6c2f1dfa8c99d22b32f5e3f3c534f5226468a76",
+      "bytes": 5266
+    },
+    {
+      "path": "assets/slides/source/research_23.json",
+      "sha256": "37c90c1c3ef826fe9e129469416d0b28da51c1f470c31f71177e8c7fffe55630",
+      "bytes": 9585
+    },
+    {
+      "path": "assets/slides/source/research_23.svg",
+      "sha256": "5ec3efffc990279e06dde9ee536c1bf4619001181613a253e309cb615e97fcd5",
+      "bytes": 5641
+    },
+    {
+      "path": "assets/slides/source/research_24.json",
+      "sha256": "85fac99da85c49c9d644cefd7384752bd0b6edcbbafc5a592172d26e4c59754d",
+      "bytes": 7467
+    },
+    {
+      "path": "assets/slides/source/research_24.svg",
+      "sha256": "9ba10d9f17157ca1ee23198d3f2108be52ee49e90208b9563fac0f55a45cbf0e",
+      "bytes": 4500
+    },
+    {
+      "path": "assets/slides/source/research_25.json",
+      "sha256": "cbab501431e44a9451f1100ee9fa6bcccff3fbfbb5069227976f547d29a148e2",
+      "bytes": 9984
+    },
+    {
+      "path": "assets/slides/source/research_25.svg",
+      "sha256": "3d74cc12e4905ddcc9d96eb7bfe5c432088364b95429f9bcbcb9bccee1cc0fff",
+      "bytes": 6143
+    },
+    {
+      "path": "assets/slides/source/research_26.json",
+      "sha256": "1683f637711fd4836416b9a8e3f0ab6e7657be38d499fa99799c6d5299e18892",
+      "bytes": 5592
+    },
+    {
+      "path": "assets/slides/source/research_26.svg",
+      "sha256": "5f077c7fb9397d830129af133c7d3d0e3f164956c5000cb4c239055a21c1c9a8",
+      "bytes": 3235
+    },
+    {
+      "path": "assets/slides/source/research_27.json",
+      "sha256": "64f3f6c4a5a7622fbff81204dcb732eb7f1422ccf4ca91e6f6ad3da5e9860f94",
+      "bytes": 6994
+    },
+    {
+      "path": "assets/slides/source/research_27.svg",
+      "sha256": "b81e7fe80d67c1a018d8f89fd620b7ecd2a1cae9c248dbee0d6ab4d0a868fd4f",
+      "bytes": 4179
+    },
+    {
+      "path": "assets/slides/source/research_28.json",
+      "sha256": "a7089b558da28fc1e06257733a80d2008063d33fc3e896ac7ca9717f53e6d8b8",
+      "bytes": 13221
+    },
+    {
+      "path": "assets/slides/source/research_28.svg",
+      "sha256": "272551cb47196ca0ea78fea98347842841f112027d6f8ad78c06e8ff5279ef8a",
+      "bytes": 4547
+    },
+    {
+      "path": "assets/slides/source/research_29.json",
+      "sha256": "40f680dec2088dbda630c4b59e0aba149dd2962b727ad885a67ffc6c0f9b1d61",
+      "bytes": 20767
+    },
+    {
+      "path": "assets/slides/source/research_29.svg",
+      "sha256": "4d20bab3b117cc86b18b520a32de7e217d00b94ca43ec94822638455ffb08fc0",
+      "bytes": 7663
+    },
+    {
+      "path": "assets/slides/source/research_30.json",
+      "sha256": "f1cb8ee749d789177e6d7e19d517f06fd747dd8ffc05e1988d27d22df00b6f81",
+      "bytes": 7109
+    },
+    {
+      "path": "assets/slides/source/research_30.svg",
+      "sha256": "f944535836f6db8d2bf7356e5ba8e2c0f9f2cfbea32aacb79f31cb26920e3377",
+      "bytes": 4101
+    },
+    {
+      "path": "assets/slides/source/research_31.json",
+      "sha256": "0bbaf44223f6683d55e27852e09aa751716e745d82b44f78dc8a24e727871ba5",
+      "bytes": 7409
+    },
+    {
+      "path": "assets/slides/source/research_31.svg",
+      "sha256": "f81803b987780b825aa2c99475c5b02b74fd108a2a9de3e8fbf0250f8486289d",
+      "bytes": 4363
+    },
+    {
+      "path": "assets/slides/source/research_32.json",
+      "sha256": "09970c20d3f8f686b0ab4d190ec64b7ce01bbfa65405d82a74ee353ba5c4eb06",
+      "bytes": 12407
+    },
+    {
+      "path": "assets/slides/source/research_32.svg",
+      "sha256": "64dbb74fd8e69dcc8d717a67c6c87bb1ac8014377514404ad992ee2602e06547",
+      "bytes": 7804
+    },
+    {
+      "path": "assets/slides/source/research_33.json",
+      "sha256": "fbe92decfc4bceadb7a03d8bbb2d91ae1ad1e9608c9da14e6dbecf5776edd40b",
+      "bytes": 6730
+    },
+    {
+      "path": "assets/slides/source/research_33.svg",
+      "sha256": "b5bcfd50f220e91ca06037fcd7130657e580f58234f6b31ed305364e25923493",
+      "bytes": 4243
+    },
+    {
+      "path": "assets/slides/source/research_34.json",
+      "sha256": "dd8282d2426437ea9d915194e8d0c2bd05b2d350c4bb7295b5f5b566d8d3259b",
+      "bytes": 8855
+    },
+    {
+      "path": "assets/slides/source/research_34.svg",
+      "sha256": "0b4a972f2e6c836d9845525c3918b61de8782b19ac49c14dd4852bc3e236424e",
+      "bytes": 5431
+    },
+    {
+      "path": "assets/slides/source/research_35.json",
+      "sha256": "f43c6233a070225ecc7112c8569d7fa0bd77e8d5773b99932679aaff169c6382",
+      "bytes": 6543
+    },
+    {
+      "path": "assets/slides/source/research_35.svg",
+      "sha256": "a19e24e311f778079a9ff531c35e7fd8507114531ac51fa846be5324c5049579",
+      "bytes": 4172
+    },
+    {
+      "path": "assets/slides/source/research_36.json",
+      "sha256": "569be79dc58c82afa50e4c3d56e776201d12532362d83fb4d3e7d71912ebc034",
+      "bytes": 7789
+    },
+    {
+      "path": "assets/slides/source/research_36.svg",
+      "sha256": "37229923bed021744765064b491304b4ea4422182cd3a180e83f9e296610dd55",
+      "bytes": 4733
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-01.png",
+      "sha256": "aa7b4f4f17f173e808fa6c02e9a07d25d0099927bc67024c76bcfab00715c1d8",
+      "bytes": 77558
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-02.png",
+      "sha256": "bb3194b6d56ae58ca6cf449fdb5ceb63528a6a1fdb5ce4fc7935ac9ecaae0399",
+      "bytes": 67455
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-03.png",
+      "sha256": "80b2d1cbbfab0ca57e26a31247b2d2072753550b9eac11676f6c7faf2c083fec",
+      "bytes": 86313
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-04.png",
+      "sha256": "5878ba86349e90ef59cc9486d7b2a0978f09cb2c4d3d8b30de155b111bdbc063",
+      "bytes": 78516
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-05.png",
+      "sha256": "07b4335536ae47beaa0db4258e45d4080ded340847a8c47c2df452f1f389e420",
+      "bytes": 96054
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-06.png",
+      "sha256": "714252bb1fcf19d966f80f4ce12e6a5cc71e5b55223cb341e62814ba8b17c5bb",
+      "bytes": 82010
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-07.png",
+      "sha256": "4865e9a5f185e8e6a52dc55a018d53406ec8e2cfcdd90a71b0c57acd2260d7a8",
+      "bytes": 95675
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-08.png",
+      "sha256": "a1e7c44d952b01b3d9820146ab94470c3f56f04f55046d4400ad19516148474d",
+      "bytes": 88872
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-09.png",
+      "sha256": "391fb3c8c9e3ccd3d04dd37bb8aec60d353989642ca5d4161aa9a5db83e27a45",
+      "bytes": 95003
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-10.png",
+      "sha256": "9ba7080191ffab1ee02b79f34c54ca57dd5dbb619368f7ef3bcda35701c8e3f7",
+      "bytes": 76048
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-11.png",
+      "sha256": "677bb638a4e314e7aff2b8e9d4682869ea3e7b2580ecb8f53a63f17e26332557",
+      "bytes": 95377
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12/slide-12.png",
+      "sha256": "88ca84feac9743b14d9f6a220cb5eb1f8df2fe565723a8289758b52a77da1aea",
+      "bytes": 100040
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12_contact_1.jpg",
+      "sha256": "bff1d23b6113cfcae29dea505bd9b4dc1a9cd81343b0f10dc9324911ccd0c19b",
+      "bytes": 224458
+    },
+    {
+      "path": "assets/slides/verified_renders/brief_12_contact_2.jpg",
+      "sha256": "6f1a59eb750a616e02f1b2c0f4f3ca28bdc2b31a4ed03cc1162f5758bfb97716",
+      "bytes": 44715
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-01.png",
+      "sha256": "71418df0569b951da86631a48d2dd8ac55406fb2867a05021e30cb1b3cb81361",
+      "bytes": 77882
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-02.png",
+      "sha256": "c22079ec5568da9f1211229524768e931703dab9d7c16d36395461c5232c4c94",
+      "bytes": 95801
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-03.png",
+      "sha256": "804b0a787e261e53cfd8a0d7496a169f798e6a0a2028f05775f808260eccc31a",
+      "bytes": 90439
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-04.png",
+      "sha256": "6e346313664d8aac336b9ef55e84cf1fc84d365f289ca45b1d1ccaa50291a8c9",
+      "bytes": 67840
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-05.png",
+      "sha256": "ba62dab731d330bb524aa2f285f663ebd48067b5353f8b111343d488ae538bfd",
+      "bytes": 86535
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-06.png",
+      "sha256": "e906d6932202022aeb478f114d49fa171672691e41632d92801d581e7e824629",
+      "bytes": 78607
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-07.png",
+      "sha256": "e4f0c8921b56d73ad251c5872d167110b82c13f0421e9903cbb7fb1cd320ea2a",
+      "bytes": 62995
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-08.png",
+      "sha256": "2f9e435106872ea874fb106a96b7896de47944503c81bfd96cef4d9214f137b2",
+      "bytes": 85091
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-09.png",
+      "sha256": "35d89b60351a7564d4963b647b600eb0b1ccf7562aa0989aead9a2ac1fdaa8ed",
+      "bytes": 93645
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-10.png",
+      "sha256": "577125a690092fcf58681acc210029a89abcda1b1a4fbd3031d9a94bbb2807ed",
+      "bytes": 96149
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-11.png",
+      "sha256": "22d27477137dd8ee35815173a68983a52af312cce0df9ca14f4ccb1e638e428d",
+      "bytes": 85838
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-12.png",
+      "sha256": "3cef0a190db282eb4fdcbb1ee951b0cd43ef1e703416f42278ee7d2258e4fce1",
+      "bytes": 82013
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-13.png",
+      "sha256": "844aa9e3fea536ef96a7ac004f148c19d8242de877438352d53ef11471c75b66",
+      "bytes": 98927
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-14.png",
+      "sha256": "1b10dd20902bcda85efb99cc617d89b309f8036ccb2f28b2d892fdb143fedc75",
+      "bytes": 90160
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-15.png",
+      "sha256": "d95e2e8f37c0c3a0d042fb6a7e6f4a98291808ec1ea9753f0c927a9f1aa668ba",
+      "bytes": 86423
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-16.png",
+      "sha256": "13b4d8aaba4e60d328f68f76bb91029ab55b6129bb199f24064fdc13b235f503",
+      "bytes": 93234
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-17.png",
+      "sha256": "6adeb3334b45f04f3654bc71a15217d0728b28ec3b965d0dfab9851f2eef71c0",
+      "bytes": 95750
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-18.png",
+      "sha256": "e6d968ea0dc6e09b78ed9c4ce46a380007905df61adcf8ecfc3d0818c29ceac0",
+      "bytes": 88927
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-19.png",
+      "sha256": "b6625b0b77e01f9ca0ca68adf0e3811ba92eafa8d034f6a30d9eea467f4db82d",
+      "bytes": 77534
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-20.png",
+      "sha256": "a2793f523d0b1029a26541a5bc64088619361ad89a8b317358190e0783c38490",
+      "bytes": 86324
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-21.png",
+      "sha256": "322442a9e3aa83864f0010c70354084725fcc6cda2931b5d05926e1b324af946",
+      "bytes": 91528
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-22.png",
+      "sha256": "a6f0ef885db4e51e3d2688c23960aefefaf6f81b5aa39d9a00e549aca7d1d701",
+      "bytes": 90295
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-23.png",
+      "sha256": "75f53fcb0e2cb0e62b7191a2ff94c83e79a835f24b24b7cbaf2ddfe86344375e",
+      "bytes": 94938
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-24.png",
+      "sha256": "d7cee7e73e3ba31f1383e94de896f4874bc0b7b881c530a57c3f16b061f12038",
+      "bytes": 60004
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-25.png",
+      "sha256": "119280ede175e07fae425a69730b09e25a39010b3ce513d8f0873d03a0268d31",
+      "bytes": 116840
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-26.png",
+      "sha256": "31676f2dfc84ed0bef0222966800d97b0a03d6afa20d3e8e4099b110657c99d4",
+      "bytes": 74050
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-27.png",
+      "sha256": "ea5dafa507edb4aca284ef2ab89ece49b4bd06838c5fa32bb307b9cacc92c58c",
+      "bytes": 71312
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-28.png",
+      "sha256": "bfe60b63a7feb31a05f087c6c8159014168826ddc208df8add2ca48455038c6a",
+      "bytes": 76546
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-29.png",
+      "sha256": "66417b8e79af95e0a00812ae7fd2bd966e7ab71f08738cf0210af721997c60f6",
+      "bytes": 78065
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-30.png",
+      "sha256": "b783b2aae4dc2d7674c5cc1bdd8478dc8e9c99d14703261cbd3a3ff6e4417a79",
+      "bytes": 85806
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-31.png",
+      "sha256": "e4ea8624686d8cf5bc17b1a5c18e7d79d88f91fcd63fd243f64330870d680df2",
+      "bytes": 82031
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-32.png",
+      "sha256": "5b8f8fa1e2b88f42f30122a005d72ab7b1bcb3e084b9dd1ae7952406f1cb442c",
+      "bytes": 107405
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-33.png",
+      "sha256": "7ebe8f89f01875da4135f1b2b540438d8f758811b20abd7bb1101963df88256f",
+      "bytes": 95695
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-34.png",
+      "sha256": "36a645088204db4f3901a20c9d32978057753c3552fceb974633b2a4a58c2c6c",
+      "bytes": 111461
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-35.png",
+      "sha256": "f6926057c372f91df19f9e9d0f761b2b695fa063f57429ebfef945450584e466",
+      "bytes": 108772
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36/slide-36.png",
+      "sha256": "845a938eb38531a61c5174786a3e2510bff943654ed8648cb8974966c6a2640f",
+      "bytes": 100309
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36_contact_1.jpg",
+      "sha256": "f18aa916edfff5737fbefde5178aec8add41dd682a8ec93345466b0ec604ecfd",
+      "bytes": 212279
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36_contact_2.jpg",
+      "sha256": "19c21b2350e4ffd516ebe1c973733f5ceb30b6bb7b9aa54d62ea0e21ced76abf",
+      "bytes": 229242
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36_contact_3.jpg",
+      "sha256": "75c14ef6f2533f67412ccd606c33b171d7dcc7f49315042dd0611100d44f2671",
+      "bytes": 225858
+    },
+    {
+      "path": "assets/slides/verified_renders/research_36_contact_4.jpg",
+      "sha256": "6c230f4d84d7a9525985ea5507711ed22f0c629a457c30ecfa6e0c2dbb7cf391",
+      "bytes": 105022
+    },
+    {
+      "path": "assets/slides/visual_review.json",
+      "sha256": "1c59f0ae3626911c0707d5f162ad11b04479feaf45855c656742392be2439cfc",
+      "bytes": 26555
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V02_validation.json",
+      "sha256": "2fc1860f384af031fa37fad2784239eb23c7e89e3d7110b43e5ab43cf5ac0869"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "36-page research and 12-page brief native-editable PPTX exported, reopened with LibreOffice, all 48 rendered pages actually inspected by author and independent reviewer. No embedded slide screenshots or fonts. Microsoft PowerPoint application not opened.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:19:19.403825+00:00",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "opened_checked": true,
+  "timing_verified": false,
+  "timing_applicable": false,
+  "opened_scope": "Exact native-editable PPTX reopened via LibreOffice; all 48 page pixels visually inspected",
+  "media_status_source": "assets/slides/media_status.json"
+}

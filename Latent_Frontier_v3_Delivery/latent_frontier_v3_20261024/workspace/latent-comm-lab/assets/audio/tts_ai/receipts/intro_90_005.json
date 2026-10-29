@@ -1,0 +1,48 @@
+{
+  "id": "intro_90_005",
+  "edition": "intro_90",
+  "scene_id": "S03",
+  "characters": 12,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "以及答案之间的转换关系。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:12:27.962874+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:12:35 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:12:36.480982+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 97437,
+    "duration_seconds": 2.2094557823129253,
+    "sample_peak": 5175,
+    "sample_rms": 916.2522254570448,
+    "sha256": "f75ead9e9b2ca69af32d5813b071ee47b0bd6049933ef69ae127327823cb4318",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:13:02.291310+00:00"
+}

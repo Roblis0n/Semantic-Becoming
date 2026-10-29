@@ -1,0 +1,17 @@
+test_basis_covariance (test_c13.C13Tests.test_basis_covariance) ... ok
+test_singular_source_basis (test_c13.C13Tests.test_singular_source_basis) ... ok
+test_stale_parameter (test_c13.C13Tests.test_stale_parameter) ... ok
+test_support_query_leak (test_c13.C13Tests.test_support_query_leak) ... ok
+test_token_coordinates_not_anchors (test_c13.C13Tests.test_token_coordinates_not_anchors) ... ok
+test_unreachable_is_preserved (test_c13.C13Tests.test_unreachable_is_preserved) ... ok
+test_unseen_trace_not_training (test_c13.C13Tests.test_unseen_trace_not_training) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.036s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

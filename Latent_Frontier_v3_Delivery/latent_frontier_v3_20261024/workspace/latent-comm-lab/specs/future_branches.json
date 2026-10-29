@@ -1,0 +1,2058 @@
+{
+  "schema_version": 1,
+  "task_id": "D02",
+  "research_state": "NOT_RUN",
+  "empirical_results": [],
+  "mainline_definitions": {
+    "A": "交流产生语言",
+    "B": "交流传递学习能力",
+    "C": "交流创造研究世界",
+    "TRAJECTORY": "轨迹智能保留支线",
+    "SCALE": "多尺度语义保留支线",
+    "BIFURCATION": "认知结构分岔保留支线",
+    "NON_GLOBAL": "无全局世界观保留支线"
+  },
+  "p24_questions": {
+    "subject": "主体还能否变化",
+    "language": "语言还能否变化",
+    "learning": "学习还能否被传递",
+    "world": "世界还能否被合成",
+    "time": "时间还能否不是单向输出"
+  },
+  "source_evidence_scope": "D01 verified primary identities and abstract/targeted content; not exhaustive priority or full-paper proof review. New branches receive no empirical support merely by citing these sources.",
+  "branches": [
+    {
+      "id": "X01-B1",
+      "parent_horizon": "X01",
+      "title": "由行为义务定义迁移身份",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "subject",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "IdentityFiber=(state, public_behavior_contract, pending_obligations, version_path)，身份是声明查询族上的关系而非单一参数文件。",
+      "released_assumption": "固定 checkpoint 是唯一主体边界",
+      "algorithm_steps": [
+        "为每个候选后端定义公共行为读出和待完成义务",
+        "构造局部状态迁移与版本运输边",
+        "逐边记录已保与未保的义务，只有满足约定关系才合并身份引用",
+        "新问题细化身份类而不擦掉旧历史"
+      ],
+      "additional_assumptions": [
+        "存在可恢复的待完成计算",
+        "行为合同范围可显式列出",
+        "迁移保持合同但不必保持全部隐藏状态"
+      ],
+      "preserved_invariant": "外部目标、权限与原历史不可改写。",
+      "separating_witness": "两个后端回答当前问题相同但一个遗失未完成约束；只按终点答案判身份会误合并。",
+      "unproved_bridge": "有限行为等价不足以证明一切未来行为连续，更不推出意识/人格延续。",
+      "nearest_source_ids": [
+        "S02",
+        "S03",
+        "N03"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/identity_continuum.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H05",
+        "H22",
+        "H25",
+        "H39"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X01",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X01-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X01-B2",
+      "parent_horizon": "X01",
+      "title": "可分裂合并的计算义务主体",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "subject",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ObligationHypergraph 的顶点是版本化义务，超边是分工/合并证明；主体由当前义务闭包定义。",
+      "released_assumption": "一个计算主体必须是一个状态持有者",
+      "algorithm_steps": [
+        "把任务成功条件拆为可组合的 typed obligations",
+        "用证明规则生成 split 边并给共享证据单一身份",
+        "各分区独立演算后通过 join 检查跨分区条件",
+        "无法证明可合并时保留多个主体候选而非选多数"
+      ],
+      "additional_assumptions": [
+        "义务分解具有可靠合取/析取规则",
+        "共享约束可以显式检查"
+      ],
+      "preserved_invariant": "合并不丢义务、不把重复证据计成多份。",
+      "separating_witness": "两个分区各自满足资源≤1，却共享同一单位资源；无跨边条件的合并会违反总预算。",
+      "unproved_bridge": "需要超出现有 VersionedStore 的分区语义与可组合完成证书。",
+      "nearest_source_ids": [
+        "N12",
+        "N01",
+        "S21"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/identity_continuum.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H05",
+        "H22",
+        "H25",
+        "H39"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X01",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X01-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X01-B3",
+      "parent_horizon": "X01",
+      "title": "以干预接口定义临时主体边界",
+      "mainlines": [
+        "B",
+        "C"
+      ],
+      "p24_questions": [
+        "subject",
+        "world"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "BoundaryContract=(ports, intervention_family, internal_transition, external_observables)，主体是可替换动力学模块。",
+      "released_assumption": "主体边界等同部署机器或模型名单",
+      "algorithm_steps": [
+        "从联合计算图选择输入输出割集",
+        "明确可允许的内部干预及外部可观察等价",
+        "合并/拆分割集时重写边界与噪声契约",
+        "保持外部干预关系后允许内部模型集合改变"
+      ],
+      "additional_assumptions": [
+        "内部依赖能被边界状态充分概括",
+        "环境干预映射可定义"
+      ],
+      "preserved_invariant": "不把部署边界变化解释为权限扩张。",
+      "separating_witness": "两组合边际输出相同但干预某输入后行为不同，不能视为同一临时主体。",
+      "unproved_bridge": "跨模块因果充分性强于有限输出吻合，真实模型是否可识别未定。",
+      "nearest_source_ids": [
+        "S12",
+        "S13",
+        "N09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/identity_continuum.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H05",
+        "H22",
+        "H25",
+        "H39"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X01",
+        "mainline:B",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X01-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X02-B1",
+      "parent_horizon": "X02",
+      "title": "带覆盖细化的语境知识网",
+      "mainlines": [
+        "A",
+        "NON_GLOBAL"
+      ],
+      "p24_questions": [
+        "language",
+        "subject"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ContextCoverDelta=(old_cover,new_cover,restriction_maps,evidence_scopes)，修订对象是知识适用域而非一个全局答案。",
+      "released_assumption": "冲突只能靠选择一个赢家消除",
+      "algorithm_steps": [
+        "保存每条冲突的作用域和支持",
+        "按候选语境变量拆分覆盖域",
+        "运输各域内仍有效的结论并重算重叠",
+        "只在已证明兼容的交域合并，其他域并存"
+      ],
+      "additional_assumptions": [
+        "语境变量可从允许证据计算",
+        "覆盖修订保持旧命题解释入口"
+      ],
+      "preserved_invariant": "不同世界不被偷偷平均为单一真值。",
+      "separating_witness": "三节点矛盾环可按时间域拆开；若没有时间证据，拆域只是候选假说而非证明。",
+      "unproved_bridge": "如何在自然任务选出有用语境而非无限分裂仍为 H。",
+      "nearest_source_ids": [
+        "S07",
+        "S08",
+        "N06"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/plural_worlds.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H26",
+        "H27",
+        "H36",
+        "H48"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X02",
+        "mainline:A",
+        "mainline:NON_GLOBAL"
+      ],
+      "design_check_id": "D02-BRANCH-X02-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X02-B2",
+      "parent_horizon": "X02",
+      "title": "四值支持与反支持的可操作协议",
+      "mainlines": [
+        "A",
+        "NON_GLOBAL"
+      ],
+      "p24_questions": [
+        "language",
+        "world"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "TruthPair(p)=(support,refutation)∈{0,1}²，加上来源 DAG；矛盾与未知分为 (1,1) 和 (0,0)。",
+      "released_assumption": "每个命题只能真或假且矛盾导致任意结论",
+      "algorithm_steps": [
+        "定义有限四值推理规则并逐条列真值表",
+        "独立累积支持与反支持来源",
+        "查询返回双边证据及允许操作，不套经典爆炸规则",
+        "撤回来源后重新计算两个通道"
+      ],
+      "additional_assumptions": [
+        "选定逻辑规则对目标应用可解释",
+        "支持和反支持不混为概率互补"
+      ],
+      "preserved_invariant": "有矛盾不会授权任意动作或覆盖外部目标。",
+      "separating_witness": "同时有 p 和 not p 不能推出无关 q；经典爆炸与此协议可明确区分。",
+      "unproved_bridge": "需要独立核验次协调逻辑的完整近邻；此分支仅提出具体演算对象，不声称发明四值逻辑。",
+      "nearest_source_ids": [
+        "N06",
+        "S21"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/plural_worlds.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H26",
+        "H27",
+        "H36",
+        "H48"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X02",
+        "mainline:A",
+        "mainline:NON_GLOBAL"
+      ],
+      "design_check_id": "D02-BRANCH-X02-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X02-B3",
+      "parent_horizon": "X02",
+      "title": "可计算高阶拼合障碍",
+      "mainlines": [
+        "A",
+        "NON_GLOBAL"
+      ],
+      "p24_questions": [
+        "language",
+        "world"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "CellularTheoryComplex=(C0,C1,C2,delta0,delta1,anchors)，新增胞腔与边界算子，不再只存图残差。",
+      "released_assumption": "成对 overlap 足够描述所有兼容条件",
+      "algorithm_steps": [
+        "给三方共同语境定义二胞腔",
+        "构造 delta1 并逐项检查 delta1 delta0=0",
+        "将仿射需求投到商空间，保存障碍代表及度量独立类别",
+        "比较扩变量、细分覆盖和证据撤回如何改变障碍类"
+      ],
+      "additional_assumptions": [
+        "高阶语境有明确定义",
+        "边界映射满足复形关系",
+        "锚的相对复形被正确处理"
+      ],
+      "preserved_invariant": "数值残差大小与上同调类保持分开。",
+      "separating_witness": "同一图在不同内积下残差范数不同；若据此宣称拓扑障碍变化就混淆了对象。",
+      "unproved_bridge": "自然语言的限制映射与高阶关系未识别，不能把现有 glue 输出改名为 H1。",
+      "nearest_source_ids": [
+        "S07",
+        "S08"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/plural_worlds.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H26",
+        "H27",
+        "H36",
+        "H48"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X02",
+        "mainline:A",
+        "mainline:NON_GLOBAL"
+      ],
+      "design_check_id": "D02-BRANCH-X02-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X03-B1",
+      "parent_horizon": "X03",
+      "title": "测量程序先于问题答案",
+      "mainlines": [
+        "A",
+        "C"
+      ],
+      "p24_questions": [
+        "language",
+        "world"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "MeasurementProgram=(observable_AST, allowed_actions, noise_model, answer_relation)，问题新增可操作观测而非同义改写。",
+      "released_assumption": "可问问题的响应坐标必须预先固定",
+      "algorithm_steps": [
+        "检测现有查询族无法区别的机制对",
+        "在受限测量语法中生成新 observables",
+        "对候选计算似然分区及作用域",
+        "将新测量编入问题图并保留权限等待边界"
+      ],
+      "additional_assumptions": [
+        "新测量能从允许信息取得响应",
+        "响应模型足够明确"
+      ],
+      "preserved_invariant": "未授权外部实验只生成方案，不执行。",
+      "separating_witness": "y=x 与 y=−x 在 x=0 无法区分；允许 x=1 后分开，而改写措辞不分开。",
+      "unproved_bridge": "现实测量可行性与响应正确性是新假设，有限 IG 不证明发明了有效科学实验。",
+      "nearest_source_ids": [
+        "S20",
+        "N12",
+        "S12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/problem_invention.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H29",
+        "H30",
+        "H45"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X03",
+        "mainline:A",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X03-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X03-B2",
+      "parent_horizon": "X03",
+      "title": "带可靠回译的对偶问题网络",
+      "mainlines": [
+        "A"
+      ],
+      "p24_questions": [
+        "language",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ProblemSpan=(Q,auxiliary_space,Qprime,forward_relation,answer_backtranslation)，允许多值而非单一函数改写。",
+      "released_assumption": "任何好问题改写都必须是双射",
+      "algorithm_steps": [
+        "把问题约束提升到含辅助见证的共同空间",
+        "构造投影和回译关系",
+        "分别证明可靠性、覆盖性及缺失解",
+        "按关系复合生成不同领域的问题路线"
+      ],
+      "additional_assumptions": [
+        "有限或可证规则支持关系组合",
+        "中间实例域相容"
+      ],
+      "preserved_invariant": "未证明的边不得自动升级为等价。",
+      "separating_witness": "平方根正支可靠但丢负支；span 保留符号见证才能完整回译。",
+      "unproved_bridge": "哪些关系扩张能使自然任务更易解仍未知；不是宣称一般程序等价可判。",
+      "nearest_source_ids": [
+        "N12",
+        "N11",
+        "S13"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/problem_invention.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H29",
+        "H30",
+        "H45"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X03",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X03-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X03-B3",
+      "parent_horizon": "X03",
+      "title": "反向生成可解性证据的问题族",
+      "mainlines": [
+        "A",
+        "C"
+      ],
+      "p24_questions": [
+        "language",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "QuestionConstructor=(witness_program, constraint_generator, proof_of_inclusion)，先构造有解见证再反推问题，但隐藏见证只留监督侧。",
+      "released_assumption": "问题只能由外部固定文本提供",
+      "algorithm_steps": [
+        "从受限操作语法生成结构见证",
+        "导出其满足的约束及原问题回译",
+        "剥离见证答案后形成公开问题视图",
+        "保存生成谱系并按结构而非随机种子分族"
+      ],
+      "additional_assumptions": [
+        "见证到约束的导出可靠",
+        "公开视图不会泄露生成解"
+      ],
+      "preserved_invariant": "生成容易答案不等于现实科学发现。",
+      "separating_witness": "把 witness_id 或生成种子喂给 receiver 会让伪推理出现；必须物理隔离。",
+      "unproved_bridge": "可解性不保证研究价值，新的问题分布可能与真实需求脱离。",
+      "nearest_source_ids": [
+        "S09",
+        "S18",
+        "S19"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/problem_invention.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H29",
+        "H30",
+        "H45"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X03",
+        "mainline:A",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X03-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X04-B1",
+      "parent_horizon": "X04",
+      "title": "按可实现切空间路由学习方向",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "learning",
+        "subject"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "TangentRouteGraph 的节点为行为像空间 im J_i，边携带投影、残差及线性化版本。",
+      "released_assumption": "任一接收者都可复制同一参数方向",
+      "algorithm_steps": [
+        "源端给公共行为方向 v",
+        "为各目标计算局部可达投影与残差",
+        "把互补残差分配给其他节点并保存是否可组合的条件",
+        "每次状态更新后重新线性化而非重复旧投影"
+      ],
+      "additional_assumptions": [
+        "各节点共享行为坐标",
+        "多节点作用可按已声明组合律相加或复合"
+      ],
+      "preserved_invariant": "不可达残差不伪装为成功迁移。",
+      "separating_witness": "J1=(1,0)ᵀ、J2=(0,1)ᵀ，各自无法实现 (1,1)；联合可以仅在作用可加假设下完成。",
+      "unproved_bridge": "联合行为是否可加、组合后 Jacobian 是否仍适用都未证明。",
+      "nearest_source_ids": [
+        "N08",
+        "S16",
+        "S12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/plasticity_network.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H31",
+        "H37",
+        "H38",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X04",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X04-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X04-B2",
+      "parent_horizon": "X04",
+      "title": "带度量契约的更新运输",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "learning",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "MetricUpdate=(v,W,M,anchor_version)，把行为度量与参数度量作为协议对象。",
+      "released_assumption": "所有参数坐标下的欧氏步长都是同一个学习规则",
+      "algorithm_steps": [
+        "声明行为 W 与参数正定 M",
+        "求 (JᵀWJ+lambda M)delta=JᵀWv",
+        "换参数坐标时运输 M 为 G^-T M G^-1",
+        "对范数约束和信赖域共同换坐标"
+      ],
+      "additional_assumptions": [
+        "度量来源和正定性可验证",
+        "线性化局部有效"
+      ],
+      "preserved_invariant": "同一代价和作用不因坐标缩放被偷偷改变。",
+      "separating_witness": "把参数放大 100 倍而仍用单位 ridge 会改变更新；运输度量才能保该问题。",
+      "unproved_bridge": "与自然梯度及几何优化的全文优先权审查尚缺，标准加权解不主张原创。",
+      "nearest_source_ids": [
+        "S16",
+        "N08",
+        "S06"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/plasticity_network.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H31",
+        "H37",
+        "H38",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X04",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X04-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X04-B3",
+      "parent_horizon": "X04",
+      "title": "用操作模拟关系运输学习规则",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "learning",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "PlasticitySimulation=(source_rule,target_rule,state_relation,step_witness)，运输的是多步更新程序而非一次梯度。",
+      "released_assumption": "相同规则 AST 在异构参数组上必有相同意义",
+      "algorithm_steps": [
+        "为两端规则状态和局部统计定义关系 R",
+        "编译目标规则或增加显式记忆变量",
+        "验证每个源更新能由有限目标步模拟并保持公共行为关系",
+        "失败时返回最短规则反例和未覆盖域"
+      ],
+      "additional_assumptions": [
+        "支持统计可对应",
+        "更新域可显式映射",
+        "模拟步数有限"
+      ],
+      "preserved_invariant": "规则不能读取 query 标签或扩张写权限。",
+      "separating_witness": "同样 momentum 系数但一端 memory 被重置，会破坏第二步作用；单步匹配看不出。",
+      "unproved_bridge": "局部规则模拟能否带来实际学习收益仍为 H，不是免费跨模型元学习。",
+      "nearest_source_ids": [
+        "S16",
+        "N04",
+        "N12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/plasticity_network.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H31",
+        "H37",
+        "H38",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X04",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X04-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X05-B1",
+      "parent_horizon": "X05",
+      "title": "概念迁移成为双向部分透镜",
+      "mainlines": [
+        "A"
+      ],
+      "p24_questions": [
+        "language",
+        "subject"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "OntologyLens=(get,put,domain,unknown_policy,version_pair)，明确何时可往返、何时损失。",
+      "released_assumption": "旧新本体只能用 ID 重命名衔接",
+      "algorithm_steps": [
+        "定义旧到新解释 get",
+        "为可更新的公共字段定义部分 put",
+        "在指定域检查 get-put 与 put-get 条件",
+        "不满足条件的分裂保留集合映射或 unknown"
+      ],
+      "additional_assumptions": [
+        "存在可计算公共字段",
+        "往返律只在显式域成立"
+      ],
+      "preserved_invariant": "不得从旧粗概念猜测新细类别。",
+      "separating_witness": "旧“钥匙有效”没有期限信息，不能唯一映到“临时/永久”；部分透镜暴露缺失。",
+      "unproved_bridge": "双向变换已有完整文献需后续核查，候选贡献在认知协议生命周期结合。",
+      "nearest_source_ids": [
+        "N12",
+        "N06",
+        "S09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/language_ecology.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H40",
+        "H42",
+        "H44"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X05",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X05-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X05-B2",
+      "parent_horizon": "X05",
+      "title": "有语义承诺的新基底原语",
+      "mainlines": [
+        "A",
+        "B"
+      ],
+      "p24_questions": [
+        "language",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "PrimitiveProposal=(denotation,effect_type,authority,implementation_relation)，区别可展开宏和真正新测量/计算能力。",
+      "released_assumption": "新指令只能是旧程序宏的简称",
+      "algorithm_steps": [
+        "先判断候选是否有旧 ISA lowering",
+        "有 lowering 时只声明描述/搜索复杂度改进",
+        "无 lowering 时给独立数学语义、效果类型和后端能力证明义务",
+        "新权限或外部效果保持未绑定直到单独授权"
+      ],
+      "additional_assumptions": [
+        "新语义可独立定义",
+        "宿主能检查效果范围"
+      ],
+      "preserved_invariant": "语言演化永不自行升级控制面权限。",
+      "separating_witness": "把 shell 调用包装成新 opcode 不构成合法能力增长；纯 add/multiply 宏也不增加可计算函数族。",
+      "unproved_bridge": "不可约新原语可能需要新传感器/后端，尚未实现；不是因宏命名而产生超计算。",
+      "nearest_source_ids": [
+        "S09",
+        "N12",
+        "N04"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/language_ecology.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H40",
+        "H42",
+        "H44"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X05",
+        "mainline:A",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X05-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X05-B3",
+      "parent_horizon": "X05",
+      "title": "问题语言共同扩张的元语法生态",
+      "mainlines": [
+        "A",
+        "C"
+      ],
+      "p24_questions": [
+        "language",
+        "learning",
+        "world"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "MetaGrammarPopulation=(task_grammars,ontology_grammars,compiler_migrations,archive)，变异作用于生成规则而非只有参数。",
+      "released_assumption": "任务和语言的生成语法固定不变",
+      "algorithm_steps": [
+        "让已有概念缺口产生受限语法扩张候选",
+        "生成跨版本任务与编译器迁移义务",
+        "按可表达操作及独立结构描述归档多个生态位",
+        "回放旧公共任务关系以记录而非隐藏遗忘"
+      ],
+      "additional_assumptions": [
+        "元语法自身有类型和终止界",
+        "旧任务具有可回放关系"
+      ],
+      "preserved_invariant": "不以新概念数量或短期总分奖励无限造词。",
+      "separating_witness": "只把 threshold 从 1 改 2 不是新语法；新增量词/关系算子才改变可表达操作且需新语义。",
+      "unproved_bridge": "扩张能否持续产生有用而非作弊任务未证明，保留多分支而不承诺无界进步。",
+      "nearest_source_ids": [
+        "S09",
+        "S18",
+        "S19"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/language_ecology.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H40",
+        "H42",
+        "H44"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X05",
+        "mainline:A",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X05-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X06-B1",
+      "parent_horizon": "X06",
+      "title": "携带记忆核的非闭合宏语义",
+      "mainlines": [
+        "SCALE",
+        "B"
+      ],
+      "p24_questions": [
+        "time",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "MemoryKernelState=(coarse_history,unresolved_initial,memory_operators)，把丢失细节的延迟效应纳入宏对象。",
+      "released_assumption": "粗状态必须是一阶 Markov 且无需历史",
+      "algorithm_steps": [
+        "给 C 和右逆 L 定义 d=x−LCx",
+        "推导粗态与残差联立递推",
+        "消去残差得到有限记忆核与初始项",
+        "截断时记录尾项界或保留未决误差"
+      ],
+      "additional_assumptions": [
+        "线性或可分析动力学",
+        "CL=I",
+        "截断界有明确条件"
+      ],
+      "preserved_invariant": "记忆项不能假称不存在或由零填充消除。",
+      "separating_witness": "同总和的 (1,0),(0,1) 下一步粗态不同；历史/残差可修复但单一总和不行。",
+      "unproved_bridge": "真实语义中的低复杂度记忆核是否存在未定。",
+      "nearest_source_ids": [
+        "N03",
+        "S14",
+        "N09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/multiscale_cognition.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H02",
+        "H25",
+        "H35",
+        "H47"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X06",
+        "mainline:SCALE",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X06-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X06-B2",
+      "parent_horizon": "X06",
+      "title": "以纤维分布而非代表元细化",
+      "mainlines": [
+        "SCALE",
+        "C"
+      ],
+      "p24_questions": [
+        "world",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "FiberBelief(m)=distribution over C^-1(m)，压缩对象携带可识别的不确定性。",
+      "released_assumption": "一个粗态必须对应一个猜定微态",
+      "algorithm_steps": [
+        "构造粗化纤维及条件分布族",
+        "用新查询条件化纤维分布",
+        "若无先验保留候选集合而非伪后验",
+        "把预测不确定性传播到宏动力学"
+      ],
+      "additional_assumptions": [
+        "条件分布来源可解释或保留集合",
+        "观察模型显式"
+      ],
+      "preserved_invariant": "不把重新采样的微态称恢复原微态。",
+      "separating_witness": "奇数粗态可由 1 或 3 产生；抽中 1 不证明原数就是 1。",
+      "unproved_bridge": "可计算的纤维分布可能过大，有限近似及误差需另定义，不以资源困难删除构想。",
+      "nearest_source_ids": [
+        "N03",
+        "S14",
+        "N05"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/multiscale_cognition.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H02",
+        "H25",
+        "H35",
+        "H47"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X06",
+        "mainline:SCALE",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X06-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X06-B3",
+      "parent_horizon": "X06",
+      "title": "随查询演化的尺度选择器",
+      "mainlines": [
+        "SCALE",
+        "A"
+      ],
+      "p24_questions": [
+        "language",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ScalePolicy=(query_set,partition_refinement,closure_obligations)，新问题触发新尺度而非固定层级。",
+      "released_assumption": "所有任务共用永久不变的语义粒度",
+      "algorithm_steps": [
+        "从当前 query 签名建商结构",
+        "发现新增查询切开旧等价类",
+        "检验细化后动态闭合并生成迁移关系",
+        "没有原始信息时发出信息需求而非编造细节"
+      ],
+      "additional_assumptions": [
+        "可读取保留源信息或获得新观测",
+        "任务变化有明确授权"
+      ],
+      "preserved_invariant": "新增问题只细化既有精确分区，不静默合并。",
+      "separating_witness": "奇偶后加入大于 2 得四类；若存储只有奇偶则必须请求来源。",
+      "unproved_bridge": "如何选择最有用查询和尺度是未证 H，不等同信息瓶颈方法已解决。",
+      "nearest_source_ids": [
+        "S14",
+        "N03",
+        "S20"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/multiscale_cognition.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H02",
+        "H25",
+        "H35",
+        "H47"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X06",
+        "mainline:SCALE",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X06-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X07-B1",
+      "parent_horizon": "X07",
+      "title": "偏序轨迹而非线性轮次",
+      "mainlines": [
+        "TRAJECTORY"
+      ],
+      "p24_questions": [
+        "time",
+        "subject"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "EventTrace=(events,happens_before,read_write_effects,commutation_witnesses)，只对独立操作交换次序。",
+      "released_assumption": "所有计算都必须有唯一全局 token 顺序",
+      "algorithm_steps": [
+        "构造事件依赖 DAG",
+        "对无冲突且作用可交换事件定义等价重排",
+        "把轨迹读出定义在等价类上",
+        "遇到数据依赖或非交换时保留顺序见证"
+      ],
+      "additional_assumptions": [
+        "事件效果可明示",
+        "交换性在声明域成立"
+      ],
+      "preserved_invariant": "并发不绕过读版本或作用域检查。",
+      "separating_witness": "加一和乘二不交换，两个不同变量的独立加一可交换；只按无写冲突仍可能漏读依赖。",
+      "unproved_bridge": "需要与并发迹理论完整比较；当前异步时钟并非已实现此语义商。",
+      "nearest_source_ids": [
+        "N01",
+        "N12",
+        "N10"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/trajectory_semantics.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H20",
+        "H33",
+        "H34",
+        "H05"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X07",
+        "mainline:TRAJECTORY"
+      ],
+      "design_check_id": "D02-BRANCH-X07-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X07-B2",
+      "parent_horizon": "X07",
+      "title": "相位关系承载可恢复计算状态",
+      "mainlines": [
+        "TRAJECTORY"
+      ],
+      "p24_questions": [
+        "time",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "PhaseRelationState=(torus_coordinates,relative_phase,window_readout,noise_contract)，状态在循环相位关系而非终点。",
+      "released_assumption": "有意义计算必须收敛到固定点",
+      "algorithm_steps": [
+        "规定耦合振子与允许读出",
+        "将共同相位平移取商而保留相对相位",
+        "用事件触发调整耦合并记录轨迹段",
+        "检查扰动和步长伪迹，保留不收敛但可区分读出"
+      ],
+      "additional_assumptions": [
+        "稳定相位关系可定义",
+        "读出区分与任务有可验证联系"
+      ],
+      "preserved_invariant": "不把振荡本身当智能或意识证据。",
+      "separating_witness": "两个循环终点同但相位延迟不同；终点读取丢信息，窗口读出可区别。",
+      "unproved_bridge": "相位编码是否能在真实模型间提供有用计算完全未验证。",
+      "nearest_source_ids": [
+        "S10",
+        "N10"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/trajectory_semantics.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H20",
+        "H33",
+        "H34",
+        "H05"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X07",
+        "mainline:TRAJECTORY"
+      ],
+      "design_check_id": "D02-BRANCH-X07-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X07-B3",
+      "parent_horizon": "X07",
+      "title": "公开终端条件下的路径分布推理",
+      "mainlines": [
+        "TRAJECTORY",
+        "C"
+      ],
+      "p24_questions": [
+        "time",
+        "world"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "PathMeasure=(transition_factors,public_boundary,normalizer,branch_weights)，从单条最优路径扩成条件轨迹集合。",
+      "released_assumption": "推理只能前向生成唯一答案轨迹",
+      "algorithm_steps": [
+        "给有限转移概率和公开终端事件",
+        "计算前向和后向消息与归一常数",
+        "保留多条后验路径而非立即坍缩",
+        "零归一常数时返回边界不相容"
+      ],
+      "additional_assumptions": [
+        "核和边界来源合法",
+        "状态包含足够历史满足 Markov 分解"
+      ],
+      "preserved_invariant": "后向约束不获得未观测未来信息。",
+      "separating_witness": "0 到 2 三步允许停留，有多条可行轨迹；把第一条当唯一解会丢不确定性。",
+      "unproved_bridge": "双向消息已有，候选 H 在跨模型路径协议和读出，不是逆因果。",
+      "nearest_source_ids": [
+        "N13",
+        "N12",
+        "N09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/trajectory_semantics.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H20",
+        "H33",
+        "H34",
+        "H05"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X07",
+        "mainline:TRAJECTORY",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X07-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X08-B1",
+      "parent_horizon": "X08",
+      "title": "剩余证明义务的可迁移切片",
+      "mainlines": [
+        "A"
+      ],
+      "p24_questions": [
+        "time",
+        "subject"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ProofContinuation=(proved_lemmas,open_goals,context,proof_kernel_version)，不是最后一段解释文本。",
+      "released_assumption": "中途推理只能保存摘要或 KV",
+      "algorithm_steps": [
+        "把已证与猜测分别注册",
+        "按依赖切片提取最小可接续上下文",
+        "目标端用同一或有验证翻译的证明内核接管",
+        "只消解实际完成义务并保留未解分支"
+      ],
+      "additional_assumptions": [
+        "有受限可检查证明演算",
+        "上下文和内核版本可迁移"
+      ],
+      "preserved_invariant": "猜测不升级为已证，目标不被替换。",
+      "separating_witness": "摘要写“显然成立”却无引理依赖，不能算续接了证明。",
+      "unproved_bridge": "自然语言研究中的未完成发现如何形式化仍为 H，不要求所有探索先形式化才允许存在。",
+      "nearest_source_ids": [
+        "N12",
+        "S03",
+        "N06"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/discovery_continuations.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H05",
+        "H13",
+        "H29",
+        "H46"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X08",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X08-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X08-B2",
+      "parent_horizon": "X08",
+      "title": "带前提的整簇排除证书",
+      "mainlines": [
+        "A",
+        "B"
+      ],
+      "p24_questions": [
+        "time",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "NoGoodRegion=(predicate,assumptions,certificate,domain_version)，迁移整个失败区域而非单一坏答案。",
+      "released_assumption": "历史失败只能记为失败样本",
+      "algorithm_steps": [
+        "把失败推导压成可检查排除条件",
+        "目标端证明当前任务蕴含 required constraint",
+        "在许可域剪枝并记录受影响分支",
+        "前提撤回后从原候选域恢复"
+      ],
+      "additional_assumptions": [
+        "证书覆盖被剪区域",
+        "必要条件关系可检查"
+      ],
+      "preserved_invariant": "timeout 或置信评分不成为硬排除。",
+      "separating_witness": "排除所有奇数只在偶数约束有效；撤回约束必须恢复奇数。",
+      "unproved_bridge": "模型能否提出广泛但正确区域证书未验证。",
+      "nearest_source_ids": [
+        "N06",
+        "N14",
+        "N12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/discovery_continuations.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H05",
+        "H13",
+        "H29",
+        "H46"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X08",
+        "mainline:A",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X08-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X08-B3",
+      "parent_horizon": "X08",
+      "title": "可并存的猜想修订谱系",
+      "mainlines": [
+        "A"
+      ],
+      "p24_questions": [
+        "time",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ConjectureLineage=(claim_versions,refutations,repair_transformations,open_bridges)，保留相互竞争的修订而不单线覆盖。",
+      "released_assumption": "反例到来后只能抹掉旧猜想或选唯一新猜想",
+      "algorithm_steps": [
+        "保存原猜想精确作用域",
+        "生成加强、弱化、分域与新增变量的不同修订",
+        "逐条标明对旧问题的关系",
+        "允许多个后继继续生成义务，来源撤回时重算"
+      ],
+      "additional_assumptions": [
+        "修订关系可表达",
+        "未决桥梁可版本化追踪"
+      ],
+      "preserved_invariant": "不把修订后的正确命题归功于原错误命题。",
+      "separating_witness": "“偶数都被4整除”可弱化域、反转蕴含或增加变量，三者不是同一个修复。",
+      "unproved_bridge": "怎样选择有研究生产力的谱系未定，不能以多数票定理论真伪。",
+      "nearest_source_ids": [
+        "N06",
+        "N14",
+        "S09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/discovery_continuations.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H05",
+        "H13",
+        "H29",
+        "H46"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X08",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X08-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X09-B1",
+      "parent_horizon": "X09",
+      "title": "因果机制接枝形成新世界",
+      "mainlines": [
+        "C"
+      ],
+      "p24_questions": [
+        "world",
+        "subject"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "GraftWorld=(local_SCMs,boundary_units,shared_noise,intervention_map)，多个源各持部分方程。",
+      "released_assumption": "一个世界必须由单个完整生成器先存在",
+      "algorithm_steps": [
+        "定义各模块父边界和单位",
+        "检查联合 DAG 与共享噪声身份",
+        "拼合并仅重算受影响后代",
+        "给每项可干预结论保留模块来源"
+      ],
+      "additional_assumptions": [
+        "模块方程可执行且边界正确",
+        "联合噪声给定"
+      ],
+      "preserved_invariant": "合成世界不继承现实真实性标签。",
+      "separating_witness": "独立抽两份天气噪声改变两个传感器联合行为，即使边缘不变。",
+      "unproved_bridge": "自然模型中识别模块是强假设，有限 SCM 接枝不证明已找到它。",
+      "nearest_source_ids": [
+        "S12",
+        "S13",
+        "N09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/shared_dreams.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H31",
+        "H42",
+        "H43",
+        "H44"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X09",
+        "mainline:C"
+      ],
+      "design_check_id": "D02-BRANCH-X09-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X09-B2",
+      "parent_horizon": "X09",
+      "title": "世界规律的对抗边界生成器",
+      "mainlines": [
+        "C",
+        "A"
+      ],
+      "p24_questions": [
+        "world",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "CounterfactualBoundarySearch=(kernel_edit_grammar,distinguishing_queries,validity_constraints)，搜索改变哪条机制才改变结论。",
+      "released_assumption": "想象只用于生成更多同分布样本",
+      "algorithm_steps": [
+        "枚举受限机制编辑而非表面文本变化",
+        "保持类型与归一性，更新 world_id",
+        "寻找两个世界在允许查询上的最小区分见证",
+        "把新问题及编辑谱系返回给概念/规则系统"
+      ],
+      "additional_assumptions": [
+        "允许比较的机制编辑有清晰语义",
+        "查询不能泄露生成答案"
+      ],
+      "preserved_invariant": "自造反例只反驳合成世界内主张，不直接推翻现实事实。",
+      "separating_witness": "将门从单向改双向改变可达性；仅给节点重命名不产生新的规律。",
+      "unproved_bridge": "生成差异不等于科学重要性，价值判断仍是明确 H。",
+      "nearest_source_ids": [
+        "S18",
+        "S19",
+        "S20"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/shared_dreams.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H31",
+        "H42",
+        "H43",
+        "H44"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X09",
+        "mainline:C",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X09-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X09-B3",
+      "parent_horizon": "X09",
+      "title": "联合噪声不确定性的世界集合",
+      "mainlines": [
+        "C",
+        "NON_GLOBAL"
+      ],
+      "p24_questions": [
+        "world",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "CouplingSet={joint laws with declared marginals and dependence constraints}，消息携带一族世界而非猜定独立联合。",
+      "released_assumption": "给出局部核边缘即可唯一合成世界",
+      "algorithm_steps": [
+        "登记边缘与已知相关约束",
+        "构造可行 coupling 集",
+        "对问题求上下界或找到相反结论的两种 coupling",
+        "选择能缩小 coupling 集的许可查询"
+      ],
+      "additional_assumptions": [
+        "有限约束可表示",
+        "边缘本身可靠或另带误差区间"
+      ],
+      "preserved_invariant": "依赖未知时不返回伪精确概率。",
+      "separating_witness": "两公平比特可相同、相反或独立，P(相等) 可为1、0、.5。",
+      "unproved_bridge": "真实联合依赖能否被低复杂度表示未定；不是靠多模型数量保证识别。",
+      "nearest_source_ids": [
+        "S13",
+        "N13",
+        "S20"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/shared_dreams.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H31",
+        "H42",
+        "H43",
+        "H44"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X09",
+        "mainline:C",
+        "mainline:NON_GLOBAL"
+      ],
+      "design_check_id": "D02-BRANCH-X09-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X10-B1",
+      "parent_horizon": "X10",
+      "title": "能力超边而非单体排名",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "subject",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "CapabilityHypergraph=(input_types,provider_sets,output_types,composition_witness)，能力属于有条件联盟。",
+      "released_assumption": "联合能力必能由单体分数相加得到",
+      "algorithm_steps": [
+        "登记每个组件所需与所产类型",
+        "枚举满足共同输入的超边",
+        "按真实联合任务关系构造价值表，未知留空",
+        "保留互补但单体低分的联盟"
+      ],
+      "additional_assumptions": [
+        "有明确组合操作",
+        "联合价值定义不混淆额外资源"
+      ],
+      "preserved_invariant": "内部信用不是金钱，不能执行对外交易。",
+      "separating_witness": "两人各只有一个 XOR 比特，单源对 XOR 无信息、联合有信息；不等于所有 PID 定义一致。",
+      "unproved_bridge": "联合能力是否能由不同模型实现尚未验证。",
+      "nearest_source_ids": [
+        "N02",
+        "S17"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/cognitive_commons.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H10",
+        "H18",
+        "H41",
+        "H48"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X10",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X10-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X10-B2",
+      "parent_horizon": "X10",
+      "title": "来源商下的贡献分摊",
+      "mainlines": [
+        "B",
+        "NON_GLOBAL"
+      ],
+      "p24_questions": [
+        "subject",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ProvenanceCoalitionGame 将玩家持有的支持 DAG 映到唯一来源/操作贡献，再定义 v(S)。",
+      "released_assumption": "更多转述者就是更多独立贡献",
+      "algorithm_steps": [
+        "规范化共享来源原子",
+        "区分信息支持与操作执行价值",
+        "对完整子集价值计算 Shapley 或标有界估计",
+        "撤回来源后使相关分摊待重算"
+      ],
+      "additional_assumptions": [
+        "来源身份至少局部可追溯",
+        "选择的价值函数符合用途"
+      ],
+      "preserved_invariant": "重复 .8 来源仍是一个事件，非 .96。",
+      "separating_witness": "复制同一来源100次不应增加信息支持，但维护成本可以另计而不能混成真实性。",
+      "unproved_bridge": "预训练相关性不可完全追踪，来源商只能局部成立。",
+      "nearest_source_ids": [
+        "S21",
+        "N06",
+        "S17"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/cognitive_commons.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H10",
+        "H18",
+        "H41",
+        "H48"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X10",
+        "mainline:B",
+        "mainline:NON_GLOBAL"
+      ],
+      "design_check_id": "D02-BRANCH-X10-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X10-B3",
+      "parent_horizon": "X10",
+      "title": "带退出义务的临时计算联盟",
+      "mainlines": [
+        "B"
+      ],
+      "p24_questions": [
+        "subject",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "JoinLeaveContract=(required_state,obligation_transfer,tombstones,exit_conditions)，联盟动态变化时保留计算责任。",
+      "released_assumption": "成员退出仅删除名字不影响程序语义",
+      "algorithm_steps": [
+        "入盟时检查能力、输入与共享预算",
+        "运行中为未完成义务指定接收者",
+        "退出前迁移必要状态或显式中止依赖分支",
+        "版本冲突时保留旧联盟快照而非半迁移"
+      ],
+      "additional_assumptions": [
+        "义务可转移或可中止",
+        "状态迁移在声明合同内可靠"
+      ],
+      "preserved_invariant": "不能让成员退出抹掉来源与责任，不能强迫未授权后端加入。",
+      "separating_witness": "持唯一中间变量的成员退出后其余仍报告完成，是义务丢失反例。",
+      "unproved_bridge": "动态联盟的活性与容错超出现有本地事务保证，需独立设计。",
+      "nearest_source_ids": [
+        "N01",
+        "N12",
+        "N04"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/cognitive_commons.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H10",
+        "H18",
+        "H41",
+        "H48"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X10",
+        "mainline:B"
+      ],
+      "design_check_id": "D02-BRANCH-X10-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X11-B1",
+      "parent_horizon": "X11",
+      "title": "分岔触发而非手工命名的概念分裂",
+      "mainlines": [
+        "A",
+        "BIFURCATION"
+      ],
+      "p24_questions": [
+        "language",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "StructuralBifurcation=(control_parameter,order_observable,branch_atlas,migration)，将结构变量与连续态分开。",
+      "released_assumption": "概念数只能靠预先固定模板指定",
+      "algorithm_steps": [
+        "定义控制参数及状态动力学",
+        "查找稳定解结构变化并排除积分器伪迹",
+        "为不同分支构造新的可计算谓词",
+        "把新旧概念关系作版本迁移，而非改写历史标签"
+      ],
+      "additional_assumptions": [
+        "分支对任务可观察作用不同",
+        "分岔与离散类型变化有明确映射"
+      ],
+      "preserved_invariant": "性能跳点不是热力学相变证据。",
+      "separating_witness": "alpha=0 的导数为0仍可渐近稳定；粗步长产生发散不代表概念诞生。",
+      "unproved_bridge": "数学分岔如何驱动真实认知类型变化尚未证明。",
+      "nearest_source_ids": [
+        "S10",
+        "N10",
+        "S09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/concept_lifecycle.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X11",
+        "mainline:A",
+        "mainline:BIFURCATION"
+      ],
+      "design_check_id": "D02-BRANCH-X11-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X11-B2",
+      "parent_horizon": "X11",
+      "title": "可复活的概念墓志与适用域",
+      "mainlines": [
+        "A"
+      ],
+      "p24_questions": [
+        "language",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "RetiredConcept=(historical_reader,expiry_conditions,reactivation_conditions,evidence_lineage)，退休不是删除定义。",
+      "released_assumption": "概念失效后只能彻底删除或永久保留为真",
+      "algorithm_steps": [
+        "声明失效范围与依赖原因",
+        "把当前 reader 切到替代概念",
+        "保留历史 reader 和迁移失败值",
+        "新证据满足复活条件时创建新版本，不复写旧记录"
+      ],
+      "additional_assumptions": [
+        "适用域和证据变化可记录",
+        "历史解释仍有合法用途"
+      ],
+      "preserved_invariant": "退休不等于模型参数遗忘，也不隐藏旧错误。",
+      "separating_witness": "旧授权期限缺失时不能用新概念重算出确定历史有效性。",
+      "unproved_bridge": "自然任务概念生命周期可能无法清晰离散，需部分/不确定版本。",
+      "nearest_source_ids": [
+        "N06",
+        "S21",
+        "N12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/concept_lifecycle.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X11",
+        "mainline:A"
+      ],
+      "design_check_id": "D02-BRANCH-X11-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X11-B3",
+      "parent_horizon": "X11",
+      "title": "多本体分支的事务性合并",
+      "mainlines": [
+        "A",
+        "NON_GLOBAL"
+      ],
+      "p24_questions": [
+        "language",
+        "subject",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "OntologyMerge=(base,left,right,semantic_conflicts,migration_proofs)，三方合并对象包含定义关系而非文本 diff。",
+      "released_assumption": "两个概念改动文件不冲突即语义可合并",
+      "algorithm_steps": [
+        "从共同旧快照读取两个本体分支",
+        "比较类型、谓词外延和消费者影响",
+        "对可兼容部分建立迁移，对冲突部分保留双版本",
+        "在同一提交检查所有读版本后发布"
+      ],
+      "additional_assumptions": [
+        "语义冲突能在声明有限域检测",
+        "迁移顺序与依赖明确"
+      ],
+      "preserved_invariant": "语法合并成功不冒充语义一致。",
+      "separating_witness": "一支把“有效”限为临时，另一支把它扩成永久；文本不同字段也可能影响同一消费者。",
+      "unproved_bridge": "全域语义合并一般不可判，有限证据之外须保留桥梁而非强行全局统一。",
+      "nearest_source_ids": [
+        "N01",
+        "N06",
+        "S09"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/concept_lifecycle.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X11",
+        "mainline:A",
+        "mainline:NON_GLOBAL"
+      ],
+      "design_check_id": "D02-BRANCH-X11-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X12-B1",
+      "parent_horizon": "X12",
+      "title": "证明携带的语义 lowering",
+      "mainlines": [
+        "A",
+        "SCALE"
+      ],
+      "p24_questions": [
+        "language",
+        "learning"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ProofCarryingIR=(typed_ops,domain,lowering_relation,error_budget)，每个 pass 输出作用关系证书。",
+      "released_assumption": "编译通过只意味着形状合法",
+      "algorithm_steps": [
+        "对每个操作给解释函数和效果类型",
+        "转换 pass 同时生成局部交换关系",
+        "按路径组合证明或误差界",
+        "后端不满足能力时返回 unbound"
+      ],
+      "additional_assumptions": [
+        "有限语义可验证或规则有证明",
+        "误差界适用域闭合"
+      ],
+      "preserved_invariant": "类型正确不自动语义正确，也不授予运行权限。",
+      "separating_witness": "add 后 multiply 被改成 multiply 后 add，形状一致但 x=0 输出不同。",
+      "unproved_bridge": "神经后端的操作关系需另建证据，静态 IR 不能认证其能力。",
+      "nearest_source_ids": [
+        "N12",
+        "S09",
+        "S13"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/semantic_compiler.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H07",
+        "H25",
+        "H30",
+        "H35",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X12",
+        "mainline:A",
+        "mainline:SCALE"
+      ],
+      "design_check_id": "D02-BRANCH-X12-B1",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X12-B2",
+      "parent_horizon": "X12",
+      "title": "带局部图册的多后端编译",
+      "mainlines": [
+        "B",
+        "SCALE"
+      ],
+      "p24_questions": [
+        "subject",
+        "language"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "BackendAtlas=(local_domains,frame_maps,operator_contracts,path_residuals)，同一语义程序在不同域绑定不同后端。",
+      "released_assumption": "存在一套全局共享向量坐标即可编译所有任务",
+      "algorithm_steps": [
+        "按操作域划分图册",
+        "为每条跨端边给坐标运输和行为锚",
+        "编译时选择满足域与能力的路径",
+        "路径不一致时保留候选及残差而非隐藏成同一个结果"
+      ],
+      "additional_assumptions": [
+        "局部操作可对应",
+        "转换误差和条件数有范围"
+      ],
+      "preserved_invariant": "异维压缩不进入可逆换基分支。",
+      "separating_witness": "两个局部映射分别好但跨出覆盖域，复合可能失效；不能只验单边锚。",
+      "unproved_bridge": "未知任务是否有合适图册未证明，路径相关性不自动是语义曲率。",
+      "nearest_source_ids": [
+        "S06",
+        "S02",
+        "S12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/semantic_compiler.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H07",
+        "H25",
+        "H30",
+        "H35",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X12",
+        "mainline:B",
+        "mainline:SCALE"
+      ],
+      "design_check_id": "D02-BRANCH-X12-B2",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X12-B3",
+      "parent_horizon": "X12",
+      "title": "任务尺度共同决定的分层编译",
+      "mainlines": [
+        "C",
+        "SCALE"
+      ],
+      "p24_questions": [
+        "world",
+        "language",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "ScaleAwareProgram=(query_contract,macro_ops,memory_residuals,refinement_requests)，按任务选择粗细操作及信息保留。",
+      "released_assumption": "固定层级网络就是所有问题的最佳执行尺度",
+      "algorithm_steps": [
+        "从问题需要的观测定义粗化候选",
+        "检查宏操作闭合或生成记忆状态",
+        "在必要分支请求细节并保留回译",
+        "把精度损失与执行路径显式交给后续义务"
+      ],
+      "additional_assumptions": [
+        "粗化保指定任务",
+        "细节请求可由源信息支持"
+      ],
+      "preserved_invariant": "宏程序不能生成被压缩丢失的事实。",
+      "separating_witness": "只有奇偶的缓存无法回答是否大于2，编译器必须请求细化而非选择一个代表元回答。",
+      "unproved_bridge": "如何自动发现高效尺度尚为 H；标准聚合与细化不声称新创。",
+      "nearest_source_ids": [
+        "N03",
+        "S14",
+        "N05",
+        "N12"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/semantic_compiler.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H07",
+        "H25",
+        "H30",
+        "H35",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X12",
+        "mainline:C",
+        "mainline:SCALE"
+      ],
+      "design_check_id": "D02-BRANCH-X12-B3",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X11-B4",
+      "parent_horizon": "X11",
+      "title": "由 Hopf 环上的相位关系定义动态概念",
+      "mainlines": [
+        "A",
+        "TRAJECTORY",
+        "BIFURCATION"
+      ],
+      "p24_questions": [
+        "language",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "PhaseConceptAtlas=(amplitude,relative_phase,periodic_readout,phase_invariant_contract)，概念驻留于稳定周期轨道及相位关系而非单个固定点。",
+      "released_assumption": "所有可保持的概念必须对应静止吸引点",
+      "algorithm_steps": [
+        "给二维 Hopf 正规形及控制参数明确定义",
+        "用径向方程证明周期轨道存在与局部吸引，而非只看离散回返",
+        "把共同时移视为同一相位参考变换，读出相对相位",
+        "将相位丢失或振幅穿零记录为概念失效/重新绑定事件"
+      ],
+      "additional_assumptions": [
+        "频率非零",
+        "局部动力学近似满足正规形条件",
+        "任务读出对相对相位有明确意义"
+      ],
+      "preserved_invariant": "纯旋转、中性周期与吸引极限环分开，不把积分器振荡当概念。",
+      "separating_witness": "mu>0 的 rdot=mu r-r³ 有吸引半径 sqrt(mu)；删去径向耗散项的纯 skew 旋转并没有吸引半径，二者不能混为周期记忆。",
+      "unproved_bridge": "Hopf 定理和振荡编码均有既有文献需专门核查；周期轨道能否成为跨模型概念接口仍是 V。",
+      "nearest_source_ids": [
+        "S10",
+        "N10",
+        "S06"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/concept_lifecycle.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X11",
+        "mainline:A",
+        "mainline:TRAJECTORY",
+        "mainline:BIFURCATION"
+      ],
+      "design_check_id": "D02-BRANCH-X11-B4",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    },
+    {
+      "id": "X11-B5",
+      "parent_horizon": "X11",
+      "title": "折叠分岔与迟滞的历史依赖概念",
+      "mainlines": [
+        "A",
+        "BIFURCATION"
+      ],
+      "p24_questions": [
+        "language",
+        "time"
+      ],
+      "claim_class": "V",
+      "research_state": "NOT_RUN",
+      "implementation_status": "future_proposal_not_implemented",
+      "new_object": "HystereticConcept=(control,stable_branch,history,fold_conditions)，同一当前控制值可以因历史位于不同稳定解释分支。",
+      "released_assumption": "当前输入及一个固定词典足以唯一决定概念状态",
+      "algorithm_steps": [
+        "以 xdot=mu+x-x³ 定义可分析的分支图",
+        "在 x=±1/sqrt(3) 找折叠并标注外支稳定/内支不稳定",
+        "用缓慢升降控制形成不同分支继承路径，明确绝热条件和失稳延迟",
+        "将分支历史写入消息，必要时对两个合法解释并行推理"
+      ],
+      "additional_assumptions": [
+        "读出区分稳定分支",
+        "变化足够慢才可近似准静态迟滞",
+        "有噪声时需另给跃迁语义"
+      ],
+      "preserved_invariant": "历史依赖不是任意改目标，外部事实与权限不随分支改变。",
+      "separating_witness": "mu=0 时 x=±1 均稳定而 x=0 不稳定；只传 mu 不传分支无法唯一恢复状态。",
+      "unproved_bridge": "标准灾变/迟滞理论不主张原创，真实认知语义的状态变量和控制参量尚未识别。",
+      "nearest_source_ids": [
+        "S10",
+        "N06",
+        "N10"
+      ],
+      "novelty_status": "proposal_not_priority_verified",
+      "current_finite_anchor": "src/latent_comm/horizon/concept_lifecycle.py",
+      "anchor_scope": "Existing horizon design/finite entry point only; it does not implement this new branch.",
+      "admission_policy": "Retained on object/operation/assumption difference, never filtered by near-term benchmark feasibility.",
+      "mechanism_ids": [
+        "H27",
+        "H28",
+        "H39",
+        "H40"
+      ],
+      "requirement_ids": [
+        "P24",
+        "X11",
+        "mainline:A",
+        "mainline:BIFURCATION"
+      ],
+      "design_check_id": "D02-BRANCH-X11-B5",
+      "check_scope": "Written-object/invariant/witness and source-identity review only; new algorithm NOT_RUN."
+    }
+  ]
+}

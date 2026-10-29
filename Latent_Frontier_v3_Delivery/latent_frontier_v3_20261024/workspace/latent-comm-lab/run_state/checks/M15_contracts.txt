@@ -1,0 +1,14 @@
+M15: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_gauge_learning_and_quotient_boundaries (test_h15.PopulationTests.test_gauge_learning_and_quotient_boundaries) ... ok
+test_heldout_and_dropout (test_h15.PopulationTests.test_heldout_and_dropout) ... ok
+test_heterogeneous_tokenizers_not_logits (test_h15.PopulationTests.test_heterogeneous_tokenizers_not_logits) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h15.PopulationTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h15.PopulationTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h15.PopulationTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h15.PopulationTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.018s
+
+OK
+M15: 7 contract tests; failures=0 errors=0; no tensor/model import or execution.

@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-10-26T15:10:13.408458+00:00",
+  "source_message_id": "Sentinel_82967321a06c8191a2b28e63c749277d",
+  "question_message_id": "Sentinel_ae8b0cf6192c8191a650f7509a0cf9a1",
+  "cue_id": "explainer_360_029",
+  "duplication_risk_consent": true,
+  "user_authorized": true,
+  "scope": "api.tts.ai: remaining037-044257characters, retrieve accepted audio, resynthesize02916characters with disclosed possible duplication",
+  "cost": "anonymous free personal/noncommercial only",
+  "excludes": [
+    "036duplicate resynthesis",
+    "private files/source packages",
+    "paid accounts",
+    "research execution",
+    "bypassing new denial"
+  ],
+  "window_end_utc": "2026-10-26T23:30:00Z",
+  "research_state": "NOT_RUN"
+}

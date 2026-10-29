@@ -1,0 +1,49 @@
+{
+  "task_id": "B05",
+  "status": "done",
+  "input_digest": "76fdc21a4ec6bbf1888e348432021c14d38b4eb532e5e9aeef8b03cca90d31aa",
+  "outputs": [
+    {
+      "path": "src/latent_comm/backends/behavior/__init__.py",
+      "sha256": "d6ab3746b3940c8268fb7635b6358bf6fe4e9263e980939b7fc5afcd658b19c4",
+      "bytes": 5772
+    },
+    {
+      "path": "backend_specs/behavior.json",
+      "sha256": "c83fc1700493946e87c5cf55bc5e2d621b0b081f6b7d1844ffa18b3093a478eb",
+      "bytes": 1418
+    },
+    {
+      "path": "tests/research_locked/test_backend_behavior.py",
+      "sha256": "06180753f1180ca7c487eea852b0f10c3b5af7743f1e61ea5307389d796e9ea9",
+      "bytes": 1380
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/B_behavior.txt",
+      "sha256": "cb95daa85601a68a16a2990bc81494ea9127d28596110663eaa0a3a23f068eb0"
+    },
+    {
+      "path": "run_state/checks/B_backend_static.json",
+      "sha256": "f09a540c89c4498781d691003d9b79cea2df1fc053351d0f875e98053fc096cd"
+    },
+    {
+      "path": "run_state/checks/shared_metadata_revalidation/B05_test_backend_behavior.txt",
+      "sha256": "cb95daa85601a68a16a2990bc81494ea9127d28596110663eaa0a3a23f068eb0"
+    },
+    {
+      "path": "run_state/checks/aggregate_budget_revalidation/B05_test_backend_behavior.txt",
+      "sha256": "9d0f69e975aec7d6ca325e037c299ba0804781cc2eba0e1083a3706eccd5bbda"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated backend source plus source/declaration/gate tests. All actual model integration is NOT_RUN; unknown backend bindings explicit UNBOUND. Official public documentation read, no model package installed/imported. Shared metadata/finite-JSON boundary and dependent source checks revalidated 2026-10-24; no research execution. Aggregate finite-budget boundary revalidated 2026-10-24 with blocked neural-entry tests excluded and neural imports denied. All research NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:22:27.021309+00:00"
+}

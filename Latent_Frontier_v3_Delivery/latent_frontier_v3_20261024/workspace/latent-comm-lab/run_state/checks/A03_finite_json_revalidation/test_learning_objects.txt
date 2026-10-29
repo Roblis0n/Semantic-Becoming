@@ -1,0 +1,20 @@
+test_engine_delegation_and_resume_command (test_learning_objects.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_locality_masks_task_and_response (test_learning_objects.ContractChecks.test_locality_masks_task_and_response) ... ok
+test_metadata (test_learning_objects.ContractChecks.test_metadata) ... ok
+test_no_total_double_count (test_learning_objects.ContractChecks.test_no_total_double_count) ... ok
+test_prefix_posterior_updates (test_learning_objects.ContractChecks.test_prefix_posterior_updates) ... ok
+test_recipe_is_unbound (test_learning_objects.ContractChecks.test_recipe_is_unbound) ... ok
+test_sequence_mixture_is_not_token_mixture (test_learning_objects.ContractChecks.test_sequence_mixture_is_not_token_mixture) ... ok
+test_tokenizer_mismatch (test_learning_objects.ContractChecks.test_tokenizer_mismatch) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+OK
+{
+  "selected": 8,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_objects.ContractChecks.test_stage_syntax_and_gates"
+  ],
+  "neural_modules_loaded": []
+}

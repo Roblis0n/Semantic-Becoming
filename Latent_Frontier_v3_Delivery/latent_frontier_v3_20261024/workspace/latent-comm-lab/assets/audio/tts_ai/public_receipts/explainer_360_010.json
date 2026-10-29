@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_010",
+  "edition": "explainer_360",
+  "scene_id": "S02",
+  "characters": 22,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "是交流产生任何单个模型原先都没有的中介语言。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:26:34.229369+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 176285,
+    "duration_seconds": 3.997392290249433,
+    "sample_peak": 12052,
+    "sample_rms": 2474.6629363549855,
+    "sha256": "798e23045e0e551aeae3370f73edd7801e092940046976a5f3973a8f4997b8fc",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:27:09.976676+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

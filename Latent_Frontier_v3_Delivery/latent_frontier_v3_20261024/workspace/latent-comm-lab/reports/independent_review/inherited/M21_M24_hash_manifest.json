@@ -1,0 +1,282 @@
+[
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/README.md",
+    "sha256": "40890d848bcf64de62aca405515130e838de7f50df3aa807ceb3edf9b08f1472",
+    "receipt_sha256": "40890d848bcf64de62aca405515130e838de7f50df3aa807ceb3edf9b08f1472",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/__init__.py",
+    "sha256": "ed196d4af6d5709fcbdd832e21d385206bd885ccd7c1abd03028fb12b9088991",
+    "receipt_sha256": "ed196d4af6d5709fcbdd832e21d385206bd885ccd7c1abd03028fb12b9088991",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/adapter.py",
+    "sha256": "e1c858308ce7996d553fc8b7f350dfd419e8418d757241a3f70a55caf893d26e",
+    "receipt_sha256": "e1c858308ce7996d553fc8b7f350dfd419e8418d757241a3f70a55caf893d26e",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/losses.py",
+    "sha256": "3fa0584721eca7e9097b62880d30655c15e6665936a4387d88d16ba56580d0f8",
+    "receipt_sha256": "3fa0584721eca7e9097b62880d30655c15e6665936a4387d88d16ba56580d0f8",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/migration.py",
+    "sha256": "03ce14c7656c134145428c5307ec3d5f5b980122c16ab9f0184ef4638970be59",
+    "receipt_sha256": "03ce14c7656c134145428c5307ec3d5f5b980122c16ab9f0184ef4638970be59",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/reference.py",
+    "sha256": "9c993449d8dc39808535aaf649b563fe1cd329f973e1a30df840028f08bbeafa",
+    "receipt_sha256": "9c993449d8dc39808535aaf649b563fe1cd329f973e1a30df840028f08bbeafa",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/schema.json",
+    "sha256": "7c31397e6605f36c4d303ad4d3586721f574d0e04fc38568103466132697fba8",
+    "receipt_sha256": "7c31397e6605f36c4d303ad4d3586721f574d0e04fc38568103466132697fba8",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "src/latent_comm/mechanisms/h21_legacy/types.py",
+    "sha256": "599e55bbeaad7add010c09273d4bd704a75f110c0e4228327c64499655dc05da",
+    "receipt_sha256": "599e55bbeaad7add010c09273d4bd704a75f110c0e4228327c64499655dc05da",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "tests/contracts/test_h21.py",
+    "sha256": "ac18007149cd2f746252aec54cc0f171cdb5df5edcad016a79b986387e72ce41",
+    "receipt_sha256": "ac18007149cd2f746252aec54cc0f171cdb5df5edcad016a79b986387e72ce41",
+    "matches": true
+  },
+  {
+    "task": "M21",
+    "path": "configs/mechanisms/H21.json",
+    "sha256": "395a19c0e13c6e1f8bcfc6ba1edc2d06750d86ace71a3a5107a409c86b49e436",
+    "receipt_sha256": "395a19c0e13c6e1f8bcfc6ba1edc2d06750d86ace71a3a5107a409c86b49e436",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/README.md",
+    "sha256": "702e64b85d08b2f063ade7afd0befed9d5c7d3d53f1cee39819658c3f2f7557c",
+    "receipt_sha256": "702e64b85d08b2f063ade7afd0befed9d5c7d3d53f1cee39819658c3f2f7557c",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/__init__.py",
+    "sha256": "519826668392f61e809942dd7c71cf013c5743653a13d875f36e8d63672dcf04",
+    "receipt_sha256": "519826668392f61e809942dd7c71cf013c5743653a13d875f36e8d63672dcf04",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/adapter.py",
+    "sha256": "fd01aebb0255649e4a2f7eb3ed0c8d5c8ccaadb9ad7b48daba8c39b180d44462",
+    "receipt_sha256": "5b9dc5ac6fed7b8c1c179755ecd88c56b1f0e9ed56adae9e0f0ff5d99e69835d",
+    "matches": false
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/losses.py",
+    "sha256": "08255497c4098c34d21457fd8f61be570d71e68094aeb415ee0415f422eaa4ab",
+    "receipt_sha256": "08255497c4098c34d21457fd8f61be570d71e68094aeb415ee0415f422eaa4ab",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/migration.py",
+    "sha256": "69bbedae3bc684e9c9057670dd54a9524654b6c5e7f626373b2703b880efbde2",
+    "receipt_sha256": "69bbedae3bc684e9c9057670dd54a9524654b6c5e7f626373b2703b880efbde2",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/reference.py",
+    "sha256": "03b9cbd74f6d2209ceac076d75c049bae8002af4d92e4e9febc0448f3357b9de",
+    "receipt_sha256": "03b9cbd74f6d2209ceac076d75c049bae8002af4d92e4e9febc0448f3357b9de",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/schema.json",
+    "sha256": "f50e2c6ea02e92d3e5a822799af689c32f5c6fd8da530e890ac93d2153751a34",
+    "receipt_sha256": "f50e2c6ea02e92d3e5a822799af689c32f5c6fd8da530e890ac93d2153751a34",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "src/latent_comm/mechanisms/h22_legacy/types.py",
+    "sha256": "fd307a92e4eaeb92022d0303eb1c32dc4c257dacc031b0ea3a426a6d18471119",
+    "receipt_sha256": "fd307a92e4eaeb92022d0303eb1c32dc4c257dacc031b0ea3a426a6d18471119",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "tests/contracts/test_h22.py",
+    "sha256": "c17c6d29d1d392f6fc18ab298e19fb7bbb01e1748017f9175ac1d1bd44498967",
+    "receipt_sha256": "c17c6d29d1d392f6fc18ab298e19fb7bbb01e1748017f9175ac1d1bd44498967",
+    "matches": true
+  },
+  {
+    "task": "M22",
+    "path": "configs/mechanisms/H22.json",
+    "sha256": "7233907acd29798561cf69420778228f10aa8a95c1b1c7007cf736f6ef3080b6",
+    "receipt_sha256": "7233907acd29798561cf69420778228f10aa8a95c1b1c7007cf736f6ef3080b6",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/README.md",
+    "sha256": "d45c40d36e36ac0a62b8d7981a250a945b92ba54a4f0e9b57f1f37c5f8760d89",
+    "receipt_sha256": "d45c40d36e36ac0a62b8d7981a250a945b92ba54a4f0e9b57f1f37c5f8760d89",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/__init__.py",
+    "sha256": "04ad23e6c03003274f4ec815c7bd3267b67fb01c24ed2c0e10b13ec405474cd7",
+    "receipt_sha256": "04ad23e6c03003274f4ec815c7bd3267b67fb01c24ed2c0e10b13ec405474cd7",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/adapter.py",
+    "sha256": "0b7da9a64a3a9acd09d657cab571ce10716e34211c79c1b1f88cf6ff905e2273",
+    "receipt_sha256": "0b7da9a64a3a9acd09d657cab571ce10716e34211c79c1b1f88cf6ff905e2273",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/losses.py",
+    "sha256": "c0ff8a6e03bc4dc77082c695805942f5333e7e19e0031bdaafe3a0e64e3658a5",
+    "receipt_sha256": "c0ff8a6e03bc4dc77082c695805942f5333e7e19e0031bdaafe3a0e64e3658a5",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/migration.py",
+    "sha256": "d8d06d494f160bdd8a4f09d611758c543abc43ae04a14b55c362ee7afa02eff7",
+    "receipt_sha256": "d8d06d494f160bdd8a4f09d611758c543abc43ae04a14b55c362ee7afa02eff7",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/reference.py",
+    "sha256": "6e84d653aff468accd96b40db70291b063ceb310014a687b45a96ae0a1ffd7bd",
+    "receipt_sha256": "838ad7010db4d9638de023ac251045c07a5a1981a30005e12dcace0eab8f27df",
+    "matches": false
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/schema.json",
+    "sha256": "07456dfae5f316a5cd5a67991fad9ed16dda21d8b9e65dc80cec18da3b434b97",
+    "receipt_sha256": "07456dfae5f316a5cd5a67991fad9ed16dda21d8b9e65dc80cec18da3b434b97",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "src/latent_comm/mechanisms/h23_legacy/types.py",
+    "sha256": "3badc3889f68b7880f9124166756520f2313f359a0206e671b932265c3942a56",
+    "receipt_sha256": "3badc3889f68b7880f9124166756520f2313f359a0206e671b932265c3942a56",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "tests/contracts/test_h23.py",
+    "sha256": "9062f8328fb74cc4f4b8d7ba1218b69e801ba12ffbc1d7509043e8c0baf37d22",
+    "receipt_sha256": "9062f8328fb74cc4f4b8d7ba1218b69e801ba12ffbc1d7509043e8c0baf37d22",
+    "matches": true
+  },
+  {
+    "task": "M23",
+    "path": "configs/mechanisms/H23.json",
+    "sha256": "281d9e7764e8c9792df83d9466fac0e0db097fd7698dc38450730de4c5a26ccb",
+    "receipt_sha256": "281d9e7764e8c9792df83d9466fac0e0db097fd7698dc38450730de4c5a26ccb",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/README.md",
+    "sha256": "9887e9cace99ffd521b8d2bc7ddc01806fb9b2730b128866726d5179c6db0c7d",
+    "receipt_sha256": "9887e9cace99ffd521b8d2bc7ddc01806fb9b2730b128866726d5179c6db0c7d",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/__init__.py",
+    "sha256": "a1794009866088ec3702c3bddfdefc8468aa871955540091d11658964154b64f",
+    "receipt_sha256": "a1794009866088ec3702c3bddfdefc8468aa871955540091d11658964154b64f",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/adapter.py",
+    "sha256": "1bb77ee373a71f99f9fad382f921719c1a592434beeb6b6f9c7c435a03e908cc",
+    "receipt_sha256": "1bb77ee373a71f99f9fad382f921719c1a592434beeb6b6f9c7c435a03e908cc",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/losses.py",
+    "sha256": "55f04a53f1af5ed8980c249f8f07fc3d83a94ea1544852761ef7e8ce9c18d2a7",
+    "receipt_sha256": "55f04a53f1af5ed8980c249f8f07fc3d83a94ea1544852761ef7e8ce9c18d2a7",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/migration.py",
+    "sha256": "9149e2c9466d65f1ef3d49c297ec48b77fd44378e6b1d8dc516a9fe4bc942e1b",
+    "receipt_sha256": "9149e2c9466d65f1ef3d49c297ec48b77fd44378e6b1d8dc516a9fe4bc942e1b",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/reference.py",
+    "sha256": "6eead1facf6a0ba220ba4ae5771a30be9c13ee447e45b59f39f5f7db25ae3c0d",
+    "receipt_sha256": "6eead1facf6a0ba220ba4ae5771a30be9c13ee447e45b59f39f5f7db25ae3c0d",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/schema.json",
+    "sha256": "47c8732ced987f0f7d156e41071378c249032260085b871a43b4ede47050830b",
+    "receipt_sha256": "47c8732ced987f0f7d156e41071378c249032260085b871a43b4ede47050830b",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "src/latent_comm/mechanisms/h24_legacy/types.py",
+    "sha256": "fb6e45801626083bf3178322eb1ad4f830e4076546095eddbb2e8b5677308947",
+    "receipt_sha256": "fb6e45801626083bf3178322eb1ad4f830e4076546095eddbb2e8b5677308947",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "tests/contracts/test_h24.py",
+    "sha256": "a6b9bba0dfb393eb1934267c0839d93320b0e55bd80faa41cb6e3fd3c6765351",
+    "receipt_sha256": "a6b9bba0dfb393eb1934267c0839d93320b0e55bd80faa41cb6e3fd3c6765351",
+    "matches": true
+  },
+  {
+    "task": "M24",
+    "path": "configs/mechanisms/H24.json",
+    "sha256": "88401d0f1dc1575ebd2cb2b3e8ac32bee6761a3e6e1c797f4b8198b65fddded3",
+    "receipt_sha256": "88401d0f1dc1575ebd2cb2b3e8ac32bee6761a3e6e1c797f4b8198b65fddded3",
+    "matches": true
+  }
+]

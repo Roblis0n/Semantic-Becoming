@@ -1,0 +1,18 @@
+{
+  "task_id": "V03",
+  "status": "done",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "export_count": 5,
+  "opened_checked": true,
+  "opened_scope": "All 5 MP4s fully decoded; opening frames and 25 semantic keyframes inspected; browser interaction remains unverified",
+  "timing_verified": true,
+  "timing_applicable": true,
+  "blockers": [],
+  "limitations": [
+    "Real browser interaction unverified: Chromium socket() failed: Operation not permitted; JS DOM-contract tests are not browser proof."
+  ],
+  "evidence": "run_state/checks/V03_validation.json",
+  "research_state": "NOT_RUN"
+}

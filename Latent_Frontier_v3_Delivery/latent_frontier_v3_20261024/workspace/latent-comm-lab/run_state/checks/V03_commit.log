@@ -1,0 +1,442 @@
+{
+  "task_id": "V03",
+  "status": "done",
+  "input_digest": "9a14f8c8437e4a66d3857ba1dc58d6e6d8a88ceabb51d5bfe80f86bc305bbdf1",
+  "outputs": [
+    {
+      "path": "assets/animations/A01/A01.mp4",
+      "sha256": "7475e6bf05c47dea95de1b009fb2794c7099d6a7865ddbc2be64f9f1ed2d3440",
+      "bytes": 111758
+    },
+    {
+      "path": "assets/animations/A01/A01_opening.png",
+      "sha256": "a1d57848d491b456b603cd5ab45351916a4c5279024554866dac15768d94b4fd",
+      "bytes": 95368
+    },
+    {
+      "path": "assets/animations/A01/contact_sheet.jpg",
+      "sha256": "f27c62f98f6d351bbea4b74edb942c34a6912d1bc4d5338599774030451e1772",
+      "bytes": 140866
+    },
+    {
+      "path": "assets/animations/A01/final.svg",
+      "sha256": "67f55c4317250927d033db4c61b1d80882f53fc769e6ca5897e10cef80b53e14",
+      "bytes": 4620
+    },
+    {
+      "path": "assets/animations/A01/index.html",
+      "sha256": "32cdc3b09865b167553922fa851a92fd0fb8c31b676de9f4ceabc2001b3bfdf9",
+      "bytes": 2522
+    },
+    {
+      "path": "assets/animations/A01/renders/00.png",
+      "sha256": "d1f45ff4cebf8d811b6cd97a0811c8ebb6cb378b4fc57c7cb138a0aa23513771",
+      "bytes": 53201
+    },
+    {
+      "path": "assets/animations/A01/renders/04.png",
+      "sha256": "f058572b65442e89fb85b152f044bbe073132581f93c8ec58ba2c38dab3e55d3",
+      "bytes": 58264
+    },
+    {
+      "path": "assets/animations/A01/renders/08.png",
+      "sha256": "705f905b32a4e99f3e6d294ef511ec6658987107fb38d3be85d50b0ac0c676f7",
+      "bytes": 62555
+    },
+    {
+      "path": "assets/animations/A01/renders/12.png",
+      "sha256": "bb58f3e9f48be70c936ef82daf921ec878240faa01cf86a3b7f6a518846ea81f",
+      "bytes": 67268
+    },
+    {
+      "path": "assets/animations/A01/renders/16.png",
+      "sha256": "826686349929e25bd4b6545844950fd338403b8b82a72120aa8b3b9fdca0049c",
+      "bytes": 72298
+    },
+    {
+      "path": "assets/animations/A01/scene.json",
+      "sha256": "37d2c845b22543bd8cf4aeddea2e86c7666ca4ccb0f7258063d23469e913e09d",
+      "bytes": 9128
+    },
+    {
+      "path": "assets/animations/A01/source.svg",
+      "sha256": "73d6fdb09f4f0aaeff73cfc3362587d83e06cdb7a214d69ab4f1e0278b70be5d",
+      "bytes": 4417
+    },
+    {
+      "path": "assets/animations/A02/A02.mp4",
+      "sha256": "0d7f3ab50dd5aa9c4a45ee0c1e87c0c0aafde98551d9928780a655ea4401a829",
+      "bytes": 151150
+    },
+    {
+      "path": "assets/animations/A02/A02_opening.png",
+      "sha256": "936ad3466798de4d5ca0bc9421ab05e31eceb3f23c25fd69c2b0dd634e29a23a",
+      "bytes": 88349
+    },
+    {
+      "path": "assets/animations/A02/contact_sheet.jpg",
+      "sha256": "a17e6a9c0b12c73005d407ac0820c66a8aa3cf080b6d3a229f6ef7832155aaa6",
+      "bytes": 134399
+    },
+    {
+      "path": "assets/animations/A02/final.svg",
+      "sha256": "2c440b77f8e77e3be205f0524af88f2f329f0b424fe5dbb38c1a6dd63976166f",
+      "bytes": 3169
+    },
+    {
+      "path": "assets/animations/A02/index.html",
+      "sha256": "a4734ec528b47a782c54fa748b9749bb15a3f2492ac390a806326e8754e03585",
+      "bytes": 2540
+    },
+    {
+      "path": "assets/animations/A02/renders/00.png",
+      "sha256": "17b3e50c82f00535d4681a83003709bd99a93f3f46523c2b53443f2b52444c06",
+      "bytes": 53740
+    },
+    {
+      "path": "assets/animations/A02/renders/05.png",
+      "sha256": "b3f965271ab4c2824e9981d472f1ce7c567ada1882c95a17a9f08048d8c0ea0b",
+      "bytes": 54839
+    },
+    {
+      "path": "assets/animations/A02/renders/10.png",
+      "sha256": "bbe88949af1545b7a0fcb219203f2a9ef80633e0dfb28a1de238aec19e9ad156",
+      "bytes": 58317
+    },
+    {
+      "path": "assets/animations/A02/renders/15.png",
+      "sha256": "8a2fea78a34dc74d9ae17dda47f85781b6b912ebc31265333599f3a804e21705",
+      "bytes": 61091
+    },
+    {
+      "path": "assets/animations/A02/renders/20.png",
+      "sha256": "99fcaf06c6ea735def7be5938ba41f839764ba60f62aa57f36461308e3ac0324",
+      "bytes": 74023
+    },
+    {
+      "path": "assets/animations/A02/scene.json",
+      "sha256": "b7430db731a188b68d71bf3bc8f332077df026986ac95e7a03da46c93591fb44",
+      "bytes": 5746
+    },
+    {
+      "path": "assets/animations/A02/source.svg",
+      "sha256": "9671a27cd17672b151640524c7bc58919682130c891d82cd333e87056db47ed5",
+      "bytes": 2784
+    },
+    {
+      "path": "assets/animations/A03/A03.mp4",
+      "sha256": "561745d41d062f3505596f0a27ddea171ce4ca52b7c70030f8423fac4b6b283d",
+      "bytes": 177070
+    },
+    {
+      "path": "assets/animations/A03/A03_opening.png",
+      "sha256": "862402876ff7fea3e27b581f112fee70ca02db8b1af5c868f0cc6d05e53d64bf",
+      "bytes": 116876
+    },
+    {
+      "path": "assets/animations/A03/contact_sheet.jpg",
+      "sha256": "1562aa3b8e1ee900bc3cae1ed7e52746c6947521d86a1c7ed5abd9e12859d1da",
+      "bytes": 158194
+    },
+    {
+      "path": "assets/animations/A03/final.svg",
+      "sha256": "feb1c74d26bdce00e3303822a679f4c5c877a9d327479d9642d02f544af37fe1",
+      "bytes": 4479
+    },
+    {
+      "path": "assets/animations/A03/index.html",
+      "sha256": "17b559b573531f7160928c144cb2f3751f950b3d6b3840fcea88082be5d7d70b",
+      "bytes": 2531
+    },
+    {
+      "path": "assets/animations/A03/renders/00.png",
+      "sha256": "4aa8c65deced8f5b4bf61a1cddd89f02bc086c12e461a43f1db31b9c19a8c34d",
+      "bytes": 61742
+    },
+    {
+      "path": "assets/animations/A03/renders/06.png",
+      "sha256": "2dcdda3aa7dbf2e2692a2c761ff70e971f9b7c9520c650ec1ff32e99a8d438f9",
+      "bytes": 64768
+    },
+    {
+      "path": "assets/animations/A03/renders/12.png",
+      "sha256": "8037bf2d9bed290944dca129e226e5e493b6b39c89353faf8bf1cbbe0130b3f4",
+      "bytes": 74178
+    },
+    {
+      "path": "assets/animations/A03/renders/18.png",
+      "sha256": "2cac895794a67dc43261bc2daea1c254c5a25acce634d2a9a0bac659f66ddcac",
+      "bytes": 74694
+    },
+    {
+      "path": "assets/animations/A03/renders/24.png",
+      "sha256": "ad1a99bfc6478c306c5223215882ce8b367cc73e8ef73607c1e764fc3e7378ca",
+      "bytes": 83053
+    },
+    {
+      "path": "assets/animations/A03/scene.json",
+      "sha256": "ccbec088ee827783602a71ed897d31ed58f947888324938878091005c25c21af",
+      "bytes": 8647
+    },
+    {
+      "path": "assets/animations/A03/source.svg",
+      "sha256": "f0a5340c6b11114e0f88fb38a4b2ad33c93b47802d3ea031aae2e02c3118b273",
+      "bytes": 4223
+    },
+    {
+      "path": "assets/animations/A04/A04.mp4",
+      "sha256": "e026655a2c649c66e9c2e9d40413b26780fa6a9db2363a7eeca3168bc50b1826",
+      "bytes": 200742
+    },
+    {
+      "path": "assets/animations/A04/A04_opening.png",
+      "sha256": "dcffac6abc8113d4a385d8dde9aeca4056705ec2b2885886cdbbeb8ade91f3f7",
+      "bytes": 148488
+    },
+    {
+      "path": "assets/animations/A04/contact_sheet.jpg",
+      "sha256": "0bac109eab63be0be86311ee666b81556e6432caf7af2f06b7cbc35349a7b4db",
+      "bytes": 162401
+    },
+    {
+      "path": "assets/animations/A04/final.svg",
+      "sha256": "10bff83c8582ae98b0044231fc74ad5bffda3cafed556287fee18b1227bc3b3d",
+      "bytes": 3771
+    },
+    {
+      "path": "assets/animations/A04/index.html",
+      "sha256": "051d1ae5095c158813da5ab06735cad28fe2ffd4ec35bcbc13454126e02acab8",
+      "bytes": 2534
+    },
+    {
+      "path": "assets/animations/A04/renders/00.png",
+      "sha256": "8f675c2fec449d8d82081d5f907fc69028527de330cb56f12ed52cf9244bfdfa",
+      "bytes": 71732
+    },
+    {
+      "path": "assets/animations/A04/renders/04.png",
+      "sha256": "5c10b0852612de7f4bac3307f2cccfade6b91af49c1ed249f7a7295ff2e99532",
+      "bytes": 72404
+    },
+    {
+      "path": "assets/animations/A04/renders/09.png",
+      "sha256": "8ba1cd30ea607f4deac036a29f0328bd3a824c7649c719a63f008f4bfda3c2df",
+      "bytes": 64850
+    },
+    {
+      "path": "assets/animations/A04/renders/14.png",
+      "sha256": "a7fd47f01162d1549af34e7b1a3c4670d8a32bba63470a66a831fe9ffa73440c",
+      "bytes": 74935
+    },
+    {
+      "path": "assets/animations/A04/renders/20.png",
+      "sha256": "41dbc52c353d2dcdce1d4618412abd66ffa961593c1ca2977c5101e39894410e",
+      "bytes": 75211
+    },
+    {
+      "path": "assets/animations/A04/scene.json",
+      "sha256": "c53c0bcce263e7f3b1b7494ad00374d83bd7e2de66a3057e6f44c0c093726004",
+      "bytes": 6976
+    },
+    {
+      "path": "assets/animations/A04/source.svg",
+      "sha256": "d6eea7e148cb421d04e4cb536e9b6750148659285646b6f9c193097dd824ba96",
+      "bytes": 3477
+    },
+    {
+      "path": "assets/animations/A05/A05.mp4",
+      "sha256": "75d27431cf76a42128719d81deb7c5a76461b2185964d7791bb3cf474290b2c6",
+      "bytes": 173917
+    },
+    {
+      "path": "assets/animations/A05/A05_opening.png",
+      "sha256": "272defc96def0b4f024ba27e78fcb5105bc30bc5131065b63d7be2d809f89fe1",
+      "bytes": 110344
+    },
+    {
+      "path": "assets/animations/A05/contact_sheet.jpg",
+      "sha256": "21d37e2f2b4fbb4f7d55c3c9d2b1a1009dcdd811909c5ea77f29f9687b27ca58",
+      "bytes": 166827
+    },
+    {
+      "path": "assets/animations/A05/final.svg",
+      "sha256": "3fd4fbdc5971d5a26a006a5003e434836df26817c3bdfda70ce051883e81aa0c",
+      "bytes": 4606
+    },
+    {
+      "path": "assets/animations/A05/index.html",
+      "sha256": "ad004c77f8434dae28bd97ccff51832ea9c0c3770aefb8cda826d4d7cd0d2ff6",
+      "bytes": 2540
+    },
+    {
+      "path": "assets/animations/A05/renders/00.png",
+      "sha256": "793f9909e8efb4e0f476612f28fa09513175dbf2702c6f549d75e05d93442baf",
+      "bytes": 63771
+    },
+    {
+      "path": "assets/animations/A05/renders/06.png",
+      "sha256": "4982a267773cecc7edc9823399a3dbaa25c903e853110486f3024ee9072a92a3",
+      "bytes": 63601
+    },
+    {
+      "path": "assets/animations/A05/renders/12.png",
+      "sha256": "d088dc78eabde1b66dd65fd5750a84ad0dc3c953d744e4d3734faeafc92f395c",
+      "bytes": 69099
+    },
+    {
+      "path": "assets/animations/A05/renders/18.png",
+      "sha256": "64b7c37c17653e6165facec1e1e820cbec57c8254ddf2fca967b1f79c49af3d6",
+      "bytes": 81712
+    },
+    {
+      "path": "assets/animations/A05/renders/24.png",
+      "sha256": "49c8a24b94a7f8b0459834a8190a8938a765f931c91f07db721cc8f8b5f6ad55",
+      "bytes": 90443
+    },
+    {
+      "path": "assets/animations/A05/scene.json",
+      "sha256": "69c3772f83f334d9d0cdd54738da066a667f70fbf9b634cecf4a6e3827c77cd2",
+      "bytes": 8763
+    },
+    {
+      "path": "assets/animations/A05/source.svg",
+      "sha256": "2627348c7242b3f309727712357340b60cf2ac50e09bd76f724fa8acfd29ce9c",
+      "bytes": 4335
+    },
+    {
+      "path": "assets/animations/README.md",
+      "sha256": "c268d832ca79dd7cfe94ac69e75aa53eb1f42a3510c55e5386f95d7d6de95e71",
+      "bytes": 1293
+    },
+    {
+      "path": "assets/animations/animation_contract_checks.json",
+      "sha256": "82c5948fa62e1b6f2b6b8f193882a3858e8ea4a9bbb79eff6b0ffcdf7be86165",
+      "bytes": 3863
+    },
+    {
+      "path": "assets/animations/animation_engine.js",
+      "sha256": "a8aad17312391db98b1b5977b06657f305a3258ba4613707ca383f96e18c0505",
+      "bytes": 28179
+    },
+    {
+      "path": "assets/animations/browser_qa.json",
+      "sha256": "50b018fe3aaf307cf7421b70c004296ce6f82482e069686c1dee984baa53f355",
+      "bytes": 5301
+    },
+    {
+      "path": "assets/animations/build_animations.py",
+      "sha256": "46b1a5b17d9c18e6e524572f54879cb90a3e84b1be821ebf81bdfff9ae5a8694",
+      "bytes": 15205
+    },
+    {
+      "path": "assets/animations/build_media_qa.py",
+      "sha256": "08e83c7383270deb79f70a88a92ec45750125999f914aa7fccf8c4b1a120a0d7",
+      "bytes": 7361
+    },
+    {
+      "path": "assets/animations/check_animation_contracts.mjs",
+      "sha256": "49f47a6b7871459a215c4df4bbccfdb4b79eec0a6fd3f4f3fa053b2f8ffcd7aa",
+      "bytes": 2400
+    },
+    {
+      "path": "assets/animations/check_browser.mjs",
+      "sha256": "9ae23be3df7892999237764d4f51f4b5af2ccb89c5030b4dc2986d7a9281d743",
+      "bytes": 2572
+    },
+    {
+      "path": "assets/animations/container_checks.json",
+      "sha256": "a389b7efb8c66ec2f424d5c9537b6315d51be8e35c58eea708cdbae340879e87",
+      "bytes": 3954
+    },
+    {
+      "path": "assets/animations/enrich_media_receipt.py",
+      "sha256": "4233a21fcebf05b4e09ec454ddd8865e349799eef3f659daa75b6be08bfecd4b",
+      "bytes": 1290
+    },
+    {
+      "path": "assets/animations/math_checks.json",
+      "sha256": "9cf57f96929896bbe4c4dbfdfdae70f002739ae437678c56db9df7a1adc1a54b",
+      "bytes": 1569
+    },
+    {
+      "path": "assets/animations/media_status.json",
+      "sha256": "5e79f56ad3045cb417de927a02d4719140053a1604e5b52d4461fcb8958c6b40",
+      "bytes": 623
+    },
+    {
+      "path": "assets/animations/render.log",
+      "sha256": "eac3949399e24c7877e40d9c3978b87141b13760d51d980642d26081d72a83aa",
+      "bytes": 4644
+    },
+    {
+      "path": "assets/animations/render_A04_exact.log",
+      "sha256": "34d01abe205e7e6cdf7ece146caaf248fe6c3fbcda909d1baa92cd05e1ec8d6c",
+      "bytes": 1316
+    },
+    {
+      "path": "assets/animations/render_caption_review.log",
+      "sha256": "b5d9dab07914bbba121aa6d361afdb337fc538e94aefd85f7c800f0b81a58b5f",
+      "bytes": 2803
+    },
+    {
+      "path": "assets/animations/render_media.mjs",
+      "sha256": "2eab97df0d60ca3b88bd096f57215fb55f02e1144ce54643a92ad23f62643d99",
+      "bytes": 7150
+    },
+    {
+      "path": "assets/animations/render_repair.log",
+      "sha256": "626ce502d10b07ca84e2a43f35ca3582b90a0988404aae575d556019fd8347d5",
+      "bytes": 1114
+    },
+    {
+      "path": "assets/animations/render_storyboard_final.log",
+      "sha256": "54a05b5c55fc32df7274860176421f58f21d34219d616e51616247371e0b558a",
+      "bytes": 1951
+    },
+    {
+      "path": "assets/animations/render_video_review.log",
+      "sha256": "d910cd2b97d8f9dd2382082771856f15c4a2659d82c22e7ca810fc60485cbe7f",
+      "bytes": 267
+    },
+    {
+      "path": "assets/animations/sample_encoded_media.py",
+      "sha256": "2674ec3b1a3e3f916a7f850decba9cb49a4b8cdb8751565d02b53238c813f57d",
+      "bytes": 2246
+    },
+    {
+      "path": "assets/animations/validate_media.py",
+      "sha256": "6feef048b9df0586515a3cfb19cd431433b620a3e7947d0dc45f6f217c62eaea",
+      "bytes": 11835
+    },
+    {
+      "path": "assets/animations/validation.log",
+      "sha256": "150d50ea903c1e407c2ffe29f4a82bc77bcdbd61e735c42aa664b7600ebaf5b0",
+      "bytes": 529
+    },
+    {
+      "path": "assets/animations/validation_final.log",
+      "sha256": "239ac1b963e108ce5867475215d6a79312e513f7de4610300a39c0574ccfc7e1",
+      "bytes": 696
+    },
+    {
+      "path": "assets/animations/visual_review.json",
+      "sha256": "11ad56840ae3abbc4ccfb7f37eb737defdda6a35b58669ae5e06c9ebe4f4e447",
+      "bytes": 16222
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/V03_validation.json",
+      "sha256": "691fd10447ab615fcc42fc0183ed9d30ecbb2a86aa5e127ec2028cfc95aef2fa"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Five HTML/SVG mechanism animations and actual 20/25/30/25/30-second MP4 exports, full decode and visual frame checks, exact bounded arithmetic. Browser interaction unverified because Chromium socket operation failed before page load; simulated DOM tests are not browser proof.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T17:19:48.063616+00:00"
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": 3,
+  "id": "H02",
+  "kind": "mechanism",
+  "title": "\u53cd\u4e8b\u5b9e\u54cd\u5e94\u5305",
+  "mechanisms": [
+    "H02"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H02_\u53cd\u4e8b\u5b9e\u54cd\u5e94\u5305.md",
+  "target_base": "src/latent_comm/mechanisms/h02_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H02",
+    "name": "counterfactual_response",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "response",
+    "data_family": "conditional_response",
+    "training": {
+      "family": "R03",
+      "loss_terms": [
+        "response_match",
+        "task",
+        "refresh_gate"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.responses.low_rank_jet",
+      "latent_comm.mechanisms.responses.finite_difference",
+      "latent_comm.mechanisms.responses.trust_region"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I02_\u53cd\u4e8b\u5b9e\u54cd\u5e94\u5305.md",
+  "canonical_module": "latent_comm.mechanisms.h02_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h02_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h02_legacy.adapter.predict_response_factors",
+    "forward_entries": [
+      "latent_comm.mechanisms.h02_legacy.adapter.tensor_predict",
+      "latent_comm.mechanisms.h02_legacy.adapter.acquire_response",
+      "latent_comm.mechanisms.h02_legacy.adapter.predict_response_factors"
+    ],
+    "loss_input_bindings": {
+      "predicted": {
+        "producer": "tensor_predict return[0]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "target": {
+        "producer": "SupervisionBatch.target; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "valid": {
+        "producer": "tensor_predict return[1] expanded across response coordinates & supervision mask",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "refresh_logits": {
+        "producer": "stage.refresh_head on permitted local response diagnostics",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "refresh_target": {
+        "producer": "SupervisionBatch.refresh_target; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "refresh_valid": {
+        "producer": "stage explicit boolean refresh_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "task_loss": {
+        "producer": "stage task head after local response",
+        "requires_gradient": true,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "predict_response_factors.weight",
+        "predict_response_factors.bias",
+        "stage.refresh_head"
+      ],
+      "mechanism_reader": [
+        "stage.response_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h02_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H31: declared structural intervention only",
+    "H43: local kernel response with world version",
+    "H45: legal public variable queries"
+  ]
+}

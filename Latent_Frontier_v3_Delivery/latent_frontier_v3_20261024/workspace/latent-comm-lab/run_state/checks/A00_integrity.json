@@ -1,0 +1,28 @@
+{
+  "kind": "source_integrity_not_research",
+  "manifest_entries": 563,
+  "all_hashes_match": true,
+  "archives": [
+    {
+      "filename": "Anthropic_Claude_Design_Language_Research_20261008(3).zip",
+      "sha256": "abdab439cdbe42772e407bd643ff1182b2262e1960b7432cc42ec7bd32a35158",
+      "bytes": 7778298
+    },
+    {
+      "filename": "Duolingo_Design_Language_Research_20261008(1).zip",
+      "sha256": "1247e397f8bd29855d4d88247288a7dec2b1ecb156a499fde788aeaf774d0807",
+      "bytes": 7764590
+    },
+    {
+      "filename": "anthropic_claude_design_language_research(2).zip",
+      "sha256": "c30444eba05eb547bf90803171b88956c4038a27b8cdde597962d3fd7cbdc977",
+      "bytes": 1056245
+    },
+    {
+      "filename": "latent_frontier_v3_complete_20261024.zip",
+      "sha256": "491ff1d21dc935e5aee96cb2d5a3392500074192ce7ea9a5b2a8a49a3894ab45",
+      "bytes": 3932948
+    }
+  ],
+  "research_models_executed": 0
+}

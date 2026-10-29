@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H25：换基保持作用</title><desc id="desc">两条路径得到同一个结果 (6,2)。T=diag(2,3)，G 交换坐标。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H25：换基保持作用</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">两套坐标，同一计算作用</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">A01</tspan>
+</text>
+<rect id="e006" x="64" y="600" width="1152" height="47" rx="0" fill="#FFFCF5" stroke="#CECDBF" stroke-width="0" />
+<text id="e007" x="70" y="234.04" font-family="Noto Sans CJK SC" font-size="37" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="70" dy="0">z = (1, 2)</tspan>
+</text>
+<text id="e008" x="850" y="234.04" font-family="Noto Sans CJK SC" font-size="37" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="850" dy="0">Gz = (2, 1)</tspan>
+</text>
+<polyline id="e009" points="455.000,240.000 810.000,240.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="798.000,235.000 810.000,240.000 798.000,245.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e011" x="680.0" y="213.92000000000002" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="680.0" dy="0">交换 G</tspan>
+</text>
+<polyline id="e012" points="250.000,270.000 250.000,365.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e013" points="255.000,353.000 250.000,365.000 245.000,353.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e014" x="290" y="323.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="290" dy="0">T = diag(2,3)</tspan>
+</text>
+<text id="e015" x="70" y="429.04" font-family="Noto Sans CJK SC" font-size="37" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="70" dy="0">Tz = (2, 6)</tspan>
+</text>
+<polyline id="e016" points="455.000,435.000 810.000,435.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e017" points="798.000,430.000 810.000,435.000 798.000,440.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e018" x="680.0" y="403.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="680.0" dy="0">再交换 G</tspan>
+</text>
+<text id="e019" x="850" y="429.04" font-family="Noto Sans CJK SC" font-size="37" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="850" dy="0">GTz = (6, 2)</tspan>
+</text>
+<polyline id="e020" points="1030.000,270.000 1030.000,365.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e021" points="1035.000,353.000 1030.000,365.000 1025.000,353.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e022" x="800" y="323.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="800" dy="0">T′ = diag(3,2)</tspan>
+</text>
+<text id="e023" x="70" y="556.8" font-family="Noto Sans CJK SC" font-size="40" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="70" dy="0">T′Gz = GTz = (6, 2)</tspan>
+</text>
+</svg>

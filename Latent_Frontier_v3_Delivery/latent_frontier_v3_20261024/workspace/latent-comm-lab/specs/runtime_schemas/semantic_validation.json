@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "wire_schema_not_sufficient": true,
+  "mandatory_semantic_checks": {
+    "versions": "required axes cannot be null or stale",
+    "refs": "registry type/version/scope/role only, never filesystem",
+    "H27": "unknown/false distinction and old-reader migration",
+    "H29": "soundness and completeness witnesses independent",
+    "H34": "public terminal source only",
+    "H37": "projection residual mandatory even when wire ref optional",
+    "H38": "scoped parameters, support/query split, estimator explicit",
+    "H40": "hygienic lowering and immutable base ISA",
+    "H41": "credit_is_money false, missing value not zero",
+    "H43": "normalized transition rows and declared shared noise",
+    "H44": "synthetic lineage and no self-support",
+    "H48": "explicit_joint requires joint model; unknown is not independent"
+  }
+}

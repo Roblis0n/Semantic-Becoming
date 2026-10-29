@@ -1,0 +1,464 @@
+{
+  "title": "执行与权限平面",
+  "description": "执行权限平面：只读计划进入任务图，文件所有者约束工作区写入，账本保存哈希和回执，动作代理拦截模型运行、付费和发布。这是应用级边界，不是已验证硬沙箱。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "执行与权限平面",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "自动推进保留明确边界与可核验状态",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "前沿机制提案 / 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "F06",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 230,
+      "w": 270,
+      "h": 120,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79,
+      "y": 245,
+      "w": 240,
+      "h": 42.9,
+      "text": "PLAN_ROOT",
+      "size": 30,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79,
+      "y": 290.5,
+      "w": 240,
+      "h": 32.89,
+      "text": "只读设计与政策",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "x": 475,
+      "y": 230,
+      "w": 310,
+      "h": 120,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e009"
+    },
+    {
+      "x": 490,
+      "y": 245,
+      "w": 280,
+      "h": 42.9,
+      "text": "任务 DAG / owner",
+      "size": 30,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e010"
+    },
+    {
+      "x": 490,
+      "y": 290.5,
+      "w": 280,
+      "h": 32.89,
+      "text": "每文件只有一个写入者",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e011"
+    },
+    {
+      "x": 925,
+      "y": 230,
+      "w": 290,
+      "h": 120,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e012"
+    },
+    {
+      "x": 940,
+      "y": 245,
+      "w": 260,
+      "h": 42.9,
+      "text": "WORK_ROOT",
+      "size": 30,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "x": 940,
+      "y": 290.5,
+      "w": 260,
+      "h": 32.89,
+      "text": "授权范围内写入",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          340,
+          290
+        ],
+        [
+          463,
+          290
+        ]
+      ],
+      "stroke": "#496974",
+      "sw": 3,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "points": [
+        [
+          451.0,
+          285.0
+        ],
+        [
+          463,
+          290
+        ],
+        [
+          451.0,
+          295.0
+        ]
+      ],
+      "stroke": "#496974",
+      "sw": 3,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e016"
+    },
+    {
+      "x": 64,
+      "y": 425,
+      "w": 380,
+      "h": 126,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e017"
+    },
+    {
+      "x": 79,
+      "y": 440,
+      "w": 350,
+      "h": 41.47,
+      "text": "ledger / receipt",
+      "size": 29,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "x": 79,
+      "y": 484.25,
+      "w": 350,
+      "h": 32.89,
+      "text": "输入摘要、产物哈希、真实检查",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e019"
+    },
+    {
+      "x": 564,
+      "y": 425,
+      "w": 652,
+      "h": 126,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e020"
+    },
+    {
+      "x": 579,
+      "y": 440,
+      "w": 622,
+      "h": 42.9,
+      "text": "action broker",
+      "size": 30,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e021"
+    },
+    {
+      "x": 579,
+      "y": 485.5,
+      "w": 622,
+      "h": 32.89,
+      "text": "禁止：研究模型运行 / 新增付费 / 公开发布",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "points": [
+        [
+          630,
+          360
+        ],
+        [
+          630,
+          410
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e023"
+    },
+    {
+      "points": [
+        [
+          635.0,
+          398.0
+        ],
+        [
+          630,
+          410
+        ],
+        [
+          625.0,
+          398.0
+        ]
+      ],
+      "stroke": "#536647",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e024"
+    },
+    {
+      "points": [
+        [
+          1070,
+          415
+        ],
+        [
+          1070,
+          362
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e025"
+    },
+    {
+      "points": [
+        [
+          1065.0,
+          374.0
+        ],
+        [
+          1070,
+          362
+        ],
+        [
+          1075.0,
+          374.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e026"
+    },
+    {
+      "points": [
+        [
+          565,
+          488
+        ],
+        [
+          456,
+          488
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e027"
+    },
+    {
+      "points": [
+        [
+          468.0,
+          493.0
+        ],
+        [
+          456,
+          488
+        ],
+        [
+          468.0,
+          483.0
+        ]
+      ],
+      "stroke": "#725D7C",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e028"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "这是应用级权限控制，不声称已经建立或验证硬沙箱",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e029"
+    }
+  ],
+  "notes": "",
+  "sources": [
+    "media/07_图形与动画规范.md",
+    "docs/related_work.md"
+  ],
+  "research_state": "NOT_RUN"
+}

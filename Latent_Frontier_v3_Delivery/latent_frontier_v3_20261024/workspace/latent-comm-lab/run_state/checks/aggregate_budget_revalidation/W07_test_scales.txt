@@ -1,0 +1,13 @@
+test_closed_dynamics (test_scales.ScalesTests.test_closed_dynamics) ... ok
+test_equal_coarse_different_next (test_scales.ScalesTests.test_equal_coarse_different_next) ... ok
+test_partition_refines (test_scales.ScalesTests.test_partition_refines) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+{
+  "selected": 3,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

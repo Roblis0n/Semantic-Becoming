@@ -1,0 +1,46 @@
+test_all_48_typed_contracts (test_compiler.CompilerTests.test_all_48_typed_contracts) ... ok
+test_all_declared_operations (test_compiler.CompilerTests.test_all_declared_operations) ... ok
+test_all_mechanism_registrations (test_compiler.CompilerTests.test_all_mechanism_registrations) ... ok
+test_ambiguous_migration (test_compiler.CompilerTests.test_ambiguous_migration) ... ok
+test_bad_json (test_compiler.CompilerTests.test_bad_json) ... ok
+test_cycle_without_loop (test_compiler.CompilerTests.test_cycle_without_loop) ... ok
+test_dependency_version_rejected (test_compiler.CompilerTests.test_dependency_version_rejected) ... ok
+test_discrete_gradient_rejected (test_compiler.CompilerTests.test_discrete_gradient_rejected) ... ok
+test_embedded_reference_must_be_declared (test_compiler.CompilerTests.test_embedded_reference_must_be_declared) ... ok
+test_explicit_estimator (test_compiler.CompilerTests.test_explicit_estimator) ... ok
+test_exports (test_compiler.CompilerTests.test_exports) ... ok
+test_frozen_input_gradient_preserved (test_compiler.CompilerTests.test_frozen_input_gradient_preserved) ... ok
+test_h40_future_budget_preserved (test_compiler.CompilerTests.test_h40_future_budget_preserved) ... ok
+test_loop_budget (test_compiler.CompilerTests.test_loop_budget) ... ok
+test_migration_cycles (test_compiler.CompilerTests.test_migration_cycles) ... ok
+test_migration_insertion (test_compiler.CompilerTests.test_migration_insertion) ... ok
+test_missing_migration (test_compiler.CompilerTests.test_missing_migration) ... ok
+test_missing_version (test_compiler.CompilerTests.test_missing_version) ... ok
+test_nested_exponent_overflow_is_invalid_json (test_compiler.CompilerTests.test_nested_exponent_overflow_is_invalid_json) ... ok
+test_nested_role_leak (test_compiler.CompilerTests.test_nested_role_leak) ... ok
+test_no_authorization_from_config (test_compiler.CompilerTests.test_no_authorization_from_config) ... ok
+test_no_control_plane_write (test_compiler.CompilerTests.test_no_control_plane_write) ... ok
+test_no_model_imports_subprocess (test_compiler.CompilerTests.test_no_model_imports_subprocess) ... ok
+test_original_20_combinations (test_compiler.CompilerTests.test_original_20_combinations) ... ok
+test_original_48_recipes (test_compiler.CompilerTests.test_original_48_recipes) ... ok
+test_plan_not_research (test_compiler.CompilerTests.test_plan_not_research) ... ok
+test_role_migration_preserves_visibility (test_compiler.CompilerTests.test_role_migration_preserves_visibility) ... ok
+test_seven_passes (test_compiler.CompilerTests.test_seven_passes) ... ok
+test_shape_named_axes (test_compiler.CompilerTests.test_shape_named_axes) ... ok
+test_source_localization (test_compiler.CompilerTests.test_source_localization) ... ok
+test_transitive_role_leak (test_compiler.CompilerTests.test_transitive_role_leak) ... ok
+test_typed_loop_carry (test_compiler.CompilerTests.test_typed_loop_carry) ... ok
+test_types (test_compiler.CompilerTests.test_types) ... ok
+test_unbounded_loop (test_compiler.CompilerTests.test_unbounded_loop) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.329s
+
+OK
+{
+  "selected": 34,
+  "excluded_model_entry_or_gate_tests": [
+    "test_compiler.CompilerTests.test_research_gate"
+  ],
+  "neural_modules_loaded": []
+}

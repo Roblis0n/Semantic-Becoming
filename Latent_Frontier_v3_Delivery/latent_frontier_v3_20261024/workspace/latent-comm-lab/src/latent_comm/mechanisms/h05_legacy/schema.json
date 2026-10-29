@@ -1,0 +1,249 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H05:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "program",
+    "values",
+    "program_counter",
+    "source_clock",
+    "completed_operations",
+    "pending_dependencies",
+    "evidence_handles",
+    "public_boundary_conditions",
+    "transaction_version",
+    "target_resume_contract",
+    "closed"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "evidence",
+        "isa",
+        "schema",
+        "state",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "program": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "operation_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "output": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "expression": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "number",
+                "boolean",
+                "null",
+                "array",
+                "object"
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          }
+        },
+        "required": [
+          "operation_id",
+          "output",
+          "expression",
+          "dependencies"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "values": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": [
+            "string",
+            "number",
+            "boolean",
+            "null",
+            "array",
+            "object"
+          ]
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "program_counter": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 64
+    },
+    "source_clock": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "completed_operations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "pending_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "evidence_handles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "public_boundary_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "transaction_version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "target_resume_contract": {
+      "type": "object",
+      "properties": {
+        "model_revision": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "tokenizer_revision": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "dtype": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "cache_layout": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "mode": {
+          "enum": [
+            "exact_same_model",
+            "heterogeneous_approximate",
+            "exact_program"
+          ]
+        }
+      },
+      "required": [
+        "model_revision",
+        "tokenizer_revision",
+        "dtype",
+        "cache_layout",
+        "mode"
+      ],
+      "additionalProperties": false
+    },
+    "closed": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,830 @@
+{
+  "task_id": "D02",
+  "research_state": "NOT_RUN",
+  "validation_scope": "Static/schema/source identity checks and comparison with already executed finite proof fixtures. Neither proof-assistant verification nor efficacy/novelty validation.",
+  "checks": [
+    {
+      "id": "D02-POLICY-STATE",
+      "status": "PASS",
+      "detail": {
+        "new_empirical_claims": 0,
+        "research_state": "NOT_RUN"
+      }
+    },
+    {
+      "id": "D02-FORMAL-COVERAGE",
+      "status": "PASS",
+      "detail": {
+        "formal_inputs": 8,
+        "derivation_notes": [
+          {
+            "path": "docs/formal_notes/F01_covariance_and_objectives.md",
+            "characters": 2526,
+            "mechanisms": [
+              "H25",
+              "H32"
+            ],
+            "sha256": "9c3cfc392eebf152eacd239b87a626e7c088c36d95bd46198e0fff70c2381344"
+          },
+          {
+            "path": "docs/formal_notes/F02_affine_gluing_and_obstructions.md",
+            "characters": 2070,
+            "mechanisms": [
+              "H26"
+            ],
+            "sha256": "67d86d6eb5ee80c85fd2ed0ec623a49b6ac3dae69744e98d222451124d25031f"
+          },
+          {
+            "path": "docs/formal_notes/F03_concepts_counterexamples_and_language.md",
+            "characters": 2442,
+            "mechanisms": [
+              "H27",
+              "H36"
+            ],
+            "sha256": "fc0b27efbeb580f4287792352640e6170a74cf4864e852f1bfabc8e4debd5cf2"
+          },
+          {
+            "path": "docs/formal_notes/F04_questions_and_partial_morphisms.md",
+            "characters": 2156,
+            "mechanisms": [
+              "H29",
+              "H30"
+            ],
+            "sha256": "54ac58d3359b24e63525283ecd6308f10d5f412bef47f626c3be11ff34880f57"
+          },
+          {
+            "path": "docs/formal_notes/F05_behavior_transport_and_plasticity.md",
+            "characters": 3005,
+            "mechanisms": [
+              "H37",
+              "H38"
+            ],
+            "sha256": "cdc3f4a8251562801f97f072ea76b981322d49ef1a7f6969d6340c77718c3f74"
+          },
+          {
+            "path": "docs/formal_notes/F06_trajectories_bifurcations_and_boundaries.md",
+            "characters": 3288,
+            "mechanisms": [
+              "H28",
+              "H33",
+              "H34"
+            ],
+            "sha256": "6005d5418e9874b5fc82417aa6ab057c7af46329e9d1f33abaf5bdf072b1fa7b"
+          },
+          {
+            "path": "docs/formal_notes/F07_quotients_and_scale_closure.md",
+            "characters": 2468,
+            "mechanisms": [
+              "H35",
+              "H47"
+            ],
+            "sha256": "cc06ec1f284c19c89ff4fae49ec03561c213b6ae367db45a810761c52196728d"
+          },
+          {
+            "path": "docs/formal_notes/F08_worlds_causality_and_evidence.md",
+            "characters": 3162,
+            "mechanisms": [
+              "H31",
+              "H43",
+              "H44",
+              "H48"
+            ],
+            "sha256": "aef8f7c01a0c87232abe2800c0e0344e95e04cea01f95ccd1011ddd47c6bde1d"
+          },
+          {
+            "path": "docs/formal_notes/F09_programs_transactions_coalitions_ecology.md",
+            "characters": 3050,
+            "mechanisms": [
+              "H39",
+              "H40",
+              "H41",
+              "H42"
+            ],
+            "sha256": "2b04546ba4bdd4e0d859d9f647b6285673d91555bc5fed8b645ee746a72dd704"
+          },
+          {
+            "path": "docs/formal_notes/F10_identifiability_and_negative_knowledge.md",
+            "characters": 2521,
+            "mechanisms": [
+              "H45",
+              "H46"
+            ],
+            "sha256": "db0751be85521c37e4632d08f19c4676e445e7ce54e5b5eea35e82a0faefeb7c"
+          }
+        ],
+        "scope": "Presence/coverage and stated boundaries only. Mathematical argument quality was manually reviewed; this parser is not a formal proof assistant."
+      }
+    },
+    {
+      "id": "D02-SOURCE-SNAPSHOTS",
+      "status": "PASS",
+      "detail": {
+        "hashes_rechecked": 275,
+        "mechanisms": 24,
+        "source_AST_files": 168,
+        "top_level_symbols": 440,
+        "imports_executed_for_AST": 0
+      }
+    },
+    {
+      "id": "D02-CITATIONS",
+      "status": "PASS",
+      "detail": {
+        "verified_citation_keys_used": [
+          "SBV3_N01",
+          "SBV3_N02",
+          "SBV3_N03",
+          "SBV3_N04",
+          "SBV3_N05",
+          "SBV3_N06",
+          "SBV3_N08",
+          "SBV3_N09",
+          "SBV3_N10",
+          "SBV3_N11",
+          "SBV3_N12",
+          "SBV3_N13",
+          "SBV3_N14",
+          "SBV3_S02",
+          "SBV3_S03",
+          "SBV3_S06",
+          "SBV3_S07",
+          "SBV3_S08",
+          "SBV3_S09",
+          "SBV3_S10",
+          "SBV3_S11",
+          "SBV3_S12",
+          "SBV3_S13",
+          "SBV3_S14",
+          "SBV3_S16",
+          "SBV3_S17",
+          "SBV3_S18",
+          "SBV3_S19",
+          "SBV3_S20",
+          "SBV3_S21"
+        ],
+        "exact_D01_source_records": 30,
+        "scope": "Identity/metadata and D01 recorded visible-content scope, not exhaustive/full-paper priority review."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X01-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "IdentityFiber=(state, public_behavior_contract, pending_obligations, version_path)，身份是声明查询族上的关系而非单一参数文件。",
+        "released_assumption": "固定 checkpoint 是唯一主体边界",
+        "separating_witness": "两个后端回答当前问题相同但一个遗失未完成约束；只按终点答案判身份会误合并。",
+        "nearest_source_ids": [
+          "S02",
+          "S03",
+          "N03"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X01-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ObligationHypergraph 的顶点是版本化义务，超边是分工/合并证明；主体由当前义务闭包定义。",
+        "released_assumption": "一个计算主体必须是一个状态持有者",
+        "separating_witness": "两个分区各自满足资源≤1，却共享同一单位资源；无跨边条件的合并会违反总预算。",
+        "nearest_source_ids": [
+          "N12",
+          "N01",
+          "S21"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X01-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "BoundaryContract=(ports, intervention_family, internal_transition, external_observables)，主体是可替换动力学模块。",
+        "released_assumption": "主体边界等同部署机器或模型名单",
+        "separating_witness": "两组合边际输出相同但干预某输入后行为不同，不能视为同一临时主体。",
+        "nearest_source_ids": [
+          "S12",
+          "S13",
+          "N09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X02-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ContextCoverDelta=(old_cover,new_cover,restriction_maps,evidence_scopes)，修订对象是知识适用域而非一个全局答案。",
+        "released_assumption": "冲突只能靠选择一个赢家消除",
+        "separating_witness": "三节点矛盾环可按时间域拆开；若没有时间证据，拆域只是候选假说而非证明。",
+        "nearest_source_ids": [
+          "S07",
+          "S08",
+          "N06"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X02-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "TruthPair(p)=(support,refutation)∈{0,1}²，加上来源 DAG；矛盾与未知分为 (1,1) 和 (0,0)。",
+        "released_assumption": "每个命题只能真或假且矛盾导致任意结论",
+        "separating_witness": "同时有 p 和 not p 不能推出无关 q；经典爆炸与此协议可明确区分。",
+        "nearest_source_ids": [
+          "N06",
+          "S21"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X02-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "CellularTheoryComplex=(C0,C1,C2,delta0,delta1,anchors)，新增胞腔与边界算子，不再只存图残差。",
+        "released_assumption": "成对 overlap 足够描述所有兼容条件",
+        "separating_witness": "同一图在不同内积下残差范数不同；若据此宣称拓扑障碍变化就混淆了对象。",
+        "nearest_source_ids": [
+          "S07",
+          "S08"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X03-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "MeasurementProgram=(observable_AST, allowed_actions, noise_model, answer_relation)，问题新增可操作观测而非同义改写。",
+        "released_assumption": "可问问题的响应坐标必须预先固定",
+        "separating_witness": "y=x 与 y=−x 在 x=0 无法区分；允许 x=1 后分开，而改写措辞不分开。",
+        "nearest_source_ids": [
+          "S20",
+          "N12",
+          "S12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X03-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ProblemSpan=(Q,auxiliary_space,Qprime,forward_relation,answer_backtranslation)，允许多值而非单一函数改写。",
+        "released_assumption": "任何好问题改写都必须是双射",
+        "separating_witness": "平方根正支可靠但丢负支；span 保留符号见证才能完整回译。",
+        "nearest_source_ids": [
+          "N12",
+          "N11",
+          "S13"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X03-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "QuestionConstructor=(witness_program, constraint_generator, proof_of_inclusion)，先构造有解见证再反推问题，但隐藏见证只留监督侧。",
+        "released_assumption": "问题只能由外部固定文本提供",
+        "separating_witness": "把 witness_id 或生成种子喂给 receiver 会让伪推理出现；必须物理隔离。",
+        "nearest_source_ids": [
+          "S09",
+          "S18",
+          "S19"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X04-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "TangentRouteGraph 的节点为行为像空间 im J_i，边携带投影、残差及线性化版本。",
+        "released_assumption": "任一接收者都可复制同一参数方向",
+        "separating_witness": "J1=(1,0)ᵀ、J2=(0,1)ᵀ，各自无法实现 (1,1)；联合可以仅在作用可加假设下完成。",
+        "nearest_source_ids": [
+          "N08",
+          "S16",
+          "S12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X04-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "MetricUpdate=(v,W,M,anchor_version)，把行为度量与参数度量作为协议对象。",
+        "released_assumption": "所有参数坐标下的欧氏步长都是同一个学习规则",
+        "separating_witness": "把参数放大 100 倍而仍用单位 ridge 会改变更新；运输度量才能保该问题。",
+        "nearest_source_ids": [
+          "S16",
+          "N08",
+          "S06"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X04-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "PlasticitySimulation=(source_rule,target_rule,state_relation,step_witness)，运输的是多步更新程序而非一次梯度。",
+        "released_assumption": "相同规则 AST 在异构参数组上必有相同意义",
+        "separating_witness": "同样 momentum 系数但一端 memory 被重置，会破坏第二步作用；单步匹配看不出。",
+        "nearest_source_ids": [
+          "S16",
+          "N04",
+          "N12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X05-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "OntologyLens=(get,put,domain,unknown_policy,version_pair)，明确何时可往返、何时损失。",
+        "released_assumption": "旧新本体只能用 ID 重命名衔接",
+        "separating_witness": "旧“钥匙有效”没有期限信息，不能唯一映到“临时/永久”；部分透镜暴露缺失。",
+        "nearest_source_ids": [
+          "N12",
+          "N06",
+          "S09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X05-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "PrimitiveProposal=(denotation,effect_type,authority,implementation_relation)，区别可展开宏和真正新测量/计算能力。",
+        "released_assumption": "新指令只能是旧程序宏的简称",
+        "separating_witness": "把 shell 调用包装成新 opcode 不构成合法能力增长；纯 add/multiply 宏也不增加可计算函数族。",
+        "nearest_source_ids": [
+          "S09",
+          "N12",
+          "N04"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X05-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "MetaGrammarPopulation=(task_grammars,ontology_grammars,compiler_migrations,archive)，变异作用于生成规则而非只有参数。",
+        "released_assumption": "任务和语言的生成语法固定不变",
+        "separating_witness": "只把 threshold 从 1 改 2 不是新语法；新增量词/关系算子才改变可表达操作且需新语义。",
+        "nearest_source_ids": [
+          "S09",
+          "S18",
+          "S19"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X06-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "MemoryKernelState=(coarse_history,unresolved_initial,memory_operators)，把丢失细节的延迟效应纳入宏对象。",
+        "released_assumption": "粗状态必须是一阶 Markov 且无需历史",
+        "separating_witness": "同总和的 (1,0),(0,1) 下一步粗态不同；历史/残差可修复但单一总和不行。",
+        "nearest_source_ids": [
+          "N03",
+          "S14",
+          "N09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X06-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "FiberBelief(m)=distribution over C^-1(m)，压缩对象携带可识别的不确定性。",
+        "released_assumption": "一个粗态必须对应一个猜定微态",
+        "separating_witness": "奇数粗态可由 1 或 3 产生；抽中 1 不证明原数就是 1。",
+        "nearest_source_ids": [
+          "N03",
+          "S14",
+          "N05"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X06-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ScalePolicy=(query_set,partition_refinement,closure_obligations)，新问题触发新尺度而非固定层级。",
+        "released_assumption": "所有任务共用永久不变的语义粒度",
+        "separating_witness": "奇偶后加入大于 2 得四类；若存储只有奇偶则必须请求来源。",
+        "nearest_source_ids": [
+          "S14",
+          "N03",
+          "S20"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X07-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "EventTrace=(events,happens_before,read_write_effects,commutation_witnesses)，只对独立操作交换次序。",
+        "released_assumption": "所有计算都必须有唯一全局 token 顺序",
+        "separating_witness": "加一和乘二不交换，两个不同变量的独立加一可交换；只按无写冲突仍可能漏读依赖。",
+        "nearest_source_ids": [
+          "N01",
+          "N12",
+          "N10"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X07-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "PhaseRelationState=(torus_coordinates,relative_phase,window_readout,noise_contract)，状态在循环相位关系而非终点。",
+        "released_assumption": "有意义计算必须收敛到固定点",
+        "separating_witness": "两个循环终点同但相位延迟不同；终点读取丢信息，窗口读出可区别。",
+        "nearest_source_ids": [
+          "S10",
+          "N10"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X07-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "PathMeasure=(transition_factors,public_boundary,normalizer,branch_weights)，从单条最优路径扩成条件轨迹集合。",
+        "released_assumption": "推理只能前向生成唯一答案轨迹",
+        "separating_witness": "0 到 2 三步允许停留，有多条可行轨迹；把第一条当唯一解会丢不确定性。",
+        "nearest_source_ids": [
+          "N13",
+          "N12",
+          "N09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X08-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ProofContinuation=(proved_lemmas,open_goals,context,proof_kernel_version)，不是最后一段解释文本。",
+        "released_assumption": "中途推理只能保存摘要或 KV",
+        "separating_witness": "摘要写“显然成立”却无引理依赖，不能算续接了证明。",
+        "nearest_source_ids": [
+          "N12",
+          "S03",
+          "N06"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X08-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "NoGoodRegion=(predicate,assumptions,certificate,domain_version)，迁移整个失败区域而非单一坏答案。",
+        "released_assumption": "历史失败只能记为失败样本",
+        "separating_witness": "排除所有奇数只在偶数约束有效；撤回约束必须恢复奇数。",
+        "nearest_source_ids": [
+          "N06",
+          "N14",
+          "N12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X08-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ConjectureLineage=(claim_versions,refutations,repair_transformations,open_bridges)，保留相互竞争的修订而不单线覆盖。",
+        "released_assumption": "反例到来后只能抹掉旧猜想或选唯一新猜想",
+        "separating_witness": "“偶数都被4整除”可弱化域、反转蕴含或增加变量，三者不是同一个修复。",
+        "nearest_source_ids": [
+          "N06",
+          "N14",
+          "S09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X09-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "GraftWorld=(local_SCMs,boundary_units,shared_noise,intervention_map)，多个源各持部分方程。",
+        "released_assumption": "一个世界必须由单个完整生成器先存在",
+        "separating_witness": "独立抽两份天气噪声改变两个传感器联合行为，即使边缘不变。",
+        "nearest_source_ids": [
+          "S12",
+          "S13",
+          "N09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X09-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "CounterfactualBoundarySearch=(kernel_edit_grammar,distinguishing_queries,validity_constraints)，搜索改变哪条机制才改变结论。",
+        "released_assumption": "想象只用于生成更多同分布样本",
+        "separating_witness": "将门从单向改双向改变可达性；仅给节点重命名不产生新的规律。",
+        "nearest_source_ids": [
+          "S18",
+          "S19",
+          "S20"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X09-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "CouplingSet={joint laws with declared marginals and dependence constraints}，消息携带一族世界而非猜定独立联合。",
+        "released_assumption": "给出局部核边缘即可唯一合成世界",
+        "separating_witness": "两公平比特可相同、相反或独立，P(相等) 可为1、0、.5。",
+        "nearest_source_ids": [
+          "S13",
+          "N13",
+          "S20"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X10-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "CapabilityHypergraph=(input_types,provider_sets,output_types,composition_witness)，能力属于有条件联盟。",
+        "released_assumption": "联合能力必能由单体分数相加得到",
+        "separating_witness": "两人各只有一个 XOR 比特，单源对 XOR 无信息、联合有信息；不等于所有 PID 定义一致。",
+        "nearest_source_ids": [
+          "N02",
+          "S17"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X10-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ProvenanceCoalitionGame 将玩家持有的支持 DAG 映到唯一来源/操作贡献，再定义 v(S)。",
+        "released_assumption": "更多转述者就是更多独立贡献",
+        "separating_witness": "复制同一来源100次不应增加信息支持，但维护成本可以另计而不能混成真实性。",
+        "nearest_source_ids": [
+          "S21",
+          "N06",
+          "S17"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X10-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "JoinLeaveContract=(required_state,obligation_transfer,tombstones,exit_conditions)，联盟动态变化时保留计算责任。",
+        "released_assumption": "成员退出仅删除名字不影响程序语义",
+        "separating_witness": "持唯一中间变量的成员退出后其余仍报告完成，是义务丢失反例。",
+        "nearest_source_ids": [
+          "N01",
+          "N12",
+          "N04"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X11-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "StructuralBifurcation=(control_parameter,order_observable,branch_atlas,migration)，将结构变量与连续态分开。",
+        "released_assumption": "概念数只能靠预先固定模板指定",
+        "separating_witness": "alpha=0 的导数为0仍可渐近稳定；粗步长产生发散不代表概念诞生。",
+        "nearest_source_ids": [
+          "S10",
+          "N10",
+          "S09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X11-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "RetiredConcept=(historical_reader,expiry_conditions,reactivation_conditions,evidence_lineage)，退休不是删除定义。",
+        "released_assumption": "概念失效后只能彻底删除或永久保留为真",
+        "separating_witness": "旧授权期限缺失时不能用新概念重算出确定历史有效性。",
+        "nearest_source_ids": [
+          "N06",
+          "S21",
+          "N12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X11-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "OntologyMerge=(base,left,right,semantic_conflicts,migration_proofs)，三方合并对象包含定义关系而非文本 diff。",
+        "released_assumption": "两个概念改动文件不冲突即语义可合并",
+        "separating_witness": "一支把“有效”限为临时，另一支把它扩成永久；文本不同字段也可能影响同一消费者。",
+        "nearest_source_ids": [
+          "N01",
+          "N06",
+          "S09"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X12-B1",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ProofCarryingIR=(typed_ops,domain,lowering_relation,error_budget)，每个 pass 输出作用关系证书。",
+        "released_assumption": "编译通过只意味着形状合法",
+        "separating_witness": "add 后 multiply 被改成 multiply 后 add，形状一致但 x=0 输出不同。",
+        "nearest_source_ids": [
+          "N12",
+          "S09",
+          "S13"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X12-B2",
+      "status": "PASS",
+      "detail": {
+        "new_object": "BackendAtlas=(local_domains,frame_maps,operator_contracts,path_residuals)，同一语义程序在不同域绑定不同后端。",
+        "released_assumption": "存在一套全局共享向量坐标即可编译所有任务",
+        "separating_witness": "两个局部映射分别好但跨出覆盖域，复合可能失效；不能只验单边锚。",
+        "nearest_source_ids": [
+          "S06",
+          "S02",
+          "S12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X12-B3",
+      "status": "PASS",
+      "detail": {
+        "new_object": "ScaleAwareProgram=(query_contract,macro_ops,memory_residuals,refinement_requests)，按任务选择粗细操作及信息保留。",
+        "released_assumption": "固定层级网络就是所有问题的最佳执行尺度",
+        "separating_witness": "只有奇偶的缓存无法回答是否大于2，编译器必须请求细化而非选择一个代表元回答。",
+        "nearest_source_ids": [
+          "N03",
+          "S14",
+          "N05",
+          "N12"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X11-B4",
+      "status": "PASS",
+      "detail": {
+        "new_object": "PhaseConceptAtlas=(amplitude,relative_phase,periodic_readout,phase_invariant_contract)，概念驻留于稳定周期轨道及相位关系而非单个固定点。",
+        "released_assumption": "所有可保持的概念必须对应静止吸引点",
+        "separating_witness": "mu>0 的 rdot=mu r-r³ 有吸引半径 sqrt(mu)；删去径向耗散项的纯 skew 旋转并没有吸引半径，二者不能混为周期记忆。",
+        "nearest_source_ids": [
+          "S10",
+          "N10",
+          "S06"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-X11-B5",
+      "status": "PASS",
+      "detail": {
+        "new_object": "HystereticConcept=(control,stable_branch,history,fold_conditions)，同一当前控制值可以因历史位于不同稳定解释分支。",
+        "released_assumption": "当前输入及一个固定词典足以唯一决定概念状态",
+        "separating_witness": "mu=0 时 x=±1 均稳定而 x=0 不稳定；只传 mu 不传分支无法唯一恢复状态。",
+        "nearest_source_ids": [
+          "S10",
+          "N06",
+          "N10"
+        ],
+        "scope": "Field/reference integrity with human-authored distinguishing witness. No branch implementation or objective originality score."
+      }
+    },
+    {
+      "id": "D02-BRANCH-COVERAGE",
+      "status": "PASS",
+      "detail": {
+        "branches": 38,
+        "horizons": {
+          "X01": 3,
+          "X02": 3,
+          "X03": 3,
+          "X04": 3,
+          "X05": 3,
+          "X06": 3,
+          "X07": 3,
+          "X08": 3,
+          "X09": 3,
+          "X10": 3,
+          "X11": 5,
+          "X12": 3
+        },
+        "mainlines_and_retained_sides": {
+          "B": 13,
+          "C": 10,
+          "A": 20,
+          "NON_GLOBAL": 6,
+          "SCALE": 6,
+          "TRAJECTORY": 4,
+          "BIFURCATION": 3
+        },
+        "P24_axes": {
+          "subject": 14,
+          "time": 16,
+          "language": 24,
+          "world": 11,
+          "learning": 14
+        },
+        "bifurcation_objects": [
+          "pitchfork structure",
+          "Hopf stable periodic orbit",
+          "fold and hysteretic branch history"
+        ],
+        "comparison_scope": "Distinct specified objects/operations/assumptions, not empirical novelty or theorem independence."
+      }
+    },
+    {
+      "id": "D02-ASSUMPTION-GRAPH",
+      "status": "PASS",
+      "detail": {
+        "claim_classes": {
+          "D": 10,
+          "H": 24,
+          "V": 38
+        },
+        "explicit_assumptions": 23,
+        "external_legacy_nodes": [
+          "H02",
+          "H05",
+          "H07",
+          "H10",
+          "H13",
+          "H18",
+          "H20",
+          "H22"
+        ],
+        "scope": "Dependency graph structure, not empirical confirmation of assumptions."
+      }
+    },
+    {
+      "id": "D02-FINITE-FIXTURES",
+      "status": "PASS",
+      "detail": {
+        "actual_passed": 24,
+        "max_declared_dimension": 5,
+        "max_consumed_steps": 26,
+        "max_consumed_cases": 15,
+        "scope": "Source-bound finite algebraic witnesses and counterexamples. Not neural training, eval, benchmark, or scientific efficacy."
+      }
+    },
+    {
+      "id": "D02-DEPENDENCY-REVERIFY",
+      "status": "PASS",
+      "detail": {
+        "verified_dependency_receipts": 26,
+        "formal_task_dependencies": 25,
+        "additional_source_dependency": "D01"
+      }
+    }
+  ],
+  "passed": 46,
+  "failed": 0,
+  "provenance": {
+    "validator_sha256": "df081ce66aca7693b46e209a771cd28a15d51e6baf3ca77a59e3b66fc4dbfb62",
+    "math_fixtures_sha256": "fba6af3e2765d5eff107ca3fa77eeeaed565f5f6552d9176d253afbe92d3b59e",
+    "initial_fixture_run": "D02_finite_checks_initial.txt retained: two harness field-name mistakes, corrected without source changes."
+  }
+}

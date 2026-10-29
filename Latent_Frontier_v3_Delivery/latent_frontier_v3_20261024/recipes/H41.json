@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H41",
+  "kind": "mechanism",
+  "title": "互补能力的联盟契约",
+  "mechanisms": [
+    "H41"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H41_互补能力的联盟契约.md",
+  "target_base": "src/latent_comm/mechanisms/h41_coalitions",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "max_exact_members": 8,
+    "permutation_samples": 128,
+    "currency": "internal_nonfinancial",
+    "new_spending": 0
+  }
+}

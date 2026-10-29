@@ -1,0 +1,673 @@
+{
+  "state_schema": 1,
+  "project": "latent-comm-lab",
+  "research_state": "not_run",
+  "plan_sha256": "cafee36f5795baa3f1d643dd0d79a11e1aee7479fa67784c960d3c9391a51759",
+  "tasks": {
+    "A00": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "A01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "A02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "A03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "A04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "A05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M07": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M08": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M09": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M10": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M11": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M12": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M13": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M14": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M15": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M16": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M17": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M18": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M19": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M20": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M21": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M22": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M23": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M24": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M25": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M26": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M27": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M28": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M29": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M30": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M31": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M32": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M33": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M34": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M35": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M36": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M37": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M38": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M39": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M40": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M41": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M42": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M43": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M44": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M45": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M46": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M47": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "M48": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W07": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W08": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W09": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W10": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W11": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W12": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "W13": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "B01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "B02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "B03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "B04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "B05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "B06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L07": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L08": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L09": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L10": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L11": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L12": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "L13": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C07": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C08": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C09": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C10": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C11": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C12": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C13": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C14": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C15": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C16": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C17": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C18": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C19": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "C20": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X07": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X08": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X09": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X10": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X11": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "X12": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "D01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "D02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "D03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "D04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V03": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V04": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V05": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V06": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "V07": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "Q01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "Q02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "Z01": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    },
+    "Z02": {
+      "status": "pending",
+      "outputs": [],
+      "checks": []
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H22:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "partitions",
+    "cells",
+    "capability_graph",
+    "action",
+    "source_version",
+    "target_version",
+    "migrations",
+    "closed_cache_refs"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "isa",
+        "ontology",
+        "schema",
+        "state",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "partitions": {
+      "type": "object"
+    },
+    "cells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cell_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "type_tag": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "type": "number"
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "frame": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "readers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "writers": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "partition": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "cell_id",
+          "type_tag",
+          "value",
+          "frame",
+          "readers",
+          "writers",
+          "partition",
+          "revision"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "capability_graph": {
+      "type": "object"
+    },
+    "action": {
+      "enum": [
+        "split",
+        "join",
+        "handoff",
+        "isolate"
+      ]
+    },
+    "source_version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "target_version": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "migrations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "cell_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "source_frame": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "target_frame": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "mapping": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "certificate": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "cell_id",
+          "source_frame",
+          "target_frame",
+          "mapping",
+          "certificate"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "closed_cache_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

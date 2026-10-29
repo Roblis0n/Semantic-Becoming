@@ -1,0 +1,89 @@
+{
+  "status": "done",
+  "research_state": "NOT_RUN",
+  "report": {
+    "path": "reports/media_qa.json",
+    "sha256": "c68f4dedb97ff6f1116b25c6c0de514f65fc6352b992ef920f0e3c6372c06319"
+  },
+  "dependency_receipts_verified": [
+    {
+      "task_id": "V01",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V01.json",
+        "sha256": "52bddf775c02faa1ae12315d478212f77bb2eeada52a4b8c180c6565987c4dad",
+        "bytes": 4595
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V02",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V02.json",
+        "sha256": "d4089cff3c347b4cc27615f37433af1a8017c7bbef3eb967ee45450f85f16d49",
+        "bytes": 32983
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V03",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V03.json",
+        "sha256": "b7dc3231defc1363eeae73c2f30c712fde91aa06de1b13ea3fb96cd5ff1bcf69",
+        "bytes": 15569
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V04",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V04.json",
+        "sha256": "a6ebf36e77d2dd90013efb09562b1b9b640a17ac3d967d175c066e8b8b4c2989",
+        "bytes": 17059
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V05",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V05.json",
+        "sha256": "5ce16dd055a5cad5caca6750645911090bea9d7b29bc768bc8984dc5f3241e39",
+        "bytes": 23508
+      },
+      "blockers": []
+    },
+    {
+      "task_id": "V06",
+      "status": "done",
+      "receipt": {
+        "path": "run_state/receipts/V06.json",
+        "sha256": "2621e9f4260e8df36cf1d8254175617e3f0ad784c3c23dd49e85da4cfbfa224d",
+        "bytes": 75869
+      },
+      "blockers": []
+    }
+  ],
+  "new_narrated_exports": {
+    "wav_editions": 2,
+    "scene_wavs": 17,
+    "source_chunk_wavs": 58,
+    "audio_timed_subtitle_cues": [
+      14,
+      44
+    ],
+    "voiced_mp4": 2,
+    "seconds": [
+      90,
+      360
+    ],
+    "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+    "audition": "USER_WAIVED_NOT_PERFORMED"
+  },
+  "blockers": [],
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

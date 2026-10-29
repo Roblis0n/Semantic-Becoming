@@ -1,0 +1,50 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "members": [
+    "a",
+    "b"
+  ],
+  "projections": [
+    [
+      [
+        1.0
+      ]
+    ],
+    [
+      [
+        1.0
+      ]
+    ]
+  ],
+  "readout": [
+    [
+      1.0
+    ]
+  ],
+  "evidence_support": [
+    {
+      "member": "a",
+      "atoms": [
+        "e"
+      ]
+    },
+    {
+      "member": "b",
+      "atoms": [
+        "e"
+      ]
+    }
+  ],
+  "value_function": "bound",
+  "credit_is_money": false
+}

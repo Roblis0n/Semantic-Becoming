@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "potential_kind": {
+      "const": "quartic_pitchfork"
+    },
+    "alpha_path": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "initial_state": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "structure": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "branch_id": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^.+$"
+    },
+    "dt": {
+      "type": "number"
+    },
+    "steps_per_control": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 128
+    }
+  },
+  "required": [
+    "schema_version",
+    "potential_kind",
+    "alpha_path",
+    "initial_state",
+    "structure",
+    "branch_id",
+    "version",
+    "dt",
+    "steps_per_control"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:latent-comm:H28:resolved-payload:3"
+}

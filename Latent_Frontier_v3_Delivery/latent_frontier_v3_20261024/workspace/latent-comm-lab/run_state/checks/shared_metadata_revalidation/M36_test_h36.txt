@@ -1,0 +1,11 @@
+test_agreement_not_truth (test_h36.H36Contracts.test_agreement_not_truth) ... ok
+test_gate (test_h36.H36Contracts.test_gate) ... ok
+test_neural_source_is_lazy_and_gated (test_h36.H36Contracts.test_neural_source_is_lazy_and_gated) ... ok
+test_real_counterexample_and_revision (test_h36.H36Contracts.test_real_counterexample_and_revision) ... ok
+test_text_not_evidence_and_scope (test_h36.H36Contracts.test_text_not_evidence_and_scope) ... ok
+test_unresolved_and_scope_migration (test_h36.H36Contracts.test_unresolved_and_scope_migration) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK

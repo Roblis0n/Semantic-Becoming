@@ -1,0 +1,68 @@
+{
+  "observed_at_utc": "2026-10-24T15:33:05.159473+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "discovery": "stdlib importlib.metadata only; no research package imported",
+  "package_metadata": {
+    "torch": "NOT_INSTALLED",
+    "transformers": "NOT_INSTALLED",
+    "safetensors": "NOT_INSTALLED",
+    "python-pptx": "1.0.2",
+    "Pillow": "12.3.0",
+    "reportlab": "4.4.9",
+    "cairosvg": "NOT_INSTALLED",
+    "moviepy": "NOT_INSTALLED",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "soundfile": "NOT_INSTALLED",
+    "pyttsx3": "NOT_INSTALLED"
+  },
+  "executables": {
+    "python3": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "ffprobe": "/usr/bin/ffprobe",
+    "soffice": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/soffice",
+    "libreoffice": null,
+    "espeak": null,
+    "espeak-ng": null,
+    "node": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "pdftoppm": "/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+    "fc-list": "/usr/bin/fc-list"
+  },
+  "connectors": {
+    "Library": "read and durable checkpoint write confirmed",
+    "web": "public read schema available",
+    "image_generation": "available schema; excluded unless zero-cost status established",
+    "TTS": "not yet verified",
+    "video_service": "not yet verified"
+  },
+  "execution_environment": {
+    "kind": "dot_cloud",
+    "user_computer_used": false,
+    "catalog_from_parent": "no authorized user computer and no saved codingEnvironments"
+  },
+  "zero_new_spend": true,
+  "chosen_routes": {
+    "code": "local filesystem plus stdlib static and finite math checks",
+    "presentation": "local python-pptx if installed; OOXML source fallback",
+    "diagrams": "original SVG",
+    "animation": "local deterministic vector and bounded finite math",
+    "video": "ffmpeg if available; HTML timeline fallback",
+    "voice": "local installed non-neural TTS if adequate; script fallback"
+  },
+  "denied_actions": [
+    "model_download",
+    "model_initialize",
+    "model_forward",
+    "model_train",
+    "model_eval",
+    "model_api",
+    "purchase",
+    "publish",
+    "send_message",
+    "read_unrelated_private_data",
+    "change_system_settings"
+  ],
+  "model_package_discovery_does_not_authorize_import": true
+}

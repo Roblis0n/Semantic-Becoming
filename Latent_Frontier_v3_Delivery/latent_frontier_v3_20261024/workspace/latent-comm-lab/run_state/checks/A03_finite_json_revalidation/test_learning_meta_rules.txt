@@ -1,0 +1,18 @@
+test_ast_and_partition_isolation (test_learning_meta_rules.ContractChecks.test_ast_and_partition_isolation) ... ok
+test_bounded_rule_updates (test_learning_meta_rules.ContractChecks.test_bounded_rule_updates) ... ok
+test_engine_delegation_and_resume_command (test_learning_meta_rules.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_first_order_stop_is_explicit (test_learning_meta_rules.ContractChecks.test_first_order_stop_is_explicit) ... ok
+test_metadata (test_learning_meta_rules.ContractChecks.test_metadata) ... ok
+test_recipe_is_unbound (test_learning_meta_rules.ContractChecks.test_recipe_is_unbound) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+{
+  "selected": 6,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_meta_rules.ContractChecks.test_stage_syntax_and_gates"
+  ],
+  "neural_modules_loaded": []
+}

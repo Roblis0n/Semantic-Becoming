@@ -1,0 +1,16 @@
+M20: AST parsed 6 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_causal_not_wall_time (test_h20.TestClocks.test_causal_not_wall_time) ... ok
+test_dynamics_readout_is_not_wall_clock (test_h20.TestClocks.test_dynamics_readout_is_not_wall_clock) ... ok
+test_new_consumer_versions (test_h20.TestClocks.test_new_consumer_versions) ... ok
+test_out_of_order_duplicate_and_replay (test_h20.TestClocks.test_out_of_order_duplicate_and_replay) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h20.TestClocks.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_source_gate_and_schema (test_h20.TestClocks.test_source_gate_and_schema) ... ok
+test_stale_and_never_trigger_bound (test_h20.TestClocks.test_stale_and_never_trigger_bound) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h20.TestClocks.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h20.TestClocks.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.015s
+
+OK
+M20: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

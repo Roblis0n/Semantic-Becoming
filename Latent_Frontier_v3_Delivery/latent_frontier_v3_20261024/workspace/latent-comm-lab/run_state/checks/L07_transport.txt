@@ -1,0 +1,12 @@
+test_anchor_identity (test_learning_transport.ContractChecks.test_anchor_identity) ... ok
+test_engine_delegation_and_resume_command (test_learning_transport.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_jvp_vjp_source_and_no_token_kl (test_learning_transport.ContractChecks.test_jvp_vjp_source_and_no_token_kl) ... ok
+test_metadata (test_learning_transport.ContractChecks.test_metadata) ... ok
+test_rank_deficient_minimum_norm (test_learning_transport.ContractChecks.test_rank_deficient_minimum_norm) ... ok
+test_recipe_is_unbound (test_learning_transport.ContractChecks.test_recipe_is_unbound) ... ok
+test_stage_syntax_and_gates (test_learning_transport.ContractChecks.test_stage_syntax_and_gates) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK

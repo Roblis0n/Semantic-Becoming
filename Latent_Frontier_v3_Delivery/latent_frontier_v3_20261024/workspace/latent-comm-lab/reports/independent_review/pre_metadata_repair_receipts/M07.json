@@ -1,0 +1,72 @@
+{
+  "task_id": "M07",
+  "status": "done",
+  "input_digest": "138b4bfa1ca7259df61397492b89c7d4fe784a3c3c0d50c2aa0af5f3d2d559ff",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/README.md",
+      "sha256": "5ea858218bdcd1ac19cf70c972b9d13b2c9a0bb3a0aab8b2facd97983f5d7137",
+      "bytes": 2245
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/__init__.py",
+      "sha256": "2fb254c669a98476625be22d45df110dc0fdc42b7e029bf22307253eeb50edbc",
+      "bytes": 86
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/adapter.py",
+      "sha256": "f094d53c3279cfc9d8e7905ca384fc423611007b3696c1bd626232353bf4987c",
+      "bytes": 1309
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/losses.py",
+      "sha256": "8a5b16bfac520807fc171002a3ac406230a50809669762ce5b770c1237b17ffe",
+      "bytes": 1405
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/migration.py",
+      "sha256": "b834b885424ea4eced6eb4c46fb357116aeecc86fec38b835598289a83756c11",
+      "bytes": 2057
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/reference.py",
+      "sha256": "cc5a59fa14ae74f1de21761c2b5edd881a05d50c23fc64d5f0b4b88d029ab0a9",
+      "bytes": 4972
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/schema.json",
+      "sha256": "f21f47360d01c4072d5b44e9c525686f7e45c8038e302262824a1ed3e1b3745a",
+      "bytes": 1073
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h07_legacy/types.py",
+      "sha256": "cdf96a21fc51efa0f39eb44304171140eaa7452a8f9f82d3c0359eab088c86bc",
+      "bytes": 1180
+    },
+    {
+      "path": "tests/contracts/test_h07.py",
+      "sha256": "2bf6c6d1b23813655400a401198d8f6319d1861e1db388ebde040d19882df2dc",
+      "bytes": 2625
+    },
+    {
+      "path": "configs/mechanisms/H07.json",
+      "sha256": "8733ae7358cbb9b58043b0ed7f49941f65dbf43d920d41df0d0caaf5dbb55122",
+      "bytes": 3237
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M07_contracts.txt",
+      "sha256": "7c3ea909a933f03e0e9933bf8e13ac6550362d5d0b3a997a3830526eeceb6ba5"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded typed DSL/scope/cycle/branch contracts and AST gates pass. Shared compiler frontier lowering and tensor source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:21:17.554803+00:00"
+}

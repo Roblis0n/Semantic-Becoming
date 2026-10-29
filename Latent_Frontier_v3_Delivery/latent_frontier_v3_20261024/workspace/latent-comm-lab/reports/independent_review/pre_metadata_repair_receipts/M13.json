@@ -1,0 +1,72 @@
+{
+  "task_id": "M13",
+  "status": "done",
+  "input_digest": "cce8642921dcbb31f900a6057d990d6cf23d36f8961db3aafd1b7e2f58f0c93b",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/README.md",
+      "sha256": "0817845ac05d0c89416a6566da4b3114c7d091ae60d6351ec8c7a9d332a5c883",
+      "bytes": 2292
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/__init__.py",
+      "sha256": "357ac2a4f4868d18e175e5fa1bceeab4fb7d25b229d77f3a3e616d4a8a99b7af",
+      "bytes": 95
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/adapter.py",
+      "sha256": "eb360b30a3f32d2eae4a35b05c0e57265b8e81df787aa2c5301ee2559f229726",
+      "bytes": 1545
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/losses.py",
+      "sha256": "85f12173127a3af01d4151be98b08f4fb965fd162acb3f796f49d91a08a61a62",
+      "bytes": 1278
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/migration.py",
+      "sha256": "6baee30e3ea3abe0b5804333ccbdb965732d919735c291e14f0dcbc9e9eff513",
+      "bytes": 2211
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/reference.py",
+      "sha256": "751c9ee76b7b1312a28006206ecea048326be2e9f348729984d126b8f7db6dbb",
+      "bytes": 2283
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/schema.json",
+      "sha256": "f045f6e7db7c748daab4ad040a748e84cf4c49d2f080f56b492e296c896c7ade",
+      "bytes": 1779
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h13_legacy/types.py",
+      "sha256": "7b005424aa2ea36d52c86033769493ba79b27f3a13e2e610659d522cc24c6c39",
+      "bytes": 1484
+    },
+    {
+      "path": "tests/contracts/test_h13.py",
+      "sha256": "8905b056b5a0e584c2453f4a5820335624850a2ce0d816e27ecd4fbe482027af",
+      "bytes": 2700
+    },
+    {
+      "path": "configs/mechanisms/H13.json",
+      "sha256": "a9df4e2f03d4275d99386e698d4c3abccfdaf286e7d45dbbb1a8cf1d50d70103",
+      "bytes": 3199
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M13_contracts.txt",
+      "sha256": "3f7ff953bbc23c595a6bc2b095415a230929dc1412cdd61be2ccfa9c72004755"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three bounded fork/ancestry/commuting merge/read-write conflict/AST contracts pass; differentiable clone and disjoint merge source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:28:08.497424+00:00"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_002",
+  "edition": "explainer_360",
+  "scene_id": "S01",
+  "characters": 30,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "原方案已经把消息扩展成状态、算子、信念和程序。本轮继续向前：",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:18:48.846896+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:18:56 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:18:57.961262+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 265530,
+    "duration_seconds": 6.02108843537415,
+    "sample_peak": 12976,
+    "sample_rms": 2109.4648787618594,
+    "sha256": "796ce42a264c2e824474d8041230639a8ce5f7542950decd60809fbd71c8447c",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:19:21.944256+00:00"
+}

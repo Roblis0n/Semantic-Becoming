@@ -1,0 +1,36 @@
+{
+  "schema_version": 3,
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "frame": "f1",
+    "ontology": "o1",
+    "isa": "i1",
+    "world": "w1",
+    "task": "t1",
+    "evidence": "e1"
+  },
+  "sources": [
+    {
+      "source_id": "bound",
+      "A": [
+        [
+          1.0
+        ]
+      ],
+      "b": [
+        1.0
+      ],
+      "temperature": 1.0,
+      "domain": "bound",
+      "frame": "bound",
+      "source_state_version": "bound",
+      "evidence_support": []
+    }
+  ],
+  "anchor": [
+    1.0
+  ],
+  "anchor_strength": 1.0,
+  "domain": "bound"
+}

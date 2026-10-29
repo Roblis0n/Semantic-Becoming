@@ -1,0 +1,929 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "path": "src/latent_comm/operators/low_rank.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H01"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h01_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/operators/composition.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H01"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h01_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/bridges/operator_generator.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H01"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h01_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/responses/low_rank_jet.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H02"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h02_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/responses/finite_difference.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H02"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h02_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/responses/trust_region.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H02"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h02_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/beliefs/packet.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H03"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h03_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/beliefs/mixture.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H03"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h03_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/beliefs/update.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H03"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h03_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/beliefs/matching.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H03"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h03_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/fields/constraints.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H04"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h04_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/fields/solver.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H04"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h04_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/fields/conflicts.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H04"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h04_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/fields/readwrite.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H04"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h04_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/continuations/capture.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H05"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h05_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/continuations/translate.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H05"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h05_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/continuations/resume.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H05"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h05_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/continuations/ledger.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H05"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h05_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/atlas/charts.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H06"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h06_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/atlas/routing.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H06"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h06_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/atlas/transitions.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H06"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h06_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/atlas/objectives.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H06"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h06_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/ir/types.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H07"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h07_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/ir/parser.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H07"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h07_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/ir/compiler.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H07"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h07_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/ir/runtime.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H07"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h07_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/relations/packet.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H08"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h08_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/relations/matching.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H08"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h08_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/relations/exchange.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H08"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h08_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/interventions/scm.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H09"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h09_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/interventions/algebra.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H09"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h09_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/interventions/transport.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H09"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h09_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/synergy/hypergraph.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H10"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h10_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/synergy/interactions.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H10"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h10_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/synergy/composer.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H10"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h10_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/coding/progressive.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H11"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h11_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/coding/quantization.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H11"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h11_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/coding/requests.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H11"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h11_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/capsules/store.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H12"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h12_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/capsules/reader.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H12"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h12_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/capsules/versioning.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H12"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h12_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/branching/fork.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H13"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h13_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/branching/merge.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H13"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h13_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/branching/ancestry.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H13"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h13_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/grammar/productions.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H14"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h14_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/grammar/bindings.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H14"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h14_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/grammar/expansion.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H14"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h14_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/population/pair_sampler.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H15"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h15_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/population/protocol_objectives.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H15"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h15_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/population/adapter_registry.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H15"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h15_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/hybrid/symbols.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H16"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h16_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/hybrid/bindings.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H16"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h16_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/hybrid/fusion.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H16"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h16_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/grounding/frames.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H17"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h17_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/grounding/transform.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H17"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h17_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/grounding/action_effects.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H17"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h17_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/topology/candidates.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H18"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h18_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/topology/controller.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H18"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h18_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/topology/compiler.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H18"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h18_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/consolidation/teacher.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H19"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h19_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/consolidation/adapter_builder.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H19"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h19_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/consolidation/distillation.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H19"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h19_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/clocks/events.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H20"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h20_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/clocks/scheduler.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H20"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h20_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/clocks/staleness.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H20"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h20_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/portfolios/tree.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H21"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h21_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/portfolios/selector.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H21"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h21_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/portfolios/reuse.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H21"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h21_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/elastic/partition.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H22"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h22_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/elastic/transitions.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H22"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h22_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/elastic/controller.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H22"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h22_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/repair/diagnostics.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H23"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h23_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/repair/residual.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H23"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h23_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/repair/protocol.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H23"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h23_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/capabilities/scopes.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H24"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h24_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/capabilities/enforcer.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H24"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h24_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    },
+    {
+      "path": "src/latent_comm/capabilities/effects.py",
+      "writer": "A02",
+      "mechanism_owners": [
+        "H24"
+      ],
+      "implementation_modules": [
+        "latent_comm.mechanisms.h24_legacy"
+      ],
+      "strategy": "lazy named re-export; no algorithm duplication",
+      "resolution_status": "requires mechanism task completion; not claimed import-tested"
+    }
+  ]
+}

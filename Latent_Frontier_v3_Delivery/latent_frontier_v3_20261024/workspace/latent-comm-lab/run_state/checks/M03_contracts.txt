@@ -1,0 +1,16 @@
+M03: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_conflict_counterexample_query_and_provenance_bindings (test_h03.BeliefTests.test_conflict_counterexample_query_and_provenance_bindings) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h03.BeliefTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_sequence_not_token_average (test_h03.BeliefTests.test_sequence_not_token_average) ... ok
+test_set_matching_and_domain (test_h03.BeliefTests.test_set_matching_and_domain) ... ok
+test_source_gate_and_schema (test_h03.BeliefTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h03.BeliefTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_typed_zero_mass_wire (test_h03.BeliefTests.test_typed_zero_mass_wire) ... ok
+test_unknown_and_deduplicated_evidence (test_h03.BeliefTests.test_unknown_and_deduplicated_evidence) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h03.BeliefTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.025s
+
+OK
+M03: 9 contract tests; failures=0 errors=0; no tensor/model import or execution.

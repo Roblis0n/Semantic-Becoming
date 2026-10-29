@@ -1,0 +1,61 @@
+{
+  "task_id": "D03",
+  "research_state": "NOT_RUN",
+  "review_source": "Independent assistant reviewer /root/review_frontier_research_monograph; not human approval",
+  "findings_closed": [
+    {
+      "section": "15",
+      "issue": "first_arxiv_submission incorrectly substituted for first_publication_date",
+      "repair": "Label publication year/month/day at original precision and arXiv first submission independently; unknown publication stays unknown. N03 publication2004 versus deposit2012-07-11."
+    },
+    {
+      "section": "5.1",
+      "issue": "Affected-set and context assumptions abbreviated",
+      "repair": "Original/new graph descendant union including graft node, DAG, same exogenous assignment, unaffected roots and intervention."
+    },
+    {
+      "section": "5.2",
+      "issue": "Conditional independence alone does not establish local s_i boundary dependence",
+      "repair": "Both complete-current-state conditional independence and declared local-boundary dependence stated before product formula."
+    },
+    {
+      "section": "6.4",
+      "issue": "One-query marginals insufficient for adaptive-history equivalence",
+      "repair": "Explicit same per-round declared conditional response model; distinguish marginal from across-round dependence."
+    },
+    {
+      "section": "10",
+      "issue": "Missing Markdown blank line collapsed23 bullets",
+      "repair": "Generator emits blank line and validator requires23 LaTeX item entries."
+    },
+    {
+      "section": "12 and other code spans",
+      "issue": "nolinkurl suppressed spaces in objective formulas",
+      "repair": "Filter preserves every source whitespace outside URL chunks; exact rendered-token match for all127 LossSpec formulas plus visual H25/H37/H38 check."
+    }
+  ],
+  "unmodified_sources": [
+    "specs/novelty_ledger.json",
+    "paper/references.bib",
+    "docs/formal_notes",
+    "src"
+  ],
+  "outputs": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "0bb343590e75ea48864982f169c5db9fd9d37e56761ee94b54f4f6d6aeb84945"
+    },
+    {
+      "path": "README.md",
+      "sha256": "2953e58fc870dafa369e56772ad4df92a0d7d11a5b3cc1895568b5f541c102b0"
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "c6079c23a5c61e5458eb177e38f7c204b449ab8d57f31791582ebbee9f4881d0"
+    }
+  ],
+  "pdf_sha256": "963676a0a77417c83bc26b0ec5eccde62f53ae3d2eb673dd66e5dfd446b91c28",
+  "page_count": 55,
+  "static_checks": 50,
+  "media_status": "Still active production, personal/noncommercial, unauditioned; final media reconciliation pending parent facts."
+}

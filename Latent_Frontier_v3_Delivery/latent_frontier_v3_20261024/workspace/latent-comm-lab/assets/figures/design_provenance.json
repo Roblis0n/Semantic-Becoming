@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "path_relative_to_extracted": "anthropic_claude_design_language_research(2)/anthropic_claude_design_language_research/implementation/sample_slide_style_guide.md",
+      "sha256": "ba2c3d1661737744f40f74a386d3d19f68d2a4573b7836cb1b72aacd352851e2"
+    },
+    {
+      "path_relative_to_extracted": "anthropic_claude_design_language_research(2)/anthropic_claude_design_language_research/03_visual_dna_overview.md",
+      "sha256": "0835d427f7ca69954af1dd4d1652667cc9adaba2fbf2035ef79e26e89200750e"
+    },
+    {
+      "path_relative_to_extracted": "Anthropic_Claude_Design_Language_Research_20261008(3)/Anthropic_Claude_Design_Language_Research_20261008/16_replication_system/04_book_like_layout_recipes.md",
+      "sha256": "e1a5a9d61dc9e73b1b3ff6923db7959d30aebbeb66fc01216625545f20a93e55"
+    },
+    {
+      "path_relative_to_extracted": "Duolingo_Design_Language_Research_20261008(1)/Duolingo_Design_Language_Research_20261008/00_meta/00_executive_summary.md",
+      "sha256": "69701aaf661b6f63530b75de03f2912c5b6ac5adddf6c919121c0853e76d6fb6"
+    },
+    {
+      "path_relative_to_extracted": "Duolingo_Design_Language_Research_20261008(1)/Duolingo_Design_Language_Research_20261008/09_replication_system/01_observed_design_tokens.md",
+      "sha256": "b5afad351fd6d59d2784cf03760d9a073b5ff4b5c179520805c8c38291be52f4"
+    },
+    {
+      "path_relative_to_extracted": "Duolingo_Design_Language_Research_20261008(1)/Duolingo_Design_Language_Research_20261008/05_feedback_system/19_feedback_actionability.md",
+      "sha256": "0615bb1754d90ac346e9e27855a8f2496ec4d9e68298fcbef0c7a59b818ed1ee"
+    },
+    {
+      "path_relative_to_extracted": "Duolingo_Design_Language_Research_20261008(1)/Duolingo_Design_Language_Research_20261008/09_replication_system/14_reduced_motion_specification.md",
+      "sha256": "f843574920126414e517ff63ede711c612d4258409d2f414bac7849c96676e12"
+    }
+  ],
+  "implementation_decisions": [
+    "Quiet editorial hierarchy with fixed claim, mechanism and visible limitation.",
+    "Distinct object colors retained across figures, slides and animation states.",
+    "Fact, explanation and next step are separate in animation timeline steps and offline controls.",
+    "Reduced-motion preference requests a complete static final state, without automatic looping.",
+    "Six figures and all slide labels preserve actual text. No logos, mascots or bundled font binaries."
+  ],
+  "token_status": "Original project choices inspired by supplied research. Duolingo/Anthropic reconstruction tokens are not treated as verified official standards.",
+  "research_state": "NOT_RUN"
+}

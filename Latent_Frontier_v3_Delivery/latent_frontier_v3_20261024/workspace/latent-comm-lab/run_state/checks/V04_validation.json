@@ -1,0 +1,56 @@
+{
+  "status": "done",
+  "requested": true,
+  "source_created": true,
+  "audio_listened": false,
+  "research_state": "NOT_RUN",
+  "updated_at_utc": "2026-10-24T18:56:31.792148+00:00",
+  "license_scope": "Generated speech and speech-containing videos: PERSONAL AND NONCOMMERCIAL USE ONLY. Independently authored source/PPT/SVG and silent visuals do not automatically inherit this TTS restriction.",
+  "task_id": "V04",
+  "export_created": true,
+  "export_edition": "narrated_personal_noncommercial_unauditioned",
+  "narrated_export_created": true,
+  "narrated_final_acceptance": false,
+  "narration_wav_created": true,
+  "opened_checked": true,
+  "opened_scope": "Actual A/V full decode and all 14 cue-midpoint frames plus opening; no auditory review",
+  "timing_verified": true,
+  "audio_timing_verified": true,
+  "timing_scope": "Exact measured synthesized PCM chunk and scene boundaries with nonoverlapping subtitle margins",
+  "word_level_alignment_verified": false,
+  "blockers": [],
+  "export": {
+    "path": "assets/video/intro_90/intro_90_narrated_personal.mp4",
+    "sha256": "a784fa2936196e3407c1748239310914614fc11adf2f7581bfa06474dad63f0e",
+    "duration_seconds": 90.0,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 1,
+    "video_start_time": "0.000000",
+    "audio_start_time": "0.000000",
+    "full_decode_passed": true
+  },
+  "evidence": [
+    {
+      "path": "assets/video/intro_90/narrated_qa.json",
+      "sha256": "f3fd02495979a78eb592c1e80399b4066e4ad96b3ca44774d2e63b835df3b7f0",
+      "bytes": 4906
+    },
+    {
+      "path": "assets/video/intro_90/narrated_visual_review.json",
+      "sha256": "18eaa09e64135f5941c10b0a8d5a361ab8cc1be074232d414128ef5bce6e2252",
+      "bytes": 3582
+    },
+    {
+      "path": "assets/audio/tts_ai/intro_90.assembly.json",
+      "sha256": "bd596404f0497f09687a28e564cc41ea75897a8a6d5be7a60b0eb8bdcde3a1b2",
+      "bytes": 19608
+    }
+  ],
+  "silent_visual_history_preserved": "assets/video/intro_90/intro_90_silent_draft.mp4",
+  "prior_acceptance_blockers": [
+    "Mandatory actual audition and pronunciation/sound-quality review remain unperformed because the runtime does not support audio input. Objective waveform/stream checks are not listening."
+  ],
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "acceptance_scope_change": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json"
+}

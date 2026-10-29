@@ -1,0 +1,277 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H15:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "members",
+    "held_out_pairs",
+    "required_capabilities",
+    "behavior_coordinates",
+    "training_pair_graph"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "frame",
+        "ontology",
+        "schema",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "model_id",
+          "model_revision",
+          "tokenizer_revision",
+          "writer",
+          "reader",
+          "capabilities",
+          "behavior_coordinates",
+          "interface_trained",
+          "versions"
+        ],
+        "properties": {
+          "model_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "model_revision": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "tokenizer_revision": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "writer": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "reader": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 1,
+              "maxItems": 64
+            },
+            "minItems": 1,
+            "maxItems": 64
+          },
+          "capabilities": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "behavior_coordinates": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "interface_trained": {
+            "type": "boolean"
+          },
+          "versions": {
+            "type": "object",
+            "properties": {
+              "schema": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "state": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "ontology": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "isa": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "frame": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "world": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "task": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              },
+              "evidence": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "frame",
+              "isa",
+              "ontology",
+              "schema"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "held_out_pairs": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "required_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "behavior_coordinates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "training_pair_graph": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "minItems": 2,
+        "maxItems": 2
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

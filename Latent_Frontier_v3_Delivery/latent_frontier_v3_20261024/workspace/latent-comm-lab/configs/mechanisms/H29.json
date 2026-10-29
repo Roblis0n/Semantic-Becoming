@@ -1,0 +1,50 @@
+{
+  "schema_version": 3,
+  "id": "H29",
+  "kind": "mechanism",
+  "title": "问题生成的潜演算",
+  "mechanisms": [
+    "H29"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "hypotheses/H29_问题生成的潜演算.md",
+  "target_base": "src/latent_comm/mechanisms/h29_questions",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "max_transform_depth": 5,
+    "candidate_questions": 32,
+    "relations": [
+      "equivalent",
+      "sufficient",
+      "necessary",
+      "heuristic"
+    ]
+  },
+  "integration_status": "NOT_RUN",
+  "reference_module": "latent_comm.mechanisms.h29_questions.reference",
+  "adapter_module": "latent_comm.mechanisms.h29_questions.adapter",
+  "required_version_axes": [
+    "task",
+    "ontology"
+  ],
+  "loss_ledger_module": "latent_comm.mechanisms.h29_questions.losses",
+  "fixture_bounds": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  },
+  "source_recipe": "PLAN_ROOT/recipes/H29.json"
+}

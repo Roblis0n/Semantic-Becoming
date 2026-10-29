@@ -1,0 +1,1068 @@
+[
+  {
+    "id": "H01",
+    "title": "可组合潜算子",
+    "english": "Composable Latent Operators",
+    "origin": "inherited_v2",
+    "summary": "不发送已经求得的答案，发送作用于接收者状态的函数。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H01_可组合潜算子.md",
+    "integration_path": "integration/I01_可组合潜算子.md",
+    "target_base": "src/latent_comm/mechanisms/h01_legacy",
+    "source_reference_modules": [
+      "operators/low_rank.py",
+      "operators/composition.py",
+      "bridges/operator_generator.py"
+    ],
+    "source_refs": [
+      "inherited:R01",
+      "inherited:R03",
+      "inherited:R08"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H01.json"
+  },
+  {
+    "id": "H02",
+    "title": "反事实响应包",
+    "english": "Counterfactual Response Capsules",
+    "origin": "inherited_v2",
+    "summary": "传送条件变化下的局部响应，而非单个静态状态。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H02_反事实响应包.md",
+    "integration_path": "integration/I02_反事实响应包.md",
+    "target_base": "src/latent_comm/mechanisms/h02_legacy",
+    "source_reference_modules": [
+      "responses/low_rank_jet.py",
+      "responses/finite_difference.py",
+      "responses/trust_region.py"
+    ],
+    "source_refs": [
+      "inherited:R01",
+      "inherited:R11"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H02.json"
+  },
+  {
+    "id": "H03",
+    "title": "多假设信念包",
+    "english": "Multi-Hypothesis Belief Packets",
+    "origin": "inherited_v2",
+    "summary": "让接收者继承尚未决出的分歧，而不是只继承一个结论。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H03_多假设信念包.md",
+    "integration_path": "integration/I03_多假设信念包.md",
+    "target_base": "src/latent_comm/mechanisms/h03_legacy",
+    "source_reference_modules": [
+      "beliefs/packet.py",
+      "beliefs/mixture.py",
+      "beliefs/update.py",
+      "beliefs/matching.py"
+    ],
+    "source_refs": [
+      "inherited:R01",
+      "inherited:R06"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H03.json"
+  },
+  {
+    "id": "H04",
+    "title": "多主体共享约束场",
+    "english": "Multi-Model Constraint Fields",
+    "origin": "inherited_v2",
+    "summary": "不再轮流发结论，而是共同塑造一个可继续求解的状态空间。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H04_多主体共享约束场.md",
+    "integration_path": "integration/I04_多主体共享约束场.md",
+    "target_base": "src/latent_comm/mechanisms/h04_legacy",
+    "source_reference_modules": [
+      "fields/constraints.py",
+      "fields/solver.py",
+      "fields/conflicts.py",
+      "fields/readwrite.py"
+    ],
+    "source_refs": [
+      "inherited:R09",
+      "inherited:R10"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H04.json"
+  },
+  {
+    "id": "H05",
+    "title": "推理续接胶囊",
+    "english": "Cross-Model Continuation Capsules",
+    "origin": "inherited_v2",
+    "summary": "让另一模型接手未完成的计算，而不必从文字摘要重新开始。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H05_推理续接胶囊.md",
+    "integration_path": "integration/I05_推理续接胶囊.md",
+    "target_base": "src/latent_comm/mechanisms/h05_legacy",
+    "source_reference_modules": [
+      "continuations/capture.py",
+      "continuations/translate.py",
+      "continuations/resume.py",
+      "continuations/ledger.py"
+    ],
+    "source_refs": [
+      "inherited:R04",
+      "inherited:R03",
+      "inherited:R17"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H05.json"
+  },
+  {
+    "id": "H06",
+    "title": "多图册语义对齐",
+    "english": "Behavioral Semantic Atlases",
+    "origin": "inherited_v2",
+    "summary": "不强迫所有模型共享一个坐标，而学习局部坐标与操作关系。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H06_多图册语义对齐.md",
+    "integration_path": "integration/I06_多图册语义对齐.md",
+    "target_base": "src/latent_comm/mechanisms/h06_legacy",
+    "source_reference_modules": [
+      "atlas/charts.py",
+      "atlas/routing.py",
+      "atlas/transitions.py",
+      "atlas/objectives.py"
+    ],
+    "source_refs": [
+      "inherited:R05",
+      "inherited:R11",
+      "inherited:R12",
+      "inherited:R13",
+      "inherited:R14"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H06.json"
+  },
+  {
+    "id": "H07",
+    "title": "类型化潜程序",
+    "english": "Typed Latent Programs",
+    "origin": "inherited_v2",
+    "summary": "让消息不只可读取，还可作为受限计算程序执行。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H07_类型化潜程序.md",
+    "integration_path": "integration/I07_类型化潜程序.md",
+    "target_base": "src/latent_comm/mechanisms/h07_legacy",
+    "source_reference_modules": [
+      "ir/types.py",
+      "ir/parser.py",
+      "ir/compiler.py",
+      "ir/runtime.py"
+    ],
+    "source_refs": [
+      "inherited:R07",
+      "inherited:R08"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H07.json"
+  },
+  {
+    "id": "H08",
+    "title": "关系结构通信",
+    "english": "Relational Latent Exchange",
+    "origin": "inherited_v2",
+    "summary": "传递对象之间的关系，而非强求向量坐标一致。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H08_关系结构通信.md",
+    "integration_path": "integration/I08_关系结构通信.md",
+    "target_base": "src/latent_comm/mechanisms/h08_legacy",
+    "source_reference_modules": [
+      "relations/packet.py",
+      "relations/matching.py",
+      "relations/exchange.py"
+    ],
+    "source_refs": [
+      "inherited:R12",
+      "inherited:R13",
+      "inherited:R14"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H08.json"
+  },
+  {
+    "id": "H09",
+    "title": "干预代数通信",
+    "english": "Intervention Algebra Messages",
+    "origin": "inherited_v2",
+    "summary": "发送可组合干预及其影响，而不是相关性描述。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H09_干预代数通信.md",
+    "integration_path": "integration/I09_干预代数通信.md",
+    "target_base": "src/latent_comm/mechanisms/h09_legacy",
+    "source_reference_modules": [
+      "interventions/scm.py",
+      "interventions/algebra.py",
+      "interventions/transport.py"
+    ],
+    "source_refs": [
+      "inherited:R11"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H09.json"
+  },
+  {
+    "id": "H10",
+    "title": "高阶协同超边",
+    "english": "Higher-Order Latent Synergy",
+    "origin": "inherited_v2",
+    "summary": "优化只有联合出现才有用的消息组合。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H10_高阶协同超边.md",
+    "integration_path": "integration/I10_高阶协同超边.md",
+    "target_base": "src/latent_comm/mechanisms/h10_legacy",
+    "source_reference_modules": [
+      "synergy/hypergraph.py",
+      "synergy/interactions.py",
+      "synergy/composer.py"
+    ],
+    "source_refs": [
+      "inherited:R07"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H10.json"
+  },
+  {
+    "id": "H11",
+    "title": "渐进潜编码",
+    "english": "Progressive Latent Codes",
+    "origin": "inherited_v2",
+    "summary": "同一个消息可逐级展开，而不是固定一次传完。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H11_渐进潜编码.md",
+    "integration_path": "integration/I11_渐进潜编码.md",
+    "target_base": "src/latent_comm/mechanisms/h11_legacy",
+    "source_reference_modules": [
+      "coding/progressive.py",
+      "coding/quantization.py",
+      "coding/requests.py"
+    ],
+    "source_refs": [
+      "inherited:R01"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H11.json"
+  },
+  {
+    "id": "H12",
+    "title": "多查询持久胶囊",
+    "english": "Multi-Query Latent Capsules",
+    "origin": "inherited_v2",
+    "summary": "把一段证据变成可反复询问的计算对象。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H12_多查询持久胶囊.md",
+    "integration_path": "integration/I12_多查询持久胶囊.md",
+    "target_base": "src/latent_comm/mechanisms/h12_legacy",
+    "source_reference_modules": [
+      "capsules/store.py",
+      "capsules/reader.py",
+      "capsules/versioning.py"
+    ],
+    "source_refs": [
+      "inherited:R01",
+      "inherited:R03"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H12.json"
+  },
+  {
+    "id": "H13",
+    "title": "可分叉潜计算",
+    "english": "Forkable Latent Computation",
+    "origin": "inherited_v2",
+    "summary": "让计算分支可以复制、并行继续并有条件合并。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H13_可分叉潜计算.md",
+    "integration_path": "integration/I13_可分叉潜计算.md",
+    "target_base": "src/latent_comm/mechanisms/h13_legacy",
+    "source_reference_modules": [
+      "branching/fork.py",
+      "branching/merge.py",
+      "branching/ancestry.py"
+    ],
+    "source_refs": [
+      "inherited:R04"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H13.json"
+  },
+  {
+    "id": "H14",
+    "title": "潜技能语法",
+    "english": "Latent Skill Grammars",
+    "origin": "inherited_v2",
+    "summary": "让潜算子组合具有可学习的类型与层级。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H14_潜技能语法.md",
+    "integration_path": "integration/I14_潜技能语法.md",
+    "target_base": "src/latent_comm/mechanisms/h14_legacy",
+    "source_reference_modules": [
+      "grammar/productions.py",
+      "grammar/bindings.py",
+      "grammar/expansion.py"
+    ],
+    "source_refs": [
+      "inherited:R07",
+      "inherited:R08"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H14.json"
+  },
+  {
+    "id": "H15",
+    "title": "接收者无关协议学习",
+    "english": "Receiver-Agnostic Protocol Learning",
+    "origin": "inherited_v2",
+    "summary": "让发送者学习面向一族接收模型的接口。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H15_接收者无关协议学习.md",
+    "integration_path": "integration/I15_接收者无关协议学习.md",
+    "target_base": "src/latent_comm/mechanisms/h15_legacy",
+    "source_reference_modules": [
+      "population/pair_sampler.py",
+      "population/protocol_objectives.py",
+      "population/adapter_registry.py"
+    ],
+    "source_refs": [
+      "inherited:R05",
+      "inherited:R07"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H15.json"
+  },
+  {
+    "id": "H16",
+    "title": "精确符号与潜状态双通道",
+    "english": "Symbol-Latent Dual Channels",
+    "origin": "inherited_v2",
+    "summary": "把必须精确的内容与开放计算状态分开传输。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H16_精确符号与潜状态双通道.md",
+    "integration_path": "integration/I16_精确符号与潜状态双通道.md",
+    "target_base": "src/latent_comm/mechanisms/h16_legacy",
+    "source_reference_modules": [
+      "hybrid/symbols.py",
+      "hybrid/bindings.py",
+      "hybrid/fusion.py"
+    ],
+    "source_refs": [
+      "inherited:R01",
+      "inherited:R03"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H16.json"
+  },
+  {
+    "id": "H17",
+    "title": "跨模态坐标接地",
+    "english": "Grounded Cross-Modal Latent Exchange",
+    "origin": "inherited_v2",
+    "summary": "让视觉、语言与动作通过环境关系对接。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H17_跨模态坐标接地.md",
+    "integration_path": "integration/I17_跨模态坐标接地.md",
+    "target_base": "src/latent_comm/mechanisms/h17_legacy",
+    "source_reference_modules": [
+      "grounding/frames.py",
+      "grounding/transform.py",
+      "grounding/action_effects.py"
+    ],
+    "source_refs": [
+      "inherited:R12",
+      "inherited:R14"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H17.json"
+  },
+  {
+    "id": "H18",
+    "title": "通信诱导计算结构",
+    "english": "Communication-Induced Computation",
+    "origin": "inherited_v2",
+    "summary": "让通信方式参与决定计算分工与层级。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H18_通信诱导计算结构.md",
+    "integration_path": "integration/I18_通信诱导计算结构.md",
+    "target_base": "src/latent_comm/mechanisms/h18_legacy",
+    "source_reference_modules": [
+      "topology/candidates.py",
+      "topology/controller.py",
+      "topology/compiler.py"
+    ],
+    "source_refs": [
+      "inherited:R07",
+      "inherited:R09"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H18.json"
+  },
+  {
+    "id": "H19",
+    "title": "消息到技能巩固",
+    "english": "Message-to-Skill Consolidation",
+    "origin": "inherited_v2",
+    "summary": "把一次通信中的操作经验蒸馏成以后可用的适配能力。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H19_消息到技能巩固.md",
+    "integration_path": "integration/I19_消息到技能巩固.md",
+    "target_base": "src/latent_comm/mechanisms/h19_legacy",
+    "source_reference_modules": [
+      "consolidation/teacher.py",
+      "consolidation/adapter_builder.py",
+      "consolidation/distillation.py"
+    ],
+    "source_refs": [
+      "inherited:R08"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H19.json"
+  },
+  {
+    "id": "H20",
+    "title": "异步认知时钟",
+    "english": "Asynchronous Latent Clocks",
+    "origin": "inherited_v2",
+    "summary": "让不同计算阶段的模型以事件而非固定轮次同步。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H20_异步认知时钟.md",
+    "integration_path": "integration/I20_异步认知时钟.md",
+    "target_base": "src/latent_comm/mechanisms/h20_legacy",
+    "source_reference_modules": [
+      "clocks/events.py",
+      "clocks/scheduler.py",
+      "clocks/staleness.py"
+    ],
+    "source_refs": [
+      "inherited:R06"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H20.json"
+  },
+  {
+    "id": "H21",
+    "title": "反事实分支组合搜索",
+    "english": "Counterfactual Branch Portfolios",
+    "origin": "inherited_v2",
+    "summary": "在潜空间中维护可复用的多条计算假设。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H21_反事实分支组合搜索.md",
+    "integration_path": "integration/I21_反事实分支组合搜索.md",
+    "target_base": "src/latent_comm/mechanisms/h21_legacy",
+    "source_reference_modules": [
+      "portfolios/tree.py",
+      "portfolios/selector.py",
+      "portfolios/reuse.py"
+    ],
+    "source_refs": [
+      "inherited:R04",
+      "inherited:R06"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H21.json"
+  },
+  {
+    "id": "H22",
+    "title": "动态模型边界",
+    "english": "Elastic Model Boundaries",
+    "origin": "inherited_v2",
+    "summary": "让同一个任务临时形成、拆分和重组计算模块。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H22_动态模型边界.md",
+    "integration_path": "integration/I22_动态模型边界.md",
+    "target_base": "src/latent_comm/mechanisms/h22_legacy",
+    "source_reference_modules": [
+      "elastic/partition.py",
+      "elastic/transitions.py",
+      "elastic/controller.py"
+    ],
+    "source_refs": [
+      "inherited:R05",
+      "inherited:R09"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H22.json"
+  },
+  {
+    "id": "H23",
+    "title": "语义残差纠错",
+    "english": "Semantic Residual Repair",
+    "origin": "inherited_v2",
+    "summary": "让接收者请求会改变任务判断的修正，而非重发全部状态。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H23_语义残差纠错.md",
+    "integration_path": "integration/I23_语义残差纠错.md",
+    "target_base": "src/latent_comm/mechanisms/h23_legacy",
+    "source_reference_modules": [
+      "repair/diagnostics.py",
+      "repair/residual.py",
+      "repair/protocol.py"
+    ],
+    "source_refs": [
+      "inherited:R01",
+      "inherited:R06"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H23.json"
+  },
+  {
+    "id": "H24",
+    "title": "有作用域的潜计算能力",
+    "english": "Scoped Latent Capabilities",
+    "origin": "inherited_v2",
+    "summary": "研究如何让消息只开放指定计算作用，而非任意状态访问。",
+    "family": "原24机制",
+    "design_path": "inherited_v2/hypotheses/H24_有作用域的潜计算能力.md",
+    "integration_path": "integration/I24_有作用域的潜计算能力.md",
+    "target_base": "src/latent_comm/mechanisms/h24_legacy",
+    "source_reference_modules": [
+      "capabilities/scopes.py",
+      "capabilities/enforcer.py",
+      "capabilities/effects.py"
+    ],
+    "source_refs": [
+      "inherited:R15"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H24.json"
+  },
+  {
+    "id": "H25",
+    "title": "规范协变的认知接口",
+    "english": "Gauge-Covariant Cognitive Interfaces",
+    "origin": "new_v3",
+    "summary": "把通信从“对齐向量”推进为“传递在换基下仍保持作用的结构”。接口同时传状态与操作的变换律，让接收者保留自己的内部坐标。",
+    "family": "语义与坐标",
+    "design_path": "hypotheses/H25_规范协变的认知接口.md",
+    "target_base": "src/latent_comm/mechanisms/h25_gauge",
+    "source_refs": [
+      "S06",
+      "S02"
+    ],
+    "conceptual_dependencies": [
+      "H01",
+      "H06"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H25.json"
+  },
+  {
+    "id": "H26",
+    "title": "不可全局拼合的语义层",
+    "english": "Non-Globalizable Semantic Sheaves",
+    "origin": "new_v3",
+    "summary": "把“无法达成统一”从错误状态变为可计算的知识结构。系统交换局部截面、重叠一致条件和拼合障碍，并用障碍决定要补什么变量或问题。",
+    "family": "语义与坐标",
+    "design_path": "hypotheses/H26_不可全局拼合的语义层.md",
+    "target_base": "src/latent_comm/mechanisms/h26_sheaf",
+    "source_refs": [
+      "S07",
+      "S08"
+    ],
+    "conceptual_dependencies": [
+      "H03",
+      "H04",
+      "H06"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H26.json"
+  },
+  {
+    "id": "H27",
+    "title": "交互中诞生的新概念",
+    "english": "Interaction-Born Ontologies",
+    "origin": "new_v3",
+    "summary": "允许交流过程新增、拆分、合并可操作概念。新概念不是给向量起名字，而是带定义程序、适用域、可观测后果和版本迁移规则的计算对象。",
+    "family": "语义与坐标",
+    "design_path": "hypotheses/H27_交互中诞生的新概念.md",
+    "target_base": "src/latent_comm/mechanisms/h27_ontology",
+    "source_refs": [
+      "S09"
+    ],
+    "conceptual_dependencies": [
+      "H07",
+      "H14",
+      "H23"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H27.json"
+  },
+  {
+    "id": "H28",
+    "title": "语义结构的分岔与相变",
+    "english": "Semantic Bifurcation Dynamics",
+    "origin": "new_v3",
+    "summary": "把变量分裂、图册增生、通信结构重组视为离散结构事件，与连续状态演化联合建模。研究对象不是“突然涨分”，而是可定义的状态空间或稳定解结构改变。",
+    "family": "语义与坐标",
+    "design_path": "hypotheses/H28_语义结构的分岔与相变.md",
+    "target_base": "src/latent_comm/mechanisms/h28_bifurcation",
+    "source_refs": [
+      "S10"
+    ],
+    "conceptual_dependencies": [
+      "H06",
+      "H22",
+      "H27"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H28.json"
+  },
+  {
+    "id": "H29",
+    "title": "问题生成的潜演算",
+    "english": "Latent Calculus of Questions",
+    "origin": "new_v3",
+    "summary": "把问题当作可组合、可变换、可求前置条件的对象；模型交换的是“怎样重写所问之物”，不是仅交换答案或子任务列表。",
+    "family": "问题与因果",
+    "design_path": "hypotheses/H29_问题生成的潜演算.md",
+    "target_base": "src/latent_comm/mechanisms/h29_questions",
+    "source_refs": [
+      "S09",
+      "S11"
+    ],
+    "conceptual_dependencies": [
+      "H07",
+      "H14",
+      "H21"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H29.json"
+  },
+  {
+    "id": "H30",
+    "title": "类比态射编译器",
+    "english": "Analogy-as-Morphism Compiler",
+    "origin": "new_v3",
+    "summary": "把类比编译为有类型的部分态射，使一个领域的计算方法可以被搬到另一个领域；允许只迁移局部结构，并显式保留类比断裂点。",
+    "family": "问题与因果",
+    "design_path": "hypotheses/H30_类比态射编译器.md",
+    "target_base": "src/latent_comm/mechanisms/h30_analogy",
+    "source_refs": [
+      "S11",
+      "S12"
+    ],
+    "conceptual_dependencies": [
+      "H01",
+      "H08",
+      "H14"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H30.json"
+  },
+  {
+    "id": "H31",
+    "title": "因果机制移植",
+    "english": "Causal Mechanism Grafting",
+    "origin": "new_v3",
+    "summary": "消息承载局部结构方程及接入契约，接收系统替换或新增一个因果模块；关键是保持父变量接口、噪声语义和干预含义，而非复制参数片段。",
+    "family": "问题与因果",
+    "design_path": "hypotheses/H31_因果机制移植.md",
+    "target_base": "src/latent_comm/mechanisms/h31_grafting",
+    "source_refs": [
+      "S12",
+      "S13"
+    ],
+    "conceptual_dependencies": [
+      "H09",
+      "H17",
+      "H24"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H31.json"
+  },
+  {
+    "id": "H32",
+    "title": "视角与目标条件代数",
+    "english": "Perspective-Conditioned Objective Algebra",
+    "origin": "new_v3",
+    "summary": "允许消息携带如何切换任务视角、保留哪些目标不变量、如何把一个子目标变成另一个子目标的规则。研究对象是目标条件化，不是擅自更改用户目标。",
+    "family": "问题与因果",
+    "design_path": "hypotheses/H32_视角与目标条件代数.md",
+    "target_base": "src/latent_comm/mechanisms/h32_perspective",
+    "source_refs": [
+      "S11"
+    ],
+    "conceptual_dependencies": [
+      "H01",
+      "H07",
+      "H24"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H32.json"
+  },
+  {
+    "id": "H33",
+    "title": "非梯度的互构认知动力学",
+    "english": "Reciprocal Non-Gradient Cognition",
+    "origin": "new_v3",
+    "summary": "把多模型看作相互改变对方演化规律的耦合动力系统；允许有用的循环与瞬态，而不把最终共识或固定点当唯一计算结果。",
+    "family": "时间与动力学",
+    "design_path": "hypotheses/H33_非梯度的互构认知动力学.md",
+    "target_base": "src/latent_comm/mechanisms/h33_reciprocal",
+    "source_refs": [
+      "S10"
+    ],
+    "conceptual_dependencies": [
+      "H04",
+      "H20"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H33.json"
+  },
+  {
+    "id": "H34",
+    "title": "双边边界条件推理",
+    "english": "Boundary-Value Cognition",
+    "origin": "new_v3",
+    "summary": "把消息同时从已知原因向前、从要求满足的结果向后传递，让尚未确定的中间状态成为被共同求解的变量。不是从未来获得信息，而是利用已给定终端约束。",
+    "family": "时间与动力学",
+    "design_path": "hypotheses/H34_双边边界条件推理.md",
+    "target_base": "src/latent_comm/mechanisms/h34_boundary_value",
+    "source_refs": [
+      "S10",
+      "S11"
+    ],
+    "conceptual_dependencies": [
+      "H03",
+      "H05",
+      "H21"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H34.json"
+  },
+  {
+    "id": "H35",
+    "title": "跨尺度语义重整化",
+    "english": "Multiscale Semantic Renormalization",
+    "origin": "new_v3",
+    "summary": "把粗粒化映射、宏观动力学和残差恢复同时作为通信对象；需要细节时再局部细化，不强迫所有模型一直在同一粒度协作。",
+    "family": "时间与动力学",
+    "design_path": "hypotheses/H35_跨尺度语义重整化.md",
+    "target_base": "src/latent_comm/mechanisms/h35_renormalization",
+    "source_refs": [
+      "S14"
+    ],
+    "conceptual_dependencies": [
+      "H02",
+      "H11",
+      "H27"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H35.json"
+  },
+  {
+    "id": "H36",
+    "title": "以分歧生产结构的认知博弈",
+    "english": "Constructive Disagreement Games",
+    "origin": "new_v3",
+    "summary": "让提出者给机制、挑战者构造最小反例、合成者新增变量或改写程序。博弈的产物是更有解释力的结构，而非赢得辩论的文字。",
+    "family": "时间与动力学",
+    "design_path": "hypotheses/H36_以分歧生产结构的认知博弈.md",
+    "target_base": "src/latent_comm/mechanisms/h36_disagreement",
+    "source_refs": [
+      "S09",
+      "S15"
+    ],
+    "conceptual_dependencies": [
+      "H03",
+      "H23",
+      "H27"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H36.json"
+  },
+  {
+    "id": "H37",
+    "title": "跨模型学习方向运输",
+    "english": "Cross-Model Learning-Effect Transport",
+    "origin": "new_v3",
+    "summary": "把学习更新从某个模型专属参数空间提升到行为切空间，再投回另一模型的参数空间。不同结构的模型可以交换学习方向，而无需共享权重维度。",
+    "family": "学习与自修改",
+    "design_path": "hypotheses/H37_跨模型学习方向运输.md",
+    "target_base": "src/latent_comm/mechanisms/h37_gradient_transport",
+    "source_refs": [
+      "S16",
+      "S12"
+    ],
+    "conceptual_dependencies": [
+      "H06",
+      "H19"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H37.json"
+  },
+  {
+    "id": "H38",
+    "title": "可传递的可塑性规则",
+    "english": "Portable Plasticity Programs",
+    "origin": "new_v3",
+    "summary": "交换的是受限学习规则，而非一组固定权重。规则读取梯度、局部状态和误差信号，生成有作用域的更新，从而让模型互相传授学习方式。",
+    "family": "学习与自修改",
+    "design_path": "hypotheses/H38_可传递的可塑性规则.md",
+    "target_base": "src/latent_comm/mechanisms/h38_plasticity",
+    "source_refs": [
+      "S16"
+    ],
+    "conceptual_dependencies": [
+      "H07",
+      "H19",
+      "H24"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H38.json"
+  },
+  {
+    "id": "H39",
+    "title": "可回滚的跨模型认知事务",
+    "english": "Transactional Cross-Model Cognition",
+    "origin": "new_v3",
+    "summary": "让复杂跨模型更新成为可准备、可提交、可回滚的计算事务；先在私有快照里构造新认知结构，再原子发布给其他节点。",
+    "family": "学习与自修改",
+    "design_path": "hypotheses/H39_可回滚的跨模型认知事务.md",
+    "target_base": "src/latent_comm/mechanisms/h39_transactions",
+    "source_refs": [],
+    "conceptual_dependencies": [
+      "H13",
+      "H22",
+      "H24"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H39.json"
+  },
+  {
+    "id": "H40",
+    "title": "自举的潜指令集",
+    "english": "Bootstrapping Latent Instruction Sets",
+    "origin": "new_v3",
+    "summary": "让协议逐步发展自己的中间语言：提出宏、定义作用、学习实现、发布新版本解释器；高级指令最终仍可回落到受控底层语义。",
+    "family": "学习与自修改",
+    "design_path": "hypotheses/H40_自举的潜指令集.md",
+    "target_base": "src/latent_comm/mechanisms/h40_instruction_set",
+    "source_refs": [
+      "S09"
+    ],
+    "conceptual_dependencies": [
+      "H07",
+      "H14",
+      "H27"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H40.json"
+  },
+  {
+    "id": "H41",
+    "title": "互补能力的联盟契约",
+    "english": "Complementarity Contracts for Cognitive Coalitions",
+    "origin": "new_v3",
+    "summary": "把能力提供者组织成带前置需求与联合产出的联盟契约；任务分配依据互补结构和贡献，而非单体排名。内部信用只是计算资源记账，不涉及真钱或对外交易。",
+    "family": "群体与世界",
+    "design_path": "hypotheses/H41_互补能力的联盟契约.md",
+    "target_base": "src/latent_comm/mechanisms/h41_coalitions",
+    "source_refs": [
+      "S17"
+    ],
+    "conceptual_dependencies": [
+      "H10",
+      "H18",
+      "H24"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H41.json"
+  },
+  {
+    "id": "H42",
+    "title": "模型与任务的共演化生态",
+    "english": "Coevolutionary Cognitive Ecologies",
+    "origin": "new_v3",
+    "summary": "把任务生成器、协议种群和能力组件联合演化；保留多种生态位与迁移路径，不让一个统一排行榜淘汰所有暂时弱但独特的路线。",
+    "family": "群体与世界",
+    "design_path": "hypotheses/H42_模型与任务的共演化生态.md",
+    "target_base": "src/latent_comm/mechanisms/h42_ecology",
+    "source_refs": [
+      "S18",
+      "S19"
+    ],
+    "conceptual_dependencies": [
+      "H15",
+      "H18",
+      "H40"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H42.json"
+  },
+  {
+    "id": "H43",
+    "title": "可交换的世界动力学核",
+    "english": "Exchangeable World-Dynamics Kernels",
+    "origin": "new_v3",
+    "summary": "把局部转移核、观测映射和行动效果作为模型间协议对象，多个模型可以拼接世界的不同机制，而不是共享一份静态世界描述。",
+    "family": "群体与世界",
+    "design_path": "hypotheses/H43_可交换的世界动力学核.md",
+    "target_base": "src/latent_comm/mechanisms/h43_world_kernels",
+    "source_refs": [
+      "S12",
+      "S19"
+    ],
+    "conceptual_dependencies": [
+      "H02",
+      "H09",
+      "H17"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H43.json"
+  },
+  {
+    "id": "H44",
+    "title": "共同构造的反事实梦境",
+    "english": "Co-Constructed Counterfactual Dreaming",
+    "origin": "new_v3",
+    "summary": "把“梦境”定义为多个局部世界核拼成的可执行反事实环境；在其中产生供未来学习的任务、反例和操作组合，而不是生成看似真实的故事。",
+    "family": "群体与世界",
+    "design_path": "hypotheses/H44_共同构造的反事实梦境.md",
+    "target_base": "src/latent_comm/mechanisms/h44_dreaming",
+    "source_refs": [
+      "S18",
+      "S19"
+    ],
+    "conceptual_dependencies": [
+      "H21",
+      "H27",
+      "H43"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H44.json"
+  },
+  {
+    "id": "H45",
+    "title": "主动可识别性协议",
+    "english": "Active Identifiability Protocols",
+    "origin": "new_v3",
+    "summary": "让协议主动选择干预、查询或补充消息，以消除结构性不可识别，而不是被动接收更多同类信息。",
+    "family": "知识与不确定性",
+    "design_path": "hypotheses/H45_主动可识别性协议.md",
+    "target_base": "src/latent_comm/mechanisms/h45_identifiability",
+    "source_refs": [
+      "S20"
+    ],
+    "conceptual_dependencies": [
+      "H02",
+      "H03",
+      "H09"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H45.json"
+  },
+  {
+    "id": "H46",
+    "title": "不可行域与负知识胶囊",
+    "english": "Impossibility Envelopes and Negative Knowledge",
+    "origin": "new_v3",
+    "summary": "把排除条件、反例和不可行区域作为可组合对象传递，使接收者可以跳过整个错误计算区域，而不仅避开一个失败答案。",
+    "family": "知识与不确定性",
+    "design_path": "hypotheses/H46_不可行域与负知识胶囊.md",
+    "target_base": "src/latent_comm/mechanisms/h46_negative_knowledge",
+    "source_refs": [
+      "S11"
+    ],
+    "conceptual_dependencies": [
+      "H03",
+      "H13",
+      "H21"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H46.json"
+  },
+  {
+    "id": "H47",
+    "title": "任务相对的语义商空间",
+    "english": "Task-Relative Semantic Quotients",
+    "origin": "new_v3",
+    "summary": "让通信对象直接表示“对当前操作族等价的状态类”，并随着任务变化细分等价类。接口的基本单位不再是固定向量，而是可变粒度的行为等价类。",
+    "family": "知识与不确定性",
+    "design_path": "hypotheses/H47_任务相对的语义商空间.md",
+    "target_base": "src/latent_comm/mechanisms/h47_quotient",
+    "source_refs": [
+      "S14"
+    ],
+    "conceptual_dependencies": [
+      "H06",
+      "H11",
+      "H12"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H47.json"
+  },
+  {
+    "id": "H48",
+    "title": "相关证据的认知谱系代数",
+    "english": "Correlation-Aware Evidence Genealogies",
+    "origin": "new_v3",
+    "summary": "在潜消息中保留证据的组合谱系，让系统区分独立贡献、共同祖先、循环转述和真正新信息；知识的关系不只在内容，也在形成路径。",
+    "family": "知识与不确定性",
+    "design_path": "hypotheses/H48_相关证据的认知谱系代数.md",
+    "target_base": "src/latent_comm/mechanisms/h48_evidence_genealogy",
+    "source_refs": [
+      "S21"
+    ],
+    "conceptual_dependencies": [
+      "H03",
+      "H16",
+      "H41"
+    ],
+    "research_status": "not_run",
+    "implementation_status": "assigned_to_dot",
+    "recipe_path": "recipes/H48.json"
+  }
+]

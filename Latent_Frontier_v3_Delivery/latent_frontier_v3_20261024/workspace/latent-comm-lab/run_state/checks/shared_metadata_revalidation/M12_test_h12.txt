@@ -1,0 +1,9 @@
+test_future_queries_and_unknown (test_h12.CapsuleTests.test_future_queries_and_unknown) ... ok
+test_retraction_and_atomic_persistence (test_h12.CapsuleTests.test_retraction_and_atomic_persistence) ... ok
+test_source_gate_and_schema (test_h12.CapsuleTests.test_source_gate_and_schema) ... ok
+test_version_is_immutable (test_h12.CapsuleTests.test_version_is_immutable) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.016s
+
+OK

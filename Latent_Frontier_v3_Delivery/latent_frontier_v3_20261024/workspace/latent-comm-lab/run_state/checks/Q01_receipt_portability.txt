@@ -1,0 +1,18 @@
+test_directory_add_remove_and_mutation_invalidate (test_receipts.ReceiptContracts.test_directory_add_remove_and_mutation_invalidate) ... ok
+test_relative_identity_and_tamper_rejection (test_receipts.ReceiptContracts.test_relative_identity_and_tamper_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.002s
+
+OK
+{
+  "selected": 2,
+  "excluded_research_entry_tests": [],
+  "test_file": "tests/control/test_receipts.py",
+  "research_state": "NOT_RUN",
+  "budget_scope": "per test aggregate",
+  "tests_run": 2,
+  "failures": 0,
+  "errors": 0,
+  "neural_modules_loaded": []
+}

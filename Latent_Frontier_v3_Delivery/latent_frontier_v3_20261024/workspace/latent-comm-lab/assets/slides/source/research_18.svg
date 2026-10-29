@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">第三条主线：共同制造世界</title><desc id="desc">两个局部转移核拼出新世界，注释synthetic。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">第三条主线：共同制造世界</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">消息可以是一小块可行动的动力学</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">18 / 36</tspan>
+</text>
+<rect id="e006" x="64.0" y="270" width="362.6666666666667" height="175" rx="8" fill="#E1E9EA" stroke="#496974" stroke-width="2" />
+<text id="e007" x="79.0" y="315.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="700" fill="#496974" text-anchor="start">
+<tspan x="79.0" dy="0">局部核 A</tspan>
+</text>
+<text id="e008" x="79.0" y="355.41" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="79.0" dy="0">状态、动作与转移</tspan>
+</text>
+<polyline id="e009" points="432.667,357.500 452.667,357.500" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="440.667,352.500 452.667,357.500 440.667,362.500" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e011" x="458.6666666666667" y="270" width="362.6666666666667" height="175" rx="8" fill="#E4EAD9" stroke="#536647" stroke-width="2" />
+<text id="e012" x="473.6666666666667" y="315.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="700" fill="#536647" text-anchor="start">
+<tspan x="473.6666666666667" dy="0">局部核 B</tspan>
+</text>
+<text id="e013" x="473.6666666666667" y="355.41" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="473.6666666666667" dy="0">观测与依赖语义</tspan>
+</text>
+<polyline id="e014" points="827.333,357.500 847.333,357.500" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="835.333,352.500 847.333,357.500 835.333,362.500" fill="none" stroke="#606258" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" />
+<rect id="e016" x="853.3333333333334" y="270" width="362.6666666666667" height="175" rx="8" fill="#E9E1EC" stroke="#725D7C" stroke-width="2" />
+<text id="e017" x="868.3333333333334" y="315.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="700" fill="#725D7C" text-anchor="start">
+<tspan x="868.3333333333334" dy="0">可行动的新世界</tspan>
+</text>
+<text id="e018" x="868.3333333333334" y="355.41" font-family="Noto Sans CJK SC" font-size="23" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="868.3333333333334" dy="0">synthetic，保留谱系</tspan>
+</text>
+<text id="e019" x="64" y="532.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">消息的对象：一小块可执行动力学</tspan>
+</text>
+<text id="e020" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">合成世界能提出新问题，不能自行制造现实证据</tspan>
+</text>
+</svg>

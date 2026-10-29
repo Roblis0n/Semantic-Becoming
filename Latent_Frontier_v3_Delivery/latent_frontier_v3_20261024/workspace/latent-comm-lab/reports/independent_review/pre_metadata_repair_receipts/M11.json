@@ -1,0 +1,72 @@
+{
+  "task_id": "M11",
+  "status": "done",
+  "input_digest": "17e62a25d382c2d5a62488fba7440cac9b209851e481e6e776c11e341bb13c3c",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/README.md",
+      "sha256": "81283d523ed6a7f3d8701025ac970962fba0f62cad667df86cdb95d26d9a4c90",
+      "bytes": 2272
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/__init__.py",
+      "sha256": "31ee8638eb3ef97e472647b57dfdac262f28c7930d7181757f72a0f8dde46aab",
+      "bytes": 93
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/adapter.py",
+      "sha256": "f8aaad937b673070aabdb37591f6ad0aac46dae924650202a5089d90403b8b1b",
+      "bytes": 1170
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/losses.py",
+      "sha256": "cb4cbd5244d9669b71a6c99cbc0bdfb4c45ade823bd832187a6d056176951acc",
+      "bytes": 1746
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/migration.py",
+      "sha256": "4957af35ab7c0708efd4f8f90b2f150b2a9bcc4824d48de2c7095f8b15f37975",
+      "bytes": 2137
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/reference.py",
+      "sha256": "da518f4c8a8b5e2b27f96445c89c88014941fb3f0b9bb062c6bb64741dbdf60e",
+      "bytes": 2960
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/schema.json",
+      "sha256": "d4825fbf44ac339180c71bfeda4c7aa734c2159538f23b5a8a6fe73b20a82db3",
+      "bytes": 1434
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h11_legacy/types.py",
+      "sha256": "bcb0652cffb15480161b1345b8a7823cdb106c1acf63ae4a10098af3b45aa1f8",
+      "bytes": 1284
+    },
+    {
+      "path": "tests/contracts/test_h11.py",
+      "sha256": "6f08042dafe04969418fb07ee25894b712ef820d4abe4b65618de6545c315238",
+      "bytes": 2684
+    },
+    {
+      "path": "configs/mechanisms/H11.json",
+      "sha256": "e1587f13310237b699f5000b295e73eea02a9333d75197ac4b2451f9965df0b4",
+      "bytes": 3158
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M11_contracts.txt",
+      "sha256": "e7c6e206ae7ed21dbb7980e6d090333386abf397313c1508d63ab363d82f1a92"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three bounded prefix/order/retransmit/uncertainty/rate contracts and AST gates pass. Residual VQ/entropy losses source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:25:40.142099+00:00"
+}

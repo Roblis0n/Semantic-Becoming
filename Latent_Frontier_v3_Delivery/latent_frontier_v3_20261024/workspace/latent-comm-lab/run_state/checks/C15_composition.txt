@@ -1,0 +1,11 @@
+test_hidden_terminal_rejected (test_c15.C15Tests.test_hidden_terminal_rejected) ... ok
+test_numerical_non_psd_rejected (test_c15.C15Tests.test_numerical_non_psd_rejected) ... ok
+test_public_boundary_actual_midpoint_continuation (test_c15.C15Tests.test_public_boundary_actual_midpoint_continuation) ... ok
+test_publicly_infeasible_not_future_answer (test_c15.C15Tests.test_publicly_infeasible_not_future_answer) ... ok
+test_schedule_not_causal_path_index (test_c15.C15Tests.test_schedule_not_causal_path_index) ... ok
+test_stale_receiver_does_not_advance (test_c15.C15Tests.test_stale_receiver_does_not_advance) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.050s
+
+OK

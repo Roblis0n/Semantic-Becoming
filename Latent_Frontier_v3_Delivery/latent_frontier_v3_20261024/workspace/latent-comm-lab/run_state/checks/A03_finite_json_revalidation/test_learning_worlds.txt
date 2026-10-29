@@ -1,0 +1,19 @@
+test_alternating_phases_are_disjoint (test_learning_worlds.ContractChecks.test_alternating_phases_are_disjoint) ... ok
+test_engine_delegation_and_resume_command (test_learning_worlds.ContractChecks.test_engine_delegation_and_resume_command) ... ok
+test_independent_holdout_credit_is_stopped (test_learning_worlds.ContractChecks.test_independent_holdout_credit_is_stopped) ... ok
+test_independent_holdout_not_parent_relabeling (test_learning_worlds.ContractChecks.test_independent_holdout_not_parent_relabeling) ... ok
+test_metadata (test_learning_worlds.ContractChecks.test_metadata) ... ok
+test_recipe_is_unbound (test_learning_worlds.ContractChecks.test_recipe_is_unbound) ... ok
+test_shared_noise_cannot_be_independent (test_learning_worlds.ContractChecks.test_shared_noise_cannot_be_independent) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.006s
+
+OK
+{
+  "selected": 7,
+  "excluded_model_entry_or_gate_tests": [
+    "test_learning_worlds.ContractChecks.test_stage_syntax_and_gates"
+  ],
+  "neural_modules_loaded": []
+}

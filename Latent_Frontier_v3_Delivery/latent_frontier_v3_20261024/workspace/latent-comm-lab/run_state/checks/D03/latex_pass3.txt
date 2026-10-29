@@ -1,0 +1,650 @@
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab/run_state/checks/D03/render/xelatex.fmt)
+entering extended mode
+(./paper/main.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xetex.def))
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def))
+(/usr/share/texlive/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype-xetex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/xurl/xurl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def)
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def))
+No file main.aux.
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k A'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k a'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v C'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v c'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v D'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v d'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k E'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\k e'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u G'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\u g'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.I'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v L'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v l'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H O'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H o'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v R'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v r'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v S'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v s'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v T'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\c t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v t'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r U'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\H u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\r u'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\"Y'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v Z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\'z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\.z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+
+Package microtype Warning: Unknown slot number of character
+(microtype)                `\v z'
+(microtype)                in font encoding `TU' in inheritance list
+(microtype)                `microtype.cfg/411(protrusion)'.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+
+Package hyperref Warning: Option `colorlinks' has already been used,
+(hyperref)                setting the option has no effect on input line 95.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg)
+No file main.toc.
+
+[1]
+[2]
+[3]
+[4]
+[5]
+[6]
+[7]
+[8]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 1 on input line 601.
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 643--684
+\TU/NotoSerifCJKSC(0)/m/n/10 Problem rewrites provide independently checked sou
+ndness and completeness evidence. -
+
+[9]
+[10]
+[11]
+[12]
+[13]
+Underfull \hbox (badness 2790) in paragraph at lines 939--944
+\TU/NotoSerifCJKSC(0)/m/n/10 al_prediction； 停 止 边 residual_teacher→target_or_re
+turn； 估 计 器 EXACT； 单 位 residual
+
+[14]
+[15]
+[16]
+[17]
+[18]
+[19]
+[20]
+Underfull \hbox (badness 1168) in paragraph at lines 1551--1556
+\TU/NotoSerifCJKSC(0)/m/n/10 anism_writer； 需 梯 度 输 入 selected_logprob； 停 止 边 ad
+vantage→target_or_return； 估 计 器
+
+[21]
+[22]
+Underfull \hbox (badness 1796) in paragraph at lines 1729--1735
+[]\TU/NotoSerifCJKSC(0)/m/n/10 目 标 covariance：$[] [] [][][] [] [] [] [][][] [] 
+[] [] [] [] [] [] [] [][] [] [] [] [] [][] [] [] [] [] [] [][][] [] [] [] []$。 
+所 有 者 cross_map,
+
+[23]
+[24]
+[25]
+Overfull \hbox (31.4105pt too wide) in paragraph at lines 1984--1990
+[]\TU/NotoSerifCJKSC(0)/m/n/10 目 标 graft：$[] [] [][][][][][] [] [] [] [] [] [] 
+[] [] [] [] [] [][] [][] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+[] [] [] [] [] [] [] [] [][][][]$。 所 有 者 source_module_generator,
+
+[26]
+[27]
+Underfull \hbox (badness 2012) in paragraph at lines 2143--2149
+[]\TU/NotoSerifCJKSC(0)/m/n/10 目 标 commute：$[] [] [][][][][][] [] [] [] [] [] [
+][][][] [][] [] [] [] [] [] [] [][] [] [] [] [] [] [] [] [] [] [][][][]$。 所 有 者
+ coarse_map,
+
+[28]
+Underfull \hbox (badness 2027) in paragraph at lines 2284--2290
+\TU/NotoSerifCJKSC(0)/m/n/10 有 者 plasticity_rule_parameters； 需 梯 度 输 入 inner_pa
+rameters, rule_parameters； 停 止 边
+
+Underfull \hbox (badness 1132) in paragraph at lines 2284--2290
+\TU/NotoSerifCJKSC(0)/m/n/10 support_gradients→inner_update； 估 计 器 FIRST_ORDER；
+ 单 位 query targets； 零 有 效 策 略
+
+Overfull \hbox (3.9305pt too wide) in paragraph at lines 2290--2295
+[]\TU/NotoSerifCJKSC(0)/m/n/10 目 标 update_budget：$[] [] [] [] [] [] [] [] [][] 
+[] [] [] [][] [] [] [] [][] [][] [] [] [] [] [] [] [] [] [][][]$。 所 有 者 plastic
+ity_rule_parameters；
+
+[29]
+[30]
+Overfull \hbox (8.10379pt too wide) in paragraph at lines 2440--2445
+\TU/NotoSerifCJKSC(0)/m/n/10 lic_task_features； 停 止 边 无 声 明 停 止 边； 估 计 器 EXACT；
+ 单 位 tasks； 零 有 效 策 略 skip_with_reason。 
+
+[31]
+Overfull \hbox (61.59045pt too wide) in paragraph at lines 2539--2545
+\TU/NotoSerifCJKSC(0)/m/n/10 world_proposer； 需 梯 度 输 入 world_log_probability； 停
+ 止 边 independent_holdout_loss→heldout_proposal；
+
+[32]
+Overfull \hbox (34.78044pt too wide) in paragraph at lines 2579--2584
+\TU/NotoSerifCJKSC(0)/m/n/10 query_proposer； 需 梯 度 输 入 query_log_probability； 停
+ 止 边 verified_information_gain→query_policy；
+
+Underfull \hbox (badness 2245) in paragraph at lines 2611--2617
+[] [] [] [] [][][] [] [] [] []$\TU/NotoSerifCJKSC(0)/m/n/10 。 所 有 者 exclusion_g
+enerator； 需 梯 度 输 入 predicate_logits； 停 止 边 veri-
+
+Overfull \hbox (30.33711pt too wide) in paragraph at lines 2611--2617
+\TU/NotoSerifCJKSC(0)/m/n/10 fied_exclusion→exclusion； 估 计 器 EXACT； 单 位 candida
+te_predicates； 零 有 效 策 略 skip_with_reason。 
+
+[33]
+[34]
+[35]
+[36]
+[37]
+[38]
+Overfull \hbox (14.58377pt too wide) in paragraph at lines 3070--3072
+[]\TU/NotoSerifCJKSC(0)/m/n/10 commit_or_restore → AtomicTransitionResult； 读 取 
+E,F,K,O,P,Q,U,V,W,Z， 写 入 E,F,K,O,P,Q,U,V,W,Z；
+
+[39]
+[40]
+[41]
+Overfull \hbox (115.2571pt too wide) in paragraph at lines 3305--3306
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 冲 突 只 能 靠 选 择 一 个 赢 家 消 除。 对 象： ContextCo
+verDelta=(old_cover,new_cover,restriction_maps,evidence_scopes)，
+
+Overfull \hbox (50.47043pt too wide) in paragraph at lines 3326--3328
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 成 对 overlap 足 够 描 述 所 有 兼 容 条 件。 对 象： Cel
+lularTheoryComplex=(C0,C1,C2,delta0,delta1,anchors)，
+
+Overfull \hbox (150.2571pt too wide) in paragraph at lines 3358--3359
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 任 何 好 问 题 改 写 都 必 须 是 双 射。 对 象： ProblemSp
+an=(Q,auxiliary_space,Qprime,forward_relation,answer_backtranslation)，
+
+[42]
+Missing character: There is no ᵀ (U+1D40) in font Noto Serif CJK SC/OT:script=l
+atn;language=dflt;mapping=tex-text;!
+Missing character: There is no ᵀ (U+1D40) in font Noto Serif CJK SC/OT:script=l
+atn;language=dflt;mapping=tex-text;!
+
+Overfull \hbox (6.49712pt too wide) in paragraph at lines 3401--3402
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 所 有 参 数 坐 标 下 的 欧 氏 步 长 都 是 同 一 个 学 习 规 则
+。 对 象： MetricUpdate=(v,W,M,anchor_version)，
+
+Overfull \hbox (162.97958pt too wide) in paragraph at lines 3412--3414
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 相 同 规 则 AST 在 异 构 参 数 组 上 必 有 相 同 意 义。 对 
+象： PlasticitySimulation=(source_rule,target_rule,state_relation,step_witness)，
+
+Overfull \hbox (47.9896pt too wide) in paragraph at lines 3432--3434
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 旧 新 本 体 只 能 用 ID 重 命 名 衔 接。 对 象： Ontology
+Lens=(get,put,domain,unknown_policy,version_pair)，
+
+[43]
+Overfull \hbox (123.31712pt too wide) in paragraph at lines 3443--3444
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 新 指 令 只 能 是 旧 程 序 宏 的 简 称。 对 象： Primitive
+Proposal=(denotation,effect_type,authority,implementation_relation)，
+
+Overfull \hbox (207.1371pt too wide) in paragraph at lines 3454--3455
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 任 务 和 语 言 的 生 成 语 法 固 定 不 变。 对 象： MetaGra
+mmarPopulation=(task_grammars,ontology_grammars,compiler_migrations,archive)，
+
+Overfull \hbox (148.30043pt too wide) in paragraph at lines 3473--3475
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 粗 状 态 必 须 是 一 阶 Markov 且 无 需 历 史。 对 象： Me
+moryKernelState=(coarse_history,unresolved_initial,memory_operators)，
+
+Overfull \hbox (78.78712pt too wide) in paragraph at lines 3496--3497
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 所 有 任 务 共 用 永 久 不 变 的 语 义 粒 度。 对 象： Scale
+Policy=(query_set,partition_refinement,closure_obligations)，
+
+[44]
+Overfull \hbox (173.48044pt too wide) in paragraph at lines 3514--3516
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 所 有 计 算 都 必 须 有 唯 一 全 局 token 顺 序。 对 象： E
+ventTrace=(events,happens_before,read_write_effects,commutation_witnesses)，
+
+Overfull \hbox (166.2571pt too wide) in paragraph at lines 3525--3526
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 有 意 义 计 算 必 须 收 敛 到 固 定 点。 对 象： PhaseRela
+tionState=(torus_coordinates,relative_phase,window_readout,noise_contract)，
+
+Overfull \hbox (137.7271pt too wide) in paragraph at lines 3535--3536
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 推 理 只 能 前 向 生 成 唯 一 答 案 轨 迹。 对 象： PathMea
+sure=(transition_factors,public_boundary,normalizer,branch_weights)，
+
+Overfull \hbox (123.29378pt too wide) in paragraph at lines 3554--3556
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 中 途 推 理 只 能 保 存 摘 要 或 KV。 对 象： ProofConti
+nuation=(proved_lemmas,open_goals,context,proof_kernel_version)，
+
+Overfull \hbox (60.96712pt too wide) in paragraph at lines 3566--3567
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 历 史 失 败 只 能 记 为 失 败 样 本。 对 象： NoGoodRegio
+n=(predicate,assumptions,certificate,domain_version)，
+
+Overfull \hbox (219.65712pt too wide) in paragraph at lines 3575--3576
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 反 例 到 来 后 只 能 抹 掉 旧 猜 想 或 选 唯 一 新 猜 想。 对 
+象： ConjectureLineage=(claim_versions,refutations,repair_transformations,open_br
+idges)，
+
+[45]
+Overfull \hbox (142.2071pt too wide) in paragraph at lines 3593--3594
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 一 个 世 界 必 须 由 单 个 完 整 生 成 器 先 存 在。 对 象： G
+raftWorld=(local_SCMs,boundary_units,shared_noise,intervention_map)，
+
+Overfull \hbox (235.3271pt too wide) in paragraph at lines 3603--3604
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 想 象 只 用 于 生 成 更 多 同 分 布 样 本。 对 象： Counter
+factualBoundarySearch=(kernel_edit_grammar,distinguishing_queries,validity_cons
+traints)，
+
+Overfull \hbox (178.92711pt too wide) in paragraph at lines 3633--3634
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 联 合 能 力 必 能 由 单 体 分 数 相 加 得 到。 对 象： Capab
+ilityHypergraph=(input_types,provider_sets,output_types,composition_witness)，
+
+[46]
+Overfull \hbox (176.74712pt too wide) in paragraph at lines 3655--3656
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 成 员 退 出 仅 删 除 名 字 不 影 响 程 序 语 义。 对 象： Joi
+nLeaveContract=(required_state,obligation_transfer,tombstones,exit_conditions)，
+
+
+Overfull \hbox (163.84712pt too wide) in paragraph at lines 3673--3674
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 概 念 数 只 能 靠 预 先 固 定 模 板 指 定。 对 象： Structu
+ralBifurcation=(control_parameter,order_observable,branch_atlas,migration)，
+
+Overfull \hbox (257.43712pt too wide) in paragraph at lines 3683--3684
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 概 念 失 效 后 只 能 彻 底 删 除 或 永 久 保 留 为 真。 对 象：
+ RetiredConcept=(historical_reader,expiry_conditions,reactivation_conditions,ev
+idence_lineage)，
+
+Overfull \hbox (119.15712pt too wide) in paragraph at lines 3693--3695
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 两 个 概 念 改 动 文 件 不 冲 突 即 语 义 可 合 并。 对 象： O
+ntologyMerge=(base,left,right,semantic_conflicts,migration_proofs)，
+
+Overfull \hbox (223.8871pt too wide) in paragraph at lines 3704--3705
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 所 有 可 保 持 的 概 念 必 须 对 应 静 止 吸 引 点。 对 象： P
+haseConceptAtlas=(amplitude,relative_phase,periodic_readout,phase_invariant_con
+tract)，
+
+[47]
+Overfull \hbox (147.5071pt too wide) in paragraph at lines 3716--3717
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 当 前 输 入 及 一 个 固 定 词 典 足 以 唯 一 决 定 概 念 状 态
+。 对 象： HystereticConcept=(control,stable_branch,history,fold_conditions)，
+
+Overfull \hbox (71.1671pt too wide) in paragraph at lines 3735--3737
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 编 译 通 过 只 意 味 着 形 状 合 法。 对 象： ProofCarryi
+ngIR=(typed_ops,domain,lowering_relation,error_budget)，
+
+Overfull \hbox (193.92711pt too wide) in paragraph at lines 3746--3747
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 存 在 一 套 全 局 共 享 向 量 坐 标 即 可 编 译 所 有 任 务。 
+对 象： BackendAtlas=(local_domains,frame_maps,operator_contracts,path_residuals)，
+
+
+Overfull \hbox (237.7271pt too wide) in paragraph at lines 3756--3757
+\TU/NotoSerifCJKSC(0)/m/n/10 释 放 假 设： 固 定 层 级 网 络 就 是 所 有 问 题 的 最 佳 执 行 尺 度。 对 
+象： ScaleAwareProgram=(query_contract,macro_ops,memory_residuals,refinement_requ
+ests)，
+
+[48]
+Underfull \hbox (badness 1442) in paragraph at lines 3816--3823
+\TU/NotoSerifCJKSC(0)/m/n/10 Luc Cary and Lucas Morales and Luke Hewitt and Arm
+ando Solar-Lezama and Joshua B.
+
+Underfull \hbox (badness 1371) in paragraph at lines 3840--3844
+[]\TU/NotoSerifCJKSC(0)/m/n/10 [SBV3_S14] Naftali Tishby and Fernando C. Pereir
+a and William Bialek。 The information
+
+[49]
+Underfull \hbox (badness 1389) in paragraph at lines 3895--3900
+\TU/NotoSerifCJKSC(0)/m/n/10 Hidden Messages Between Diffusion Language Model A
+gents: Causal Evidence for Laten-
+
+Underfull \hbox (badness 1325) in paragraph at lines 3895--3900
+\TU/NotoSerifCJKSC(0)/m/n/10 t Communication。[]主 要 来 源[]。 首 次 公 开 日 期 字 段： 2026
+-10-20； 核 验： 2026-10-24， PRIMA-
+
+Underfull \hbox (badness 3590) in paragraph at lines 3908--3914
+\TU/NotoSerifCJKSC(0)/m/n/10 Nan Rosemary Ke and Nasim Rahaman and Jonathan Bin
+as and Charles Blundell and
+
+Underfull \hbox (badness 1087) in paragraph at lines 3908--3914
+\TU/NotoSerifCJKSC(0)/m/n/10 Global Workspace。[]主 要 来 源[]。 首 次 公 开 日 期 字 段： 202
+1-03-01； 核 验： 2026-10-24， PRIMA-
+
+[50]
+Missing character: There is no ć (U+0107) in font Noto Serif CJK SC/OT:script=l
+atn;language=dflt;mapping=tex-text;!
+
+Underfull \hbox (badness 1728) in paragraph at lines 3935--3939
+[]\TU/NotoSerifCJKSC(0)/m/n/10 [SBV3_N02] Paul L. Williams and Randall D. Beer。
+ Nonnegative Decomposition of Multi-
+
+Underfull \hbox (badness 1048) in paragraph at lines 3955--3959
+\TU/NotoSerifCJKSC(0)/m/n/10 a Neural Network。[]主 要 来 源[]。 首 次 公 开 日 期 字 段： 201
+5-03-09； 核 验： 2026-10-24， PRIMA-
+
+[51]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+
+[52] (run_state/checks/D03/render/main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(see the transcript file for additional information)
+Output written on run_state/checks/D03/render/main.pdf (52 pages).
+Transcript written on run_state/checks/D03/render/main.log.

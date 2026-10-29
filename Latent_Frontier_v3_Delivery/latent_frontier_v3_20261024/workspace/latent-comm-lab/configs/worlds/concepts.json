@@ -1,0 +1,18 @@
+{
+  "task_id": "W03",
+  "family": "concepts",
+  "generator_version": "v1",
+  "template_partition": "structural_signature_before_instance_seed",
+  "projection": "explicit ProjectionContract in generator.py",
+  "collator": "pipeline.collate_role; no full-world input to models",
+  "resume": "FactoryCursor bound to immutable SplitManifest",
+  "current_fixture": {
+    "purpose": "math_fixture",
+    "not_research_data": true,
+    "dimension_cap": 64,
+    "steps_cap": 128,
+    "cases_cap": 64
+  },
+  "bulk_generation": "locked_before_sampling",
+  "research_state": "NOT_RUN"
+}

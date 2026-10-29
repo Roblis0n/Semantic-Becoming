@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">本轮再向前一层</title><desc id="desc">原有状态空间网格上出现新轴、新类型和新操作。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">本轮再向前一层</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">通信可以改变表达空间本身</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">前沿机制提案 / 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">04 / 36</tspan>
+</text>
+<polyline id="e006" points="120.000,235.000 120.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e007" points="190.000,235.000 190.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e008" points="260.000,235.000 260.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e009" points="330.000,235.000 330.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e010" points="400.000,235.000 400.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e011" points="470.000,235.000 470.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e012" points="540.000,235.000 540.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e013" points="120.000,240.000 610.000,240.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e014" points="120.000,310.000 610.000,310.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e015" points="120.000,380.000 610.000,380.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e016" points="120.000,450.000 610.000,450.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e017" points="120.000,520.000 610.000,520.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e018" points="120.000,520.000 610.000,520.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e019" points="598.000,515.000 610.000,520.000 598.000,525.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e020" points="120.000,520.000 120.000,225.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e021" points="115.000,237.000 120.000,225.000 125.000,237.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e022" x="150" y="559.84" font-family="Noto Sans CJK SC" font-size="27" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="150" dy="0">原有表示空间</tspan>
+</text>
+<polyline id="e023" points="640.000,375.000 740.000,375.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e024" points="728.000,370.000 740.000,375.000 728.000,380.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e025" x="800" y="288.12" font-family="Noto Serif CJK SC" font-size="36" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="800" dy="0">新增可计算区分</tspan>
+</text>
+<text id="e026" x="800" y="362.2" font-family="Noto Sans CJK SC" font-size="35" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="800" dy="0">新变量</tspan>
+<tspan x="800" dy="47.25">新类型</tspan>
+<tspan x="800" dy="47.25">新操作</tspan>
+</text>
+<text id="e027" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">结构变化须给出定义与迁移，不能只添一根装饰性坐标轴</tspan>
+</text>
+</svg>

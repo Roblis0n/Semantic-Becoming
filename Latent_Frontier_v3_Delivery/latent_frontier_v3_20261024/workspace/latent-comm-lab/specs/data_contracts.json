@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "roles": {
+    "sender": "whitelisted evidence only",
+    "receiver": "whitelisted evidence only",
+    "supervision": "loss-only separate object"
+  },
+  "never_model_inputs": [
+    "label",
+    "labels",
+    "hidden_solution",
+    "world_seed",
+    "oracle_trace",
+    "sample_id",
+    "split_id",
+    "record_id",
+    "manifest_digest"
+  ],
+  "split_unit": [
+    "program_template",
+    "mechanism_family",
+    "causal_template",
+    "concept_combination",
+    "operation_family"
+  ],
+  "split_before_instance_sampling": true,
+  "derived_split_changes": "forbidden",
+  "bulk_dataset_generation": "locked",
+  "fixture_marker": {
+    "purpose": "math_fixture",
+    "not_research_data": true
+  },
+  "tensor_collator_status": "source_written_NOT_RUN",
+  "research_state": "NOT_RUN",
+  "dataset_manifest": {
+    "builder": "SplitManifest.dataset_manifest(shards)",
+    "split_manifest": "serialized assignments, policy_version and salt",
+    "split_manifest_digest": "SplitManifest.digest; each research record provenance binds this digest and its own template signature",
+    "shard_fields": [
+      "path",
+      "sha256",
+      "split",
+      "structure_signatures"
+    ],
+    "shard_constraint": "every listed structure must be assigned to the shard split by the embedded manifest",
+    "status": "metadata contract only; JSONL shard writer and research data are not supplied"
+  },
+  "split_policy": "structural-v2: generator revisions of the same structural template stay in one partition"
+}

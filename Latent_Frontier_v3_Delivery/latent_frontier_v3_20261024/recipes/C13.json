@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "id": "C13",
+  "title": "跨模型学习协议网络",
+  "kind": "combination",
+  "mechanisms": [
+    "H19",
+    "H25",
+    "H37",
+    "H38"
+  ],
+  "stages": [
+    "行为锚",
+    "源学习效果",
+    "目标切空间投影",
+    "更新规则编译",
+    "未来训练器"
+  ],
+  "critical_invariant": "本轮训练全部锁定；只检查固定线性代数与DSL解释。",
+  "source_spec": "combinations/C13_跨模型学习协议网络.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c13.py",
+  "research_outputs": "NOT_RUN"
+}

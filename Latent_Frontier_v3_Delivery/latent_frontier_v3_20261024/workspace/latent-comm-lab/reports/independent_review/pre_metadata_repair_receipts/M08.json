@@ -1,0 +1,72 @@
+{
+  "task_id": "M08",
+  "status": "done",
+  "input_digest": "b63a6ab0df52645a3ff1dfda7909cb9e94a1b134f00bca1b8b2f2a66353f72d3",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/README.md",
+      "sha256": "a60fca68a329450a3622725f2760414e19e394c241e7e076e8bf187b328cb746",
+      "bytes": 2136
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/__init__.py",
+      "sha256": "e172997b6e2c0b0ecfaa992993578032a808e09099b583c8562a9963bec09eaf",
+      "bytes": 86
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/adapter.py",
+      "sha256": "15f7e3c4ad90fd564d67eaeaf34742ea745185084b0ccdad3941909eb2724dc7",
+      "bytes": 2439
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/losses.py",
+      "sha256": "a8e13b2ad5fd3e94e48a036ba6b6b9d889327e9cdc5af888efdc403da44f0a6b",
+      "bytes": 1298
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/migration.py",
+      "sha256": "624eb49b404b57c72515b1eb0a0d4b6dc6adbac9b7d12409ca665c16e2402e75",
+      "bytes": 2044
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/reference.py",
+      "sha256": "f04963e84f0079ddb51c690bfbcd8dd65906c303f600820bf17c12c618488439",
+      "bytes": 2642
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/schema.json",
+      "sha256": "85f8500f5fb7a67116f01a0deae2a4a3dc3a8b5e4e7f350786a6e8c907e98918",
+      "bytes": 923
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h08_legacy/types.py",
+      "sha256": "830384422d7792918b66ef9f443c533a70cb77b895a942a241b7493f9b88fc34",
+      "bytes": 1479
+    },
+    {
+      "path": "tests/contracts/test_h08.py",
+      "sha256": "6a8a3238d32afe568ec8ef539830ac1744822f673dfceb7b2ee45f8bd788785a",
+      "bytes": 2610
+    },
+    {
+      "path": "configs/mechanisms/H08.json",
+      "sha256": "9b2e697eab5b5612abe064e712c4a7767d16adc4dd0b36f8fe68ad310c78eefb",
+      "bytes": 3198
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M08_contracts.txt",
+      "sha256": "63e47d7411e9f6511de03302cf35edb1f356be4c26ef3410d91cb2e4d828c3d6"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Four bounded relation mapping/symmetry/exchange/causality contracts and AST gates pass; sparse tensor exchange source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:22:19.217987+00:00"
+}

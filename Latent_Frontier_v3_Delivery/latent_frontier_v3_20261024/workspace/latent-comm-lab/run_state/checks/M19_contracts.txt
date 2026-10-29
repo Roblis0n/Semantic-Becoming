@@ -1,0 +1,15 @@
+M19: AST parsed 6 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_ordered_compilation_and_no_message (test_h19.TestConsolidation.test_ordered_compilation_and_no_message) ... ok
+test_persistent_rollback_retraction (test_h19.TestConsolidation.test_persistent_rollback_retraction) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h19.TestConsolidation.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_rule_binding_validates_actual_ast (test_h19.TestConsolidation.test_rule_binding_validates_actual_ast) ... ok
+test_source_gate_and_schema (test_h19.TestConsolidation.test_source_gate_and_schema) ... ok
+test_sources_and_connections (test_h19.TestConsolidation.test_sources_and_connections) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h19.TestConsolidation.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h19.TestConsolidation.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.016s
+
+OK
+M19: 8 contract tests; failures=0 errors=0; no tensor/model import or execution.

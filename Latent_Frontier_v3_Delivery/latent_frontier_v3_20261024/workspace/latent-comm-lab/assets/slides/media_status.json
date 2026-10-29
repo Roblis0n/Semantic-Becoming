@@ -1,0 +1,16 @@
+{
+  "task_id": "V02",
+  "status": "done",
+  "requested": true,
+  "source_created": true,
+  "export_created": true,
+  "export_count": 2,
+  "opened_checked": true,
+  "opened_scope": "Exact native-editable PPTX reopened via LibreOffice; all 48 page pixels visually inspected",
+  "timing_verified": false,
+  "timing_applicable": false,
+  "blockers": [],
+  "limitations": [],
+  "evidence": "run_state/checks/V02_validation.json",
+  "research_state": "NOT_RUN"
+}

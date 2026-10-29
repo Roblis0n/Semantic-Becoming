@@ -1,0 +1,1216 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-29",
+  "review_basis": "创新理论优先；检查内部自洽、对象流、假设表达与源码行为，不以可实现性或实验证据作为创意准入条件。",
+  "theory_scope_preserved": {
+    "mechanisms": 48,
+    "compositions": 20,
+    "horizons": 12
+  },
+  "research_state": "NOT_RUN",
+  "research_model_operations": 0,
+  "license_decision": "User deferred selecting a license; no LICENSE was added.",
+  "findings": [
+    {
+      "problem": "编译器作用域绕过",
+      "correction": "节点可将实际写集合声明为空，掩盖操作副作用。现在声明必须覆盖能力规定的完整写集合，并处于获准作用域。",
+      "files": "src/latent_comm/compiler/pipeline.py"
+    },
+    {
+      "problem": "因果世界增量缓存失效",
+      "correction": "旧值没有方程、噪声与干预上下文。新增 snapshot_scm 快照并自动传播变化；裸 prior_values 元组被拒绝。",
+      "files": "src/latent_comm/mechanisms/h31_grafting/reference.py"
+    },
+    {
+      "problem": "版本身份漏检",
+      "correction": "显式指定 frame 等轴时，只检查 schema/task 存在而不比较。现在这两个身份轴始终逐项比较。",
+      "files": "src/latent_comm/learning/contracts.py"
+    },
+    {
+      "problem": "结构分割与记录来源不一致",
+      "correction": "生成器改版本可能跨 split，同一新组合的倒序会漏过留出；读取器还信任自报 split。现在结构分割不受生成器版本与概念顺序影响，记录绑定分割清单、模板签名及分片内容。新增元数据清单构造方法。",
+      "files": "src/latent_comm/data/splits.py; src/latent_comm/learning/source.py"
+    },
+    {
+      "problem": "事务删除忽略草稿",
+      "correction": "创建后删除或子分支删除父草稿会被判为不存在。删除现在读取当前事务可见状态。",
+      "files": "src/latent_comm/runtime/transactions.py"
+    },
+    {
+      "problem": "来源标识检查被当成独立性判断",
+      "correction": "H44 的不重叠 ID 仅是必要检查，不能证明统计独立。现在要求明确 independence_assumed=True，并在学习调用与文档中区分检查和假设。",
+      "files": "src/latent_comm/mechanisms/h44_dreaming/reference.py"
+    },
+    {
+      "problem": "概率比较误报",
+      "correction": "C12 对浮点概率用精确字典相等，噪声行重排即可产生 1e-16 级误差。现在按既有 1e-9 容差比较概率，缺失的零质量按零处理。",
+      "files": "src/latent_comm/compositions/c12.py"
+    },
+    {
+      "problem": "有限例预算被重复使用",
+      "correction": "H29 源域、目标域及嵌套组合各自重置预算。现在同一次关系检查、组合与问题图共享预算，耗尽时保留 frontier。64 等限额只约束本轮有限工具调用，不限制理论的目标规模。",
+      "files": "src/latent_comm/mechanisms/h29_questions/reference.py"
+    },
+    {
+      "problem": "缺失回执留下完成状态",
+      "correction": "任务回执删除后，sync 仍可能保留旧 done 行且无法重新就绪。现在按现存回执重建状态，缺失回执回到 pending。",
+      "files": "scripts/task_checkpoint.py"
+    },
+    {
+      "problem": "Windows 与未来命令接口",
+      "correction": "Linux fcntl 在导入阶段阻断所有内存事务；中文元数据使用默认 GBK；两处学习 CLI 遗漏恢复参数；backend extra 漏 torch。现在按功能报告平台边界，必要读写显式 UTF-8，补齐恢复参数和依赖元数据。",
+      "files": "src/latent_comm/runtime/files.py; src/latent_comm/learning/*/train.py; scripts/*.py; pyproject.toml"
+    },
+    {
+      "problem": "压缩包路径别名覆盖",
+      "correction": "ZIP 校验接受点段、大小写别名、内部冒号及 Windows 自动规范化前的反斜杠路径。现在检查规范路径和原始路径，并拒绝可移植路径冲突。",
+      "files": "scripts/build_release.py"
+    }
+  ],
+  "static_checks": {
+    "python_files_parsed": 685,
+    "json_files_parsed": 210,
+    "errors": [],
+    "source_bindings": {
+      "files_checked": 565,
+      "errors": [],
+      "dynamic_aliases_not_statically_resolved": []
+    },
+    "recipe_compilation": [
+      {
+        "id": "C01",
+        "status": "PASS"
+      },
+      {
+        "id": "C02",
+        "status": "PASS"
+      },
+      {
+        "id": "C03",
+        "status": "PASS"
+      },
+      {
+        "id": "C04",
+        "status": "PASS"
+      },
+      {
+        "id": "C05",
+        "status": "PASS"
+      },
+      {
+        "id": "C06",
+        "status": "PASS"
+      },
+      {
+        "id": "C07",
+        "status": "PASS"
+      },
+      {
+        "id": "C08",
+        "status": "PASS"
+      },
+      {
+        "id": "C09",
+        "status": "PASS"
+      },
+      {
+        "id": "C10",
+        "status": "PASS"
+      },
+      {
+        "id": "C11",
+        "status": "PASS"
+      },
+      {
+        "id": "C12",
+        "status": "PASS"
+      },
+      {
+        "id": "C13",
+        "status": "PASS"
+      },
+      {
+        "id": "C14",
+        "status": "PASS"
+      },
+      {
+        "id": "C15",
+        "status": "PASS"
+      },
+      {
+        "id": "C16",
+        "status": "PASS"
+      },
+      {
+        "id": "C17",
+        "status": "PASS"
+      },
+      {
+        "id": "C18",
+        "status": "PASS"
+      },
+      {
+        "id": "C19",
+        "status": "PASS"
+      },
+      {
+        "id": "C20",
+        "status": "PASS"
+      },
+      {
+        "id": "H01",
+        "status": "PASS"
+      },
+      {
+        "id": "H02",
+        "status": "PASS"
+      },
+      {
+        "id": "H03",
+        "status": "PASS"
+      },
+      {
+        "id": "H04",
+        "status": "PASS"
+      },
+      {
+        "id": "H05",
+        "status": "PASS"
+      },
+      {
+        "id": "H06",
+        "status": "PASS"
+      },
+      {
+        "id": "H07",
+        "status": "PASS"
+      },
+      {
+        "id": "H08",
+        "status": "PASS"
+      },
+      {
+        "id": "H09",
+        "status": "PASS"
+      },
+      {
+        "id": "H10",
+        "status": "PASS"
+      },
+      {
+        "id": "H11",
+        "status": "PASS"
+      },
+      {
+        "id": "H12",
+        "status": "PASS"
+      },
+      {
+        "id": "H13",
+        "status": "PASS"
+      },
+      {
+        "id": "H14",
+        "status": "PASS"
+      },
+      {
+        "id": "H15",
+        "status": "PASS"
+      },
+      {
+        "id": "H16",
+        "status": "PASS"
+      },
+      {
+        "id": "H17",
+        "status": "PASS"
+      },
+      {
+        "id": "H18",
+        "status": "PASS"
+      },
+      {
+        "id": "H19",
+        "status": "PASS"
+      },
+      {
+        "id": "H20",
+        "status": "PASS"
+      },
+      {
+        "id": "H21",
+        "status": "PASS"
+      },
+      {
+        "id": "H22",
+        "status": "PASS"
+      },
+      {
+        "id": "H23",
+        "status": "PASS"
+      },
+      {
+        "id": "H24",
+        "status": "PASS"
+      },
+      {
+        "id": "H25",
+        "status": "PASS"
+      },
+      {
+        "id": "H26",
+        "status": "PASS"
+      },
+      {
+        "id": "H27",
+        "status": "PASS"
+      },
+      {
+        "id": "H28",
+        "status": "PASS"
+      },
+      {
+        "id": "H29",
+        "status": "PASS"
+      },
+      {
+        "id": "H30",
+        "status": "PASS"
+      },
+      {
+        "id": "H31",
+        "status": "PASS"
+      },
+      {
+        "id": "H32",
+        "status": "PASS"
+      },
+      {
+        "id": "H33",
+        "status": "PASS"
+      },
+      {
+        "id": "H34",
+        "status": "PASS"
+      },
+      {
+        "id": "H35",
+        "status": "PASS"
+      },
+      {
+        "id": "H36",
+        "status": "PASS"
+      },
+      {
+        "id": "H37",
+        "status": "PASS"
+      },
+      {
+        "id": "H38",
+        "status": "PASS"
+      },
+      {
+        "id": "H39",
+        "status": "PASS"
+      },
+      {
+        "id": "H40",
+        "status": "PASS"
+      },
+      {
+        "id": "H41",
+        "status": "PASS"
+      },
+      {
+        "id": "H42",
+        "status": "PASS"
+      },
+      {
+        "id": "H43",
+        "status": "PASS"
+      },
+      {
+        "id": "H44",
+        "status": "PASS"
+      },
+      {
+        "id": "H45",
+        "status": "PASS"
+      },
+      {
+        "id": "H46",
+        "status": "PASS"
+      },
+      {
+        "id": "H47",
+        "status": "PASS"
+      },
+      {
+        "id": "H48",
+        "status": "PASS"
+      }
+    ],
+    "neural_modules_loaded": [],
+    "research_state": "NOT_RUN"
+  },
+  "credential_check": {
+    "scope": "current workspace text and OOXML parts; existing heuristic credential patterns",
+    "text_files": 2313,
+    "ooxml_parts": 738,
+    "findings": [],
+    "secret_values_disclosed": false,
+    "limitation": "Heuristic patterns do not prove absence of every possible secret."
+  },
+  "targeted_checks": [
+    {
+      "file": "tests/control/test_receipts.py",
+      "command_result": {
+        "file": "tests/control/test_receipts.py",
+        "returncode": 0,
+        "tests_run": 3,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 3,\n  \"excluded_research_entry_tests\": [],\n  \"test_file\": \"tests\\\\control\\\\test_receipts.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 3,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_directory_add_remove_and_mutation_invalidate (test_receipts.ReceiptContracts.test_directory_add_remove_and_mutation_invalidate) ... ok\ntest_relative_identity_and_tamper_rejection (test_receipts.ReceiptContracts.test_relative_identity_and_tamper_rejection) ... ok\ntest_sync_missing_receipt_resets_stale_terminal_ledger (test_receipts.ReceiptContracts.test_sync_missing_receipt_resets_stale_terminal_ledger) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.053s\n\nOK\n",
+      "log_sha256": "d14338443dc62df810412d13a6c3fd0f97d25a98e40918167a0f6fb0053c5622"
+    },
+    {
+      "file": "tests/control/test_release.py",
+      "command_result": {
+        "file": "tests/control/test_release.py",
+        "returncode": 0,
+        "tests_run": 4,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 4,\n  \"excluded_research_entry_tests\": [],\n  \"test_file\": \"tests\\\\control\\\\test_release.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 4,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_paths_duplicates_and_symlinks_reject (test_release.ReleaseContracts.test_paths_duplicates_and_symlinks_reject) ... ok\ntest_portable_zip_aliases_cannot_overwrite_members (test_release.ReleaseContracts.test_portable_zip_aliases_cannot_overwrite_members) ... ok\ntest_postbuild_evidence_is_not_self_hashed (test_release.ReleaseContracts.test_postbuild_evidence_is_not_self_hashed) ... ok\ntest_seal_detects_byte_and_file_set_changes (test_release.ReleaseContracts.test_seal_detects_byte_and_file_set_changes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.010s\n\nOK\n",
+      "log_sha256": "bb841a61170af3a182b4fbb3891c099107a754d3879e1e1ee774d75c0cbf41c0"
+    },
+    {
+      "file": "tests/data/test_role_views.py",
+      "command_result": {
+        "file": "tests/data/test_role_views.py",
+        "returncode": 0,
+        "tests_run": 12,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_role_views.RoleDataTests.test_bulk_generator_locked_before_callback",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion",
+              "generate_dataset"
+            ]
+          },
+          {
+            "test": "test_role_views.RoleDataTests.test_tensor_collation_is_locked",
+            "guarded_calls": [
+              "collate_tensor",
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 12,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_role_views.RoleDataTests.test_bulk_generator_locked_before_callback\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\",\n        \"generate_dataset\"\n      ]\n    },\n    {\n      \"test\": \"test_role_views.RoleDataTests.test_tensor_collation_is_locked\",\n      \"guarded_calls\": [\n        \"collate_tensor\",\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\data\\\\test_role_views.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 12,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_derivation_preserves_partition_and_structure (test_role_views.RoleDataTests.test_derivation_preserves_partition_and_structure) ... ok\ntest_encoded_roles_preserve_live_identity_without_model_execution (test_role_views.RoleDataTests.test_encoded_roles_preserve_live_identity_without_model_execution) ... ok\ntest_fixture_cannot_be_relabelled_as_training (test_role_views.RoleDataTests.test_fixture_cannot_be_relabelled_as_training) ... ok\ntest_model_collator_rejects_full_record_and_mixed_roles (test_role_views.RoleDataTests.test_model_collator_rejects_full_record_and_mixed_roles) ... ok\ntest_nested_leak_rejected_before_factory (test_role_views.RoleDataTests.test_nested_leak_rejected_before_factory) ... ok\ntest_novel_composition_reserved (test_role_views.RoleDataTests.test_novel_composition_reserved) ... ok\ntest_padded_mask_distinguishes_real_zero (test_role_views.RoleDataTests.test_padded_mask_distinguishes_real_zero) ... ok\ntest_partition_before_sampling_and_no_duplicate_template (test_role_views.RoleDataTests.test_partition_before_sampling_and_no_duplicate_template) ... ok\ntest_projection_reason_required (test_role_views.RoleDataTests.test_projection_reason_required) ... ok\ntest_projection_unknown_fields_not_forwarded (test_role_views.RoleDataTests.test_projection_unknown_fields_not_forwarded) ... ok\ntest_seed_not_part_of_structure_signature (test_role_views.RoleDataTests.test_seed_not_part_of_structure_signature) ... ok\ntest_world_role_supervision_separation (test_role_views.RoleDataTests.test_world_role_supervision_separation) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.001s\n\nOK\n",
+      "log_sha256": "f1092ee611b0087e83cd97801266178d14db36658b066b48e33c50387bf02be1"
+    },
+    {
+      "file": "tests/data/test_split_invariants.py",
+      "command_result": {
+        "file": "tests/data/test_split_invariants.py",
+        "returncode": 0,
+        "tests_run": 4,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_split_invariants.SplitAndBatchInvariants.test_shards_must_follow_a_digest_bound_partition",
+            "guarded_calls": [
+              "train"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 4,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_split_invariants.SplitAndBatchInvariants.test_shards_must_follow_a_digest_bound_partition\",\n      \"guarded_calls\": [\n        \"train\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\data\\\\test_split_invariants.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 4,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_explicit_axes_still_require_matching_schema_and_task (test_split_invariants.SplitAndBatchInvariants.test_explicit_axes_still_require_matching_schema_and_task) ... ok\ntest_generator_revision_cannot_move_a_structure_to_another_split (test_split_invariants.SplitAndBatchInvariants.test_generator_revision_cannot_move_a_structure_to_another_split) ... ok\ntest_reordered_novel_combination_is_always_held_out (test_split_invariants.SplitAndBatchInvariants.test_reordered_novel_combination_is_always_held_out) ... ok\ntest_training_record_provenance_must_match_partition_and_structure (test_split_invariants.SplitAndBatchInvariants.test_training_record_provenance_must_match_partition_and_structure) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n",
+      "log_sha256": "26481dd3c01d1c41197121eecc83cd95f6547590c106614e52e1ed3521ba7120"
+    },
+    {
+      "file": "tests/contracts/test_h31.py",
+      "command_result": {
+        "file": "tests/contracts/test_h31.py",
+        "returncode": 0,
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_h31.H31Contracts.test_gate",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion",
+              "tensor_scm"
+            ]
+          },
+          {
+            "test": "test_h31.H31Contracts.test_neural_source_is_lazy_and_gated",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 6,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_h31.H31Contracts.test_gate\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\",\n        \"tensor_scm\"\n      ]\n    },\n    {\n      \"test\": \"test_h31.H31Contracts.test_neural_source_is_lazy_and_gated\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\contracts\\\\test_h31.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 6,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_bare_values_cannot_be_reused_without_provenance (test_h31.H31Contracts.test_bare_values_cannot_be_reused_without_provenance) ... ok\ntest_graft_intervention_descendants_rollback (test_h31.H31Contracts.test_graft_intervention_descendants_rollback) ... ok\ntest_recompute_only_affected (test_h31.H31Contracts.test_recompute_only_affected) ... ok\ntest_reuse_detects_changed_noise_and_removed_intervention (test_h31.H31Contracts.test_reuse_detects_changed_noise_and_removed_intervention) ... ok\ntest_shared_noise_identity (test_h31.H31Contracts.test_shared_noise_identity) ... ok\ntest_units_and_cycles_rejected (test_h31.H31Contracts.test_units_and_cycles_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n",
+      "log_sha256": "24e613e2d86ce08846d4298f5570f26899745b2a4e63e3295b22447474a59476"
+    },
+    {
+      "file": "tests/contracts/test_h44.py",
+      "command_result": {
+        "file": "tests/contracts/test_h44.py",
+        "returncode": 0,
+        "tests_run": 4,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_h44.H44Contracts.test_neural_source_is_lazy_and_gated",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          },
+          {
+            "test": "test_h44.H44Contracts.test_role_projection_and_gate",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion",
+              "tensor_world_proposal"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 4,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_h44.H44Contracts.test_neural_source_is_lazy_and_gated\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    },\n    {\n      \"test\": \"test_h44.H44Contracts.test_role_projection_and_gate\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\",\n        \"tensor_world_proposal\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\contracts\\\\test_h44.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 4,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_counterfactual_world_is_executable_and_new (test_h44.H44Contracts.test_counterfactual_world_is_executable_and_new) ... ok\ntest_duplicate_parent_identity_rejected_before_edit (test_h44.H44Contracts.test_duplicate_parent_identity_rejected_before_edit) ... ok\ntest_incompatible_edits_and_holdout (test_h44.H44Contracts.test_incompatible_edits_and_holdout) ... ok\ntest_synthetic_not_real_and_cycle (test_h44.H44Contracts.test_synthetic_not_real_and_cycle) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.001s\n\nOK\n",
+      "log_sha256": "aebf5dc974beab13d669253c1e27abdb9ff6e2531bcbf88cef4e023ca67fe80e"
+    },
+    {
+      "file": "tests/contracts/test_c12.py",
+      "command_result": {
+        "file": "tests/contracts/test_c12.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [],\n  \"test_file\": \"tests\\\\contracts\\\\test_c12.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per independent C/X fixture invocation\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_bound_versions (test_c12.C12Tests.test_bound_versions) ... ok\ntest_observational_dependence (test_c12.C12Tests.test_observational_dependence) ... ok\ntest_probability_mass_is_invariant_to_noise_row_order (test_c12.C12Tests.test_probability_mass_is_invariant_to_noise_row_order) ... ok\ntest_shared_noise_do_not_condition (test_c12.C12Tests.test_shared_noise_do_not_condition) ... ok\ntest_uncompiled_intervention (test_c12.C12Tests.test_uncompiled_intervention) ... ok\ntest_unit_mismatch (test_c12.C12Tests.test_unit_mismatch) ... ok\ntest_unknown_noise (test_c12.C12Tests.test_unknown_noise) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.054s\n\nOK\n",
+      "log_sha256": "1d3541bdf338d2b3128df7fd5fc575270555621899c6e83b38896d09a5a8354f"
+    },
+    {
+      "file": "tests/contracts/test_c16.py",
+      "command_result": {
+        "file": "tests/contracts/test_c16.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [],\n  \"test_file\": \"tests\\\\contracts\\\\test_c16.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per independent C/X fixture invocation\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_actual_synthetic_question_and_macro_ecology (test_c16.C16Tests.test_actual_synthetic_question_and_macro_ecology) ... ok\ntest_caller_budget_is_end_to_end (test_c16.C16Tests.test_caller_budget_is_end_to_end) ... ok\ntest_nested_budget_returns_partial_before_policy_limit (test_c16.C16Tests.test_nested_budget_returns_partial_before_policy_limit) ... ok\ntest_no_changed_world_no_fabricated_novelty (test_c16.C16Tests.test_no_changed_world_no_fabricated_novelty) ... ok\ntest_no_real_fact_claim (test_c16.C16Tests.test_no_real_fact_claim) ... ok\ntest_non_normalized_edit (test_c16.C16Tests.test_non_normalized_edit) ... ok\ntest_scope_retains_static_status (test_c16.C16Tests.test_scope_retains_static_status) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.037s\n\nOK\n",
+      "log_sha256": "02f0a0af22b5ec39c630815f1c957383c973f8a310b770cb334ea1eb92f7bdce"
+    },
+    {
+      "file": "tests/research_locked/test_learning_causal_analogy.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_causal_analogy.py",
+        "returncode": 0,
+        "tests_run": 9,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_causal_analogy.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 9,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_causal_analogy.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_causal_analogy.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 9,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_engine_delegation_and_resume_command (test_learning_causal_analogy.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_exact_hardening_rechecks (test_learning_causal_analogy.ContractChecks.test_exact_hardening_rechecks) ... ok\ntest_metadata (test_learning_causal_analogy.ContractChecks.test_metadata) ... ok\ntest_no_supervised_module_generation (test_learning_causal_analogy.ContractChecks.test_no_supervised_module_generation) ... ok\ntest_noise_identity_and_normalization (test_learning_causal_analogy.ContractChecks.test_noise_identity_and_normalization) ... ok\ntest_operation_map_behavior_owner (test_learning_causal_analogy.ContractChecks.test_operation_map_behavior_owner) ... ok\ntest_recipe_is_unbound (test_learning_causal_analogy.ContractChecks.test_recipe_is_unbound) ... ok\ntest_scm_effect_and_false_analogy (test_learning_causal_analogy.ContractChecks.test_scm_effect_and_false_analogy) ... ok\ntest_unknown_noise_rejected (test_learning_causal_analogy.ContractChecks.test_unknown_noise_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.004s\n\nOK\n",
+      "log_sha256": "efac5cb7111d701ee51f8b9ef6f4a60bd418a7a7c199ae642c8e83251073c587"
+    },
+    {
+      "file": "tests/research_locked/test_learning_concept_questions.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_concept_questions.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_concept_questions.LearningConceptQuestions.test_build_locked",
+            "guarded_calls": [
+              "build_stage",
+              "conservative legacy gate-test exclusion"
+            ]
+          },
+          {
+            "test": "test_learning_concept_questions.LearningConceptQuestions.test_structural_train_locked",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion",
+              "search_question_structure",
+              "select_concept_structure"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_concept_questions.LearningConceptQuestions.test_build_locked\",\n      \"guarded_calls\": [\n        \"build_stage\",\n        \"conservative legacy gate-test exclusion\"\n      ]\n    },\n    {\n      \"test\": \"test_learning_concept_questions.LearningConceptQuestions.test_structural_train_locked\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\",\n        \"search_question_structure\",\n        \"select_concept_structure\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_concept_questions.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_actual_distinction_and_length (test_learning_concept_questions.LearningConceptQuestions.test_actual_distinction_and_length) ... ok\ntest_describe (test_learning_concept_questions.LearningConceptQuestions.test_describe) ... ok\ntest_no_eager_models (test_learning_concept_questions.LearningConceptQuestions.test_no_eager_models) ... ok\ntest_no_query_supervision_forward (test_learning_concept_questions.LearningConceptQuestions.test_no_query_supervision_forward) ... ok\ntest_positive_root_not_equivalence (test_learning_concept_questions.LearningConceptQuestions.test_positive_root_not_equivalence) ... ok\ntest_three_valued_unknown (test_learning_concept_questions.LearningConceptQuestions.test_three_valued_unknown) ... ok\ntest_variant_versions_bind_actual_world_records (test_learning_concept_questions.LearningConceptQuestions.test_variant_versions_bind_actual_world_records) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.015s\n\nOK\n",
+      "log_sha256": "cb3d112ef5cd004488addd13198555f531dbc175f4ec03fb6afe3c6ecdf68285"
+    },
+    {
+      "file": "tests/research_locked/test_learning_dynamics_scales.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_dynamics_scales.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_dynamics_scales.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_dynamics_scales.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_dynamics_scales.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_boundary_is_public_not_supervision (test_learning_dynamics_scales.ContractChecks.test_boundary_is_public_not_supervision) ... ok\ntest_engine_delegation_and_resume_command (test_learning_dynamics_scales.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_metadata (test_learning_dynamics_scales.ContractChecks.test_metadata) ... ok\ntest_midpoint_rotation_and_boundary (test_learning_dynamics_scales.ContractChecks.test_midpoint_rotation_and_boundary) ... ok\ntest_public_horizon (test_learning_dynamics_scales.ContractChecks.test_public_horizon) ... ok\ntest_recipe_is_unbound (test_learning_dynamics_scales.ContractChecks.test_recipe_is_unbound) ... ok\ntest_scale_retained_detail_identity (test_learning_dynamics_scales.ContractChecks.test_scale_retained_detail_identity) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n",
+      "log_sha256": "da2aafc497e10b7f71ce9d68fc17bd147f34d0905c274e82308a6ef77d6fb74f"
+    },
+    {
+      "file": "tests/research_locked/test_learning_evidence.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_evidence.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_evidence.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_evidence.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_evidence.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_assumption_not_inferred_from_link (test_learning_evidence.ContractChecks.test_assumption_not_inferred_from_link) ... ok\ntest_duplicate_source_is_one_atom (test_learning_evidence.ContractChecks.test_duplicate_source_is_one_atom) ... ok\ntest_engine_delegation_and_resume_command (test_learning_evidence.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_identity_must_be_equivalence (test_learning_evidence.ContractChecks.test_identity_must_be_equivalence) ... ok\ntest_metadata (test_learning_evidence.ContractChecks.test_metadata) ... ok\ntest_pair_value_calibration (test_learning_evidence.ContractChecks.test_pair_value_calibration) ... ok\ntest_recipe_is_unbound (test_learning_evidence.ContractChecks.test_recipe_is_unbound) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n",
+      "log_sha256": "69523e74fd7f24168dec41cdd877a2762aaf8dfdc3cf2d210d9461b5614cae75"
+    },
+    {
+      "file": "tests/research_locked/test_learning_frames.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_frames.py",
+        "returncode": 0,
+        "tests_run": 16,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_frames.LearningFrames.test_aggregate_finite_guard_before_backward",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          },
+          {
+            "test": "test_learning_frames.LearningFrames.test_gate_before_model",
+            "guarded_calls": [
+              "build_stage",
+              "conservative legacy gate-test exclusion"
+            ]
+          },
+          {
+            "test": "test_learning_frames.LearningFrames.test_gate_before_training",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion",
+              "train"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 16,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_frames.LearningFrames.test_aggregate_finite_guard_before_backward\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    },\n    {\n      \"test\": \"test_learning_frames.LearningFrames.test_gate_before_model\",\n      \"guarded_calls\": [\n        \"build_stage\",\n        \"conservative legacy gate-test exclusion\"\n      ]\n    },\n    {\n      \"test\": \"test_learning_frames.LearningFrames.test_gate_before_training\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\",\n        \"train\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_frames.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 16,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_analytic_covariance (test_learning_frames.LearningFrames.test_analytic_covariance) ... ok\ntest_ast_no_eager_neural (test_learning_frames.LearningFrames.test_ast_no_eager_neural) ... ok\ntest_base_alias (test_learning_frames.LearningFrames.test_base_alias) ... ok\ntest_covariance_has_no_readout_owner (test_learning_frames.LearningFrames.test_covariance_has_no_readout_owner) ... ok\ntest_describe (test_learning_frames.LearningFrames.test_describe) ... ok\ntest_fixture_cap_not_recipe_cap (test_learning_frames.LearningFrames.test_fixture_cap_not_recipe_cap) ... ok\ntest_invalid_weights (test_learning_frames.LearningFrames.test_invalid_weights) ... ok\ntest_no_supervisor_forward (test_learning_frames.LearningFrames.test_no_supervisor_forward) ... ok\ntest_nonfinite_weight_decay (test_learning_frames.LearningFrames.test_nonfinite_weight_decay) ... ok\ntest_owner_alias (test_learning_frames.LearningFrames.test_owner_alias) ... ok\ntest_owner_names (test_learning_frames.LearningFrames.test_owner_names) ... ok\ntest_role_origin (test_learning_frames.LearningFrames.test_role_origin) ... ok\ntest_run_path (test_learning_frames.LearningFrames.test_run_path) ... ok\ntest_semantic_batch_identity (test_learning_frames.LearningFrames.test_semantic_batch_identity) ... ok\ntest_unowned_loss (test_learning_frames.LearningFrames.test_unowned_loss) ... ok\ntest_zero_valid (test_learning_frames.LearningFrames.test_zero_valid) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.012s\n\nOK\n",
+      "log_sha256": "9bf06e73dd49b49cc9f526a2dee4f0811c154450e5f6b42286b1d92934c9bfea"
+    },
+    {
+      "file": "tests/research_locked/test_learning_isa_search.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_isa_search.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_isa_search.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_isa_search.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_isa_search.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_engine_delegation_and_resume_command (test_learning_isa_search.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_hygienic_base_binding (test_learning_isa_search.ContractChecks.test_hygienic_base_binding) ... ok\ntest_metadata (test_learning_isa_search.ContractChecks.test_metadata) ... ok\ntest_no_description_gradient (test_learning_isa_search.ContractChecks.test_no_description_gradient) ... ok\ntest_polynomial_is_explicit (test_learning_isa_search.ContractChecks.test_polynomial_is_explicit) ... ok\ntest_recipe_is_unbound (test_learning_isa_search.ContractChecks.test_recipe_is_unbound) ... ok\ntest_unknown_instruction_rejected (test_learning_isa_search.ContractChecks.test_unknown_instruction_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n",
+      "log_sha256": "ba278844c548cfe229d61ed534dcd65f49c592180e99c560a8e118bb2d436231"
+    },
+    {
+      "file": "tests/research_locked/test_learning_joint.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_joint.py",
+        "returncode": 0,
+        "tests_run": 10,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_joint.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 10,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_joint.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_joint.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 10,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_all_learning_stages_registered (test_learning_joint.ContractChecks.test_all_learning_stages_registered) ... ok\ntest_component_order_preserves_rng_assignment_on_reordered_config (test_learning_joint.ContractChecks.test_component_order_preserves_rng_assignment_on_reordered_config) ... ok\ntest_engine_delegation_and_resume_command (test_learning_joint.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_live_transport_uses_no_serialization (test_learning_joint.ContractChecks.test_live_transport_uses_no_serialization) ... ok\ntest_metadata (test_learning_joint.ContractChecks.test_metadata) ... ok\ntest_namespaced_ledger_and_coupled_path_owners (test_learning_joint.ContractChecks.test_namespaced_ledger_and_coupled_path_owners) ... ok\ntest_owner_alias_cannot_hide_between_components (test_learning_joint.ContractChecks.test_owner_alias_cannot_hide_between_components) ... ok\ntest_recipe_is_unbound (test_learning_joint.ContractChecks.test_recipe_is_unbound) ... ok\ntest_role_and_supervisor_projection_separated (test_learning_joint.ContractChecks.test_role_and_supervisor_projection_separated) ... ok\ntest_serialized_boundary_does_not_claim_live_graph (test_learning_joint.ContractChecks.test_serialized_boundary_does_not_claim_live_graph) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.001s\n\nOK\n",
+      "log_sha256": "9aec2e07550061bb580673452a745d0df86f69e937c5796e55455aae2a907fc8"
+    },
+    {
+      "file": "tests/research_locked/test_learning_meta_rules.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_meta_rules.py",
+        "returncode": 0,
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_meta_rules.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 6,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_meta_rules.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_meta_rules.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 6,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_ast_and_partition_isolation (test_learning_meta_rules.ContractChecks.test_ast_and_partition_isolation) ... ok\ntest_bounded_rule_updates (test_learning_meta_rules.ContractChecks.test_bounded_rule_updates) ... ok\ntest_engine_delegation_and_resume_command (test_learning_meta_rules.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_first_order_stop_is_explicit (test_learning_meta_rules.ContractChecks.test_first_order_stop_is_explicit) ... ok\ntest_metadata (test_learning_meta_rules.ContractChecks.test_metadata) ... ok\ntest_recipe_is_unbound (test_learning_meta_rules.ContractChecks.test_recipe_is_unbound) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n",
+      "log_sha256": "b1db93dd815d601e774f124c90b5b7a966803a51323a229382b58b3c33e6574b"
+    },
+    {
+      "file": "tests/research_locked/test_learning_objects.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_objects.py",
+        "returncode": 0,
+        "tests_run": 8,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_objects.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 8,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_objects.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_objects.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 8,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_engine_delegation_and_resume_command (test_learning_objects.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_locality_masks_task_and_response (test_learning_objects.ContractChecks.test_locality_masks_task_and_response) ... ok\ntest_metadata (test_learning_objects.ContractChecks.test_metadata) ... ok\ntest_no_total_double_count (test_learning_objects.ContractChecks.test_no_total_double_count) ... ok\ntest_prefix_posterior_updates (test_learning_objects.ContractChecks.test_prefix_posterior_updates) ... ok\ntest_recipe_is_unbound (test_learning_objects.ContractChecks.test_recipe_is_unbound) ... ok\ntest_sequence_mixture_is_not_token_mixture (test_learning_objects.ContractChecks.test_sequence_mixture_is_not_token_mixture) ... ok\ntest_tokenizer_mismatch (test_learning_objects.ContractChecks.test_tokenizer_mismatch) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.001s\n\nOK\n",
+      "log_sha256": "6388fc538d37812157ae4d095665dfce2ec5fa95885d1e036aede40ccde0fcfd"
+    },
+    {
+      "file": "tests/research_locked/test_learning_transport.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_transport.py",
+        "returncode": 0,
+        "tests_run": 6,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_transport.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 6,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_transport.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_transport.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 6,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_anchor_identity (test_learning_transport.ContractChecks.test_anchor_identity) ... ok\ntest_engine_delegation_and_resume_command (test_learning_transport.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_jvp_vjp_source_and_no_token_kl (test_learning_transport.ContractChecks.test_jvp_vjp_source_and_no_token_kl) ... ok\ntest_metadata (test_learning_transport.ContractChecks.test_metadata) ... ok\ntest_rank_deficient_minimum_norm (test_learning_transport.ContractChecks.test_rank_deficient_minimum_norm) ... ok\ntest_recipe_is_unbound (test_learning_transport.ContractChecks.test_recipe_is_unbound) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.001s\n\nOK\n",
+      "log_sha256": "2c40f94e0a81bac62c1f162b6f6f3a09d152dc50ce8f0096ce9401f83154d75c"
+    },
+    {
+      "file": "tests/research_locked/test_learning_uncertainty.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_uncertainty.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_uncertainty.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_uncertainty.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_uncertainty.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_certificate_and_retraction (test_learning_uncertainty.ContractChecks.test_certificate_and_retraction) ... ok\ntest_engine_delegation_and_resume_command (test_learning_uncertainty.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_exact_partition_refinement (test_learning_uncertainty.ContractChecks.test_exact_partition_refinement) ... ok\ntest_hard_mask_not_learned (test_learning_uncertainty.ContractChecks.test_hard_mask_not_learned) ... ok\ntest_metadata (test_learning_uncertainty.ContractChecks.test_metadata) ... ok\ntest_minimax_without_invented_prior (test_learning_uncertainty.ContractChecks.test_minimax_without_invented_prior) ... ok\ntest_recipe_is_unbound (test_learning_uncertainty.ContractChecks.test_recipe_is_unbound) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.012s\n\nOK\n",
+      "log_sha256": "05ac8e4ae61613ea3db81b2f5a10df00cc7254b4815a4c510eb1293a835206d0"
+    },
+    {
+      "file": "tests/research_locked/test_learning_views.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_views.py",
+        "returncode": 0,
+        "tests_run": 8,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_views.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 8,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_views.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_views.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 8,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_auxiliary_loss_live_owners (test_learning_views.ContractChecks.test_auxiliary_loss_live_owners) ... ok\ntest_engine_delegation_and_resume_command (test_learning_views.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_exact_symbol_preserved (test_learning_views.ContractChecks.test_exact_symbol_preserved) ... ok\ntest_metadata (test_learning_views.ContractChecks.test_metadata) ... ok\ntest_no_total_double_count (test_learning_views.ContractChecks.test_no_total_double_count) ... ok\ntest_receiver_backend_keeps_live_input_path (test_learning_views.ContractChecks.test_receiver_backend_keeps_live_input_path) ... ok\ntest_recipe_is_unbound (test_learning_views.ContractChecks.test_recipe_is_unbound) ... ok\ntest_symbol_source_conflict_and_role_leak_rejected (test_learning_views.ContractChecks.test_symbol_source_conflict_and_role_leak_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.063s\n\nOK\n",
+      "log_sha256": "96259f945aecd3dc0dd0042f9da3b0af7171913b4d768f5d428d1d0e97235f7a"
+    },
+    {
+      "file": "tests/research_locked/test_learning_worlds.py",
+      "command_result": {
+        "file": "tests/research_locked/test_learning_worlds.py",
+        "returncode": 0,
+        "tests_run": 7,
+        "failures": 0,
+        "errors": 0,
+        "excluded": [
+          {
+            "test": "test_learning_worlds.ContractChecks.test_stage_syntax_and_gates",
+            "guarded_calls": [
+              "conservative legacy gate-test exclusion"
+            ]
+          }
+        ],
+        "neural_modules_loaded": []
+      },
+      "log": "{\n  \"selected\": 7,\n  \"excluded_research_entry_tests\": [\n    {\n      \"test\": \"test_learning_worlds.ContractChecks.test_stage_syntax_and_gates\",\n      \"guarded_calls\": [\n        \"conservative legacy gate-test exclusion\"\n      ]\n    }\n  ],\n  \"test_file\": \"tests\\\\research_locked\\\\test_learning_worlds.py\",\n  \"research_state\": \"NOT_RUN\",\n  \"budget_scope\": \"per test aggregate\",\n  \"tests_run\": 7,\n  \"failures\": 0,\n  \"errors\": 0,\n  \"neural_modules_loaded\": []\n}\ntest_alternating_phases_are_disjoint (test_learning_worlds.ContractChecks.test_alternating_phases_are_disjoint) ... ok\ntest_engine_delegation_and_resume_command (test_learning_worlds.ContractChecks.test_engine_delegation_and_resume_command) ... ok\ntest_holdout_ids_and_independence_assumption_are_separate (test_learning_worlds.ContractChecks.test_holdout_ids_and_independence_assumption_are_separate) ... ok\ntest_independent_holdout_credit_is_stopped (test_learning_worlds.ContractChecks.test_independent_holdout_credit_is_stopped) ... ok\ntest_metadata (test_learning_worlds.ContractChecks.test_metadata) ... ok\ntest_recipe_is_unbound (test_learning_worlds.ContractChecks.test_recipe_is_unbound) ... ok\ntest_shared_noise_cannot_be_independent (test_learning_worlds.ContractChecks.test_shared_noise_cannot_be_independent) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.010s\n\nOK\n",
+      "log_sha256": "9ad61cea36b04ed81c4a164a4e0001cf6f1e84266ec64ef3d94ef9e33eb8edc1"
+    }
+  ],
+  "core_integration": {
+    "tests_run": 92,
+    "status": "PASS",
+    "log": "Selected compiler, in-memory runtime, H29, C11 and C20 tests; durable Linux-only and research dispatch cases excluded.\ntest_all_48_typed_contracts (test_compiler.CompilerTests.test_all_48_typed_contracts) ... ok\ntest_all_declared_operations (test_compiler.CompilerTests.test_all_declared_operations) ... ok\ntest_all_mechanism_registrations (test_compiler.CompilerTests.test_all_mechanism_registrations) ... ok\ntest_ambiguous_migration (test_compiler.CompilerTests.test_ambiguous_migration) ... ok\ntest_bad_json (test_compiler.CompilerTests.test_bad_json) ... ok\ntest_cycle_without_loop (test_compiler.CompilerTests.test_cycle_without_loop) ... ok\ntest_dependency_version_rejected (test_compiler.CompilerTests.test_dependency_version_rejected) ... ok\ntest_discrete_gradient_rejected (test_compiler.CompilerTests.test_discrete_gradient_rejected) ... ok\ntest_embedded_reference_must_be_declared (test_compiler.CompilerTests.test_embedded_reference_must_be_declared) ... ok\ntest_explicit_estimator (test_compiler.CompilerTests.test_explicit_estimator) ... ok\ntest_exports (test_compiler.CompilerTests.test_exports) ... ok\ntest_frozen_input_gradient_preserved (test_compiler.CompilerTests.test_frozen_input_gradient_preserved) ... ok\ntest_h40_future_budget_preserved (test_compiler.CompilerTests.test_h40_future_budget_preserved) ... ok\ntest_loop_budget (test_compiler.CompilerTests.test_loop_budget) ... ok\ntest_migration_cycles (test_compiler.CompilerTests.test_migration_cycles) ... ok\ntest_migration_insertion (test_compiler.CompilerTests.test_migration_insertion) ... ok\ntest_missing_migration (test_compiler.CompilerTests.test_missing_migration) ... ok\ntest_missing_version (test_compiler.CompilerTests.test_missing_version) ... ok\ntest_nested_exponent_overflow_is_invalid_json (test_compiler.CompilerTests.test_nested_exponent_overflow_is_invalid_json) ... ok\ntest_nested_role_leak (test_compiler.CompilerTests.test_nested_role_leak) ... ok\ntest_no_authorization_from_config (test_compiler.CompilerTests.test_no_authorization_from_config) ... ok\ntest_no_control_plane_write (test_compiler.CompilerTests.test_no_control_plane_write) ... ok\ntest_no_model_imports_subprocess (test_compiler.CompilerTests.test_no_model_imports_subprocess) ... ok\ntest_original_20_combinations (test_compiler.CompilerTests.test_original_20_combinations) ... ok\ntest_original_48_recipes (test_compiler.CompilerTests.test_original_48_recipes) ... ok\ntest_plan_not_research (test_compiler.CompilerTests.test_plan_not_research) ... ok\ntest_role_migration_preserves_visibility (test_compiler.CompilerTests.test_role_migration_preserves_visibility) ... ok\ntest_seven_passes (test_compiler.CompilerTests.test_seven_passes) ... ok\ntest_shape_named_axes (test_compiler.CompilerTests.test_shape_named_axes) ... ok\ntest_source_localization (test_compiler.CompilerTests.test_source_localization) ... ok\ntest_transitive_role_leak (test_compiler.CompilerTests.test_transitive_role_leak) ... ok\ntest_typed_loop_carry (test_compiler.CompilerTests.test_typed_loop_carry) ... ok\ntest_types (test_compiler.CompilerTests.test_types) ... ok\ntest_unbounded_loop (test_compiler.CompilerTests.test_unbounded_loop) ... ok\ntest_write_set_cannot_omit_capability_effects (test_compiler.CompilerTests.test_write_set_cannot_omit_capability_effects) ... ok\ntest_abort_discards_draft (test_runtime.Transactions.test_abort_discards_draft) ... ok\ntest_absence_reads_conflict (test_runtime.Transactions.test_absence_reads_conflict) ... ok\ntest_blind_writes_track_versions (test_runtime.Transactions.test_blind_writes_track_versions) ... ok\ntest_delete_reads_pending_writes (test_runtime.Transactions.test_delete_reads_pending_writes) ... ok\ntest_delete_recreate_aba_rejected (test_runtime.Transactions.test_delete_recreate_aba_rejected) ... ok\ntest_duplicate_commit_identity (test_runtime.Transactions.test_duplicate_commit_identity) ... ok\ntest_durable_workspace_unsupported_platform_is_explicit (test_runtime.Transactions.test_durable_workspace_unsupported_platform_is_explicit) ... ok\ntest_read_conflict_even_disjoint_writes (test_runtime.Transactions.test_read_conflict_even_disjoint_writes) ... ok\ntest_reject_external_effects (test_runtime.Transactions.test_reject_external_effects) ... ok\ntest_returned_values_cannot_mutate_store (test_runtime.Transactions.test_returned_values_cannot_mutate_store) ... ok\ntest_schema_migration_explicit (test_runtime.Transactions.test_schema_migration_explicit) ... ok\ntest_scope_and_expiry (test_runtime.Transactions.test_scope_and_expiry) ... ok\ntest_sensitive_payload_rejected (test_runtime.Transactions.test_sensitive_payload_rejected) ... ok\ntest_snapshot_isolation_and_atomic_commit (test_runtime.Transactions.test_snapshot_isolation_and_atomic_commit) ... ok\ntest_branch_budget_and_discard (test_runtime.Branches.test_branch_budget_and_discard) ... ok\ntest_child_can_delete_parent_pending_creation (test_runtime.Branches.test_child_can_delete_parent_pending_creation) ... ok\ntest_competing_branches_conflict (test_runtime.Branches.test_competing_branches_conflict) ... ok\ntest_nested_conflict_does_not_average (test_runtime.Branches.test_nested_conflict_does_not_average) ... ok\ntest_nested_merge_and_ancestry (test_runtime.Branches.test_nested_merge_and_ancestry) ... ok\ntest_private_branch_commit (test_runtime.Branches.test_private_branch_commit) ... ok\ntest_budget_exhaustion_keeps_queue (test_runtime.Scheduling.test_budget_exhaustion_keeps_queue) ... ok\ntest_duplicate_event_not_replayed (test_runtime.Scheduling.test_duplicate_event_not_replayed) ... ok\ntest_emission_validation_before_commit (test_runtime.Scheduling.test_emission_validation_before_commit) ... ok\ntest_event_execution_and_clock (test_runtime.Scheduling.test_event_execution_and_clock) ... ok\ntest_expired_scope_records_terminal_failure (test_runtime.Scheduling.test_expired_scope_records_terminal_failure) ... ok\ntest_finite_queue (test_runtime.Scheduling.test_finite_queue) ... ok\ntest_missing_handler_fails (test_runtime.Scheduling.test_missing_handler_fails) ... ok\ntest_policy_gate_before_callback (test_runtime.Scheduling.test_policy_gate_before_callback) ... ok\ntest_retry_bound (test_runtime.Scheduling.test_retry_bound) ... ok\ntest_stale_event_fails (test_runtime.Scheduling.test_stale_event_fails) ... ok\ntest_carry_loop_executes_exact_three_steps (test_runtime.IRLoops.test_carry_loop_executes_exact_three_steps) ... ok\ntest_fixture_budget_never_lifted_by_ir (test_runtime.IRLoops.test_fixture_budget_never_lifted_by_ir) ... ok\ntest_fixture_dimension_cannot_exceed_budget (test_runtime.IRLoops.test_fixture_dimension_cannot_exceed_budget) ... ok\ntest_no_model_imports (test_runtime.IRLoops.test_no_model_imports) ... ok\ntest_auxiliary_elimination_preserves_solutions (test_h29.H29Contracts.test_auxiliary_elimination_preserves_solutions) ... ok\ntest_backtranslation_does_not_conflate_close_domain_values (test_h29.H29Contracts.test_backtranslation_does_not_conflate_close_domain_values) ... ok\ntest_both_roots_and_partial_detection (test_h29.H29Contracts.test_both_roots_and_partial_detection) ... ok\ntest_bounded_question_graph_retains_failures_and_transports (test_h29.H29Contracts.test_bounded_question_graph_retains_failures_and_transports) ... ok\ntest_composed_relations_share_one_budget (test_h29.H29Contracts.test_composed_relations_share_one_budget) ... ok\ntest_composition_and_migration (test_h29.H29Contracts.test_composition_and_migration) ... ok\ntest_empty_and_no_fake_inverse (test_h29.H29Contracts.test_empty_and_no_fake_inverse) ... ok\ntest_graph_budget_exhaustion_retains_frontier (test_h29.H29Contracts.test_graph_budget_exhaustion_retains_frontier) ... ok\ntest_necessary_not_sufficient (test_h29.H29Contracts.test_necessary_not_sufficient) ... ok\ntest_neural_source_is_lazy_and_gated (test_h29.H29Contracts.test_neural_source_is_lazy_and_gated) ... ok\ntest_relation_checks_share_the_declared_budget (test_h29.H29Contracts.test_relation_checks_share_the_declared_budget) ... ok\ntest_actual_compiled_program (test_c11.C11Tests.test_actual_compiled_program) ... ok\ntest_bound_ir (test_c11.C11Tests.test_bound_ir) ... ok\ntest_broken_numeric_implementation (test_c11.C11Tests.test_broken_numeric_implementation) ... ok\ntest_heuristic_not_certified (test_c11.C11Tests.test_heuristic_not_certified) ... ok\ntest_quotient_keeps_source_and_does_not_guess (test_c11.C11Tests.test_quotient_keeps_source_and_does_not_guess) ... ok\ntest_unmapped_operation (test_c11.C11Tests.test_unmapped_operation) ... ok\ntest_all_stages_have_actual_effect_and_locked_binding (test_c20.C20Tests.test_all_stages_have_actual_effect_and_locked_binding) ... ok\ntest_learning_owner_and_support_query_plan (test_c20.C20Tests.test_learning_owner_and_support_query_plan) ... ok\ntest_meta_partition_and_owner (test_c20.C20Tests.test_meta_partition_and_owner) ... ok\ntest_singular_coordinate_map (test_c20.C20Tests.test_singular_coordinate_map) ... ok\ntest_unknown_concept_does_not_become_true (test_c20.C20Tests.test_unknown_concept_does_not_become_true) ... ok\ntest_wrong_numeric_edge_rejected (test_c20.C20Tests.test_wrong_numeric_edge_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 92 tests in 0.649s\n\nOK\nNeural modules imported: []\n",
+    "log_sha256": "748f1726f9a0d99f2f5631002260fc251e6b928fac0c9603f31e56beb8af02c8"
+  },
+  "total_targeted_tests": 244,
+  "historical_receipts": {
+    "valid_historical_receipts": [
+      "A00",
+      "A01",
+      "A02",
+      "A05",
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "M21",
+      "M22",
+      "M23",
+      "M24",
+      "M25",
+      "M26",
+      "M27",
+      "M28",
+      "M30",
+      "M32",
+      "M33",
+      "M34",
+      "M35",
+      "M36",
+      "M37",
+      "M38",
+      "M39",
+      "M40",
+      "M41",
+      "M42",
+      "M43",
+      "M45",
+      "M46",
+      "M47",
+      "M48",
+      "W01",
+      "W02",
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W07",
+      "W08",
+      "W09",
+      "W10",
+      "W11",
+      "W12",
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "D01",
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07"
+    ],
+    "invalidated_historical_receipts": [
+      "A03",
+      "A04",
+      "M29",
+      "M31",
+      "M44",
+      "W13",
+      "L01",
+      "L02",
+      "L03",
+      "L04",
+      "L05",
+      "L06",
+      "L07",
+      "L08",
+      "L09",
+      "L10",
+      "L11",
+      "L12",
+      "L13",
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C06",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "X01",
+      "X02",
+      "X03",
+      "X04",
+      "X05",
+      "X06",
+      "X07",
+      "X08",
+      "X09",
+      "X10",
+      "X11",
+      "X12",
+      "D02",
+      "D03",
+      "D04",
+      "Q01",
+      "Q02",
+      "Z01"
+    ],
+    "ready_tasks": [
+      "A03",
+      "A04",
+      "M29",
+      "M31",
+      "M44",
+      "W13"
+    ],
+    "revision_note": "Original task receipts are preserved as historical evidence, never recommitted by this final code review.",
+    "missing_receipts": [
+      "Z02"
+    ]
+  },
+  "changed_existing_files": [
+    {
+      "owner": "root",
+      "path": "checksums.sha256"
+    },
+    {
+      "owner": "root",
+      "path": "FILE_INDEX.md"
+    },
+    {
+      "owner": "root",
+      "path": "manifest.json"
+    },
+    {
+      "owner": "root",
+      "path": "pyproject.toml"
+    },
+    {
+      "owner": "root",
+      "path": "README.md"
+    },
+    {
+      "owner": "root",
+      "path": "RELEASE_REPORT.md"
+    },
+    {
+      "owner": "root",
+      "path": "run_state/ledger.json"
+    },
+    {
+      "owner": "root",
+      "path": "run_state/next_actions.json"
+    },
+    {
+      "owner": "root",
+      "path": "scripts/audit_release_permissions.py"
+    },
+    {
+      "owner": "root",
+      "path": "scripts/audit_source_contracts.py"
+    },
+    {
+      "owner": "root",
+      "path": "scripts/build_release.py"
+    },
+    {
+      "owner": "root",
+      "path": "scripts/check_source_bindings.py"
+    },
+    {
+      "owner": "root",
+      "path": "scripts/run_allowed_contracts.py"
+    },
+    {
+      "owner": "root",
+      "path": "scripts/task_checkpoint.py"
+    },
+    {
+      "owner": "root",
+      "path": "tests/control/test_receipts.py"
+    },
+    {
+      "owner": "root",
+      "path": "tests/control/test_release.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "src/latent_comm/compiler/pipeline.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "src/latent_comm/runtime/files.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "src/latent_comm/runtime/transactions.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "src/latent_comm/mechanisms/h29_questions/README.md"
+    },
+    {
+      "owner": "core_logic",
+      "path": "src/latent_comm/mechanisms/h29_questions/reference.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "tests/compiler/test_compiler.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "tests/contracts/test_h29.py"
+    },
+    {
+      "owner": "core_logic",
+      "path": "tests/runtime/test_runtime.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "specs/data_contracts.json"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/data/splits.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/contracts.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/engine.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/source.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/causal_analogy/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/concept_questions/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/dynamics_scales/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/evidence/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/frames/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/isa_search/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/joint/static_audit.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/joint/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/meta_rules/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/objects/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/transport/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/uncertainty/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/views/train.py"
+    },
+    {
+      "owner": "learning_logic",
+      "path": "src/latent_comm/learning/worlds/train.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/compositions/c12.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/learning/worlds/README.md"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/learning/worlds/__init__.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/mechanisms/h31_grafting/README.md"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/mechanisms/h31_grafting/reference.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/mechanisms/h44_dreaming/adapter.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/mechanisms/h44_dreaming/README.md"
+    },
+    {
+      "owner": "research_plan",
+      "path": "src/latent_comm/mechanisms/h44_dreaming/reference.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "tests/contracts/test_c12.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "tests/contracts/test_h31.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "tests/contracts/test_h44.py"
+    },
+    {
+      "owner": "research_plan",
+      "path": "tests/research_locked/test_learning_worlds.py"
+    }
+  ],
+  "new_regression_file": "tests/data/test_split_invariants.py",
+  "original_plan_files_compared": 563,
+  "original_plan_differences": [],
+  "backups_external_to_source": "D:\\Codex work\\latent-final-audit-20261029\\backups",
+  "limits": [
+    "Windows 下未运行 Linux 专用持久文件事务和故障恢复；内存事务已验证。",
+    "模型与未来训练路径按原计划保持锁定，未执行初始化、前向、训练或评估。",
+    "WorldRecord 迭代器与训练 JSONL 读取器之间尚无分片写入器；这是实现边界，不是对理论创新的否定。",
+    "角色输入合同不能证明外部调用者传入的张量来源；仍需调用方保持投影与监督隔离。",
+    "H29 精确有限域不静默合并相近浮点值；十进制回译可能保守拒绝。",
+    "历史任务回执保留但不冒充本轮重新完成；未重新封装历史 Z01/Z02 ZIP。"
+  ],
+  "current_manifest_kind": "content inventory of the revised source; not a renewal of historical task receipts or ZIP seal"
+}

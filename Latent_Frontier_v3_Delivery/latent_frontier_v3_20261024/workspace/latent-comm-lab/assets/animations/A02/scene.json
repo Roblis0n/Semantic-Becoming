@@ -1,0 +1,255 @@
+{
+  "id": "A02",
+  "duration": 25,
+  "fps": 12,
+  "scene": {
+    "title": "H26：局部关系可能无法全局拼合",
+    "description": "三条局部约束求和得到矛盾，保留多域、新变量或语境细分的研究分支。",
+    "width": 1280,
+    "height": 720,
+    "background": "#F4F1E8",
+    "elements": [
+      {
+        "x": 64,
+        "y": 42,
+        "w": 1152,
+        "h": 62.919999999999995,
+        "text": "H26：局部关系可能无法全局拼合",
+        "size": 44,
+        "color": "#262A25",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Serif CJK SC",
+        "kind": "text",
+        "id": "e001"
+      },
+      {
+        "x": 64,
+        "y": 116,
+        "w": 1152,
+        "h": 47.19,
+        "text": "不可满足的约束不会被平均消除",
+        "size": 33,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e002"
+      },
+      {
+        "points": [
+          [
+            64,
+            658
+          ],
+          [
+            1216,
+            658
+          ]
+        ],
+        "stroke": "#CECDBF",
+        "sw": 1,
+        "fill": "none",
+        "dash": false,
+        "kind": "polyline",
+        "id": "e003"
+      },
+      {
+        "x": 64,
+        "y": 675,
+        "w": 1000,
+        "h": 25.74,
+        "text": "解析示意 / 数学示意 · 无模型实测",
+        "size": 18,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e004"
+      },
+      {
+        "x": 1100,
+        "y": 675,
+        "w": 116,
+        "h": 25.74,
+        "text": "A02",
+        "size": 18,
+        "color": "#606258",
+        "align": "right",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e005"
+      },
+      {
+        "x": 64,
+        "y": 600,
+        "w": 1152,
+        "h": 47,
+        "fill": "#FFFCF5",
+        "stroke": "#CECDBF",
+        "sw": 0,
+        "r": 0,
+        "dash": false,
+        "kind": "rect",
+        "id": "e006"
+      },
+      {
+        "x": 90,
+        "y": 240,
+        "w": 400,
+        "h": 58.629999999999995,
+        "text": "x − y = 0",
+        "size": 41,
+        "color": "#536647",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e007",
+        "reveal_at": 0
+      },
+      {
+        "x": 820,
+        "y": 240,
+        "w": 400,
+        "h": 58.629999999999995,
+        "text": "y − z = 0",
+        "size": 41,
+        "color": "#496974",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e008",
+        "reveal_at": 5
+      },
+      {
+        "x": 460,
+        "y": 375,
+        "w": 400,
+        "h": 58.629999999999995,
+        "text": "z − x = 1",
+        "size": 41,
+        "color": "#9C5138",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e009",
+        "reveal_at": 10
+      },
+      {
+        "x": 430,
+        "y": 465,
+        "w": 650,
+        "h": 61.489999999999995,
+        "text": "求和：0 = 1",
+        "size": 43,
+        "color": "#9C4540",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e010",
+        "reveal_at": 15
+      },
+      {
+        "x": 64,
+        "y": 550,
+        "w": 364,
+        "h": 40.04,
+        "text": "保留多个局部域",
+        "size": 28,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e011",
+        "reveal_at": 20
+      },
+      {
+        "x": 458,
+        "y": 550,
+        "w": 364,
+        "h": 40.04,
+        "text": "检验新增变量",
+        "size": 28,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e012",
+        "reveal_at": 20
+      },
+      {
+        "x": 852,
+        "y": 550,
+        "w": 364,
+        "h": 40.04,
+        "text": "细分适用语境",
+        "size": 28,
+        "color": "#606258",
+        "align": "left",
+        "bold": false,
+        "font": "Noto Sans CJK SC",
+        "kind": "text",
+        "id": "e013",
+        "reveal_at": 20
+      }
+    ],
+    "notes": "",
+    "sources": [],
+    "research_state": "NOT_RUN"
+  },
+  "steps": [
+    {
+      "t": 0,
+      "fact": "局部约束 x − y = 0",
+      "explanation": "第一对变量相等",
+      "next": "加入第二个局部域"
+    },
+    {
+      "t": 5,
+      "fact": "再要求 y − z = 0",
+      "explanation": "前两条推出 x = z",
+      "next": "检验第三条约束"
+    },
+    {
+      "t": 10,
+      "fact": "第三条要求 z − x = 1",
+      "explanation": "它与前两条不能同时成立",
+      "next": "构造冲突见证"
+    },
+    {
+      "t": 15,
+      "fact": "三式相加得到 0 = 1",
+      "explanation": "这是不可全局拼合见证",
+      "next": "保留修订分支"
+    },
+    {
+      "t": 20,
+      "fact": "多域 / 新变量 / 语境细分",
+      "explanation": "它们是候选路线，不是已解决",
+      "next": "分别明确条件与反例"
+    }
+  ],
+  "mechanisms": [
+    "H26"
+  ],
+  "math_inputs": {
+    "constraints": [
+      "x-y=0",
+      "y-z=0",
+      "z-x=1"
+    ],
+    "sum": "0=1"
+  },
+  "research_state": "NOT_RUN",
+  "export_audio": false,
+  "semantic_contract": "Each state is an exact finite mathematical illustration, not a research model output."
+}

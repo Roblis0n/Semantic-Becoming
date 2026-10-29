@@ -1,0 +1,2742 @@
+[
+  {
+    "mechanism": "H01",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h01_legacy/losses.py"
+  },
+  {
+    "mechanism": "H01",
+    "name": "behavior",
+    "formula": "mean ||T(z)-teacher(z)||^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "state_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "predicted"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "state elements",
+    "source": "src/latent_comm/mechanisms/h01_legacy/losses.py"
+  },
+  {
+    "mechanism": "H01",
+    "name": "composition",
+    "formula": "mean ||Tb(Ta(z))-program_ba(z)||^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "composition_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "composed"
+    ],
+    "stop_gradient_edges": [
+      [
+        "composition_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "state elements",
+    "source": "src/latent_comm/mechanisms/h01_legacy/losses.py"
+  },
+  {
+    "mechanism": "H02",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h02_legacy/losses.py"
+  },
+  {
+    "mechanism": "H02",
+    "name": "response",
+    "formula": "mean ||z_hat-z_teacher||^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "predicted"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "response elements",
+    "source": "src/latent_comm/mechanisms/h02_legacy/losses.py"
+  },
+  {
+    "mechanism": "H02",
+    "name": "locality",
+    "formula": "BCE(refresh_logit,outside_or_error)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "refresh_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "refresh_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "refresh_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "queries",
+    "source": "src/latent_comm/mechanisms/h02_legacy/losses.py"
+  },
+  {
+    "mechanism": "H03",
+    "name": "mixture_nll",
+    "formula": "-logsumexp_k(log pi_k + sum_t log p_kt)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "sequence_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "sequence_logprob"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "sequences",
+    "source": "src/latent_comm/mechanisms/h03_legacy/losses.py"
+  },
+  {
+    "mechanism": "H03",
+    "name": "calibration",
+    "formula": "sum_k (pi_k-target_k)^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "calibration_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "weights"
+    ],
+    "stop_gradient_edges": [
+      [
+        "calibration_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "branches",
+    "source": "src/latent_comm/mechanisms/h03_legacy/losses.py"
+  },
+  {
+    "mechanism": "H03",
+    "name": "coverage",
+    "formula": "minimum valid set assignment cost",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "coverage_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "coverage_cost"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.FIRST_ORDER",
+    "units": "matched branches (assignment fixed; matched distances pathwise)",
+    "source": "src/latent_comm/mechanisms/h03_legacy/losses.py"
+  },
+  {
+    "mechanism": "H04",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h04_legacy/losses.py"
+  },
+  {
+    "mechanism": "H04",
+    "name": "local",
+    "formula": "mean residual_fit_error^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "local_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "residual_prediction"
+    ],
+    "stop_gradient_edges": [
+      [
+        "residual_teacher",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "residual elements",
+    "source": "src/latent_comm/mechanisms/h04_legacy/losses.py"
+  },
+  {
+    "mechanism": "H04",
+    "name": "stability",
+    "formula": "mean relu(E[t+1]-E[t])",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "step_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "energies"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "steps",
+    "source": "src/latent_comm/mechanisms/h04_legacy/losses.py"
+  },
+  {
+    "mechanism": "H04",
+    "name": "conflict",
+    "formula": "BCE(conflict_logit,known_inconsistency)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "conflict_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "conflict_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "conflict_targets",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "fields",
+    "source": "src/latent_comm/mechanisms/h04_legacy/losses.py"
+  },
+  {
+    "mechanism": "H05",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h05_legacy/losses.py"
+  },
+  {
+    "mechanism": "H05",
+    "name": "continuation",
+    "formula": "mean suffix_action_error",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "action_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "action_targets",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "future actions",
+    "source": "src/latent_comm/mechanisms/h05_legacy/losses.py"
+  },
+  {
+    "mechanism": "H06",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h06_legacy/losses.py"
+  },
+  {
+    "mechanism": "H06",
+    "name": "reconstruction",
+    "formula": "mean squared reconstruct(state)-state",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "encoded_valid[:,None].expand_as(state)",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "reconstructed",
+      "state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "state coordinates",
+    "source": "src/latent_comm/mechanisms/h06_legacy/losses.py"
+  },
+  {
+    "mechanism": "H06",
+    "name": "effect",
+    "formula": "mean behavioral anchor squared error",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "effect_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "effect"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "behavior coordinates",
+    "source": "src/latent_comm/mechanisms/h06_legacy/losses.py"
+  },
+  {
+    "mechanism": "H06",
+    "name": "cycle",
+    "formula": "mean declared overlap cycle squared error",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "overlap_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "cycled",
+      "original"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "chart elements",
+    "source": "src/latent_comm/mechanisms/h06_legacy/losses.py"
+  },
+  {
+    "mechanism": "H06",
+    "name": "variance",
+    "formula": "mean relu(min_std-std(valid chart encodings))",
+    "numerator": "sum coordinate standard-deviation hinge penalties",
+    "denominator": "chart dimension; active only with >=2 valid rows",
+    "valid_mask": "encoded_valid; at least two rows",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "encoded"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "chart coordinates",
+    "source": "src/latent_comm/mechanisms/h06_legacy/losses.py"
+  },
+  {
+    "mechanism": "H07",
+    "name": "structure",
+    "formula": "CE(allowed_opcode_logits,supervised_opcode)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "node_valid & legal opcode",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "opcode_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "opcode_targets",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "nodes",
+    "source": "src/latent_comm/mechanisms/h07_legacy/losses.py"
+  },
+  {
+    "mechanism": "H07",
+    "name": "parameters",
+    "formula": "task loss through fixed typed program",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "tasks",
+    "source": "src/latent_comm/mechanisms/h07_legacy/losses.py"
+  },
+  {
+    "mechanism": "H08",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h08_legacy/losses.py"
+  },
+  {
+    "mechanism": "H08",
+    "name": "relation",
+    "formula": "mean ||P A_target P^T-A_source||^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "edge_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "transported_relations"
+    ],
+    "stop_gradient_edges": [
+      [
+        "source_relations",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "edges",
+    "source": "src/latent_comm/mechanisms/h08_legacy/losses.py"
+  },
+  {
+    "mechanism": "H08",
+    "name": "matching",
+    "formula": "-log sum probability over symmetry-valid matches",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "node_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "matching_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "equivalent_targets",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "nodes",
+    "source": "src/latent_comm/mechanisms/h08_legacy/losses.py"
+  },
+  {
+    "mechanism": "H09",
+    "name": "intervention",
+    "formula": "mean predicted do effect squared error",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "predicted"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "outcome elements",
+    "source": "src/latent_comm/mechanisms/h09_legacy/losses.py"
+  },
+  {
+    "mechanism": "H09",
+    "name": "algebra",
+    "formula": "mean ||IaIb(z)-IbIa(z)||^2 for independent targets",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "commuting_mask",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "left_then_right",
+      "right_then_left"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "legal commuting pairs",
+    "source": "src/latent_comm/mechanisms/h09_legacy/losses.py"
+  },
+  {
+    "mechanism": "H10",
+    "name": "joint",
+    "formula": "mean CE(joint output,task)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "joint_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "tasks",
+    "source": "src/latent_comm/mechanisms/h10_legacy/losses.py"
+  },
+  {
+    "mechanism": "H10",
+    "name": "dropout",
+    "formula": "mean task error under declared source subsets",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "subset_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "subset_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "subset_targets",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "subsets",
+    "source": "src/latent_comm/mechanisms/h10_legacy/losses.py"
+  },
+  {
+    "mechanism": "H11",
+    "name": "prefix",
+    "formula": "weighted mean task error across legal truncations",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "prefix_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "prefix_errors"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.STRAIGHT_THROUGH",
+    "units": "prefix tasks",
+    "source": "src/latent_comm/mechanisms/h11_legacy/losses.py"
+  },
+  {
+    "mechanism": "H11",
+    "name": "rate",
+    "formula": "-mean log2 entropy_model(symbol)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "symbol_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "entropy_model"
+    ],
+    "requires_grad_inputs": [
+      "symbol_log_probs"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "bits per symbol",
+    "source": "src/latent_comm/mechanisms/h11_legacy/losses.py"
+  },
+  {
+    "mechanism": "H11",
+    "name": "codebook",
+    "formula": "mean ||embedding-stop(residual)||^2 + beta||residual-stop(embedding)||^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "coordinate_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "codebook",
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "commitment_errors",
+      "codebook_errors"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.STRAIGHT_THROUGH",
+    "units": "coordinate elements",
+    "source": "src/latent_comm/mechanisms/h11_legacy/losses.py"
+  },
+  {
+    "mechanism": "H12",
+    "name": "multiquery",
+    "formula": "mean_document weighted_mean_query task_error",
+    "numerator": "sum valid document weighted query means",
+    "denominator": "count valid documents, inner sum query_weights*query_valid",
+    "valid_mask": "query_valid; sum(query_weights * query_valid)>0 per document",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "query_errors"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "documents then weighted queries",
+    "source": "src/latent_comm/mechanisms/h12_legacy/losses.py"
+  },
+  {
+    "mechanism": "H13",
+    "name": "task",
+    "formula": "stage normalized task loss after dedicated mechanism",
+    "numerator": "sum valid task losses",
+    "denominator": "valid task count",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h13_legacy/losses.py"
+  },
+  {
+    "mechanism": "H13",
+    "name": "merge",
+    "formula": "mean ||merged-serial||^2",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "merge_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "merged"
+    ],
+    "stop_gradient_edges": [
+      [
+        "serial",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "slot elements",
+    "source": "src/latent_comm/mechanisms/h13_legacy/losses.py"
+  },
+  {
+    "mechanism": "H13",
+    "name": "conflict",
+    "formula": "BCE(conflict_prediction,scope_conflict)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "conflict_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "branch_router"
+    ],
+    "requires_grad_inputs": [
+      "conflict_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "conflict_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "branch pairs",
+    "source": "src/latent_comm/mechanisms/h13_legacy/losses.py"
+  },
+  {
+    "mechanism": "H14",
+    "name": "execution",
+    "formula": "mean squared expanded behavior-target",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "behavior_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "behavior"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "behavior coordinates",
+    "source": "src/latent_comm/mechanisms/h14_legacy/losses.py"
+  },
+  {
+    "mechanism": "H14",
+    "name": "production",
+    "formula": "CE(typed_production_logits,label)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "grammar_proposer"
+    ],
+    "requires_grad_inputs": [
+      "production_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "labels",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "productions",
+    "source": "src/latent_comm/mechanisms/h14_legacy/losses.py"
+  },
+  {
+    "mechanism": "H14",
+    "name": "rewrite",
+    "formula": "mean behavior difference for conditional equivalent rewrites",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "rewrite_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "rewritten",
+      "original"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "behavior elements",
+    "source": "src/latent_comm/mechanisms/h14_legacy/losses.py"
+  },
+  {
+    "mechanism": "H15",
+    "name": "cross_receiver",
+    "formula": "mean_receiver mean_valid_task loss",
+    "numerator": "sum valid receiver task means",
+    "denominator": "count valid receivers, inner valid task count",
+    "valid_mask": "receiver_valid; at least one valid task per receiver",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "receiver_errors"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "receivers then tasks",
+    "source": "src/latent_comm/mechanisms/h15_legacy/losses.py"
+  },
+  {
+    "mechanism": "H15",
+    "name": "effect",
+    "formula": "common behavior discrepancy",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "behavior_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "behaviors"
+    ],
+    "stop_gradient_edges": [
+      [
+        "behavior_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "shared behavior coordinates",
+    "source": "src/latent_comm/mechanisms/h15_legacy/losses.py"
+  },
+  {
+    "mechanism": "H16",
+    "name": "conflict",
+    "formula": "BCE(conflict_logits,verified symbol-latent contradiction)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "conflict_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "conflict_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "conflict_labels",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "symbol conflicts",
+    "source": "src/latent_comm/mechanisms/h16_legacy/losses.py"
+  },
+  {
+    "mechanism": "H16",
+    "name": "symbol_structure",
+    "formula": "CE(predicted exact-field category,true category)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "symbol_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "symbol_predictor"
+    ],
+    "requires_grad_inputs": [
+      "symbol_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "symbol_labels",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "fields",
+    "source": "src/latent_comm/mechanisms/h16_legacy/losses.py"
+  },
+  {
+    "mechanism": "H16",
+    "name": "latent_behavior",
+    "formula": "task loss conditioned on verified symbols",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "latent_task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "tasks",
+    "source": "src/latent_comm/mechanisms/h16_legacy/losses.py"
+  },
+  {
+    "mechanism": "H17",
+    "name": "frame",
+    "formula": "mean aligned position error",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "visible_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "vision_reader",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "aligned_positions"
+    ],
+    "stop_gradient_edges": [
+      [
+        "position_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "physical coordinates",
+    "source": "src/latent_comm/mechanisms/h17_legacy/losses.py"
+  },
+  {
+    "mechanism": "H17",
+    "name": "action",
+    "formula": "mean predicted action consequence error",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "action_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "action_adapter"
+    ],
+    "requires_grad_inputs": [
+      "predicted_next"
+    ],
+    "stop_gradient_edges": [
+      [
+        "next_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "physical coordinates",
+    "source": "src/latent_comm/mechanisms/h17_legacy/losses.py"
+  },
+  {
+    "mechanism": "H17",
+    "name": "covariance",
+    "formula": "mean squared aligned covariance-target error",
+    "numerator": "sum of valid squared covariance entries",
+    "denominator": "count of valid covariance entries",
+    "valid_mask": "covariance_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "vision_reader",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "aligned_covariances"
+    ],
+    "stop_gradient_edges": [
+      [
+        "covariance_target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "covariance matrix entries",
+    "source": "src/latent_comm/mechanisms/h17_legacy/losses.py"
+  },
+  {
+    "mechanism": "H18",
+    "name": "structure_policy",
+    "formula": "-log p(selected graph)*(reward-baseline)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "topology_controller"
+    ],
+    "requires_grad_inputs": [
+      "log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "reward",
+        "target_or_return"
+      ],
+      [
+        "baseline",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "graphs",
+    "source": "src/latent_comm/mechanisms/h18_legacy/losses.py"
+  },
+  {
+    "mechanism": "H18",
+    "name": "task_cost",
+    "formula": "task loss + lambda total actually executed cost",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "stage-normalized valid tasks; actual_cost is executed-cost diagnostic",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "tasks",
+    "source": "src/latent_comm/mechanisms/h18_legacy/losses.py"
+  },
+  {
+    "mechanism": "H19",
+    "name": "distillation",
+    "formula": "mean_valid ||student_without_message - stopgrad(teacher_with_message)||^2",
+    "numerator": "sum of valid per-probe mean coordinate errors",
+    "denominator": "count of valid probes",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "student"
+    ],
+    "stop_gradient_edges": [
+      [
+        "teacher",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "probes, each averaged over coordinates",
+    "source": "src/latent_comm/mechanisms/h19_legacy/losses.py"
+  },
+  {
+    "mechanism": "H19",
+    "name": "operation_behavior",
+    "formula": "mean_valid ||student(compose(a,b),x)-teacher(b,teacher(a,x))||^2",
+    "numerator": "sum of valid per-probe mean coordinate errors",
+    "denominator": "count of valid probes",
+    "valid_mask": "operation_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "operation_student"
+    ],
+    "stop_gradient_edges": [
+      [
+        "operation_teacher",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "probes, each averaged over coordinates",
+    "source": "src/latent_comm/mechanisms/h19_legacy/losses.py"
+  },
+  {
+    "mechanism": "H20",
+    "name": "task",
+    "formula": "externally normalized task loss after causally eligible event",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "stage-normalized valid tasks",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_loss"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h20_legacy/losses.py"
+  },
+  {
+    "mechanism": "H20",
+    "name": "event_supervision",
+    "formula": "cross entropy over eligible event candidates",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid & eligible.any(-1)",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "event decisions",
+    "source": "src/latent_comm/mechanisms/h20_legacy/losses.py"
+  },
+  {
+    "mechanism": "H20",
+    "name": "event_policy",
+    "formula": "-stopgrad(advantage)*log pi(selected eligible event)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "selected_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "selected_logprob"
+    ],
+    "stop_gradient_edges": [
+      [
+        "advantage",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "event decisions",
+    "source": "src/latent_comm/mechanisms/h20_legacy/losses.py"
+  },
+  {
+    "mechanism": "H21",
+    "name": "branch_policy",
+    "formula": "-stopgrad(return-baseline)*log pi(branch)",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "selected_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "logprob"
+    ],
+    "stop_gradient_edges": [
+      [
+        "returns",
+        "target_or_return"
+      ],
+      [
+        "baseline",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "branch decisions",
+    "source": "src/latent_comm/mechanisms/h21_legacy/losses.py"
+  },
+  {
+    "mechanism": "H21",
+    "name": "counterfactual_task",
+    "formula": "mean_valid loss from executable branch task",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "branch_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "branch_task_losses"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "branch tasks",
+    "source": "src/latent_comm/mechanisms/h21_legacy/losses.py"
+  },
+  {
+    "mechanism": "H22",
+    "name": "partition_policy",
+    "formula": "-stopgrad(advantage)*log probability of authorized hard partition",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "logprob"
+    ],
+    "stop_gradient_edges": [
+      [
+        "advantage",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "partition transitions",
+    "source": "src/latent_comm/mechanisms/h22_legacy/losses.py"
+  },
+  {
+    "mechanism": "H22",
+    "name": "handoff_behavior",
+    "formula": "mean ||behavior_after - stopgrad(behavior_before)||^2",
+    "numerator": "sum of valid per-probe mean coordinate errors",
+    "denominator": "count of valid probes",
+    "valid_mask": "probe_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "after"
+    ],
+    "stop_gradient_edges": [
+      [
+        "before",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "probes, each averaged over coordinates",
+    "source": "src/latent_comm/mechanisms/h22_legacy/losses.py"
+  },
+  {
+    "mechanism": "H23",
+    "name": "unnecessary_change",
+    "formula": "mean squared correction norm on clean packets",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "normal_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "delta"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "clean packets",
+    "source": "src/latent_comm/mechanisms/h23_legacy/losses.py"
+  },
+  {
+    "mechanism": "H23",
+    "name": "repair_behavior",
+    "formula": "mean_valid ||behavior_after-stopgrad(correct_behavior)||^2",
+    "numerator": "sum of valid per-probe mean coordinate errors",
+    "denominator": "count of valid probes",
+    "valid_mask": "probe_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "after"
+    ],
+    "stop_gradient_edges": [
+      [
+        "target",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "probes, each averaged over coordinates",
+    "source": "src/latent_comm/mechanisms/h23_legacy/losses.py"
+  },
+  {
+    "mechanism": "H23",
+    "name": "no_repair_gate",
+    "formula": "binary cross entropy repair/no-repair on both normal and corrupted messages",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "gate_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer"
+    ],
+    "requires_grad_inputs": [
+      "gate_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "needs_repair",
+        "target_or_return"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "messages",
+    "source": "src/latent_comm/mechanisms/h23_legacy/losses.py"
+  },
+  {
+    "mechanism": "H24",
+    "name": "scoped_effect",
+    "formula": "mean_valid squared proposed effects in forbidden coordinates",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "(~write_mask).expand_as(proposed_delta) & coordinate_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "proposed_delta"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "protected coordinates",
+    "source": "src/latent_comm/mechanisms/h24_legacy/losses.py"
+  },
+  {
+    "mechanism": "H24",
+    "name": "task",
+    "formula": "mean_valid task loss after structurally masked operation",
+    "numerator": "sum of valid terms",
+    "denominator": "count of valid terms",
+    "valid_mask": "task_valid",
+    "zero_valid_policy": "differentiable_zero",
+    "parameter_owners": [
+      "mechanism_writer",
+      "mechanism_reader"
+    ],
+    "requires_grad_inputs": [
+      "task_losses"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task instances",
+    "source": "src/latent_comm/mechanisms/h24_legacy/losses.py"
+  },
+  {
+    "mechanism": "H25",
+    "name": "covariance",
+    "formula": "sum(mask * (Pprime Gi z - Gj P z)^2)/sum(mask)",
+    "numerator": "squared transported coordinate residual",
+    "denominator": "valid state elements",
+    "valid_mask": "state_element_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "cross_map",
+      "read_write_heads"
+    ],
+    "requires_grad_inputs": [
+      "state",
+      "cross_map"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "state elements",
+    "source": "src/latent_comm/mechanisms/h25_gauge/losses.py"
+  },
+  {
+    "mechanism": "H25",
+    "name": "effect",
+    "formula": "sum(mask * (rprime Tprime zprime-r T z)^2)/sum(mask)",
+    "numerator": "squared public behavior residual",
+    "denominator": "valid behavior elements",
+    "valid_mask": "behavior_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "cross_map",
+      "read_write_heads"
+    ],
+    "requires_grad_inputs": [
+      "state",
+      "operator",
+      "readout"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "public behavior elements",
+    "source": "src/latent_comm/mechanisms/h25_gauge/losses.py"
+  },
+  {
+    "mechanism": "H26",
+    "name": "local",
+    "formula": "sum(m*(prediction-evidence)^2)/sum(m)",
+    "numerator": "local evidence residual squared",
+    "denominator": "valid local elements",
+    "valid_mask": "local_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "anchor_encoder"
+    ],
+    "requires_grad_inputs": [
+      "local_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "local evidence elements",
+    "source": "src/latent_comm/mechanisms/h26_sheaf/losses.py"
+  },
+  {
+    "mechanism": "H26",
+    "name": "overlap",
+    "formula": "sum(m*(Ri zi-Rj zj-b)^2)/sum(m)",
+    "numerator": "declared overlap residual squared",
+    "denominator": "valid declared overlap elements",
+    "valid_mask": "overlap_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "restriction_maps"
+    ],
+    "requires_grad_inputs": [
+      "local_state",
+      "restriction_maps"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "overlap elements",
+    "source": "src/latent_comm/mechanisms/h26_sheaf/losses.py"
+  },
+  {
+    "mechanism": "H26",
+    "name": "obstruction",
+    "formula": "sum(m*BCEWithLogits(logit,conflict))/sum(m)",
+    "numerator": "conflict classification cross entropy",
+    "denominator": "valid graph labels",
+    "valid_mask": "conflict_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "conflict_head"
+    ],
+    "requires_grad_inputs": [
+      "overlap_residual"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "graphs",
+    "source": "src/latent_comm/mechanisms/h26_sheaf/losses.py"
+  },
+  {
+    "mechanism": "H27",
+    "name": "distinction",
+    "formula": "sum(m*relu(margin-abs(ca-cb)))/sum(m)",
+    "numerator": "pair margin deficit",
+    "denominator": "known required pairs",
+    "valid_mask": "pair_known_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "concept_thresholds"
+    ],
+    "requires_grad_inputs": [
+      "concept_values"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "pairs",
+    "source": "src/latent_comm/mechanisms/h27_ontology/losses.py"
+  },
+  {
+    "mechanism": "H27",
+    "name": "behavior",
+    "formula": "sum(m*CE(action_logits,label))/sum(m)",
+    "numerator": "supervisor-only action cross entropy",
+    "denominator": "valid actions",
+    "valid_mask": "action_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "concept_thresholds",
+      "behavior_readout"
+    ],
+    "requires_grad_inputs": [
+      "concept_values"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "actions",
+    "source": "src/latent_comm/mechanisms/h27_ontology/losses.py"
+  },
+  {
+    "mechanism": "H27",
+    "name": "description",
+    "formula": "UTF8_prefix_AST_bytes",
+    "numerator": "actual prefix-encoded AST byte length",
+    "denominator": "one candidate",
+    "valid_mask": "candidate_valid",
+    "zero_valid_policy": "error",
+    "parameter_owners": [],
+    "requires_grad_inputs": [],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.ENUMERATION",
+    "units": "bytes",
+    "source": "src/latent_comm/mechanisms/h27_ontology/losses.py"
+  },
+  {
+    "mechanism": "H27",
+    "name": "drift",
+    "formula": "sum(m*(new_old_domain-old)^2)/sum(m)",
+    "numerator": "historical-domain response change",
+    "denominator": "valid historical values",
+    "valid_mask": "old_domain_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "concept_thresholds"
+    ],
+    "requires_grad_inputs": [
+      "new_response"
+    ],
+    "stop_gradient_edges": [
+      [
+        "old_response",
+        "drift"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "historical examples",
+    "source": "src/latent_comm/mechanisms/h27_ontology/losses.py"
+  },
+  {
+    "mechanism": "H28",
+    "name": "task",
+    "formula": "sum(m*task_error)/sum(m)",
+    "numerator": "task-conditioned error",
+    "denominator": "valid tasks",
+    "valid_mask": "task_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "potential_coefficients",
+      "readout"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "tasks",
+    "source": "src/latent_comm/mechanisms/h28_bifurcation/losses.py"
+  },
+  {
+    "mechanism": "H28",
+    "name": "migration",
+    "formula": "sum(m*(after_readout-before_readout)^2)/sum(m)",
+    "numerator": "behavior change under structure migration",
+    "denominator": "valid public behavior elements",
+    "valid_mask": "behavior_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "structure_map"
+    ],
+    "requires_grad_inputs": [
+      "before_state",
+      "after_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "behavior elements",
+    "source": "src/latent_comm/mechanisms/h28_bifurcation/losses.py"
+  },
+  {
+    "mechanism": "H28",
+    "name": "event",
+    "formula": "sum(m*CE(trigger_logits,event))/sum(m)",
+    "numerator": "supervised structure event cross entropy",
+    "denominator": "valid events",
+    "valid_mask": "event_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "trigger_policy"
+    ],
+    "requires_grad_inputs": [
+      "stability_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "events",
+    "source": "src/latent_comm/mechanisms/h28_bifurcation/losses.py"
+  },
+  {
+    "mechanism": "H29",
+    "name": "relation",
+    "formula": "sum(m*CE(relation_logits,verified_relation))/sum(m)",
+    "numerator": "relation classification CE",
+    "denominator": "verified rewrite edges",
+    "valid_mask": "edge_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "transform_selector"
+    ],
+    "requires_grad_inputs": [
+      "question_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "rewrite edges",
+    "source": "src/latent_comm/mechanisms/h29_questions/losses.py"
+  },
+  {
+    "mechanism": "H29",
+    "name": "backtranslation",
+    "formula": "sum(m*(translated-answer)^2)/sum(m)",
+    "numerator": "answer relation residual squared",
+    "denominator": "valid answer coordinates",
+    "valid_mask": "answer_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "answer_map"
+    ],
+    "requires_grad_inputs": [
+      "target_answer"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "answer coordinates",
+    "source": "src/latent_comm/mechanisms/h29_questions/losses.py"
+  },
+  {
+    "mechanism": "H29",
+    "name": "path_policy",
+    "formula": "-sum(m*log_pi(path)*advantage)/sum(m)",
+    "numerator": "negative path log probability times stopped advantage",
+    "denominator": "valid paths",
+    "valid_mask": "path_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "transform_selector"
+    ],
+    "requires_grad_inputs": [
+      "path_log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "advantage",
+        "path_policy"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "paths",
+    "source": "src/latent_comm/mechanisms/h29_questions/losses.py"
+  },
+  {
+    "mechanism": "H30",
+    "name": "matching",
+    "formula": "sum(mask*(-log P(correct_object)))/sum(mask)",
+    "numerator": "sum of valid per-element errors",
+    "denominator": "valid elements",
+    "valid_mask": "known_match_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "matching_logits"
+    ],
+    "requires_grad_inputs": [
+      "source_features",
+      "target_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "matched objects",
+    "source": "src/latent_comm/mechanisms/h30_analogy/losses.py"
+  },
+  {
+    "mechanism": "H30",
+    "name": "commutation",
+    "formula": "sum(mask*(F A-B F)^2)/sum(mask)",
+    "numerator": "sum of valid per-element errors",
+    "denominator": "valid elements",
+    "valid_mask": "declared_square_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "object_map",
+      "operation_map"
+    ],
+    "requires_grad_inputs": [
+      "source_operation",
+      "target_operation"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "commuting-square elements",
+    "source": "src/latent_comm/mechanisms/h30_analogy/losses.py"
+  },
+  {
+    "mechanism": "H30",
+    "name": "behavior",
+    "formula": "sum(mask*(target_effect-supervised_effect)^2)/sum(mask)",
+    "numerator": "sum of valid per-element errors",
+    "denominator": "valid elements",
+    "valid_mask": "target_behavior_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "object_map",
+      "target_readout"
+    ],
+    "requires_grad_inputs": [
+      "target_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "target behavior elements",
+    "source": "src/latent_comm/mechanisms/h30_analogy/losses.py"
+  },
+  {
+    "mechanism": "H31",
+    "name": "graft",
+    "formula": "sum(m*(grafted_effect-intervention_target)^2)/sum(m)",
+    "numerator": "interventional effect residual",
+    "denominator": "valid effect coordinates",
+    "valid_mask": "intervention_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "source_module_generator",
+      "boundary_reader"
+    ],
+    "requires_grad_inputs": [
+      "boundary_inputs"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "intervention effects",
+    "source": "src/latent_comm/mechanisms/h31_grafting/losses.py"
+  },
+  {
+    "mechanism": "H31",
+    "name": "boundary",
+    "formula": "sum(m*(unchanged_after-unchanged_before)^2)/sum(m)",
+    "numerator": "external invariant residual",
+    "denominator": "valid boundary invariants",
+    "valid_mask": "boundary_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "boundary_reader"
+    ],
+    "requires_grad_inputs": [
+      "grafted_state"
+    ],
+    "stop_gradient_edges": [
+      [
+        "unchanged_before",
+        "boundary"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "boundary coordinates",
+    "source": "src/latent_comm/mechanisms/h31_grafting/losses.py"
+  },
+  {
+    "mechanism": "H32",
+    "name": "value",
+    "formula": "sum(m*(wprime dot cprime-w dot c)^2)/sum(m)",
+    "numerator": "objective-value preservation residual",
+    "denominator": "valid objective values",
+    "valid_mask": "goal_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "view_map",
+      "objective_readout"
+    ],
+    "requires_grad_inputs": [
+      "costs",
+      "weights"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "goals",
+    "source": "src/latent_comm/mechanisms/h32_perspective/losses.py"
+  },
+  {
+    "mechanism": "H32",
+    "name": "constraint",
+    "formula": "sum(m*relu(A_original c_original-b)^2)/sum(m)",
+    "numerator": "original hard-constraint violation",
+    "denominator": "valid original constraints",
+    "valid_mask": "constraint_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "objective_readout"
+    ],
+    "requires_grad_inputs": [
+      "original_costs"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "constraints",
+    "source": "src/latent_comm/mechanisms/h32_perspective/losses.py"
+  },
+  {
+    "mechanism": "H33",
+    "name": "terminal",
+    "formula": "mean masked (readout-target)^2",
+    "numerator": "sum of masked residuals",
+    "denominator": "valid terms",
+    "valid_mask": "behavior_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "coupling",
+      "trajectory_reader"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "behavior elements",
+    "source": "src/latent_comm/mechanisms/h33_reciprocal/losses.py"
+  },
+  {
+    "mechanism": "H33",
+    "name": "trajectory",
+    "formula": "mean masked (predicted_relation-target_relation)^2",
+    "numerator": "sum of masked residuals",
+    "denominator": "valid terms",
+    "valid_mask": "trajectory_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "coupling"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "trajectory relations",
+    "source": "src/latent_comm/mechanisms/h33_reciprocal/losses.py"
+  },
+  {
+    "mechanism": "H33",
+    "name": "stability",
+    "formula": "mean masked relu(norm2_next-norm2_current-budget)^2",
+    "numerator": "sum of masked residuals",
+    "denominator": "valid terms",
+    "valid_mask": "step_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "dissipation_factor",
+      "coupling"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "logical steps",
+    "source": "src/latent_comm/mechanisms/h33_reciprocal/losses.py"
+  },
+  {
+    "mechanism": "H34",
+    "name": "transition",
+    "formula": "sum(m*(z_next-F(z))^2)/sum(m)",
+    "numerator": "transition consistency residual",
+    "denominator": "valid transition coordinates",
+    "valid_mask": "transition_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "transition_messages"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "transition coordinates",
+    "source": "src/latent_comm/mechanisms/h34_boundary_value/losses.py"
+  },
+  {
+    "mechanism": "H34",
+    "name": "boundary",
+    "formula": "sum(m*boundary_error)/sum(m)",
+    "numerator": "public start and terminal violation",
+    "denominator": "valid boundary conditions",
+    "valid_mask": "boundary_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "backward_constraint_encoder"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "public boundary conditions",
+    "source": "src/latent_comm/mechanisms/h34_boundary_value/losses.py"
+  },
+  {
+    "mechanism": "H34",
+    "name": "task",
+    "formula": "sum(m*task_error)/sum(m)",
+    "numerator": "task readout error",
+    "denominator": "valid task outputs",
+    "valid_mask": "task_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "trajectory_reader"
+    ],
+    "requires_grad_inputs": [
+      "trajectory"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task outputs",
+    "source": "src/latent_comm/mechanisms/h34_boundary_value/losses.py"
+  },
+  {
+    "mechanism": "H35",
+    "name": "commute",
+    "formula": "sum(m*(C Fmicro(z)-Fmacro(Cz))^2)/sum(m)",
+    "numerator": "coarse dynamic closure error",
+    "denominator": "valid macro-state elements",
+    "valid_mask": "macro_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "coarse_map",
+      "macro_dynamics"
+    ],
+    "requires_grad_inputs": [
+      "micro_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "macro elements",
+    "source": "src/latent_comm/mechanisms/h35_renormalization/losses.py"
+  },
+  {
+    "mechanism": "H35",
+    "name": "task",
+    "formula": "sum(m*(macro_task-micro_task)^2)/sum(m)",
+    "numerator": "preserved task-response residual",
+    "denominator": "valid task responses",
+    "valid_mask": "task_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "coarse_map",
+      "task_reader"
+    ],
+    "requires_grad_inputs": [
+      "macro_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "task responses",
+    "source": "src/latent_comm/mechanisms/h35_renormalization/losses.py"
+  },
+  {
+    "mechanism": "H35",
+    "name": "residual",
+    "formula": "sum(m*(detail_prediction-detail)^2)/sum(m)",
+    "numerator": "retained detail prediction error",
+    "denominator": "valid micro residual elements",
+    "valid_mask": "detail_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "lift",
+      "detail_memory"
+    ],
+    "requires_grad_inputs": [
+      "coarse_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "micro elements",
+    "source": "src/latent_comm/mechanisms/h35_renormalization/losses.py"
+  },
+  {
+    "mechanism": "H36",
+    "name": "valid_challenge",
+    "formula": "-sum(m*log_pi(x)*verified_violation)/sum(m)",
+    "numerator": "policy score times interpreter-verified reward",
+    "denominator": "valid executable challenges",
+    "valid_mask": "legal_challenge_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "critic_policy"
+    ],
+    "requires_grad_inputs": [
+      "challenge_log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "verified_violation",
+        "valid_challenge"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "challenges",
+    "source": "src/latent_comm/mechanisms/h36_disagreement/losses.py"
+  },
+  {
+    "mechanism": "H36",
+    "name": "revision",
+    "formula": "sum(m*CE(revision_logits,verified_revision))/sum(m)",
+    "numerator": "program revision CE",
+    "denominator": "verified revision examples",
+    "valid_mask": "revision_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "revision_selector"
+    ],
+    "requires_grad_inputs": [
+      "counterexample_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "revisions",
+    "source": "src/latent_comm/mechanisms/h36_disagreement/losses.py"
+  },
+  {
+    "mechanism": "H36",
+    "name": "legality",
+    "formula": "sum(m*BCE(validity_logits,executable))/sum(m)",
+    "numerator": "executable validity CE",
+    "denominator": "labeled challenge programs",
+    "valid_mask": "legality_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "critic_validity_head"
+    ],
+    "requires_grad_inputs": [
+      "program_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "challenge programs",
+    "source": "src/latent_comm/mechanisms/h36_disagreement/losses.py"
+  },
+  {
+    "mechanism": "H37",
+    "name": "effect",
+    "formula": "sum(m*(behavior_after-behavior_before-v)^2)/sum(m)",
+    "numerator": "post-update public behavior error",
+    "denominator": "valid shared behavior coordinates",
+    "valid_mask": "behavior_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "transport_operator",
+      "behavior_encoder"
+    ],
+    "requires_grad_inputs": [
+      "source_direction",
+      "target_update"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "shared public behaviors",
+    "source": "src/latent_comm/mechanisms/h37_gradient_transport/losses.py"
+  },
+  {
+    "mechanism": "H37",
+    "name": "local",
+    "formula": "sum(m*(actual_behavior_delta-Jtarget delta)^2)/sum(m)",
+    "numerator": "local linearization error",
+    "denominator": "valid public anchor coordinates",
+    "valid_mask": "anchor_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "transport_operator"
+    ],
+    "requires_grad_inputs": [
+      "target_update"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "anchor coordinates",
+    "source": "src/latent_comm/mechanisms/h37_gradient_transport/losses.py"
+  },
+  {
+    "mechanism": "H37",
+    "name": "ridge",
+    "formula": "lambda * sum(delta^2)/count(delta)",
+    "numerator": "scoped parameter update squared norm",
+    "denominator": "updated parameter elements",
+    "valid_mask": "parameter_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "transport_operator"
+    ],
+    "requires_grad_inputs": [
+      "target_update"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "updated parameters",
+    "source": "src/latent_comm/mechanisms/h37_gradient_transport/losses.py"
+  },
+  {
+    "mechanism": "H38",
+    "name": "outer_query_full",
+    "formula": "L_query(theta_T(psi),query)",
+    "numerator": "query-only loss after fixed support unroll",
+    "denominator": "valid held-out query targets",
+    "valid_mask": "query_valid_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "plasticity_rule_parameters"
+    ],
+    "requires_grad_inputs": [
+      "support_gradients",
+      "inner_parameters",
+      "rule_parameters"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.SECOND_ORDER",
+    "units": "query targets",
+    "source": "src/latent_comm/mechanisms/h38_plasticity/losses.py"
+  },
+  {
+    "mechanism": "H38",
+    "name": "outer_query_first_order",
+    "formula": "L_query(theta_T(psi,stopgrad(g_support)),query)",
+    "numerator": "query loss with support-gradient Hessian terms omitted",
+    "denominator": "valid held-out query targets",
+    "valid_mask": "query_valid_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "plasticity_rule_parameters"
+    ],
+    "requires_grad_inputs": [
+      "inner_parameters",
+      "rule_parameters"
+    ],
+    "stop_gradient_edges": [
+      [
+        "support_gradients",
+        "inner_update"
+      ]
+    ],
+    "estimator": "GradientEstimator.FIRST_ORDER",
+    "units": "query targets",
+    "source": "src/latent_comm/mechanisms/h38_plasticity/losses.py"
+  },
+  {
+    "mechanism": "H38",
+    "name": "update_budget",
+    "formula": "mean relu(norm(delta)-max_norm)^2",
+    "numerator": "pre-clipping update norm exceedance",
+    "denominator": "valid scoped parameter groups",
+    "valid_mask": "group_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "plasticity_rule_parameters"
+    ],
+    "requires_grad_inputs": [
+      "raw_update"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "parameter groups",
+    "source": "src/latent_comm/mechanisms/h38_plasticity/losses.py"
+  },
+  {
+    "mechanism": "H39",
+    "name": "conflict_prediction",
+    "formula": "sum(m*BCE(logit,conflict))/sum(m)",
+    "numerator": "conflict prediction CE",
+    "denominator": "valid completed transaction outcomes",
+    "valid_mask": "outcome_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "commit_policy"
+    ],
+    "requires_grad_inputs": [
+      "conflict_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "transactions",
+    "source": "src/latent_comm/mechanisms/h39_transactions/losses.py"
+  },
+  {
+    "mechanism": "H39",
+    "name": "redo_cost",
+    "formula": "sum(m*(predicted_cost-actual_cost)^2)/sum(m)",
+    "numerator": "redo cost prediction residual",
+    "denominator": "valid retry outcomes",
+    "valid_mask": "retry_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "cost_predictor"
+    ],
+    "requires_grad_inputs": [
+      "cost_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "transactions",
+    "source": "src/latent_comm/mechanisms/h39_transactions/losses.py"
+  },
+  {
+    "mechanism": "H40",
+    "name": "fast_behavior",
+    "formula": "sum(m*(fast_mu(x)-Exec_base(lower(mu),x))^2)/sum(m)",
+    "numerator": "fast implementation anchor error",
+    "denominator": "valid declared behavior anchors",
+    "valid_mask": "anchor_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "fast_macro_coefficients"
+    ],
+    "requires_grad_inputs": [
+      "macro_inputs"
+    ],
+    "stop_gradient_edges": [
+      [
+        "exact_base_target",
+        "fast_behavior"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "behavior anchors",
+    "source": "src/latent_comm/mechanisms/h40_instruction_set/losses.py"
+  },
+  {
+    "mechanism": "H40",
+    "name": "description",
+    "formula": "encoded_original_bytes-encoded_definition_bytes-encoded_calls_bytes",
+    "numerator": "actual byte savings",
+    "denominator": "one candidate library",
+    "valid_mask": "candidate_valid",
+    "zero_valid_policy": "error",
+    "parameter_owners": [],
+    "requires_grad_inputs": [],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.ENUMERATION",
+    "units": "bytes",
+    "source": "src/latent_comm/mechanisms/h40_instruction_set/losses.py"
+  },
+  {
+    "mechanism": "H40",
+    "name": "binding",
+    "formula": "sum(m*CE(binding_logits,binding))/sum(m)",
+    "numerator": "typed argument binding CE",
+    "denominator": "valid macro calls",
+    "valid_mask": "call_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "binding_selector"
+    ],
+    "requires_grad_inputs": [
+      "program_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "macro calls",
+    "source": "src/latent_comm/mechanisms/h40_instruction_set/losses.py"
+  },
+  {
+    "mechanism": "H41",
+    "name": "value",
+    "formula": "sum(m*(estimated-v_table)^2)/sum(m)",
+    "numerator": "known coalition value residual",
+    "denominator": "known coalition values",
+    "valid_mask": "known_value_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "coalition_value_estimator"
+    ],
+    "requires_grad_inputs": [
+      "capability_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "coalitions",
+    "source": "src/latent_comm/mechanisms/h41_coalitions/losses.py"
+  },
+  {
+    "mechanism": "H41",
+    "name": "allocation",
+    "formula": "-sum(m*log_pi(S)*task_utility)/sum(m)",
+    "numerator": "policy score times actual task utility",
+    "denominator": "valid feasible allocations",
+    "valid_mask": "feasible_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "coalition_proposer"
+    ],
+    "requires_grad_inputs": [
+      "allocation_log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "task_utility",
+        "allocation"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "allocations",
+    "source": "src/latent_comm/mechanisms/h41_coalitions/losses.py"
+  },
+  {
+    "mechanism": "H42",
+    "name": "interface",
+    "formula": "sum(m*task_error)/sum(m)",
+    "numerator": "task-conditioned interface loss",
+    "denominator": "valid role-isolated tasks",
+    "valid_mask": "task_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "protocol_interface"
+    ],
+    "requires_grad_inputs": [
+      "public_task_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "tasks",
+    "source": "src/latent_comm/mechanisms/h42_ecology/losses.py"
+  },
+  {
+    "mechanism": "H42",
+    "name": "proposal",
+    "formula": "-sum(m*log_pi(mutation)*reward)/sum(m)",
+    "numerator": "mutation policy score times separately recorded novelty/solvability reward",
+    "denominator": "valid legal mutations",
+    "valid_mask": "mutation_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "environment_proposer"
+    ],
+    "requires_grad_inputs": [
+      "mutation_log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "reward",
+        "proposal"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "mutations",
+    "source": "src/latent_comm/mechanisms/h42_ecology/losses.py"
+  },
+  {
+    "mechanism": "H43",
+    "name": "transition",
+    "formula": "mean masked -log K(snext|s,a)",
+    "numerator": "sum of masked per-case losses",
+    "denominator": "valid terms",
+    "valid_mask": "transition_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "kernel_generator",
+      "state_interface"
+    ],
+    "requires_grad_inputs": [
+      "current_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "observed transitions",
+    "source": "src/latent_comm/mechanisms/h43_world_kernels/losses.py"
+  },
+  {
+    "mechanism": "H43",
+    "name": "observation",
+    "formula": "mean masked -log O(observation|s)",
+    "numerator": "sum of masked per-case losses",
+    "denominator": "valid terms",
+    "valid_mask": "observation_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "observation_generator"
+    ],
+    "requires_grad_inputs": [
+      "world_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "observations",
+    "source": "src/latent_comm/mechanisms/h43_world_kernels/losses.py"
+  },
+  {
+    "mechanism": "H43",
+    "name": "shared_noise",
+    "formula": "mean masked (predicted_joint-target_joint)^2",
+    "numerator": "sum of masked per-case losses",
+    "denominator": "valid terms",
+    "valid_mask": "joint_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "noise_coupling"
+    ],
+    "requires_grad_inputs": [
+      "conditional_kernels"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "joint outcome cells",
+    "source": "src/latent_comm/mechanisms/h43_world_kernels/losses.py"
+  },
+  {
+    "mechanism": "H43",
+    "name": "multistep",
+    "formula": "mean masked (predicted_behavior-target_behavior)^2",
+    "numerator": "sum of masked per-case losses",
+    "denominator": "valid terms",
+    "valid_mask": "horizon_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "kernel_generator"
+    ],
+    "requires_grad_inputs": [
+      "initial_state"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "horizon behavior elements",
+    "source": "src/latent_comm/mechanisms/h43_world_kernels/losses.py"
+  },
+  {
+    "mechanism": "H44",
+    "name": "legality",
+    "formula": "sum(m*BCE(legal_logits,structural_valid))/sum(m)",
+    "numerator": "world structural-validity CE",
+    "denominator": "checked world proposals",
+    "valid_mask": "world_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "world_proposer"
+    ],
+    "requires_grad_inputs": [
+      "kernel_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "proposals",
+    "source": "src/latent_comm/mechanisms/h44_dreaming/losses.py"
+  },
+  {
+    "mechanism": "H44",
+    "name": "curriculum",
+    "formula": "sum(m*synthetic_task_loss)/sum(m)",
+    "numerator": "synthetic task loss with parent lineage",
+    "denominator": "valid synthetic tasks",
+    "valid_mask": "synthetic_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "protocol_interface"
+    ],
+    "requires_grad_inputs": [
+      "role_views"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "synthetic tasks",
+    "source": "src/latent_comm/mechanisms/h44_dreaming/losses.py"
+  },
+  {
+    "mechanism": "H44",
+    "name": "heldout_proposal",
+    "formula": "log_pi(world)*stopgrad(L_independent_holdout)",
+    "numerator": "world score times held-out loss",
+    "denominator": "valid proposals with independent holdout",
+    "valid_mask": "holdout_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "world_proposer"
+    ],
+    "requires_grad_inputs": [
+      "world_log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "independent_holdout_loss",
+        "heldout_proposal"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "independent held-out tasks",
+    "source": "src/latent_comm/mechanisms/h44_dreaming/losses.py"
+  },
+  {
+    "mechanism": "H45",
+    "name": "response",
+    "formula": "sum(m*-log p(observation|hypothesis,query))/sum(m)",
+    "numerator": "observed response NLL",
+    "denominator": "valid program-observation cases",
+    "valid_mask": "observation_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "response_encoder"
+    ],
+    "requires_grad_inputs": [
+      "public_query_features"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "observations",
+    "source": "src/latent_comm/mechanisms/h45_identifiability/losses.py"
+  },
+  {
+    "mechanism": "H45",
+    "name": "query_policy",
+    "formula": "-sum(m*log_pi(query)*verified_information_gain)/sum(m)",
+    "numerator": "legal query policy score",
+    "denominator": "valid host-authorized local queries",
+    "valid_mask": "query_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "query_proposer"
+    ],
+    "requires_grad_inputs": [
+      "query_log_probability"
+    ],
+    "stop_gradient_edges": [
+      [
+        "verified_information_gain",
+        "query_policy"
+      ]
+    ],
+    "estimator": "GradientEstimator.POLICY_GRADIENT",
+    "units": "queries",
+    "source": "src/latent_comm/mechanisms/h45_identifiability/losses.py"
+  },
+  {
+    "mechanism": "H46",
+    "name": "exclusion",
+    "formula": "sum(mask*BCEWithLogits(predicate_logits,verified_exclusion))/sum(mask)",
+    "numerator": "certificate-labelled predicate BCE",
+    "denominator": "valid scoped finite predicate cases",
+    "valid_mask": "predicate_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "exclusion_generator"
+    ],
+    "requires_grad_inputs": [
+      "predicate_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "verified_exclusion",
+        "exclusion"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "candidate_predicates",
+    "source": "src/latent_comm/mechanisms/h46_negative_knowledge/losses.py"
+  },
+  {
+    "mechanism": "H46",
+    "name": "scope",
+    "formula": "sum(mask*BCEWithLogits(scope_logits,scope_applies))/sum(mask)",
+    "numerator": "scope applicability BCE",
+    "denominator": "known assumption cases",
+    "valid_mask": "scope_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "scope_predictor"
+    ],
+    "requires_grad_inputs": [
+      "scope_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "scope_applies",
+        "scope"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "scopes",
+    "source": "src/latent_comm/mechanisms/h46_negative_knowledge/losses.py"
+  },
+  {
+    "mechanism": "H47",
+    "name": "behavior",
+    "formula": "sum(mask*||predicted_query_response-target_query_response||^2)/sum(mask)",
+    "numerator": "task behavior MSE, not input reconstruction",
+    "denominator": "valid finite query responses",
+    "valid_mask": "behavior_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "state_encoder",
+      "task_conditioner",
+      "prototypes"
+    ],
+    "requires_grad_inputs": [
+      "reconstructed_behavior"
+    ],
+    "stop_gradient_edges": [
+      [
+        "behavior_targets",
+        "behavior"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "state_queries",
+    "source": "src/latent_comm/mechanisms/h47_quotient/losses.py"
+  },
+  {
+    "mechanism": "H47",
+    "name": "rate",
+    "formula": "sum(mask*KL(assignment||mean_assignment))/sum(mask)",
+    "numerator": "soft information rate",
+    "denominator": "valid states",
+    "valid_mask": "state_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "state_encoder",
+      "task_conditioner",
+      "prototypes"
+    ],
+    "requires_grad_inputs": [
+      "assignments"
+    ],
+    "stop_gradient_edges": [],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "states",
+    "source": "src/latent_comm/mechanisms/h47_quotient/losses.py"
+  },
+  {
+    "mechanism": "H48",
+    "name": "link",
+    "formula": "sum(mask*BCEWithLogits(source_link_logits,shared_source))/sum(mask)",
+    "numerator": "source-identity link BCE",
+    "denominator": "labelled source pairs including circular negative cases",
+    "valid_mask": "link_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "source_linker"
+    ],
+    "requires_grad_inputs": [
+      "source_link_logits"
+    ],
+    "stop_gradient_edges": [
+      [
+        "source_identity_labels",
+        "link"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "source_pairs",
+    "source": "src/latent_comm/mechanisms/h48_evidence_genealogy/losses.py"
+  },
+  {
+    "mechanism": "H48",
+    "name": "calibration",
+    "formula": "sum(mask*(predicted_support-observed_support)^2)/sum(mask)",
+    "numerator": "Brier calibration conditional on named dependence model",
+    "denominator": "independent heldout outcomes",
+    "valid_mask": "calibration_mask",
+    "zero_valid_policy": "skip_with_reason",
+    "parameter_owners": [
+      "source_calibrator"
+    ],
+    "requires_grad_inputs": [
+      "atom_probabilities"
+    ],
+    "stop_gradient_edges": [
+      [
+        "observed_support",
+        "calibration"
+      ],
+      [
+        "declared_dependence",
+        "calibration"
+      ]
+    ],
+    "estimator": "GradientEstimator.EXACT",
+    "units": "claims",
+    "source": "src/latent_comm/mechanisms/h48_evidence_genealogy/losses.py"
+  }
+]

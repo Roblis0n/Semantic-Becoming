@@ -1,0 +1,37 @@
+{
+  "refreshed": [
+    "C11",
+    "C12",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "L10",
+    "L11",
+    "L12",
+    "L13",
+    "X02",
+    "X05",
+    "X06",
+    "X08",
+    "X09",
+    "X10",
+    "X12"
+  ],
+  "test_files": [
+    "tests/contracts/test_c11.py",
+    "tests/contracts/test_c12.py",
+    "tests/contracts/test_c16.py",
+    "tests/contracts/test_c17.py",
+    "tests/contracts/test_c18.py",
+    "tests/contracts/test_c19.py",
+    "tests/contracts/test_c20.py",
+    "tests/research_locked/test_learning_worlds.py",
+    "tests/research_locked/test_learning_uncertainty.py",
+    "tests/research_locked/test_learning_evidence.py",
+    "tests/research_locked/test_learning_joint.py",
+    "tests/contracts/test_horizons.py"
+  ],
+  "research_state": "NOT_RUN"
+}

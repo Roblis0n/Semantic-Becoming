@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H21:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "anchor_state",
+    "intervention",
+    "response_packet_ref",
+    "continuation_ref",
+    "lineage",
+    "branch_kind",
+    "question_id",
+    "world_id",
+    "selection_basis",
+    "synthetic",
+    "evidence"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "evidence",
+        "ontology",
+        "schema",
+        "state",
+        "task",
+        "world"
+      ],
+      "additionalProperties": false
+    },
+    "anchor_state": {
+      "type": "object"
+    },
+    "intervention": {
+      "type": "object"
+    },
+    "response_packet_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "continuation_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "lineage": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "branch_kind": {
+      "enum": [
+        "answer",
+        "question",
+        "concept",
+        "world"
+      ]
+    },
+    "question_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "world_id": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "selection_basis": {
+      "type": "string",
+      "pattern": "\\S"
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    }
+  },
+  "additionalProperties": false
+}

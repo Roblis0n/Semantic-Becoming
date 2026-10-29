@@ -1,0 +1,8 @@
+test_both_roots_equivalent (test_questions.QuestionsTests.test_both_roots_equivalent) ... ok
+test_positive_root_is_sound_not_complete (test_questions.QuestionsTests.test_positive_root_is_sound_not_complete) ... ok
+test_relaxation_not_equivalent (test_questions.QuestionsTests.test_relaxation_not_equivalent) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

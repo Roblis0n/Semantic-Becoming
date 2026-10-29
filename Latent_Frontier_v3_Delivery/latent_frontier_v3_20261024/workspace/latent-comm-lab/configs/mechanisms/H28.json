@@ -1,0 +1,51 @@
+{
+  "schema_version": 3,
+  "id": "H28",
+  "kind": "mechanism",
+  "title": "语义结构的分岔与相变",
+  "mechanisms": [
+    "H28"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "hypotheses/H28_语义结构的分岔与相变.md",
+  "target_base": "src/latent_comm/mechanisms/h28_bifurcation",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "alpha_grid": [
+      -1,
+      0,
+      1
+    ],
+    "max_steps": 16,
+    "structure_limit": 8,
+    "analysis_only": true
+  },
+  "integration_status": "NOT_RUN",
+  "reference_module": "latent_comm.mechanisms.h28_bifurcation.reference",
+  "adapter_module": "latent_comm.mechanisms.h28_bifurcation.adapter",
+  "required_version_axes": [
+    "state",
+    "ontology",
+    "frame"
+  ],
+  "loss_ledger_module": "latent_comm.mechanisms.h28_bifurcation.losses",
+  "fixture_bounds": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  },
+  "source_recipe": "PLAN_ROOT/recipes/H28.json"
+}

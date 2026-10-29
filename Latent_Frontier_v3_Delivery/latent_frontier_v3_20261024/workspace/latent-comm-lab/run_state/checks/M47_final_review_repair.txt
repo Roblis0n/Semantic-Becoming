@@ -1,0 +1,18 @@
+test_empty_family_schema_migration_budget (test_h47.H47Contracts.test_empty_family_schema_migration_budget) ... ok
+test_empty_loss_source_contract (test_h47.H47Contracts.test_empty_loss_source_contract) ... ok
+test_epsilon_chain_is_not_equivalence (test_h47.H47Contracts.test_epsilon_chain_is_not_equivalence) ... ok
+test_equivalence_and_refinement (test_h47.H47Contracts.test_equivalence_and_refinement) ... ok
+test_source_required_and_preserved (test_h47.H47Contracts.test_source_required_and_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h47.H47Contracts.test_gate",
+    "test_h47.H47Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

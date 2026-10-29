@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H30：类比是可以执行的映射</title><desc id="desc">f(x)=2x的交换方块，源加1映为目标加2。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H30：类比是可以执行的映射</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">把做法搬过去，而非只说看起来像</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">27 / 36</tspan>
+</text>
+<text id="e006" x="205.0" y="303.64" font-family="Noto Sans CJK SC" font-size="42" font-weight="400" fill="#536647" text-anchor="middle">
+<tspan x="205.0" dy="0">x</tspan>
+</text>
+<text id="e007" x="975.0" y="303.64" font-family="Noto Sans CJK SC" font-size="42" font-weight="400" fill="#536647" text-anchor="middle">
+<tspan x="975.0" dy="0">x + 1</tspan>
+</text>
+<text id="e008" x="205.0" y="513.64" font-family="Noto Sans CJK SC" font-size="42" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="205.0" dy="0">2x</tspan>
+</text>
+<text id="e009" x="975.0" y="513.64" font-family="Noto Sans CJK SC" font-size="42" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="975.0" dy="0">2x + 2</tspan>
+</text>
+<polyline id="e010" points="350.000,300.000 820.000,300.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e011" points="808.000,295.000 820.000,300.000 808.000,305.000" fill="none" stroke="#536647" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e012" x="660.0" y="271.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#536647" text-anchor="middle">
+<tspan x="660.0" dy="0">源操作 +1</tspan>
+</text>
+<polyline id="e013" points="350.000,510.000 820.000,510.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e014" points="808.000,505.000 820.000,510.000 808.000,515.000" fill="none" stroke="#9C5138" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e015" x="660.0" y="478.68" font-family="Noto Sans CJK SC" font-size="29" font-weight="400" fill="#9C5138" text-anchor="middle">
+<tspan x="660.0" dy="0">目标操作 +2</tspan>
+</text>
+<polyline id="e016" points="205.000,338.000 205.000,455.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e017" points="210.000,443.000 205.000,455.000 200.000,443.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e018" x="65" y="397.08" font-family="Noto Sans CJK SC" font-size="24" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="65" dy="0">f(x) = 2x</tspan>
+</text>
+<polyline id="e019" points="965.000,338.000 965.000,455.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<polyline id="e020" points="970.000,443.000 965.000,455.000 960.000,443.000" fill="none" stroke="#496974" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e021" x="64" y="630.92" font-family="Noto Sans CJK SC" font-size="26" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="64" dy="0">映射对象与操作，并检查复合关系；只像外观不足以构成可执行类比</tspan>
+</text>
+</svg>

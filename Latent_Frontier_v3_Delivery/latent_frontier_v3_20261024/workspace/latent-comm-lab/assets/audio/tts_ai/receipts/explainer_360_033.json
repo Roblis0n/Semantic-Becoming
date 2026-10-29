@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_033",
+  "edition": "explainer_360",
+  "scene_id": "S07",
+  "characters": 35,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "一个概念的意义也可能取决于当前能问哪些问题，以及正在使用什么观察尺度。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-25T15:06:13.697485+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 271162,
+    "duration_seconds": 6.148798185941043,
+    "sample_peak": 11309,
+    "sample_rms": 1903.9029308482134,
+    "sha256": "5bb93f0bdd6f0e3d012c23022911d8a58ab89d651c86154a8edc5cd63f39477d",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-25T15:06:47.664000+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

@@ -1,0 +1,147 @@
+{
+  "scope": "L03/D04 repaired-source static and stdlib contract review, not project acceptance",
+  "recorded_at_utc": "2026-10-24T16:34:17.313006+00:00",
+  "work_root": "/workspace/scratch/9276101e81f5/replacement_20261024_inputs/extracted/latent_frontier_v3_complete_20261024/latent_frontier_v3_20261024/workspace/latent-comm-lab",
+  "research_state": "NOT_RUN",
+  "files": [
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "984c9e2e33338e14d6ebd487f69381322029175d620db68c0e5902f7221f1707",
+      "bytes": 6346
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "bc032b047613e49c67de4a8f911c0615cd7aae42d27a21e3b443580443fb9569",
+      "bytes": 8703
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1",
+      "bytes": 5331
+    },
+    {
+      "path": "src/latent_comm/learning/frames/__init__.py",
+      "sha256": "68f14ae03ed8a5cc810be96fd398ef406c14419a8a5b9d9cd54ee109d56b725b",
+      "bytes": 9404
+    },
+    {
+      "path": "src/latent_comm/learning/frames/train.py",
+      "sha256": "cd2150416cc017284f71ecbf69e30f718b612809db511bef92c9f6184a7d430a",
+      "bytes": 2266
+    },
+    {
+      "path": "src/latent_comm/learning/frames/README.md",
+      "sha256": "40d3a64fd103a0482eac3493023635d426721122e9b0f9cca72dd54697ab7b7e",
+      "bytes": 1922
+    },
+    {
+      "path": "configs/learning/frames.json",
+      "sha256": "7d467cc291ab67b1f7ebfde373e5a4d62c5ac387f76393354f29ac639417823f",
+      "bytes": 1706
+    },
+    {
+      "path": "tests/research_locked/test_learning_frames.py",
+      "sha256": "fc75be17dbf79912064c668f36f1af57a4237d98a93b019cb7d67282e7dfd726",
+      "bytes": 5688
+    },
+    {
+      "path": "prompts/model_templates/compiler.py",
+      "sha256": "7418dc649b3e09de3535d61eae5fb95a04d40b325a701b4f1666ac357ef7835a",
+      "bytes": 3716
+    },
+    {
+      "path": "prompts/model_templates/test_contracts.py",
+      "sha256": "7d0e9754e1c2ce757f510be93202c1f2ee1c99efa470cdabf04f29228531af56",
+      "bytes": 3747
+    },
+    {
+      "path": "specs/role_view_contracts.json",
+      "sha256": "f8d341416fb505b648960f001961cc2e2481b501bf9de20227e49775e2bc5353",
+      "bytes": 5708
+    },
+    {
+      "path": "specs/data_contracts.json",
+      "sha256": "0df1302f37ed5ccf5cb163db29b480dcfcdf9dd8844b69f3f4322dc9fd2c90d4",
+      "bytes": 808
+    },
+    {
+      "path": "src/latent_comm/core/views.py",
+      "sha256": "769bd5510b6cdf4fa2806b497b5068189fa29dfcf17de0035216b69282eca844",
+      "bytes": 3254
+    },
+    {
+      "path": "src/latent_comm/core/learning.py",
+      "sha256": "f028a9f789d5de9ab4d0a9fc34bcae12b8df7e2a3d6210eb09681c372c49eb92",
+      "bytes": 3445
+    },
+    {
+      "path": "src/latent_comm/core/versions.py",
+      "sha256": "562e1688b277d2a8a232f1ead2c5df23bd1a3fa1d24a7830b5da48096733a8dc",
+      "bytes": 1859
+    },
+    {
+      "path": "src/latent_comm/data/collate.py",
+      "sha256": "2d4387838598807a0b31a06f933fb8d40c6e01786b68675e1adfa03d7e96e54d",
+      "bytes": 5093
+    },
+    {
+      "path": "src/latent_comm/data/records.py",
+      "sha256": "1e3296adbe0fc9101f78ffcc5f3d1654f61484e3d35feb119ae8fd0ef3caf05e",
+      "bytes": 3801
+    },
+    {
+      "path": "src/latent_comm/backends/storage/__init__.py",
+      "sha256": "f00681a394cf84074baa7d4995d2821ca215bdbcdc7d67eb034f7fafb743dcc6",
+      "bytes": 5012
+    },
+    {
+      "path": "src/latent_comm/safety/policy.py",
+      "sha256": "d82c8de38181044f639a0f66bb632f9c054949e40ae88991c67d52e7fb0f9aaa",
+      "bytes": 4828
+    },
+    {
+      "path": "src/latent_comm/safety/current_task_policy_snapshot.json",
+      "sha256": "e1dc9c916b5a8344759156337cf5b9520c77d78f787f24949de6f77f3acf453f",
+      "bytes": 1457
+    },
+    {
+      "path": "run_state/receipts/L03.json",
+      "sha256": "7d3e6dd0fad28238883ad70a5994b6cd7a185c2b67a3b5ffeac9a3560008c43a",
+      "bytes": 2636
+    },
+    {
+      "path": "run_state/receipts/D04.json",
+      "sha256": "d1a087726ff794ccd6547f24075f1610e52b0caedcf2691def32e005f7d19dd5",
+      "bytes": 2481
+    },
+    {
+      "path": "src/latent_comm/packets/schema.py",
+      "sha256": "46b6abf6a61101cbc94ce45bcd9712757afe3a618e1b651ccdfaa8c7eb05e8eb",
+      "bytes": 5283
+    }
+  ],
+  "receipt_checks": [
+    {
+      "task_id": "L03",
+      "status": "done",
+      "all_recorded_output_and_check_hashes_match": true
+    },
+    {
+      "task_id": "D04",
+      "status": "done",
+      "all_recorded_output_and_check_hashes_match": true
+    }
+  ],
+  "executed_checks": {
+    "D04_pure_contracts": 17,
+    "L03_stdlib_AST_finite_checks": 17,
+    "total": 34,
+    "passed": true,
+    "excluded_research_entry_calls": [
+      "test_gate_before_model",
+      "test_gate_before_training"
+    ],
+    "additional_AST_guard_checks": "passed",
+    "neural_modules_loaded": []
+  }
+}

@@ -1,0 +1,13 @@
+test_atomic_conflict (test_programs.ProgramsTests.test_atomic_conflict) ... ok
+test_macro_binding (test_programs.ProgramsTests.test_macro_binding) ... ok
+test_unknown_instruction (test_programs.ProgramsTests.test_unknown_instruction) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK
+{
+  "selected": 3,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "reviewer": "Independent assistant reviewer, not human approval",
+  "reviewed_at_utc": "2026-10-24T18:43:12Z",
+  "verdict": "PASS_WITH_EXPLICIT_SCOPE",
+  "research_state": "NOT_RUN",
+  "unresolved_confirmed_defects": [],
+  "reviewed_files": [
+    {
+      "path": "docs/research_monograph.md",
+      "sha256": "0bb343590e75ea48864982f169c5db9fd9d37e56761ee94b54f4f6d6aeb84945",
+      "bytes": 215752
+    },
+    {
+      "path": "README.md",
+      "sha256": "2953e58fc870dafa369e56772ad4df92a0d7d11a5b3cc1895568b5f541c102b0",
+      "bytes": 7932
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "c6079c23a5c61e5458eb177e38f7c204b449ab8d57f31791582ebbee9f4881d0",
+      "bytes": 273666
+    },
+    {
+      "path": "paper/references.bib",
+      "sha256": "b7b06d7d9b18f10fb59e1b47c096cc3cec566176f7249a5dcfc25e8d7ffa8c85",
+      "bytes": 20792
+    },
+    {
+      "path": "specs/novelty_ledger.json",
+      "sha256": "ee423dd85636a7625c8e50de1c5aebe24176d293bb1a38c920eb8750462be1d8",
+      "bytes": 274357
+    },
+    {
+      "path": "run_state/checks/D03/render/main.pdf",
+      "sha256": "963676a0a77417c83bc26b0ec5eccde62f53ae3d2eb673dd66e5dfd446b91c28",
+      "bytes": 653432
+    },
+    {
+      "path": "run_state/checks/D03/source_snapshot.json",
+      "sha256": "0a5c32662deb75b5de5ecb4dab8ac99a81199d1c2102a1075fecf02dc85785f6",
+      "bytes": 93435
+    },
+    {
+      "path": "run_state/checks/D03/loss_snapshot.json",
+      "sha256": "b5f033df724f2aca4a5a91fa879a62a5bb9dc5855215d7cf2dcba8b275678bdd",
+      "bytes": 80166
+    },
+    {
+      "path": "run_state/checks/D03/validation.json",
+      "sha256": "5795e61de03e6e4e1d6032aa1476f57c25b6714b6b326fb18a3103a7653db42b",
+      "bytes": 6250
+    },
+    {
+      "path": "run_state/checks/D03/qa_report.json",
+      "sha256": "3f41612d114b3b58053f9910edbbdbeb6f8d127dc39b57de5eed9b8333bbb321",
+      "bytes": 8994
+    },
+    {
+      "path": "run_state/checks/D03/review_reconciliation.json",
+      "sha256": "855301b99c29a20b5bf8d3beb8a036a3adaece8e811e0ebf4c0303098eb0ddf8",
+      "bytes": 2573
+    },
+    {
+      "path": "run_state/receipts/D03.json",
+      "sha256": "645b813c6c80ddeb6789e46bd7148bfe5e1e83ace579c03d8a8eec221a67427c",
+      "bytes": 4743
+    },
+    {
+      "path": "reports/source_review.json",
+      "sha256": "d25ce99ecb28b3e1c582e79c8cdbd479eb003af9ef011eb9d00fd56b323fc7d6",
+      "bytes": 147561
+    }
+  ],
+  "visual_coverage": {
+    "pdf_pages": 55,
+    "contact_sheet_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "detail_pages": [
+      1,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      13,
+      14,
+      17,
+      25,
+      31,
+      32,
+      35,
+      37,
+      44,
+      51,
+      52,
+      53,
+      54,
+      55
+    ],
+    "detail_count": 21,
+    "raster_scale": 1.5,
+    "all_pages_full_resolution_inspected": false,
+    "findings": "No remaining clipped/overlapping/missing formula or illegible table observed in the stated coverage."
+  },
+  "independent_static_results": {
+    "upstream_source_hashes_checked": 734,
+    "changed_or_missing_sources": [],
+    "bibliography_identity_url_support_mappings": 46,
+    "bibliography_date_fields_checked": 46,
+    "bibliography_mismatches": [],
+    "objective_formulas_mapped": 127,
+    "objective_formula_mismatches": [],
+    "composition_nodes_mapped": 103,
+    "composition_node_mismatches": [],
+    "mechanisms": 48,
+    "compositions": 20,
+    "recipes": 68,
+    "horizons": 12,
+    "future_unimplemented_branches": 38,
+    "learning_sections": 13,
+    "assumptions": 23,
+    "empty_pdf_pages": [],
+    "out_of_page_words": []
+  },
+  "findings_closed": [
+    "D03-R01 publication versus arXiv first submission",
+    "D03-R02 graft affected-set and shared context assumptions",
+    "D03-R03 kernel conditional independence plus local boundary",
+    "D03-R04 adaptive-history response-model condition",
+    "D03-R05 actual assumption-list rendering",
+    "D03-R06 whitespace retained in formula/prose code spans"
+  ],
+  "visual_artifacts": [
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_01.png",
+      "page": 1,
+      "sha256": "ec83319ede6a64fd2612dd8e9abdf2c064a486d0b3e3d8bcc27bfa391b222323"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_05.png",
+      "page": 5,
+      "sha256": "b0f913ebc37157c7089bf93e007b3cacefe6143d70488f16573601ff7a9779ee"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_06.png",
+      "page": 6,
+      "sha256": "24861886ab67aa890f50bc441820006a41b753083fb84c936fb030167caabaa3"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_07.png",
+      "page": 7,
+      "sha256": "413b8f2cee94a5ccb18978c108cdc3c91468d26fb10f89a9543a3c658748f985"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_09.png",
+      "page": 9,
+      "sha256": "3e75bb2acd9036da503cc2c8305a1d3c20fd72d568c51805fb2dae23c73966ae"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_10.png",
+      "page": 10,
+      "sha256": "24cb6d5bc45c4de66e960b2ef61895c9c0385462a67f630392d404bed62c2486"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_11.png",
+      "page": 11,
+      "sha256": "37f73007417e73b7d148f4c9703e839f92a2518df07128f0d9663d03ec2c0c9c"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_13.png",
+      "page": 13,
+      "sha256": "b6b3235c8feeb72f36c3d193c91c11b19fdefcf4ccecd0aa13d9cf5cb1ced728"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_14.png",
+      "page": 14,
+      "sha256": "a4bcda73f9c0f4fbc04d120dc35a5c65ad40e7981300ff582369aa17edaf4a1f"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_17.png",
+      "page": 17,
+      "sha256": "56932bf3d1ff84138d1accc2823de241ed652965b796598a459c2196fac53654"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_25.png",
+      "page": 25,
+      "sha256": "5e40b7c25b8a2729191c78bcb600e06cd6dccfaf99f54afbce5b6bf344b6843f"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_31.png",
+      "page": 31,
+      "sha256": "f105033319679d120b03980bfc8b4a74a108f73ecd433746e6ba5c711a9f29ef"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_32.png",
+      "page": 32,
+      "sha256": "9830e94e7744a214e308e7cd558f4204227297e832188bce2abaa1c5640fa338"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_35.png",
+      "page": 35,
+      "sha256": "a9d69bb02ee1e4e88bd81e4f17fa31af6f938c34376e7f7fd4eee02204fdb516"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_37.png",
+      "page": 37,
+      "sha256": "31d973241c5fda500b7f809f5f27456038ab7f4e8b848311ca5d199350e428b7"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_44.png",
+      "page": 44,
+      "sha256": "9f1f7664fa9ecf6749a58452dc68cfa1204f926335d538f23b83ebef24f2e590"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_51.png",
+      "page": 51,
+      "sha256": "fb3322bdf67b89bbcd09bf93d0fcdf65f62802f55c64aca188f13990b6a0e637"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_52.png",
+      "page": 52,
+      "sha256": "550c782b3fc8336f94b47caccb89ed1a08b205b34e5971677396140bef5521ab"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_53.png",
+      "page": 53,
+      "sha256": "78bcc6bee7d5f907291d27de54d25804a837e6e21a7598780e0f3a8ce4e451c6"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_54.png",
+      "page": 54,
+      "sha256": "254396762d5da6e151d4364b03a1487502df5973cbf9968ba3d22ad69d4256c7"
+    },
+    {
+      "path": "reports/independent_monograph_qa_20261024/repaired_55.png",
+      "page": 55,
+      "sha256": "194e73a20272f545a359893273041df1795e3b59246f66d187ac290fa2fc3895"
+    },
+    {
+      "path": "run_state/checks/D03/visual/pages_01_12.jpg",
+      "sha256": "f4fc11b06a187d544d186d15364150dca62efc7c978ce747fb86a9f3b0246828"
+    },
+    {
+      "path": "run_state/checks/D03/visual/pages_13_24.jpg",
+      "sha256": "79ad973788ef06baccc73a213dd989996cf6071ea54c06557ff2632e04f8ce79"
+    },
+    {
+      "path": "run_state/checks/D03/visual/pages_25_36.jpg",
+      "sha256": "8e0d419445c18ba4b20a916db1516ace4247ff1f720139330bc88d65355efaf6"
+    },
+    {
+      "path": "run_state/checks/D03/visual/pages_37_48.jpg",
+      "sha256": "289f1f974d95254620f4d2b400726890ae2fe0619edfdb6dafac2183993d3643"
+    },
+    {
+      "path": "run_state/checks/D03/visual/pages_49_55.jpg",
+      "sha256": "dfc399d687e3bad5e6fc81846c83a5305d2e1c54f7d51b1c010f6b6de0812e27"
+    }
+  ],
+  "research_text_excluding_media_paragraph_sha256": "c89c4f8a932243d3016524f729340c731fe38e4a7c6d1ea77195887749384b4d",
+  "future_change_policy": "This review binds the listed bytes. Planned media-status reconciliation must receive a factual delta review and rerender/layout check; unchanged research sections can reuse this substantive review only after hash/diff confirmation.",
+  "limitations": [
+    "No neural imports, model initialization/loading, forward, training, evaluation, benchmark or research API invocation.",
+    "Not a fresh audit of all repository execution paths or formal proof certification.",
+    "Bibliography support is checked against D01 declared evidence depth, not claimed full-paper reading or global-priority search.",
+    "55 pages were viewed at contact-sheet scale and 21 listed pages at 1.5x, not every page at full resolution.",
+    "Media production, listening, licensing beyond existing disclosures, archive portability and final delivery are outside this review."
+  ]
+}

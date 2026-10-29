@@ -1,0 +1,72 @@
+{
+  "task_id": "M14",
+  "status": "done",
+  "input_digest": "8653af499a7a15c90cf0a6a43ad48e9afdf07cefbc983bdb50f5051270b474ed",
+  "outputs": [
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/README.md",
+      "sha256": "79b89714090398d86612173db8b75f0c04c9f00bdc3714aa0ece33cc6904e2e3",
+      "bytes": 2203
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/__init__.py",
+      "sha256": "8973da206d2fe6888272fbe0711d844e518a354de4d9942693b03b9f6599eb26",
+      "bytes": 78
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/adapter.py",
+      "sha256": "218f5fa8864b365b0a48792976d17aa5c59711c29efebafb7172b1f8a9d6b846",
+      "bytes": 1144
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/losses.py",
+      "sha256": "68af35d1c4d1dd2aa5971f0cf3b51bb820ce818fe7d589dfc64a730c4ef91634",
+      "bytes": 1453
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/migration.py",
+      "sha256": "6b85b562c86286f0d22307a678667bd86215142a0d7edff11d564f32bac61d34",
+      "bytes": 2072
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/reference.py",
+      "sha256": "a1ec4a520411ff580faaceb78a88353f5da6ebc3984ea4b40f1d3f1f420479da",
+      "bytes": 3171
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/schema.json",
+      "sha256": "5fe030f02198fac02054d1aa29c5c505cdf4c6bd26a8b609463c5301de955309",
+      "bytes": 1102
+    },
+    {
+      "path": "src/latent_comm/mechanisms/h14_legacy/types.py",
+      "sha256": "eb027d1a0b3ee2da629e49a1d524927187436b2659161d6521979ecab21f2382",
+      "bytes": 1299
+    },
+    {
+      "path": "tests/contracts/test_h14.py",
+      "sha256": "f723e61b775416deaea54397d6d9bc95a21b619febfcf549b6d5028f23e8c62c",
+      "bytes": 2855
+    },
+    {
+      "path": "configs/mechanisms/H14.json",
+      "sha256": "cf69895f3e7c1d0e3226d19324b620a01290679450fcce94a3a052cf15f06120",
+      "bytes": 3195
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/M14_contracts.txt",
+      "sha256": "a3cac6a86dbda552dcfb36e5ca9b794d6286c5d5b7c8e090d59e0fa551edcef4"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Three bounded hygienic grammar/recursion/capture/base-reader contracts and AST gates pass. Production proposal and canonical H07 execution source only, NOT_RUN.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:29:11.531811+00:00"
+}

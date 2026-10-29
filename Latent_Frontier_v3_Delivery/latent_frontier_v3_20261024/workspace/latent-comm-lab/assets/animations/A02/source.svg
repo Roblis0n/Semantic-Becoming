@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc"><title id="title">H26：局部关系可能无法全局拼合</title><desc id="desc">三条局部约束求和得到矛盾，保留多域、新变量或语境细分的研究分支。</desc><rect width="1280" height="720" fill="#F4F1E8"/>
+<text id="e001" x="64" y="82.48" font-family="Noto Serif CJK SC" font-size="44" font-weight="400" fill="#262A25" text-anchor="start">
+<tspan x="64" dy="0">H26：局部关系可能无法全局拼合</tspan>
+</text>
+<text id="e002" x="64" y="146.36" font-family="Noto Sans CJK SC" font-size="33" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">不可满足的约束不会被平均消除</tspan>
+</text>
+<polyline id="e003" points="64.000,658.000 1216.000,658.000" fill="none" stroke="#CECDBF" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" />
+<text id="e004" x="64" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">解析示意 / 数学示意 · 无模型实测</tspan>
+</text>
+<text id="e005" x="1216" y="691.56" font-family="Noto Sans CJK SC" font-size="18" font-weight="400" fill="#606258" text-anchor="end">
+<tspan x="1216" dy="0">A02</tspan>
+</text>
+<rect id="e006" x="64" y="600" width="1152" height="47" rx="0" fill="#FFFCF5" stroke="#CECDBF" stroke-width="0" />
+<text id="e007" x="90" y="277.72" font-family="Noto Sans CJK SC" font-size="41" font-weight="400" fill="#536647" text-anchor="start">
+<tspan x="90" dy="0">x − y = 0</tspan>
+</text>
+<text id="e008" x="820" y="277.72" font-family="Noto Sans CJK SC" font-size="41" font-weight="400" fill="#496974" text-anchor="start">
+<tspan x="820" dy="0">y − z = 0</tspan>
+</text>
+<text id="e009" x="460" y="412.72" font-family="Noto Sans CJK SC" font-size="41" font-weight="400" fill="#9C5138" text-anchor="start">
+<tspan x="460" dy="0">z − x = 1</tspan>
+</text>
+<text id="e010" x="430" y="504.56" font-family="Noto Sans CJK SC" font-size="43" font-weight="400" fill="#9C4540" text-anchor="start">
+<tspan x="430" dy="0">求和：0 = 1</tspan>
+</text>
+<text id="e011" x="64" y="575.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="64" dy="0">保留多个局部域</tspan>
+</text>
+<text id="e012" x="458" y="575.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="458" dy="0">检验新增变量</tspan>
+</text>
+<text id="e013" x="852" y="575.76" font-family="Noto Sans CJK SC" font-size="28" font-weight="400" fill="#606258" text-anchor="start">
+<tspan x="852" dy="0">细分适用语境</tspan>
+</text>
+</svg>

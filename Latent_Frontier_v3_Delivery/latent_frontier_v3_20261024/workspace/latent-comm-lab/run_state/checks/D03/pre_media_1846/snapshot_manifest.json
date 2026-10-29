@@ -1,0 +1,50 @@
+{
+  "purpose": "Immutable preceding55-page full-review snapshot; preserved before media-status-only delta",
+  "files": [
+    {
+      "name": "D03.json",
+      "sha256": "645b813c6c80ddeb6789e46bd7148bfe5e1e83ace579c03d8a8eec221a67427c"
+    },
+    {
+      "name": "README.md",
+      "sha256": "2953e58fc870dafa369e56772ad4df92a0d7d11a5b3cc1895568b5f541c102b0"
+    },
+    {
+      "name": "latex_pass6.txt",
+      "sha256": "3ec80e0a786f68a33212bc4d9f5b5438d1240a37e0a0396e947f6c2dc67b1413"
+    },
+    {
+      "name": "main.pdf",
+      "sha256": "963676a0a77417c83bc26b0ec5eccde62f53ae3d2eb673dd66e5dfd446b91c28"
+    },
+    {
+      "name": "main.tex",
+      "sha256": "c6079c23a5c61e5458eb177e38f7c204b449ab8d57f31791582ebbee9f4881d0"
+    },
+    {
+      "name": "pdf_structure.json",
+      "sha256": "477e2cc7846f4358eedce660e593b7b4018f4f4917d5e14c84841144efe9f29e"
+    },
+    {
+      "name": "qa_report.json",
+      "sha256": "3f41612d114b3b58053f9910edbbdbeb6f8d127dc39b57de5eed9b8333bbb321"
+    },
+    {
+      "name": "research_monograph.md",
+      "sha256": "0bb343590e75ea48864982f169c5db9fd9d37e56761ee94b54f4f6d6aeb84945"
+    },
+    {
+      "name": "review_reconciliation.json",
+      "sha256": "855301b99c29a20b5bf8d3beb8a036a3adaece8e811e0ebf4c0303098eb0ddf8"
+    },
+    {
+      "name": "validation.json",
+      "sha256": "5795e61de03e6e4e1d6032aa1476f57c25b6714b6b326fb18a3103a7653db42b"
+    },
+    {
+      "name": "validation.txt",
+      "sha256": "5795e61de03e6e4e1d6032aa1476f57c25b6714b6b326fb18a3103a7653db42b"
+    }
+  ],
+  "research_state": "NOT_RUN"
+}

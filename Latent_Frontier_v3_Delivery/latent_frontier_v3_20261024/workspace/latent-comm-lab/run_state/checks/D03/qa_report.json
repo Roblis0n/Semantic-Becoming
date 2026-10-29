@@ -1,0 +1,364 @@
+{
+  "task_id": "D03",
+  "format": "LaTeX source rendered to PDF solely for QA",
+  "page_count": 55,
+  "render_exit_code": 0,
+  "missing_glyph_warnings": 0,
+  "overfull_box_warnings": 0,
+  "visual_review": {
+    "all_pages": true,
+    "method": "All 55 pages inspected as five newly rendered contact sheets; revised pages 6, 7, 10, 25, 31, 32 and 54 additionally inspected at 1.5x raster scale",
+    "reviewer": "assistant visual inspection, not a human review",
+    "findings": "No clipping, overlap, missing glyphs or out-of-page content observed. The 23 assumptions are actual list items. H25 matrix-factor spaces, H37 Jtarget delta and H38 mean relu are visibly separated. N03 separately displays publication year 2004 and arXiv submission 2012-07-11. Dense technical loss appendices are intentional."
+  },
+  "machine_layout": {
+    "pages": 55,
+    "pdf_text_checks": [
+      {
+        "page": 1,
+        "characters": 503,
+        "words": 63,
+        "outside_page_margin": []
+      },
+      {
+        "page": 2,
+        "characters": 1700,
+        "words": 83,
+        "outside_page_margin": []
+      },
+      {
+        "page": 3,
+        "characters": 1750,
+        "words": 96,
+        "outside_page_margin": []
+      },
+      {
+        "page": 4,
+        "characters": 1746,
+        "words": 97,
+        "outside_page_margin": []
+      },
+      {
+        "page": 5,
+        "characters": 1856,
+        "words": 128,
+        "outside_page_margin": []
+      },
+      {
+        "page": 6,
+        "characters": 1696,
+        "words": 97,
+        "outside_page_margin": []
+      },
+      {
+        "page": 7,
+        "characters": 1727,
+        "words": 96,
+        "outside_page_margin": []
+      },
+      {
+        "page": 8,
+        "characters": 1752,
+        "words": 103,
+        "outside_page_margin": []
+      },
+      {
+        "page": 9,
+        "characters": 1587,
+        "words": 85,
+        "outside_page_margin": []
+      },
+      {
+        "page": 10,
+        "characters": 2412,
+        "words": 182,
+        "outside_page_margin": []
+      },
+      {
+        "page": 11,
+        "characters": 1722,
+        "words": 57,
+        "outside_page_margin": []
+      },
+      {
+        "page": 12,
+        "characters": 1660,
+        "words": 47,
+        "outside_page_margin": []
+      },
+      {
+        "page": 13,
+        "characters": 2511,
+        "words": 151,
+        "outside_page_margin": []
+      },
+      {
+        "page": 14,
+        "characters": 2557,
+        "words": 148,
+        "outside_page_margin": []
+      },
+      {
+        "page": 15,
+        "characters": 2680,
+        "words": 157,
+        "outside_page_margin": []
+      },
+      {
+        "page": 16,
+        "characters": 2666,
+        "words": 169,
+        "outside_page_margin": []
+      },
+      {
+        "page": 17,
+        "characters": 2594,
+        "words": 152,
+        "outside_page_margin": []
+      },
+      {
+        "page": 18,
+        "characters": 2816,
+        "words": 173,
+        "outside_page_margin": []
+      },
+      {
+        "page": 19,
+        "characters": 2636,
+        "words": 148,
+        "outside_page_margin": []
+      },
+      {
+        "page": 20,
+        "characters": 2697,
+        "words": 162,
+        "outside_page_margin": []
+      },
+      {
+        "page": 21,
+        "characters": 2614,
+        "words": 157,
+        "outside_page_margin": []
+      },
+      {
+        "page": 22,
+        "characters": 2681,
+        "words": 160,
+        "outside_page_margin": []
+      },
+      {
+        "page": 23,
+        "characters": 2590,
+        "words": 154,
+        "outside_page_margin": []
+      },
+      {
+        "page": 24,
+        "characters": 2692,
+        "words": 176,
+        "outside_page_margin": []
+      },
+      {
+        "page": 25,
+        "characters": 2628,
+        "words": 146,
+        "outside_page_margin": []
+      },
+      {
+        "page": 26,
+        "characters": 2619,
+        "words": 120,
+        "outside_page_margin": []
+      },
+      {
+        "page": 27,
+        "characters": 2663,
+        "words": 134,
+        "outside_page_margin": []
+      },
+      {
+        "page": 28,
+        "characters": 2495,
+        "words": 117,
+        "outside_page_margin": []
+      },
+      {
+        "page": 29,
+        "characters": 2554,
+        "words": 131,
+        "outside_page_margin": []
+      },
+      {
+        "page": 30,
+        "characters": 2631,
+        "words": 136,
+        "outside_page_margin": []
+      },
+      {
+        "page": 31,
+        "characters": 2642,
+        "words": 137,
+        "outside_page_margin": []
+      },
+      {
+        "page": 32,
+        "characters": 2610,
+        "words": 129,
+        "outside_page_margin": []
+      },
+      {
+        "page": 33,
+        "characters": 2635,
+        "words": 130,
+        "outside_page_margin": []
+      },
+      {
+        "page": 34,
+        "characters": 2725,
+        "words": 151,
+        "outside_page_margin": []
+      },
+      {
+        "page": 35,
+        "characters": 2542,
+        "words": 115,
+        "outside_page_margin": []
+      },
+      {
+        "page": 36,
+        "characters": 2597,
+        "words": 130,
+        "outside_page_margin": []
+      },
+      {
+        "page": 37,
+        "characters": 2195,
+        "words": 104,
+        "outside_page_margin": []
+      },
+      {
+        "page": 38,
+        "characters": 1842,
+        "words": 85,
+        "outside_page_margin": []
+      },
+      {
+        "page": 39,
+        "characters": 1840,
+        "words": 89,
+        "outside_page_margin": []
+      },
+      {
+        "page": 40,
+        "characters": 1975,
+        "words": 90,
+        "outside_page_margin": []
+      },
+      {
+        "page": 41,
+        "characters": 2012,
+        "words": 89,
+        "outside_page_margin": []
+      },
+      {
+        "page": 42,
+        "characters": 2036,
+        "words": 88,
+        "outside_page_margin": []
+      },
+      {
+        "page": 43,
+        "characters": 2037,
+        "words": 92,
+        "outside_page_margin": []
+      },
+      {
+        "page": 44,
+        "characters": 1782,
+        "words": 66,
+        "outside_page_margin": []
+      },
+      {
+        "page": 45,
+        "characters": 1619,
+        "words": 69,
+        "outside_page_margin": []
+      },
+      {
+        "page": 46,
+        "characters": 1654,
+        "words": 68,
+        "outside_page_margin": []
+      },
+      {
+        "page": 47,
+        "characters": 1633,
+        "words": 66,
+        "outside_page_margin": []
+      },
+      {
+        "page": 48,
+        "characters": 1629,
+        "words": 58,
+        "outside_page_margin": []
+      },
+      {
+        "page": 49,
+        "characters": 1707,
+        "words": 68,
+        "outside_page_margin": []
+      },
+      {
+        "page": 50,
+        "characters": 1782,
+        "words": 68,
+        "outside_page_margin": []
+      },
+      {
+        "page": 51,
+        "characters": 2510,
+        "words": 203,
+        "outside_page_margin": []
+      },
+      {
+        "page": 52,
+        "characters": 3357,
+        "words": 325,
+        "outside_page_margin": []
+      },
+      {
+        "page": 53,
+        "characters": 3176,
+        "words": 300,
+        "outside_page_margin": []
+      },
+      {
+        "page": 54,
+        "characters": 2711,
+        "words": 214,
+        "outside_page_margin": []
+      },
+      {
+        "page": 55,
+        "characters": 391,
+        "words": 13,
+        "outside_page_margin": []
+      }
+    ],
+    "all_pages_nonempty": true,
+    "out_of_page_words": 0,
+    "contact_sheets": [
+      "run_state/checks/D03/visual/pages_01_12.jpg",
+      "run_state/checks/D03/visual/pages_13_24.jpg",
+      "run_state/checks/D03/visual/pages_25_36.jpg",
+      "run_state/checks/D03/visual/pages_37_48.jpg",
+      "run_state/checks/D03/visual/pages_49_55.jpg"
+    ]
+  },
+  "limitations": [
+    "PDF is a task QA intermediate; requested authoritative deliverables are Markdown, README and full LaTeX source.",
+    "No audio listening, research model execution or external publication occurred in D03."
+  ],
+  "render_history": "Initial attempts exposed missing TeX format/search indexes in the environment, then header load-order, two unsupported transpose glyphs, one author diacritic, and long identifier wrapping. All were repaired in task-local configuration/filters and final pass6 has zero missing-glyph and zero overfull warnings. No system setting or installation was changed. Independent assistant review subsequently found bibliography date-field conflation, three compact-summary omissions of formal assumptions, a malformed assumption list, and lost spaces inside URL-formatted objective code spans. D03 corrected these without modifying D01, formal source, or algorithm code; regenerated the document to55 pages; 50 static checks include all46 date fields, all127 formula renderings and23 true list items.",
+  "pdf_sha256": "963676a0a77417c83bc26b0ec5eccde62f53ae3d2eb673dd66e5dfd446b91c28"
+}

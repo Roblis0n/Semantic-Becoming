@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "id": "C17",
+  "title": "以未知边界驱动通信",
+  "kind": "combination",
+  "mechanisms": [
+    "H02",
+    "H03",
+    "H45",
+    "H46"
+  ],
+  "stages": [
+    "候选类",
+    "排除前提",
+    "查询分割",
+    "响应获取",
+    "等价类细化"
+  ],
+  "critical_invariant": "查询权限先于信息收益；无合法查询时允许保持未知。",
+  "source_spec": "combinations/C17_以未知边界驱动通信.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c17.py",
+  "research_outputs": "NOT_RUN"
+}

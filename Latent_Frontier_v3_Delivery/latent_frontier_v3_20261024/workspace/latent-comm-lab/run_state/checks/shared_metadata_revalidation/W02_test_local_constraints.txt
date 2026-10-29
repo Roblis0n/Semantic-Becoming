@@ -1,0 +1,8 @@
+test_consistent_hard_anchor (test_local_constraints.LocalConstraintsTests.test_consistent_hard_anchor) ... ok
+test_irreducible_obstruction (test_local_constraints.LocalConstraintsTests.test_irreducible_obstruction) ... ok
+test_source_separation (test_local_constraints.LocalConstraintsTests.test_source_separation) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

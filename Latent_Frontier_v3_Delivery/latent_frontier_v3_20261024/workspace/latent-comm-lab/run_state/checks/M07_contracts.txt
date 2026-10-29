@@ -1,0 +1,18 @@
+M07: AST parsed 7 own Python source files; neural/array/network imports blocked; research NOT_RUN.
+test_branch_and_merge (test_h07.DSLTests.test_branch_and_merge) ... ok
+test_cycle_command_and_types (test_h07.DSLTests.test_cycle_command_and_types) ... ok
+test_field_and_continuation_positive_and_budget (test_h07.DSLTests.test_field_and_continuation_positive_and_budget) ... ok
+test_frontier_consumer_bindings (test_h07.DSLTests.test_frontier_consumer_bindings) ... ok
+test_operator_frame_and_bound_packet (test_h07.DSLTests.test_operator_frame_and_bound_packet) ... ok
+test_recipe_api_loss_names_and_owner_edges (test_h07.DSLTests.test_recipe_api_loss_names_and_owner_edges) ... ok
+test_scope_rejected (test_h07.DSLTests.test_scope_rejected) ... ok
+test_source_gate_and_schema (test_h07.DSLTests.test_source_gate_and_schema) ... ok
+test_static_loss_ledger_and_empty_mask_contract (test_h07.DSLTests.test_static_loss_ledger_and_empty_mask_contract) ... ok
+test_typed_belief_refinement_uses_ordered_log_likelihoods (test_h07.DSLTests.test_typed_belief_refinement_uses_ordered_log_likelihoods) ... ok
+test_wire_roundtrip_explicit_migration_and_bad_types (test_h07.DSLTests.test_wire_roundtrip_explicit_migration_and_bad_types) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.047s
+
+OK
+M07: 11 contract tests; failures=0 errors=0; no tensor/model import or execution.

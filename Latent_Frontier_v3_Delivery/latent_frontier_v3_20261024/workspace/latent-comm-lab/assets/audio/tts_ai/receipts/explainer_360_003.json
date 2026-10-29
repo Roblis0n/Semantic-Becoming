@@ -1,0 +1,48 @@
+{
+  "id": "explainer_360_003",
+  "edition": "explainer_360",
+  "scene_id": "S01",
+  "characters": 31,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "如果交流能够改变概念、问题、学习规则，甚至改变共同探索的世界，",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:19:21.944752+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "response_http_status": 200,
+  "response_headers": {
+    "date": "Sat, 24 Oct 2026 18:19:30 GMT",
+    "content-type": "application/json"
+  },
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "poll_result": {
+    "status": "completed",
+    "finished_at": "2026-10-24T18:19:36.388801+00:00",
+    "transferred": false
+  },
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 263482,
+    "duration_seconds": 5.974648526077098,
+    "sample_peak": 11412,
+    "sample_rms": 1918.76004849909,
+    "sha256": "bae344e541d677155630505b222c98c3f69b4c8d2967ec65518b297fcd5deb2e",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:20:01.228699+00:00"
+}

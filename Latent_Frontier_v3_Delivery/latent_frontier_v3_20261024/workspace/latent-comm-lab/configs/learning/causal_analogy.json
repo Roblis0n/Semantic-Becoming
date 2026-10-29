@@ -1,0 +1,62 @@
+{
+  "stage": "L05",
+  "research_state": "NOT_RUN",
+  "execution_authorized": false,
+  "model_bindings": "UNBOUND",
+  "variant": "graft",
+  "run_id": "future-l05",
+  "data_manifest": "UNBOUND",
+  "model_manifest_digest": "UNBOUND",
+  "versions": {
+    "schema": "3",
+    "state": "s1",
+    "world": "w1",
+    "task": "t1",
+    "frame": "f1",
+    "evidence": "e1"
+  },
+  "dimensions": {},
+  "device": "cpu",
+  "batch_size": 4,
+  "accumulation": 2,
+  "maximum_unroll": 16,
+  "gradient_clip": 1.0,
+  "checkpoint_interval": 10,
+  "phases": {
+    "graft": [
+      {
+        "name": "graft_calibration",
+        "parameter_owners": [
+          "source_module_generator",
+          "boundary_reader"
+        ],
+        "loss_weights": {
+          "graft": 1.0,
+          "boundary": 0.2,
+          "commutation": 0.1
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ],
+    "analogy": [
+      {
+        "name": "analogy_calibration",
+        "parameter_owners": [
+          "object_map",
+          "operation_map",
+          "target_readout"
+        ],
+        "loss_weights": {
+          "matching": 1.0,
+          "commutation": 0.2,
+          "behavior": 1.0
+        },
+        "optimizer_steps": 100,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0
+      }
+    ]
+  }
+}

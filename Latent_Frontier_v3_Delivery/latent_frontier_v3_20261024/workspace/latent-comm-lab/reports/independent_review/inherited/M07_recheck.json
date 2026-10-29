@@ -1,0 +1,25 @@
+{
+  "research_execution": "NOT_RUN",
+  "method": "bounded stdlib reference contracts",
+  "cases": 5,
+  "max_dimension": 2,
+  "conservative_upper_bound_steps_per_case": 32,
+  "cross_frame_compile_rejected": "FrameMismatch",
+  "misbound_packet_rejected": "FrameMismatch",
+  "same_frame_operator_result": [
+    2.0
+  ],
+  "ordered_likelihood_posterior": [
+    0.33333333333333337,
+    0.6666666666666666
+  ],
+  "dict_likelihood_rejected": "TypeViolation",
+  "hashes": {
+    "src/latent_comm/mechanisms/h01_legacy/reference.py": "e85491d7a158ff14b82d4082c284c80f5228429e27261c7e9ce3d87ab0ec4248",
+    "src/latent_comm/mechanisms/h01_legacy/types.py": "be9d48f775e186f77fca5e07bf72c23dbc9b223e184dff9446c15794161538a8",
+    "src/latent_comm/mechanisms/h03_legacy/reference.py": "d2babed9776edb0745beda6e5f48bff7aeb43af97a1dd66791895c4ffeced0a8",
+    "src/latent_comm/mechanisms/h03_legacy/types.py": "083a51d1078e0f76c5131bb0ba31bbc8d0f16dc4491936d688a248feccb53eb7",
+    "src/latent_comm/mechanisms/h07_legacy/reference.py": "813349a91c2401f08492b0622a20b98dc8f9c9e8b8224c6f4da15048f261b6e6",
+    "src/latent_comm/mechanisms/h07_legacy/types.py": "337bcd306971f7343dab40c9a94895afc39eb1f513afc03789727cc695ec1c5d"
+  }
+}

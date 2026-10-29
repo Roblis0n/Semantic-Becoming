@@ -1,0 +1,6 @@
+# H35: 跨尺度语义重整化
+
+Coarse and lift maps name different axes. The affine closure certificate checks the full linear identity CF=GC and bias Cb=g, not merely reconstruction CL≈I. Equal-coarse/different-next-coarse witnesses expose missing macro statistics. Retained detail residual supplies an exact finite memory closure; without it, nonclosure is a structured failure and a lift is never sold as inversion. Explicit scale migration reconstructs only when detail exists. Future extension discovers additional stable macro variables rather than deleting nonclosure error; no physical universality claim is made.
+
+## Execution and evidence
+All neural/model integration is source implemented, integration unrun, research NOT_RUN. Only bounded non-neural fixtures and stdlib AST/contract checks run. No research score or general semantic capability is claimed. Tensor functions call the immutable policy gate before importing torch. Runtime data must be role-projected, not full supervisor records. Persistent JSON contains resolved values, not autograd identity; replay requires recomputation. Local schema migration preserves all semantic version axes and rejects unsupported versions. Finite errors carry structured ContractError failures. The source recipe retains future research bounds independently from StepBudget fixture limits.

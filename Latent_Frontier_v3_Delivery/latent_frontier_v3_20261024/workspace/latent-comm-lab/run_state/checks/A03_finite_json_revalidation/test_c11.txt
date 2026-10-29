@@ -1,0 +1,16 @@
+test_actual_compiled_program (test_c11.C11Tests.test_actual_compiled_program) ... ok
+test_bound_ir (test_c11.C11Tests.test_bound_ir) ... ok
+test_broken_numeric_implementation (test_c11.C11Tests.test_broken_numeric_implementation) ... ok
+test_heuristic_not_certified (test_c11.C11Tests.test_heuristic_not_certified) ... ok
+test_quotient_keeps_source_and_does_not_guess (test_c11.C11Tests.test_quotient_keeps_source_and_does_not_guess) ... ok
+test_unmapped_operation (test_c11.C11Tests.test_unmapped_operation) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.053s
+
+OK
+{
+  "selected": 6,
+  "excluded_model_entry_or_gate_tests": [],
+  "neural_modules_loaded": []
+}

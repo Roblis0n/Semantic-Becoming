@@ -1,0 +1,999 @@
+{
+  "recipe_id": "C15",
+  "research_state": "NOT_RUN",
+  "model_bindings": "UNBOUND",
+  "compiled_ir": {
+    "recipe_id": "C15",
+    "nodes": [
+      {
+        "node_id": "public_boundary",
+        "operation": "C15.public_boundary",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "input"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "public_boundary:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "MultirateTrajectoryInput",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "PublicBoundary",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H34"
+        ],
+        "implementation": "latent_comm.compositions.c15.public_boundary",
+        "location": {
+          "source": "C15.bound.json",
+          "path": "/nodes/0",
+          "line": 8,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "local_dynamics",
+        "operation": "C15.local_dynamics",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "public_boundary:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "local_dynamics:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "PublicBoundary",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "LocalDynamicsGraph",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "differentiable",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H33"
+        ],
+        "implementation": "latent_comm.compositions.c15.local_dynamics",
+        "location": {
+          "source": "C15.bound.json",
+          "path": "/nodes/1",
+          "line": 23,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "differentiable"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "bidirectional_messages",
+        "operation": "C15.bidirectional_messages",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "local_dynamics:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "bidirectional_messages:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "LocalDynamicsGraph",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "BidirectionalMessages",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "discrete",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H34"
+        ],
+        "implementation": "latent_comm.compositions.c15.bidirectional_messages",
+        "location": {
+          "source": "C15.bound.json",
+          "path": "/nodes/2",
+          "line": 38,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "enumeration"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "asynchronous_continuation",
+        "operation": "C15.asynchronous_continuation",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "bidirectional_messages:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "asynchronous_continuation:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "BidirectionalMessages",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "AsyncContinuation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "E",
+          "K",
+          "P",
+          "Z"
+        ],
+        "write_set": [
+          "K",
+          "P"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H05",
+          "H20"
+        ],
+        "implementation": "latent_comm.compositions.c15.asynchronous_continuation",
+        "location": {
+          "source": "C15.bound.json",
+          "path": "/nodes/3",
+          "line": 53,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      },
+      {
+        "node_id": "trajectory_readout",
+        "operation": "C15.trajectory_readout",
+        "mechanism": null,
+        "inputs": [
+          [
+            "value",
+            "asynchronous_continuation:out"
+          ]
+        ],
+        "outputs": [
+          [
+            "out",
+            "trajectory_readout:out"
+          ]
+        ],
+        "input_types": [
+          [
+            "value",
+            {
+              "name": "AsyncContinuation",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "output_types": [
+          [
+            "out",
+            {
+              "name": "TrajectoryReadout",
+              "versions": {
+                "schema": "3",
+                "state": "s1",
+                "ontology": "o1",
+                "isa": "i1",
+                "frame": "f1",
+                "world": "w1",
+                "task": "t1",
+                "evidence": "e1"
+              },
+              "visibility": "public",
+              "tensor": null,
+              "fields": [],
+              "dependencies": [],
+              "scope": [
+                "E",
+                "F",
+                "K",
+                "O",
+                "P",
+                "Q",
+                "U",
+                "V",
+                "W",
+                "Z"
+              ],
+              "bound": true
+            }
+          ]
+        ],
+        "read_set": [
+          "P",
+          "W",
+          "Z"
+        ],
+        "write_set": [
+          "Z"
+        ],
+        "differentiability": "exact",
+        "determinism": "deterministic_given_inputs",
+        "budget_cost": 1,
+        "required_capabilities": [
+          "H33",
+          "H34"
+        ],
+        "implementation": "latent_comm.compositions.c15.trajectory_readout",
+        "location": {
+          "source": "C15.bound.json",
+          "path": "/nodes/4",
+          "line": 68,
+          "column": 5
+        },
+        "gradient_edges": [
+          [
+            "value",
+            "stop"
+          ]
+        ],
+        "gate_action": null
+      }
+    ],
+    "objects": [
+      [
+        "asynchronous_continuation:out",
+        {
+          "name": "AsyncContinuation",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "bidirectional_messages:out",
+        {
+          "name": "BidirectionalMessages",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "input",
+        {
+          "name": "MultirateTrajectoryInput",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "local_dynamics:out",
+        {
+          "name": "LocalDynamicsGraph",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "public_boundary:out",
+        {
+          "name": "PublicBoundary",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ],
+      [
+        "trajectory_readout:out",
+        {
+          "name": "TrajectoryReadout",
+          "versions": {
+            "schema": "3",
+            "state": "s1",
+            "ontology": "o1",
+            "isa": "i1",
+            "frame": "f1",
+            "world": "w1",
+            "task": "t1",
+            "evidence": "e1"
+          },
+          "visibility": "public",
+          "tensor": null,
+          "fields": [],
+          "dependencies": [],
+          "scope": [
+            "E",
+            "F",
+            "K",
+            "O",
+            "P",
+            "Q",
+            "U",
+            "V",
+            "W",
+            "Z"
+          ],
+          "bound": true
+        }
+      ]
+    ],
+    "edges": [
+      [
+        "asynchronous_continuation",
+        "trajectory_readout"
+      ],
+      [
+        "bidirectional_messages",
+        "asynchronous_continuation"
+      ],
+      [
+        "local_dynamics",
+        "bidirectional_messages"
+      ],
+      [
+        "public_boundary",
+        "local_dynamics"
+      ]
+    ],
+    "schedule": [
+      "public_boundary",
+      "local_dynamics",
+      "bidirectional_messages",
+      "asynchronous_continuation",
+      "trajectory_readout"
+    ],
+    "loops": [],
+    "diagnostics": [],
+    "pass_trace": [
+      "syntax_schema",
+      "reference_resolution",
+      "type_shape_scope",
+      "version_migration",
+      "role_view_leakage",
+      "differentiability_boundaries",
+      "bounded_schedule_gate"
+    ],
+    "worst_case_steps": 5,
+    "max_steps": 64,
+    "input_digest": "cb7411bc06ebe71b525efef0033bb6351594d9795851ea1859810566be7338c6",
+    "declared_parameters": {
+      "obligations": [
+        "Finite quantization is explicit and final continuous boundary residual is rechecked.",
+        "Physical scheduling time is not path position or causal order.",
+        "Backward messages originate exclusively in public boundary constraints."
+      ]
+    },
+    "declared_runtime_budget": {
+      "max_steps": 64
+    },
+    "research_state": "NOT_RUN",
+    "research_execution_authorized": false,
+    "gate": "latent_comm.safety.policy.require_research_action"
+  },
+  "training": {
+    "recipe": "C15",
+    "research_state": "NOT_RUN",
+    "phases": [
+      {
+        "name": "local_trajectory",
+        "objectives": [
+          {
+            "name": "terminal",
+            "mathematical_definition": "mean masked (readout-target)^2",
+            "numerator": "sum of masked residuals",
+            "denominator": "valid terms",
+            "valid_mask": "behavior_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coupling",
+              "trajectory_reader"
+            ],
+            "requires_grad_inputs": [
+              "trajectory"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "behavior elements",
+            "id": "H33.terminal"
+          },
+          {
+            "name": "trajectory",
+            "mathematical_definition": "mean masked (predicted_relation-target_relation)^2",
+            "numerator": "sum of masked residuals",
+            "denominator": "valid terms",
+            "valid_mask": "trajectory_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "coupling"
+            ],
+            "requires_grad_inputs": [
+              "trajectory"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "trajectory relations",
+            "id": "H33.trajectory"
+          },
+          {
+            "name": "stability",
+            "mathematical_definition": "mean masked relu(norm2_next-norm2_current-budget)^2",
+            "numerator": "sum of masked residuals",
+            "denominator": "valid terms",
+            "valid_mask": "step_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "dissipation_factor",
+              "coupling"
+            ],
+            "requires_grad_inputs": [
+              "trajectory"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "logical steps",
+            "id": "H33.stability"
+          }
+        ],
+        "losses": [
+          "H33.terminal",
+          "H33.trajectory",
+          "H33.stability"
+        ],
+        "owners": [
+          "coupling",
+          "dissipation_factor",
+          "trajectory_reader"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      },
+      {
+        "name": "public_boundary",
+        "objectives": [
+          {
+            "name": "transition",
+            "mathematical_definition": "sum(m*(z_next-F(z))^2)/sum(m)",
+            "numerator": "transition consistency residual",
+            "denominator": "valid transition coordinates",
+            "valid_mask": "transition_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "transition_messages"
+            ],
+            "requires_grad_inputs": [
+              "trajectory"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "transition coordinates",
+            "id": "H34.transition"
+          },
+          {
+            "name": "boundary",
+            "mathematical_definition": "sum(m*boundary_error)/sum(m)",
+            "numerator": "public start and terminal violation",
+            "denominator": "valid boundary conditions",
+            "valid_mask": "boundary_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "backward_constraint_encoder"
+            ],
+            "requires_grad_inputs": [
+              "trajectory"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "public boundary conditions",
+            "id": "H34.boundary"
+          },
+          {
+            "name": "task",
+            "mathematical_definition": "sum(m*task_error)/sum(m)",
+            "numerator": "task readout error",
+            "denominator": "valid task outputs",
+            "valid_mask": "task_mask",
+            "zero_valid_policy": "skip_with_reason",
+            "parameter_owners": [
+              "trajectory_reader"
+            ],
+            "requires_grad_inputs": [
+              "trajectory"
+            ],
+            "stop_gradient_edges": [],
+            "estimated_or_exact": "exact",
+            "normalization_units": "task outputs",
+            "id": "H34.task"
+          }
+        ],
+        "losses": [
+          "H34.transition",
+          "H34.boundary",
+          "H34.task"
+        ],
+        "owners": [
+          "backward_constraint_encoder",
+          "trajectory_reader",
+          "transition_messages"
+        ],
+        "aggregation": "separately normalized phase objectives; explicit per-run weights required",
+        "source_graph_revalidation": "each selected owner must have a live path in the concrete stage"
+      }
+    ],
+    "gradient_boundaries": {
+      "public_boundary": "stop",
+      "local_dynamics": "differentiable",
+      "bidirectional_messages": "enumeration",
+      "asynchronous_continuation": "stop",
+      "trajectory_readout": "stop"
+    },
+    "online_claim": false,
+    "scheduler": "deterministic event/version arbitration is not an optimizer"
+  },
+  "fixture_execution": "aggregate_budget enforces caller and policy limits end-to-end; check ReferenceResult.status before consuming value"
+}

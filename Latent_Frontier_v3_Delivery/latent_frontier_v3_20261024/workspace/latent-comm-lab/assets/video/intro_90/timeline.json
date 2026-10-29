@@ -1,0 +1,184 @@
+{
+  "project": "intro_90",
+  "requested_duration": 90,
+  "research_state": "NOT_RUN",
+  "timing_status": "draft_timing_budget_not_audio_aligned",
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "render_fps": 12,
+  "audio_tracks": [],
+  "audio_status": "not_created_external_optional_blocker",
+  "subtitles": "../../subtitles/intro_90.draft_timing.srt",
+  "visual_edition": "silent_draft_with_burned_draft_timed_captions",
+  "source_scenes": [
+    {
+      "scene_id": "S01",
+      "start": 0,
+      "end": 10,
+      "duration": 10,
+      "title": "通信的旧边界",
+      "visual": "两个模型只交换气泡文字，气泡转为一个可操作盒子。",
+      "narration": "今天，我们通常让模型交换答案。更远的问题是：交流能否改变它们能够思考什么？",
+      "cuts": [
+        {
+          "kind": "communication",
+          "source": "communication_to_object",
+          "start": 0,
+          "end": 10
+        }
+      ],
+      "clip": "clips/S01.mp4"
+    },
+    {
+      "scene_id": "S02",
+      "start": 10,
+      "end": 22,
+      "duration": 12,
+      "title": "概念出生",
+      "visual": "同形钥匙→行为差异→有效期谓词。",
+      "narration": "第一步，让分歧产生新概念。不是换一个名字，而是创造一个能够计算、能够改变行动的新区分。",
+      "cuts": [
+        {
+          "kind": "animation",
+          "source": "A03",
+          "start": 10,
+          "end": 22
+        }
+      ],
+      "clip": "clips/S02.mp4"
+    },
+    {
+      "scene_id": "S03",
+      "start": 22,
+      "end": 34,
+      "duration": 12,
+      "title": "问题变换",
+      "visual": "x²=4保持正负两支，再变为问题图。",
+      "narration": "第二步，让问题本身成为对象。系统交换的不只是答案，还有新的提问方式，以及答案之间的转换关系。",
+      "cuts": [
+        {
+          "kind": "slide",
+          "source": 26,
+          "start": 22,
+          "end": 34
+        }
+      ],
+      "clip": "clips/S03.mp4"
+    },
+    {
+      "scene_id": "S04",
+      "start": 34,
+      "end": 47,
+      "duration": 13,
+      "title": "学习能力传递",
+      "visual": "行为空间箭头从源到目标，再出现更新规则AST。",
+      "narration": "第三步，传递怎样学习。不同模型不必共享参数，也许可以交换行为改进的方向和受限的更新规则。",
+      "cuts": [
+        {
+          "kind": "animation",
+          "source": "A04",
+          "start": 34,
+          "end": 44.01
+        },
+        {
+          "kind": "slide",
+          "source": 15,
+          "start": 44.01,
+          "end": 47
+        }
+      ],
+      "clip": "clips/S04.mp4"
+    },
+    {
+      "scene_id": "S05",
+      "start": 47,
+      "end": 60,
+      "duration": 13,
+      "title": "共同世界",
+      "visual": "两转移核接共享噪声节点，生成synthetic世界。",
+      "narration": "第四步，共同构造可行动的假想世界。模型各自贡献局部机制，在新世界中产生新的问题和经验。",
+      "cuts": [
+        {
+          "kind": "animation",
+          "source": "A05",
+          "start": 47,
+          "end": 60
+        }
+      ],
+      "clip": "clips/S05.mp4"
+    },
+    {
+      "scene_id": "S06",
+      "start": 60,
+      "end": 72,
+      "duration": 12,
+      "title": "超越统一向量",
+      "visual": "多坐标、多局部解释、轨迹环依次出现。",
+      "narration": "这不要求一套万能潜语言，也不要求所有分歧都消失。知识可以是多视角的，推理也可以存在于轨迹里。",
+      "cuts": [
+        {
+          "kind": "animation",
+          "source": "A01",
+          "start": 60,
+          "end": 63.96
+        },
+        {
+          "kind": "animation",
+          "source": "A02",
+          "start": 63.96,
+          "end": 68.04
+        },
+        {
+          "kind": "slide",
+          "source": 28,
+          "start": 68.04,
+          "end": 72
+        }
+      ],
+      "clip": "clips/S06.mp4"
+    },
+    {
+      "scene_id": "S07",
+      "start": 72,
+      "end": 82,
+      "duration": 10,
+      "title": "全量研究计划",
+      "visual": "48机制、20组合、12终局出现，随后展示代码结构。",
+      "narration": "完整计划覆盖四十八个机制、二十条组合路线和十二个远期终局，并准备统一的程序与执行流程。",
+      "cuts": [
+        {
+          "kind": "figure",
+          "source": "F01",
+          "start": 72,
+          "end": 78.5
+        },
+        {
+          "kind": "slide",
+          "source": 33,
+          "start": 78.5,
+          "end": 82
+        }
+      ],
+      "clip": "clips/S07.mp4"
+    },
+    {
+      "scene_id": "S08",
+      "start": 82,
+      "end": 90,
+      "duration": 8,
+      "title": "准确收束",
+      "visual": "“研究提案·无模型实测”与最终问题。",
+      "narration": "这里提出的是研究方向，不是虚构实验。核心问题是：交流能否创造新的认知可能？",
+      "cuts": [
+        {
+          "kind": "slide",
+          "source": 36,
+          "start": 82,
+          "end": 90
+        }
+      ],
+      "clip": "clips/S08.mp4"
+    }
+  ]
+}

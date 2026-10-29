@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-10-27T10:47:09.895916+00:00",
+  "source_message_id": "Sentinel_96ddbe96552c81918c13c35903b936e3",
+  "question_message_id": "Sentinel_e92af6d024708191ba850429b5d35770",
+  "cue_id": "explainer_360_036",
+  "duplication_risk_consent": true,
+  "user_authorized": true,
+  "scope": "One replacement of exact03641-character narration at api.tts.ai; old UNKNOWN preserved",
+  "cost": "anonymous free personal/noncommercial only",
+  "early_start_authority": "Sentinel_895a1a80126c8191a54d3f4cb0c1cddc",
+  "early_start_utc": "2026-10-27T10:45:00Z",
+  "target_finish_utc": "2026-10-27T15:00:00Z",
+  "research_state": "NOT_RUN"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_044",
+  "edition": "explainer_360",
+  "scene_id": "S09",
+  "characters": 23,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "能否创造新的概念、新的问题，以及新的学习可能？",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-26T15:15:43.671763+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 194362,
+    "duration_seconds": 4.407301587301587,
+    "sample_peak": 5495,
+    "sample_rms": 1021.6170946867134,
+    "sha256": "ad01aff15d27d0afbde310700352bce6d889ef3269dc1bb503f12f42525c6afd",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-26T15:16:17.579259+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

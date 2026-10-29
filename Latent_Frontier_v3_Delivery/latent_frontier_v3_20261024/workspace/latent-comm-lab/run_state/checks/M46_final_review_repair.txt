@@ -1,0 +1,18 @@
+test_empty_loss_source_contract (test_h46.H46Contracts.test_empty_loss_source_contract) ... ok
+test_hard_intersection_and_empty (test_h46.H46Contracts.test_hard_intersection_and_empty) ... ok
+test_overgeneralization_migration_budget (test_h46.H46Contracts.test_overgeneralization_migration_budget) ... ok
+test_retraction_dependency_and_scope (test_h46.H46Contracts.test_retraction_dependency_and_scope) ... ok
+test_timeout_and_soft_never_hard (test_h46.H46Contracts.test_timeout_and_soft_never_hard) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.004s
+
+OK
+{
+  "selected": 5,
+  "excluded_model_entry_or_gate_tests": [
+    "test_h46.H46Contracts.test_gate",
+    "test_h46.H46Contracts.test_neural_source_is_lazy_and_gated"
+  ],
+  "neural_modules_loaded": []
+}

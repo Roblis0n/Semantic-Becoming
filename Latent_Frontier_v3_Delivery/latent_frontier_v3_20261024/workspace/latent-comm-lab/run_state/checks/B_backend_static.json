@@ -1,0 +1,8 @@
+{
+  "source_and_locked_test_files_ast_parsed": 13,
+  "actual_static_declaration_gate_tests": 31,
+  "neural_integration_executed": false,
+  "research_state": "NOT_RUN",
+  "compatibility_claim": "source-bound contracts only; no installed backend compatibility claimed",
+  "role_bound_inputs": "ModelInputs and prefix role_origins reject full world/supervision dictionaries"
+}

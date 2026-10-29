@@ -1,0 +1,26 @@
+{
+  "schema_version": 3,
+  "id": "C16",
+  "title": "共同梦境与问题生态",
+  "kind": "combination",
+  "mechanisms": [
+    "H29",
+    "H40",
+    "H42",
+    "H43",
+    "H44"
+  ],
+  "stages": [
+    "机制拼接",
+    "反事实世界",
+    "问题生成",
+    "协议变异",
+    "迁移存档"
+  ],
+  "critical_invariant": "生成器和求解器不能用世界ID传暗号；所有世界标synthetic。",
+  "source_spec": "combinations/C16_共同梦境与问题生态.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c16.py",
+  "research_outputs": "NOT_RUN"
+}

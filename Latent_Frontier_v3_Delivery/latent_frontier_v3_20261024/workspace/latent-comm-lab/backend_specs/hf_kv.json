@@ -1,0 +1,32 @@
+{
+  "task_id": "B04",
+  "backend_family": "hf_kv",
+  "source_status": "source_implemented",
+  "integration_status": "NOT_RUN",
+  "model_binding_status": "UNBOUND",
+  "installed_torch": "NOT_INSTALLED",
+  "installed_transformers": "NOT_INSTALLED",
+  "installed_safetensors": "NOT_INSTALLED",
+  "official_sources_read_utc": "2026-10-24",
+  "sources": {
+    "autograd": "https://docs.pytorch.org/docs/2.14/notes/autograd.html",
+    "hooks": "https://docs.pytorch.org/docs/2.14/generated/torch.nn.Module.html",
+    "cache": "https://huggingface.co/docs/transformers/main/en/cache_explanation",
+    "cache_strategies": "https://huggingface.co/docs/transformers/main/en/kv_cache",
+    "safe_storage": "https://huggingface.co/docs/safetensors/index"
+  },
+  "observed_docs": {
+    "pytorch": "2.14",
+    "transformers_main_stable_link": "5.20.2",
+    "installed_versions": "not inferred from web docs"
+  },
+  "source_assumptions": [
+    "explicit model/tokenizer/config revisions",
+    "declared shapes and capability manifest",
+    "separate input-gradient and frozen-parameter semantics"
+  ],
+  "test_command": "PYTHONPATH=src python3 -m unittest discover -s tests/research_locked -p test_backend_hf_kv.py -v",
+  "future_integration_entry": "tests/research_locked/test_backend_hf_kv.py:future_integration_contract",
+  "future_entry_execution": "unconditionally_locked_in_this_task",
+  "research_state": "NOT_RUN"
+}

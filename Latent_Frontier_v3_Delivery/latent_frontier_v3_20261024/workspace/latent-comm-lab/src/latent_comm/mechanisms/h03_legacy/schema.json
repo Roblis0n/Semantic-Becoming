@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "latent_comm:H03:v3",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "versions",
+    "branches",
+    "generation_mode",
+    "consumed_evidence",
+    "probability_semantics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 3
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "schema": {
+          "type": "string",
+          "pattern": "\\S"
+        },
+        "state": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "ontology": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "isa": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "frame": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "world": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "task": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        },
+        "evidence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "\\S"
+        }
+      },
+      "required": [
+        "evidence",
+        "schema",
+        "task"
+      ],
+      "additionalProperties": false
+    },
+    "branches": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "branch_id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "state": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "number"
+            },
+            "maxItems": 64
+          },
+          "log_weight": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "semantic_domain": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "evidence_support": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "\\S"
+            },
+            "minItems": 0,
+            "maxItems": 64
+          },
+          "ontology_version": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "unknown": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "branch_id",
+          "state",
+          "log_weight",
+          "semantic_domain",
+          "evidence_support",
+          "ontology_version",
+          "unknown"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 64
+    },
+    "generation_mode": {
+      "enum": [
+        "sequence_mixture",
+        "select_then_generate",
+        "rerank"
+      ]
+    },
+    "consumed_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "\\S"
+      },
+      "minItems": 0,
+      "maxItems": 64
+    },
+    "probability_semantics": {
+      "enum": [
+        "candidate_weights",
+        "specified_generative_posterior"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

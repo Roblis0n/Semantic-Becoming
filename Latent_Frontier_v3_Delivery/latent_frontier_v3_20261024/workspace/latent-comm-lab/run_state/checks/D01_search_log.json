@@ -1,0 +1,217 @@
+{
+  "task_id": "D01",
+  "searched_on_utc": "2026-10-24",
+  "query_count": 21,
+  "method": "Queries are object/operation-oriented; returned candidates are not automatically accepted. Sources in novelty_ledger were separately checked at primary URLs. Search batch results do not establish exhaustive coverage or absence of prior work.",
+  "entries": [
+    {
+      "batch": "D01_search_01",
+      "queries": [
+        "site.microsoft.com research consensus transaction commit gray lamport 2006",
+        "site.cs.cornell.edu bisimulation metrics continuous markov decision processes Ferns Panangaden Precup",
+        "site.arxiv.org nonnegative decomposition multivariate information Williams Beer 2010",
+        "site.eecs.berkeley.edu capability myths demolished Dennis Van Horn object capability"
+      ],
+      "results_visible": true,
+      "result_primary_candidates": [
+        {
+          "title": "Consensus on Transaction Commit - Microsoft Research",
+          "url": "https://www.microsoft.com/en-us/research/publication/consensus-on-transaction-commit/"
+        },
+        {
+          "title": "siamFP11.dvi",
+          "url": "https://www.cs.mcgill.ca/~prakash/Pubs/siamFP11.pdf"
+        },
+        {
+          "title": "Consensus on Transaction Commit",
+          "url": "https://arxiv.org/abs/cs/0408036"
+        },
+        {
+          "title": "Quantifying multivariate redundancy with maximum entropy decompositions of mutual information",
+          "url": "https://arxiv.org/abs/1708.03845"
+        },
+        {
+          "title": "Metrics for Finite Markov Decision Processes",
+          "url": "https://arxiv.org/abs/1207.4114"
+        }
+      ]
+    },
+    {
+      "batch": "D01_search_02",
+      "queries": [
+        "successive refinement information Equitz Cover 1991 site.stanford.edu",
+        "truth maintenance system Doyle 1979 site.mit.edu",
+        "natural gradient works efficiently in learning Amari 1998 site.mit.edu",
+        "compositional world models Dyna Sutton 1991 site.incompleteideas.net"
+      ],
+      "results_visible": true,
+      "result_primary_candidates": [
+        {
+          "title": "Successive refinement of information - Information Theory, IEEE Transactions on",
+          "url": "https://isl.stanford.edu/~cover/papers/paper94.pdf"
+        },
+        {
+          "title": "Fisher Information and Natural Gradient Learning of Random Deep Networks",
+          "url": "https://arxiv.org/abs/1808.07172"
+        },
+        {
+          "title": "Revisiting Natural Gradient for Deep Networks",
+          "url": "https://arxiv.org/abs/1301.3584"
+        },
+        {
+          "title": "Fast Approximate Natural Gradient Descent in a Kronecker-factored Eigenbasis",
+          "url": "https://arxiv.org/abs/1806.03884"
+        },
+        {
+          "title": "Natural Neural Networks",
+          "url": "https://arxiv.org/abs/1507.00210"
+        }
+      ]
+    },
+    {
+      "batch": "D01_search_03",
+      "queries": [
+        "site.arxiv.org \"Distilling the Knowledge in a Neural Network\"",
+        "site.arxiv.org \"Learning to Communicate with Deep Multi-Agent\" \"event\"",
+        "site.mpi-sws.org tabuada 2007 event triggered real time scheduling stabilizing control tasks",
+        "site.arxiv.org \"World Models\" Ha Schmidhuber 2018"
+      ],
+      "results_visible": true,
+      "result_primary_candidates": [
+        {
+          "title": "Distilling the Knowledge in a Neural Network",
+          "url": "https://arxiv.org/abs/1503.02531"
+        },
+        {
+          "title": "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models",
+          "url": "https://arxiv.org/abs/1511.09249"
+        }
+      ]
+    },
+    {
+      "batch": "D01_search_04",
+      "queries": [
+        "\"Capability Myths Demolished\" \"2003\" Miller Yee Shapiro",
+        "\"Metrics for Finite Markov Decision Processes\" arxiv",
+        "\"A Simple Proof That Real-Time Communication Implies Reliable Communication\" asynchronous clocks Lamport",
+        "\"Structure-Mapping: A Theoretical Framework for Analogy\" Gentner primary pdf"
+      ],
+      "results_visible": true,
+      "result_primary_candidates": [
+        {
+          "title": "Metrics for Finite Markov Decision Processes",
+          "url": "https://arxiv.org/abs/1207.4114"
+        },
+        {
+          "title": "Structure‐Mapping: A Theoretical Framework for Analogy<link href='#fn1'>*</link> - Gentner - 1983 - Cognitive Science - Wiley Online Library",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1207/s15516709cog0702_3"
+        },
+        {
+          "title": "STRUCTURE-MAPPING: A THEORETICAL FRAMEWORK FOR ANALOGY",
+          "url": "https://groups.psych.northwestern.edu/gentner/papers/Gentner83.2b.pdf"
+        }
+      ]
+    },
+    {
+      "batch": "D01_search_05",
+      "queries": [
+        "Dijkstra guarded commands nondeterminacy formal derivation programs 1975 site.cs.utexas.edu",
+        "Kschischang Frey Loeliger factor graphs sum product algorithm pdf site.edu",
+        "Necula proof carrying code 1997 site.cs.berkeley.edu"
+      ],
+      "results_visible": true,
+      "result_primary_candidates": [
+        {
+          "title": "E.W.Dijkstra Archive: Guarded commands, non-determinacy and formal derivation of programs (EWD 472)",
+          "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD472.html"
+        },
+        {
+          "title": "Edsger Wybe Dijkstra: His Life, Work, and Legacy",
+          "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2023/03/Lampson-PCS-from-book.pdf"
+        },
+        {
+          "title": "IEEE TRANSACTIONS ON INFORMATION THEORY, VOL. 47, NO. 2, FEBRUARY 2001498Factor Graphs and the Sum-Product AlgorithmFrank R. Kschischang, <i>Senior Member, IEEE</i>, Brendan J. Frey, <i>Member, IEEE</i>, and",
+          "url": "https://www.isiweb.ee.ethz.ch/papers/arch/aloe-2001-1.pdf"
+        },
+        {
+          "title": "ewd472",
+          "url": "https://www.cs.utexas.edu/~EWD/ewd04xx/EWD472.PDF"
+        },
+        {
+          "title": "E.W.Dijkstra Archive: Concurrent programming: a preliminary investigation (EWD 476)",
+          "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD04xx/EWD476.html"
+        },
+        {
+          "title": "E.W.Dijkstra Archive: Sequencing primitives revisited (EWD 398)",
+          "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD398.html"
+        },
+        {
+          "title": "Convolutional Factor Graphs as Probabilistic Models",
+          "url": "https://arxiv.org/abs/1207.4136"
+        },
+        {
+          "title": "Extending Factor Graphs so as to Unify Directed and Undirected Graphical Models",
+          "url": "https://arxiv.org/abs/1212.2486"
+        },
+        {
+          "title": "Nondeterminism and Guarded Commands",
+          "url": "https://arxiv.org/abs/2310.09004"
+        },
+        {
+          "title": "Factor Graphs for Quantum Probabilities",
+          "url": "https://arxiv.org/abs/1508.00689"
+        }
+      ]
+    },
+    {
+      "batch": "D01_web_09",
+      "queries": [
+        "site.people.csail.mit.edu/asolar/SynthesisCourse \"Counterexample Guided\"",
+        "site.people.csail.mit.edu/asolar/SynthesisCourse \"CEGIS\""
+      ],
+      "results_visible": true,
+      "result_primary_candidates": [
+        {
+          "title": "Introduction                                                                 21",
+          "url": "https://people.csail.mit.edu/asolar/papers/thesis.pdf"
+        },
+        {
+          "title": "Lecture 13",
+          "url": "https://people.csail.mit.edu/asolar/SynthesisCourse2023/Lecture13.htm"
+        },
+        {
+          "title": "Table of Contents",
+          "url": "https://people.csail.mit.edu/asolar/SynthesisCourse2020/TOC.htm"
+        },
+        {
+          "title": "Lecture 21",
+          "url": "https://people.csail.mit.edu/asolar/SynthesisCourse2018/Lecture21.htm"
+        },
+        {
+          "title": "CounterExample Guided Neural Synthesis",
+          "url": "https://arxiv.org/abs/2001.09245"
+        },
+        {
+          "title": "A Counter-Example Guided Framework for Robust Synthesis of Switched Systems Using Control Certificates",
+          "url": "https://arxiv.org/abs/1510.06108"
+        },
+        {
+          "title": "Counterexample Guided Synthesis of Switched Controllers for Reach-While-Stay Properties",
+          "url": "https://arxiv.org/abs/1505.01180"
+        },
+        {
+          "title": "Counterexample-Guided Synthesis of Perception Models and Control",
+          "url": "https://arxiv.org/abs/1911.01523"
+        },
+        {
+          "title": "Lecture 17",
+          "url": "https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture17.htm"
+        },
+        {
+          "title": "capmyths-3.doc",
+          "url": "https://papers.agoric.com/assets/pdf/papers/capability-myths-demolished.pdf"
+        }
+      ]
+    }
+  ]
+}

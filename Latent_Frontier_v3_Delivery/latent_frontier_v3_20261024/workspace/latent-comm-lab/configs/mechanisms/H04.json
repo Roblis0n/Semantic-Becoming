@@ -1,0 +1,184 @@
+{
+  "schema_version": 3,
+  "id": "H04",
+  "kind": "mechanism",
+  "title": "\u591a\u4e3b\u4f53\u5171\u4eab\u7ea6\u675f\u573a",
+  "mechanisms": [
+    "H04"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "source_complete",
+  "source_spec": "inherited_v2/hypotheses/H04_\u591a\u4e3b\u4f53\u5171\u4eab\u7ea6\u675f\u573a.md",
+  "target_base": "src/latent_comm/mechanisms/h04_legacy",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "legacy_recipe": {
+    "schema_version": "1.0",
+    "hypothesis_id": "H04",
+    "name": "constraint_field",
+    "execution_mode": "design",
+    "research_execution_authorized": false,
+    "model_binding": "late_bound_for_future_research_only",
+    "reference_scope": "mechanism_source_complete_without_model_execution",
+    "message_kind": "constraint",
+    "data_family": "distributed_constraints",
+    "training": {
+      "family": "R05",
+      "loss_terms": [
+        "task",
+        "local_residual",
+        "iteration_stability"
+      ],
+      "trainable_groups": [
+        "mechanism_writer",
+        "mechanism_reader"
+      ],
+      "base_model_policy": "recipe_selectable_frozen_or_explicit_adaptation"
+    },
+    "defaults": {
+      "working_dim": 256,
+      "operator_rank": 8,
+      "belief_branches": 4,
+      "field_steps": 8,
+      "local_charts": 4
+    },
+    "implementation_modules": [
+      "latent_comm.mechanisms.fields.constraints",
+      "latent_comm.mechanisms.fields.solver",
+      "latent_comm.mechanisms.fields.conflicts",
+      "latent_comm.mechanisms.fields.readwrite"
+    ],
+    "requires": [
+      "typed_state",
+      "coordinate_contract",
+      "scope_contract"
+    ],
+    "pipeline": [
+      "world_generate",
+      "view_build",
+      "state_extract",
+      "mechanism_build",
+      "typed_channel",
+      "mechanism_apply",
+      "decode_or_task",
+      "objective",
+      "artifact_export"
+    ],
+    "locked_nodes": [
+      "state_extract_with_research_model",
+      "decode_with_research_model",
+      "optimize_parameters"
+    ],
+    "fixture_policy": "use_explicit_fixed_math_recipe_not_silent_substitution",
+    "scientific_status": "hypothesis_not_tested"
+  },
+  "integration_spec": "integration/I04_\u591a\u4e3b\u4f53\u5171\u4eab\u7ea6\u675f\u573a.md",
+  "canonical_module": "latent_comm.mechanisms.h04_legacy",
+  "training_integration": {
+    "loss_entry": "latent_comm.mechanisms.h04_legacy.losses.tensor_losses",
+    "parameter_owners": [
+      "mechanism_reader",
+      "mechanism_writer"
+    ],
+    "base_model_policy": "freeze parameters without no_grad on receiver",
+    "role_views": "physically projected RoleBatch only",
+    "empty_valid_policy": "differentiable_zero",
+    "supervision": "loss-only; never encoder input",
+    "optimizer_owner": "learning trainer; mechanism exposes loss graph",
+    "run_gate": "model_train/model_forward",
+    "forward_entry": "latent_comm.mechanisms.h04_legacy.adapter.tensor_field",
+    "forward_entries": [
+      "latent_comm.mechanisms.h04_legacy.adapter.tensor_field"
+    ],
+    "loss_input_bindings": {
+      "residual_prediction": {
+        "producer": "tensor_field return[1]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "residual_teacher": {
+        "producer": "SupervisionBatch.residual_teacher; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "local_valid": {
+        "producer": "stage explicit boolean local_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "energies": {
+        "producer": "stage evaluates the explicit H04 quadratic/nonlinear residual energy on tensor_field return[2]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "step_valid": {
+        "producer": "stage explicit boolean step_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "conflict_logits": {
+        "producer": "stage.conflict_head on retained residuals",
+        "requires_gradient": true,
+        "detached_supervision": false
+      },
+      "conflict_targets": {
+        "producer": "SupervisionBatch.conflict_targets; loss-only, detached or discrete target",
+        "requires_gradient": false,
+        "detached_supervision": true
+      },
+      "conflict_valid": {
+        "producer": "stage explicit boolean conflict_valid from typed applicability and supervision availability",
+        "requires_gradient": false,
+        "detached_supervision": false
+      },
+      "task_loss": {
+        "producer": "stage task head on tensor_field return[0]",
+        "requires_gradient": true,
+        "detached_supervision": false
+      }
+    },
+    "parameter_bindings": {
+      "mechanism_writer": [
+        "stage.residual_matrix_writer",
+        "stage.target_writer",
+        "stage.temperature_writer"
+      ],
+      "mechanism_reader": [
+        "stage.conflict_head",
+        "stage.task_readout"
+      ]
+    },
+    "api_manifest": "src/latent_comm/mechanisms/h04_legacy/training_api.json",
+    "shared_engine": "latent_comm.learning.engine.train",
+    "stage_api": [
+      "parameter_groups()",
+      "frozen_parameters()",
+      "forward_roles(sender, receiver, maximum_unroll=...)",
+      "losses(output, SupervisionBatch)",
+      "loss_specs",
+      "versions",
+      "device"
+    ]
+  },
+  "current_fixture_budget": {
+    "max_steps": 128,
+    "max_dimension": 64,
+    "max_cases": 64
+  },
+  "connections": [
+    "H26: non-common domains rejected",
+    "H33: no global potential assumed outside this quadratic variant",
+    "H34: trajectory supplied with public anchor"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_034",
+  "edition": "explainer_360",
+  "scene_id": "S07",
+  "characters": 34,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "推理未必只存在于一个最终向量里，轨迹、相位和事件顺序也可以成为对象。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-25T15:06:47.692875+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 270138,
+    "duration_seconds": 6.125578231292517,
+    "sample_peak": 13364,
+    "sample_rms": 2546.695147056612,
+    "sha256": "c825611353989f2a904c89d0bc13a14b57ae8c0ef6bad8e56197ab65ac1de5a7",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-25T15:07:21.589292+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "Pending jobs are never resubmitted when private recovery state is unavailable."
+}

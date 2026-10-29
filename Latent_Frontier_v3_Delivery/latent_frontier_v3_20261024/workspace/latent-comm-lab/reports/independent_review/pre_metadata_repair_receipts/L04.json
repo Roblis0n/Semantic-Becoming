@@ -1,0 +1,59 @@
+{
+  "task_id": "L04",
+  "status": "done",
+  "input_digest": "3b81c1fa38af3dc38928426abd052c99ea54e21a362d2f92958b6b9d81d5fa3d",
+  "outputs": [
+    {
+      "path": "src/latent_comm/learning/concept_questions/README.md",
+      "sha256": "75ea0b227a5105edd7c6505fdac79eabf45d371a4672ff6b23d100127e5dcb24",
+      "bytes": 1912
+    },
+    {
+      "path": "src/latent_comm/learning/concept_questions/__init__.py",
+      "sha256": "444414918b2e8554f88b76decd45a1ee427132e50b65f0da2a5b9a32e3ff0716",
+      "bytes": 11316
+    },
+    {
+      "path": "src/latent_comm/learning/concept_questions/train.py",
+      "sha256": "0039dd15aac9fe651cd2667a45656cb6cc8fd26883481a53fdc98fde6080ab1b",
+      "bytes": 2297
+    },
+    {
+      "path": "configs/learning/concept_questions.json",
+      "sha256": "97056d7ae82dcf1c8f66db7c73f073d163dc0b98773e1f247e27d9748f2c6b93",
+      "bytes": 1585
+    },
+    {
+      "path": "tests/research_locked/test_learning_concept_questions.py",
+      "sha256": "0762a83c5d41bdfa0e45f06639c22949b398871147f4906c88a794e183c06ad4",
+      "bytes": 3401
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/L04_concept_questions.txt",
+      "sha256": "154758072df78576c72e3ad34690e7991e9cd1d17ad45a6056f289fa242087c5"
+    },
+    {
+      "path": "src/latent_comm/learning/engine.py",
+      "sha256": "665da6304d1f2da11ac38c9e3393aa34a3b36fc9b91ac0cd69e810df3c5d157d"
+    },
+    {
+      "path": "src/latent_comm/learning/contracts.py",
+      "sha256": "db5a096ab2bcf19ab1e436854305b9a566b8c43e5b8a48c0f8042b24b8d3ad52"
+    },
+    {
+      "path": "src/latent_comm/learning/source.py",
+      "sha256": "023fbd2bb0d7435147cfe3877630295d044cc10d4ac66f267ee4b1ed4d2bb0f1"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Executable predicate enumeration plus threshold/readout learning and separately witnessed relation/backtranslation/path-policy source; eight actual finite and AST checks. No research execution.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:28:30.509316+00:00"
+}

@@ -1,0 +1,10 @@
+test_frame_transport_nonlinear (test_h01.OperatorTests.test_frame_transport_nonlinear) ... ok
+test_identity_immutable_and_budget (test_h01.OperatorTests.test_identity_immutable_and_budget) ... ok
+test_order_not_factor_addition (test_h01.OperatorTests.test_order_not_factor_addition) ... ok
+test_scope_and_migration (test_h01.OperatorTests.test_scope_and_migration) ... ok
+test_source_gate_and_schema (test_h01.OperatorTests.test_source_gate_and_schema) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK

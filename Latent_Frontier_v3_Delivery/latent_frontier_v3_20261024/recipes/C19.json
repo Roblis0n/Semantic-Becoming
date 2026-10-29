@@ -1,0 +1,27 @@
+{
+  "schema_version": 3,
+  "id": "C19",
+  "title": "任务相对的世界观切换",
+  "kind": "combination",
+  "mechanisms": [
+    "H06",
+    "H12",
+    "H32",
+    "H35",
+    "H47"
+  ],
+  "stages": [
+    "外部目标锚",
+    "内部视角",
+    "商空间",
+    "宏观求解",
+    "局部细化",
+    "原目标复核"
+  ],
+  "critical_invariant": "原用户目标只读，内部变换不得暗中替换成功标准。",
+  "source_spec": "combinations/C19_任务相对的世界观切换.md",
+  "design_only": true,
+  "research_execution_authorized": false,
+  "target_file": "src/latent_comm/compositions/c19.py",
+  "research_outputs": "NOT_RUN"
+}

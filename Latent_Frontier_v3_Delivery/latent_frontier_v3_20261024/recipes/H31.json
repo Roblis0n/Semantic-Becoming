@@ -1,0 +1,32 @@
+{
+  "schema_version": 3,
+  "id": "H31",
+  "kind": "mechanism",
+  "title": "因果机制移植",
+  "mechanisms": [
+    "H31"
+  ],
+  "design_only": true,
+  "research_execution_authorized": false,
+  "implementation_status": "assigned_to_dot",
+  "source_spec": "hypotheses/H31_因果机制移植.md",
+  "target_base": "src/latent_comm/mechanisms/h31_grafting",
+  "control_plane": "specs/execution_policy.json",
+  "roles": [
+    "sender_view",
+    "receiver_view",
+    "supervision_view"
+  ],
+  "model_bindings": null,
+  "runtime_budget": {
+    "max_steps": 32,
+    "max_branches": 16
+  },
+  "research_outputs": "NOT_RUN",
+  "parameters": {
+    "max_variables": 16,
+    "acyclic": true,
+    "noise_dependence": "explicit",
+    "rollback": true
+  }
+}

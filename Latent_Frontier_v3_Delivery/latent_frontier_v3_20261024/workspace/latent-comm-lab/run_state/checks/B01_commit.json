@@ -1,0 +1,41 @@
+{
+  "task_id": "B01",
+  "status": "done",
+  "input_digest": "7212a5371ad96ea66f969cef1317e01aa2cc823c6f2b64482aa7b05ca1c8a27f",
+  "outputs": [
+    {
+      "path": "src/latent_comm/backends/capabilities/__init__.py",
+      "sha256": "17aed0ce620ee2976f91d2e86b177aacb68767f8fbb6874d0b38d050c4d1cefb",
+      "bytes": 6008
+    },
+    {
+      "path": "backend_specs/capabilities.json",
+      "sha256": "0fa6ac806771c327d957754df0cdf08a0848f2b2e8a20bc739fc57c995f3d665",
+      "bytes": 1430
+    },
+    {
+      "path": "tests/research_locked/test_backend_capabilities.py",
+      "sha256": "f142ec990279eb775825154ebe4e5e59bd963cad8b3cd540e9d2dda567b5e1ce",
+      "bytes": 1972
+    }
+  ],
+  "checks": [
+    {
+      "path": "run_state/checks/B_capabilities.txt",
+      "sha256": "5c07beae96dc38fa27f472f05f3fed726afe6be6037a7e886858aa34ffb987ca"
+    },
+    {
+      "path": "run_state/checks/B_backend_static.json",
+      "sha256": "f09a540c89c4498781d691003d9b79cea2df1fc053351d0f875e98053fc096cd"
+    }
+  ],
+  "research_state": "NOT_RUN",
+  "research_execution": "forbidden",
+  "unrun_paths": [
+    "all neural adapter, model, training, eval and benchmark paths"
+  ],
+  "blockers": [],
+  "notes": "Dedicated backend source plus source/declaration/gate tests. All actual model integration is NOT_RUN; unknown backend bindings explicit UNBOUND. Official public documentation read, no model package installed/imported.",
+  "next_actions": [],
+  "committed_at_utc": "2026-10-24T16:10:57.181987+00:00"
+}

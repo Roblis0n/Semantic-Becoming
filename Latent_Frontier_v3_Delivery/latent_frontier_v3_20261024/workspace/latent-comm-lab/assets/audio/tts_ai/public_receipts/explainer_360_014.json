@@ -1,0 +1,39 @@
+{
+  "id": "explainer_360_014",
+  "edition": "explainer_360",
+  "scene_id": "S03",
+  "characters": 25,
+  "request_url": "https://api.tts.ai/v1/tts/",
+  "request_body": {
+    "model": "melotts",
+    "text": "再决定是新增概念、细分语境，还是长期保留多个理论。",
+    "voice": "ZH",
+    "format": "wav",
+    "language": "zh",
+    "speed": 1.0
+  },
+  "authentication": "none",
+  "submitted_at_utc": "2026-10-24T18:28:52.260018+00:00",
+  "status": "downloaded",
+  "license": "PERSONAL AND NONCOMMERCIAL USE ONLY",
+  "audio": {
+    "channels": 1,
+    "sample_width_bytes": 2,
+    "sample_rate": 44100,
+    "frames": 223034,
+    "duration_seconds": 5.057460317460317,
+    "sample_peak": 6594,
+    "sample_rms": 1137.6314774380994,
+    "sha256": "c9f9b75db3194d07dad4adae23c89a74bd8277f518d2a15d94fbee1c79ff29e0",
+    "audio_listened": false
+  },
+  "downloaded_at_utc": "2026-10-24T18:29:26.848223+00:00",
+  "response": {
+    "status": "queued",
+    "credits_used": 0,
+    "credits_remaining": 0,
+    "instructions_supported": false,
+    "instructions_applied": false
+  },
+  "recovery_rule": "If downloaded, use actual WAV hash. If pending and private recovery ID unavailable, do not resubmit; outcome is uncertain."
+}

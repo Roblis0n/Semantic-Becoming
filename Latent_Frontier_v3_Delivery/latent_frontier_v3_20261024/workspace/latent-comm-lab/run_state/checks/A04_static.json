@@ -1,0 +1,24 @@
+{
+  "task_id": "A04",
+  "status": "passed",
+  "files_ast_checked": 9,
+  "files": [
+    "src/latent_comm/runtime/__init__.py",
+    "src/latent_comm/runtime/branches.py",
+    "src/latent_comm/runtime/files.py",
+    "src/latent_comm/runtime/journal.py",
+    "src/latent_comm/runtime/loops.py",
+    "src/latent_comm/runtime/recovery.py",
+    "src/latent_comm/runtime/scheduler.py",
+    "src/latent_comm/runtime/transactions.py",
+    "tests/runtime/test_runtime.py"
+  ],
+  "no_model_imports": true,
+  "no_empty_concrete_function_bodies": true,
+  "research_state": "NOT_RUN",
+  "fixture_caps": {
+    "dimension": 64,
+    "steps": 128,
+    "cases": 64
+  }
+}

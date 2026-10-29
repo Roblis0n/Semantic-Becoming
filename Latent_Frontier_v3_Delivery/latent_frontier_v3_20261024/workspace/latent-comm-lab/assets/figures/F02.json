@@ -1,0 +1,595 @@
+{
+  "title": "概念诞生的四步",
+  "description": "钥匙有效期例：旧类别有冲突，反例区分行为，定义授权有效期谓词，旧读者迁移。若无候选概念则保留未决分支。",
+  "width": 1280,
+  "height": 720,
+  "background": "#F4F1E8",
+  "elements": [
+    {
+      "x": 64,
+      "y": 42,
+      "w": 1152,
+      "h": 62.919999999999995,
+      "text": "概念诞生的四步",
+      "size": 44,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Serif CJK SC",
+      "kind": "text",
+      "id": "e001"
+    },
+    {
+      "x": 64,
+      "y": 116,
+      "w": 1152,
+      "h": 47.19,
+      "text": "每一步都输出可计算对象",
+      "size": 33,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e002"
+    },
+    {
+      "points": [
+        [
+          64,
+          658
+        ],
+        [
+          1216,
+          658
+        ]
+      ],
+      "stroke": "#CECDBF",
+      "sw": 1,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e003"
+    },
+    {
+      "x": 64,
+      "y": 675,
+      "w": 1000,
+      "h": 25.74,
+      "text": "解析示意 / 数学示意 · 无模型实测",
+      "size": 18,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e004"
+    },
+    {
+      "x": 1100,
+      "y": 675,
+      "w": 116,
+      "h": 25.74,
+      "text": "F02",
+      "size": 18,
+      "color": "#606258",
+      "align": "right",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e005"
+    },
+    {
+      "x": 64,
+      "y": 240,
+      "w": 264,
+      "h": 130,
+      "fill": "#F0DDD1",
+      "stroke": "#9C5138",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e006"
+    },
+    {
+      "x": 79,
+      "y": 255,
+      "w": 234,
+      "h": 44.33,
+      "text": "局部冲突",
+      "size": 31,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e007"
+    },
+    {
+      "x": 79,
+      "y": 301.75,
+      "w": 234,
+      "h": 32.89,
+      "text": "同形钥匙，行为不同",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e008"
+    },
+    {
+      "points": [
+        [
+          334,
+          305
+        ],
+        [
+          352,
+          305
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e009"
+    },
+    {
+      "points": [
+        [
+          340.0,
+          300.0
+        ],
+        [
+          352,
+          305
+        ],
+        [
+          340.0,
+          310.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e010"
+    },
+    {
+      "x": 360,
+      "y": 240,
+      "w": 264,
+      "h": 130,
+      "fill": "#E1E9EA",
+      "stroke": "#496974",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e011"
+    },
+    {
+      "x": 375,
+      "y": 255,
+      "w": 234,
+      "h": 44.33,
+      "text": "操作反例",
+      "size": 31,
+      "color": "#496974",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e012"
+    },
+    {
+      "x": 375,
+      "y": 301.75,
+      "w": 234,
+      "h": 32.89,
+      "text": "K₁ 能开 / K₂ 不能",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e013"
+    },
+    {
+      "points": [
+        [
+          630,
+          305
+        ],
+        [
+          648,
+          305
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e014"
+    },
+    {
+      "points": [
+        [
+          636.0,
+          300.0
+        ],
+        [
+          648,
+          305
+        ],
+        [
+          636.0,
+          310.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e015"
+    },
+    {
+      "x": 656,
+      "y": 240,
+      "w": 264,
+      "h": 130,
+      "fill": "#E4EAD9",
+      "stroke": "#536647",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e016"
+    },
+    {
+      "x": 671,
+      "y": 255,
+      "w": 234,
+      "h": 44.33,
+      "text": "新谓词",
+      "size": 31,
+      "color": "#536647",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e017"
+    },
+    {
+      "x": 671,
+      "y": 301.75,
+      "w": 234,
+      "h": 32.89,
+      "text": "valid_at(key, t)",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e018"
+    },
+    {
+      "points": [
+        [
+          926,
+          305
+        ],
+        [
+          944,
+          305
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e019"
+    },
+    {
+      "points": [
+        [
+          932.0,
+          300.0
+        ],
+        [
+          944,
+          305
+        ],
+        [
+          932.0,
+          310.0
+        ]
+      ],
+      "stroke": "#606258",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e020"
+    },
+    {
+      "x": 952,
+      "y": 240,
+      "w": 264,
+      "h": 130,
+      "fill": "#E9E1EC",
+      "stroke": "#725D7C",
+      "sw": 2,
+      "r": 8,
+      "dash": false,
+      "kind": "rect",
+      "id": "e021"
+    },
+    {
+      "x": 967,
+      "y": 255,
+      "w": 234,
+      "h": 44.33,
+      "text": "版本迁移",
+      "size": 31,
+      "color": "#725D7C",
+      "align": "left",
+      "bold": true,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e022"
+    },
+    {
+      "x": 967,
+      "y": 301.75,
+      "w": 234,
+      "h": 32.89,
+      "text": "v1 读者转入 v2",
+      "size": 23,
+      "color": "#262A25",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e023"
+    },
+    {
+      "x": 85.8,
+      "y": 425.8,
+      "w": 38.400000000000006,
+      "h": 38.400000000000006,
+      "fill": "none",
+      "stroke": "#9C5138",
+      "sw": 5,
+      "kind": "ellipse",
+      "id": "e024"
+    },
+    {
+      "points": [
+        [
+          124.2,
+          445
+        ],
+        [
+          187.4,
+          445
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e025"
+    },
+    {
+      "points": [
+        [
+          169.0,
+          445
+        ],
+        [
+          169.0,
+          461.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e026"
+    },
+    {
+      "points": [
+        [
+          185.0,
+          445
+        ],
+        [
+          185.0,
+          461.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e027"
+    },
+    {
+      "x": 225.8,
+      "y": 425.8,
+      "w": 38.400000000000006,
+      "h": 38.400000000000006,
+      "fill": "none",
+      "stroke": "#9C5138",
+      "sw": 5,
+      "kind": "ellipse",
+      "id": "e028"
+    },
+    {
+      "points": [
+        [
+          264.2,
+          445
+        ],
+        [
+          327.4,
+          445
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e029"
+    },
+    {
+      "points": [
+        [
+          309.0,
+          445
+        ],
+        [
+          309.0,
+          461.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e030"
+    },
+    {
+      "points": [
+        [
+          325.0,
+          445
+        ],
+        [
+          325.0,
+          461.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 6,
+      "fill": "none",
+      "dash": false,
+      "kind": "polyline",
+      "id": "e031"
+    },
+    {
+      "x": 64,
+      "y": 495,
+      "w": 340,
+      "h": 35.75,
+      "text": "形状相同 ≠ 授权相同",
+      "size": 25,
+      "color": "#606258",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e032"
+    },
+    {
+      "x": 650,
+      "y": 420,
+      "w": 540,
+      "h": 77.22,
+      "text": "shape_match ∧ authorized\n∧ (start ≤ t < expiry)",
+      "size": 27,
+      "color": "#536647",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e033"
+    },
+    {
+      "points": [
+        [
+          490,
+          375
+        ],
+        [
+          490,
+          455
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "dash": true,
+      "kind": "polyline",
+      "id": "e034"
+    },
+    {
+      "points": [
+        [
+          495.0,
+          443.0
+        ],
+        [
+          490,
+          455
+        ],
+        [
+          485.0,
+          443.0
+        ]
+      ],
+      "stroke": "#9C5138",
+      "sw": 2,
+      "fill": "none",
+      "kind": "polyline",
+      "id": "e035"
+    },
+    {
+      "x": 365,
+      "y": 475,
+      "w": 260,
+      "h": 74.36,
+      "text": "没有可用候选\n保留未决 / 多域",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e036"
+    },
+    {
+      "x": 64,
+      "y": 607,
+      "w": 1152,
+      "h": 37.18,
+      "text": "新变量必须带定义程序；新名字本身不增加可区分性",
+      "size": 26,
+      "color": "#9C5138",
+      "align": "left",
+      "bold": false,
+      "font": "Noto Sans CJK SC",
+      "kind": "text",
+      "id": "e037"
+    }
+  ],
+  "notes": "",
+  "sources": [
+    "media/07_图形与动画规范.md",
+    "docs/related_work.md"
+  ],
+  "research_state": "NOT_RUN"
+}

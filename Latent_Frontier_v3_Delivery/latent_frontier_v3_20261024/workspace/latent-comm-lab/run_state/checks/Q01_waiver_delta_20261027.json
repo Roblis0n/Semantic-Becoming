@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "Only acceptance-scope/document/receipt delta after explicit user waiver. Media binaries unchanged; existing full hash/decode/visual evidence reused. No research or unchanged checks rerun.",
+  "authorization": {
+    "path": "release/authorization_updates/20261027_AUDITION_SCOPE_CHANGE.json",
+    "sha256": "d7afb73da5140d37dd78c8305bdedab684657db1ca7db8e9cf03eeb8cbd108c6"
+  },
+  "auditory_review": "USER_WAIVED_NOT_PERFORMED",
+  "audio_listened": false,
+  "changed_python_AST": [
+    {
+      "path": "assets/video/intro_90/commit_narrated_branch.py",
+      "sha256": "d80011c0b72cfd3917c03625bc2cc404eeac12958c9a208307d7af51da494cbe"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "sha256": "9caa902252b42d2935ea3451665ccfcf7f48f9ac9186c1a6b9fa22a730dcc990"
+    },
+    {
+      "path": "scripts/write_permission_review.py",
+      "sha256": "9602deb5e5c65041f8142ccd538c9eaf04d69b561c6dc838510b7b54e12dd827"
+    },
+    {
+      "path": "scripts/write_final_verification.py",
+      "sha256": "06ceb22fa2d9e3d8faac7d8fd2228ff539751ad106f739fd9d8ebf2b4d1e68e4"
+    }
+  ],
+  "document_qa": {
+    "path": "run_state/checks/D03/media_waiver_20261027/qa_delta.json",
+    "sha256": "342de21ac11e8c4fa8c970959d544cafadb159cfc244e2a672d104739101896f"
+  },
+  "prior_research_byte_comparison": {
+    "path": "run_state/checks/Q01_media_delta_20261027.json",
+    "sha256": "75ba0d69ef624946abd3fb4667627a2bba6ac30b71c99ddbba047f7ef3dd11b9"
+  },
+  "research_state": "NOT_RUN"
+}
