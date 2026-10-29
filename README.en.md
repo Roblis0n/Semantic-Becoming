@@ -16,7 +16,7 @@ We propose a cross-model computational architecture in which a message can carry
 
 Implementation framework: **`latent-comm-lab`**. Research series: **Latent Frontier**.
 
-[Research problem](#problem) · [Formal model](#formalism) · [Concepts and questions](#language) · [Learning transfer](#learning) · [World construction](#worlds) · [Composition routes](#composition) · [Structural analysis](#analysis) · [Research program](#research-program) · [Source correspondence](#implementation) · [Outlook](#outlook) · [Quick start](#quickstart) · [Reading](#reading) · [Long-term outlook](#future-work)
+[Research problem](#problem) · [Formal model](#formalism) · [Concepts and questions](#language) · [Learning transfer](#learning) · [World construction](#worlds) · [Composition routes](#composition) · [Structural analysis](#analysis) · [Research program](#research-program) · [Source correspondence](#implementation) · [Outlook](#outlook) · [Quick start](#quickstart) · [Reading](#reading) · [Long-term outlook](#future-work) · [Licensing](#licensing)
 
 <a id="problem"></a>
 ## 1. Research problem and proposed contributions
@@ -434,7 +434,16 @@ Start with **C10**, **C13** or **C16** to trace one of the three method families
 
 ---
 
-Repository scope: research source, design documents, development records and selected silent demonstration videos. TTS speech, videos containing that speech and historical media working files remain in the separate local delivery under their respective terms; full-delivery manifests describe that artifact set. Source license awaits maintainer selection.
+<a id="licensing"></a>
+**Licensing**
+
+| Material | License |
+| --- | --- |
+| Project-original code, scripts, executable examples and machine-executable configuration | [Apache-2.0](LICENSE) |
+| Project-original research documents, explanatory text and self-produced presentation assets | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| Third-party material, including TTS speech and videos containing it | Original terms; see [licensing scope and third-party notices](LICENSING.md). |
+
+These licenses apply to their respective content categories. Retain existing notices and attribute the project-original documents and assets to **Semantic Becoming contributors**. See [NOTICE](NOTICE) for project attribution and [LICENSING.md](LICENSING.md) for mixed-content files, the seven included silent demonstration videos and third-party exclusions. The complete local delivery also contains media working files that are not distributed in this Git repository.
 
 <a id="future-work"></a>
 ## 13. Long-term research outlook

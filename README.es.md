@@ -16,7 +16,7 @@ Proponemos una arquitectura computacional entre modelos en la que un mensaje pue
 
 Marco de implementación: **`latent-comm-lab`**. Serie de investigación: **Latent Frontier**.
 
-[Problema de investigación](#problem) · [Modelo formal](#formalism) · [Conceptos y preguntas](#language) · [Transferencia de aprendizaje](#learning) · [Construcción de mundos](#worlds) · [Rutas de composición](#composition) · [Análisis estructural](#analysis) · [Programa de investigación](#research-program) · [Correspondencia con el código](#implementation) · [Perspectivas](#outlook) · [Inicio rápido](#quickstart) · [Lecturas](#reading) · [Perspectivas a largo plazo](#future-work)
+[Problema de investigación](#problem) · [Modelo formal](#formalism) · [Conceptos y preguntas](#language) · [Transferencia de aprendizaje](#learning) · [Construcción de mundos](#worlds) · [Rutas de composición](#composition) · [Análisis estructural](#analysis) · [Programa de investigación](#research-program) · [Correspondencia con el código](#implementation) · [Perspectivas](#outlook) · [Inicio rápido](#quickstart) · [Lecturas](#reading) · [Perspectivas a largo plazo](#future-work) · [Licencias](#licensing)
 
 <a id="problem"></a>
 ## 1. Problema de investigación y contribuciones propuestas
@@ -434,7 +434,16 @@ Comience por **C10**, **C13** o **C16** para seguir una de las tres familias de 
 
 ---
 
-El repositorio incluye código de investigación, documentos de diseño, registros de desarrollo y una selección de vídeos de demostración sin pista de audio. Las voces TTS, los vídeos que las contienen y los archivos históricos de trabajo multimedia permanecen en la entrega local separada, conforme a sus respectivas condiciones; los manifiestos de la entrega completa describen ese conjunto. La licencia del código está pendiente de elección por el responsable del proyecto.
+<a id="licensing"></a>
+**Licencias**
+
+| Material | Licencia |
+| --- | --- |
+| Código, scripts, ejemplos ejecutables y configuración ejecutable de autoría del proyecto | [Apache-2.0](LICENSE) |
+| Documentos de investigación, textos explicativos y materiales de presentación de autoría del proyecto | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| Material de terceros, incluidas las voces TTS y los vídeos que las contienen | Condiciones originales; véanse el [alcance de las licencias y los avisos sobre terceros](LICENSING.md). |
+
+Estas licencias se aplican a sus respectivas categorías de contenido. Conserve los avisos existentes y atribuya los documentos y materiales originales del proyecto a **Semantic Becoming contributors**. Consulte [NOTICE](NOTICE) para la atribución del proyecto y [LICENSING.md](LICENSING.md) para los archivos de contenido mixto, los siete vídeos de demostración sin pista de audio incluidos y las exclusiones de material de terceros. La entrega local completa también contiene archivos de trabajo multimedia que no se distribuyen en este repositorio Git.
 
 <a id="future-work"></a>
 ## 13. Perspectiva de investigación a largo plazo

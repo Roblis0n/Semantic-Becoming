@@ -3,6 +3,10 @@
 当前修订入口：reports/开源前逻辑终检_20261029.md。原任务回执保留为历史证据；当前字节指纹见 manifest.json。
 
 - FILE_INDEX.md
+- LICENSE
+- LICENSE-CC-BY-4.0
+- LICENSING.md
+- NOTICE
 - README.md
 - RELEASE_REPORT.md
 - assets/animations/A01/A01.mp4

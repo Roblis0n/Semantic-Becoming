@@ -1,10 +1,12 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "latent-comm-lab"
 version = "0.1.0"
 description = "Semantic Becoming: typed research source and finite reference semantics; models NOT_RUN"
+license = "Apache-2.0 AND CC-BY-4.0"
+license-files = ["LICENSE", "LICENSE-CC-BY-4.0", "NOTICE", "LICENSING.md"]
 requires-python = ">=3.11"
 dependencies = []
 [project.optional-dependencies]

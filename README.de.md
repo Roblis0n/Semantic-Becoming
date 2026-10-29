@@ -16,7 +16,7 @@ Wir schlagen eine modellübergreifende Berechnungsarchitektur vor, in der eine N
 
 Implementierungsrahmen: **`latent-comm-lab`**. Forschungsreihe: **Latent Frontier**.
 
-[Forschungsproblem](#problem) · [Formales Modell](#formalism) · [Konzepte und Fragen](#language) · [Lerntransfer](#learning) · [Weltkonstruktion](#worlds) · [Kompositionsrouten](#composition) · [Strukturanalyse](#analysis) · [Forschungsprogramm](#research-program) · [Zuordnung zum Quellcode](#implementation) · [Ausblick](#outlook) · [Schnellstart](#quickstart) · [Weiterführende Lektüre](#reading) · [Langfristige Perspektiven](#future-work)
+[Forschungsproblem](#problem) · [Formales Modell](#formalism) · [Konzepte und Fragen](#language) · [Lerntransfer](#learning) · [Weltkonstruktion](#worlds) · [Kompositionsrouten](#composition) · [Strukturanalyse](#analysis) · [Forschungsprogramm](#research-program) · [Zuordnung zum Quellcode](#implementation) · [Ausblick](#outlook) · [Schnellstart](#quickstart) · [Weiterführende Lektüre](#reading) · [Langfristige Perspektiven](#future-work) · [Lizenzen](#licensing)
 
 <a id="problem"></a>
 ## 1. Forschungsproblem und vorgeschlagene Beiträge
@@ -434,7 +434,16 @@ Mit **C10**, **C13** oder **C16** kann eine der drei Methodenfamilien durch eine
 
 ---
 
-Das Repository enthält Forschungsquellcode, Entwurfsdokumente, Entwicklungsaufzeichnungen und ausgewählte Demonstrationsvideos ohne Tonspur. TTS-Sprachausgaben, Videos mit diesen Tonspuren und historische Medienarbeitsdateien verbleiben in der separaten lokalen Lieferung unter ihren jeweiligen Bedingungen; die vollständigen Lieferverzeichnisse beziehen sich auf diesen Bestand. Die Quellcodelizenz wird noch vom Projektverantwortlichen festgelegt.
+<a id="licensing"></a>
+**Lizenzen**
+
+| Inhalt | Lizenz |
+| --- | --- |
+| Vom Projekt erstellter Code, Skripte, ausführbare Beispiele und maschinell ausführbare Konfiguration | [Apache-2.0](LICENSE) |
+| Vom Projekt erstellte Forschungsdokumente, erläuternde Texte und Präsentationsmaterialien | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| Inhalte Dritter, einschließlich TTS-Sprachausgaben und Videos mit diesen Tonspuren | Ursprüngliche Bedingungen; siehe [Lizenzumfang und Hinweise zu Drittmaterial](LICENSING.md). |
+
+Die Lizenzen gelten jeweils für die zugehörige Inhaltskategorie. Bewahren Sie vorhandene Hinweise und nennen Sie **Semantic Becoming contributors** als Urheberangabe für die originalen Dokumente und Materialien des Projekts. [NOTICE](NOTICE) enthält die Projektzuordnung; [LICENSING.md](LICENSING.md) erläutert Dateien mit gemischten Inhalten, die sieben enthaltenen Demonstrationsvideos ohne Tonspur und Ausnahmen für Drittmaterial. Die vollständige lokale Lieferung umfasst außerdem Medienarbeitsdateien, die nicht in diesem Git-Repository verteilt werden.
 
 <a id="future-work"></a>
 ## 13. Langfristige Forschungsperspektive

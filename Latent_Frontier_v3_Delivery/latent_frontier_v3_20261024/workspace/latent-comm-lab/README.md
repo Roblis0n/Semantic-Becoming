@@ -6,7 +6,7 @@
 
 > **2026-10-29 逻辑终检修订**：已修复作用域、事务草稿、因果缓存、数据分割与版本、假设表达等内部不一致，244项定向检查及68份配方编译通过。48机制、20组合、12终局全部保留；本轮按理论创新优先进行审查。
 >
-> 最新修改、API变化、检查依据与实现边界见[开源前逻辑终检](reports/开源前逻辑终检_20261029.md)。原任务回执和下面的2026-10-27媒体状态为历史记录；失效回执已在当前账本中标明，未重新封装历史ZIP。源码许可按用户选择暂未确定。
+> 最新修改、API变化、检查依据与实现边界见[开源前逻辑终检](reports/开源前逻辑终检_20261029.md)。原任务回执和下面的2026-10-27媒体状态为历史记录；失效回执已在当前账本中标明，未重新封装历史ZIP。当前许可为：原创软件代码 [Apache-2.0](LICENSE)，原创文档与自制展示素材 [CC BY 4.0](LICENSE-CC-BY-4.0)。具体范围及第三方媒体例外见[许可说明](LICENSING.md)与 [NOTICE](NOTICE)。
 
 前沿机制提案 / 无模型实测
 
@@ -82,7 +82,7 @@ L13 初次全学习审查错误选择了三个 legacy 研究入口调用。它�
 
 状态快照：**2026-10-27 10:53 UTC**。
 
-- **两版实际有声输出已生成**：[90.000秒MP4](assets/video/intro_90/intro_90_narrated_personal.mp4)与[完整WAV](assets/audio/intro_90.narration.wav)，以及[360.000秒MP4](assets/video/explainer_360/explainer_360_narrated_personal.mp4)与[完整WAV](assets/audio/explainer_360.narration.wav)。14段、44段字幕按实测PCM片段边界编排；解码、时长、响度、削波和画面检查均有证据。短版未重做，原静音稿作为历史保留。
+- **两版实际有声输出已生成**：90.000秒MP4（本地完整交付文件：`assets/video/intro_90/intro_90_narrated_personal.mp4`，未随 Git 分发）与完整WAV（本地完整交付文件：`assets/audio/intro_90.narration.wav`，未随 Git 分发），以及360.000秒MP4（本地完整交付文件：`assets/video/explainer_360/explainer_360_narrated_personal.mp4`，未随 Git 分发）与完整WAV（本地完整交付文件：`assets/audio/explainer_360.narration.wav`，未随 Git 分发）。14段、44段字幕按实测PCM片段边界编排；解码、时长、响度、削波和画面检查均有证据。短版未重做，原静音稿作为历史保留。
 - **实际计数与历史分开**：58个唯一文案片段、1,754字已全部取得WAV；累计60次请求获受理、1,811字，credits_used=0。第29段16字及第36段41字的原请求远端结果仍记UNKNOWN，获准重复风险替代合成的两次请求另记。现已无缺失旁白、无待提交文案；此前拒绝与具体授权分别保留，不盲目重传。私密恢复能力和临时下载地址不入包。
 - **听审已由用户豁免，未执行**：2026年10月27日11:09 UTC用户明确移除听审条件，状态为`USER_WAIVED_NOT_PERFORMED`，不是PASS。实际听审覆盖为零；原P17要求及不支持音频输入的历史证据保留。客观解码、波形或字幕检查不是人工试听或逐词核验。媒体制作及客观QA已完成，听审不再阻塞当前交付。当前证据见[媒体报告](reports/media_qa.json)和[合成记录](assets/audio/tts_ai/generation_summary.json)。
 

@@ -16,7 +16,7 @@
 
 实现框架：**`latent-comm-lab`**。系列研究计划：**Latent Frontier**。
 
-[研究问题](#problem) · [形式模型](#formalism) · [概念与问题](#language) · [学习运输](#learning) · [世界构造](#worlds) · [组合路线](#composition) · [结构分析](#analysis) · [研究计划](#research-program) · [源码对应](#implementation) · [发展前景](#outlook) · [快速开始](#quickstart) · [研究文档](#reading) · [长期展望](#future-work)
+[研究问题](#problem) · [形式模型](#formalism) · [概念与问题](#language) · [学习运输](#learning) · [世界构造](#worlds) · [组合路线](#composition) · [结构分析](#analysis) · [研究计划](#research-program) · [源码对应](#implementation) · [发展前景](#outlook) · [快速开始](#quickstart) · [研究文档](#reading) · [长期展望](#future-work) · [许可](#licensing)
 
 <a id="problem"></a>
 ## 1. 研究问题与拟议贡献
@@ -434,7 +434,16 @@ python -X utf8 -B scripts/check_source_bindings.py
 
 ---
 
-仓库收录研究源码、设计文档、开发记录与选定的静音展示视频。TTS 语音、含其音轨的视频及历史媒体工作文件保留在独立的本地交付中，并沿用各自条款；完整交付清单对应那套产物。源码许可待维护者确定。
+<a id="licensing"></a>
+**许可说明**
+
+| 内容 | 许可证 |
+| --- | --- |
+| 项目原创代码、脚本、可执行示例与机器可执行配置 | [Apache-2.0](LICENSE) |
+| 项目原创研究文档、解释性文本与自制展示素材 | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| 第三方内容，包括 TTS 语音及含其音轨的视频 | 保留原条款，见[许可范围与第三方声明](LICENSING.md)。 |
+
+两种许可证分别适用于相应内容类别。请保留已有声明，并将项目原创文档与素材署名为 **Semantic Becoming contributors**。项目署名见 [NOTICE](NOTICE)；混合内容文件、已入库的七个静音展示视频及第三方例外见 [LICENSING.md](LICENSING.md)。完整本地交付另含未随本 Git 仓库分发的媒体工作文件。
 
 <a id="future-work"></a>
 ## 13. 长期研究展望

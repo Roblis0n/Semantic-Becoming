@@ -16,7 +16,7 @@ Nous proposons une architecture de calcul intermodèle dans laquelle un message 
 
 Cadre d’implémentation : **`latent-comm-lab`**. Programme de recherche : **Latent Frontier**.
 
-[Problème de recherche](#problem) · [Modèle formel](#formalism) · [Concepts et questions](#language) · [Transfert d’apprentissage](#learning) · [Construction de mondes](#worlds) · [Voies de composition](#composition) · [Analyse structurelle](#analysis) · [Programme de recherche](#research-program) · [Correspondance avec le code](#implementation) · [Perspectives](#outlook) · [Démarrage rapide](#quickstart) · [Lectures](#reading) · [Perspectives à long terme](#future-work)
+[Problème de recherche](#problem) · [Modèle formel](#formalism) · [Concepts et questions](#language) · [Transfert d’apprentissage](#learning) · [Construction de mondes](#worlds) · [Voies de composition](#composition) · [Analyse structurelle](#analysis) · [Programme de recherche](#research-program) · [Correspondance avec le code](#implementation) · [Perspectives](#outlook) · [Démarrage rapide](#quickstart) · [Lectures](#reading) · [Perspectives à long terme](#future-work) · [Licences](#licensing)
 
 <a id="problem"></a>
 ## 1. Problème de recherche et contributions proposées
@@ -434,7 +434,16 @@ Commencer par **C10**, **C13** ou **C16** permet de suivre l’une des trois fam
 
 ---
 
-Le dépôt comprend le code de recherche, les documents de conception, les traces de développement et une sélection de vidéos de démonstration sans piste audio. Les voix de synthèse TTS, les vidéos qui les contiennent et les fichiers de travail multimédias historiques restent dans la livraison locale distincte, selon leurs conditions respectives ; les manifestes de livraison complète décrivent cet ensemble. La licence du code reste à choisir par le responsable du projet.
+<a id="licensing"></a>
+**Licences**
+
+| Contenu | Licence |
+| --- | --- |
+| Code, scripts, exemples exécutables et configuration exécutable créés par le projet | [Apache-2.0](LICENSE) |
+| Documents de recherche, textes explicatifs et supports de présentation créés par le projet | [CC BY 4.0](LICENSE-CC-BY-4.0) |
+| Contenus tiers, notamment les voix TTS et les vidéos qui les contiennent | Conditions d’origine ; voir le [périmètre des licences et les mentions relatives aux tiers](LICENSING.md). |
+
+Ces licences s’appliquent à leurs catégories de contenu respectives. Conservez les mentions existantes et attribuez les documents et supports originaux du projet à **Semantic Becoming contributors**. Consultez [NOTICE](NOTICE) pour l’attribution du projet et [LICENSING.md](LICENSING.md) pour les fichiers à contenu mixte, les sept vidéos de démonstration sans piste audio incluses et les exclusions concernant les tiers. La livraison locale complète contient également des fichiers de travail multimédias qui ne sont pas distribués dans ce dépôt Git.
 
 <a id="future-work"></a>
 ## 13. Perspectives de recherche à long terme
