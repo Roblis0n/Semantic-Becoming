@@ -4,8 +4,8 @@
   "research_state": "NOT_RUN",
   "inventory_kind": "FINAL_LOGIC_REVIEW_SOURCE_REVISION_NOT_ORIGINAL_TASK_SEAL",
   "revision_date": "2026-10-29",
-  "updated_at_utc": "2026-10-29T01:13:05.862492+00:00",
-  "static_file_count": 3017,
+  "updated_at_utc": "2026-10-29T02:14:33.004435+00:00",
+  "static_file_count": 3020,
   "files": [
     {
       "path": "assets/animations/A01/A01.mp4",
@@ -2351,6 +2351,21 @@
       "path": "assets/audio/tts_tool_inventory.json",
       "bytes": 389,
       "sha256": "ae74283ec321cc18b64afcfc8748ca18f825b3b24a4aa1b254dc2768f7fdee44"
+    },
+    {
+      "path": "assets/brand/semantic-becoming-banner.png",
+      "bytes": 1138221,
+      "sha256": "5be563f4a1f1860563f675c3eedfd1b461841e1ed44a1bfde5280e2998560330"
+    },
+    {
+      "path": "assets/brand/semantic-becoming-mark.png",
+      "bytes": 352420,
+      "sha256": "05ba88d35fc2a395e5a50a6ba6fd6da6439d8354dd983e64475f68cd493452f4"
+    },
+    {
+      "path": "assets/brand/制作记录.json",
+      "bytes": 4483,
+      "sha256": "e4ee2494bd857d2b0aa1147adf2c1e12acc833a07bdd935860af3d7765598b4f"
     },
     {
       "path": "assets/figures/build_media_sources.py",
@@ -5094,8 +5109,8 @@
     },
     {
       "path": "FILE_INDEX.md",
-      "bytes": 153131,
-      "sha256": "1edf46c79de597e58ed658ea5d1f6d04e03496628d4af4a96e091a61e1abcc13"
+      "bytes": 150223,
+      "sha256": "736f9a8dca3773821936c4a03bf4d379a36db55825fbe5d6739df1fc9997d982"
     },
     {
       "path": "paper/main.tex",
@@ -5149,8 +5164,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9750,
-      "sha256": "65d8ddc978f3f2af99955e3820be8e3c33fa6294535bcf02919b88e8909c8272"
+      "bytes": 9800,
+      "sha256": "19af0690084038237e9ed1208783ea1988ba2fb6e58c869553befbd9d775f6ac"
     },
     {
       "path": "release/authorization_updates/20261025T0234_TTS_APPROVAL.json",

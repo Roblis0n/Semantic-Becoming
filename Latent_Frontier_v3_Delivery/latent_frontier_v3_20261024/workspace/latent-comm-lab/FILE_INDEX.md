@@ -474,6 +474,9 @@
 - assets/audio/tts_ai/scenes/intro_90_S08.wav
 - assets/audio/tts_ai/validate_paused_state.py
 - assets/audio/tts_tool_inventory.json
+- assets/brand/semantic-becoming-banner.png
+- assets/brand/semantic-becoming-mark.png
+- assets/brand/制作记录.json
 - assets/figures/F01.json
 - assets/figures/F01.svg
 - assets/figures/F02.json

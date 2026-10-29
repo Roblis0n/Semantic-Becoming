@@ -3,7 +3,7 @@
   "research_state": "NOT_RUN",
   "revision_date": "2026-10-29",
   "inventory_kind": "CURRENT_EXTRACTED_SOURCE_REVISION_NO_NEW_ZIP",
-  "file_count_excluding_self": 3589,
+  "file_count_excluding_self": 3592,
   "files": [
     {
       "path": "Latent_Frontier_v3_Delivery/START_HERE.md",
@@ -2832,13 +2832,13 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/FILE_INDEX.md",
-      "sha256": "1edf46c79de597e58ed658ea5d1f6d04e03496628d4af4a96e091a61e1abcc13",
-      "bytes": 153131
+      "sha256": "736f9a8dca3773821936c4a03bf4d379a36db55825fbe5d6739df1fc9997d982",
+      "bytes": 150223
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md",
-      "sha256": "65d8ddc978f3f2af99955e3820be8e3c33fa6294535bcf02919b88e8909c8272",
-      "bytes": 9750
+      "sha256": "19af0690084038237e9ed1208783ea1988ba2fb6e58c869553befbd9d775f6ac",
+      "bytes": 9800
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/RELEASE_REPORT.md",
@@ -5191,6 +5191,21 @@
       "bytes": 389
     },
     {
+      "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/brand/semantic-becoming-banner.png",
+      "sha256": "5be563f4a1f1860563f675c3eedfd1b461841e1ed44a1bfde5280e2998560330",
+      "bytes": 1138221
+    },
+    {
+      "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/brand/semantic-becoming-mark.png",
+      "sha256": "05ba88d35fc2a395e5a50a6ba6fd6da6439d8354dd983e64475f68cd493452f4",
+      "bytes": 352420
+    },
+    {
+      "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/brand/制作记录.json",
+      "sha256": "e4ee2494bd857d2b0aa1147adf2c1e12acc833a07bdd935860af3d7765598b4f",
+      "bytes": 4483
+    },
+    {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/figures/F01.json",
       "sha256": "e9a77efb53016678110749d83b3b93dc72d63497a1ada2fb6c85780317181e62",
       "bytes": 7327
@@ -7307,8 +7322,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/checksums.sha256",
-      "sha256": "aae9b7f3c1849965f6433dc22d9b3555fe0f03aab75b238f4e2ea6b39514c698",
-      "bytes": 345851
+      "sha256": "2f6367e3d1aab7c8c3c1a7b018a93fef7928ac9cf1c559519caf2ea911cf84cf",
+      "bytes": 343145
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/configs/compositions/C01.json",
@@ -7937,8 +7952,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/manifest.json",
-      "sha256": "4912042b5cb3619875a6888ab583d6950b8f0a9301bd77ce21d1beb8a86abf09",
-      "bytes": 565234
+      "sha256": "dd423be894d16ef370e742db90f8dd0907f0e32acdcdccf94d2315b98305e01a",
+      "bytes": 550631
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/paper/main.tex",

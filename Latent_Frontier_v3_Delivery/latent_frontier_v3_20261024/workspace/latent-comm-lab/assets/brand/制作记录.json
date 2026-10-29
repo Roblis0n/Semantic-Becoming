@@ -1,0 +1,24 @@
+{
+  "project": "Semantic Becoming",
+  "repository": "latent-comm-lab",
+  "created_date": "2026-10-29",
+  "method": "Built-in image_gen; generated banner and reference-based transparent mark extraction",
+  "concept": "Two offset open forms face one another; their shared negative space suggests a new structure. Warm ivory and charcoal are inherited from the project's existing presentation.",
+  "assets": [
+    {
+      "file": "semantic-becoming-banner.png",
+      "width": 2172,
+      "height": 724,
+      "background": "opaque warm ivory",
+      "prompt": "Use case: logo-brand.\nAsset type: final production-ready horizontal GitHub README identity banner for a research code project, one composition, not a mockup or presentation board.\nProject name, exactly: \"Semantic Becoming\".\nThe project's central idea: communication between models can change concepts, learning rules, and the structure of a shared world. This is exploratory research, not a claim of proven intelligence.\nPrimary request: exceptionally restrained, sophisticated editorial identity with a memorable custom geometric symbol; simple, tactile, thoughtful, no generic AI visual tropes.\nCanvas: 2400 x 800 pixels, 3:1 landscape. Warm ivory background #F4F1E8, charcoal ink #262A25, derived from the existing project presentation. The quality should come from proportion, optical spacing, and confident typography. Background almost solid, only an imperceptibly fine uncoated-paper quality, no visible noise or pattern.\nSymbol: a bold compact abstract glyph made of just two offset open orthogonal forms facing inward, inspired by square brackets that reshape one another. Each part has a clear thick structural silhouette; together their shared negative space implies an emerging stepped S. Open ends and deliberate gaps preserve each part's autonomy. Beautiful optical balance, tiny-radius corners at most. No arrows, no literal S or B typed from a font, no closed enclosing square, no weaving, no knot, no infinity loop. It should look designed by an experienced identity designer and remain legible as a 24 px monochrome icon.\nComposition: one medium-size charcoal symbol in the left area, a precise generous gap, the wordmark \"Semantic Becoming\" on a single horizontal line to its right. Use an elegant contemporary humanist serif with moderate stroke contrast, substantial but not overly bold, refined editorial character and excellent kerning, not ornamental or luxury fashion hairlines. Beneath the wordmark a small carefully spaced neutral sans serif repository identifier, exactly \"latent-comm-lab\". Keep the whole lockup calm, horizontally centered with comfortable outer whitespace. The symbol and title are the entire content. Do not add slogans, claims, lists, separators, footers, browser UI or surrounding page.\nMake the symbol, type edges and spacing absolutely crisp; flat ink, no shadow, no embossing, no glow, no 3D.\nAvoid: brains, neural nets, node graphs, robots, sparkles, stars, chips, hexagons, galaxies, gradients, blue-purple technology colors, lens effects, glossy render, generic app icon background, decorative lines, stock logo feel, watermark. No extra text."
+    },
+    {
+      "file": "semantic-becoming-mark.png",
+      "width": 1254,
+      "height": 1254,
+      "background": "transparent alpha",
+      "prompt": "Use case: background-extraction.\nImage 1 is the edit target: the finished Semantic Becoming banner.\nCreate a standalone transparent-background logo from ONLY the existing charcoal geometric symbol at the left of this image. Remove every letter, all background and all paper texture. Preserve the symbol's exact two-piece structure, silhouette, spacing, orientation, staggered alignment and proportions. Do not redesign it or connect its separate parts. The top-left form opens to the right; the bottom-right form opens to the left; their relative positions must remain identical.\nCenter this exact symbol on a square 1024 x 1024 transparent canvas with generous uniform padding; symbol height approximately 700 pixels. Render both parts as perfectly flat solid charcoal #262A25 with clean antialiased edges. No shading, bevel, emboss, texture or glow. Gaps inside and outside both shapes must be genuinely transparent. Preserve the corner treatment. No white background and no checkerboard baked into pixels. No text, no new shapes."
+    }
+  ],
+  "note": "Raster PNG assets. These are branding graphics, not research evidence or model results."
+}

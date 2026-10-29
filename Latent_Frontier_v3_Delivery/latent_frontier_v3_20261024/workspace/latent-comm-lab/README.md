@@ -1,5 +1,9 @@
 # Semantic Becoming 可改写认知的跨模型计算
 
+<p align="center">
+  <img src="assets/brand/semantic-becoming-banner.png" alt="Semantic Becoming — latent-comm-lab" width="960">
+</p>
+
 > **2026-10-29 逻辑终检修订**：已修复作用域、事务草稿、因果缓存、数据分割与版本、假设表达等内部不一致，244项定向检查及68份配方编译通过。48机制、20组合、12终局全部保留；本轮按理论创新优先进行审查。
 >
 > 最新修改、API变化、检查依据与实现边界见[开源前逻辑终检](reports/开源前逻辑终检_20261029.md)。原任务回执和下面的2026-10-27媒体状态为历史记录；失效回执已在当前账本中标明，未重新封装历史ZIP。源码许可按用户选择暂未确定。

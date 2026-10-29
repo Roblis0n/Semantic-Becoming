@@ -1,4 +1,8 @@
-<h1 align="center">Latent Frontier · Semantic Becoming</h1>
+<p align="center">
+  <img src="Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/assets/brand/semantic-becoming-banner.png" alt="Semantic Becoming — latent-comm-lab" width="960">
+</p>
+
+<h1 align="center">Semantic Becoming</h1>
 <p align="center"><strong>Communication that creates new possibilities for cognition.</strong></p>
 [中文](README.md) · [English](README.en.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md)
 
