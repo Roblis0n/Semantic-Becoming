@@ -4,7 +4,7 @@
   "research_state": "NOT_RUN",
   "inventory_kind": "FINAL_LOGIC_REVIEW_SOURCE_REVISION_NOT_ORIGINAL_TASK_SEAL",
   "revision_date": "2026-10-29",
-  "updated_at_utc": "2026-10-29T02:14:33.004435+00:00",
+  "updated_at_utc": "2026-10-29T02:17:50.221281+00:00",
   "static_file_count": 3020,
   "files": [
     {
@@ -5109,8 +5109,8 @@
     },
     {
       "path": "FILE_INDEX.md",
-      "bytes": 150223,
-      "sha256": "736f9a8dca3773821936c4a03bf4d379a36db55825fbe5d6739df1fc9997d982"
+      "bytes": 153253,
+      "sha256": "75f7261168319da92400e394fa629520f9dd25735d411aa87f29e644978ff417"
     },
     {
       "path": "paper/main.tex",
@@ -5164,8 +5164,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 9800,
-      "sha256": "19af0690084038237e9ed1208783ea1988ba2fb6e58c869553befbd9d775f6ac"
+      "bytes": 9891,
+      "sha256": "9c4b22646f8ad0f14a7f44ef7ea9812c38c225f819c7a912daca5a52f910554c"
     },
     {
       "path": "release/authorization_updates/20261025T0234_TTS_APPROVAL.json",
