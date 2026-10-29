@@ -3,251 +3,435 @@
 </p>
 
 <h1 align="center">Semantic Becoming</h1>
-<p align="center"><strong>Kommunikation als rechnerischen Prozess kognitiver Entwicklung gestalten.</strong></p>
+<p align="center"><strong>Typisierte kognitive Objekte für Konzeptbildung, Lerntransfer und kompositionelle Weltkonstruktion</strong></p>
 
 [中文](README.md) · [English](README.en.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md)
 
-**Was wäre, wenn Kommunikation Intelligenz dabei helfen könnte, neue Begriffe zu bilden, neue Arten des Lernens zu entwickeln und gemeinsam neue Welten zu erkunden?**
+<a id="abstract"></a>
+## Zusammenfassung
 
-Semantic Becoming entwickelt ein Forschungsprogramm rund um diese Möglichkeit. Es verbindet latente Kommunikation, ausführbare Semantik, übertragbare Lerndynamiken und kombinierbare Weltmodelle, um zu untersuchen, wie Zusammenarbeit die Strukturen verändern kann, durch die ein intelligentes System denkt und handelt.
+Wir schlagen eine modellübergreifende Berechnungsarchitektur vor, in der eine Nachricht ein ausführbares Konzept, eine Problemtransformation, eine verhaltensbezogene Aktualisierungsrichtung, eine Plastizitätsregel oder eine Komponente der Weltdynamik übertragen kann. Das Forschungsproblem besteht darin, festzulegen, wie ein Empfänger solche Objekte verwenden kann und dabei deren Definitionsbereiche, operationale Bedeutung, Versionsabhängigkeiten und Herkunftsbeziehungen erhält. **Semantic Becoming** gliedert dieses Problem in drei miteinander verbundene Forschungsprogramme: gegenbeispielgeleitete Bildung von Konzepten und Fragen; Lerntransfer über gemeinsam beobachtbares Verhalten; und Weltkonstruktion aus kausalen Mechanismen und gekoppelten stochastischen Kernen. Wir formulieren die zugehörigen Objekte, geben bedingte Resultate für unterscheidende Konzepte, Lösungstransport, regularisierte Verhaltensabstimmung und Kernnormalisierung an und verknüpfen diese Resultate mit typisierten Mechanismen und Kompositionsrouten. Das Forschungsprogramm untersucht Kommunikation als Mittel, die repräsentationalen, adaptiven und umweltbezogenen Strukturen zu verändern, die den Beteiligten zur Verfügung stehen. Seine rechnerische Grundlage umfasst endliche Referenzsemantiken, einen Rezept-Compiler, versionierte Transaktionen sowie Lern- und Backend-Schnittstellen. Langfristiges Ziel ist eine Forschungsumgebung, in der Konzepte, Adaptionsverfahren und explorierbare Welten zu wiederverwendbaren rechnerischen Ressourcen werden.
 
-Unsere Vision ist Kommunikation als programmierbares Medium kognitiver Entwicklung: ein Medium, in dem Modelle Operationen austauschen, Unterscheidungen entwickeln, Fragen umformen, Arten der Anpassung teilen und den Raum möglicher Erfahrungen erweitern können.
+**Schlüsselwörter:** latente Kommunikation; ausführbare Semantik; Konzeptbildung; Problemmorphismen; Verhaltenstransport; Plastizitätsregeln; kausale Komposition; epistemische Provenienz.
 
-Das Projekt verbindet **einen theoretischen Rahmen, eine kombinierbare Forschungsarchitektur und Grundlagen für zukünftige Forschungsprodukte**. Das Implementierungsframework heißt `latent-comm-lab`; die umfassende Forschungslandschaft trägt den Namen **Latent Frontier**.
+Implementierungsrahmen: **`latent-comm-lab`**. Forschungsreihe: **Latent Frontier**.
 
-[Vision](#vision) · [Theorie](#thesis) · [Drei Forschungsfronten](#frontiers) · [Architektur](#architecture) · [Explorationszyklus](#exploration-loop) · [Produktvision](#product) · [Anwendungen](#use-cases) · [Langfristiger Wert](#value) · [Forschungslandschaft](#research-map) · [Zukunftshorizonte](#horizons) · [Entwicklungspfad](#roadmap) · [Schnellstart](#quickstart) · [Vertiefung](#reading) · [Mitwirken](#participate)
+[Forschungsproblem](#problem) · [Formales Modell](#formalism) · [Konzepte und Fragen](#language) · [Lerntransfer](#learning) · [Weltkonstruktion](#worlds) · [Kompositionsrouten](#composition) · [Strukturanalyse](#analysis) · [Forschungsprogramm](#research-program) · [Zuordnung zum Quellcode](#implementation) · [Ausblick](#outlook) · [Schnellstart](#quickstart) · [Weiterführende Lektüre](#reading)
 
-<a id="vision"></a>
-## Ein größerer Möglichkeitsraum für Intelligenz
+<a id="problem"></a>
+## 1. Forschungsproblem und vorgeschlagene Beiträge
 
-Ein intelligentes System arbeitet durch ein Zusammenspiel von Strukturen: die Unterscheidungen, die es ausdrücken kann, die Fragen, die es formulieren kann, die Operationen, die es ausführen kann, die Art und Weise, wie es lernt, und die Umgebungen, in denen es Erfahrungen sammelt. Diese Strukturen prägen seine Handlungsmöglichkeiten.
+Ein Empfänger verfüge über eine Zustandsrepräsentation, eine Menge ausführbarer Operationen, eine Fragensprache, eine Adaptionsregel und ein Umgebungsmodell. Dieses Projekt untersucht, wie Kommunikation eine wohldefinierte Änderung an einer dieser Strukturen bereitstellen kann. Für jede Änderung muss festgelegt werden, was sie liest, was sie verändert, wie ihre Ausgabe interpretiert wird und wie spätere Berechnungen davon abhängen.
 
-Kommunikation eröffnet die Chance, solche Strukturen gemeinsam weiterzuentwickeln. Ein Modell kann eine neue begriffliche Unterscheidung beitragen; ein anderes kann eine hilfreiche Problemumformung, eine Lernrichtung oder einen kausalen Mechanismus bereitstellen. Ihre Interaktion kann zum Ort werden, an dem neue kognitive Ressourcen entstehen und weitergegeben werden.
+Die drei Forschungsfragen sind konkret:
 
-**Wir wollen die rechnerischen Grundlagen für Intelligenz schaffen, die durch Austausch wächst.** Daraus entsteht eine langfristige Perspektive für kollaborative KI: Systeme, die reichere gemeinsame Sprachen entwickeln, hilfreiche Entdeckungen über Modellgrenzen hinweg weitertragen und neue Räume für Forschung und Erkundung eröffnen.
+- **RQ1: Repräsentationserweiterung.** Können die Beteiligten ausgehend von einer endlichen Domäne, einer bestehenden Prädikatensprache und einem aufgabenrelevanten Gegenbeispiel ein Prädikat konstruieren, das Zustände unterscheidet, die durch die alte Sprache als gleich behandelt werden, und Lösungen anschließender Fragen über eine explizite Antwortrelation transportieren?
+- **RQ2: Adaptionstransfer.** Welche vom Sender induzierten Verhaltensrichtungen kann ein Empfänger bei heterogenen Parameterräumen und einem gemeinsamen Verhaltens-Readout realisieren, und wie kann ein Aktualisierungsprogramm mit festgelegtem Geltungsbereich diese Adaption über mehrere Schritte entwickeln?
+- **RQ3: Umgebungskomposition.** Welche Annahmen führen bei gegebenen kausalen Modulen, lokalen Übergangskernen und einer gemeinsamen exogenen Verteilung zu einer normalisierten gemeinsamen Welt, und welche Abfragen können die noch offenen Mechanismen oder Kopplungen unterscheiden?
 
-<a id="thesis"></a>
-## Die theoretische Grundidee: Kommunikation kann die Mittel des Denkens verändern
+Der vorgeschlagene Beitrag besteht in der gemeinsamen Protokollarchitektur und ihrer auf Mechanismen bezogenen Forschungsagenda:
 
-Am Anfang steht eine einfache Frage: **Was soll eine Nachricht verändern können?**
+| Beitrag | Explizit gemachtes Objekt | Forschungsanforderung |
+| --- | --- | --- |
+| Typisierter kognitiver Austausch | Ein versioniertes Objekt mit deklarierter Operation, Domäne, Wirkung und Provenienz | Eine Empfängerschnittstelle und die bei ihrer Verwendung erhaltenen Relationen spezifizieren. |
+| Konzept–Frage-Komposition | Unterscheidende Prädikate, Lösungsfasern und Rückübersetzungsabbildungen | Nachverfolgen, welche Unterscheidungen und Lösungen eine Revision überstehen. |
+| Lern–Welt-Komposition | Verhaltensbezogene Aktualisierungsziele, Plastizitätsprogramme und gekoppelte Weltkomponenten | Schnittstellen und Abhängigkeiten erhalten, die zur Interpretation der resultierenden Berechnung nötig sind. |
+| Überprüfbare Forschungsinfrastruktur | Mechanismen, deklarative Rezepte, typisierte IR und versionierte Transaktionen | Theoretische Objekte mit verantwortlichen Quellcodemodulen und beschränkten Referenzverfahren verbinden. |
 
-Semantic Becoming betrachtet eine Nachricht als potenzielles rechnerisches Objekt mit einem deklarierten Anwendungsbereich, einer Operation und einer Beziehung zu ihrer Quelle. Eine Nachricht kann auf den Zustand eines Empfängers wirken, einen Begriff einführen, eine Lösungsbeziehung übertragen, eine Lernregel vorschlagen oder einen Weltmechanismus beitragen. Damit das Objekt beim Empfänger Bedeutung erhält, braucht es eine explizite Schnittstelle.
+Die folgenden mathematischen Werkzeuge liefern die Semantik dieser Anforderungen. Der Forschungsbeitrag des Projekts betrifft ihre Organisation in Kommunikationsobjekten, Schnittstellen und kompositionellen Arbeitsabläufen.
 
-Drei Gedanken strukturieren die Theorie:
+<a id="formalism"></a>
+## 2. Formales Modell: Nachrichten als Zustandstransformationen mit Geltungsbereich
 
-1. **Bedeutung wird durch ihre Wirkungen operational.** Ein Begriff erhält rechnerischen Gehalt durch die Unterscheidungen, Prüfungen und Operationen, die er ermöglicht. Ein übertragbares Objekt trägt daher genügend Struktur mit sich, um seine Verwendung und die dabei erhaltenen Beziehungen beschreiben zu können.
-2. **Unterschiede können zu Ressourcen für Entdeckungen werden.** Widersprüchliche lokale Interpretationen können eine fehlende Unterscheidung sichtbar machen. Ein Gegenbeispiel kann einen neuen Begriff, eine überarbeitete Fragestellung oder eine andere Zerlegung einer Welt anregen. Die Forschungsaufgabe besteht darin, diese Übergänge in eine ausführbare Form zu bringen.
-3. **Kognitive Entwicklung kann mehrere Strukturen zugleich betreffen.** Begriffe prägen Fragen; Fragen leiten das Lernen; Lernen verändert die in einer Umgebung verfügbaren Handlungen; neue Umgebungen erzeugen Erfahrungen, die Begriffe weiterentwickeln. Die Beziehungen zwischen diesen Veränderungen stehen im Zentrum des Projekts.
+### 2.1 Kognitiver Metazustand und Objektidentität
 
-Die Architektur beschreibt einen kognitiven Metazustand als:
+Die kognitive Konfiguration des Empfängers wird dargestellt durch:
 
 $$
-M=(Z,F,O,P,Q,V,K,W,U,E)
+M=(Z,F,O,P,Q,V,K,W,U,E).
 $$
 
-Dabei besitzen Zustand und Symbole **Z**, Referenzrahmen **F**, Ontologie **O**, Programme **P**, Fragen **Q**, interne Zielperspektiven **V**, Uhren und Skalen **K**, Welten **W**, Lernregeln **U** sowie Evidenz **E** jeweils eine eigene Identität und eigene Transformationsregeln. Eine Nachricht schlägt einen zuständigkeitsbezogenen Übergang vor, schematisch $M'_B=\mathcal{T}_m(M_B)$. Diese Schreibweise schafft eine gemeinsame Schnittstelle für die Frage, welchen Teil der Kognition ein Austausch entwickeln würde.
+Die Komponenten sind Zustand und exakte Symbole **Z**, Referenzrahmen **F**, Ontologie **O**, Programme und Instruktionsdefinitionen **P**, Fragen **Q**, interne Zielperspektiven **V**, Uhren und Skalen **K**, Weltdynamik **W**, Lernregeln **U** sowie Evidenz-Provenienz **E**. Die Versionen dieser Komponenten werden getrennt erfasst. Das externe Nutzerziel bleibt der Bezugspunkt für die Forschungsaufgabe.
 
-Der hier verfolgte konzeptionelle Beitrag besteht darin, diese Objekte und ihre Beziehungen zu einer Forschungsarchitektur zu organisieren. Das Repository verbindet diese Architektur mit formalen Argumenten, Gegenbeispielen, Referenzalgorithmen und Quellcode-Schnittstellen.
+Die wichtigsten ausgetauschten Objekte sind:
 
-<a id="frontiers"></a>
-## Drei Forschungsfronten generativer Kommunikation
+| Objekt | Mathematischer Inhalt | Mechanismenfamilie |
+| --- | --- | --- |
+| Ausführbares Konzept | Ein partielles Prädikat und seine Unterscheidungszeugen | H27, H36 |
+| Problemtransformation | Eine Instanzabbildung und eine Lösungsrückübersetzung | H29, H30 |
+| Lernrichtung | Ein Verhaltensziel, ein Rahmen und ein lokales Realisierungsproblem | H37 |
+| Plastizitätsregel | Ein Aktualisierungsprogramm mit lokalem Feedback und Gedächtnis | H38 |
+| Weltkomponente | Ein struktureller Mechanismus oder Übergangskern mit expliziter Rauschgrenze | H31, H43–H44 |
+| Evidenzausdruck | Quellenereignisse und ihre Abhängigkeitsstruktur | H48 |
 
-### 1. Kommunikation erzeugt Sprache
+### 2.2 Typisierung, Wirkungen und Komposition
 
-Diese Forschungsfront untersucht, wie Modelle die begrifflichen und rechnerischen Sprachen entwickeln könnten, mit denen sie zusammenarbeiten. Zu ihren Objekten gehören lokale semantische Perspektiven, ausführbare Begriffe, Frageumformungen, typisierte Programme und wiederverwendbare Instruktionsstrukturen.
-
-Ein wiederkehrender Forschungspfad beginnt bei Uneinigkeit. Zwei Interpretationen führen zu unterschiedlichen Konsequenzen; ein unterscheidendes Beispiel macht den Unterschied deutlich; daraufhin kann ein präziserer Begriff eingeführt und mit früheren Repräsentationen verbunden werden. Die Fragesprache kann sich mit ihm weiterentwickeln und Untersuchungen formulierbar machen, die zuvor schwer auszudrücken waren.
-
-Problemumformungen tragen eine Beziehung zwischen ihren Lösungen. Wenn ein System $x^2=4$ als $x=2s$ mit $s\in\{-1,1\}$ umschreibt, kann es erklären, wie beide Lösungen wiedergewonnen werden. Solche Beziehungen machen einen Raum von Fragen navigierbar. Wiederkehrende Schlussstrukturen können zudem zu typisierten Makros werden und der Zusammenarbeit eine wachsende Bibliothek rechnerischer Ausdrucksformen geben.
-
-**Die Perspektive:** Forschungssysteme, die an Begriffsbildung, Fragenerfindung und der Entwicklung ihrer eigenen Arbeitssprachen mitwirken. Zu den Mechanismusfamilien zählen **H26–H30, H36 und H40**, verbunden über **C09–C11 und C20**.
-
-### 2. Kommunikation überträgt Lernen
-
-Diese Forschungsfront fragt, wie eine nützliche Art der Anpassung zwischen Modellen unterschiedlicher Architektur übertragen werden könnte. Das übertragbare Objekt kann eine Richtung der Verhaltensverbesserung, eine Aktualisierungsregel, eine lokale Lerngeometrie oder ein strukturiertes Anpassungsverfahren sein.
-
-Die Theorie beginnt mit einem gemeinsamen Raum beobachtbaren Verhaltens. Eine Aktualisierung $\Delta_A$ der Quelle erzeugt eine lokale Verhaltensrichtung $v=J_A\Delta_A$. Der Empfänger sucht eine Aktualisierung, die diese Richtung über seine eigene Schnittstelle realisiert. Eine endliche Referenzformulierung lautet:
+Wir verwenden einen semantischen Nachrichtenvertrag $m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)$, wobei $o$ das kognitive Objekt ist, $R_m,W_m$ die Lese- und Schreibbereiche bezeichnen, $\nu_m$ semantische Versionen erfasst und $\pi_m$ die Provenienz dokumentiert. In einem Typ- und Versionskontext $\Gamma$ lauten die vorgeschlagenen operationalen Anforderungen:
 
 $$
-\Delta_B^\star=\arg\min_{\Delta}\left\|J_B\Delta-v\right\|^2+\lambda\left\|\Delta\right\|^2,\qquad\lambda>0.
+\begin{aligned}
+\Gamma&\vdash m:\tau_{\mathrm{in}}\rightarrow\tau_{\mathrm{out}},\\
+M'&=\mathcal T_m(M),\qquad M\in\operatorname{dom}(\mathcal T_m),\\
+\{\mathsf{pre}_m\}\;&\mathcal T_m\;\{\mathsf{post}_m\},\qquad
+\operatorname{write}(\mathcal T_m)\subseteq W_m.
+\end{aligned}
 $$
 
-Hier beschreiben $J_A$ und $J_B$ lokal, wie Parameteränderungen beider Modelle in Änderungen im gemeinsam beobachtbaren Verhaltensraum übergehen; $\Delta$ bezeichnet eine Parameteränderung, und $\lambda$ gewichtet die Verhaltensübereinstimmung gegenüber dem Umfang der Änderung.
+Das Hoare-Tripel beschreibt partielle Korrektheit auf der deklarierten Domäne. Eine Komposition verlangt kompatible Objekttypen und Versionen, gültige Zwischendomänen und eine Nachbedingung, die die nächste Vorbedingung erfüllt:
 
-Diese Formulierung macht die gewünschte Wirkung explizit und erlaubt dem Empfänger, seine eigenen erreichbaren Richtungen zu berücksichtigen. Der nächste Schritt ist der Austausch strukturierter Lernregeln: Objekte, die festlegen, wie lokales Feedback, Zustand und Gedächtnis künftige Aktualisierungen hervorbringen. Versionierte Rahmen, Metriken und Gültigkeitsbereiche verbinden diese Objekte mit den Bedingungen, unter denen sie sinnvoll sind.
+$$
+\frac{\{P_1\}\mathcal T_{m_1}\{Q_1\}\quad Q_1\Rightarrow P_2\quad
+\{P_2\}\mathcal T_{m_2}\{Q_2\}}
+{\{P_1\}\mathcal T_{m_2}\circ\mathcal T_{m_1}\{Q_2\}}.
+$$
 
-**Die Perspektive:** Netzwerke, in denen Modelle nützliche Arten der Anpassung austauschen und so Forschungswege zu wiederverwendbaren Lernprotokollen und aufeinander aufbauender Anpassung eröffnen. Die zentralen Mechanismen sind **H37–H38**, verbunden über **C13** und die Lernschnittstellen.
+Dieser Vertrag definiert eine präzise Einheit für die Komposition von Mechanismen. Eine Transaktion erfasst die resultierenden Objektversionen und ihre Abhängigkeiten. Ihre semantischen Bedingungen beschreiben, was die zusammengesetzte Operation erhalten muss.
 
-### 3. Kommunikation erschafft Welten
+### 2.3 Repräsentationswechsel transportieren Operationen und Readouts
 
-Diese Forschungsfront untersucht Umgebungen als austauschbare rechnerische Objekte. Kausale Module, Interventionsschnittstellen, Übergangskerne und gemeinsame Zufallsfaktoren werden zu Komponenten, aus denen sich neue Forschungswelten zusammensetzen lassen.
+Für $z\in\mathbb R^n$, eine lineare Operation $T\in\mathbb R^{n\times n}$, einen linearen Readout $r\in\mathbb R^{k\times n}$ und einen invertierbaren Koordinatenwechsel $G\in GL(n)$ werden alle drei Abbildungen gemeinsam transportiert:
 
-Die Struktur der Abhängigkeiten ist entscheidend. Wenn zwei Module vom selben Zufallsereignis abhängen, erhält die Bewahrung dieses gemeinsamen Ereignisses ihre Beziehung. Wird für jedes Modul ein eigenes Ereignis gezogen, entsteht eine andere Welt, selbst wenn ihre einzelnen Verteilungen gleich aussehen. Explizite Abhängigkeiten geben der Zusammensetzung von Welten eine präzise Grundlage.
+$$
+z'=Gz,\qquad T'=GTG^{-1},\qquad r'=rG^{-1},\qquad r'T'z'=rTz.
+$$
 
-Modelle könnten unterschiedliche Mechanismen beitragen, alternative Umgebungen aufbauen, Interventionen untersuchen und aus den entstehenden Trajektorien neue Fragen entwickeln. Eine Familie möglicher Welten kann auch ungeklärte Annahmen repräsentieren und so die Frage eröffnen, welche Beobachtungen oder Experimente sie unterscheiden würden.
+Die Identität folgt durch Kürzung benachbarter inverser Abbildungen. Sie definiert das Ziel der Erhaltung beobachtbarer Größen für **H25**. Eine Schnittstelle zwischen Modellen muss festlegen, welche Zustands-, Operations- und Readout-Abbildungen sie realisieren kann. Dadurch wird die Beziehung zwischen Koordinatentransport und Modellverhalten explizit.
 
-**Die Perspektive:** gemeinsame Weltlabore für kontrafaktische Erkundung, die Entwicklung wissenschaftlicher Hypothesen und die Schaffung neuer Lernaufgaben. Zu den zentralen Mechanismen gehören **H31 und H43–H45**, verbunden über **C12 und C16–C17**.
+<a id="language"></a>
+## 3. Methode I: Konzeptbildung und Problemtransport
 
-<a id="architecture"></a>
-## Eine Architektur, die die Theorie kombinierbar macht
+### 3.1 Ein Unterscheidungskriterium für Konzepterweiterungen
 
-Das Projekt gibt jedem kognitiven Objekt eine Identität, einen Geltungsbereich und einen Platz in einer größeren Berechnung. So lässt sich fragen, wie eine Begriffsänderung eine Frage beeinflusst, wie eine übertragene Aktualisierung von einem Rahmen abhängt oder wie die Zusammensetzung einer Welt die Interpretation einer Beobachtung verändert.
+Sei $D$ eine deklarierte endliche Domäne und $O=\{p_1,\ldots,p_n\}$ eine ausführbare Prädikatensprache. Prädikatswerte können wahr, falsch oder undefiniert sein. Die Antwortsignatur lautet:
 
-| Ebene | Aufgabe | Rolle im Gesamtsystem |
+$$
+\begin{aligned}
+\sigma_O(x)&=(p_1(x),\ldots,p_n(x))\in\{0,1,\bot\}^n,\\
+\sigma_{O'}(x)&=(\sigma_O(x),c(x)),\qquad O'=O\cup\{c\}.
+\end{aligned}
+$$
+
+**Bedingte Aussage 1: eine durch Zeugen belegte Verfeinerung.** Es gelte $\sigma_O(x)=\sigma_O(y)$, die Aufgabe verlange unterschiedliche Aktionen bei $x$ und $y$, und ein Kandidat $c$ sei an beiden Punkten definiert mit $c(x)\ne c(y)$. Dann unterscheiden die erweiterten Signaturen $x$ und $y$. Jede Entscheidungsfunktion, die ausschließlich von der alten Signatur abhängt, liefert an beiden Punkten dasselbe Ergebnis. Das Anhängen der unterschiedlichen Prädikatswerte beweist die Verfeinerung.
+
+Dies ist ein operationales Kriterium für Konzeptbildung: Eine aufgabenrelevante Unterscheidung wird identifiziert, ein Prädikat zu ihrer Realisierung konstruiert und dessen Domäne und Version werden registriert. Kandidatenprädikate lesen deklarierte beobachtbare Felder. Ein Beispiel sind zwei gleich geformte Schlüssel, deren zulässige Datensätze unterschiedliche Ablaufzeiten enthalten: Das Prädikat „zum aktuellen Zeitpunkt gültig“ unterscheidet ein Paar, das eine allein auf Form beruhende Sprache gleichsetzt.
+
+Das endliche Forschungsverfahren sammelt Unterscheidungsanforderungen, enumeriert typisierte Prädikate in einer beschränkten Grammatik, prüft ihre Definiertheit und Anforderungen, hält ausführbare Definitionen und Zeugen fest und bereitet anschließend die Migration der Ontologie und ihrer Leser vor. **H26** analysiert lokale Kompatibilität, **H36** behandelt ausführbare Gegenbeispiele, **H27** konstruiert Konzeptkandidaten und **H39** ermöglicht versionierte Revision. Die Konfliktdiagnose bestimmt, ob eine Konzepterweiterung die passende nächste Operation ist.
+
+### 3.2 Fragen als Relationen und antworterhaltende Abbildungen
+
+Eine Frage $Q$ wird durch einen Instanzraum $X_Q$, einen Antwortraum $Y_Q$ und eine Relation $C_Q$ definiert. Ihre Lösungsfaser ist:
+
+$$
+C_Q\subseteq X_Q\times Y_Q,\qquad
+S_Q(x)=\{y\in Y_Q:(x,y)\in C_Q\}.
+$$
+
+Eine Transformation nach $Q'$ stellt eine Instanzabbildung $\tau$ und eine auf den Ziellösungen definierte Rückübersetzung $\rho_x$ bereit. Daraus folgen zwei getrennte Anforderungen:
+
+$$
+\begin{aligned}
+\text{soundness:}\quad &\rho_x\!\left(S_{Q'}(\tau(x))\right)\subseteq S_Q(x),\\
+\text{completeness:}\quad &S_Q(x)\subseteq\rho_x\!\left(S_{Q'}(\tau(x))\right).
+\end{aligned}
+$$
+
+**Bedingte Aussage 2: kompositioneller Lösungstransport.** Stimmen die relevanten Zwischendomänen überein, bleiben aufeinanderfolgende korrekte Abbildungen unter zusammengesetzter Rückübersetzung korrekt. Aufeinanderfolgende vollständige Abbildungen bleiben vollständig, indem auf jeder Stufe ein Urbild gewählt wird. Beide Inklusionen ergeben Äquivalenz nach Rückübersetzung, auch bei Transformationen, die Hilfsvariablen einführen.
+
+Für $x^2=4$ erhält die Darstellung $x=2s$ mit $s\in\{-1,1\}$ beide Lösungen. Die Einschränkung auf den Einzelwert $x=2$ bleibt korrekt und verliert Vollständigkeit. Diese Anforderungen geben **H29** ein explizites Kriterium zum Vergleich von Frageumformulierungen.
+
+Für domänenübergreifenden Programmtransport verlangt **H30** zusätzlich eine Objektabbildung $\phi$ und eine Operationsabbildung $\gamma$, die erfüllen:
+
+$$
+\phi(a(x))=\gamma(a)(\phi(x)).
+$$
+
+Gilt diese Relation in jedem besuchten Zustand und bleibt jeder Zwischenzustand in seiner gültigen Domäne, erweitert Induktion die Relation auf eine Operationsfolge. Dies ist die Erhaltungsanforderung, die Analogie, ausführbare Programme und Frageumformungen verbindet.
+
+<a id="learning"></a>
+## 4. Methode II: Verhaltenstransport und Plastizitätsprogramme
+
+### 4.1 Eine gemeinsame Verhaltensschnittstelle
+
+Für Modell $i\in\{A,B\}$ seien $\theta_i\in\mathbb R^{p_i}$ die adaptierbaren Parameter und $b_i$ ein differenzierbarer Readout auf dieselbe geordnete und in ihren Einheiten abgestimmte Menge zulässiger Verhaltensproben:
+
+$$
+b_i:\mathbb R^{p_i}\rightarrow\mathbb R^d,\qquad
+J_i=D b_i(\theta_i)\in\mathbb R^{d\times p_i},\qquad
+v=J_A\Delta_A.
+$$
+
+Die Quellaktualisierung $\Delta_A$ legt damit ein lokales Verhaltensziel $v$ fest. Der Empfänger realisiert dieses Ziel durch seine eigene Parametrisierung. Die Jacobi-Matrizen beschreiben lokale Wirkungen an deklarierten Linearisierungspunkten; ihre Rahmen und Versionen gehören daher zum Transportobjekt.
+
+### 4.2 Realisierung beim Empfänger, Geometrie und Residuen
+
+Sei $W_b\succeq0$ eine Gewichtung der Verhaltensfehler, $\Lambda_B\succ0$ die Parameterkostenmetrik des Empfängers und $\lambda>0$. Das verallgemeinerte lokale Realisierungsproblem lautet:
+
+$$
+\Delta_B^\star=\arg\min_\Delta
+(J_B\Delta-v)^\top W_b(J_B\Delta-v)
++\lambda\Delta^\top\Lambda_B\Delta.
+$$
+
+**Bedingte Aussage 3: eine eindeutige regularisierte Realisierung.** Die quadratische Zielfunktion besitzt eine positiv definite Hesse-Matrix und einen eindeutigen Minimierer mit:
+
+$$
+(J_B^\top W_bJ_B+\lambda\Lambda_B)\Delta_B^\star=J_B^\top W_bv.
+$$
+
+Für jedes von null verschiedene $u$ gilt für die zugehörige quadratische Form $\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0$; damit ist die positive Definitheit gezeigt. Der euklidische endliche Referenzfall setzt $W_b=I$ und $\Lambda_B=I$. Die Angabe beider Gewichtungen macht die Wahl der Geometrie sichtbar.
+
+Sei im euklidischen Fall $\Pi_B=J_BJ_B^+$ die Projektion auf den erreichbaren Verhaltensunterraum. Das Residuum zerfällt orthogonal:
+
+$$
+\|J_B\Delta_B^\star-v\|^2
+=\|(I-\Pi_B)v\|^2
++\|\Pi_Bv-J_B\Delta_B^\star\|^2.
+$$
+
+Der erste Term misst eine unerreichbare Komponente. Der zweite misst die Abweichung innerhalb des erreichbaren Unterraums, einschließlich der durch Regularisierung verursachten Schrumpfung. Eine endliche Aktualisierung wird anhand der tatsächlichen Readout-Änderung zusammen mit ihrem lokalen Approximationsresiduum beurteilt. **H37** macht diese Unterscheidungen zu einem Bestandteil des Transportprotokolls.
+
+### 4.3 Eine Aktualisierungsweise transportieren
+
+**H38** repräsentiert Adaption durch eine Regel $U_\psi$ mit festgelegtem Geltungsbereich und lokalem Gedächtnis $h_t$. Auf einer Support-Menge $\mathcal D_s$ gilt:
+
+$$
+\begin{aligned}
+g_t&=\nabla_\theta\ell_s(\theta_t;\mathcal D_s),\\
+\theta_{t+1}&=\theta_t+U_\psi(g_t,h_t,\theta_t),\\
+h_{t+1}&=V_\psi(g_t,h_t,\theta_t).
+\end{aligned}
+$$
+
+Die Regel deklariert das lesbare Feedback und die Teilmenge der Parameter, die sie aktualisieren darf. Für eine deklarierte Verteilung $\mathcal P$ von Support-/Query-Aufgaben bewertet das Forschungsziel den resultierenden Parameterzustand:
+
+$$
+\mathcal J(\psi)=
+\mathbb E_{(\mathcal D_s,\mathcal D_q)\sim\mathcal P}
+\left[\ell_q\!\left(\theta_T(\psi;\mathcal D_s);\mathcal D_q\right)\right].
+$$
+
+Support-Daten steuern die inneren Aktualisierungen; Query-Daten bewerten den adaptierten Zustand. Vollständige Differentiation verfolgt die Pfade durch Parameter, Gedächtnis und Support-Gradienten. Eine Variante erster Ordnung verändert ausdrücklich die ausgewählten Gradientenpfade. Diese Unterscheidung ist Teil der Algorithmusdefinition.
+
+Die zentrale Forschungsfrage lautet, ob ein versioniertes Lernobjekt über die zulässige Schnittstelle eines anderen Modells verwendet werden kann. **C13** verbindet Verhaltenstransport, kompilierte Plastizitätsregeln und die Vorbereitung eines zukünftigen Trainers zu einem Forschungsprotokoll.
+
+<a id="worlds"></a>
+## 5. Methode III: kausale Module und gekoppelte Weltkerne
+
+### 5.1 Strukturelle Mechanismen und Interventionen
+
+Für ein azyklisches strukturelles Kausalmodell sei $\xi\sim\mu$ die gemeinsame exogene Variable; $I_j$ wähle die von Mechanismus $j$ verwendeten Komponenten aus:
+
+$$
+X_j=f_j(X_{\operatorname{pa}(j)},\xi_{I_j}),\qquad
+\operatorname{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
+$$
+
+**H31** untersucht die Transplantation von Mechanismen mit deklarierten Elternknoten-Grenzen, Einheiten und exogenen Identitäten. Der Ersatz eines Mechanismus spezifiziert ein neues strukturelles System. Durch Erhalt einer gemeinsamen exogenen Belegung können entsprechende kontrafaktische Trajektorien des ursprünglichen und des veränderten Systems verglichen werden.
+
+### 5.2 Komposition durch eine gemeinsame exogene Verteilung
+
+Jeder lokale Folgezustandskern sei normalisiert. Es werde angenommen, dass die Folgezustandskomponenten bedingt unabhängig sind, wenn der vollständige aktuelle Zustand $s$, die Aktion $a$ und der exogene Wert $\xi$ gegeben sind, und dass jeder Kern nur von seiner deklarierten Grenze abhängt. Für endliche Zustands- und Rauschräume verwendet **H43**:
+
+$$
+K(s'\mid s,a)=\sum_\xi\mu(\xi)
+\prod_i K_i(s_i'\mid s_i,a,\xi_{I_i}).
+$$
+
+**Bedingte Aussage 4: normalisierte Weltkomposition.** Unter diesen Annahmen ergibt die Summation über den Produkt-Folgezustandsraum:
+
+$$
+\sum_{s'}K(s'\mid s,a)
+=\sum_\xi\mu(\xi)\prod_i\sum_{s_i'}K_i(s_i'\mid s_i,a,\xi_{I_i})=1.
+$$
+
+Die gemeinsame Verteilung $\mu$ erhält Abhängigkeiten zwischen exogenen Faktoren. Ein gemeinsam genutzter Faktor verwendet in jeder Komponente, die auf ihn verweist, denselben gezogenen Wert. Zwei Folgezustandsvariablen, die einem gemeinsamen fairen Bit entsprechen, stimmen mit Wahrscheinlichkeit eins überein; zwei unabhängig gezogene faire Bits stimmen mit Wahrscheinlichkeit ein halb überein. Dieses Beispiel zeigt eine konkrete semantische Anforderung der Weltkomposition.
+
+### 5.3 Ungeklärte Abhängigkeit als Familie von Welten
+
+Sei $\Xi=\prod_j\Xi_j$ der endliche Produktraum des Rauschens, mit einer Randverteilung $\mu_j$ auf jedem Koordinatenraum. Der Kern $K_\eta$ entsteht, indem die gemeinsame Rauschverteilung pro Schritt $\mu$ im vorherigen Kern durch $\eta$ ersetzt wird. Sind nur die Randverteilungen spezifiziert, lautet die zulässige Kopplungsfamilie:
+
+$$
+\begin{aligned}
+\mathcal C&=\{\eta\in\mathcal P(\Xi):
+(\operatorname{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
+\underline V&=\inf_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F],\qquad
+\overline V=\sup_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F].
+\end{aligned}
+$$
+
+Dabei bezeichnet $\mathcal P(\Xi)$ die Menge der Wahrscheinlichkeitsverteilungen, $\operatorname{pr}_j$ eine Koordinatenprojektion und $F$ ein spezifiziertes beschränktes Trajektorienfunktional über einen endlichen Horizont mit deklarierter Anfangsverteilung und Policy. Die Pushforward-Bedingung fixiert jede Randverteilung. Das Intervall beschreibt, wie die gewählte Abfrage von der ungeklärten Kopplung abhängt. Kontinuierliches Rauschen verwendet die entsprechende Integralformulierung.
+
+**H44** wendet explizite Mechanismusänderungen an, um synthetische Forschungswelten zu erzeugen, und erhält ihre Annahmen und Trajektorien-Provenienz. **C16** verbindet diese Welten mit der Fragengenerierung: Eine Umgebung wird zur Quelle von Gegenbeispielen, Aufgabenvarianten und unterscheidbaren Hypothesen für den nächsten Forschungszyklus.
+
+<a id="composition"></a>
+## 6. Kompositionsrouten und algorithmische Schnittstellen
+
+Die drei Methoden teilen einen versionierten Objektgraphen. Ihre Schnittstellen unterstützen Forschungsabläufe, in denen ein Konzept eine Frage verändert, eine Frage eine Weltintervention auswählt und die resultierende Exploration ein Lernziel oder einen neuen unterscheidenden Fall liefert.
+
+| Route | Forschungseingabe | Kompositionsziel | Überprüfbare Ausgabe |
+| --- | --- | --- | --- |
+| **C10 · Konzeptbildung** | Lokale Interpretationen und aufgabenrelevante Gegenbeispiele | Eine ausführbare Unterscheidung und ihre Lesermigration vorbereiten und ungeklärte Perspektiven erhalten. | Konzeptvorschlag, Migrationsvorschlag und erhaltene multidomänale Überzeugung. |
+| **C13 · Lernprotokoll** | Ein Verhaltensziel, eine Empfängerschnittstelle und eine Adaptionsregel | Quellwirkungen binden, die Zielwirkung projizieren und eine Aktualisierungsregel mit Geltungsbereich kompilieren. | Transportresiduum, kompilierte Aktualisierungsregel und Plan für einen zukünftigen Trainer. |
+| **C16 · Welt–Frage-Ökologie** | Weltkomponenten, zulässige Änderungen und eine Frage-/Aufgabengrammatik | Weltvarianten konstruieren und nachfolgende Forschungsaufgaben ableiten. | Weltidentität, Trajektorien, Fragenvorschläge und Provenienz. |
+
+Die implementierten typisierten Objektflüsse lauten:
+
+```text
+C10: DisagreementInput -> LocalInterpretations -> Obstruction ->
+     CounterexamplePair -> ConceptProposal -> MigrationProposal -> MultiDomainBelief
+C13: LearningProtocolInput -> BoundAnchors -> LearningEffect -> ProjectedEffect ->
+     CompiledUpdateRule -> FutureTrainerPlan
+C16: CounterfactualEcologyInput -> CompatibleKernelPool -> SyntheticCounterfactual ->
+     NewQuestions -> TypedProtocolPopulation -> SyntheticLineageArchive
+```
+
+Jede Komposition stellt `build_graph` und `run_reference` bereit: [C10-Quellcode](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions/c10.py), [C13-Quellcode](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions/c13.py), [C16-Quellcode](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions/c16.py). Ihre endlichen Referenzausgaben umfassen jeweils Konzept-/Migrationsvorschläge, einen Plan für einen zukünftigen Trainer und synthetische Provenienz.
+
+Der folgende Pseudocode spezifiziert die Forschungsschnittstelle für Verhaltenstransport und Regeladaption. Er beschreibt die mathematische Folge, die die Lernkomponenten verbindet.
+
+```text
+Input: versioned readouts b_A, b_B; source direction Δ_A;
+       rule U_ψ; support/query task; declared parameter scope
+1. Check behavioral probes, frames, versions and readable inputs.
+2. Form v = J_A Δ_A at the declared source linearization point.
+3. Solve the receiver realization problem and retain its residual.
+4. Form a scoped candidate receiver state from the proposed update.
+5. Unroll U_ψ on support feedback and evaluate the resulting query loss.
+6. Record the estimator, effect scope, object versions and provenance.
+Output: candidate effect, adaptation trace, query result and residuals
+```
+
+Der endliche lineare H37→H38-Lernquellcode implementiert eine konkrete Live-Komposition. Eine stufenweise Orchestrierung erfasst Phasenverantwortung und Gradientengrenzen getrennt. Dies sind unterschiedliche Berechnungspfade mit expliziten Schnittstellen, die Experimenten jeweils ein konkretes Untersuchungsobjekt geben.
+
+<a id="analysis"></a>
+## 7. Strukturanalyse: semantische Auflösung und Information
+
+### 7.1 Aufgabenrelative semantische Quotienten
+
+Für eine Familie $\mathcal R$ deterministischer, auf $D$ definierter Abfragen gilt:
+
+$$
+x\sim_{\mathcal R}y\iff\forall q\in\mathcal R,\ q(x)=q(y),\qquad
+\mathcal R\subseteq\mathcal R'\Rightarrow[x]_{\mathcal R'}\subseteq[x]_{\mathcal R}.
+$$
+
+**H47** organisiert semantische Auflösung relativ zu den gestellten Fragen. Das Hinzufügen von Abfragen verfeinert Äquivalenzklassen. Eine gespeicherte Abstraktion benötigt daher eine deklarierte Abfragefamilie und einen Verfeinerungsmechanismus, wenn spätere Fragen zusätzliche Unterscheidungen erfordern.
+
+Für eine Zustandsabbildung $f:D\to D$ und eine Vergröberungsabbildung $C:D\to C(D)$ untersucht **H35** den exakten dynamischen Abschluss:
+
+$$
+\exists g:C(D)\to C(D),\ C\circ f=g\circ C
+\iff
+\forall x,y\in D,\ C(x)=C(y)\Rightarrow C(f(x))=C(f(y)).
+$$
+
+Die rechte Bedingung macht $g(C(x))=C(f(x))$ wohldefiniert. Sie legt fest, wann sich eine aggregierte Repräsentation über ihren eigenen Zustand weiterentwickeln kann. Abfrageverfeinerung und dynamischer Abschluss betreffen unterschiedliche Anforderungen eines mehrskaligen Protokolls.
+
+### 7.2 Provenienzbewusste Evidenzkomposition
+
+Quellenatome $e,f$ werden als Ereignisse in einem deklarierten gemeinsamen Wahrscheinlichkeitsraum behandelt. **H48** erfasst ihre Beziehungen so, dass die Komposition Ereignisidentität und Abhängigkeit berücksichtigt:
+
+$$
+\begin{aligned}
+e\lor e&=e,\\
+\Pr(e\cup f)&=\Pr(e)+\Pr(f)-\Pr(e\cap f),\\
+\max\{\Pr(e),\Pr(f)\}&\le\Pr(e\cup f)
+\le\min\{1,\Pr(e)+\Pr(f)\}.
+\end{aligned}
+$$
+
+Das Intervall folgt aus den verfügbaren Randwahrscheinlichkeiten. Ein gewähltes Abhängigkeitsmodell bestimmt den Schnittterm. Quellenprovenienz wird damit Teil der Semantik eines kollektiven Forschungsprotokolls, sodass wiederholte Referenzen, gemeinsame Beobachtungen und Quellenrevisionen konsistent interpretiert werden können.
+
+### 7.3 Hypothesen unterscheidende Abfragen
+
+Für eine endliche Hypothesenvariable $H$, einen deklarierten Prior $p(h)$ und eine Likelihood $p(y\mid h,q)$ bewertet **H45** eine zulässige Abfrage anhand des erwarteten Informationsgewinns:
+
+$$
+\begin{aligned}
+p(y\mid q)&=\sum_h p(h)p(y\mid h,q),\\
+\operatorname{IG}(q)&=\mathsf H(H)
+-\sum_y p(y\mid q)\mathsf H(H\mid Y_q=y)
+=I(H;Y_q).
+\end{aligned}
+$$
+
+Hier ist $\mathsf H$ die Shannon-Entropie und $Y_q$ nimmt für eine feste Abfrage Werte aus einem endlichen Antwortalphabet an. Posterior-Entropieterme werden nur dort berechnet, wo $p(y\mid q)>0$ gilt. Das Kriterium verbindet die Generierung von Fragen mit ungeklärten Konzepten, Mechanismen oder Weltkopplungen. Ein informativer Forschungsvorschlag spezifiziert seine Hypothesenfamilie und die erwarteten Unterschiede in den Antworten.
+
+<a id="research-program"></a>
+## 8. Forschungsprogramm: Untersuchungsgegenstände und Messgrößen
+
+Die nächsten empirischen Studien können um einzelne Erhaltungsanforderungen herum organisiert werden. Jede Studie benötigt eine deklarierte Modellschnittstelle, Aufgabenfamilie, Intervention und Auswertungseinheit.
+
+| Studie | Kontrollierter Vergleich | Zentrale Messgrößen | Aufzudeckender Fehlerfall |
+| --- | --- | --- | --- |
+| Konzepterweiterung | Feste Prädikatensprache; reine Umbenennung; durch Zeugen belegte Prädikatserweiterung | Unterscheidungsverhalten auf zurückgehaltenen Fällen, Definitionslänge, Kompatibilität alter Leser und Anteil undefinierter Fälle | Eine neue Bezeichnung lässt die aufgabenrelevante Antwortsignatur unverändert. |
+| Problemtransport | Direktes Lösen; heuristische Umformung; Umformung mit geprüften Antwortabbildungen | Korrektheit und Vollständigkeit auf deklarierten Lösungsfasern, Suchaufwand und Rückübersetzungskosten | Eine Transformation verliert eine gültige Lösung oder führt eine ungültige ein. |
+| Verhaltenstransport | Transport über gemeinsames Verhalten; eine kompatible Destillationsbaseline; architekturspezifische Adaption | Erreichte Verhaltensänderung, unerreichbares Residuum, erreichbare Abweichung und Transfer auf zurückgehaltene Proben | Lokale Übereinstimmung auf Proben überträgt sich nicht auf die beabsichtigte Aufgabe oder Aktualisierungsskala. |
+| Plastizitätstransfer | Feste Aktualisierungsregel; transportierte Richtung; Richtung mit erlernter Regel und begrenztem Geltungsbereich | Query-Leistung nach Adaption, Trennung von Support und Query sowie Gradientenunterschiede zwischen voller und erster Ordnung | Ein scheinbarer Gewinn hängt von durchgesickerten Query-Informationen oder einem unbeabsichtigten Gradientenpfad ab. |
+| Weltkomposition | Korrekte gemeinsame Kopplung; Ersatz durch unabhängige Faktoren; Familie zulässiger Kopplungen | Gemeinsame Trajektorienstatistiken, Interventionsantworten und Kopplungssensitivität von Abfragen | Übereinstimmende Randverteilungen verdecken eine veränderte Abhängigkeitsstruktur. |
+| Evidenz und Identifikation | Provenienzbewusste Aggregation; Aggregation wiederholter Quellen; deklarierte Hypothesenabfragen | Invarianz gegenüber duplizierten Quellen, Verhalten bei Rücknahme und erwartete gegenüber beobachteter Abfrageinformation | Wiederholte Referenzen werden als unabhängige Beobachtungen gezählt. |
+
+Dies sind vorgeschlagene Studiendesigns. Die aktuelle Lieferung enthält Theorie, Quellcode und endliche Referenzprüfungen; Studien mit neuronalen Modellen stehen noch aus. Studienergebnisse sollen dem jeweils verwendeten Modell, den Daten, der Schnittstelle und Version zugeordnet werden. So lässt sich jedes empirische Resultat als Evidenz für eine konkrete Mechanismenbehauptung interpretieren.
+
+<a id="implementation"></a>
+## 9. Zuordnung zum Quellcode und Implementierungsumfang
+
+| Theoretische Komponente | Quellcode-Einstieg | Formale Ausarbeitung |
 | --- | --- | --- |
-| Kognitive Objekte | Zustände, Rahmen, Begriffe, Fragen, Regeln, Welten und Evidenz | Jedem Austausch eine explizite rechnerische Bedeutung geben. |
-| Mechanismen | Typisierte Operationen auf bestimmten Objekten | Einzelne theoretische Vorschläge untersuchbar und kombinierbar machen. |
-| Kompositionen | Objektflüsse, die mehrere Mechanismen verbinden | Größere Forschungsabläufe und ihre Abhängigkeiten ausdrücken. |
-| Compiler und Laufzeit | Prüfung von Rezepten, typisierte Zwischenrepräsentation, Ausführung mit definiertem Geltungsbereich und versionierte Transaktionen | Deklarationen mit begrenzten ausführbaren Verfahren verbinden. |
-| Lern- und Backend-Schnittstellen | Verhaltensmessungen, Aktualisierungsschnittstellen und Modellanbindungen | Die Forschungsanbindung an unterschiedliche Modellfamilien bereitstellen. |
-| Evidenz und Herkunft | Quellenbeziehungen, Annahmen, Revisionen und entstehende Artefakte | Einen wachsenden Wissensbestand über seine Entstehungsgeschichte hinweg interpretierbar machen. |
+| Rahmen und Kovarianz | [H25-Referenz](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h25_gauge/reference.py) | [F01: Kovarianz und Zielfunktionen](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F01_covariance_and_objectives.md) |
+| Konzeptzeugen und ausführbare Revision | [H27: search_concept / revise_ontology](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h27_ontology/reference.py) | [F03: Konzepte und Gegenbeispiele](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F03_concepts_counterexamples_and_language.md) |
+| Fragen und operationserhaltende Abbildungen | [H29: check_relation](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h29_questions/reference.py) | [F04: Fragen und partielle Morphismen](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F04_questions_and_partial_morphisms.md) |
+| Verhaltenstransport und Aktualisierungsregeln | [H37: transport_direction](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h37_gradient_transport/reference.py), [H38: apply_rule](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h38_plasticity/reference.py) | [F05: Transport und Plastizität](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F05_behavior_transport_and_plasticity.md) |
+| Quotienten und dynamischer Abschluss | [Mechanismenbibliothek](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms) | [F07: Quotienten und Skalenabschluss](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F07_quotients_and_scale_closure.md) |
+| Welten, Kausalität und Evidenz | [H43: compose_kernels](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h43_world_kernels/reference.py), [H48-Referenz](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h48_evidence_genealogy/reference.py) | [F08: Welten und Evidenz](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F08_worlds_causality_and_evidence.md) |
 
-Der grundlegende Ablauf lautet: **typisiertes Objekt → Vorschlag mit Geltungsbereich → Kandidatenzweig → Bündel von Wirkungen → Evidenzherkunft → versionierte Transaktion**. Alternative Zweige können unterschiedliche lokale Interpretationen erhalten. Eine Revision kann festhalten, welche Objekte sich verändert haben und wie frühere Nutzer die neue Version interpretieren sollen.
+Der registrierte Umfang beträgt **48** Mechanismen, **20** Kompositionen und **68** deklarative Rezepte, mit **12** endlichen Horizonteinträgen und **38** zukünftigen Verzweigungen. Die Rezepte stehen in der [Rezeptbibliothek](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/recipes) zur Verfügung. Der [Horizont-Quellcode](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/horizon) und das [Nachwort zur Forschungsgrenze](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) entwickeln das längerfristige Forschungsprogramm.
 
-Diese Eigenschaften sind für die Produktvision wesentlich: Langfristige Zusammenarbeit braucht wiederverwendbare Objekte, deren Bedeutung auch bei der Weiterentwicklung des umgebenden Systems verständlich bleibt.
+Die endlichen Referenzverfahren geben konkrete Semantiken für ausgewählte Domänen an. Modellbindungen und Lernschnittstellen spezifizieren die anschließende Forschungsanbindung an neuronale Backends. Der [technische Leitfaden](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md) dokumentiert ihre aktuellen Ausführungsbedingungen.
 
-<a id="exploration-loop"></a>
-## Wie die drei Forschungsfronten einen Explorationszyklus bilden
+<a id="outlook"></a>
+## 10. Forschungsimplikationen und Produktausblick
 
-Ein vorgeschlagener wissenschaftlicher Arbeitsablauf verdeutlicht den Zusammenhang: Mehrere Modelle untersuchen die Widerstandsfähigkeit eines komplexen Systems.
+Die Architektur legt eine Forschungsumgebung nahe, deren Mittelpunkt Objekte bilden, die projektübergreifend geprüft, revidiert und wiederverwendet werden können. Ein Konzept trägt seine ausführbare Unterscheidung, eine Problemtransformation ihre Antwortabbildung, eine Adaption ihren Verhaltensvertrag und eine Welt ihre Mechanismus- und Unsicherheitsstruktur. Ihre versionierten Beziehungen bilden eine Grundlage für kumulative Zusammenarbeit.
 
-1. **Unterschiedliche Erklärungen sichtbar machen.** Die Beteiligten bringen lokale Modelle ein und identifizieren einen Fall, bei dem ihre Vorhersagen auseinandergehen.
-2. **Eine nützliche Unterscheidung schaffen.** Der Fall motiviert einen präziseren Begriff mit einem expliziten Test und Verbindungen zum bisherigen Vokabular.
-3. **Einen Fragenraum aufbauen.** Das Team formuliert alternative Fragen und dokumentiert, wie ihre Antworten zum ursprünglichen Forschungsziel stehen.
-4. **Erkundbare Welten konstruieren.** Eingebrachte Mechanismen und explizite Unsicherheit definieren mehrere Umgebungen, in denen diese Fragen untersucht werden können.
-5. **Anpassungsvorschläge austauschen.** Verhaltenswirkungen und Lernregeln beschreiben, wie Beteiligte ihre Erkundung dieser Umgebungen verbessern könnten.
-6. **Entdeckungen in den nächsten Zyklus tragen.** Trajektorien, Gegenbeispiele und ungeklärte Annahmen fließen in die nächste Überarbeitung von Begriffen, Fragen und Welten ein.
-
-Der vorgeschlagene Zyklus macht jeden Austausch zu einer Gelegenheit, die nächste Untersuchungsrunde zu erweitern. Simulierte Trajektorien behalten ihre Weltannahmen und Herkunft, sodass sie sich später mit einer klaren Darstellung ihres Ursprungs auf Beobachtungen und Experimente beziehen lassen.
-
-<a id="product"></a>
-## Produktvision: ein Arbeitsraum für Intelligenz, die sich durch Zusammenarbeit entwickelt
-
-Wir wollen diese Forschungsgrundlage zu einer kohärenten Umgebung für Forschende, KI-Entwickler und interdisziplinäre Teams weiterentwickeln. Vier einander ergänzende Produktrichtungen geben dieser Vision Gestalt:
-
-| Produktrichtung | Angestrebter Arbeitsablauf | Wiederverwendbares Ergebnis |
+| Entwicklungsrichtung | Rechnerische Grundlage | Angestrebter Forschungsablauf |
 | --- | --- | --- |
-| **Cognitive Research Studio** | Hypothesen, Meinungsverschiedenheiten, Begriffe, Fragengraphen und Explorationszweige in einem Forschungsarbeitsraum organisieren. | Eine Forschungsagenda mit expliziten Umformungen und dokumentierter Entwicklungsgeschichte. |
-| **Learning Exchange** | Eine gewünschte Verhaltenswirkung beschreiben und ihre Realisierung über die Anpassungsschnittstelle eines anderen Modells untersuchen. | Versionierte Lernprotokolle, Aktualisierungsregeln und Verträge über ihre Anwendbarkeit. |
-| **Shared World Lab** | Kausale Mechanismen, Weltkerne, Unsicherheitsannahmen und Interventionen zu erkundbaren Umgebungen zusammenstellen. | Weltkomponenten, Experimententwürfe, Aufgabenfamilien und kontrafaktische Trajektorien. |
-| **Semantic Asset Library** | Begriffe, Programme, Problemumformungen, Weltkomponenten und ihre Quellenbeziehungen miteinander verbinden. | Eine wachsende Bibliothek kognitiver Ressourcen, die sich zu neuen Projekten kombinieren lassen. |
+| **Cognitive Research Studio** | Konzeptzeugen, Fragengraphen und Revisionstransaktionen | Konkurrierende Erklärungen entwickeln, eine Frage verfeinern und die Entwicklung der Argumentation erhalten. |
+| **Learning Exchange** | Gemeinsame Verhaltensschnittstellen und Plastizitätsprogramme mit Geltungsbereich | Untersuchen, wie Adaptionswirkungen und Regeln zwischen Modellfamilien übertragen werden können. |
+| **Shared World Lab** | Kausale Module, gekoppelte Kerne und identifizierende Abfragen | Forschungsumgebungen konstruieren und Konsequenzen expliziter Annahmen vergleichen. |
+| **Semantic Asset Library** | Versionierte Konzepte, Programme, Antwortabbildungen und Provenienz | Komponierbare rechnerische Ressourcen für spätere Untersuchungen aufbauen. |
 
-Ihre gemeinsame Grundlage ist dieselbe Objekt- und Protokollarchitektur. Ein im Studio entwickelter Begriff könnte eine neue Frage im World Lab anleiten; ein Lernprotokoll könnte einem Teilnehmer bei der Erkundung dieser Welt helfen; die entstandene Struktur könnte für ein anderes Team zu einer wiederverwendbaren Ressource werden.
-
-Darin liegt die Produktchance, die wir verfolgen: **kollaborativer Intelligenz einen dauerhaften Ort geben, an dem sie ihre Mittel des Denkens ansammeln und weiterentwickeln kann.**
-
-<a id="use-cases"></a>
-## Wo die Forschung Wert schaffen könnte
-
-| Einsatzfeld | Möglichkeit | Ausgangspunkt im Projekt |
-| --- | --- | --- |
-| Wissenschaftliche Entdeckung | Konkurrierende Erklärungen entwickeln, aussagekräftigere Fragen erfinden und Untersuchungen entwerfen, die Hypothesen unterscheiden. | Begriffsbildung, Frageübertragung, Identifizierbarkeit und Evidenzherkunft. |
-| Zusammenarbeit über Modellfamilien hinweg | Nützliche Anpassungen über gemeinsame Verhaltensschnittstellen ausdrücken und untersuchen, wie ein anderes Modell sie realisieren kann. | Übertragung von Lernrichtungen, Plastizitätsregeln und Rahmenverträge. |
-| Simulation und Systementwurf | Mechanismen kombinieren, alternative Annahmen untersuchen und mögliche Interventionen in konstruierten Umgebungen erforschen. | Kausale Transplantation, Weltkerne und gemeinsame Unsicherheit. |
-| Kollaborative Entwicklung | Wiederverwendbare Programmstrukturen, Problemzerlegungen und semantische Revisionen durch die Entwicklung eines Projekts tragen. | Typisierte Programme, Makros, Kompositionspfade und versionierte Transaktionen. |
-| Kollektives Wissen und Fähigkeitsnetzwerke | Komplementäre Expertise organisieren und dabei lokale Kontexte sowie Beziehungen zwischen Quellen erhalten. | Fähigkeitskoalitionen, kontextabhängiges Wissen und Evidenzalgebra. |
-
-Diese Einsatzfelder geben der Forschung konkrete Fragestellungen. Sie eröffnen zugleich Ansatzpunkte für Partnerschaften: Eine wissenschaftliche Gruppe kann ein Fachgebiet und seine offenen Fragen einbringen; ein Modellteam kann eine Verhaltensschnittstelle beitragen; Entwickler können einen kombinierbaren Mechanismus oder ein Explorationswerkzeug entwickeln.
-
-<a id="value"></a>
-## Warum diese Richtung Raum für Wachstum bietet
-
-Das langfristige Wertversprechen folgt aus der Struktur des Projekts:
-
-- **Eine reichere Einheit der Zusammenarbeit.** Begriffe, Lernregeln und Weltkomponenten geben Teams mehr Möglichkeiten, auf der Arbeit anderer aufzubauen.
-- **Wiederverwendbare Forschungsressourcen.** Eine versionierte Frageumformung oder ein Weltmechanismus kann zum Ausgangspunkt einer späteren Untersuchung werden. So lässt sich Entwicklung über Projekte hinweg fortführen.
-- **Eine gemeinsame Oberfläche für heterogene Systeme.** Explizite Verhaltens- und Semantikschnittstellen bieten Ansatzpunkte, unterschiedliche Modellfamilien und Fachwerkzeuge zu verbinden.
-- **Eine produktive Beziehung zwischen Theorie und Produkt.** Formale Objekte regen neue Arbeitsabläufe an; konkrete Abläufe machen die nächsten theoretischen Fragen und Anforderungen an Schnittstellen sichtbar.
-- **Ein Ökosystem, das durch Beiträge wachsen kann.** Neue Mechanismen, Modellanbindungen, Fachwelten und Forschungsaufgaben lassen sich über dieselbe kombinierbare Struktur einbringen.
-
-Die Entwicklungsstrategie beginnt mit nachvollziehbaren Forschungsabläufen, vertieft die Protokollebene durch konkrete Modell- und Facharbeit und baut eine Bibliothek interoperabler kognitiver Ressourcen auf. Jede Stufe kann Ressourcen schaffen, die die nächste unterstützen.
-
-<a id="research-map"></a>
-## Eine Forschungslandschaft mit konkreten Einstiegspunkten
-
-| Ebene | Umfang | Einstieg |
-| --- | --- | --- |
-| Mechanismen | **48** typisierte Mechanismusmodule | [Mechanismus-Quellcode](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms) |
-| Kompositionen | **20** Pfade, die Mechanismen durch Objektflüsse verbinden | [Kompositions-Quellcode](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions) |
-| Rezepte | **68** deklarative Rezepte: 48 Mechanismen + 20 Kompositionen | [Rezeptbibliothek](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/recipes) |
-| Horizonte | **12** endliche architektonische Einstiegspunkte | [Horizontarchitekturen](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/horizon) |
-| Weitere Zweige | **38** Richtungen zur Erweiterung der Forschungslandschaft | [Nachwort zu den Forschungsfronten](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) |
-
-Das Repository enthält den theoretischen Vorschlag, formale Ausarbeitungen, endliche Referenzalgorithmen, Compiler, Laufzeit, Datenverträge sowie Quellcode-Schnittstellen für Lernen und Backends. Leser können auf mehreren Ebenen einsteigen: einem einzelnen Mechanismus folgen, eine vollständige Komposition nachvollziehen oder eine umfassendere architektonische Richtung weiterentwickeln.
-
-<a id="horizons"></a>
-## Der größere Horizont: Welche Formen von Intelligenz könnten entstehen?
-
-Die zwölf Horizontarchitekturen und achtunddreißig weiteren Zweige halten ambitionierte Fragen während der gesamten Entwicklung sichtbar:
-
-| Forschungsrichtung | Horizonte | Die Frage, die sie eröffnet |
-| --- | --- | --- |
-| Kognitive Kontinuität und kollektives Wissen | **X01–X02** | Wie könnten nützliche kognitive Strukturen über wechselnde Beteiligte und mehrere lokale Weltbilder hinweg bestehen bleiben? |
-| Fragengetriebene Entdeckung | **X03, X08** | Wie könnten neue Fragen, unvollendete Beweise und Teilerkenntnisse zu Objekten werden, die weitergegeben und weiterentwickelt werden? |
-| Lernnetzwerke und gemeinschaftliche Fähigkeiten | **X04, X10** | Wie könnten Modelle Arten der Anpassung teilen und zeitweilige Koalitionen aus komplementären Fähigkeiten bilden? |
-| Sich entwickelnde Sprachen und Lebenszyklen von Begriffen | **X05, X11** | Wie könnte eine rechnerische Sprache neue Begriffe entwickeln und dabei die Geschichte ihrer Bedeutung bewahren? |
-| Skalenübergreifende und trajektorienbasierte Kognition | **X06–X07** | Welche Formen des Schließens werden möglich, wenn Skala und Interaktionsverlauf rechnerische Struktur tragen? |
-| Gemeinsame Erfahrung und semantische Kompilierung | **X09, X12** | Wie könnten gemeinsam konstruierte Welten und deklarative kognitive Ziele neue Explorationsprogramme hervorbringen? |
-
-Diese Richtungen geben dem Projekt einen Horizont über einzelne Benchmarks oder Modellarchitekturen hinaus. Sie laden dazu ein, theoretisch zu erforschen, welche Formen der Kognition Kommunikation ermöglichen könnte.
-
-<a id="roadmap"></a>
-## Ein Entwicklungspfad von der Theorie zum Forschungsökosystem
-
-| Stufe | Schwerpunkt | Aussagekräftiger Meilenstein |
-| --- | --- | --- |
-| **1 · Rechnerische Grundlagen** | Theorie, Objektverträge, Mechanismenbibliothek, Rezeptcompiler und endliche Referenzsemantik ausarbeiten. | Leser können die Objekte untersuchen, Kompositionen kompilieren und ihre Annahmen und Wirkungen nachvollziehen. |
-| **2 · Verbindungen zu Modellen und Fachgebieten** | Konkrete Backend-Anbindungen, Verhaltenskoordinaten und fachspezifische Forschungsaufgaben untersuchen. | Für einen Mechanismus gibt es eine klar spezifizierte Schnittstelle und eine auf diese Schnittstelle bezogene empirische Untersuchung. |
-| **3 · Integrierte Explorationsabläufe** | Begriffsbildung, Frageumformung, Lernen und Welten in ausgewählten Forschungsabläufen verbinden. | Ein Arbeitsablauf führt interpretierbare Objekte, Revisionen und Bewertungskriterien durch die gesamte Sequenz. |
-| **4 · Wiederverwendbare Protokolle und gemeinsame Ressourcen** | Interoperabilität von Protokollen, wiederverwendbare Forschungskomponenten und Werkzeuge für Zusammenarbeit entwickeln. | Unabhängige Mitwirkende können aussagekräftige kognitive Ressourcen projektübergreifend kombinieren und erweitern. |
-
-Die aktuelle Lieferung konzentriert sich auf die erste Stufe: Theorie, Quellcode-Architektur und endliche Referenzberechnung. Forschungsläufe mit neuronalen Modellen stehen noch aus. Der [technische Leitfaden](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md) beschreibt Ausführungsschnittstellen und den aktuellen Entwicklungsstand.
+Längerfristige Fragen betreffen evolvierende Berechnungssprachen, aufgabenrelatives Wissen, übertragbare unvollendete Entdeckungen, skalenübergreifende Kognition und semantische Kompilierung. Der Entwicklungsweg verbindet endliche Semantiken mit konkreten Modellstudien, integriert ausgewählte Forschungsabläufe und entwickelt interoperable Protokolle sowie gemeinsame Ressourcen. Fachforschende, Modellteams und Systementwickler können über genau diese Schnittstellen beitragen.
 
 <a id="quickstart"></a>
-## Den Quellcode erkunden
+## 11. Schnellstart
 
-Benötigt wird **Python 3.11+**. Die folgenden Einstiegspunkte verwenden die Standardbibliothek. Im Stammverzeichnis des Repositorys:
+Erforderlich ist **Python 3.11+**. Diese Einstiegspunkte verwenden die Standardbibliothek. Vom Wurzelverzeichnis des Repositorys aus:
 
 ```bash
 cd Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab
 
-# Register der Mechanismen, Kompositionen und Horizonte erkunden
+# Register der Mechanismen, Kompositionen und Horizonte untersuchen
 python -X utf8 -B -c "import sys; sys.path.insert(0, 'src'); from latent_comm.cli.main import main; main(['design'])"
 
-# Ein Forschungsrezept in eine typisierte Zwischenrepräsentation kompilieren
+# Das Rezept für das modellübergreifende Lernprotokoll in typisierte IR kompilieren
 python -X utf8 -B -c "import sys; sys.path.insert(0, 'src'); from latent_comm.cli.main import main; main(['compile', '../../recipes/C13.json', '--format', 'text'])"
 
-# Lokale Quellcode-Anbindungen prüfen
+# Lokale Quellcodebindungen prüfen
 python -X utf8 -B scripts/check_source_bindings.py
 ```
 
-Für einen ersten Einstieg empfiehlt sich **C10** zur Begriffsbildung, **C13** zum Austausch von Lernverfahren oder **C16** zu gemeinsamen Welten und Fragenökologien. Die [Rezeptbibliothek](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/recipes) und die [Forschungsmonografie](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md) verbinden diese Pfade mit ihren jeweiligen Mechanismen.
+Mit **C10**, **C13** oder **C16** kann eine der drei Methodenfamilien durch eine vollständige Komposition verfolgt werden. Die kompilierte IR macht die deklarierten Objekte, Stufen und Abhängigkeiten für die Untersuchung zugänglich.
 
 <a id="reading"></a>
-## Die Theorie lesen und ihre Umsetzung verfolgen
+## 12. Forschungsdokumente
 
-- [Forschungsmonografie](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md) — die vollständige Argumentation, die drei Forschungsfronten, die Mechanismenlandschaft und die langfristige Agenda.
-- [Formaler Leseleitfaden](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/00_reading_guide.md) — mathematische Objekte, Bedingungen und Transformationsbeziehungen.
-- [Theoriearchitektur](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/theory_architecture.md) — der Objektgraph, Versionsachsen und die Aufgaben der einzelnen Mechanismusfamilien.
-- [Verwandte Arbeiten](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/related_work.md) — gedankliche Verbindungen und Unterscheidungen.
-- [Nachwort zu den Forschungsfronten](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) — achtunddreißig weitere Zweige und ihre offenen Verbindungen.
-- [Papier-Quelltext](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/paper/main.tex) — das zusammenhängende Forschungsmanuskript in LaTeX.
-- [Technischer Leitfaden](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md) — Ausführungsschnittstellen, Aufbau des Quellcodes und Entwicklungsbedingungen.
-
-<a id="participate"></a>
-## Gemeinsam die nächste Forschungsfront erschließen
-
-Semantic Becoming lädt Menschen ein, die Theorie und die durch sie vorstellbaren rechnerischen Umgebungen weiterzuentwickeln:
-
-- **Forschende:** eine formale Aussage vertiefen, ein neues kognitives Objekt einführen oder eine Untersuchung für einen konkreten Mechanismus entwerfen.
-- **KI- und Systementwickler:** Modellschnittstellen verbinden, Kompositionswerkzeuge verbessern oder Möglichkeiten schaffen, kognitive Objekte zu untersuchen und zu navigieren.
-- **Fachteams:** eine wissenschaftliche Frage, eine technische Anwendung oder ein Weltmodell beitragen, das der Architektur eine konkrete Richtung gibt.
-- **Forschungspartner:** dabei helfen, einen ausgewählten Explorationsablauf in ein fundiertes Programm und eine nützliche kollaborative Umgebung zu überführen.
-
-Wir arbeiten auf eine Zukunft hin, in der Entdeckungen zu gemeinsamen rechnerischen Ressourcen werden und Kommunikation erweitert, was die Beteiligten denken, lernen und erkunden können.
-
-**Welche neuen Möglichkeiten entstehen, wenn Intelligenz gemeinsam eigene Begriffe entwickeln, ihre Arten des Lernens austauschen und ihre Welten erschaffen kann?**
+- [Forschungsmonographie](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md): die vollständige Argumentation und Zuordnung von Mechanismen und Kompositionen.
+- [Formaler Lektüreführer](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/00_reading_guide.md): Definitionen, Bedingungen, Herleitungen und die Reihenfolge der formalen Notizen.
+- [Theoriearchitektur](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/theory_architecture.md): Objektidentitäten, semantische Versionen und Verantwortlichkeiten der Mechanismen.
+- [Verwandte Arbeiten](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/related_work.md): die im Repository dokumentierten Verbindungen zu benachbarter Forschung und der Umfang der Quellenlektüre.
+- [Papier-Quelltext](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/paper/main.tex): das zusammenhängende Manuskript in LaTeX.
 
 ---
 
-Umfang des Repositorys: Forschungsquellcode, Entwurfsdokumente und Entwicklungsaufzeichnungen. Generierte Audio-/Videodateien und temporäre Renderausgaben bleiben in der separaten lokalen Lieferung; die vollständigen Liefermanifeste beschreiben diesen gesamten Artefaktsatz. Quellcode-Lizenz: Entscheidung der Projektpflege steht aus. Für Medien gelten weiterhin ihre dokumentierten Bedingungen.
+Repository-Umfang: Forschungsquellcode, Entwurfsdokumente und Entwicklungsaufzeichnungen. Erzeugte Audio-/Videodaten verbleiben in der separaten lokalen Lieferung; die vollständigen Lieferungsmanifeste beschreiben diese Artefakte. Die Wahl der Quellcode-Lizenz steht beim Maintainer noch aus. Für Medien gelten die dokumentierten Bedingungen.

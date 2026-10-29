@@ -3,251 +3,435 @@
 </p>
 
 <h1 align="center">Semantic Becoming</h1>
-<p align="center"><strong>Make communication a computational process of cognitive growth.</strong></p>
+<p align="center"><strong>Typed cognitive objects for concept formation, learning transfer and compositional world construction</strong></p>
 
 [中文](README.md) · [English](README.en.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Español](README.es.md)
 
-**What if communication could help intelligence form new concepts, develop new ways of learning, and create new worlds to explore?**
+<a id="abstract"></a>
+## Abstract
 
-Semantic Becoming develops a research program around that possibility. It brings together latent communication, executable semantics, transferable learning dynamics and composable world models to investigate how collaboration can reshape the structures through which an intelligent system thinks and acts.
+We propose a cross-model computational architecture in which a message can carry an executable concept, a problem transformation, a behavioral update direction, a plasticity rule or a world-dynamics component. The research problem is to specify how a receiver can use such objects while preserving their domains, operational meaning, version dependencies and source relationships. **Semantic Becoming** organizes this problem into three connected programs: counterexample-driven concept and question formation; learning transfer through shared observable behavior; and world construction from causal mechanisms and coupled stochastic kernels. We formulate the relevant objects, give conditional results for distinguishing concepts, solution transport, regularized behavioral matching and kernel normalization, and connect these results to typed mechanisms and composition routes. The resulting research program studies communication as a means of changing the representational, adaptive and environmental structures available to the participants. Its computational foundation includes finite reference semantics, a recipe compiler, versioned transactions, and learning/backend interfaces. The long-term objective is a research environment in which concepts, adaptation procedures and explorable worlds become reusable computational resources.
 
-Our ambition is to make communication a programmable medium for cognitive development: a medium in which models can exchange operations, build distinctions, transform questions, share ways of adapting, and expand the space of possible experience.
+**Keywords:** latent communication; executable semantics; concept formation; problem morphisms; behavioral transport; plasticity rules; causal composition; epistemic provenance.
 
-The project is organized as **a theoretical framework, a composable research architecture and a foundation for future research products**. Its implementation framework is `latent-comm-lab`; the wider research landscape is **Latent Frontier**.
+Implementation framework: **`latent-comm-lab`**. Research series: **Latent Frontier**.
 
-[Vision](#vision) · [Theory](#thesis) · [Three frontiers](#frontiers) · [Architecture](#architecture) · [Exploration loop](#exploration-loop) · [Product vision](#product) · [Applications](#use-cases) · [Long-term value](#value) · [Research landscape](#research-map) · [Future horizons](#horizons) · [Roadmap](#roadmap) · [Quick start](#quickstart) · [Reading](#reading) · [Participation](#participate)
+[Research problem](#problem) · [Formal model](#formalism) · [Concepts and questions](#language) · [Learning transfer](#learning) · [World construction](#worlds) · [Composition routes](#composition) · [Structural analysis](#analysis) · [Research program](#research-program) · [Source correspondence](#implementation) · [Outlook](#outlook) · [Quick start](#quickstart) · [Reading](#reading)
 
-<a id="vision"></a>
-## A larger space for intelligence
+<a id="problem"></a>
+## 1. Research problem and proposed contributions
 
-An intelligent system works through a collection of structures: the distinctions it can express, the questions it can formulate, the operations it can execute, the ways it can learn, and the environments in which it can gain experience. These structures shape the possibilities available to it.
+Let a receiver possess a state representation, a set of executable operations, a question language, an adaptation rule and an environment model. This project asks how communication can supply a well-defined modification to one of those structures. Each modification must specify what it reads, what it changes, how its output is interpreted and how later computations depend on it.
 
-Communication creates an opportunity to develop those structures together. One model may contribute a new conceptual distinction; another may offer a useful problem transformation, a learning direction or a causal mechanism. Their interaction can become a place where new cognitive resources are constructed and passed on.
+The three research questions are concrete:
 
-**We want to build the computational foundations for intelligence that grows through exchange.** This perspective opens a long-term direction for collaborative AI: systems that develop richer shared languages, carry useful discoveries across model boundaries, and generate new spaces of inquiry.
+- **RQ1: representational extension.** Given a finite domain, an existing predicate language and a task-relevant counterexample, can the participants construct a predicate that separates states the old language identifies, and transport subsequent question solutions through an explicit answer relation?
+- **RQ2: adaptation transfer.** Given heterogeneous parameter spaces and a shared behavioral readout, which source-induced behavioral directions can a receiver realize, and how can a scoped update program develop that adaptation over several steps?
+- **RQ3: environment composition.** Given causal modules, local transition kernels and a joint exogenous distribution, which assumptions yield a normalized joint world, and which queries can distinguish the unresolved mechanisms or couplings?
 
-<a id="thesis"></a>
-## The theoretical proposition: communication can transform the means of thinking
+The proposed contribution is the joint protocol architecture and its mechanism-level research agenda:
 
-The starting point is a simple question: **what should a message be allowed to change?**
+| Contribution | Object made explicit | Research obligation |
+| --- | --- | --- |
+| Typed cognitive exchange | A versioned object with a declared operation, domain, effect and provenance | Specify a receiver interface and the relations preserved by its use. |
+| Concept–question composition | Distinguishing predicates, solution fibers and back-translation maps | Track which distinctions and solutions survive a revision. |
+| Learning–world composition | Behavioral update targets, plasticity programs and coupled world components | Preserve the interfaces and dependencies needed to interpret the resulting computation. |
+| Inspectable research infrastructure | Mechanisms, declarative recipes, typed IR and versioned transactions | Connect theoretical objects to source owners and bounded reference procedures. |
 
-Semantic Becoming treats the message as a candidate computational object with a declared domain, an operation and a relation to its source. A message can act on a receiver's state, introduce a concept, transport a solution relation, propose a learning rule or contribute a world mechanism. The receiver needs an explicit interface through which that object has meaning.
+The mathematical tools below provide the semantics of these obligations. The project's research contribution concerns their organization into communication objects, interfaces and compositional workflows.
 
-Three ideas organize the theory:
+<a id="formalism"></a>
+## 2. Formal model: messages as scoped state transformations
 
-1. **Meaning becomes operational through its effects.** A concept gains computational content through the distinctions, tests and operations it supports. A transferable object therefore carries enough structure to say how it can be used and what its use preserves.
-2. **Differences can become resources for discovery.** Conflicting local interpretations can expose a missing distinction. A counterexample can motivate a new concept, a revised problem or a different decomposition of a world. The research task is to give these transitions an executable form.
-3. **Cognitive growth can take place across several structures at once.** Concepts shape questions; questions guide learning; learning changes the actions available in an environment; new environments produce experiences that reshape concepts. The relationships between these changes are central to the project.
+### 2.1 Cognitive meta-state and object identity
 
-The architecture describes a cognitive meta-state as:
+Represent the receiver's cognitive configuration by:
 
 $$
-M=(Z,F,O,P,Q,V,K,W,U,E)
+M=(Z,F,O,P,Q,V,K,W,U,E).
 $$
 
-Here, state and symbols **Z**, reference frames **F**, ontology **O**, programs **P**, questions **Q**, internal objective views **V**, clocks and scales **K**, worlds **W**, learning rules **U**, and evidence **E** each have their own identity and transformation rules. A message proposes a scoped transition, schematically $M'_B=\mathcal{T}_m(M_B)$. This notation gives the research a common interface for asking exactly which part of cognition an exchange would develop.
+The components are state and exact symbols **Z**, reference frames **F**, ontology **O**, programs and instruction definitions **P**, questions **Q**, internal objective views **V**, clocks and scales **K**, world dynamics **W**, learning rules **U**, and evidence lineage **E**. Versions of these components are recorded separately. The external user goal remains the reference for the research task.
 
-The conceptual contribution pursued here is the organization of these objects and their relationships into a research architecture. The repository connects that architecture to formal arguments, counterexamples, reference algorithms and source interfaces.
+The principal exchanged objects are:
 
-<a id="frontiers"></a>
-## Three frontiers of generative communication
+| Object | Mathematical content | Mechanism family |
+| --- | --- | --- |
+| Executable concept | A partial predicate and its distinguishing witnesses | H27, H36 |
+| Problem transformation | An instance map and a solution back-translation | H29, H30 |
+| Learning direction | A behavioral target, frame and local realization problem | H37 |
+| Plasticity rule | An update program with local feedback and memory | H38 |
+| World component | A structural mechanism or transition kernel with an explicit noise boundary | H31, H43–H44 |
+| Evidence expression | Source events and their dependency structure | H48 |
 
-### 1. Communication generates language
+### 2.2 Typing, effects and composition
 
-This frontier studies how models could build the conceptual and computational languages through which they collaborate. Its objects include local semantic views, executable concepts, question transformations, typed programs and reusable instruction structures.
-
-A recurring research path starts with disagreement. Two interpretations produce different consequences; a distinguishing example makes the difference explicit; a more precise concept can then be introduced and related to earlier representations. The question language can evolve with it, allowing the system to formulate investigations that were previously difficult to express.
-
-Problem transformations carry a relationship between their solutions. If a system rewrites $x^2=4$ as $x=2s$ with $s\in\{-1,1\}$, it can explain how both solutions are recovered. Such relationships make a space of questions navigable. Repeated reasoning structures can also become typed macros, giving collaboration a growing library of computational expressions.
-
-**The prospect:** research systems that participate in concept formation, problem invention and the development of their own working languages. Mechanism families include **H26–H30, H36 and H40**, connected through **C09–C11 and C20**.
-
-### 2. Communication transfers learning
-
-This frontier asks how a useful way of adapting could travel between models with different architectures. The transferable object may be a direction of behavioral improvement, an update rule, a local learning geometry or a structured adaptation procedure.
-
-The theory begins with a shared observable behavior space. A source update $\Delta_A$ induces a local behavioral direction $v=J_A\Delta_A$. The receiver searches for an update that realizes that direction through its own interface. A finite reference formulation is:
+Use a semantic message contract $m=(o,R_m,W_m,\nu_m,\mathsf{pre}_m,\mathsf{post}_m,\pi_m)$, where $o$ is the cognitive object, $R_m,W_m$ are read/write footprints, $\nu_m$ records semantic versions, and $\pi_m$ records provenance. In a type-and-version context $\Gamma$, the proposed operational obligations are:
 
 $$
-\Delta_B^\star=\arg\min_{\Delta}\left\|J_B\Delta-v\right\|^2+\lambda\left\|\Delta\right\|^2,\qquad\lambda>0.
+\begin{aligned}
+\Gamma&\vdash m:\tau_{\mathrm{in}}\rightarrow\tau_{\mathrm{out}},\\
+M'&=\mathcal T_m(M),\qquad M\in\operatorname{dom}(\mathcal T_m),\\
+\{\mathsf{pre}_m\}\;&\mathcal T_m\;\{\mathsf{post}_m\},\qquad
+\operatorname{write}(\mathcal T_m)\subseteq W_m.
+\end{aligned}
 $$
 
-Here, $J_A$ and $J_B$ are local Jacobians mapping each model’s parameter changes into the shared observable behavior space; $\Delta$ represents a parameter update, and $\lambda$ balances behavioral matching against update magnitude.
+The Hoare triple expresses partial correctness on the declared domain. A composition requires compatible object types and versions, valid intermediate domains and a postcondition that supplies the next precondition:
 
-This formulation makes the desired effect explicit and gives the receiver a way to account for its own reachable directions. The next step is to exchange structured learning rules: objects that specify how local feedback, state and memory produce future updates. Versioned frames, metrics and validity domains connect these objects to the conditions in which they are meaningful.
+$$
+\frac{\{P_1\}\mathcal T_{m_1}\{Q_1\}\quad Q_1\Rightarrow P_2\quad
+\{P_2\}\mathcal T_{m_2}\{Q_2\}}
+{\{P_1\}\mathcal T_{m_2}\circ\mathcal T_{m_1}\{Q_2\}}.
+$$
 
-**The prospect:** networks in which models exchange useful ways of adapting, opening research paths toward reusable learning protocols and cumulative adaptation. The central mechanisms are **H37–H38**, connected through **C13** and the learning interfaces.
+This contract provides a precise unit for mechanism composition. A transaction records the resulting object versions and their dependencies. Its semantic conditions describe what the composed operation must preserve.
 
-### 3. Communication constructs worlds
+### 2.3 Representation changes must transport operations and readouts
 
-This frontier explores environments as exchangeable computational objects. Causal modules, intervention interfaces, transition kernels and shared random factors become components from which new research worlds can be assembled.
+For $z\in\mathbb R^n$, a linear operation $T\in\mathbb R^{n\times n}$, a linear readout $r\in\mathbb R^{k\times n}$ and an invertible coordinate change $G\in GL(n)$, transport the three maps together:
 
-The structure of dependence matters. When two modules depend on the same random event, preserving that shared event preserves their relationship. Sampling a separate event for each module creates a different world, even when their individual distributions look the same. Making these dependencies explicit gives world composition a precise foundation.
+$$
+z'=Gz,\qquad T'=GTG^{-1},\qquad r'=rG^{-1},\qquad r'T'z'=rTz.
+$$
 
-Models could contribute different mechanisms, construct alternative environments, explore interventions and generate new questions from the resulting trajectories. A family of possible worlds can also represent unresolved assumptions, allowing exploration to ask which observations or experiments would distinguish them.
+The identity follows by cancellation of adjacent inverse maps. It defines the observable-preservation target for **H25**. An inter-model interface must specify which state, operation and readout maps it can realize. This makes the relationship between coordinate transport and model behavior explicit.
 
-**The prospect:** shared world laboratories for counterfactual exploration, scientific hypothesis development and the creation of new learning tasks. The core mechanisms include **H31 and H43–H45**, connected through **C12 and C16–C17**.
+<a id="language"></a>
+## 3. Method I: concept formation and problem transport
 
-<a id="architecture"></a>
-## An architecture for making the theory composable
+### 3.1 A distinguishing criterion for concept extension
 
-The project gives each cognitive object an identity, a scope and a place in a larger computation. This makes it possible to ask how a concept change affects a question, how a transported update depends on a frame, or how a world composition changes the interpretation of an observation.
+Let $D$ be a declared finite domain and $O=\{p_1,\ldots,p_n\}$ an executable predicate language. Predicate values are true, false or undefined. Its response signature is:
 
-| Layer | Responsibility | Role in the larger system |
+$$
+\begin{aligned}
+\sigma_O(x)&=(p_1(x),\ldots,p_n(x))\in\{0,1,\bot\}^n,\\
+\sigma_{O'}(x)&=(\sigma_O(x),c(x)),\qquad O'=O\cup\{c\}.
+\end{aligned}
+$$
+
+**Conditional proposition 1: a witnessed refinement.** Suppose $\sigma_O(x)=\sigma_O(y)$, the task requires different actions at $x$ and $y$, and a candidate $c$ is defined at both points with $c(x)\ne c(y)$. Then the extended signatures distinguish $x$ and $y$. Any decision function that factors solely through the old signature gives the same result at both points. Appending the differing predicate values proves the refinement.
+
+This is an operational criterion for concept formation: identify a task-relevant distinction, construct a predicate that realizes it, and register the predicate's domain and version. Candidate predicates read declared observable fields. A useful example is two identically shaped keys whose permitted records contain different expiry times: the predicate “valid at the current time” separates a pair that a shape-only language identifies.
+
+The finite research procedure is: collect distinguishing obligations; enumerate typed predicates in a bounded grammar; check their definedness and obligations; retain their executable definitions and witnesses; then prepare the ontology and reader migration. **H26** supplies local compatibility analysis, **H36** handles executable counterexamples, **H27** constructs candidate concepts, and **H39** provides versioned revision. Conflict diagnosis determines whether concept extension is the appropriate next operation.
+
+### 3.2 Questions as relations and answer-preserving maps
+
+Define a question $Q$ by an instance space $X_Q$, an answer space $Y_Q$ and a relation $C_Q$. Its solution fiber is:
+
+$$
+C_Q\subseteq X_Q\times Y_Q,\qquad
+S_Q(x)=\{y\in Y_Q:(x,y)\in C_Q\}.
+$$
+
+A transformation to $Q'$ supplies an instance map $\tau$ and a back-translation $\rho_x$ defined on the target solutions. Two separate obligations follow:
+
+$$
+\begin{aligned}
+\text{soundness:}\quad &\rho_x\!\left(S_{Q'}(\tau(x))\right)\subseteq S_Q(x),\\
+\text{completeness:}\quad &S_Q(x)\subseteq\rho_x\!\left(S_{Q'}(\tau(x))\right).
+\end{aligned}
+$$
+
+**Conditional proposition 2: compositional solution transport.** If the relevant intermediate domains match, successive sound maps remain sound under composed back-translation. Successive complete maps remain complete by choosing a preimage at each step. Both inclusions give equivalence after back-translation, including transformations that introduce auxiliary variables.
+
+For $x^2=4$, the representation $x=2s$ with $s\in\{-1,1\}$ retains both solutions. The singleton restriction $x=2$ retains soundness and loses completeness. These obligations give **H29** an explicit criterion for comparing question rewrites.
+
+For cross-domain program transport, **H30** additionally requires an object map $\phi$ and an operation map $\gamma$ satisfying:
+
+$$
+\phi(a(x))=\gamma(a)(\phi(x)).
+$$
+
+When this relation holds at every visited state and each intermediate state stays in its valid domain, induction extends the relation to an operation sequence. This is the preservation obligation linking analogy, executable programs and question transformations.
+
+<a id="learning"></a>
+## 4. Method II: behavioral transport and plasticity programs
+
+### 4.1 A shared behavioral interface
+
+For model $i\in\{A,B\}$, let $\theta_i\in\mathbb R^{p_i}$ be the adaptable parameters and let $b_i$ be a differentiable readout into the same ordered, unit-consistent set of permitted behavioral probes:
+
+$$
+b_i:\mathbb R^{p_i}\rightarrow\mathbb R^d,\qquad
+J_i=D b_i(\theta_i)\in\mathbb R^{d\times p_i},\qquad
+v=J_A\Delta_A.
+$$
+
+The source update $\Delta_A$ thus specifies a local behavioral target $v$. The receiver realizes that target through its own parameterization. The Jacobians describe local effects at declared linearization points, so their frames and versions are part of the transport object.
+
+### 4.2 Receiver realization, geometry and residuals
+
+Let $W_b\succeq0$ weight behavioral errors, let $\Lambda_B\succ0$ define the receiver's parameter cost, and let $\lambda>0$. The generalized local realization problem is:
+
+$$
+\Delta_B^\star=\arg\min_\Delta
+(J_B\Delta-v)^\top W_b(J_B\Delta-v)
++\lambda\Delta^\top\Lambda_B\Delta.
+$$
+
+**Conditional proposition 3: a unique regularized realization.** The quadratic objective has a positive-definite Hessian and a unique minimizer satisfying:
+
+$$
+(J_B^\top W_bJ_B+\lambda\Lambda_B)\Delta_B^\star=J_B^\top W_bv.
+$$
+
+For every nonzero $u$, the associated quadratic form is $\|J_Bu\|_{W_b}^2+\lambda\|u\|_{\Lambda_B}^2>0$, proving positive definiteness. The Euclidean finite reference case takes $W_b=I$ and $\Lambda_B=I$. Specifying both weights makes the choice of geometry visible.
+
+In that Euclidean case, let $\Pi_B=J_BJ_B^+$ project onto the reachable behavioral subspace. The residual decomposes orthogonally:
+
+$$
+\|J_B\Delta_B^\star-v\|^2
+=\|(I-\Pi_B)v\|^2
++\|\Pi_Bv-J_B\Delta_B^\star\|^2.
+$$
+
+The first term measures an unreachable component. The second measures mismatch within the reachable subspace, including regularization-induced shrinkage. A finite update is assessed through the actual readout change, together with its local approximation residual. **H37** makes these distinctions part of the transport protocol.
+
+### 4.3 Transporting a way of updating
+
+**H38** represents adaptation by a scoped rule $U_\psi$ with local memory $h_t$. On a support set $\mathcal D_s$:
+
+$$
+\begin{aligned}
+g_t&=\nabla_\theta\ell_s(\theta_t;\mathcal D_s),\\
+\theta_{t+1}&=\theta_t+U_\psi(g_t,h_t,\theta_t),\\
+h_{t+1}&=V_\psi(g_t,h_t,\theta_t).
+\end{aligned}
+$$
+
+The rule declares its readable feedback and the parameter subset it can update. For a declared distribution $\mathcal P$ of support/query tasks, the research objective evaluates the resulting parameter state:
+
+$$
+\mathcal J(\psi)=
+\mathbb E_{(\mathcal D_s,\mathcal D_q)\sim\mathcal P}
+\left[\ell_q\!\left(\theta_T(\psi;\mathcal D_s);\mathcal D_q\right)\right].
+$$
+
+Support data drive the inner updates; query data evaluate the adapted state. Full differentiation follows the parameter, memory and support-gradient paths. A first-order variant explicitly changes the selected gradient paths. This distinction is part of the algorithm definition.
+
+The central research question is whether a versioned learning object can be used through another model's permitted interface. **C13** connects behavioral direction transport, compiled plasticity rules and the preparation of a future trainer into a research protocol.
+
+<a id="worlds"></a>
+## 5. Method III: causal modules and coupled world kernels
+
+### 5.1 Structural mechanisms and interventions
+
+For an acyclic structural causal model, let $\xi\sim\mu$ be the joint exogenous variable and let $I_j$ select the components used by mechanism $j$:
+
+$$
+X_j=f_j(X_{\operatorname{pa}(j)},\xi_{I_j}),\qquad
+\operatorname{do}(X_S=x_S):\ f_j\leftarrow x_j\quad(j\in S).
+$$
+
+**H31** studies mechanism transplantation with declared parent boundaries, units and exogenous identities. Mechanism replacement specifies a new structural system. Preserving a shared exogenous assignment allows corresponding counterfactual trajectories to be compared across the original and modified systems.
+
+### 5.2 Composition through a joint exogenous distribution
+
+Let each local next-state kernel be normalized. Assume the next-state components are conditionally independent given the complete current state $s$, action $a$ and exogenous value $\xi$, and that each kernel depends only on its declared boundary. For finite state and noise spaces, **H43** uses:
+
+$$
+K(s'\mid s,a)=\sum_\xi\mu(\xi)
+\prod_i K_i(s_i'\mid s_i,a,\xi_{I_i}).
+$$
+
+**Conditional proposition 4: normalized world composition.** Under those assumptions, summing over the product next-state space gives:
+
+$$
+\sum_{s'}K(s'\mid s,a)
+=\sum_\xi\mu(\xi)\prod_i\sum_{s_i'}K_i(s_i'\mid s_i,a,\xi_{I_i})=1.
+$$
+
+The joint distribution $\mu$ retains dependencies between exogenous factors. A shared factor uses the same sampled value in every component that references it. Two next-state variables equal to one shared fair bit agree with probability one; two independently sampled fair bits agree with probability one half. This example identifies a concrete semantic obligation of world composition.
+
+### 5.3 Unresolved dependence as a family of worlds
+
+Let $\Xi=\prod_j\Xi_j$ be the finite product noise space, with probability marginal $\mu_j$ on each coordinate space. Define $K_\eta$ by replacing the per-step joint noise law $\mu$ in the preceding kernel with $\eta$. When only the marginals are specified, the admissible coupling family is:
+
+$$
+\begin{aligned}
+\mathcal C&=\{\eta\in\mathcal P(\Xi):
+(\operatorname{pr}_j)_\#\eta=\mu_j\ \text{for all }j\},\\
+\underline V&=\inf_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F],\qquad
+\overline V=\sup_{\eta\in\mathcal C}\mathbb E_{K_\eta}[F].
+\end{aligned}
+$$
+
+Here $\mathcal P(\Xi)$ denotes probability distributions, $\operatorname{pr}_j$ is a coordinate projection, and $F$ is a specified bounded trajectory functional over a finite horizon with a declared initial law and policy. The pushforward condition fixes each marginal. The interval describes how the chosen query depends on unresolved coupling. Continuous noise uses the corresponding integral formulation.
+
+**H44** applies explicit mechanism edits to create synthetic research worlds and retains their assumptions and trajectory lineage. **C16** connects these worlds to question generation: an environment becomes a source of counterexamples, task variants and distinguishable hypotheses for the next research cycle.
+
+<a id="composition"></a>
+## 6. Composition routes and algorithmic interfaces
+
+The three methods share a versioned object graph. Their interfaces support research flows in which a concept changes a question, a question selects a world intervention, and the resulting exploration supplies a learning target or a new distinguishing case.
+
+| Route | Research input | Composition objective | Inspectable output |
+| --- | --- | --- | --- |
+| **C10 · concept formation** | Local interpretations and task-relevant counterexamples | Prepare an executable distinction and its reader migration while retaining unresolved views. | Concept proposal, migration proposal and retained multi-domain belief. |
+| **C13 · learning protocol** | A behavioral target, receiver interface and adaptation rule | Bind source effects, project the target effect and compile a scoped update rule. | Transport residual, compiled update rule and future trainer plan. |
+| **C16 · world–question ecology** | World components, admissible edits and a question/task grammar | Construct world variants and derive subsequent research tasks. | World identity, trajectories, question proposals and lineage. |
+
+The implemented typed object flows are:
+
+```text
+C10: DisagreementInput -> LocalInterpretations -> Obstruction ->
+     CounterexamplePair -> ConceptProposal -> MigrationProposal -> MultiDomainBelief
+C13: LearningProtocolInput -> BoundAnchors -> LearningEffect -> ProjectedEffect ->
+     CompiledUpdateRule -> FutureTrainerPlan
+C16: CounterfactualEcologyInput -> CompatibleKernelPool -> SyntheticCounterfactual ->
+     NewQuestions -> TypedProtocolPopulation -> SyntheticLineageArchive
+```
+
+Each composition exposes `build_graph` and `run_reference`: [C10 source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions/c10.py), [C13 source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions/c13.py), [C16 source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions/c16.py). Their finite reference outputs include concept/migration proposals, a future trainer plan, and synthetic lineage respectively.
+
+The following pseudocode specifies the research interface for behavioral transport and rule adaptation. It describes the mathematical sequence connecting the learning components.
+
+```text
+Input: versioned readouts b_A, b_B; source direction Δ_A;
+       rule U_ψ; support/query task; declared parameter scope
+1. Check behavioral probes, frames, versions and readable inputs.
+2. Form v = J_A Δ_A at the declared source linearization point.
+3. Solve the receiver realization problem and retain its residual.
+4. Form a scoped candidate receiver state from the proposed update.
+5. Unroll U_ψ on support feedback and evaluate the resulting query loss.
+6. Record the estimator, effect scope, object versions and provenance.
+Output: candidate effect, adaptation trace, query result and residuals
+```
+
+The finite linear H37→H38 learning source implements a specific live composition. Stagewise orchestration separately records phase ownership and gradient boundaries. These are distinct computational paths with explicit interfaces, giving experiments a specific object to test.
+
+<a id="analysis"></a>
+## 7. Structural analysis: semantic resolution and information
+
+### 7.1 Task-relative semantic quotients
+
+For a family $\mathcal R$ of deterministic queries defined on $D$, define:
+
+$$
+x\sim_{\mathcal R}y\iff\forall q\in\mathcal R,\ q(x)=q(y),\qquad
+\mathcal R\subseteq\mathcal R'\Rightarrow[x]_{\mathcal R'}\subseteq[x]_{\mathcal R}.
+$$
+
+**H47** organizes semantic resolution relative to the questions being asked. Adding queries refines equivalence classes. A stored abstraction therefore needs a declared query family and a refinement mechanism when later questions require additional distinctions.
+
+For a state map $f:D\to D$ and a coarse map $C:D\to C(D)$, **H35** studies exact dynamic closure:
+
+$$
+\exists g:C(D)\to C(D),\ C\circ f=g\circ C
+\iff
+\forall x,y\in D,\ C(x)=C(y)\Rightarrow C(f(x))=C(f(y)).
+$$
+
+The right-hand condition makes $g(C(x))=C(f(x))$ well-defined. It specifies when an aggregated representation can evolve through its own state. Query refinement and dynamic closure address different requirements of a multiscale protocol.
+
+### 7.2 Provenance-aware evidence composition
+
+Treat source atoms $e,f$ as events in a declared common probability space. **H48** records their relationships so that composition respects event identity and dependence:
+
+$$
+\begin{aligned}
+e\lor e&=e,\\
+\Pr(e\cup f)&=\Pr(e)+\Pr(f)-\Pr(e\cap f),\\
+\max\{\Pr(e),\Pr(f)\}&\le\Pr(e\cup f)
+\le\min\{1,\Pr(e)+\Pr(f)\}.
+\end{aligned}
+$$
+
+The interval follows from the available marginals. A selected dependency model determines the intersection term. Source lineage thus becomes part of the semantics of a collective research record, allowing repeated references, shared observations and source revisions to be interpreted consistently.
+
+### 7.3 Queries that distinguish hypotheses
+
+For a finite hypothesis variable $H$, a declared prior $p(h)$ and likelihood $p(y\mid h,q)$, **H45** evaluates a permitted query through expected information gain:
+
+$$
+\begin{aligned}
+p(y\mid q)&=\sum_h p(h)p(y\mid h,q),\\
+\operatorname{IG}(q)&=\mathsf H(H)
+-\sum_y p(y\mid q)\mathsf H(H\mid Y_q=y)
+=I(H;Y_q).
+\end{aligned}
+$$
+
+Here $\mathsf H$ is Shannon entropy and $Y_q$ takes values in a finite response alphabet for a fixed query. Posterior-entropy terms are evaluated only where $p(y\mid q)>0$. The criterion connects question generation to unresolved concepts, mechanisms or world couplings. An informative research proposal specifies its hypothesis family and the response differences it expects to reveal.
+
+<a id="research-program"></a>
+## 8. Research program: what to test and what to measure
+
+The next empirical studies can be organized around individual preservation obligations. Each study needs a declared model interface, task family, intervention and evaluation unit.
+
+| Study | Controlled comparison | Primary measurements | Failure case that the study should expose |
+| --- | --- | --- | --- |
+| Concept extension | Fixed predicate language; renaming-only revision; witnessed predicate extension | Held-out distinguishing behavior, definition length, old-reader compatibility and undefined coverage | A new label leaves the task-relevant response signature unchanged. |
+| Question transport | Direct solving; heuristic rewrite; rewrite with checked answer maps | Soundness and completeness on declared solution fibers, search effort and back-translation cost | A transformation drops a valid solution or introduces an invalid one. |
+| Behavioral transport | Shared-behavior transport; a compatible distillation baseline; architecture-specific adaptation | Achieved behavioral change, unreachable residual, reachable mismatch and transfer to held-out probes | Local probe agreement fails to carry to the intended task or update scale. |
+| Plasticity transfer | Fixed update rule; transported direction; direction plus scoped learned rule | Query performance after adaptation, support/query separation and full/first-order gradient differences | An apparent gain depends on leaked query information or an unintended gradient path. |
+| World composition | Correct shared coupling; independent-factor replacement; admissible coupling family | Joint trajectory statistics, intervention responses and query sensitivity to coupling | Matching marginals conceal a changed dependence structure. |
+| Evidence and identification | Provenance-aware aggregation; repeated-source aggregation; declared hypothesis queries | Duplicate-source invariance, withdrawal behavior and expected versus observed query information | Repeated references are counted as independent observations. |
+
+These are proposed study designs. The current delivery contains theory, source and finite reference checks; neural-model studies have yet to be run. Study outcomes should be attached to the exact model, data, interface and version used. This makes each empirical result interpretable as evidence for a specific mechanism claim.
+
+<a id="implementation"></a>
+## 9. Source correspondence and implementation scope
+
+| Theoretical component | Source entry | Formal development |
 | --- | --- | --- |
-| Cognitive objects | States, frames, concepts, questions, rules, worlds and evidence | Give each exchange an explicit computational meaning. |
-| Mechanisms | Typed operations on specific objects | Make individual theoretical proposals inspectable and composable. |
-| Compositions | Object flows connecting several mechanisms | Express larger research workflows and their dependencies. |
-| Compiler and runtime | Recipe checking, typed intermediate representation, scoped execution and versioned transactions | Connect declarations to bounded executable procedures. |
-| Learning and backend interfaces | Behavioral readouts, update interfaces and model bindings | Provide the research connection to different model families. |
-| Evidence and provenance | Source relationships, assumptions, revisions and resulting artifacts | Make a growing body of knowledge interpretable across its history. |
+| Frames and covariance | [H25 reference](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h25_gauge/reference.py) | [F01: covariance and objectives](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F01_covariance_and_objectives.md) |
+| Concept witnesses and executable revision | [H27: search_concept / revise_ontology](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h27_ontology/reference.py) | [F03: concepts and counterexamples](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F03_concepts_counterexamples_and_language.md) |
+| Questions and operation-preserving maps | [H29: check_relation](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h29_questions/reference.py) | [F04: questions and partial morphisms](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F04_questions_and_partial_morphisms.md) |
+| Behavioral transport and update rules | [H37: transport_direction](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h37_gradient_transport/reference.py), [H38: apply_rule](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h38_plasticity/reference.py) | [F05: transport and plasticity](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F05_behavior_transport_and_plasticity.md) |
+| Quotients and dynamic closure | [Mechanism library](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms) | [F07: quotients and scale closure](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F07_quotients_and_scale_closure.md) |
+| Worlds, causality and evidence | [H43: compose_kernels](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h43_world_kernels/reference.py), [H48 reference](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms/h48_evidence_genealogy/reference.py) | [F08: worlds and evidence](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/F08_worlds_causality_and_evidence.md) |
 
-The organizing flow is **typed object → scoped proposal → candidate branch → effect bundle → evidence lineage → versioned transaction**. Alternative branches can preserve different local interpretations. A revision can record which objects changed and how earlier readers should interpret the new version.
+The registered scope is **48** mechanisms, **20** compositions and **68** declarative recipes, with **12** finite horizon entries and **38** future branches. Recipes are available in the [recipe library](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/recipes). The [horizon source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/horizon) and [frontier afterword](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) develop the longer research program.
 
-These properties matter for the product vision: long-running collaboration needs reusable objects whose meaning remains intelligible as the surrounding system evolves.
+The finite reference procedures provide concrete semantics for selected domains. Model bindings and learning interfaces specify the subsequent research connection to neural backends. The [technical guide](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md) records their current execution conditions.
 
-<a id="exploration-loop"></a>
-## How the three frontiers form an exploration loop
+<a id="outlook"></a>
+## 10. Research implications and product outlook
 
-Consider a proposed scientific research workflow in which several models investigate the resilience of a complex system:
+The architecture suggests a research environment centered on objects that can be inspected, revised and reused across projects. A concept carries its executable distinction, a question transformation its answer map, an adaptation its behavioral contract, and a world its mechanism and uncertainty structure. Their versioned relationships provide a basis for cumulative collaboration.
 
-1. **Expose different explanations.** Participants contribute local models and identify a case on which their predictions differ.
-2. **Create a useful distinction.** The case motivates a more precise concept, with an explicit test and links to the earlier vocabulary.
-3. **Construct a question space.** The team formulates alternative questions and records how their answers relate to the original research goal.
-4. **Build explorable worlds.** Contributed mechanisms and explicit uncertainty define several environments in which those questions can be investigated.
-5. **Exchange adaptation proposals.** Behavioral effects and learning rules describe how participants could improve their exploration of those environments.
-6. **Carry discoveries into another cycle.** Trajectories, counterexamples and unresolved assumptions feed the next revision of concepts, questions and worlds.
-
-The proposed loop turns each exchange into an opportunity to enlarge the next round of inquiry. Simulated trajectories retain their world assumptions and provenance, making it possible to connect them to later observations and experiments with a clear account of their origin.
-
-<a id="product"></a>
-## Product vision: a workspace for intelligence that develops through collaboration
-
-We aim to develop this research foundation into a coherent environment for researchers, AI developers and teams working across domains. Four complementary product directions express that ambition:
-
-| Product direction | Intended workflow | Reusable outcome |
+| Development direction | Computational foundation | Intended research workflow |
 | --- | --- | --- |
-| **Cognitive Research Studio** | Organize hypotheses, disagreements, concepts, question graphs and exploration branches in one research workspace. | A research agenda with explicit transformations and a history of its development. |
-| **Learning Exchange** | Describe a desired behavioral effect and investigate its realization through another model's adaptation interface. | Versioned learning protocols, update rules and applicability contracts. |
-| **Shared World Lab** | Assemble causal mechanisms, world kernels, uncertainty assumptions and interventions into explorable environments. | World components, experiment designs, task families and counterfactual trajectories. |
-| **Semantic Asset Library** | Connect concepts, programs, problem transformations, world components and their source relationships. | A growing library of cognitive resources that can be composed into new projects. |
+| **Cognitive Research Studio** | Concept witnesses, question graphs and revision transactions | Develop competing explanations, refine a question and preserve the reasoning history. |
+| **Learning Exchange** | Shared behavioral interfaces and scoped plasticity programs | Study how adaptation effects and rules can travel across model families. |
+| **Shared World Lab** | Causal modules, coupled kernels and identifying queries | Construct research environments and compare the consequences of explicit assumptions. |
+| **Semantic Asset Library** | Versioned concepts, programs, answer maps and provenance | Accumulate composable computational resources for later investigations. |
 
-Their common foundation is the same object and protocol architecture. A concept developed in the Studio could guide a new question in the World Lab; a learning protocol could help a participant explore that world; the resulting structure could become a reusable asset for another team.
-
-This is the product opportunity we want to pursue: **give collaborative intelligence a durable place to accumulate its means of thinking.**
-
-<a id="use-cases"></a>
-## Where the research could create value
-
-| Setting | Opportunity | Starting point in this project |
-| --- | --- | --- |
-| Scientific discovery | Develop competing explanations, invent more informative questions and design explorations that distinguish hypotheses. | Concept formation, question transport, identifiability and evidence lineage. |
-| Collaboration across model families | Express useful adaptations through shared behavioral interfaces and investigate how another model can realize them. | Learning-direction transport, plasticity rules and frame contracts. |
-| Simulation and system design | Combine mechanisms, inspect alternative assumptions and study possible interventions in constructed environments. | Causal transplantation, world kernels and joint uncertainty. |
-| Collaborative engineering | Carry reusable program structures, problem decompositions and semantic revisions across a project's development. | Typed programs, macros, composition routes and versioned transactions. |
-| Collective knowledge and capability networks | Organize complementary expertise while preserving local context and relationships between sources. | Capability coalitions, context-dependent knowledge and evidence algebra. |
-
-These settings give the research concrete questions to work on. They also create entry points for partnerships: a scientific group can contribute a domain and its unresolved questions; a model team can contribute a behavioral interface; a developer can contribute a composable mechanism or exploration tool.
-
-<a id="value"></a>
-## Why this direction has room to grow
-
-The long-term value proposition follows from the structure of the project:
-
-- **A richer unit of collaboration.** Concepts, learning rules and world components give teams more ways to build on one another's work.
-- **Reusable research assets.** A versioned question transformation or world mechanism can become a starting point for a later investigation, allowing development to accumulate across projects.
-- **A common surface for heterogeneous systems.** Explicit behavioral and semantic interfaces provide places to connect different model families and domain tools.
-- **A productive relationship between theory and product.** Formal objects suggest new workflows; concrete workflows expose the next theoretical questions and interface requirements.
-- **An ecosystem that can expand by contribution.** New mechanisms, model bindings, domain worlds and research tasks can enter through the same compositional structure.
-
-The development strategy is to begin with inspectable research workflows, deepen the protocol layer through concrete model and domain work, and grow a library of interoperable cognitive assets. Each stage can create resources that support the next stage.
-
-<a id="research-map"></a>
-## A research landscape with concrete entry points
-
-| Level | Scope | Entry point |
-| --- | --- | --- |
-| Mechanisms | **48** typed mechanism modules | [Mechanism source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/mechanisms) |
-| Compositions | **20** routes connecting mechanisms through object flows | [Composition source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/compositions) |
-| Recipes | **68** declarative recipes: 48 mechanisms + 20 compositions | [Recipe library](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/recipes) |
-| Horizons | **12** finite architectural entry points | [Horizon architectures](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/src/latent_comm/horizon) |
-| Further branches | **38** directions extending the research landscape | [Frontier afterword](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) |
-
-The repository contains the theoretical proposal, formal developments, finite reference algorithms, compiler, runtime, data contracts and learning/backend source interfaces. These give readers several depths of engagement: follow one mechanism, trace a complete composition, or develop a broader architectural direction.
-
-<a id="horizons"></a>
-## The longer horizon: what forms of intelligence could emerge?
-
-The twelve horizon architectures and thirty-eight further branches keep ambitious questions visible throughout development:
-
-| Research direction | Horizon entries | Question it opens |
-| --- | --- | --- |
-| Cognitive continuity and collective knowledge | **X01–X02** | How could useful cognitive structures persist across changing participants and multiple local worldviews? |
-| Question-driven discovery | **X03, X08** | How could new questions, unfinished proofs and partial discoveries become objects that travel and develop? |
-| Learning networks and capability commons | **X04, X10** | How could models share ways of adapting and form temporary coalitions around complementary abilities? |
-| Evolving languages and concept lifecycles | **X05, X11** | How could a computational language develop new concepts while retaining the history of their meaning? |
-| Cross-scale and trajectory-based cognition | **X06–X07** | What forms of reasoning become available when scale and the path of interaction carry computational structure? |
-| Shared experience and semantic compilation | **X09, X12** | How could jointly constructed worlds and declarative cognitive goals give rise to new exploration programs? |
-
-These directions give the project a horizon beyond any single benchmark or model architecture. They invite theory development around the forms of cognition that communication could make possible.
-
-<a id="roadmap"></a>
-## A development path from theory to a research ecosystem
-
-| Stage | Focus | Meaningful milestone |
-| --- | --- | --- |
-| **1 · Computational foundations** | Develop the theory, object contracts, mechanism library, recipe compiler and finite reference semantics. | Readers can inspect the objects, compile compositions and examine their assumptions and effects. |
-| **2 · Model and domain connections** | Investigate concrete backend bindings, behavioral coordinates and domain-specific research tasks. | A mechanism has a clearly specified interface and an empirical study tied to that interface. |
-| **3 · Integrated exploration workflows** | Connect concept formation, question transformation, learning and worlds in selected research workflows. | A workflow carries interpretable objects, revisions and evaluation criteria through the full sequence. |
-| **4 · Reusable protocols and shared assets** | Develop protocol interoperability, reusable research components and collaborative tools. | Independent contributors can compose and extend meaningful cognitive resources across projects. |
-
-The current delivery concentrates on the first stage: theory, source architecture and finite reference computation. Neural-model research runs remain to be carried out. The [technical guide](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md) records the execution interfaces and current development state.
+Longer-term questions concern evolving computational languages, task-relative knowledge, transferable unfinished discoveries, cross-scale cognition and semantic compilation. The development path is to connect finite semantics to concrete model studies, integrate selected research workflows, and develop interoperable protocols and shared assets. Domain researchers, model teams and systems developers can contribute through precisely these interfaces.
 
 <a id="quickstart"></a>
-## Explore the source
+## 11. Quick start
 
-Requires **Python 3.11+**. The following entry points use the standard library. From the repository root:
+Requires **Python 3.11+**. These entry points use the standard library. From the repository root:
 
 ```bash
 cd Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab
 
-# Explore the mechanism, composition and horizon registry
+# Inspect the mechanism, composition and horizon registry
 python -X utf8 -B -c "import sys; sys.path.insert(0, 'src'); from latent_comm.cli.main import main; main(['design'])"
 
-# Compile a research recipe into typed IR
+# Compile the cross-model learning protocol recipe into typed IR
 python -X utf8 -B -c "import sys; sys.path.insert(0, 'src'); from latent_comm.cli.main import main; main(['compile', '../../recipes/C13.json', '--format', 'text'])"
 
 # Check local source bindings
 python -X utf8 -B scripts/check_source_bindings.py
 ```
 
-For a first reading, follow **C10** to explore concept formation, **C13** for learning exchange, or **C16** for shared worlds and question ecology. The [recipe library](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/recipes) and [research monograph](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md) connect these routes to their constituent mechanisms.
+Start with **C10**, **C13** or **C16** to trace one of the three method families through a complete composition. The compiled IR makes the declared objects, stages and dependencies available for inspection.
 
 <a id="reading"></a>
-## Read the theory and follow its implementation
+## 12. Research documents
 
-- [Research monograph](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md) — the full argument, three frontiers, mechanism landscape and long-term agenda.
-- [Formal reading guide](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/00_reading_guide.md) — mathematical objects, conditions and transformation relationships.
-- [Theory architecture](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/theory_architecture.md) — the object graph, version axes and responsibilities of each mechanism family.
-- [Related work](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/related_work.md) — intellectual connections and distinctions.
-- [Frontier afterword](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/frontier_afterword.md) — thirty-eight further branches and their open bridges.
-- [Paper source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/paper/main.tex) — the continuous research manuscript in LaTeX.
-- [Technical guide](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md) — execution interfaces, source layout and development conditions.
-
-<a id="participate"></a>
-## Build the next frontier together
-
-Semantic Becoming welcomes people who want to develop the theory and the computational environments it makes imaginable:
-
-- **Researchers:** deepen a formal proposition, introduce a new cognitive object, or design a study around a specific mechanism.
-- **AI and systems developers:** connect model interfaces, improve composition tools, or build ways to inspect and navigate cognitive objects.
-- **Domain teams:** contribute a scientific question, an engineering setting or a world model that gives the architecture a concrete direction.
-- **Research partners:** help turn a selected exploration workflow into a rigorous program and a useful collaborative environment.
-
-We are building toward a future in which discoveries can become shared computational resources, and communication can expand what the participants are able to conceive, learn and explore.
-
-**When intelligence can develop its own concepts, exchange its ways of learning, and construct its worlds together, what new possibilities become available?**
+- [Research monograph](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/research_monograph.md): the complete argument and mechanism/composition correspondence.
+- [Formal reading guide](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/formal_notes/00_reading_guide.md): definitions, conditions, derivations and the formal-note sequence.
+- [Theory architecture](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/theory_architecture.md): object identities, semantic versions and mechanism responsibilities.
+- [Related work](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/docs/related_work.md): the repository's recorded connections to adjacent research and their source-reading scope.
+- [Paper source](Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/paper/main.tex): the continuous manuscript in LaTeX.
 
 ---
 
-Repository scope: research source, design documents and development records. Generated audio/video and temporary rendering outputs remain in the separate local delivery; full-delivery manifests describe that complete artifact set. Source license: awaiting maintainer selection. Media retain their documented terms.
+Repository scope: research source, design documents and development records. Generated audio/video remain in the separate local delivery; full-delivery manifests describe that artifact set. Source license awaits maintainer selection. Media retain their documented terms.
