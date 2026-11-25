@@ -3,8 +3,8 @@
   "project": "latent-comm-lab",
   "research_state": "NOT_RUN",
   "inventory_kind": "FINAL_LOGIC_REVIEW_SOURCE_REVISION_NOT_ORIGINAL_TASK_SEAL",
-  "revision_date": "2026-10-29",
-  "updated_at_utc": "2026-10-29T06:02:31.052466+00:00",
+  "revision_date": "2026-11-25",
+  "updated_at_utc": "2026-11-25T03:33:02.341389+00:00",
   "static_file_count": 3024,
   "files": [
     {
@@ -5185,7 +5185,7 @@
     {
       "path": "README.md",
       "bytes": 10633,
-      "sha256": "9718fc7bd7a45f4add09940e83c46046c7a1a9f9fd96f5e2c0c9d66c7d2be880"
+      "sha256": "deb26bf57799a61f7ad3946d21c822838980ae2609da5f69c655c4d2545ad8f2"
     },
     {
       "path": "release/authorization_updates/20261025T0234_TTS_APPROVAL.json",
@@ -10729,8 +10729,8 @@
     },
     {
       "path": "scripts/build_release.py",
-      "bytes": 18109,
-      "sha256": "55898942d4f421727ada67f3978dd889e8f93d5a6c9665f614167ad574155635"
+      "bytes": 18088,
+      "sha256": "3dabb62770f7a30eb5c57481d727755fbc8b7ea2029b27e4390d79fe423dd193"
     },
     {
       "path": "scripts/check_source_bindings.py",
@@ -15124,8 +15124,8 @@
     },
     {
       "path": "tests/runtime/test_runtime.py",
-      "bytes": 19274,
-      "sha256": "0575ad6528cd374d3df938adceefc9bbec16206e3002f45f94d7e8c6183fe5e4"
+      "bytes": 19710,
+      "sha256": "9a813675a3317b75a549fa2c82f8e1eadcf98885c0a4e3e8c739dcbfc5500bc9"
     }
   ],
   "excluded_from_static_hash": [

@@ -435,7 +435,7 @@ Start with **C10**, **C13** or **C16** to trace one of the three method families
 ---
 
 <a id="licensing"></a>
-**Licensing**
+## Licensing
 
 | Material | License |
 | --- | --- |

@@ -435,7 +435,7 @@ Mit **C10**, **C13** oder **C16** kann eine der drei Methodenfamilien durch eine
 ---
 
 <a id="licensing"></a>
-**Lizenzen**
+## Lizenzen
 
 | Inhalt | Lizenz |
 | --- | --- |

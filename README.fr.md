@@ -435,7 +435,7 @@ Commencer par **C10**, **C13** ou **C16** permet de suivre l’une des trois fam
 ---
 
 <a id="licensing"></a>
-**Licences**
+## Licences
 
 | Contenu | Licence |
 | --- | --- |

@@ -109,7 +109,7 @@ def archive():
     PYTHONPATH=src python -m latent_comm.cli.main compile ../../recipes/C13.json --format text
     python scripts/check_source_bindings.py
 
-不需要联网安装、tensor/backend extras或任何模型权重。研究后端依赖及实际模型绑定仍未启用；原始计划相对布局必须一并保留。\n\n真正的外层ZIP SHA-256、Z02封包完成状态和独立最终验收见随附 FINAL_DELIVERY_VERIFICATION.json；无法把ZIP自身哈希放进自身。包内 DELIVERY_CONTENTS.json 校验其他所有实际条目。\n\n媒体中的第三方免费TTS音频及含音轨视频仅供个人、非商业使用，真实听审按用户2026-10-27明确要求移除验收条件，状态USER_WAIVED_NOT_PERFORMED，未试听且不称听审通过；该服务的音频许可限制不自动适用于独立创作的源代码/PPT/SVG/静音视觉文件。所有研究模型路径NOT_RUN，没有公开发布。\n'''
+不需要联网安装、tensor/backend extras或任何模型权重。研究后端依赖及实际模型绑定仍未启用；原始计划相对布局必须一并保留。\n\n真正的外层ZIP SHA-256、Z02封包完成状态和独立最终验收见随附 FINAL_DELIVERY_VERIFICATION.json；无法把ZIP自身哈希放进自身。包内 DELIVERY_CONTENTS.json 校验其他所有实际条目。\n\n媒体中的第三方免费TTS音频及含音轨视频仅供个人、非商业使用，真实听审按用户2026-10-27明确要求移除验收条件，状态USER_WAIVED_NOT_PERFORMED，未试听且不称听审通过；该服务的音频许可限制不自动适用于独立创作的源代码/PPT/SVG/静音视觉文件。所有研究模型路径NOT_RUN。\n'''
     payload[f'{TOP}/START_HERE.md']=landing.encode()
     rows=[{'path':name,'sha256':sha(raw),'bytes':len(raw)} for name,raw in sorted(payload.items())]
     package_manifest={'schema_version':1,'research_state':'NOT_RUN','file_count_excluding_self':len(rows),'files':rows,'excluded_self_hash':[f'{TOP}/DELIVERY_CONTENTS.json'],'postbuild_sidecars':['FINAL_DELIVERY_VERIFICATION.json','reports/release_integrity.json','run_state/receipts/Z02.json','release/independent_delivery_acceptance.json','release/independent_delivery_acceptance.md']}

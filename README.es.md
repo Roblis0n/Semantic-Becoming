@@ -435,7 +435,7 @@ Comience por **C10**, **C13** o **C16** para seguir una de las tres familias de 
 ---
 
 <a id="licensing"></a>
-**Licencias**
+## Licencias
 
 | Material | Licencia |
 | --- | --- |

@@ -31,11 +31,20 @@ class Transactions(unittest.TestCase):
         with self.assertRaises(ContractError):tx.delete('state:new')
         tx.commit();self.assertNotIn('state:new',s.snapshot().cells)
     def test_durable_workspace_unsupported_platform_is_explicit(self):
-        from unittest.mock import patch
-        with tempfile.TemporaryDirectory() as root, patch('latent_comm.runtime.files.fcntl',None):
-            path=Path(root)/'state'
-            with self.assertRaises(ContractError) as ctx:AtomicWorkspace(path)
-            self.assertEqual(ctx.exception.failure.code,'UnsupportedPlatform');self.assertFalse(path.exists())
+        # Manual patch instead of unittest.mock: importing unittest.mock
+        # transitively imports socket, which the gated contract runner
+        # (scripts/run_allowed_contracts.py) denies by design, so the mock
+        # version of this test can never run under the project's own gate.
+        import latent_comm.runtime.files as files_module
+        original_fcntl = files_module.fcntl
+        files_module.fcntl = None
+        try:
+            with tempfile.TemporaryDirectory() as root:
+                path=Path(root)/'state'
+                with self.assertRaises(ContractError) as ctx:AtomicWorkspace(path)
+                self.assertEqual(ctx.exception.failure.code,'UnsupportedPlatform');self.assertFalse(path.exists())
+        finally:
+            files_module.fcntl = original_fcntl
     def test_read_conflict_even_disjoint_writes(self):
         s=seed(VersionedStore());a=begin(s);b=begin(s);a.read('state:x');b.read('state:x');write(a,'state:x',3);write(b,'state:y',4);a.commit()
         with self.assertRaises(ContractError):b.commit()

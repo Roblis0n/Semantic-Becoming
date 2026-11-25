@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "research_state": "NOT_RUN",
-  "revision_date": "2026-10-29",
+  "revision_date": "2026-11-25",
   "inventory_kind": "CURRENT_EXTRACTED_SOURCE_REVISION_NO_NEW_ZIP",
   "file_count_excluding_self": 3596,
   "files": [
     {
       "path": "Latent_Frontier_v3_Delivery/START_HERE.md",
-      "sha256": "d61930924fe08df089d348625ef7eda99bed4404b3f904f16e98068d30848998",
-      "bytes": 2280
+      "sha256": "fb90d4079e19da0f65903f6977b1abcf560e711c1fa1d5e9e98d4a98440ef785",
+      "bytes": 2751
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/DELIVERY_MANIFEST.json",
@@ -2857,7 +2857,7 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md",
-      "sha256": "9718fc7bd7a45f4add09940e83c46046c7a1a9f9fd96f5e2c0c9d66c7d2be880",
+      "sha256": "deb26bf57799a61f7ad3946d21c822838980ae2609da5f69c655c4d2545ad8f2",
       "bytes": 10633
     },
     {
@@ -7342,8 +7342,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/checksums.sha256",
-      "sha256": "1b2484f1fb93b638d0e871aaaba5f56785082bd65ab9253bd6c0b136801c4c3a",
-      "bytes": 346479
+      "sha256": "9e814f8eee5e3d50bf51d069c4bab6c6d5055ddd72742f582c9a9ce4eea33fb6",
+      "bytes": 343455
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/configs/compositions/C01.json",
@@ -7972,8 +7972,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/manifest.json",
-      "sha256": "7b610a83d4f1f6d6ed4cbba67eeb0b7e2481b0b551b16517ecb83588aa9890fc",
-      "bytes": 566373
+      "sha256": "ba5a9fc49dea09444ad2a1572026406fc16a87e7af1536ef875f22e26155d5d5",
+      "bytes": 551215
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/paper/main.tex",
@@ -13582,8 +13582,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/scripts/build_release.py",
-      "sha256": "55898942d4f421727ada67f3978dd889e8f93d5a6c9665f614167ad574155635",
-      "bytes": 18109
+      "sha256": "3dabb62770f7a30eb5c57481d727755fbc8b7ea2029b27e4390d79fe423dd193",
+      "bytes": 18088
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/scripts/check_source_bindings.py",
@@ -17977,8 +17977,8 @@
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/workspace/latent-comm-lab/tests/runtime/test_runtime.py",
-      "sha256": "0575ad6528cd374d3df938adceefc9bbec16206e3002f45f94d7e8c6183fe5e4",
-      "bytes": 19274
+      "sha256": "9a813675a3317b75a549fa2c82f8e1eadcf98885c0a4e3e8c739dcbfc5500bc9",
+      "bytes": 19710
     },
     {
       "path": "Latent_Frontier_v3_Delivery/latent_frontier_v3_20261024/可改写认知_前沿创新与Dot全流程研究总册_V3.docx",

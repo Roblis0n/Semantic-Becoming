@@ -1,6 +1,6 @@
 # 当前源码逻辑修订 · 2026-10-29
 
-本目录中的源码已经完成一次理论创新优先的逻辑检查与修复。最新入口：[开源前逻辑终检](latent_frontier_v3_20261024/workspace/latent-comm-lab/reports/开源前逻辑终检_20261029.md)；源码入口：[README](latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md)。244项定向检查及68份配方编译通过，原研究版图保留。许可尚未选择，本轮未生成或发布新的ZIP。下面保留原交付入口为历史记录。
+本目录中的源码已经完成一次理论创新优先的逻辑检查与修复。最新入口：[开源前逻辑终检](latent_frontier_v3_20261024/workspace/latent-comm-lab/reports/开源前逻辑终检_20261029.md)；源码入口：[README](latent_frontier_v3_20261024/workspace/latent-comm-lab/README.md)。751项定向检查及68份配方编译通过（2026-11-25 复跑核实），原研究版图保留。许可为 Apache-2.0（代码）与 CC BY 4.0（内容）双许可，见根目录 LICENSING.md；2026-10-29 修订时未生成新 ZIP。本 Git 仓库按 .gitignore 排除 342 个媒体与运行状态文件（约 314 MB，含全部 TTS 音频与含音轨视频），对克隆仓库核对 DELIVERY_CONTENTS.json 时这些条目会显示缺失——这是分发裁剪，不是文件损坏。下面保留原交付入口为历史记录。
 
 ---
 
@@ -20,6 +20,6 @@
 
 不需要联网安装、tensor/backend extras或任何模型权重。研究后端依赖及实际模型绑定仍未启用；原始计划相对布局必须一并保留。
 
-真正的外层ZIP SHA-256、Z02封包完成状态和独立最终验收见随附 FINAL_DELIVERY_VERIFICATION.json；无法把ZIP自身哈希放进自身。包内 DELIVERY_CONTENTS.json 校验其他所有实际条目。
+真正的外层ZIP SHA-256、Z02封包完成状态和独立最终验收见 ZIP 交付随附的 FINAL_DELIVERY_VERIFICATION.json（该侧车文件不包含在本 Git 仓库中）；无法把ZIP自身哈希放进自身。包内 DELIVERY_CONTENTS.json 校验其他所有实际条目。
 
-媒体中的第三方免费TTS音频及含音轨视频仅供个人、非商业使用，真实听审按用户2026-10-27明确要求移除验收条件，状态USER_WAIVED_NOT_PERFORMED，未试听且不称听审通过；该服务的音频许可限制不自动适用于独立创作的源代码/PPT/SVG/静音视觉文件。所有研究模型路径NOT_RUN，没有公开发布。
+媒体中的第三方免费TTS音频及含音轨视频仅供个人、非商业使用，真实听审按用户2026-10-27明确要求移除验收条件，状态USER_WAIVED_NOT_PERFORMED，未试听且不称听审通过；该服务的音频许可限制不自动适用于独立创作的源代码/PPT/SVG/静音视觉文件。所有研究模型路径NOT_RUN（源码已公开于 GitHub，研究执行未授权、未运行）。

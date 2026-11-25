@@ -435,7 +435,7 @@ python -X utf8 -B scripts/check_source_bindings.py
 ---
 
 <a id="licensing"></a>
-**许可说明**
+## 许可说明
 
 | 内容 | 许可证 |
 | --- | --- |
